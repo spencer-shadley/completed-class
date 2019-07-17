@@ -1,6 +1,4 @@
-# Eat the Burger
-
-![Burger Meme](images/burgerMeme.jpg)
+# Clicky Game
 
 ### Statement of completion
 
@@ -22,7 +20,7 @@ Be subjective, grading & feedback should not take more than 5 minutes per assign
 
 **Criteria**
 
-The deployed assignment utilizes MySQL, Express, and Handlebars to allow users to create, update, and read burgers from the database. The deployed assignment has been added to their deployed portfolio with a link provided in the submission.
+The deployed React application renders multiple images to the page, listens for click events to the images, and keeps track of the user's score. The deployed assignment has been added to their deployed portfolio with a link provided in the submission.
 
 **Is the above statement correct?**
 

@@ -1,10 +1,6 @@
-# Sequelize Eat-Da-Burger
-
-![Burger Meme](images/burgermeme.jpg)
+# React Google Books
 
 ### Statement of completion
-
-This homework assignment is **optional**. 
 
 Be subjective, grading & feedback should not take more than 5 minutes per assignment.
 
@@ -24,7 +20,7 @@ Be subjective, grading & feedback should not take more than 5 minutes per assign
 
 **Criteria**
 
-The deployed assignment utilizes sequelize and handlebars to allow users to create, update, and read burgers from the database. The deployed assignment has been added to their deployed portfolio with a link provided in the submission.
+The deployed assignment utilizes React and Google Books API to let the user search and save books. The deployed assignment has been added to their deployed portfolio with a link provided in the submission.
 
 **Is the above statement correct?**
 
