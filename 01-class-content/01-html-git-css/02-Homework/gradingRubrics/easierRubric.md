@@ -1,7 +1,6 @@
 ## Unit 1 (Easier) Assignment - Wireframe
 
 ### Overview
-
 If the student completed both the easier assignment and the recommended assignment, please provide the letter grade for the recommended assignment and leave short commentary for each, including a note of encouragement for attempting or completing both.
 
 You'll use the following screenshots to subjectively grade student assignments.
@@ -11,6 +10,7 @@ Grading & feedback should not take more than 5 minutes per assignment.
 **Repository Naming**
 
 * It will be enticing and easy for students to name their homework something like Unit X Homework, Week X Homework, or Homework X. This has been discouraged in their homework instructions and any repositories without a more unique name should receive an `I` until the name is changed.
+
 
 **What does an A or B look like?**
 

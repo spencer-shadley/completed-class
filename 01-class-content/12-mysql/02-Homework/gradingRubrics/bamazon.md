@@ -6,7 +6,6 @@
 
 Be subjective, grading & feedback should not take more than 5 minutes per assignment.
 
-
 **Repository Naming**
 
 * It will be enticing and easy for students to name their homework something like Unit X Homework, Week X Homework, or Homework X. This has been discouraged in their homework instructions and any repositories without a more unique name should receive an `I` until the name is changed.
