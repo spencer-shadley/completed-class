@@ -91,7 +91,7 @@ After doing a review of Databases and React and giving some help and time for st
 
 * Go over the next set of slides.
 
-* Tell students they should challenge themselves, and that you'll take no excuses. They've made it this far already &mdash; it's time for them to take everything they learned and produce their best work yet.
+* Tell students should challenge themselves, and that you'll take no excuses. They've made it this far already &mdash; it's time for them to take everything they learned and produce their best work yet.
 
 * **Go over what's expected for the project:**
 
