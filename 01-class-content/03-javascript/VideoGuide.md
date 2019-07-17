@@ -28,3 +28,15 @@ Learn the basics of for-looping through arrays in this simple zoo activity.
 
 Learn to Solve Problems Algorithmically in JavaScript. Uses Rock, Paper, Scissors algorithm as an example.
 [Watch the Video!](https://www.youtube.com/watch?v=zRWDJOqeDhg&index=5&list=PLgJ8UgkiorCmEChEWfh7sxPvQwYAx3Kt0)
+
+
+### Lesson 3.2 - Rock, Paper, Scissors
+
+Learn how to make an interactive game between a user and a computer in the browser - ROCK, PAPER, SCISSORS!
+[Watch the Video!](https://www.youtube.com/watch?v=Tio88WjwFO0)
+
+### Lesson 3.3 - Car Adventure Game
+
+Learn about JavaScript objects by making an interactive game!
+[Watch the Video!](https://www.youtube.com/watch?v=jtU6YrNPv7E&feature=youtu.be)
+

@@ -78,7 +78,6 @@ Having an active and healthy commit history on GitHub is important for your futu
 3. The width of the section should be:
    * section: 495px
 
-
 ### Helpful Hints
 
 * For a refresher on working with Git and GitHub, consult the GitHub Supplemental Guide we sent you in class.
