@@ -82,7 +82,9 @@ By the end of class students will
 
 * When going over ORMs with your class, it is important that you keep the `server.js` files and the `orm.js` files open at the same time. Being able to see both files at the same time should help your students to understand how the code within these files functions alongside each another.
 
-* At the end of class, make sure you direct students to `MySQLHerokuDeploymentProcess.pdf`. The guide provides step-by-step instructions to setting up a remote MySQL database; your students won't be able to deploy their apps without it.
+* At the end of class, make sure you direct students to the [MySQL and Heroku Deployment Guide](../Supplemental/MySQLHerokuDeploy). The guide provides step-by-step instructions to setting up a remote MySQL database; your students won't be able to deploy their apps without it.
+
+  * Consider walking students through the process and letting them see you do it first hand
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=247ef209-dadd-4779-a335-a871014dc0d5)
