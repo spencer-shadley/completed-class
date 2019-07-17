@@ -38,6 +38,8 @@ In today's class we'll reinforce the concepts we went over in the last class inc
 
   * We have created a sequelize deployment guide, video deployment guide, quick start guide, and CRUD action cheat sheet. These resources will be incredibly helpful to students so please be sure to zip up the Supplemental Folder and provide it to your students.
 
+  * Consider walking students through the process and letting them see you do it first hand
+
   * [Supplemental Materials](../../../../02-lesson-plans/part-time/15-Week/Supplemental)
 
 ### Sample Class Video (Highly Recommended)

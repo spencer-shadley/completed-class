@@ -40,6 +40,13 @@ In this class, you will introduce the concept of the NoSQL database with MongoDB
 
 * If you haven't used MongoDB much in the past, take a look at this week's queries and solutions. This should prime you for the lecture.
 
+* We have provided written and video guides for deploying MongoDB based applications to Heroku. Be sure to direct your students to these resources.
+
+  * [MongoDBDeploy](../../../../18-Week/Supplemental/MongoDBDeploy.md)
+
+  * Consider walking students through the process and letting them see you do it first hand
+
+
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e5f3ad48-d099-4856-b540-a9fd0f44a5c4)
 

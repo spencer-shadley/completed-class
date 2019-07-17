@@ -28,7 +28,7 @@ Today we will be introducing students to the basics of Object-Relational Mapping
 
 * At the end of class, make sure you direct students to the [MySQL and Heroku Deployment Guide](../Supplemental/MySQLHerokuDeploy). The guide provides step-by-step instructions to setting up a remote MySQL database; your students won't be able to deploy their apps without it.
 
-*Consider
+  * Consider walking students through the process and letting them see you do it first hand
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4e34f941-a149-4f4c-a1e9-71c194600c6c)
