@@ -292,7 +292,7 @@ and walk students through the process of building a layout.
 
   * The Bootstrap file required the Bootstrap CSS link
 
-  * Then show students how you can easily copy and paste code to create a Navbar. (You can copy and paste this from the Bootstrap Website:  <https://getbootstrap.com/docs/4.3/components/navbar/>).
+  * Then show students how you can easily copy and paste code to create a Navbar. (You can copy and paste this from W3 Schools <http://www.w3schools.com/bootstrap/bootstrap_navbar.asp>).
 
   * Show students how the main body goes into a container and that individual rows hold the various components
 

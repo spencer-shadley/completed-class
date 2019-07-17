@@ -20,7 +20,7 @@ This week, students will learn how to set up web servers with Node.js and how ex
 * [First Server](../../../01-Class-Content/13-express/01-Activities/01-FirstServer)
 * [Star Wars Build Up](../../../01-Class-Content/13-express/01-Activities/08-StarWars-1)
 * [Star Wars Finalized](../../../01-Class-Content/13-express/01-Activities/14-FinalStarwarsApp)
-* [Hot Restaurant](../../../01-Class-Content/13-express/01-Activities/15-HotRestaurant)
+* [Hot Restaurant](../../../01-Class-Content/13-express/01-Activities/16-HotRestaurant)
 
 ### Helpful Links
 

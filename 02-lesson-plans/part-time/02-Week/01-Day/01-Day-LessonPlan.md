@@ -65,7 +65,7 @@ Today's class is focused on empowering students with GitHub Pages for live deplo
   >
   > **Harder Tone:** As part of the program, student success actively monitors homework submission rates. If you fall below two homework submissions, they will bar you from career services. Don't let that be you! 
 
-* Then let students know when Office Hours + Additional Help are available. Feel free to add a custom slide to the slide deck. 
+* Then let students know when Office Hours + Additional Help are available (using the slide). Make sure to change the links according to your class's repo in advance. 
 
 ### 4. Instructor Do: Recapping (10 min)
 

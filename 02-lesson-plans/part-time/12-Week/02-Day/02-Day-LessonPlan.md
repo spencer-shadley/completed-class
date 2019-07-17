@@ -197,7 +197,7 @@ connection.connect(function(err) {
   * Point out that we run the query inside of the body of the `connect` method's callback function. Since the `connection.connect` and `connection.query` methods both run asynchronously, there's no guarantee that the `connection.query` method will run after `connect` if it's run from outside. If we didn't want to put the entire query method inside of the callback, we could also wrap the query method inside of a function. Example:
 
   ```js
-  connection.connect(function(err) {
+    connection.connect(function(err) {
     if (err) throw err;
     console.log("connected as id " + connection.threadId);
     selectAll();

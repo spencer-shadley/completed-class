@@ -8,7 +8,6 @@ In this week we will be introducing students to their first taste of JavaScript.
 
 * By the end of this unit, students will be able to:
   * Explain the fundamentals of building JavaScript programs to increase employer readiness.
-  * Update HTML with JavaScript query selectors to dynamically change static webpages.
   * Loop through arrays in order to dynamically manipulate data.
   * Create and parse JavaScript objects to ensure cohesiveness in their applications.
 
@@ -20,7 +19,6 @@ In this week we will be introducing students to their first taste of JavaScript.
   * Datatypes
   * Logging to the console
   * Alerts, prompts, confirms
-  * document.write
   * if / else conditions
   * Array functions
 
@@ -28,12 +26,6 @@ In this week we will be introducing students to their first taste of JavaScript.
   * Basic loops
   * Manipulating array data with loops
   * Iteration
-
-* Browser Events
-  * Events
-  * document.onkeyup
-  * document.getElementById
-  * Trigger functions on browser events
 
 * Functions
   * Function definition

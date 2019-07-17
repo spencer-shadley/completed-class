@@ -1,8 +1,8 @@
-## 01-Day Lesson Plan - Joys of JavaScript <!--links--> &nbsp; [⬅️](../../01-Week/05-Day/05-Day-LessonPlan.md) &nbsp; [➡️](../02-Day/02-Day-LessonPlan.md)
+## 2.1 Lesson Plan - Joys of JavaScript (10:00 AM) <!--links--> &nbsp; [⬅️](../../01-Week/05-Day/05-Day-LessonPlan.md) &nbsp; [➡️](../02-Day/02-Day-LessonPlan.md)
 
 ### Slideshow
 
-* This lesson's slides are available on Google Drive here: [02-1 The Joys of JavaScript](https://docs.google.com/presentation/d/19ATptZp_i6Yz1ZIusX5jFHQ-s-5UIVW4nxr-Xod6C6o/edit?usp=sharing)
+* This lesson's slides are available on Google Drive here: [02-1 The Joys of JavaScript](https://docs.google.com/presentation/d/1ccabN1AZ3SmYtLSo7HeadSrvfRK-5ty_X8p4ovCXVlE/edit?usp=sharing)
 
 * To add slides to the student-facing repository, download the slides as a PDF by navigating to File > "Download as" and choose "PDF document." Add the slide PDF file to your class repository along with other necessary files.
 
@@ -107,7 +107,7 @@ Today's class is focused on providing students with the very basics of JavaScrip
 
 ### 1. Everyone Do: Welcome Students (1 min)
 
-* Welcome students and see how they are doing while opening up the slide deck [02-1 The Joys of JavaScript](https://docs.google.com/presentation/d/19ATptZp_i6Yz1ZIusX5jFHQ-s-5UIVW4nxr-Xod6C6o/edit?usp=sharing).
+* Welcome students and see how they are doing while opening up the slide deck [02-1 The Joys of JavaScript](https://docs.google.com/presentation/d/1ccabN1AZ3SmYtLSo7HeadSrvfRK-5ty_X8p4ovCXVlE/edit?usp=sharing).
 
 ### 2. Instructor Do: Today's Class (1 min)
 
@@ -125,7 +125,7 @@ Begin going through the slides.
   * **Keep Organized:** Many students around this time start to have files in literally every location possible. It gets incredibly confusing trying to help them when everything is so scattered. Let them know that a little folder organization can go a long way in creating easy-to-read applications.
   * **Overall Tips:** Just read these. Self-explanatory. Key point&mdash;encourage students to REDO coding exercises on their own. Many students just go home and re-flip through slides or read through code without actually trying to do it themselves. Hands-on experience is a lot better than looking code over secondhand.
 
-### 4. Partners Do: Code Dissection (7 mins)
+### 4. Partners Do: Code Dissection (7 mins) (High)
 
 * Let students know that a big part of JavaScript learning requires you to "learn on the fly".
 
@@ -163,7 +163,7 @@ Begin going through the slides.
 
 * Make sure students know that strings require quotation marks but that numbers and booleans do not.
 
-### 7. Students Do: Variable Activity (10 mins)
+### 7. Students Do: Variable Activity (10 mins) (High)
 
 * Slack out the following files and instructions to students.
 
@@ -217,7 +217,7 @@ Begin going through the slides.
 
 * Make certain to show students how the `console.log` statement can be used to display text, variables, or a combination of the two.
 
-### 11. Students Do: Console Log Activity (7 mins)
+### 11. Students Do: Console Log Activity (7 mins) (High)
 
 * Slack out the following files and instructions:
 
@@ -258,7 +258,7 @@ Begin going through the slides.
 
 * Go over the remaining slides on this section. Create engagement by having students remind you of the differences between the three functions.
 
-### 15. Students Do: Alert Activity (15 min)
+### 15. Students Do: Alert Activity (15 min) (Critical)
 
 * At this point, Slack out the following files and instructions.
 
@@ -275,21 +275,39 @@ Begin going through the slides.
 
 * Go over the previous activity using [prompt-sushi.html](../../../../01-Class-Content/03-javascript/01-Activities/07-PromptSushi/Solved/prompt-sushi.html) in `07-PromptSushi/Solved`.
 
-### 17. Instructor Do: Document.write (4 mins)
+### 17. Instructor Note: Document.write (1 min)
 
-* Go over the slide on `document.write`. We'll be demonstrating it in code in a future slide.
+* We have saved all DOM-related tasks for the next unit, so don't mention `document.write` at this point. If students ask how to print information on the screen instead of in alerts, let them know that we'll be going over that soon (but not today!).
 
 ### 18. Instructor Demo: If/Else Statement (8 mins)
 
 * Proceed with the slides to the demo of conditionals. Use [08-ConditionalDemo/conditional-demo.html](../../../../01-Class-Content/03-javascript/01-Activities/08-ConditionalDemo/conditional-demo.html) as a starting point. Walk students through the fact that the confirm prompt is used to grab a boolean.
 
-    ![6-ConfirmConditional](Images/6-ConfirmConditional.png)
+    ```js
+      // Here we create our prompt and confirm variables which will store user input.
+      var confirmSushi = confirm("Do you like sushi?");
+      var confirmGingerTea = confirm("Do you like Ginger Tea?");
+      var sushiType = prompt("What kind of sushi do you like?");
+
+      // If the user likes sushi (confirmSushi === true), we run the following block of code.
+      if (confirmSushi) {
+        alert("You like " + sushiType + "!");
+      }
+      // If the user likes ginger tea (confirmGingerTea === true), we run the following block of code.
+      else if (confirmGingerTea) {
+        alert("You like ginger tea!!");
+      }
+      // If neither of the previous condition were true, we run the following block of code.
+      else {
+        alert("You don't like sushi or ginger tea.");
+      }
+    ```
 
 ### 19. Instructor Slides: If/Else Statement (5 mins)
 
 * Proceed through the instructor slides on conditionals.
 
-### 20. Partners Do: If/Else Activity #1 (15 mins)
+### 20. Partners Do: If/Else Activity #1 (15 mins) (Critical)
 
 * Slack out the instructions below.
 
@@ -301,13 +319,11 @@ Begin going through the slides.
 
     * Create a website (from scratch) that asks users if they eat steak.
 
-    * If they respond with "yes", write the following to the page: "Here’s a Steak Sandwich!"
+    * If they respond with "yes", alert the following to the page: "Here’s a Steak Sandwich!"
 
-    * If they respond with "no", write the following to the page: "Here’s a Tofu Stir-Fry!"
+    * If they respond with "no", alert the following to the page: "Here’s a Tofu Stir-Fry!"
 
     * Bonus: Ask what the user’s birth year is. If they are under 21, alert the following: "No Sake for you!"
-
-    * Hint: You will need to use `document.write()` from a few slides back.
 
 - - -
 
@@ -317,7 +333,7 @@ Begin going through the slides.
 
 ### 22. Instructor Do: Review If/Else Activity #1 (10 mins)
 
-* Review the solution found in [09-ConditionalActivity](../../../../01-Class-Content/03-javascript/01-Activities/09-ConditionalActivity). Point out the uses of conditionals and of `document.write`. For the bonus, run the program with various ages, and show students how each elicits a different output.
+* Review the solution found in [09-ConditionalActivity](../../../../01-Class-Content/03-javascript/01-Activities/09-ConditionalActivity). Point out the uses of conditionals. For the bonus, run the program with various ages, and show students how each elicits a different output.
 
     ![7-Sake](Images/7-Sake.png)
 
@@ -333,7 +349,7 @@ Begin going through the slides.
 
     ![8-Conditionals](Images/8-Conditionals.png)
 
-### 24. Instructor Do: Arrays Slides (5 mins)
+### 24. Instructor Do: Arrays Slides (5 mins) (Critical)
 
 * Run through the Array example in the slides. Describe arrays as being like "lists" or "collections" of variables. Each variable has its own index ID (sort of like the "pen" number for our Zoo example).
 
@@ -341,13 +357,13 @@ Begin going through the slides.
 
 * Indexes start at 0.
 
-### 25. Instructor Do: Array Demo (6 mins)
+### 25. Instructor Do: Array Demo (6 mins) (Critical)
 
 * Open the file [arrays-demo.html](../../../../01-Class-Content/03-javascript/01-Activities/11-ArraysDemo/arrays-demo.html) in `11-ArraysDemo`. Show students how this example matches the one in the slides.
 
 * Point out how the index system works (i.e. starts at 0 and ends one before the length).
 
-### 26. Everyone Do: Class Code Dissection (15 mins)
+### 26. Everyone Do: Class Code Dissection (15 mins) (Critical)
 
 * Slack out the following file and instructions to students.
 
@@ -422,7 +438,7 @@ Begin going through the slides.
 
 * Slack out [array-logs-solved.html](../../../../01-Class-Content/03-javascript/01-Activities/15-CoolPeopleArray/Solved/array-logs-solved.html) in `15-CoolPeopleArray/Solved` when finished.
 
-### 30. Everyone Do: Array Setting (5 mins)
+### 30. Everyone Do: Array Setting (5 mins) (Critical)
 
 * Slack out the file and the instructions below.
 
@@ -472,7 +488,7 @@ Begin going through the slides.
 
   * Point out how the selected vegetable changes on each loop iteration.
 
-### 34. Students Do: For Loop Zoo (15 mins)
+### 34. Students Do: For Loop Zoo (15 mins) (Critical)
 
 * Slack out the file and the instructions below.
 
@@ -488,7 +504,7 @@ Begin going through the slides.
 
     * Once you think your code is functioning properly, share it with the person sitting next to you.  
 
-### 35. Instructor Do: Review Activity (5 mins)
+### 35. Instructor Do: Review Activity (5 mins) (Critical)
 
 * Review [zoo-loop-solved.html](../../../../01-Class-Content/03-javascript/01-Activities/18-ZooLoop/Solved/zoo-loop-solved.html) in `18-ZooLoop/Solved`.
 
@@ -498,21 +514,11 @@ Begin going through the slides.
 
 * Slack out the [video review for this activity](https://www.youtube.com/watch?v=zJO9g7S2_Xo) as well.
 
-* Before moving on, review the concept of functions.
-
-  * Explain that a function is a piece of code that lives somewhere and that performs a repeatable action.
-
-  * Use `console.log` as an example to demonstrate the concept of arguments.
-
-  * Finally, write a function that accepts an array as an argument and that logs the value at each of its indices.
-
-  * Explain that just as `for` loops allow us to generalize _the process_ of looping through a given array, this function allows us to generalize _the array itself_ that we loop through.
-
 ### 36. TAs Do: Introduce Homework (1 min)
 
 * At this point, TAs should introduce students to the homework. This typically just means opening the homework solution in the browser and showing students what the final product looks like or showing the video and talking over it.
 
-### 37. Instructor Do: Questions (10 mins, or remaining time)
+### 37. Instructor Do: Questions (10 mins)
 
 * If time remains and there isn't sufficient time for the challenges, spend the remainder of the class answering questions.
 

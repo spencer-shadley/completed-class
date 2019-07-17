@@ -338,11 +338,7 @@ _A high-level, diagram view of our TV application._
 
     * Test that your code works properly by running the `cli.js` file with arguments. e.g. `node cli actor Jennifer Aniston`.
 
-  * **Bonus**:
-
-    * Once you've finished the basic activity, update the `cli.js` file to use the `inquirer` npm package to prompt the user for their search and term rather than `process.argv`.
-
-  * **Hints**:
+  * **Hints**: 
 
     * Implementing the `findActor` method should be very similar to the `findShow` method, refer to this if stuck.
 
@@ -350,7 +346,7 @@ _A high-level, diagram view of our TV application._
 
 ### 9. Instructor Do: Review Activity (15 mins) (Critical)
 
-* Open up the `tv.js` inside `14-Stu_FinalTVApp/Basic/Solved` file, and walk through the solution.
+* Open up the `tv.js` inside `14-Stu_FinalTVApp/Solved` file, and walk through the solution.
 
   ![Find Actor](Images/05-Find-Actor-Code.png)
 

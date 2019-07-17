@@ -34,9 +34,10 @@ In this class, we will be deepening students understanding of ReactJS through re
 
 * We have created a MERN Stack Deployment guide along with an accompanying video guide. Please provide the `Supplemental Folder` to your students which will contain `create-react-express` along with a `MERNHerokuDeploy` guide.
 
-[Supplemental](../../../../01-Class-Content/20-react/03-Supplemental)
+  * [MERN Deploy via Heroku](../../../../02-lesson-plans/part-time/20-Week/Supplemental)
 
-
+  * Consider walking the class through the deployment process so they can see it first hand.
+  
 - - -
 
 ### Class Objectives

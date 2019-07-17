@@ -138,10 +138,6 @@ After, we will be introducing students to the basic concepts behind back-end ser
 
 * Ask which groups would like to go first, then second, then third and so on. When groups stop responding, assign the remaining teams to random slots (and write this list down).
 
-* It is recommended that you prepare a list of the GitHub Pages links for all deployed repos so that students can quickly launch their apps. 
-
-* If students have hosted presentations on Google Presentations, compile a list of those as well to avoid switching computers.  
-
 ### 2. Project Presentations (60 mins)
 
 * Go down the list and send each group up to the front of class.

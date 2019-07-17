@@ -26,20 +26,26 @@ In this class, you will introduce the concept of the NoSQL database with MongoDB
 
 * The latest project week will have proved exhausting for most students. Make sure they feel reinvigorated by doling out some helpful feedback and, most importantly, some extreme encouragement--they've earned it.
 
-* Before class, take a look at the slide show and feel free to edit these sections to make them fit with your class.
+* Before class, take a look at the slide show and edit these sections to make sure they fit with your class.
 
   * _Advice for Next Time_ and _Next Steps_: these should reflect your students' experiences in project week.
   * _The Road Ahead_: 
 
     * The current slide lines out a path from now to the end of the course, marked with the libraries that we originally planned to teach our students.
-
       * If your future topics or the order of your next lectures differ from the slide, feel free to edit it to reflect your future coursework.
 
-  * _Your Goals_: Feel free to edit these slides so they include the best goals that students set out in the beginning of the course.
+  * _Your Goals_: Edit these slides so they include the best goals that students set out in the beginning of the course.
 
 * Before class, make sure you install MongoDB and Robo 3T on your machine--you'll need both.
 
 * If you haven't used MongoDB much in the past, take a look at this week's queries and solutions. This should prime you for the lecture.
+
+* We have provided written and video guides for deploying MongoDB based applications to Heroku. Be sure to direct your students to these resources.
+
+  * [MongoDBDeploy](../../../../18-Week/Supplemental/MongoDBDeploy.md)
+
+  * Consider walking students through the process and letting them see you do it first hand
+
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e5f3ad48-d099-4856-b540-a9fd0f44a5c4)

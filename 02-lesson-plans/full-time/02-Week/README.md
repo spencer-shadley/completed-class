@@ -10,7 +10,6 @@ Then will be introducing students to jQuery. Students will understand the basic 
 
 * By the end of this unit, students will be able to:
   * Explain the fundamentals of building JavaScript programs to increase employer readiness.
-  * Update HTML with JavaScript query selectors to dynamically change static webpages.
   * Loop through arrays in order to dynamically manipulate data.
   * Create and parse JavaScript objects to ensure cohesiveness in their applications.
   * Use jQuery to dynamically render elements to a webpage from application state, giving static websites more app-like functionality.
@@ -25,7 +24,6 @@ Then will be introducing students to jQuery. Students will understand the basic 
   * Datatypes
   * Logging to the console
   * Alerts, prompts, confirms
-  * document.write
   * if / else conditions
   * Array functions
 
@@ -33,12 +31,6 @@ Then will be introducing students to jQuery. Students will understand the basic 
   * Basic loops
   * Manipulating array data with loops
   * Iteration
-
-* Browser Events
-  * Events
-  * document.onkeyup
-  * document.getElementById
-  * Trigger functions on browser events
 
 * Functions
   * Function definition

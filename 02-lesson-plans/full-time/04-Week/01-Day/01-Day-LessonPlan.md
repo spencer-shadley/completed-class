@@ -78,8 +78,6 @@ In this class, we will be introducing the concept of data persistence and simple
 
 * If there are any issues with the data in the firebase databases, use [Firebase Manager](https://firebase-manager-fsf.netlify.com/) to clear them. To illustrate database creation in firebase, create your own personal account to use for demonstration purposes.
 
-  * **Important**: Be sure you always have two links for firebase: one each for the core and the realtime database. You'll need both when demonstrating and running firebase examples locally - if you remove the second link when copying over your own app configuration, the `database` code won't work.
-
 * Have your TAs reference [01-Day-Time-Tracker](01-Day-Time-Tracker.xlsx) to help keep track of time during class.
 
 ### Sample Class Video (Highly Recommended)

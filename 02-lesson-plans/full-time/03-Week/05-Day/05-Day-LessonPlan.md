@@ -133,7 +133,7 @@ In this class, we will be culminating our introduction of APIs with a team-based
 
   * Point out that each imageURL being generated is completely unique. This is because the API is giving us a random URL each time.
 
-  * Point out that if you enter our queryURL <http://api.giphy.com/v1/gifs/random?api_key=BkaUZZWcFij6J7AoQj3WtPb1R2p9O6V9&tag=cats> directly into our browser, we'll get a different JSON
+  * Point out that if you enter our queryURL <http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=cats> directly into our browser, we'll get a different JSON
     each time.
 
       ![2-Cats_3](Images/2-Cats_3.png)

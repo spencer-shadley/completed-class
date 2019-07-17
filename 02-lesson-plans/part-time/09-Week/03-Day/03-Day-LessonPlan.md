@@ -20,9 +20,7 @@ In this lecture, your students will present their project apps to the class. The
 
 ### -1. Instructor Do: Set Up Your Equipment (15 mins before class)
 
-* Make sure to come to class and setup your laptop. It is recommended that you prepare a list of the GitHub Pages links for all deployed repos so that students can quickly launch their apps. 
-
-* If students have hosted presentations on Google Presentations, compile a list of those as well to avoid switching computers.  
+* Make sure to come to class and setup your laptop, and make sure to clone all students projects onto your local machine, as to avoid switching computers throughout the night.
 
 ### 0. Instructor Do: Welcome Class (1 min)
 

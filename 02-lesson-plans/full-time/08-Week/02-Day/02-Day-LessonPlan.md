@@ -34,7 +34,7 @@ By the end of class students will:
 
 * We have created a sequelize deployment guide, video deployment guide, quick start guide, and CRUD action cheat sheet. These resources will be incredibly helpful to students so please be sure to zip up the Supplemental Folder and provide it to your students.
 
-  [Supplemental Materials](../../../../01-Class-Content/15-sequelize/03-Supplemental)
+  [Supplemental Materials](../Supplemental)
 
 ### Sample Class Video (Highly Recommended)
 
@@ -117,7 +117,7 @@ By the end of class students will:
 
 * Thank students for working to find answers to the past few exercises. Reading documentation is it's own skill they'll become better at with practice. In the meantime, we've created a Sequelize CRUD actions cheat sheet for them that should make basic usage much easier.
 
-* Slack out the Sequelize CRUD actions cheat sheet [`CRUD Actions Cheat Sheet`](../../../../01-Class-Content/15-sequelize/03-Supplemental/Guides/SequelizeCRUDActionsCheatSheet.pdf) 
+* Slack out the Sequelize CRUD actions cheat sheet [`CRUD Actions Cheat Sheet`](../Supplemental/Guides/SequelizeCRUDActionsCheatSheet.pdf) 
 
 - - -
 

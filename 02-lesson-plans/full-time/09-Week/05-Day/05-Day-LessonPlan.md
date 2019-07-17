@@ -23,8 +23,7 @@ By the end of class students will:
 * * **DO NOT HAVE STUDENTS CONNECT TO A REMOTE DATABASE WHEN DEVELOPING LOCALLY.** If your students do not properly use environment variables, they may not be able to work on activities or homework on your classroom's internet connection (also, using a remote database for local development is considered bad practice). Use local database connections when working locally, and only connect to your Heroku database when applications are deployed.
 * **IMPORTANT**: We have created written and video guides for students to help deploying to Heroku with MongoDB/Mongoose. Please provide the students the Supplemental folder within Week 18 so they have access to these resources.
 
-* [Supplemental Content](../../../../01-Class-Content/18-mongo-mongoose/03-Supplemental)
-
+* [Supplemental Content](../Supplemental)
 
 ### Sample Class Video (Highly Recommended)
 

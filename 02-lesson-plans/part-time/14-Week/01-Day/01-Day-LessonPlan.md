@@ -143,13 +143,17 @@ Students will be diving into the basics of Handlebars today, a semantic templati
   * <http://localhost:3000/coolness-chart>
   * <http://localhost:3000/attitude-chart/relaxed>
 
-* After showing off how the application functions and answering whatever questions your students may have, slack out the following instructions and file...
-
-[03-SeinfeldApp/schema.sql](../../../../01-Class-Content/14-handlebars/01-Activities/03-SeinfeldApp/Solved/schema.sql)
+* After showing off how the application functions and answering whatever questions your students may have, slack out the following instructions...
 
 * **Instructions**
 
-  * Create a Node Application with Express and MySQL with three Express routes.
+  * Create a seinfeld_db database with an actors table.
+
+    * The actors table will have a column for id (PRIMARY KEY AUTO_INCREMENT int), name (varchar), coolness_points (int), and attitude (varchar).
+
+  * Add in four actors with different names, coolness_points, and attitudes.
+
+  * Create a Node Application with Express, and MySQL with three Express routes.
 
     * Create a `/cast` route that will display all the actors and their data ordered by their id's.
 

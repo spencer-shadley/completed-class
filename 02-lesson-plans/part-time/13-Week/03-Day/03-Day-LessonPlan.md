@@ -42,7 +42,7 @@ Another example, using double equals to check for expected input, you may find t
 
 Today, we'll be asking students to create an Express based web application for handling reservation requests. In the process of building today's assignment, students will reinforce their understanding of Express Servers, Routing, and the utility AJAX for front-end interaction. 
 
-`Summary: Complete activity 15 in Unit 13`
+`Summary: Complete activity 16 in Unit 13`
 
 ##### Attention: If you’re teaching a part time section and this isn’t a Saturday, please use the “Weekday” tab inside of the "03-Day-TimeTracker.xlsx" for activity lengths instead of those printed on this lesson plan
 
@@ -118,7 +118,7 @@ Today, we'll be asking students to create an Express based web application for h
   ![1-HotRestaurant_5](Images/1-HotRestaurant_5.png)
 
 * Let students know that they will be building this application from scratch over the course of the next few hours.
-* Feel free to open up the `phases.md` file found in `15-HotRestaurant` folder and keep it on the screen during the development. Scroll down to the next phase when the time is up.
+* Feel free to open up the `phases.md` file found in `16-HotRestaurant` folder and keep it on the screen during the development. Scroll down to the next phase when the time is up.
 
 ### 3. Instructor Do: Group Formation + Initial Instructions (10 mins)
 

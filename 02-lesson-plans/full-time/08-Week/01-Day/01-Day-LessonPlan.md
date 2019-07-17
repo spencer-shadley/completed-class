@@ -44,7 +44,7 @@ By the end of class students will
 
 * **Important**: Well be working with the same application, converting it over to use Sequelize and adding some additional functionality. As we're going along doing this, the app will break. It won't be fully functioning till towards the end, but the instructions for each activity will how to verify that it was done correctly, i.e. "sequelize should have created a table with these values".
 
-* **DO NOT HAVE STUDENTS CONNECT TO A REMOTE DATABASE WHEN DEVELOPING LOCALLY.** The correct process is described in [Supplemental/SequelizeHerokuDeploymentProcess.pdf](../../../../01-Class-Content/15-sequelize/03-Supplemental/Guides/SequelizeHerokuDeploymentProcess.md), and if you try to skip this, your students may not be able to work on activities or homework on your classroom's internet connection (also, using a remote database for local development is considered bad practice).
+* **DO NOT HAVE STUDENTS CONNECT TO A REMOTE DATABASE WHEN DEVELOPING LOCALLY.** The correct process is described in [Supplemental/SequelizeHerokuDeploymentProcess.pdf](../../../../02-lesson-plans/full-time/08-Week/Supplemental/Guides/SequelizeHerokuDeploymentProcess.md), and if you try to skip this, your students may not be able to work on activities or homework on your classroom's internet connection (also, using a remote database for local development is considered bad practice)
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e816511a-6e34-41ef-8ac2-a8720159c753)
@@ -229,11 +229,11 @@ By the end of class students will
 
 * Slack out the Sequelize CLI Skeleton [06-SequelizeCLI](../../../../01-Class-Content/15-sequelize/01-Activities/06-SequelizeCLI/Unsolved)
 
-* As well as the [Sequelize Quick Start Guide](../../../../01-Class-Content/15-sequelize/03-Supplemental/Guides/SequelizeQuickStartGuide.pdf) have the students follow along with you as you initialize a new project using the Sequelize CLI.
+* As well as the [Sequelize Quick Start Guide](../Supplemental/Guides/SequelizeQuickStartGuide.pdf) have the students follow along with you as you initialize a new project using the Sequelize CLI.
 
-We will be using this method of setting up Sequelize projects going forward, so encourage students to practice with this guide before next class.
+* We will be using this method of setting up Sequelize projects going forward, so encourage students to practice with this guide before next class.
 
-**NOTE**: The Sequelize CLI has a lot of functionality, including creating models via the CLI. **We will only be using be using the CLI to initialize an index.js file, and a config.json file**. Discourage model creation with the CLI (if it comes up at any point), as while this is fine for simple models, it will create far more trouble than it's worth later in the week when our models become more complex if students have never written them by hand before.
+* **NOTE**: The Sequelize CLI has a lot of functionality, including creating models via the CLI. **We will only be using be using the CLI to initialize an index.js file, and a config.json file**. Discourage model creation with the CLI (if it comes up at any point), as while this is fine for simple models, it will create far more trouble than it's worth later in the week when our models become more complex if students have never written them by hand before.
 
 - - -
 

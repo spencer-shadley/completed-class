@@ -198,9 +198,9 @@ Also:
 
 * We have created a written guide and video guide on how to connect a GitHub repository to a Heroku Application for continuous deployment. Please provide these to your students along with the following activity instructions.
 
-    [Connect Repo with Heroku Guide](../../../../01-Class-Content/16-project-2/03-Supplemental/Guides/GitHubHerokuConnect.md)
+    * [Connect Repo with Heroku Guide](../Supplemental/Guides/GitHubHerokuConnect.md)
 
-    [Connect Repo with Heroku Video](https://youtu.be/GgNcs9zlFSA?list=PLOFmg4xbN_TPrB6w4rThsFanVxJI_SfER)
+    * [Connect Repo with Heroku Video](https://youtu.be/GgNcs9zlFSA?list=PLOFmg4xbN_TPrB6w4rThsFanVxJI_SfER)
 
 * Refer to [01-Stu_Create-Repository](../../../../01-Class-Content/16-project-2/01-Activities/01-Stu_Create-Repository/README.md), which contains the following instructions:
 

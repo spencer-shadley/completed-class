@@ -1,8 +1,8 @@
-## 3.2 Lesson Plan - Jumping for JavaScript <!--links--> &nbsp; [⬅️](../01-Day/01-Day-LessonPlan.md) &nbsp; [➡️](../03-Day/03-Day-LessonPlan.md)
+## 3.2 Lesson Plan - Jumping for JavaScript (6:30 PM) <!--links--> &nbsp; [⬅️](../01-Day/01-Day-LessonPlan.md) &nbsp; [➡️](../03-Day/03-Day-LessonPlan.md)
 
 ### Slideshow
 
-* This lesson's slides are available on Google Drive here: [03-2 Jumping for JavaScript](https://docs.google.com/presentation/d/1lQguenUfeJx-jRDscMYu5j_qJ0t9H5TQaRur97xkIzY/edit?usp=sharing)
+* This lesson's slides are available on Google Drive here: [03-2 Jumping for JavaScript](https://docs.google.com/presentation/d/1Em_iAbGzyujB5RXe-NF9KGYTzfiFN3R63Z1NRpH9MVc/edit?usp=sharing)
 
 * To add slides to the student-facing repository, download the slides as a PDF by navigating to File > "Download as" and choose "PDF document." Add the slide PDF file to your class repository along with other necessary files.
 
@@ -89,7 +89,7 @@ By the end of class, students will be able to:
 
 ### 1. Instructor Do: Welcome Students (1 min)
 
-* Welcome students. Then open the slide deck [03-2 Jumping for JavaScript](https://docs.google.com/presentation/d/1lQguenUfeJx-jRDscMYu5j_qJ0t9H5TQaRur97xkIzY/edit?usp=sharing).
+* Welcome students. Then open the slide deck [03-2 Jumping for JavaScript](https://docs.google.com/presentation/d/1Em_iAbGzyujB5RXe-NF9KGYTzfiFN3R63Z1NRpH9MVc/edit?usp=sharing).
 
 ### 2. Instructor Do: Today's Class (1 min)
 
@@ -137,7 +137,7 @@ By the end of class, students will be able to:
 
 * Slack out `array-logs-solved.html` in `15-CoolPeopleArray/Solved`	 when finished.
 
-### 6. Everyone Do: Array Setting (5 mins)
+### 6. Everyone Do: Array Setting (5 mins) (High)
 
 * Slack out the file and the instructions below.
 
@@ -169,7 +169,7 @@ By the end of class, students will be able to:
 
   * **File**
 
-    * `my-first-loop.html`in `17-MyFirstLoop/`
+    * `my-first-loop.html` in `17-MyFirstLoop/`
 
   * **Instructions**
 
@@ -187,7 +187,7 @@ By the end of class, students will be able to:
 
   * Point out how the selected vegetable changes on each loop iteration.
 
-### 10. Students Do: For Loop Zoo (15 mins)
+### 10. Students Do: For Loop Zoo (15 mins) (High)
 
 * Slack out the file and the instructions below.
 
@@ -203,7 +203,7 @@ By the end of class, students will be able to:
 
     * Once you think your code is functioning properly, share it with the person sitting next to you.  
 
-### 11. Instructor Do: Review Activity (5 mins)
+### 11. Instructor Do: Review Activity (5 mins) (High)
 
 * Review `zoo-loop-solved.html` in `18-ZooLoop/Solved`.
 
@@ -213,16 +213,6 @@ By the end of class, students will be able to:
 
 * Slack out the [video review for this activity](https://www.youtube.com/watch?v=zJO9g7S2_Xo) as well.
 
-* Before moving on, review the concept of functions.
-
-  * Explain that a function is a piece of code that lives somewhere and that performs a repeatable action.
-
-  * Use `console.log` as an example to demonstrate the concept of arguments.
-
-  * Finally, write a function that accepts an array as an argument and that logs the value at each of its indices.
-
-  * Explain that just as `for` loops allow us to generalize _the process_ of looping through a given array, this function allows us to generalize _the array itself_ that we loop through.
-
 - - -
 
 ### 12. BREAK (15 mins)
@@ -231,7 +221,7 @@ By the end of class, students will be able to:
 
 - - -
 
-### 13. Students Do: Another Loop (0 min)
+### 13. Students Do: Another Loop (Optional) (0 mins)
 
 * If you are AHEAD of schedule and feel like students could benefit from another example, Slack out the following instructions.
 
@@ -247,7 +237,7 @@ By the end of class, students will be able to:
       ```
     * Don't use an array!
 
-### 14. Instructor Do: Review Activity (5 mins)
+### 14. Instructor Do: Review Activity (Optional) (0 mins)
 
 * Review `another-loop-solved.html` in `19-AnotherLoop/Solution`.
 
@@ -259,7 +249,7 @@ By the end of class, students will be able to:
 
 * Then Slack out `another-loop-solved.html`
 
-### 15. Partners Do: Loop with Conditions (Optional) (10 mins)
+### 15. Partners Do: Loop with Conditions (10 mins)
 
 * **Instructions**
 
@@ -279,52 +269,31 @@ By the end of class, students will be able to:
 
     ![/Images/7-HardLoop.png](Images/7-HardLoop.png)
 
-### 17. Everyone Do: Browser Events (10 mins)
+### 17. Students Do: Random Number Loop (7 mins) (Critical)
 
-* Explain that the next activity requires students to be familiar with the notion of browser events.
+* Slack out the following file and instructions to students.
 
-* Explain that when a user interacts with a web page, the page "keeps track" of many of the users actions.
+  * **File**:
 
-  * For example, explain that the browser keeps track of what users click on and of where they click.
+    * `random-numbers-unsolved.html` in `21-RandomNumbers/Unsolved`
 
-  * As another example, explain that the browser also keeps track of which keys a user presses.
+  * **Instructions**:
 
-* Open `events-examples.html` in `21-Events`.
+    * Research how to improve on `Math.random()` to generate a random whole number between 1 and 10 instead of a random decimal number.
 
-* Briefly demonstrate the code in Chrome.
+* Before they get started on the activity, briefly explain that we're using a built-in JavaScript feature called `Math.random()` to print 10 random numbers, but the numbers are all decimals. Prompt students to do some Googling to change this to print 10 random _whole_ numbers. It shouldn't take long for them to find the answer.
 
-* Then open the code in your text editor, and explain the following points:
+### 18. Instructor Do: Review Random Numbers (3 mins) (Critical)
 
-  * We can "hook onto" the event of a user pressing and releasing a key by referring to `document.onkeyup`.
+* Have a student share what they found. If you're running short on time, or no one has an answer, open the solution at [random-numbers-solved.html](../../../../01-Class-Content/03-javascript/01-Activities/21-RandomNumbers/Solved/random-numbers-solved.html) in `21-RandomNumbers/Solution`
 
-  * Setting `document.onkeyup` equal to a function tells JavaScript to execute that function _whenever the event occurs_.
+* Point out that we added a few more things around the random function: `Math.floor(Math.random() * 10) + 1`
 
-    * Point out that the `event` is available within the function.
+* If you have time, explain that multiplying `Math.random()` by 10 will now give us a random number between 0 and 9.999. We're still getting a decimal, though, so we use `Math.floor()` to round down. But now we're only getting a random number between 0 and 9, so we'll always add 1 to bump it up to 1-10.
 
-  * We can get the _key_ that the user pressed by writing `event.key`.
+* If time is short, simply state that this is a common solution when needing random whole numbers, and the more students see and use this syntax, the more it will make sense to them.
 
-  * We can get our hands on an element on the page that has an ID by using `document.getElementById`.
-
-    * Explain that this always returns a _single_ element.
-
-    * Explain that this gives us access to what is called a DOM node.
-
-      * Explain that a DOM node is a browser's way of representing an HTML element on the page.
-
-      * Explain that unlike the code in an HTML document, this DOM node can be modified "live" by our JavaScript.
-
-  * Finally, explain that this DOM node has a property called `textContent`, which represents the _text_ displayed _inside_ of the element.
-
-    * We've avoided `innerHTML` in this demonstration as a best practice.
-
-* Let students know that they don't have to remember all of this right now.
-
-  * Instead, Slack out the file, and encourage them to refer to it during their next activity whenever necessary.
-
-![This short snippet demonstrates most of the concepts students will need for the RPS activity.](Images/11-events.png)
-_This short snippet demonstrates most of the concepts students will need for the RPS activity._
-
-### 18. Instructor Do: Demo RPS (2 mins)
+### 19. Instructor Do: Demo RPS (2 mins)
 
 * Take a couple of minutes to demonstrate the final application `23-RPS-Coded`.
 
@@ -336,7 +305,11 @@ _This short snippet demonstrates most of the concepts students will need for the
 
   * Remind students that it's okay if they have to write a long chain of `if`/`else if`/`else` statements. If they find themselves doing this, they're on the right track.
 
-### 19. Students Do: Pseudocode RPS (3 mins)
+  * Emphasize that the computer _randomly_ chooses each time.
+
+* Take an extra few minutes here if necessary to make sure everyone understands the rules of Rock, Paper, Scissors (it's not uncommon for a few students to have never played as it's not universally popular around the world.)
+
+### 20. Students Do: Pseudocode RPS (3 mins)
 
 * Once they've played a few rounds, have them create a pseudocoded solution that lays out the steps involved in playing rock-paper-scissors against a computer.
 
@@ -356,39 +329,65 @@ _This short snippet demonstrates most of the concepts students will need for the
 
 * Encourage students to use this pseudocode as a starting point or as a guide with which to finish their own sketch of the application.
 
-### 20. Partners Do: Coding out RPS (60 mins)
+### 21. Partners Do: Coding out RPS (60 mins) (Critical)
 
-* Slack out the following files and instructions to students.
-
-  * **File**:
-
-    * `rps-2.html` in `23-RPS-Coded/Unsolved`
+* Slack out the following instructions to students.
 
   * **Instructions**:
 
     * In groups of 4, begin the process of coding out the rock-paper-scissors game.
 
-    * Do as much as you can on your own, but don't be afraid to ask for help if you feel your team is struggling.
+    * Have users play the game 10 times, then show them their total scores.
 
-    * **Note**: Don't use `document.write` as it will delete the contents of the body, including your JavaScript. Instead, use `document.getElementById` in conjunction with the `textContent` property, as you were shown earlier.
+    * Do as much as you can on your own, but don't be afraid to ask for help if you feel your team is struggling.
 
     * **Note**: Don’t worry. We know this is a very challenging assignment. We also know that you won’t know where to start. In fact, we haven’t shown you EVERYTHING you need yet, but that’s okay. Part of being a developer is figuring things out on your own through trial and error.
 
-### 21. Instructor Do: Review RPS (10 mins)
+### 22. Instructor Do: Review RPS (10 mins) (Critical)
 
-* Open `rps-7.html` in `23-RPS-Coded/Solved`, and walk students through the solution. Use the comments in the solution to help guide the conversation.
+* Open [rps-6.html](../../../../01-Class-Content/03-javascript/01-Activities/23-RPS-Coded/Solved/rps-6.html) in `23-RPS-Coded/Solved`, and walk students through the solution. Use the comments in the solution to help guide the conversation.
 
-    ![/Images/9-RPS_4.png](Images/9-RPS_4.png)
+    ```js
+      // Creates an array that lists out all of the options (Rock, Paper, or Scissors).
+      var computerChoices = ["r", "p", "s"];
 
-* Slack out the [video review](https://www.youtube.com/watch?v=Tio88WjwFO0) for this activity and emphasize how helpful videos for challenging activities like this can be.
+      // Creating variables to hold the number of wins, losses, and ties. They start at 0.
+      var wins = 0;
+      var losses = 0;
+      var ties = 0;
 
-- - -
+      for (var i = 0; i < 10; i++) {
+        // Randomly chooses a choice from the options array. This is the Computer's guess.
+        var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
-### 22. END
+        // Collect the user's response and convert to lower case.
+        var userGuess = prompt("Enter r, p, or s to play!");
+        userGuess = userGuess.toLowerCase();
 
-### 23. Everyone Do: Recap Activity (0 min)
+        // Only run game logic if user chose a valid option
+        if (userGuess === "r" || userGuess === "p" || userGuess === "s") {
 
-* If there is time still left over, complete the recap activity with students as a class `24-Recap`.
+          alert("The computer chose " + computerGuess);
+
+          // Win/lose conditions:
+          if ((userGuess === "r" && computerGuess === "s") ||
+            (userGuess === "s" && computerGuess === "p") || 
+            (userGuess === "p" && computerGuess === "r")) {
+            wins++;
+            alert("You've won " + wins + " time(s)!");
+          } else if (userGuess === computerGuess) {
+            ties++;
+            alert("You've tied " + ties + " time(s).");
+          } else {
+            losses++;
+            alert("You've lost " + losses + " time(s).");
+          }
+        }
+      }
+
+      // When the game is over, alert the totals to the user. We can use the \n character to make a line break.
+      alert("Total wins: " + wins + "\nTotal ties: " + ties + "\nTotal losses: " + losses);
+    ```
 
 ### Lesson Plan Feedback
 

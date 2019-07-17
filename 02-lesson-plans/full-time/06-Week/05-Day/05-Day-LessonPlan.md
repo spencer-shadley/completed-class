@@ -102,7 +102,7 @@ If your class is struggling with MySQL fundamentals (Connecting, creating schema
 
 ### 2. Partners Do: Examining The Dataset (10 mins)
 
-* Slack out [TopSongs.csv](../../../../01-Class-Content/12-mysql/01-Activities/12-Top5000Schema/Unsolved/TopSongs.csv) to the class and have them look through it for a few minutes after telling them that this is the dataset they will be working with today. It contains 5000 lines of music data within it.
+* Slack out [TopSongs.csv](../../../../01-Class-Content/12-mysql/01-Activities/12-Top5000Schema/TopSongs.csv) to the class and have them look through it for a few minutes after telling them that this is the dataset they will be working with today. It contains 5000 lines of music data within it.
 
 * Explain the data that each column contains. Reading the first from left to right, we have:
 
@@ -134,15 +134,15 @@ If your class is struggling with MySQL fundamentals (Connecting, creating schema
 
 * **Instructions**
 
-  * It's time to test your skills in creating databases and tables as you create a database called `top_songsDB` which will eventually house all of the music data contained within [TopSongs.csv](../../../../01-Class-Content/12-mysql/01-Activities/12-Top5000Schema/Unsolved/TopSongs.csv).
+  * It's time to test your skills in creating databases and tables as you create a database called `top_songsDB` which will eventually house all of the music data contained within [TopSongs.csv](../../../../01-Class-Content/12-mysql/01-Activities/12-Top5000Schema/TopSongs.csv).
 
-    * Within your database create a table called `Top5000` and create columns capable of holding all of the data contained within [TopSongs.csv](../../../../01-Class-Content/12-mysql/01-Activities/12-Top5000Schema/Unsolved/TopSongs.csv) properly.
+    * Within your database create a table called `Top5000` and create columns capable of holding all of the data contained within [TopSongs.csv](../../../../01-Class-Content/12-mysql/01-Activities/12-Top5000Schema/TopSongs.csv) properly.
 
     * All of your code should be written and saved within a filed called `schema.sql` so that you can use this same code later should the need ever arise.
 
     * HINT: Try to have your table's columns match those within the CSV file as closely as possible or else you may find the next step in this assignment more difficult than it would otherwise be.
 
-    * BONUS: Create a `seeds.sql` file that contains the data for the first three songs found within [TopSongs.csv](../../../../01-Class-Content/12-mysql/01-Activities/12-Top5000Schema/Unsolved/TopSongs.csv).
+    * BONUS: Create a `seeds.sql` file that contains the data for the first three songs found within [TopSongs.csv](../../../../01-Class-Content/12-mysql/01-Activities/12-Top5000Schema/TopSongs.csv).
 
     * BONUS: Look into how MySQL Workbench can import and export data files. What file types does it accept? How does it convert the data?
 
@@ -174,7 +174,7 @@ SELECT * FROM Top5000;
 
   * MySQL Workbench may say that it is "Not Responding" while importing... It is lying. When MySQL Workbench is importing a large file, it devotes all of its processes to that task and this makes it seem like the program has frozen when it is still working. Just be patient and give it time to import.
 
-  * If you don't want to deal with the full 5000 rows of data and want to go with something a touch more manageable, we have also provided you with [Top1000Songs.csv](../../../../01-Class-Content/12-mysql/01-Activities/12-Top5000Schema/Unsolved/Top1000Songs.csv) which holds significantly less data inside of it.
+  * If you don't want to deal with the full 5000 rows of data and want to go with something a touch more manageable, we have also provided you with [Top1000Songs.csv](../../../../01-Class-Content/12-mysql/01-Activities/12-Top5000Schema/Top1000Songs.csv) which holds significantly less data inside of it.
 
 * When the file has been fully imported, select apply in the lower-right portion of the table-display screen to commit your additions to the database.
 
@@ -190,17 +190,17 @@ SELECT * FROM Top5000;
 
 * **Files**
 
-  * [TopSongs.csv](../../../../01-Class-Content/12-mysql/01-Activities/13-Top5000Code/Unsolved/TopSongs.csv)
+  * [TopSongs.csv](../../../../01-Class-Content/12-mysql/01-Activities/13-Top5000Code/TopSongs.csv)
 
-  * [Top1000Songs.csv](../../../../01-Class-Content/12-mysql/01-Activities/13-Top5000Code/Unsolved/Top1000Songs.csv)
+  * [Top1000Songs.csv](../../../../01-Class-Content/12-mysql/01-Activities/13-Top5000Code/Top1000Songs.csv)
 
 * **Instructions**
 
-  * Now that we have learned how to import big collections of data into a server, it is time to put this new knowledge to the test by importing all of the data contained within [TopSongs.csv](../../../../01-Class-Content/12-mysql/01-Activities/13-Top5000Code/Unsolved/TopSongs.csv) into our database.
+  * Now that we have learned how to import big collections of data into a server, it is time to put this new knowledge to the test by importing all of the data contained within [TopSongs.csv](../../../../01-Class-Content/12-mysql/01-Activities/13-Top5000Code/TopSongs.csv) into our database.
 
     * HINT: Remember, bigger datasets require more time to import properly, so be patient.
 
-    * HINT: If you feel that the import process is taking far too long, feel free to use [Top1000Songs.csv](../../../../01-Class-Content/12-mysql/01-Activities/13-Top5000Code/Unsolved/Top1000Songs.csv) instead. We would highly recommend working with the bigger dataset if you can, however.
+    * HINT: If you feel that the import process is taking far too long, feel free to use [Top1000Songs.csv](../../../../01-Class-Content/12-mysql/01-Activities/13-Top5000Code/Top1000Songs.csv) instead. We would highly recommend working with the bigger dataset if you can, however.
 
     * HINT: Take the downtime you have been given to start on the next part of the activity.
 
@@ -271,7 +271,7 @@ SELECT * FROM Top5000;
 
 * **Files**
 
-  * [TopAlbums.csv](../../../../01-Class-Content/12-mysql/01-Activities/14-TwoTables/Unsolved/TopAlbums.csv)
+  * [TopAlbums.csv](../../../../01-Class-Content/12-mysql/01-Activities/14-TwoTables/TopAlbums.csv)
 
 * **Instructions**
 
