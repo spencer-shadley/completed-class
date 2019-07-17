@@ -42,6 +42,10 @@
 
 * This week students will have a little less in class time to work on projects. In order to offset this we've provided them with some starter code they can use for their second projects. Take some time to familiarize yourself with the [Project 2 Starter activity](../../../../01-Class-Content/16-project-2/01-Activities/04-Stu_Project-Starter) and be prepared to frame this as a huge time saver for them.
 
+* Students will be using Heroku for quick deployments. Consider walking them through deployment and connecting GitHub via the provided guide.
+
+    * [Connect Repo with Heroku Guide](../Supplemental/Guides/GitHubHerokuConnect.md)
+
 - - -
 
 ##### Class Objectives
@@ -80,9 +84,9 @@
 
 * We have created a written guide and video guide on how to connect a GitHub repository to a Heroku Application for continuous deployment. Please provide these to your students along with the following activity instructions.
 
-    [Connect Repo with Heroku Guide](../Supplemental/Guides/GitHubHerokuConnect.md)
+    * [Connect Repo with Heroku Guide](../Supplemental/Guides/GitHubHerokuConnect.md)
 
-    [Connect Repo with Heroku Video](https://youtu.be/GgNcs9zlFSA?list=PLOFmg4xbN_TPrB6w4rThsFanVxJI_SfER)
+    * [Connect Repo with Heroku Video](https://youtu.be/GgNcs9zlFSA?list=PLOFmg4xbN_TPrB6w4rThsFanVxJI_SfER)
 
 * Refer to `16-project-2/01-Activities/01-Stu_Create-Repository`, which contains the following instructions:
 
