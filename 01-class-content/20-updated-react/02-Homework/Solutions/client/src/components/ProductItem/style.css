@@ -1,0 +1,15 @@
+.ProductItemContainer {
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    height: 350px;
+    overflow: hidden;
+    width: 250px;
+    padding-bottom: 10px;
+}
+
+.ProductImage {
+    max-height: 150px;
+    overflow: hidden;
+}
