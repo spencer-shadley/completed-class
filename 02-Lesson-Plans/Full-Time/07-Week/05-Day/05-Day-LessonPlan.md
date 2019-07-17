@@ -1,6 +1,6 @@
-## 7.5 - The Power of the ORM <!--links--> &nbsp; [⬅️](../04-Day/04-Day-LessonPlan.md) &nbsp; [➡️](../../08-Week/01-Day/01-Day-LessonPlan.md)
+# 7.5 - The Power of the ORM <!--links--> &nbsp; [⬅️](../04-Day/04-Day-LessonPlan.md) &nbsp; [➡️](../../08-Week/01-Day/01-Day-LessonPlan.md)
 
-### Pre-class Drills
+## Pre-class Drills
 
 * Let students know that it's time for the preclass drill of the day. Remind them that interviewing is a skill that is in some ways separate from practical coding, and that they need to work hard to hone this skillset during this course. The class is designed to make them great developers, and these pre-class questions are designed to make them awesome interviewers.
 
@@ -8,7 +8,7 @@
 
 * 20 min before class starts write the following problem on the board or Slack it out:
 
-```
+```md
 Write a function that takes in a string and and returns the string with white space removed and all letters changed to lowercase . This is a common task when a variable, routeName, etc needs to be created from user input.
 
 Ex:
@@ -21,10 +21,10 @@ Output: favoritetreeever
 Input: one word
 Output: oneword
 ```
- 
+
 * After 15 minutes take 5 minutes to go over the solution. You should start recording when going over the answer and Slack out the answer at the end of office hours before class starts.
 
-* Ask students if they found a solution and go over their solution (or the ones below if no student-solution is provided). 
+* Ask students if they found a solution and go over their solution (or the ones below if no student-solution is provided).
 
 * Be sure to praise students who provide a solution even if it isn't fully correct. Discuss its merits and potential pitfalls.
 
@@ -43,7 +43,7 @@ var singleWord = function (str){
 }
 ```
 
-* Time permitting, show both solutions. 
+* Time permitting, show both solutions.
 
 ```js
 var singleWord = function (str){
@@ -54,15 +54,15 @@ var singleWord = function (str){
 }
 ```
 
-* Use this as an opportunity to introduce regular expressions and to remind students that there are multiple ways to solve every problem. 
- 
+* Use this as an opportunity to introduce regular expressions and to remind students that there are multiple ways to solve every problem.
+
 ### Overview
 
 Today we will be introducing students to the basics of Object-Relational Mapping, a system which allows programmers to more easily collect and to manipulate data from databases using reusable methods.
 
 `Summary: Complete activities 11-18 in Unit 14`
 
-##### Instructor Priorities
+#### Instructor Priorities
 
 By the end of class students will
 
@@ -82,9 +82,12 @@ By the end of class students will
 
 * When going over ORMs with your class, it is important that you keep the `server.js` files and the `orm.js` files open at the same time. Being able to see both files at the same time should help your students to understand how the code within these files functions alongside each another.
 
-* At the end of class, make sure you direct students to `MySQLHerokuDeploymentProcess.pdf`. The guide provides step-by-step instructions to setting up a remote MySQL database; your students won't be able to deploy their apps without it.
+* At the end of class, make sure you direct students to the [MySQL and Heroku Deployment Guide](../Supplemental/MySQLHerokuDeploy). The guide provides step-by-step instructions to setting up a remote MySQL database; your students won't be able to deploy their apps without it.
+
+  * Consider walking students through the process and letting them see you do it first hand
 
 ### Sample Class Video (Highly Recommended)
+
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=247ef209-dadd-4779-a335-a871014dc0d5)
 
 - - -
@@ -341,8 +344,7 @@ By the end of class students will
 
 * Explain to students the importance of callback functions and their role in giving JavaScript its asynchronous abilities. You can utilize the following example as a guide for this.
 
-
-```
+```md
 Let's say that we are aspiring chefs, and we're following a recipe to cook chicken parmesan with a side-salad.
 
 1) Set out a bowl of flour, a bowl of breadcrumbs, and some beaten eggs.
@@ -396,7 +398,7 @@ $(‘#colorChangeButton’).on(‘click’, function(e) {
 
   * In other words, each new function added onto the stack is run before moving onto the function beneath it. Once data has been returned from the function above, the function below will start.
 
-# Instructor Do: Private Self-Reflection (0 min)
+## Instructor Do: Private Self-Reflection (0 min)
 
 Take some time on your own after class to think about the following questions. If there's anything that you're not sure how to answer, feel free to reach out to the curriculum team!
 

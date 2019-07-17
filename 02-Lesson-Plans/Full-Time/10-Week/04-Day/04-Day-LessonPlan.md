@@ -52,7 +52,9 @@ by the end of class.
 
 * We have created a MERN Stack Deployment guide along with an accompanying video guide. Please provide the `Supplemental Folder` to your students which will contain `create-react-express` along with a `MERNHerokuDeploy` guide.
 
-[Supplemental](../../../../02-lesson-plans/full-time/10-Week/Supplemental)
+  * [MERN Deploy via Heroku](../../../../02-lesson-plans/part-time/20-Week/Supplemental)
+
+  * Consider walking the class through the deployment process so they can see it first hand.
 
 - - -
 
