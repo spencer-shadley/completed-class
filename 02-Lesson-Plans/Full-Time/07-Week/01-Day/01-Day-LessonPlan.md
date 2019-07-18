@@ -94,6 +94,8 @@ By the end of class students will:
 
 * You will be leading them through the beginning of a _heavily_ guided application build that uses an Express server to house and relay data about various Star Wars Characters [starwars-express-fsf.herokuapp.com/](https://starwars-express-fsf.herokuapp.com/)
 
+* Have your TAs reference [01-Day-Time-Tracker](https://drive.google.com/a/trilogyed.com/file/d/1WpDDki2hqpzc1tCHh6jumq8V99E1Dxzp/view?usp=sharing) to help keep track of time during class.
+
 ### Sample Class Video (Highly Recommended)
 
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=69b7865f-d645-40a1-9791-a86d00f5bdb9)

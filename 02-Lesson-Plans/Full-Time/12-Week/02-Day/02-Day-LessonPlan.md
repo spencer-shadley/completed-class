@@ -12,6 +12,8 @@ In this class, students will continue working on their Portfolios & Career HW fo
 
 * Students opted out of Career Services are encouraged to participate - it's the developer's resume! However, they are welcome to work on final projects.
 
+* Have your TAs reference [02-Day-Time-Tracker](https://drive.google.com/a/trilogyed.com/file/d/1zw3nfFgK89jkG4ehGVvBo2IRaIX-MjQd/view?usp=sharing) to help keep track of time during class.
+
 - - -
 ### 1. Instructor Do: Peer Recommendations (5 min)
 

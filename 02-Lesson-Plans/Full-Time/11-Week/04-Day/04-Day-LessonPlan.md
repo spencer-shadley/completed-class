@@ -52,7 +52,7 @@ In this class, we will be introducing students to sorting algorithms. If time an
 
 * [Show this linear search visualization](https://www.cs.usfca.edu/~galles/visualization/Search.html) around section 3.
 
-* Have your TAs refer to the [TimeTracker](04-Day-TimeTracker.xlsx) to stay on task.
+* Have your TAs refer to the [TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1mfInk4qmHc178B5j8Y-FcgUV0kGDuXT0/view?usp=sharing) to stay on task.
 
 * This site is fantastic for getting visualizations of how the sorts work <https://visualgo.net/en/sorting>. If you prefer, you can show students videos from this link immediately after each "sort" method is revealed. Otherwise, you can save it until the end and have students look at it then.
 

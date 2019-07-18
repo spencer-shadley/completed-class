@@ -24,7 +24,7 @@ In this class, we will be deepening students understanding of ReactJS. We will f
 
 * Today's lesson will feature more instructor led demonstrations than the previous class, be sure to spend some time before class reviewing the examples.
 
-* Have your TAs reference [01-Day-TimeTracker](01-Day-TimeTracker.xlsx) to help keep track of time during class.
+* Have your TAs reference [01-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1x48PZdW5LcbW6zhbt1rR7EyB3mXwDGuu/view?usp=sharing) to help keep track of time during class.
 
 * **Important:** In order to avoid continuous NPM installs, all of today's activity Solved and Unsolved versions include only a src folder. Students and yourself should scaffold out a React app once with Create React App, and then swap out the src folder for each activity.
 

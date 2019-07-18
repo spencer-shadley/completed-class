@@ -90,6 +90,8 @@ In this class, we will be continuing our exploration of Firebase, an easy-to-use
 
 * If there are any issues with the data in the firebase databases, use [Firebase Manager](https://firebase-manager-fsf.netlify.com/) to clear them. To illustrate database creation in firebase, create your own personal account to use for demonstration purposes.
 
+  * **Important**: Be sure you always have two links for firebase: one each for the core and the realtime database. You'll need both when demonstrating and running firebase examples locally - if you remove the second link when copying over your own app configuration, the `database` code won't work.
+
 * Prior to class, you will need to create three Firebase databases for use in today's lecture. Place the config from the first database you create into the `17-TimeSheet` example, the second into the `18-Push` examples, and the third into the `19-Add_Child` examples.
 
   * **Your 1st new Firebase DB Goes Here**
@@ -108,7 +110,7 @@ In this class, we will be continuing our exploration of Firebase, an easy-to-use
 
 * Tomorrow we start projects! As such, you will need to divide students into groups of 3-4 (by section) at the end of class. When choosing groups, be sure to consider aspects like personality, coding proficiency, leadership, etc. Try to form groups in which no one will be left idle, de-motivated, or alienated. We want project week to be a positive experience for everyone.
 
-* Have your TAs reference [Day-3-Time-Tracker](02-Day-TimeTracker.xlsx) to help keep track of time during class.
+* Have your TAs reference [Day-3-Time-Tracker](https://drive.google.com/a/trilogyed.com/file/d/1MYbbZOSjWDqByMkyAypQUAEdw3QBWueK/view?usp=sharing) to help keep track of time during class.
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4c1837ed-6d4e-4e6d-b7ce-f1df5e9c3055)

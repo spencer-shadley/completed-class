@@ -75,7 +75,7 @@ In this class, we will be introducing students to the concept of DOM Manipulatio
 
 * Also, as a heads-up, next unit there will be an entire class allotted for reviewing JavaScript. So if your students seem winded -- give them a heads-up as well.
 
-* Have your TAs reference [04-Day-TimeTracker](04-Day-TimeTracker.xlsx) to help keep track of time during class.
+* Have your TAs reference [04-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1oQJ_WfCRs8tYzWbIxoDmMZLLMxDm7SFY/view?usp=sharing) to help keep track of time during class.
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a48b6376-8fd3-4475-a020-b67dfcf6fed2)

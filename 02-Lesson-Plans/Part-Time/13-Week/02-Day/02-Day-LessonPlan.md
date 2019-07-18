@@ -69,7 +69,7 @@ Today's class is focused on creating an Express-based web server. Students will 
 
 * Be sure to slack out the [video walkthrough](https://youtu.be/ygk-kNstqK0) at the end of the activity! This will help students tremendously in understanding how to approach Express based application builds.
 
-* Have your TAs reference [02-Day-TimeTracker](02-Day-TimeTracker.xlsx) to help keep track of time during class.
+* Have your TAs reference [02-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1pQx3VPyRHlQR_zGkHvoXEXtJSgHR8Gav/view?usp=sharing) to help keep track of time during class.
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3ad25f96-cc17-472c-94bd-33ab47b36757)

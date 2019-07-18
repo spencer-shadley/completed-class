@@ -8,6 +8,8 @@
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, please create a copy by navigating to File > "Make a copy...".
 
+* Have your TAs reference [02-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1h9TaBtJmCnxEV7Iprd-UUu0fRw1KbztS/view?usp=sharing) to help keep track of time during class.
+
 - - -
 
 ## Class Objectives

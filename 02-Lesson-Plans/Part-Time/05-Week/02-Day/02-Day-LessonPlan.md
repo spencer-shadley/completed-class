@@ -77,7 +77,7 @@ In this class, we will briefly review JavaScript and jQuery concepts before lear
 
 * Reinforce good coding habits! Clean code with proper variable names and indentation!
 
-##### Instructor Notes
+* Have your TAs reference [02-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1NDAHDrD_Ofr_q8NuqY4x1P1d4MbHSu6z/view?usp=sharing) to help keep track of time during class.
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5d4f0ea2-7472-4744-a7f3-995f451d999b)

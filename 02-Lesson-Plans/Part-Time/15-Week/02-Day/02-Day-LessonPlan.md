@@ -32,6 +32,8 @@ In today's class, we'll introduce new Sequelize methods for updating and deletin
 
 * **If your class finishes early, feel free to have them get a head start on the homework.** They should know everything they need to know to complete the basic solution by the end of this class.
 
+* Have your TAs reference [02-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1Mrx_oFfptIJqvzQ9aGrt6Fi_Q3dz8lUI/view?usp=sharing) to help keep track of time during class.
+
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a53d2308-9c00-4be1-b8d0-664721bb4a03)
 

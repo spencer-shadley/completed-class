@@ -12,7 +12,7 @@ This lesson will deepen students' understanding of Laravel's model layer. In par
 
 `Summary: Complete activities 12-16 on Unit 21`
 
-##### Attention: If you’re teaching a part time section and this isn’t a Saturday, please use the “Weekday” tab inside of the "03-Day-TimeTracker.xlsx" for activity lengths instead of those printed on this lesson plan
+##### Attention: If you’re teaching a part time section and this isn’t a Saturday, please use the “Weekday” tab inside of the "03-Day-TimeTracker" for activity lengths instead of those printed on this lesson plan
 
 #### Instructor Priorities
 
@@ -30,7 +30,7 @@ This lesson will deepen students' understanding of Laravel's model layer. In par
 
 * As has been the trend this week, today's lesson will be dense. If you find yourself pressed for time, consider the section on Database Seeding **optional**. You can abbreviate this portion either by demonstrating it; or skipping it entirely, and instead discussing the concept at a high level, discussing the Artisan directives, and slacking the solution file to students as a starting point for the following exercises.
 
-* Have your TAs reference the [03-Day-TimeTracker.xlsx](03-Day-TimeTracker.xlsx) to keep track of time.
+* Have your TAs reference the [03-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1qtylG7IHPCO79Ysifys9Ts9kiMrsUCrv/view?usp=sharing) to keep track of time.
 
 ### Class Objectives
 

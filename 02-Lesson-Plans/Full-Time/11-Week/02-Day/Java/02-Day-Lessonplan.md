@@ -16,7 +16,7 @@ After today's lesson, students should be able to:
 
 ##### Instructor Notes
 
-* Have your TAs refer to the [Time Tracker](02-Day-TimeTracker.xlsx) to stay on track.
+* Have your TAs refer to the [Time Tracker](0https://drive.google.com/a/trilogyed.com/file/d/1dABNvaD3_lhibyCO5p5oZciKHHf2SbNG/view?usp=sharing) to stay on track.
 
 - - -
 

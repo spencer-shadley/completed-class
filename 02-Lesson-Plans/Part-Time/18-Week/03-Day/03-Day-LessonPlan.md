@@ -6,7 +6,7 @@ In the class, you will introduce students to `Mongoose`, a node package that len
 
 `Summary: Complete activities 13-20 in Unit 18`
 
-##### Attention: If you’re teaching a part time section and this isn’t a Saturday, please use the “Weekday” tab inside of the "03-Day-TimeTracker.xlsx" for activity lengths instead of those printed on this lesson plan
+##### Attention: If you’re teaching a part time section and this isn’t a Saturday, please use the “Weekday” tab inside of the "03-Day-TimeTracker" for activity lengths instead of those printed on this lesson plan
 
 ##### Instructor Priorities
 
@@ -23,7 +23,7 @@ In the class, you will introduce students to `Mongoose`, a node package that len
 * * **DO NOT HAVE STUDENTS CONNECT TO A REMOTE DATABASE WHEN DEVELOPING LOCALLY.** If your students do not properly use environment variables, they may not be able to work on activities or homework on your classroom's internet connection (also, using a remote database for local development is considered bad practice). Use local database connections when working locally, and only connect to your Heroku database when applications are deployed.
 * **IMPORTANT**: We have created written and video guides for students to help deploying to Heroku with MongoDB/Mongoose. Please provide the students the Supplemental folder within Week 18 so they have access to these resources.
 
-  * [Supplemental Content](../Supplemental)
+* [Supplemental Content](../../../../01-Class-Content/18-mongo-mongoose/03-Supplemental)
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=baba13c8-eb9d-4596-b261-df9063aaa9a8)

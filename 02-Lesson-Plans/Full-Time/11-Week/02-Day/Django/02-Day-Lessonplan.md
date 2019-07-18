@@ -26,7 +26,7 @@ Students should be able to:
 
 * Today's lesson builds on the activity from the last lessons. Make sure to slack out the `07-Models/Solved` to ensure a uniform starting point for today's activity.
 
-* Have your TAs refer to the [Time Tracker](02-Day-TimeTracker.xlsx) to stay on track.
+* Have your TAs refer to the [Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1KO3z2j01vjsRiIOXQvSUzR4Ywmwrsh_u/view?usp=sharing) to stay on track.
 
 - - -
 

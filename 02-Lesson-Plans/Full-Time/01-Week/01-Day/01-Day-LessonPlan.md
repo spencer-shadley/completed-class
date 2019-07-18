@@ -57,7 +57,7 @@
 
 * There's a ton of material to cover here, but adjust it as necessary. Just make sure you leave enough time for the critical activities as this is essential for keeping classes in sync across sections.
 
-* Have your TAs reference [01-Day-TimeTracker](01-Day-TimeTracker.xlsx) to help keep track of time during class.
+* Have your TAs reference [01-Day-TimeTracker](https://docs.google.com/spreadsheets/d/1q6IWOA9IWVEAVZDgITp6uDk0wMDm_yVSHqM6CtPEvSk/edit?usp=sharing) to help keep track of time during class.
 
 ### Sample Class Video (Highly Recommended)
 

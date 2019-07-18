@@ -92,6 +92,8 @@ In this class, after a quick review of intervals and timers, you will teach stud
 
 * **Extra Resources:** Send out the following link during class and encourage students to practice with the [Whiteboarding Overview and Questions](https://coding-bootcamp-whiteboarding-algorithms.readthedocs-hosted.com/en/latest/). This was given with the course pre-work but now is the time where a lot of it will start clicking for students since learning JavaScript.
 
+* Have your TAs reference [02-Day-TimeTracker](https://drive.google.com/open?id=1z5r_tPe7Vpszs15neF8i6FJhUR5b70LT) to help keep track of time during class.
+
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4d6d20ab-28db-4f11-b2b1-d7d6e35d02b2)
 

@@ -10,6 +10,9 @@
 
 * Regarding timing: You can expand/reduce activity times according to student interest and familiarity.
 
+* Have your TAs reference [01-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1rcPKcPeV7pRwl_pszChm7FhectWPLbXX/view?usp=sharing) to help keep track of time during class.
+
+
 `Summary: Complete activities 1-13 in Unit 19`
 
 ### Before class

@@ -54,7 +54,7 @@ In this class, we will be culminating our introduction of APIs with a team-based
 
 `Overview: Complete activities 12-16 in Unit 06`
 
-##### Attention: If you’re teaching a part time section and this isn’t a Saturday, please use the “Weekday” tab inside of the "03-Day-TimeTracker.xlsx" for activity lengths instead of those printed on this lesson plan
+##### Attention: If you’re teaching a part time section and this isn’t a Saturday, please use the “Weekday” tab inside of the "03-Day-TimeTracker" for activity lengths instead of those printed on this lesson plan
 
 ##### Instructor Priorities
 
@@ -78,7 +78,7 @@ In this class, we will be culminating our introduction of APIs with a team-based
 
 * Note to Instructors: The API for the New York Times has been going through a series of revamps since this lesson plan was created. The concepts and routes are the same, but the the documentation interface has changed. Be prepared to be flexible.
 
-* TAs should reference [03-Day-TimeTracker](03-Day-TimeTracker.xlsx) to help keep track of time during class.
+* TAs should reference [03-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1cKEvNJfuPjDYE7kIgcGN1Znt8GvxCftS/view?usp=sharing) to help keep track of time during class.
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3ccc6363-7538-42db-95cc-bd21e9197d05)
@@ -144,7 +144,7 @@ In this class, we will be culminating our introduction of APIs with a team-based
 
   * Point out that each imageURL being generated is completely unique. This is because the API is giving us a random URL each time.
 
-  * Point out that if you enter our queryURL <http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=cats> directly into our browser, we'll get a different JSON
+  * Point out that if you enter our queryURL <http://api.giphy.com/v1/gifs/random?api_key=BkaUZZWcFij6J7AoQj3WtPb1R2p9O6V9&tag=cats> directly into our browser, we'll get a different JSON
     each time.
 
       ![2-Cats_3](Images/2-Cats_3.png)

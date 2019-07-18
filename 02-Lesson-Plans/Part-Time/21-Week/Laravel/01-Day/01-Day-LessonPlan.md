@@ -36,7 +36,7 @@ Students should be able to:
 
   * Rather than cut the section on superglobals completely, it would be preferable that you explain the concept and present the solution to the final activity for instructional purposes.
 
-* Have your TAs reference the [TimeTracker](01-Day-TimeTracker.xlsx) to help keep track of time during class.
+* Have your TAs reference the [TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/190Kcdx-SVyWZDbJyrTnb-KcUTXeoR_ZV/view?usp=sharing) to help keep track of time during class.
 
 - - -
 

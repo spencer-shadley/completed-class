@@ -59,9 +59,11 @@ In this class, students will be building upon their knowledge of AJAX to retriev
 
 * Today's activities will feel pretty challenging and confusing to the majority of your students. Use your best judgement and adjust as necessary.If you need to cut the Bands In Town exercise by all means do so. Offer ample support and let students know that things will "click" eventually -- even if it doesn't quite click just yet.
 
+* This week's Giphy and Bujumbura activities will require students to use API keys from [Giphy API](https://developers.giphy.com/) and [OpenWeatherMap API](http://openweathermap.org/api). Please have them create accounts and apply for keys before class starts in order to have them approved and activated in time for the activities.
+
 * Today's Weather in Bujumbura Activity will require students to use an API key from [OpenWeatherMap API](http://openweathermap.org/api). Please have them apply for one before class starts in order to have it approved and activated in time for the activity.
 
-* TAs should reference [04-Day-TimeTracker](04-Day-TimeTracker.xlsx) to help keep track of time during class.
+* TAs should reference [04-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/15HUVqK-u2qIJT7hXgAIJKNScNyipzlzY/view?usp=sharing) to help keep track of time during class.
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f13914af-3613-4d2d-b87d-8817afeb5d77)

@@ -26,6 +26,8 @@ Today, you'll prime your students to conceptualize their final projects. You'll 
 
 * Students should complete the React Checkpoint.
 
+* Have your TAs reference [03-Day-Time-Tracker](https://drive.google.com/a/trilogyed.com/file/d/1N_-cEIVYIOagsp7wy-n7ivlTIt5gy77g/view?usp=sharing) to help keep track of time during class.
+
 - - -
 
 ### Class Objectives

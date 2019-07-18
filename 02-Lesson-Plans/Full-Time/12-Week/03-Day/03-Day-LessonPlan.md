@@ -18,6 +18,7 @@ During this lecture, most of class will center on project work. You and the TAs 
 
   * To that end, you should remind students that they can reach out to you and the TAs for support outside of class.
 
+* Have your TAs reference [03-Day-Time-Tracker](https://drive.google.com/a/trilogyed.com/file/d/1WS79fxVCS8wePrivj0dEgsPlwoSUzl_K/view?usp=sharing) to help keep track of time during class.
 - - -
 
 ### Class Objectives

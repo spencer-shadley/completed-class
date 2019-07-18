@@ -34,7 +34,7 @@ Today's class is focused on introducing students to the concept of grid-based we
 
 * Depending on how well you are doing on time, feel free to create mini-exercises on the fly to ensure students understand the grid.
 
-* Have your TAs reference [05-Day-TimeTracker](05-Day-TimeTracker.xlsx) to help keep track of time during class. (Note: If this class falls on a Saturday, click the "Saturday" tab on the spreadsheet to see the appropriate schedule.)
+* Have your TAs reference [05-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1bGN3U3s51orzmYm8V5B_6kf6BolAxrkc/view?usp=sharing) to help keep track of time during class. (Note: If this class falls on a Saturday, click the "Saturday" tab on the spreadsheet to see the appropriate schedule.)
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=27b66830-c7ee-4c52-8183-4f550da580e0)
@@ -292,7 +292,7 @@ and walk students through the process of building a layout.
 
   * The Bootstrap file required the Bootstrap CSS link
 
-  * Then show students how you can easily copy and paste code to create a Navbar. (You can copy and paste this from W3 Schools <http://www.w3schools.com/bootstrap/bootstrap_navbar.asp>).
+  * Then show students how you can easily copy and paste code to create a Navbar. (You can copy and paste this from the Bootstrap Website:  <https://getbootstrap.com/docs/4.3/components/navbar/>).
 
   * Show students how the main body goes into a container and that individual rows hold the various components
 

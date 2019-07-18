@@ -28,7 +28,7 @@ In this class we will be introducing students to the basics of HTML/CSS and then
 
 * There's a ton of material to cover here, but adjust it as necessary. Just make sure you leave enough time for the critical activities as this is essential for keeping classes in sync across sections.
 
-* Have your TAs reference [02-Day-TimeTracker](02-Day-TimeTracker.xlsx) to help keep track of time during class.
+* Have your TAs reference [02-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/10vHQZl8JSk5bNJYMlgC6Jc15ivMM6ujR/view?usp=sharing) to help keep track of time during class.
 
 ### Sample Class Video (Highly Recommended)
 

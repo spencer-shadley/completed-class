@@ -102,7 +102,7 @@ After, we will be introducing students to the basic concepts behind back-end ser
 
 * Most of the exercises in today's class are fairly simple. But do not be surprised if students struggle with basic commands like `process.argv`. The concept of "backend" JavaScript will seem like a foreign concept to many of them.
 
-* Have your TAs reference [Day-3-TimeTracker](Day-3-TimeTracker.xlsx) to help keep track of time during class.
+* Have your TAs reference [Day-3-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1Uwp-ALSyzrH0RMUgnccfwfqEh4XLXXiH/view?usp=sharing) to help keep track of time during class.
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2113e793-7196-409b-a051-a85f00295431)
@@ -137,6 +137,10 @@ After, we will be introducing students to the basic concepts behind back-end ser
   2. They need to show confidence! All of them have contributed to impressive projects--they need to recognize and project that during their demonstrations.
 
 * Ask which groups would like to go first, then second, then third and so on. When groups stop responding, assign the remaining teams to random slots (and write this list down).
+
+* It is recommended that you prepare a list of the GitHub Pages links for all deployed repos so that students can quickly launch their apps. 
+
+* If students have hosted presentations on Google Presentations, compile a list of those as well to avoid switching computers.  
 
 ### 2. Project Presentations (60 mins)
 

@@ -1,4 +1,4 @@
-## 20.3 Lesson Plan - React.js / Intro to Project #3 <!--links--> &nbsp; [⬅️](../04-Day/04-Day-LessonPlan.md) &nbsp; 
+## 10.5 Lesson Plan - React.js / Intro to Project #3 <!--links--> &nbsp; [⬅️](../04-Day/04-Day-LessonPlan.md) &nbsp; 
 
 ### Overview
 
@@ -13,6 +13,8 @@ After doing a review of Databases and React and giving some help and time for st
 * Students should know all of their responsibilities for the final project.
 
 * Students should come out of class with a high-level grasp of how their app will function--what does it do and what problem does it solve?
+
+* Have your TAs reference [05-Day-Time-Tracker](https://drive.google.com/open?id=1vrm4fgYfeJD779fg0GS-arS7_GhcI8pX) to help keep track of time during class.
 
 ### Class Objectives
 

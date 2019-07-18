@@ -10,6 +10,8 @@
 
 - - -
 
+* Have your TAs reference [01-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1QAnM3Iu8_LWD2NohTSW6dosHzE2mMX0J/view?usp=sharing) to help keep track of time during class.
+
 ### Overview
 
 * Todays class will be focused on introducing group project workflows with Git and GitHub. We will cover adding project members, protecting the master branch, and submitting and reviewing pull requests. This lesson aims to relieve some of the stress students may encounter their first time working collaboratively.

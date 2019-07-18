@@ -91,7 +91,7 @@ In this class, we will be introducing students to the concept of NPM and package
 
 * If `inspect-process` doesn't work well for you or your students, don't sweat it. Students can always use the alternate approach of `console.log`-ing for future debug needs.
 
-* Have your TAs reference [Day-5-TimeTracker](Day-5-TimeTracker.xlsx) to help keep track of time during class.
+* Have your TAs reference [Day-5-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1P5gEudGqV9LRrpenRP9YJ_vrAq9lmSHT/view?usp=sharing) to help keep track of time during class.
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c2ee5062-451f-46fb-a693-a86200fbdbb2)

@@ -2,7 +2,7 @@
 
 ### Slideshow
 
-* This lesson's slides are available on Google Drive here: [02-2 Jumping for JavaScript](https://docs.google.com/presentation/d/1H8ZjXAP9jCK5b7cS_90eWyCnqNT64zuBeWIgTuThOVg/edit?usp=sharing)
+* This lesson's slides are available on Google Drive here: [02-2 Jumping for JavaScript](https://docs.google.com/presentation/d/1DHqKz5v9CAG3d6FaBO_aGZG7w2IvwCv5dgIhbk7FG60/edit?usp=sharing)
 
 * To add slides to the student-facing repository, download the slides as a PDF by navigating to File > "Download as" and choose "PDF document." Add the slide PDF file to your class repository along with other necessary files.
 
@@ -61,7 +61,7 @@ Today's class is focused on re-introducing students to the concept of `for` loop
 
 * Students should be given a substantial amount of time to complete the rock-paper-scissors activity. They will not have been given everything they need to complete the activity. The idea is for students to become more comfortable with the idea of working without knowing _everything_. Reveal bits of the solution using the code in the `23-RPS-Coded` directory while students are working. Throughout class, show these bits of the solution on the projector, and try to help guide students through the problem.
 
-* Have your TAs reference [02-Day-TimeTracker](02-Day-TimeTracker.xlsx) to help keep track of time during class. Your instructor NEEDS to leave enough time for students to complete the rock-paper-scissors game.
+* Have your TAs reference [02-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1xoY07o7JjATmVDa57B0CTw-b6CyVcQlM/view?usp=sharing) to help keep track of time during class. Your instructor NEEDS to leave enough time for students to complete the rock-paper-scissors game.
 
 * **Note**: Even if you don't cover an activity in class, still include it in the list of activities you share into your local repo. Students will be able to look back at these activities on their own time.
 
@@ -79,7 +79,7 @@ Today's class is focused on re-introducing students to the concept of `for` loop
 
 ### 1. Instructor Do: Welcome Students (1 mins)
 
-* Welcome students. Then open the slide deck [02-2 Jumping for JavaScript](https://docs.google.com/presentation/d/1H8ZjXAP9jCK5b7cS_90eWyCnqNT64zuBeWIgTuThOVg/edit?usp=sharing).
+* Welcome students. Then open the slide deck [02-2 Jumping for JavaScript](https://docs.google.com/presentation/d/1DHqKz5v9CAG3d6FaBO_aGZG7w2IvwCv5dgIhbk7FG60/edit?usp=sharing).
 
 ### 2. Instructor Do: Today's Class (1 mins)
 
@@ -143,31 +143,52 @@ Today's class is focused on re-introducing students to the concept of `for` loop
 
     ![Images/7-HardLoop.png](Images/7-HardLoop.png)
 
-### 8. Students Do: Random Number Loop (7 mins) (Critical)
+### 8. Everyone Do: Browser Events (10 mins) (Critical)
 
-* Slack out the following file and instructions to students.
+* Explain that the next activity requires students to be familiar with the notion of browser events.
 
-  * **File**:
+* Explain that when a user interacts with a web page, the page "keeps track" of many of the user's actions.
 
-    * `random-numbers-unsolved.html` in `21-RandomNumbers/Unsolved`
+  * For example, explain that the browser keeps track of what users click on and of where they click.
 
-  * **Instructions**:
+  * As another example, explain that the browser also keeps track of which keys a user presses.
 
-    * Research how to improve on `Math.random()` to generate a random whole number between 1 and 10 instead of a random decimal number.
+* Open [events-examples.html](../../../../01-Class-Content/03-javascript/01-Activities/21-Events/events-examples.html) in `21-Events`.
 
-* Before they get started on the activity, briefly explain that we're using a built-in JavaScript feature called `Math.random()` to print 10 random numbers, but the numbers are all decimals. Prompt students to do some Googling to change this to print 10 random _whole_ numbers. It shouldn't take long for them to find the answer.
+* Briefly demonstrate the code in Chrome.
 
-### 9. Instructor Do: Review Random Numbers (3 mins) (Critical)
+* Then open the code in your text editor, and explain the following points:
 
-* Have a student share what they found. If you're running short on time, or no one has an answer, open the solution at [random-numbers-solved.html](../../../../01-Class-Content/03-javascript/01-Activities/21-RandomNumbers/Solved/random-numbers-solved.html) in `21-RandomNumbers/Solution`
+  * We can "hook onto" the event of a user pressing and releasing a key by referring to `document.onkeyup`.
 
-* Point out that we added a few more things around the random function: `Math.floor(Math.random() * 10) + 1`
+  * Setting `document.onkeyup` equal to a function tells JavaScript to execute that function _whenever the event occurs_.
 
-* If you have time, explain that multiplying `Math.random()` by 10 will now give us a random number between 0 and 9.999. We're still getting a decimal, though, so we use `Math.floor()` to round down. But now we're only getting a random number between 0 and 9, so we'll always add 1 to bump it up to 1-10.
+    * Point out that the `event` is available within the function.
 
-* If time is short, simply state that this is a common solution when needing random whole numbers, and the more students see and use this syntax, the more it will make sense to them.
+  * We can get the _key_ that the user pressed by writing `event.key`.
 
-### 10. Instructor Do: Demo RPS (2 mins)
+  * We can get our hands on an element on the page that has an ID by using `document.getElementById`.
+
+    * Explain that this always returns a _single_ element.
+
+    * Explain that this gives us access to what is called a DOM node.
+
+      * Explain that a DOM node is a browser's way of representing an HTML element on the page.
+
+      * Explain that unlike the code in an HTML document, this DOM node can be modified "live" by our JavaScript.
+
+  * Finally, explain that this DOM node has a property called `textContent`, which represents the _text_ displayed _inside_ of the element.
+
+    * We've avoided `innerHTML` in this demonstration as a best practice.
+
+* Let students know that they don't have to remember all of this right now.
+
+  * Instead, Slack out the file, and encourage them to refer to it during their next activity whenever necessary.
+
+![This short snippet demonstrates most of the concepts students will need for the RPS activity.](Images/11-events.png)
+_This short snippet demonstrates most of the concepts students will need for the RPS activity._
+
+### 9. Instructor Do: Demo RPS (2 mins)
 
 * Take a couple of minutes to demonstrate the final application `23-RPS-Coded`.
 
@@ -179,11 +200,9 @@ Today's class is focused on re-introducing students to the concept of `for` loop
 
   * Remind students that it's okay if they have to write a long chain of `if`/`else if`/`else` statements. If they find themselves doing this, they're on the right track.
 
-  * Emphasize that the computer _randomly_ chooses each time.
-
 * Take an extra few minutes here if necessary to make sure everyone understands the rules of Rock, Paper, Scissors (it's not uncommon for a few students to have never played as it's not universally popular around the world.)
 
-### 11. Students Do: Pseudocode RPS (3 mins)
+### 10. Students Do: Pseudocode RPS (3 mins)
 
 * Once they've played a few rounds, have them pseudocode a solution that lays out the steps involved in playing rock-paper-scissors against a computer.
 
@@ -203,73 +222,39 @@ Today's class is focused on re-introducing students to the concept of `for` loop
 
 * Encourage students to use this pseudocode as a starting point or as a guide with which to finish their own sketch of the application.
 
-### 12. Partners Do: Coding out RPS (60 mins) (Critical)
+### 11. Partners Do: Coding out RPS (60 mins) (Critical)
 
-* Slack out the following instructions to students.
+* Slack out the following files and instructions to students.
+
+  * **File**:
+
+    * `rps-2.html` in `23-RPS-Coded/Unsolved`
 
   * **Instructions**:
 
     * In groups of 4, begin the process of coding out the rock-paper-scissors game.
 
-    * Have users play the game 10 times, then show them their total scores.
-
     * Do as much as you can on your own, but don't be afraid to ask for help if you feel your team is struggling.
+
+    * **Note**: Don't use `document.write` as it will delete the contents of the body, including your JavaScript. Instead, use `document.getElementById` in conjunction with the `textContent` property, as you were shown earlier.
 
     * **Note**: Don’t worry. We know this is a very challenging assignment. We also know that you won’t know where to start. In fact, we haven’t shown you EVERYTHING you need yet, but that’s okay. Part of being a developer is figuring things out on your own through trial and error.
 
-### 13. Instructor Do: Review RPS (10 mins) (Critical)
+### 12. Instructor Do: Review RPS (10 mins) (Critical)
 
-* Open [rps-6.html](../../../../01-Class-Content/03-javascript/01-Activities/23-RPS-Coded/Solved/rps-6.html) in `23-RPS-Coded/Solved`, and walk students through the solution. Use the comments in the solution to help guide the conversation.
+* Open [rps-7.html](../../../../01-Class-Content/03-javascript/01-Activities/23-RPS-Coded/Solved/rps-7.html) in `23-RPS-Coded/Solved`, and walk students through the solution. Use the comments in the solution to help guide the conversation.
 
-    ```js
-      // Creates an array that lists out all of the options (Rock, Paper, or Scissors).
-      var computerChoices = ["r", "p", "s"];
+    ![Images/9-RPS_4.png](Images/9-RPS_4.png)
 
-      // Creating variables to hold the number of wins, losses, and ties. They start at 0.
-      var wins = 0;
-      var losses = 0;
-      var ties = 0;
-
-      for (var i = 0; i < 10; i++) {
-        // Randomly chooses a choice from the options array. This is the Computer's guess.
-        var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
-
-        // Collect the user's response and convert to lower case.
-        var userGuess = prompt("Enter r, p, or s to play!");
-        userGuess = userGuess.toLowerCase();
-
-        // Only run game logic if user chose a valid option
-        if (userGuess === "r" || userGuess === "p" || userGuess === "s") {
-
-          alert("The computer chose " + computerGuess);
-
-          // Win/lose conditions:
-          if ((userGuess === "r" && computerGuess === "s") ||
-            (userGuess === "s" && computerGuess === "p") || 
-            (userGuess === "p" && computerGuess === "r")) {
-            wins++;
-            alert("You've won " + wins + " time(s)!");
-          } else if (userGuess === computerGuess) {
-            ties++;
-            alert("You've tied " + ties + " time(s).");
-          } else {
-            losses++;
-            alert("You've lost " + losses + " time(s).");
-          }
-        }
-      }
-
-      // When the game is over, alert the totals to the user. We can use the \n character to make a line break.
-      alert("Total wins: " + wins + "\nTotal ties: " + ties + "\nTotal losses: " + losses);
-    ```
+* Slack out the [video review](https://www.youtube.com/watch?v=Tio88WjwFO0) for this activity and emphasize how helpful videos for challenging activities like this can be.
 
 - - -
 
-### 14. LUNCH BREAK (30 mins)
+### 13. LUNCH BREAK (30 mins)
 
 - - -
 
-### 15. Partners Do: Array Building (10 mins)
+### 14.    Partners Do: Array Building    (10 mins)
 
 * In this activity, students just fill in the empty comments for each line of code. This is intended to passively show them how to use `for` loops to populate arrays.
 
@@ -289,7 +274,7 @@ Today's class is focused on re-introducing students to the concept of `for` loop
 
     * Be prepared to share with the class!
 
-### 16. Instructor Do: Review Activity (10 mins)
+### 15. Instructor Do: Review Activity (10 mins)
 
 * Go over the solution. First, have them try to explain each line of code to you as a class.
 
@@ -299,7 +284,7 @@ Today's class is focused on re-introducing students to the concept of `for` loop
 
     ![Images/1-LoopTV.png](Images/1-LoopTV.png)
 
-### 17. Instructor Do: Logging - No Functions (5 mins)
+### 16. Instructor Do: Logging - No Functions (5 mins)
 
 * Open [superhero-logging-solved-no-functions.html](../../../../01-Class-Content/03-javascript/01-Activities/26-SuperheroLogging/superhero-logging-solved-no-functions.html) in `26-SuperheroLogging` in Chrome and in your editor.
 
@@ -309,7 +294,7 @@ Today's class is focused on re-introducing students to the concept of `for` loop
 
 * Slack out the file when done with your explanation.
 
-### 18. Instructor Do: Logging - With Functions (10 mins)
+### 17. Instructor Do: Logging - With Functions (10 mins)
 
 * Open [superhero-logging-solved-with-functions.html](../../../../01-Class-Content/03-javascript/01-Activities/26-SuperheroLogging/superhero-logging-solved-with-functions.html) in `26-SuperheroLogging` in Chrome and in your editor.
 
@@ -329,7 +314,7 @@ Today's class is focused on re-introducing students to the concept of `for` loop
 
 * Ask if there are any questions, and then proceed to Slack out the file so students can use it as an example for the next activity.
 
-### 19. Partners Do: My First Functions (20 mins) (Critical)
+### 18. Partners Do: My First Functions (20 mins) (Critical)
 
 * This next exercise requires students to build simple functions for performing mathematical and string operations.
 
@@ -347,7 +332,7 @@ Today's class is focused on re-introducing students to the concept of `for` loop
 
     * Hint: Look back to the previous example if you need help.
 
-### 20. Instructor Do: Review Activity (15 mins)
+### 19. Instructor Do: Review Activity (15 mins)
 
 * Review [my-first-functions-solved.html](../../../../01-Class-Content/03-javascript/01-Activities/27-MyFirstFunctions/Solved/my-first-functions-solved.html) in `27-MyFirstFunctions/Solved`, pointing out that each of the functions takes on a similar structure.
 
@@ -368,9 +353,103 @@ Today's class is focused on re-introducing students to the concept of `for` loop
 
     ![Images/3-MyFirstFunctions_2.png](Images/3-MyFirstFunctions_2.png)
 
-### 21. Group Do: Homework (40 mins)
+### 20. Group Do: Recap Activity (40 mins)
 
-* Use the remaining time to complete this unit's homework assignment.
+* Use the remaining time up to the Checkpoint complete this units homework assignment.
+
+### 21. Instructor Do: Introduce Checkpoint - HTML/CSS/Git (5 mins) (Critical) 
+
+* Let your class know that they will now be taking a short multiple choice assessment to check their understanding of HTML/CSS/Git
+
+* DO NOT SKIP THIS INTRODUCTION. DO NOT JUST SEND OUT THE LINK WITHOUT CONTEXT
+
+* Reassure the students that they need not be nervous about the Checkpoint:
+
+  * "This will not affect your grade or graduation requirements."
+
+  * "This is not like the tests and quizzes you might be used to from school or college. The purpose of these tests is not to motivate you to study or punish you for struggling."
+
+  * "This is as much a test of me as an instructor and of the course content as it is of you. We are here to ensure your success, and this is one of the tools we use to make sure we are doing that effectively. This class moves _fast_, so if some or all of you misunderstand something important we as an instructional team need to find out as fast as possible so we can help."
+
+  * "Long story short, this quiz cannot hurt you. Only help you."
+
+* Let students know that they should read carefully and focus on thinking about the right answer rather than using any test-taking skills they may have learned:
+
+  * "There are no silly answers or obvious throwaway responses on this quiz because those kinds of answers reduce the likelihood that we'll be able to figure out whether we've taught something effectively."
+
+  * "Test-taking strategies you may have learned for standardized tests _will not work_, so instead of focusing on eliminating wrong answers or looking for sneaky context cues, read the question and each of the possible choices carefully."
+
+* Reassure students once again that the purpose of this is to help them, and remind them that the outcome does not impact their grade or graduation requirements. You should do this _every single time_ you give a Checkpoint.
+
+* You or your TAs should now get the link specific to your class:
+
+  * Navigate in your browser to: `https://www.switchboard.tech`
+
+  * Select your class code (if it doesn't show up on its own)
+
+    * If the class is a parallel class, a class that has two classes combined on a Saturday, and doing a checkpoint with two classes at once you will **need** to slack out two links.
+
+    * One for your class and one for the other. 
+
+  * Select the Checkpoint and copy the resulting link
+
+### 22. Students Do: Take Checkpoint - HTML/CSS/Git (10 mins) (Critical)
+
+* Slack out the link to the Checkpoint
+
+* Let your students know that once they select their name, it will take them to the Checkpoint
+
+* Checkpoints must be completed in class, **not at home**, to ensure you will be able to effectively find and help struggling students 
+
+* TAs should walk around the class to ensure students aren't looking up answers
+
+* Keep in mind we do not use grades from assessments toward graduation requirements. However, students will be tempted to avoid feeling like they don't understand something.
+
+* It's important for instructional teams to create an environment where it is safe to fail, but also where such failure is visible. You should not be worried about "cheating" on checkpoints, only making sure that students who need help aren't remaining invisible.
+
+* Your SSM will have the results of the Checkpoint within an hour of its completion
+
+### 23. Structured Office Hour Announcement (0 mins)
+
+* Let the class know that the unit they just completed is one of the toughest of the course. They've been exposed to a lot of new vocabulary and concepts in a very short amount of time, but don't worry these concepts will begin to make more sense over the coming weeks.
+
+* Let the class know that in addition to structured post-class office hours after checkpoints, from now until we start the first project, we'll be having structured pre-class office hours as well.
+
+* In pre-class office hours, we'll give them an opportunity to do practice problems that will help them solidify the skills they just learned, but also mimic interview questions and begin to prepare them for interviews.
+
+* Strongly encourage students to attend the pre-class office hours. Remind them that the instructional staff has outside commitments as well, and that you understand the pressures of making this kind of time commitment, but that they owe it to themselves to invest fully in this experience. Interview prep will go a long way towards helping them understand JavaScript better and making them more competitive in their career search after graduation.
+
+* State clearly in the beginning that the pre-class drills will be going on, but students can still meet 1:1 with staff for help with other things, as long as one staff member is available to go over the question and answer before class starts.
+
+### 24. TAs Do: Structured Office Hours - Review HTML/CSS/Git (30 mins)
+
+* Navigate in your browser to: `https://github.com/coding-boot-camp/checkpoint-bank/blob/master/checkpoints/multiple-choice/02-HTML-CSS-Git-MC/02-HTML-CSS-Git-MC.md`
+
+* There you will find the questions and answers to the Checkpoint given.
+
+* Please take the entire office hours time to review the questions with the students.
+
+* Suggestion Format:
+
+  * TAs ask a question at a time to the class.
+
+  * Let the students try to answer it.
+
+    * If you see that a majority of the class has a misunderstanding with a question:
+
+      * Take your time on this question!
+
+    * If you see that a small number of students has a misunderstanding with a question:
+
+      * Do your best to reinforce the misunderstanding but be cautious of your time.
+
+      * Make note of the students that are still struggling with the question and schedule a 1:1 with the students.
+
+  * If applicable, demo the answer.
+
+* Take your time on these questions!
+
+* This is a great time to reinforce concepts and misunderstandings!
 
 ### Lesson Plan Feedback
 

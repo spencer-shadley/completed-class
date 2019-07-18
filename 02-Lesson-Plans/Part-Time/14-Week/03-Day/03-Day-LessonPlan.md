@@ -6,7 +6,7 @@ Today we will be introducing students to the basics of Object-Relational Mapping
 
 `Summary: Complete activities 11-17 in Unit 14`
 
-##### Attention: If you’re teaching a part time section and this isn’t a Saturday, please use the “Weekday” tab inside of the "03-Day-TimeTracker.xlsx" for activity lengths instead of those printed on this lesson plan
+##### Attention: If you’re teaching a part time section and this isn’t a Saturday, please use the “Weekday” tab inside of the "03-Day-TimeTracker" for activity lengths instead of those printed on this lesson plan
 
 ##### Instructor Priorities
 
@@ -26,9 +26,9 @@ Today we will be introducing students to the basics of Object-Relational Mapping
 
 * When going over ORMs with your class, it is important that you keep the `server.js` files and the `orm.js` files open at the same time. Being able to see both files at the same time should help your students to understand how the code within these files functions alongside each another.
 
-* At the end of class, make sure you direct students to the [MySQL and Heroku Deployment Guide](../Supplemental/MySQLHerokuDeploy). The guide provides step-by-step instructions to setting up a remote MySQL database; your students won't be able to deploy their apps without it.
+* At the end of class, make sure you direct students to `MySQLHerokuDeploymentProcess.pdf`. The guide provides step-by-step instructions to setting up a remote MySQL database; your students won't be able to deploy their apps without it.
 
-  * Consider walking students through the process and letting them see you do it first hand
+* Have your TAs reference [03-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1lWJfHZ5OuK5s7vrHEEbxd8zZaKqU620c/view?usp=sharing) to help keep track of time during class.
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4e34f941-a149-4f4c-a1e9-71c194600c6c)
@@ -209,9 +209,9 @@ Today we will be introducing students to the basics of Object-Relational Mapping
 
      * The variable `res` now equals `result` and `res` gets console logged within `server.js`.
 
-* Your students are VERY likely to be confused by this since the logic involved is a little abstract. This confusion will be all the worse if your students have never covered callbacks before. In order to stave off this confusion as best you can, however, feel free to open up the files contained within the `16-CallbackReview` folder and go over them with your class. We have also provided you with a "mini-module" taken from the 03, week 11 lesson plan which you can use to review callbacks with your class in even greater detail during the break, after class, or during class if truly necessary.
+* Your students are VERY likely to be confused by this since the logic involved is a little abstract. This confusion will be all the worse if your students have never covered callbacks before. In order to stave off this confusion as best you can, however, feel free to open up the files contained within the `15-CallbackReview` folder and go over them with your class. We have also provided you with a "mini-module" taken from the 03, week 11 lesson plan which you can use to review callbacks with your class in even greater detail during the break, after class, or during class if truly necessary.
 
-* It is VERY important that your students understand why the code within `15-TheAsynchSolution` works, since we can assure you that the asynchronous problem will come up in this week's homework. Because of this, feel free to take extra time to go over the code multiple times and to review callbacks in more depth. The MVC Pattern is important, but it can be covered in lesser detail or at a later date.
+* It is VERY important that your students understand why the code within `14-TheAsynchProblem/Solved` works, since we can assure you that the asynchronous problem will come up in this week's homework. Because of this, feel free to take extra time to go over the code multiple times and to review callbacks in more depth. The MVC Pattern is important, but it can be covered in lesser detail or at a later date.
 
 ### 11. Partners Do: Reviewing the Asynch Solution (10 mins)
 

@@ -63,6 +63,8 @@ Today's class combines the old with the new in a way that shows just how powerfu
 
 * Those students who struggled with either MySQL or Node might find today's class difficult as well since it is built upon both of those concepts. If you can, try to help them catch up during the longer assignments if it looks as if they are having trouble.
 
+* Have your TAs reference [04-Day-Time-Tracker](https://drive.google.com/a/trilogyed.com/file/d/1ZecDzfTzFRKFMWICcLQiD9ehS8UZRl5-/view?usp=sharing)to help keep track of time during class.
+
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9deb8b9e-8c4f-4bca-bfdf-f784799d70e5).
 

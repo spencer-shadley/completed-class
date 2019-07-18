@@ -12,6 +12,10 @@ In this class, students will continue working on their API Projects. They will a
 
 * Today's focus should be on giving students time to work on their projects and on students giving quick micro-presentations of their project ideas at the end of class.
 
+
+* Have your TAs reference [05-Day-Time-Tracker](https://drive.google.com/a/trilogyed.com/file/d/1jcEM_lSg70v82Bss9M6cvYyp-l-y70Nv/view?usp=sharing) to help keep track of time during class.
+
+
 - - -
 
 ### Class Objectives
