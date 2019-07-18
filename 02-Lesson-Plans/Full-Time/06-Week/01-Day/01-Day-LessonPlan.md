@@ -71,6 +71,8 @@ Today we will be diving into constructors some more by introducing user input in
 
 * If your class runs into trouble with this install process, feel free to use MAMP or any other installation solution that you would prefer to get the class ready.
 
+* Have your TAs reference [01-Day-Time-Tracker](https://drive.google.com/a/trilogyed.com/file/d/105fwzlYpuj5EqJutMqekdjo9_fcyiMhE/view?usp=sharing) to help keep track of time during class.
+
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a860f003-e8ae-4340-975c-d1bc46888751).
 

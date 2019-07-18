@@ -62,7 +62,7 @@ Instructor/TAs should focus on providing students assistance in small-group form
 
   ![0-Diagram](Images/0-Diagram.png)
 
-* Have your TAs reference [02-Day-TimeTracker](02-Day-TimeTracker.xlsx) to help keep track of time during class.
+* Have your TAs reference [02-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1_TBQZbOvCSu03wmwXG7XU2U7lVzZPjhN/view?usp=sharing) to help keep track of time during class.
 
 ### Sample Class Video (Highly Recommended)
 

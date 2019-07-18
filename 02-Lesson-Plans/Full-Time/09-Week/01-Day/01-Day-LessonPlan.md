@@ -13,6 +13,8 @@ In this class, we will be introducing students to testing endpoints with Mocha a
 
 * Today will focus on testing API endpoints. This can serve as an opportunity to identify struggling project groups. **All groups** should have a working API at this point. The activities today will help identify groups that don't. Instructional staff should circulate heavily during activities as to identify groups that don't have working API endpoints. 
 
+* Have your TAs reference [01-Day-Time-Tracker](https://drive.google.com/a/trilogyed.com/file/d/1rot_0D0H6hQGR6FRnMgjaVJmoXCX8ZEq/view?usp=sharing) to help keep track of time during class.
+
 - - -
 
 ### Class Objectives

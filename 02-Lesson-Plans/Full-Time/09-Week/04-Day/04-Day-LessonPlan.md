@@ -24,9 +24,12 @@ By the end of class students will:
 
 * If you're using a different machine then you were in the last class, make sure you have MongoDB and Robo 3T set up. Consult the installation guide in 03-Day if you need instructions.
 
+
 ### Sample Class Video (Highly Recommended)
 
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e0171026-9252-48ab-b12b-41109529f952)
+
+* Have your TAs reference [04-Day-Time-Tracker](https://drive.google.com/a/trilogyed.com/file/d/13AmRaWs4NBtEV4ytpxpOPVRo78c_QafD/view?usp=sharing) to help keep track of time during class.
 
 - - -
 

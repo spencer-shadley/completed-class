@@ -27,6 +27,9 @@ we would appreciate your feedback at the following link:
   * To that end, you should remind students that they can reach out to you and the TAs for support outside of class.
   * If possible, offer to stay an extra 30 mins to assist your students face-to-face.
 
+* Have your TAs reference [01-Day-Time-Tracker](https://drive.google.com/a/trilogyed.com/file/d/151F6Wm2aDX_deu-VdvBFUJiW-IMpMlTU/view?usp=sharing) to help keep track of time during class.
+
+
 - - -
 
 ##### Class Objectives

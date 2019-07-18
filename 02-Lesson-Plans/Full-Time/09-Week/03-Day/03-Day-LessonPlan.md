@@ -44,11 +44,7 @@ Next, you will introduce the concept of the NoSQL database with MongoDB, go over
 
 * If you haven't used MongoDB much in the past, take a look at this unit's queries and solutions. This should prime you for the lecture.
 
-* We have provided written and video guides for deploying MongoDB based applications to Heroku. Be sure to direct your students to these resources.
-
-  * [MongoDBDeploy](../../../../18-Week/Supplemental/MongoDBDeploy.md)
-
-  * Consider walking students through the process and letting them see you do it first hand
+* Have your TAs reference [03-Day-Time-Tracker](https://drive.google.com/a/trilogyed.com/file/d/1MP5hDL6bBeo_kgofoCPX0Xcsz4cVCyQH/view?usp=sharing) to help keep track of time during class.
 
 ### Sample Class Video (Highly Recommended)
 

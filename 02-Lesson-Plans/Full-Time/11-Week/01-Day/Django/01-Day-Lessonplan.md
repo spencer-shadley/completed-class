@@ -34,7 +34,7 @@ The purpose of this lesson is familiarize students with the basics of Python.
 
 * Slack out the `InstallationInstructions` ahead of time, so students come prepared with Python 3.4.x and virtualenv installations.
 
-* Have your TAs refer to the [Time Tracker](01-Day-TimeTracker.xlsx) to stay on track.
+* Have your TAs refer to the [Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1stXPMjJTeT5q6r_KnNRwCZYKe5KepRB3/view?usp=sharing) to stay on track.
 
 - - -
 

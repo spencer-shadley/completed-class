@@ -12,6 +12,8 @@ In this lecture, your students will present their project apps to the class. The
 
 * Arrive early to support students, and get the room set up.
 
+* Have your TAs reference [05-Day-Time-Tracker](https://drive.google.com/a/trilogyed.com/file/d/1Wyx9aC4lKA5UaQjunQZcExJG-iX32a2_/view?usp=sharing) to help keep track of time during class.
+
 - - -
 
 ### Class Objectives

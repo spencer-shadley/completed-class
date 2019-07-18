@@ -22,7 +22,7 @@ By the end of class students will
 
   * For continuity's sake, explain that we'll cover testing material _first_, so students can focus on projects for the rest of the period.
 
-* Have your TAs refer to the [Time Tracker](05-Day-TimeTracker.xlsx) to stay on track.
+* Have your TAs refer to the [Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1YbvD3hxDffXCw4zxus1e936CYWG-hSMJ/view?usp=sharing) to stay on track.
 
 ### Sample Class Video (Highly Recommended)
 

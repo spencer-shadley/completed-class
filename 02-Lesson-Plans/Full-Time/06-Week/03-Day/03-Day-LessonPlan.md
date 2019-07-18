@@ -73,6 +73,8 @@ MySQL, while extremely useful and powerful, is unlike any other programming lang
 
 ![alt-text](Images/safe-mode.png)
 
+* Have your TAs reference [03-Day-Time-Tracker](https://drive.google.com/a/trilogyed.com/file/d/1HaQZhIABW3us3z_EtTpz5oj0h888YxWW/view?usp=sharing) to help keep track of time during class.
+
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=16ca28b4-b7b2-48c3-b6f0-a86500f734db).
 

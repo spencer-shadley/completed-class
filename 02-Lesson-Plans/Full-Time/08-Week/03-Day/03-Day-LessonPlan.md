@@ -40,6 +40,9 @@ Also:
 
 * You and the TAs may want to implement a "workshop" series with individual groups. In these workshops, student groups will rotate between the Instructor and TAs to get help on specific topics like "Refining Ideas", "Finding the Right API", "Creating a Layout", etc. These workshops should be between 10-20 minutes each and are intended to ensure students are heading in the right direction. (Note: This approach works best if you can physically remove students from the main classroom and find small spaces to work with individual groups. Be creative here!).
 
+
+* Have your TAs reference [03-Day-Time-Tracker](https://drive.google.com/a/trilogyed.com/file/d/11xnm_JSNsNW8FvcbAjHDPidLTnTG_9N3/view?usp=sharing) to help keep track of time during class.
+
 ### Sample Class Video (Highly Recommended)
 
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=90d71a66-f2cc-4500-bdda-a86500f76e47)
@@ -198,9 +201,9 @@ Also:
 
 * We have created a written guide and video guide on how to connect a GitHub repository to a Heroku Application for continuous deployment. Please provide these to your students along with the following activity instructions.
 
-    * [Connect Repo with Heroku Guide](../Supplemental/Guides/GitHubHerokuConnect.md)
+    [Connect Repo with Heroku Guide](../../../../01-Class-Content/16-project-2/03-Supplemental/Guides/GitHubHerokuConnect.md)
 
-    * [Connect Repo with Heroku Video](https://youtu.be/GgNcs9zlFSA?list=PLOFmg4xbN_TPrB6w4rThsFanVxJI_SfER)
+    [Connect Repo with Heroku Video](https://youtu.be/GgNcs9zlFSA?list=PLOFmg4xbN_TPrB6w4rThsFanVxJI_SfER)
 
 * Refer to [01-Stu_Create-Repository](../../../../01-Class-Content/16-project-2/01-Activities/01-Stu_Create-Repository/README.md), which contains the following instructions:
 
