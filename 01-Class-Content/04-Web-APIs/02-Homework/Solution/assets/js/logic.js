@@ -65,7 +65,7 @@ function questionClick() {
   // check if user guessed wrong
   if (this.value !== questions[currentQuestionIndex].answer) {
     // penalize time
-    time -= 10;
+    time -= 15;
 
     if (time < 0) {
       time = 0;
@@ -78,8 +78,7 @@ function questionClick() {
     sfxWrong.play();
 
     feedbackEl.textContent = "Wrong!";
-  }
-  else {
+  } else {
     // play "right" sound effect
     sfxRight.play();
 
@@ -90,7 +89,7 @@ function questionClick() {
   feedbackEl.setAttribute("class", "feedback");
   setTimeout(function() {
     feedbackEl.setAttribute("class", "feedback hide");
-  }, 500);
+  }, 1000);
 
   // move to next question
   currentQuestionIndex++;
@@ -98,8 +97,7 @@ function questionClick() {
   // check if we've run out of questions
   if (currentQuestionIndex === questions.length) {
     quizEnd();
-  }
-  else {
+  } else {
     getQuestion();
   }
 }
@@ -138,7 +136,8 @@ function saveHighscore() {
   // make sure value wasn't empty
   if (initials !== "") {
     // get saved scores from localstorage, or if not any, set to empty array
-    var highscores = JSON.parse(window.localStorage.getItem("highscores")) || [];
+    var highscores =
+      JSON.parse(window.localStorage.getItem("highscores")) || [];
 
     // format new score object for current user
     var newScore = {
