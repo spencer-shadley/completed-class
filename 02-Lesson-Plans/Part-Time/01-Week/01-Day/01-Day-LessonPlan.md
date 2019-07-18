@@ -29,7 +29,7 @@ Welcome to your first day of class! Today we will be introducing ourselves and t
 
 * Today's class is all about making students feel comfortable. Today is just the first of many days where some of your students will seem "lost". Make sure they know that you are there for them from Day 1 and that they can succeed if they persist through the challenges.
 
-* Use the [01-1 The Zen of Coding](https://docs.google.com/presentation/d/1Hg-bDqgWSouHcquF_idzDPLsC2xqXouBRX5thXN443s/edit?usp=sharing) provided as an initial guide for today's class. During the first few weeks of class, we'll be using slide decks more extensively to give students a sense of structure. As we move further into the course, slide decks will be used less frequently as we dive into a more code-centric approach. Feel free to modify the slides to your own style, but be sure to cover the same activities.
+* Use the slide deck [01-1 The Zen of Coding](https://docs.google.com/presentation/d/1Hg-bDqgWSouHcquF_idzDPLsC2xqXouBRX5thXN443s/edit?usp=sharing) provided as an initial guide for today's class. During the first few weeks of class, we'll be using slide decks more extensively to give students a sense of structure. As we move further into the course, slide decks will be used less frequently as we dive into a more code-centric approach. Feel free to modify the slides to your own style, but be sure to cover the same activities.
 
 * Feel free to add in your own slides to include your bio and any projects or applications you've worked on.
 
@@ -41,7 +41,7 @@ Welcome to your first day of class! Today we will be introducing ourselves and t
 
 * In addition to introductions, today's main focus is in making sure all students have all their pre-work (software / tools prerequisites) installed and ready to go. Many of your students will be coming to class with "partially" installed tools but will have gotten lost along the installation process. By the end of class, make sure EVERY one of your students has Git (with SSH Authentication), Heroku, Node, Visual Studio Code, and Slack installed. NOTE: You may need to run through this lesson plan to confirm you have all the necessary tools installed yourself!
 
-* Have your TAs reference [01-Day-TimeTracker](01-Day-TimeTracker.xlsx) to help keep track of time during class.
+* Have your TAs reference [01-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/12h2RX508jKlBsY4HR2UMWSrAmlrneFxG/view?usp=sharing) to help keep track of time during class.
 
 ### Sample Class Video (Highly Recommended)
 

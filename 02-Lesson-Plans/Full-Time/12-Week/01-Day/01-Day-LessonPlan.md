@@ -24,6 +24,8 @@ In this class, students who have opted-in to career services will work on their 
 
 * As Instructors / TAs, keep in mind that the success of your students post-bootcamp is largely dictated by the quality of their final projects and portfolios. Encourage and help steer them in every way you can towards high-quality production!
 
+* Have your TAs reference [01-Day-Time-Tracker](https://drive.google.com/a/trilogyed.com/file/d/125smmob7Bn1uwQRgeFt1jZK7_QpoiB0G/view?usp=sharing) to help keep track of time during class.
+
 - - -
 
 ### 1. Students Do: Deploy a Project, Homework, or Activity and Include in Portfolio (20 min)

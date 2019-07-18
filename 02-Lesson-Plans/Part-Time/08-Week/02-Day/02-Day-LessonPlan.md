@@ -14,6 +14,8 @@ By the end of class:
 * Students will have issues opened for each task involved in developing their MVP.
 * Students will be able to hold effective stand-ups.
 
+* Have your TAs reference [02-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1hJpMG4ZPaFwqvrp_XGuo--h_dlw3eJ-G/view?usp=sharing) to help keep track of time during class.
+
 ---
 
 ### 1. Instructor Do: Welcome (2 min)

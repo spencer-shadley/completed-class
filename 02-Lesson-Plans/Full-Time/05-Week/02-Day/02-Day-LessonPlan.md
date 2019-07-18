@@ -14,6 +14,8 @@ In this class, class will center on project work. You and the TAs should check u
 
 * Your students will be finishing their projects and creating and practicing their presentations.
 
+* Have your TAs reference [02-Day-Time-Tracker](https://drive.google.com/a/trilogyed.com/file/d/1wbM-Z1WtHfR3X_RUkoNdAD0spK8d6P7o/view?usp=sharing) to help keep track of time during class.
+
 - - -
 
 ### Class Objectives

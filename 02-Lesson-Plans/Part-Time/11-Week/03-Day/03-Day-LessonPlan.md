@@ -55,7 +55,7 @@ Today's lesson plan will consolidate students' understanding of constructors and
 
 `Summary: Complete activities 11-15 in Unit 11`
 
-##### Attention: If you’re teaching a part time section and this isn’t a Saturday, please use the “Weekday” tab inside of the "03-Day-TimeTracker.xlsx" for activity lengths instead of those printed on this lesson plan
+##### Attention: If you’re teaching a part time section and this isn’t a Saturday, please use the “Weekday” tab inside of the "03-Day-TimeTracker" for activity lengths instead of those printed on this lesson plan
 
 #### Instructor Priorities
 
@@ -72,7 +72,7 @@ Today's lesson plan will consolidate students' understanding of constructors and
 
   * Building the TV Show application is the focus of today's lesson. Feel free to cut the callback activity and closure sections if required.
 
-* Have your TAs refer to the [Time Tracker](03-Day-TimeTracker.xlsx) to stay on track.
+* Have your TAs refer to the [Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1uNXMV5mOEPxjbjCWkZrrg5L3fT4GyI17/view?usp=sharing) to stay on track.
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): 
@@ -338,7 +338,11 @@ _A high-level, diagram view of our TV application._
 
     * Test that your code works properly by running the `cli.js` file with arguments. e.g. `node cli actor Jennifer Aniston`.
 
-  * **Hints**: 
+  * **Bonus**:
+
+    * Once you've finished the basic activity, update the `cli.js` file to use the `inquirer` npm package to prompt the user for their search and term rather than `process.argv`.
+
+  * **Hints**:
 
     * Implementing the `findActor` method should be very similar to the `findShow` method, refer to this if stuck.
 
@@ -346,7 +350,7 @@ _A high-level, diagram view of our TV application._
 
 ### 9. Instructor Do: Review Activity (15 mins) (Critical)
 
-* Open up the `tv.js` inside `14-Stu_FinalTVApp/Solved` file, and walk through the solution.
+* Open up the `tv.js` inside `14-Stu_FinalTVApp/Basic/Solved` file, and walk through the solution.
 
   ![Find Actor](Images/05-Find-Actor-Code.png)
 

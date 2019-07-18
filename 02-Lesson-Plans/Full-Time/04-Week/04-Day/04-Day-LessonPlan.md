@@ -14,6 +14,8 @@
 
 * Try to keep the GitHub recap short since it was covered in detail last class. Project Management should be a greater focus.
 
+* Have your TAs reference [04-Day-Time-Tracker](https://drive.google.com/open?id=1jpnrprEyMWRZtCu9X1GAeYoHWZf9wc-2) to help keep track of time during class.
+
 #### Objectives
 
 By the end of class:

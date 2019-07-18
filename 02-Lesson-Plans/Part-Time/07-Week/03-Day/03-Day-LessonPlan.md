@@ -48,7 +48,7 @@ In this class, we will be using Firebase and MomentJS to create a real-world app
 
 `Summary: Complete activities 17-21 in Unit 07`
 
-##### Attention: If you’re teaching a part time section and this isn’t a Saturday, please use the “Weekday” tab inside of the "03-Day-TimeTracker.xlsx" for activity lengths instead of those printed on this lesson plan
+##### Attention: If you’re teaching a part time section and this isn’t a Saturday, please use the “Weekday” tab inside of the "03-Day-TimeTracker" for activity lengths instead of those printed on this lesson plan
 
 ##### Instructor Priorities
 
@@ -85,7 +85,7 @@ In this class, we will be using Firebase and MomentJS to create a real-world app
 
 * Also, next week is project week! As such, you will need to divide students into groups of 3-4 (by section) at the end of class. When choosing groups be sure to consider aspects like: personality, coding proficiency, leadership, etc. Try to form groups in which no one will be left idle, de-motivated, or alienated. We want project week to be a positive experience for everyone.
 
-* Have your TAs reference [03-Day-TimeTracker](03-Day-TimeTracker.xlsx) to help keep track of time during class.
+* Have your TAs reference [03-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1JSoWOJwKu5cQzhx6BAS8SFuIF2F55zZI/view?usp=sharing) to help keep track of time during class.
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cfa9250c-5111-44ce-a9c0-4eeb96a810d0)

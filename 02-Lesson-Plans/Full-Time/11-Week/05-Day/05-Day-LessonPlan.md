@@ -39,7 +39,7 @@ Today's lesson will introduce students to the notions of time complexity; Big O 
 
 * Students are allotted generous amounts of time for activities, to account for varying levels of background. Feel free to shorten these time allowances, or skip activities entirely, so students can spend more time working on projects.
 
-* Have your instructors refer to the [Time Tracker](05-Day-TimeTracker.xlsx) to stay on track.
+* Have your instructors refer to the [Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1rGFrf5hJ9MysGVHHHReTA1qyizFTk6YA/view?usp=sharing) to stay on track.
 
 - - -
 

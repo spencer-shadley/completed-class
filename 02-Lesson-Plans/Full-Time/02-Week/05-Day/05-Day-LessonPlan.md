@@ -115,7 +115,7 @@ We will also be furthering students' understanding of jQuery by building a basic
 
 * Finally, as a heads-up, next unit's a class is wholly devoted to JavaScript review of old activities. Just giving you a heads-up!
 
-* Have your TAs reference [05-Day-TimeTracker](05-Day-TimeTracker.xlsx) to help keep track of time during class.
+* Have your TAs reference [05-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1pMNSNFWZUhsn3Np9FY_JIerDZyBs0jz2/view?usp=sharing) to help keep track of time during class.
 
 ### Sample Class Video (Highly Recommended)
 

@@ -22,7 +22,7 @@ Students should be able to:
 
   * For continuity's sake, explain that we'll cover testing material _first_, so students can focus on projects for the rest of the period.
 
-* Have your TAs refer to the [Time Tracker](03-Day-TimeTracker.xlsx) to stay on track.
+* Have your TAs refer to the [Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1wtudESHJJegwHM01rCUe25iLxEflW2Zs/view?usp=sharing) to stay on track.
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=38f9305f-30d9-41e2-9429-8ea22437da86) 

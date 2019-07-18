@@ -80,6 +80,8 @@ Error: ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protoc
 
 * Those students who struggled with either MySQL or Node might find today's class difficult as well since it is built upon both of those concepts. If you can, try to help them catch up during the longer assignments if it looks as if they are having trouble.
 
+* Have your TAs reference [02-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1nOZwr3nO2bhC7DMYUnqd5qM80CsK3a2G/view?usp=sharing) to help keep track of time during class.
+
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1c1dbd62-df74-476a-81fb-8b9ba10f6dad)
 
@@ -197,7 +199,7 @@ connection.connect(function(err) {
   * Point out that we run the query inside of the body of the `connect` method's callback function. Since the `connection.connect` and `connection.query` methods both run asynchronously, there's no guarantee that the `connection.query` method will run after `connect` if it's run from outside. If we didn't want to put the entire query method inside of the callback, we could also wrap the query method inside of a function. Example:
 
   ```js
-    connection.connect(function(err) {
+  connection.connect(function(err) {
     if (err) throw err;
     console.log("connected as id " + connection.threadId);
     selectAll();

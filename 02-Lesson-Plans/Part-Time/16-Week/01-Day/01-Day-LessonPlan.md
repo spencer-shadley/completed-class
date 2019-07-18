@@ -34,6 +34,8 @@
 
 ##### Instructor Notes
 
+* Have your TAs reference [01-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1WzJH4hM68jEdvVVLdHY9USvWf_qQ7cJn/view?usp=sharing) to help keep track of time during class.
+
 * Praise students for making it to their second group projects.
 
 * Leverage the TAs to help any groups lagging behind during the lesson. We want to give students as much time to brainstorm project ideas as possible.
@@ -80,7 +82,7 @@
 
 * We have created a written guide and video guide on how to connect a GitHub repository to a Heroku Application for continuous deployment. Please provide these to your students along with the following activity instructions.
 
-    [Connect Repo with Heroku Guide](../Supplemental/Guides/GitHubHerokuConnect.md)
+    [Connect Repo with Heroku Guide](../../../../01-Class-Content/16-project-2/03-Supplemental/Guides/GitHubHerokuConnect.md)
 
     [Connect Repo with Heroku Video](https://youtu.be/GgNcs9zlFSA?list=PLOFmg4xbN_TPrB6w4rThsFanVxJI_SfER)
 

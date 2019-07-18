@@ -23,6 +23,8 @@ adjust the schedule for the unit._
 
 * Free to plan to cut out activities that would be less beneficial for your class. For example, if you've already discussed arrow function or `const` and `let`, feel free to skip those activities to spend more time on other topics.
 
+* Have your TAs reference [01-Day-Time-Tracker](https://drive.google.com/a/trilogyed.com/file/d/1msngMop20uBjk2pCNgYRERPhoxXlfQih/view?usp=sharing) to help keep track of time during class.
+
 - - -
 
 ### Class Objectives

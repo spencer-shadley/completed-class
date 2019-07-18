@@ -42,7 +42,7 @@ This lesson will introduce students to the basics of C#. They should have instal
 
   * Ensure your TAs are available to troubleshoot environment issues throughout today's lesson.
 
-* Have your TAs refer to the [Time Tracker](01-Day-TimeTracker.xlsx) to stay on track.
+* Have your TAs refer to the [Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1ILkGj47rzVBXi894CXYQ-aVHXq29UJ50/view?usp=sharing) to stay on track.
 
 - - -
 

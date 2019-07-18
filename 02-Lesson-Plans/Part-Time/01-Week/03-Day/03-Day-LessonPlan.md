@@ -16,7 +16,7 @@ In today's class, we'll be covering the bulk of CSS layout and positioning techn
 
 `Summary: Complete Activities 7-11 in Unit 01`
 
-##### If you’re teaching a part time section and this isn’t a Saturday, please use the “Weekday” tab inside of the "03-Day-TimeTracker.xlsx" for activity lengths instead of those printed on this lesson plan
+##### If you’re teaching a part time section and this isn’t a Saturday, please use the “Weekday” tab inside of the "03-Day-TimeTracker" for activity lengths instead of those printed on this lesson plan
 
 ##### Instructor Priorities
 
@@ -40,7 +40,7 @@ In today's class, we'll be covering the bulk of CSS layout and positioning techn
 
 * **Also Important**: Feel free to add in an admin slide with homework due dates for your class.
 
-* Have your TAs reference [03-Day-TimeTracker](03-Day-TimeTracker.xlsx) to help keep track of time during class.
+* Have your TAs reference [03-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1PzMXJ6g2HKj29TV3pOCicV8W1k6eqHx9/view?usp=sharing) to help keep track of time during class.
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e35f9175-fdf3-4efe-9921-87a1c808c360)

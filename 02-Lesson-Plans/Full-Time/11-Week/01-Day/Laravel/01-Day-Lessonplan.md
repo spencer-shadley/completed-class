@@ -54,7 +54,7 @@ Students should be able to:
 
 * The most important outcome of the Laravel unit is that students should be able to **create and edit models via form inputs**. Focus on the latter half of today's class to facilitate this.
 
-* Have your TAs reference the [TimeTracker](01-Day-TimeTracker.xlsx) to help keep track of time during class.
+* Have your TAs reference the [TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1BThYcdVFKPcFAx2zCBMWf1n4464-zD9B/view?usp=sharing) to help keep track of time during class.
 
 - - -
 

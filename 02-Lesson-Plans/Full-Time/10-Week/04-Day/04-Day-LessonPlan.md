@@ -1,4 +1,4 @@
-## Day 04 - Mern <!--links--> &nbsp; [⬅️](../03-Day/03-Day-LessonPlan.md) &nbsp; [➡️](../05-Day/05-Day-LessonPlan.md)
+## 10.4 - Mern <!--links--> &nbsp; [⬅️](../03-Day/03-Day-LessonPlan.md) &nbsp; [➡️](../05-Day/05-Day-LessonPlan.md)
 
 ### Slideshow
 
@@ -46,15 +46,13 @@ by the end of class.
 
 * Today's class will introduce little new material but will provide plenty of opportunity to review concepts covered over the past few classes.
 
-* Have your TAs reference [04-Day-TimeTracker](04-Day-TimeTracker.xlsx) to help keep track of time during class.
+* Have your TAs reference [04-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/14KWap2R8BDdFSJUzMKdVGn1nrzetVCME/view?usp=sharing) to help keep track of time during class.
 
 * To spur students to flesh out some finial project ideas, recruit team members, and figure out what their apps will do.
 
 * We have created a MERN Stack Deployment guide along with an accompanying video guide. Please provide the `Supplemental Folder` to your students which will contain `create-react-express` along with a `MERNHerokuDeploy` guide.
 
-  * [MERN Deploy via Heroku](../../../../02-lesson-plans/part-time/20-Week/Supplemental)
-
-  * Consider walking the class through the deployment process so they can see it first hand.
+[Supplemental](../../../../01-Class-Content/18-mongo-mongoose/03-Supplemental)
 
 - - -
 

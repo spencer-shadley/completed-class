@@ -100,7 +100,7 @@ Last but not least, students will begin work on their first Project of the Boot 
 
 * Some popular API choices do not support CORS. Have students use <https://cors-anywhere.herokuapp.com/> as a workaround.
 
-* Have your TAs reference [03-Day-Time-Tracker](03-Day-TimeTracker.xlsx) to help keep track of time during class.
+* Have your TAs reference [03-Day-Time-Tracker](https://drive.google.com/open?id=14RAvcI1ms1rhoYBVJ191RMq76Cbd9Wmb) to help keep track of time during class.
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5290095e-3a2d-4071-a850-832516d59722)

@@ -80,6 +80,8 @@ In this class, we will be providing students an opportunity to review old JavaSc
 
 * Make sure to congratulate students today. They are only two weeks in and they have learned a ton. Now is a good opportunity to remind them that not long ago they came through the door knowing little to nothing about web development and today they can already build an entire working website! Pretty impressive.
 
+* Have your TAs reference [01-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1frWbVNmH40LiTXTzNlBfZDVx3F_i4_O1/view?usp=sharing) to help keep track of time during class.
+
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3c0be955-68fd-43e3-a7a8-ec392346e29c)
 

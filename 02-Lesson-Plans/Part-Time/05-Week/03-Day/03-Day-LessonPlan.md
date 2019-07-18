@@ -102,7 +102,7 @@ In this class, you will teach students how to tackle tech interview questions, i
 
 `Summary: Complete activities 13, 15-16, and 23 in Unit 05`
 
-##### Attention: If you’re teaching a part time section and this isn’t a Saturday, please use the “Weekday” tab inside of the "03-Day-TimeTracker.xlsx" for activity lengths instead of those printed on this lesson plan
+##### Attention: If you’re teaching a part time section and this isn’t a Saturday, please use the “Weekday” tab inside of the "03-Day-TimeTracker" for activity lengths instead of those printed on this lesson plan
 
 ##### Instructor Priorities
 
@@ -122,6 +122,8 @@ In this class, you will teach students how to tackle tech interview questions, i
 * Once again, make sure your students know they can reach out to you or a TA for help after class on the concepts you teach them.
 
 * **Extra Resources:** Send out the following link during class and encourage students to practice with the [Whiteboarding Overview and Questions](https://coding-bootcamp-whiteboarding-algorithms.readthedocs-hosted.com/en/latest/). This was given with the course pre-work but now is the time where a lot of it will start clicking for students since learning JavaScript.
+
+* Have your TAs reference [03-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/192W9stZpLCBdZQARTa5jizw3cyRqMhc0/view?usp=sharing) to help keep track of time during class.
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c435cae5-3b99-41cb-856d-064ddf8f71f7)

@@ -60,7 +60,7 @@ By the end of class students will:
 
 * We will be going over how to send MySQL data from the back-end to the front-end.
 
-* Have your TAs reference [03-Day-TimeTracker](03-Day-TimeTracker.xlsx) to help keep track of time during class. 
+* Have your TAs reference [03-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1FIdlo-ohdJ2hk73FFbV3aDQjUuTwCsLF/view?usp=sharing) to help keep track of time during class. 
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2853f322-e47f-4232-9cd1-a85e00f7735f)
@@ -177,15 +177,11 @@ By the end of class students will:
   * <http://localhost:3000/coolness-chart>
   * <http://localhost:3000/attitude-chart/relaxed>
 
-* After showing off how the application functions and answering whatever questions your students may have, slack out the following instructions...
+* After showing off how the application functions and answering whatever questions your students may have, slack out the following instructions and file...
+
+[03-SeinfeldApp/schema.sql](../../../../01-Class-Content/14-handlebars/01-Activities/03-SeinfeldApp/Solved/schema.sql)
 
 * **Instructions**
-
-  * Create a seinfeld_db database with an actors table.
-
-    * The actors table will have a column for id (PRIMARY KEY AUTO_INCREMENT int), name (varchar), coolness_points (int), and attitude (varchar).
-
-  * Add in four actors with different names, coolness_points, and attitudes.
 
   * Create a Node Application with Express and MySQL with three Express routes.
 

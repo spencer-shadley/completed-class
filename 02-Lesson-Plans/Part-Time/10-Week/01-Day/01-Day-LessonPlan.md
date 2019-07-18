@@ -92,7 +92,7 @@ In this class, we will be introducing students to the basic concepts behind back
 
 * Most of the exercises in today's class are fairly simple. But do not be surprised if students struggle with basic commands like `process.argv`. The concept of "backend" JavaScript will seem like a foreign concept to many of them.
 
-* Have your TAs reference [01-Day-TimeTracker](01-TimeTracker.xlsx) to help keep track of time during class.
+* Have your TAs reference [01-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1A-WSnWaNhypUwITb6ODdGCxT_yGxIkda/view?usp=sharing) to help keep track of time during class.
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f1e342a7-50a5-4a66-a52a-f342b9c61a4b)

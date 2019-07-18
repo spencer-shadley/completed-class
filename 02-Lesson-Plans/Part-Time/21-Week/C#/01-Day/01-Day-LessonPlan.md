@@ -36,7 +36,7 @@ Today's lesson plan will introduce students to the basics of C#. They should hav
 
 * Make sure students install C# and Visual Studio _before_ coming to class. The [`Supplements/C#Installation.md`](./Supplements/C%23Installation.md) files should be uploaded/available in their course repo.
 
-* Have your TAs refer to the [Time Tracker](01-Day-TimeTracker.xlsx) to stay on track.
+* Have your TAs refer to the [Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1XKQYVRk6AoQm3yOluJfnVH0zWpLvPbTk/view?usp=sharing) to stay on track.
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=363e6705-de5e-480e-9318-a96001473761)

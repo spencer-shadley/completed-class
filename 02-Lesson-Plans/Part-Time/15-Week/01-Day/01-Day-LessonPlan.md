@@ -30,6 +30,8 @@ In this class, we will introduce students to the Sequelize ORM. This tool makes 
 
 * **DO NOT HAVE STUDENTS CONNECT TO A REMOTE DATABASE WHEN DEVELOPING LOCALLY.** The correct process is described in `Supplemental/SequelizeHerokuDeploymentProcess.pdf`, and if you try to skip this, your students may not be able to work on activities or homework on your classroom's internet connection (also, using a remote database for local development is considered bad practice).
 
+* Have your TAs reference [01-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1hhhhRhzITwdyGRmChzaGApP6bUNvMxJQ/view?usp=sharing) to help keep track of time during class.
+
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d09521ce-d4bf-4155-b5c7-5bad3a5b7203)
 

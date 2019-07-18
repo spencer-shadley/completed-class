@@ -80,6 +80,8 @@ By the end of class students will
 
 * Handlebars can seem daunting at first, but it is ultimately a very powerful templating tool which your students might find useful. Try to keep to a pace that your students seem comfortable learning, so as to make sure no one is left behind.
 
+* Have your TAs reference [04-Day-Time-Tracker](https://drive.google.com/a/trilogyed.com/file/d/1U31r-8iDzB3bkWm5D818JGwUKI09bKx1/view?usp=sharing) to help keep track of time during class.
+
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=69a17268-b438-4fdc-8103-a85f00f88ab9)
 

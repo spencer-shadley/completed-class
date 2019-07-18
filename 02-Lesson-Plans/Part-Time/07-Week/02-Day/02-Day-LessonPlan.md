@@ -66,7 +66,9 @@ In this class, we will be introducing Firebase, an easy-to-use server-side datab
 
 * If there are any issues with the data in the firebase databases, use [Firebase Manager](https://firebase-manager-fsf.netlify.com/) to clear them. To illustrate database creation in firebase, create your own personal account to use for demonstration purposes.
 
-* Have your TAs reference [02-Day-TimeTracker](02-Day-TimeTracker.xlsx) to help keep track of time during class.
+  * **Important**: Be sure you always have two links for firebase: one each for the core and the realtime database. You'll need both when demonstrating and running firebase examples locally - if you remove the second link when copying over your own app configuration, the `database` code won't work.
+
+* Have your TAs reference [02-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1T3ye9Yl3C0UhUUmes2a2X-4xQYk-yQdw/view?usp=sharing) to help keep track of time during class.
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fa0ebbeb-f22f-45ec-96dc-f0b2e6429a07)

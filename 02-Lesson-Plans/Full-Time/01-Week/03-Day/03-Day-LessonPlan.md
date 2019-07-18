@@ -41,7 +41,7 @@ We're also focused on empowering students with GitHub Pages for live deployments
 
 * Also, later in this class, your focus as instructors/TAs is to ensure students are able to utilize Github Pages to deploy their websites. Going forward from today, students will be expected to submit Homework with links to both their GitHub repository and a live deployed website. Be ready to have your troubleshooting hat on for helping them debug deploys, as the surface area for problems is somewhat large.
 
-* Have your TAs reference [03-Day-TimeTracker](03-Day-TimeTracker.xlsx) to help keep track of time during class.
+* Have your TAs reference [03-Day-TimeTracker](https://docs.google.com/spreadsheets/d/10aVn2TGj08ji_fJ0G2sKhfS7EprRXF2Frvs-9punxN8/edit?usp=sharing) to help keep track of time during class.
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a2e0037f-9a39-4942-83bb-3b555d224a64)

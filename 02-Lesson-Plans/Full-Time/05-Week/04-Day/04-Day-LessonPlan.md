@@ -62,7 +62,7 @@ In this class, we will be building on students' proficiency with Node by introdu
 
 * Be warned that the "hard" activity of the day is the Bank.JS activity. This may take some students more time, so play it by ear if additional time is needed. Make sure to leave time to cover Node requests, however, as the knowledge contained within that lesson is crucial to completing the homework.
 
-* Have your TAs reference [Day-4-TimeTracker](Day-4-TimeTracker.xlsx) to help keep track of time during class.
+* Have your TAs reference [Day-4-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1RN4AhjOgZf4rPv-h7NdZsz5ABByRi17F/view?usp=sharing) to help keep track of time during class.
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7c2586f1-f1fe-4523-b699-a5e3826e02d8)

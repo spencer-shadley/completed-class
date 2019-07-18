@@ -28,6 +28,8 @@ In today's class, students will have time both to outline their presentations, a
 
 - - -
 
+* Have your TAs reference [02-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1au-ldWkena5Pw4DexCHIt_Z-dfOH4IKZ/view?usp=sharing) to help keep track of time during class.
+
 ### Class Objectives
 
 * To provide students more time and support for their group projects.

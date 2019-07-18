@@ -18,7 +18,7 @@ The purpose of this lesson is familiarize students with the basics of Django.
 
 * Slack out the `InstallationInstructions` ahead of time, so students come prepared with Python 3.4.x and virtualenv installations.
 
-* Have your TAs refer to the [Time Tracker](02-Day-TimeTracker.xlsx) to stay on track.
+* Have your TAs refer to the [Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1ASLD3hRnrihKFXnlGGWsMCBW7OlJuvE6/view?usp=sharing) to stay on track.
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f9343372-852a-4ef7-bfc4-a8c80001e214)

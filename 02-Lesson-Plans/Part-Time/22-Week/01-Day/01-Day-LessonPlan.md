@@ -38,7 +38,7 @@ In this class, we will be introducing students to the fundamental concept of alg
 
 * [Show this linear search visualization](https://www.cs.usfca.edu/~galles/visualization/Search.html) around section 3.
 
-* Have your TAs refer to the [TimeTracker](01-Day-TimeTracker.xlsx) to stay on task.
+* Have your TAs refer to the [TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/110tUSuU9uPcgTFiqt4XF7UWHMCDrFId9/view?usp=sharing) to stay on task.
 
 * **Extra Resources:** Send out the following link before or after class and encourage students to tackle the algorithm questions in [Whiteboarding Overview and Questions](https://coding-bootcamp-whiteboarding-algorithms.readthedocs-hosted.com/en/latest/). This was given with the course pre-work but after this week, students should be able to accomplish those questions.
 

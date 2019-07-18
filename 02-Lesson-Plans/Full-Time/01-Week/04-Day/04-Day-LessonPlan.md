@@ -37,7 +37,7 @@ Today's class is focused on introducing students to additional CSS styling techn
 
 * If you finish early, there is an extra "Layout" exercise hidden in the slideshow. Unhide it and have students work on it.
 
-* Have your TAs reference [04-Day-TimeTracker](04-Day-TimeTracker.xlsx) to help keep track of time during class. (Note: If this class falls on a Saturday, click the "Saturday" tab on the spreadsheet to see the appropriate schedule.)
+* Have your TAs reference [04-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1yBrZwQRzXXYCcTkb4Spxu2CqShsGcmzi/view?usp=sharing) to help keep track of time during class. (Note: If this class falls on a Saturday, click the "Saturday" tab on the spreadsheet to see the appropriate schedule.)
 
 ### Sample Class Video (Highly Recommended)
 

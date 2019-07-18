@@ -56,7 +56,7 @@ We will then be deepening students understanding of ReactJS. They further expand
 
 * All of the Solved/Unsolved activities contain only the application's `src` folder. At the start of class scaffold out a React application using Create React App, and swap out the `src` folder for each activity to avoid repetitive npm installs.
 
-* Have your TAs reference [02-Day-TimeTracker](./02-Day-TimeTracker.xlsx) to help keep track of time during class.
+* Have your TAs reference [02-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1iLRPgJ40JwEFAQCm3Y1X7LbVWiSVsA7H/view?usp=sharing) to help keep track of time during class.
 
 - - -
 

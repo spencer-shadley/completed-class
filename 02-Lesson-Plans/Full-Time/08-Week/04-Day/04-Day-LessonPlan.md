@@ -14,6 +14,8 @@ By the end of class students will:
 
 * Have an understanding of the value of agile methodologies to practice using them within their project groups.
 
+* Have your TAs reference [04-Day-Time-Tracker](https://drive.google.com/a/trilogyed.com/file/d/1YKkadkxe4QigbtiJjlQ5aNiAMDKI3TM_/view?usp=sharing) to help keep track of time during class.
+
 ### 1. Instructor Do: Kanban (5 min)
 
 * Explain the Kanban concept

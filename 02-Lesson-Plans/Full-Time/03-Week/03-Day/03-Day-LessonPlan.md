@@ -103,7 +103,7 @@ In this class, we will be introducing students to the concept of APIs and the us
   
   * [How to fix a website with mixed active content](https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content/How_to_fix_website_with_mixed_content)
 
-* TAs should reference [03-Day-TimeTracker](03-Day-TimeTracker.xlsx) to help keep track of time during class.
+* TAs should reference [03-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1OlaJokSTSUfgy84NSb6JW2rGCvZT9Lyj/view?usp=sharing) to help keep track of time during class.
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6910b18d-c819-4403-817b-0fc9543c317c)

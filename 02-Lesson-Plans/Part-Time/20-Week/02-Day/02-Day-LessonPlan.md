@@ -30,14 +30,13 @@ In this class, we will be deepening students understanding of ReactJS through re
 
 * Today's class will introduce little new material but will provide plenty of opportunity to review concepts covered over the past few classes.
 
-* Have your TAs reference [02-Day-TimeTracker](02-Day-TimeTracker.xlsx) to help keep track of time during class.
+* Have your TAs reference [02-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1kPyiZ1NE0jWtqyP3c43eynx2KP0yu8WU/view?usp=sharing) to help keep track of time during class.
 
 * We have created a MERN Stack Deployment guide along with an accompanying video guide. Please provide the `Supplemental Folder` to your students which will contain `create-react-express` along with a `MERNHerokuDeploy` guide.
 
-  * [MERN Deploy via Heroku](../../../../02-lesson-plans/part-time/20-Week/Supplemental)
+[Supplemental](../../../../01-Class-Content/20-react/03-Supplemental)
 
-  * Consider walking the class through the deployment process so they can see it first hand.
-  
+
 - - -
 
 ### Class Objectives

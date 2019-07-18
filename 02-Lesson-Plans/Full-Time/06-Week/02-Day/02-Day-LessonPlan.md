@@ -81,7 +81,7 @@ After today's class, students should be able to:
 
 * If your class runs into trouble with this install process, feel free to use MAMP or any other installation solution that you would prefer to get the class ready.
 
-* Have your TAs refer to the [Time Tracker](02-Day-TimeTracker.xlsx) to stay on track.
+* Have your TAs refer to the [Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1OqSsyFSCE1bBPxIoM5Ql2ak9iMCwXGP2/view?usp=sharing) to stay on track.
 
 ### Sample Class Video (Highly Recommended)
 
@@ -387,8 +387,6 @@ _A high-level, diagram view of our TV application._
 
   * Point out how we call the `tv.findShow` method in the [cli.js](../../../../01-Class-Content/11-js-constructors/01-Activities/13-Stu_FindShow/Solved/cli.js) file.
 
-* Slack out the solution so students can use it as as starting point as they move forward.
-
 ### 14. Everyone Do: BREAK (30 mins)
 
 ### 15. Partners Do: Implement Find Actor (25 mins) (Critical)
@@ -423,6 +421,10 @@ _A high-level, diagram view of our TV application._
 
     * Test that your code works properly by running the [cli.js](../../../..//01-Class-Content/11-js-constructors/01-Activities/13-Stu_FindShow/Unsolved/cli.js) file with arguments. e.g. `node cli actor Jennifer Aniston`.
 
+  * **Bonus**:
+
+    * Once you've finished the basic activity, update the `cli.js` file to use the `inquirer` npm package to prompt the user for their search and term rather than `process.argv`.
+
   * **Hints**:
 
     * Implementing the `findActor` method should be very similar to the `findShow` method, refer to this if stuck.
@@ -431,7 +433,7 @@ _A high-level, diagram view of our TV application._
 
 ### 16. Instructor Do: Review Activity (15 mins) (Critical)
 
-* Open up [tv.js](../../../../01-Class-Content/11-js-constructors/01-Activities/14-Stu_FinalTVApp/Solved/tv.js), and walk through the solution.
+* Open up [tv.js](../../../../01-Class-Content/11-js-constructors/01-Activities/14-Stu_FinalTVApp/Solved/Basic/tv.js), and walk through the solution.
 
   ![Find Actor](Images/05-Find-Actor-Code.png)
 
@@ -439,7 +441,9 @@ _A high-level, diagram view of our TV application._
 
   * This API endpoint returns an array of actor objects, for our purposes we only want the first result, so we grab the 0th index.
 
-* Answer any remaining questions and slack out the solution.
+* Time permitting, go over the bonus solution as well.
+
+* Answer any remaining questions and slack out the solutions.
 
 ### 17. Everyone Do: Application Review (10 mins)
 

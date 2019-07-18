@@ -38,7 +38,7 @@ Students will get practice with Java's OOP tools, and be introduced to object-or
 
 * To introduce students to the basic principles of object-oriented program design. Today's material is abstract and potentially challenging, so we introduce minimal new syntax.
 
-* Have your TAs refer to the [Time Tracker](01-Day-TimeTracker.xlsx) to stay on track.
+* Have your TAs refer to the [Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1DpnfDIijPr8W_XUR0dh3G8MG1k-HIgh4/view?usp=sharing) to stay on track.
 
 ### Class Objectives
 
