@@ -30,7 +30,7 @@ Today's lesson will continue teaching Laravel, including
 
 * Solutions to today's activities are distributed as ZIP files. These include everything in the Laravel project directory except for `vendor`.
 
-* Have your TAs reference the [02-Day-TimeTracker.xlsx](https://drive.google.com/a/trilogyed.com/file/d/1iRMmVrZ1EeBnH1PDzeYJraseb7cwCB0j/view?usp=sharing) to keep track of time.
+* Have your TAs reference the [02-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1iRMmVrZ1EeBnH1PDzeYJraseb7cwCB0j/view?usp=sharing) to keep track of time.
 
 ### Class Objectives
 
