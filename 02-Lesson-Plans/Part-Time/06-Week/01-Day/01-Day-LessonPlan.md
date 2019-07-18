@@ -58,6 +58,8 @@ In this class, we will be introducing students to the concept of APIs and the us
 
 * Before class, create an account at [RapidAPI](https://rapidapi.com/).
 
+* This week's Giphy activities will require students to use an API key from [Giphy API](https://developers.giphy.com/). Please have them create an account and apply for a key before class starts in order to have it approved and activated in time for the activity.
+
 * Be sure to slack out this [tutorial on the OpenWeatherMap API](http://osp123.github.io/tutorials/html/weatherAPI.html) as pre-reading for this week's content.
 
 * Keep in mind that since Heroku serves its content using HTTPS, all external resources need to use HTTPS as well, else they may be blocked by the browser. Most examples in the Giphy documentation use HTTP, but HTTPS is available as well. This isn't likely to pose an issue today, but students may run into it when they deploy their homework assignments. Some additional information:
@@ -66,7 +68,7 @@ In this class, we will be introducing students to the concept of APIs and the us
 
   * [How to fix a website with mixed active content](https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content/How_to_fix_website_with_mixed_content)
 
-* TAs should reference [01-Day-TimeTracker](01-Day-TimeTracker.xlsx) to help keep track of time during class.
+* TAs should reference [01-Day-TimeTracker](https://drive.google.com/open?id=11CiggEoIl3yBXPuXxmg4nduILI1gt1SO) to help keep track of time during class.
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=57fc0673-294f-4e35-9e0a-c13cdc43cd9f)

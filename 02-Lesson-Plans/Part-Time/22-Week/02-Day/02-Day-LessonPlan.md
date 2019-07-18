@@ -34,6 +34,9 @@ In this class, we will be introducing students to sorting algorithms. If time an
 
 * Have students slack you when they finish activities. If you're able to move through things quickly, and have time at the end of the lesson, consider reviewing the Lodash Extras towards the end of class.
 
+* Have your TAs reference [02-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/10veqSTi4wYYj_vpDpXs5Oh5DM8n4MIfQ/view?usp=sharing) to help keep track of time during class.
+
+
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c9ffbc44-a267-4a3e-9b01-bd7c353480bf)
 

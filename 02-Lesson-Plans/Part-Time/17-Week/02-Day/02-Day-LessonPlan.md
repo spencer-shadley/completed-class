@@ -26,6 +26,8 @@ In today's class, students will have time both to outline their presentations, a
 
 * Slack out the document on [Describing Technical Projects](../../../../01-Class-Content/17-project-2/03-Supplemental/DescribingTechnicalProjects.pdf), and explain that students _must_ write a "script" according to the template in the document that they can rehearse and use to discuss their projects in technical interviews.
 
+* Have your TAs reference [02-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1zGDf0aJSCZ10s_Oz1z7ZrHlxwdFWaH7I/view?usp=sharing) to help keep track of time during class.
+
 - - -
 
 ### Class Objectives

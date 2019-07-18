@@ -115,7 +115,7 @@ In this class, we will be furthering students' understanding of jQuery by buildi
 
 * Finally, as a heads-up, next week's 5.2 class is wholly devoted to JavaScript review of old activities. Just giving you a heads-up!
 
-* Have your TAs reference [03-Day-TimeTracker](03-Day-TimeTracker.xlsx) to help keep track of time during class.
+* Have your TAs reference [03-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1LimxzL-_-FaUs9f49lRgm7KihGhSNMga/view?usp=sharing) to help keep track of time during class.
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=20b03de5-04df-4edb-a182-843308f5e246)

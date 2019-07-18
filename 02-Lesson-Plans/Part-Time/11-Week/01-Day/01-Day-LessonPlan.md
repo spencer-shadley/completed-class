@@ -56,6 +56,8 @@ In this class we will be introducing students to the usage of JavaScript constru
 
 * If you have time at the end of class, feel free to go over JavaScript prototypes as well. They are very similar to constructors in their usage, but operate a little differently.
 
+* Have your TAs reference [01-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1xJGCF_EQR0ADCXKRXDZA_Qq03NWbb2Wi/view?usp=sharing) to help keep track of time during class.
+
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c36bbd06-0ad8-477c-945c-e8da13a26ea6)
 

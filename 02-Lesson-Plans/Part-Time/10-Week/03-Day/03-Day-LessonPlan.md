@@ -95,7 +95,7 @@ In this class, we will be introducing students to the concept of NPM and package
 
 * Finally, for today's class we've included a bonus ZombieChallenge `29-ZombieChallenge`. Completing this activity will likely put your class into overtime, so it's really intended as an extra challenge for students who complete the last group activity early.
 
-* Have your TAs reference [03-Day-TimeTracker](03-Day-TimeTracker.xlsx) to help keep track of time during class.
+* Have your TAs reference [03-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1FH1UX8hZA1pRZ2A1LtCAxhClZt4ewWTO/view?usp=sharing) to help keep track of time during class.
 
 ### Sample Class Video (Highly Recommended)
 

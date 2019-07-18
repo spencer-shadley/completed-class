@@ -12,7 +12,7 @@ Today's lesson plan will introduce students to additional essentials of core Jav
 
 ### Instructor Notes
 
-* Have your TAs refer to the [Time Tracker](03-Day-TimeTracker.xlsx) to stay on track.
+* Have your TAs refer to the [Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1H64sciS61YRrj3vv7nAEHc3AXPw4YAb9/view?usp=sharing) to stay on track.
 
 #### Class Objectives
 

@@ -1,5 +1,7 @@
 ## 4.1 Lesson Plan - jQuery Begins <!--links--> &nbsp; [⬅️](../../03-Week/03-Day/03-Day-LessonPlan.md) &nbsp; [➡️](../02-Day/02-Day-LessonPlan.md)
 
+### Slideshow
+
 * This lesson's slides are available on Google Drive here: [04-1 jQuery Begins](https://docs.google.com/presentation/d/1RdBB_BH_n-RnMIFXBUUXpeGTFyntxZyIOlRCOh6b07M/edit?usp=sharing)
 
 * To add slides to the student-facing repository, download the slides as a PDF by navigating to File > "Download as" and choose "PDF document." Add the slide PDF file to your class repository along with other necessary files.
@@ -81,9 +83,9 @@ In this class, we will be introducing students to the concept of DOM Manipulatio
 
 * In today's class, expect students to have many issues with jQuery syntax. Be encouraging and let them know that the syntax will seem more intuitive over time. For now, they should just try to utilize the syntax as is.
 
-* Starting with today's class, slides will have play a less prominent role. Warn students of this and let them know that their time spent coding is where real learning will happen.
+* Starting with today's class, slides will play a less prominent role. Warn students of this and let them know that their time spent coding is where real learning will happen.
 
-* Have your TAs reference [01-Day-TimeTracker](01-Day-TimeTracker.xlsx) to help keep track of time during class.
+* Have your TAs reference [01-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1NfY9_XSUnVYrlLDD_aHD0t3VCqLIOKv7/view?usp=sharing) to help keep track of time during class.
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=934cbc5d-b0eb-468b-b7e0-2f0463d9695d)

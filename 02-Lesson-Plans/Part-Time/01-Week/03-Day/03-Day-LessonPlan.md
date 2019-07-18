@@ -40,7 +40,7 @@ In today's class, we'll be covering the bulk of CSS layout and positioning techn
 
 * **Also Important**: Feel free to add in an admin slide with homework due dates for your class.
 
-* Have your TAs reference [03-Day-TimeTracker](03-Day-TimeTracker.xlsx) to help keep track of time during class.
+* Have your TAs reference [03-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1PzMXJ6g2HKj29TV3pOCicV8W1k6eqHx9/view?usp=sharing) to help keep track of time during class.
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e35f9175-fdf3-4efe-9921-87a1c808c360)

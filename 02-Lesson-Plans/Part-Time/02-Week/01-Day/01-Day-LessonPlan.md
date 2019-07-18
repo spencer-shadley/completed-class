@@ -29,7 +29,7 @@ Today's class is focused on empowering students with GitHub Pages for live deplo
 
 * Towards the end of this lesson plan, we've included a "Common Issues" section. This is intended to help you as an instructor/TA better assist your students by offering possible solutions to students' bugs.
 
-* Have your TAs reference [01-Day-TimeTracker](01-Day-TimeTracker.xlsx) to help keep track of time during class.
+* Have your TAs reference [01-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/12s1Zl-VSOa1ZhgxSrjfON-SUHvKgvaiF/view?usp=sharing) to help keep track of time during class.
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=368ef618-e835-4ef6-818b-7f220e562281)
@@ -65,7 +65,7 @@ Today's class is focused on empowering students with GitHub Pages for live deplo
   >
   > **Harder Tone:** As part of the program, student success actively monitors homework submission rates. If you fall below two homework submissions, they will bar you from career services. Don't let that be you! 
 
-* Then let students know when Office Hours + Additional Help are available (using the slide). Make sure to change the links according to your class's repo in advance. 
+* Then let students know when Office Hours + Additional Help are available. Feel free to add a custom slide to the slide deck. 
 
 ### 4. Instructor Do: Recapping (10 min)
 

@@ -73,6 +73,8 @@ Students will be diving into the basics of Handlebars today, a semantic templati
 
 * Handlebars can seem daunting at first, but it is ultimately a very powerful templating tool which your students might find useful. Try to keep to a pace that your students seem comfortable learning, so as to make sure no one is left behind.
 
+* Have your TAs reference [01-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1m2DjqTWWdgrhLGzWG7-fPeOIj1nV7div/view?usp=sharing) to help keep track of time during class.
+
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=888f96cb-f5f8-4bef-bccf-66e1673af42a)
 
@@ -143,17 +145,13 @@ Students will be diving into the basics of Handlebars today, a semantic templati
   * <http://localhost:3000/coolness-chart>
   * <http://localhost:3000/attitude-chart/relaxed>
 
-* After showing off how the application functions and answering whatever questions your students may have, slack out the following instructions...
+* After showing off how the application functions and answering whatever questions your students may have, slack out the following instructions and file...
+
+[03-SeinfeldApp/schema.sql](../../../../01-Class-Content/14-handlebars/01-Activities/03-SeinfeldApp/Solved/schema.sql)
 
 * **Instructions**
 
-  * Create a seinfeld_db database with an actors table.
-
-    * The actors table will have a column for id (PRIMARY KEY AUTO_INCREMENT int), name (varchar), coolness_points (int), and attitude (varchar).
-
-  * Add in four actors with different names, coolness_points, and attitudes.
-
-  * Create a Node Application with Express, and MySQL with three Express routes.
+  * Create a Node Application with Express and MySQL with three Express routes.
 
     * Create a `/cast` route that will display all the actors and their data ordered by their id's.
 

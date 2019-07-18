@@ -28,7 +28,7 @@ Students should be able to:
 
 * Today's lesson builds on the activity from the last lessons. Make sure to slack out the `07-Models/Solved` to ensure a uniform starting point for today's activity.
 
-* Have your TAs refer to the [Time Tracker](03-Day-TimeTracker.xlsx) to stay on track.
+* Have your TAs refer to the [Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/15K6R7xB3HNFAnGkJphHvn3RZ_JKMJJcE/view?usp=sharing) to stay on track.
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2663a2f2-d949-4bf8-aa4d-a8c900f85bf0)

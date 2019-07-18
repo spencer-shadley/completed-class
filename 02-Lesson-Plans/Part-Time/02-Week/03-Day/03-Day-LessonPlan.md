@@ -34,7 +34,7 @@ Today's class is focused on introducing students to the concept of grid-based we
 
 * Depending on how well you are doing on time, feel free to create mini-exercises on the fly to ensure students understand the grid.
 
-* Have your TAs reference [03-Day-TimeTracker](03-Day-TimeTracker.xlsx) to help keep track of time during class. (Note: If this class falls on a Saturday, click the "Saturday" tab on the spreadsheet to see the appropriate schedule.)
+* Have your TAs reference [03-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1GIlEdmWazA-gaTGmtRkxQPJeQrSaRqlj/view?usp=sharing) to help keep track of time during class. (Note: If this class falls on a Saturday, click the "Saturday" tab on the spreadsheet to see the appropriate schedule.)
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=72ccb911-dfd1-465c-90fd-9929bc460c14)
@@ -87,7 +87,7 @@ Today's class is focused on introducing students to the concept of grid-based we
 
   * **You are awesome:**
 
-    * Let students know that they are learning material at a breakneck speed. And that other self-taught developers take months to learn the same amount of material they've learned in weeks.  
+    * Let students know that they are learning material at a breakneck speed. And that other self-taught developers take months to learn the same amount of material they've learned in weeks.
 
     * Then **very importantly**  take a few moments to have yourself and your TAs share their own experience struggling through coding. If your TAs went through Boot Camps, have them share their own advice and emotional perspectives. How hard was it? When did it finally click? Etc.
 
@@ -285,7 +285,7 @@ Today's class is focused on introducing students to the concept of grid-based we
 
   * The Bootstrap file required the Bootstrap CSS link
 
-  * Then show students how you can easily copy and paste code to create a Navbar. (You can copy and paste this from W3 Schools <http://www.w3schools.com/bootstrap/bootstrap_navbar.asp>).
+  * Then show students how you can easily copy and paste code to create a Navbar. (You can copy and paste this from the Bootstrap Website: <https://getbootstrap.com/docs/4.3/components/navbar/>).
 
   * Show students how the main body goes into a container and that individual rows hold the various components
 

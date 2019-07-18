@@ -30,7 +30,7 @@ The purpose of this lesson is to provide students with basic facility in the Jav
 
 * It may be easier to keep the example files open in one window, and demonstrate their examples in **Everyone Do** style in an interpreter on the projector.
 
-* Have your TAs refer to the [Time Tracker](01-Day-TimeTracker.xlsx) to stay on track.
+* Have your TAs refer to the [Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1xX9VX-9SOwP3i_8cLwKLWrKge85zCt5P/view?usp=sharing) to stay on track.
 
 ### Class Objectives
 

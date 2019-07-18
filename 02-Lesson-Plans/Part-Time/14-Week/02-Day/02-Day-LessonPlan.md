@@ -68,6 +68,8 @@ Today's course will be building upon the lessons your students have learned the 
 * Students should be able to apply the basics of CRUD (Create. Read. Update. Delete.) to create a full-stack web application.
 * Students should know how to use Express, MySQL, and Handlebars all together to create dynamic webpages.
 
+* Have your TAs reference [02-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1o0kMAeHCM330hksJozYj7rE5ZRopT03F/view?usp=sharing) to help keep track of time during class.
+
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7eb4a1ad-6074-4ff7-9c7e-407cd77c5311)
 

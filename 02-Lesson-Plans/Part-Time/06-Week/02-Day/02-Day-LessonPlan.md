@@ -70,13 +70,13 @@ In this class, students will be building upon their knowledge of AJAX to retriev
 
 ##### Instructor Notes
 
-* Use the slideshow as an initial starting point for your conversation on APIs. Make sure that students see the power of APIs and understand how APIs provide a link between front-end (what they've learned so far) and backend (what they will soon be learning). Be sure to replace the data and use the correct slide deck for your campus.
+* Use the slideshow as an initial starting point for your conversation on APIs. Make sure that students see the power of APIs and understand how APIs provide a link between front-end (what they've learned so far) and backend (what they will soon be learning).
 
 * Today's activities will feel pretty challenging and confusing to the majority of your students. Use your best judgment and adjust as necessary. If you need to cut the Bands In Town exercise by all means do so. Offer ample support and let students know that things will "click" eventually -- even if it doesn't quite click just yet.
 
 * Today's Weather in Bujumbura Activity will require students to use an API key from [OpenWeatherMap API](http://openweathermap.org/api). Please have them apply for one before class starts in order to have it approved and activated in time for the activity. 
 
-* TAs should reference [02-Day-TimeTracker](02-Day-TimeTracker.xlsx) to help keep track of time during class.
+* TAs should reference [02-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1Qm5-P-WZLiQVf_FKK_wanOgzIQgpVR9_/view?usp=sharing) to help keep track of time during class.
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=18680edc-4ed7-4272-ba33-2125c690b166)
@@ -162,7 +162,7 @@ In this class, students will be building upon their knowledge of AJAX to retriev
 
 ### 4. Instructor Do: Working Movie App Demo (5 min)
 
-* Next open the file [06-MovieJSONDump/Solved/movie-json-dump-solution.html](../../../../01-Class-Content/06-ajax/01-Activities/06-MovieJSONDump/Solved/movie-json-dump-solution.html) in your browser. Let students know that in today's class we will be working towards building this.
+* Next open the file [10-WorkingMovieApp/Solved/working-movie-app-solved.html](../../../../01-Class-Content/06-ajax/01-Activities/10-WorkingMovieApp/Solved/working-movie-app-solved.html) in your browser. Let students know that in today's class we will be working towards building this.
 
 * In demonstrating this application:
 

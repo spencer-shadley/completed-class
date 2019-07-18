@@ -77,6 +77,8 @@ Today's class focuses on using those MySQL skills students have acquired earlier
 
 * **Extra Resources:** Send out the following link before or after class and encourage students to tackle the two MySQL questions in [Whiteboarding Overview and Questions](https://coding-bootcamp-whiteboarding-algorithms.readthedocs-hosted.com/en/latest/). This was given with the course pre-work but after this week, students should be able to accomplish those questions.
 
+* Have your TAs reference [03-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1bgCBIYaRmjrEVbjAGkY1GKW-BGA2eyuj/view?usp=sharing) to help keep track of time during class.
+
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=88468376-c990-409e-a498-136a52d3801e)
 

@@ -26,7 +26,7 @@ After today's class, students should be able to use ASP.NET Core MVC to:
 
 #### Instructor Notes
 
-* Have your TAs refer to the [Time Tracker](03-Day-TimeTracker.xlsx) to stay on track.
+* Have your TAs refer to the [Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1sZMVikU6EhWyH6GGQRyMKPzsk5HEvyHM/view?usp=sharing) to stay on track.
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7d682429-b581-4661-a582-a9600148474c)

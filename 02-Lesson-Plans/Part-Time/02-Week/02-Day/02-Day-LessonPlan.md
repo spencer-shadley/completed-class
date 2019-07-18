@@ -33,7 +33,7 @@ Today's class is focused on introducing students to additional CSS styling techn
 
 * **Important Note:** If you find yourself pressed for time after the break, feel free to remove the discussion of pseudo-styles entirely (or come back to it). The Bootstrap material is far more important and more relevant to their homework assignment, so definitely prioritize this section.
 
-* Have your TAs reference [02-Day-TimeTracker](02-Day-TimeTracker.xlsx) to help keep track of time during class. (Note: If this class falls on a Saturday, click the "Saturday" tab on the spreadsheet to see the appropriate schedule.)
+* Have your TAs reference [02-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1Dx5IKqvZOsUcPSx3T5FLPmWrMR4kPrSK/view?usp=sharing) to help keep track of time during class. (Note: If this class falls on a Saturday, click the "Saturday" tab on the spreadsheet to see the appropriate schedule.)
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=be42325d-f2a4-4e40-b788-c330e48099e3)

@@ -42,7 +42,7 @@ Another example, using double equals to check for expected input, you may find t
 
 Today, we'll be asking students to create an Express based web application for handling reservation requests. In the process of building today's assignment, students will reinforce their understanding of Express Servers, Routing, and the utility AJAX for front-end interaction. 
 
-`Summary: Complete activity 16 in Unit 13`
+`Summary: Complete activity 15 in Unit 13`
 
 ##### Attention: If you’re teaching a part time section and this isn’t a Saturday, please use the “Weekday” tab inside of the "03-Day-TimeTracker.xlsx" for activity lengths instead of those printed on this lesson plan
 
@@ -69,7 +69,7 @@ Today, we'll be asking students to create an Express based web application for h
 
   ![0-Diagram](Images/0-Diagram.png)
 
-* Have your TAs reference [03-Day-TimeTracker](03-Day-TimeTracker.xlsx) to help keep track of time during class. 
+* Have your TAs reference [03-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1NfYn5qxxKGeX7_N_DgAjkgE3lI1SQeJW/view?usp=sharing) to help keep track of time during class. 
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9c15ad2a-bc31-4c06-9a73-e7827d4d2b07)
@@ -118,7 +118,7 @@ Today, we'll be asking students to create an Express based web application for h
   ![1-HotRestaurant_5](Images/1-HotRestaurant_5.png)
 
 * Let students know that they will be building this application from scratch over the course of the next few hours.
-* Feel free to open up the `phases.md` file found in `16-HotRestaurant` folder and keep it on the screen during the development. Scroll down to the next phase when the time is up.
+* Feel free to open up the `phases.md` file found in `15-HotRestaurant` folder and keep it on the screen during the development. Scroll down to the next phase when the time is up.
 
 ### 3. Instructor Do: Group Formation + Initial Instructions (10 mins)
 

@@ -38,9 +38,9 @@ In today's class we'll reinforce the concepts we went over in the last class inc
 
   * We have created a sequelize deployment guide, video deployment guide, quick start guide, and CRUD action cheat sheet. These resources will be incredibly helpful to students so please be sure to zip up the Supplemental Folder and provide it to your students.
 
-  * Consider walking students through the process and letting them see you do it first hand
+  [Supplemental Materials](../../../../01-Class-Content/15-sequelize/03-Supplemental)
 
-  * [Supplemental Materials](../../../../02-lesson-plans/part-time/15-Week/Supplemental)
+* Have your TAs reference [03-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1p94kdnJhDLKraeBkv6bm3vLfF07TxaAK/view?usp=sharing) to help keep track of time during class.
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6d68465d-e58e-4785-909c-8cffce1f1a96#)

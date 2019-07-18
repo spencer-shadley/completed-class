@@ -83,6 +83,8 @@ In this class, we will be providing students an opportunity to review old JavaSc
 
 * During today's activities, focus on pairing like-level students so they can review old material with one another. If possible, work with TAs to organize these groups before class begins. Pairing like-levels also helps as it allows you and the TAs concentrate on students who need the most significant help. Consider pulling these students out of class and working with them in another space if one is available. 
 
+* Have your TAs reference [01-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1iei7_OBRKt3S6pqxTWTgCLo9JhlUrxMI/view?usp=sharing) to help keep track of time during class.
+
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f5b3fa21-b7c7-46a1-8900-394af477c924)
 

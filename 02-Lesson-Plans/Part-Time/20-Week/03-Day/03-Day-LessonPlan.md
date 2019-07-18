@@ -26,6 +26,8 @@ After doing a review of Databases and React and giving some help and time for st
 
 * Students should complete the React Checkpoint.
 
+* Have your TAs reference [03-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1leakcpggPx4VrMbcjiyqDcneB8YpdGrv/view?usp=sharing) to help keep track of time during class.
+
 ### Class Objectives
 
 * To lead a review time with your students for any questions they may still have about prior material since their second project. Primarily Databasing and React content.
@@ -91,7 +93,7 @@ After doing a review of Databases and React and giving some help and time for st
 
 * Go over the next set of slides.
 
-* Tell students should challenge themselves, and that you'll take no excuses. They've made it this far already &mdash; it's time for them to take everything they learned and produce their best work yet.
+* Tell students they should challenge themselves, and that you'll take no excuses. They've made it this far already &mdash; it's time for them to take everything they learned and produce their best work yet.
 
 * **Go over what's expected for the project:**
 

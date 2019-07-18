@@ -22,7 +22,7 @@ After today's lesson, students should be able to:
 
 * The focus of today's lesson is to introduce students to the basic principles of object-oriented program design. Today's material is abstract and potentially challenging, so we introduce minimal new syntax.
 
-* Have your TAs refer to the [Time Tracker](02-Day-TimeTracker.xlsx) to stay on track.
+* Have your TAs refer to the [Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1nDZ30Pgnka3i1q8YtsH2pPe4lv3VXl_r/view?usp=sharing) to stay on track.
 
 - - -
 

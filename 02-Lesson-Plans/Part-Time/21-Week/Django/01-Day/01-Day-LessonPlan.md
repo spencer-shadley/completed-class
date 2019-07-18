@@ -34,7 +34,7 @@ The purpose of this lesson is familiarize students with the basics of Python.
 
   .
 
-* Have your TAs refer to the [Time Tracker](01-Day-TimeTracker.xlsx) to stay on track.
+* Have your TAs refer to the [Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1KlJusnxZ4yS34XcXqJwAnh7R3DISqGGu/view?usp=sharing) to stay on track.
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=adfa2186-6880-4dae-ae21-a8c50188a7c5)
