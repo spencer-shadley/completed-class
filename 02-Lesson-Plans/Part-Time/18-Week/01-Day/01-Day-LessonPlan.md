@@ -33,21 +33,29 @@ Todays class will be focused on Web Performance. We will use Lighthouse to audit
 
 ### 1. Instructor Do: Welcome/Intro Web Performance (10 mins)
 
-* Welcome students and introduce them to the overarching topic for the day, web performance.
+* Welcome students to class and then open Google Chrome. Open your Dev Tools Network Tab and Throttle your connection to `Slow 3G`
 
-* Ask students what they think makes a web application perform well.
+  * ![Throttle Connection](Images/throttleConnection.png)
 
-* One of the biggest factors that leads to a poor user experience is slow page load times.
+* Navigate to [Amazon.com](https://amazon.com/)
+  
+  * The page will load extremely slow, as it does proceed to the next question. 
+  
+* Ask the class, "Have you ever left a webpage due to it taking too long to load"
 
-* Ask students if they have ever left a webpage due to it taking too long to load.
+  * Chances are most students will have experienced this. Explain this is a common experience all over the world, as not all people have access to fast network connections.
+  
+  * One of the biggest factors that leads to a poor user experience is slow page load times.
 
-* When it comes to the web, every second counts. Todays class will be about how webpages can be optimized to save the end user time and provide a more fluid experience.
+* Ask the class, "What do you think the most important part of the user experience is?". Call on one or two students for answers.
 
-* Show students these stats on user perception and its affect on user experience from Google which can be found [here](https://developers.google.com/web/fundamentals/performance/rail#ux).
+  * Performance. Speed and response times are paramount, as making users wait for response to input or loading information is a guaranteed way to lose those users.
 
-  * Show students that even a 100 to 300ms delay can be perceived by a user.
+  * When it comes to the web every second counts. Todays class will be about how webpages can be optimized to save the end user time and provide a more fluid experience.
 
-  * If a page isn't loaded within 10 seconds, it can lead to a user leaving the page.
+* Ask the class, "How do we know what is causing our page to perform poorly or well?"
+
+* Proceed to demoing Lighthouse.
 
 ### 2. Instructor Do: Demo Lighthouse (10 mins)
 
