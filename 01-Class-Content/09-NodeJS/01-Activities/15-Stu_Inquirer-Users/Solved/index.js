@@ -2,7 +2,6 @@ var inquirer = require("inquirer");
 var fs = require('fs');
 
 inquirer.prompt([
-
   {
     type: "input",
     name: "name",
@@ -10,13 +9,12 @@ inquirer.prompt([
   },
   {
     type: "checkbox",
-    message: "How much of the stack do you know?",
+    message: "What languages do you know?",
     name: "stack",
     choices: [
       "HTML", 
       "CSS", 
       "JavaScript", 
-      "Node.js",
       "MySQL"
     ]
   },
@@ -30,9 +28,7 @@ inquirer.prompt([
       "telekinesis"
     ]
   }
-
 ]).then(function(data) {
-  console.log(data);
 
   var filename = data.name.toLowerCase().split(' ').join('') + ".json";
 
