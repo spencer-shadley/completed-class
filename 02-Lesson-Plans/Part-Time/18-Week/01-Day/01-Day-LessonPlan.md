@@ -394,9 +394,14 @@ In this activity you are going to use an online compression tool to decrease ima
 
 ### 16. Student Do: Lazy Loading (15 mins)
 
-* Direct students to the activity instructions located [here]()
+* Direct students to the activity instructions located [here](../../../../01-Class-Content/18-web-performance/01-Activities/05-Stu_Gallery-Lazy-Load/README.md)
 
-* **Instructions**
+```md
+# Lazy Loading Images
+
+In this activity you are going to work with the Intersection Observer API to implement lazy loading functionality for our Gallery App.
+
+## Instructions
 
 * In this activity you are going to take the Gallery App and implement Lazy Loading functionality.
 
@@ -413,6 +418,7 @@ In this activity you are going to use an online compression tool to decrease ima
 [MDN Progressive Loading](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Loading)
 
 * After you have completed implementing lazy loading, open your Dev Tools and run another Lighthouse Audit.
+```
 
 ### 17. Instructor Do: Review Lazy Loading (5 mins)
 
