@@ -58,7 +58,6 @@ In this class, we will be using Firebase and MomentJS to create a real-world app
 * Students should complete and understand the Train Prediction Activity.
 * Students should build their confidence at building applications from scratch.
 * Students should be broken up into groups of 3-4 (by section) for next week's project week.
-* Student should complete the Timers and APIs Checkpoint.
 
 ##### Instructor Notes
 
@@ -99,8 +98,6 @@ In this class, we will be using Firebase and MomentJS to create a real-world app
 * To introduce the concept of creating lists and children using Firebase
 
 * To introduce the MomentJS library for date-time manipulation
-
-* To complete Timers and APIs Checkpoint.
 
 - - -
 
@@ -421,119 +418,13 @@ In this class, we will be using Firebase and MomentJS to create a real-world app
 
 * Be pumped!
 
-### 18. Instructor Do: Introduce Checkpoint - Timers and APIs (5 mins) (Critical)
-
-* Let your class know that they will now be taking a short multiple choice assessment to check their understanding of Timers and APIs
-
-* DO NOT SKIP THIS INTRODUCTION. DO NOT JUST SEND OUT THE LINK WITHOUT CONTEXT
-
-* Reassure the students that they need not be nervous about the checkpoint:
-
-  * "This will not affect your grade or graduation requirements."
-
-  * "This is not like the tests and quizzes you might be used to from school or college. The purpose of these tests is not to motivate you to study or punish you for struggling."
-
-  * "This is as much a test of me as an instructor and of the course content as it is of you. We are here to ensure your success, and this is one of the tools we use to make sure we are doing that effectively. This class moves *fast*, so if some or all of you misunderstand something important we as an instructional team need to find out as fast as possible so we can help."
-
-  * "Long story short, this quiz can not hurt you. Only help you."
-
-* Let students know that they should read carefully and focus on thinking about the right answer rather than using any test-taking skills they may have learned:
-
-  * "There are no silly answers or obvious throwaway responses on this quiz, because those kinds of answers reduce the likelihood that we'll be able to figure out whether we've taught something effectively."
-
-  * "Test taking strategies you may have learned for standardized test *will not work*, so instead of focusing on eliminating wrong answers or looking for sneaky context cues, read the question and each of the possible choices carefully."
-
-* Reassure students once again that the purpose of this is to help them, and remind them that the outcome does not impact their grade or graduation requirements. You should do this *every single time* you give an Checkpoint.
-
-* You or your TAs should now get the link specific to your class:
-
-  * Navigate in your browser to: `https://www.switchboard.tech`
-
-  * Select your class code (if it doesn't show up on its own)
-
-    * For parallel cohorts (two classes combined on a Saturday) and doing a Checkpoint: You will **need** to select the classes in your cohort. You can multi select the cards by clicking the class that you need.
-
-    * The class roster will be in the **one** link.
-
-  * Select the Checkpoint and copy the resulting link
-
-### 19. Students Do: Take Checkpoint - Timers and APIs (10 mins) (Critical)
-
-* Slack out the link to the Checkpoint
-
-* Let your students know that once they select their name, it will take them to the Checkpoint
-
-* Checkpoints must be completed in class, **not at home**, to ensure you will be able to effectively find and help struggling students
-
-* TAs should walk around the class to ensure students aren't looking up answers
-
-* Keep in mind we do not use grades from assessments toward graduation requirements. However, students will be tempted to avoid feeling like they don't understand something.
-
-* It's important for instructional teams to create an environment where it is safe to fail, but also where such failure is visible. You should not be worried about "cheating" on checkpoints, only making sure that students who need help aren't remaining invisible.
-
-* Your SSM will have the results of the Checkpoint within an hour of its completion
-
-### 20. End (0 mins)
+### 18. End (0 mins)
 
 ### Note: Project 1 Upcoming
 
 * Next week students will begin Project 1. We have created instruction covering the 3 days of week 8 to help students learn more about collaboration and agile methodologies.
 
   * Depending on how you would like to run class, you can teach both 8.1 and 8.2's content during the first day if you would like. Be aware that in doing so, you will leave less time for your students to brainstorm in their groups on that first day. Use your best judgement.
-
-### 21. TAs Do: Structured Office Hours - Review Timers and APIs (30 min)
-
-* Navigate in your browser to: `https://github.com/coding-boot-camp/checkpoint-bank/blob/master/checkpoints/multiple-choice/05-Timers-and-APIs-MC/05-Timers-and-APIs-MC.md`
-
-* There you will find the questions and answers to the Checkpoint given.
-
-* Please take the entire office hours time to review the questions with the students.
-
-* Suggestion Format:
-
-  * TAs ask a question at a time to the class.
-
-  * Let the students try to answer it.
-
-    * If you see that a majority of the class has a misunderstanding with a question:
-
-      * Take your time on this question!
-
-    * If you see that a small number of students has a misunderstanding with a question:
-
-      * Do your best to reinforce the misunderstanding but be cautious of your time.
-
-      * Make note of the students that are still struggling with the question and schedule a 1:1 with the students.
-
-  * If applicable, demo the answer.
-
-* Take your time on these questions!
-
-* This is a great time to reinforce concepts and misunderstandings!
-
-### 22. Instructor Do: Introduce the Unit Video Guide (3 mins)
-
-* Emphasize how helpful a tool these videos can be if a student feels as if they are falling behind or simply wants to review the material once again.
-
-* [Video Guide](../../../../01-Class-Content/07-firebase/VideoGuide.md)
-
-### REMINDER: FIREBASE MANAGER: DO NOT SLACK TO STUDENTS. INSTRUCTOR USE ONLY
-
- [Firebase Manager](https://firebase-manager-fsf.netlify.com/)
-
-* **Important**: We have created a "firebase manager". This will allow you to clear all the data stored within our deployed firebase applications in case anyone has added anything malicious and/or unwanted. Only use when NECESSARY.
-
-# Instructor Do: Private Self-Reflection (0 min)
-
-Take some time on your own after class to think about the following questions. If there's anything that you're not sure how to answer, feel free to reach out to the curriculum team!
-
-1. How did today's class go?
-2. How did you teach it?
-3. How well do you feel you did teaching it?
-4. Why are you teaching it?
-5. Why did you teach it that way?
-6. What evidence can I collect to show my students are understanding?
-7. How will my students know they are getting it?
 
 ### Lesson Plan Feedback
 

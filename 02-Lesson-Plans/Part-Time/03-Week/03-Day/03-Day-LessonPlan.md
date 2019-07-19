@@ -50,7 +50,6 @@ In this class, we will be introducing students to the concept of JavaScript Func
 * Students should understand what an object is and what its syntax conveys (properties and values).
 * Students should complete the `27-MyFirstFunctions` and `32-CarGame` activities.
 * Students should understand how the `30-GandalfTheGreyObjects` example works.
-* Student should complete the HTML/CSS/Git Checkpoint.
 
 ##### Instructor Notes
 
@@ -67,7 +66,6 @@ In this class, we will be introducing students to the concept of JavaScript Func
 
 * To gain an understanding of JavaScript Functions and Objects.
 * To begin utilizing the basic JavaScript learned so far to build simple JavaScript games.
-* To complete the HTML/CSS/Git Checkpoint.
 
 - - -
 
@@ -416,98 +414,9 @@ In this class, we will be introducing students to the concept of JavaScript Func
 
 * At this point, TAs should introduce students to the homework. This typically just means opening the homework solution in the browser and showing students what the final product looks like or showing the video and talking over it.
 
-### 22. Instructor Do: Introduce Checkpoint - HTML/CSS/Git (5 mins) (Critical)
+### 22. End (0 mins)
 
-* Let your class know that they will now be taking a short multiple choice assessment to check their understanding of HTML/CSS/Git
-
-* DO NOT SKIP THIS INTRODUCTION. DO NOT JUST SEND OUT THE LINK WITHOUT CONTEXT
-
-* Reassure the students that they need not be nervous about the Checkpoint:
-
-  * "This will not affect your grade or graduation requirements."
-
-  * "This is not like the tests and quizzes you might be used to from school or college. The purpose of these tests is not to motivate you to study or punish you for struggling."
-
-  * "This is as much a test of me as an instructor and of the course content as it is of you. We are here to ensure your success, and this is one of the tools we use to make sure we are doing that effectively. This class moves _fast_, so if some or all of you misunderstand something important we as an instructional team need to find out as fast as possible so we can help."
-
-  * "Long story short, this quiz can not hurt you. Only help you."
-
-* Let students know that they should read carefully and focus on thinking about the right answer rather than using any test-taking skills they may have learned:
-
-  * "There are no silly answers or obvious throwaway responses on this quiz, because those kinds of answers reduce the likelihood that we'll be able to figure out whether we've taught something effectively."
-
-  * "Test taking strategies you may have learned for standardized tests _will not work_, so instead of focusing on eliminating wrong answers or looking for sneaky context cues, read the question and each of the possible choices carefully."
-
-* Reassure students once again that the purpose of this is to help them, and remind them that the outcome does not impact their grade or graduation requirements. You should do this _every single time_ you give an Checkpoint.
-
-* You or your TAs should now get the link specific to your class:
-
-  * Navigate in your browser to: `https://www.switchboard.tech`
-
-  * Select your class code (if it doesn't show up on its own)
-
-    * For parallel cohorts (two classes combined on a Saturday) and doing a Checkpoint: You will **need** to select the classes in your cohort. You can multi select the cards by clicking the class that you need.
-
-    * The class roster will be in the **one** link.
-
-  * Select the Checkpoint and copy the resulting link
-
-### 23. Students Do: Take Checkpoint - HTML/CSS/Git (10 mins) (Critical)
-
-* Slack out the link to the Checkpoint
-
-* Let your students know that once they select their name, it will take them to the Checkpoint
-
-* Checkpoints must be completed in class, **not at home**, to ensure you will be able to effectively find and help struggling students
-
-* TAs should walk around the class to ensure students aren't looking up answers
-
-* Keep in mind we do not use grades from assessments toward graduation requirements. However, students will be tempted to avoid feeling like they don't understand something.
-
-* It's important for instructional teams to create an environment where it is safe to fail, but also where such failure is visible. You should not be worried about "cheating" on checkpoints, only making sure that students who need help aren't remaining invisible.
-
-* Your SSM will have the results of the Checkpoint within an hour of its completion
-
-
-### 24. End (0 mins)
-
-### 25. TAs Do: Structured Office Hours - Review HTML/CSS/Git (30 min)
-
-* Navigate in your browser to: `https://github.com/coding-boot-camp/checkpoint-bank/blob/master/checkpoints/multiple-choice/02-HTML-CSS-Git-MC/02-HTML-CSS-Git-MC.md`
-
-* There you will find the questions and answers to the Checkpoint given.
-
-* Please take the entire office hours time to review the questions with the students.
-
-* Suggestion Format:
-
-  * TAs ask a question at a time to the class.
-
-  * Let the students try to answer it.
-
-    * If you see that a majority of the class has a misunderstanding with a question:
-
-      * Take your time on this question!
-
-    * If you see that a small number of students has a misunderstanding with a question:
-
-      * Do your best to reinforce the misunderstanding but be cautious of your time.
-
-      * Make note of the students that are still struggling with the question and schedule a 1:1 with the students.
-
-  * If applicable, demo the answer.
-
-* Take your time on these questions!
-
-* This is a great time to reinforce concepts and misunderstandings!
-
-### 26. Instructor Do: Introduce the Unit Video Guide (3 mins)
-
-* Emphasize how helpful a tool these videos can be if a student feels as if they are falling behind or simply wants to review the material once again.
-
-* [Video Guide](../../../../01-Class-Content/03-javascript/VideoGuide.md)
-
-### 27. EXTRA Students Do: Question Game (45 mins) (Extra)
+### 23. EXTRA Students Do: Question Game (45 mins) (Extra)
 
 * If sufficient time exists, do one last activity. (If limited on time, feel free to skip this activity or just go straight to the solution.)
 
@@ -527,23 +436,11 @@ In this class, we will be introducing students to the concept of JavaScript Func
 
     * Hint: Don’t worry about having DRY code to start with. Just focus on getting working code first.
 
-### 28. Instructor Do: Review Activity (10 mins) (Extra)
+### 24. Instructor Do: Review Activity (10 mins) (Extra)
 
 * Review `question-game-solved.html` in `10-QuestionGame` with the class.
 
 * Encourage students to go through the solution themselves at home.
-
-# Instructor Do: Private Self-Reflection (0 min)
-
-Take some time on your own after class to think about the following questions. If there's anything that you're not sure how to answer, feel free to reach out to the curriculum team!
-
-1. How did today's class go?
-2. How did you teach it?
-3. How well do you feel you did teaching it?
-4. Why are you teaching it?
-5. Why did you teach it that way?
-6. What evidence can I collect to show my students are understanding?
-7. How will my students know they are getting it?
 
 ### Lesson Plan Feedback
 
