@@ -55,15 +55,11 @@ Todays class will be focused on Web Performance. We will use Lighthouse to audit
 
 * Ask the class, "How do we know what is causing our page to perform poorly or well?"
 
+  * This is an important question. Getting concrete analysis on the performance metrics of a web page is important in improving it in the future.
+
 * Proceed to demoing Lighthouse.
 
 ### 2. Instructor Do: Demo Lighthouse (10 mins)
-
-* Ask the class:
-
-  * How do you think websites are evaluated for performance?
-
-  * This is an important question. Getting concrete analysis on performance metrics of a program is important in improving that application in the future.
 
 * Google has created a tool called Lighthouse which will allow us to run an audit on our page and find out different metrics about how it performs and what is hindering its performance. Lighthouse is a quality audting tool developed by Google for analyzing web pages.
 
