@@ -161,7 +161,7 @@ Todays class will be focused on Web Performance. We will use Lighthouse to audit
 
 ### 6. Student Do: Minify your JavaScript (10 mins)
 
-* Slack out the following instructions to your students.
+* Direct students to the activity instructions located [here](../../../../01-Class-Content/18-PWA/01-Activities/02-Stu_Minifify-JS/README.md)
 
 * **Instructions**
 
@@ -197,11 +197,9 @@ Todays class will be focused on Web Performance. We will use Lighthouse to audit
 
 * Tell the class that while minification will help reduce file sizes, something called *compression* will let us take files sizes down even further.
 
-* Ask the class:
-
-  * Have you ever worked with a `.zip` extension file?
+* Ask the class, "Have you ever worked with a `.zip` extension file?"
   
-  * Most will say they have.
+  * A `.zip` file is a compressed version of a normal folder. When you `unzip` it, the folder contains all of the information it had before it was zipped.
 
 * Navigate to [MDN GZip Compression](https://developer.mozilla.org/en-US/docs/Glossary/GZip_compression).
 
