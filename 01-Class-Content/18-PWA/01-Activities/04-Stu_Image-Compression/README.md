@@ -4,16 +4,28 @@ In this activity you are going to use an online compression tool to decrease ima
 
 ## Instructions
 
-* Navigate to [Image Optim Online Compression](https://imageoptim.com/online)
+* In this activity you will be using ImageOptim Online to compress images.
+
+* First, unzip the `uncompressedImages.zip` file.
+
+* Next, navigate to [ImageOptim Online](https://imageoptim.com/online)
 
 * Select the following options:
 
-  * `Medium` Quality.
+  * Quality - Medium
 
-  * `Auto` Color Quality
+  * Color Quality - Auto
 
-  * Proper format of image (in this case `JPEG`)
+  * Format - JPEG
 
-* Then, click `Choose Files` and choose 3-5 images to upload.
+* Now that our options are selected, click `Choose Files`.
 
-* Finally click the `Submit` button. Once completed, you will automatically download the newly compressed images.
+* This will prompt you to select an image or images you would like to pass through the compressor.
+
+* Go ahead and choose 3-5 images. Before accepting the choices, note the original file sizes so you can compare against the compressed image.
+
+* Finally, click `Submit`.
+
+* Once the compression is complete, a `zip` file will automatically download to your computer.
+
+  * This will most likely be downloaded to your `Downloads` folder.
