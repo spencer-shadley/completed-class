@@ -404,7 +404,7 @@ Today's class is focused on introducing students to the concept of grid-based we
 
 - - -
 
-### 28. Pre-class Drills Announcement (0 mins)
+### 28. Pre-class Drill Announcement (0 mins)
 
 * Let the class know that from now until we start the first project, we'll be having structured pre-class office hours as well.
 
@@ -412,7 +412,7 @@ Today's class is focused on introducing students to the concept of grid-based we
 
 * Strongly encourage students to attend the pre-class office hours. Remind them that the instructional staff has outside commitments as well, and that you understand the pressures of making this kind of time commitment, but that they owe it to themselves to invest fully in this experience. Interview prep will go a long way towards helping them understand JavaScript better and making them more competitive in their career search after graduation.
 
-* State clearly in the beginning that the pre-class drills will be going on, but students can still meet 1:1 with staff for help with other things, as long as one staff member is available to go over the question and answer before class starts.
+* State clearly in the beginning that the Pre-class Drill will be going on, but students can still meet 1:1 with staff for help with other things, as long as one staff member is available to go over the question and answer before class starts.
 
 ### 29. EXTRA CONTENT: Harder Layout (40 min)
 

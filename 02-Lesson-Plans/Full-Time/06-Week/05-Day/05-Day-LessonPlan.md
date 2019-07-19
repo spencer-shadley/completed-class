@@ -1,52 +1,5 @@
 ## 6.5 - MySQL Big Data (10:00 AM) <!--links--> &nbsp; [⬅️](../04-Day/04-Day-LessonPlan.md) &nbsp; [➡️](../../07-Week/01-Day/01-Day-LessonPlan.md)
 
-* 20 min before class starts write the following problem on the board or Slack it out:
-
-```js
-Write a function that takes an array of numbers and a function as parameters. The function paremeter should return true if the input meets a certain condition or false otherwise. Your function should return true if the function parameter returns true for _any_ of the array elements in the array parameter or false otherwise. 
-
-Ex:
-
-Input: [1,2,3]  function(num){return num === 2}
-Output: true
-
-Input: [1,5,3]  function(num){return num === 2}
-Output: false
-
-Input: [1,2,3]  function(num){return num % 2 === 0}
-Output: true
-
-Input: [1,5,3]  function(num){return num % 2 === 0}
-Output: false
-```
- 
-* After 15 minutes take 5 minutes to go over the solution. You should start recording when going over the answer and Slack out the answer at the end of office hours before class starts.
-
-* Ask students if they found a solution and go over their solution (or the ones below if no student-solution is provided). 
-
-* Be sure to praise students who provide a solution even if it isn't fully correct. Discuss its merits and potential pitfalls.
-
-```js
-const any = function(arr, cb){
-  const isTrue = false;
-
-  for (let i = 0; i < arr.length; i++){
-    const cbOutput = cb(arr[i]);
-    if(cbOutput){
-      isTrue = cbOutput;
-    }
-  }
-  
-  return isTrue;
-}
-```
-
-* Time permitting, take this opportunity to introduce students to the `.some()` array method and the term `predicate function`.
-
-* Remind students of the usefulness of array methods and encourage them to familiarize themselves with as many as possible.  `https://www.w3schools.com/jsref/jsref_obj_array.asp`
- 
-* Time permitting, discuss some use-cases for the `.some()` function.
- 
 ### Overview
 
 Today's class focuses on using those MySQL skills students have acquired earlier in the week to deal with big data. On top of this, students should also become proficient in creating/using "schema.sql" and "seeds.sql" files while also learning how to import data using .CSV files.
