@@ -26,8 +26,11 @@ Refer to the [design mockup](09-NodeJS-homework-demo.pdf)
 
 
 ## User Story
+
 AS A product manager
+
 I WANT a developer profile generator
+
 SO THAT I can easily prepare reports for stakeholders
 
 ## Business Context
@@ -35,8 +38,11 @@ When preparing a report for stakeholders, it is important to have up-to-date inf
 
 
 ## Acceptance Criteria
+
 GIVEN the developer has a GitHub profile
+
 WHEN prompted for the developer's GitHub username and favorite color 
+
 THEN a pdf profile is generated
 
 
