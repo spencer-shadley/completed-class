@@ -44,6 +44,8 @@ Todays class will be focused on Web Performance. We will use Lighthouse to audit
   * The page is going to load extremely slowly. Show students the Network Chart found under the connection throttle dropdown.
 
   * Amazon will load assets for well over a minute, and this traffic can all be watched inside of our dev tools.
+  
+  * Loading times like these can be a huge deterrent to users.
 
 * Ask the class, "Have you ever left a webpage due to it taking too long to load"
 
