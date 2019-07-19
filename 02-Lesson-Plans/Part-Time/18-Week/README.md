@@ -1,45 +1,71 @@
-## Week 18 - Introduction to MongoDB
+# Unit 18: Web Performance
 
-### Overview
+## Overview
 
-In this week, we will be introducing students to the NoSQL database with MongoDB and Mongoose. We'll also be showing students how to scrape websites with cheerio, and how to place their scraped data in a MongoDB database.
+In this unit we will cover measuring and optimizing the performance of web applications. Today many users around the world access the web from older mobile devices on slower connections. As web applications continue to grow both in size and complexity, so do their load times. In order to ensure all users have a good experience, optimizing performance is an important consideration.
 
-### Lesson Plans
+Chrome Devtools and Google Lighthouse will be our primary tools for measuring web application performance. Devtools allows us to monitor network traffic and inspect the size of resources downloaded to the browser such as HTML, CSS, JavaScript and images. Lighthouse provides a performance scoring system based on metrics such as application bundle size, time to interaction, time to first meaningful paint, and more.
 
-* [18.1 - Lesson Plan](01-Day/01-Day-LessonPlan.md)
-* [18.2 - Lesson Plan](02-Day/02-Day-LessonPlan.md)
-* [18.3 - Lesson Plan](03-Day/03-Day-LessonPlan.md)
+In order to deliver smaller application bundle sizes to the client, we'll perform several optimizations that involve compressing assets. This includes minifying JavaScript and CSS files, as well as compressing images. Another technique utilized to improve initial bundle size will be lazy loading, where we will defer loading certain assets until they're needed by the application.
 
-### Homework Activities
+This unit will also focus on Progressive Web Apps (PWAs). Progressive web apps aim to blend the benefits of a traditional browser experience with those of a mobile application. PWAs may utilize the Service Worker and Cache APIs to cache assets and API responses to ensure applications work without an internet connection.
 
-* [Homework Instructions](../../../01-Class-Content/18-mongo-mongoose/02-Homework/Instructions/homework_instructions.md)
-* [Example (Solution)](../../../01-Class-Content/18-mongo-mongoose/02-Homework/Solutions)
-* [Example (Video)](https://youtu.be/4ltZr3VPmno)
+We'll conclude this unit with an overview of webpack, a module bundler for JavaScript. Webpack eases the development of front end web applications by automating many of the optimizations performed earlier in the unit.
 
-### Classroom Activities
+## Key Topics
 
-* [Unit 18 - Activities](../../../01-Class-Content/18-mongo-mongoose/01-Activities)
+* Lighthouse
 
-### Key Activities
+* Lazy Loading
 
-* [Update, Delete, and Drop](../../../01-Class-Content/18-mongo-mongoose/01-Activities/04-Student-Update-Delete-and-Drop)
-* [Scrape Starter](../../../01-Class-Content/18-mongo-mongoose/01-Activities/06-Scrape-Starter)
-* [MongoJS and the Front End](../../../01-Class-Content/18-mongo-mongoose/01-Activities/10-MongoJS-and-the-Front-End)
-* [Custom Methods with Mongoose](../../../01-Class-Content/18-mongo-mongoose/01-Activities/17-Custom-Method-Exercise)
-* [Populate Method with Mongoose](../../../01-Class-Content/18-mongo-mongoose/01-Activities/19-Populate-Exercise)
+* Minification
 
-### Extra Resources
+* Compression
 
-* [Installing MongoDB](../../../01-Class-Content/18-mongo-mongoose/03-Supplemental/Installing-MongoDB.md)
+* PWAs
 
-### Helpful Links
+* Service Workers
 
-* [MongoDB Website](https://www.mongodb.com/)
-* [Robo 3T Website](https://robomongo.org/download)
-* [MongoJS Documentation](https://www.npmjs.com/package/mongojs)
-* [Cheerio Documentation](https://github.com/cheeriojs/cheerio)
-* [Mongoose Documentation](http://mongoosejs.com/docs/guide.html)
+* Webpack
 
-### Slide Shows
+## Comprehension Check
 
-* [18.1 - Masters of MongoDB](https://docs.google.com/presentation/d/1_xBQqi3-59Nxb0DBcN-xKVZ2HkYfM0qPX1ZVVTyf-Bs/edit?usp=sharing)
+You will be employer-ready if you can answer the following questions:
+
+1. What tools can be used to measure performance of a web application?
+
+2. What are some metrics that matter when measuring web application performance?
+
+3. What is a PWA?
+
+## Learning Objectives
+
+You will be employer-competitive if you are able to:
+
+* Identify performance bottlenecks in web applications.
+
+* Explain how performance can be measured in web applications.
+
+* Explain the 5 main categories measured in a Lighthouse audit.
+
+* Optimize CSS, JS, and media assets for performance.
+
+* Set up webpack in a new front end project.
+
+* Convert an existing web application to a PWA and add offline functionality.
+
+## Homework: Budget Tracker
+
+* In this assignment, you'll build a budgeting app to keep track of personal finances. You'll utilize IndexedDB, cache API, and Service Workers to provide an offline experience for the application.
+
+## Helpful Links
+
+* [Why Performance Matters](https://developers.google.com/web/fundamentals/performance/why-performance-matters/)
+
+* [Measure Web Performance With The RAIL Model](https://developers.google.com/web/fundamentals/performance/rail)
+
+* [Audit the Performance of Your Web Application](https://developers.google.com/web/fundamentals/performance/audit/)
+
+* [Google Lighthouse](https://developers.google.com/web/tools/lighthouse/)
+
+* [Your First Progressive Web App](https://developers.google.com/web/fundamentals/codelabs/your-first-pwapp/)
