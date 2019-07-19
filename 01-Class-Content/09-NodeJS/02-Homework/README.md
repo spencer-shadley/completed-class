@@ -22,7 +22,7 @@ The pdf will be populated with the following:
 * number of GitHub stars
 * number of users following
 
-Refer to the [design mockup](09-NodeJS-homework-demo.pdf)
+Refer to the [design mockup](./Assets/09-NodeJS-homework-demo.pdf)
 
 
 ## User Story
