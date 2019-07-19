@@ -310,7 +310,12 @@ app.use(compression());
 
 * Direct students to the activity instructions located [here](../../../../01-Class-Content/18-PWA/01-Activities/04-Stu_Image-Compression/README.md)
 
-* **Instructions**
+```md
+# Image Compression
+
+In this activity you are going to use an online compression tool to decrease image file sizes for the Gallery App.
+
+## Instructions
 
 * In this activity you will be using ImageOptim Online to compress images.
 
@@ -337,6 +342,7 @@ app.use(compression());
 * Once the compression is complete, a `zip` file will automatically download to your computer.
 
   * This will most likely be downloaded to your `Downloads` folder.
+```
 
 ### 14. Instructor Do: Review Image Compression (5 mins)
 
@@ -387,6 +393,8 @@ app.use(compression());
 * The next activity may be a bit tricky so be sure you and your TAs have reviewed the solution and are ready to help students who are stuck.
 
 ### 16. Student Do: Lazy Loading (15 mins)
+
+* Direct students to the activity instructions located [here]()
 
 * **Instructions**
 
