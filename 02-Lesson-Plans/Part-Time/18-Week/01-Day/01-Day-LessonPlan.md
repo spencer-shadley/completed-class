@@ -163,11 +163,14 @@ Todays class will be focused on Web Performance. We will use Lighthouse to audit
 
 * Direct students to the activity instructions located [here](../../../../01-Class-Content/18-PWA/01-Activities/02-Stu_Minifify-JS/README.md)
 
-* **Instructions**
+```md
+# Minify Your JS
 
-* In this activity we are going to use a YUI compressor online to minify the contents of our JS files.
+In this activity you will minify your JavaScript using an online tool.
 
-* Using the project you audited previously, navigate to [Online Minification](http://refresh-sf.com/)
+## Instructions
+
+* Using the project you audited previously, navigate to [Online JavaScript/CSS/HTML Compressor](http://refresh-sf.com/)
 
 * Copy the contents of one of your JS files into the compressor and click on the `JavaScript` button.
 
@@ -180,7 +183,7 @@ Todays class will be focused on Web Performance. We will use Lighthouse to audit
   * Copy/paste the minified JS of your dist folder into your `dist/index.js`
 
 * Be sure to link your `dist/index.js` code to your application.
-
+```
 ### 7. Instructor Do: Review Minification (5 mins)
 
 * Ask several students how much of a reduction they saw in JS sizes from Input to Output.
@@ -305,7 +308,7 @@ app.use(compression());
 
 ### 13. Student Do: Image Compression (10 mins)
 
-* Slack out the following folder to your students. [Gallery Compression Unsolved](../../../../01-Class-Content/18-web-performance/01-Activities/04-Stu_Image-Compression/)
+* Direct students to the activity instructions located [here](../../../../01-Class-Content/18-PWA/01-Activities/04-Stu_Image-Compression/README.md)
 
 * **Instructions**
 
