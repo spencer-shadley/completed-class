@@ -406,7 +406,7 @@ Today's class is focused on introducing students to the concept of grid-based we
 
 ### 28. Pre-class Drills Announcement (0 mins)
 
-* Let the class know that in addition to structured post-class office hours after checkpoints, from now until we start the first project, we'll be having structured pre-class office hours as well.
+* Let the class know that from now until we start the first project, we'll be having structured pre-class office hours as well.
 
 * In pre-class office hours, we'll give them an opportunity to do practice problems that will help them solidify the skills they just learned, but also mimic interview questions and begin to prepare them for interviews.
 
@@ -420,30 +420,9 @@ Today's class is focused on introducing students to the concept of grid-based we
 
 - - -
 
-### 30. Instructor Do: Introduce the Unit Video Guide (3 mins)
-
-* Emphasize how helpful a tool these videos can be if a student feels as if they are falling behind or simply wants to review the material once again.
-
-* [Video Guide](../../../../01-Class-Content/02-css-bootstrap/VideoGuide.md)
-
-- - -
-
-### 31. Next Week's Homework
+### 30. Next Week's Homework
 
 * Students who chose the easier `Building a Wireframe` option last week should be provided the `recommended-homework-solution` as starter code for this week's homework assignment. Please verify that the student turned in the wireframing assignment before distributing this starter code.
-
-# Instructor Do: Private Self-Reflection (0 min)
-
-Take some time on your own after class to think about the following questions. If there's anything that you're not sure how to answer, feel free to reach out to the curriculum team!
-
-1. How did today's class go?
-2. How did you teach it?
-3. How well do you feel you did teaching it?
-4. Why are you teaching it?
-5. Why did you teach it that way?
-6. What evidence can I collect to show my students are understanding?
-7. How will my students know they are getting it?
-
 
 ### Lesson Plan Feedback
 
