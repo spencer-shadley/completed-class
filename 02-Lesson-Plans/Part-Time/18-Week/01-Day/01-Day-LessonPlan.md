@@ -33,17 +33,21 @@ Todays class will be focused on Web Performance. We will use Lighthouse to audit
 
 ### 1. Instructor Do: Welcome/Intro Web Performance (10 mins)
 
-* Welcome students to class and then open Google Chrome. Open your Dev Tools Network Tab and Throttle your connection to `Slow 3G`
+* Welcome students to class and then open Google Chrome. 
+
+* Open your Dev Tools Network Tab and Throttle your connection to `Slow 3G`
 
   * ![Throttle Connection](Images/throttleConnection.png)
 
-* Navigate to [Amazon.com](https://amazon.com/)
+* Navigate to [Amazon.com](https://amazon.com/) and point out the following:
   
-  * The page will load extremely slow, as it does proceed to the next question. 
-  
+  * The page is going to load extremely slowly. Show students the Network Chart found under the connection throttle dropdown.
+
+  * Amazon will load assets for well over a minute, and this traffic can all be watched inside of our dev tools.
+
 * Ask the class, "Have you ever left a webpage due to it taking too long to load"
 
-  * Chances are most students will have experienced this. Explain this is a common experience all over the world, as not all people have access to fast network connections.
+  * It's safe to say anyone who has used the internet has experienced this.. This is a common occurrence all over the world, as not all people have access to fast network connections.
   
   * One of the biggest factors that leads to a poor user experience is slow page load times.
 
@@ -55,9 +59,9 @@ Todays class will be focused on Web Performance. We will use Lighthouse to audit
 
 * Ask the class, "How do we know what is causing our page to perform poorly or well?"
 
-  * This is an important question. Getting concrete analysis on the performance metrics of a web page is important in improving it in the future.
+  * Getting concrete analysis on the performance metrics of a web page is important in improving it in the future.
 
-* Proceed to demoing Lighthouse.
+* Use student answers to transition to demoing Lighthouse.
 
 ### 2. Instructor Do: Demo Lighthouse (10 mins)
 
