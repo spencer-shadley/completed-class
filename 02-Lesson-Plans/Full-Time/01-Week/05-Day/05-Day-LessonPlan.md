@@ -403,7 +403,7 @@ in chrome. Widen and shrink the page and point out that whereas your previous ve
 
 * If students seemed to struggle today, you can use this time to review difficult topics or spend more time on one of the class activities rather than on homework.
 
-### 27. Pre-class Drills Announcement (0 mins)
+### 27. Pre-class Drill Announcement (0 mins)
 
 * Let the class know that from now until we start the first project, we'll be having structured pre-class office hours.
 
@@ -411,7 +411,7 @@ in chrome. Widen and shrink the page and point out that whereas your previous ve
 
 * Strongly encourage students to attend the pre-class office hours. Remind them that the instructional staff has outside commitments as well, and that you understand the pressures of making this kind of time commitment, but that they owe it to themselves to invest fully in this experience. Interview prep will go a long way towards helping them understand JavaScript better and making them more competitive in their career search after graduation.
 
-* State clearly in the beginning that the pre-class drills will be going on, but students can still meet 1:1 with staff for help with other things, as long as one staff member is available to go over the question and answer before class starts.
+* State clearly in the beginning that the Pre-class Drill will be going on, but students can still meet 1:1 with staff for help with other things, as long as one staff member is available to go over the question and answer before class starts.
 
 ### 28. Introduce this Unit's Video Guide (01 min)
 
