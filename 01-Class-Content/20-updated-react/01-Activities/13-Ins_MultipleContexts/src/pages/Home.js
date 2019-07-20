@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import Content from "../components/Content";
 import Nav from "../components/Nav";
 import ThemeContext from "../components/ThemeContext";
 
 function Home() {
+  const theme = useContext(ThemeContext);
   return (
     <div>
-      <ThemeContext.Consumer>{theme => <Nav theme={theme} />}</ThemeContext.Consumer>
+      <Nav theme={theme} />
       <div style={{ textAlign: "center" }}>
         <h1>Multiple Context Providers!</h1>
       </div>

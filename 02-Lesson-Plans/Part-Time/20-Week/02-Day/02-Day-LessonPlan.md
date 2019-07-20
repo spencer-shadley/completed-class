@@ -26,7 +26,7 @@ This class introduces students to the React Context API, an easier and lighter w
 
 * Students identify proper use cases of Context API, while staying aware of its shortcomings.
 
-* Students can utilize a combination of Context Objects, Providers, and Consumers to manage global state.
+* Students can utilize a combination of Context Objects, Providers, and consumers via the `useContext` Hook to manage global state.
 
 * Students can use multiple Context Providers to manage complex state.
 
@@ -165,7 +165,7 @@ This class introduces students to the React Context API, an easier and lighter w
   };
   ```
 
-  * In the `render()` block, we return a Row component with a CardContainer. We pass to the CardContainer title, image and handleBtnClick props. Note that the value passed to the `title` prop is invoking the `capitalizeFirstLetter` method on the first and last names of our user.
+  * In the `return` block, we return a Row component with a CardContainer. We pass to the CardContainer title, image and handleBtnClick props. Note that the value passed to the `title` prop is invoking the `capitalizeFirstLetter` method on the first and last names of our user.
 
   ```js
     return (
@@ -352,7 +352,7 @@ const CardBtn = (props) => {
 
   6.  **Loosely Coupled Components**: Make sure to emphasize the importance of keeping components loosely coupled. This is a topic that is important for students to grasp.
 
-  7.   **State Management**: Let students know that they should be mindful of how often they're using the Context API. If they begin to use the Context API rampantly throughout their code, it may be time to consider using Redux or another state management library.
+  7. **State Management**: Let students know that they should be mindful of how often they're using the Context API. If they begin to use the Context API rampantly throughout their code, it may be time to consider using Redux or another state management library.
 
 ### 5. Instructor Do: useContext Demo (10 mins)
 
@@ -385,7 +385,7 @@ const CardBtn = (props) => {
   import DeveloperContext from "../utils/DeveloperContext";
   ```
 
-  * The `useContext` Hook replaces the need for a `contextConsumer`.
+  * The `useContext` Hook replaces the need for a `contextConsumer` that you'll find in the React docs.
 
   ```js
   const DeveloperInfo = () => {
@@ -498,20 +498,20 @@ const CardBtn = (props) => {
 
   * First, we import the context object from its utility file.
 
-  * Then, we pass it into the `useContext` hook.
+  * Then, we pass it into the `useContext` Hook.
 
   * Remind students that we no longer need to receive props from a parent component and can use the `article` object instead.
 
   ```js
   import ArticleContext from "../../utils/ArticleContext";
   const SearchResults = () => {
-    const article = useContext(ArticleContext);
+    const {title, description, url} = useContext(ArticleContext);
     return (
       <ul className="list-group search-results">
         <li className="list-group-item">
-          <h2>{article.title}</h2>
-          <p>{article.description}</p>
-          <a href={article.url}>{article.url}</a>
+          <h2>{title}</h2>
+          <p>{description}</p>
+          <a href={url}>{url}</a>
         </li>
       </ul>
     );
@@ -540,7 +540,7 @@ const CardBtn = (props) => {
 
 * Run [DynamicContext Demo](../../../../01-Class-Content/20-react/01-Activities/11-Ins_DynamicContext/) in your browser to demonstrate the application. Click each button and show that the alert changes for each button.
 
-* Open `04-Ins_DynamicContext/src/AlertContext.js` in your IDE and point out the following:
+* Open [AlertContext.js Solved](../../../../01-Class-Content/20-react/01-Activities/11-Ins_DynamicContext/src/AlertContext.js) in your IDE and point out the following:
 
   * The Context Object has been isolated to its own file.
 
@@ -552,20 +552,20 @@ const CardBtn = (props) => {
 
   * 📝 Context API best practices require that we initialize the default values to have a consistent type with the values we intend to provide later. Ex: `onClick` should **not** be initialized as an empty string.
 
-```js
-import React from "react";
-// default context object with properties corresponding to Provider values
+  ```js
+  import React from "react";
+  // default context object with properties corresponding to Provider values
 
-const AlertContext = React.createContext({
-    display: false,
-    theme: "",
-    onClick: () => undefined
-});
+  const AlertContext = React.createContext({
+      display: false,
+      theme: "",
+      onClick: () => undefined
+  });
 
-export default AlertContext;
-```
+  export default AlertContext;
+  ```
 
-* Open `src/App.js` and point out the following:
+* Open [App.js Solved](../../../../01-Class-Content/20-react/01-Activities/11-Ins_DynamicContext/src/App.js) and point out the following:
 
   * We import our Home component from pages and our AlertContext object from the components directory.
 
@@ -575,26 +575,27 @@ export default AlertContext;
   import AlertContext from "./components/AlertContext";
   ```
 
-  * `App` is a stateful component. We initialize `state` with properties that correspond to those we declared in our `AlertContext` object. The `onClick` method takes in the parameters `theme` and `display`. These parameters will later be used to control the class of our Alert component to determine whether or not to display it.
+  * `App` is a functional component. We initialize `state` with properties that correspond to those we declared in our `AlertContext` object. The `onClick` method takes in the parameters `theme` and `display`. These parameters will later be used to control the class of our Alert component to determine whether or not to display it.
 
   ```js
-  class App extends React.Component {
-    state = {
+  function App() {
+
+    const [pageState, setPageState] = useState({
       display: false,
       theme: "success",
       onClick: (theme, display) => {
-        this.setState({theme, display})
+        // Remember, the setter method on state does not merge like this.setState does
+        // We use the spread operator so that we don't lose our onClick method whenever the state is updated.
+        setPageState({ ...pageState, theme, display });
       }
-    }
-    render() {
-      // App component that provides initial context values
-      // Here we are overwritting the context object to be equal to the state of App
-      return (
-        <AlertContext.Provider value={this.state}>
-          <Home />
-        </AlertContext.Provider>
-      );
-    }
+    });
+    // App component that provides initial context values
+    // Here we are overwritting the context object to be equal to the state of App
+    return (
+      <AlertContext.Provider value={pageState}>
+        <Home />
+      </AlertContext.Provider>
+    );
   }
   ```
 
@@ -602,30 +603,30 @@ export default AlertContext;
 
   * 📝 We did not pass props to the `Home` component.
 
-* Open `src/pages/Home.js` and point out that there are no references to props.
+* Open [Home.js Solved](../../../../01-Class-Content/20-react/01-Activities/11-Ins_DynamicContext/src/pages/Home.js) in your IDE and point out that there are no references to props.
 
-```js
-const Home = () => {
-  document.title = "Dynamic Context";
-  return (
-    <div>
-      <div style={{ textAlign: "center" }}>
-        <h1>
-        Dynamic Context API Practice!
-        </h1>
-        <h3 className="mb-4">
-          Press a button to get an alert!
-        </h3>
+  ```js
+  function Home() {
+    document.title = "Dynamic Context";
+    return (
+      <div>
+        <div style={{ textAlign: "center" }}>
+          <h1>
+          Dynamic Context API Practice!
+          </h1>
+          <h3 className="mb-4">
+            Press a button to get an alert!
+          </h3>
+        </div>
+        <div style={{ margin: "0 auto" }}>
+          <Content />
+        </div>
       </div>
-      <div style={{ margin: "0 auto" }}>
-        <Content />
-      </div>
-    </div>
-  );
-}
-```
+    );
+  }
+  ```
 
-* Open `src/components/Content.js` and point out the following:
+* Open [Content.js Solved](../../../../01-Class-Content/20-react/01-Activities/11-Ins_DynamicContext/src/components/Content.js) and point out the following:
 
   * We import the `useContext` Hook, the `Alert` component and the `AlertContext` object:
 
@@ -663,7 +664,7 @@ const Home = () => {
 
   * 📝 We pass to the `Alert` component props pulled off the `alert` object.
 
-* Open `src/components/Alert.js` and point out that it accepts props as we expect it to.
+* Open [Alert.js Solved](../../../../01-Class-Content/20-react/01-Activities/11-Ins_DynamicContext/src/components/Alert.js) and point out that it accepts props as we expect it to.
 
 ```js
 const Alert = (props) => {
@@ -726,7 +727,7 @@ const Alert = (props) => {
 
 ### 11. Instructor Do: Review Dynamic Context (10 mins)
 
-* Open `05-Stu_DynamicContext/Solved/src/pages/Gallery.js` [Gallery.js solved](../../../../01-Class-Content/21-react/01-Activities/05-Stu_DynamicContext/Solved/src/pages/Gallery.js) and point out the following:
+* Open [Dynamic Context solved](../../../../01-Class-Content/20-react/01-Activities/12-Stu_DynamicContext/Solved) in your IDE and point out the following:
 
   * The solution is designed to showcase how a single Context Object may be used in multiple places. In this example, we primarily use the UserContext in our `CardImg` and `CardTitleText` components to display the user's information. However, we still make use of the consumer in the `CardBtn` component as well to handle the button click. 
 
@@ -786,7 +787,7 @@ const Alert = (props) => {
   }
   ```
 
-* Open `utils/UserContext.js` and point out the following:
+* Open [UserContext.js Solved](../../../../01-Class-Content/20-react/01-Activities/12-Stu_DynamicContext/src/utils/UserContext.js) in your IDE and point out the following:
 
   * The User Context was added to a separate file in order to decouple it from any particular component.
 
@@ -817,7 +818,7 @@ const Alert = (props) => {
 
 * Use student answers to facilitate a discussion on the following point:
 
-  * While having multiple consumers may be overkill for this small application, let the students know that in a larger application, there could be several component layers separating related components. In those situations, having multiple consumers would be better than passing a single context object through multiple levels of components.
+  * While having multiple providers may be overkill for this small application, let the students know that in a larger application, there could be several component layers separating related components. In those situations, having multiple providers would be better than passing a single context object through multiple levels of components.
 
 ### 12. Instructor Do: Demo Multiple Contexts (10 mins)
 
@@ -835,43 +836,43 @@ const Alert = (props) => {
 
   * There's a new getUserToken method that returns a dummy value.
 
-  * The state now contains two objects. This makes it much easier to separate the two contexts.
+  * We've split our state into two objects. This makes it much easier to separate the two contexts.
 
-  * Due to the state now containing two objects, `this.setState` no longer works as expected. Normally, `this.setState` merges with the existing state, but since we are modifying an **object** in the state, we need to use the **spread** operator to ensure that all other properties of the alert object are included in the new state.
+  * 🗒Note that in `setAlert`, we used the spread operator since setters do not automatically merge with the previous state object.
 
 
   ```js
-  class App extends React.Component {
-  
-    constructor() {
-      super();
-      this.state = {
-        user: {
-          name: "Bob",
-          getUserToken: this.getUserToken
-        },
-        alert: {
-          display: false,
-          theme: "success",
-          onClick: (theme, display) => {
-            this.setState({alert: {...this.state.alert, theme, display }})
-          }
-        }
-      };
-  }
-  
-  getUserToken() {
-    return "SampleToken123";
-  }
+  import React, { useState } from "react";
+  import Home from "./pages/Home";
+  import ThemeContext from "./components/ThemeContext";
+  import UserContext from "./components/UserContext";
+  import AlertContext from "./components/AlertContext";
+
+  function App() {
+
+    const [user, setUser] = useState({
+      name: "Bob",
+      getUserToken: getUserToken
+    })
+    
+    const [alert, setAlert] = useState({
+      display: false,
+      theme: "success",
+      onClick: (theme, display) => setAlert({...alert, theme, display})
+    })
+
+    function getUserToken() {
+      return "SampleToken123";
+    }
   ```
 
-  * In the `render` method, 3 providers are returned, but it doesn't matter if one Provider wraps another, as long as they both wrap an ancestor of their Context Consumer(s).
+  * In our `return` block, 3 providers are returned, but it doesn't matter if one Provider wraps another, as long as they both wrap an ancestor of the element with the `useContext` Hook.
 
   * The Alert and User Providers receive state objects as their value, while the Theme Provider receives a string literal.
 
   ```js
-  <AlertContext.Provider value={this.state.alert}>
-    <UserContext.Provider value={this.state.user}>
+  <AlertContext.Provider value={alert}>
+    <UserContext.Provider value={user}>
       <ThemeContext.Provider value={"dark"}>
         <Home />
       </ThemeContext.Provider>
@@ -879,21 +880,16 @@ const Alert = (props) => {
   </AlertContext.Provider>
   ```
 
-* Take a moment to go over `Nav.js`.
+* Take a moment to go over `NavLink.js`.
 
-  * Bring up that the Consumer is once again being wrapping the closest possible element that it can to avoid prop drilling.
+  * Bring up that `useContext` is once again being used at the closest possible element that it can to avoid prop drilling.
 
   ```js
   const NavLink() {
+    const { name } = useContext(UserContext);
     return (
       <div style={{ marginLeft: "40px" }}>
-        <UserContext.Consumer>
-          { ({ name }) => (
-            <h2>
-            Welcome {name}!
-            </h2>
-          )}
-        </UserContext.Consumer>
+        <h2>Welcome {name}!</h2>
       </div>
     );
   }
@@ -903,7 +899,7 @@ const Alert = (props) => {
 
 ### 13. Student Do: Multiple Contexts (20 mins)
 
-* Files: [06-Stu_MultipleProviders](../../../../01-Class-Content/21-react/01-Activities/06-Stu_MultipleProviders)
+* Files: [13-Stu_MultipleContexts](../../../../01-Class-Content/21-react/01-Activities/13-Stu_MultipleContexts)
 
 ```md
   # Multiple Contexts
@@ -950,7 +946,9 @@ const Alert = (props) => {
 
 ### 14. Instructor Do: Review The Gallery Multiple Contexts (10 mins)
 
-* Walk through the solution to `07-Stu_MultipleContexts`.
+* Open [userContext solved](../../../../01-Class-Content/21-react/01-Activities/13-Stu_MultipleContexts/Solved/src/utils/userContext.js) in your IDE and go over the following:
+
+  * Point out that the properties of `UserContext` are only relevant to the user information. The `language` property is not referring to the current selected language, but instead, it refers to the user's `language` property.
 
   ```js
   import React from "react";
@@ -968,12 +966,16 @@ const Alert = (props) => {
   export default UserContext;
   ```
 
-  * Point out that the properties of `UserContext` are only relevant to the user information. The `language` property is not referring to the current selected language, but instead, it refers to the user's `language` property.
+  * Open [Gallery.js solved](../../../../01-Class-Content/21-react/01-Activities/13-Stu_MultipleContexts/Solved/src/pages/Gallery.js) in your IDE.
 
-  * Open `pages/Gallery.js`
+  * Point out that **both** the `UserContext.Provider` and the `LanguageContextProvider` wrap the contents of the entire page. Even though the `LanguageSelector` does not use the `UserContext`, there is no harm in wrapping components with Providers they do not need.
+
+  * Also note that the User Context Provider wraps the Image Context Provider. It doesn't matter which provider wraps the other, as long as they both wrap an ancestor of the component that will use the `useContext` Hook.
+
+  * We've created an `imageObject` and a `UserObject` so that we can pass their values into their respective providers **without** having to pass the entire state object.
 
   ```js
-  return (
+    return (
       <UserContext.Provider value={this.state.userObject}>
         <LanguageContext.Provider value={this.state.languageObject}>
           <div>
@@ -987,11 +989,10 @@ const Alert = (props) => {
         </LanguageContext.Provider>
       </UserContext.Provider>
     );
-  ```
+    ```
 
-  * Point out that **both** the `UserContext.Provider` and the `LanguageContextProvider` wrap the contents of the entire page. Even though the `LanguageSelector` does not use the `UserContext`, there is no harm in wrapping components with Providers they do not need.
+  * If maintaining the objects becomes to complex, that often means that it may be worth breaking down the objects and Context objects into smaller objects.
 
-  * Also note that the Breed Context Provider wraps the Image Context Provider. It doesn't matter which provider wraps the other, as long as they both wrap an ancestor of the component that will use the Consumer.
 
   ```js
   this.setState({
@@ -1003,14 +1004,6 @@ const Alert = (props) => {
       }
     });
   ```
-
-  * Bring attention to the following points:
-
-    * We've created an imageObject and a BreedObject so that we can pass their values into their respective providers **without** having to pass the entire state object.
-
-    * Every time we use `this.setState`, we need to pass the **entire** imageObject or breedObject, since individual properties in `state` will be overwritten with the new value. While `this.setState` merges properties with the old state, it does not account for nested objects. Ex: If we were to leave out imageIndex, then the state would be overwritten with a new imageObject that does not contain the imageIndex.
-
-    * If maintaining the objects becomes to complex, that often means that it may be worth breaking down the objects and Context objects into smaller objects.
 
 * Address any lingering questions students have.
 

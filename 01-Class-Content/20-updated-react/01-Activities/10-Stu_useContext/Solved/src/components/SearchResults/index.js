@@ -3,17 +3,15 @@ import ArticleContext from "../../utils/ArticleContext";
 import "./style.css";
 
 function SearchResults() {
-  const article = useContext(ArticleContext);
-
+  const {title, description, url} = useContext(ArticleContext);
   return (
     <ul className="list-group search-results">
       <li className="list-group-item">
-        <h2>{article.title}</h2>
-        <p>{article.description}</p>
-        <a href={article.url}>{article.url}</a>
+        <h2>{title}</h2>
+        <p>{description}</p>
+        <a href={url}>{url}</a>
       </li>
     </ul>
   );
 }
-
 export default SearchResults;

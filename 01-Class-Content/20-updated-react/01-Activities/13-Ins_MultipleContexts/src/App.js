@@ -1,36 +1,30 @@
-import * as React from "react";
+import React, { useState } from "react";
 import Home from "./pages/Home";
 import ThemeContext from "./components/ThemeContext";
 import UserContext from "./components/UserContext";
 import AlertContext from "./components/AlertContext";
 
-class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      user: {
-        name: "Bob",
-        getUserToken: this.getUserToken
-      },
-      alert: {
-        display: false,
-        theme: "success",
-        onClick: (theme, display) => {
-          this.setState({ alert: { ...this.state.alert, theme, display } });
-        }
-      }
-    };
-  }
+function App() {
 
-  getUserToken() {
+  const [user, setUser] = useState({
+    name: "Bob",
+    getUserToken: getUserToken
+  })
+  
+  const [alert, setAlert] = useState({
+    display: false,
+    theme: "success",
+    onClick: (theme, display) => setAlert({...alert, theme, display})
+  })
+
+  function getUserToken() {
     return "SampleToken123";
   }
 
-  render() {
-    // Here we are overwriting each Context Object with values from the state of App.js and a string literal.
+  // Here we are overwriting each Context Object with values from the state of App.js and a string literal.
     return (
-      <AlertContext.Provider value={this.state.alert}>
-        <UserContext.Provider value={this.state.user}>
+      <AlertContext.Provider value={alert}>
+        <UserContext.Provider value={user}>
           <ThemeContext.Provider value={"dark"}>
             <Home />
           </ThemeContext.Provider>
@@ -38,6 +32,5 @@ class App extends React.Component {
       </AlertContext.Provider>
     );
   }
-}
 
 export default App;

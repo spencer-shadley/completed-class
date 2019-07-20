@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import UserContext from "./UserContext";
 
 function NavLink() {
+  const { name } = useContext(UserContext);
   return (
     <div style={{ marginLeft: "40px" }}>
-      <UserContext.Consumer>{({ name }) => <h2>Welcome {name}!</h2>}</UserContext.Consumer>
+      <h2>Welcome {name}!</h2>
     </div>
   );
 }
