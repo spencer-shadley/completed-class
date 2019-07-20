@@ -87,7 +87,6 @@ In this class, we will be introducing students to the concept of APIs and the us
 * Students should be able to articulate a loose definition of API and JSON, along with a few examples of popular APIs
 * Students should become more comfortable parsing JavaScript objects (both locally and as JSON)
 * Students should complete the OMDb AJAX-to-HTML Activity
-* Students should complete the More JavaScript and jQuery Checkpoint
 
 ##### Instructor Notes
 
@@ -115,7 +114,6 @@ In this class, we will be introducing students to the concept of APIs and the us
 * To introduce the concept and utility of APIs and JSON in web applications
 * To be exposed to a variety of APIs and the process for building endpoint URLs to utilize them
 * To work with the OMDb to build data-rich applications.
-* To complete the More JavaScript and jQuery Checkpoint
 
 - - -
 
@@ -457,93 +455,7 @@ In this class, we will be introducing students to the concept of APIs and the us
 
 * If students seemed to struggle today, you can use this time to review difficult topics or spend more time on one of the class activities rather than on homework.
 
-### 26. Instructor Do: Introduce Checkpoint - More JavaScript and jQuery (5 mins) (Critical)
-
-* Let your class know that they will now be taking a short multiple choice assessment to check their understanding of More JavaScript and jQuery
-
-* DO NOT SKIP THIS INTRODUCTION. DO NOT JUST SEND OUT THE LINK WITHOUT CONTEXT
-
-* Reassure the students that they need not be nervous about the Checkpoint:
-
-  * "This will not affect your grade or graduation requirements."
-
-  * "This is not like the tests and quizzes you might be used to from school or college. The purpose of these tests is not to motivate you to study or punish you for struggling."
-
-  * "This is as much a test of me as an instructor and of the course content as it is of you. We are here to ensure your success, and this is one of the tools we use to make sure we are doing that effectively. This class moves _fast_, so if some or all of you misunderstand something important we as an instructional team need to find out as fast as possible so we can help."
-
-  * "Long story short, this quiz can not hurt you. Only help you."
-
-* Let students know that they should read carefully and focus on thinking about the right answer rather than using any test-taking skills they may have learned:
-
-  * "There are no silly answers or obvious throwaway responses on this quiz, because those kinds of answers reduce the likelihood that we'll be able to figure out whether we've taught something effectively."
-
-  * "Test taking strategies you may have learned for standardized tests _will not work_, so instead of focusing on eliminating wrong answers or looking for sneaky context cues, read the question and each of the possible choices carefully."
-
-* Reassure students once again that the purpose of this is to help them, and remind them that the outcome does not impact their grade or graduation requirements. You should do this _every single time_ you give an Checkpoint.
-
-* You or your TAs should now get the link specific to your class:
-
-  * Navigate in your browser to: `https://www.switchboard.tech`
-
-  * Select your class code (if it doesn't show up on its own)
-
-    * If the class is a parallel class, a class that has two classes combined on a Saturday, and doing a checkpoint with two classes at once you will **need** to slack out two links.
-
-    * One for your class and one for the other. 
-
-  * Select the Checkpoint and copy the resulting link
-
-### 27. Instructor Do: API Key Reminder For Next Class (1 mins)
-
-* Next classes Weather in Bujumbura Activity will require students to use an API key from [OpenWeatherMap API](http://openweathermap.org/api). Please have them apply for one before our next class starts in order to have it approved and activated in time for the activity.
-
-### 28. Students Do: Take Checkpoint - More JavaScript and jQuery (10 mins) (Critical)
-
-* Slack out the link to the Checkpoint
-
-* Let your students know that once they select their name, it will take them to the Checkpoint
-
-* Checkpoints must be completed in class, **not at home**, to ensure you will be able to effectively find and help struggling students 
-
-* TAs should walk around the class to ensure students aren't looking up answers
-
-* Keep in mind we do not use grades from assessments toward graduation requirements. However, students will be tempted to avoid feeling like they don't understand something.
-
-* It's important for instructional teams to create an environment where it is safe to fail, but also where such failure is visible. You should not be worried about "cheating" on checkpoints, only making sure that students who need help aren't remaining invisible.
-
-* Your SSM will have the results of the Checkpoint within an hour of its completion
-
-### 29. End (0 mins)
-
-### 30. TAs Do: Structured Office Hours - Review More JavaScript and jQuery (30 min)
-
-* Navigate in your browser to: `https://github.com/coding-boot-camp/checkpoint-bank/blob/master/checkpoints/multiple-choice/04-More-JavaScript-and-jQuery-MC/04-More-JavaScript-and-jQuery-MC.md`
-
-* There you will find the questions and answers to the Checkpoint given.
-
-* Please take the entire office hours time to review the questions with the students.
-
-* Suggestion Format:
-
-  * TAs ask a question at a time to the class.
-
-  * Let the students try to answer it.
-
-    * If you see that a majority of the class has a misunderstanding with a question:
-
-      * Take your time on this question!
-
-    * If you see that a small number of students has a misunderstanding with a question:
-
-      * Do your best to reinforce the misunderstanding but be cautious of your time.
-
-      * Make note of the students that are still struggling with the question and schedule a 1:1 with the students.
-
-  * If applicable, demo the answer.
-
-* Take your time on these questions!
-
-* This is a great time to reinforce concepts and misunderstandings!
+### 26. End (0 mins)
 
 ### Lesson Plan Feedback
 

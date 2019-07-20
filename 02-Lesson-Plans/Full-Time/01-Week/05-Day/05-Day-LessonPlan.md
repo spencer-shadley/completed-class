@@ -405,7 +405,7 @@ in chrome. Widen and shrink the page and point out that whereas your previous ve
 
 ### 27. Pre-class Drills Announcement (0 mins)
 
-* Let the class know that in addition to structured post-class office hours after checkpoints, from now until we start the first project, we'll be having structured pre-class office hours as well.
+* Let the class know that from now until we start the first project, we'll be having structured pre-class office hours.
 
 * In pre-class office hours, we'll give them an opportunity to do practice problems that will help them solidify the skills they just learned, but also mimic interview questions and begin to prepare them for interviews.
 

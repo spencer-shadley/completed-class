@@ -22,8 +22,6 @@ By the end of class students will
 
 * Become more comfortable converting a project using a different ORM to use Sequelize, as well as understand what's needed to set Sequelize up from scratch.
 
-* Complete the Express Checkpoint.
-
 ##### Instructor Notes
 
 * Make sure you change all of the connection information so the examples have your MySQL username/password!
@@ -65,8 +63,6 @@ By the end of class students will
 * To review the creation of models using Sequelize.
 
 * To review Sequelize CRUD methods introduced in the last class and to introduce methods for updating and deleting database entries.
-
-* To complete the Express Checkpoint
 
 - - -
 
@@ -354,89 +350,7 @@ Slack out the following folder and instructions:
 
 * Answer any remaining questions about this exercise.
 
-### 18. Instructor Do: Introduce Checkpoint - Express (5 min) (Critical)
-
-* Let your class know that they will now be taking a short multiple choice assessment to check their understanding of Express.
-
-* DO NOT SKIP THIS INTRODUCTION. DO NOT JUST SEND OUT THE LINK WITHOUT CONTEXT.
-
-* Reassure the students that they need not be nervous about the Checkpoint:
-
-  * "This will not affect your grade or graduation requirements."
-
-  * "This is not like the tests and quizzes you might be used to from school or college. The purpose of these tests is not to motivate you to study or punish you for struggling."
-
-  * "This is as much a test of me as an instructor and of the course content as it is of you. We are here to ensure your success, and this is one of the tools we use to make sure we are doing that effectively. This class moves _fast_, so if some or all of you misunderstand something important we as an instructional team need to find out as fast as possible so we can help."
-
-  * "Long story short, this quiz can not hurt you. Only help you."
-
-* Let students know that they should read carefully and focus on thinking about the right answer rather than using any test-taking skills they may have learned:
-
-  * "There are no silly answers or obvious throwaway responses on this quiz, because those kinds of answers reduce the likelihood that we'll be able to figure out whether we've taught something effectively."
-
-  * "Test taking strategies you may have learned for standardized tests _will not work_, so instead of focusing on eliminating wrong answers or looking for sneaky context cues, read the question and each of the possible choices carefully."
-
-* Reassure students once again that the purpose of this is to help them, and remind them that the outcome does not impact their grade or graduation requirements. You should do this _every single time_ you give an Checkpoint.
-
-* You or your TAs should now get the link specific to your class:
-
-  * Navigate in your browser to: `https://www.switchboard.tech`
-
-  * Select your class code (if it doesn't show up on its own).
-
-    * If the class is a parallel class, a class that has two classes combined on a Saturday, and doing a checkpoint with two classes at once you will **need** to slack out two links.
-
-    * One for your class and one for the other.
-
-  * Select the Checkpoint and copy the resulting link.
-
-### 19. Students Do: Take Checkpoint - Express (10 min) (Critical)
-
-* Slack out the link to the Checkpoint.
-
-* Let your students know that once they select their name, it will take them to the Checkpoint.
-
-* Checkpoints must be completed in class, **not at home**, to ensure you will be able to effectively find and help struggling students.
-
-* TAs should walk around the class to ensure students aren't looking up answers.
-
-* Keep in mind we do not use grades from assessments toward graduation requirements. However, students will be tempted to avoid feeling like they don't understand something.
-
-* It's important for instructional teams to create an environment where it is safe to fail, but also where such failure is visible. You should not be worried about "cheating" on checkpoints, only making sure that students who need help aren't remaining invisible.
-
-* Your SSM will have the results of the Checkpoint within an hour of its completion.
-
 ### 20. End (0 mins)
-
-### 21. TAs Do: Structured Office Hours - Review Express (30 min)
-
-* Navigate in your browser to: `https://github.com/coding-boot-camp/checkpoint-bank/blob/master/checkpoints/multiple-choice/07-Express-MC/06-Express-MC.md`
-
-* There you will find the questions and answers to the Checkpoint given.
-
-* Please take the entire office hours time to review the questions with the students.
-
-* Suggestion Format:
-
-  * TAs ask a question at a time to the class.
-
-  * Let the students try to answer it.
-
-    * If you see that a majority of the class has a misunderstanding with a question:
-
-      * Take your time on this question!
-
-    * If you see that a small number of students has a misunderstanding with a question:
-
-      * Do your best to reinforce the misunderstanding but be cautious of your time.
-
-      * Make note of the students that are still struggling with the question and schedule a 1:1 with the students.
-
-  * If applicable, demo the answer.
-
-* Take your time on these questions!
-
-* This is a great time to reinforce concepts and misunderstandings!
 
 - - -
 
