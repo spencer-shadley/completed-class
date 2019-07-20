@@ -1,303 +1,1063 @@
-## 20.3 Lesson Plan - React.js / Intro to Project #3 (10:00 AM) <!--links--> &nbsp; [⬅️](../02-Day/02-Day-LessonPlan.md) &nbsp;
+# 20.3 Lesson Plan - State Management with the Store (10:00 AM) <!--links--> &nbsp; [⬅️](../02-Day/02-Day-LessonPlan.md) &nbsp; [➡️](../../21-Week/01-Day/01-Day-LessonPlan.md)
 
-### Slideshow
+`Summary: Complete activities 16-21 in Unit 21`
 
-* This lesson's slides are available on Google Drive here: [20-3 Final Projects](https://docs.google.com/presentation/d/1Aj6gOUCAL9sLp7e4Vhi66SNannRUAt7K70V9CZ2jsmI/edit?usp=sharing)
+## Overview
 
-* To add slides to the student-facing repository, download the slides as a PDF by navigating to File > "Download as" and choose "PDF document." Add the slide PDF file to your class repository along with other necessary files.
+In this class, students will learn the benefits of declarative Redux-style code and implement an architecture that mirrors Redux with a store, reducer, and actions.
 
-* **Note:** Editing access is not available for this document. If you wish to modify the slides, please create a copy by navigating to File > "Make a copy...".
+## Instructor Notes
 
-- - -
+* You should scaffold out a React application with Create React App at the beginning of class and suggest students do the same. The activities we go over today will only include the applications `src` folder which you should replace in your React app's boilerplate to avoid repetitive installs. It's recommended that you completely restart the dev server between activities.
 
-### Overview
-
-After doing a review of Databases and React and giving some help and time for students to work on their homework, you'll prime your students to conceptualize their final projects. You'll run down the list of expectations and requirements for each of their weekly deliverables. Aside from that, you and the TAs will stick around to make sure each team has a solid idea for their project--they should have one by the end of the class.
-
-##### Instructor Priorities
-
-* Students should get time to ask questions and get help reviewing Databases and React content in preparation for their final project.
-
-* Students should get time to work on homework and receive help with any questions they may have.
-
-* Students should know all of their responsibilities for the final project.
-
-* Students should come out of class with a high-level grasp of how their app will function--what does it do and what problem does it solve?
-
-* Students should complete the React Checkpoint.
-
-* Have your TAs reference [03-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1leakcpggPx4VrMbcjiyqDcneB8YpdGrv/view?usp=sharing) to help keep track of time during class.
-
-### Class Objectives
-
-* To lead a review time with your students for any questions they may still have about prior material since their second project. Primarily Databasing and React content.
-
-* To help students with their current homework assignment as it is a hard one!
-
-* To spur students to flesh out some finial project ideas, recruit team members, and figure out what their apps will do.
-
-* To complete the React Checkpoint
+* Today's lesson will rely heavily on Redux concepts. It is recommended that you spend some time getting familiar with the activities before class starts.
 
 - - -
 
-### 0. Welcome Class (1 min)
+## Class Objectives
 
-* Say your usual hellos and answer any questions your class might have about the previous class.
+* Students can take an app that manages state in Container components, and move state management to follow a Redux pattern.
 
-### 1. Instructor Do: Lead a review on Databases and React (45 mins)
+* Students can identify the appropriate time to make a React app use Redux or follow a similar design pattern.
 
-* We are going to open today's class with a review on some content we have covered since the conclusion of Project 2. Primarily we will be reviewing Databases and React in preparation for your final projects.
+* Students grasp general concepts of declarative, pure, immutable functions, in a way that is abstracted from Redux or any particular library.
 
-* Open the floor to students with specific questions about anything they may not be clear on, including any databasing material or React questions.
+* Students can implement a Redux store in their React app.
 
-* After students have had time to ask specific questions, go into a basic review of Database material.
+- - -
 
-* After completing your review of Databases, begin a review of the React content that has been covered over the past few classes to make sure students have a solid grasp of the fundamentals for their final project.
+### 1. Instructor Do: Introduction (10 mins)
 
-### 2. Everyone Do: Work on homework! (30 mins)
+* Welcome students to their final day of React before project week! Let them know that in the first half of the class, they will learn about Redux concepts and practice applying them in activities. The second half of the class will be dedicated to creating a mini-project that will involve them creating their very own CMS (Content Management System) using Redux patterns. 
 
-* Now its time for students to do some work on their Homework and get help with whatever they may be stuck on!
+* Ask the students the following questions:
+  1. What were some of the pain points of working with context and hooks?
+  2. What is the difference between mutability and immutability, and what are the advantages of each?
+  3. How might we manage state when if there are several different objects to keep track of, and several components that have the ability to update them?
 
-### 3. Instructor Do: Encouragement (5 mins)
+* Guide students towards the following answers:
+  1. Managing many different contexts and hooks can gets complex very quickly.
+  2. **Mutable** objects can have their properties changed or _mutated_, whereas **Immutable objects** can not. Typically immutable objects help prevent your application from getting over-complicated. They often make it easy to identify _why_ the state changed, since every time an object needs to change, a new object has to be explicitly created. This also tends to make testing your components significantly easier. 
+  3. We can create a single global state that contains all of the states needed throughout our application.
 
-* We are now going to transition away from Databases and React, and spend the rest of class discussing final projects.
+* Open the slide deck: https://docs.google.com/presentation/d/1rRxhoiKoa6op_sE3Z0koGxq6SSy97UQHe-SrnLmvnL8/edit?usp=sharing
 
-* Open up the slide deck [20-3 Final Projects](https://docs.google.com/presentation/d/1Aj6gOUCAL9sLp7e4Vhi66SNannRUAt7K70V9CZ2jsmI/edit?usp=sharing).
+2. **Pure functions vs impure functions**: Pure functions are straightforward with singular purposes.
+They do not have any side effects within them. Whenever data needs to be modified, it is not mutated. Impure functions tend to have multiple purposes. The might contain database or network calls.
 
-* Start presenting the Final Project slide deck.
+3. **The impure function** here modifies its argument instead of creating a new argument.
 
-* In the first group of slides, you'll congratulate your students for making it as far as they have so far.
+4. **The pure function** has a singular purpose, making it more developer-friendly.
 
-  * Remind them that most students had no coding knowhow coming in, but they've learned so much since then.
+5. **Redux** is a state management library that helps organize the state of complex applications. While Redux requires a lot of boilerplate code, its utility skyrockets as applications get more complex.
 
-* Read out some of the goals that your students offered at the beginning of the course.
+6. **The principles of Redux**: 
 
-### 4. Instructor Do: What's Next? (3 mins)
+  * The first premise of Redux is that every stateful aspect of your application can be represented by a single JavaScript object known as the state tree.
 
-* You'll explain the next few weeks of classes in the next set of slides.
+  * The second principle of Redux is that the state tree is read only. This means that in order to change the state tree, you need to dispatch an action. The action describes the change that the state will undergo in a declarative manner.
 
-* Tell them about the lectures they can expect, as well as final project presentations and their day with potential employers.
+7. **Actions, reducers, and store**: 
 
-* Announce: no homework for the rest of the course! Well, except for:
+  * **Actions** are declarative objects that define what the store should do to the state.
+  * **The Reducer** takes the previous state and action, then returns a new state. It is important that the reducer is a pure function. 
+  * **The Store** servers as the global state. It gives different pieces of our application access to data held in the state and the reducer function.
 
-  * This week's homework (they still gotta hand that one in).
-  * Weekly project deliverables -- more on that soon.
+### 2. Instructor Do: useReducer Demo (10 mins)
 
-* Tell class that learning doesn't end when they finish the course. There's a literal argosy of languages, frameworks, libraries and other technologies for web developers to study -- and no doubt, this heap of knowledge will build as the years pass.
+* Run [16-Ins_useReducer](../../../../01-Class-Content/20-react/01-Activities/16-Ins_useReducer/) by copying the `src` folder into your prepared CRA application. Navigate to http://localhost:3000/ in your browser and demonstrate the following:
 
-* Point being: web developers must always teach themselves new skills to stay relevant in this field!
+  * The application is similar to earlier click counter demos
 
-* But add in something along these lines. "No problem! If you learned anything in this boot camp, it's how to grasp these technologies quick &mdash; you're ready for this."
+  * Clicking the `Add` or `Subtract` buttons increments and decrements the numerical value accordingly
 
-### 5. Instructor Do: Final Project - The Deets (7 mins)
+* Open [App.js](../../../../01-Class-Content/20-react/01-Activities/16-Ins_useReducer/src/App.js) in your IDE and explain the following points:
 
-* Go over the next set of slides.
+  * We import the `useReducer` method from `react`.
 
-* Tell students they should challenge themselves, and that you'll take no excuses. They've made it this far already &mdash; it's time for them to take everything they learned and produce their best work yet.
+  ```js
+  import React, { useReducer } from 'react';
+  ```
 
-* **Go over what's expected for the project:**
+  * Within our `App` component, we invoke the `useReducer` method, and, using array destructuring, capture the returned value in `count` and `dispatch` variables.
 
-  * Whatever they build should have utility.
+  ```js
+  const [count, dispatch] = useReducer((state, action) => {
+    if(action === "add") {
+      return state + 1;
+    } else if(action === "subtract") {
+      return state - 1;
+    } else {
+      return state;
+    }
+  }, 0)
+  ```
 
-  * They should have market or real-world research that proves their idea has REAL value to people.
+  * 🔑 Similar to the `reduce` array method, `useReducer` expects to receive two arguments, a function with `state` and `action` values, and an initial state value, which we set here to `0`.
 
-  * They should perform research on other web / mobile applications in their app's domain.
+  * When a button is clicked, `dispatch` is passed either an `add` or `subtract` value and, based on the conditional logic in the anonymous function passed to `useReducer`, it will increment or decrement state accordingly.
 
-  * They should put serious time and thought into this.
+  ```js
+  return (
+    <div className="App">
+      <h1>This time... With Redux!</h1>
+      <button className="btn btn-success mt-5 mb-5" onClick={()=> dispatch('add')} >Add</button>
+        <div>{count}</div>
+      <button className="btn btn-danger mt-5" onClick={()=> dispatch('subtract')} >Subtract</button>
+    </div>
+  );
+  ```
 
-  * They should report problems they're facing along the way.
+### 3. Students Do: useReducer (15 mins)
 
-  * They should use some form of project management system.
+* Introduce [useReducer/Unsolved](../../../../01-Class-Content/20-react/01-Activities/16-Stu_useReducer/Unsolved)
 
-  * They should dig deep into documentation and external resources to find the tools they need.
+```md
+In this activity we will practice using the `useReducer` Hook.
 
-* **Go over what's required of each group. Each Project:**
+# Instructions
 
-  * Must use ReactJS.
+* Replace your React application's src folder with [Unsolved/src](Unsolved/src).
 
-  * Must use a Node and Express Web Server.
+* Start the application in dev mode by running `npm start` in your terminal.
 
-  * Must be backed by a MySQL or MongoDB Database with a Sequelize or Mongoose ORM.
+* Open your browser to [localhost:3000](http://localhost:3000) and study the rendered application.
 
-  * Must have both GET and POST routes for retrieving and adding new data.
+* Update this application to accomplish the following:
 
-  * Must be deployed using Heroku (with Data).
+* Create a `useReducer` Hook that checks for two different cases (one for each dog).
 
-  * Must utilize at least two libraries, packages, or technologies that we haven't discussed.
+* The second argument in `useReducer` should be an object with two properties.
 
-  * Must allow for or involve the authentication of users in some way.
+* Each case should return a _new_ state object with the updated properties.
 
-  * Must have a polished frontend / UI.
+* Add the necessary code to display the number of praises that each dog has.
 
-  * Must have folder structure that meets MVC Paradigm.
+* When a dog is praised, an action should be dispatched that contains an identifier so that the correct dog's praises can be updated.
 
-  * Must meet good quality coding standards (indentation, scoping, naming).
+```
 
-  * Must not expose sensitive API key information on the server, see [Protecting-API-Keys-In-Node.md](../../../../01-Class-Content/10-nodejs/03-Supplemental/Protecting-API-Keys-In-Node.md)
+### 4. Instructor Do: Review useReducer (10 mins)
 
-* **Finally, go over each week's deliverable**
+* Open [App.js solved](../../../../01-Class-Content/20-react/01-Activities/16-Stu_useReducer/Solved/src/App.js) and explain the following:
 
-  * **Week 1**: A detailed plan of action with the following:
+  * This application keeps track of how many times you've praised each dog.
 
-    * An overview of the intended application and WHY you feel it's valuable.
+  * Our reducer allows for two different actions. For simplicity's sake, we've hard-coded `praiseHarry` and `praiseHermione` as separate actions.
 
-    * A breakdown of roles by group member.
+  * Prompt the students with the following questions:
 
-    * A schedule for completion of various tasks.
+  1. How might we rewrite our reducer so that any number of dogs can be praised?
 
-    * A screenshot of your Project Management Board that shows breakdown of tasks assigned to group members with a schedule.
+  2. What logic in our reducer is repeated that we might be able to extract?
 
-    * A set of DETAILED screen-by-screen design layouts with annotations describing all UI/UX components and all data relevant to the screen.
+  3. We could create a single case that handles all actions in a similar manner. This way, the initial state would also have to into an array, so that the dogs would be easy to iterate through.
 
-      * On this note, show the example slides of a UI/UX and Data Flow layout. Tell the class that you'll expect something akin to these drafts.
+  4. The return statements are almost identical. A more scalable solution might update a `praises` property on a `dog` object. The action would contain a unique identifier so that the proper item in the state array could be updated.
 
-  * **Week 2**: A functioning **minimal viable product** (i.e., a prototype version of your app that shows the intended function). This should be as close to a working app as possible and include:
+  * 🔑 This time, the initial state value is set to be an _object_ that keeps track of how many praises each dog has.
 
-    * A 5-7 minute presentation that discusses what your app is, what it does, and how it works. You will be presenting to instructors and TAs during class.
+  ```js
+  const [state, dispatch] = useReducer((state, action) => {
+      if(action === "praiseHarry") {
+        return { ...state, HarryPraises: state.HarryPraises + 1 };
+      } else if(action === "praiseHermione") {
+        return { ...state, HermionePraises: state.HermionePraises + 1 };
+      } else {
+        return state;
+      }
+    }, { HarryPraises: 0, HermionePraises: 0 });
+  ```
 
-    * A screenshot of your Project Management Board that shows breakdown of tasks assigned to group members with a schedule. This should be updated to reflect remaining priorities and completed tasks.
+  * To display each dog, we use the `map` method on our `dogs` array and return a div with a unique key. In this case we can use `item.name` since there are only two dogs. In a larger list of dogs, it would be better to use a unique id.
 
-  * **Week 3**: A significantly more polished version of the app.
+  * Point out that the code that displays how many times each dog has been praised uses the bracket notation to dynamically grab the dogs name.
 
-    * This should literally seem like an app that you would submit.
+  * 📝This workaround is only necessary because our reducer state is an object. If the reducer state was an array, we may be able to utilize the `index` property in `map`.
 
-    * Include a summary of significant issues faced to date and their resolution.
+  ```js
+  {
+  dogs.map((item) => (
+    <div key={item.name} className="card mx-auto col-4">
+      <img className="card-img-top" src={item.image} alt={item.name} />
+      <div className="card-body">
+        <h4 className="card-title">{item.name}</h4>
+        <p className="card-text">{item.name} has been praised {state[item.name+"Praises"]} times!</p>
+        <button className="btn btn-primary" onClick={() => dispatch("praise" + item.name)} >Praise</button>
+      </div>
+    </div>
+  )
+  )}
+  ```
 
-    * Provide a detailed description of each person's contributions.
+### 5. Instructor Do: useRef Demo (10 mins)
 
-    * Submit a detailed plan that describes remaining efforts. This should describe remaining issues like:
-      * Stretch Features
-      * Bugs
-      * Enhancements
-      * UI Polishing
+* Run [useReducer/Solved](../../../../01-Class-Content/20-react/01-Activities/18-Ins_useRef/Solved) by copying the `src` folder into your prepared CRA application. Navigate to http://localhost:3000/ in your browser and demonstrate the following:
 
-  * **Week 4**: The Presentation!
-    * A 7-10 minute demonstration of your app.
-    * More on this as we near closer to the end.
+  * Clicking the increment button still works as in the previous demo
 
-### 6. Students Do: Conceptualize the Final App (29 mins)
+  * Entering a new value in the input field updates the counterimmediately.
 
-* When you close the slide deck, direct your students to form into their groups to think about the app they'll create over the next month.
+* Open [App.js solved](../../../../01-Class-Content/20-react/01-Activities/18-Ins_useRef/Solved) in your IDE and explain the following:
 
-* By the time the class ends, they should tell you the following details about their project:
-  * What the app will do.
-  * What technologies they expect their app to implement.
-  * Who will be responsible for each part of the app.
-  * Who will be responsible for each part of deliverable #1.
+  * `useRef` is a Hook that allows you to use the `ref` attribute on an input element. To access the value from a specific input element, we must attach its reference to our new `useRef` hook. The value of the input field is stored in the `current.value` property.
 
-* Record these responses in a list and make sure each group has given you those four items before they leave class.
+  ```js
+  const inputRef = useRef();
+  const [count, dispatch] = useReducer((state, action) => {
+    switch(action) {
+    case "add":
+      return state + 1;
+    case "subtract":
+      return state - 1;
+    case "change":
+      return inputRef.current.value;
+    default:
+      return state;
+    }
+  }, 0);
+  ```
 
-* As they're thinking about their apps, you and the TAs should walk the classroom and check in on their progress. Once again, make sure they pick something that will challenge them (but not something so ambitious that it will destroy them).
+  * Now that we've added another conditional to our reducer, it makes sense to convert it into a switch case statement for better readability.
 
-### 7. BREAK (30 mins)
+  * We _did not_ use the `onChange` handler. Although we could have used `onChange`, we opted to make our input field _uncontrolled_, since we only need the value from the field when the form is submitted. Not only does this mean we needed to write less code, but it also means that our component will not be unnecessarily subscribed to a value that is frequently changing.
 
-### 8. Students Do: Finish Conceptualizing And Consider the Next Steps (70 mins)
+  ```js
+  <input className="form-control w-25 mx-auto mt-5" placeholder="Type new value..." ref={inputRef} />
+  ```
 
-* Continue along the same path as part 6 until class ends.
+### 6. Students Do: useRef (15 mins)
 
-* Make sure you go to each group that has yet to submit anything about their app and help them figure out the direction they should move in.
-  * If a group can't submit their four items by the end of class, they must at least send them by the end of the day (and really, who wants to work outside of class on a Saturday)?
+```md
+In this activity we will practice using the `useRef` Hook by creating a Todo list application.
 
-### 9. Instructor Do: Introduce Checkpoint - React (5 min) (Critical) 
+# Instructions
 
-* Let your class know that they will now be taking a short multiple choice assessment to check their understanding of React
+* Replace your React application's src folder with [Unsolved/src](Unsolved/src).
 
-* DO NOT SKIP THIS INTRODUCTION. DO NOT JUST SEND OUT THE LINK WITHOUT CONTEXT
+* Start the application in dev mode by running `npm start` in your terminal.
 
-* Reassure the students that they need not be nervous about the Checkpoint:
+* Open your browser to [localhost:3000](http://localhost:3000) and study the rendered application.
 
-  * "This will not affect your grade or graduation requirements."
+* Update this application to accomplish the following:
 
-  * "This is not like the tests and quizzes you might be used to from school or college. The purpose of these tests is not to motivate you to study or punish you for struggling."
+* Create a `reducer` that handles Todo creation.
 
-  * "This is as much a test of me as an instructor and of the course content as it is of you. We are here to ensure your success, and this is one of the tools we use to make sure we are doing that effectively. This class moves _fast_, so if some or all of you misunderstand something important we as an instructional team need to find out as fast as possible so we can help."
+* This time, instead of passing a string as an argument to the `dispatch` method, `action` should be an object with the following properties:
 
-  * "Long story short, this quiz can not hurt you. Only help you."
+  * `type`: The string that will be used to identify each action.
 
-* Let students know that they should read carefully and focus on thinking about the right answer rather than using any test-taking skills they may have learned:
+  * `name`: The string that is passed in through your input field.
 
-  * "There are no silly answers or obvious throwaway responses on this quiz, because those kinds of answers reduce the likelihood that we'll be able to figure out whether we've taught something effectively."
+* The second argument in `useReducer` should be an empty array.
 
-  * "Test taking strategies you may have learned for standardized tests _will not work_, so instead of focusing on eliminating wrong answers or looking for sneaky context cues, read the question and each of the possible choices carefully."
+* Each case should return a _new_ array with the updated properties.
 
-* Reassure students once again that the purpose of this is to help them, and remind them that the outcome does not impact their grade or graduation requirements. You should do this _every single time_ you give an Checkpoint.
+* **BONUS**: Update the component so that there is a button next to each list item called `remove` that removes that Todo from the list. You will need to create a new case in your reducer method that returns a _new_ array without the removed Todo. ***HINT***: You may want to pass a unique identifier as an argument in the `dispatch` method.
 
-* You or your TAs should now get the link specific to your class:
+```
 
-  * Navigate in your browser to: `https://www.switchboard.tech`
+### 7. Instructor Do: Review useRef (10 mins)
 
-  * Select your class code (if it doesn't show up on its own)
+* Run [useReducer/Solved](../../../../01-Class-Content/20-react/01-Activities/19-Stu_useRef/Solved) by copying the `src` folder into your prepared CRA application. Navigate to http://localhost:3000/ in your browser and demonstrate the following:
 
-    * For parallel cohorts (two classes combined on a Saturday) and doing a Checkpoint: You will **need** to select the classes in your cohort. You can multi select the cards by clicking the class that you need.
+  * Entering a task in the input field and clicking on `Add to list` creates a new Todos
 
-    * The class roster will be in the **one** link.
+  * Clicking the `Remove` button on any item removes it from the list
 
-  * Select the Checkpoint and copy the resulting link.
+* Open [App.js Solved](../../../../01-Class-Content/20-react/01-Activities/19-Stu_useRef/Solved/src/App.js) in your IDE and explain the following points:
 
-### 10. Students Do: Take Checkpoint - React (10 mins) (Critical)
+  * We initialize a variable, `inputRef` with `useRef`.
 
-* Slack out the link to the Checkpoint
+  ```js
+  const inputRef = useRef();
 
-* Let your students know that once they select their name, it will take them to the Checkpoint
+  const [items, dispatch] = useReducer((state, action) => {
+    switch (action.type) {
+    case "add":
+      return [
+        ...state,
+        {
+          id: state.length * Math.random(),
+          name: action.name
+        }
+      ];
+      // Bonus: Remove a todo from the list.
+    case "remove":
+      return state.filter((_, index) => {
+        return index !== action.index;
+      });
+    default:
+      return state;
+    }
+  }, []);
+  ```
 
-* Checkpoints must be completed in class, **not at home**, to ensure you will be able to effectively find and help struggling students 
+  * Our switch case checks the `type` property on the action object.
 
-* TAs should walk around the class to ensure students aren't looking up answers
+  * In the `add` case, we return a _new_ array that contains all of the items in the previous state _and_ a new object made up of the `name` property from the action object and a unique id.
 
-* Keep in mind we do not use grades from assessments toward graduation requirements. However, students will be tempted to avoid feeling like they don't understand something.
+  * In order to fake a unique id we generate one from the length of the array. In a full-stack application, the id would be a unique value created by the database.
 
-* It's important for instructional teams to create an environment where it is safe to fail, but also where such failure is visible. You should not be worried about "cheating" on checkpoints, only making sure that students who need help aren't remaining invisible.
+  * The `remove` case returns a new array that contains every item from the previous array _except_ for the item that should be removed.
 
-* Your SSM will have the results of the Checkpoint within an hour of its completion
+  * 📝The `filter` method returns a _new_ array instead of modifying the existing array. This is a good opportunity to remind students that mutations should be avoided inside reducers.
 
-### 11. End (0 mins)
+  * `_` is used as a placeholder since we do not intend to use the first argument in the `filter` callback.
 
-### 12. TAs Do: Structured Office Hours - Review React (30 mins)
+  * `inputRef` is attached to the `ref` attribute on our input field.
 
-* Navigate in your browser to: `https://github.com/coding-boot-camp/checkpoint-bank/blob/master/checkpoints/multiple-choice/10-React-MC/10-ES6-React-MC.md`
+  * In the `handleSubmit` function, we dispatch a new action that passes the `inputRef.current.value` to our reducer. Remember to access the `current.value` property on the `inputRef` object.
 
-* There you will find the questions and answers to the Checkpoint given.
+  ```js
+    const handleSubmit = (e) => {
+    e.preventDefault();
+    dispatch({
+      type: "add",
+      name: inputRef.current.value
+    });
+    inputRef.current.value = "";
+  }
 
-* Please take the entire office hours time to review the questions with the students.
+  return (
+    <div className="container text-center">
+      <h1>Create a Todo List!</h1>
+      <form className="form-group mt-5" onSubmit={handleSubmit}>
+        <input className="form-control" ref={inputRef} placeholder="Start typing what you need to do..." />
+  ```
 
-* Suggestion Format:
+### 8. Instructor Do: Store Demo 🏬 (10 mins)
 
-  * TAs ask a question at a time to the class.
+* Run [Ins_Store](../../../../01-Class-Content/20-react/01-Activities/20-Ins_Store) by copying the `src` folder into your prepared CRA application. Navigate to http://localhost:3000/ in your browser and demonstrate the following:
 
-  * Let the students try to answer it.
+  * As before, clicking buttons increments or decrements a counter. This time, however, we are going to keep the counter data in a global state object called the **store**.
 
-    * If you see that a majority of the class has a misunderstanding with a question:
+* Open the `src` folder in your IDE and point out the following:
 
-      * Take your time on this question!
+  * The application has been separated into multiple files so that we create a flow that is more similar to Redux.
 
-    * If you see that a small number of students has a misunderstanding with a question:
+* Open [Ins_Store](../../../../01-Class-Content/20-react/01-Activities/20-Ins_Store/src/App.js) in your IDE and explain the following points:
 
-      * Do your best to reinforce the misunderstanding but be cautious of your time.
+  * From our `GlobalState` util, we import a `CountProvider`. We also import a `Count` component.
 
-      * Make note of the students that are still struggling with the question and schedule a 1:1 with the students.
+  ```js
+  import React from "react";
+  import { CountProvider } from "./utils/GlobalState";
+  import Count from "./components/Count";
+  import "./App.css";
+  ```
 
-  * If applicable, demo the answer.
+  * Inside the `App` component, we wrap the children of `App` in a the `CountProvider`.
 
-* Take your time on these questions!
+  ```js
+  const App = () => {
+    return (
+      <CountProvider>
+        <div className="App">
+          <Count />
+        </div>
+      </CountProvider>
+    );
+  }
+  ```
+* Ask the students the following question(s):
 
-* This is a great time to reinforce concepts and misunderstandings!
+  1. If we are importing an object named `CountProvider`, what do you think we will find in `GlobalState`?
+  2. If `GlobalState` is performing the function its name suggests, what else might we find in it?
 
-# Instructor Do: Private Self-Reflection (0 mins)
+* Facilitate discussion around the following answers:
 
-Take some time on your own after class to think about the following questions. If there's anything that you're not sure how to answer, feel free to reach out to the curriculum team!
+  1. Based on the name `CountProvider`, we can expect to find `createContext` used to create the exported object.
+  2. We can find `GlobalState` in any component of our application that will need access to the global state.
 
-1. How did today's class go?
-2. How did you teach it?
-3. How well do you feel you did teaching it?
-4. Why are you teaching it?
-5. Why did you teach it that way?
-6. What evidence can I collect to show my students are understanding?
-7. How will my students know they are getting it?
+* Open [Ins_Store](../../../../01-Class-Content/20-react/01-Activities/20-Ins_Store/src/utils/GlobalState.js) in your IDE and explain the following points:
 
-### Lesson Plan Feedback
+  * This file contains what is commonly referred to as the **store**. The store is in charge of handling all of the actions that are passed to it from any component in the application. Once a reducer handles an action, it creates a _new_ state and passes it through the Provider to the global Context object.
+
+  * At the top of the file, we create a new Context object. We then use object destructuring so that we may refer to its Provider object as `Provider`.
+
+  ```js
+  const CountContext = createContext();
+  const { Provider } = CountContext;
+  ```
+
+  * Again, we are checking the `type` property on the action that this reducer will receive from a dispatch. This time, if the action type isn't one of the two cases, we will throw an Error so that we can quickly identify when we've incorrectly implemented an action.
+
+  ```js
+    const reducer = (state, action) => {
+      switch (action.type) {
+      case "add":
+        return { count: state.count + 1 };
+      case "subtract":
+        return { count: state.count - 1 };
+      default:
+        throw new Error(`Invalid action type: ${action.type}`);
+      }
+  };
+  ```
+
+  * The `CountProvider` function takes in a value argument, which we set to be `0` by default, and the properties from our `props` object. It then returns a Provider with `state` and `dispatch` passed through to the Context object.
+
+  ```js
+  const CountProvider = ({ value = 0, ...props }) => {
+    const [state, dispatch] = useReducer(reducer, { count: value });
+
+    return <Provider value={[state, dispatch]} {...props} />;
+  };
+  ```
+
+  * 📝 The `reducer` method is set up, abstracted from the `useReduce` Hook. We don't actually attach it to the `useReducer` Hook until we set up the `CountProvider`. This means that if you want to, you can use the same reducer in multiple providers that have different initial states.
+
+  * `useCountContext` is created so that we will not have to import both the `useContext` Hook and the `CountContext` object every time we want to use the `CountContext`.
+
+  ```js
+  const useCountContext = () => {
+    return useContext(CountContext);
+  };
+  ```
+
+  * Lastly, we export `CountProvider` and `useCountContext`
+
+  ```js
+  export { CountProvider, useCountContext };
+  ```
+
+### 9. Students Do: Store 🏬 (20 mins)
+
+Introduce students to [Store unsolved](../../../../01-Class-Content/20-react/01-Activities/21-Stu_Store/Unsolved).
+
+```md
+In this activity we will create a store that contains the global state and a reducer. We will also add some functionality to our Todo list.
+
+# Instructions
+
+* Replace your React application's src folder with [Unsolved/src](Unsolved/src).
+
+* Start the application in dev mode by running `npm start` in your terminal.
+
+* Open your browser to [localhost:3000](http://localhost:3000) and study the rendered application.
+
+* Update this application to accomplish the following:
+
+* Separate the Form and List parts of the application into two different components. Place them both in a folder called `components`.
+
+* Create a folder called `utils` and within it, create a single file that will be the application **store**. This file should export a Provider that will be used to wrap the entire application and a `useTodoContext` object that will be used to inject the Context into any component that needs access to the store.
+
+* Add an action handler that will allow users to prioritize a Todo.
+
+* Make sure your application works properly before moving on.
+
+* Add numbering to the list so that each item has its index next to the Todo title. If items are removed from the array, the index should update to reflect the changed state.
+
+* Change the `List` component so that each Todo has a button next to it that dispatches the `prioritize` action.
+
+* Make the necessary changes so that the title of the Todo will appear in bold if it is prioritized.  
+
+```
+
+### 10. Instructor Do: Review Store 🏬 (10 mins)
+
+* Run [Store Solved](../../../../01-Class-Content/20-react/01-Activities/21-Stu_Store/Solved) by copying the `src` folder into your prepared CRA application. Navigate to http://localhost:3000/ in your browser and demonstrate the following:
+
+  * Add Todos to the list with the input field
+
+  * The remove functionality still works as expected
+
+  * If the `prioritize` button is clicked, the text of the Todo is bolded
+
+* Open `/src/App.js` in your IDE and explain the following points:
+
+  * The two components `Form` and `List` are wrapped in a `TodoProvider`. It is very important that we wrap the entire application with our Provider. Without the Provider, `useTodoContext` will not work in any of the components that it's injected into.
+
+  ```js
+  <div className="container">
+    <TodoProvider>
+      <Form />
+      <TodoList />
+    </TodoProvider>
+  </div>
+  ```
+
+* Open [GlobalState.js](../../../../01-Class-Content/20-react/01-Activities/21-Stu_Store/Solved/src/utils/GlobalState.js) in your IDE and point out the following:
+
+  * The `TodoContext` is provided with default values whose types are consistent with the type we intend to provide later. While this is not required, it is considered best practice.
+
+  ```js
+  const TodoContext = createContext({
+    id: "",
+    name: "",
+    priority: false
+  });
+  ```
+
+  * Using object destructuring, we create a new variable for the Provider.
+
+  ```js
+  const { Provider } = TodoContext;
+  ```
+
+  * The `reducer` function uses a switch case to handle the action that will be passed to `dispatch`. Each case returns a new array. Within the "prioritize" case `map` method, we use `Object.assign` because it creates a _new_ object from the old Todo object and the new value of priority. Both of these methods are essential to ensure that our state stays immutable.
+
+  * `priority: !item.priority` sets the priority value to be the opposite of what it previously was. This means that when the `prioritize` button is pressed, the value is _toggled_ rather than explicitly set.
+
+  ```js
+  const reducer = (state, action) => {    
+    switch (action.type) {
+      case "add":
+        return [
+          ...state,
+          {
+            id: state.length * Math.random(),
+            name: action.name
+          }
+        ];
+      case "remove":
+        return state.filter((_, index) => {
+          return index !== action.index
+        });
+      case "prioritize":
+        return state.map((item, index) => {
+          if(index === action.index ) {
+            return Object.assign({}, item, {
+              priority: !item.priority
+            })
+          }
+          return item;
+        });
+      default:
+        return state;
+    }
+  };
+  ```
+
+  * The `TodoProvider` returns a `<Provider>` element that we will use to wrap our entire application with. 
+
+  * We create this file in our `GlobalState` so that it can provide access to the `useReducer` method to any component in our application.
+
+  ```js
+  const TodoProvider = ({ value = [], ...props }) => {
+    const [state, dispatch] = useReducer(reducer, []);
+
+    return <Provider value={[state, dispatch]} {...props} />;
+  }
+
+  const useTodoContext = () => {
+    return useContext(TodoContext);
+  }
+
+  export { TodoProvider, useTodoContext };
+  ```
+
+* Open [Form.js](../../../../01-Class-Content/20-react/01-Activities/21-Stu_Store/Solved/src/components/Form.js) in your IDE and point out the following:
+
+  * We import `useRef` from `react` and `useTodoContext` from our store.
+
+  ```js
+  import React, {useRef} from 'react';
+  import {useTodoContext} from "../utils/GlobalState";
+  ```
+
+  * Within the `Form` component, we create a a new `useRef`, `inputRef`, and call `useTodoContext` so that we can dispatch an action to our `Todo` reducer.
+
+  * 📝 Since this form is not responsible for displaying any information from the state, the first variable from our destructured Context array can be `_`.
+
+  ```js
+  const Form = () => {
+    const inputRef = useRef();
+    const [_, dispatch] = useTodoContext();
+
+    ...
+
+  }
+  ```
+
+
+  * `dispatch` is used within `handleSubmit` to dispatch an action that will update the store with each Todo that is created using the `inputRef` we created above.
+
+  ```js
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    dispatch({
+      type: "add",
+      name: inputRef.current.value
+    });
+    inputRef.current.value = "";
+  }
+  ```
+
+  * The `input` element has a ref attribute of `inputRef` so that we can use the `useRef` Hook to easily grab the value from our input field upon form submission.
+
+  * The `form` element has an `onSubmit` callback of `handleSubmit`.
+
+
+  ```js
+  return (
+    <div>
+      <h1>Create a Todo List!</h1>
+      <form className="form-group mt-5" onSubmit={handleSubmit}>
+        <input className="form-control" ref={inputRef} placeholder="Start typing what you need to do..." />
+        <button className="btn btn-success mt-3 mb-5" type="submit">Add to List</button>
+      </form>
+    </div>
+  );
+  ```
+
+* Open [TodoList.js](../../../../01-Class-Content/20-react/01-Activities/21-Stu_Store/Solved/src/components/TodoList.js) in your IDE and explain the following:
+
+  * We again import our store so that we can use the `TodoContext`.
+
+  ```js
+  import {useTodoContext} from "../utils/GlobalState";
+  ```
+  * Within our `TodoList` component, we use the `index` parameter from our `state.map` callback to number each Todo on the list. Each item contains two buttons with `onClick` methods returning `dispatch`. We pass to `dispatch` either "prioritize" or "remove", respectively, and the index of the list item.
+
+  ```js
+  const TodoList = () => {
+    const [state, dispatch] = useTodoContext();
+    return (
+      <div>
+        <h4>My Todo List:</h4>
+          <ul className="list-group">
+            {state.map((item, index) => (
+              <li className="list-group-item col-12" key={item.id}>
+                <button className="btn btn-warning mr-4" onClick={() => dispatch({ type: "prioritize", index })}>Prioritize</button>
+                <button className="btn btn-danger mr-4" onClick={() => dispatch({ type: "remove", index })}>
+                  X Remove
+                </button>
+                {index}:<span className={item.priority ? "font-weight-bold" : ""}> {item.name}</span>
+              </li>
+              ))}
+            </ul>
+        </div>
+      );
+    }
+  ```
+
+  * `<span className={item.priority ? "font-weight-bold" : ""}>` uses a ternary operator to determine whether or not to bold the Todo.
+
+
+### 11. Break (40 mins)
+
+### 12. Instructor Do: Demo Mini-Project (5 mins)
+
+* Open another tab in your terminal and run `mongod`.
+
+* Return to the tab with the [GlobalState.js](../../../../01-Class-Content/20-react/01-Activities/22-Stu_Mini_Project/Solved/) directory open and run `npm install` followed by `npm start`.
+
+* Open [http://localhost:3000](http://localhost:3000) in your browser and explain the following:
+
+  * All of our posts can be viewed on the [http://localhost:3000](http://localhost:3000) page.
+
+  * Start by creating a blog post. Show students that the title and body reset, but the screen name does not.
+
+  * Point out that for a brief second, `Loading...` appears in the top right section of the navigation bar. During this time, the `Save Post` button is also disabled.
+
+  * Point out that there are no favorites yet on the right hand side.
+
+  * Click on `View all posts`, then click on the post that you just created.
+
+  * This will take you to another page where you can view the details of the post.
+
+  * Click on the `Favorite` button, then navigate back to the home page. The post you just selected has been added to the favorite posts list. Show the students that you can remove a post from the favorite posts list by clicking the red `x`. 
+
+  * Favorites are only stored in the `store`, not the database.
+
+### 13. Students Do: Mini-Project (60 mins)
+
+* Introduce students to the [Mini-Project](../../../../01-Class-Content/20-react/01-Activities/22-Stu_Mini_Project/Unsolved/)
+
+```md
+# Custom CMS
+
+In this activity we will create a CMS (Content Management System) that allows users to upload blog posts. Users will also be able to view blog posts by other authors and filter them based on category. We will use the Context API to manage the application state globally, adhering to a design pattern that closely follows Redux. Although very complex applications may have several stores, we are going to keep it simple and store all stateful data in a single global store.
+
+## Instructions
+
+* Open the [Unsolved](Unsolved) folder and install dependencies by running `npm install` at the project root.
+
+* Open another tab in your terminal and run `mongod`.
+
+* Start the app by running `npm start` from the project root.
+
+* Once the app starts open your browser to [localhost:3000](http://localhost:3000).
+
+* Open [App.js](Unsolved/client/src/App.js).
+
+* There are 4 main sections in this application:
+
+  * A section that allows you to create new posts.
+
+  * A section that lists all of the posts.
+
+  * A detail page to view the contents of an individual post.
+
+  * (BONUS): A Favorites page that lists all of your favorite posts.
+
+### Part 1
+
+* Set up a store for your application with support for the following actions:
+
+  1. UPDATE_POSTS: Updates the state with the latest posts.
+
+  2. ADD_POST: Adds a post to the posts array.
+
+  3. REMOVE_POST: Removes a specified post from your posts array.
+
+  4. SET_CURRENT_POST: Sets the current post in the store. This action will only be dispatched from the detail page.
+
+  5. SAVING: Defines whether or not a post is in the process of being saved to the database.
+
+* Since this application is larger than our previous applications, we are going to create a separate file for our action types. By doing this, we will be able to import the actions into any component we would like, thus reducing the chance of mispelling them thanks to the autocomplete feature in our IDE.
+
+* In `client/src/utils`, create a file named `actions.js`.
+
+* Inside the actions file, export a `const` for each action type so that you will be able to easily import it into whichever file you would like.
+
+  * Ex: `export const GET_POSTS = "GET_POSTS";`
+
+* In `client/src/utils/GlobalState.js`, create a store for your application with with a reducer that can handle each action type.
+
+* Export a `StoreProvider` and `useStoreContext` Hook.
+
+* In `App.js`, wrap your entire application with the `StoreProvider`.
+
+### Part 2
+
+* Open up `client/src/components/CreatePostForm` and add the functionality for creating new posts.  
+
+* Open up `client/src/components/PostsList` and add the functionality for getting the latest posts _and_ deleting a single post.
+
+* Open up `client/src/pages/Detail.js` and add the functionality for viewing a selected post.
+
+* 📝 With every API call, dispatch the `LOADING` action. Then make the API call. Dispatch your action within the `then` method.
+ 
+*  Update the `UPDATE_POSTS`, `SET_CURRENT_POST`, and `ADD_POST` action handlers so that the `loading` property on the state changes to `false`.
+
+* In `client/src/components/Nav`, use the global store to make the `Loading...` text appear whenever the global state is loading.
+
+* In `client/src/components/CreatePostForm`, update the submit button so that it is `disabled` if the global state is loading.
+
+### BONUS
+
+* In `client/src/pages/Detail.js`, add a `❤️ Add to Favorites` button that adds the blog post to a `favorites` array in the store.
+
+* Here are some actions you might choose to use:
+
+  1. UPDATE_FAVORITES: Updates the state with the latest favorites.
+
+  2. ADD_FAVORITE: Adds a favorite to the favorites array.
+
+  3. REMOVE_FAVORITE: Removes a specified post from your favorites list.
+
+### Hints
+
+* You will **not** have to modify any files that are not in the `client` folder.
+
+* If you are stuck or running into errors, try to `console.log` the `action` in your store. Try to make sure that the reducer is functioning as expected before looking at your component.
+
+* Use the `utils/GlobalState.js` file from the previous activity to help scaffold the store.
+
+* Ask the instructor or a TA if you're having difficulty understanding any of the activity requirements.
+
+```
+
+### 14. Instructor Do: Review Mini-Project (15 mins)
+
+* Start by opening [actions.js](../../../../01-Class-Content/20-react/01-Activities/21-Stu_Store/Solved/client/src/utils/actions.js) in your IDE.
+
+  * First, we exported each string as a `const` so that we won't have to worry about misspelling our actions at any point in our application. This also allows us to take advantage of the autocomplete feature in our IDE. 
+
+  * It is also considered best practice in Redux to make all of your action types capitalized. This makes it much easier for you to quickly find actions in your code.
+
+  * Let the students know that we'll return to the `Favorites` actions if there's time.
+
+  ```js
+  export const UPDATE_POSTS = "UPDATE_POSTS";
+  export const REMOVE_POST = "REMOVE_POST";
+  export const SET_CURRENT_POST = "SET_CURRENT_POST";
+  export const ADD_POST = "ADD_POST";
+  export const LOADING = "LOADING";
+  ```
+
+  * At the top, we import all of the action types from our actions file.
+
+  * Walkthrough each case in our switch statement:
+
+  * `SET_CURRENT_POST` returns a _new_ state object by combining the previous state with the `post` object from the `action`. We also set the loading property in our state to be `false`.
+
+  * `UPDATE_POSTS` also returns a _new_ state object. This time, we created a _new_ array by using the spread operator on the posts array from the action. Again, we set the loading property in our state to be `false`.
+
+  * `REMOVE_POST` returns a _new_ state object. The posts array is created by using the `filter` method on the posts array from our previous state. Remember, the `filter` method returns a _new_ array instead of mutating the existing one.
+
+  * `ADD_POST` returns a _new_ state object. We create a new array from the post object from the `action` and the posts from the previous state. Again, we set the loading property in our state to be `false`.
+
+  * `LOADING` returns a _new_ state object with loading set to `true`.
+
+  ```js
+  import React, { createContext, useReducer, useContext } from "react";
+  import { SET_CURRENT_POST, REMOVE_POST, UPDATE_POSTS, ADD_POST, LOADING } from "./actions";
+
+  const StoreContext = createContext();
+  const { Provider } = StoreContext;
+
+  const reducer = (state, action) => {
+    switch (action.type) {
+      case SET_CURRENT_POST:
+        return Object.assign({}, state, {
+          currentPost: action.post,
+          loading: false
+        })
+
+      case UPDATE_POSTS:
+        return Object.assign({}, state, {
+          posts: [...action.posts],
+          loading: false
+        })
+
+      case REMOVE_POST:
+        return Object.assign({}, state, {
+            posts: state.posts.filter((post) => {
+            return post._id !== action._id 
+          })
+        })
+
+      case ADD_POST:
+        return Object.assign({}, state, {
+          posts: [action.post, ...state.posts],
+          loading: false
+        })
+
+      case LOADING:
+        return Object.assign({}, state, {
+          loading: true
+        })
+
+      default:
+        return state;
+    }
+  };
+  ```
+
+  * The `Store Provider` uses the `useReducer` Hook so that we can provide the global state to all of our components. 
+
+  * The second argument in the `useReducer` Hook is the initial state.
+
+  * `dispatch` is also provided globally so that all components can use the reducer.
+
+  ```js
+  const StoreProvider = ({ value = {}, ...props }) => {
+    const [state, dispatch] = useReducer(reducer, {
+      posts: [],
+      currentPost: {
+        _id: 0,
+        title: "",
+        body: "",
+        author: ""
+      },
+      favorites: [], 
+      loading: false
+    });
+
+    return <Provider value={[state, dispatch]} {...props} />;
+  };
+
+  const useStoreContext = () => {
+    return useContext(StoreContext);
+  };
+
+  export { StoreProvider, useStoreContext };
+
+  ```
+
+* Open [createPostForm.js](../../../../01-Class-Content/20-react/01-Activities/22-Stu_Mini_Project/Solved/client/src/components/createPostForm.js) in your IDE and explain the following:
+
+  * We create separate `ref`s for each input field.
+
+  * The `useStoreContext` Hook is called so that we have access to the store.
+
+  ```js
+  const titleRef = useRef();
+  const bodyRef = useRef();
+  const authorRef = useRef();
+  const [state, dispatch] = useStoreContext();
+  ```
+
+  * `handleSubmit` dispatches the `LOADING` action _before_ calling the API.
+
+  * We save our post with `API.savePost`, then dispatch an action to update the store.
+
+  * Both the `titleRef` and `bodyRef` are set back to empty strings.
+
+  ```js
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    dispatch({ type: LOADING });
+    API.savePost({
+      title: titleRef.current.value,
+      body: bodyRef.current.value,
+      author: authorRef.current.value
+    }).then((result) => {
+      dispatch({
+        type: ADD_POST,
+        post: result.data
+      });
+    }).catch(err => console.log(err));
+    titleRef.current.value = "";
+    bodyRef.current.value = "";
+  };
+  ```
+
+  * Each `ref` Hook is attached to its respective input field.
+
+  * The button has a `disabled` attribute that activates if `state.loading` is true.
+
+  ```js
+  <form className="form-group mt-5 mb-5" onSubmit={handleSubmit}>
+    <input className="form-control mb-5" required ref={titleRef} placeholder="Title" />
+    <textarea className="form-control mb-5" required ref={bodyRef} placeholder="Body" />
+    <input className="form-control mb-5" ref={authorRef} placeholder="Screen name" />
+    <button className="btn btn-success mt-3 mb-5" disabled={state.loading} type="submit">Save Post</button>
+  </form>
+  ```
+
+* Open [PostsList.js](../../../../01-Class-Content/20-react/01-Activities/22-Stu_Mini_Project/Solved/client/src/components/PostsList.js) and explain the following:
+
+  * The `removePost` function takes in the id argument and executes `API.deletePost(id)`. Once the deletion is complete, we dispatch an action to remove the post from our store. We pass the id property to the store so that the store will be able to use the `filter` method.
+
+  * `useEffect` is called with no dependencies. This means our `getPosts` method will only run after the component first renders. 
+
+  ```js
+  const [state, dispatch] = useStoreContext();
+
+  const removePost = (id) => {
+    API.deletePost(id)
+      .then(() => {
+        dispatch({
+          type: REMOVE_POST,
+          _id: id
+        });
+      })
+      .catch(err => console.log(err));
+  };
+
+  const getPosts = () => {
+    dispatch({ type: LOADING });
+    API.getPosts()
+      .then(results => {
+        dispatch({
+          type: UPDATE_POSTS,
+          posts: results.data
+        });
+      })
+      .catch(err => console.log(err));
+  };
+
+  useEffect(() => {
+    getPosts();
+  }, []);
+  ```
+
+  * The ternary operation renders our posts _only_ if there are posts in the state. Otherwise, it will return a heading that let's the user know they haven't created any posts yet. 
+
+  * By mapping each one of the posts to a `ListItem`, we can display its properties and pass its `_id` to the `removePost` method.
+
+  ```js
+  {state.posts.length ? (
+    <List>
+      {state.posts.map(post => (
+        <ListItem key={post._id}>
+          <Link to={"/posts/" + post._id}>
+            <strong>
+              {post.title} by {post.author}
+            </strong>
+          </Link>
+          <DeleteBtn onClick={() => removePost(post._id)} />
+        </ListItem>
+      ))}
+    </List>
+  ) : (
+    <h3>You haven't added any posts yet!</h3>
+  )}
+  ```
+
+* Open [Detail](../../../../01-Class-Content/20-react/01-Activities/22-Stu_Mini_Project/Solved/client/src/pages/Detail) and explain the following: 
+
+  * The `useEffect` Hook has no dependencies, so it will only run once when the component mounts.
+
+  * We use `ADD_FAVORITE` and `REMOVE_FAVORITE` actions that mirror the `ADD_POST` and `REMOVE_POST` actions.
+
+  ```js
+  useEffect(() => {
+    API.getPost(props.match.params.id)
+      .then(res => dispatch({ type: SET_CURRENT_POST, post: res.data }))
+      .catch(err => console.log(err));
+  }, []);
+
+  const addFavorite = () => {
+    dispatch({
+      type: ADD_FAVORITE,
+      post: state.currentPost
+    });
+  };
+
+  const removeFavorite = () => {
+    dispatch({
+      type: REMOVE_FAVORITE,
+      _id: state.currentPost._id
+    });
+  };
+  ```
+
+  * A ternary operator determines whether to show the `Remove from Favorites` or `Add to Favorites` button based on whether or not the `currentPost` is within the current state's `favorites` array.
+
+  ```js
+  <>"   "{ state.currentPost ? (
+    <Container fluid>
+      <Row>
+        <Col size="md-12">
+          <Jumbotron>
+            <h1>
+              {state.currentPost.title} by {state.currentPost.author}
+            </h1>
+          </Jumbotron>
+        </Col>
+      </Row>
+      <Row>
+        <Col size="md-10 md-offset-1">
+          <article>
+            <h1>Content:</h1>
+            <p>
+              {state.currentPost.body}
+            </p>
+          </article>
+        </Col>
+        {
+          state.favorites.indexOf(state.currentPost) !== -1 ? (
+            <button className="btn btn-danger" onClick={removeFavorite}>Remove from Favorites!</button>
+          ) : (
+            <button className="btn" onClick={addFavorite}>❤️ Add to Favorites</button>
+          )
+        }
+      </Row>
+      <Row>
+        <Col size="md-2">
+          <Link to="/">← Back to Posts</Link>
+        </Col>
+      </Row>
+    </Container>
+    ): (<div>loading...</div>) }" "</>
+  ```
+
+- - -
+
+### 17. END (0 mins)
+
+* We've reached the end of class! Congratulate your students on their progress with the mini-project. Remind them that controlling their application state with a Redux-like store becomes increasingly helpful as the application gets more complex. Let them know that it's okay if they couldn't complete this activity in an hour. If some students have applications with errors, encourage them to spend some time comparing the differences between the `Solved` version and their own.
+
+## Lesson Plan Feedback
 
 How did today's class go?
 
-[Went Well](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=pt&sentiment=positive&lesson=20.03)
+[Went Well](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=pt&sentiment=positive&lesson=21.03)
 
-[Went Poorly](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=pt&sentiment=negative&lesson=20.03)
+[Went Poorly](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=pt&sentiment=negative&lesson=21.03)

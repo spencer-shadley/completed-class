@@ -1,501 +1,40 @@
-## 19.3 Lesson Plan - Props, Lists, and Stateful Components (10:00 AM) <!--links--> &nbsp; [⬅️](../02-Day/02-Day-LessonPlan.md) &nbsp; [➡️](../../20-Week/01-Day/01-Day-LessonPlan.md)
+## 19.3 Lesson Plan - Forms, Conditional Rendering & React Router (10:00 AM) <!--links--> &nbsp; [⬅️](../02-Day/02-Day-LessonPlan.md) &nbsp; [➡️](../../20-Week/01-Day/01-Day-LessonPlan.md)
 
-### Slideshow
-
-* This lesson's slides are available on Google Drive here: [19-3 Props, Lists, and Stateful Components](https://docs.google.com/presentation/d/1faUXH0URyyeOLSzuQKfHI-rm7EA81GV_meokERR8pDw/edit?usp=sharing)
-
-* To add slides to the student-facing repository, download the slides as a PDF by navigating to File > "Download as" and choose "PDF document." Add the slide PDF file to your class repository along with other necessary files.
-
-* **Note:** Editing access is not available for this document. If you wish to modify the slides, please create a copy by navigating to File > "Make a copy...".
-
-- - -
+`Summary: Complete activities 1-6 in Unit 20`
 
 ### Overview
 
-In this class, we will be deepening students understanding of ReactJS. They further expand upon their understanding of props, learn how to programmatically render components from a list of data, and introduce the concept of class components and component state.
+In this class, we will be deepening students understanding of ReactJS. We will further expand on their introduction to managing component state and cover performing AJAX requests, using forms, and conditionally rendering components.
 
-`Summary: Complete activities 23-31 in Unit 19`
+## Instructor Notes
 
-##### Instructor Priorities
+* In today's class we'll introduce some new class component syntax, cover using forms with React, perform AJAX requests with axios, and go over conditionally rendering components before introducing students to the React Router library.
 
-* Students should firmly understand how to pass data between parent and child components &mdash; and vice versa.
+* You should scaffold out a React application with Create React App at the beginning of class and suggest students do the same. The activities we go over today will only include the applications `src` folder which you should replace in your React app's boilerplate to avoid repetitive instals. It's recommended that you completely restart the dev server between activities.
 
-* Students should understand the difference between states and props and the use cases for each.
+* Today's lesson will feature more instructor led demonstrations than the previous class, be sure to spend some time before class reviewing the examples.
 
-* Students should be able to use the Array.prototype.map method in order to programmatically render components from a list of data.
-
-* * Students should complete the Mongo Checkpoint.
-
-#### Instructor Notes
-
-* Today's class will be more challenging than the last class for many students. Syntax errors will abound as students confusedly mix states and props, and forget to pass attributes to their child components. Explain that memorizing syntax will come with time and practice, it's far more important to understand the concepts covered as exact syntax can always be looked up.
-
-* All of the Solved/Unsolved activities contain only the application's `src` folder. At the start of class scaffold out a React application using Create React App, and swap out the `src` folder for each activity to avoid repetitive npm installs. It's recommended that you completely restart the dev server between activities.
-
-* Have your TAs reference [03-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/17DTEI23IR9ROelpva4mb8wVY3HoWwBjy/view?usp=sharing) to help keep track of time during class.
+* **Important:** In order to avoid continuous NPM installs, all of today's activity Solved and Unsolved versions include only a src folder. Students and yourself should scaffold out a React app once with Create React App, and then swap out the src folder for each activity.
 
 - - -
 
 ### Class Objectives
 
-* To deepen understanding of passing props between React components.
+* To deepen understanding of managing state with React components.
 
-* To gain a firm understanding of the concept of child-parent relationships in React
+* To cover conditional rendering React components.
 
-* To be able to programmatically render components from an array of data.
+* To introduce the axios library and the concept of the component lifecycle.
 
-* To introduce the concept of class components and component state.
-
-* To complete the Mongo Checkpoint.
+* To introduce routing with React Router.
 
 - - -
 
-### 1. Instructor Do: Go through Slides (10 mins) (High)
-
-* Open the slide deck [19-3 Props, Lists, and Stateful Components](https://docs.google.com/presentation/d/1faUXH0URyyeOLSzuQKfHI-rm7EA81GV_meokERR8pDw/edit?usp=sharing).
-
-### 2. Instructor Do: Props Demo (15 mins) (High)
-
-* Inform the class that we can conceptualize React components as JavaScript functions.
-
-* It's a component's job to describe and _return_ some part of our application's UI.
-
-* Ask the class: If a component is a function that _returns_ some data, what else might a component be able to do?
-
-  * Since it's a function, a component can also receive arguments.
-
-* This allows us write components that behave differently based on the arguments that they receive.
-
-* We call the arguments we pass into React components `props`.
-
-* If you haven't already done so, scaffold out a React application by running the following command in your terminal: `create-react-app demoapp`.
-
-* This example uses Bootstrap. Add the following link tag to your React app's `public/index.html` file:
-
-  ```html
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"/>
-  ```
-
-* Replace your React app's `src` folder with [23-Ins_PropsDemo/src](../../../../01-Class-Content/19-react/01-Activities/23-Ins_PropsDemo/src). Stop the dev server if it is already running. Start the app in dev mode by running `npm start`.
-
-* Demonstrate the rendered page in your web browser:
-
-  ![Alert Danger](Images/01-AlertDanger.png)
-
-* This example is rendering a simple Bootstrap alert element. Open `src/components/Alert.js` and demonstrate the code:
-
-  ![Alert Component](Images/02-AlertComponent.png)
-
-* Explain that every component has access to a `props` argument. Props is always an object containing all of the values passed the component.
-
-* We're using `props.type` to determine what the evaluated `className` of the `div` element is.
-
-* This component renders `props.children` between it's `div` tags.
-
-* Compare this to the value of `props` as it is logged to the console:
-
-  ![Logged Props](Images/03-LoggedProps.png)
-
-* Point out that since `props.type` is equal to "danger", then the computed `className` of the `div` in the `Alert` component is "alert alert-danger". This Bootstrap class is providing our component its styles.
-
-* The `Alert` component is also receiving a `children` prop with a value set to "Invalid id or password" &mdash; the same message being displayed inside of the rendered Bootstrap alert element.
-
-* Open `src/App.js` in your editor and explain to the class how these props are being passed into the `Alert` component.
-
-  ![Alert Props](Images/04-AlertProps.png)
-
-* We have 2 ways of passing props into a component:
-
-* First, we can set an attribute to the rendered component's tag.
-
-  * We're passing a `type` prop equal to `danger`.
-
-* Second, we can give a component a sibling tag and pass an expression between the tags.
-
-  * We don't name this prop, it is automatically set a `children` key.
-
-  * We're passing a `children` prop equal to "Invalid user id or password".
-
-* Demonstrate how you can change what is rendered by the `Alert` component by passing it a different `type` and `children` prop.
-
-  * For example, setting `type` to "success" and `children` to "Welcome Back!" would render the following in the browser:
-
-    ![Alert Success](Images/05-AlertSuccess.png)
-
-* Explain that having this familiar syntax for passing props to our components is another way for JSX to be similar to HTML. We don't need to explicitly call any functions or modify any object properties ourselves.
-
-* Explain that props allow us to customize our components so that we can reuse them in different situations.
-
-  * For example, we might use this `Alert` component on a sign-in page and render a different alert depending on whether or not a user has successfully logged into their account.
-
-* Inform the class that we can pass any type of data as a prop, including strings, numbers, arrays, functions, even entire components.
-
-* Props are the primary means by which we pass data around our React apps. React utilizes a unidirectional data flow, meaning data only flows one direction: from the top down, parent to child.
-
-  * This unidirectional data flow makes changes in React apps more predictable and easier to debug.
-
-* Ask the class: If a prop inside of our component isn't what we expect it to be, where could we look to find out why?
-
-  * We could look at the component's parent.
-
-  * In this example, `App` and `Alert` have a parent/child relationship. `Alert` is being rendered inside of `App` and `App` is passing props to `Alert`.
-
-* Take a moment to answer any questions before the first activity.
-
-### 3. Partners Do: Calculator Props (10 mins)
-
-* In this activity students will work with a partner to write a component that accepts props, performs arithmetic and renders the result.
-
-* Slack out `24-Stu_PropsCalculator/Unsolved`
-
-* **Instructions:** [README](../../../../01-Class-Content/19-react/01-Activities/24-Stu_PropsCalculator/README.md)
-
-### 4. Instructor Do: Review Calculator Props (10 mins) (High)
-
-* Slack out the [solution](../../../../01-Class-Content/19-react/01-Activities/24-Stu_PropsCalculator/Solved) to the previous activity. Go through the code as a class.
-
-* Demonstrate how the completed example renders the result of each problem in the browser:
-
-  ![Rendered Math](Images/01-RenderedMath.png)
-
-* Demonstrate the code inside of the `Calculator` component:
-
-  ![Calculator](Images/02-CalculatorCode.png)
-
-* Point out how we're passing each `Math` component 3 props:
-
-  * `num1`
-
-  * `operator`
-
-  * `num2`
-
-* Point out how the numbers are wrapped in JSX curly braces, but the operator is in quotes.
-
-  * Ask the class: Why do you think this is?
-
-    * The operator is a string literal, and we can express that shorthand just using quotes without curly braces. The following are equivalent:
-
-      ```jsx
-      <Math num1={19} operator={"+"} num2={341} />
-      ```
-
-      ```jsx
-      <Math num1={19} operator="+" num2={341} />
-      ```
-
-    * This shorthand only works for string literals. All other values we pass as props need to be in JSX curly braces.
-
-* Open the `Math` component and go through the code:
-
-  ![Math Code](Images/03-MathCode.png)
-
-* Point out that the `props` argument should be an object containing all of the values passed to the rendered `Math` component in the `Calculator.js` file.
-
-* We're running a switch case over `props.operator`. Depending on the operator, a different operator is performed with `props.num1` and `props.num2`. The result is stored in the `value` variable.
-
-* Point out how at the bottom of the function, we're returning `<span>{value}</span>`.
-
-* Explain that a function component only renders what is returned from it. With arrow functions, we have to explicitly write the `return` keyword when the function contains more than one statement.
-
-* Explain that we must either return JSX from a component, or nothing at all. This is why we had to wrap the `value` inside of the span tags.
-
-* Take another few minutes to answer any remaining questions.
-
-### 5. Partners Do: Props Review (15 mins) (Critical)
-
-* Slack out `25-Stu_PropsReview/Unsolved`
-
-* In this activity students will work with partners to make an existing React application more DRY through the use of reusable components and props.
-
-* **Instructions:** [README.md](../../../../01-Class-Content/19-react/01-Activities/25-Stu_PropsReview/README.md)
-
-* Instructional staff should be walking around the room available to assist students during this activity.
-
-### 6. Instructor Do: Review Props Review (10 mins)
-
-* Slack out the [solution](../../../../01-Class-Content/19-react/01-Activities/25-Stu_PropsReview/Solved) to the previous activity. Go through the code as a class.
-
-  ![Friend Card](Images/07-RenderedFriends.png)
-
-* Point out how the application being rendered to the browser doesn't look any different to the unsolved version, but now we've made our code more DRY by creating a reusable component, `FriendCard`, to render each friend with the appropriate prop inside of the `App` component.
-
-  ![Friend Card](Images/08-FriendsApp.png)
-
-* Open the `src/components/FriendCard/index.js` file and go through the code.
-
-  ![Friend Card](Images/09-FriendCard.png)
-
-* Point out that we use the `props` argument to access all of the values passed into the `FriendCard` component.
-
-  * Since props is an expression we want to embed inside of our JSX, we use JSX curly braces to do so.
-
-* Ask the class: In a real application, where might all of the friend JSON data come from?
-
-  * Normally we might receive the friend JSON from an AJAX request, and probably won't know ahead of time which friends will need to be rendered.
-
-* In your editor's sidebar, point out how each component is contained inside of its own folder containing a CSS file, and an `index.js` file.
-
-  ![Index Sidebar](Images/10-IndexSidebar.png)
-
-* Ask the class: "Why are we using `index.js` to hold the component instead of `FriendCard.js`?"
-
-  * Whenever we require/import a folder instead of a file, the folder's `index.js` file is required/imported by default (if it exists).
-
-  * This allows us to keep our paths for importing these components short. e.g. we can do:
-
-  ```js
-  import FriendCard from "./components/FriendCard";
-  ```
-
-  * instead of:
-
-  ```js
-  import FriendCard from "./components/FriendCard/FriendCard";
-  ```
-
-  * Giving all of our components their own folder is another option for organizing our React apps. Each folder could contain any CSS or other dependencies the component will need.
-
-* Spend another moment making sure the class understands the overall concept of passing and receiving props. Go back and forth between the `friends.json` file, the `FriendCard` component, and your web browser to visually demonstrate how the data is being used.
-
-* Point out that while is code is more DRY than it was, we're still manually rendering a `FriendCard` for each piece of data &mdash; we'll come back and solve this problem in a later activity!
-
-### 7. Students Do: Component Map (10 mins) (Critical)
-
-* Slack out `26-Stu_ComponentMap/Unsolved`
-
-* In this activity, students will utilize the map method in order to render JSX from an array of objects.
-
-* **Instructions:** [README.md](../../../../01-Class-Content/19-react/01-Activities/26-Stu_ComponentMap)
-
-* Instructional staff should be walking around the room making themselves available for assistance.
-
-### 8. Instructor Do: Review Component Map (10 mins)
-
-* Slack out the [solutions](../../../../01-Class-Content/19-react/01-Activities/26-Stu_ComponentMap/Solved) to the previous activity and go over the code as a class.
-
-* For the basic solution:
-
-  ![Component Map](Images/12-ComponentMap.png)
-
-  * Point out how the array of grocery objects is passed into the `List` component from inside of `App`, making it available inside of the `List` component as `props.groceries`.
-
-  * Inside of the `List` component, we insert JSX curly braces inside of the `ul` element. We map over `props.groceries` and return one `li` tag for every element in `props.groceries`.
-
-  * Ask the class: What type of value is returned by the map method here?
-
-    * Explain that the map method will always return an array &mdash; in this example it's returning an array of JSX elements.
-
-    * React is smart enough to know what whenever we're rendering an array containing JSX, it should deconstruct the array and render each element inside of their parent.
-
-  * Point out the `key` property attached to the `li` tag inside of the map. Ask the class: Was anyone able to read about what this is for?
-
-    * The application will still run if we were to remove the `key` prop, but we'd get a very specific warning telling us we should include it.
-
-    * Whenever an array of JSX is being rendered, React expects each rendered parent JSX tag to have a unique `key` prop. This is a special type of prop that helps React efficiently re-render the list of JSX if it should ever need to change.
-
-      * The `key` prop should be unique and specific to the data being rendered. Often this comes in the form of an `id` from a database. But it can be anything we can guarantee to be unique.
-
-      * Using the index of the element in the array is not a good idea, since an element's index could change if the data we modified. This could potentially cause strange bugs.
-
-  * Assure the class they don't need to stress out too much about the `key` prop since they'll get a very specific warning about it should they forget to include it and their code will still work.
-
-  * The most important takeaway from this activity is that we can use the map method to loop over an array and return a new array of elements inside of JSX curly braces. React will then render each element in the resulting array.
-
-  * Take a moment to answer any additional questions.
-
-* For the bonus solution:
-
-  ![Component Map Filter](Images/13-ComponentMapFilter.png)
-
-  * Demonstrate how we can create a `notPurchased` array by filtering `props.groceries` for groceries which have a `purchased` property set to false.
-
-  * Remind everyone that while the map method returns a new array the same length as the original, the filter method returns a new array containing only the elements whose callback functions return truthy values.
-
-  * Explain that we still need to use the map method to actually render the `li` elements. But we first filter for groceries which haven't been purchased, and then map over the new array, rather than `props.groceries`.
-
-* Answer any questions before the break.
-
-### 9. Instructor Do: Introduce Stateful Components (20 mins)
-
-* Explain to the class that what we've been working with so far are known as stateless, functional components. Sometimes called "dumb components".
-
-* These components can render JSX, receive props, and embed JavaScript expressions inside of themselves.
-
-* In a React application, **most** components should be stateless components. These are easy to test, debug, and they tend to be more reusable &mdash; even across applications &mdash; because they usually don't depend on how the rest of the application works.
-
-* So far we've been using stateless components to create static, unchanging UIs. In a real application, we'd want to give some of our components more complex dynamic behaviors.
-
-* Now we're going to introduce stateful components. These special components aren't created using plain JavaScript functions, but with ES6 classes (which, if we want to get technical, are still JavaScript constructor functions once compiled).
-
-* Explain that `state` is a special type of property attached to a class component that can contain data we want to associate with that component.
-
-* Explain that values stored on a component's state are different from regular variables because unlike regular variables, when a component updates its `state` the React application will update itself in the browser to reflect the change wherever necessary.
-
-  * Explain that a component can set and update its own state, whereas its props are always received from up above and considered immutable (can't/shouldn't be changed).
-
-* Replace your Create React App's `src` folder with [27-Ins_BasicState](../../../../01-Class-Content/19-react/01-Activities/27-Ins_BasicState/src). Stop the dev server if it is already running. Start the app in dev mode by running `npm start`.
-
-* Open your browser to [localhost:3000](http://localhost:3000) and demonstrate the rendered app.
-
-  ![Click Counter](Images/14-ClickCounter.png)
-
-* Whenever we click the "Increment" button, the click counter goes up by 1. Point out that this is the first time we've built in any kind of dynamic behavior such as event listeners and UI updates into our React apps.
-
-* Open `src/components/Counter.js` in your editor, walk the class through the code:
-
-  ![Class Component](Images/14-ClassComponent.png)
-
-  * We create a new class named `Counter` which _extends_ the `React.Component` class.
-
-    * Explain that `React.Component` is a class built-in to React which has special features we don't get with stateless functional components. By extending the `React.Component` class, `Counter` now inherits this extra functionality.
-
-  * Then we set a `state` property on the component. We set its value to an object with a `count` property set to `0`. This is the initial counter value displayed when the component first loads.
-
-    * Our component's `state` property must always be set to an object.
-
-    * Because this component contains its own state, we call this a **stateful component**.
-
-    * Create React App allows us to use [ES7 property initializer](https://babeljs.io/docs/plugins/transform-class-properties/) syntax. This allows us to attach properties to the class instance without writing out a constructor method.
-
-  * Scroll down to the `render` method. Explain to the class that this method is built-in to React, and as the name implies, its job is to return the JSX that the component should render. Every class component needs to have this method defined.
-
-  * Scroll down further to the "Increment" button and point out how the button has an `onClick` prop set to `this.handleIncrement`.
-
-    * Explain that this is how a click event listener is defined in React. When the button is clicked, this component's `handleIncrement` method is called.
-
-    * Explain that event names in React are similar to vanilla JavaScript or jQuery, e.g. `onClick`, `onSubmit`, `onChange`, etc.
-
-  * Scroll back up to the `handleIncrement` method definition. Point out that unlike `render`, this method is using arrow function syntax.
-
-    * Due to the nature of how props are passed to React elements, `this` inside of any method passed as a prop will be `undefined`, rather than the intended component. This is a common source of frustration and bugs for developers new to React. But thanks to the new class property initializer syntax, we can simply write all of our custom methods using arrow functions and never have to worry about this issue.
-
-  * Point out how inside of `handleIncrement` we're calling `this.setState` and passing in an object as an argument.
-
-  * Explain that `setState` is built-in to all class components. We use this method to update our component's `state` by passing it an object containing parts of the component's state we want to update and their new values.
-
-    * Explain that whenever we want to update our component's state, we **ALWAYS** use `this.setState` to do so. Updating our state with this method tells our component that it should re-render itself and all of its children to account for the new state.
-
-    * Explain that if we just updated `this.state.count` directly without using `setState`, we'd never see the click count go up in the view since there'd be no re-render.
-
-      * Example:
-
-      ```js
-      // This wouldn't work as expected
-      this.state.count = this.state.count + 1;
-      ```
-
-* Take a moment to answer any high-level questions the class may have. Most importantly make sure they understand the following:
-
-  * We can use `state` to associate data with our components and keep track of any values we want to update the UI when changed.
-
-  * We can define methods on a class component and pass them as props.
-
-  * The `onClick` prop can be used to set a click event listener to an element.
-
-### 10. Partners Do: Decrement Counter (10 mins)
-
-* Slack out `28-Stu_DecrementCounter/Unsolved`
-
-* In this activity students will add a "Decrement" button and event handler to the previous Click Counter example.
-
-* **Instructions:** [README.md](../../../../01-Class-Content/19-react/01-Activities/28-Stu_DecrementCounter/README.md)
-
-### 11. Instructor Do: Review Decrement Counter (10 mins) (High)
-
-* Slack out the [solved](../../../../01-Class-Content/19-react/01-Activities/28-Stu_DecrementCounter/Solved) versions of the previous activity and go over both solutions.
-
-  ![Decrement Counter](Images/05-DecrementCounter.png)
-
-* First go over the code in the basic solution:
-
-  ![Decrement Basic](Images/06-DecrementBasic.png)
-
-  * Point out how we've defined a `handleDecrement` method which decreases the counter by 1.
-
-  * Explain that like all event handlers, `onClick` expects a callback, which is why we write `onClick={this.handleDecrement}` instead of `onClick={this.handleDecrement()}`.
-
-* Then go over the bonus solution:
-
-  * ![Decrement Bonus Render](Images/07-DecrementBonusRender.png)
-
-  * Point out that we've replaced the `.card-body` div with a `CardBody` component which renders its contents.
-
-  * We pass the click count and the event listeners to the `CardBody` component.
-
-* Demonstrate the code inside of the `CardBody` component:
-
-  * ![Decrement Bonus Card](Images/08-DecrementBonusCard.png)
-
-  * This component renders the same JSX that was removed from the `Counter` component. The only difference is that we're accessing the click counter and event handlers on the props argument.
-
-  * Explain that even though the buttons are inside of a child component, the `Counter` component's `count` state is still updated when the buttons are clicked.
-
-  * When the `count` state is updated, The `Counter` component and any of its child components re-render themselves. This is what allows the view to be updated in the browser when the buttons are clicked.
-
-  * Explain that even though data still technically only flows one way (from the top-down) in React, we can allow child components to update their parent's state by passing them a method created in the parent.
-
-* Assure the class that they'll get more practice with working with class components.
-
-* Take a moment to answer any additional questions.
-
-- - -
-
-### 12. Break (35 mins)
-
-- - -
-
-### 13. Students Do: Friend Refactor (20 mins) (Critical)
-
-* Slack out `29-Stu_FriendRefactor/Unsolved`
-
-* In this activity students will further refactor the Friends List application from earlier to use class components, events, and programmatically render the `FriendCard` components.
-
-* **Instructions:** [README.md](../../../../01-Class-Content/19-react/01-Activities/29-Stu_FriendRefactor/README.md)
-
-### 14. Instructor Do: Review Friend Refactor (15 mins)
-
-* Go over the [solution](../../../../01-Class-Content/19-react/01-Activities/29-Stu_FriendRefactor/Solved) to the previous activity.
-
-* Demonstrate the completed application in the browser. Point out how we can remove friends by clicking the red x icon.
-
-  ![Friend Refactor](Images/09-FriendRefactor.png)
-
-* Briefly go over the syntax for writing a class component. Be sure to point out the constructor method, how we set the application's initial state. Explain that when defining object properties with ES6, if the object's key and value have the same name, we can omit the colon &mdash; this is just an optional shorthand syntax.
-
-* Point out how we bind the `removeFriend` method inside of the constructor. Ask the class: how does this method remove a friend?
-
-* Point out how inside of the `removeFriend` method we use the filter method to create a new `friends` array from `this.state.friends`. We include only friends with an `id` property **not** equal to the `id` being received into this method. Then we use the `setState` method in order to set `this.state.friends` equal to the new filtered friends array.
-
-  ![Friend Refactor App](Images/10-FriendRefactorApp.png)
-
-* Explain that when we update our component's state by removing one of the friend objects, our component re-renders itself. On the new render, `FriendCard` components are created for each object in `this.state.friends`, which no longer includes the deleted friend. This then triggers our component to re-render, now minus one friend.
-
-  * Remind students that in React, we never modify state directly, but we create new state instead. If the state we're modifying is an array, we'll often use the filter or map method.
-
-* Scroll down to the code where we map over `this.state.friends` and render a `FriendCard` component for each element.
-
-  * Point out the props being passed, in particular, the `id` and the `key` prop. Remind the class that whenever we map over a list of data and return JSX, React wants us to give each element a unique `key` prop. React uses this value internally to help it efficiently render and re-render components from arrays of data.
-
-    * Explain that the `key` prop is unusual because it's used by React but isn't actually available for us to use inside of the component we pass it to. We pass the friend `id` in as a separate prop because we'll need it inside of the `FriendCard` component.
-
-* Open up the `FriendCard` component.
-
-  ![Friend Refactor Card](Images/11-FriendRefactorCard.png)
-
-* Point out how we've attached the `onClick` handler to the "remove" span. When clicked, it calls the `removeFriend` method and passes in `props.id`.
-
-* Ask the class: Why do we have the `removeFriend` handler wrapped inside of another function?
-
-  * Explain that since our event handlers need to be callbacks, we normally can't pass in arguments without invoking them right away. But by wrapping the `removeFriend` method in an another function, we can pass the `id` prop into the inner `removeFriend` method. When the span is clicked, it calls the anonymous callback function, which then calls the `removeFriend` method with the friend's `id` as an argument.
-
-* Take a moment to answer any lingering questions.
-
-### 15. Instructor Do: Demonstrate Forms (15 mins) (High)
+### 1. Instructor Do: Demonstrate Forms (15 mins) (High)
 
 In this example we will demonstrate how to handle simple forms with React.
 
-* Swap out your application's `src` folder with [src](../../../../01-Class-Content/19-react/01-Activities/30-Ins_FormsDemo/src). Stop the dev server if it is already running. Start the app in dev mode by running `npm start`.
+* Swap out your application's `src` folder with [src](../../../../01-Class-Content/19-react/01-Activities/17-Ins_FormsDemo/src). Stop the dev server if it is already running. Start the app in dev mode by running `npm start`.
 
 * Open [localhost:3000](http://localhost:3000) in your web browser and demonstrate the rendered application.
 
@@ -579,130 +118,417 @@ In this example we will demonstrate how to handle simple forms with React.
 
 * Take another few minutes to make sure everyone understands the code at least well enough to be able to refer back to this example as a starting point as they're building their own React forms.
 
-### 16. Students Do: Fun With Forms (15 mins)
-
-* Slack out `31-Stu_FunWithForms/Unsolved`
+### 2. Students Do: Fun With Forms (15 mins)
 
 * In this activity students will add some new functionality to the previous form example.
 
-* **Instructions:** [README](../../../../01-Class-Content/19-react/01-Activities/31-Stu_FunWithForms/README.md)
+* **Instructions:** [README](../../../../01-Class-Content/19-react/01-Activities/18-Stu_FunWithForms/README.md)
 
-### 17. TAs DO: Slack out information (0 mins)
+### 3. Instructor Do: Review Fun With Forms (10 mins)
 
-* Slack out the [solved](../../../../01-Class-Content/19-react/01-Activities/31-Stu_FunWithForms/Solved) version of the previous activity. If any time remains go through the code as a class.
+### 4. Instructor Do: AJAX Demo (15 mins)
 
-* Inform the class that we'll continue to go through forms in the next lesson.
+In this example we will demonstrate AJAX requests with React.
 
-* Recommend students do their best to go through the following sections of the React documentation before the next class:
+* Replace your application's `src` folder with [19-Ins_AJAX/src](../../../../01-Class-Content/20-react/01-Activities/19-Ins_AJAX/src). Paste the Bootstrap CDN into `public/index.html`. You may use the snippet provided below:
 
-  * [Forms](https://facebook.github.io/react/docs/forms.html)
+  ```html
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"/>
+  ```
 
-  * [Lifting State Up](https://facebook.github.io/react/docs/lifting-state-up.html)
+* Install the `axios` library by running the following command:
 
-  * [State and Lifecycle](https://facebook.github.io/react/docs/state-and-lifecycle.html)
+   ```
+   npm install axios
+   ```
 
-### 18. Instructor Do: Introduce Checkpoint - Mongo (5 mins) (Critical)
+* Stop the dev server if it is already running. Start the app in dev mode by running `npm start`.
 
-* Let your class know that they will now be taking a short multiple choice assessment to check their understanding of Mongo
+* Navigate to [localhost:3000](http://localhost:3000) and demonstrate the application's functionality.
 
-* DO NOT SKIP THIS INTRODUCTION. DO NOT JUST SEND OUT THE LINK WITHOUT CONTEXT
+  ![Giphy Demo](Images/03-Giphy-Demo.png)
 
-* Reassure the students that they need not be nervous about the checkpoint:
+  * This app searches the Giphy API for whatever is typed into the input field and then displays the results below.
 
-  * "This will not affect your grade or graduation requirements."
+  * When we first load the app, we should see kitten related results.
 
-  * "This is not like the tests and quizzes you might be used to from school or college. The purpose of these tests is not to motivate you to study or punish you for struggling."
+* Open the `src/components` folder and point out the three files inside:
 
-  * "This is as much a test of me as an instructor and of the course content as it is of you. We are here to ensure your success, and this is one of the tools we use to make sure we are doing that effectively. This class moves _fast_, so if some or all of you misunderstand something important we as an instructional team need to find out as fast as possible so we can help."
+  * `ResultList.js`
 
-  * "Long story short, this quiz can not hurt you. Only help you."
+  * `SearchForm.js`
 
-* Let students know that they should read carefully and focus on thinking about the right answer rather than using any test-taking skills they may have learned:
+  * `SearchResultContainer.js`
 
-  * "There are no silly answers or obvious throwaway responses on this quiz, because those kinds of answers reduce the likelihood that we'll be able to figure out whether we've taught something effectively."
+* Explain to the class that `SearchResultContainer` contains and renders the `ResultList` and `SearchForm` components. This is our application's only stateful component.
 
-  * "Test taking strategies you may have learned for standardized tests _will not work_, so instead of focusing on eliminating wrong answers or looking for sneaky context cues, read the question and each of the possible choices carefully."
+* Briefly demonstrate this without digging into each component's exact functionality in your editor just yet.
 
-* Reassure students once again that the purpose of this is to help them, and remind them that the outcome does not impact their grade or graduation requirements. You should do this _every single time_ you give an Checkpoint.
+  ![Render](Images/04-Search-Container-Render.png)
 
-* You or your TAs should now get the link specific to your class:
+* Ask the class: Why do you think `SearchResultContainer` is a stateful component, but `SearchForm` and `ResultList` aren't?
 
-  * Navigate in your browser to: `https://www.switchboard.tech`
+  * It's possible to make every component in our React application stateful. But it's usually cleaner and less error prone to have some kind of parent component which contains all of the data and functionality its children will need, and then pass those down as props.
 
-  * Select your class code (if it doesn't show up on its own)
+  * Quick aside: Slack out this [article written by Dan Abramov](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0) (Redux Author, React Core Contributor, Create React App Core Contributor) for students to read through on their own time. He describes the pattern of separating components into "container" and "presentational" components. In a nutshell, this can be explained as follows:
 
-    * For parallel cohorts (two classes combined on a Saturday) and doing a Checkpoint: You will **need** to select the classes in your cohort. You can multi select the cards by clicking the class that you need.
+    * Container components are primarily concerned with how things _work_ and render very little, if any of their own markup. Instead they mostly render other components and pass down the logic and data they need to work.
 
-    * The class roster will be in the **one** link.
+    * Presentational components are concerned with how things _look_ and typically don't contain any logic that doesn't have to do with their own individual UI.
 
-  * Select the Checkpoint and copy the resulting link
+    * This pattern helps us build components with little to no coupling that can more easily be reused in different parts of app or even across applications. It also lets us stub out our applications appearance by writing presentational components first, and then writing container components once we're ready to make things work.
 
-### 19. Students Do: Take Checkpoint - Mongo (10 mins) (Critical)
+  * This isn't important for students to totally understand now, but slack out the article for them to check out later. The most important takeaway should be that there should be a few of these "container" components which act as the "brain" for their children. In our case this is `SearchResultContainer`.
 
-* Slack out the link to the Checkpoint
+* Now, open `src/components/SearchResultContainer.js` and walk through the code.
 
-* Let your students know that once they select their name, it will take them to the Checkpoint
+  * Our initial state has a `search` property set to an empty string and a `results` property set to an empty array.
 
-* Checkpoints must be completed in class, **not at home**, to ensure you will be able to effectively find and help struggling students
+    ![Initial State](Images/05-Initial-Giphy-State.png)
 
-* TAs should walk around the class to ensure students aren't looking up answers
+  * We have a new unfamiliar method defined called `componentDidMount`. Explain that like the `render` method, this method is built-in to React and automatically run **after the component is rendered for the first time.**
 
-* Keep in mind we do not use grades from assessments toward graduation requirements. However, students will be tempted to avoid feeling like they don't understand something.
+    ![Component Did Mount](Images/06-Component-Did-Mount.png)
 
-* It's important for instructional teams to create an environment where it is safe to fail, but also where such failure is visible. You should not be worried about "cheating" on checkpoints, only making sure that students who need help aren't remaining invisible.
+  * Inside of this method we run the `searchGiphy` method and pass in "kittens" as an argument. Before getting into how exactly the `searchGiphy` method works, explain that this code searches the Giphy API and updates our application's `result` state using the results from the AJAX request. By writing this code inside of the `componentDidMount` method, we're saying we want it to run after the initial component render, before state updates take place.
 
-* Your SSM will have the results of the Checkpoint within an hour of its completion
+  * Explain that when working with class components in React, we are able to hook into to a few different **component lifecycle events**, that allow us to automatically execute logic at certain times.
 
-### 20. End (0 mins)
+    * Explain that these component lifecycle events are similar to some of the DOM lifecycle events we've worked with in vanilla JavaScript or jQuery. For example, in jQuery, `$(document).ready` runs when the entire web page is loaded.
 
-### 21. TAs Do: Structured Office Hours - Review Mongo (30 min)
+    * In React, `componentDidMount` runs after a component and all of its children have been initially rendered and mounted to the DOM, and have no further expected initialization steps.
 
-* Navigate in your browser to: `https://github.com/coding-boot-camp/checkpoint-bank/blob/master/checkpoints/multiple-choice/09-Mongo-MC/09-Mongo-MC.md`
+    * Explain that there are a few different React component lifecycle events we can hook into but `componentDidMount` is probably the one we'll use most frequently as this is the best place to run any async code we need to populate our component's state after the component mounts.
 
-* There you will find the questions and answers to the Checkpoint given.
+    * Ask the class: Why wouldn't we just run our `searchGiphy` method inside of our component's constructor and populate our initial state there? That is, assuming we went back to explicitly using the constructor method.
 
-* Please take the entire office hours time to review the questions with the students.
+      * Constructor functions run synchronously and AJAX requests are asynchronous. So we might not have the async data available by the time the component is instantiated.
 
-* Suggestion Format:
+      * Additionally, running our async code inside of the constructor could cause extra re-renders of our component &mdash; making our application feel slow or glitchy on startup &mdash or introduce difficult to track down bugs.
 
-  * TAs ask a question at a time to the class.
+      * By the time `componentDidMount` is run, there's no more work for our component needs to do. Even if the AJAX request fails or takes a long time to complete, we'd still have our component and its children rendered to some degree.
 
-  * Let the students try to answer it.
+      * Explain that `componentDidMount` is called automatically once per component instance.
 
-    * If you see that a majority of the class has a misunderstanding with a question:
+      * Explain that, technically, `render` is another component lifecycle event, but rather than only running once, the `render` method is called every time our component's state is updated or anytime our component receives new props.
 
-      * Take your time on this question!
+      * Slack out this [article on the React component lifecycle](https://engineering.musefind.com/react-lifecycle-methods-how-and-when-to-use-them-2111a1b692b1) for students to read on their own time.
 
-    * If you see that a small number of students has a misunderstanding with a question:
+  * Go to the `searchGiphy` method and ask the class: What do you think this method is doing? Without even knowing what this `API` object is, what does it look like this method is doing?
 
-      * Do your best to reinforce the misunderstanding but be cautious of your time.
+    * This method is searching the Giphy API, passing in `this.state.search` as a query. It's then setting `this.state.results` to the JSON array that comes back from the AJAX request.
 
-      * Make note of the students that are still struggling with the question and schedule a 1:1 with the students.
+  * Open `src/utils/API.js` and go through the code inside of our API helper.
 
-  * If applicable, demo the answer.
+     ![Component Did Mount](Images/07-API.png)
 
-* Take your time on these questions!
+    * This file exports an object with a `search` method. Go back to the `SearchResultContainer` and point out how this `search` method corresponds to `API.search`.
 
-* This is a great time to reinforce concepts and misunderstandings!
+    * This `search` method accepts a `query` parameter and returns the following:
+
+      ```js
+      axios.get(BASEURL + query + APIKEY);
+      ```
+
+    * Explain that axios is a third party library we've installed for the purpose of making AJAX requests. React itself doesn't ship with any functionality for making AJAX requests. Instead we can use whatever library we'd like for this.
+
+    * Axios functions _very_ similarly to `$.ajax` in jQuery.
+
+    * By running `axios.get`, we're saying we want to perform a GET request.
+
+    * At the very least, the `axios.get` method requires one argument: the url we want to send the request to. We construct the full Giphy API URL using the `BASEURL`, `query`, and `APIKEY` strings. This should remind students of a few weeks ago when we initially worked with the Giphy API using jQuery.
+
+    * Explain that like `$.ajax`, all of axios's methods return a promise object. By returning this method call, we can deal with what happens _after_ the request in our code which imports this module. i.e. point out how we run the `.then` and `.catch` inside of `SearchResultContainer`.
+
+  * Explain that there are other libraries available for making AJAX requests. We even have a `fetch` method built into modern browsers which is similar, but tends to require more configuration to perform simple requests. We could have even imported jQuery and used `$.ajax` if we wanted to. But it's a better idea to use a smaller, single purpose library for making our AJAX requests.
+
+  * Explain that by writing our logic for performing AJAX requests inside of this `API.js` helper file, we no longer need to care about how exactly the AJAX request is implemented in our components. We'd simply require the file and declaratively make a request using a minimum amount of information instead.
+
+  * Go back to the `searchGiphy` method inside of the `SearchResultContainer` component and briefly go over its code once more now that we've explained the `API` object.
+
+    ![Search Result Container](Images/08-Search-Result-Container.png)
+
+  * Point out that the `handleInputChange` method should look familiar to the previous examples, but re-explain how it works if necessary. Demonstrate how we pass this method to the `SearchForm` component as a prop and set the `onChange` prop of its input field to this method.
+
+  * Inside of the `SearchResultContainer`, the `handleFormSubmit` method is a _little_ different compared to the previous example. Point out how when the form is submitted, we first prevent its default behavior with `event.preventDefault()`. Then we call `this.searchGiphy` which searches the Giphy API for the value of `this.state.search`.
+
+  * Finally, open the `ResultList` component and demonstrate how this component renders a list of images it receives on its `results` prop.
+
+* Take another few minutes to explain any parts of this code which may still not be entirely clear. The major takeaways for this example should be:
+
+  * Most of our application's components should be stateless components primarily concerned with some part of our application's presentation.
+
+  * A smaller number of components should be stateful class components which contain part of our application's business logic and state. Generally these "container" components render our stateless "presentational" components and pass down data and functionality on a need to know basis.
+
+  * `componentDidMount` is a component lifecycle event. This event is triggered once after the component has initially rendered for the first time. This is the best place to perform any initial AJAX requests. There are a few others lifecycle events available, but `componentDidMount` is the one they'll probably end up using the most frequently.
+
+  * We're using the `axios` library to perform our AJAX requests. React itself is primarily concerned with our application's view layer and doesn't include any kind of method for creating AJAX requests. We are free to use whatever library we'd like to perform AJAX requests in React.
+
+  * We're putting our logic for creating AJAX requests into our `API.js` helper file. This way, we don't have to worry about how exactly requests to the Giphy API are performed inside of the components that need to make them.
+
+### 5. Students Do: AJAX (15 mins)
+
+* In this activity students will create a simple React application with which users can query the OMDB API and display information about the movie searched for.
+
+* **Instructions:** [README.md](../../../../01-Class-Content/20-react/01-Activities/20-Stu_AJAX/README.md)
+
+### 6. Instructor Do: Review AJAX (15 mins)
+
+* Once time's up slack out the [03-Stu_AJAX/Solved](../../../../01-Class-Content/20-react/01-Activities/20-Stu_AJAX/Solved) folder and demonstrate the activity solution in your web browser. Be sure to point out the following:
+
+  ![OMDB Browser](Images/09-OMDBBrowser.png)
+
+  * When we search for a movie using the form on the right side, some information about the movie is displayed in the left card.
+
+  * When the component first "mounts", some information about the movie "The Matrix" is displayed.
+
+  * Ask the class: In what part of our application would we be performing this initial AJAX request to the OMDB API?
+
+    * Inside of the `componentDidMount` lifecycle method of `OmdbContainer`. As mentioned before, this method is where we want to perform any initial async logic for our components.
+
+      ![OMDB Did Mount](Images/10-OMDBDidMount.png)
+
+  * Point out the `handleInputChange` method inside of the `OmdbContainer` component. Have a volunteer explain to you how this code works.
+
+    ![Handle Input Change](Images/11-HandleInputChange.png)
+
+    * This method pulls the `value` and `name` properties off of the input element the event was triggered from, and uses those values to set the appropriate state.
+
+  * Ask the class: Since we definitely only have one input field under the control of this `handleInputChange` method, could we decrease the amount of code being used inside of this method?
+
+    * Yes, the current setup accounts for the possibility of adding new input fields. But if we were positive we'd only have one input field, we could use the following code instead:
+
+      ```js
+      handleInputChange = event => {
+        this.setState({
+          search: event.target.value,
+        });
+      };
+      ```
+
+  * Go through the code inside of the `handleFormSubmit` method. Have a volunteer explain what the code is doing and when it's called.
+
+    ![Handle Form Submit](Images/12-HandleFormSubmit.png)
+
+    * Whenever the form is submitted, we first prevent the event's default behavior. By default, whenever we submit an HTML form, it tries to reload the web page. Then we run the `searchMovies` method and pass in `this.state.search` as a query.
+
+  * Now scroll down to the `render` method and point out the section of code where the `MovieDetail` component is being rendered.
+
+  * Point out the ternary expression inside of the JSX curly braces. Explain while we can't use an `if` statement inside of JSX curly braces, we _can_ use a ternary expression or short circuit evaluation.
+
+    * If necessary, take a few moments to explain the syntax of a ternary expression.
+
+  * Explain that if we didn't want to write this much logic inside of our `render` method, we could also extract this code into a new method and call that inside of the `render` instead. For example, we could define the following method on the `OmdbContainer` component:
+
+  ```js
+  renderMovie = () => {
+    if (this.state.result.Title) {
+      return (
+        <MovieDetail
+          src={this.state.result.Poster}
+          director={this.state.result.Director}
+          genre={this.state.result.Genre}
+          released={this.state.result.Released}
+        />
+      );
+    } else {
+      return <h3>No Results to Display</h3>;
+    }
+  };
+  ```
+
+  * And then use it in our `render` method like so:
+
+    ```js
+      {this.renderMovie()}
+    ```
+
+* Explain that any technique they used to get this part to work is probably okay and encourage them to revisit the [React Documentation on Conditional Rendering](https://facebook.github.io/react/docs/conditional-rendering.html) to learn more about what Facebook has to say on the topic.
+
+* Take another few minutes to answer any remaining questions.
+
+### 7. Students Do: Conditional Render (20 mins)
+
+* In this activity students will render one of four different components based upon a component's state. This example is meant to further practice conditional rendering with React and demonstrate the need for a component router.
+
+* **Instructions:** [README.md](../../../../01-Class-Content/20-react/01-Activities/21-Stu_ConditionalRender/README.md)
+
+### 8. Instructor Do: Review Conditional Render (15 mins)
+
+* Once time's up slack out the [04-Stu_ConditionalRender/Solved](../../../../01-Class-Content/20-react/01-Activities/21-Stu_ConditionalRender/Solved) version of the activity and go through it as a class. Be sure to demonstrate the solution in your web browser before going into the JavaScript code in your editor.
+
+  ![Conditional Demo](Images/13-Conditional-Demo.png)
+
+* Point out how when we click the different navigation items, a different component is rendered. Point out that the address bar doesn't _actually_ change when we do this, but we are still rendering different content depending on our application state.
+
+* Explain that `PortfolioContainer` maintains the state for the currently active page and passes this down to `NavTabs` along with a method for changing the currently active page.
+
+  ![NavTabs](Images/14-NavTabs.png)
+
+* Demonstrate the `PortfolioContainer` code and point out how we're using a method to return the appropriate JSX depending on `this.state.currentPage` inside of this component.
+
+  ![Conditional Render](Images/15-ConditionalRender.png)
+
+* Explain that we could have also used a series of ternary operators or short circuit evaluations to accomplish this, but since we have more than a few conditionals, doing it this way can help keep some excess component logic out of the `render` method.
+
+* Take a few moments to answer any lingering questions.
 
 - - -
 
-# Instructor Do: Private Self-Reflection (0 min)
+### 9. Break (40 mins)
 
-Take some time on your own after class to think about the following questions. If there's anything that you're not sure how to answer, feel free to reach out to the curriculum team!
+- - -
 
-1. How did today's class go?
-2. How did you teach it?
-3. How well do you feel you did teaching it?
-4. Why are you teaching it?
-5. Why did you teach it that way?
-6. What evidence can I collect to show my students are understanding?
-7. How will my students know they are getting it?
+### 10. Instructor Do: Introduce React Router (20 mins)
+
+* Explain that so far we've just been working with React applications with only one page of content, but in the real world, web applications have multiple &mdash; often complex &mdash; pages and routes.
+
+* For example, what if we deployed the previous activity's portfolio website and we wanted to share a URL with someone that they could use to visit the `About` "page"? Currently we don't have a way to do that. The user would still have to navigate to the `About` "page" on their own from scratch every time since the URL in our address bar doesn't actually change as we click through the tabs.
+
+* This may seem trivial now, but what if our application was as large as Amazon.com? What if we wanted to share the URL to a page containing one of millions of different products with someone? How would we get users to where we intend for them to go?
+
+* Explain that thankfully we don't have to code out our own solution to this problem. One of the most popular React companion libraries out today is [React Router](https://reacttraining.com/react-router/).
+
+* Slack out the [link](https://reacttraining.com/react-router/) to the React Router home page and give the class the following overview:
+
+  * React Router is a library made up of special components for conditionally rendering other components based on the current URL path.
+
+  * How React Router works under the hood isn't fundamentally different from the previous example we coded out where we conditionally rendered certain components based on our component state using if/else statements.
+
+  * React Router has modules for routing React applications on the web, in native applications, and on the server. In our case, we're going to be working with React Router on the web.
+
+  * While a little intimidating at first, the [React Router Documentation](https://reacttraining.com/react-router/web/guides/philosophy) is some of the best for any library we've covered so far, full of concise and helpful examples.
+
+  * We won't have enough time to teach _all_ of React Router, nor will students need to know all of the library. Instead we'll be going over the fundamental ~20% of syntax that they're likely going to be using 80% of the time. After that, students should feel more comfortable going through the official documentation for answers.
+
+* Replace your React application's `src` folder with [22-Ins_IntroReactRouter/src](../../../../01-Class-Content/20-react/01-Activities/22-Ins_IntroReactRouter/src).
+
+* This example uses Bootstrap, so if you haven't already, add the Bootstrap CDN to your `index.html` file.
+
+  ```html
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"/>
+  ```
+
+* Run the following command in your terminal to install React Router:
+
+  ```
+  npm install react-router-dom
+  ```
+
+  * Point out that as mentioned earlier, React Router can be used in a variety of different environments. Since we're going to be routing our application on the web, more specifically, to the HTML DOM, we need to install the `react-router-dom` library.
+
+* Stop the dev server if it is already running. Start the app in dev mode by running `npm start`.
+
+* Open your browser to [localhost:3000](http://localhost:3000) and demonstrate the rendered application.
+
+  * At first it may not seem different from the previous example, but point out how the URL in the address bar changes as we click through the navigation items.
+
+  * Also point out how we have a `/contact` and `/contact/learn` page. Point out how `/contact/learn` displays all of the same content as the `/contact` route, but also displays another nested component.
+
+    ![React Router View](Images/16-React-Router-View.png)
+
+  * To demonstrate that we can get back to a particular page via a specific url, navigate to the `/contact/learn` route and copy the entire URL in your address bar. Close this application's tab and paste the URL in a brand new tab; you should be taken back to the expected page.
+
+* Now open up `src/App.js` and begin walking the class through the new code.
+
+  ![React Router Code](Images/17-React-Router-Code.png)
+
+  * Point out how we're importing two components from the `react-router-dom` library: `BrowserRouter` and `Route`. Explain that by importing `BrowserRouter` _as_ `Router`, we're renaming this component to be `Router` inside of this file. Renaming this component is totally optional but a convention used in the React Router documentation.
+
+  * Explain that the `BrowserRouter` (`Router`) component is like the brain of our application's router. We wrap our entire application with this component &mdash; without it, none of the routes we define will work. On its own `Router` doesn't do anything to our application's styles or functionality. It's primarily for setting up any additional configuration we want to give our React Router via props we attach. The default configuration it provides is fine for our purposes, so we don't need to do anything other than include it.
+
+  * Inside of `Router` component, we have a `div` element wrapping our other components. Explain that the `Router` component can only have a single child element, so we wrap the rest of our application's code inside of a `div`.
+
+    * Feel free to demonstrate the code breaking if you were to remove this `div`. Let students know that if they forget this rule, they'll receive a helpful error message reminding them that `Router` can only have one child element.
+
+  * Point out the following:
+
+    * We no longer need a `PortfolioContainer` component. In the previous example, the `PortfolioContainer` component was responsible for keeping track of our application's `currentPage` state. Now that we have React router handling this, we no longer need to do so ourselves.
+
+    * We're importing the `Route` component from `react-router-dom`. Explain that at a minimum, this component expects a `path` prop and a `component` prop. When the pathname in the browsers address bar matches the `Route` component's `path` prop, the specified component will be rendered.
+
+    * We're specifying that the `NavTabs` component should always be rendered regardless of the application's current route.
+
+    * Below the `NavTabs` we render a `Route` component. When the `path` is set to "/", render the `Home` component.
+
+      * Point out the `exact` prop present on this `Route` component. Explain that this means this `Route` will _only_ render the `Home` component when the path is _exactly_ "/".
+
+        * Demonstrate what happens if we were to remove this `exact` prop and navigate to any of the other pages.
+
+        * Both `Route` components would render. Explain the `path` prop means "render if the route _starts_ with this path". By adding the additional `exact` prop, we're saying that we only want this `Route` to render if the path is an _exact_ match.
+
+        * Explain that unlike routes in express, React Router will, by default, render routes inclusively rather than exclusively. This means if two or more routes match the same path, both will render.
+
+    * Go into the `NavTabs.js` file and walk through this component's new code.
+
+      ![NavTabs](Images/18-NavTabs.png)
+
+      * We're importing a `Link` component from the `react-router-dom` library and using that in place of regular anchor tag elements.
+
+      * Explain that the `Link` component navigates our application to another route when clicked, just like an anchor tag. But the `Link` component prevents our entire React application from reloading when we go to different URLs. Instead, only the components that need to change will change.
+
+      * The `Link` component also has some additional functionality, such as allowing us to pass props into the component rendered at the specified route if we wanted to.
+
+      * We can treat this component exactly the same as we would a regular anchor tag, except we'd use the `to` prop rather than `href` to specify the path we want to navigate to.
+
+      * Explain that we can utilize `window.location.pathname` in order to get the path we're currently on if we need it. In our case we're using it to determine which `a` element should have the "active" class and be highlighted.
+
+  * Go back to the `App` component and once more explain how each `Route` component is rendering its component. Inform students that the major takeaway here is that when the path in the address bar matches the path specified on a `Route` component's `path` prop, the component passed in is rendered.
+
+  * Explain that now we're going to go over the code that renders the nested `/contact/learn` route.
+
+  * Open up the `src/components/pages/Contact.js` and go through the code.
+
+    ![Contact Learn](Images/19-Contact-Learn.png)
+
+    * Point out that the start of the component is nothing out of the ordinary &mdash; we're just rendering some lorem ipsum.
+
+    * Further down below, we're utilizing another `Route` component which only renders the `Learn` component if the route matches `${props.match.url}/learn`.
+
+    * Explain that any component we render using the `Route` component (such as this `Contact` component) is automatically passed a `match` prop object containing information about the `Route` component that rendered it. We can access `props.match.url` to get the path which rendered this route.
+
+      * Using `props.match.url` might be a good idea as opposed to just hard coding `/contact/learn` into the `path` prop (which would also work). This way if we update a route higher up in our application, we don't need to update all of the other nested route `path` props.
+
+### 11. Partners Do: Pupster App (45 mins)
+
+* Slack out `06-Stu_PupsterApp/Solved`
+
+* In this activity students will work with partners to create a full React application from scratch complete with routing and AJAX requests to the [Dog Ceo API](https://dog.ceo/dog-api/).
+
+* **Instructions:** [README](../../../../01-Class-Content/20-react/01-Activities/23-Stu_PupsterApp/README.md)
+
+### 12. Instructor Do: Review Pupster (15 mins)
+
+* As a class, go over [23-Stu_PupsterApp/Solved](../../../../01-Class-Content/20-react/01-Activities/23-Stu_PupsterApp/Solved) version of the previous activity. The most important points to cover are:
+
+  * How each route is rendering each component.
+
+  * How we used axios to create an API helper file.
+
+  * Our use of `componentDidMount` to make the initial call to the dog.ceo API for the `Discover` component.
+
+* Take a few moments to answer any lingering questions.
+
+* Congratulate the class on making it halfway through React! Remind them that this is a difficult subject but they've already come a long way.
+
+- - -
+
+### 13. END (0 mins)
+
+* Recommend students go through the following material at home before next class if possible. These articles will help them better understand the material covered today in class.
+
+* [Lifting State Up](https://facebook.github.io/react/docs/lifting-state-up.html)
+
+* [Uncontrolled Components](https://facebook.github.io/react/docs/uncontrolled-components.html)
+
+* [Smart and Dumb Components](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0)
+
+* [React Lifecycle Methods and When to Use Them](https://engineering.musefind.com/react-lifecycle-methods-how-and-when-to-use-them-2111a1b692b1)
 
 ### Lesson Plan Feedback
 
 How did today's class go?
 
-[Went Well](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=pt&sentiment=positive&lesson=19.03)
+[Went Well](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=pt&sentiment=positive&lesson=20.01)
 
-[Went Poorly](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=pt&sentiment=negative&lesson=19.03)
+[Went Poorly](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=pt&sentiment=negative&lesson=20.01)
