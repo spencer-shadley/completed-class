@@ -1,6 +1,6 @@
 ## 19.3 Lesson Plan - Forms, Conditional Rendering & React Router (10:00 AM) <!--links--> &nbsp; [⬅️](../02-Day/02-Day-LessonPlan.md) &nbsp; [➡️](../../20-Week/01-Day/01-Day-LessonPlan.md)
 
-`Summary: Complete activities 1-6 in Unit 20`
+`Summary: Complete activities 19-23 in Unit 19`
 
 ### Overview
 

@@ -1,6 +1,6 @@
 # 20.3 Lesson Plan - State Management with the Store (10:00 AM) <!--links--> &nbsp; [⬅️](../02-Day/02-Day-LessonPlan.md) &nbsp; [➡️](../../21-Week/01-Day/01-Day-LessonPlan.md)
 
-`Summary: Complete activities 16-21 in Unit 21`
+`Summary: Complete activities 16-22 in Unit 20`
 
 ## Overview
 
@@ -28,16 +28,12 @@ In this class, students will learn the benefits of declarative Redux-style code 
 
 ### 1. Instructor Do: Introduction (10 mins)
 
-<<<<<<< HEAD
 * Welcome students to their final day of React before project week! Let them know that in the first half of the class, they will learn about Redux concepts and practice applying them in activities. The second half of the class will be dedicated to creating a mini-project that will involve them creating their very own CMS (Content Management System) using Redux patterns. 
 
 * Ask the students the following questions:
   1. What were some of the pain points of working with context and hooks?
   2. What is the difference between mutability and immutability, and what are the advantages of each?
   3. How might we manage state when if there are several different objects to keep track of, and several components that have the ability to update them?
-=======
-* Have your TAs reference [03-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1leakcpggPx4VrMbcjiyqDcneB8YpdGrv/view?usp=sharing) to help keep track of time during class.
->>>>>>> 02b9009ca4c9bb6e92a9a560defa4a030b59992d
 
 * Guide students towards the following answers:
   1. Managing many different contexts and hooks can gets complex very quickly.
@@ -51,7 +47,6 @@ They do not have any side effects within them. Whenever data needs to be modifie
 
 3. **The impure function** here modifies its argument instead of creating a new argument.
 
-<<<<<<< HEAD
 4. **The pure function** has a singular purpose, making it more developer-friendly.
 
 5. **Redux** is a state management library that helps organize the state of complex applications. While Redux requires a lot of boilerplate code, its utility skyrockets as applications get more complex.
@@ -263,9 +258,6 @@ In this activity we will practice using the `useRef` Hook by creating a Todo lis
 ```
 
 ### 7. Instructor Do: Review useRef (10 mins)
-=======
-- - -
->>>>>>> 02b9009ca4c9bb6e92a9a560defa4a030b59992d
 
 * Run [useReducer/Solved](../../../../01-Class-Content/20-react/01-Activities/19-Stu_useRef/Solved) by copying the `src` folder into your prepared CRA application. Navigate to http://localhost:3000/ in your browser and demonstrate the following:
 
@@ -504,7 +496,6 @@ In this activity we will create a store that contains the global state and a red
   const { Provider } = TodoContext;
   ```
 
-<<<<<<< HEAD
   * The `reducer` function uses a switch case to handle the action that will be passed to `dispatch`. Each case returns a new array. Within the "prioritize" case `map` method, we use `Object.assign` because it creates a _new_ object from the old Todo object and the new value of priority. Both of these methods are essential to ensure that our state stays immutable.
 
   * `priority: !item.priority` sets the priority value to be the opposite of what it previously was. This means that when the `prioritize` button is pressed, the value is _toggled_ rather than explicitly set.
@@ -1062,9 +1053,6 @@ In this activity we will create a CMS (Content Management System) that allows us
 ### 17. END (0 mins)
 
 * We've reached the end of class! Congratulate your students on their progress with the mini-project. Remind them that controlling their application state with a Redux-like store becomes increasingly helpful as the application gets more complex. Let them know that it's okay if they couldn't complete this activity in an hour. If some students have applications with errors, encourage them to spend some time comparing the differences between the `Solved` version and their own.
-=======
-### 9. End (0 mins)
->>>>>>> 02b9009ca4c9bb6e92a9a560defa4a030b59992d
 
 ## Lesson Plan Feedback
 

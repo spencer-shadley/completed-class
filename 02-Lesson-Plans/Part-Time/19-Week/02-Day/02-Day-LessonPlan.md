@@ -1,6 +1,6 @@
 ## 19.2 Lesson Plan - Props, Lists, and Stateful Components (6:30 PM) <!--links--> &nbsp; [⬅️](../01-Day/01-Day-LessonPlan.md) &nbsp; [➡️](../03-Day/03-Day-LessonPlan.md)
 
-`Summary: Complete activities 23-31 in Unit 19`
+`Summary: Complete activities 10-18 in Unit 19`
 
 ### Overview
 
