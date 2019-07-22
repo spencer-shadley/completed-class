@@ -31,7 +31,7 @@ Todays class will be focused on Web Performance. We will use Lighthouse to audit
 
 - - -
 
-### 1. Instructor Do: Welcome/Intro Web Performance (10 mins)
+### 1. Instructor Do: Welcome/Intro Web Performance (5 mins)
 
 * Welcome students to class and then open Google Chrome. 
 
@@ -83,13 +83,13 @@ Todays class will be focused on Web Performance. We will use Lighthouse to audit
 
 ### 2. Instructor Do: Demo Lighthouse (10 mins)
 
-* Google has created a tool called Lighthouse which will allow us to run an audit on our page and find out different metrics about how it performs and what is hindering its performance. Lighthouse is a quality auditing tool developed by Google for analyzing web pages.
+* Open the [Gallery App](https://ancient-brushlands-76706.herokuapp.com/) and run the application. Let students know this is an application they will be working with after break later today.
+
+  * Google has created a tool called Lighthouse which will allow us to run an audit on our page and find out different metrics about how it performs and what is hindering its performance. Lighthouse is a quality auditing tool developed by Google for analyzing web pages.
 
   * It provides audits for performance, accessibility, SEO, and progressive web applications.
 
-* Tell the class that Lighthouse can be run directly from our Chrome DevTools, making it a fast, simple, and effective way to get insights into our pages overall performance metrics.
-
-* Open the [Gallery App](https://ancient-brushlands-76706.herokuapp.com/) and run the application. Let students know this is an application they will be working with after break later today.
+  * Lighthouse can be run directly from our Chrome Dev Tools. This makes it a fast, simple, and effective way to get insights into our pages overall performance metrics.
 
   * Open chrome dev tools, and click the `Audits` tab.
 
@@ -99,29 +99,31 @@ Todays class will be focused on Web Performance. We will use Lighthouse to audit
 
   ![Run Audits](Images/runAudits.png)
 
-* Walk students through the `Audit Report` that is provided within the dev tools.
+* Open the generated `Audit Report` and walk students through the following:
 
-* The *performance* section will be the first you encounter, and one of the most useful for todays class.
+  * The *performance* section will be the first you encounter, and one of the most useful for todays class.
 
   * Hovering over the different status signs next to the times shown will give you information on what that test means.
 
   ![Hover](Images/performanceSection.png)
 
-  * Tell the class that each audit has a reference doc explaining why the audit is important, as well as how to fix it.
+  * Each audit has a reference doc explaining why the audit is important, as well as how to fix it. These reference docs will lay out why this metric is important to the user experience and give reasons why we might be lacking in the specified audit.
 
-* One of the main metrics Lighthouse looks for is the *first meaningful paint*.
+  * One of the main metrics Lighthouse looks for is the *first meaningful paint*.
 
-  * Tell the class that a paint occurs when content is loaded on the screen. Lighthouse measures the first *Contentful* paint, which means when any content is loaded. It also measures the first *meaningful* paint which occurs when the primary content becomes visible.
+  * A paint occurs when content is loaded on the screen. Lighthouse measures the first *Contentful* paint, which means when any content is loaded. It also measures the first *meaningful* paint which occurs when the primary content becomes visible.
 
-* One of the most important metrics it takes is *Time to Interactive*. This is the time it takes for the webpage being audited to become usable. A long delay in interactivity can lead to page abandonment.
+  * One of the most important metrics it takes is *Time to Interactive*. This is the time it takes for the webpage being audited to become usable. A long delay in interactivity can lead to page abandonment.
 
-* Lighthouse will give very useful tips and even concrete steps we can take to improve performance.
+* Ask the class, "What is web page abandonment?"
 
-  * Tell the class that when working on improving a webpage's performance, students should use Lighthouse to complete frequent audits. These can be incredibly helpful in pinpointing where their efforts should be focused.
+  * Abandonment occurs when a user leaves a web page without completing the task they set out to.
+
+* When working on improving a webpage's performance, we should use Lighthouse to complete frequent audits. These can be incredibly helpful in pinpointing where our efforts should be focused.
 
 ### 3. Student Do: Lighthouse Audit (10 mins)
 
-* Slack out the following instructions to your students.
+* Direct students to the activity instructions found [here]()
 
 * **Instructions**
 
