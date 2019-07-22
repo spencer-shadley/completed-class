@@ -14,21 +14,17 @@ This class introduces students to the React Context API, an easier and lighter w
 
 - - -
 
-## Pre-class Drills
-@TODO
+## Learning Objectives
 
+* Create Context Objects and use them as a means to share state.
 
-## Class Objectives
+* Learn about general good practices when working with component-based applications.
 
-* Students can create Context Objects and use them as a means to share state.
+* Identify proper use cases of Context API, while staying aware of its shortcomings.
 
-* Students learn about general good practices when working with component-based applications.
+* Utilize a combination of Context Objects, Providers, and consumers via the `useContext` Hook to manage global state.
 
-* Students identify proper use cases of Context API, while staying aware of its shortcomings.
-
-* Students can utilize a combination of Context Objects, Providers, and consumers via the `useContext` Hook to manage global state.
-
-* Students can use multiple Context Providers to manage complex state.
+* Use multiple Context Providers to manage complex state.
 
 - - -
 

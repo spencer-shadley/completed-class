@@ -14,15 +14,15 @@ In this class, students will learn the benefits of declarative Redux-style code 
 
 - - -
 
-## Class Objectives
+## Learning Objectives
 
-* Students can take an app that manages state in Container components, and move state management to follow a Redux pattern.
+* Transform an app that manages state in Container components into one that follows a Redux pattern.
 
-* Students can identify the appropriate time to make a React app use Redux or follow a similar design pattern.
+* Identify the appropriate time to make a React app use Redux or follow a similar design pattern.
 
-* Students grasp general concepts of declarative, pure, immutable functions, in a way that is abstracted from Redux or any particular library.
+* Grasp general concepts of declarative, pure, immutable functions, in a way that is abstracted from Redux or any particular library.
 
-* Students can implement a Redux store in their React app.
+* Implement a Redux-like store in a React app.
 
 - - -
 

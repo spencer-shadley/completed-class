@@ -14,12 +14,7 @@ In this class, we will be introducing students to the concept of React Hooks. We
 
 - - -
 
-## Pre-class Drills
-@TODO
-
-- - -
-
-## Class Objectives
+## Learning Objectives
 
 * Articulate the term "effect" in the broader sense of programming.
 
