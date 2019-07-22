@@ -31,33 +31,37 @@ In this class, students will learn the benefits of declarative Redux-style code 
 * Welcome students to their final day of React before project week! Let them know that in the first half of the class, they will learn about Redux concepts and practice applying them in activities. The second half of the class will be dedicated to creating a mini-project that will involve them creating their very own CMS (Content Management System) using Redux patterns. 
 
 * Ask the students the following questions:
-  1. What were some of the pain points of working with context and hooks?
-  2. What is the difference between mutability and immutability, and what are the advantages of each?
-  3. How might we manage state when if there are several different objects to keep track of, and several components that have the ability to update them?
 
-* Guide students towards the following answers:
-  1. Managing many different contexts and hooks can gets complex very quickly.
-  2. **Mutable** objects can have their properties changed or _mutated_, whereas **Immutable objects** can not. Typically immutable objects help prevent your application from getting over-complicated. They often make it easy to identify _why_ the state changed, since every time an object needs to change, a new object has to be explicitly created. This also tends to make testing your components significantly easier. 
-  3. We can create a single global state that contains all of the states needed throughout our application.
+  * ☝️What were some of the pain points of working with context and hooks?
+
+  * 🙋Managing many different contexts and hooks can gets complex very quickly.
+
+  * ☝️What is the difference between mutability and immutability, and what are the advantages of each?
+
+  * 🙋**Mutable** objects can have their properties changed or _mutated_, whereas **Immutable objects** can not. Typically immutable objects help prevent your application from getting over-complicated. They often make it easy to identify _why_ the state changed, since every time an object needs to change, a new object has to be explicitly created. This also tends to make testing your components significantly easier. 
+
+  * ☝️How might we manage state when if there are several different objects to keep track of, and several components that have the ability to update them?
+
+  * 🙋We can create a single global state that contains all of the states needed throughout our application.
 
 * Open the slide deck: https://docs.google.com/presentation/d/1rRxhoiKoa6op_sE3Z0koGxq6SSy97UQHe-SrnLmvnL8/edit?usp=sharing
 
-2. **Pure functions vs impure functions**: Pure functions are straightforward with singular purposes.
+* **Pure functions vs impure functions**: Pure functions are straightforward with singular purposes.
 They do not have any side effects within them. Whenever data needs to be modified, it is not mutated. Impure functions tend to have multiple purposes. The might contain database or network calls.
 
-3. **The impure function** here modifies its argument instead of creating a new argument.
+* **The impure function** here modifies its argument instead of creating a new argument.
 
-4. **The pure function** has a singular purpose, making it more developer-friendly.
+* **The pure function** has a singular purpose, making it more developer-friendly.
 
-5. **Redux** is a state management library that helps organize the state of complex applications. While Redux requires a lot of boilerplate code, its utility skyrockets as applications get more complex.
+* **Redux** is a state management library that helps organize the state of complex applications. While Redux requires a lot of boilerplate code, its utility skyrockets as applications get more complex.
 
-6. **The principles of Redux**: 
+* **The principles of Redux**: 
 
   * The first premise of Redux is that every stateful aspect of your application can be represented by a single JavaScript object known as the state tree.
 
   * The second principle of Redux is that the state tree is read only. This means that in order to change the state tree, you need to dispatch an action. The action describes the change that the state will undergo in a declarative manner.
 
-7. **Actions, reducers, and store**: 
+* **Actions, reducers, and store**: 
 
   * **Actions** are declarative objects that define what the store should do to the state.
   * **The Reducer** takes the previous state and action, then returns a new state. It is important that the reducer is a pure function. 
@@ -145,15 +149,15 @@ In this activity we will practice using the `useReducer` Hook.
 
   * Our reducer allows for two different actions. For simplicity's sake, we've hard-coded `praiseHarry` and `praiseHermione` as separate actions.
 
-  * Prompt the students with the following questions:
+  * Ask the students the following questions:
 
-  1. How might we rewrite our reducer so that any number of dogs can be praised?
+  * ☝️How might we rewrite our reducer so that any number of dogs can be praised?
 
-  2. What logic in our reducer is repeated that we might be able to extract?
+  * 🙋We could create a single case that handles all actions in a similar manner. This way, the initial state would also have to into an array, so that the dogs would be easy to iterate through.
 
-  3. We could create a single case that handles all actions in a similar manner. This way, the initial state would also have to into an array, so that the dogs would be easy to iterate through.
+  * ☝️What logic in our reducer is repeated that we might be able to extract?
 
-  4. The return statements are almost identical. A more scalable solution might update a `praises` property on a `dog` object. The action would contain a unique identifier so that the proper item in the state array could be updated.
+  * 🙋The return statements are almost identical. A more scalable solution might update a `praises` property on a `dog` object. The action would contain a unique identifier so that the proper item in the state array could be updated.
 
   * 🔑 This time, the initial state value is set to be an _object_ that keeps track of how many praises each dog has.
 
@@ -362,13 +366,13 @@ In this activity we will practice using the `useRef` Hook by creating a Todo lis
   ```
 * Ask the students the following question(s):
 
-  1. If we are importing an object named `CountProvider`, what do you think we will find in `GlobalState`?
-  2. If `GlobalState` is performing the function its name suggests, what else might we find in it?
+  * ☝️If we are importing an object named `CountProvider`, what do you think we will find in `GlobalState`?
 
-* Facilitate discussion around the following answers:
+  * 🙋Based on the name `CountProvider`, we can expect to find `createContext` used to create the exported object.
 
-  1. Based on the name `CountProvider`, we can expect to find `createContext` used to create the exported object.
-  2. We can find `GlobalState` in any component of our application that will need access to the global state.
+  * ☝️If `GlobalState` is performing the function its name suggests, what else might we find in it?
+
+  * 🙋We can find `GlobalState` in any component of our application that will need access to the global state.
 
 * Open [Ins_Store](../../../../01-Class-Content/20-react/01-Activities/20-Ins_Store/src/utils/GlobalState.js) in your IDE and explain the following points:
 

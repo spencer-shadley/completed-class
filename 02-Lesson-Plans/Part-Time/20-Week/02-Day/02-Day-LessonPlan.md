@@ -122,11 +122,13 @@ This class introduces students to the React Context API, an easier and lighter w
 
   * We use the `useState` hook multiple times so that it's easier to individually manage the different aspects of our state.
 
-* 🤔Ask the class "Is there a different way we could have organized our state?"
+* Ask the students the following question:
 
-  * We could have chosen to use one big state object instead of separating them out. This is a tradeoff that students will constantly encounter when trying to manage state. Ideally, we want to organize our code in a way that makes sense. 
+  * ☝️Is there a different way we could have organized our state?
 
-  * Oftentimes, it is best to group similar logic into their own state objects. For example, we may make one state object to contain all of our users, and another to manage the current state of the application. (Combine userIndex and user into one state object)
+  * 🙋We could have chosen to use one big state object instead of separating them out. This is a tradeoff that students will constantly encounter when trying to manage state. Ideally, we want to organize our code in a way that makes sense. 
+
+  * 🙋Oftentimes, it is best to group similar logic into their own state objects. For example, we may make one state object to contain all of our users, and another to manage the current state of the application. (Combine userIndex and user into one state object)
 
   ```js
   const [user, setUser] = useState({});
@@ -319,20 +321,17 @@ const CardBtn = (props) => {
 
 * Ask the students the following questions:
 
-  1. Why do we refer to this approach as “prop drilling”?
+  * ☝️Why do we refer to this approach as “prop drilling”?
 
-  2. What are the pros and cons of prop drilling?
+  * 🙋Prop drilling is the process of passing props down through multiple levels of components.
 
-  3. Is there another component where we could make the API call?
+  * ☝️What are the pros and cons of prop drilling?
 
-* Guide students towards the following answers:
+  * 🙋Prop drilling makes it simple to keep track of values since the props data only moves in one direction. When the prop drilling is only a couple of levels deep, it is easy to find out exactly where the props are being used. On the other hand, prop drilling can make your code more complex when you have to drill through many levels of components. Prop drilling can also make your code harder to understand if props are renamed halfway through. You may also pass down more props than necessary and create problems when deleting an intermediate component that uses the props.
 
-  1. Prop drilling is the process of passing props down through multiple levels of components.
+  * ☝️Is there another component where we could make the API call?
 
-  2. Prop drilling makes it simple to keep track of values since the props data only moves in one direction. When the prop drilling is only a couple of levels deep, it is easy to find out exactly where the props are being used. On the other hand, prop drilling can make your code more complex when you have to drill through many levels of components. Prop drilling can also make your code harder to understand if props are renamed halfway through. You may also pass down more props than necessary and create problems when deleting an intermediate component that uses the props.
-
-  3. We could make the API call from the image component itself, but we avoid doing that since we want the purpose of the image component to be presentational only.
-
+  * 🙋We could make the API call from the image component itself, but we avoid doing that since we want the purpose of the image component to be presentational only.
 
 ### 4. Instructor Do: Giving Context Slides (10 mins)
 
@@ -340,19 +339,19 @@ const CardBtn = (props) => {
 
 * Using the slides as guide and reference, explain the following:
 
-  1. **Component Lifecycle**: The 3 main phases of the component lifecycle are mounting, updating, and unmounting. Point out that the 2 primary ways of causing a component to re-render are passing it *new* props or by using the `setState()` method.
+  **Component Lifecycle**: The 3 main phases of the component lifecycle are mounting, updating, and unmounting. Point out that the 2 primary ways of causing a component to re-render are passing it *new* props or by using the `setState()` method.
 
-  2. **Prop Drilling**: Prop drilling is the process that you have to go through to get data to parts of the React Component tree. Remind the students that it's often best to keep the state as close to where it's relevant as possible. We can't simply add state to the lowest level component because that would defeat the purpose of using presentational components. Use this question as a segway into the next slide.
+  **Prop Drilling**: Prop drilling is the process that you have to go through to get data to parts of the React Component tree. Remind the students that it's often best to keep the state as close to where it's relevant as possible. We can't simply add state to the lowest level component because that would defeat the purpose of using presentational components. Use this question as a segway into the next slide.
 
-  3. **Presentational vs. Container Components**: We separate the *logic* and the *looks* of our application so that our code is easier to understand, test, debug, and maintain. Container components include the logic of the application, which is often stored in the component's state, requiring us to use class components instead of functional components. Presentational components are primarily used for UI elements like layout, and often use stateless functional components (often referred to as "dumb" components) to render their content.
+  **Presentational vs. Container Components**: We separate the *logic* and the *looks* of our application so that our code is easier to understand, test, debug, and maintain. Container components include the logic of the application, which is often stored in the component's state, requiring us to use class components instead of functional components. Presentational components are primarily used for UI elements like layout, and often use stateless functional components (often referred to as "dumb" components) to render their content.
 
-  4. **ContextAPI**: Oftentimes, applications need an easier way to manage state than passing `props` down several component levels. To avoid adding in unnecessary state, we can use a feature called the React Context API. The React Context API provides a solution to this problem without introducing the complexity of an entire state management library.
+  **ContextAPI**: Oftentimes, applications need an easier way to manage state than passing `props` down several component levels. To avoid adding in unnecessary state, we can use a feature called the React Context API. The React Context API provides a solution to this problem without introducing the complexity of an entire state management library.
 
-  5. **Providers & Consumers**: Explain that a Context `Provider` is used to wrap a component that has a child component that will need access to the Context Object. Explain that a Context `Consumer` is used to access properties of a Context Object. All `Consumer`s must be descendants of their respective `Provider`s.
+  **Providers & Consumers**: Explain that a Context `Provider` is used to wrap a component that has a child component that will need access to the Context Object. Explain that a Context `Consumer` is used to access properties of a Context Object. All `Consumer`s must be descendants of their respective `Provider`s.
 
-  6.  **Loosely Coupled Components**: Make sure to emphasize the importance of keeping components loosely coupled. This is a topic that is important for students to grasp.
+  **Loosely Coupled Components**: Make sure to emphasize the importance of keeping components loosely coupled. This is a topic that is important for students to grasp.
 
-  7. **State Management**: Let students know that they should be mindful of how often they're using the Context API. If they begin to use the Context API rampantly throughout their code, it may be time to consider using Redux or another state management library.
+  **State Management**: Let students know that they should be mindful of how often they're using the Context API. If they begin to use the Context API rampantly throughout their code, it may be time to consider using Redux or another state management library.
 
 ### 5. Instructor Do: useContext Demo (10 mins)
 
@@ -812,13 +811,11 @@ const Alert = (props) => {
 
   * 📝 Context API best practices require that we initialize the default values to have a consistent type with the values we intend to provide later. Ex: `handleBtnClick` should **not** be initialized as an empty string.
 
-* Ask the students the following question(s):
+* Ask the students the following question:
 
-  1. How many of you created separate contexts for the images and titles?
+  * ☝️How many of you created separate contexts for the images and titles?
 
-* Use student answers to facilitate a discussion on the following point:
-
-  * While having multiple providers may be overkill for this small application, let the students know that in a larger application, there could be several component layers separating related components. In those situations, having multiple providers would be better than passing a single context object through multiple levels of components.
+  * 🙋While having multiple providers may be overkill for this small application, let the students know that in a larger application, there could be several component layers separating related components. In those situations, having multiple providers would be better than passing a single context object through multiple levels of components.
 
 ### 12. Instructor Do: Demo Multiple Contexts (10 mins)
 

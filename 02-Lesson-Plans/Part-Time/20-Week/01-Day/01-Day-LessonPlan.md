@@ -377,15 +377,17 @@ Files: [11-Stu_useEffect/Unsolved/src/App.js](../../../../01-Class-Content/21-re
 
 * Ask students the following questions:
 
-  1. What was the point of this? (Feel free to make a bad pun here).
-  2. If we use Hooks, can state be used by other components?
-  3. Can you think of a concept that would allow us to share state across components?
+  * ☝️What was the point of this? (Feel free to make a bad pun here).
 
-* Facilitate discussion around the following answers:
+  * 🙋Writing functional components is much cleaner. Using Hooks allows you to write fewer lines of code and manage your state in a less complex way. (No `this` keyword required!)
 
-  1. Writing functional components is much cleaner. Using Hooks allows you to write fewer lines of code and manage your state in a less complex way. (No `this` keyword required!)
-  2. No. The state used within a single component cannot be used by different components.
-  3. We can add this functionality by using the Context API with the built in `useContext` Hook.
+  * ☝️If we use Hooks, can state be used by other components?
+
+  * 🙋No. The state used within a single component cannot be used by different components.
+
+  * ☝️Can you think of a concept that would allow us to share state across components?
+
+  * 🙋We can add this functionality by using the Context API with the built in `useContext` Hook.
 
 ### 9. Everyone Do: Break (15 mins)
 
