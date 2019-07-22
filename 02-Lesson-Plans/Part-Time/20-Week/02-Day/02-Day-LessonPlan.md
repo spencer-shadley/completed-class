@@ -12,8 +12,6 @@ This class introduces students to the React Context API, an easier and lighter w
 
 * Today's lesson will rely on instructor led demonstrations, so be sure to spend some time before class reviewing the examples.
 
-- - -
-
 ## Learning Objectives
 
 * Create Context Objects and use them as a means to share state.
@@ -25,6 +23,14 @@ This class introduces students to the React Context API, an easier and lighter w
 * Utilize a combination of Context Objects, Providers, and consumers via the `useContext` Hook to manage global state.
 
 * Use multiple Context Providers to manage complex state.
+
+## Slides
+
+[20.2: The React Context API](https://docs.google.com/presentation/d/1OQQGzZCevIaoeCDnVikP_sKR6dtxGqcwj4PB4tbWk0A/edit?usp=sharing)
+
+## Time Tracker
+
+[The React Context API](https://docs.google.com/spreadsheets/d/1kPyiZ1NE0jWtqyP3c43eynx2KP0yu8WU/edit#gid=1301242405)
 
 - - -
 
@@ -40,7 +46,7 @@ This class introduces students to the React Context API, an easier and lighter w
 
   * Learning these features will help you to become better versed in React, making you more effective and improving your ability to adapt to new advancements.  
 
-  * Oftentimes, new features enable a faster, smaller (in file size), or better architected application.
+  * Oftentimes, new features enable a faster, smaller (in file size), or better crafted application.
 
   * In this unit, the features that we will learn helped solve problems that React developers had been trying to solve for years.
 
@@ -120,11 +126,11 @@ This class introduces students to the React Context API, an easier and lighter w
 
 * Ask the students the following question:
 
-  * ☝️Is there a different way we could have organized our state?
+  * ☝️ Is there a different way we could have organized our state?
 
-  * 🙋We could have chosen to use one big state object instead of separating them out. This is a tradeoff that students will constantly encounter when trying to manage state. Ideally, we want to organize our code in a way that makes sense. 
+  * 🙋 We could have chosen to use one big state object instead of separating them out. This is a tradeoff that students will constantly encounter when trying to manage state. Ideally, we want to organize our code in a way that makes sense. 
 
-  * 🙋Oftentimes, it is best to group similar logic into their own state objects. For example, we may make one state object to contain all of our users, and another to manage the current state of the application. (Combine userIndex and user into one state object)
+  * 🙋 Oftentimes, it is best to group similar logic into their own state objects. For example, we may make one state object to contain all of our users, and another to manage the current state of the application. (Combine userIndex and user into one state object)
 
   ```js
   const [user, setUser] = useState({});
@@ -317,17 +323,17 @@ const CardBtn = (props) => {
 
 * Ask the students the following questions:
 
-  * ☝️Why do we refer to this approach as “prop drilling”?
+  * ☝️ Why do we refer to this approach as “prop drilling”?
 
-  * 🙋Prop drilling is the process of passing props down through multiple levels of components.
+  * 🙋 Prop drilling is the process of passing props down through multiple levels of components.
 
-  * ☝️What are the pros and cons of prop drilling?
+  * ☝️ What are the pros and cons of prop drilling?
 
-  * 🙋Prop drilling makes it simple to keep track of values since the props data only moves in one direction. When the prop drilling is only a couple of levels deep, it is easy to find out exactly where the props are being used. On the other hand, prop drilling can make your code more complex when you have to drill through many levels of components. Prop drilling can also make your code harder to understand if props are renamed halfway through. You may also pass down more props than necessary and create problems when deleting an intermediate component that uses the props.
+  * 🙋 Prop drilling makes it simple to keep track of values since the props data only moves in one direction. When the prop drilling is only a couple of levels deep, it is easy to find out exactly where the props are being used. On the other hand, prop drilling can make your code more complex when you have to drill through many levels of components. Prop drilling can also make your code harder to understand if props are renamed halfway through. You may also pass down more props than necessary and create problems when deleting an intermediate component that uses the props.
 
-  * ☝️Is there another component where we could make the API call?
+  * ☝️ Is there another component where we could make the API call?
 
-  * 🙋We could make the API call from the image component itself, but we avoid doing that since we want the purpose of the image component to be presentational only.
+  * 🙋 We could make the API call from the image component itself, but we avoid doing that since we want the purpose of the image component to be presentational only.
 
 ### 4. Instructor Do: Giving Context Slides (10 mins)
 
@@ -809,9 +815,9 @@ const Alert = (props) => {
 
 * Ask the students the following question:
 
-  * ☝️How many of you created separate contexts for the images and titles?
+  * ☝️ How many of you created separate contexts for the images and titles?
 
-  * 🙋While having multiple providers may be overkill for this small application, let the students know that in a larger application, there could be several component layers separating related components. In those situations, having multiple providers would be better than passing a single context object through multiple levels of components.
+  * 🙋 While having multiple providers may be overkill for this small application, let the students know that in a larger application, there could be several component layers separating related components. In those situations, having multiple providers would be better than passing a single context object through multiple levels of components.
 
 ### 12. Instructor Do: Demo Multiple Contexts (10 mins)
 

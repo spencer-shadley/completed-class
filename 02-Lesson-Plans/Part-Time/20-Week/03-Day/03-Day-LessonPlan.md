@@ -12,8 +12,6 @@ In this class, students will learn the benefits of declarative Redux-style code 
 
 * Today's lesson will rely heavily on Redux concepts. It is recommended that you spend some time getting familiar with the activities before class starts.
 
-- - -
-
 ## Learning Objectives
 
 * Transform an app that manages state in Container components into one that follows a Redux pattern.
@@ -24,6 +22,14 @@ In this class, students will learn the benefits of declarative Redux-style code 
 
 * Implement a Redux-like store in a React app.
 
+## Slides
+
+[20.3: State Management with the Store](https://docs.google.com/presentation/d/1OQQGzZCevIaoeCDnVikP_sKR6dtxGqcwj4PB4tbWk0A/edit?usp=sharing)
+
+## Time Tracker
+
+[State Management with the Store](https://docs.google.com/spreadsheets/d/1kPyiZ1NE0jWtqyP3c43eynx2KP0yu8WU/edit#gid=1301242405)
+
 - - -
 
 ### 1. Instructor Do: Introduction (10 mins)
@@ -32,17 +38,17 @@ In this class, students will learn the benefits of declarative Redux-style code 
 
 * Ask the students the following questions:
 
-  * ☝️What were some of the pain points of working with context and hooks?
+  * ☝️ What were some of the pain points of working with context and hooks?
 
-  * 🙋Managing many different contexts and hooks can gets complex very quickly.
+  * 🙋 Managing many different contexts and hooks can gets complex very quickly.
 
-  * ☝️What is the difference between mutability and immutability, and what are the advantages of each?
+  * ☝️ What is the difference between mutability and immutability, and what are the advantages of each?
 
-  * 🙋**Mutable** objects can have their properties changed or _mutated_, whereas **Immutable objects** can not. Typically immutable objects help prevent your application from getting over-complicated. They often make it easy to identify _why_ the state changed, since every time an object needs to change, a new object has to be explicitly created. This also tends to make testing your components significantly easier. 
+  * 🙋 **Mutable** objects can have their properties changed or _mutated_, whereas **Immutable objects** can not. Typically immutable objects help prevent your application from getting over-complicated. They often make it easy to identify _why_ the state changed, since every time an object needs to change, a new object has to be explicitly created. This also tends to make testing your components significantly easier. 
 
-  * ☝️How might we manage state when if there are several different objects to keep track of, and several components that have the ability to update them?
+  * ☝️ How might we manage state when if there are several different objects to keep track of, and several components that have the ability to update them?
 
-  * 🙋We can create a single global state that contains all of the states needed throughout our application.
+  * 🙋 We can create a single global state that contains all of the states needed throughout our application.
 
 * Open the slide deck: https://docs.google.com/presentation/d/1rRxhoiKoa6op_sE3Z0koGxq6SSy97UQHe-SrnLmvnL8/edit?usp=sharing
 
@@ -151,13 +157,13 @@ In this activity we will practice using the `useReducer` Hook.
 
   * Ask the students the following questions:
 
-  * ☝️How might we rewrite our reducer so that any number of dogs can be praised?
+  * ☝️ How might we rewrite our reducer so that any number of dogs can be praised?
 
-  * 🙋We could create a single case that handles all actions in a similar manner. This way, the initial state would also have to into an array, so that the dogs would be easy to iterate through.
+  * 🙋 We could create a single case that handles all actions in a similar manner. This way, the initial state would also have to into an array, so that the dogs would be easy to iterate through.
 
-  * ☝️What logic in our reducer is repeated that we might be able to extract?
+  * ☝️ What logic in our reducer is repeated that we might be able to extract?
 
-  * 🙋The return statements are almost identical. A more scalable solution might update a `praises` property on a `dog` object. The action would contain a unique identifier so that the proper item in the state array could be updated.
+  * 🙋 The return statements are almost identical. A more scalable solution might update a `praises` property on a `dog` object. The action would contain a unique identifier so that the proper item in the state array could be updated.
 
   * 🔑 This time, the initial state value is set to be an _object_ that keeps track of how many praises each dog has.
 
@@ -366,13 +372,13 @@ In this activity we will practice using the `useRef` Hook by creating a Todo lis
   ```
 * Ask the students the following question(s):
 
-  * ☝️If we are importing an object named `CountProvider`, what do you think we will find in `GlobalState`?
+  * ☝️ If we are importing an object named `CountProvider`, what do you think we will find in `GlobalState`?
 
-  * 🙋Based on the name `CountProvider`, we can expect to find `createContext` used to create the exported object.
+  * 🙋 Based on the name `CountProvider`, we can expect to find `createContext` used to create the exported object.
 
-  * ☝️If `GlobalState` is performing the function its name suggests, what else might we find in it?
+  * ☝️ If `GlobalState` is performing the function its name suggests, what else might we find in it?
 
-  * 🙋We can find `GlobalState` in any component of our application that will need access to the global state.
+  * 🙋 We can find `GlobalState` in any component of our application that will need access to the global state.
 
 * Open [Ins_Store](../../../../01-Class-Content/20-react/01-Activities/20-Ins_Store/src/utils/GlobalState.js) in your IDE and explain the following points:
 

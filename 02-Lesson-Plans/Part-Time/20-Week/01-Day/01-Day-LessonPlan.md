@@ -12,8 +12,6 @@ In this class, we will be introducing students to the concept of React Hooks. We
 
 * Today's lesson will feature more instructor led demonstrations than the previous class, be sure to spend some time before class reviewing the examples.
 
-- - -
-
 ## Learning Objectives
 
 * Articulate the term "effect" in the broader sense of programming.
@@ -24,13 +22,22 @@ In this class, we will be introducing students to the concept of React Hooks. We
 
 * Create a custom reusable Hook that follows the 2 rules of Hooks.
 
+## Slides
+
+[20.1: Introduction to React Hooks](https://docs.google.com/presentation/d/1mnPdZODvhGs0j6s4EEuATbmQjFM7XpzFxrUnsOzNsGE/edit?usp=sharing)
+
+## Time Tracker
+
+[Introduction to React Hooks Time Tracker](https://docs.google.com/spreadsheets/d/1x48PZdW5LcbW6zhbt1rR7EyB3mXwDGuu/edit#gid=2065026216)
+
+
 - - -
 
 ### 1. Instructor Do: Hooks Slide and Discussion (20 mins)
 
 * Welcome the students to the second main focus of this unit: React Hooks.
 
-* Open the slide deck: https://docs.google.com/presentation/d/1mnPdZODvhGs0j6s4EEuATbmQjFM7XpzFxrUnsOzNsGE/edit?usp=sharing
+* Open the [slide deck](https://docs.google.com/presentation/d/1mnPdZODvhGs0j6s4EEuATbmQjFM7XpzFxrUnsOzNsGE/edit?usp=sharing)
 
 1. **Discuss Managing State**: Take a moment to talk about managing state.
 
@@ -154,7 +161,7 @@ In this class, we will be introducing students to the concept of React Hooks. We
 
   * 📝 If we want to change _just one_ property, such as `mood`, with `setDeveloperState`, we need to update the entire object, not just the property in question. This is because `setDeveloperState` _overwrites_ the previous state, instead of merging it with the existing state, as `this.setState` does.
 
-  * 💡 To avoid repeating yourself, you can shorten this code by using the spread notation `...`. Like `setDeveloperState({...developerState, mood})`.
+  * 💡To avoid repeating yourself, you can shorten this code by using the spread notation `...`. Like `setDeveloperState({...developerState, mood})`.
 
   * Setting the `onClick` attribute to an arrow function that _returns_ the function that we want to call when the button is clicked.
 
@@ -372,17 +379,17 @@ Files: [11-Stu_useEffect/Unsolved/src/App.js](../../../../01-Class-Content/21-re
 
 * Ask students the following questions:
 
-  * ☝️What was the point of this? (Feel free to make a bad pun here).
+  * ☝️ What was the point of this? (Feel free to make a bad pun here).
 
-  * 🙋Writing functional components is much cleaner. Using Hooks allows you to write fewer lines of code and manage your state in a less complex way. (No `this` keyword required!)
+  * 🙋 Writing functional components is much cleaner. Using Hooks allows you to write fewer lines of code and manage your state in a less complex way. (No `this` keyword required!)
 
-  * ☝️If we use Hooks, can state be used by other components?
+  * ☝️ If we use Hooks, can state be used by other components?
 
-  * 🙋No. The state used within a single component cannot be used by different components.
+  * 🙋 No. The state used within a single component cannot be used by different components.
 
-  * ☝️Can you think of a concept that would allow us to share state across components?
+  * ☝️ Can you think of a concept that would allow us to share state across components?
 
-  * 🙋We can add this functionality by using the Context API with the built in `useContext` Hook.
+  * 🙋 We can add this functionality by using the Context API with the built in `useContext` Hook.
 
 ### 9. Everyone Do: Break (15 mins)
 
