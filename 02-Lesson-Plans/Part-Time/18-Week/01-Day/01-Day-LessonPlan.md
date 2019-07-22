@@ -123,7 +123,7 @@ Todays class will be focused on Web Performance. We will use Lighthouse to audit
 
 ### 3. Student Do: Lighthouse Audit (10 mins)
 
-* Direct students to the activity instructions found [here]()
+* Direct students to the activity instructions found in [01-Stu_Lighthouse](../../../../01-Class-Content/18-PWA/01-Activities/01-Stu_Lighthouse/README.md)
 
 ```md
 # Lighthouse Audits
@@ -344,7 +344,7 @@ app.use(compression());
 
 ### 13. Student Do: Image Compression (10 mins)
 
-* Direct students to the activity instructions located [here](../../../../01-Class-Content/18-PWA/01-Activities/04-Stu_Image-Compression/README.md)
+* Direct students to the activity instructions located in [04-Stu_Image-Compression](../../../../01-Class-Content/18-PWA/01-Activities/04-Stu_Image-Compression/README.md)
 
 ```md
 # Image Compression
@@ -430,7 +430,7 @@ In this activity you are going to use an online compression tool to decrease ima
 
 ### 16. Student Do: Lazy Loading (15 mins)
 
-* Direct students to the activity instructions located [here](../../../../01-Class-Content/18-web-performance/01-Activities/05-Stu_Gallery-Lazy-Load/README.md)
+* Direct students to the activity instructions located in [05-Stu_Gallery-Lazy-Load](../../../../01-Class-Content/18-web-performance/01-Activities/05-Stu_Gallery-Lazy-Load/README.md)
 
 ```md
 # Lazy Loading Images
