@@ -24,11 +24,11 @@ In this class, students will learn the benefits of declarative Redux-style code 
 
 ## Slides
 
-[20.3: State Management with the Store](https://docs.google.com/presentation/d/1OQQGzZCevIaoeCDnVikP_sKR6dtxGqcwj4PB4tbWk0A/edit?usp=sharing)
+[20.3: State Management with the Store](https://docs.google.com/presentation/d/1rRxhoiKoa6op_sE3Z0koGxq6SSy97UQHe-SrnLmvnL8/edit?usp=sharing)
 
 ## Time Tracker
 
-[State Management with the Store](https://docs.google.com/spreadsheets/d/1kPyiZ1NE0jWtqyP3c43eynx2KP0yu8WU/edit#gid=1301242405)
+[State Management with the Store](https://docs.google.com/spreadsheets/d/1leakcpggPx4VrMbcjiyqDcneB8YpdGrv/edit#gid=1139601353)
 
 - - -
 
