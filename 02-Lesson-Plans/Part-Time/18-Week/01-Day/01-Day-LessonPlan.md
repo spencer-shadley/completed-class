@@ -23,7 +23,7 @@ Todays class will be focused on Web Performance. We will use Lighthouse to audit
 
 * We will be making use of students Project 2 during the first half of todays class. Ensure all students have a deployed project to work with.
 
-* Todays class you will be using an auditing system by Google called Lighthouse. Familiarize yourself with the tool prior to class.
+* Todays class you will be using an auditing system by Google called Lighthouse. Familiarize yourself with the tool prior to class. You can find the documentation [here](https://developers.google.com/web/tools/lighthouse/). 
 
   * Lighthouse can hang in some browsers, if possible please use Chrome.
 
