@@ -33,19 +33,23 @@ Todays class will be focused on Web Performance. We will use Lighthouse to audit
 
 ### 1. Instructor Do: Welcome/Intro Web Performance (10 mins)
 
-* Welcome students to class
+* Welcome students to class and then open Google Chrome. 
 
-* Open Google Chrome and then dev tools network tab and throttle your connection to `Slow 3G`
+* Open your Dev Tools Network Tab and Throttle your connection to `Slow 3G`
 
   * ![Throttle Connection](Images/throttleConnection.png)
 
-* Navigate to [Amazon.com](https://amazon.com/)
+* Navigate to [Amazon.com](https://amazon.com/) and point out the following:
   
-  * The page will load extremely slow, as it does proceed to the next question. 
+  * The page is going to load extremely slowly. Show students the Network Chart found under the connection throttle dropdown.
+
+  * Amazon will load assets for well over a minute, and this traffic can all be watched inside of our dev tools.
   
+  * Loading times like these can be a huge deterrent to users.
+
 * Ask the class, "Have you ever left a webpage due to it taking too long to load"
 
-  * Chances are most students will have experienced this. Explain this is a common experience all over the world, as not all people have access to fast network connections.
+  * It's safe to say anyone who has used the internet has experienced this.. This is a common occurrence all over the world, as not all people have access to fast network connections.
   
   * One of the biggest factors that leads to a poor user experience is slow page load times.
 
@@ -57,15 +61,11 @@ Todays class will be focused on Web Performance. We will use Lighthouse to audit
 
 * Ask the class, "How do we know what is causing our page to perform poorly or well?"
 
-* Proceed to demoing Lighthouse.
+  * Getting concrete analysis on the performance metrics of a web page is important in improving it in the future.
+
+* Use student answers to transition to demoing Lighthouse.
 
 ### 2. Instructor Do: Demo Lighthouse (10 mins)
-
-* Ask the class:
-
-  * How do you think websites are evaluated for performance?
-
-  * This is an important question. Getting concrete analysis on performance metrics of a program is important in improving that application in the future.
 
 * Google has created a tool called Lighthouse which will allow us to run an audit on our page and find out different metrics about how it performs and what is hindering its performance. Lighthouse is a quality audting tool developed by Google for analyzing web pages.
 
@@ -167,13 +167,16 @@ Todays class will be focused on Web Performance. We will use Lighthouse to audit
 
 ### 6. Student Do: Minify your JavaScript (10 mins)
 
-* Slack out the following instructions to your students.
+* Direct students to the activity instructions located [here](../../../../01-Class-Content/18-PWA/01-Activities/02-Stu_Minifify-JS/README.md)
 
-* **Instructions**
+```md
+# Minify Your JS
 
-* In this activity we are going to use a YUI compressor online to minify the contents of our JS files.
+In this activity you will minify your JavaScript using an online tool.
 
-* Using the project you audited previously, navigate to [Online Minification](http://refresh-sf.com/)
+## Instructions
+
+* Using the project you audited previously, navigate to [Online JavaScript/CSS/HTML Compressor](http://refresh-sf.com/)
 
 * Copy the contents of one of your JS files into the compressor and click on the `JavaScript` button.
 
@@ -186,7 +189,7 @@ Todays class will be focused on Web Performance. We will use Lighthouse to audit
   * Copy/paste the minified JS of your dist folder into your `dist/index.js`
 
 * Be sure to link your `dist/index.js` code to your application.
-
+```
 ### 7. Instructor Do: Review Minification (5 mins)
 
 * Ask several students how much of a reduction they saw in JS sizes from Input to Output.
@@ -203,11 +206,9 @@ Todays class will be focused on Web Performance. We will use Lighthouse to audit
 
 * Tell the class that while minification will help reduce file sizes, something called *compression* will let us take files sizes down even further.
 
-* Ask the class:
-
-  * Have you ever worked with a `.zip` extension file?
+* Ask the class, "Have you ever worked with a `.zip` extension file?"
   
-  * Most will say they have.
+  * A `.zip` file is a compressed version of a normal folder. When you `unzip` it, the folder contains all of the information it had before it was zipped.
 
 * Navigate to [MDN GZip Compression](https://developer.mozilla.org/en-US/docs/Glossary/GZip_compression).
 
@@ -313,9 +314,14 @@ app.use(compression());
 
 ### 13. Student Do: Image Compression (10 mins)
 
-* Slack out the following folder to your students. [Gallery Compression Unsolved](../../../../01-Class-Content/18-web-performance/01-Activities/04-Stu_Image-Compression/)
+* Direct students to the activity instructions located [here](../../../../01-Class-Content/18-PWA/01-Activities/04-Stu_Image-Compression/README.md)
 
-* **Instructions**
+```md
+# Image Compression
+
+In this activity you are going to use an online compression tool to decrease image file sizes for the Gallery App.
+
+## Instructions
 
 * In this activity you will be using ImageOptim Online to compress images.
 
@@ -342,6 +348,7 @@ app.use(compression());
 * Once the compression is complete, a `zip` file will automatically download to your computer.
 
   * This will most likely be downloaded to your `Downloads` folder.
+```
 
 ### 14. Instructor Do: Review Image Compression (5 mins)
 
@@ -393,7 +400,14 @@ app.use(compression());
 
 ### 16. Student Do: Lazy Loading (15 mins)
 
-* **Instructions**
+* Direct students to the activity instructions located [here](../../../../01-Class-Content/18-web-performance/01-Activities/05-Stu_Gallery-Lazy-Load/README.md)
+
+```md
+# Lazy Loading Images
+
+In this activity you are going to work with the Intersection Observer API to implement lazy loading functionality for our Gallery App.
+
+## Instructions
 
 * In this activity you are going to take the Gallery App and implement Lazy Loading functionality.
 
@@ -410,6 +424,7 @@ app.use(compression());
 [MDN Progressive Loading](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Loading)
 
 * After you have completed implementing lazy loading, open your Dev Tools and run another Lighthouse Audit.
+```
 
 ### 17. Instructor Do: Review Lazy Loading (5 mins)
 
