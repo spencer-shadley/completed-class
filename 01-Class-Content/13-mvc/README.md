@@ -1,4 +1,4 @@
-# Unit 14: Handlebars
+# Unit 13: MVC
 
 ## Overview
 As our full-stack web applications scale, we will need to address several issues related to that growth: organization of the codebase, ongoing development and maintenance, and continued collaboration. So far, our applications are easily managed as they only consist of a handful of files. We _could_ limit the code base to these few files, but as we add functionality to our application, each of those files would grow in length to hundreds, if not thousands, of lines of code composed of unnecessarily complicated logic. Imagine how difficult it would be to resolve merge conflicts! 
