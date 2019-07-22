@@ -1,4 +1,4 @@
-# Unit 24: Projects
+# Unit 23: Final Projects
 
 ## Overview
 Our journey together is coming to an end, but this is just the beginning for yours as a full-stack web developer. For your portfolio, you will want to include each of the three group projects in addition to two or three of your best homework assignments or personal projects. You didn't know then what you know now, so you may want to go back and do some tidying up. Make sure that each project has a professional README outlining its functionality, the tech stack, and the build process including any challenges faced and how they were overcome. 
