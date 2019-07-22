@@ -1,39 +1,33 @@
-## Week 15 - Sequelized
+## Week 15 - Agile Methodologies and Project 2
 
 ### Overview
 
-In this week, we will introduce students to the Sequelize ORM.
+This week's lesson will introduce students to some more Agile methodologies and workflows. This is also a project week so classes will be split evenly between presentation of new material and independent work.
 
 
 ### Lesson Plans
 
-* [15.1 - Lesson Plan](01-Day/01-Day-LessonPlan.md)
-* [15.2 - Lesson Plan](02-Day/02-Day-LessonPlan.md)
-* [15.3 - Lesson Plan](03-Day/03-Day-LessonPlan.md)
+* [16.1 - Lesson Plan](01-Day/01-Day-LessonPlan.md)
+* [16.2 - Lesson Plan](02-Day/02-Day-LessonPlan.md)
+* [16.3 - Lesson Plan](03-Day/03-Day-LessonPlan.md)
+
+### Project Resources
+Project-Resources/Slide-Shows
+
+* [Project Requirements - Slide Deck](https://docs.google.com/presentation/d/1DldswLqfUbnvidzyMLhmZUwYpwy_CXI0WPx5pMUuDZo/edit?usp=sharing)
+* [Project Resources Folder - See README](Project-Resources)
 
 ### Homework Activities
 
-* [Burger 2: The Sequel](../../../01-Class-Content/15-sequelize/02-Homework/Instructions/homework_instructions.md)
-
-### Key Activities
-
-* [Simple Sequelize Demo](../../../01-Class-Content/15-sequelize/01-Activities/03-Chirpy-Sequelize)
-* [Setting Up a Sequelize Project with the Sequelize CLI](../../../01-Class-Content/15-sequelize/01-Activities/06-SequelizeCLI/Unsolved)
-* [Converting an ORM App to Use Sequelize](../../../01-Class-Content/15-sequelize/01-Activities/07-ORM-To-Sequelize)
-* [Sequelize CREATE and READ](../../../01-Class-Content/15-sequelize/01-Activities/08-Sequelize-Create-Read)
-* [Sequelize UPDATE and DELETE](../../../01-Class-Content/15-sequelize/01-Activities/09-Sequelize-Update-Delete)
-* [One-to-One, One-to-Many Associations](../../../01-Class-Content/15-sequelize/01-Activities/13-Post-Author-Association)
-* [Join Associated Models with Sequelize Queries](../../../01-Class-Content/15-sequelize/01-Activities/14-Post-Author-Joins)
+There is no homework for this week's lesson. However, there are certain tests students are required to incorporate into their project for the week, [available here](Project-Resources).
 
 ### Helpful Links
 
-* [Heroku Deployment Guide for Sequelize Projects](../../../01-Class-Content/15-sequelize/03-Supplemental/Guides/SequelizeHerokuDeploymentProcess.md)
-* [Sequelize Quick Start Guide](../../../01-Class-Content/15-sequelize/03-Supplemental/Guides/SequelizeQuickStartGuide.pdf)
-* [Sequelize CRUD Actions Cheat Sheet](../../../01-Class-Content/15-sequelize/03-Supplemental/Guides/SequelizeCRUDActionsCheatSheet.pdf)
-* [Passport and Sequelize Example](../../../01-Class-Content/15-sequelize/03-Supplemental/Sequelize-Passport-Example)
-* [Sequelize Queries](http://docs.sequelizejs.com/en/latest/docs/querying/)
-* [Sequelize Associations Part 1](http://docs.sequelizejs.com/en/latest/docs/associations/)
-* [Sequelize Association Part 2](http://docs.sequelizejs.com/en/latest/api/associations/)
-* [Sequelize Migrations](http://docs.sequelizejs.com/en/latest/docs/migrations/)
-* [bcrypt (NPM)](https://www.npmjs.com/package/bcrypt)
-* [Encryption vs Hashing](http://www.securityinnovationeurope.com/blog/whats-the-difference-between-hashing-and-encrypting)
+* [Chai Documentation](http://chaijs.com/)
+* [Writing Testable JavaScript](http://alistapart.com/article/writing-testable-javascript)
+* [What Every Unit Test Needs](https://medium.com/javascript-scene/what-every-unit-test-needs-f6cd34d9836d#.56kpjhvo9)
+
+### Slide Shows
+
+* [16.1 - Linting and Projects](https://docs.google.com/presentation/d/1DldswLqfUbnvidzyMLhmZUwYpwy_CXI0WPx5pMUuDZo/edit?usp=sharing)
+* [16.2 - Agile and Projects](https://docs.google.com/presentation/d/1WneP_OWJOsJ7ZVsp6_RjIZTZeK61GkqbVv6eS3Nn_oQ/edit?usp=sharing)
