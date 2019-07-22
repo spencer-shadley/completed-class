@@ -37,15 +37,31 @@ Todays class will be focused on Web Performance. We will use Lighthouse to audit
 
 * Open your Dev Tools Network Tab and Throttle your connection to `Slow 3G`
 
-  * ![Throttle Connection](Images/throttleConnection.png)
+  * ![Throttle Connection](./Images/throttleConnection.png)
 
-* Navigate to [Amazon.com](https://amazon.com/) and point out the following:
+* Navigate to [Amazon.com](https://amazon.com/).
   
-  * The page is going to load extremely slowly. Show students the Network Chart found under the connection throttle dropdown.
+  * The page is going to load extremely slowly.
+
+* Ask the class, "What can the Network Tab show us?"
+
+  * The network tab gives developers a view into what assets are being loaded and when, as well as total load times. Direct the students attention to the loading time chart.
+
+  ![Network Chart](./Images/networkChart.png)
 
   * Amazon will load assets for well over a minute, and this traffic can all be watched inside of our dev tools.
+
+* Ask the class, "What is throttling?"
+
+  * Throttling a connection is the act of using software to deliberately slow down or "throttle" a connections speed to be slower than it would normally.
+
+* Ask the class, "Why would we want to throttle our connection?"
+
+  * While we might have a nice and fast connection, a large portion of the planet does not have access to speeds even comparable to a slow 3g cellular network. 
+
+  * By throttling our connection, we can see how our users with worse connections might experience our content, and will help us understand what is slowing loading times most.
   
-  * Loading times like these can be a huge deterrent to users.
+* Loading times like we are seeing with a throttled connection on Amazon can be a huge deterrent to users.
 
 * Ask the class, "Have you ever left a webpage due to it taking too long to load"
 
@@ -67,7 +83,7 @@ Todays class will be focused on Web Performance. We will use Lighthouse to audit
 
 ### 2. Instructor Do: Demo Lighthouse (10 mins)
 
-* Google has created a tool called Lighthouse which will allow us to run an audit on our page and find out different metrics about how it performs and what is hindering its performance. Lighthouse is a quality audting tool developed by Google for analyzing web pages.
+* Google has created a tool called Lighthouse which will allow us to run an audit on our page and find out different metrics about how it performs and what is hindering its performance. Lighthouse is a quality auditing tool developed by Google for analyzing web pages.
 
   * It provides audits for performance, accessibility, SEO, and progressive web applications.
 
@@ -277,11 +293,11 @@ In this activity you are going to use an NPM package called compression to enabl
 * We then add the following code to our `server.js`:
 
 ```js
-var express = require("express");
-var mongoose = require("mongoose");
-var compression = require("compression");
+const express = require("express");
+const mongoose = require("mongoose");
+const compression = require("compression");
 
-var app = express();
+const app = express();
 
 app.use(compression());
 ```
@@ -527,12 +543,12 @@ function initLazyImages() {
 * Add the following lines of code:
   
   ```js
-  var compression = require("compression");
+  const compression = require("compression");
 
   app.use(compression());  
   ```
 
-* Let them know that it is that simple to enable GZip compression of our served files.
+  * With these two lines of code we can easily enable GZip compression in our application for our served files.
 
 * When it comes to the image compression, there are many tools that can help us achieve that. We used ImagOptim, but let them know they can research others.
 
@@ -541,3 +557,5 @@ function initLazyImages() {
 ### 21. Instructor Do: End (0 mins)
 
 * Congratulate students on beginning their journey into web performance. They learned a lot today, let them know they did a good job.
+
+* Answer any questions before wrapping up.
