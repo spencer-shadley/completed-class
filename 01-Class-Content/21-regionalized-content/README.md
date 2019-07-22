@@ -1,4 +1,4 @@
-# Unit 21: Regionalized
+# Unit 21: Regionalized Content
 
 ## Overview
 Week 21 is the regionalized content unit—different universities will teach different tech depending on local market demand. Please check your syllabus to see which content applies to your class.
