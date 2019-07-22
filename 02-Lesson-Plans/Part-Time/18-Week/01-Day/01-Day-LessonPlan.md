@@ -125,9 +125,14 @@ Todays class will be focused on Web Performance. We will use Lighthouse to audit
 
 * Direct students to the activity instructions found [here]()
 
-* **Instructions**
+```md
+# Lighthouse Audits
 
-* We are going to use your Project 2 for these coming activities to check its performance metrics.
+In this activity you will use Google Lighthouse to audit your second group project to find out performance metrics.
+
+## Instructions
+
+* We are going to utilize your second group project for these coming activities to check its performance metrics.
 
 * Navigate to the deployed URL of your project.
 
@@ -136,10 +141,13 @@ Todays class will be focused on Web Performance. We will use Lighthouse to audit
 * Scroll down and click `Run Audits` and allow Lighthouse to run.
 
 * Read through the provided report and be prepared to talk about the `Opportunities` portion of your audit!
+```
 
 ### 4. Instructor Do: Review Audits (5 mins)
 
-* Ask students to raise their hand and talk about some of the `Opportunities` Lighthouse found for improvement in their applications.
+* Ask the class the following question(s):
+
+  * What are some of the 'Opportunities' for improvement you found in your applications?
 
   * How long did the first content paint take?
 
@@ -151,9 +159,15 @@ Todays class will be focused on Web Performance. We will use Lighthouse to audit
 
 ### 5. Instructor Do: JS Minification (10 mins)
 
-* Start by asking the class if anyone knows what JS Minification is.
+* Ask the class the following question(s):
 
-* Tell the class that minification is the removal of any unnecessary characters and whitespace without the loss of any functionality.
+* "What do you think minification means"?
+
+  * Minification is the process of taking our code and removing all unnecessary characters and whitespace without loss of functionality in an attempt to save file space.
+
+* Ask the class, "Where have we seen minification before?"
+
+  * Bootstrap and jQuery are two examples of minified source code
 
 * Open [Online Minification](http://refresh-sf.com/) and paste the following code into the textarea:
 
@@ -165,27 +179,27 @@ Todays class will be focused on Web Performance. We will use Lighthouse to audit
     }
     ```
 
-* Click the JavaScript button at the top right of the textarea and walk students through the output.
+* Click the JavaScript button to minify the code snippet and explain the following point(s):
 
 * ![Minify JS](Images/minifyJS.png)
 
-* Point out to the class that:
+  * The minifier moved our `myArray` declaration into our `for loop`.
 
-  * It moved our `myArray` declaration into our `for loop`.
+  * The minifier removed all whitespace between characters, and put all of our code on one line.
 
-  * It removed all whitespace between characters, and put all of our code on one line.
-
-  * This resulted in a 25% decrease in the size of the JavaScript.
+  * The minification process resulted in a 25% decrease in the size of the JavaScript.
 
   ![Minified](Images/minification.png)
 
-* While the code may look different after minification, let students know that it will function exactly the same.
+  * While the code may look different after minification, it will function exactly the same
 
-* Minification saves us space, and smaller file sizes create faster downloads for the user. The faster our assets can download, the faster the page will load for them.
+* Ask the class, "What are the benefits of minification?"
+
+  * Minification saves us space, and smaller file sizes create faster downloads for the user. The faster our assets can download, the faster the page will load them for our user.
 
 ### 6. Student Do: Minify your JavaScript (10 mins)
 
-* Direct students to the activity instructions located [here](../../../../01-Class-Content/18-PWA/01-Activities/02-Stu_Minifify-JS/README.md)
+* Direct students to the activity instructions located in [02-Stu_Minifiy-JS](../../../../01-Class-Content/18-PWA/01-Activities/02-Stu_Minifify-JS/README.md)
 
 ```md
 # Minify Your JS
@@ -210,33 +224,37 @@ In this activity you will minify your JavaScript using an online tool.
 ```
 ### 7. Instructor Do: Review Minification (5 mins)
 
-* Ask several students how much of a reduction they saw in JS sizes from Input to Output.
+* Ask the class the following question(s):
 
-* Ask students how this could benefit developers, especially those with massive codebases.
+  * How much of a reduction they saw in JS sizes from Input to Output?
 
-* While the minified code certainly appears different than the code we input to start, ensure students all of the functionality is retained.
+  * How this could benefit developers, especially those with massive code bases?
 
-  * Let students know that it is important to have minified code in it's own file. It is not recommended to attempt editing minified code as it can be difficult to read, and even more difficult to debug due to the lack of readability.
+* While the minified code certainly appears different than the code we input to start, all of the functionality is retained.
 
-* Now that we have learned to minify our code, lets look at how we can compress our files.
+* Ask the class, "Why might we not want to edit our minified code?".
+
+  * It is important to have minified code in it's own file. It is not recommended to attempt editing minified code as it can be difficult to read, and even more difficult to debug due to the lack of readability.
+
+* Ask the class the following question(s):
+
+  * How might we minify image files?
+
+* Use students answers to transition to the next activity.
 
 ### 8. Instructor Do: Compression npm package (10 mins)
 
-* Tell the class that while minification will help reduce file sizes, something called *compression* will let us take files sizes down even further.
-
-* Ask the class, "Have you ever worked with a `.zip` extension file?"
-  
-  * A `.zip` file is a compressed version of a normal folder. When you `unzip` it, the folder contains all of the information it had before it was zipped.
-
-* Navigate to [MDN GZip Compression](https://developer.mozilla.org/en-US/docs/Glossary/GZip_compression).
-
-  * Ask the class, "What do we do with files that are so large they are slowing load times?"
+* Ask the class, "What do we do with files that are so large they are slowing load times?"
 
   * We compress those files.
 
-  * Let students know that on the web we can use something called GZip compression via an NPM Package called `compression`.
+* Ask the class, "What is a zip file?"
+  
+  * A `.zip` file is a compressed version of a normal folder. When you `unzip` it, the folder contains all of the information it had before it was zipped.
 
-  * Explain that GZip is a form of data compression -- it takes a piece of data and makes it smaller. The original data can be restored by un-zipping the compressed file.
+* On the web we can use something called GZip compression via an NPM Package called `compression`.
+
+  * GZip is a form of data compression -- it takes a piece of data and makes it smaller. The original data can be restored by un-zipping the compressed file.
 
   * It is relevant to web apps and web sites because the HTTP protocol includes the ability to gzip data that is being sent.
 
@@ -248,23 +266,21 @@ In this activity you will minify your JavaScript using an online tool.
 
 * Now we are going to show students around the `Network` tab in Chrome Dev Tools.
 
-  * Open up your `network` tab in the chrome dev tools.
+* Open up your `network` tab in the chrome dev tools. Navigate to the [New York Times](https://www.nytimes.com/). 
 
   ![Network Tab](Images/networkTab.png)
 
-  * Navigate to the [New York Times](https://www.nytimes.com/).
-
-  * Point students to all the incoming network traffic shown, and more specifically the file sizes column.
+* Point students to all the incoming network traffic shown, and more specifically the file sizes column.
 
   ![Network Traffic](Images/networkTraffic.png)
 
-  * Show students how there is a file size showing the compressed size (Smaller number) and its uncompressed size (larger number).
+* There is a file size showing the compressed size (Smaller number) and its uncompressed size (larger number).
 
-    * Files that don't have two numbers are uncompressed files being sent unchanged.
+  * Files that don't have two numbers are uncompressed files being sent unchanged.
 
 ### 9. Students Do: Enable Compression (10 mins)
 
-* Direct students to the activity instructions located [here](../../../../01-Class-Content/18-PWA/01-Activities/03-Stu_Enable-Compression/README.md)
+* Direct students to the activity instructions located [03-Stu_Enable-Compression](../../../../01-Class-Content/18-PWA/01-Activities/03-Stu_Enable-Compression/README.md)
 
 ```md
 # GZip Compression
@@ -304,31 +320,27 @@ const app = express();
 app.use(compression());
 ```
 
-* Let the students know they've done a great job so far, and answer any questions before their break.
+* Answer any questions before proceeding to break.
 
 ### 11. BREAK (15 mins)
 
 ### 12. Instructor Do: Image Compression (10 mins)
 
-* Images are one of the most used assets on the web. They are everywhere, and there are more than you can imagine.
+* Ask the class the following question(s):
 
-* Images are a huge culprit in slowing down web loading times.
+* Have you ever gone to a site and experienced slow image loading times?
 
-* Ask the class:
+  * Images are one of the most used assets on the web. They are everywhere, and there are more than you can imagine.
 
-  * Have you ever gone to a site and experienced slow image loading times?
+  * This is normally due to oversized images or high resolution images being downloaded and taking time. Images are one of the main culprits in slowing down web loading times.
 
-  * Most will say yes. This is normally due to oversized images or high resolution images being downloaded and taking time.
+* How might we be able to fix the problem of images that are too large?
 
-* Follow up with:
+  * We can use a concept called *Image Compression*. For the purposes of our course we are going to talk about *Lossy Image Compression*.
 
-  * How might we be able to fix the problem of images that are too large?
+* What do we mean by "lossy" image compression?
 
-* We can use a concept called *Image Compression*. For the purposes of our course we are going to talk about *Lossy Image Compression*.
-
-  * What lossy image compression basically means is that some of the image data is lost during compression. Once an image has used lossy compression, you cannot reverse the process due to this loss of data. The data lost will normally result in almost unnoticeable changes in image quality most of the time.
-
-* Open
+  * What lossy image compression basically means is that some of the image data is lost during compression. Once an image has used lossy compression, you cannot reverse the process due to this loss of data. The data lost will normally result in almost unnoticeable changes in image quality most of the time. 
 
 ### 13. Student Do: Image Compression (10 mins)
 
