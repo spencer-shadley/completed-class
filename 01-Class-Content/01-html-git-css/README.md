@@ -1,4 +1,5 @@
 # Unit 1: Introduction to Web Development, HTML, CSS and Git
+
 ## Overview
 Congratulations! This is the first step on your journey towards a career in full-stack web development. There are many paths your career can take in this field and this unit is the foundation for all of them. Every full-stack web developer must master HTML and CSS, as well as learn how to program browsers, servers and databases. There are several programming languages available to us to build and deploy full-stack web applications, such as PHP or Python. The language this course will focus on is JavaScript. We’ll use it to program _both_ the browser, or client, _and_ the server.
 
