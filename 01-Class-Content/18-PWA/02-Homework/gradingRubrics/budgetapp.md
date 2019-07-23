@@ -21,7 +21,7 @@ Be subjective, grading & feedback should not take more than 5 minutes per assign
 
 **Criteria**
 
-Student utilized jQuery & Giphy API to show the user Giphy results based on their search term. The deployed assignment has been added to their deployed portfolio with a link provided in the submission.
+Students created a functional PWA. This includes a complete `manifest.json` and functioning `serviceWorker`. The application should receive a deposit or withdrawal while **offline** and add it to the history. That history should then be pushed into the main history when back **online**.
 
 **Is the above statement correct?**
 
@@ -55,7 +55,7 @@ Either way, explain to the student why they received that grade and invite them 
 
 ### Empty Repository (I)
 
-Students should receive this grade **only** if they submit an empty repository. If the student attempted the homework assignment and was simply unable to get it fully functioning, they should still receive a normal letter grade, not an 'Incomplete'.
+Students should receive this grade if they submit an empty repository. If the student attempted the homework assignment and was simply unable to get it fully functioning, they should still receive a normal letter grade, not an 'Incomplete'.
 
 - - - 
 
