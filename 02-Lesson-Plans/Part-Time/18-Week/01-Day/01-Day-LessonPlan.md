@@ -101,7 +101,7 @@ Todays class will be focused on Web Performance. We will use Lighthouse to audit
 
 * Open the generated `Audit Report` and walk students through the following:
 
-  * The *performance* section will be the first you encounter, and one of the most useful for todays class.
+  * The *performance* section will be the first you encounter, and one of the most useful for todays class. This section will tell us why our site might be performing poorly and delivering a poor user experience. It will also give us actionable items to fix.
 
   * Hovering over the different status signs next to the times shown will give you information on what that test means.
 
@@ -537,21 +537,22 @@ function initLazyImages() {
 * Direct students to the activity instructions found in [Solved Lazy Loading Gallery](../../../../01-Class-Content/18-web-performance/01-Activities/06-Stu_Gallery-Optimize/Solved)
 
 ```md
+# Optimize Gallery App
+
+In this activity you will use the Lazy Loading, GZip Compression, Image Compression, and Lighthouse to improve the performance of the Gallery App.
 
 ## Instructions
 
-* Now that you have implemented lazy loading into your application, you will take it the final steps of the way to being optimized.
-
 * First, unzip the uncompressed images zip file found in `public/assets/images`.
 
-* Now, run the program:
+* Run the following commands:
 
   * Start MongoDB (run `mongod` in your terminal)
   * In a new terminal window run `npm install`
   * `npm run seed`
   * `node server.js`
 
-* Now that the application is running, navigate to the [localhost](<https://localhost:3000>)
+* Now that the application is running, navigate to the [localhost](https://localhost:3000)
 
 * Open your Chrome Dev tools and run a Lighthouse audit on the application. Take note of the `performance` score listed at the top of the audit report.
 
@@ -586,13 +587,13 @@ function initLazyImages() {
 
 ### 20. Instructor Do: Review Final Gallery App (5 mins)
 
-* Open [Solved Lazy Loading Gallery](../../../../01-Class-Content/18-web-performance/01-Activities/06-Stu_Gallery-Optimize/Solved)
+* Navigate to [06-Stu_Gallery-Optimize/Solved](../../../../01-Class-Content/18-PWA/01-Activities06-Stu_Gallery-Optimize/Solved) and run the following commands:
 
-* Run `npm install`
+  * npm install
 
-* When complete, run `npm install compression`
+  * npm install compression
 
-* Navigate to the `Solved/server.js`
+* Navigate to the [06-Stu_Gallery-Optimize/Solved/server.js(../../../../01-Class-Content/18-PWA/01-Activities06-Stu_Gallery-Optimize/Solved/server.js)
 
 * Add the following lines of code:
   
