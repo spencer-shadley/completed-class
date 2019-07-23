@@ -593,21 +593,27 @@ In this activity you will use the Lazy Loading, GZip Compression, Image Compress
 
   * npm install compression
 
-* Navigate to the [06-Stu_Gallery-Optimize/Solved/server.js(../../../../01-Class-Content/18-PWA/01-Activities06-Stu_Gallery-Optimize/Solved/server.js)
-
-* Add the following lines of code:
+* Navigate to the [06-Stu_Gallery-Optimize/Solved/server.js](../../../../01-Class-Content/18-PWA/01-Activities06-Stu_Gallery-Optimize/Solved/server.js)
   
-  ```js
-  const compression = require("compression");
+```js
+const compression = require("compression");
 
-  app.use(compression());  
-  ```
+app.use(compression());  
+```
 
   * With these two lines of code we can easily enable GZip compression in our application for our served files.
 
-* When it comes to the image compression, there are many tools that can help us achieve that. We used ImagOptim, but let them know they can research others.
+* Ask the class, "Is ImagOptim our only option for Image Compression?"
 
-* We will not go through the process of compressing all of the images, as we did that earlier in the class.
+  * We can use many different tools when looking to compress images. For our purposes we chose to use ImagOptim for its ease of use. Feel free to research other image compression tools if you'd like to dive deeper.
+
+  * We will not go through the process of compressing all of the images as we did that earlier in the class, but image compression is an important and easy way to decrease load times.
+
+* Ask the class, "Can you see the ways you can use these performance enhancements in your existing applications?"
+
+  * Optimizing our applications to be performant on all devices and connection speeds will make us better developers. We need to consider those with smaller devices or slower speeds at all times as to not alienate any user base.
+
+* Answer any remaining questions.
 
 ### 21. Instructor Do: End (0 mins)
 
