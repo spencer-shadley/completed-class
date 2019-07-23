@@ -1,36 +1,83 @@
-# 18.2 Lesson Plan - Progressive Web Apps (6:30 PM) <!--links--> &nbsp; [⬅️](#todo-fix-when-merged-to-dev) &nbsp; [➡️](#todo-fix-when-merged-to-dev)
+# 18.2 Lesson Plan - Progressive Web Applications (6:30 PM) <!--links--> &nbsp; [⬅️](#todo-fix-when-merged-to-dev) &nbsp; [➡️](#todo-fix-when-merged-to-dev)
 
 ## Overview
 
 Today's class will continue our journey into web performance by learning about progressive web apps. We will start with our basic Gallery App and step by step, implement a web app manifest as well as a service worker. This new functionality will provide us with a fully functioning progressive web app that delivers an offline experience to our users.
 
-## Learning Objectives
-
-* By the end of class students will be able to:
-  * Articulate the benefits a progressive web app offers a user over a traditional app.
-  * Implement and explain the role of a web app manifest.
-  * Implement and explain the role of a service worker.
-  * Successfully cache and fetch files to deliver them in an offline experience.
 
 ## Instructor Notes
 
-* Throughout the class students that the code needed to get service workers up and running is verbose, and they don't need to 100% understand all of it is doing. They will never need to write this code from memory, they'll always refer to documentation. Rather than trying to memorize all of the code written today, they should instead focus conceptually on what each snippet is doing.
+@TODO
 
-* Students will be provided most of the service worker code in the form of screenshots to prevent simply copying and pasting each example. By having to type out the code themselves, students are more likely to come away with a better understanding of the components needed to create offline experiences.
 
-### 1. Instructor Do: Progressive Web Apps (10 mins) (HIGH)
+## Learning Objectives
 
-* Welcome the class and explain that today we are going to continue our journey into web performance by learning about progressive web apps.
+* By the end of class students will be able to:
+  
+  * Explain the benefits a progressive web app offers a user over a traditional app.
+  
+  * Implement and explain the role of a web app manifest.
+  
+  * Implement and explain the role of a service worker.
+  
+  * Successfully cache and fetch files to deliver them in an offline experience.
 
-* Ask the class:
 
-  * Does anyone know what a progressive web app is?
+### 1. Instructor Do: Progressive Web Apps (5 min) (HIGH)
 
-  * Can you explain what makes it different from a mobile or web app?
+* Welcome students to class.
+
+* Navigate to [https://guarded-waters-72148.herokuapp.com/](https://guarded-waters-72148.herokuapp.com/) in your browser and point out the following: 
+
+ * It's the Notetaker application we built in the previous unit. But there's something different about it...
+ 
+ @TODO insert image
+ 
+ * If we open the Settings in Chrome, we will see an option to `Install Notetaker...`
+ 
+ * When we select `Install Notetaker...` we are presented with an option to "Install app?"
+ 
+ * When we click `Install`, a new Chrome window opens with our application running in it. 
+ 
+ * @TODO it is now installed as a desktop app! If we search our applications, we will find "Notetaker" listed among them.
+ 
+* Ask the class the following question(s):
+
+ * If we can install the Notetaker application on our laptops, where else might we install it? 
+ 
+* Use student answers to transition to the next activity.
+
+### 2. Student Do: Progressive Web Applications (5 min)
+ 
+* Direct students to the instructions found in [@TODO](@TODO).
+
+```md
+
+@TODO insert instructions
+
+
+```
+
+
+### 3. Instructor Do: Progressive Web Apps Review (5 min)
+
+* Ask the class the following question(s)
+
+  *  What is a progressive web application?
+  
+  *  Progressive web applications (PWAs) are a new trend in web development that can solve problems users face with native apps and web apps.
+  
+  *  What do we mean by 'native' app?
+  
+  *  The term "native app" refers to applications written for specific platforms. For example, native iPhone apps are written in iOs and Android apps are primarily written in Java. Apple apps will not run on Android devices and vice versa. 
+
+  *  Can you explain what makes it different from a mobile or web app?
 
   * What are the pieces involved in a PWA?
+  
+  
+ @TODO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-* Explain that progressive web apps are a new trend in web development that can solve problems users face with native apps and web apps.
 
 * Briefly cover the difference between traditional mobile apps, web apps and PWA's below.
 
