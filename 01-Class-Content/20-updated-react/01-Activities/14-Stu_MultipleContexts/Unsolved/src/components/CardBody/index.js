@@ -1,20 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import UserContext from "../../utils/userContext";
 
 function CardBody() {
+  const { user } = useContext(UserContext);
   return (
-    <UserContext.Consumer>
-      {({ user }) => (
-        <div>
-          <h4>
-          Favorite language: {user.language}
-          </h4>
-          <h4>
+    <div>
+      <h4>
+        Favorite language: {user.language}
+      </h4>
+      <h4>
           Email: {user.email}
-          </h4>
-        </div>
-      )}
-    </UserContext.Consumer>
+      </h4>
+    </div>
   );
 }
 

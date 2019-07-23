@@ -1,14 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import UserContext from "../../utils/userContext";
 
 function CardTitleText() {
+  console.log(useContext(UserContext))
+  const { user, capitalizeFirstLetter } = useContext(UserContext);
   return (
-    <UserContext.Consumer>
-      {(context) => (
-        <h2>{context.capitalizeFirstLetter(context.user.firstname) +
-          " " + context.capitalizeFirstLetter(context.user.lastname)}</h2>
-      )} 
-    </UserContext.Consumer>
+    <h2>{capitalizeFirstLetter(user.firstname) +
+      " " + capitalizeFirstLetter(user.lastname)}</h2>
   );
 }
 

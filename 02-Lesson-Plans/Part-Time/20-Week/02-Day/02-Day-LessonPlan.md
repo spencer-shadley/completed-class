@@ -744,38 +744,35 @@ const Alert = (props) => {
   import Row from "../components/Row";
   ```
 
-  ```js
-  constructor(props) {
-    super(props);
-    this.state = {
-      languages: [],
-      user: {},
-      users: [],
-      userIndex: 0,
-      capitalizeFirstLetter: this.capitalizeFirstLetter,
-      handleBtnClick: this.handleBtnClick
-    };
-  }
+  * 🗒 Note that we don't need to create states for the `handleBtnClick` or `capitalizeFirstLetter` functions in each context object, since they will never change.
 
-  handleBtnClick = (event) => {
-    // Get the title of the clicked button
-    const btnName = event.target.getAttribute("data-value");
-    if (btnName === "next") {
-      const userIndex = this.state.userIndex + 1;
-      this.nextUser(userIndex);
-    } else {
-      const userIndex = this.state.userIndex - 1;
-      this.previousUser(userIndex);
-    }
-  };
+  ```js
+  const [users, setUsers] = useState([]);
+  const [user, setUser] = useState({});
+  const [userIndex, setUserIndex] = useState(0);
+
+  // When the component mounts, a call will be made to get random users.
+  useEffect(() => {
+    loadUsers();
+  }, []);
+
+  function loadUsers() {
+    API.getLanguagesList()
+      .then(languages => {
+        API.getUsersByLanguage(languages[0]).then((users) => {
+          setUsers(users);
+          setUser(users[0]);
+        });
+      })
+      .catch(err => console.log(err));
+  }
   ```
 
-  * The `UserContext` Provider passes in our entire state object to the Context Object as the default `value` prop. This includes the `handleBtnClick` method that our button will use.
+  * The `UserContext` Provider passes in each state variable as properties of an object to the Context Object as the default `value` prop. This includes the `handleBtnClick` method that our button will use.
 
   ```js
-  render() {
     return (
-      <UserContext.Provider value={this.state}>
+      <UserContext.Provider value={{ user, users, capitalizeFirstLetter, handleBtnClick }}>
         <div>
           <h1 className="text-center">Welcome to LinkedUp</h1>
           <h3 className="text-center">Click on the arrows to browse users</h3>
@@ -785,7 +782,6 @@ const Alert = (props) => {
         </div>
       </UserContext.Provider>
     );
-  }
   ```
 
 * Open [UserContext.js Solved](../../../../01-Class-Content/20-react/01-Activities/12-Stu_DynamicContext/src/utils/UserContext.js) in your IDE and point out the following:
@@ -833,7 +829,7 @@ const Alert = (props) => {
 
 * Open up `App.js` point out the following:
 
-  * There's a new getUserToken method that returns a dummy value.
+  * There's a new `getUserToken` method that returns a dummy value.
 
   * We've split our state into two objects. This makes it much easier to separate the two contexts.
 
@@ -969,14 +965,16 @@ const Alert = (props) => {
 
   * Point out that **both** the `UserContext.Provider` and the `LanguageContextProvider` wrap the contents of the entire page. Even though the `LanguageSelector` does not use the `UserContext`, there is no harm in wrapping components with Providers they do not need.
 
-  * Also note that the User Context Provider wraps the Image Context Provider. It doesn't matter which provider wraps the other, as long as they both wrap an ancestor of the component that will use the `useContext` Hook.
+  * Also note that the User Context Provider wraps the Language Context Provider. It doesn't matter which provider wraps the other, as long as they both wrap an ancestor of the component that will use the `useContext` Hook.
 
-  * We've created an `imageObject` and a `UserObject` so that we can pass their values into their respective providers **without** having to pass the entire state object.
+  * We create language and user objects by individually passing the variables we declared at the top of the file.
+
+  * We don't need to contain the indexes in our context objects since they are only needed in the `Gallery.js` file.
 
   ```js
     return (
-      <UserContext.Provider value={this.state.userObject}>
-        <LanguageContext.Provider value={this.state.languageObject}>
+      <UserContext.Provider value={{user, users, capitalizeFirstLetter, handleUserBtnClick }}>
+        <LanguageContext.Provider value={{language, languages, handleLanguageBtnClick}}>
           <div>
             <h1 className="text-center">Welcome to LinkedUp</h1>
             <h3 className="text-center">Click on the arrows to browse users</h3>
@@ -990,18 +988,18 @@ const Alert = (props) => {
     );
     ```
 
-  * If maintaining the objects becomes to complex, that often means that it may be worth breaking down the objects and Context objects into smaller objects.
+  * Maintaining large state objects can be complex, often involving the use of the `...` spread operator. In this use case, it was reasonable to create separate variables for each property of each context object.
 
+  * 🗒 Note that we don't need to create states for the `handleBtnClick` or `capitalizeFirstLetter` functions in each context object, since they will never change.
 
   ```js
-  this.setState({
-      imageObject: {
-        image: this.state.imageObject.images[imageIndex],
-        images: this.state.imageObject.images,
-        imageIndex: imageIndex,
-        handleBtnClick: this.handleImageBtnClick
-      }
-    });
+  const [languages, setLanguages] = useState([]);
+  const [language, setLanguage] = useState("");
+  const [languageIndex, setLanguageIndex] = useState(0);
+
+  const [users, setUsers] = useState([]);
+  const [user, setUser] = useState({});
+  const [userIndex, setUserIndex] = useState(0);
   ```
 
 * Address any lingering questions students have.

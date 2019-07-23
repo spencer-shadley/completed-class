@@ -1,14 +1,13 @@
-import React from "react";
+import React, {useContext} from "react";
 import UserContext from "../../utils/userContext";
 import "./style.css";
 
 function CardBtn(props) {
+  const { handleUserBtnClick } = useContext(UserContext)
   return (
-    <UserContext.Consumer>
-      {({ handleBtnClick }) => (
-        <button onClick={handleBtnClick} className={`card-btn ${props["data-value"]}`} {...props} />
-      )}
-    </UserContext.Consumer>
+    <div>
+        <button onClick={handleUserBtnClick} className={`card-btn ${props["data-value"]}`} {...props} />
+    </div>
   );
 }
 

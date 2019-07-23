@@ -61,7 +61,7 @@ function Gallery() {
   }
 
   return (
-    <UserContext.Provider value={{ user, users, userIndex, capitalizeFirstLetter, handleBtnClick }}>
+    <UserContext.Provider value={{ user, users, capitalizeFirstLetter, handleBtnClick }}>
       <div>
         <h1 className="text-center">Welcome to LinkedUp</h1>
         <h3 className="text-center">Click on the arrows to browse users</h3>

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useEffect, useState } from "react";
 import API from "../utils/API";
 import UserContext from "../utils/userContext";
 import CardContainer from "../components/CardContainer";
@@ -6,145 +6,104 @@ import Row from "../components/Row";
 import LanguageContext from "../utils/LanguageContext";
 import LanguageSelector from "../components/LanguageSelector";
 
-class Gallery extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      languageObject: {
-        language: "",
-        languages: [],
-        languageIndex: 0,
-        handleBtnClick: this.handleLanguageBtnClick
-      },
-      userObject: {
-        user: "",
-        users: [],
-        userIndex: 0,
-        handleBtnClick: this.handleUserBtnClick,
-        capitalizeFirstLetter: this.capitalizeFirstLetter
-      }
-    };
-  }
+function Gallery() {
 
-  // When the component mounts, a call will be made to get random users.
-  componentDidMount() {
+  const [languages, setLanguages] = useState([]);
+  const [language, setLanguage] = useState("");
+  const [languageIndex, setLanguageIndex] = useState(0);
+
+  const [users, setUsers] = useState([]);
+  const [user, setUser] = useState({});
+  const [userIndex, setUserIndex] = useState(0);
+
+  useEffect(() => {
     API.getLanguagesList().then((languages) => {
-      this.setState({
-        languageObject: {
-          ...this.state.languageObject,
-          languages: languages,
-          language: languages[0]
-        }
-      });
-      this.loadUsers(languages[0]);
+      setLanguages(languages)
+      setLanguage(languages[0])
+      
+      loadUsers(languages[0]);
     });
-  }
+  }, [])
 
-  capitalizeFirstLetter(string = "") {
+  function capitalizeFirstLetter(string = "") {
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
 
-  nextUser(userIndex) {
+  function nextUser(userIndex) {
     // Ensure that the user index stays within our range of users
-    if (userIndex >= this.state.userObject.users.length) {
+    if (userIndex >= users.length) {
       userIndex = 0;
     }
-    this.setState({
-      userObject: {
-        ...this.state.userObject,
-        user: this.state.userObject.users[userIndex],
-        userIndex: userIndex
-      }
-    });
+    setUser(users[userIndex])
+    setUserIndex(userIndex)
   }
 
-  previousUser(userIndex) {
+  function previousUser(userIndex) {
     // Ensure that the user index stays within our range of users
     if (userIndex < 0) {
-      userIndex = this.state.userObject.users.length - 1;
+      userIndex = users.length - 1;
     }
-    this.setState({
-      userObject: {
-        ...this.state.userObject,
-        user: this.state.userObject.users[userIndex],
-        userIndex: userIndex
-      }
-    });
+    setUser(users[userIndex])
+    setUserIndex(userIndex)
   }
 
-  handleUserBtnClick = (event) => {
+  function handleUserBtnClick(event) {
     // Get the title of the clicked button
     const btnName = event.target.getAttribute("data-value");
     if (btnName === "next") {
-      const userIndex = this.state.userObject.userIndex + 1;
-      this.nextUser(userIndex);
+      const newUserIndex = userIndex + 1;
+      nextUser(newUserIndex);
     } else {
-      const userIndex = this.state.userObject.userIndex - 1;
-      this.previousUser(userIndex);
+      const newUserIndex = userIndex - 1;
+      previousUser(newUserIndex);
     }
   };
 
-  loadUsers = (language) => {
+  const loadUsers = (language) => {
     API.getUsersByLanguage(language).then((users) => {
-      return this.setState({
-        userObject: {
-          ...this.state.userObject,
-          users: users,
-          user: users[0]
-        }
-      });
+      setUsers(users)
+      setUser(users[0])
     })
       .catch(err => console.log(err));
   };
 
-  nextLanguage(languageIndex) {
+  function nextLanguage(languageIndex) {
     // Ensure that the language index stays within our range of languages
-    const languages = this.state.languageObject.languages;
     if (languageIndex >= languages.length) {
       languageIndex = 0;
     }
-    this.loadUsers(languages[languageIndex]);
-    this.setState({
-      languageObject: {
-        ...this.state.languageObject,
-        language: languages[languageIndex],
-        languageIndex: languageIndex
-      }
-    });
+    loadUsers(languages[languageIndex]);
+
+    setLanguage(languages[languageIndex])
+    setLanguageIndex(languageIndex)
   }
 
-  previousLanguage(languageIndex) {
+  function previousLanguage(languageIndex) {
     // Ensure that the language index stays within our range of languages
-    const languages = this.state.languageObject.languages;
     if (languageIndex < 0) {
       languageIndex = languages.length - 1;
     }
-    this.loadUsers(languages[languageIndex]);
-    this.setState({
-      languageObject: {
-        ...this.state.languageObject,
-        language: languages[languageIndex],
-        languageIndex: languageIndex
-      }
-    });
+    loadUsers(languages[languageIndex]);
+    
+    setLanguage(languages[languageIndex])
+    setLanguageIndex(languageIndex)
   }
 
-  handleLanguageBtnClick = (event) => {
+  function handleLanguageBtnClick(event) {
     // Get the title of the clicked button
     const btnName = event.target.getAttribute("data-value");
     if (btnName === "next") {
-      const languageIndex = this.state.languageObject.languageIndex + 1;
-      this.nextLanguage(languageIndex);
+      const newLanguageIndex = languageIndex + 1;
+      nextLanguage(newLanguageIndex);
     } else {
-      const languageIndex = this.state.languageObject.languageIndex - 1;
-      this.previousLanguage(languageIndex);
+      const newLanguageIndex = languageIndex - 1;
+      previousLanguage(newLanguageIndex);
     }
   };
 
-  render() {
     return (
-      <UserContext.Provider value={this.state.userObject}>
-        <LanguageContext.Provider value={this.state.languageObject}>
+      <UserContext.Provider value={{user, users, capitalizeFirstLetter, handleUserBtnClick }}>
+        <LanguageContext.Provider value={{language, languages, handleLanguageBtnClick}}>
           <div>
             <h1 className="text-center">Welcome to LinkedUp</h1>
             <h3 className="text-center">Click on the arrows to browse users</h3>
@@ -157,6 +116,6 @@ class Gallery extends Component {
       </UserContext.Provider>
     );
   }
-}
+
 
 export default Gallery;
