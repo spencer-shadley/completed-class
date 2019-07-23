@@ -618,9 +618,120 @@ const debouncedSearchTerm = useDebounce(search, 500);
 
 ### 14. Students Do: Third Party Hooks (20 mins)
 
-@TODO Third Party Hooks activity
+* If time permits, introduce students to [16-ThirdPartyHooks/Unsolved/](../../../../01-Class-Content/21-react/01-Activities/16-ThirdPartyHooks/Unsolved/README.md). Since this activity uses third party Hooks, only proceed with this activity if the students seem to have a solid grasp of Hooks. Otherwise, spend the rest of class answering lingering questions, reviewing, and skimming over the solution with the class.
+
+  * In this activity we will practice using third party Hooks. Specifically, we will be creating a survey form using the `react-hanger` package on npm.
+
+  * Let the students know that `react-hanger` is one of many custom Hooks packages on GitHub. This package contains multiple custom 
+
+  ```md
+  * Replace your React application's src folder with [Unsolved/src](Unsolved/src).
+
+  * Install react-hanger by running `npm install react-hanger` in your terminal.
+
+  * **Recommended:** Add the Bootstrap and Font Awesome CDNs to your application's `index.html` file:
+
+    ```html
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    ```
+
+  * Start the application in dev mode by running `npm start` in your terminal.
+
+  * Open your browser to [localhost:3000](http://localhost:3000) and study the rendered application.
+
+    * There are a few fields in our survey form. Before writing any code, try thinking about how you would manage the state of this form. 
+
+  * Navigate to the [react-hanger docs](https://github.com/kitze/react-hanger) familiarize yourself with the `useInput`, `useBoolean`, and `useNumber` Hooks.
+
+  * Update this application to accomplish the following:
+
+    * Each user input should be handled using the `react-hanger` Hooks.
+
+    * When the user clicks an emoji, indicate which type of response they selected by displaying the text: `You responded that you feel FEELING`. `FEELING` should be replaced with the value of the emoji that they clicked.
+
+    * Make your survey form a little more dynamic by displaying a field for additional comments when the user clicks on an emoji.
+
+    * When the form is submitted, `console.log` an object containing all of the values from the form.
+
+  ### Hints
+
+  * There are many ways to satisfy the requirements of this application. It is recommended that you attempt the most straightforward solution first, then refactor your working app.
+
+  ```
 
 ### 15. Instructor Do: Review Third Party Hooks (10 mins)
+
+* Replace your React application's src folder with [16-ThirdPartyHooks/Solved](../../../../01-Class-Content/21-react/01-Activities/16-ThirdPartyHooks/Solved/src) and start the development server by running `npm start`. See the rendered application at [localhost:3000](http://localhost:3000).
+
+* Demonstrate that the application satisfies the requirements:
+
+  * Fill out each field in the form with dummy data.
+
+  * Click `submit`.
+
+  * Open the console and show that the form object contains the value from each field.
+
+* Open [Survey/index.js solved](../../../../01-Class-Content/21-react/01-Activities/16-ThirdPartyHooks/Solved/src/pages/Survey/index.js) in your IDE and demonstrate the following:
+
+  * Even though we used `textarea` instead of `input`, we can still use the `useInput` hook.
+
+  * `showComment` is initialized to `false` so that the additional input field is not visible initially.
+
+  * Since we will be setting the rating manually, we do not need to give it upper and lower bounds.
+
+  ```js
+  const favoriteThing = useInput("");
+  const showComment = useBoolean(false);
+  const comment = useInput("");
+  const feeling = useInput("");
+  const rating = useNumber(0)
+  ```
+
+  * Our form object contains the value of each field. Since `showComment` is only used for display purposes, we do **not** include it in the form object.
+
+  ```js
+  const handleSubmit = () => {
+    const form = {
+      favoriteThing: favoriteThing.value,
+      comment: comment.value,
+      feeling: feeling.value,
+      rating: rating.value
+    }
+    console.log(form)
+  }
+  ```
+
+  * `...favoriteThing.eventBind` binds both the `value` and the `onChange` props of an element, as long as it has a `event.target.value`.
+
+  * This single method would also work with input fields and select elements.
+
+  ```js
+  <textarea {...favoriteThing.eventBind} />
+  ```
+
+  * It is very important that we include `role="img"` and `aria-label="angry"` to make the emojis accessible.
+
+  * The onClick method toggles our `showComment` boolean and sets the feeling value to angry.
+
+  ```js
+  <span role="img" aria-label="angry" 
+    onClick={() => {showComment.toggle(); feeling.setValue("angry")} }>
+      😠
+  </span>
+  ```
+
+  * We use a ternary operator so that the additional comments textarea only renders if the `showComment` boolean is true.
+
+  * Once again, `onClick` and `value` are bound to the comment variable.
+
+  ```js
+  <div className="response">
+    {showComment.value ? (
+      <textarea {...comment.eventBind} placeholder="Please add any additional comments" />
+    ): null}
+  </div>
+  ```
 
 - - -
 
