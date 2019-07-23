@@ -496,7 +496,11 @@ In this activity you are going to work with the Intersection Observer API to imp
 ```js
 function initLazyImages() {
   const lazyImages = document.querySelectorAll(".lazy-image");
+```
 
+  * First we create a `const` called `lazyImages`. We save all elements with the class `lazy-image` to this constant variable
+
+```js
   function onIntersection(imageEntities) {
     imageEntities.forEach(image => {
       if (image.isIntersecting) {
@@ -505,22 +509,24 @@ function initLazyImages() {
       }
     });
   }
+```
+  * Next, we create an `onIntersection` function. In this function we state that for each mage, if the image is intersecting the viewport we load our image and stop observing it as it is now on screen.
 
+```js
   const observer = new IntersectionObserver(onIntersection);
+```
 
+  * We used a constructor function to create a new instance of IntersectionObserver, saving it to a constant variable `observer`. This allowed us to use it in our `onIntersection` function.
+
+```js
   lazyImages.forEach(image => observer.observe(image));
 }
 ```
+  * The final line subscribes all images to be observed by IntersectionObserver to it can download the proper image when the placeholder is scrolled into view.
 
-* First we create a `const` called `lazyImages`. We save all elements with the class `lazy-image` to this constant variable
+* Answer any questions before introducing the final activity.
 
-* Next, we create an `onIntersection` function. In this function we state that for each mage, if the image is intersecting the viewport we load our image and stop observing it as it is now on screen.
-
-* We used a constructor function to create a new instance of IntersectionObserver, saving it to a constant variable `observer`. This allowed us to use it in our `onIntersection` function.
-
-* The final line subscribes all images to be observed by IntersectionObserver to it can download the proper image when the placeholder is scrolled into view.
-
-### 18. Intro Final Activity (5 mins)
+### 18. Instructor Do: Intro Gallery App Full Optimization (5 mins)
 
 * Let students know they did a great job today. Web performance is important, and they now have a foundation to learn more and become great at optimizing applications.
 
@@ -528,9 +534,11 @@ function initLazyImages() {
 
 ### 19. Student Do: Optimize Gallery App (25 mins)
 
-* Slack out the following [Solved Lazy Loading Gallery](../../../../01-Class-Content/18-web-performance/01-Activities/06-Stu_Gallery-Optimize/Solved)
+* Direct students to the activity instructions found in [Solved Lazy Loading Gallery](../../../../01-Class-Content/18-web-performance/01-Activities/06-Stu_Gallery-Optimize/Solved)
 
-* **Instructions**
+```md
+
+## Instructions
 
 * Now that you have implemented lazy loading into your application, you will take it the final steps of the way to being optimized.
 
@@ -574,6 +582,7 @@ function initLazyImages() {
   * Go through the same process with the remaining JS files in the project.
 
 * Finally, restart your server and run a new audit.
+```
 
 ### 20. Instructor Do: Review Final Gallery App (5 mins)
 
