@@ -7,7 +7,9 @@ Today's class will continue our journey into web performance by learning about p
 
 ## Instructor Notes
 
-@TODO
+* You may need to clear your storage periodically in order to see each iteration of activities. Do so in DevTools under `Application > Clear storage > Clear site data`.
+
+@TODO what else
 
 
 ## Learning Objectives
@@ -65,59 +67,28 @@ Today's class will continue our journey into web performance by learning about p
 
   *  What is a progressive web application?
   
+  @TODO more detailed definition
   *  Progressive web applications (PWAs) are a new trend in web development that can solve problems users face with native apps and web apps.
   
-  *  What do we mean by 'native' app?
+  *  What is meant by the term 'native' app?
   
   *  The term "native app" refers to applications written for specific platforms. For example, native iPhone apps are written in iOs and Android apps are primarily written in Java. Apple apps will not run on Android devices and vice versa. 
 
-  *  Can you explain what makes it different from a mobile or web app?
+  *  How are PWAs different from native apps?
 
-  * What are the pieces involved in a PWA?
+  *  Traditional Mobile Apps require multiple builds across platforms, are less discoverable by search engines and have high abandonment rates.They also offer less usability and don’t leverage mobile device capabilities and are often slow and bloated. PWA's provide advantages of both web and mobile apps such as push notifications, offline experiences,speed and stability. Plus, you can convert a web app into a PWA quickly without the build time of a mobile app.
   
+  * What do we need to learn to convert Notetaker into a progressive web application?
+
+  * 
   
- @TODO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+@TODO the notetaker app does not work in offline mode
 
+* Open your Chrome Developer tools and navigate to the Application tab. 
 
-* Briefly cover the difference between traditional mobile apps, web apps and PWA's below.
-
-* **Traditional Mobile Apps**
-
-  * Require multiple builds across platforms, are less discoverable by search engines and have high abandonment rates.
-
-* **Traditional Web Apps**
-
-  * Offer less usability and don’t leverage mobile device capabilities and are often slow and bloated.
-
-* **Progressive Web Apps**
-
-  * PWA's provide advantages of both web and mobile apps such as push notifications, offline experiences,speed and stability. Plus, you can convert a web app into a PWA quickly without the build time of a mobile app. This is what we are going to do today.
-
-* To build more context, demo the following PWA [https://hightide.earth/](https://hightide.earth/).
-
-* Open your Chrome Developer tools and navigate to the Application tab.
-
-  * Briefly demo the  `Manifest`, `Service Workers` and `Cache Storage` tabs by clicking onto each.
+  * If we look under the Application tab in DevTools for our "Notetaker PWA", we see **Manifest**, **Service Workers** and **Cache Storage** panels.
 
     ![Application Sidebar](Images/application-sidebar.png)
-
-* Tell the class that we will be going into depth today with these three technologies as they are what help build progressive web apps.
-
-* Now that you've provided context of what a PWA is, demo the completed Gallery App that students will be converting today.
-
-* Show students what they'll be building towards today and and change into [03-Stu_Caching-Fetching-Files/Solved/Gallery-App-Caching](../../../../01-Class-Content/18-pwa/Activities/03-Stu_Caching-Fetching-Files/Solved/Gallery-App-Caching). This project uses MongoDB, so run the following command to start the mongo daemon.
-
-  * `mongod`
-
-* Then in a new terminal tab run each of the following:
-
-  * `npm install`
-  * `npm run seed`
-  * `npm start`
-
-* And visit <http://localhost:3000> in your web browser to see the running application.
-
-* Tell the class that this app currently is a PWA and is completely functional offline.
 
 * Open up your Chrome Dev Tools and navigate to the `Application` tab to demonstrate the `manifest.webmanifest`, `Service Worker` and `Cache Storage` tabs as done earlier.
 
@@ -127,21 +98,27 @@ Today's class will continue our journey into web performance by learning about p
 
   * Demonstrate how the application still delivers a full experience even though it is offline.
 
-* Finally demonstrate how the application can be installed similar to a desktop app.
-
-* Before moving on take any high level questions about PWA's, manifests, service workers and caching.
+* Answer any questions before proceeding to the next demo. 
 
 ### 2. Instructor Do: Web App Manifest (5 mins)
 
-* In this demonstration, students will learn what goes into creating a [web app manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest).
+@TODO instructor needs a demo!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-* Tell the class that a web app manifest is a simple JSON file containing some metadata about a web application. Later when we add functionality to make our web app installable, it will be used to describe the installed application's name, icon, description, and more.
+@TODO demo manifest in deployed app
+* Open [ ](@TODO) in your browser and under Application in DevTools, select Manifest and explain the following: 
 
-* It's a way to create a better experience for your users and is typically the first step you take when creating a progressive web app.
+  * 
 
-* Explain that by using a web app manifest, your web app can:
+@TODO demo example of a manifest file
+* Open [08-Ins_Manifest]@TODO) and explain the following: 
 
-  * Tell the browser you want your app to open in a standalone window (display).
+  * A web app manifest is a simple JSON file containing some metadata about a web application. Later when we add functionality to make our web app installable, it will be used to describe the installed application's name, icon, description, and more. 
+  
+ ```js
+ @TODO insert manifest example
+ ```
+  
+  * By using a web app manifest, our app can tell the browser you want your app to open in a standalone window (display).
 
   * Define what page is opened when the app is first launched (start_url).
 
@@ -150,80 +127,51 @@ Today's class will continue our journey into web performance by learning about p
   * Create a splash screen (name, icons, colors).
 
   * Tell the browser to open the window in landscape, or portrait mode (orientation).
+  
+* Open (...index.html)(@TODO) in your IDE and point out the following: 
 
-* Web app manifests are deployed in your HTML pages using a `<link>` element in the `<head>` of a document:
+  * Web app manifests are deployed in your HTML pages using a `<link>` element in the `<head>` of a document:
 
   * `<link rel="manifest" href="/manifest.webmanifest">`
 
-Demonstrate the web manifest in [03-Stu_Caching-Fetching-Files/Solved/Gallery-App-Caching](../../../../01-Class-Content/18-pwa/Activities/03-Stu_Caching-Fetching-Files/Solved/Gallery-App-Caching) and point out how the icon and name of the installed app match the web manifest.
+@TODO transition!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-* Slack out and demonstrate the example manifest:
-
-* Take any clarifying questions before moving on to the student activity.
 
 ### 3. Student Do: Web App Manifest (10 mins) (CRITICAL)
 
-* Direct students to their first activity found in [Unsolved/Gallery-App-Manifest](../../../../01-Class-Content/18-pwa/Activities/01-Stu_Web-App-Manifest/Unsolved/Gallery-App-Manifest)
+* Direct students to the activity instructions found in [Unsolved/Gallery-App-Manifest](../../../../01-Class-Content/18-pwa/Activities/01-Stu_Web-App-Manifest/Unsolved/Gallery-App-Manifest)
 
-* **Instructions**
-
-* Change into `Unsolved/Gallery-App-Manifest`.
-
-* Inside the public directory, create a `manifest.webmanifest` file and add `<link rel="manifest" href="manifest.webmanifest">` to your `index.html` `<head>` tag.
-
-* Using the following code as a guide, create a manifest file for your Gallery App.
-
-```json
-{
-  "name": "Example Name",
-  "short_name": "Example Short Name",
-  "icons": [
-    {
-      "src": "/path/to/icon",
-      "sizes": "72x72",
-      "type": "image/png"
-    }
-  ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
-  "start_url": "/",
-  "display": "standalone"
-}
+```md
+@TODO add instructions
 ```
-
-* When you are done, launch the app by running the following commands in your terminal.
-
-  * `npm install`
-  * `npm run seed`
-  * `npm start`
-
-* Visit <http://localhost:3000> and open your Chrome Devtools, navigating to Application > Manifest.
-
-* If successful you will see your manifest file loaded.
-
-![Manifest](Images/manifest.png)
-
-* **Bonus**
-
-* Visit [https://developer.mozilla.org/en-US/docs/Web/Manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest) and add two new attributes to your manifest file.
 
 ### 4. Instructor Do: Review Web App Manifest (5 mins)
 
-Once more, demonstrate the web manifest in [03-Stu_Caching-Fetching-Files/Solved/Gallery-App-Caching](../../../../01-Class-Content/18-pwa/Activities/03-Stu_Caching-Fetching-Files/Solved/Gallery-App-Caching).
+* Open [...public/manifest.webmanifest](@TODO) in your IDE and explain the following:
 
-* Then re-launch the Gallery App.
+  ```json
+  
+  @TODO insert codez!
+  
+  ```
 
-* Visit <http://localhost:3000> in your browser, open your Chrome Developer tools and navigate to the manifest tab.
 
-  ![Manifest with missing service worker](Images/manifest-missing-service-worker.png)
+  
 
-* Demonstrate how the data entered into the manifest is displayed here, but we're getting a message about a missing service worker.
 
-  * We'll talk about this soon, but for now explain that a service worker, among other things, allows us to make our application installable.
+* Ask the class the following question(s): 
 
-* Take any clarifying questions before moving on.
+  * What's next on our list of things to do?
+  
+  *  Add a service worker!
+
+
 
 ### 5. Instructor Do: Intro To Service Workers (15 mins) (CRITICAL)
+
+@TODO need an instructor demo!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+* Run [ ](../../../../01-Class-Content/18-pwa/Activities/03-Stu_Caching-Fetching-Files/Solved/Gallery-App-Caching) and re-launch the Gallery app if it is not already running.
 
 * Tell the class that a service worker is a script that your browser runs in the background on a separate thread from your webpage.
 
@@ -235,7 +183,7 @@ Once more, demonstrate the web manifest in [03-Stu_Caching-Fetching-Files/Solved
 
   * **Thread** A thread is an independent set of values for the processor that controls what executes in what order. Think of this as another JavaScript application running at the same time as our main application, with the ability to communicate and pass data between threads.
 
-* Change into [03-Stu_Caching-Fetching-Files/Solved/Gallery-App-Caching](../../../../01-Class-Content/18-pwa/Activities/03-Stu_Caching-Fetching-Files/Solved/Gallery-App-Caching) and re-launch the Gallery app if it is not already running.
+
 
 * Open your Chrome Dev Tools > Application and click on the Service Worker tab.
 
@@ -257,9 +205,8 @@ Once more, demonstrate the web manifest in [03-Stu_Caching-Fetching-Files/Solved
 
 * Successful registration of the Service Worker means that the script has been successfully parsed, it is on the same origin as the document, and the origin is HTTPS.
 
-* In the next activity we will learn how to install and activate our service worker.
 
-* Take any clarifying questions before moving on to the student activity.
+
 
 ### 6. Student Do: Register Service Worker (10 mins) (HIGH)
 
@@ -295,6 +242,7 @@ console.log("Hello from your service worker file!");
   ![Service Worker Console](Images/sw-console.png)
 
 * If you are stuck and need help troubleshooting please ask a TA!
+
 
 ### 7. Instructor Do: Review Register Service Worker (5 mins)
 
@@ -444,6 +392,7 @@ self.addEventListener('fetch', function(evt) {
 });
 ```
 
+@TODO yes, there is; let's fix it
 * There is quite a bit of code here so take the time to step through it, clarifying any questions as you go.
 
   * Remind students to focus on the big picture of creating an offline experience and the details will fall into place.
@@ -452,7 +401,8 @@ self.addEventListener('fetch', function(evt) {
 
 * Take any clarifying questions before moving on.
 
-### 10. Student Do: Caching and Fetching Files (10 mins) (CRITICAL)
+
+### Student Do: Caching Files (10 mins) (CRITICAL)
 
 * Direct students to the next activity located in [Unsolved/Gallery-App-Caching](../../../../01-Class-Content/18-pwa/Activities/03-Stu_Caching-Fetching-Files/Unsolved/Gallery-App-Caching).
 
@@ -505,6 +455,10 @@ self.addEventListener('install', function(evt) {
 * If done successfully, you should see your static cache in your Application tab.
 
   ![Static Cache](Images/static-cache.png)
+  
+  
+  
+@TODO is this a demo or activity?
 
 * **Activate Service Worker**
 
@@ -526,6 +480,9 @@ self.addEventListener('activate', function(evt) {
   self.clients.claim();
 });
 ```
+
+
+### Student Do: Fetching Files ( mins) 
 
 * **Fetch Files**
 
@@ -569,7 +526,6 @@ self.addEventListener('fetch', function(evt) {
 
   ![Offline](Images/offline.png)
 
-* If you are stuck please ask a TA for help.
 
 ### 11. Instructor Do: Review Caching and Fetching Files (5 mins)
 
@@ -580,6 +536,8 @@ self.addEventListener('fetch', function(evt) {
 * There is a lot of code here, reiterate that it is ok if they don't completely understand every line, fluency will come with practice.
 
 * After stepping through the code take any questions before moving on.
+
+
 
 ### 12. Instructor Do: Intstalling Your App (5 mins) (HIGH)
 
