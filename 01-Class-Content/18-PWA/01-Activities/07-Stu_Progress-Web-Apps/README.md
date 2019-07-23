@@ -16,9 +16,8 @@ In this activity, you will install a progressive web application (PWA) using you
 
     * How do we create progressive web applications?
 
-    * What are examples of popular PWAs?
 
 ## Bonus
 
-@TODO
+* What are examples of popular PWAs?
 
