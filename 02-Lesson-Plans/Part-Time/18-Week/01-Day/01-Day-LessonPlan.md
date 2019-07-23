@@ -304,21 +304,21 @@ In this activity you are going to use an NPM package called compression to enabl
 
 ### 10. Instructor Do: Review Compression (5 mins)
 
-* Go over the basic code that allows for us to enable compression via the compression npm package
+* Open [03-Stu_Enable-Compression](../../../../01-Class-Content/18-PWA/01-Activities/03-Stu_Enable-Compression/Solved) in your IDE and explain the following points
 
-* We first `npm install compression`
+  * We first `npm install compression`
 
-* We then add the following code to our `server.js`:
+  * We then add the following code to our `server.js`:
 
-```js
-const express = require("express");
-const mongoose = require("mongoose");
-const compression = require("compression");
+  ```js
+  const express = require("express");
+  const mongoose = require("mongoose");
+  const compression = require("compression");
 
-const app = express();
+  const app = express();
 
-app.use(compression());
-```
+  app.use(compression());
+  ```
 
 * Answer any questions before proceeding to break.
 
