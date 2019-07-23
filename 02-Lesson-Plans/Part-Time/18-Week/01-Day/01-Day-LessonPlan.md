@@ -398,34 +398,42 @@ In this activity you are going to use an online compression tool to decrease ima
 
 * Ask the class, "What if a user doesn't scroll through all of the images?"
 
-  * We have wasted a lot of time and memory downloading assets we are not going to use.
+  * Now that we have compressed all of our images, we are certainly saving space. Point out, we are loading all 38 images when there is only 6-9 images showing at any time. If a students user is on mobile, it would only be 1-2 images at any time.
 
   * This poses multiple problems. It not only makes loading slower, but is costly when it comes to data and those people using mobile who may not have an unlimited data plan. We certainly don't want to cost our user time and money, so what can be done?
+
+* Ask the class, "Why do we load all of the images at page load, if the user might not see them all?"
+
+  * Loading everything at once is the default. There is a concept in programming referred to as `lazy loading` that allows us to only download assets as they are needed.
 
 * Use students answers to transition to the next activity.
 
 ### 15. Instructor Do: Lazy Loading (10 mins)
 
-* Run [Gallery App Lazy Load](../../../../01-Class-Content/18-web-performance/01-Activities/05-Stu_Gallery-Lazy-Load/Solved. Navigate to localhost:3000 and explain the following points:
+* Open our completed [Lazy Loading Gallery App](https://ancient-brushlands-76706.herokuapp.com/) and demo the lazy loading functionality by scrolling to the bottom of the page.
 
-  * Now that we have compressed all of our images, we are certainly saving space. Point out, we are loading all 38 images when there is only 6-9 images showing at any time. If a students user is on mobile, it would only be 1-2 images at any time.
+  * If it loads too quickly, open your `Network` tab in your Dev Tools and throttle to `slow 3g`, disable cache, and refresh the page.
 
-* Open your Developer Tools and navigate to the `Network` tab. Disable your cache, and click the `img` tab within `Network`.
+  * ![Throttle Connection](Images/throttleConnection.png)
 
-  ![Cache Disabled and Img](Images/cacheImage.png)
+* Ask the class, "What would enable us to know when an image is coming into the users viewport?"
 
-* Refresh the page and show point students to all the images being loaded. A lot of time, downloading, and data right?
+  * A Web API based on `scroll` events and the viewport intersection would allow us to keep an eye on when an element is or is not in view of our user.
 
-* Introduce the concept of lazy loading.
+  * In the case of this application, we are loading 38 images when we may not need them all. Using lazy loading, If images were scrolled onto the screen that event would then load the images if they had entered the viewport.
 
-  * Lazy loading allows us to load assets as they are needed, instead of downloading all of them right at page load. If something isn't being used, why should it be downloaded?
+* Ask the class, "What web API would allow us this functionality?
 
-* In the case of this application, we are loading 38 images when we may not need them all. Before, we used to have to use a `scroll` event. This event would check if images were scrolled onto the screen, and that event would then load the images if they had entered the viewport.
+  * The `Intersection Observer API`. It provides a way to asynchronously observe when an element is or is not within our users viewport. 
 
-  * We can now use something called the `Intersection Oberserver API`.
+  * We can use this API to watch and then target elements as they enter the viewport
 
-* The `Intersection Observer API` provides a way to asynchronously observe changes in the intersection of a target element with an ancestor element or with a top-level document's viewport.
+* Ask the class, "How can the Intersection Observer API help us with loading images?"
 
+  * We are able to target images we would like, and observe them. As they enter the viewport of our user we can trigger a function that will then and only then load the image that has entered the viewport.
+
+  * Let's look at a code snippet that enables image lazy loading via JavaScript.
+  
 * Walk through the comments below:
 
 ```js
@@ -450,12 +458,6 @@ function initLazyImages() {
   lazyImages.forEach(image => observer.observe(image));
 }
 ```
-
-* Open our completed [Lazy Loading Gallery App](https://ancient-brushlands-76706.herokuapp.com/) and demo the lazy loading functionality by scrolling to the bottom of the page.
-
-  * If it loads too quickly, open your `Network` tab in your Dev Tools and throttle the internet speed, disable cache, and refresh the page.
-
-  * ![Throttle Connection](Images/throttleConnection.png)
 
 * Ask the class, "How does this benefit our user?"
 
