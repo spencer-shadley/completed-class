@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Creating Indexes</title>
+  </head>
+
+  <body>
+    <script>
+      var request = indexedDB.open("todo", 1);
+
+      request.onerror = function(event) {
+        console.log(request.errorCode);
+      };
+
+      // Creating an object store and indexes when onupgradeneeded is called.
+      request.onupgradeneeded = function(event) {
+        var db = event.target.result;
+
+        var objectStore = db.createObjectStore("todo", { keyPath: "taskTitle" });
+        objectStore.createIndex("backlog", "backlog", { unique: false });
+        objectStore.createIndex("inprogress", "inprogress", { unique: false });
+        objectStore.createIndex("complete", "complete", { unique: false });
+      };
+
+      request.onsuccess = function(event) {
+        console.log(request.result);
+      };
+
+    </script>
+  </body>
+</html>
+
+In order to query data in our objectStore, we have to create indexes that we can search.
+
+```js
+var myIDBIndex = objectStore.createIndex(indexName, keyPath);
+```
+
+indexName: What you use to access that index. 
+keyPath: The actual name of the "column." 
+
+https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/createIndex

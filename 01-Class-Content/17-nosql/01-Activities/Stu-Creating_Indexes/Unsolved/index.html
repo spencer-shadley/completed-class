@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Creating Indexes</title>
+  </head>
+
+  <body>
+    <script>
+      var request = indexedDB.open("movieDB", 1);
+
+      request.onerror = function(event) {
+        console.log(request.errorCode);
+      };
+
+      request.onsuccess = function(event) {
+        console.log(request.result);
+      };
+
+      request.onupgradeneeded = function(event) {
+        // create an object store and add indexes
+      };
+    </script>
+  </body>
+</html>

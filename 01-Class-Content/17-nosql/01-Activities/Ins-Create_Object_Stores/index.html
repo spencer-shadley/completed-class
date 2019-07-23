@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Creating An Object Store</title>
+  </head>
+
+  <body>
+    <script>
+      // We request a database instance
+      var request = indexedDB.open("todo", 1);
+
+      request.onerror = function(event) {
+        console.log(request.errorCode);
+      };
+      
+      // Create an object store
+      request.onupgradeneeded = function(event) {
+        var db = event.target.result;
+        var objectStore = db.createObjectStore("todo");
+      };
+
+      request.onsuccess = function(event) {
+        console.log(request.result);
+      };
+
+    </script>
+  </body>
+</html>
+
+You create the db schema in the onupgradeneeded handler. The first part of creating a schema is creating an object store.
+
+The version of the database determines
+the database schema — the object stores in the database and their structure. If
+the database doesn't already exist, it is created by the open operation, then an
+onupgradeneeded event is triggered and you create the database schema in the
+handler for this event. If the database does exist but you are specifying an
+upgraded version number, an onupgradeneeded event is triggered straight away,
+allowing you to provide an updated schema in its handler.

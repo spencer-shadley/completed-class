@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Adding Store Data</title>
+  </head>
+
+  <body>
+    <script>
+      var request = indexedDB.open("todoDatabase", 1);
+
+      request.onerror = function(event) {
+        console.log(request.errorCode);
+      };
+
+      request.onupgradeneeded = function(event) {
+        db = event.target.result;
+        db.createObjectStore("toDoList", { autoIncrement: true });
+        
+        objectStore = request.transaction.objectStore("toDoList");
+        objectStore.createIndex("timestamp", "timestamp");
+      };
+
+
+      request.onsuccess = function(event){
+        db = event.target.result;
+
+        const transaction = db.transaction(["toDoList"], "readwrite");
+        const store = transaction.objectStore("toDoList");
+
+        const toDo = {
+          text: "Learn IndexedDB",
+          timestamp: Date.now()
+        };
+
+        store.add(toDo);
+      };
+    </script>
+  </body>
+</html>

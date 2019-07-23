@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Making An IndexedDB Connection</title>
+  </head>
+
+  <body>
+    <h1>Open Your Console!</h1>
+    <script>
+      var request = indexedDB.open("firstDB", 1);
+
+      request.onerror = function(event) {
+        alert(request.errorCode);
+      };
+
+      request.onsuccess = function(event) {
+        console.log(request.result.name);
+      };
+    </script>
+  </body>
+</html>
