@@ -382,33 +382,39 @@ In this activity you are going to use an online compression tool to decrease ima
 
 ### 14. Instructor Do: Review Image Compression (5 mins)
 
-* This was a more simple activity, and won't have much to review.
+* Ask the class the following question(s):
 
-* Ask the class:
+* Did you see a loss in image quality?
 
-  * Do you see the benefits of compressing images?
+  * Image compression allows us to lower load times for our users without a loss of visual fidelity.
 
-  * Did you see a loss in image quality?
+* Do you see the benefits of compressing images?
 
-* If we can save space while maintaining visual quality, that is a win win. It allows for high resolution images for our page while still decreasing download/load times for our user.
+  * When we can save space while maintaining visual quality, that is a win win. It allows for us to have high resolution images for our page while we are still decreasing download/load times for our user.
 
-### 15. Instructor Do: Lazy Loading (10 mins)
+* What are some other things we can do to decrease our load times?
 
-* Now that we have compressed all of our images, we are certainly saving space. Point out, we are loading all 38 images when there is only 6-9 images showing at any time. If a students user is on mobile, it would only be 1-2 images at any time.
+  * We can load only images that are present on the screen. If the image is not visible to the user, we shouldn't bother downloading it yet.
 
-  * What if a user doesn't scroll through all of them? We have wasted a lot of time and memory downloading assets we are not going to use.
+* Ask the class, "What if a user doesn't scroll through all of the images?"
+
+  * We have wasted a lot of time and memory downloading assets we are not going to use.
 
   * This poses multiple problems. It not only makes loading slower, but is costly when it comes to data and those people using mobile who may not have an unlimited data plan. We certainly don't want to cost our user time and money, so what can be done?
 
-* Open [Gallery App Lazy Load](../../../../01-Class-Content/18-web-performance/01-Activities/05-Stu_Gallery-Lazy-Load/Solved)
+* Use students answers to transition to the next activity.
 
-  * Run the program and navigate to <http://localhost:3000>.
+### 15. Instructor Do: Lazy Loading (10 mins)
 
-  * Open your Developer Tools and navigate to the `Network` tab. Disable your cache, and click the `img` tab within `Network`.
+* Run [Gallery App Lazy Load](../../../../01-Class-Content/18-web-performance/01-Activities/05-Stu_Gallery-Lazy-Load/Solved. Navigate to localhost:3000 and explain the following points:
+
+  * Now that we have compressed all of our images, we are certainly saving space. Point out, we are loading all 38 images when there is only 6-9 images showing at any time. If a students user is on mobile, it would only be 1-2 images at any time.
+
+* Open your Developer Tools and navigate to the `Network` tab. Disable your cache, and click the `img` tab within `Network`.
 
   ![Cache Disabled and Img](Images/cacheImage.png)
 
-  * Refresh the page and show point students to all the images being loaded. A lot of time, downloading, and data right?
+* Refresh the page and show point students to all the images being loaded. A lot of time, downloading, and data right?
 
 * Introduce the concept of lazy loading.
 
@@ -420,13 +426,42 @@ In this activity you are going to use an online compression tool to decrease ima
 
 * The `Intersection Observer API` provides a way to asynchronously observe changes in the intersection of a target element with an ancestor element or with a top-level document's viewport.
 
+* Walk through the comments below:
+
+```js
+function initLazyImages() {
+  // Gather all of our images into a variable
+  const lazyImages = document.querySelectorAll(".lazy-image"); 
+  
+  function onIntersection(imageEntities) {
+    imageEntities.forEach(image => {
+      // When the image begins to intersect viewport, execute the if code block
+      if (image.isIntersecting) {
+        // Now that it is in viewport, we do not need to observe it anymore.
+        observer.unobserve(image.target);
+        // Set the image src to the image that has entered viewport.
+        image.target.src = image.target.dataset.src;
+      }
+    });
+  }
+  // Create a new instance of Intersection Observer
+  const observer = new IntersectionObserver(onIntersection);
+  // Observe all images on load.
+  lazyImages.forEach(image => observer.observe(image));
+}
+```
+
 * Open our completed [Lazy Loading Gallery App](https://ancient-brushlands-76706.herokuapp.com/) and demo the lazy loading functionality by scrolling to the bottom of the page.
 
   * If it loads too quickly, open your `Network` tab in your Dev Tools and throttle the internet speed, disable cache, and refresh the page.
 
   * ![Throttle Connection](Images/throttleConnection.png)
 
-* The next activity may be a bit tricky so be sure you and your TAs have reviewed the solution and are ready to help students who are stuck.
+* Ask the class, "How does this benefit our user?"
+
+  * By loading only necessary images, we can cut download/load times consistently and ensure as fast an experience as possible.
+
+* Use student answers to transition to the next activity.
 
 ### 16. Student Do: Lazy Loading (15 mins)
 
@@ -447,18 +482,12 @@ In this activity you are going to work with the Intersection Observer API to imp
 
 * Inside of `public/assets/images` is a `.zip` file containing all the images needed for the app. Unzip this file and make sure the contents end up in your images folder.
 
-* Read through the MDN Docs provided below. Use the example code provided and adapt it to work with the `Gallery App`
-
-* **Note**: You will need to make some changes to the code to get it working in your application.
-
-[MDN Progressive Loading](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Loading)
-
 * After you have completed implementing lazy loading, open your Dev Tools and run another Lighthouse Audit.
 ```
 
 ### 17. Instructor Do: Review Lazy Loading (5 mins)
 
-* Open the [solved](../../../../01-Class-Content/18-web-performance/01-Activities/05-Stu_Gallery-Lazy-Load/Solved) Gallery App.
+* Open the [solved Gallery Lazy Loading app](../../../../01-Class-Content/18-web-performance/01-Activities/05-Stu_Gallery-Lazy-Load/Solved/).
 
 * Walk students through the code that enables lazy loading in our application.
 
