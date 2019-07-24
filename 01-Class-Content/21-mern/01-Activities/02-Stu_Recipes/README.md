@@ -22,7 +22,7 @@ In this activity we will render a list of recipes retrieved via an AJAX request.
 
   * The `RecipeList` component renders a `ul` tag and accepts children. The `RecipeListItem` component renders an `li` tag with some formatting to hold the recipe's title, thumbnail, etc.
 
-* Using a `RecipeList` component as a container, map over `this.state.recipes` and render one `RecipeListItem` component for each recipe object in `this.state.recipes`.
+* Using a `RecipeList` component as a container, map over `recipes` and render one `RecipeListItem` component for each recipe object in `recipes`.
 
 * Pass the rendered `RecipeListItem` components each property of their recipe object, i.e. :
 
@@ -62,4 +62,4 @@ In this activity we will render a list of recipes retrieved via an AJAX request.
 
 * Add code so that if a recipe doesn't come with a thumbnail url, use a placeholder image instead. Check out [placehold.it](https://placeholder.com/) for placeholder images.
 
-* Add code so that if `this.state.recipes` is an empty array, render a message indicating that no recipes are available.
+* Add code so that if `recipes` is an empty array, render a message indicating that no recipes are available.

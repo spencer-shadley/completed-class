@@ -18,7 +18,7 @@ In this activity we will add functionality to a full stack React application for
 
   * This example is a reading list application. Currently the app isn't fully functional.
 
-* Open up `client/src/pages/Books.js` and add code so that when the component mounts, it performs an AJAX request to retrieve all of the books in the database. Once the AJAX request is complete, it should set `this.state.books` equal to the array of books.
+* Open up `client/src/pages/Books.js` and add code so that when the component mounts, it performs an AJAX request to retrieve all of the books in the database. Once the AJAX request is complete, it should set `books` equal to the array of books.
 
 * If successful, a list of books should be rendered on the right side of the page.
 
