@@ -114,7 +114,7 @@ In this class, we will be deepening students understanding of ReactJS through re
 
     * Now, stop both servers and point out the `build` command. Explain that this builds a static version of our React app which can be deployed. With the `client` folder expanded, go ahead and run `npm run build` in your terminal.
 
-      * Point out how we now have a `client/build` folder. This contains static versions of our HTML page, CSS, minified JavaScript, and other assets. Explain that we won't actually use these locally on our machines, but our Express app will serve these on Heroku. The `heroku-post-build` script tells heroku to run this command automatically for us when we deploy so we don't have to keep doing this ourselves.
+    * Point out how we now have a `client/build` folder. This contains static versions of our HTML page, CSS, minified JavaScript, and other assets. Explain that we won't actually use these locally on our machines, but our Express app will serve these on Heroku. The `heroku-post-build` script tells heroku to run this command automatically for us when we deploy so we don't have to keep doing this ourselves.
 
     * Inform the class that for now, if the only thing they remember is `npm start` runs the API server and the React app, then they're fine for now.
 
@@ -124,15 +124,76 @@ In this class, we will be deepening students understanding of ReactJS through re
 
 ### 4. Students Do: React Recipes (15 mins)
 
-* Slack out `08-Stu_Recipes/Unsolved`
+* Introduce [React Recipes](../../../../01-Class-Content/20-react/01-Activities/02-Stu_Recipes/)
 
 * In this example students will complete a recipe finder application by adding code to render a list of recipes retrieved from an AJAX request.
 
-* **Instructions:** [README.md](../../../../01-Class-Content/20-react/01-Activities/08-Stu_Recipes/README.md)
+```md
+* Open [Unsolved](Unsolved) in your editor. From the root of the project folder, run `npm install` to install the required dependencies.
+
+* Run `npm start` to start the React app and Express server. Visit [localhost:3000](http://localhost:3000) in your web browser to view the app.
+
+* Enter a search term, e.g. "burgers" in the input field and submit. This won't have any visible affect on the page yet, but should submit an AJAX request and log the response to the console. Take a moment to study the response logged.
+
+  ![Recipe Log](Images/01-RecipeLog.gif)
+
+* The goal of this activity is to render these recipes to the DOM.
+
+### Part 1
+
+* For this section the only file you will need to modify is `App.js`. Take a few moments to study the code in the file.
+
+* Using the `RecipeList` and `RecipeListItem` components, add code to render the array of recipes where indicated in the file.
+
+  * The `RecipeList` component renders a `ul` tag and accepts children. The `RecipeListItem` component renders an `li` tag with some formatting to hold the recipe's title, thumbnail, etc.
+
+* Using a `RecipeList` component as a container, map over `recipes` and render one `RecipeListItem` component for each recipe object in `recipes`.
+
+* Pass the rendered `RecipeListItem` components each property of their recipe object, i.e. :
+
+  * `title`
+
+  * `href`
+
+  * `ingredients`
+
+  * `thumbnail`
+
+* Test your solution by searching for a recipe in your browser. If successful so far, you should see the following:
+
+  ![Recipe Incomplete](Images/02-RecipeIncomplete.gif)
+
+* No matter the search query, the same hard coded recipe is being rendered in each `RecipeListItem` component. We'll address this problem next!
+
+### Part 2
+
+* If the previous section was completed correctly, the only file you should need to modify for this section is `RecipeListItem.js`.
+
+* Currently the rendered `RecipeListItem` components are displaying hard coded recipe data. Modify the `RecipeListItem` component file so that it utilizes all of the passed props where appropriate. Look at the hard coded data to determine how each prop should be used.
+
+* If completed successfully, searching for a recipe in your browser should render dynamic results relevant to the search.
+
+  ![Recipe List](Images/03-RecipeList.gif)
+
+### Hints
+
+* Check out the [React Documentation](https://facebook.github.io/react/docs/lists-and-keys.html) on rendering lists of components if you need a refresher on this.
+
+* Rather than mapping over recipes and rendering primitive `ul` and `li` tags, you'll be using the pre-built `RecipeList` and `RecipeListItem` components.
+
+* Ask for help if you're stuck!
+
+### Bonus
+
+* Add code so that if a recipe doesn't come with a thumbnail url, use a placeholder image instead. Check out [placehold.it](https://placeholder.com/) for placeholder images.
+
+* Add code so that if `recipes` is an empty array, render a message indicating that no recipes are available.
+
+```
 
 ### 5. Instructor Do: Review React Recipes (10 mins)
 
-* Open the [08-Stu_Recipes/Solved](../../../../01-Class-Content/20-react/01-Activities/08-Stu_Recipes/Solved) to the previous activity.
+* Open [02-Stu_Recipes/Solved](../../../../01-Class-Content/20-react/01-Activities/02-Stu_Recipes/Solved) in your IDE.
 
 * Run `npm install` to install dependencies at the project root, this should also install the dependencies in the `client` folder.
 
@@ -144,17 +205,37 @@ In this class, we will be deepening students understanding of ReactJS through re
 
   * Avoid letting students get too hung up on the server side code. The main focus of today's lesson is still React, and they can dig into the code in its entirety on their own time.
 
-* Open the `client/src/App.js` file and go over the new code:
+* Open the [client/src/App.js](../../../../01-Class-Content/20-react/01-Activities/02-Stu_Recipes/Solved/client/src/App.js) file and go over the new code:
 
-  ![Recipe Map](Images/07-RecipeMap.png)
-
-* Make sure everyone understands where the props we're passing the `RecipeListItem` components are coming from.
+  * Make sure everyone understands where the props we're passing the `RecipeListItem` components are coming from.
 
   * The recipe objects received from the AJAX request have these properties. We're passing them to the `RecipeListItem` to be used.  
 
-* Now open the `client/src/components/RecipeList/index.js` file and point out how each passed prop is used in the `RecipeListItem` component.
+```js
+<Row>
+  <Col size="xs-12">
+    {!recipes.length ? (
+      <h1 className="text-center">No Recipes to Display</h1>
+    ) : (
+      <RecipeList>
+        {recipes.map(recipe => {
+          return (
+            <RecipeListItem
+              key={recipe.title}
+              title={recipe.title}
+              href={recipe.href}
+              ingredients={recipe.ingredients}
+              thumbnail={recipe.thumbnail}
+            />
+          );
+        })}
+      </RecipeList>
+    )}
+  </Col>
+</Row>
+```
 
-  ![Recipe List Item](Images/08-RecipeListItem.png)
+* Now open [client/src/components/RecipeList/index.js](../../../../01-Class-Content/20-react/01-Activities/02-Stu_Recipes/Solved/client/src/components/RecipeList/index.js) in your IDE and point out the following:
 
   * `props.thumbnail` (an image URL for the recipe) is passed to the `Thumbnail` component which renders the image
 
@@ -164,63 +245,182 @@ In this class, we will be deepening students understanding of ReactJS through re
 
   * `props.href` (the URL to the original recipe) is rendered inside of the anchor tag
 
+  ```js
+  export function RecipeListItem({
+    thumbnail = "https://placehold.it/300x300",
+    title,
+    ingredients,
+    href
+    }) {
+    return (
+      <li className="list-group-item">
+        <Container>
+          <Row>
+            <Col size="xs-4 sm-2">
+              <Thumbnail src={thumbnail} />
+            </Col>
+            <Col size="xs-8 sm-9">
+              <h3>{title}</h3>
+              <p>Ingredients: {ingredients}</p>
+              <a rel="noreferrer noopener" target="_blank" href={href}>
+                Go to recipe!
+              </a>
+            </Col>
+          </Row>
+        </Container>
+      </li>
+    );
+  }
+  ```
+
 * Take a few minutes to answer any questions about this activity.
 
 * Explain that while this activity was interesting, it didn't have any kind of persistent storage. The next few activities will utilize a Mongo database and should help prepare them for their homework assignment and final projects.
 
 ### 6. Students Do: AJAX Books (10 mins)
 
-* Slack out `09-Stu_AJAXBooks/Unsolved`
+* Introduce students to [03-Stu_AJAXBooks Unsolved](../../../../01-Class-Content/20-react/01-Activities/03-Stu_AJAXBooks)
 
 * In this activity students will work to add functionality to a full stack React Reading List application.
 
-* **Instructions:** [README](../../../../01-Class-Content/20-react/01-Activities/09-Stu_AJAXBooks/README.md)
+```md
+* Open the [Unsolved](Unsolved) folder in your editor and run `npm install` at the project's root.
+
+* This application uses a Mongo database, so be sure to start `mongod`.
+
+* In order to initially populate the database, run the following command at the project root: `npm run seed`.
+
+* This should insert a few records into the MongoDB.
+
+* Run `npm start` at the project root to start the application.
+
+* Open your browser to [localhost:3000](http://localhost:3000) and take a moment to study the rendered application.
+
+  * This example is a reading list application. Currently the app isn't fully functional.
+
+* Open up `client/src/pages/Books.js` and add code so that when the component mounts, it performs an AJAX request to retrieve all of the books in the database. Once the AJAX request is complete, it should set `books` equal to the array of books.
+
+* If successful, a list of books should be rendered on the right side of the page.
+
+  * We'll work on making the form functional in the next activity.
+
+## Hints
+
+* Use the API helper module (`client/src/utils/API.js`) to perform an AJAX request which should return _all_ of the books in the database.
+
+* The only file you will need to modify is `client/src/pages/Books.js`.
+
+```
 
 * Instructional staff should be walking around the room during this activity, available for assistance.
 
 ### 7. Instructor Do: Review AJAX List (10 mins)
 
-* Open and run the [09-Stu_AJAXBooks/Solved](../../../../01-Class-Content/20-react/01-Activities/09-Stu_AJAXBooks/Solved) to the previous activity and demonstrate the result in your browser:
+* Open and run the [03-Stu_AJAXBooks/Solved](../../../../01-Class-Content/20-react/01-Activities/03-Stu_AJAXBooks/Solved) to the previous activity and demonstrate the result in your browser:
 
   * ![Ajax List](Images/06-AJAXList.gif)
 
 * The goal of this activity was just to render the initial list of books. We'll work on actually making the form functional in the next activity.
 
-* Open the `Books` component (`client/src/pages/Books.js`) and go over the new code:
+* Open the `Books` component [client/src/pages/Books.js](../../../../01-Class-Content/20-react/01-Activities/03-Stu_AJAXBooks/Solved/client/src/pages/Books.js) in your IDE.
 
-  ![AJAX List Code](Images/09-AJAXListCode.png)
+* Have a volunteer explain the code to you.
 
-  * Have a volunteer explain the code to you.
+  * We import the `API` module into our component.
 
-    * We import the `API` module into our component.
+  * When the component is created the `useEffect` callback is called. Inside we call `loadBooks()` which we've defined below.
 
-    * When the component is created the `componentDidMount` lifecycle method is called. Inside we call `this.loadBooks()` which we've defined below.
+  * `loadBooks()` uses the pre-written `API` module to retrieve all of the books from the database and then sets them to `books`.
 
-    * `this.loadBooks()` uses the pre-written `API` module to retrieve all of the books from the database and then sets them to `this.state.books`.
+  * Point out how even though we don't know much about how our backend is configured, we were still able to make an AJAX request to it to retrieve all of the books. This is because we're using the `API` helper module which contains methods for making requests to various endpoints.
 
-      * Point out how even though we don't know much about how our backend is configured, we were still able to make an AJAX request to it to retrieve all of the books. This is because we're using the `API` helper module which contains methods for making requests to various endpoints.
+  ```js
+  function Books() {
+  // Setting our component's initial state
+  const [books, setBooks] = useState([])
+  const [formObject, setFormObject] = useState({})
 
-  * Further down below, a list is being rendered from `this.state.books`. When the list is empty, a message is displayed explaining this. Otherwise the list of books is rendered.
+  // Load all books and store them with setBooks
+  useEffect(() => {
+    loadBooks()
+  }, [])
 
-    ![Books List](Images/10-BooksList.png)
+  // Loads all books and sets them to books
+  function loadBooks() {
+    API.getBooks()
+      .then(res => 
+        setBooks(res.data)
+      )
+      .catch(err => console.log(err));
+  };
+
+  ```
+
+  * Further down below, a list is being rendered from `books`. When the list is empty, a message is displayed explaining this. Otherwise the list of books is rendered.
+
+```js
+{books.length ? (
+  <List>
+    {books.map(book => {
+      return (
+        <ListItem key={book._id}>
+          <a href={"/books/" + book._id}>
+            <strong>
+              {book.title} by {book.author}
+            </strong>
+          </a>
+          <DeleteBtn onClick={() => deleteBook(book._id)} />
+        </ListItem>
+      );
+    })}
+  </List>
+) : (
+  <h3>No Results to Display</h3>
+)}
+```
 
   * Take a few moments to make sure everyone understands these pieces of code.
 
 ### 8. Students Do: AJAX Form Delete (15 mins)
 
-* Slack out `10-Stu_AJAXFormDelete/Unsolved`
+* Introduce students to [04-Stu_AJAXFormDelete](../../../../01-Class-Content/20-react/01-Activities/04-Stu_AJAXFormDelete/README.md)
 
 * In this activity students will add functionality to the React Reading List app to save and delete books.
 
-* **Instructions:** [README.md](../../../../01-Class-Content/20-react/01-Activities/10-Stu_AJAXFormDelete/README.md)
+```md
+* Open the [Unsolved](Unsolved) folder and install dependencies by running `npm install` at the project root.
+
+* Start the app by running `npm start` from the project root.
+
+* Once the app starts open your browser to [localhost:3000](http://localhost:3000).
+
+* Open [Unsolved](Unsolved/client/src/pages/Books.js).
+
+### Part 1
+
+* Open the `Books.js` file. Add code so that `formObject.title`, `formObject.author`, and `formObject.synopsis` are updated as their corresponding `Input` components are updated (see the `name` properties on each `Input`). Any props you attach to the `Input` components will be passed down to their underlying elements, so there's no need to modify any code other than the code inside of `Books.js`.
+
+* Add code so that when the `FormBtn` is clicked, an AJAX request is performed saving the new book. An object containing the new book's `title`, `author` and `synopsis` should be passed into the `API.saveBook` method.
+
+### Part 2
+
+* Add code to the `Books.js` file so that when the `DeleteBtn` (`✗` button) component is clicked, its book is deleted from the database and the books displayed are updated. To accomplish this you should create a new method (`deleteBook`) on the `Books` component, which calls the `API.deleteBook` method when the `DeleteBtn` is clicked.
+
+#### Hints
+
+* The only file you need to modify is `Books.js`.
+
+* See [React's Documentation on Handling Events](https://facebook.github.io/react/docs/handling-events.html)
+
+```
 
 ### 9. Instructor Do: Review AJAX Form Delete (10 mins)
 
-* Open up the [10-Stu_AJAXFormDelete/Solved](../../../../01-Class-Content/20-react/01-Activities/10-Stu_AJAXFormDelete/Solved) to the previous activity and go over the new code as a class. The only changes that needed to be made are in the `client/src/pages/Books.js` file.
+* Open up the [04-Stu_AJAXFormDelete/Solved](../../../../01-Class-Content/20-react/01-Activities/04-Stu_AJAXFormDelete/Solved) to the previous activity and go over the new code as a class. The only changes that needed to be made are in the `client/src/pages/Books.js` file.
 
   ![Save Delete Book](Images/11-BookForm.png)
 
-* It may be easier to explain starting by going through the code in the `render` method involving the form elements.
+* It may be easier to explain starting by going through the code in the `return` block involving the form elements.
 
 * In order to capture the values from the form, we add `value` and `onChange` props to the `Input` components.
 
@@ -234,7 +434,7 @@ In this class, we will be deepening students understanding of ReactJS through re
 
   * From this event object we can grab the `name` attribute and `value` of the input field. The `value` is what the input would change to if it weren't being controlled by React, and the `name` is the name of the input's corresponding state value.
 
-  * Then we update `this.state[name]` to be the new `value`.
+  * Then we update `formObject[name]` to be the new `value`.
 
   * `onChange` updates the component's `state` which then updates the text displayed in the input field.
 
@@ -248,7 +448,7 @@ In this class, we will be deepening students understanding of ReactJS through re
 
   * If we have a `title` and `author`, submit the book data using the `API.saveBook` method.
 
-  * Once the request completes successfully, run `this.loadBooks()` in order to update the books displayed.
+  * Once the request completes successfully, run `loadBooks()` in order to update the books displayed.
 
 * Finally, go over the `delete` book method:
 
@@ -256,7 +456,7 @@ In this class, we will be deepening students understanding of ReactJS through re
 
   * It expects to receive an `id` argument to pass to the `API.deleteBook` method.
 
-  * Once complete, `this.loadBooks()` is run to retrieve and display the updated list of books.
+  * Once complete, `loadBooks()` is run to retrieve and display the updated list of books.
 
 * Point out how we wrap the `onClick` handler in an anonymous function so that we can pass in the `_id` of the book as an argument.
 
@@ -274,17 +474,61 @@ In this class, we will be deepening students understanding of ReactJS through re
 
 ### 11. Students Do: React Router (20 mins)
 
-* Slack out `11-Stu_ReactRouter/Unsolved`
+* Introduce [05-Stu_ReactRouter Unsolved](../../../../01-Class-Content/20-react/01-Activities/05-Stu_ReactRouter)
 
 * In this activity students will add React Router to the React Reading List in order to add a books `Detail` page and a `NoMatch` 404 page. Students will need to look up how to use route params with React Router.
 
-* **Instructions:** [README.md](../../../../01-Class-Content/20-react/01-Activities/11-Stu_ReactRouter/README.md)
-
 * Instructional staff should be walking around the classroom during this activity, available for assistance and making sure students understand all of the activity requirements.
+
+```md
+
+* Open the [Unsolved](Unsolved) folder and install dependencies by running `npm install` at the project root.
+
+* Start the app by running `npm start` from the project root.
+
+* Once the app starts open your browser to [localhost:3000](http://localhost:3000).
+
+* Open [App.js](Unsolved/client/src/App.js).
+
+### Part 1
+
+* Set up React Router inside of the `client/src/App.js` file.
+
+  * The `/` and `/books` routes should both render the `Books` component page.
+
+### Part 2
+
+* Notice that inside of the `pages` folder we have a `NoMatch` component. This is the component for our 404 page.
+
+* Add a route for the new `NoMatch` component. This should only render if no other routes are matched. e.g. `/sjdfhjsdhfjsa` or `/notarealroute/lalala` should both render the `NoMatch` component page. 
+
+  * You will need to use the `Switch` component from the React Router Dom library to accomplish this. An example can be found [here](https://reacttraining.com/react-router/web/example/no-match).
+
+### Part 3
+
+* Notice that in the `pages` folder we have a `Detail` component. This component displays additional information about a book.
+
+* Add a route for the the new `Detail` component. This should render when the `/books/:id` path is matched. e.g. if a book's `_id` is `59a39cf2549cf482c814333f`, then `/books/59a39cf2549cf482c814333f` should render its book `Detail` page.
+
+* Inside of the `Detail` component, add code so that when the component mounts, we retrieve the book for the rendered route and save it to `book`. e.g. when the route is `/books/59a39cf2549cf482c814333f`, an AJAX request should be made to get the book with an `_id` of `59a39cf2549cf482c814333f`. If completed successfully, you should see the book's synopsis on this page.
+
+  * You may need to look into [URL params with React Router](https://reacttraining.com/react-router/web/example/url-params) to accomplish this.
+
+### Hints
+
+* Parts 1 - 2 will only require you modify the `client/src/App.js` file.
+
+* The React Router DOM library should already be installed.
+
+* The React Router documentation is your friend!
+
+* Ask the instructor or a TA if you're having difficulty understanding any of the activity requirements.
+
+```
 
 ### 12. Instructor Do: Review React Router (15 mins)
 
-* Once time's up, go over the [11-Stu_ReactRouter/Solved](../../../../01-Class-Content/20-react/01-Activities/11-Stu_ReactRouter/Solved) version of the last activity.
+* Once time's up, go over the [05-Stu_ReactRouter/Solved](../../../../01-Class-Content/20-react/01-Activities/05-Stu_ReactRouter/Solved) version of the last activity.
 
 * Open the `client/src/App.js` file and go over the new code:
 
@@ -294,11 +538,11 @@ In this class, we will be deepening students understanding of ReactJS through re
 
   * The `/books/:id` `Route` component renders the `Detail` component.
 
-    * This component is for rendering details about a particular book.
+  * This component is for rendering details about a particular book.
 
       ![Details](Images/17-Details.png)
 
-    * Similar to routes in Express, we can utilize route parameters. The values of any route parameters are available to us inside of the rendered component on the `this.props.match.params` object. Inside of the `client/src/pages/Detail.js` file, we access the `id` parameter:
+  * Similar to routes in Express, we can utilize route parameters. The values of any route parameters are available to us inside of the rendered component on the `props.match.params` object. Inside of the `client/src/pages/Detail.js` file, we access the `id` parameter:
 
       ![Route Params](Images/18-RouteParams.png)
 
@@ -306,15 +550,15 @@ In this class, we will be deepening students understanding of ReactJS through re
 
   * The reason the `NoMatch` route works as expected is because of the `Switch` component wrapping our `Route`s. The `Switch` component ensures that once one of the routes are rendered, none of the routes that come after it are even checked. So as long as one of the routes match, the `NoMatch` component is not rendered. But if _none_ of the routes match, then `NoMatch` is rendered. It is like the "default" case in a switch-case statement.
 
-    ![Switch](Images/19-Switch.png)
+  ![Switch](Images/19-Switch.png)
 
 * Take another few minutes answering any remaining questions.
 
 ### 13. Students Do: Deploy (15 mins)
 
-* In this final activity, students are tasked with deploying the React Reading List app to Heroku. They can use the [11-Stu_ReactRouter/Solved](../../../../01-Class-Content/20-react/01-Activities/11-Stu_ReactRouter/Solved) version of the previous activity.
+* In this final activity, students are tasked with deploying the React Reading List app to Heroku. They can use the [06-Stu_ReactRouter/Solved](../../../../01-Class-Content/20-react/01-Activities/06-Stu_ReactRouter/Solved) version of the previous activity.
 
-* **Instructions:** [12-Stu_Deployment/README.md](../../../../01-Class-Content/20-react/01-Activities/12-Stu_Deployment/README.md)
+* **Instructions:** [06-Stu_Deployment/README.md](../../../../01-Class-Content/20-react/01-Activities/06-Stu_Deployment/README.md)
 
 ### 14. Instructor Do: Review Deploy (5 mins)
 
@@ -329,7 +573,6 @@ In this class, we will be deepening students understanding of ReactJS through re
 ### 15. Instructor Do: Final Projects (5 mins)
 
 * Spend a few minutes introducing the [requirements for final projects](../Project-Resources/Slide-Shows/FinalProject.pptx).
-
 
 - - -
 
