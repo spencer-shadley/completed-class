@@ -4,24 +4,11 @@
 
 After doing a review of Databases and React and giving some help and time for students to work on their homework, you'll prime your students to conceptualize their final projects. You'll run down the list of expectations and requirements for each of their weekly deliverables. Aside from that, you and the TAs will stick around to make sure each team has a solid idea for their project--they should have one by the end of the class.
 
-## Instructor Priorities
-
-* Students should get time to ask questions and get help reviewing Databases and React content in preparation for their final project.
-
-* Students should get time to work on homework and receive help with any questions they may have.
-
-* Students should know all of their responsibilities for the final project.
-
-* Students should come out of class with a high-level grasp of how their app will function--what does it do and what problem does it solve?
-
-* Students should complete the React Checkpoint.
-
 ## Time Tracker
 
 [21.3 Time Tracker](https://docs.google.com/spreadsheets/d/1tCQWgjimAwuPSHc2KSJfYLKA2pEcMfHQf8AZnfWfYKA/edit#gid=1938794889)
 
-
-### Class Objectives
+## Class Objectives
 
 * To lead a review time with your students for any questions they may still have about prior material since their second project. Primarily Database and React content.
 

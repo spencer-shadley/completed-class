@@ -1,19 +1,19 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import Jumbotron from "../components/Jumbotron";
 import DeleteBtn from "../components/DeleteBtn";
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
 
-class Books extends Component {
-  // Initialize this.state.books as an empty array
-  state = {
-    books: []
-  };
+function Books() {
+  // Initialize books as an empty array
+    const [books, setBooks] = useState([]);
+  
+    useEffect(() => {
+      loadBooks();
+    }, []);
+  // Add code here to get all books from the database and store them using setBooks
 
-  // Add code here to get all books from the database and save them to this.state.books
-
-  render() {
     return (
       <Container fluid>
         <Row>
@@ -32,9 +32,9 @@ class Books extends Component {
             <Jumbotron>
               <h1>Books On My List</h1>
             </Jumbotron>
-            {this.state.books.length ? (
+            {books.length ? (
               <List>
-                {this.state.books.map(book => (
+                {books.map(book => (
                   <ListItem key={book._id}>
                     <a href={"/books/" + book._id}>
                       <strong>
@@ -53,6 +53,5 @@ class Books extends Component {
       </Container>
     );
   }
-}
 
 export default Books;

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import DeleteBtn from "../components/DeleteBtn";
 import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
@@ -7,53 +7,53 @@ import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
 
-class Books extends Component {
-  state = {
-    books: [],
-    title: "",
-    author: "",
-    synopsis: ""
-  };
+function Books() {
+  // Setting our component's initial state
+  const [books, setBooks] = useState([])
+  const [formObject, setFormObject] = useState({})
 
-  componentDidMount() {
-    this.loadBooks();
-  }
+  // Load all books and store them with setBooks
+  useEffect(() => {
+    loadBooks()
+  }, [])
 
-  loadBooks = () => {
+  // Loads all books and sets them to books
+  function loadBooks() {
     API.getBooks()
-      .then(res =>
-        this.setState({ books: res.data, title: "", author: "", synopsis: "" })
+      .then(res => 
+        setBooks(res.data)
       )
       .catch(err => console.log(err));
   };
 
-  deleteBook = id => {
+  // Deletes a book from the database with a given id, then reloads books from the db
+  function deleteBook(id) {
     API.deleteBook(id)
-      .then(res => this.loadBooks())
+      .then(res => loadBooks())
       .catch(err => console.log(err));
-  };
+  }
 
-  handleInputChange = event => {
+  // Handles updating component state when the user types into the input field
+  function handleInputChange(event) {
     const { name, value } = event.target;
-    this.setState({
-      [name]: value
-    });
+    setFormObject({...formObject, [name]: value})
   };
 
-  handleFormSubmit = event => {
+  // When the form is submitted, use the API.saveBook method to save the book data
+  // Then reload books from the database
+  function handleFormSubmit(event) {
     event.preventDefault();
-    if (this.state.title && this.state.author) {
+    if (formObject.title && formObject.author) {
       API.saveBook({
-        title: this.state.title,
-        author: this.state.author,
-        synopsis: this.state.synopsis
+        title: formObject.title,
+        author: formObject.author,
+        synopsis: formObject.synopsis
       })
-        .then(res => this.loadBooks())
+        .then(res => loadBooks())
         .catch(err => console.log(err));
     }
   };
 
-  render() {
     return (
       <Container fluid>
         <Row>
@@ -63,26 +63,23 @@ class Books extends Component {
             </Jumbotron>
             <form>
               <Input
-                value={this.state.title}
-                onChange={this.handleInputChange}
+                onChange={handleInputChange}
                 name="title"
                 placeholder="Title (required)"
               />
               <Input
-                value={this.state.author}
-                onChange={this.handleInputChange}
+                onChange={handleInputChange}
                 name="author"
                 placeholder="Author (required)"
               />
               <TextArea
-                value={this.state.synopsis}
-                onChange={this.handleInputChange}
+                onChange={handleInputChange}
                 name="synopsis"
                 placeholder="Synopsis (Optional)"
               />
               <FormBtn
-                disabled={!(this.state.author && this.state.title)}
-                onClick={this.handleFormSubmit}
+                disabled={!(formObject.author && formObject.title)}
+                onClick={handleFormSubmit}
               >
                 Submit Book
               </FormBtn>
@@ -92,16 +89,16 @@ class Books extends Component {
             <Jumbotron>
               <h1>Books On My List</h1>
             </Jumbotron>
-            {this.state.books.length ? (
+            {books.length ? (
               <List>
-                {this.state.books.map(book => (
+                {books.map(book => (
                   <ListItem key={book._id}>
                     <Link to={"/books/" + book._id}>
                       <strong>
                         {book.title} by {book.author}
                       </strong>
                     </Link>
-                    <DeleteBtn onClick={() => this.deleteBook(book._id)} />
+                    <DeleteBtn onClick={() => deleteBook(book._id)} />
                   </ListItem>
                 ))}
               </List>
@@ -113,6 +110,6 @@ class Books extends Component {
       </Container>
     );
   }
-}
+
 
 export default Books;
