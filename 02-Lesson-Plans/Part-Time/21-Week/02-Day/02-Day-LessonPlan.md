@@ -12,15 +12,17 @@ In this class, we will be deepening students understanding of ReactJS through re
 
 * Today's class will introduce little new material but will provide plenty of opportunity to review concepts covered over the past few classes.
 
-- - -
-
-### Class Objectives
+## Class Objectives
 
 * To obtain a basic understanding of connecting a Create React App to an Express backend.
 
 * To become comfortable communicating with an Express server from a React app.
 
 * To increase understanding and comfort using React Router.
+
+## Time Tracker
+
+[21.2 Time Tracker](https://docs.google.com/spreadsheets/d/1uEOFspLvfjW6erY3dHVnOx5FXQal0ZUO9XIsYyobfXE/edit#gid=1526123852)
 
 - - -
 

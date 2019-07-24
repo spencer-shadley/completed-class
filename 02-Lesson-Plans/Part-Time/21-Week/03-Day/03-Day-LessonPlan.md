@@ -16,6 +16,11 @@ After doing a review of Databases and React and giving some help and time for st
 
 * Students should complete the React Checkpoint.
 
+## Time Tracker
+
+[21.3 Time Tracker](https://docs.google.com/spreadsheets/d/1tCQWgjimAwuPSHc2KSJfYLKA2pEcMfHQf8AZnfWfYKA/edit#gid=1938794889)
+
+
 ### Class Objectives
 
 * To lead a review time with your students for any questions they may still have about prior material since their second project. Primarily Database and React content.

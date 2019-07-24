@@ -21,8 +21,6 @@ In this class, we will be introducing students to the basic concepts of ReactJS,
 
 * **Important:** In order to avoid continuous NPM installs, all of today's activity Solved and Unsolved versions include only a `src` folder. Students and yourself should scaffold out a React app once with Create React App, and then swap out the `src` folder for each activity. It's recommended that you completely restart the dev server between activities.
 
-- - -
-
 ### Class Objectives
 
 * To begin to feel comfortable building static UIs with JSX.
@@ -30,6 +28,14 @@ In this class, we will be introducing students to the basic concepts of ReactJS,
 * To gain an initial understanding of the component-based paradigm in ReactJS.
 
 * To dissect and build a few simple examples using ReactJS.
+
+## Slides
+
+[19.1: React Gently](https://react-gently.netlify.com/)
+
+## Time Tracker
+
+[19.1 Time Tracker](https://docs.google.com/spreadsheets/d/1FW-TdKwx-Kxrj8FgsBC1WwaX_U2z8mGikRnT8oUYU6U/edit#gid=1012596571)
 
 - - -
 

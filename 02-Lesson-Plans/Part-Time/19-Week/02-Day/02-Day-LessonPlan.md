@@ -1,8 +1,8 @@
-## 19.2 Lesson Plan - Props, Lists, and Stateful Components (6:30 PM) <!--links--> &nbsp; [⬅️](../01-Day/01-Day-LessonPlan.md) &nbsp; [➡️](../03-Day/03-Day-LessonPlan.md)
+# 19.2 Lesson Plan - Props, Lists, and Stateful Components (6:30 PM) <!--links--> &nbsp; [⬅️](../01-Day/01-Day-LessonPlan.md) &nbsp; [➡️](../03-Day/03-Day-LessonPlan.md)
 
 `Summary: Complete activities 10-18 in Unit 19`
 
-### Overview
+## Overview
 
 In this class, we will be deepening students understanding of ReactJS. They further expand upon their understanding of props, learn how to programmatically render components from a list of data, and introduce the concept of class components and component state.
 
@@ -12,9 +12,7 @@ In this class, we will be deepening students understanding of ReactJS. They furt
 
 * All of the Solved/Unsolved activities contain only the application's `src` folder. At the start of class scaffold out a React application using Create React App, and swap out the `src` folder for each activity to avoid repetitive npm installs. It's recommended that you completely restart the dev server between activities.
 
----
-
-### Class Objectives
+## Class Objectives
 
 * To deepen understanding of passing props between React components.
 
@@ -25,6 +23,14 @@ In this class, we will be deepening students understanding of ReactJS. They furt
 * To introduce the concept of class components and component state.
 
 * To complete the Mongo Checkpoint.
+
+## Slides
+
+[ReactJS Recap slides](https://react-reacap.netlify.com/#/)
+
+## Time Tracker
+
+[19.2 Time Tracker](https://docs.google.com/spreadsheets/d/1nK5WnZMudSzo7mAkiDdfCEEb2ihM9ooU/edit#gid=1423861022)
 
 ---
 

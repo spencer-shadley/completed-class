@@ -14,21 +14,23 @@ In this class, we will be deepening students understanding of ReactJS through re
 
 * Students should have an increased understanding of using React Router in their React applications.
 
-### Instructor Notes
+## Instructor Notes
 
 * Today's activities will contain significantly more boilerplate than the previous React lessons. Be sure to direct the class's attention to the important aspects of each exercise.
 
 * Today's class will introduce little new material but will provide plenty of opportunity to review concepts covered over the past few classes.
 
-- - -
-
-### Class Objectives
+## Class Objectives
 
 * To obtain a basic understanding of connecting a Create React App to an Express backend.
 
 * To become comfortable communicating with an Express server from a React app.
 
 * To increase understanding and comfort using React Router.
+
+## Time Tracker
+
+[21.1 Time Tracker](https://docs.google.com/spreadsheets/d/1mZOzw2A6_s5C_u-18Z1hFxNO4m9FqDc_qiq0c_Tis80/edit#gid=1323041200)
 
 - - -
 

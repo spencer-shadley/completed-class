@@ -1,8 +1,8 @@
-## 19.3 Lesson Plan - Forms, Conditional Rendering & React Router (10:00 AM) <!--links--> &nbsp; [⬅️](../02-Day/02-Day-LessonPlan.md) &nbsp; [➡️](../../20-Week/01-Day/01-Day-LessonPlan.md)
+# 19.3 Lesson Plan - Forms, Conditional Rendering & React Router (10:00 AM) <!--links--> &nbsp; [⬅️](../02-Day/02-Day-LessonPlan.md) &nbsp; [➡️](../../20-Week/01-Day/01-Day-LessonPlan.md)
 
 `Summary: Complete activities 19-23 in Unit 19`
 
-### Overview
+## Overview
 
 In this class, we will be deepening students understanding of ReactJS. We will further expand on their introduction to managing component state and cover performing AJAX requests, using forms, and conditionally rendering components.
 
@@ -16,9 +16,7 @@ In this class, we will be deepening students understanding of ReactJS. We will f
 
 * **Important:** In order to avoid continuous NPM installs, all of today's activity Solved and Unsolved versions include only a src folder. Students and yourself should scaffold out a React app once with Create React App, and then swap out the src folder for each activity.
 
-- - -
-
-### Class Objectives
+## Class Objectives
 
 * To deepen understanding of managing state with React components.
 
@@ -27,6 +25,10 @@ In this class, we will be deepening students understanding of ReactJS. We will f
 * To introduce the axios library and the concept of the component lifecycle.
 
 * To introduce routing with React Router.
+
+## Time Tracker
+
+[19.3 Time Tracker](https://docs.google.com/spreadsheets/d/1nK5WnZMudSzo7mAkiDdfCEEb2ihM9ooU/edit#gid=1423861022)
 
 - - -
 
