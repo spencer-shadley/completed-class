@@ -61,6 +61,9 @@ self.addEventListener("install", function(evt) {
   self.skipWaiting();
 });
 
+
+// @TODO stop here!
+
 // activate
 self.addEventListener("activate", function(evt) {
   evt.waitUntil(

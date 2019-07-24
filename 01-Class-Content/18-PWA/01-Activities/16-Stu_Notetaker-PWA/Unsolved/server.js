@@ -12,7 +12,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-const databaseUrl = "notetaker";
+const databaseUrl = process.env.MONGODB_URI || "notetaker";
 const collections = ["notes"];
 
 const db = mongojs(databaseUrl, collections);
