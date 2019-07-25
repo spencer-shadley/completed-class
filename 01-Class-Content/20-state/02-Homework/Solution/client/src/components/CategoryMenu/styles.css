@@ -1,0 +1,14 @@
+.category-item {
+    padding: 10px;
+    margin: 20px;
+
+}
+
+.category-item:hover {
+    border: solid 1px lightblue;
+}
+
+.search-form {
+    width: 40%;
+    border: solid 2px red;
+  }

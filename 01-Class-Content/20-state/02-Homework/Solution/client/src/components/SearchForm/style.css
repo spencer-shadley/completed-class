@@ -1,0 +1,18 @@
+form.search {
+  overflow: auto;
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+form.search button[type="submit"] {
+  float: right;
+  margin-top: 10px;
+}
+
+.search-form {
+  width: 40%;
+  border: solid 2px red;
+}
+.form-control {
+  /* width: 80%; */
+}
