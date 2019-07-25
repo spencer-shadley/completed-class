@@ -1,30 +1,30 @@
-const axios = require("axios");
 const fs = require("fs");
+const util = require("util");
 
-const favoriteMovies = [
-  "The Matrix",
-  "Eternal Sunshine of the Spotless Mind",
-  "Interstellar",
-  "Mr. Nobody"
-];
+const readFileAsync = util.promisify(fs.readFile);
+const writeFileAsync = util.promisify(fs.writeFile);
 
-// Create an array of promise objects
-const moviePromises = favoriteMovies.map(function(movie) {
-  return axios.get("https://www.omdbapi.com/?t=" + movie + "&apikey=trilogy");
+const files = ["cat.json", "dog.json", "goldfish.json", "hamster.json"];
+
+const filePromises = files.map(function(fileName) {
+  return readFileAsync(fileName, "utf8");
 });
 
-// Wait for ALL of the promises resolve, then...
-Promise.all(moviePromises)
-  .then(function(responses) {
-    // From an array containing all the response data
-    // Create a new array containing only the movie data
-    const movies = responses.map(function(response) {
-      return response.data;
+Promise.all(filePromises)
+  .then(function(animalStrings) {
+    const animalJSON = animalStrings.map(function parseJSON(str) {
+      return JSON.parse(str);
     });
 
-    return movies;
+    const sortedAnimals = animalJSON.sort(function sortByOldest(a, b) {
+      return b.age - a.age;
+    });
+
+    writeFileAsync("combined.json", JSON.stringify(sortedAnimals, null, 2), "utf8");
   })
-    .then(function(movies) {
-      fs.writeFileSync("./movies.json", JSON.stringify(movies, null, 2));
-    });
-
+  .then(function() {
+    console.log("Successfully saved combined animal list!");
+  })
+  .catch(function(err) {
+    console.log(err);
+  });
