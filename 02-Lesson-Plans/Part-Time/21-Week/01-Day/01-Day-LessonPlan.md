@@ -418,17 +418,80 @@ In this class, we will be deepening students understanding of ReactJS through re
 
 * Open up the [04-Stu_AJAXFormDelete/Solved](../../../../01-Class-Content/20-react/01-Activities/04-Stu_AJAXFormDelete/Solved) to the previous activity and go over the new code as a class. The only changes that needed to be made are in the `client/src/pages/Books.js` file.
 
-  ![Save Delete Book](Images/11-BookForm.png)
+  * It may be easier to explain starting by going through the code in the `return` block involving the form elements.
 
-* It may be easier to explain starting by going through the code in the `return` block involving the form elements.
+  * In order to capture the values from the form, we add `value` and `onChange` props to the `Input` components.
 
-* In order to capture the values from the form, we add `value` and `onChange` props to the `Input` components.
+```js
+return (
+  <Container fluid>
+    <Row>
+      <Col size="md-6">
+        <Jumbotron>
+          <h1>What Books Should I Read?</h1>
+        </Jumbotron>
+        <form>
+          <Input
+            onChange={handleInputChange}
+            name="title"
+            placeholder="Title (required)"
+          />
+          <Input
+            onChange={handleInputChange}
+            name="author"
+            placeholder="Author (required)"
+          />
+          <TextArea
+            onChange={handleInputChange}
+            name="synopsis"
+            placeholder="Synopsis (Optional)"
+          />
+          <FormBtn
+            disabled={!(formObject.author && formObject.title)}
+            onClick={handleFormSubmit}
+          >
+            Submit Book
+          </FormBtn>
+        </form>
+      </Col>
+      <Col size="md-6 sm-12">
+        <Jumbotron>
+          <h1>Books On My List</h1>
+        </Jumbotron>
+        {books.length ? (
+          <List>
+            {books.map(book => {
+              return (
+                <ListItem key={book._id}>
+                  <a href={"/books/" + book._id}>
+                    <strong>
+                      {book.title} by {book.author}
+                    </strong>
+                  </a>
+                  <DeleteBtn onClick={() => deleteBook(book._id)} />
+                </ListItem>
+              );
+            })}
+          </List>
+        ) : (
+          <h3>No Results to Display</h3>
+        )}
+      </Col>
+    </Row>
+  </Container>
+    );
+```
 
-* Ask the class: How roles do the `value`, `name`, and `onChange` props have in updating our component state with the form data?
+  * Ask the class: How roles do the `value`, `name`, and `onChange` props have in updating our component state with the form data?
 
   * When the user attempts to type into one of the input fields, the input field doesn't update right away, instead the `onChange` event handler is fired.
 
-    ![Handle Input Change](Images/12-HandleInputChange.png)
+  ```js
+  function handleInputChange(event) {
+    const { name, value } = event.target;
+    setFormObject({...formObject, [name]: value})
+  };
+  ```
 
   * Like event handlers in jQuery and vanilla JavaScript, `handleInputChange` receives an `event` object containing information about the event which occurred as a parameter.
 
@@ -440,8 +503,6 @@ In this class, we will be deepening students understanding of ReactJS through re
 
 * Go over the `handleFormSubmit` method:
 
-  ![Handle Form Submit](Images/13-HandleFormSubmit.png)
-
   * We first prevent the default behavior of the form submission (which would have been to refresh the page).
 
   * Next we check that the `title` and `author` (the "required" fields) are not null before continuing.
@@ -450,19 +511,49 @@ In this class, we will be deepening students understanding of ReactJS through re
 
   * Once the request completes successfully, run `loadBooks()` in order to update the books displayed.
 
-* Finally, go over the `delete` book method:
+  ```js
+  function handleFormSubmit(event) {
+    event.preventDefault();
+    if (formObject.title && formObject.author) {
+      API.saveBook({
+        title: formObject.title,
+        author: formObject.author,
+        synopsis: formObject.synopsis
+      })
+        .then(res => loadBooks())
+        .catch(err => console.log(err));
+    }
+  };
+  ```
 
-  ![Delete Book](Images/14-DeleteBook.png)
+* Finally, go over the `delete` book method:
 
   * It expects to receive an `id` argument to pass to the `API.deleteBook` method.
 
   * Once complete, `loadBooks()` is run to retrieve and display the updated list of books.
 
-* Point out how we wrap the `onClick` handler in an anonymous function so that we can pass in the `_id` of the book as an argument.
+  ```js
+  function deleteBook(id) {
+    API.deleteBook(id)
+      .then(res => loadBooks())
+      .catch(err => console.log(err));
+  }
+  ```
 
-  ![onClick Delete Book](Images/15-OnClickDeleteBook.png)
+  * Point out how we wrap the `onClick` handler in an anonymous function so that we can pass in the `_id` of the book as an argument.
 
   * Wrapping a click handler in an anonymous function is another way of passing arguments into it.
+
+```js
+<ListItem key={book._id}>
+  <a href={"/books/" + book._id}>
+    <strong>
+      {book.title} by {book.author}
+    </strong>
+  </a>
+  <DeleteBtn onClick={() => deleteBook(book._id)} />
+</ListItem>
+```
 
 * Take a few moments to answer any remaining questions.
 
@@ -530,9 +621,7 @@ In this class, we will be deepening students understanding of ReactJS through re
 
 * Once time's up, go over the [05-Stu_ReactRouter/Solved](../../../../01-Class-Content/20-react/01-Activities/05-Stu_ReactRouter/Solved) version of the last activity.
 
-* Open the `client/src/App.js` file and go over the new code:
-
-  ![React Router](Images/16-ReactRouter.png)
+* Open the [client/src/App.js](../../../../01-Class-Content/20-react/01-Activities/05-Stu_ReactRouter/Solved/client/src/App.js) file in your IDE go over the new code:
 
   * Point out how both the `/` and `/books` `Route` components both render the `Books` component.
 
@@ -540,17 +629,67 @@ In this class, we will be deepening students understanding of ReactJS through re
 
   * This component is for rendering details about a particular book.
 
-      ![Details](Images/17-Details.png)
+  ```js
+  import React from "react";
+  import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+  import Books from "./pages/Books";
+  import Detail from "./pages/Detail";
+  import NoMatch from "./pages/NoMatch";
+  import Nav from "./components/Nav";
+
+  function App() {
+    return (
+      <Router>
+        <div>
+          <Nav />
+          <Switch>
+            <Route exact path="/" component={Books} />
+            <Route exact path="/books" component={Books} />
+            <Route exact path="/books/:id" component={Detail} />
+            <Route component={NoMatch} />
+          </Switch>
+        </div>
+      </Router>
+    );
+  }
+
+  export default App;
+  ```
+
+  ![Details](Images/17-Details.png)
 
   * Similar to routes in Express, we can utilize route parameters. The values of any route parameters are available to us inside of the rendered component on the `props.match.params` object. Inside of the `client/src/pages/Detail.js` file, we access the `id` parameter:
 
-      ![Route Params](Images/18-RouteParams.png)
+  ```js
+  function Detail(props) {
+  const [book, setBook] = useState({})
+
+  // When this component mounts, grab the book with the _id of props.match.params.id
+  // e.g. localhost:3000/books/599dcb67f0f16317844583fc
+  useEffect(() => {
+    API.getBook(props.match.params.id)
+      .then(res => setBook(res.data ))
+      .catch(err => console.log(err));
+  }, [])
+  ```
 
   * Go back to the `App.js` file and point out the `Route` component rendering the `NoMatch` component . Explain that this component _should_ be rendered on every route since we haven't provided it a `path` prop.
 
   * The reason the `NoMatch` route works as expected is because of the `Switch` component wrapping our `Route`s. The `Switch` component ensures that once one of the routes are rendered, none of the routes that come after it are even checked. So as long as one of the routes match, the `NoMatch` component is not rendered. But if _none_ of the routes match, then `NoMatch` is rendered. It is like the "default" case in a switch-case statement.
 
-  ![Switch](Images/19-Switch.png)
+```js
+<Router>
+    <div>
+      <Nav />
+      <Switch>
+        <Route exact path="/" component={Books} />
+        <Route exact path="/books" component={Books} />
+        <Route exact path="/books/:id" component={Detail} />
+        <Route component={NoMatch} />
+      </Switch>
+    </div>
+  </Router>
+```
 
 * Take another few minutes answering any remaining questions.
 
