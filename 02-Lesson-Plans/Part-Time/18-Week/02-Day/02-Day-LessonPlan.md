@@ -7,67 +7,77 @@ Today's class will continue our journey into web performance by learning about p
 
 ## Instructor Notes
 
+* @TODO which activities? 
+
 * You may need to clear your storage periodically in order to see each iteration of activities. Do so in DevTools under `Application > Clear storage > Clear site data`.
 
-@TODO what else
+* @TODO what else does the instructor need to know? 
 
 
 ## Learning Objectives
+  
+* Explain the benefits a progressive web app offers a user over a traditional app.
 
-* By the end of class students will be able to:
-  
-  * Explain the benefits a progressive web app offers a user over a traditional app.
-  
-  * Implement and explain the role of a web app manifest.
-  
-  * Implement and explain the role of a service worker.
-  
-  * Successfully cache and fetch files to deliver them in an offline experience.
+* Implement and explain the role of a web app manifest.
+
+* Implement and explain the role of a service worker.
+
+* Successfully cache and fetch files to deliver them in an offline experience.
+
+* Install a PWA on both desktop and mobile devices
 
 
-### 1. Instructor Do: Progressive Web Apps (5 min) (HIGH)
+### 1. Instructor Do: Progressive Web Apps (5 min)
 
 * Welcome students to class.
 
-* Navigate to [https://guarded-waters-72148.herokuapp.com/](https://guarded-waters-72148.herokuapp.com/) in your browser and point out the following: 
+* Navigate to [https://secure-bayou-27137.herokuapp.com/](https://secure-bayou-27137.herokuapp.com/) in your browser and point out the following: 
 
- * It's the Notetaker application we built in the previous unit. But there's something different about it...
+ * It's the Image Gallery application from earlier. But there's something different about it...
  
- @TODO insert image
+ * If we open the Settings in Chrome, we will see an option to `Install Images App...`
  
- * If we open the Settings in Chrome, we will see an option to `Install Notetaker...`
- 
- * When we select `Install Notetaker...` we are presented with an option to "Install app?"
+ * When we select `Install Images App...` we are presented with an option to "Install app?"
  
  * When we click `Install`, a new Chrome window opens with our application running in it. 
  
- * @TODO it is now installed as a desktop app! If we search our applications, we will find "Notetaker" listed among them.
+ * It is now installed as a desktop app! If we search our applications, we will find "Images App" listed among them.
  
-* Ask the class the following question(s):
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
 
- * If we can install the Notetaker application on our laptops, where else might we install it? 
+  *  What is different about our Image Gallery application? 
+  
+  *  There is added functionality to install it as a desktop application.
+
+ * If we can install the Images App application on our laptops, where else might we install it? 
  
 * Use student answers to transition to the next activity.
 
-### 2. Student Do: Progressive Web Applications (5 min)
+@TODO app stars do not work in offline mode
+
+
+### . Student Do: Progressive Web Applications (10 min)
  
-* Direct students to the instructions found in [@TODO](@TODO).
+* Direct students to the instructions found in [07-Stu_PWAs](@TODO).
 
 ```md
 
-@TODO insert instructions
-
+@TODO insert new instructions
 
 ```
 
 
-### 3. Instructor Do: Progressive Web Apps Review (5 min)
+### . Instructor Do: Progressive Web Apps Review (5 min)
 
-* Ask the class the following question(s)
+* Use the prompts and talking points below to review the following key point(s):
+
+  * @TODO
+
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
 
   *  What is a progressive web application?
   
-  @TODO more detailed definition
+  @TODO better definition
   *  Progressive web applications (PWAs) are a new trend in web development that can solve problems users face with native apps and web apps.
   
   *  What is meant by the term 'native' app?
@@ -78,33 +88,32 @@ Today's class will continue our journey into web performance by learning about p
 
   *  Traditional Mobile Apps require multiple builds across platforms, are less discoverable by search engines and have high abandonment rates.They also offer less usability and don’t leverage mobile device capabilities and are often slow and bloated. PWA's provide advantages of both web and mobile apps such as push notifications, offline experiences,speed and stability. Plus, you can convert a web app into a PWA quickly without the build time of a mobile app.
   
-  * What do we need to learn to convert Notetaker into a progressive web application?
+  *  What do we need to learn to convert an application into a progressive web application?
 
-  * 
+  *  There are three primary things we need to learn: Manifests, Service Workers and the Cache API.
   
-@TODO the notetaker app does not work in offline mode
-
-* Open your Chrome Developer tools and navigate to the Application tab. 
-
-  * If we look under the Application tab in DevTools for our "Notetaker PWA", we see **Manifest**, **Service Workers** and **Cache Storage** panels.
+* Navigate to [https://secure-bayou-27137.herokuapp.com/](https://secure-bayou-27137.herokuapp.com/), open DevTools and explain the following: 
+  
+  * If we look under the Application tab in DevTools for our Image Gallery App, we see **Manifest**, **Service Workers** and **Cache Storage** panels.
 
     ![Application Sidebar](Images/application-sidebar.png)
 
-* Open up your Chrome Dev Tools and navigate to the `Application` tab to demonstrate the `manifest.webmanifest`, `Service Worker` and `Cache Storage` tabs as done earlier.
+  @TODO talking points
 
-  * Check the `offline` button inside of the `Application` tab and refresh your application.
+  * If we check the `offline` button under the Network tab, we see that the application still delivers a full experience with an Internet connection!
 
   ![Offline](Images/offline-mode.png)
 
-  * Demonstrate how the application still delivers a full experience even though it is offline.
-
 * Answer any questions before proceeding to the next demo. 
 
-### 2. Instructor Do: Web App Manifest (5 mins)
 
-@TODO instructor needs a demo!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+### . Instructor Do: Web App Manifest (5 mins)
 
-@TODO demo manifest in deployed app
+* Use the prompts and talking points below to demonstrate the following key point(s):
+
+  * @TODO
+
+@TODO instructor needs a demo
 * Open [ ](@TODO) in your browser and under Application in DevTools, select Manifest and explain the following: 
 
   * 
@@ -117,7 +126,21 @@ Today's class will continue our journey into web performance by learning about p
  ```js
  @TODO insert manifest example
  ```
+
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
+
+  * ☝️ @TODO 
+
+  * 🙋 @TODO 
+
+  * ☝️ @TODO 
+
+  * 🙋 @TODO 
   
+  * ☝️ @TODO 
+
+  * 🙋 @TODO 
+
   * By using a web app manifest, our app can tell the browser you want your app to open in a standalone window (display).
 
   * Define what page is opened when the app is first launched (start_url).
@@ -137,29 +160,34 @@ Today's class will continue our journey into web performance by learning about p
 @TODO transition!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 
-### 3. Student Do: Web App Manifest (10 mins) (CRITICAL)
+### . Student Do: Web App Manifest (10 mins) (CRITICAL)
 
-* Direct students to the activity instructions found in [Unsolved/Gallery-App-Manifest](../../../../01-Class-Content/18-pwa/Activities/01-Stu_Web-App-Manifest/Unsolved/Gallery-App-Manifest)
+* Direct students to the activity instructions found in [09-St_Manifest](../../../../01-Class-Content/18-pwa/Activities/09-Stu_Web-App-Manifest)
 
 ```md
 @TODO add instructions
 ```
 
-### 4. Instructor Do: Review Web App Manifest (5 mins)
+
+### . Instructor Do: Review Web App Manifest (5 mins)
+
+* Use the prompts and talking points below to review the following key point(s):
+
+  * @TODO
 
 * Open [...public/manifest.webmanifest](@TODO) in your IDE and explain the following:
 
   ```json
   
-  @TODO insert codez!
+  @TODO insert code and talking points
   
   ```
 
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
 
-  
+  * ☝️ @TODO 
 
-
-* Ask the class the following question(s): 
+  * 🙋 @TODO 
 
   * What's next on our list of things to do?
   
@@ -168,6 +196,10 @@ Today's class will continue our journey into web performance by learning about p
 
 
 ### 5. Instructor Do: Intro To Service Workers (15 mins) (CRITICAL)
+
+* Use the prompts and talking points below to demonstrate the following key point(s):
+
+  * @TODO
 
 @TODO need an instructor demo!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -205,7 +237,11 @@ Today's class will continue our journey into web performance by learning about p
 
 * Successful registration of the Service Worker means that the script has been successfully parsed, it is on the same origin as the document, and the origin is HTTPS.
 
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
 
+  * ☝️ @TODO 
+
+  * 🙋 @TODO 
 
 
 ### 6. Student Do: Register Service Worker (10 mins) (HIGH)
@@ -241,10 +277,12 @@ console.log("Hello from your service worker file!");
 
   ![Service Worker Console](Images/sw-console.png)
 
-* If you are stuck and need help troubleshooting please ask a TA!
-
 
 ### 7. Instructor Do: Review Register Service Worker (5 mins)
+
+* Use the prompts and talking points below to review the following key point(s):
+
+  * @TODO
 
 * Open [03-Stu_Caching-Fetching-Files/Solved/Gallery-App-Caching](../../../../01-Class-Content/18-pwa/Activities/03-Stu_Caching-Fetching-Files/Solved/Gallery-App-Caching) and navigate to `public/index.html`.
 
@@ -265,7 +303,11 @@ console.log("Hello from your service worker file!");
 
 * Reiterate that it is not necessary to understand every single line of code at this point, but to have a general understanding of we we are doing. Explain that the fluency with this code will come after seeing it a few times.
 
-* Take any clarifying questions before moving into break.
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
+
+  * ☝️ @TODO 
+
+  * 🙋 @TODO 
 
 ---
 
@@ -274,6 +316,10 @@ console.log("Hello from your service worker file!");
 ---
 
 ### 9. Instructor Do: Creating An Offline Experience (15 mins) (HIGH)
+
+* Use the prompts and talking points below to demonstrate the following key point(s):
+
+  * @TODO
 
 * Now that we have successfully registered our service worker, let's step through the code that will install and activate it. This will give our service worker the ability to cache the files we tell it to and deliever them in an offline experience for our users.
 
@@ -399,7 +445,11 @@ self.addEventListener('fetch', function(evt) {
 
 * Recap that our service worker is caching all of the files we tell it to so when a user doesn't have a connection, it can deliever them an offline browsing experience.
 
-* Take any clarifying questions before moving on.
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
+
+  * ☝️ @TODO 
+
+  * 🙋 @TODO 
 
 
 ### Student Do: Caching Files (10 mins) (CRITICAL)
@@ -525,25 +575,45 @@ self.addEventListener('fetch', function(evt) {
   ![Data Cache](Images/data-cache.png)
 
   ![Offline](Images/offline.png)
+  
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
+
+  * ☝️ @TODO 
+
+  * 🙋 @TODO 
 
 
 ### 11. Instructor Do: Review Caching and Fetching Files (5 mins)
+
+* Use the prompts and talking points below to review the following key point(s):
+
+  * @TODO
 
 * Open [03-Stu_Caching-Fetching-Files/Solved/Gallery-App-Caching](../../../../01-Class-Content/18-pwa/Activities/03-Stu_Caching-Fetching-Files/Solved/Gallery-App-Caching) and launch your app.
 
 * Ask for a volunteer to step you through the code, starting with `install` then moving on to `activate` and `fetch`.
 
-* There is a lot of code here, reiterate that it is ok if they don't completely understand every line, fluency will come with practice.
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
 
-* After stepping through the code take any questions before moving on.
+  * ☝️ @TODO 
+
+  * 🙋 @TODO 
 
 
+@TODO this demo, activity and review may be deleted per time
+### . Instructor Do: Intstalling Your App (5 mins)
 
-### 12. Instructor Do: Intstalling Your App (5 mins) (HIGH)
+* Use the prompts and talking points below to demonstrate the following key point(s):
 
-* When a Progressive Web App is installed, it looks and behaves like all of the other installed apps.
+  * @TODO
 
-* It runs in an app without an address bar or other browser UI and nd like all other installed apps, it's a top level app in the task switcher.
+* Navigate to [the deployed Image application(@TODO) and demonstrate the following functionality: 
+
+  @TODO
+
+  * When a Progressive Web App is installed, it looks and behaves like all of the other installed apps.
+
+  * It runs in an app without an address bar or other browser UI and like all other installed apps, it's a top level app in the task switcher.
 
 * Demonstrate how to install the Gallery App on desktop for the students.
 
@@ -559,129 +629,60 @@ self.addEventListener('fetch', function(evt) {
 
   ![Install Step 3](Images/install-3.png)
 
-* Now it's the students turn. Take any questions before having them follow the same process in the next activity.
 
 ### 13. Student Do: Installing Your App (15 mins)
 
-In this activity you will install your PWA on your computer and mobile device.
+@TODO insert rewritten instructions as Markdown
 
-* **Instructions**
 
-* **Part One: Installing On Desktop**
+### . Instructor Do: Review Installing Your App (5 mins)
 
-    1. Open Chrome Menu
+@TODO
 
-       ![Install 1](Images/install-1.png)
 
-    2. Install
+### . Instructor Do: Demo Notetaker PWA (5 mins)
 
-       ![Install 1](Images/install-2.png)
+* Use the prompts and talking points below to demonstrate the following key point(s):
 
-    3. See Your App Successfully Installed
+* Navigate to [05-Stu_Final-Project/Solved](../../../../01-Class-Content/18-pwa/Activities/05-Stu_Final-Project/Solved) and demonstrate the following functionality: 
 
-       ![Install 1](Images/install-3.png)
+  * @TODO the offline experience for the solved Notetaker app using Chrome Developer tools and navigate to the `Service Worker` tab, toggling the offline version and then refreshing the app.
 
-* **Part Two: Installing On Mobile**
 
-* In order to install your app on your phone you are first going to push it to Heroku.
+### . Student Do: Notetaker PWA (30 mins)
 
-    1. Create A Heroku App by running `heroku create`
+* Direct students to the activity isntructions found in [16-Stu_Notetaker-PWA](../../../../01-Class-Content/18-pwa/Activities/16-Stu_Notetaker-PWA)
 
-       ![Create App](Images/heroku-1.png)
+@TODO insert new instructions as Markdown
 
-    2. Install `mlab`
 
-    3. Run `heroku addons:create mongolab`
+### . Instructor Do: Review Notetaker PWA (15 mins)
 
-       ![Create App](Images/heroku-2.png)
+* Use the prompts and talking points below to review the following key point(s):
 
-    4. After updating both files, add and commit your code.
+  * @TODO
 
-* **Part Three: Push and Seed The Application**
+* Open [05-Stu_Final-Project/Solved/public/manifest.webmanifest](../../../../01-Class-Content/18-pwa/Activities/05-Stu_Final-Project/Solved/public/manifest.webmanifest) in your IDE and explain the following: 
 
-    1. Run `git push heroku master` followed by `heroku run npm run seed` in your terminal.
+@TODO insert manifest with talking points
 
-       ![Heroku Seed](Images/heroku-4.png)
+* Open [05-Stu_Final-Project/Solved/public/service-worker.js](../../../../01-Class-Content/18-pwa/Activities/05-Stu_Final-Project/Solved/public/service-worker.js) in your IDE and explain the following: 
 
-* **Part Four: Install The Application**
+  * @TODO add code snippets and talking points
 
-    1. Visit the deployed application in your web browser.
+  * :memo: Our `fetch` call has changed, since we are onlying fetching our cached static resources.
 
-    2. Click the share button on your mobile device.
-
-       ![Click Share](Images/download1.png)
-
-    3. Add The App To Your Homescreen
-
-       ![Download](Images/download2.png)
-
-    4. See the app installed on your device!
-
-       ![Verify App Install](Images/download3.png)
-
-### 14. Instructor Do: Review Installing Your App (5 mins)
-
-* At this point students may be in a few different stages of installation.
-
-  * Desktop should be relatively straightforeward but there might be some snags for mobile.
-
-* Use this time to help debug any issues the students may have run into.
-
-### 15. Instructor Do: Intro Final Activity (5 mins)
-
-* Tell students they are now going to test out their newly acquired PWA skills on their own.
-
-* In the next activity, they are going to convert their previous Notetaker application into a PWA.
-
-* Open [05-Stu_Final-Project/Solved](../../../../01-Class-Content/18-pwa/Activities/05-Stu_Final-Project/Solved) and demo the offline experience for the solved Notetaker app.
-
-* Open your Chrome Developer tools and navigate to the `Service Worker` tab, toggling the offline version and then refreshing the app.
-
-* Explain that they are going to follow the same steps they took for the Gallery App which are creating a web app manifest, caching the appropriate files and creating a service worker to deliver the offline experience.
-
-* Take any questions before directing them to the next activity.
-
-### 16. Student Do: Notetaker PWA (30 mins)
-
-* Direct students to the Notetaker app located in [05-Stu_Final-Project/Unsolved](../../../../01-Class-Content/18-pwa/Activities/05-Stu_Final-Project/Unsolved)
-
-* **Instructions**
-
-* For this final activity you are going to convert the Noteteaker that your previously worked on into a PWA.
-
-* Use the activities from this lesson to guide you along the following steps.
-
-  * Create an app manifest.
-
-  * Register and intall a service workers.
-
-  * Cache your files and deliver and offline experience.
-
-  * Make your app downloadable.
-
-* **BONUS**
-
-* Push your app to heroku!
-
-### 17. Instructor Do: Review Notetaker PWA (15 mins)
-
-* Open [05-Stu_Final-Project/Solved](../../../../01-Class-Content/18-pwa/Activities/05-Stu_Final-Project/Solved) and step through the `manifest.webmanifest` file as well as `service-worker.js`.
-
-* One thing to note is that our `fetch` call has changed, since we are onlying fetching our cached static resources.
-
-```js
-// fetch
-self.addEventListener('fetch', function(evt) {
-  evt.respondWith(
-    caches.open(CACHE_NAME).then(cache => {
-      return cache.match(evt.request).then(response => {
-        return response || fetch(evt.request);
-      });
-    })
-  );
-});
-```
-
-* Help any students who are struggling and answer any lingering questions before wrapping up for the day.
+  ```js
+  // fetch
+  self.addEventListener('fetch', function(evt) {
+    evt.respondWith(
+      caches.open(CACHE_NAME).then(cache => {
+        return cache.match(evt.request).then(response => {
+          return response || fetch(evt.request);
+        });
+      })
+    );
+  });
+  ```
 
 ### 18. END (0 mins)
