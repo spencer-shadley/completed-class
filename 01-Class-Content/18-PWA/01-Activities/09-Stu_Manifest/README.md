@@ -1,33 +1,14 @@
 # Student Do: Web App Manifest (10 mins)
 
-* In this activity, you will write your first progressive web application manifest.
+In this activity, you will write your first progressive web application manifest.
 
 ## Instructions
 
-* Inside the `public` directory, create a `manifest.webmanifest` file.
+* Using the instructor demo as a guide, create a manifest for the Image Gallery app.
 
-* Using the following code, fill out the different sections for the manifest.
+  * 🤔 Where do you create the `manifest.webmanifest` in the application architecture?
 
-```json
-{
-  "name": "<full-name-of-application>",
-  "short_name": "<short-name>",
-  "icons" : [
-    {
-      "src": "<relative-path-to-image>",
-      "sizes": "<widthXheight-in-pixels>",
-      "type": "image/png"
-    },
-    //etc
-  ],
-  "theme_color": "<hex-code>",
-  "background_color": "<hex-code>",
-  "start_url": "/",
-  "display": "standalone"
-}
-```
-
-* Add `<link rel="manifest" href="manifest.webmanifest">` to your `index.html` `<head>` tag.
+  * 🤔 How do you deploy a manifest?
 
 * When finished, run the commands:
 
@@ -35,10 +16,14 @@
   * npm run seed
   * npm start
 
-* Visit `localhost:3000` and open Chrome Tools > Application > Manifest.
+* Navigate to [localhost:3000](localhost:3000) and open `DevTools > Application > Manifest` to verify successful loading of the manifest.
 
-* If successful, you will see your manifest file loaded in DevTools.
 
-## Bonus
+## 💡 Hint(s)
 
-* Research [additional manifest members and add one or more to your file](https://developer.mozilla.org/en-US/docs/Web/Manifest#Members).
+Read the [MDN Web App Manifest documentation](https://developer.mozilla.org/en-US/docs/Web/Manifest) 
+
+
+## 🏆 Bonus
+
+* Add additional members to your manifest.
