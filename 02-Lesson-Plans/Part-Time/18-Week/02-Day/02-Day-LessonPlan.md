@@ -26,6 +26,8 @@ Today's class will continue our journey into web performance by learning about p
 
 * Install a PWA on both desktop and mobile devices
 
+---
+## Class Instruction
 
 ### 1. Instructor Do: Progressive Web Apps (5 min)
 
@@ -33,52 +35,72 @@ Today's class will continue our journey into web performance by learning about p
 
 * Navigate to [https://secure-bayou-27137.herokuapp.com/](https://secure-bayou-27137.herokuapp.com/) in your browser and point out the following: 
 
- * It's the Image Gallery application from earlier. But there's something different about it...
+  * It's the Image Gallery application from earlier. But there's something different about it...
  
- * If we open the Settings in Chrome, we will see an option to `Install Images App...`
+  * If we open the Settings in Chrome, we will see an option to `Install Images App...`
  
- * When we select `Install Images App...` we are presented with an option to "Install app?"
+  * When we select `Install Images App...` we are presented with an option to "Install app?"
  
- * When we click `Install`, a new Chrome window opens with our application running in it. 
+  * When we click `Install`, a new Chrome window opens with our application running in it. 
  
- * It is now installed as a desktop app! If we search our applications, we will find "Images App" listed among them.
- 
+  * It is now installed as a desktop app! If we search our applications, we will find "Images App" listed among them.
+
+@TODO emojis!
 * Ask the class the following question(s) and call on students for the corresponding answer(s):
 
-  *  What is different about our Image Gallery application? 
+  * ☝️ What is different about our Image Gallery application? 
   
-  *  There is added functionality to install it as a desktop application.
+  * 🙋 There is added functionality to install it as a desktop application.
 
- * If we can install the Images App application on our laptops, where else might we install it? 
+  * ☝️ If we can install the Images App application on our laptops, where else might we install it? 
  
 * Use student answers to transition to the next activity.
 
 @TODO app stars do not work in offline mode
 
 
-### . Student Do: Progressive Web Applications (10 min)
+### 2. Student Do: Progressive Web Applications (10 min)
  
-* Direct students to the instructions found in [07-Stu_PWAs](@TODO).
+* Direct students to the activity instructions found in [07-Stu_PWAs](@TODO).
 
 ```md
 
-@TODO insert new instructions
+  # Progressive Web Applications
 
+  In this activity, you will install a progressive web application (PWA) using your smart phone. You will also research the definition and production of a PWA.
+
+  ## Instructions
+
+  * Navigate to [https://secure-bayou-27137.herokuapp.com/](https://secure-bayou-27137.herokuapp.com/) with your smart phone and follow the instructions for your specific OS:
+
+  * @TODO instructions for iOs and Android
+
+  * Be prepared to answer the following question(s): 
+
+      * What is a progressive web application? 
+
+      * How do we create progressive web applications?
+
+
+  ## 🏆 Bonus
+
+  * What are examples of popular PWAs?
 ```
 
 
-### . Instructor Do: Progressive Web Apps Review (5 min)
+### 3. Instructor Do: Progressive Web Apps Review (5 min)
 
 * Use the prompts and talking points below to review the following key point(s):
-
-  * @TODO
-
+  
+  * ✔️ Progressive web applications (PWAs) are mobile or dekstop apps delivered through the web, built using HTML, CSS & JavaScript
+  
+  * ✔️ PWAs require a manifest, a service worker and the Cache API
+  
 * Ask the class the following question(s) and call on students for the corresponding answer(s):
 
   *  What is a progressive web application?
   
-  @TODO better definition
-  *  Progressive web applications (PWAs) are a new trend in web development that can solve problems users face with native apps and web apps.
+  * 🔑 Progressive web applications (PWAs) are mobile or dekstop apps delivered through the web, built using HTML, CSS & JavaScript
   
   *  What is meant by the term 'native' app?
   
@@ -90,7 +112,7 @@ Today's class will continue our journey into web performance by learning about p
   
   *  What do we need to learn to convert an application into a progressive web application?
 
-  *  There are three primary things we need to learn: Manifests, Service Workers and the Cache API.
+  * 🔑 There are three primary things we need to learn: Manifests, Service Workers and the Cache API.
   
 * Navigate to [https://secure-bayou-27137.herokuapp.com/](https://secure-bayou-27137.herokuapp.com/), open DevTools and explain the following: 
   
@@ -98,90 +120,118 @@ Today's class will continue our journey into web performance by learning about p
 
     ![Application Sidebar](Images/application-sidebar.png)
 
-  @TODO talking points
-
-  * If we check the `offline` button under the Network tab, we see that the application still delivers a full experience with an Internet connection!
+  * If we check the `offline` button in the Service Workers panel, we see that the application still delivers a full experience with an Internet connection!
 
   ![Offline](Images/offline-mode.png)
 
 * Answer any questions before proceeding to the next demo. 
 
 
-### . Instructor Do: Web App Manifest (5 mins)
+### 4. Instructor Do: Web App Manifest Demo (5 mins)
 
 * Use the prompts and talking points below to demonstrate the following key point(s):
 
-  * @TODO
+  * ✔️ `manifest.webmanifest` is JSON file providing information for mobile and desktop installation
+  
+  * ✔️ Manifest properties are referred to as members
+  
+* Open [08-Ins_Manifest/manifest.webmanifest]@TODO) in your IDE and explain the following: 
 
-@TODO instructor needs a demo
-* Open [ ](@TODO) in your browser and under Application in DevTools, select Manifest and explain the following: 
-
-  * 
-
-@TODO demo example of a manifest file
-* Open [08-Ins_Manifest]@TODO) and explain the following: 
-
-  * A web app manifest is a simple JSON file containing some metadata about a web application. Later when we add functionality to make our web app installable, it will be used to describe the installed application's name, icon, description, and more. 
+  * 🔑 A web app manifest is a simple JSON file containing some metadata about a web application. 
   
  ```js
- @TODO insert manifest example
- ```
+  {
+    "short_name": "Demo",
+    "name": "Web App Manifest Demo",
+    "icons": [
+      {
+        "src": "/assets/images/icons-192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/assets/images/icons-512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "start_url": "/",
+    "background_color": "	#808080",
+    "display": "standalone",
+    "theme_color": "	#808080"
+  } 
+  ```
+  * 🔑 Each of the properties in our manifest file is referred to as a **member**.
 
 * Ask the class the following question(s) and call on students for the corresponding answer(s):
 
-  * ☝️ @TODO 
+  * ☝️ What do we think the difference is between `name` and `short_name`?
 
-  * 🙋 @TODO 
-
-  * ☝️ @TODO 
-
-  * 🙋 @TODO 
+  * 🙋 `short_name` is used on the home screen and in the application menu
   
-  * ☝️ @TODO 
+  * ☝️ What are "icons"?
 
-  * 🙋 @TODO 
+  * 🙋 The `icons` array contains information about the thumbnail images used when installing the PWA on mobile or desktop
 
-  * By using a web app manifest, our app can tell the browser you want your app to open in a standalone window (display).
+  * ☝️ What is the `start_url` member?
 
-  * Define what page is opened when the app is first launched (start_url).
-
-  * Define what the app should look like on the dock or app launcher (short_name, icons). This includes various icon sizes for different sized devices. The appropriate icon to use is automatically determined by the device.
-
-  * Create a splash screen (name, icons, colors).
-
-  * Tell the browser to open the window in landscape, or portrait mode (orientation).
+  * 🙋 Defines what page is opened when the app is first launched (start_url).
   
-* Open (...index.html)(@TODO) in your IDE and point out the following: 
+  * ☝️ What does the `display` member do?
 
-  * Web app manifests are deployed in your HTML pages using a `<link>` element in the `<head>` of a document:
-
-  * `<link rel="manifest" href="/manifest.webmanifest">`
-
-@TODO transition!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  * 🙋 By using a web app manifest, our app can tell the browser you want your app to open in a standalone window
 
 
-### . Student Do: Web App Manifest (10 mins) (CRITICAL)
+### 5. Student Do: Web App Manifest (10 mins)
 
 * Direct students to the activity instructions found in [09-St_Manifest](../../../../01-Class-Content/18-pwa/Activities/09-Stu_Web-App-Manifest)
 
 ```md
-@TODO add instructions
-```
+  # Student Do: Web App Manifest (10 mins)
+
+  In this activity, you will write your first progressive web application manifest.
+
+  ## Instructions
+
+  * Using the instructor demo as a guide, create a manifest for the Image Gallery app.
+
+    * 🤔 Where do you create the `manifest.webmanifest` in the application architecture?
+
+    * 🤔 How do you deploy a manifest?
+
+  * When finished, run the commands:
+
+    * npm install
+    * npm run seed
+    * npm start
+
+  * Navigate to [localhost:3000](localhost:3000) and open `DevTools > Application > Manifest` to verify successful loading of the manifest.
+
+
+  ## 💡 Hint(s)
+
+  Read the [MDN Web App Manifest documentation](https://developer.mozilla.org/en-US/docs/Web/Manifest) 
+
+
+  ## 🏆 Bonus
+
+  * Add additional members to your manifest.
+  ```
 
 
 ### . Instructor Do: Review Web App Manifest (5 mins)
 
-* Use the prompts and talking points below to review the following key point(s):
+  * Use the prompts and talking points below to review the following key point(s):
 
-  * @TODO
+    * @TODO
 
-* Open [...public/manifest.webmanifest](@TODO) in your IDE and explain the following:
+  * Open [...public/manifest.webmanifest](@TODO) in your IDE and explain the following:
 
-  ```json
+    ```json
+
+    @TODO insert code and talking points
   
-  @TODO insert code and talking points
-  
-  ```
+    ```
 
 * Ask the class the following question(s) and call on students for the corresponding answer(s):
 
@@ -189,13 +239,13 @@ Today's class will continue our journey into web performance by learning about p
 
   * 🙋 @TODO 
 
-  * What's next on our list of things to do?
+  * ☝️ What's next on our list of things to do?
   
-  *  Add a service worker!
+  * 🙋 Add a service worker!
+  
 
-
-
-### 5. Instructor Do: Intro To Service Workers (15 mins) (CRITICAL)
+@TODO 15 minutes is way too long
+### . Instructor Do: Intro To Service Workers (15 mins)
 
 * Use the prompts and talking points below to demonstrate the following key point(s):
 
@@ -244,7 +294,7 @@ Today's class will continue our journey into web performance by learning about p
   * 🙋 @TODO 
 
 
-### 6. Student Do: Register Service Worker (10 mins) (HIGH)
+### . Student Do: Register Service Worker (10 mins) (HIGH)
 
 * Direct students to the next activity located in [02-Stu_Service-Workers](../../../../01-Class-Content/18-pwa/Activities/02-Stu_Service-Workers/Unsolved).
 
@@ -278,7 +328,7 @@ console.log("Hello from your service worker file!");
   ![Service Worker Console](Images/sw-console.png)
 
 
-### 7. Instructor Do: Review Register Service Worker (5 mins)
+### . Instructor Do: Review Register Service Worker (5 mins)
 
 * Use the prompts and talking points below to review the following key point(s):
 
@@ -311,11 +361,11 @@ console.log("Hello from your service worker file!");
 
 ---
 
-### 8. Break (15 mins)
+### . Break (15 mins)
 
 ---
 
-### 9. Instructor Do: Creating An Offline Experience (15 mins) (HIGH)
+### . Instructor Do: Creating An Offline Experience (15 mins) (HIGH)
 
 * Use the prompts and talking points below to demonstrate the following key point(s):
 
@@ -628,16 +678,6 @@ self.addEventListener('fetch', function(evt) {
 * **See Your App Successfully Installed**
 
   ![Install Step 3](Images/install-3.png)
-
-
-### 13. Student Do: Installing Your App (15 mins)
-
-@TODO insert rewritten instructions as Markdown
-
-
-### . Instructor Do: Review Installing Your App (5 mins)
-
-@TODO
 
 
 ### . Instructor Do: Demo Notetaker PWA (5 mins)
