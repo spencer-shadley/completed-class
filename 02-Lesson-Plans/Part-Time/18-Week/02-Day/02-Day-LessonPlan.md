@@ -45,7 +45,6 @@ Today's class will continue our journey into web performance by learning about p
  
   * It is now installed as a desktop app! If we search our applications, we will find "Images App" listed among them.
 
-@TODO emojis!
 * Ask the class the following question(s) and call on students for the corresponding answer(s):
 
   * ☝️ What is different about our Image Gallery application? 
