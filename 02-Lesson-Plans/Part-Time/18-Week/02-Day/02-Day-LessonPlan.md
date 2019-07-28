@@ -91,35 +91,35 @@ Today's class will continue our journey into web performance by learning about p
 
 * Use the prompts and talking points below to review the following key point(s):
   
-  * ✔️ Progressive web applications (PWAs) are mobile or dekstop apps delivered through the web, built using HTML, CSS & JavaScript
+  * ✔️ Progressive web applications (PWAs) are mobile or dekstop apps delivered through the web, built using HTML, CSS & JavaScript, that allow users to work offline
   
   * ✔️ PWAs require a manifest, a service worker and the Cache API
   
 * Ask the class the following question(s) and call on students for the corresponding answer(s):
 
-  *  What is a progressive web application?
+  * ☝️ What is a progressive web application?
   
-  * 🔑 Progressive web applications (PWAs) are mobile or dekstop apps delivered through the web, built using HTML, CSS & JavaScript
+  * 🙋 Progressive web applications (PWAs) are mobile or dekstop apps delivered through the web, built using HTML, CSS & JavaScript
   
-  *  What is meant by the term 'native' app?
+  * ☝️ What is meant by the term 'native' app?
   
-  *  The term "native app" refers to applications written for specific platforms. For example, native iPhone apps are written in iOs and Android apps are primarily written in Java. Apple apps will not run on Android devices and vice versa. 
+  * 🙋 The term "native app" refers to applications written for specific platforms. For example, native iPhone apps are written in iOs and Android apps are primarily written in Java. Apple apps will not run on Android devices and vice versa. 
 
-  *  How are PWAs different from native apps?
+  * ☝️ How are PWAs different from native apps?
 
-  *  Traditional Mobile Apps require multiple builds across platforms, are less discoverable by search engines and have high abandonment rates.They also offer less usability and don’t leverage mobile device capabilities and are often slow and bloated. PWA's provide advantages of both web and mobile apps such as push notifications, offline experiences,speed and stability. Plus, you can convert a web app into a PWA quickly without the build time of a mobile app.
+  * 🙋 Traditional Mobile Apps require multiple builds across platforms, are less discoverable by search engines and have high abandonment rates.They also offer less usability and don’t leverage mobile device capabilities and are often slow and bloated. PWA's provide advantages of both web and mobile apps such as push notifications, offline experiences,speed and stability. Plus, you can convert a web app into a PWA quickly without the build time of a mobile app.
   
-  *  What do we need to learn to convert an application into a progressive web application?
+  * ☝️ What do we need to learn to convert an application into a progressive web application?
 
-  * 🔑 There are three primary things we need to learn: Manifests, Service Workers and the Cache API.
+  * 🙋 There are three primary things we need to learn: Manifests, Service Workers and the Cache API.
   
 * Navigate to [https://secure-bayou-27137.herokuapp.com/](https://secure-bayou-27137.herokuapp.com/), open DevTools and explain the following: 
   
-  * If we look under the Application tab in DevTools for our Image Gallery App, we see **Manifest**, **Service Workers** and **Cache Storage** panels.
+  * 🔑 If we look under the Application tab in DevTools for our Image Gallery App, we see **Manifest**, **Service Workers** and **Cache Storage** panels.
 
     ![Application Sidebar](Images/application-sidebar.png)
 
-  * If we check the `offline` button in the Service Workers panel, we see that the application still delivers a full experience with an Internet connection!
+  * 🔑 If we check the `offline` button in the Service Workers panel, we see that the application still delivers a full experience with an Internet connection!
 
   ![Offline](Images/offline-mode.png)
 
