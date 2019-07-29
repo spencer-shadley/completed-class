@@ -38,12 +38,11 @@ In this week, we will be welcoming our students to their first week of our Full-
   * ls
   * rm
 
-
 ### Lesson Plans
 
-* [1.1 - Lesson Plan](01-Day/01-Day-LessonPlan.md)
-* [1.2 - Lesson Plan](02-Day/02-Day-LessonPlan.md)
-* [1.3 - Lesson Plan](03-Day/03-Day-LessonPlan.md)
+* [1.1 - Lesson Plan](01-Day/01.1-LessonPlan.md)
+* [1.2 - Lesson Plan](02-Day/01.2-LessonPlan.md)
+* [1.3 - Lesson Plan](03-Day/01.3-LessonPlan.md)
 
 ### Homework Activities
 

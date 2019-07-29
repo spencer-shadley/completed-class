@@ -1,4 +1,4 @@
-## Unit 5 - JavaScript / jQuery Review, Timers, & Debugger
+## Unit 5 - Third-Party APIs
 
 ### Overview
 
@@ -31,12 +31,11 @@ In this week we will review JavaScript & jQuery fundamentals, as well as touch o
   * Pseudo coding to think through problems before implementing solutions.
   * Whiteboard interviewing practice.
 
-
 ### Lesson Plans
 
-* [5.1 - Lesson Plan](01-Day/01-Day-LessonPlan.md)
-* [5.2 - Lesson Plan](02-Day/02-Day-LessonPlan.md)
-* [5.3 - Lesson Plan](03-Day/03-Day-LessonPlan.md)
+* [5.1 - Lesson Plan](01-Day/05.1-LessonPlan.md)
+* [5.2 - Lesson Plan](02-Day/05.2-LessonPlan.md)
+* [5.3 - Lesson Plan](03-Day/05.3-LessonPlan.md)
 
 ### Homework Activities
 

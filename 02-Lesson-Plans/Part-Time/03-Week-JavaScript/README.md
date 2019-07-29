@@ -39,12 +39,11 @@ In this week we will be introducing students to their first taste of JavaScript.
   * Scope
   * Callbacks
 
-
 ### Lesson Plans
 
-* [3.1 - Lesson Plan](01-Day/01-Day-LessonPlan.md)
-* [3.2 - Lesson Plan](02-Day/02-Day-LessonPlan.md)
-* [3.3 - Lesson Plan](03-Day/03-Day-LessonPlan.md)
+* [3.1 - Lesson Plan](01-Day/03.1-LessonPlan.md)
+* [3.2 - Lesson Plan](02-Day/03.2-LessonPlan.md)
+* [3.3 - Lesson Plan](03-Day/03.3-LessonPlan.md)
 
 ### Homework Activities
 

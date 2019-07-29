@@ -33,12 +33,11 @@ In this week, we will continue diving into CSS and providing students with a tho
   * Understanding mobile first design through bootstrap.
   * Implementing media queries.
 
-
 ### Lesson Plans
 
-* [2.1 - Lesson Plan](01-Day/01-Day-LessonPlan.md)
-* [2.2 - Lesson Plan](02-Day/02-Day-LessonPlan.md)
-* [2.3 - Lesson Plan](03-Day/03-Day-LessonPlan.md)
+* [2.1 - Lesson Plan](01-Day/02.1-LessonPlan.md)
+* [2.2 - Lesson Plan](02-Day/02.2-LessonPlan.md)
+* [2.3 - Lesson Plan](03-Day/02.3-LessonPlan.md)
 
 ### Homework Activities
 

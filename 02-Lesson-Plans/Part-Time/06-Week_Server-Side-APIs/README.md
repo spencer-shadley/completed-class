@@ -1,4 +1,4 @@
-## Unit 6 - Introduction to APIs and AJAX
+## Unit 6 - Server-Side APIs
 
 ### Overview
 
@@ -22,12 +22,11 @@ Be sure to slack out this [tutorial on the OpenWeatherMap API](http://osp123.git
 * JSON
 * AJAX
 
-
 ### Lesson Plans
 
-* [6.1 - Lesson Plan](01-Day/01-Day-LessonPlan.md)
-* [6.2 - Lesson Plan](02-Day/02-Day-LessonPlan.md)
-* [6.3 - Lesson Plan](03-Day/03-Day-LessonPlan.md)
+* [6.1 - Lesson Plan](01-Day/06.1-LessonPlan.md)
+* [6.2 - Lesson Plan](02-Day/06.2-LessonPlan.md)
+* [6.3 - Lesson Plan](03-Day/06.3-LessonPlan.md)
 
 ### Homework Activities
 
