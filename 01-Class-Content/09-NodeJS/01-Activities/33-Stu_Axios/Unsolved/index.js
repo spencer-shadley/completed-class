@@ -1,5 +1,4 @@
 const fs = require("fs");
-const path = require("path");
 const axios = require("axios");
 const inquirer = require("inquirer");
 
@@ -10,5 +9,4 @@ inquirer
   })
   .then(function({ username }) {
     const queryUrl = `https://api.github.com/users/${username}/repos?per_page=100`;
-
   });
