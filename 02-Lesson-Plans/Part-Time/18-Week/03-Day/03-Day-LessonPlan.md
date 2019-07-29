@@ -1,66 +1,68 @@
-## 18.3 Lesson Plan - Intro to Webpack (10:00 AM) <!--links--> &nbsp; [⬅️](#todo-fix-when-merged-to-dev) &nbsp; [➡️](#todo-fix-when-merged-to-dev)
+# 18.3 Lesson Plan - Intro to Webpack (10:00 AM) <!--links--> &nbsp; [⬅️](#todo-fix-when-merged-to-dev) &nbsp; [➡️](#todo-fix-when-merged-to-dev)
 
 ## Overview
 
-In todays class students will be continuing their journey into web performance. Today we will be learning about Webpack. Webpack is a module bundler, with its main purpose being bundling JavaScript files for use in a browser. Webpack provides a lot of functionality that developers can take advantage of to make their programs more performant.
-
----
+In today's class students will be continuing their journey into web performance. Today we will be learning about Webpack. Webpack is a module bundler, with its main purpose being bundling JavaScript files for use in a browser. Webpack provides a lot of functionality that developers can take advantage of to make their programs more performant.
 
 ## Learning Objectives
 
-* By the end of class students will be able to....
+* Create a basic Webpack configuration file.
 
-  * Create a basic Webpack configuration file.
-  * Bundle their JavaScript code into a single file.
-  * Add Webpack plugins to their Webpack configs.
-  * Use Webpack plugins to convert their app to a PWA.
-  * Use Webpack to do code splitting or chunking.
+* Bundle their JavaScript code into a single file.
 
----
+* Add Webpack plugins to their Webpack configs.
+
+* Convert web applications to PWA using Webpack 
+
+* Perform code splitting using webpack.
 
 ## Instructor Notes
 
-* Webpack can be a difficult tool to get your head around, so be as clear as possible in your explanations and be ready to answer plenty of student questions.
+* Complete activities @TODO XX-Ins_whatever through XX-Stu_whatevs
+
+* Webpack can be a difficult tool to get your head around, so be as clear as possible in your explanations and be ready to answer plenty of student questions. It is recommended that you review the webpack [docs](https://webpack.js.org/concepts). You may want to read [Why Webpack](https://webpack.js.org/concepts/why-webpack) so that you are prepared to answer student questions like "Why are we learning this?". 
 
 ---
 
 ### 1. Instructor Do: Welcome/Intro Webpack (10 mins)
 
-* Welcome students and introduce them to the topic for today, Webpack.
+* Welcome students to the class.
 
-* Ask the class:
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
 
-  * Has anyone ever heard of Webpack?
+  * ☝️ In terms of performance, what are the skills we have learned so far?
 
-  * If so, in what context?
+  * 🙋 Compression, minification, lazy-loading, and caching.
 
-* Webpack is a module bundler. What this means is that Webpack takes our JavaScript and all of its dependencies and bundles it into a single file.
+  * ☝️ What if our application has dependencies? Do we minify those by-hand?
+
+  * 🙋 No, that would be inefficient and take a long time.
+
+  * ☝️ Today we're learning webpack. What do you think webpack does?
+
+  * 🙋 Webpack is a module bundler. What this means is that Webpack takes our JavaScript and all of its dependencies and bundles it into a single file.
 
 * There are two main phases to a module bundler.
 
   * Dependency Resolution
 
-    * In the dependency resolution phase, Webpack looks for an entry point. When the entry point is identified the main purpose of dependency resolution is to scan and gather all of the pieces of code and dependencies required to make the code function. The map of required code and dependencies is referred to as a _dependency graph_. Once this graph as been made, we continue to the packing phase.
-
   * Packing
-
-    * Webpack takes the dependency graph that was created and then packs all of the code and dependencies necessary into an output file specified within the configuration file.
 
 ### 2. Instructor Do: Intro to Webpack (5 mins)
 
-* Demonstrate for students how we can quickly create a Webpack application using the webpack-cli. Run the following command in the terminal and have students follow along if they wish:
+* Navigate to @TODO linkhere from the command line and run:
 
-```bash
-npm install webpack webpack-cli -D
-```
+  * `npm install webpack webpack-cli -D`
 
-* Open `webpack.config.js` and point out the following:
+* Open @TODO webpack.config.js in your IDE and point out the following:
 
-  * In order to use Webpack, you need to provide a configuration file that Webpack will use to build off of.
+  * In order to use Webpack, we need to provide a configuration file that Webpack will use to build off of.
 
-  * Entry is the main JavaScript file that your application uses.
+  * Entry is the main JavaScript file that our application uses.
 
   * Output is an object describing the bundle that Webpack will build. The path property is the folder that the file will be created in. In this configuration, we are telling Webpack that the output file should be in a folder named `dist` and the file itself should be named `bundle.js`.
+
+  * In the dependency resolution phase, Webpack looks for an entry point. When the entry point is identified the main purpose of dependency resolution is to scan and gather all of the pieces of code and dependencies required to make the code function. The map of required code and dependencies is referred to as a _dependency graph_. Once this graph as been made, we continue to the packing phase.
 
   * Setting the mode property allows us to create custom configurations for different environments. In this configuration, we are specifying that this build should be used for development.
 
@@ -76,11 +78,11 @@ const config = {
 module.exports = config;
 ```
 
-* Open `package.json` and point out the following:
+* Open @TODO `package.json` in your IDE and point out the following:
 
-  * Adding `-D` to the npm install command causes the packages to be saved as "devDependencies" in the `package.json`. While "dependencies" are dependencies that are used at runtime, "devDependencies" are meant to be packages that are only needed in development.
+  * 📝 Adding `-D` to the npm install command causes the packages to be saved as "devDependencies" in the `package.json`. While "dependencies" are dependencies that are used at runtime, "devDependencies" are meant to be packages that are only needed in development.
 
-  * It's worth mentioning that the JavaScript bundle that Webpack creates does **not** need Webpack to run.
+  * The JavaScript bundle that Webpack creates does **not** need Webpack to run.
 
   * We have added the script "build" so that when `npm run build` is ran, it executes `webpack --watch`. This command will watch over your entry point(s) for changes and build again if any files are changed.
 
@@ -104,26 +106,42 @@ module.exports = config;
 }
 ```
 
-* Run `webpack` in the terminal and show students that this command created a new folder named `dist` with the new bundle inside a file named `bundle.js`.
+* Run `webpack` from the command line and explain the following:
 
-* Open the file and briefly show that the JavaScript is a minified bundle of `src/app.js` and any dependencies it has. Use `Find` with your IDE to point out that the minified bundle contains `console.log` from `src/app.js`.
+  * Running `webpack` created a new folder named `dist` with the new bundle inside a file named `bundle.js`.
 
-* Open `index.html` and point out that we have to update the script tag so that it uses our new webpack build.
+  * Webpack takes the dependency graph that was created and then packs all of the code and dependencies necessary into an output file specified within the configuration file.
 
-```html
-<script type="text/javascript" src="dist/bundle.js"></script>
-```
+* Open the file @TODO `src/app.js` in your IDE.
 
-* Now open `index.html` in your browser and show that the `Hello webpack` appears in the console, coming from the file `bundle.js`.
+  * Show that the JavaScript is a minified bundle of `src/app.js` and any dependencies it has. 
 
-* Lastly run `npm build` to demonstrate that the build script set up in `package.json` runs and watches for any changes in our files, similar to how `nodemon` watches for changes. In order to kill the process, type `Ctrl + C` in your terminal.
+  * Use `Find` with your IDE to point out that the minified bundle contains `console.log` from `src/app.js`.
+
+* Open `index.html` in your IDE.
+
+  * Point out that we have to update the script tag so that it uses our new webpack build.
+
+  ```html
+  <script type="text/javascript" src="./dist/bundle.js"></script>
+  ```
+
+* Now open `index.html` in your browser and point out the following:
+
+  * `Hello webpack` appears in the console, coming from the file `bundle.js`.
+
+* Lastly run `npm build` from the command line and explain the following:
+
+  * The build script set up in `package.json` runs and watches for any changes in our files, similar to how `nodemon` watches for changes. In order to kill the process, type `Ctrl + C` in your terminal.
 
 ### 3. Student Do: Budget Tracker (10 mins)
 
 ```md
-* In this activity we will create a bundle.js file with Webpack.
+# Budget Tracker
 
-* **Instructions**
+In this activity we will create a bundle.js file with Webpack.
+
+## Instructions
 
 * Run the following command: `npm install webpack webpack-cli -D`
 
@@ -150,19 +168,19 @@ module.exports = config;
 
 # 4. Instructor Do: Review Budget Tracker (5 mins)
 
-* Open `13-Stu-Webpack-Intro/Solved/` in the browser.
+* Open @TODO `13-Stu-Webpack-Intro/Solved/` in the browser and demonstrate the following functionality:
 
-* Enter a name and value into the the expense field then click the submit button. Do this one more time and point out that the balance is being adjusted after every submission.
+  * When we add multiple expenses, we see that our balance adjusts for each submission.
 
-* Click the reset button and point out that the expenses list gets cleared and the balance is reset to its original value.
+  * When we click the reset button, the expenses list gets cleared and the balance is reset to its original value.
 
-* Open `13-Stu-Webpack-Intro/Solved/app.js` in your IDE and point out the following:
+* Open @TODO `13-Stu-Webpack-Intro/Solved/app.js` in your IDE and point out the following:
 
   * At the top of the file, we bring in `module.exports` from the calculations file.
 
   * Webpack allows us to use modules, including the `require` module just like we can in Node.js apps.
 
-  * Note that if we were not using Webpack, we wouldn't be able to use `require` in client-side JavaScript.
+  * 📝 If we were not using Webpack, we wouldn't be able to use `require` in client-side JavaScript.
 
   ```js
   const calculations = require("./calculations");
@@ -184,46 +202,61 @@ function reset() {
 }
 ```
 
-* Briefly open `webpack.config.js` and `package.json` and demonstrate that they use the same configuration as the previous demo.
+* Open @TODO `webpack.config.js` in your IDE and point out the following:
 
-* Remind the students that they will need to make sure that the JavaScript file in `index.html` is their Webpack bundle, not `src/app.js`.
+  * We use the same configuration as the previous demo.
+
+* Open @TODO `package.json` in your IDE and point out the following:
+
+  * We use the same configuration as the previous demo.
+
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
+
+  * ☝️ Which JavaScript file do we link to index.html? 
+
+  * 🙋 Our JavaScript bundle, `./dist/bundle.js`
 
 ### 5. Instructor Do: Demo Bundle Analyzer Plugin (5 mins)
 
-* Open `14-Ins-First-Plugin/package.json` and explain the following: 
+* Open @TODO `14-Ins-First-Plugin/package.json` in your IDE and explain the following: 
 
   * We've added webpack-bundle-analyzer to our devDependencies and the chart.js library to our dependencies.
 
   * The `webpack-bundle-analyzer` is a plugin that will build an interactive visualization of all of the dependencies in our project.
 
-* Open `14-Ins-First-Plugin/webpack.config.js` and point out the syntax required to add plugins.
+@TODO add snippet
+
+* Open @TODO `14-Ins-First-Plugin/webpack.config.js` in your IDE and point out the following:
 
   * Webpack plugins can be used to perform tasks that Webpack can't perform by default. Some of these tasks include asset management, additional bundle optimization, and adding PWA capabilities.
 
   * Plugins could be used multiple times in the same configuration file, so it is important that you create an instance of one by using the keyword `new`.
 
-* Open `14-Ins-First-Plugin/webpack.config.js` and point out the new code used for the chart section of the page.
+* Open @TODO `14-Ins-First-Plugin/webpack.config.js` in your IDE and point out the following:
 
-  * It is not essential that students understand how the Chart.js code is working. Emphasize that we've simply added a library so that we can analyze its impact on the total bundle size.
+  * Emphasize that we've simply added a library so that we can analyze its impact on the total bundle size.
 
-* Run `npm run build` and navigate to [http://127.0.0.1:8888](http://127.0.0.1:8888). This tab should have automatically opened after running the `npm run build` command.
+  @TODO Add snuppet
+
+* Run `npm run build` from the command line, navigate to [http://127.0.0.1:8888](http://127.0.0.1:8888) in your browser if the tab does not automatically open and explain the following:
 
 ![Bundle Analyzer](Images/bundleAnalyzer.png)
 
-  * Let students know that this plugin is helpful for analyzing the different impacts that libraries have on the bundle size of your application.
+  * This plugin helps us analyze the different impacts that libraries have on the bundle size of our application.
 
-  * Mouse over the `bundle.js` section, then the `chart.js` section and point out that the chart.js library makes up a significant portion of our total bundle size.
+  * When we mouse over the `bundle.js` section, then the `chart.js` section we can see that the chart.js library makes up a significant portion of our total bundle size.
 
-  * Ask the class why they think `moment.js` is taking up a section, even though they didn't install it.
+  * ☝️ Why is `moment.js` included here, even though we didn't install it?
 
-  * Even though they didn't explicitly install `moment.js`, it is a dependency of `chart.js`, and adds to the total bundle size of our application.
+  * 🙋 Even though we didn't explicitly install `moment.js`, it is a dependency of `chart.js`, and adds to the total bundle size of our application.
 
 ### 6. Student Do: Gallery App with Webpack (10 mins)
 
 ```md
-* **PWAs with Webpack**
 
-* In this activity we will adjust our Gallery app so that Webpack minifies and bundles our code.
+# Gallery App with Webpack
+
+In this activity we will adjust our Gallery app so that Webpack minifies and bundles our code.
 
 ## Instructions
 
@@ -266,15 +299,17 @@ npm install
 npm start
 ```
 
-* Navigate to [http://localhost:3000](http://localhost:3000) to view the gallery application. 
+* Navigate to [http://localhost:3000](http://localhost:3000) in your browser and point out the following: 
 
-* In the browser developer tools, navigate to the service worker file and point out that the new webpack bundle `dist/bundle.js` is being cached instead. Additionally, "Service Worker registered successfully" was logged to the console.
+  * If we inspect our Service Worker with DevTools, we see that `dist/bundle.js` is cached.
 
-* Open `public/webpack.config.js` and point out the purpose of the two plugins.
+  * Additionally, "Service Worker registered successfully" was logged to the console.
 
-  * The first plugin, `SWPrecacheWebpackPlugin` allows for you to cache your external project dependencies. It generates a service worker using an existing service worker and adds it to your build directory.
+* Open @TODO `public/webpack.config.js` in your IDE and point out the following:
 
-  * The second plugin, `WebpackPwaManifest` generates a manifest.json file to be included in your build directory. While most of the properties are the same as a regular manifest.json, this plugin also automatically resizes all of your icons to the appropriate sizes and allows for the use of ES6 features and JavaScript comments.
+  * The first plugin, `SWPrecacheWebpackPlugin` allows us to cache our external project dependencies. It generates a service worker using an existing service worker and adds it to our build directory.
+
+  * The second plugin, `WebpackPwaManifest` generates a manifest.json file to be included in our build directory. While most of the properties are the same as a regular manifest.json, this plugin also automatically resizes all of our icons to the appropriate sizes and allows for the use of ES6 features and JavaScript comments.
 
 ```js
 plugins: [
@@ -304,19 +339,27 @@ plugins: [
 ],
 ```
 
-* Open `package.json` and mention that the plugins must be installed as devDependencies. 
+* Open @TODO `package.json` in your IDE and point out the following:
+
+  * Our plugins must be installed as devDependencies. 
 
   * We've also added the script "prestart", which is a built in npm script that will automatically run before each time `npm start` is run.
 
+@TODO snippet
+
 ### 8. Instructor Do: Demo Pure Functions (10 mins)
 
-* Let the students know that the next demo is going to use a couple of ES6 features that aren't supported in all browsers. Ask the class what tool they think they will need to use.
+* The next demo is going to use a couple of ES6 features that aren't supported in all browsers.
 
-* Many students will probably say Babel. This is true, but in order to use Babel with our Webpack build we will need to utilize a Babel feature known as a **loader**.
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
+
+  * ☝️ What tool do you think we will need to use to allow us to use ES6 in all browsers?
+
+  * 🙋 Babel. This is true, but in order to use Babel with our Webpack build we will need to utilize a Babel feature known as a **loader**.
 
   * Normally, Webpack only knows how to process regular JavaScript. Loaders allow Webpack to compile and bundle non-JavaScript resources like CSS, HTML, TypeScript, and more. Specifically, the Babel loader goes through all of our JavaScript files and transpiles ES6 into ES5.
 
-* Open `16-Ins-Pure-Functions/webpack.config.js` in your IDE and point out the following:
+* Open @TODO `16-Ins-Pure-Functions/webpack.config.js` in your IDE and point out the following:
 
   * We've created a new object called module and within it define an array of rules. 
 
@@ -341,25 +384,33 @@ plugins: [
 }
 ```
 
-* Now that we've added our loader, we need to install Babel itself, the loader, and any presets that we want to use. To do this, run `npm install @babel/core babel-loader @babel/preset-env -D`.
+  * Now that we've added our loader, we need to install Babel itself, the loader, and any presets that we want to use. 
 
-* Next, open up `src/app.js` and point out the reorganization of the files. 
+* Run `npm install @babel/core babel-loader @babel/preset-env -D` from the command line.
+
+* Open up `src/app.js` and point out the reorganization of the files. 
 
 * We have added the `Chart.js` library so that we can see a bar chart of our expenses. 
 
-  * It is not essential for students to understand how to interact with the `chart.js` library. It is important to note that Webpack allows us to import other npm modules into our application. 
+  * Remember, Webpack allows us to import other npm modules into our application. 
   
   * We've separated the files into files like `elements.js` and `expenses.js` to help further modularize our code. There is no definitively "right" way to split up your code. The main goal when refactoring code to be split between files is to create functions that are reusable and relatively "pure", when possible.
 
-* Introduce the concept of **Pure functions** vs **Impure functions**.
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
 
-  * Pure functions are straightforward with singular purposes. They do not have any "side effects" within them. **Side effects** are bits of code that interact with the outside world like database calls or changes to the DOM.
-  
-  * In pure functions, whenever data needs to be modified, it is not mutated. Instead, we create a new variable that describes the new mutation. Pure functions have the advantage of being easily testable and reusable. It is considered best practice to use pure functions whenever possible.
-  
-  * Impure functions tend to have multiple purposes. The might contain database or network calls. Even though it is preferred to keep your functions simple, impure functions are often unavoidable. 
+  * ☝️ What does it mean for a function to be pure?
 
-  * In `src/calculations.js`, the `subtract` function is a pure function. It creates a new variable for the result, instead of modifying the input and contains no side effects.
+  * 🙋 Pure functions are straightforward with singular purposes. They do not have any "side effects" within them. **Side effects** are bits of code that interact with the outside world like database calls or changes to the DOM.
+  
+  * 🙋 In pure functions, whenever data needs to be modified, it is not mutated. Instead, we create a new variable that describes the new mutation. Pure functions have the advantage of being easily testable and reusable. It is considered best practice to use pure functions whenever possible.
+  
+  * ☝️ What does it mean for a function to be impure?
+
+  * 🙋 Impure functions tend to have multiple purposes. The might contain database or network calls. Even though it is preferred to keep your functions simple, impure functions are often unavoidable. 
+
+* Open @TODO `src/calculations.js` in your IDE and point out the following:
+
+  * The `subtract` function is a pure function. It creates a new variable for the result, instead of modifying the input and contains no side effects.
 
   ```js
   export function subtract(a, b) {
@@ -368,7 +419,9 @@ plugins: [
   }
   ```
 
-  * Conversely, in `src/app.js`, the `submit` function is an impure function. It modifies existing values and has multiple side effects.
+* Open @TODO `src/app.js` in your IDE and point out the following:
+
+  * The `submit` function is an impure function. It modifies existing values and has multiple side effects.
 
   ```js
   function submit() {
@@ -379,16 +432,20 @@ plugins: [
   }
   ```
   
-* Run `npm install` in your terminal and open the `index.html` file in your browser.
+* Run `npm install` in your terminal and open @TODO `index.html` file in your browser and demonstrate the following functionality:
 
-* Demonstrate that the application works, and that the submit button adds new expenses to the list and updates our chart.
+  * The submit button adds new expenses to the list.
+
+  * The chart is updated with the new expenses.
 
 ### 9. Student Do: Gallery Pure Functions (15 mins)
 
 ```md
-* In this activity we will adjust our Gallery app so that Webpack minifies and bundles our code.
+# Gallery Pure Functions
 
-* **Instructions**
+In this activity we will adjust our Gallery app so that Webpack minifies and bundles our code.
+
+## Instructions
 
 * Run `npm install`.
 
@@ -410,26 +467,29 @@ plugins: [
 
 * Run `npm start` and make sure that the application still works as expected.
 
-### Hints
-
-* Try testing out functionality of the application on [localhost](<http://localhost:3000>) every time you make changes. This will help you identify the code that does not work as expected.
 ```
 
 ### 10. Instructor Do: Review Gallery Pure Functions (10 mins)
 
 ### 11. Instructor Do: Demo Lazy Loading JavaScript (10 mins)
 
-* Let students know that the next demo is going to show off lazy loading of JavaScript.
-
 * Tell the class that just like the lazy loading they worked with using Images, JavaScript can also be loaded as needed.
 
-* Ask the class:
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
 
-  * If there is JavaScript specific to a part of the page a user is using, do you think it should be downloaded?
+  * ☝️ What is lazy loading?
 
-  * Could deferring the downloading save us time on page load?
+  * 🙋 Lazy loading allows us to load resources on an as-needed basis, instead of on page load.
 
-* Open `18-Ins-Chunking/webpack.config.js` in your IDE and point out the following:
+  * ☝️ If there is JavaScript specific to a part of the page a user is using, when do you think it should be downloaded?
+
+  * 🙋 We should only download the JavaScript specific to a part of the page when the user navigates to that page.
+
+  * ☝️ Could deferring the downloading save us time on page load?
+
+  * 🙋 Absolutely. Longer bundle sizes result in longer load times.
+
+* Open @TODO `18-Ins-Chunking/webpack.config.js` in your IDE and point out the following:
 
   * We have added a second entry point to our bundle. This entry point is `chart`.
 
@@ -437,43 +497,43 @@ plugins: [
 
   * `filename: "[name].bundle.js"` dynamically names our bundle after the name of the entry point. For instance, the entry point `chart` will create a bundle named `chart.bundle.js`.
 
-* By creating multiple entry points, we can defer the loading of a particular bundle until the code required is needed.
+  * By creating multiple entry points, we can defer the loading of a particular bundle until the code required is needed.
 
-* Open `chart.html` and point out that we've added the following line to our html:
+  @TODO code snip
+
+* Open `chart.html` and point out the following:
+
+  * We've added a `<script>` tag to our html that loads our `chart.js` JavaScript bundle.
 
 ```html
-<script type="text/javascript" src="dist/chart.bundle.js"></script>
+<script type="text/javascript" src="./dist/chart.bundle.js"></script>
 ```
 
-* Navigate to `07-Ins-Chunking` and then:
+* Open @TODO `07-Ins-Chunking` in your IDE and run the following commands from your command line:
 
-  * Run `npm install`
+  * `npm install`
 
   * `npm run build`
 
-  * After running these two commands, open the `index.html` in your browser.
-  
-* Now, open your Dev Tools and navigate to your `Network` tab, and click the `JS` sub-tab.
+* Open the `index.html` in your browser and point out the following:
+
+  * If we inspect out Network in DevTools, we can see that the chart.js has not been loaded yet.
+
+  * Only once we click the `chart` link in the navbar of the page does the `chart.js` bundle load.
 
 ![Network JS](Images/networkJS.png)
 
-* With the Network and JS tabs selected, click the `chart` link in the navbar of the page.
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
 
-  * Point out how when we click this link and go to the chart page, only then do we load the `chart.js` bundle.
+  * ☝️ What are the possible setbacks of this method?
 
-* Point out that this method of loading JS does have possible setbacks. 
-
-  * This biggest setback is that if both of our bundles require some of the same dependencies, those will be included and both bundles and thus we will end up with duplicated code between bundles. 
-
-  * While this does not always happen, it can and it's something students should be aware of.
+  * 🙋 If both of our bundles require some of the same dependencies, those will be included and both bundles and thus we will end up with duplicated code between bundles. 
 
 ### 12. Student Do: Gallery Lazy Loading JavaScript (15 mins)
 
-* Slack out the following folder to students. [Chunking Unsolved]()
+* Direct students to the activity instructions found in @TODO
 
 ```md
-* **Instructions**
-
 * Run `npm install`.
 
 * In `webpack.config.js`, add entry points for JavaScript files for the three pages, home, detail, and favorites.
@@ -519,70 +579,76 @@ plugins: [
 
 ### 13. Instructor Do: Review Gallery Lazy Loading JavaScript (10 mins)
 
-* Open `08-Stu-Chunking/Solved` and navigate to the `webpack.config.js`.
+* Open @TODO 08-Stu-Chunking/Solved/full-path-to-file/webpack.config.js in your IDE and explain the following:
 
-* Show students how there are now three entry points designated.
+  * There are now three entry points designated.
 
-```js
-entry: {
-        app: './public/assets/js/home.js',
-        detail: './public/assets/js/detail.js',
-        favorites: './public/assets/js/favorites.js'
-    },
-```
+  ```js
+  entry: {
+          app: './public/assets/js/home.js',
+          detail: './public/assets/js/detail.js',
+          favorites: './public/assets/js/favorites.js'
+      },
+  ```
 
-* Point out how we also used the `[name].bundle.js` syntax in our output to dynamically name our bundle after the entry point it was built from.
+  * We also used the `[name].bundle.js` syntax in our output to dynamically name our bundle after the entry point it was built from.
 
-```js
- output: {
-        path: __dirname + '/public/dist',
-        filename: '[name].bundle.js',
-    },
-```
+  ```js
+  output: {
+          path: __dirname + '/public/dist',
+          filename: '[name].bundle.js',
+      },
+  ```
 
-* Now run the following commands:
+* Now run the following commands from the command line:
 
-  * Run `npm install`
+  * `npm install`
 
   * `npm start`
 
-* Show students in the console that we have 3 `bundle.js` files and the bundle naming aligns with the entry points provided in the `webpack.config.js`
+  * In the console, we have 3 `bundle.js` files and the bundle naming aligns with the entry points provided in the `webpack.config.js`
 
 ![3 Bundles](Images/multipleBundles.png)
 
-* Navigate to [localhost](<https://localhost:3000>)
+* Open @TODO in your browser, navigate to [localhost](<https://localhost:3000>) and explain the following:
 
-* Open up your `Network` tab and toggle JS.
+  * If we open up our `Network` tab and toggle JS, we can click a picture's name and see that `detail.bundle.js` is loaded when we bring the details of an image.
 
 ![Network JS](Images/networkJS.png)
 
-* Click a pictures name and show how the `detail.bundle.js` is loaded when we bring the details of an image.
+* In your browser, click on the link to the favorites page and point out the following:
 
-* Now navigate to the favorites page and show the `favorites.bundle.js` loads.
+  *  `favorites.bundle.js` loads.
 
-* Explain that lazy loading is a great way to defer loading of resources that are not necessary, but remind students of the possible problems it can raise.
+  * Lazy loading is a great way to defer loading of resources that are not necessary, but there are possible problems it can raise.
 
-  * Most noteably that if multiple entry points have some of the same dependencies, those dependencies will be duplicated across bundles.
+  * Most notably, if multiple entry points have some of the same dependencies, those dependencies will be duplicated across bundles.
 
 ### 14. BREAK (40 mins)
 
 ### 15. Instructor Do: Introduce Mini-Project (5 mins)
 
-* In your terminal run `npm install` followed by `npm start`. 
+* Run the following commands from the command line: 
+
+  * `npm install`
+
+  * `npm start`
 
 * Navigate to [localhost:3000](http://localhost:3000) in your browser and point out the following:
 
-  * Newsy is a news aggregator app that allows you to search for articles classified by topic, then save your favorites.
+  * Newsy is a news aggregator app that allows us to search for articles classified by topic, then save our favorites.
 
-  * The home page of the application has some default topics, but you can create your own or remove the default topics.
+  * The home page of the application has some default topics, but we can create your own or remove the default topics.
 
-  * Click on one of the topics and point out that the page displays a list and allows you to save each article to your favorites.
+  * Clicking on one of the topics causes the page to display a list and allows us to save each article to our favorites.
 
-  * Save a couple of articles to your favorites and point out that the button updated to a _remove_ button.
+  * Saving a couple of articles to our favorites causes the button to update to a _remove_ button.
 
-  * Navigate to the favorites page to show that the favorites you selected are listed. Then open your browser dev tools and point out that the favorites data was stored in IndexedDb, since we are not using a local database for this application.
+  * Navigate to the favorites page in your browser and point out the following:
 
-* Let the students know that the goal of this mini project is to transform this application into a PWA that lazy loads JavaScript. While it's not important that the students understand every single line of code, it is necessary for them to understand each function's purpose so that they can reuse them when possible.  
+    * The favorites we selected are listed.
+
+    * The favorites data was stored in IndexedDb, since we are not using a local database for this application.
 
 # 16. Student Do: Work on Mini-Project (60 mins)
 
@@ -621,7 +687,7 @@ In this activity we will take an existing news aggregator application and transf
 
 ### Part 2
 
-* Take a moment to study the contens of `index.js`:
+* Take a moment to study the contents of `index.js`:
 
   1. `renderTopics()` renders all of the topics to the page using `createTopics`.
 
@@ -654,17 +720,17 @@ In this activity we will take an existing news aggregator application and transf
 
 # 17. Instructor Do: Review Mini-Project (15 mins)
 
-* Open `index.js` and point out the following:
+* Open @TODO `index.js` in your IDE and point out the following:
 
   * All of the functions pertaining to the `home` page are in `index.js`.
 
   * `createElement` is brought in from the `domMethods.js` file.
 
-* Open `domMethod.js`
+* Open @TODO `domMethod.js` in your IDE and point out the following:
 
-  * Point out that it is not entirely necessary for students to understand exactly how every line in `createElement` works. 
+  * It is not entirely necessary for us to understand exactly how every line in `createElement` works. 
   
-  * It is valuable to get practice working with code they do not fully understand because new developers almost always start their careers working with an unfamiliar codebase.
+  * It is valuable to get practice working with code we do not fully understand because new developers almost always start their careers working with an unfamiliar codebase.
 
   * The `createElement` function returns a DOM element and has the following parameters:
 
@@ -742,7 +808,7 @@ In this activity we will take an existing news aggregator application and transf
   }
   ```
 
-* Open `topic.js` and bring up the following:
+* Open @TODO `topic.js` in your IDE and explain the following:
 
   * When the `Topic` page is opened, `useIndexedDb` is called to check if any of the articles have been favorited. This is necessary so that articles that have already been saved to the user's favorites can display a `Remove from Favorites` button.
 
@@ -773,7 +839,9 @@ loadPage();
 
 ```
 
-* Open `service-worker.js` and briefly mention that each html file should be cached with its respective bundle.
+* Open @TODO `service-worker.js` in your IDE and point out the following:
+
+  * Each html file should be cached with its respective bundle.
 
 ```js
 const FILES_TO_CACHE = [
@@ -788,7 +856,11 @@ const FILES_TO_CACHE = [
 ];
 ```
 
-* In `webpack.config.js`, point out the 3 different entry points created for each app. Remind the students that each bundle will include all dependencies brought into each entry file with ES6 `import`.
+* Open @TODO `webpack.config.js` in your IDE and point out the following:
+
+  * There are 3 different entry points created for each app. 
+
+  * Each bundle will include all dependencies brought into each entry file with ES6 `import`.
 
 ```js
 entry: {
@@ -802,7 +874,7 @@ entry: {
   },
 ```
 
-  * Take a moment to go over the two plugins. Although most of the configuration can vary, depending on the app, it's important that the icon `src` points to a valid path to an icon for the application.
+  * Although most of the configuration can vary, depending on the app, it's important that the icon `src` points to a valid path to an icon for the application.
 
   ```js
   plugins: [
@@ -834,7 +906,7 @@ entry: {
 
   * Some students may be frustrated with the amount of time they needed to spend refactoring code so that it could be easily chunked by webpack.
 
-  * If this is the case, remind students that one of the main motivations behind chunking is reducing the bundle size of your code. While there are many strategies one can take to split up their code, it is important that it's split in a way that makes the code reusable and clear in purpose. Sometimes this means large amounts of refactoring functions. Point out that this is time well spent since they are making their code easier to test and easier for other developers to work with.
+  * If this is the case, remind students that one of the main motivations behind chunking is reducing the bundle size of your code. While there are many strategies one can take to split up their code, it is important that it's split in a way that makes the code reusable and clear in purpose. Sometimes this means large amounts of refactoring functions. This is time well spent since they are making their code easier to test and easier for other developers to work with.
 
 ---
 
