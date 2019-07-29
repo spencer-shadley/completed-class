@@ -1,22 +1,7 @@
 const fs = require("fs");
-const path = require("path");
+const util = require("util");
+const axios = require("axios");
 
-function readFileAsync(file, encoding) {
-  return new Promise(function(resolve, reject) {
-    fs.readFile(file, encoding, function(err, data) {
-      if (err) {
-        reject(err);
-      }
+const writeFIleAsync = util.promisify(fs.writeFile);
 
-      resolve(data);
-    });
-  });
-}
 
-readFileAsync(path.join(__dirname, "./text.txt"), "utf8")
-  .then(function(data) {
-    console.log(data);
-  })
-  .catch(function(err) {
-    console.log(err);
-  });

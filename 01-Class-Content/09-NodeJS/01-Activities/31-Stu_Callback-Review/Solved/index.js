@@ -1,49 +1,43 @@
 const fs = require("fs");
-const path = require("path");
 
-fs.readFile(path.join(__dirname, "animals.csv"), "utf8", function(err, data) {
+fs.readFile("animals.json", "utf8", function(err, data) {
   if (err) {
     throw err;
   }
 
-  // Split the data into an array of its lines, separate the heading from the entries
-  const rows = data.split("\n");
-  const heading = rows[0];
-  const entries = rows.slice(1);
+  // Parse the JSON string to an object
+  const animalJSON = JSON.parse(data);
 
-  // Create two new arrays to contain the lines that will be written to the new files
-  const dogs = [heading];
-  const cats = [heading];
-  
-  entries.forEach(function(entry) {
-    const species = entry.split(",")[1];
+  // Create two new arrays to contain the cats and dogs objects
+  const dogs = [];
+  const cats = [];
 
-    if (species === "dog") {
-      dogs.push(entry);
-    } else if (species === "cat") {
-      cats.push(entry);
+  // For each element in animal
+  animalJSON.forEach(function(animal) {
+    if (animal.species === "dog") {
+      dogs.push(animal);
+    } else if (animal.species === "cat") {
+      cats.push(animal);
     }
   });
 
-  fs.writeFile(path.join(__dirname, "dogs.csv"), dogs.join("\n"), function(
-    err,
-    data
-  ) {
+  // Turn the arrays into JSON strings so they can be written to files
+  const dogJSON = JSON.stringify(dogs, null, 2);
+  const catJSON = JSON.stringify(cats, null, 2);
+
+  fs.writeFile("dogs.json", dogJSON, function(err) {
     if (err) {
       throw err;
     }
 
-    console.log("Successfully wrote to dogs.csv file");
+    console.log("Successfully wrote to dogs.json file");
   });
 
-  fs.writeFile(path.join(__dirname, "cats.csv"), cats.join("\n"), function(
-    err,
-    data
-  ) {
+  fs.writeFile("cats.json", catJSON, function(err) {
     if (err) {
       throw err;
     }
 
-    console.log("Successfully wrote to cats.csv file");
+    console.log("Successfully wrote to cats.json file");
   });
 });

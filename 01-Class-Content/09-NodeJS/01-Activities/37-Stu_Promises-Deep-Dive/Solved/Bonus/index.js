@@ -20,7 +20,11 @@ Promise.all(filePromises)
       return b.age - a.age;
     });
 
-    writeFileAsync("combined.json", JSON.stringify(sortedAnimals, null, 2), "utf8");
+    writeFileAsync(
+      "combined.json",
+      JSON.stringify(sortedAnimals, null, 2),
+      "utf8"
+    );
   })
   .then(function() {
     console.log("Successfully saved combined animal list!");
