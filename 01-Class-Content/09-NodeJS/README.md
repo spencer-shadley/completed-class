@@ -1,18 +1,18 @@
-# Unit 09: Node.js & ES6+
+# Unit 09: Node.js and ES6+
 
 ## Overview
-We now arrive at another important milestone in our journey as we make the transition from writing client-side code to server-side code. The JavaScript you wrote for your first project was executed entirely on the client-side, though it made use of third-party server-side APIs. In this, and following units, we will learn how to write our own server-side applications to handle requests and ultimately build our own APIs.
+We now arrive at another important milestone in our journey from writing client-side code to writing server-side code. The JavaScript you wrote for your first project was executed entirely on the client side, though it made use of third-party server-side APIs. In this and later units, you will learn how to write your own server-side applications to handle requests and ultimately to build your own APIs.
 
-In a previous era, this is the point in our full-stack journey where we would begin learning a second programming language, such as PHP, to write server-side code. Lucky for us, Node.js was released in 2009. Node.js is an implementation of the V8 JavaScript engine without Chrome, allowing us to write server-side code using JavaScript. Additionally, we no longer need a browser to run JavaScript. We can (and will) do so from the command line.
+In a previous era, this is the point in our full-stack journey where we would begin learning a second programming language, such as PHP, to write server-side code. Luckily for us, Node.js was released in 2009. Node.js is an implementation of the V8 JavaScript engine without Chrome, and allows us to write server-side code using JavaScript. Additionally, we no longer need a browser to run JavaScript. We can (and will) do so from the command line.
 
-In this unit, you will learn how to initialize a Node.js project, install third-party dependencies, and create interactive command line applications. Node.js ships with what is referred to as a standard library. The standard library contains a number of modules that allow us to extend the functionality of Node.js, such as fs, which we will use to read and write files. There is also a large and robust ecosystem of third-party modules available to us. You will learn how to add these modules to an application to extend its functionality.
+In this unit, you will learn how to initialize a Node.js project, install third-party dependencies, and create interactive command-line applications. Node.js ships with what is referred to as a standard library. The standard library contains a number of modules that allow us to extend the functionality of Node.js, such as `fs`, which we will use to read and write files. There is also a large and robust ecosystem of third-party modules available to us. You will learn how to add these modules to an application to extend its functionality.
 
 ## Key Topics
 
 * Node.js
     * process.argv
     * fs
-* modularization
+* Modularization
     * require
     * module.exports
 * npm
@@ -21,20 +21,20 @@ In this unit, you will learn how to initialize a Node.js project, install third-
     * node_modules
 * Inquirer
 * ES6
-    * let & const
-    * arrow functions
-    * template literals
-    * array methods (map, filter, reduce)
-    * spread & rest
-    * destructuring arrays & objects
-* asynchronous JavaScript
-    * callbacks
+    * let and const
+    * Arrow functions
+    * Template literals
+    * Array methods (map, filter, reduce)
+    * Spread and rest
+    * Destructuring arrays and objects
+* Asynchronous JavaScript
+    * Callbacks
     * Promises
-    * async / await
-    * fetch
+    * Async/await
+    * Fetch
     * Axios
-    * generators
-    * iterators
+    * Generators
+    * Iterators
  
 
 ## Comprehension Check
@@ -45,17 +45,17 @@ You will be employer-ready if you can answer the following questions:
 
 
 ## Learning Objectives
-You will be employer-competitive if you are able to: 
-* Build interactive command line applications that process user input
-* Explain modularization and how it relates to npm and the standard library
-* Initialize new Node.js projects with npm, as well as install and import dependencies
-* Explain the importance and usefulness of ES6+ concepts such as let, const and arrow functions
-* Handle asynchronicity with callbacks, Promises, and async/await
-* Make server-side API calls with both fetch and Axios
+You will be employer-competitive if can do the following: 
+* Build interactive command-line applications that process user input.
+* Explain modularization and how it relates to npm and the standard library.
+* Initialize new Node.js projects with npm, and install and import dependencies.
+* Explain the importance and usefulness of ES6+ concepts such as the let, const, and arrow functions.
+* Handle asynchronicity with callbacks, promises, and async/await.
+* Make server-side API calls with fetch and Axios.
 
 
 ## Homework
-Create a command line application that dynamically generates a .pdf resume from a GitHub username.
+Create a command-line application that dynamically generates a PDF resume from a GitHub username.
 
 
 ## Helpful Links
@@ -64,3 +64,6 @@ Create a command line application that dynamically generates a .pdf resume from 
 * [Wikipedia: Server](https://en.wikipedia.org/wiki/Server_(computing))
 * [fs Documentation](https://node.readthedocs.io/en/latest/api/fs/)
 * [InquirerJS](https://www.npmjs.com/package/inquirer/v/0.2.3)
+
+---
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
