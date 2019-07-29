@@ -1,11 +1,3 @@
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => {
-    navigator.serviceWorker.register("/service-worker.js").then(reg => {
-      console.log("Service worker registered.", reg);
-    });
-  });
-}
-
 let transactions = [];
 let myChart;
 
@@ -16,7 +8,6 @@ fetch("/api/transaction")
   .then(data => {
     // save db data on global variable
     transactions = data;
-
     populateTotal();
     populateTable();
     populateChart();
@@ -70,7 +61,7 @@ function populateChart() {
     myChart.destroy();
   }
 
-  const ctx = document.getElementById("myChart").getContext("2d");
+  const ctx = document.getElementById("my-chart").getContext("2d");
 
   myChart = new Chart(ctx, {
     type: "line",
@@ -153,9 +144,11 @@ function sendTransaction(isAdding) {
 }
 
 document.querySelector("#add-btn").onclick = function() {
+  event.preventDefault()
   sendTransaction(true);
 };
 
 document.querySelector("#sub-btn").onclick = function() {
+  event.preventDefault()
   sendTransaction(false);
 };

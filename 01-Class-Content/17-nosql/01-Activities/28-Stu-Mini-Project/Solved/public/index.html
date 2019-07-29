@@ -10,10 +10,7 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="styles.css" />
-
-    <link rel="manifest" href="/manifest.json" />
-
+    <link rel="stylesheet" href="style.css" />
     <title>Budget Tracker</title>
   </head>
   <body>
@@ -22,13 +19,17 @@
         <div>Your total is: $<span id="total">0</span></div>
       </div>
 
-      <div class="form">
+      <form class="form">  
+        <label for="t-name">First name</label>
         <input type="text" id="t-name" placeholder="Name" />
+
+        <label for="t-amount">Amount</label>
         <input type="number" min="0" id="t-amount" placeholder="Amount" />
+
         <button id="add-btn"><i class="fa fa-plus"></i> Add Funds</button>
         <button id="sub-btn"><i class="fa fa-minus"></i> Subtract Funds</button>
         <p class="error"></p>
-      </div>
+      </form>
 
       <div class="transactions">
         <table>
@@ -40,7 +41,7 @@
         </table>
       </div>
 
-      <canvas id="myChart"></canvas>
+      <canvas id="my-chart"></canvas>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>

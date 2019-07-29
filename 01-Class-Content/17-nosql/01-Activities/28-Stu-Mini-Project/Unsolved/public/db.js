@@ -1,14 +1,13 @@
 // check for indexedDB browser support
 
 let db;
-
 // create a new db request for a "budget" database.
 
-request.onupgradeneeded = ({ target }) => {
+request.onupgradeneeded = function(event) {
   // create object store called "pending" and set autoIncrement to true
 };
 
-request.onsuccess = ({ target }) => {
+request.onsuccess = function(event) {
   db = target.result;
 
   if (navigator.onLine) {
@@ -41,14 +40,12 @@ function checkDatabase() {
           "Content-Type": "application/json"
         }
       })
-        .then(response => {
-          return response.json();
-        })
-        .then(() => {
+      .then(response => response.json())
+      .then(() => {
           // if successful, open a transaction on your pending db
           // access your pending object store
           // clear all items in your store
-        });
+      });
     }
   };
 }
