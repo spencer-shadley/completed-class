@@ -2,9 +2,7 @@ let transactions = [];
 let myChart;
 
 fetch("/api/transaction")
-  .then(response => {
-    return response.json();
-  })
+  .then(response => response.json())
   .then(data => {
     // save db data on global variable
     transactions = data;
@@ -121,9 +119,7 @@ function sendTransaction(isAdding) {
       "Content-Type": "application/json"
     }
   })
-    .then(response => {
-      return response.json();
-    })
+    .then(response => response.json())
     .then(data => {
       if (data.errors) {
         errorEl.textContent = "Missing Information";
@@ -143,12 +139,12 @@ function sendTransaction(isAdding) {
     });
 }
 
-document.querySelector("#add-btn").onclick = function() {
-  event.preventDefault()
+document.querySelector("#add-btn").addEventListener("click", function(event) {
+  event.preventDefault();
   sendTransaction(true);
-};
+});
 
-document.querySelector("#sub-btn").onclick = function() {
-  event.preventDefault()
+document.querySelector("#sub-btn").addEventListener("click", function(event) {
+  event.preventDefault();
   sendTransaction(false);
-};
+});
