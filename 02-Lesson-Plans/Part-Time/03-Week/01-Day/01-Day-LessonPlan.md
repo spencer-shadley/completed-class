@@ -1,14 +1,59 @@
-## 3.1 Lesson Plan - Joys of JavaScript <!--links--> &nbsp; [⬅️](../../02-Week/03-Day/03-Day-LessonPlan.md) &nbsp; [➡️](../02-Day/02-Day-LessonPlan.md)
+## 3.1 Lesson Plan - Joys of JavaScript (6:30 PM) <!--links--> &nbsp; [⬅️](../../02-Week/03-Day/03-Day-LessonPlan.md) &nbsp; [➡️](../02-Day/02-Day-LessonPlan.md)
 
 ### Slideshow
 
-* This lesson's slides are available on Google Drive here: [03-1 The Joys of JavaScript](https://docs.google.com/presentation/d/1eZEQJVF3vHuBlx4-n5DcgmgLf1vfNn0J3yu2ywwbyWY/edit?usp=sharing)
+* This lesson's slides are available on Google Drive here: [03-1 The Joys of JavaScript](https://docs.google.com/presentation/d/16lWA3gU8ZBvZNKHxBvZM791ntfvXf-6xQUNN3Bk-nL4/edit?usp=sharing)
 
 * To add slides to the student-facing repository, download the slides as a PDF by navigating to File > "Download as" and choose "PDF document." Add the slide PDF file to your class repository along with other necessary files.
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, please create a copy by navigating to File > "Make a copy...".
 
 - - -
+
+### Pre-class Drills
+
+* Let students know that it's time for the preclass drill of the day. Remind them that interviewing is a skill that is in some ways separate from practical coding, and that they need to work hard to hone this skillset during this course. The class is designed to make them great developers, and these pre-class questions are designed to make them awesome interviewers.
+
+* Encourage students to begin by pseudo-coding. Remind them that many companies are judging more on problem solving skills than coding chops, so having strong pseudo-coding skills to fall back on may just land them their dream job one day. You should encourage some white boarding from students (when relevant) and explain why it's beneficial for them to do it in the classroom rather than wait for their first time to be during interviews, but move on if there are no volunteers. Discourage heavy pressure for students.
+
+* 20 min before class starts write the following problem on the board or Slack it out:
+
+Explain each part of the code below:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <script type="text/javascript" src="app.js></script>
+</body>
+</html>
+```
+ 
+* After 15 minutes take 5 minutes to go over the solution. You should start recording when going over the answer and Slack out the answer at the end of office hours before class starts.
+
+* Ask students if they have an answer. 
+
+* Make sure you touch on each of the following:
+
+  * DOCTYPE: instructions to the browser about what version of HTML is being used.
+
+  * head: a container for elements about that give information about the website like the title, scripts, styles, and meta information. 
+
+  * meta: data about the data on the page (think of things like language or keywords)
+
+  * title: the title of the page (appears in tab)
+
+  * link: links to stylesheets
+  
+  * script: links to JavaScript files
+
+  * body: where the actual content that appears on the page goes
 
 ### Overview
 
@@ -40,7 +85,7 @@ Today's class is focused on providing students with the very basics of JavaScrip
 
 ![1-SlackDownload](Images/1-SlackDownload.png)
 
-* Have your TAs reference [01-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1pPL5Wap5uFfWC3DmVB49PO6BZym6I6zA/view?usp=sharing) to help keep track of time during class.
+* Have your TAs reference [01-Day-TimeTracker](01-Day-TimeTracker.xlsx) to help keep track of time during class.
 
 ### Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b6546197-13d6-4922-b516-08490303c913)
@@ -56,7 +101,7 @@ Today's class is focused on providing students with the very basics of JavaScrip
 
 ### 1. Everyone Do: Welcome Students (1 min)
 
-* Welcome students and see how they are doing while opening up the slide deck [03-1 The Joys of JavaScript](https://docs.google.com/presentation/d/1eZEQJVF3vHuBlx4-n5DcgmgLf1vfNn0J3yu2ywwbyWY/edit?usp=sharing).
+* Welcome students and see how they are doing while opening up the slide deck [03-1 The Joys of JavaScript](https://docs.google.com/presentation/d/16lWA3gU8ZBvZNKHxBvZM791ntfvXf-6xQUNN3Bk-nL4/edit?usp=sharing).
 
 ### 2. Instructor Do: Today's Class (1 min)
 
@@ -74,7 +119,7 @@ Begin going through the slides.
   * **Keep Organized:** Many students around this time start to have files in literally every location possible. It gets incredibly confusing trying to help them when everything is so scattered. Let them know that a little folder organization can go a long way in creating easy-to-read applications.
   * **Overall Tips:** Just read these. Self-explanatory. Key point&mdash;encourage students to REDO coding exercises on their own. Many students just go home and re-flip through slides or read through code without actually trying to do it themselves. Hands on experience is a lot better than looking code over secondhand.
 
-### 4. Partners Do: Code Dissection (7 mins)
+### 4. Partners Do: Code Dissection (7 mins) (High)
 
 * Let students know that a big part of JavaScript learning requires you to "learn on the fly".
 
@@ -112,7 +157,7 @@ Begin going through the slides.
 
 * Make sure students know that strings require quotation marks but that numbers and booleans do not.
 
-### 7. Students Do: Variable Activity (10 mins)
+### 7. Students Do: Variable Activity (10 mins) (High)
 
 * Slack out the following files and instructions to students.
 
@@ -214,7 +259,7 @@ Begin going through the slides.
 
 * Go over the remaining slides on this section. Create engagement by having students remind you of the differences between the three functions.
 
-### 16. Students Do: Alert Activity (15 min)
+### 16. Students Do: Alert Activity (15 min) (Critical)
 
 * At this point, Slack out the following files and instructions.
 
@@ -231,21 +276,39 @@ Begin going through the slides.
 
 * Go over the previous activity using `prompt-sushi.html` in `07-PromptSushi/Solved`.
 
-### 18. Instructor Do: Document.write (4 mins)
+### 18. Instructor Note: Document.write (1 min)
 
-* Go over the slide on `document.write`. We'll be demonstrating it in code in a future slide.
+* We have saved all DOM-related tasks for the next unit, so don't mention `document.write` at this point. If students ask how to print information on the screen instead of in alerts, let them know that we'll be going over that soon (but not today!).
 
 ### 19. Instructor Demo: If/Else Statement (8 mins)
 
 * Proceed with the slides to the demo of conditionals. Use the file inside `08-ConditionalDemo` as a starting point. Walk students through the fact that the confirm prompt is used to grab a boolean.
 
-    ![6-ConfirmConditional](Images/6-ConfirmConditional.png)
+    ```js
+      // Here we create our prompt and confirm variables which will store user input.
+      var confirmSushi = confirm("Do you like sushi?");
+      var confirmGingerTea = confirm("Do you like Ginger Tea?");
+      var sushiType = prompt("What kind of sushi do you like?");
+
+      // If the user likes sushi (confirmSushi === true), we run the following block of code.
+      if (confirmSushi) {
+        alert("You like " + sushiType + "!");
+      }
+      // If the user likes ginger tea (confirmGingerTea === true), we run the following block of code.
+      else if (confirmGingerTea) {
+        alert("You like ginger tea!!");
+      }
+      // If neither of the previous condition were true, we run the following block of code.
+      else {
+        alert("You don't like sushi or ginger tea.");
+      }
+    ```
 
 ### 20. Instructor Slides: If/Else Statement (5 mins)
 
 * Proceed through the instructor slides on conditionals.
 
-### 21. Partners Do: If/Else Activity #1 (15 mins)
+### 21. Partners Do: If/Else Activity #1 (15 mins) (Critical)
 
 * Slack out the instructions below.
 
@@ -257,17 +320,15 @@ Begin going through the slides.
 
     * Create a website (from scratch) that asks users if they eat steak.
 
-    * If they respond with "yes", write the following to the page: "Here’s a Steak Sandwich!"
+    * If they respond with "yes", alert the following to the page: "Here’s a Steak Sandwich!"
 
-    * If they respond with "no", write the following to the page: "Here’s a Tofu Stir-Fry!"
+    * If they respond with "no", alert the following to the page: "Here’s a Tofu Stir-Fry!"
 
     * Bonus: Ask what the user’s birth year is. If they are under 21, alert the following: "No Sake for you!"
 
-    * Hint: You will need to use `document.write()` from a few slides back.
-
 ### 22. Instructor Do: Review If/Else Activity #1 (10 mins)
 
-* Review the solution found in `09-ConditionalActivity`. Point out the uses of conditionals and of `document.write`. For the bonus, run the program with various ages, and show students how each elicits a different output.
+* Review the solution found in `09-ConditionalActivity`. Point out the uses of conditionals. For the bonus, run the program with various ages, and show students how each elicits a different output.
 
     ![7-Sake](Images/7-Sake.png)
 
@@ -283,7 +344,7 @@ Begin going through the slides.
 
     ![8-Conditionals](Images/8-Conditionals.png)
 
-### 24. Instructor Do: Arrays Slides (5 mins)
+### 24. Instructor Do: Arrays Slides (5 mins) (Critical)
 
 * Run through the Array example in the slides. Describe arrays as being like "lists" or "collections" of variables. Each variable has its own index ID (sort of like the "pen" number for our Zoo example).
 
@@ -291,13 +352,13 @@ Begin going through the slides.
 
 * Indexes start at 0.
 
-### 25. Instructor Do: Array Demo (6 mins)
+### 25. Instructor Do: Array Demo (6 mins) (Critical)
 
 * Open the file `arrays-demo.html` in `11-ArraysDemo`. Show students how this example matches the one in the slides.
 
 * Point out how the index system works (i.e. starts at 0 and ends one before the length).
 
-### 26. Everyone Do: Class Code Dissection (7 mins)
+### 26. Everyone Do: Class Code Dissection (7 mins) (Critical)
 
 * Slack out the following file and instructions to students.
 
