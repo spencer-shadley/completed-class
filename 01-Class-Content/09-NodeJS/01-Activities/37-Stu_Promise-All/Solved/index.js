@@ -20,7 +20,7 @@ Promise.all(filePromises)
       return b.age - a.age;
     });
 
-    writeFileAsync(
+    return writeFileAsync(
       "combined.json",
       JSON.stringify(sortedAnimals, null, 2),
       "utf8"

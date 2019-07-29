@@ -4,10 +4,8 @@ const util = require("util");
 const readFileAsync = util.promisify(fs.readFile);
 const writeFileAsync = util.promisify(fs.writeFile);
 
-const animals = [];
+const files = ["cat.json", "dog.json", "goldfish.json", "hamster.json"];
 
-readFileAsync("cat.json", "utf8").then(function(data) {
-  animals.push(JSON.parse(data));
-
-  return readFileAsync("dog.json", "utf8");
+const filePromises = files.map(function(fileName) {
+  return readFileAsync(fileName, "utf8");
 });
