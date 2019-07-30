@@ -1,6 +1,7 @@
-## 16.1 Lesson Plan - Linting & Projects (6:30 PM) <!--links--> &nbsp; [⬅️](../../15-Week/03-Day/03-Day-LessonPlan.md) &nbsp; [➡️](../02-Day/02-Day-LessonPlan.md)
 
-### Slideshow
+# 16.1 Lesson Plan - Linting & Projects (6:30 PM) <!--links--> &nbsp; [⬅️](../../15-Week/03-Day/03-Day-LessonPlan.md) &nbsp; [➡️](../02-Day/02-Day-LessonPlan.md)
+
+## Slideshow
 
 * This lesson's slides are available on Google Drive here: [16-1 Linting and Projects](https://docs.google.com/presentation/d/1DldswLqfUbnvidzyMLhmZUwYpwy_CXI0WPx5pMUuDZo/edit?usp=sharing)
 
@@ -10,13 +11,13 @@
 
 - - -
 
-### Overview
+## Overview
 
 * Today's class will be focused on introducing students to project 2 requirements, introducing them to the concept of JavaScript linting and continuous integration with Travis.
 
 * Students will begin work on their second project
 
-##### Instructor Priorities
+## Instructor Priorities
 
 * Students will be given requirements for Project 2.
 
@@ -32,7 +33,7 @@
 
 - - -
 
-##### Instructor Notes
+## Instructor Notes
 
 * Have your TAs reference [01-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1WzJH4hM68jEdvVVLdHY9USvWf_qQ7cJn/view?usp=sharing) to help keep track of time during class.
 
@@ -46,7 +47,7 @@
 
 - - -
 
-##### Class Objectives
+## Class Objectives
 
 * Project groups will create a project repo and add members as collaborators.
 
