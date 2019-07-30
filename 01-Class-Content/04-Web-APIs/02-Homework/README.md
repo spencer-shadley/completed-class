@@ -1,11 +1,11 @@
-# Unit 4 Web APIs Homework: Code Quiz
+# Unit 04 Web APIs Homework: Code Quiz
 
-As you proceed in your career as a web developer, you will likely be asked to complete a coding assessment. These assessments are typically a combination of multiple choice questions and interactive challenges. In this homework assignment, your challenge is to build a code quiz of multiple choice questions.
+As you proceed in your career as a web developer, you will likely be asked to complete a coding assessment. These assessments are typically a combination of multiple-choice questions and interactive challenges. In this homework assignment, your challenge is to build a code quiz of multiple-choice questions.
 
 
 ## Instructions
 
-From scratch, build a timer-based quiz application that stores high scores client-side. Following the [common templates](https://en.wikipedia.org/wiki/User_story#Common_templates), we can frame this challenge as a user story:
+From scratch, build a timer-based quiz application that stores high scores client-side. Following the user story [common templates](https://en.wikipedia.org/wiki/User_story#Common_templates), we can frame this challenge as follows:
 
 ```
 As a coding bootcamp student
@@ -17,7 +17,7 @@ How do you deliver this? Here are some guidelines:
 
 * Play proceeds as follows:
 
-  * The user arrives at the landing page and is presented with a call-to-action to "Start Quiz". Also note the navigation option to "View Highscores" and the "Time" value set at 0.
+  * The user arrives at the landing page and is presented with a call-to-action to "Start Quiz." Also note the navigation option to "View Highscores" and the "Time" value set at 0.
 
   * Clicking the "Start Quiz" button presents the user with a series of questions. The timer is initialized with a value and immediately begins countdown.
 
