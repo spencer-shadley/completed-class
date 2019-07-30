@@ -219,7 +219,7 @@ function createArticle({
 function createElement(type, attributes, ...children) {
   const element = document.createElement(type);
 
-  if (typeof attributes === "object") {
+  if (attributes !== null && typeof attributes === "object") {
     for (const key in attributes) {
       if (key.startsWith("on")) {
         const event = key.substring(2).toLowerCase();

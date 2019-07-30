@@ -12,7 +12,7 @@ require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/imageperformance",
+  process.env.MONGODB_URI || "mongodb://localhost/webpackchunking",
   { useNewUrlParser: true }
 );
 

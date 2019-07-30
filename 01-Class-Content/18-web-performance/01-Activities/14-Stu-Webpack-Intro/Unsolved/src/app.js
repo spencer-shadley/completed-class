@@ -10,11 +10,14 @@ function addToList(name, price) {
     <span class="ml-4">Price: ${price}</span></li>`;
 }
 
-function submit() {
+function submit(e) {
+  e.preventDefault();
   addToList(expenseEl.value, priceEl.value);
 }
 
-function reset() {}
+function reset(e) {
+  e.preventDefault();
+}
 
 submitBtn.onclick = submit;
 resetBtn.onclick = reset;

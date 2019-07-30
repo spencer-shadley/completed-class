@@ -1,4 +1,8 @@
-* **Instructions**
+# Chunking
+
+In this activity, we will practice using multiple entry points to split up our JavaScript code.
+
+##Instructions
 
 * Run `npm install`.
 

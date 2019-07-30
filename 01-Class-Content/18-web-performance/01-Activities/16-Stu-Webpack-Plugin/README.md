@@ -1,4 +1,4 @@
-* **PWAs with Webpack**
+# PWAs with Webpack
 
 * In this activity we will adjust our Gallery app so that Webpack minifies and bundles our code.
 

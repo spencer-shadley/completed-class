@@ -7,7 +7,8 @@ function addToList(name, price) {
     <span class="ml-4">Price: ${price}</span></li>`;
 }
 
-function submit() {
+function submit(e) {
+  e.preventDefault();
   const total = subtract(Number(balanceEl.innerText), priceEl.value);
   balanceEl.innerText = total;
   addToList(expenseEl.value, priceEl.value);
@@ -18,7 +19,8 @@ function submit() {
   });
 }
 
-function reset() {
+function reset(e) {
+  e.preventDefault();
   const total = 2000;
   balanceEl.innerText = total;
   expensesListEl.innerHTML = "";

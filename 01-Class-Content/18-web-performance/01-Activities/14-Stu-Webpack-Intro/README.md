@@ -1,6 +1,8 @@
-* In this activity we will create a bundle.js file with Webpack.
+# Webpack Intro
 
-* **Instructions**
+In this activity we will create a bundle.js file with Webpack.
+
+##Instructions
 
 * Run the following command: `npm install webpack webpack-cli -D`
 

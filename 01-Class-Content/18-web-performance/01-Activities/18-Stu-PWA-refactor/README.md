@@ -1,6 +1,8 @@
-* In this activity we will adjust our Gallery app so that Webpack minifies and bundles our code.
+# PWA Refactor
 
-* **Instructions**
+In this activity we will adjust our Gallery app so that Webpack minifies and bundles our code.
+
+## Instructions
 
 * Run `npm install`.
 
