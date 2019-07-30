@@ -1,4 +1,4 @@
-## Week 14 - Node, Express, and Handlebars
+## Week 12 - Node, Express, and Handlebars
 
 ### Overview
 
