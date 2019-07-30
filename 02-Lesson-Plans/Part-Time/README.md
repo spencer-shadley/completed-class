@@ -1,194 +1,223 @@
-## Coding Boot Camp - Part-Time Lesson Plans (Ver 2.0)
+# Full Stack Flex Lesson Plans
 
+This folder contains all of the lesson plans for full-time, part-time and online courses. Refer to the README in the corresponding folder for links to lesson plans by unit or week.
+
+## Homework & Supplemental Video Content Overview
+
+Homework assignments for each section of class content are outlined below. There are walkthrough videos for the HW solutions as well as for many in-class activities also listed below.
 
 Missing something? Spot an issue? Have a suggestion? Please consult our [contribution guide](https://github.com/coding-boot-camp/FullStack-Lesson-Plans/blob/master/CONTRIBUTING.md) or [log the issue](https://github.com/coding-boot-camp/FullStack-Lesson-Plans/issues).
 
-Good luck!
+- - -
+
+### Unit 1: HTML, CSS, and Git
+
+* [Building a Wireframe (Easier Assignment)](../01-Class-Content/01-html-git-css/02-Homework/Instructions/easier-homework-assignment.md)
+* [That Portfolio Though (Recommended Assignment)](../01-Class-Content/01-html-git-css/02-Homework/Instructions/recommended-homework-assignment.md)
+
+#### Unit 1 Videos
+
+* [Complete Playlist (Exercises)](https://www.youtube.com/playlist?list=PLgJ8UgkiorClK-ZG5jYqbdgOD2DRHROkT)
+
+* [Homework Solution Video](https://youtu.be/qMbCiVYQLCU)
 
 - - -
 
-### [Unit 1 - HTML, CSS, and GIT](01-Week)
+### Unit 2: CSS and Bootstrap
 
-* [1.1 - Lesson Plan](01-Week/01-Day/01-Day-LessonPlan.md) \| [Slideshow - The Zen of Coding](https://docs.google.com/presentation/d/1Hg-bDqgWSouHcquF_idzDPLsC2xqXouBRX5thXN443s/edit?usp=sharing)
-* [1.2 - Lesson Plan](01-Week/02-Day/02-Day-LessonPlan.md) \| [Slideshow - Git'n Pro with HTML/CSS](https://docs.google.com/presentation/d/1SMhFndlbubN_GKG0nO1rdozAE9bmtKfwPjjD0a5ePR4/edit?usp=sharing)
-* [1.3 - Lesson Plan](01-Week/03-Day/03-Day-LessonPlan.md) \| [Slideshow - Heroes of CSS](https://docs.google.com/presentation/d/170VU6CFgYB9BBh51mS7GyrlWkJKxfzEga6KyfVyh2TE/edit?usp=sharing)
+* [Responsiveness Assignment (3 Versions of Portfolio)](../01-Class-Content/02-css-bootstrap/02-Homework/Instructions/homework-instructions.md)
 
-- - -
+#### Unit 2 Videos
 
-### [Unit 2 - CSS and Bootstrap](02-Week)
+* [Complete Playlist (Exercises)](https://www.youtube.com/playlist?list=PLgJ8UgkiorCkLBEm5V0IzuhjdWBeKvrOC)
 
-* [2.1 - Lesson Plan](02-Week/01-Day/01-Day-LessonPlan.md) \| [Slideshow - Going Live](https://docs.google.com/presentation/d/11RK-NMs6UMCj2pWx5vWG1dQuvKGbQ46QwnzAZtUzaWc/edit?usp=sharing)
-* [2.2 - Lesson Plan](02-Week/02-Day/02-Day-LessonPlan.md) \| [Slideshow - Down and Dirty CSS](https://docs.google.com/presentation/d/19SuDB8hCpezLxRynQVPVorp147WlHky0Eda3Nflgb80/edit?usp=sharing)
-* [2.3 - Lesson Plan](02-Week/03-Day/03-Day-LessonPlan.md) \| [Slideshow - Bootstrap Layouts and Responsive Designs](https://docs.google.com/presentation/d/1Jh6q12Se09VVVL93AAdeetbRtGZHv70ZU-U7wnBT6w4/edit?usp=sharing)
+* [Homework Solution Video #1](https://youtu.be/jF0kIhpX6tk)
 
 - - -
 
-### [Unit 3 - Intro to JavaScript](03-Week)
+### Unit 3: Intro to JavaScript
 
-* [3.1 - Lesson Plan](03-Week/01-Day/01-Day-LessonPlan.md) \| [Slideshow - The Joys of JavaScript](https://docs.google.com/presentation/d/1eZEQJVF3vHuBlx4-n5DcgmgLf1vfNn0J3yu2ywwbyWY/edit?usp=sharing)
-* [3.2 - Lesson Plan](03-Week/02-Day/02-Day-LessonPlan.md) \| [Slideshow - Jumping for JavaScript](https://docs.google.com/presentation/d/1lQguenUfeJx-jRDscMYu5j_qJ0t9H5TQaRur97xkIzY/edit?usp=sharing)
-* [3.3 - Lesson Plan](03-Week/03-Day/03-Day-LessonPlan.md) \| [Slideshow - JavaScript Juggernauts](https://docs.google.com/presentation/d/1ic-pjrj4o93Gjm2blvT7s5pvTdMFlt87m-lLVXpC-u8/edit?usp=sharing)
+* [Psychic Game (Basic)](../01-Class-Content/03-javascript/02-Homework/Instructions/homework-instructions.md#option-one-psychic-game-basic)
+* [Word Guess Game (Challenge - Recommended)](../01-Class-Content/03-javascript/02-Homework/Instructions/homework-instructions.md#option-two-word-guess-game-challenge---recommended)
 
-- - -
+#### Unit 3 Videos
 
-### [Unit 4 - Intro to jQuery](04-Week)
+* [Complete Playlist (Exercises)](https://www.youtube.com/playlist?list=PLgJ8UgkiorCmEChEWfh7sxPvQwYAx3Kt0)
 
-* [4.1 - Lesson Plan](04-Week/01-Day/01-Day-LessonPlan.md) \| [Slideshow - jQuery Begins](https://docs.google.com/presentation/d/1RdBB_BH_n-RnMIFXBUUXpeGTFyntxZyIOlRCOh6b07M/edit?usp=sharing)
-* [4.2 - Lesson Plan](04-Week/02-Day/02-Day-LessonPlan.md) \| [Slideshow - jQuery Jubilee](https://docs.google.com/presentation/d/1OWXiM3iGOFjB_ThjNEPvRLQpRPymP-K6vx953rd8AtU/edit?usp=sharing)
-* [4.3 - Lesson Plan](04-Week/03-Day/03-Day-LessonPlan.md)
+* [Homework Solution Video](https://youtu.be/cgdmOR15cn4)
 
 - - -
 
-### [Unit 5 - JS Timers, Review, and Trivia](05-Week)
+### Unit 4: Intro to jQuery
 
-* [5.1 - Lesson Plan](05-Week/01-Day/01-Day-LessonPlan.md) | [Slideshow - JavaScript and jQuery Review](https://docs.google.com/presentation/d/1jEO_4yRmeXRbuS39XqBMX18On4nwcz9vrt3vpxwSpVA/edit?usp=sharing)
-* [5.2 - Lesson Plan](05-Week/02-Day/02-Day-LessonPlan.md)
-* [5.3 - Lesson Plan](05-Week/03-Day/03-Day-LessonPlan.md)
+* [CrystalsCollector Game (Recommended)](../01-Class-Content/04-jquery/02-Homework/Instructions/homework_instructions.md#option-one-crystalscollector-game-recommended)
+* [RPG Game (Challenge)](../01-Class-Content/04-jquery/02-Homework/Instructions/homework_instructions.md#option-two-star-wars-rpg-game-challenge)
 
-- - -
+#### Unit 4 Videos
 
-### [Unit 6 - Intro to APIs and AJAX](06-Week)
+* [Complete Playlist (Exercises)](https://www.youtube.com/playlist?list=PLgJ8UgkiorCn05TQ1Ui8_lTnhizYcEFX7)
 
-* [6.1 - Lesson Plan](06-Week/01-Day/01-Day-LessonPlan.md)
-* [6.2 - Lesson Plan](06-Week/02-Day/02-Day-LessonPlan.md) | [Slideshow - Advanced AJAX](https://docs.google.com/presentation/d/1AMZW0G8cYnEdqeIMZMoNUQRsM1PVgykP7afZ_31wJE4/edit?usp=sharing)
-* [6.3 - Lesson Plan](06-Week/03-Day/03-Day-LessonPlan.md)
+* [Homework Solution Video](https://youtu.be/ki36iUBbCDY)
 
 - - -
 
-### [Unit 7 - Intro to Local Storage and Firebase](07-Week/)
+### Unit 5: JS Timers, Review, and Trivia
 
-* [7.1 - Lesson Plan](07-Week/01-Day/01-Day-LessonPlan.md)
-* [7.2 - Lesson Plan](07-Week/02-Day/02-Day-LessonPlan.md)
-* [7.3 - Lesson Plan](07-Week/03-Day/03-Day-LessonPlan.md)
+* [Trivia Game Basic Quiz (Timed Form)](../01-Class-Content/05-timers/02-Homework/Instructions/homework-instructions.md#option-one-basic-quiz-timed-form)
+* [Trivia Game Advanced Assignment (Timed Questions)](../01-Class-Content/05-timers/02-Homework/Instructions/homework-instructions.md#option-two-advanced-assignment-timed-questions)
 
-- - -
+#### Unit 5 Videos
 
-### [Unit 8 - API Project Week 1](08-Week)
+* [Complete Playlist (Exercises)](https://www.youtube.com/playlist?list=PLgJ8UgkiorCncwPdhG7Z7A2HOAKcnmIQr)
 
-* [8.1 - Lesson Plan](08-Week/01-Day/01-Day-LessonPlan.md) | [Slideshow - GitHub Collaboration and Project Week](https://docs.google.com/presentation/d/1zWh3vjCMYaRm71DSM-Amy0PL272Fa-a39IwDuIMMokY/edit?usp=sharing)
-* [8.2 - Lesson Plan](08-Week/02-Day/02-Day-LessonPlan.md)
-* [8.3 - Lesson Plan](08-Week/03-Day/03-Day-LessonPlan.md)
+* [Homework Solution Video (Easy)](https://www.youtube.com/watch?v=3eWhkc_u5rE&index=6&list=PLgJ8UgkiorClJwRrLq8f9QuzgTflJoeH2)
 
-- - -
-
-### [Unit 9 - API Project Week 2 + Interview/Debug](09-Week)
-
-* [9.1 - Lesson Plan](09-Week/01-Day/01-Day-LessonPlan.md)
-* [9.2 - Lesson Plan](09-Week/02-Day/02-Day-LessonPlan.md)
-* [9.3 - Lesson Plan](09-Week/03-Day/03-Day-LessonPlan.md)
+* [Homework Solution Video (Advanced)](https://youtu.be/KndV7UxLpnk)
 
 - - -
 
-### [Unit 10 - Intro to Node.JS](10-Week)
+### Unit 6: Intro to APIs and AJAX
 
-* [10.1 - Lesson Plan](10-Week/01-Day/01-Day-LessonPlan.md) | [Slideshow - New to Node](https://docs.google.com/presentation/d/1vEAr3FbuHq49llQcd3p6mkByxLTO0q0FInEEUmsCQ5o/edit?usp=sharing)
-* [10.2 - Lesson Plan](10-Week/02-Day/02-Day-LessonPlan.md)
-* [10.3 - Lesson Plan](10-Week/03-Day/03-Day-LessonPlan.md)
+* [GifTastic](../01-Class-Content/06-ajax/02-Homework/Instructions/homework.md)
 
-- - -
+#### Unit 6 Videos  
 
-### [Unit 11 - JS Constructors and Callbacks](11-Week)
+* [Complete Playlist (Exercises)](https://www.youtube.com/playlist?list=PLgJ8UgkiorCmRwLl7YKfFxmNySuAhNdmC)
 
-* [11.1 - Lesson Plan](11-Week/01-Day/01-Day-LessonPlan.md)
-* [11.2 - Lesson Plan](11-Week/02-Day/02-Day-LessonPlan.md)
-* [11.3 - Lesson Plan](11-Week/03-Day/03-Day-LessonPlan.md)
+* [Complete NYT Solution Video](https://www.youtube.com/watch?v=PDD8NV3sbZo)
+
+* [Homework Solution Video](https://www.youtube.com/watch?v=V67yKAonLa4&list=PLgJ8UgkiorClJwRrLq8f9QuzgTflJoeH2&index=8)
 
 - - -
 
-### [Unit 12 - Intro to MySQL](12-Week)
+### Unit 7: Intro to Local Storage and Firebase
 
-* [12.1 - Lesson Plan](12-Week/01-Day/01-Day-LessonPlan.md)
-* [12.2 - Lesson Plan](12-Week/02-Day/02-Day-LessonPlan.md)
-* [12.3 - Lesson Plan](12-Week/03-Day/03-Day-LessonPlan.md)
+* [Train Scheduler (Basic - Recommended)](../01-Class-Content/07-firebase/02-Homework/Instructions/Homework_Train_Activity_Basic.md)
+* [Rock Paper Scissors (Challenge)](../01-Class-Content/07-firebase/02-Homework/Instructions/Homework_RPS_Activity_Challenge.md)
 
-- - -
+#### Unit 7 Videos
 
-### [Unit 13 - Node/Express Web Servers](13-Week)
+* [Complete Playlist (Exercises)](https://www.youtube.com/playlist?list=PLgJ8UgkiorCkg74BLGZkgtJsRDQX51YbU)
 
-* [13.1 - Lesson Plan](13-Week/01-Day/01-Day-LessonPlan.md) | [Slideshow - Intro to Node Servers](https://docs.google.com/presentation/d/1gWWPh5lp7DNAlYQwaj9idZ1WLmVc5w1VY_D46de8KOE/edit?usp=sharing)
-* [13.2 - Lesson Plan](13-Week/02-Day/02-Day-LessonPlan.md) | [Slideshow - Express Yourself](https://docs.google.com/presentation/d/1T9dRhxABZyECQLFhctoAr2yZ4FhJjMD-wPguCgoTMBA/edit?usp=sharing)
-* [13.3 - Lesson Plan](13-Week/03-Day/03-Day-LessonPlan.md)
+* [Homework Solution Video](https://www.youtube.com/watch?v=Dz5iKzwHi0k&index=9)
 
 - - -
 
-### [Unit 14 - Handlebars Templating](14-Week)
+### Unit 10: Intro to Node.JS
 
-* [14.1 - Lesson Plan](14-Week/01-Day/01-Day-LessonPlan.md)
-* [14.2 - Lesson Plan](14-Week/02-Day/02-Day-LessonPlan.md)
-* [14.3 - Lesson Plan](14-Week/03-Day/03-Day-LessonPlan.md)
+* [LIRI Bot](../01-Class-Content/10-nodejs/02-Homework/Instructions/homework_instructions.md)
 
-- - -
+#### Unit 10 Videos
+* [Complete Playlist (Exercises)](https://www.youtube.com/playlist?list=PLgJ8UgkiorCnevQjLViL_kxpU30eIJFu7)
 
-### [Unit 15 - Sequelize](15-Week)
-
-* [15.1 - Lesson Plan](15-Week/01-Day/01-Day-LessonPlan.md)
-* [15.2 - Lesson Plan](15-Week/02-Day/02-Day-LessonPlan.md)
-* [15.3 - Lesson Plan](15-Week/03-Day/03-Day-LessonPlan.md)
+* [Homework Solution Video](https://www.youtube.com/watch?v=1-k08YfQbec&list=PLgJ8UgkiorClJwRrLq8f9QuzgTflJoeH2&index=9)
 
 - - -
 
-### [Unit 16 - Testing & Node/Express Project Week One](16-Week)
+### Unit 11: Constructors
 
-* [16.1 - Lesson Plan](16-Week/01-Day/01-Day-LessonPlan.md) | [Slideshow - Linting and Projects](https://docs.google.com/presentation/d/1DldswLqfUbnvidzyMLhmZUwYpwy_CXI0WPx5pMUuDZo/edit?usp=sharing)
-* [16.2 - Lesson Plan](16-Week/02-Day/02-Day-LessonPlan.md) | [Slideshow - Agile and Projects](https://docs.google.com/presentation/d/1WneP_OWJOsJ7ZVsp6_RjIZTZeK61GkqbVv6eS3Nn_oQ/edit?usp=sharing)
-* [16.3 - Lesson Plan](16-Week/03-Day/03-Day-LessonPlan.md)
+* [Constructor Word Guess (Optional)](../01-Class-Content/11-js-constructors/02-Homework/Instructions/HomeworkInstructions.md)
 
-- - -
+#### Unit 11 Videos
 
-### [Unit 17 - Node/Express Project Week Two](17-Week)
-
-* [17.1 - Lesson Plan](17-Week/01-Day/01-Day-LessonPlan.md)
-* [17.2 - Lesson Plan](17-Week/02-Day/02-Day-LessonPlan.md)
-* [17.3 - Lesson Plan](17-Week/03-Day/03-Day-LessonPlan.md)
+* [Complete Playlist (Exercises)](https://www.youtube.com/playlist?list=PLgJ8UgkiorClIZdJL_PasNdUR0yWjBCBP)
 
 - - -
 
-### [Unit 18 - MongoDB](18-Week)
+### Unit 12: MySQL
 
-* [18.1 - Lesson Plan](18-Week/01-Day/01-Day-LessonPlan.md) | [Slideshow - Masters of MongoDB](https://docs.google.com/presentation/d/1_xBQqi3-59Nxb0DBcN-xKVZ2HkYfM0qPX1ZVVTyf-Bs/edit?usp=sharing)
-* [18.2 - Lesson Plan](18-Week/02-Day/02-Day-LessonPlan.md)
-* [18.3 - Lesson Plan](18-Week/03-Day/03-Day-LessonPlan.md)
+* [Bamazon Storefront](../01-Class-Content/12-mysql/02-Homework/Instructions/homework_instructions.md)
 
-- - -
+#### Unit 12 Videos
 
-### [Unit 19 - ReactJS](19-Week)
+* [Complete Playlist (Exercises)](https://www.youtube.com/playlist?list=PLgJ8UgkiorCncqIRVifiwiP7VoMpcCq0V)
 
-* [19.1 - Lesson Plan](19-Week/01-Day/01-Day-LessonPlan.md)
-* [19.2 - Lesson Plan](19-Week/02-Day/02-Day-LessonPlan.md) | [Slideshow - Intro to React, Components, and JSX](https://docs.google.com/presentation/d/1cvbWQLefPF83BhscOQIjDlYyF5pH5522XPtXXcpSbnw/edit?usp=sharing)
-* [19.3 - Lesson Plan](19-Week/03-Day/03-Day-LessonPlan.md) | [Slideshow - Props, Lists, and Stateful Components](https://docs.google.com/presentation/d/1faUXH0URyyeOLSzuQKfHI-rm7EA81GV_meokERR8pDw/edit?usp=sharing)
+* [Homework Solution Video - Customer](https://www.youtube.com/watch?v=oouxVn14qyk)
 
-- - -
+* [Homework Solution Video - Manager](https://www.youtube.com/watch?v=q9ANiugK21Y)
 
-### [Unit 20 - React, MERN](20-Week)
-
-* [20.1 - Lesson Plan](20-Week/01-Day/01-Day-LessonPlan.md)
-* [20.2 - Lesson Plan](20-Week/02-Day/02-Day-LessonPlan.md) | [Slideshow - MERN](https://docs.google.com/presentation/d/1vbL_5t4cDnjToul2X2u_9cPrAb-ubGdJzTS5VCCLSE0/edit?usp=sharing)
-* [20.3 - Lesson Plan](20-Week/03-Day/03-Day-LessonPlan.md) | [Slideshow - Final Projects](https://docs.google.com/presentation/d/1Aj6gOUCAL9sLp7e4Vhi66SNannRUAt7K70V9CZ2jsmI/edit?usp=sharing)
+* [Homework Solution Video - Executive](https://www.youtube.com/watch?v=3ym0-z6k_WM)
 
 - - -
 
-### [Unit 21 - Regionalized Content](21-Week)
+### Unit 13: Express
+
+* [Friend Finder](../01-Class-Content/13-express/02-Homework/Instructions/homework_instructions.md)
+
+#### Unit 13 Videos
+
+* [Complete Playlist (Exercises)](https://www.youtube.com/playlist?list=PLgJ8UgkiorCmI_wKKVt5FlkTG63sQF6rr)
+
+* [Homework Solution Video](https://www.youtube.com/watch?v=1mS5w2KOdcQ)
 
 - - -
 
-### [Unit 22 - Computer Science Fundamentals](22-Week)
+### Unit 14: Handlebars
 
-* [22.1 - Lesson Plan](22-Week/01-Day/01-Day-LessonPlan.md)
-* [22.2 - Lesson Plan](22-Week/02-Day/02-Day-LessonPlan.md)
-* [22.3 - Lesson Plan](22-Week/03-Day/03-Day-LessonPlan.md) | [Slideshow - Big O and Data Structures](https://docs.google.com/presentation/d/11kHSTXvu2_FCLQFmAkryYMMelvwcXBeWF7Hy3sFUmIM/edit?usp=sharing)
+* [Eat-Da-Burger Restaurant App](../01-Class-Content/14-handlebars/02-Homework/Instructions/homework_instructions.md)
 
-- - -
+#### Unit 14 Videos
 
-### [Unit 23 - Portfolios and Projects](23-Week)
+* [Complete Playlist (Exercises)](https://www.youtube.com/watch?v=cMAIbAJcvZo&list=PLgJ8UgkiorCk9lJ4G-uQkCyGeKlquugNI)
 
-* [23.1 - Lesson Plan](23-Week/01-Day/01-Day-LessonPlan.md)
-* [23.2 - Lesson Plan](23-Week/02-Day/02-Day-LessonPlan.md)
-* [23.3 - Lesson Plan](23-Week/03-Day/03-Day-LessonPlan.md)
+* [Homework Solution Video](https://www.youtube.com/watch?v=pieNMQU3oDw)
 
 - - -
 
-### [Unit 24 - Final Projects](24-Week)
+### Unit 15: Sequelize
 
-* [24.1 - Lesson Plan](24-Week/01-Day/01-Day-LessonPlan.md)
-* [24.2 - Lesson Plan](24-Week/02-Day/02-Day-LessonPlan.md)
-* [24.3 - Lesson Plan](24-Week/03-Day/03-Day-LessonPlan.md)
+* [Burger 2: The Sequel (optional)](../01-Class-Content/15-sequelize/02-Homework/Instructions/homework_instructions.md)
+
+#### Unit 15 Videos
+
+* [Complete Playlist (Exercises)](https://www.youtube.com/watch?v=dt9mXaEEAkM&list=PLgJ8UgkiorClj-MYE-wm4J6vfVA3-VqWc)
+
+* [Homework Solution Video](https://www.youtube.com/watch?v=F-zNZIQVc-8)
+
+- - -
+
+### Unit 18: MongoDB
+
+* [All the News That's Fit to Scrape (Mongo News Scraper)](../01-Class-Content/18-mongo-mongoose/02-Homework/Instructions/homework_instructions.md)
+
+#### Unit 18 Videos
+
+* [Complete Playlist (Exercises)](https://www.youtube.com/watch?v=Ci1bui7w75k&list=PLgJ8UgkiorCk7zT1kKGwSogEcJbVBzzH8)
+
+* [Homework Solution Video](https://www.youtube.com/watch?v=17-n9ImiWVc)
+
+- - -
+
+### Unit 19: React
+
+* [React Clicky Game](../01-Class-Content/19-react/02-Homework/Instructions/homework_instructions.md)
+
+#### Unit 19 Videos
+
+* [Complete Playlist (Exercises)](https://www.youtube.com/playlist?list=PLgJ8UgkiorCmEfIp2_y73ohb8G6lqyYQY)
+
+- - -
+
+### Unit 20: React
+
+* [React Google Books Search](../01-Class-Content/20-react/02-Homework/Instructions/homework_instructions.md)
+
+#### Unit 20 Videos
+
+* [Complete Playlist (Exercises)](https://www.youtube.com/playlist?list=PLgJ8UgkiorCkozGKPh0NlHoSzi__FS6aj)
+
+- - -
+
+### Unit 21: Regionalized Content
+
+* [C# - iSnippets](../01-Class-Content/21-regionalized-content/C%23/02-Homework/README.md)
+
+* [Django - iSnippets](../01-Class-Content/21-regionalized-content/Django/02-Homework/README.md)
+
+* [Java - Meal Tracker Backend](../01-Class-Content/21-regionalized-content/Java/02-Homework/Instructions/README.md)
+
+* [Laravel - My Fitness Buddy calorie counter and tracker](../01-Class-Content/21-regionalized-content/Laravel/02-Homework/Instructions/README.md)
+
+### Unit 22: Computer Science
+
+* [Complete Playlist (Exercises)](https://www.youtube.com/watch?v=3OH-Ta_mc8E&index=1&list=PLgJ8UgkiorCkov7rkGszLyQl-sMUn-cbu)
