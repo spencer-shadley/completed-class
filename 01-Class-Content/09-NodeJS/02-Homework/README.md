@@ -34,7 +34,7 @@ I WANT a developer profile generator
 SO THAT I can easily prepare reports for stakeholders
 
 ## Business Context
-When preparing a report for stakeholders, it is important to have up-to-date information about members of the development team. Rather than navigate to each team member's GitHub profile, a command-line application will allow for quick and easy generation of profiles in PDF format. 
+When preparing a report for stakeholders, it is important to have up-to-date information about members of the development team. Rather than navigating to each team member's GitHub profile, a command-line application will allow for quick and easy generation of profiles in PDF format. 
 
 
 ## Acceptance Criteria
@@ -77,3 +77,7 @@ You are required to submit the following:
 * A generated PDF of your GitHub profile
 
 * The URL of the GitHub repository
+
+
+---
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
