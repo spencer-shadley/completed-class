@@ -10,4 +10,5 @@ const config = { headers: { accept: "application/json" } };
 axios.get("https://icanhazdadjoke.com/", config)
   .then(function(res) {
 
-  })
+    console.log(res.data);
+  });
