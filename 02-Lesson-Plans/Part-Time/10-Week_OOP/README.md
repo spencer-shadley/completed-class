@@ -1,35 +1,27 @@
-## Unit 10 - Introduction to Node and NPM
+## Unit 11 - Intro to Constructors and Callbacks
 
 ### Overview
 
-In this week, we will be introducing students to application building with Node and the use of external NPM packages.
+This week, we will discuss JavaScript's brand of OOP by introducing constructors and the prototype chain.
 
 
 ### Lesson Plans
 
-* [10.1 - Lesson Plan](01-Day/01-Day-LessonPlan.md)
-* [10.2 - Lesson Plan](02-Day/02-Day-LessonPlan.md)
-* [10.3 - Lesson Plan](03-Day/03-Day-LessonPlan.md)
+* [11.1 - Lesson Plan](01-Day/01-Day-LessonPlan.md)
+* [11.2 - Lesson Plan](02-Day/02-Day-LessonPlan.md)
+* [11.3 - Lesson Plan](03-Day/03-Day-LessonPlan.md)
 
 ### Homework Activities
 
-* [Liri Bot](../../../01-Class-Content/10-nodejs/02-Homework/Instructions/homework_instructions.md)
+* [Word Guess With Constructors](../../../01-Class-Content/11-js-constructors/02-Homework/Instructions/HomeworkInstructions.md)
 
 ### Key Activities
 
-* [10.1 - ArgumentsAddition](../../../01-Class-Content/10-nodejs/01-Activities/04-ArgumentsAddition)
-* [10.2 - BestThingsEver](../../../01-Class-Content/10-nodejs/01-Activities/13-BestThingsEver)
-* [10.2 - OMDB_Axios](../../../01-Class-Content/10-nodejs/01-Activities/17-OMDB_Axios)
-* [10.3 - CommandSort](../../../01-Class-Content/10-nodejs/01-Activities/20-CommandSort)
-* [10.3 - WeatherNPM](../../../01-Class-Content/10-nodejs/01-Activities/22-WeatherNPM)
-* [10.3 - InquirerIntro](../../../01-Class-Content/10-nodejs/01-Activities/25-Inquirer_Intro)
+* [Character Creation](../../../01-Class-Content/11-js-constructors/01-Activities/03-CharacterCreate)
+* [Team Manager](../../../01-Class-Content/11-js-constructors/01-Activities/08-TeamManager)
+* [Classrooms](../../../01-Class-Content/11-js-constructors/01-Activities/10-Classrooms)
 
 ### Helpful Links
 
-* [Basic Intro to Node](https://blog.codeship.com/node-js-tutorial/)
-* [fs Documentation](https://nodejs.org/api/fs.html)
-* [InquirerJS](https://www.npmjs.com/package/inquirer)
-
-### Slide Shows
-
-* [10.1 - New to Node](https://docs.google.com/presentation/d/1vEAr3FbuHq49llQcd3p6mkByxLTO0q0FInEEUmsCQ5o/edit?usp=sharing)
+* [Recursion in Functional JavaScript](https://www.sitepoint.com/recursion-functional-javascript/)
+* [Understand JavaScript Callbacks](http://javascriptissexy.com/understand-javascript-callback-functions-and-use-them/)
