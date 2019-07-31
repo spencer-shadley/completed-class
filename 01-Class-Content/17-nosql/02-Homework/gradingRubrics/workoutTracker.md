@@ -4,7 +4,7 @@
 
 Be subjective, grading & feedback should not take more than 5 minutes per assignment.
 
-@TODO describe assignment and what is required.
+The deployed assignment utilizes MongoDB, Mongoose, and Express to let users create and track workout plans. The application lets users add a workout to a previous workout plan, or create a new plan with new workouts. The deployed assignment has been added to their deployed portfolio with a link provided in the submission.
 
 **Is the above statement correct?**
 
