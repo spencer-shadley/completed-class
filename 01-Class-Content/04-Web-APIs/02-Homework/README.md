@@ -5,7 +5,7 @@ As you proceed in your career as a web developer, you will likely be asked to co
 
 ## Instructions
 
-From scratch, build a timer-based quiz application that stores high scores client-side. Following the user story [common templates](https://en.wikipedia.org/wiki/User_story#Common_templates), we can frame this challenge as follows:
+From scratch, build a timer-based quiz application that stores high scores client-side. Following the [common templates for user stories](https://en.wikipedia.org/wiki/User_story#Common_templates), we can frame this challenge as follows:
 
 ```
 As a coding bootcamp student
