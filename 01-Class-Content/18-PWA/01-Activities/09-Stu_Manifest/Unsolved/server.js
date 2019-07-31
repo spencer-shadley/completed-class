@@ -11,16 +11,9 @@ app.use(express.json());
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
-<<<<<<< HEAD:01-Class-Content/18-PWA/01-Activities/09-Stu_Manifest/Unsolved/server.js
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/imageperformance", {
   useNewUrlParser: true
 });
-=======
-mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/webpackchunking",
-  { useNewUrlParser: true }
-);
->>>>>>> Cleaned up activities based on feedback:01-Class-Content/18-web-performance/01-Activities/20-Stu-Chunking/Solved/server.js
 
 app.listen(PORT, function() {
   console.log(`Now listening on port: ${PORT}`);
