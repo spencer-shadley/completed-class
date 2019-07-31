@@ -1,369 +1,727 @@
-## 18.2 Lesson Plan - Web Scraping and Server-Side Mongo (6:30 PM) <!--links--> &nbsp; [⬅️](../01-Day/01-Day-LessonPlan.md) &nbsp; [➡️](../03-Day/03-Day-LessonPlan.md)
+# 18.2 Lesson Plan - Progressive Web Applications (6:30 PM) <!--links--> &nbsp; [⬅️](#todo-fix-when-merged-to-dev) &nbsp; [➡️](#todo-fix-when-merged-to-dev)
 
-### Overview
+## Overview
 
-In this class, you will introduce students to the concept of web scraping, and then how to store data into a MongoDB database using Node and `MongoJS`. By the end of class, you'll combine these two skills with an exercise: scraping sites into MongoDB.
-
-`Summary: Complete activities 5-12 in Unit 18`
-
-##### Instructor Priorities
-
-* Students should know how to use cheerio to select parts of a website and scrape those parts into a server.
-* Students should understand how to install `MongoJS` to perform MongoDB queries through Node.
-* Students should grasp how to pull data from MongoDB and display it on the front end.
-
-##### Instructor Notes
-
-* At the start of class you will be introducing students to [JobTrack.io](https://jobtrack.trilogyed.com), which will be made freely available to students. If possible, take a moment to go through the [short slideshow](https://docs.google.com/presentation/d/1XduSzeA8u9D08JBWFi232FuvLv9axBSCpEpVC0Zgf6M/edit?usp=sharing) before class.
-
-* It's very important that students understand how to work with `Cheerio`--it's basically half of their homework. If any students seem stumped by web scraping, encourage them to speak with you or a TA during break time or after class.
-
-* You should read through the solutions of each exercise to make sure you understand how each file works, especially if you haven't used `Cheerio` or `MongoJS` before.
-
-* If you're using a different machine then you were in the last class, make sure you have MongoDB and Robo 3T set up. Consult the installation guide in 18.1 if you need instructions.
-
-### Sample Class Video (Highly Recommended)
-* To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c94aca05-52f4-4e7b-ac08-8a17c316f89d)
-
-- - -
-
-### Class Objectives
-
-* Introduce the concept of web scraping and show students how `Cheerio` makes it possible to perform this method of data retrieval.
-* Teach students how to use `MongoJS`, so they can employ MongoDB in their web projects.
-* Show your class how web scraping can combine with `MongoJS` to create sites that change depending on the content of other sites.
-
-- - -
-
-### 0. Instructor Do: Welcome Students (1 min)
-
-* Say hellos and answer any questions students might have before class.
-
-### 1. Instructor Do: Introduce JobTrack (15 min)
-
-* Inform the class that we'll be providing them free access to JobTrack.
-
-* Go through the [JobTrack](https://docs.google.com/presentation/d/1XduSzeA8u9D08JBWFi232FuvLv9axBSCpEpVC0Zgf6M/edit?usp=sharing) slides. Be sure to highlight the following:
-
-  * JobTrack is a platform that helps job seekers plan and track their job search. Features include:
-
-    * Logging applied for positions and companies and their contact info.
-
-    * Reminders for when to follow up after an interview.
-
-    * Works on all your devices.
-
-    * Provides your career director visibility into how your job search is going.
-
-* Slack out the following instructions:
-
-  ```
-  STEP 1: Sign in to JobTrack at https://jobtrack.trilogyed.com using BCS credentials
-
-  STEP 2: Install the Chrome extension from https://chrome.google.com/webstore/detail/jobtrack-for-chrome/ojhnaheochknmclpabkpialdgkkcboni)
-
-  Step 3: Find three jobs you think you’ll be interested in:
-
-  Visit Dice.com, Indeed.com, Angel.co, or go to the career website of a company you’re interested in
-
-  If Chrome extension installed, open it on the job posting and enter the details
-
-  If no Chrome extension, copy the URL, switch to JobTrack and enter the URL, Company Name and Job Title
-
-  When ready to apply to jobs, return to JobTrack and use these jobs as a starting point
-
-  *Career Director will discuss these jobs on coaching call to identify what your ideal job is and how to attain it*
-  ```
-
-* Make sure the entire class is able to log into JobTrack successfully and was able to download the Chrome extension. Students may not be able to complete all of step 3 in the time allotted, but have them get the process started.
-
-* If there are any questions, advise students to reach out to their career director.
-
-### 2. Instructor Do: Introduce Web Scraping and Cheerio (10 mins)
-
-* Ask the class if they can give you a definition for what web scraping is. This is a common topic in web development, so they might already know about the topic.
-
-  * If not, tell them web scraping is essentially a programmatic means of taking data from any web site. Programmers mark sections of a site for their apps to scrape (certain divs, certain element tags, etc.), which lets them store site data elsewhere.
-  * Ask your students, "What are some reasons we might want to scrape data? And do you think there might be legal ramifications for scraping certain websites?" Truth be told, it's a bit of a gray area, but you should pick their brains a little here. This will plant the idea that web scraping might not be a lawful solution for every project.
-
-* Tell the class that we're going to do this using a powerful node package called `cheerio`.
-  * Show them the `Cheerio` documentation and ask them to spend a few minutes to look it over. Have them check for similarities between another technology we used much earlier in the class (hint: the answer is jQuery).
-  * Cheerio Documentation: <https://github.com/cheeriojs/cheerio>
-
-### 3. Instructor Do: Web Scrape (10 mins)
-
-* Tell the students that you're going to demonstrate how to use Cheerio, and that they should follow along with you. Zip up activity `05-Scraping` and slack it out to the class.
-
-* Remind students that they will have to do an `npm install` to download all of the required packages to run our `server.js` files.
-
-* Open <https://www.reddit.com/r/webdev> on your machine and explain that the first `server.js` file is going to take information from the site. Load `server.js` with Node and have your students do so as well. Tell them to observe the console, where they'll see the reddit data saved as a JavaScript object.
-
-  ![1-Reddit](Images/1-Reddit.jpg)
-
-* Run through the various parts of the `server.js` file that make the web scrape possible, as the comments in the code describe.
-
-  ![2-Scrape](Images/2-Scrape.jpg)
-
-* Take note especially of:
-  * The use of the "axios" package to take in the HTML body. This part is _super important_; without it, `server.js` has no way of knowing what the Reddit board looks like.
-  * How Cheerio loads the HTML data and uses the $ as a var. Ask students why they think we would use that symbol (the answer is to give it the same syntax as jQuery for selecting HTML elements).
-  * How we push the information into an empty array, defining anonymous objects for each of our selected elements.
-  * How Cheerio's .children method can be used to select child elements within a selected element.
+Today's class will continue our journey into web performance by learning about progressive web apps. We will start with our basic Gallery App and step by step, implement a web app manifest as well as a service worker. This new functionality will provide us with a fully functioning progressive web app that delivers an offline experience to our users.
 
 
-* Have your students run `server2.js` and tell them to note how the .parents method in Cheerio can be used to select elements outside of another element.
+## Instructor Notes
 
-* Have your students run `server3.js` and tell them to note how the .find Cheerio method will grab the first child within a parent element.
+* @TODO which activities? 
 
-  * Ask your students why they think the .find method was chosen. What do they think would happen if .children() was used instead. (hint: they could visit the site that `server3.js` is scraping, or even replace .find with .children.)
+* You may need to clear your storage periodically in order to see each iteration of activities. Do so in DevTools under `Application > Clear storage > Clear site data`.
 
-* Ask students if all of this makes sense.
+* @TODO what else does the instructor need to know? 
 
-### 4. Student Do: First Web Scrape Assignment (15 mins)
 
-* Slack Out the skeleton of `06-Scrape-Starter` to your class. Here are the instructions from the file, for reference's sake.
+## Learning Objectives
+  
+* Explain the benefits a progressive web app offers a user over a traditional app.
 
-```
-Students: Using this template, the cheerio documentation, and what you've learned in class so far, scrape a website of your choice, save information from the page in a result array, and log it to the console.
+* Implement and explain the role of a web app manifest.
+
+* Implement and explain the role of a service worker.
+
+* Successfully cache and fetch files to deliver them in an offline experience.
+
+* Install a PWA on both desktop and mobile devices
+
+---
+## Class Instruction
+
+### 1. Instructor Do: Progressive Web Apps (5 min)
+
+* Welcome students to class.
+
+* Navigate to [https://secure-bayou-27137.herokuapp.com/](https://secure-bayou-27137.herokuapp.com/) in your browser and point out the following: 
+
+  * It's the Image Gallery application from earlier. But there's something different about it...
+ 
+  * If we open the Settings in Chrome, we will see an option to `Install Images App...`
+ 
+  * When we select `Install Images App...` we are presented with an option to "Install app?"
+ 
+  * When we click `Install`, a new Chrome window opens with our application running in it. 
+ 
+  * It is now installed as a desktop app! If we search our applications, we will find "Images App" listed among them.
+
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
+
+  * ☝️ What is different about our Image Gallery application? 
+  
+  * 🙋 There is added functionality to install it as a desktop application.
+
+  * ☝️ If we can install the Images App application on our laptops, where else might we install it? 
+ 
+* Use student answers to transition to the next activity.
+
+@TODO app stars do not work in offline mode
+
+
+### 2. Student Do: Progressive Web Applications (10 min)
+ 
+* Direct students to the activity instructions found in [07-Stu_PWAs](@TODO).
+
+```md
+
+  # Progressive Web Applications
+
+  In this activity, you will install a progressive web application (PWA) using your smart phone. You will also research the definition and production of a PWA.
+
+  ## Instructions
+
+  * Navigate to [https://secure-bayou-27137.herokuapp.com/](https://secure-bayou-27137.herokuapp.com/) with your smart phone and follow the instructions for your specific OS:
+
+  * @TODO instructions for iOs and Android
+
+  * Be prepared to answer the following question(s): 
+
+      * What is a progressive web application? 
+
+      * How do we create progressive web applications?
+
+
+  ## 🏆 Bonus
+
+  * What are examples of popular PWAs?
 ```
 
-* The file will include sections marked off where they should add their code.
 
-* Explain that this isn't so much a skeleton as a template - they should figure out where they need to replace code to get it working with their own site.
+### 3. Instructor Do: Progressive Web Apps Review (5 min)
 
-* Ask students to send their solved `server.js` files over slack, as well as the http link of the site they scraped. Choose one or two of these to go over in class.
-  * Drag the solutions from your students into the directory you used for `05-Scraping`, as this will have the node packages that their `server.js` scripts need in order to function.
+* Use the prompts and talking points below to review the following key point(s):
+  
+  * ✔️ Progressive web applications (PWAs) are mobile or dekstop apps delivered through the web, built using HTML, CSS & JavaScript, that allow users to work offline
+  
+  * ✔️ PWAs require a manifest, a service worker and the Cache API
+  
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
 
-### 5. Instructor Do: Go over solution (5 mins)
+  * ☝️ What is a progressive web application?
+  
+  * 🙋 Progressive web applications (PWAs) are mobile or dekstop apps delivered through the web, built using HTML, CSS & JavaScript
+  
+  * ☝️ What is meant by the term 'native' app?
+  
+  * 🙋 The term "native app" refers to applications written for specific platforms. For example, native iPhone apps are written in iOs and Android apps are primarily written in Java. Apple apps will not run on Android devices and vice versa. 
 
-* Ask students what sites they chose, why they chose them, and how they went about selecting the elements they wanted to scrape. Run the server file to see if it works (it will, hopefully, they should have only slacked it if they got the file to a functional state).
+  * ☝️ How are PWAs different from native apps?
 
-* Ask the class how the activity went. If anyone had issues, offer encouragement: this is a new concept and that they can talk with you or a TA during break to go over the solution if they'd like.
+  * 🙋 Traditional Mobile Apps require multiple builds across platforms, are less discoverable by search engines and have high abandonment rates.They also offer less usability and don’t leverage mobile device capabilities and are often slow and bloated. PWA's provide advantages of both web and mobile apps such as push notifications, offline experiences,speed and stability. Plus, you can convert a web app into a PWA quickly without the build time of a mobile app.
+  
+  * ☝️ What do we need to learn to convert an application into a progressive web application?
 
-* Someone likely ran into the issue of not being able to get the data from their website of choice via scraping.
-  * Explain that not all data is available just from requesting the HTML. Some HTML is generated client-side after the initial page load.
-  * Tell them to think about the activity where they used JavaScript to build out a table. If they disabled JavaScript in the browser, they wouldn't have been able to see the data in the table.
-  * With scraping this way, you can only get the **initial** HTML sent from the server. Any HTML added with JavaScript won't be accessible via scraping.
-  * Explain to them or show them with a website of choice that they can check to see if the data will be available by disabling JavaScript in the browser and reloading the page (be sure to re-enable afterwards!).
+  * 🙋 There are three primary things we need to learn: Manifests, Service Workers and the Cache API.
+  
+* Navigate to [https://secure-bayou-27137.herokuapp.com/](https://secure-bayou-27137.herokuapp.com/), open DevTools and explain the following: 
+  
+  * 🔑 If we look under the Application tab in DevTools for our Image Gallery App, we see **Manifest**, **Service Workers** and **Cache Storage** panels.
 
-    ![Client Rendering Disabling JS](Images/client-rendering.gif)
+    ![Application Sidebar](Images/application-sidebar.png)
 
-* Tell the class something along these lines: "You may be wondering how this all figures into what we learned yesterday. Well, it will all make sense by the end of class. For now, we're going to swing back to MongoDB, and this time, get it to interact with Node."
+  * 🔑 If we check the `offline` button in the Service Workers panel, we see that the application still delivers a full experience with an Internet connection!
 
-### 6. Student Do: Switch back to Mongo (5 mins)
+  ![Offline](Images/offline-mode.png)
 
-* "Sure being a coder is fun and all, but you know what’s better? Being a coder at a zoo. Using MongoDB, you're going to make a zoo database."
-* Slack out these instructions:
+* Answer any questions before proceeding to the next demo. 
 
 
+### 4. Instructor Do: Web App Manifest Demo (5 mins)
+
+* Use the prompts and talking points below to demonstrate the following key point(s):
+
+  * ✔️ `manifest.webmanifest` is JSON file providing information for mobile and desktop installation
+  
+  * ✔️ Manifest properties are referred to as members
+  
+* Open [08-Ins_Manifest/manifest.webmanifest]@TODO) in your IDE and explain the following: 
+
+  * 🔑 A web app manifest is a simple JSON file containing some metadata about a web application. 
+  
+ ```js
+  {
+    "short_name": "Demo",
+    "name": "Web App Manifest Demo",
+    "icons": [
+      {
+        "src": "/assets/images/icons-192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/assets/images/icons-512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "start_url": "/",
+    "background_color": "	#808080",
+    "display": "standalone",
+    "theme_color": "	#808080"
+  } 
+  ```
+  * 🔑 Each of the properties in our manifest file is referred to as a **member**.
+
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
+
+  * ☝️ What do we think the difference is between `name` and `short_name`?
+
+  * 🙋 `short_name` is used on the home screen and in the application menu
+  
+  * ☝️ What are "icons"?
+
+  * 🙋 The `icons` array contains information about the thumbnail images used when installing the PWA on mobile or desktop
+
+  * ☝️ What is the `start_url` member?
+
+  * 🙋 Defines what page is opened when the app is first launched (start_url).
+  
+  * ☝️ What does the `display` member do?
+
+  * 🙋 By using a web app manifest, our app can tell the browser you want your app to open in a standalone window
+
+
+### 5. Student Do: Web App Manifest (10 mins)
+
+* Direct students to the activity instructions found in [09-St_Manifest](../../../../01-Class-Content/18-pwa/Activities/09-Stu_Web-App-Manifest)
+
+```md
+  # Student Do: Web App Manifest (10 mins)
+
+  In this activity, you will write your first progressive web application manifest.
+
+  ## Instructions
+
+  * Using the instructor demo as a guide, create a manifest for the Image Gallery app.
+
+    * 🤔 Where do you create the `manifest.webmanifest` in the application architecture?
+
+    * 🤔 How do you deploy a manifest?
+
+  * When finished, run the commands:
+
+    * npm install
+    * npm run seed
+    * npm start
+
+  * Navigate to [localhost:3000](localhost:3000) and open `DevTools > Application > Manifest` to verify successful loading of the manifest.
+
+
+  ## 💡 Hint(s)
+
+  Read the [MDN Web App Manifest documentation](https://developer.mozilla.org/en-US/docs/Web/Manifest) 
+
+
+  ## 🏆 Bonus
+
+  * Add additional members to your manifest.
+  ```
+
+
+### . Instructor Do: Review Web App Manifest (5 mins)
+
+  * Use the prompts and talking points below to review the following key point(s):
+
+    * @TODO
+
+  * Open [...public/manifest.webmanifest](@TODO) in your IDE and explain the following:
+
+    ```json
+
+    @TODO insert code and talking points
+  
+    ```
+
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
+
+  * ☝️ @TODO 
+
+  * 🙋 @TODO 
+
+  * ☝️ What's next on our list of things to do?
+  
+  * 🙋 Add a service worker!
+  
+
+@TODO 15 minutes is way too long
+### . Instructor Do: Intro To Service Workers (15 mins)
+
+* Use the prompts and talking points below to demonstrate the following key point(s):
+
+  * @TODO
+
+@TODO need an instructor demo!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+* Run [ ](../../../../01-Class-Content/18-pwa/Activities/03-Stu_Caching-Fetching-Files/Solved/Gallery-App-Caching) and re-launch the Gallery app if it is not already running.
+
+* Tell the class that a service worker is a script that your browser runs in the background on a separate thread from your webpage.
+
+* Certain functionality can _only_ be implemented from within a service worker, such as caching assets in order to make the application useable without an internet connection or notifying the browser than the application should be installable.
+
+* Before we look at our service worker code, let's cover a few terms.
+
+  * **Cache API** Similar to localstorage and indexedDB in that this browser API is used for storing data. However Cache API can be used to store entire all front end assets such as images, javascript, HTML, CSS, etc. along with API responses.
+
+  * **Thread** A thread is an independent set of values for the processor that controls what executes in what order. Think of this as another JavaScript application running at the same time as our main application, with the ability to communicate and pass data between threads.
+
+
+
+* Open your Chrome Dev Tools > Application and click on the Service Worker tab.
+
+  * Demonstrate how when your web app launches, it registers and installs the service worker.
+
+* Follow these steps:
+
+  * In the Service Worker tab click un-register service worker.
+
+  * Refresh your app.
+
+  * Point out how the service worker has installed and re-registered on refresh.
+
+  * Move into the Cache Storage tab to show our cached files.
+
+  * Switch into your console to demo the service worker object as well as the message saying that our files have been cached.
+
+* Tell the students that our service worker is launching when our app hits the index page, installing and registering and caching our files.
+
+* Successful registration of the Service Worker means that the script has been successfully parsed, it is on the same origin as the document, and the origin is HTTPS.
+
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
+
+  * ☝️ @TODO 
+
+  * 🙋 @TODO 
+
+
+### . Student Do: Register Service Worker (10 mins) (HIGH)
+
+* Direct students to the next activity located in [02-Stu_Service-Workers](../../../../01-Class-Content/18-pwa/Activities/02-Stu_Service-Workers/Unsolved).
+
+* **Instructions**
+
+* Add the following script just above the closing `</body>` tag in `index.html`
+
+```js
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('service-worker.js')
+        .then((reg) => {
+          console.log('We found your service worker file!', reg);
+        });
+    });
+  }
+</script>
 ```
-Startup mongod and the mongo shell and switch to a new db named zoo.
 
-Insert into a collection named animals:
-One entry for each of your five favorite animals.
+* Create a `service-worker.js` file in the `public` directory and add the following line of code.
 
-Each entry should have
-1. A field of numLegs with an integer of the number of legs that animal has.
-2. A field of class with that animal's class (mammal, reptile, etc).
-3. A field of weight with an integer of the weight of the animal in pounds (any reasonable weight, really).
-4. A field of name, with the animal's name.
-5. A field of whatIWouldReallyCallIt with the name of what you would call the animal if you got to name it.
-
-Example:
-
-{
-  "name": "Panda",
-  "numLegs": 4,
-  "class": "mammal",
-  "weight": 254,
-  "whatIWouldReallyCallIt": "Desiigner"
-}
+```js
+console.log("Hello from your service worker file!");
 ```
 
-### 7. Instructor Do: Insert Some Animals (5 mins)
+* Refresh your Gallery App or launch it with `npm start` if it is not running.
 
-* Ask the class how the last assignment went. Tell them that if they ran into any issues, they can follow along with your example.
+* Open your Chrome Dev Tools and navigate to Application then your Service Worker tab. Check to see if your service worker file was successfully found. You should see two messages, one from the `service-worker.js` file and one from the script tag that you put in your `index.html` file.
 
-* Load up `mongod` and the `mongo` shell on your computer, and enter in five animals with the same details listed out in the last activity. If you'd like, you can also follow the queries in `07-Insert-Animals`.
-
-* Remind students that MongoDB lets you store not just strings, numbers, booleans, objects and arrays, but also dates, making it a tad more flexible than a JSON object. "Remember, we're working with BSON now."
-
-### 8. Instructor Do: Introduce Sorting with MongoDB (5 mins)
-
-* Tell students that there's one more important MongoDB feature you'd like to go over before connecting the database with Node.
-
-  * "You'll remember that MySQL had a way to sort our results, so that we could organize our data before displaying it in our website. MongoDB has the same feature."
-
-* Go through `08-Sorting` line by line with the students. Ask them to try the commands you're explaining with their own collections.
-  * Make sure they understand that:
-    * Using `.sort({[FIELD]:1})` will give them their results sorted in ascending order by the field of their choice.
-    * Using `.sort({[FIELD]:-1})` will give them their results sorted in descending order by the field of their choice.
-
-### 9. Students Do: Practice Sorting (3 mins)
-
-* Have your students practice sorting in the `mongo` shell for a few minutes. "We won't spend too much time going over this, but get your feet a little wet with the sort method."
-
-* Make sure you keep the query file displayed on the screen. Slack it out if a student asks.
-
-### 10. Everyone Do: Introduce MongoJS (5 mins)
-
-* "Now that we've all become MongoDB masters, it's time to use our craft with Node. Look up `MongoJS` on the npm website."
-
-  * Here's the link for your convenience: <https://www.npmjs.com/package/mongojs>.
-  * It's just a good routine to have your students find these packages on their own, as they'll no doubt have to do throughout their careers.
-
-* Tell them not to worry too much about connecting to the database just yet. The main focus is how to call the MongoDB methods they've already used.
-
-  * Call on students and ask them how they would use these Mongo methods in `MongoJS`: `find`, `insert`, `remove` and `sort`.
-
-* The main takeaway should be that using these methods is nearly identical to running them in the `mongo` shell, just with a callback function to handle the results in your server. From there, it's really just using express to send the data to the browser, same as we did with MySQL.
-
-### 11. Student Do: MongoJS Assignment (20 mins)
-
-* Load the solution of `09-MongoDB-and-Sorting` on your machine, and run `server.js` with Node. Visit the different routes in your web browser to show students the results:
-
-  * `/` will display a simple hello world message.
-  * `/all` will display JSON with every animal in your zoo collection.
-  * `/name` will display JSON with every animal, sorted by name.
-  * `/weight` will display JSON with every animal, sorted by weight.
-
-* Slack Out the skeleton of `09-MongoDB-and-Sorting` to your class. Here are the instructions from the file, for reference's sake.
+  ![Service Worker Console](Images/sw-console.png)
 
 
-```
-TODO: Make four routes that display results from your zoo collection
+### . Instructor Do: Review Register Service Worker (5 mins)
 
-0: Root: Displays a simple "Hello World" message (no mongo required).
-1: All: Send JSON response with all animals
-2: Name: Send JSON response sorted by name in ascending order
-3: Weight: Send JSON response sorted by weight in descending order
+* Use the prompts and talking points below to review the following key point(s):
+
+  * @TODO
+
+* Open [03-Stu_Caching-Fetching-Files/Solved/Gallery-App-Caching](../../../../01-Class-Content/18-pwa/Activities/03-Stu_Caching-Fetching-Files/Solved/Gallery-App-Caching) and navigate to `public/index.html`.
+
+```js
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('service-worker.js')
+        .then((reg) => {
+          console.log('We found your service worker file!', reg);
+        });
+    });
+  }
+</script>
 ```
 
-* Tell your students to ask you or a TA for help if they have any questions while working on the assignment.
+* Ask for a volunteer to help step you through the code. The main takeaway is we are adding an event listener to our window element, registering our service worker and then logging a simple message to let us know it was successful.
 
-### 12. Instructor Do: Go over solution (5 mins)
+* Reiterate that it is not necessary to understand every single line of code at this point, but to have a general understanding of we we are doing. Explain that the fluency with this code will come after seeing it a few times.
 
-* Ask students how the activity went, and encourage anyone who had trouble using it. Remember, even if it is similar to using the `mongo` shell, this is still the first time they've used this node package.
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
 
-* Open the skeleton file on your machine and ask the class for the answers to each route, one by one. After each route, start the `server.js` file and use your web browser to check the route. If it works, great! If not, ask the student who gave the answer if you had mistyped something (since they gave the answer they'll probably be able to point out the error better than anyone).
+  * ☝️ @TODO 
 
-* "With that done, how about a break? When you come back, we'll finally be connecting MongoDB the front end and, soon, with `Cheerio`."
+  * 🙋 @TODO 
 
-- - -
+---
 
-### 13. Break (15 mins)
+### . Break (15 mins)
 
-- - -
+---
 
-### 14. Student Do: MongoJS and the Front-End (20 mins)
+### . Instructor Do: Creating An Offline Experience (15 mins) (HIGH)
 
-* Tell your students something along these lines. "Now that we have our back end working without MongoDB, we have one last component to add to make this a fullstack app." Ask them which component that is?
+* Use the prompts and talking points below to demonstrate the following key point(s):
 
-  * The front end.
+  * @TODO
 
-* Open the solution to `10-MongoJS-and-the-Front-End` on your machine and run the `server.js` file. Note how it pulls in the information you typed in earlier for your zoo collection, and places it in an html table.
+* Now that we have successfully registered our service worker, let's step through the code that will install and activate it. This will give our service worker the ability to cache the files we tell it to and deliever them in an offline experience for our users.
 
-  ![3-Table](Images/3-Table.jpg)
+* Change into [03-Stu_Caching-Fetching-Files/Solved/Gallery-App-Caching](../../../../01-Class-Content/18-pwa/Activities/03-Stu_Caching-Fetching-Files/Solved/Gallery-App-Caching) and launch your app if it is not running.
 
-* Press the buttons to show students how the information in the table gets sorted out.
+* Visit <http://localhost:3000> and open your Chrome Dev Tools > Sources.
 
-  ![4-TableSorted](Images/4-TableSorted.jpg)
+* In the Sources tab, point out how our service worker is running on separate thread.
 
-* With the finished activity demonstrated, slack out the skeleton of `10-MongoJS-and-the-Front-End`, and ask them to open up the `public/app.js`. This is where they'll find these instructions:
+  ![Threads](Images/sw-threads.png)
 
+* Then move into `service-worker.js` and give a general overview of the code. Explain that they will be adding this code to their `service-worker.js` file in the next activity, but for now the goal is to gain a high level understanding of what is happening.
+
+* **Tell Our App What To Cache**
+
+```js
+const FILES_TO_CACHE = [
+  '/',
+  '/offline.html',
+  '/index.html',
+  '/assets/css/style.css',
+  '/assets/js/app.js',
+  '/assets/js/loadImages.js',
+  '/assets/images/1.jpg',
+  ...
+  ...
+];
+
+// set cache variable names
+const CACHE_NAME = 'static-cache-v2';
+const DATA_CACHE_NAME = 'data-cache-v1';
+```
+
+* **Create Our Install Event Listener**
+
+  * Tell that class that here we open our cache and call `addAll`, passing in `FILES_TO_CACHE`.
+
+```js
+// install
+self.addEventListener('install', function(evt) {
+  evt.waitUntil(
+    caches.open(CACHE_NAME).then(cache => {
+      console.log('Your files were pre-cached successfully!');
+      return cache.addAll(FILES_TO_CACHE);
+    })
+  );
+
+// skipWaiting() ensures that any new versions of our service worker will take over the page and become activated immediately
+  self.skipWaiting();
+});
+```
+
+* **Create Our Activate Event Listener**
+
+  * Tell the class that here we are activating our service worker cleaning up outdated caches.
+
+```js
+// activate
+self.addEventListener('activate', function(evt) {
+  evt.waitUntil(
+    caches.keys().then(keyList => {
+      return Promise.all(
+        keyList.map(key => {
+          if (key !== CACHE_NAME && key !== DATA_CACHE_NAME) {
+            console.log('Removing old cache data', key);
+            return caches.delete(key);
+          }
+        })
+      );
+    })
+  );
+
+// Tells our new service worker to take over.
+  self.clients.claim();
+});
+```
+
+* **Fetch Our API Data**
+
+  * Tell the class that here we modify the service worker to handle requests to `/api` and store the responses in our cache, so we can easily access them later.
+
+```js
+// fetch
+self.addEventListener('fetch', function(evt) {
+  if (evt.request.url.includes('/api/')) {
+    console.log('[Service Worker] Fetch (data)', evt.request.url);
+
+    evt.respondWith(
+      caches.open(DATA_CACHE_NAME).then(cache => {
+        return fetch(evt.request)
+          .then(response => {
+            // If the response was good, clone it and store it in the cache.
+            if (response.status === 200) {
+              cache.put(evt.request.url, response.clone());
+            }
+
+            return response;
+          })
+          .catch(err => {
+            // Network request failed, try to get it from the cache.
+            return cache.match(evt.request);
+          });
+      })
+    );
+
+    return;
+  }
+
+  evt.respondWith(
+    caches.open(CACHE_NAME).then(cache => {
+      return cache.match(evt.request).then(response => {
+        return response || fetch(evt.request);
+      });
+    })
+  );
+});
+```
+
+@TODO yes, there is; let's fix it
+* There is quite a bit of code here so take the time to step through it, clarifying any questions as you go.
+
+  * Remind students to focus on the big picture of creating an offline experience and the details will fall into place.
+
+* Recap that our service worker is caching all of the files we tell it to so when a user doesn't have a connection, it can deliever them an offline browsing experience.
+
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
+
+  * ☝️ @TODO 
+
+  * 🙋 @TODO 
+
+
+### Student Do: Caching Files (10 mins) (CRITICAL)
+
+* Direct students to the next activity located in [Unsolved/Gallery-App-Caching](../../../../01-Class-Content/18-pwa/Activities/03-Stu_Caching-Fetching-Files/Unsolved/Gallery-App-Caching).
+
+* In this activity students will be given screenshots of the code they need to add to implement caching as to discourage simply copying and pasting.
+
+* **Instructions:**
+
+  * Add the following code to your `service-worker.js` file.
+
+  * Type out the following code snippets when adding them to your application, it will help you solidify what you are doing!
+
+  * As you go through each step, keep your Chrome Develop tools open to monitor your progress and debug if needed.
+
+* **Set Up Cache Files**
+
+```js
+const FILES_TO_CACHE = [
+  '/',
+  '/offline.html',
+  '/index.html',
+  '/assets/css/style.css',
+  '/assets/js/app.js',
+  '/assets/js/loadImages.js',
+  '/assets/js/install.js',
+  '/assets/images/1.jpg',
+  '/assets/images/2.jpg',
+  ...
+  ...
+];
+
+const CACHE_NAME = 'static-cache-v2';
+const DATA_CACHE_NAME = 'data-cache-v1';
+```
+
+* **Install and Register Your Service Worker**
+
+```js
+self.addEventListener('install', function(evt) {
+  evt.waitUntil(
+    caches.open(CACHE_NAME).then(cache => {
+      console.log('Your files were pre-cached successfully!');
+      return cache.addAll(FILES_TO_CACHE);
+    })
+  );
+
+  self.skipWaiting();
+});
+```
+
+* If done successfully, you should see your static cache in your Application tab.
+
+  ![Static Cache](Images/static-cache.png)
+  
+  
+  
+@TODO is this a demo or activity?
+
+* **Activate Service Worker**
+
+```js
+self.addEventListener('activate', function(evt) {
+  evt.waitUntil(
+    caches.keys().then(keyList => {
+      return Promise.all(
+        keyList.map(key => {
+          if (key !== CACHE_NAME && key !== DATA_CACHE_NAME) {
+            console.log('Removing old cache data', key);
+            return caches.delete(key);
+          }
+        })
+      );
+    })
+  );
+
+  self.clients.claim();
+});
+```
+
+
+### Student Do: Fetching Files ( mins) 
+
+* **Fetch Files**
+
+```js
+self.addEventListener('fetch', function(evt) {
+  if (evt.request.url.includes('/api/')) {
+    evt.respondWith(
+      caches.open(DATA_CACHE_NAME).then(cache => {
+        return fetch(evt.request)
+          .then(response => {
+            // If the response was good, clone it and store it in the cache.
+            if (response.status === 200) {
+              cache.put(evt.request.url, response.clone());
+            }
+
+            return response;
+          })
+          .catch(err => {
+            // Network request failed, try to get it from the cache.
+            return cache.match(evt.request);
+          });
+      })
+    );
+
+    return;
+  }
+
+  evt.respondWith(
+    caches.open(CACHE_NAME).then(cache => {
+      return cache.match(evt.request).then(response => {
+        return response || fetch(evt.request);
+      });
+    })
+  );
+});
+```
+
+* If done successfully you will see your data cache in your Application tab. At this point you should be able to put your application in offline mode for an offline experience.
+
+  ![Data Cache](Images/data-cache.png)
+
+  ![Offline](Images/offline.png)
+  
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
+
+  * ☝️ @TODO 
+
+  * 🙋 @TODO 
+
+
+### 11. Instructor Do: Review Caching and Fetching Files (5 mins)
+
+* Use the prompts and talking points below to review the following key point(s):
+
+  * @TODO
+
+* Open [03-Stu_Caching-Fetching-Files/Solved/Gallery-App-Caching](../../../../01-Class-Content/18-pwa/Activities/03-Stu_Caching-Fetching-Files/Solved/Gallery-App-Caching) and launch your app.
+
+* Ask for a volunteer to step you through the code, starting with `install` then moving on to `activate` and `fetch`.
+
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
+
+  * ☝️ @TODO 
+
+  * 🙋 @TODO 
+
+
+@TODO this demo, activity and review may be deleted per time
+### . Instructor Do: Intstalling Your App (5 mins)
+
+* Use the prompts and talking points below to demonstrate the following key point(s):
+
+  * @TODO
+
+* Navigate to [the deployed Image application(@TODO) and demonstrate the following functionality: 
+
+  @TODO
+
+  * When a Progressive Web App is installed, it looks and behaves like all of the other installed apps.
+
+  * It runs in an app without an address bar or other browser UI and like all other installed apps, it's a top level app in the task switcher.
+
+* Demonstrate how to install the Gallery App on desktop for the students.
+
+* **Open Chrome Menu**
+
+  ![Install Step 1](Images/install-1.png)
+
+* **Install**
+
+  ![Install Install Step 2](Images/install-2.png)
+
+* **See Your App Successfully Installed**
+
+  ![Install Step 3](Images/install-3.png)
+
+
+### . Instructor Do: Demo Notetaker PWA (5 mins)
+
+* Use the prompts and talking points below to demonstrate the following key point(s):
+
+* Navigate to [05-Stu_Final-Project/Solved](../../../../01-Class-Content/18-pwa/Activities/05-Stu_Final-Project/Solved) and demonstrate the following functionality: 
+
+  * @TODO the offline experience for the solved Notetaker app using Chrome Developer tools and navigate to the `Service Worker` tab, toggling the offline version and then refreshing the app.
+
+
+### . Student Do: Notetaker PWA (30 mins)
+
+* Direct students to the activity isntructions found in [16-Stu_Notetaker-PWA](../../../../01-Class-Content/18-pwa/Activities/16-Stu_Notetaker-PWA)
+
+@TODO insert new instructions as Markdown
+
+
+### . Instructor Do: Review Notetaker PWA (15 mins)
+
+* Use the prompts and talking points below to review the following key point(s):
+
+  * @TODO
+
+* Open [05-Stu_Final-Project/Solved/public/manifest.webmanifest](../../../../01-Class-Content/18-pwa/Activities/05-Stu_Final-Project/Solved/public/manifest.webmanifest) in your IDE and explain the following: 
+
+@TODO insert manifest with talking points
+
+* Open [05-Stu_Final-Project/Solved/public/service-worker.js](../../../../01-Class-Content/18-pwa/Activities/05-Stu_Final-Project/Solved/public/service-worker.js) in your IDE and explain the following: 
+
+  * @TODO add code snippets and talking points
+
+  * :memo: Our `fetch` call has changed, since we are onlying fetching our cached static resources.
+
+  ```js
+  // fetch
+  self.addEventListener('fetch', function(evt) {
+    evt.respondWith(
+      caches.open(CACHE_NAME).then(cache => {
+        return cache.match(evt.request).then(response => {
+          return response || fetch(evt.request);
+        });
+      })
+    );
+  });
   ```
-  1. Make a reusable function for creating a table body in index.html with the results from your MongoDB query
-  Each row should have info for one animal.
 
-  2. Make two AJAX functions that fire when users click the two buttons on index.html.
-      a. When the user clicks the Weight button, the table should display the animal data sorted by weight.
-      b. When the user clicks the Name button, the table should display the animal data sorted by name.
-
-  Good luck!
-
-  *Hint*: We don't want to keep adding to the table with each button click. We only want to show the new results.
-  What can we do to the table to accomplish this?
-  ```
-
-### 15. Instructor Do: Checkup (5 mins)
-
-* Ask your students how they think they did on the activity. If anyone has any questions, take them and answer them. If someone is simply stuck and has no particular questions, ask one of the TAs to help them out.
-
-* Open the solution's `public/app.js` file and show how the JavaScript file
-  * Uses jQuery AJAX to grab data from the API routes defined in `server.js`.
-  * Takes the JSON object that the server sends and appends it to the table using our DRY function.
-  * Also note how the table is emptied each time, so that the data is displayed without duplicates.
-
-### 16. Student Do: Scraping a site into DB (30 mins)
-
-* Whew, we've gone over a lot of topics today. Scraping, `MongoJS`, using MongoDB in the full-stack. Now, we're going to bring it all together.
-
-* On your machine, open up the solution of `11-Scraping-into-a-db` and demonstrate the working file, which will not only scrape a website, but also place the website data in a MongoDB database.
-
-  * To that end, open up Robo 3T and find the data in the collection that `server.js` just made (which should be under the "scraper" database as "scrapedData").
-
-* Slack out the skeleton of `11-Scraping-into-a-db`. Here are the instructions students will see:
-
-  ```
-  Students: Using the tools and techniques you learned so far,
-  you will scrape a website of your choice, then place the data
-  in a MongoDB database. Be sure to make the database and collection
-  before running this exercise.
-
-  Consult the assignment files from earlier in the class
-  if you need a refresher on Cheerio.
-  ```
-
-* They will also have the two routes they need to make spec'd out in the right spot of `server.js`:
-
-  ```
-  ## Route 1
-  This route will retrieve all of the data
-  from the scrapedData collection as json (this will be populated
-  by the data you scrape using the next route)
-
-  ## Route 2
-  When you visit this route, the server will
-  scrape data from the site of your choice, and save it to
-  MongoDB.
-  TIP: Think back to how you pushed website data
-  into an empty array in the last class. How do you
-  push it into a MongoDB collection instead?
-  ```
-
-  #### Bonus If any student finishes, send out the skeleton of Note Taker
-
-* Slack out the skeleton of `12-Note-Taker`, and tell students that if they finish activity, they should attempt to complete this Note-Taker app.
-
-* Tell students that even if they don't get to finish the app, or even if they don't finish assignment, they should still try to finish this before Saturday. "It's not mandatory, but it will be good practice before your homework assignment."
-
-* (If you're feeling really generous, you can slack out the solution after class on Saturday. This will help students know how to approach the homework.)
-
-### 17. Instructor Do: Wrap up Activity 5 (5 mins)
-
-* First, ask if any students were able to finish the assignment. (If not, this was a pretty hard one, so don't fret. _Do_ offer encouragement).
-
-* If anyone says yes, ask them to slack out the solution, and ask the student to describe how the app works.
-
-* If not, open up the solution on your machine, then demonstrate how it works.
-
-* Basically, each route starts with the usual Express method (app.get, app.post, etc.).
-* The route that retrieves the data is simply a `MongoJS` call wrapped in a get.
-
-  ![5-Get](Images/5-Get.jpg)
-
-* The scrape route consists of a cheerio call to scrape the site enclosing a `MongoJS` method that saves the site data to the server.
-
-  ![6-Scrape](Images/6-Scrape.jpg)
-
-* Ask your students if they have any questions about how this works. If anyone is stumped, tell them they could talk with you or a TA sometime after class if they would like.
-
-* Dismiss the class.
-
-### Lesson Plan Feedback
-
-How did today's class go?
-
-[Went Well](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=pt&sentiment=positive&lesson=18.02)
-
-[Went Poorly](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=pt&sentiment=negative&lesson=18.02)
+### 18. END (0 mins)

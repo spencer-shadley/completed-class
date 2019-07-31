@@ -1,305 +1,923 @@
-## 18.3 Lesson Plan - Riding with Mongoose <!--links--> &nbsp; [⬅️](../02-Day/02-Day-LessonPlan.md) &nbsp; [➡️](../../19-Week/01-Day/01-Day-LessonPlan.md)
+# 18.3 Lesson Plan - Intro to Webpack (10:00 AM) <!--links--> &nbsp; [⬅️](#todo-fix-when-merged-to-dev) &nbsp; [➡️](#todo-fix-when-merged-to-dev)
 
-### Overview
+## Overview
 
-In the class, you will introduce students to `Mongoose`, a node package that lends some more power to MongoDB queries. With schemas, custom methods and the ability to create relations in a non-relational database, `Mongoose` will help make MongoDB even more flexible.
+In today's class students will be continuing their journey into web performance. Today we will be learning about Webpack. Webpack is a module bundler, with its main purpose being bundling JavaScript files for use in a browser. Webpack provides a lot of functionality that developers can take advantage of to make their programs more performant.
 
-`Summary: Complete activities 13-20 in Unit 18`
+## Learning Objectives
 
-##### Attention: If you’re teaching a part time section and this isn’t a Saturday, please use the “Weekday” tab inside of the "03-Day-TimeTracker" for activity lengths instead of those printed on this lesson plan
+* Create a basic Webpack configuration file.
 
-##### Instructor Priorities
+* Bundle their JavaScript code into a single file.
 
-* Students should understand how to write up a `Mongoose` schema to dictate rules for their MongoDB data.
-* Students should know how to create custom methods in `Mongoose` to set and update data purely on the back end.
-* Students should be able to utilize `Mongoose`'s populate method to create relationships between the collections in their database.
-  * They should also understand that populate doesn't offer the support for more advanced types of relationships, so MySQL may still be more suitable for more complex projects.
+* Add Webpack plugins to their Webpack configs.
 
-##### Instructor Notes
+* Convert web applications to PWA using Webpack 
 
-* _Absolutely_ go over the exercises before class, so that you know how each file functions and what parts of `Mongoose` we'll be teaching the class.
-* _Especially_ go over the comments in the model files, as well as the populate method in the sixth and seventh activities. These are super important concepts that the class should understand to finish their homework.
-* There will be some extra time available for you: these are tough but essential concepts for the homework, so be sure to spend a few more minutes on a topic if students seemed stumped by any of these activities or practices.
-* * **DO NOT HAVE STUDENTS CONNECT TO A REMOTE DATABASE WHEN DEVELOPING LOCALLY.** If your students do not properly use environment variables, they may not be able to work on activities or homework on your classroom's internet connection (also, using a remote database for local development is considered bad practice). Use local database connections when working locally, and only connect to your Heroku database when applications are deployed.
-* **IMPORTANT**: We have created written and video guides for students to help deploying to Heroku with MongoDB/Mongoose. Please provide the students the Supplemental folder within Week 18 so they have access to these resources.
+* Perform code splitting using webpack.
 
-* [Supplemental Content](../../../../01-Class-Content/18-mongo-mongoose/03-Supplemental)
+## Instructor Notes
 
-### Sample Class Video (Highly Recommended)
-* To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=baba13c8-eb9d-4596-b261-df9063aaa9a8)
+* Complete activities @TODO XX-Ins_whatever through XX-Stu_whatevs
 
-- - -
+* Webpack can be a difficult tool to get your head around, so be as clear as possible in your explanations and be ready to answer plenty of student questions. It is recommended that you review the webpack [docs](https://webpack.js.org/concepts). You may want to read [Why Webpack](https://webpack.js.org/concepts/why-webpack) so that you are prepared to answer student questions like "Why are we learning this?". 
 
-### Class Objectives
+---
 
-* Show the various properties `Mongoose` offers for organizing and validating data.
-* Demonstrate how `Mongoose` connects its models with `server.js`.
-* Spur your students to start thinking about when they would want to use Mongoose instead of other types of database system (i.e MySQL with Sequelize)
+### 1. Instructor Do: Welcome/Intro Webpack (10 mins)
 
-- - -
+* Welcome students to the class.
 
-### 0. Instructor Do: Welcome Students (1min)
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
 
-* Say hellos and answer any questions students might have before class.
+  * ☝️ In terms of performance, what are the skills we have learned so far?
 
-### 1. Students Do: Warm up (15mins)
+  * 🙋 Compression, minification, lazy-loading, and caching.
 
-* Tell the class that they've gone over a lot of new technologies this week, and we just want to make sure everything's fresh in their minds. "So, we're going to start with a warmup."
+  * ☝️ What if our application has dependencies? Do we minify those by-hand?
 
-* Open up the solution to `13-Warm-Up` on your machine, run `server.js`, then load the site in your browser. Show how the site lets them add books, and mark books as read or unread.
+  * 🙋 No, that would be inefficient and take a long time.
 
-* Note the fact that an explicit route for the root, `http://localhost:3000` does not exist.  However, the page still loads `index.html` from the `/public` folder.  Explain to the students that this is a convention from the static middleware that we are using.  Point to this line:  `app.use(express.static("public"));`  
+  * ☝️ Today we're learning webpack. What do you think webpack does?
 
-* "Your goal is to complete the routes in the server file so the site can display and edit the book data. Don't worry about the front end, just use MongoJS to finish the routes"
+  * 🙋 Webpack is a module bundler. What this means is that Webpack takes our JavaScript and all of its dependencies and bundles it into a single file.
 
-* Slack out the skeleton of `13-Warm-Up`. Their assignment and the particular routes are written out in the `server.js` file.
+* There are two main phases to a module bundler.
 
-### 2. Instructor Do: Go over warm up (5mins)
+  * Dependency Resolution
 
-* Ask your students how the activity went. Then open up the solution's `server.js` file. Scroll down to the file's routes.
+  * Packing
 
-* For each route, ask students how each route works?
-  * Basically, each one is taking the body of the front end's request, and using that information in the relevant MongoJS queries, as the comments in the file describe.
+### 2. Instructor Do: Intro to Webpack (5 mins)
 
-### 3. Instructor Do: Introduce Mongoose (10mins)
+* Navigate to @TODO linkhere from the command line and run:
 
-* Mongo is very flexible, and makes it a cinch to save data, retrieve data.
+  * `npm install webpack webpack-cli -D`
 
-* But sometimes we need to be stricter. We don't want to save 'true' or an actual array as a book, or save a book without a title, or save a book with the same name and author. But the flexibility of MongoDB makes that possible.
+* Open @TODO webpack.config.js in your IDE and point out the following:
 
-* Sometimes, we want to combine two collections for information. What if we have our authors and their books stored separately. How would we display a list of all author data along with all of the books they wrote?
+  * In order to use Webpack, we need to provide a configuration file that Webpack will use to build off of.
 
-  * MySQL makes that possible with joins, but how do we do that with MongoDB
+  * Entry is the main JavaScript file that our application uses.
 
-* Enter `Mongoose`.
-  * `Mongoose` lets us define models for our Mongo data. No surprise data types for particular fields.
-  * We can set required fields, too.
-  * We can create custom functions to handle our data in ways that aren't already baked in `Mongoose`.
-  * What's more, we can combine collections with "populate," a method that offers very similar functionality to a MySQL join.
+  * Output is an object describing the bundle that Webpack will build. The path property is the folder that the file will be created in. In this configuration, we are telling Webpack that the output file should be in a folder named `dist` and the file itself should be named `bundle.js`.
 
-### 4. Partners Do: When is Mongoose Good for You (5 mins)
+  * In the dependency resolution phase, Webpack looks for an entry point. When the entry point is identified the main purpose of dependency resolution is to scan and gather all of the pieces of code and dependencies required to make the code function. The map of required code and dependencies is referred to as a _dependency graph_. Once this graph as been made, we continue to the packing phase.
 
-* Tell students to partner with the classmates sitting next to them to discuss when they might want to use `Mongoose` versus, say, a vanilla MongoJS set-up, or MySQL with Sequelize. This will help edify the importance of the package.
+  * Setting the mode property allows us to create custom configurations for different environments. In this configuration, we are specifying that this build should be used for development.
 
-* At the three-minute mark, call on some students and ask them for their answers. But mainly, you use `Mongoose` when you want the simplicity of parsing BSON data in a website, along with the same kinds of benefits that MySQL schemas offer.
+```js
+const config = {
+  entry: "./src/app.js",
+  output: {
+    path: __dirname + "/dist",
+    filename: "bundle.js"
+  },
+  mode: "development"
+};
+module.exports = config;
+```
 
-### 5. Instructor Do: Go over Models (20 mins)
+* Open @TODO `package.json` in your IDE and point out the following:
 
-* Open up the `14-SchemaExample`, two files in particular: `server.js` and `exampleModel.js`. Read up on the comments left here to understand how it works, but the main concepts you want to show the class are
+  * 📝 Adding `-D` to the npm install command causes the packages to be saved as "devDependencies" in the `package.json`. While "dependencies" are dependencies that are used at runtime, "devDependencies" are meant to be packages that are only needed in development.
 
-  * That the `server.js` file loads mongoose and uses the url path of the MongoDB database to connect with MongoDB.
+  * The JavaScript bundle that Webpack creates does **not** need Webpack to run.
 
-    ![1-Connect](Images/01-Connect.png)
+  * We have added the script "build" so that when `npm run build` is ran, it executes `webpack --watch`. This command will watch over your entry point(s) for changes and build again if any files are changed.
 
-* That the `server.js` file loads in the `exampleModel.js` file with require, and that this model is where much of the beauty of `Mongoose` lies.
+```json
+{
+  "name": "webpack-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "build": "webpack --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2"
+  }
+}
+```
 
-  * Mongoose models are similar to those in sequelize. We define a schema for the model and then use the model to query our database.
+* Run `webpack` from the command line and explain the following:
 
-  ![2-Require](Images/02-Require.png)
+  * Running `webpack` created a new folder named `dist` with the new bundle inside a file named `bundle.js`.
 
-* Similar to sequelize, we create a new entry into our database using the model's `create` method, which accepts an object describing the new document to be inserted.
+  * Webpack takes the dependency graph that was created and then packs all of the code and dependencies necessary into an output file specified within the configuration file.
 
-  * Since we've configured mongoose to use promises, we can specify what happens after the query by passing a callback function into the `.then` method.
+* Open the file @TODO `src/app.js` in your IDE.
 
-  * If an error occurs, we can handle it in the `.catch` error handler.
+  * Show that the JavaScript is a minified bundle of `src/app.js` and any dependencies it has. 
 
-  ![3-New](Images/03-New.png)
+  * Use `Find` with your IDE to point out that the minified bundle contains `console.log` from `src/app.js`.
 
-* And that in `exampleModel.js`, we first set up a schema class, then define a schema, and use the schema to create a model.
+* Open `index.html` in your IDE.
 
-![4-Schema](Images/04-Schema.png)
+  * Point out that we have to update the script tag so that it uses our new webpack build.
 
-* Be sure to go over the various properties that the schema defines. These are all laid out with the comments, as you can see in the above image.
+  ```html
+  <script type="text/javascript" src="./dist/bundle.js"></script>
+  ```
 
-### 6. Partners Do: Make a Model Schema (20 mins)
+* Now open `index.html` in your browser and point out the following:
 
-* After you demonstrate the key aspects of `Mongoose` schemas (as outlined in Activity 2), open up the solution to `15-User-Schema` on your machine. Open it with Node and demonstrate how the site works.
+  * `Hello webpack` appears in the console, coming from the file `bundle.js`.
 
-![5-Login](Images/5-Login.jpg)
+* Lastly run `npm build` from the command line and explain the following:
 
-* Try entering another user with the same email address, and note how it won't work.
+  * The build script set up in `package.json` runs and watches for any changes in our files, similar to how `nodemon` watches for changes. In order to kill the process, type `Ctrl + C` in your terminal.
 
-* Slack out the skeleton of `15-User-Schema` to the class, and ask them to group up with their earlier partners. The instructions are outlined in the assignment, but their work consists of coding out a schema already outlined for them.
+### 3. Student Do: Budget Tracker (10 mins)
 
-* Encourage students to speak with you or a TA if they have any questions while trying to write out the schema.
+```md
+# Budget Tracker
 
-### 7. Instructor Do: Schema Solution (10 mins)
+In this activity we will create a bundle.js file with Webpack.
 
-* Ask how the activity went, and answer any lingering questions students might have. If they were stumped by this, offer encouragement: this is the first time they've made a schema with `Mongoose`, and figuring out the right syntax will come with practice.
+## Instructions
 
-* Open up the skeleton version of the route, and call on students to fill in each part of the schema, field by field, based on the commented notes.
+* Run the following command: `npm install webpack webpack-cli -D`
 
-### 8. Instructor Do: Custom Methods with Schema (10 mins)
+* Create a file called `webpack.config.js`.
 
-* But what about when we want more functionality then what these schema properties offer?
+* Using the entry point of `src/app.js`, make Webpack output a bundle file in a folder called `dist/`.
 
-* What if we want to create new entries with the information that the user sends automatically?
+* In `index.html`, change the JavaScript file src to be your new bundle file.
 
-  * Maybe a full-name field that gets created on the fly by concatenating the first and last name of a user. That's where custom methods come in.
-  * Maybe we simply want to update a field with a simple function call in our server file.
+* Add the necessary scripts to `package.json`, then run Webpack with the `--watch` option.
 
-* Open up the files in `16-Custom-Methods`, particularly `server.js`, `usermodel.js` and `public/index.html`.
+* Update this application to accomplish the following:
 
-  * Fill out the form in index.html and submit it, and read the username. Something looks different, huh. And look, they have an isCool field, and it's set to true (See? You **are** cool)!
+  * When the user types in a value to the price field and clicks submit, the remaining balance should be updated.
 
-    ![6-Cool](Images/6-Cool.jpg)
+  * Using the `require` module and `module.exports`, move the code that calculates the new budget to a file named `calculations.js`.
 
-  * Open up the `userModel.js` and scroll down to the custom methods being added to the schema.
+  * Update the `reset` function so that when clicked, it sets the current balance back to its original balance and clears the list of expenses.
 
-    ![7-Custom](Images/7-Custom.jpg)
+### Hints
 
-  * Then show the students the `server.js` page where these functions are called.
+* Make sure that Webpack is working properly before attempting to make adjustments to the app.
+```
 
-    * Note how before running `User.create` to insert a new user into the collection, we first create a new `user` object using `User` as a constructor function, passing in `req.body`.
+# 4. Instructor Do: Review Budget Tracker (5 mins)
 
-    * This essentially creates a user object that isn't inserted into the database _yet_, but we can use custom methods on to ready it's values before insertion.
+* Open @TODO `13-Stu-Webpack-Intro/Solved/` in the browser and demonstrate the following functionality:
 
-    * By running the `coolifier` and `makeCool` methods on this `user` object, it knows to update the user to be created in the database to have the values updated by these methods.
+  * When we add multiple expenses, we see that our balance adjusts for each submission.
 
-    * Note how we run `User.create(user)`, rather than `User.create(req.body)`. This is because we want to tell mongoose that our newly inserted user should be _coolifed_ and _madeCool_ when it's inserted.
+  * When we click the reset button, the expenses list gets cleared and the balance is reset to its original value.
 
-    ![8-Call](Images/08-Call.png)
+* Open @TODO `13-Stu-Webpack-Intro/Solved/app.js` in your IDE and point out the following:
 
-* Ask students if they have any questions.
+  * At the top of the file, we bring in `module.exports` from the calculations file.
 
-### 9. Students Do: Custom Method Exercise (10 mins)
+  * Webpack allows us to use modules, including the `require` module just like we can in Node.js apps.
 
-* Slack out the skeleton for `17-Custom-Method-Exercise`. Their work lies in `server.js` and `userModel.js`. Here are their instructions for your reference:
+  * 📝 If we were not using Webpack, we wouldn't be able to use `require` in client-side JavaScript.
 
-* **INSTRUCTIONS**
+  ```js
+  const calculations = require("./calculations");
+  ```
 
-  1. Go to userModel.js, and create custom methods
-   based on the details offered in the file.
+  * Our subtract function needs to parse `balanceEl.innerText` from a String to a Number before perfoming the `-` operation.
 
-  2. Once you've made those custom methods, use them
-   in this file's POST request
+```js
+function submit() {
+    const total = calculations.subtract(Number(balanceEl.innerText), priceEl.value);
+    balanceEl.innerText = total;
+    addToList(expenseEl.value, priceEl.value);
+}
 
-  3. Good luck!
+function reset() {
+    const total = 2000;
+    balanceEl.innerText = total;
+    expensesListEl.innerHTML = '';
+}
+```
 
-* Make sure you go over the solution in the interim, if you haven't already done so before class.
+* Open @TODO `webpack.config.js` in your IDE and point out the following:
 
-### 10. Instructor Do: Go over (10 mins)
+  * We use the same configuration as the previous demo.
 
-* Ask your students how the activity went, and open up the skeleton files on your machine: `server.js` and `userModel.js`
+* Open @TODO `package.json` in your IDE and point out the following:
 
-* First, start with the `userModel.js` file, and ask two students to give you their answers for the custom methods.
+  * We use the same configuration as the previous demo.
 
-* From there, open the `server.js` and ask a student how to call these new methods in that file.
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
 
-* Finally, start the server and load up the site in your browser. Enter the form and test if it works.
-  * Should anything go wrong for some reason, ask the students if they know what's happening, or to guide you through the debug process. Could be a good opportunity to practice debugging in class like this.
+  * ☝️ Which JavaScript file do we link to index.html? 
 
-- - -
+  * 🙋 Our JavaScript bundle, `./dist/bundle.js`
 
-### 11. Break (40 mins)
+### 5. Instructor Do: Demo Bundle Analyzer Plugin (5 mins)
 
-- - -
+* Open @TODO `14-Ins-First-Plugin/package.json` in your IDE and explain the following: 
 
-### 12. Instructor Do: Introduce Population with Mongoose (15 mins)
+  * We've added webpack-bundle-analyzer to our devDependencies and the chart.js library to our dependencies.
 
-* Welcome the students back to class.
+  * The `webpack-bundle-analyzer` is a plugin that will build an interactive visualization of all of the dependencies in our project.
 
-* This next part is part is _very important_, and is where much of `Mongoose'`s power lies.
+@TODO add snippet
 
-* Populate lets users relate one collection to another. Be sure to tell students that if they need really advanced relations, MySQL may still be the better choice. But, this does give some similar functionality to sites powered with `Mongoose`.
+* Open @TODO `14-Ins-First-Plugin/webpack.config.js` in your IDE and point out the following:
 
-* Open up `18-Intro-Populate` on your machine. Start the server with node, then open up the site and save a book. In fact, save a few books.
+  * Webpack plugins can be used to perform tasks that Webpack can't perform by default. Some of these tasks include asset management, additional bundle optimization, and adding PWA capabilities.
 
-* Then, visit `/books` to see your books listed.
-      _(and yes, The Great Gatsby **is** my favorite author)_.
+  * Plugins could be used multiple times in the same configuration file, so it is important that you create an instance of one by using the keyword `new`.
 
-![9-Books](Images/9-Books.jpg)
+* Open @TODO `14-Ins-First-Plugin/webpack.config.js` in your IDE and point out the following:
 
-* Then visit `/library` to see your library data listed in JSON, including a list of ObjectIds in the book property. These are the ObjectIds associated with each book we've made.
+  * Emphasize that we've simply added a library so that we can analyze its impact on the total bundle size.
 
-![10-Library](Images/10-Library.jpg)
+  @TODO Add snuppet
 
-* Ask students, what if we want to see the data for all of the books stored in our library. We could go back to books, but what if we want to include all of the information about our library and our books, and query that data with just one call.
+* Run `npm run build` from the command line, navigate to [http://127.0.0.1:8888](http://127.0.0.1:8888) in your browser if the tab does not automatically open and explain the following:
 
-  * Answer: This is where `Mongoose`'s populate method comes in. Open the `/populated` route in your browser, and go to the books property. All of the books will be there.
+![Bundle Analyzer](Images/bundleAnalyzer.png)
 
-    ![11-Populated](Images/11-Populated.jpg)
+  * This plugin helps us analyze the different impacts that libraries have on the bundle size of our application.
 
-* How does this happen?
+  * When we mouse over the `bundle.js` section, then the `chart.js` section we can see that the chart.js library makes up a significant portion of our total bundle size.
 
-  * Show them the `Library.js` model, and how it has a reference to the `Book.js` model inside it's schema.
+  * ☝️ Why is `moment.js` included here, even though we didn't install it?
 
-    ![12-Model](Images/12-Model.jpg)
+  * 🙋 Even though we didn't explicitly install `moment.js`, it is a dependency of `chart.js`, and adds to the total bundle size of our application.
 
-  * Then show them the `index.js` file inside of the `models` folder.
+### 6. Student Do: Gallery App with Webpack (10 mins)
 
-    ![15-Combined-Models](Images/15-Combined-Models.png)
+```md
 
-    * Explain that when working with multiple models, it's often useful to be able to require all of them at once, rather than individually. By exporting an object containing all of our models from the `index.js` file in the models folder, we can then require this object and access all of our models inside of `server.js`.
+# Gallery App with Webpack
 
-      ![16-Model-Require](Images/16-Model-Require.png)
+In this activity we will adjust our Gallery app so that Webpack minifies and bundles our code.
 
-  * Then show them the populate method being used in `server.js`.
+## Instructions
 
-  * All that's required here is to run `populate("books")` after finding books and before handling the result of the query in `.then`.
+* Before you begin, make sure to install all of the necessary dependencies with `npm install`.
 
-    ![13-Populate](Images/13-Populate.png)
+* Run the following command: `npm install sw-precache-webpack-plugin webpack-pwa-manifest -D`.
 
-### 13. Partners Do: Finish User Model (10 mins)
+* In a separate tab in your terminal, start a mongodb server with `mongod`.
 
-* Tell the students to partner up one last time. Slack out the skeleton of `19-Populate-Exercise`.
+* Run `npm start` to make sure that the application works as expected.
 
-* Tell them their work is located in `server.js`, but to check out the `Note.js` and `User.js` models to see how the schemas there make the populate method possible.
+* Using the entry point of `src/app.js`, make Webpack output a bundle file in a folder called `dist/`.
 
-* In the interim, open up the solution on your machine if you need a refresher on how the populate method works.
+* In `index.html`, change the JavaScript file src to be your new bundle file.
 
-### 14. Instructor Do: Go Over Solution (10 mins)
+* Add the script `"prestart": "npm run webpack",` to the scripts in `package.json` so that Webpack will build every time the application is started.
 
-* Ask the students how the activity went. If they seem stumped, answer any questions give them five or so more minutes: this is an essential part of their homework.
+* Update this application to accomplish the following:
 
-* Open up the skeleton `server.js` on your machine, and call on students to give you each line of the code you need to solve the problem. Writing the whole function out will serve as a nice review of how to use `Mongoose` to save data, as well as using the populate method.
+  * Create a file in `public/` using `serviceWorker.js` from previous gallery pwa activity.
 
-### 15. Students Do: Scraping with `Mongoose` (30mins, or until only 10 mins are left in class)
+  * In `serviceWorker.js`, update the `FILES_TO_CACHE` array with files generated from Webpack.
 
-* "Now, we're going to bring this right back to the last class." Tell your students that you'll be working with `cheerio` for this last assignment, `20-Scraping-With-Mongoose`.
+### Bonus
 
-* Open the solution up on your machine and run `server.js`, then open the site in your browser.
+* Install the bundle analyzer plugin and identify which modules contribute the most to the total bundle size.
 
-  * _IMPORTANT_: You MUST visit `/scrape` before the articles appear in the index of your site. Otherwise you will be staring at a blank screen
+### Hints
 
-* When the articles do show up, click on the article headlines, Leave a few notes, delete a few notes, and encourage students: "If you can do this assignment, you should be all set for homework tonight!"
+* Try clearing application storage and disabling cache after making changes to your application. If it appears to be working, use Chrome DevTools to toggle `offline mode` and ensure that the application uses the service worker.
+```
 
-    ![14-NoteScraper](Images/14-NoteScraper.jpg)
+### 7. Instructor Do: Review Gallery App with Webpack (5 mins)
 
+* Run the following commands to start the application:
 
-* In the interim, answer any questions students might have and study the solution, so you know how it should look for the next part of the assignment.
+```bash
+node seeders/seed.js
+npm install
+npm start
+```
 
-### 16. Instructor Do: Go Over Solution (10 mins)
+* Navigate to [http://localhost:3000](http://localhost:3000) in your browser and point out the following: 
 
-* Once again, ask students how the assignment went.
+  * If we inspect our Service Worker with DevTools, we see that `dist/bundle.js` is cached.
 
-* Open up the skeleton `server.js` on your machine and ask students to tell you the code for the three routes they created.
-  * If they just give you the code, grill them a little on how their solution works, to make sure they understand what's going on.
+  * Additionally, "Service Worker registered successfully" was logged to the console.
 
-### 17. Wrap Up
+* Open @TODO `public/webpack.config.js` in your IDE and point out the following:
 
-* Encourage the class. This was a tough lecture! And if everything isn't clear just yet, the homework should provide enough practice to help edify how `Mongoose` and scraping work.
+  * The first plugin, `SWPrecacheWebpackPlugin` allows us to cache our external project dependencies. It generates a service worker using an existing service worker and adds it to our build directory.
 
-* Let students know that if they need assistance with the homework, they are free to reach out to you and the TAs for assistance.
+  * The second plugin, `WebpackPwaManifest` generates a manifest.json file to be included in our build directory. While most of the properties are the same as a regular manifest.json, this plugin also automatically resizes all of our icons to the appropriate sizes and allows for the use of ES6 features and JavaScript comments.
 
-* Class dismissed.
+```js
+plugins: [
+  new SWPrecacheWebpackPlugin({
+    cacheId: "my-domain-cache-id",
+    dontCacheBustUrlsMatching: /\.\w{8}\./,
+    filename: "service-worker.js",
+    minify: true,
+    staticFileGlobsIgnorePatterns: [/\.map$/, /manifest\.json$/]
+  }),
+  new WebpackPwaManifest({
+    name: "Images App",
+    short_name: "Images App",
+    description: "An application for images",
+    background_color: "#01579b",
+    theme_color: "#ffffff",
+    "theme-color": "#ffffff",
+    start_url: "/",
+    icons: [
+      {
+        src: path.resolve("public/assets/images/icons/android-chrome-192x192.png"),
+        sizes: [96, 128, 192, 256, 384, 512],
+        destination: path.join("assets", "icons")
+      }
+    ]
+  })
+],
+```
 
-# Instructor Do: Private Self-Reflection (0 min)
+* Open @TODO `package.json` in your IDE and point out the following:
 
-Take some time on your own after class to think about the following questions. If there's anything that you're not sure how to answer, feel free to reach out to the curriculum team!
+  * Our plugins must be installed as devDependencies. 
 
-1. How did today's class go?
-2. How did you teach it?
-3. How well do you feel you did teaching it?
-4. Why are you teaching it?
-5. Why did you teach it that way?
-6. What evidence can I collect to show my students are understanding?
-7. How will my students know they are getting it?
+  * We've also added the script "prestart", which is a built in npm script that will automatically run before each time `npm start` is run.
 
-### Lesson Plan Feedback
+@TODO snippet
+
+### 8. Instructor Do: Demo Pure Functions (10 mins)
+
+* The next demo is going to use a couple of ES6 features that aren't supported in all browsers.
+
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
+
+  * ☝️ What tool do you think we will need to use to allow us to use ES6 in all browsers?
+
+  * 🙋 Babel. This is true, but in order to use Babel with our Webpack build we will need to utilize a Babel feature known as a **loader**.
+
+  * Normally, Webpack only knows how to process regular JavaScript. Loaders allow Webpack to compile and bundle non-JavaScript resources like CSS, HTML, TypeScript, and more. Specifically, the Babel loader goes through all of our JavaScript files and transpiles ES6 into ES5.
+
+* Open @TODO `16-Ins-Pure-Functions/webpack.config.js` in your IDE and point out the following:
+
+  * We've created a new object called module and within it define an array of rules. 
+
+  * `test` is a regular expression that describes the files that you want to match.
+
+  * Since Babel loader is pretty slow, it is especially important that you define an `exclude` property that contains a regular expression that matches all files in your `node_modules` folder.
+
+  * The `use` property is where we define which loader we are going to use, along with any presets or configurations to pass to the loader. Here, we are telling Webpack to use the babel-loader for all JavaScript files that are not in `node_modules`, and to use a preset called `@babel/preset-env`.
+
+```js
+ module: {
+    rules: [{
+        test: /\.m?js$/,
+        exclude: /(node_modules)/,
+        use: {
+            loader: 'babel-loader',
+            options: {
+                presets: ['@babel/preset-env']
+            }
+        }
+    }]
+}
+```
+
+  * Now that we've added our loader, we need to install Babel itself, the loader, and any presets that we want to use. 
+
+* Run `npm install @babel/core babel-loader @babel/preset-env -D` from the command line.
+
+* Open up `src/app.js` and point out the reorganization of the files. 
+
+* We have added the `Chart.js` library so that we can see a bar chart of our expenses. 
+
+  * Remember, Webpack allows us to import other npm modules into our application. 
+  
+  * We've separated the files into files like `elements.js` and `expenses.js` to help further modularize our code. There is no definitively "right" way to split up your code. The main goal when refactoring code to be split between files is to create functions that are reusable and relatively "pure", when possible.
+
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
+
+  * ☝️ What does it mean for a function to be pure?
+
+  * 🙋 Pure functions are straightforward with singular purposes. They do not have any "side effects" within them. **Side effects** are bits of code that interact with the outside world like database calls or changes to the DOM.
+  
+  * 🙋 In pure functions, whenever data needs to be modified, it is not mutated. Instead, we create a new variable that describes the new mutation. Pure functions have the advantage of being easily testable and reusable. It is considered best practice to use pure functions whenever possible.
+  
+  * ☝️ What does it mean for a function to be impure?
+
+  * 🙋 Impure functions tend to have multiple purposes. The might contain database or network calls. Even though it is preferred to keep your functions simple, impure functions are often unavoidable. 
+
+* Open @TODO `src/calculations.js` in your IDE and point out the following:
+
+  * The `subtract` function is a pure function. It creates a new variable for the result, instead of modifying the input and contains no side effects.
+
+  ```js
+  export function subtract(a, b) {
+    const result = a - b
+    return result;
+  }
+  ```
+
+* Open @TODO `src/app.js` in your IDE and point out the following:
+
+  * The `submit` function is an impure function. It modifies existing values and has multiple side effects.
+
+  ```js
+  function submit() {
+    const total = subtract(Number(balanceEl.innerText), priceEl.value);
+    balanceEl.innerText = total;
+    addToList(expenseEl.value, priceEl.value);
+    updateChart(expensesChart, expenseEl.value, priceEl.value);
+  }
+  ```
+  
+* Run `npm install` in your terminal and open @TODO `index.html` file in your browser and demonstrate the following functionality:
+
+  * The submit button adds new expenses to the list.
+
+  * The chart is updated with the new expenses.
+
+### 9. Student Do: Gallery Pure Functions (15 mins)
+
+```md
+# Gallery Pure Functions
+
+In this activity we will adjust our Gallery app so that Webpack minifies and bundles our code.
+
+## Instructions
+
+* Run `npm install`.
+
+* Using the ES6 import/export syntax, separate functions out into separate JavaScript files to make your application more modular.
+
+* While there are many ways that you can separate your JavaScript files, it is recommended that you create somethings similar to the following file structure:
+
+  * `app.js` Loads images and calls the `createCards` function.
+
+  * `cardCreation.js` Responsible for all functions related to the creation of cards.
+
+  * `domMethods.js` Responsible for all functions related to manipulating the DOM.
+
+  * `hover.js` Responsible for the hover effect functions.
+
+  * `rating.js` Handles the creation of the ratings form and the update method.
+
+* Adjust the files in the `FILES_TO_CACHE` array within `public/service-worker.js` so that the Webpack bundle is cached instead.
+
+* Run `npm start` and make sure that the application still works as expected.
+
+```
+
+### 10. Instructor Do: Review Gallery Pure Functions (10 mins)
+
+### 11. Instructor Do: Demo Lazy Loading JavaScript (10 mins)
+
+* Tell the class that just like the lazy loading they worked with using Images, JavaScript can also be loaded as needed.
+
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
+
+  * ☝️ What is lazy loading?
+
+  * 🙋 Lazy loading allows us to load resources on an as-needed basis, instead of on page load.
+
+  * ☝️ If there is JavaScript specific to a part of the page a user is using, when do you think it should be downloaded?
+
+  * 🙋 We should only download the JavaScript specific to a part of the page when the user navigates to that page.
+
+  * ☝️ Could deferring the downloading save us time on page load?
+
+  * 🙋 Absolutely. Longer bundle sizes result in longer load times.
+
+* Open @TODO `18-Ins-Chunking/webpack.config.js` in your IDE and point out the following:
+
+  * We have added a second entry point to our bundle. This entry point is `chart`.
+
+  * `chart` points to `./src/expenseChart.js`.
+
+  * `filename: "[name].bundle.js"` dynamically names our bundle after the name of the entry point. For instance, the entry point `chart` will create a bundle named `chart.bundle.js`.
+
+  * By creating multiple entry points, we can defer the loading of a particular bundle until the code required is needed.
+
+  @TODO code snip
+
+* Open `chart.html` and point out the following:
+
+  * We've added a `<script>` tag to our html that loads our `chart.js` JavaScript bundle.
+
+```html
+<script type="text/javascript" src="./dist/chart.bundle.js"></script>
+```
+
+* Open @TODO `07-Ins-Chunking` in your IDE and run the following commands from your command line:
+
+  * `npm install`
+
+  * `npm run build`
+
+* Open the `index.html` in your browser and point out the following:
+
+  * If we inspect out Network in DevTools, we can see that the chart.js has not been loaded yet.
+
+  * Only once we click the `chart` link in the navbar of the page does the `chart.js` bundle load.
+
+![Network JS](Images/networkJS.png)
+
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
+
+  * ☝️ What are the possible setbacks of this method?
+
+  * 🙋 If both of our bundles require some of the same dependencies, those will be included and both bundles and thus we will end up with duplicated code between bundles. 
+
+### 12. Student Do: Gallery Lazy Loading JavaScript (15 mins)
+
+* Direct students to the activity instructions found in @TODO
+
+```md
+* Run `npm install`.
+
+* In `webpack.config.js`, add entry points for JavaScript files for the three pages, home, detail, and favorites.
+
+* Update `service-worker.js` file so that it caches the new bundles.
+
+* Make sure to update each html file so that it also uses the appropriate bundle.
+
+* Note that the gallery application has been upgraded with the ability to save your favorite images to IndexedDb. 
+
+* Once again, there are many ways that you can separate your JavaScript files. It is recommended that you create somethings similar to the following file structure to avoid chunking unused code:
+
+  * `api.js` Loads images from the api.
+
+  * `cardCreation.js` Responsible for all functions related to the creation of cards.
+
+  * `domMethods.js` Responsible for all functions related to manipulating the DOM.
+
+  * `detail.js` Responsible for the Detail page of the application.
+
+  * `favorites.js` Responsible for the Favorites page of the application.
+
+  * `home.js` Responsible for the Home page of the application.
+
+  * `indexedDb.js` Contains a helper method to interact with IndexedDb.
+
+  * `rating.js` Handles the creation of the ratings form and the update method.
+
+* Adjust the files in the `FILES_TO_CACHE` array within `public/service-worker.js` so that the Webpack bundle is cached instead.
+
+* Run `npm start` and make sure that the application still works as expected.
+
+* Navigate to each page and make sure that the bundle files are all being cached by the service worker.
+
+### Hints
+
+* Try testing out functionality of the application at [http://localhost:3000](http://localhost:3000) every time you make changes. This will help you identify the code that does not work as expected.
+
+* If extracting functionality from a JavaScript file causes any of the pages to stop working, do **not** continue until you understand why it's not working as expected.
+
+* Ask the instructor or a TA for help if get stuck or are unsure why a function isn't working.
+```
+
+### 13. Instructor Do: Review Gallery Lazy Loading JavaScript (10 mins)
+
+* Open @TODO 08-Stu-Chunking/Solved/full-path-to-file/webpack.config.js in your IDE and explain the following:
+
+  * There are now three entry points designated.
+
+  ```js
+  entry: {
+          app: './public/assets/js/home.js',
+          detail: './public/assets/js/detail.js',
+          favorites: './public/assets/js/favorites.js'
+      },
+  ```
+
+  * We also used the `[name].bundle.js` syntax in our output to dynamically name our bundle after the entry point it was built from.
+
+  ```js
+  output: {
+          path: __dirname + '/public/dist',
+          filename: '[name].bundle.js',
+      },
+  ```
+
+* Now run the following commands from the command line:
+
+  * `npm install`
+
+  * `npm start`
+
+  * In the console, we have 3 `bundle.js` files and the bundle naming aligns with the entry points provided in the `webpack.config.js`
+
+![3 Bundles](Images/multipleBundles.png)
+
+* Open @TODO in your browser, navigate to [localhost](<https://localhost:3000>) and explain the following:
+
+  * If we open up our `Network` tab and toggle JS, we can click a picture's name and see that `detail.bundle.js` is loaded when we bring the details of an image.
+
+![Network JS](Images/networkJS.png)
+
+* In your browser, click on the link to the favorites page and point out the following:
+
+  *  `favorites.bundle.js` loads.
+
+  * Lazy loading is a great way to defer loading of resources that are not necessary, but there are possible problems it can raise.
+
+  * Most notably, if multiple entry points have some of the same dependencies, those dependencies will be duplicated across bundles.
+
+### 14. BREAK (40 mins)
+
+### 15. Instructor Do: Introduce Mini-Project (5 mins)
+
+* Run the following commands from the command line: 
+
+  * `npm install`
+
+  * `npm start`
+
+* Navigate to [localhost:3000](http://localhost:3000) in your browser and point out the following:
+
+  * Newsy is a news aggregator app that allows us to search for articles classified by topic, then save our favorites.
+
+  * The home page of the application has some default topics, but we can create your own or remove the default topics.
+
+  * Clicking on one of the topics causes the page to display a list and allows us to save each article to our favorites.
+
+  * Saving a couple of articles to our favorites causes the button to update to a _remove_ button.
+
+  * Navigate to the favorites page in your browser and point out the following:
+
+    * The favorites we selected are listed.
+
+    * The favorites data was stored in IndexedDb, since we are not using a local database for this application.
+
+# 16. Student Do: Work on Mini-Project (60 mins)
+
+```md
+# PWA Mini-Project
+
+In this activity we will take an existing news aggregator application and transform it into a PWA that can be installed on a user's device. We will also utilize webpack's minify and chunking features to help reduce the total size of the application.
+
+## Instructions
+
+* Open the [Unsolved](Unsolved) folder and install dependencies by running `npm install` at the project root.
+
+* Start the app by running `npm start` from the project root.
+
+* Once the app starts open your browser to [localhost:3000](http://localhost:3000).
+
+* Open [index.js](Unsolved/assets/js/index.js).
+
+* There are 3 main sections in this application:
+
+  * A section that allows you to manage a list of topics.
+
+  * A section that displays different articles of a given topic. This page will also allow you to save articles to your favorites.
+
+  * A favorites page to view a list of the user's favorite articles. This page also allows the user to remove articles from their favorites.
+
+### Part 1
+
+* In the `client/` folder, create a `package.json` file either with the command `npm init` or using a `package.json` from a previous activity.
+
+* Using the `webpack.config.js` from the previous activities, create a new `webpack.config.js` file that uses a babel loader and the necessary plugins to transform the application to a PWA.
+
+* Create an entry point for each file in `assets/js`.
+
+* Create a `service-worker.js` and make sure to cache all of the bundle files.
+
+### Part 2
+
+* Take a moment to study the contents of `index.js`:
+
+  1. `renderTopics()` renders all of the topics to the page using `createTopics`.
+
+  2. `topicData` is an array of predefined topics to populate the page with.
+
+  3. `createElement()` allows you to create a document element using the a string of its type, and object containing its attributes, and children elements.
+
+* Since `createElement` is a general purpose function that we can use throughout our application, we are going to create a separate file to keep it in named `domMethods`. By doing this, we will be able to import `createElement` into any component we would like without duplicating code.
+
+* Take a moment to study the contents of `topic.js`:
+
+  1. Remove the `createElement` function and modify the file to use the `createElement` from `domMethods.js`.
+
+  2. Extract the code necessary for indexedDb into its own file and be sure to import it into `topic.js`.
+
+  3. Extract the `loadArticles` function to a new file called API and be sure to import any of its dependencies.
+
+* Take a moment to study the contents of `favorites.js`:
+
+  1. Remove the all function declarations for utilities, indexedDb, API, and domMethods.
+
+  2. Using ES6 syntax, import all necessary functions.
+
+### Hints
+
+* You will **not** have to modify any files that are not in the `client` folder.
+
+* Ask the instructor or a TA if you're having difficulty understanding any of the activity requirements.
+```
+
+# 17. Instructor Do: Review Mini-Project (15 mins)
+
+* Open @TODO `index.js` in your IDE and point out the following:
+
+  * All of the functions pertaining to the `home` page are in `index.js`.
+
+  * `createElement` is brought in from the `domMethods.js` file.
+
+* Open @TODO `domMethod.js` in your IDE and point out the following:
+
+  * It is not entirely necessary for us to understand exactly how every line in `createElement` works. 
+  
+  * It is valuable to get practice working with code we do not fully understand because new developers almost always start their careers working with an unfamiliar codebase.
+
+  * The `createElement` function returns a DOM element and has the following parameters:
+
+  1. A string that represents the type of element.
+
+  2. An object containing all of the attributes to add to the element.
+
+  3. 1 or more children elements to be appended to the element.
+
+  * The `createArticle` function uses a ternary expression to render a `Save to Favorites` button or a `Remove from Favorites` button depending on whether the article is already part of the user's favorites.
+
+  * `loadPage` is a callback passed to the `createElement`. The actual function will either use the results from an AJAX request or the results from IndexedDb to render the page, depending on which function was passed through as a callback.
+
+  ```js
+  !favorite
+    ? createElement(
+      "button",
+      {
+        class: "button button--primary",
+        onclick: () => {
+          useIndexedDb("articles", "ArticleStore", "put", {
+            source,
+            author,
+            title,
+            description,
+            url,
+            urlToImage,
+            publishedAt,
+            _id
+          });
+          loadPage();
+        }
+      },
+      "Save to Favorites"
+    )
+  ```
+
+  * `createPlaceholders()` displays placeholders so that content is rendered on the page while the user waits for results from the AJAX request. Although they will only display on the page for a few seconds, they play a significant role in increasing the user's experience on the site.
+
+  ```js
+  // Create and return 4 placeholder articles
+  function createPlaceholders() {
+    const fragment = document.createDocumentFragment();
+
+    for (let i = 0; i < 4; i++) {
+      const placeholder = createPlaceholder();
+      fragment.appendChild(placeholder);
+    }
+
+    return fragment;
+  }
+
+  // Returns markup for a placeholder article
+  function createPlaceholder() {
+    return createElement(
+      "div",
+      { class: "article-skeleton" },
+      createElement(
+        "div",
+        { class: "article-skeleton__header" },
+        createElement("div", { class: "article-skeleton__title" }),
+        createElement("div", { class: "article-skeleton__published" })
+      ),
+      createElement(
+        "div",
+        { class: "article-skeleton__content" },
+        createElement("div", { class: "article-skeleton__image" }),
+        createElement("div", { class: "article-skeleton__text" }),
+        createElement("div", { class: "article-skeleton__text" }),
+        createElement("div", { class: "article-skeleton__text" }),
+        createElement("div", { class: "article-skeleton__text" }),
+        createElement("div", { class: "article-skeleton__text" })
+      )
+    );
+  }
+  ```
+
+* Open @TODO `topic.js` in your IDE and explain the following:
+
+  * When the `Topic` page is opened, `useIndexedDb` is called to check if any of the articles have been favorited. This is necessary so that articles that have already been saved to the user's favorites can display a `Remove from Favorites` button.
+
+```js
+import { useIndexedDb } from "./indexedDb";
+import { loadArticles } from "./API";
+import { renderArticles } from "./domMethods";
+// Call renderArticles on page load
+function loadPage() {
+  useIndexedDb("articles", "ArticleStore", "get").then(results => {
+    const favorites = results;
+    loadArticles().then(data => {
+      const mappedData = data.map(article => {
+        article.favorite = false;
+        favorites.forEach(fav => {
+          if (article._id === fav._id) {
+            article.favorite = true;
+          }
+        });
+        return article;
+      });
+      renderArticles(mappedData, loadPage);
+    });
+  });
+}
+
+loadPage();
+
+```
+
+* Open @TODO `service-worker.js` in your IDE and point out the following:
+
+  * Each html file should be cached with its respective bundle.
+
+```js
+const FILES_TO_CACHE = [
+  "/",
+  "/index.html",
+  "/favorites.html",
+  "/topic.html",
+  "/assets/css/style.css",
+  "/dist/app.bundle.js",
+  "/dist/favorites.bundle.js",
+  "/dist/topic.bundle.js"
+];
+```
+
+* Open @TODO `webpack.config.js` in your IDE and point out the following:
+
+  * There are 3 different entry points created for each app. 
+
+  * Each bundle will include all dependencies brought into each entry file with ES6 `import`.
+
+```js
+entry: {
+    app: "./assets/js/index.js",
+    favorites: "./assets/js/favorites.js",
+    topic: "./assets/js/topic.js"
+  },
+  output: {
+    path: __dirname + "/dist",
+    filename: "[name].bundle.js"
+  },
+```
+
+  * Although most of the configuration can vary, depending on the app, it's important that the icon `src` points to a valid path to an icon for the application.
+
+  ```js
+  plugins: [
+    new SWPrecacheWebpackPlugin({
+      cacheId: "my-domain-cache-id",
+      dontCacheBustUrlsMatching: /\.\w{8}\./,
+      filename: "service-worker.js",
+      minify: true,
+      staticFileGlobsIgnorePatterns: [/\.map$/, /manifest\.json$/]
+    }),
+    new WebpackPwaManifest({
+      name: "Newsy app",
+      short_name: "Newsy",
+      description: "An application that allows you to view different news articles and save your favorites.",
+      background_color: "#01579b",
+      theme_color: "#ffffff",
+      "theme-color": "#ffffff",
+      start_url: "/",
+      icons: [{
+        src: path.resolve("assets/images/icons/android-chrome-192x192.png"),
+        sizes: [96, 128, 192, 256, 384, 512],
+        destination: path.join("assets", "icons")
+      }]
+    })
+  ]
+  ```
+
+* If time permits, ask the students if there are any parts of the application that they would like to spend more time going over. 
+
+  * Some students may be frustrated with the amount of time they needed to spend refactoring code so that it could be easily chunked by webpack.
+
+  * If this is the case, remind students that one of the main motivations behind chunking is reducing the bundle size of your code. While there are many strategies one can take to split up their code, it is important that it's split in a way that makes the code reusable and clear in purpose. Sometimes this means large amounts of refactoring functions. This is time well spent since they are making their code easier to test and easier for other developers to work with.
+
+---
+
+# 18. END (0 mins)
+
+* Recommend students go through the following material at home before next class if possible. These articles will help them better understand the material covered today in class.
+
+## Lesson Plan Feedback
 
 How did today's class go?
 
-[Went Well](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=pt&sentiment=positive&lesson=18.03)
+[Went Well](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=pt&sentiment=positive&lesson=18.01)
 
-[Went Poorly](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=pt&sentiment=negative&lesson=18.03)
+[Went Poorly](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=pt&sentiment=negative&lesson=18.01)
