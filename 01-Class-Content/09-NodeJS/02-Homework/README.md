@@ -12,10 +12,10 @@ The pdf will be populated with the following:
 
 * profile image
 * user name
-* links to the following: 
-    * user location via Google Maps
-    * user GitHub profile
-    * user blog
+* links to the following:
+  * user location via Google Maps
+  * user GitHub profile
+  * user blog
 * user bio
 * number of public repositories
 * number of followers

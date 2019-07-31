@@ -1,0 +1,26 @@
+{
+  "name": "unit12hw",
+  "version": "1.0.0",
+  "description": "Homework for unit 12, MySQL",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevetrilogy/unit12hw.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stevetrilogy/unit12hw/issues"
+  },
+  "homepage": "https://github.com/stevetrilogy/unit12hw#readme",
+  "dependencies": {
+    "inquirer": "^6.3.1",
+    "mysql": "^2.17.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  }
+}
