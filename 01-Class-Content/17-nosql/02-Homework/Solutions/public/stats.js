@@ -63,6 +63,7 @@ function populateChart(data) {
       }
     }
   });
+
   let barChart = new Chart(bar, {
     type: "bar",
     data: {
@@ -111,6 +112,7 @@ function populateChart(data) {
       }
     }
   });
+
   let pieChart = new Chart(pie, {
     type: "pie",
     data: {
@@ -136,6 +138,7 @@ function populateChart(data) {
       }
     }
   });
+
   let donutChart = new Chart(pie2, {
     type: "doughnut",
     data: {
@@ -164,31 +167,37 @@ function populateChart(data) {
 }
 
 function duration(data) {
-  var durations = [];
+  let durations = [];
+
   data.forEach(workout => {
     workout.exercises.forEach(exercise => {
       durations.push(exercise.duration);
     });
   });
+
   return durations;
 }
 
 function benchPress(data) {
-  var bench = [];
+  let bench = [];
+
   data.forEach(workout => {
     workout.exercises.forEach(exercise => {
       bench.push(exercise.weight);
     });
   });
+
   return bench;
 }
 
 function workoutNames(data) {
-  var workouts = [];
+  let workouts = [];
+
   data.forEach(workout => {
     workout.exercises.forEach(exercise => {
       workouts.push(exercise.name);
     });
   });
+  
   return workouts;
 }

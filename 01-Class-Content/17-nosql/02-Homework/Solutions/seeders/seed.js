@@ -1,12 +1,12 @@
-var mongoose = require("mongoose");
-var db = require("../models");
+let mongoose = require("mongoose");
+let db = require("../models");
 
 mongoose.connect("mongodb://localhost/workout", {
   useNewUrlParser: true,
   useFindAndModify: false
 });
 
-var workoutSeed = [
+let workoutSeed = [
   {
     day: new Date(Date.now()),
     exercises: [
