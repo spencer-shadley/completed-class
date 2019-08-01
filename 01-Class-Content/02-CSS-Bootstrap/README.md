@@ -25,13 +25,17 @@ The CSS framework we will use in this course is Bootstrap. Bootstrap was one of 
 * GitHub Pages
 
 ## Comprehension Check
+
 You will be employer-ready if you can answer the following questions:
-1. What is a CDN? 
-2. What is a CSS framework? 
-3. What are three benefits of using a CSS framework? 
+
+1. What is a CDN?
+2. What is a CSS framework?
+3. What are three benefits of using a CSS framework?
 
 ## Learning Objectives
-You will be employer-competitive if you are able to: 
+
+You will be employer-competitive if you are able to:
+
 * Explain the importance of CSS resets and cross-browser compatibility
 * Explain and implement content delivery network links in HTML files
 * Implement a grid layout in HTML to leverage the benefits of a CSS framework
@@ -40,11 +44,14 @@ You will be employer-competitive if you are able to:
 * Deploy to GitHub pages
 
 ## Homework: Responsiveness Assignment
+
 In this assignment, you'll create two different portfolios
+
 * The first will be building your portfolio layout using the Bootstrap CSS Framework.
 * The second will be enhancing the portfolio you made last unit with a mobile-responsive layout.
 
 ## Helpful Links
+
 * [CSS frameworks](https://en.wikipedia.org/wiki/CSS_framework)
 * [Bootstrap Official Docs](https://getbootstrap.com/)
 * [Bootstrap Components](https://getbootstrap.com/docs/4.3/components/alerts/)
