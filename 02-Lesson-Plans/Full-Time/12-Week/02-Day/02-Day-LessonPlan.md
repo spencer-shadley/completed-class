@@ -56,8 +56,6 @@ In this class, students will continue working on their Portfolios & Career HW fo
 
 ### Lesson Plan Feedback
 
-How did today's class go?
+How did today’s lesson go? Your feedback is important. Please take 5 minutes to complete this anonymous survey.
 
-[Went Well](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=ft&sentiment=positive&lesson=12.02)
-
-[Went Poorly](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=ft&sentiment=negative&lesson=12.02)
+[Class Survey](https://forms.gle/nYLbt6NZUNJMJ1h38)
