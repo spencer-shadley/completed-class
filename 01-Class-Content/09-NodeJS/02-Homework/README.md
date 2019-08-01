@@ -11,11 +11,11 @@ The user will be prompted for a favorite color, which will be used as the backgr
 The PDF will be populated with the following:
 
 * Profile image
-* User name
-* Links to the following: 
-    * User location via Google Maps
-    * User GitHub profile
-    * User blog
+* user name
+* Links to the following:
+  * User location via Google Maps
+  * User GitHub profile
+  * User blog
 * User bio
 * Number of public repositories
 * Number of followers
@@ -23,7 +23,6 @@ The PDF will be populated with the following:
 * Number of users following
 
 Refer to the [design mockup](./Assets/09-NodeJS-homework-demo.pdf).
-
 
 ## User Story
 
@@ -34,23 +33,23 @@ I WANT a developer profile generator
 SO THAT I can easily prepare reports for stakeholders
 
 ## Business Context
-When preparing a report for stakeholders, it is important to have up-to-date information about members of the development team. Rather than navigating to each team member's GitHub profile, a command-line application will allow for quick and easy generation of profiles in PDF format. 
 
+When preparing a report for stakeholders, it is important to have up-to-date information about members of the development team. Rather than navigating to each team member's GitHub profile, a command-line application will allow for quick and easy generation of profiles in PDF format.
 
 ## Acceptance Criteria
 
 GIVEN the developer has a GitHub profile
 
-WHEN prompted for the developer's GitHub username and favorite color 
+WHEN prompted for the developer's GitHub username and favorite color
 
 THEN a PDF profile is generated
-
 
 - - -
 
 ## Commit Early and Often
 
 One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
+
 * Your commit history is a signal to employers that you are actively working on projects and learning new skills.
 
 * Your commit history allows you to revert your code base in the event that you need to return to a previous state.
@@ -67,7 +66,6 @@ Follow these guidelines for committing:
 
 We would like you to have more than 200 commits by graduation, so commit early and often!
 
-
 ## Submission on BCS
 
 You are required to submit the following:
@@ -78,6 +76,6 @@ You are required to submit the following:
 
 * The URL of the GitHub repository
 
+- - -
 
----
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
