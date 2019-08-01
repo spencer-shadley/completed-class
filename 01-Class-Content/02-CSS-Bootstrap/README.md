@@ -8,6 +8,7 @@ CSS frameworks allow us to quickly style a web application so we can focus on _b
 The CSS framework we will use in this course is Bootstrap. Bootstrap was one of the first CSS frameworks and is, at the time of this writing, the most widely used in production. It was created by the developers at Twitter for the reasons discussed above and released as an open source project in 2011, meaning anyone could then use Bootstrap in their applications for free. There are now dozens of CSS frameworks to choose from, but learning Bootstrap will set you up to quickly adapt to almost any CSS framework as they tend to share the same underlying concept of a grid system structured by rows and columns.
 
 ## Key Topics
+
 * Developer tools
 * CSS resets
 * Typography
