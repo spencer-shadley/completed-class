@@ -1,448 +1,711 @@
-## 04-Day Lesson Plan - jQuery Begins <!--links--> &nbsp; [⬅️](../03-Day/03-Day-LessonPlan.md) &nbsp; [➡️](../05-Day/05-Day-LessonPlan.md)
+# 4.1 Lesson Plan - Intro to Web APIs (10:00 AM) <!--links--> &nbsp; [⬅️]() &nbsp; [➡️]()
 
-### Slideshow
+## Overview
 
-* This lesson's slides are available on Google Drive here: [02-4 jQuery Begins](https://docs.google.com/presentation/d/1QnP2YtA5yA2UWen0TQUE9PEt6Iyl_9-ZvdxHSSxtQak/edit?usp=sharing)
+Todays class will be students first introduction to the DOM. We are going to use web APIs to get elements, set attributes, create elements, append elements, and even work with timers.
 
-* To add slides to the student-facing repository, download the slides as a PDF by navigating to File > "Download as" and choose "PDF document." Add the slide PDF file to your class repository along with other necessary files.
+## Instructor Notes
 
-* **Note:** Editing access is not available for this document. If you wish to modify the slides, please create a copy by navigating to File > "Make a copy...".
+`Complete activities 1-11  in 04-web-apis`
 
-- - -
+* This is a critical unit as it introduces real-world use cases for the programming concepts students learned in the previous unit (JavaScript) and will set them up for success when transitioning to front-end frameworks (React) at the end of the course.
 
-### Overview
+* JavaScript is what ties together HTML and CSS and brings the user experience to life. Let students know that the work they are doing with JavaScript now will pay off heavily as the course proceeds.
 
-In this class, we will be introducing students to the concept of DOM Manipulation using both JavaScript and jQuery.
+* Students will be working with JavaScript throughout the whole course, be sure to remind them often that these are the building blocks for success.
 
-`Summary: Complete activities 01-12 in Unit 04`
+* That said, the activities are designed to encourage independent exploration and experimentation as there are dozens of DOM methods available to developers and we will only scratch the surface here with those most commonly used. So have fun!
 
-##### Instructor Priorities
+## Class Objectives
 
-* Students should understand how to incorporate the jQuery library into their applications
-* Students should complete the `06-SandwichClick` activity.
-* Students should complete the `07-TriggerRandom` activity.
-* Students should complete the `08-LotteryGenerator` activity.
-* Students should understand how the `10-CaptainPlanetGame` works and be able to add new on-click events to it.
-* Students should complete the `11-FridgeGame` Activity.
+* By the end of class students will be able to:
 
-##### Instructor Notes
+  * Use the console to inspect the `window` object via `this`.
 
-* Today's class is focused on JavaScript and jQuery DOM manipulations. As you discuss each of the activities, also try to offer your students some perspective on code organization strategies. While the activities may be too complex to live-code, consider at least outlining how you would approach them if you had to "start from scratch". Often, students are most confused by how to start activities when it comes to the separation of variables, events, and functions.
+  * Use various web APIs to traverse the DOM.
 
-* In today's class, expect students to have many issues with jQuery syntax. Be encouraging and let them know that the syntax will seem more intuitive over time. For now, they should just try to utilize the syntax as is.
+  * Query the DOM for elements by their selector.
 
-* Starting with today's class, slides will play a less prominent role. Warn students of this and let them know that their time spent coding is where real learning will happen.
+  * Use `setAttribute()` to add styles to specific elements.
 
-* Today's class is also focused on providing students with additional exposure to jQuery for DOM manipulation. As an instructor, ensure students understand the [10-CaptainPlanetGame](../../../../01-Class-Content/04-jquery/01-Activities/10-CaptainPlanetGame) and the [11-FridgeGame](../../../../01-Class-Content/04-jquery/01-Activities/11-FridgeGame).
+  * Create an entire HTML page using only JavaScript.
 
-* Also, as a heads-up, next unit there will be an entire class allotted for reviewing JavaScript. So if your students seem winded -- give them a heads-up as well.
+  * Use timers/intervals to execute code based on some amount of time passing.
 
-* Have your TAs reference [04-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1oQJ_WfCRs8tYzWbIxoDmMZLLMxDm7SFY/view?usp=sharing) to help keep track of time during class.
+  * To use event listeners such as click, keydown, and change.
 
-### Sample Class Video (Highly Recommended)
-* To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a48b6376-8fd3-4475-a020-b67dfcf6fed2)
+### 1. Instructor Do: Welcome Students (10 mins)
 
-- - -
+* Welcome students to class
 
-### Class Objectives
+* Open the slide deck [4.1 SlideShow](https://docs.google.com/presentation/d/1TprKO9KQMBEhIC6f0UNvcQkY38lS0XOmZIt6zwzjWdE/edit#slide=id.g5bb6559bdb_0_10) and follow these prompts on their corresponding slides:
 
-* To gain a cursory understanding of the jQuery library.
-* To understand the steps needed to utilize the jQuery library to manipulate the DOM.
-* To use jQuery DOM manipulation to create simple games.
+  * **Web APIs (Title)**: Today will be an introduction to the DOM.
 
-- - -
+  * **What are the three building blocks of the web?**: What are the 3 main components of the web?
 
-### 1.  Instructor Do: Welcome Students (1 min)
+  * **Building Blocks of the Web**: The building blocks of the web are HTML, CSS, and JS.
 
-* Welcome students to class then open the slide deck [02-4 jQuery Begins](https://docs.google.com/presentation/d/1QnP2YtA5yA2UWen0TQUE9PEt6Iyl_9-ZvdxHSSxtQak/edit?usp=sharing).
+  * **How (or where) do we connect all three?**: How do all three of these building blocks come together?
 
-### 2.  Instructor Do: Admin Items (5 mins)
+  * **They are connected in the web browser**: The browser brings together HTML, CSS and JavaScript to create interactive webpages and applications.
 
-* Spend a few moments going through the administrative slides. Specifically, let students know that going forward there will be less utilization of slides. Remind them that the best way to learn to code is to actually code.
+  * **What is a web browser?**: What exactly is a web browser?
 
-### 3.  Instructor Do: Today's Class (1 min)
+  * **Web Browser**: A web browser, or browser, is a program used to access information on the World Wide Web. Each individual webpage, image, or video can be accessed via a specific Unified Resource Link(URL)
 
-* Go through the day's objectives.
+  * **What is an AP?**: What is an API?
 
-### 4.  Instructor Do: DOM Manipulation (5 mins)
+  * **Application Programming Interface (API)**: An API (Application Programming Interface) is a set of features and rules that exist inside an application enabling interaction with the it through software. This is opposed to having interaction happen solely through user interaction. 
 
-* Spend a few moments explaining the concept of DOM manipulation. If you are hazy about the concept of the DOM, you may want to read this article <https://css-tricks.com/dom/>.
+  * **What are web APIs?**: What are web APIs?
 
-* Effectively the DOM is the version of HTML / CSS interpreted by the browser.
+  * **Web APIs**: Web APIs are built into your web browser and contains methods that allow us to manipulate a web page via JavaScript.
 
-* With regards to the slide, we can use JavaScript and jQuery to modify the DOM to dynamically change the HTML that gets displayed.
+* Call on one or two students to provide an answer, then proceed to the first activity of the day.
 
-* Visit the to-do list site on the slide [http://todomvc.com/examples/jquery/#/all
-  ](http://todomvc.com/examples/jquery/#/all) to provide a simple example that the addition of to-dos is effectively adding HTML in real-time.
+### 2. Student Do: this Window (10 mins)
 
-* You can even go into the Chrome Developer tools to show this more clearly.
+* Direct students to the first activity, found in [01-Stu_This-Window](../../../../01-Class-Content/04-web-apis/01-Activities/01-Stu_This-Window)
 
-### 5.  Instructor Demo: DOM Manipulation with Plain JS (10 mins)
+```md
+# This, The Window, and the DOM
 
-* Proceed with the first demonstration of class: [01-DOM_Manipulation](../../../../01-Class-Content/04-jquery/01-Activities/01-DOM_Manipulation). In this first demo, you will show students how to modify the DOM using vanilla JavaScript. In later portions of the class, you will re-do this activity using jQuery.
+In this activity you will `console.log(this)` and dig around inside the returned object, answering some questions along the way.
 
-* This example is broken down into parts. Reveal each file one by one.
+## Instructions
 
-  * `1.html` is intended to simply show the empty div `empty-div` that we've created. This div will be used to hold our dynamic content.
+* First open the provided `index.html` in the browser and navigate to the console.
 
-  * `2.html` is intended to show that we can "select" this div using `document.getElementById`. We can then populate the div using the `innerHTML` property. At this point, opening the file in the browser will showcase the text being displayed.
+* What is logged?
 
-      ![image-1](Images/1-js-generators-1.png)
-      ![image-2](Images/1-js-generators-2.png)
+  * The `window` object. In this use case, `this` refers to the window. The `window` is an object representation of an open window in a browser.
 
-  * `3.html` is intended to show that adding another line of `innerHTML` will replace the earlier text.
+* Click into the `window` object and begin looking at the numerous properties and methods that it contains.
 
-      ![image-3](Images/1-js-generators-3.png)
-      ![image-4](Images/1-js-generators-4.png)
+* Make your way down to `document` and click into it.
 
-  * `4.html` shows that this replacement can be corrected if we create a new div dynamically and use the `appendChild` method to display it as well.
+* Spend some time looking through the properties and methods contained within `window.document`.
+```
 
-      ![image-5](Images/1-js-generators-5.png)
+### 3. Instructor Do: Review this Window and introduce the DOM (10 mins)
 
-  * `5.html` shows that we can use the `setAttribute` method to change the CSS style
+* Return to [slide deck](https://docs.google.com/presentation/d/1TprKO9KQMBEhIC6f0UNvcQkY38lS0XOmZIt6zwzjWdE/edit#slide=id.g5bb6559bdb_0_10) and follow the remaining prompts corresponding to the slides.
 
-      ![image-6](Images/1-js-generators-6.png)
-      ![image-7](Images/1-js-generators-7.png)
-      ![image-8](Images/1-js-generators-8.png)
-      ![image-9](Images/1-js-generators-9.png)
+  * **What is window.document?**: What is `window.document`?
 
-* Go over any questions from the previous example, then slack out the file `5.html`.
+  * **The Document Object Model (DOM)**: The DOM is an Object-oriented representation of HTML. It allows us to use JavaScript to interact with the document.  
 
-### 6.Students Do: Generating HTML with Plain JS (10 mins)
+  * **What is the node tree of this HTML?**: What would the node tree of this HTML look like?
 
-* Slack out the following file and instructions:
+  * **What are the parent, child, and sibling nodes?**: What are the parent, child, and sibling nodes of this node tree?
 
-* **File:**
+  * **Node Relationships: Parent, Child, Sibling**: Cover the solution with students and explain the relationships and node tree as a whole.
 
-  * `drinklist-unsolved.html` in `02-JSDrinkList/Unsolved`
+  * **What is traversing the DOM?**: What is traversing the dom?
 
-* **Instructions:**
+* Call on one or two students to provide an answer, then proceed to demoing DOM Traversal.
 
-  * Using the file sent to you as a starting point, add the missing code such that your JavaScript generates HTML content that displays all of the drink options.
+### 4. Instructor Do: Traverse The DOM (10 mins)
 
-  * HINT:  You will need a for-loop. Inside your for-loop you will need to use each of the following methods: `createElement`, `.innerHTML`, and `.appendChild`.
+* Navigate to the MDN Docs on [The DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) and ask the class the following question(s):
 
-  * BONUS: Instead of using a `for` loop, try searching about the use of the jQuery `.each` method.
+* What is our root element?
 
-### 7.  Instructor Do: Review Activity (5 mins)
+  * The document (#document)
 
-* Review the activity. In discussing the solution, point out how:
+* Where is the HTML node?
 
-  * We utilized the `getElementByID` method to grab the div we'll be placing content into. We then store this element into a variable.
+  * document.documentElement (html)
 
-  * We then use a for-loop to loop through the drink list.
+* Where is the head of an HTML page?
 
-  * Inside the for-loop we continually create divs and change the `innerHTML` of each div to match the contents of each drink in the array.
+  * document.head (head)
 
-  * Finally, we used the `appendChild` method to add the new divs we created to the original one.
+* Where is the body of an HTML page?
 
-    ![image-10](Images/2-js-drink-list-1.png)
-    ![image-11](Images/2-js-drink-list-2.png)
+  * document.body (body)
 
-* Slack out the solution and the [video review](https://www.youtube.com/watch?v=9_9-NeU2L_U) when complete
+* We can use these as starting points to begin moving our way down the DOM tree.
 
-### 8. Instructor Do: Introduce jQuery (10 mins)
+* Open the Chrome Dev Tools and enter the following commands one by one.
 
-* Spend a few moments to introduce the concept of jQuery.
+  ```js
+  console.log(document.body);
 
-* In your discussion, explain that:
+  console.log(document.body.children);
 
-  * JavaScript alone is not ideal for performing these kinds of HTML modifications. Instead, jQuery provides a simplified syntax for doing the same tasks.
+  console.log(document.body.children[3]);
 
-  * Explain the concept of a "library" (i.e. a pre-built set of JavaScript methods that allow you to more easily perform functions.) Try to have students see how this concept of a library is similar to the concept of a CSS Framework like Bootstrap.
+  console.log(document.body.children[3].childNodes[7]);
 
-  * Go through the slides on use cases.
+  console.log(document.body.children[3].childNodes[7].style.fontSize = "20px");
+  ```
 
-### 9.  Instructor Do: DOM Manipulation with jQuery (10 mins)
+  * When using the style method, properties with two words such as font-size become a single word and camelCased. Font-size becomes fontSize.
 
-* Now return to the example completed before. But this time, use [03-jQueryGenerators](../../../../01-Class-Content/04-jquery/01-Activities/03-jQueryGenerators).
+* Point out the following:
 
-* As with the last case, this one is divided into separate files to make it easier to explain in pieces.
+  * `.children` is returned as an Array and to move forward with it, we must specify the index. It returns all children *elements*.
 
-  * `1.html` shows how we add in the jQuery library script at the top and that we use the $ selector to grab the div of interest. It also shows that we can change the HTML and append in just two lines. Be sure to point out how much simpler this is then the plain javascript version.
+  * `.childNodes` is also returned as an Array and to move forward also requires an index to be given. It returns all children *nodes*.
 
-    ![image-12](Images/3-jQuery-generators-1.png)
+  * When using the `style` method, properties with two words such as `font-size` become a single word and camelCased. `font-size` becomes `fontSize`.
 
-  * `2.html` points out that we could also create separate divs on the fly.
+  * Here is one more example of `.style`.
 
-  * `3.html` points out that we can change the HTML class as well.
+  ```js
+  console.log(document.body.children[3].childNodes[7].parentElement.style.color = "red");
+  ```
 
-    ![image-13](Images/3-jQuery-generators-2.png)
-    ![image-14](Images/3-jQuery-generators-3.png)
+* For the final slide and demo, return to the slide deck [4.1 SlideShow](https://docs.google.com/presentation/d/1TprKO9KQMBEhIC6f0UNvcQkY38lS0XOmZIt6zwzjWdE/edit#slide=id.g5bb6559bdb_0_10) and follow these prompts on their corresponding slides:
 
-* Slack out the file `3.html` when complete.
+* 19. **Our Goal Today**: The goal of the day is to build a speed reading application. We will receive an input of how many words per millisecond a user would like to read at, and then display one word at a time to our user at the specified speed.
 
+* Ask the class the following question(s):
 
-### 10. Students Do: Generating HTML with jQuery (10 mins)
+  * What do we not (yet) know to build this application?
 
-* Proceed with the drinkList exercise. This time students will re-complete it using jQuery.
+  * What do we think the steps are to build this application?
 
-* Slack out the following file and instructions.
+* Use student answers to transition to the next activity.
 
-* **File:**
+### 5. Student Do: Traverse That DOM (10 mins)
 
-  * `jquery-drink-list-unsolved.html` in `04-jQueryDrinkList/Unsolved`
+* Direct students to the next activity, found in [02-Stu_Traverse-That-DOM](../../../../01-Class-Content/04-web-apis/01-Activities/02-Stu_Traverse-That-DOM/Unsolved)
 
-* **Instructions:**
+```md
+# Traverse That DOM
 
-  * Re-factor (re-write) your previous drinkList code from earlier, but this time use jQuery to complete all of the same tasks.
+In this activity you are going to use the Chrome Dev Console and `.style.property` to change the styling of elements on our page.
 
-  * Your final code should NOT have any of the following methods: `createElement`, `innerHTML`, or `appendChild`.
+## Instructions
 
-  * HINT: Don’t forget to “incorporate” jQuery before you begin.
+* Create an `script`
 
-### 11. Instructor Do: Review Activity (5 mins)
+* Using the provided `index.html`, complete the following
 
-* Review the previous exercise. In your review point out each of the following
+  * Target the div with the ID of `articles`.
 
-  * We used jQuery to grab the `drink-options` div.
+    * Change its font size to `50px`.
 
-  * We then created a new div and added content about the drinks (in a single line)
+    * Change its first childs, last child to have a font color of `blue`.
 
-  * We then looped through and used the `append` to add the content to the page.
+    * Change its previous sibling to have a background color of `black`.
 
-      ![image-15](Images/4-jQuery-drink-list-1.png)
+  * Target the div with the ID of `main`.
 
-### 12. Instructor Do: On Click Basic (5 mins)
+    * Change its second child node so the text is `underlined`.
 
-* Open the file `onclick.html` in `05-OnClickBasic`. Then walk students through the syntax for `on-click` events. Specifically, point out how:
+    * Change its last child element to have a font size of `50px`.
 
-  * The code has a jQuery selector to select the HTML element (button, header, anything)
+    * Change its first child element to have a font color of `orange`.
 
-  * It then has a `.on('click', function(){})` syntax for capturing the event.
+    * Change its last child elements parent to have a font size of `40px`.
 
-  * Inside that event's function is the code that results from the click.
+## Bonus
 
-      ![image-16](Images/5-onclick-basic.png)
+* Change 3 other elements styles that we did not ask for above.
+```
 
-* Students will likely be confused by the syntax. Let them know to use it for now -- and that it will make more sense over time as we learn other concepts.
+### 6. Instructor Do: Review Traverse That DOM (5 mins)
 
-### 13. Partners Do: Sandwich Clicking (20 mins)
+* Open [02-Stu_Traverse-That-DOM Solved/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/02-Stu_Traverse-That-DOM/Solved) in your IDE and point out the following points to students:
 
-* Slack out the following file and instructions. If you are attempting the bonus, find some fun images online.
+  * We first gather our two main divs into variables for easy access.
 
-* **File:**
+  ```js
+  var artDiv = document.getElementById("articles");
+  var mainDiv = document.getElementById("main");
+  ```
 
-  * `sandwich-click-unsolved.html` in `06-SandwichClick/Unsolved`
+  * For each of the following lines, ask a student to explain what the line of code achieves.
 
-* **Instructions:**
+  ```js
+  artDiv.children[0].lastElementChild.style.color = "white";
+  artDiv.children[0].style.fontSize = "50px";
+  artDiv.previousElementSibling.style.background = "black";
 
-  * Add in the missing code such that clicking any of the sandwiches causes…
+  mainDiv.childNodes[1].style.textDecoration = "underline";
+  mainDiv.lastElementChild.style.fontSize = "50px";
+  mainDiv.firstElementChild.style.color = "white";
+  ```
 
-    1. An alert message to pop-up saying something snarky about the sandwich type.
+* Ask the class, "What other properties or attributes can be set using JS?". 
 
-    2. A second alert message that displays to the user the number of that specific sandwich they’ve eaten.
+  * We can change any attribute or property using only JavaScript.
 
-    3. HINT: You will need counter variables.
+* Ask the class, "How would we do that?". Call on one or two students and then proceed to the next demo.
 
-  * BONUS: Add an image to the `image-div` on the click event.
+### 7. Instructor Do: Setting Attributes (10 mins)
 
-### 14. Instructor Do: Review Activity (5 mins)
+* Navigate to [03-Ins_Setting-Attribute index.html](../../../../01-Class-Content/04-web-apis/01-Activities/03-Ins_Setting-Attribute/index.html) and open it in your browser.
 
-* Review the activity. Be sure to talk about:
+* Ask the class, "How do we feel about this style?"
 
-* The use of counter variables at the top.
-![image-17](Images/6-sandwich-1.png)
+* We can traverse the DOM and set styles via the `.style` method, now we are going to learn about `.setAttribute`.
 
-* The on-click events tied to each of the sandwich headers. The on-click events trigger the counter to go up and creates the alerts.
-![image-18](Images/6-sandwich-2.png)
-![image-19](Images/6-sandwich-3.png)
+* `setAttribute` is a DOM method that allows us to add any attribute to an element. We can use it to add styles, hrefs, img srcs, and any other attribute you would like to add.
 
-* In discussing the bonus, point out how images can be added. Note that we are injecting HTML with the src pointing to the jpg.
-![image-20](Images/6-sandwich-4.png)
+* If the attribute already exists, the value will be updated. If there is no attribute, a new attribute is added with the specified name and value.
 
-* Slack out the solution and the [video review](https://www.youtube.com/watch?v=6BLReDBUZRk) when done.
+* Navigate to [03-Ins_Setting-Attribute script.js](../../../../01-Class-Content/04-web-apis/01-Activities/03-Ins_Setting-Attribute/script.js) in your IDE.
 
-- - -
+  * When we uncomment this code and navigate back to the page styles will have been changed and an image added, all via JavaScript.
 
-### 15. LUNCH BREAK (30 mins)
+* Here we used `querySelector` and `querySelectorAll` to gather our elements into variables rather than using the more specific document methods. 
 
-- - -
+  * We used `querySelector` because it allows us to select an element by tag, class name, or ID. This makes it more flexible than using `getElementById` or `getElementByClassName`.
 
-### 16. Partners Do: Trigger Random (12 mins)
+  * We used `querySelectorAll` because it allows us to select all elements of the same tag, class name, or ID. This is much more useful than `getElementsByTagName` or other group selectors.
 
-* Slack out the following file and instructions.
+  * These two methods are the most useful and versatile because they can be used to target any element we would ever like to target.
 
-* **File:**
+* Ask the class, "How was all of the styling done if there is no CSS?"
 
-  * `trigger-random-unsolved.html` in `07-TriggerRandom/Unsolved`
+  * All the styling done to the page uses the method, `.setAttribute`.
 
-* **Instructions:**
+  * The `setAttribute` method takes in two arguments, first is the name of the attribute, and the second is its value. i.e., `setAttribute("style", "color:white;");
 
-  * Add in the missing code such that clicking the big blue button triggers a random number (between 1 and 1000) to be selected and prominently displayed in the random-number div.
+  * The major difference between setting styles with `.setAttribute` vs the `.style` methods is that when using `setAttribute` we enter the CSS properties and values like we would in a normal external stylesheet or inline styling.
 
-    * Hint: None. You got this.
+* Answer any questions students may have and let them know its their turn to work with `setAttribute()`.
 
-### 17. Instructor Do: Review Activity (5 mins)
+### 8. Student Do: Setting Attributes (10 mins)
 
-* Review the activity. Be sure to point out that:
+* Direct students to the next activity, found in [05-Stu_Setting-Attributes](../../../../01-Class-Content/04-web-apis/01-Activities/05-Stu_Setting-Attributes/Unsolved).
 
-  * We latched onto the `random-button` using its ID. Let them know where to focus their attention: Not the classes, and not the spans. The ID is what mattered in this case.
+```md
+# Setting Attributes
 
-    ![image-21](Images/7-trigger-random-1.png)
+In this activity you are going to use JavaScript to add `hrefs` to `a` tags, `src` to `img` tags, along with some styles all while traversing the DOM.
 
-  * We then created a click event tied to this `random-button`. This event triggers a random number between 1 and 1000 to be generated and printed to the HTML.
+## Instructions
 
-    ![image-22](Images/7-trigger-random-2.png)
+* Open `index.html` and familiarize yourself with the structure of the HTML.
 
-* Slack out the solution when done.
+* Inside of your provided `script` complete the following: 
 
-### 18. Partners Do: Lottery Generator (15 mins)
+  * Give a `src` and `alt` attribute to the 3 provided `img` tags.
 
-* Open the file `lottery-generator-solved.html` in the browser. Show students how the final result of their work will look.
+  * Give a `href` attribute to the 3 provided `a` tags.`
 
-* Then slack out the following file and instructions.
+  * Add styles via `setAttribute` to make the page look decent. Recommended: margins and padding.
 
-* **File:**
+* **Hint**: You may need a for loop!
+```
 
-  * `trigger-random-unsolved.html` in `07-TriggerRandom`
+### 9. Instructor Do: Review Setting Attributes (5 mins)
 
-* **Instructions:**
+* Navigate to [05-Stu_Setting-Attributes script.js](../../../../01-Class-Content/04-web-apis/01-Activities/05-Stu_Setting-Attributes/Solved/script.js) and open it in your IDE, point out the following to students:
 
-  * Using the code from the previous random number generator as a starting point, create a lottery generator.
+  * We first gather all of our elements we would like to target.
 
-    * In our case, the lottery number should pick 9 random numbers (and always 9 numbers). As an example: 886563264.
+  ```js
+  var main = document.getElementById("main");
+  var sitesEl = document.querySelectorAll("sites");
+  var site1El = document.querySelector(".site1");
+  var site2El = document.querySelector(".site2");
+  var site3El = document.querySelector(".site3");
+  var siteTitles = document.querySelectorAll("h4");
+  ```
 
-    * Display this number in the random-number div.
+  * We can then use the array returned by `.children` to navigate and setAttributes to elements.
 
-    * Then when a user clicks again, have the code create a new row with the latest number at the top.
+  ```js
+  site1El.children[1].setAttribute("href", "https://google.com");
+  ```
 
-### 19. Instructor Do: Review Activity (5 mins)
+  * Whenever we use `setAttribute` it takes two arguments. The first being the name of the attribute and the second its value.
 
-* Review the activity. Be sure to discuss that:
+  ```js
+  site1El.children[1].children[0].setAttribute("src", "http://placekitten.com/200/200");
+  site1El.children[1].children[0].setAttribute("style", "padding:10px;");
+  ```
 
-  * We needed to create a for loop that created 9 different numbers. Without this for loop, we couldn't guarantee that we'd have 9 numbers. Also, point out that we are using `prepend` as opposed to `append` so that the newest number shows up at the top.
-    ![image-23](Images/8-lottery-1.png)
+* Answer any questions that remain and then dismiss the class for their break.
 
-  * The end result of the lottery looks like the below.
-    ![image-24](Images/8-lottery-2.png)
+### 10. BREAK (45 mins)
 
-* Slack out the solution and [video review](https://www.youtube.com/watch?v=Nh4wxhzePIs) when done.
+### 11. Instructor Do: Create and Append (10 mins)
 
-### 20. NumberChecker (15 mins)
+* Welcome students back from break and get right into our next topic, creating HTML elements and appending them to the DOM via JavaScript.
 
-* If any additional time remains, slack out the following activity. This activity is useful for students in completing the homework, but it is not necessary for them to complete it in class.
+* Navigate to [06-Ins_Create-Append/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/06-Ins_Create-Append/Solved/index.html) in your browser and demo its functionality.
 
-* **File:**
+  * It will ask for a tag to create using prompts, and append the given element to the page.
+  
+  * If a proper tag name is not given it will let the user know and not create the element.
 
-  * `Unsolved/number-checker.html` in `09-NumberChecker`
+* Ask the class, "How was this functionality achieved?"
 
-* **Instructions:**
+  * This is done using the DOM methods `.createElement` and `.appendChild`.
 
-* Using the file slacked out as an example, create code in which:
+  * When using `.createElement` we pass in the name of the tag we would like to create and store it as a variable so we can later add it to the DOM.
 
-  * A computer picks a random number between 1 and 4
+  ```js
+  var newDiv = document.createElement("div");
+  ```
 
-  * Users then “click” the buttons numbered 1 – 4.
+  * For us to show our newly created div on the page, we need to append it to the DOM via an existing element.
 
-  * If the user’s number matches the computer’s number, display text informing them that they won in the Result card. Otherwise, display text informing them that they lost.
+  ```js
+  document.body.appendChild(newDiv);
+  ```
 
-  * If you finish early, try to improve the aesthetics.
+  * The above code would `append` newDiv to the body as a child element.
 
-### 21.  Instructor Do: Captain Planet Game  (5 mins)
+* Answer any questions before proceeding to the next activity.
 
-* Open the file [captain-planet-game.html](../../../../01-Class-Content/04-jquery/01-Activities/10-CaptainPlanetGame/Solved/captain-planet-game.html) in `10-CaptainPlanetGame/Solved` in the Browser. Click on various buttons and show students how Captain Planet is being modified in response to the clicks.
+### 12. Student Do: Look Ma! No HTML! (30 mins)
 
-  ![image-1](Images/1-captain-planet.png)
+* Direct students to the next activity, found in [07-Stu_LookMaNoHTML](../../../../01-Class-Content/04-web-apis/01-Activities/07-Stu_LookMaNoHTML/Unsolved).
 
-### 22.  Students Do: Pseudocode Captain Planet  (5 mins)
+```md
+# Look Ma! No HTML
 
-* Proceed with the first activity, in which you ask students to pseudocode the game's logic and structure.
+In this activity you are going to use DOM methods to create an entire HTML page.
 
-### 23.  Instructor Do: Review Pseudocode (5 mins)
+## Instructions
 
-* Allow students to share their pseudocode breakdowns.
+* You have been provided a standard HTML document. 
 
-* Then show your own pseudocode outline (shown on slide).
+* You may only work inside your `script`.
 
-### 24.  Students Do: Create a Superpower Captain Planet (12 mins)
+* Inside `script` and using only DOM methods, create an entire HTML page. It should include:
 
-* Slack out the code for the game.
+  * A centered h1 with a centered h2 under it.
 
-* Then task students with dissecting it, and adding additional code to create a new power for Captain Planet. At base, this requires them to create a new button, create a new on-click event, and then create code that changes the CSS for Captain Planet in response to button clicks.
+  * A centered image, with a center caption under it.
 
-* **Folder:**
+  * A list of your favorite foods (or some other list of favorites).
 
-  * `10-CaptainPlanetGame` in `10-CaptainPlanetGame/Unsolved`
+  * Some extra styling to all elements.
+```
 
-* **Instructions:**
+### 13. Instructor Do: Review Look Ma No HTML! (5 mins)
 
-  * Look at the jQuery API Docs [(https://api.jquery.com/)](https://api.jquery.com/) and add a button of your own that gives Captain Planet a new power.
+* Navigate to [07-Stu_LookMaNoHTML/Solved](../../../../01-Class-Content/04-web-apis/01-Activities/07-Stu_LookMaNoHTML/Solved)and open the solved `script.js` file in your IDE.
 
-  * Examples:
+* The solution is split into 4 sections, go through each section with the class.
 
-    * Click to… Stretch Captain Planet!
-    * Click to… Trigger a maniacal laugh!
-    * Click to… Create clones of Captain Planet!
-    * Click to… Create fire or water (hint: images)!
+  * The first portion contains all of our references to existing elements, as well as all of our `.createElement` calls.
 
-  * Slack out a screenshot of the working example.
+  * The next portion sets all of the `textContent` of our created elements.
 
-* **Instructor:**
-  * Feel free to give students additional time here if necessary. Make sure the majority of your students have at least a basic example that works.
+  * Next we begin the process of appending all of our created elements with the newly modified text content.
 
-### 25.  Instructor Do: Review Captain Planet    (5 mins)
+  * Finally we go through all of our elements and use `.setAttribute` to change the styles and set image sources.
 
-* Have a student with a working solution share their code with you. Then ask them to present at the front of the class.
+* Answer any questions students have about the solution and move onto our final topic of the day, timers.
 
-* If no one has a working example, quickly create code of your own that "stretches" Captain Planet. You can use the version found in [10-CaptainPlanetGame/Solved/captain-planet-game.html](../../../../01-Class-Content/04-jquery/01-Activities/10-CaptainPlanetGame/Solved/captain-planet-game.html) as an example.
+### 14. Instructor Do: Timers and Intervals (10 mins)
 
-### 26.  Instructor Do: jQuery Recap   (5 mins)
+* Executing code on a timer or interval allows us to set some amount of time to pass between functionality.
 
-* Next, spend a few moments going through the jQuery recap slides. The most important thing to explain in discussing these slides is the fact that jQuery is "capturing" HTML elements using the `$()`, and that we are then applying various methods to that element (or a different one in response).
+* Ask the class, "Where are timers used in applications?"
 
-* Finally, point out that students shouldn't expect to memorize all of the jQuery library. Point out that coding is all about understanding a general concept, and then "looking up" the exact code when needed.
+  * Countdowns
 
-* Field any questions that remain before proceeding to the next activity.
+  * Calendars
 
-### 27. Students Do: Fridge Game  (30 mins)
+  * Games
 
-* Open the solution file [11-FridgeGame](../../../../01-Class-Content/04-jquery/01-Activities/11-FridgeGame/Solved/fridge.html) in `11-FridgeGame/Solved`, and show students how the application works. In short, the application allows users to click on letters from a menu and have those letters appear on the fridge.
+* Navigate to [08-Ins_Timers-Intervals](../../../../01-Class-Content/04-web-apis/01-Activities/08-Ins_Timers-Intervals) and open the `index.html` in your browser. Demo the application to students and point out the following:
 
-* Then, slack out the below folder and instructions.
+  * After the countdown completes, an image is loaded to the browser all without user interaction.
 
-* **Folder:**
+* Ask the class, "What allowed us to do this?"
 
-  * `Unsolved` in `11-FridgeGame/Unsolved`
+  * The `setInterval` function allows us to complete code after a specific amount of time has passed.
 
-* **Instructions:**
+* Navigate to [08-Ins_Timers-Intervals script.js](../../../../01-Class-Content/04-web-apis/01-Activities/08-Ins_Timers-Intervals/script.js) and open it in your IDE. Explain the following points to students:
 
-  * Working in groups of 3, complete the code for the fridge activity such that:
+  * First we declare our `setInterval` function and assign it to a variable. We will get to why we store it in a variable at the end.
 
-    1. JavaScript dynamically generates buttons for each of the letters on the screen.
+  ```js
+  var timerInterval = setInterval(function() {
+  ```
 
-    2. Clicking any of the buttons leads the SAME letter to be displayed on the screen.
+  * Next, we decrement our `secondsLeft` variable that we initially set to `10`.
 
-    3. Hitting the clear button erases all of the letters from the fridge.
+  ```js
+  secondsLeft--;
+  ```
 
-  * Note: This is a challenging exercise. You may want one person to type, while the other two watch over to catch bugs and/or research necessary snippets.
+  * As each second passes we set the textContent of our `timeEl` to display the `secondsLeft` variable concatenated with a string. If our `secondsLeft` is 0, we then `clearInterval` and execute our `sendMessage` function.
 
+  ```js
+  timeEl.textContent = secondsLeft + " seconds left till colorsplosion.";
+  if(secondsLeft === 0) {
+    clearInterval(timerInterval);
+    sendMessage();
+  }
+  ```
 
-### 28. Instructor Do: Review Fridge Game   (10 mins)
+* Sometimes programmers want functionality to happen after a set period of time, and not all right away. We use timers to achieve this result.
 
-* Spend the time necessary to ensure that the majority of students have a conceptual understanding of how the Fridge Game's code works. In explaining the solution, point out the following:
+* `setTimeout` and `setInterval` are two methods that allow for us to execute code based on time.
 
-  * The creation of an array that holds all of the letters;
+  * These two methods are actually above the `document` object and are attached directly to the `window`.
 
-  * The for loop used to take letters from the array, associate each with a data-attribute and text, and then append them onto the page. Students will be confused about the concepts of `.addClass`, `.attr`, and `.text`. Spend the time necessary to explain each.
+* When using either of these timer methods, The first parameter is a function to be executed. The second parameter indicates the amount of time in milliseconds before execution.
 
-    ![image-2](Images/2-fridge-1.png)
+  ```js
+  setTimeout(function(){
+    console.log("complete");
+  }, 1000);
 
-  * The on-click event needed to capture button clicks. Be sure to point out how we use the data-attribute (via the `.attr` method) to know which letter was clicked. This is a **KEY POINT**.
+  setInterval(function(){
+    console.log("this will show every second");
+  }, 1000)
+  ```
 
-    ![image-3](Images/2-fridge-2.png)
+* `setTimeout` will execute the body of the function one time, once the allotted amount of time has passed.
 
-* Slack out the solution and the [video review](https://www.youtube.com/watch?v=gC529k3KzmE) for the activity.
+  * `setInterval` will execute the body of the function every X amount of milliseconds as specified in the second argument to the `setInterval` function.
 
-### 29. Instructor Do: Crystal Example (9 mins)
+* Ask the class why they think we might need to clear an interval that we started.
 
-* Next, open the files found in the folder [12-CrystalExample](../../../../01-Class-Content/04-jquery/01-Activities/12-CrystalExample). These files closely match the students' homework assignment.
+  * If we do not `clearInterval`, the interval would continue to run indefinitely. We stored our `setInterval` function in a variable so we could pass that instance into our `clearInterval`, stopping execution.
 
-* They are included in the day's lesson primarily so students can refer back to them while working on their homework assignment. Use your discretion as to how much extra help your students need to complete their homework. If students need a lot of extra help and you have some extra time available, go through the examples one by one as a class. Otherwise just demo the final example and highlight the key pieces of code, suggesting students go through the rest on their own.
+  * `setTimeout` has its own method for stopping execution, `clearTimeout`.
 
-### 30. TAs Do: Intro HW    (2 mins)
+* Answer any questions students may have about the demo. 
 
-* Have TAs introduce the next homework assignment. This may just involve showing the homework videos and talking over them.
+### 15. Student Do: Speed Reader (20 mins)
+
+* Direct students to the final activity of class, in [09-Stu_SpeedReader](../../../../01-Class-Content/04-web-apis/01-Activities/09-Stu_SpeedReader/Unsolved).
+
+```md
+# Speed Reader 
+
+In this activity you are going to create a speed reading application. It will input a single word on the screen at a time, changing to the next word after 1 second. This equates to reading at 60 Words Per Minute (WPM).
+
+## Instructions
+
+* The app should countdown from 5, and when the countdown is finished it should print one word to the screen every second. Each word replaces the other.
+
+* Open `index.html` and create the necessary HTML. You will need at least 3 elements.
+
+* Open `script`.
+
+  * The two function names have been created for you, as well as a poem to speed read.
+
+* Fill out the necessary code that would create a countdown timer. When that timer completes, it should dissapear and speed reading should begin.
+```
+
+### 16. Instructor Do: Review Speed Reader (10 mins)
+
+* Navigate to [09-Stu_SpeedReader/Solved](../../../../01-Class-Content/04-web-apis/01-Activities/09-Stu_SpeedReader/Solved)
+
+* Open the solved `script` file and show students the completed solution.
+
+* Point out these main points to students:
+
+  * In our `prepareRead` function we store our interval in a variable so we can clear it later.
+
+  ```js
+  var timeInterval = setInterval(function() {
+  ```
+
+  * When the timer has run out, we empty the `textContent` of the `timerEl` and then execute our `speedRead` function.
+
+  ```js
+  if (timeLeft === 0) {
+    timerEl.textContent = " ";
+    speedRead();
+    clearInterval(timeInterval);
+  }
+  ```
+
+  * We used a prompt to ask the user to enter the speed at which they would like to read, we passed that response in as the second argument of our `speedRead` setInterval.
+
+  ```js
+  }, speed);
+  ```
+
+  * As opposed to a fixed value, i.e.,
+
+   ```js
+   }, 1000);
+   ```
+
+  * In the beginning of our `speedRead` function we append our `bodyEl`, generated via `createElement`, to the `mainEl` of our HTML page.
+
+  ```js
+  mainEl.append(bodyEl);
+  ```
+
+  * We use an `if` statement to check whether the piece we are reading is over. When `words[i]` begins to evaluate to undefined and not a word, we terminate the interval via `clearInterval`. As long as `words[i]` evaluates to a word from our array, we make the content of our `mainEl` reflect that.
+
+  ```js
+  if (words[i] === undefined) {
+    clearInterval(poemInterval);
+  } else {
+    mainEl.textContent = words[i];
+    i++;
+  }
+  ```
+
+### 17. Instructor Do: Demo Events (10 mins)
+
+* Open [fs-ground-04-web-APIs-event-demo](https://coding-boot-camp.github.io/fs-ground-04-web-APIs-event-demo/) and demonstrate the application functionality:
+
+  * We can add people to the list.
+  
+  * Clicking `edit` next to any name opens a modal.
+
+  * We can add details about the person and `save` the data.
+
+  * We can return to any person on the list, and see that the details are still there. 
+
+  * 📝 Our form is not routing us to a new page! How?
+
+* Ask the class the following question(s):
+
+  * "How would we build this application?"
+
+  * Use student answers to transition to the next activity.
+
+### 18. Instructor Do: Pseudocode Modal Demo (10 min)
+
+* Open a new (blank) file in your IDE and lead students in outlining the steps to build the modal activity in pseudocode. Refer to the following pseudocode example. There is no one *right* solution. The purpose of this activity is to reinforce problem solving strategies and prepare students for technical interview questions.
+
+* Ask the class the following question(s):
+
+  * "What is the first thing our app needs so a user can add another user to the list?"
+
+  * We need an input field for `name`.
+
+  * We need some way to gather the data from `name` when `Add Person` is pressed.
+
+* Ask the class the following question(s):
+
+  * "When a user adds a new user to the HTML form and clicks `Add Person`, what happens next?"
+
+  * We need to dynamically create a new list item.
+
+  * We append an `edit` button to that new list item.
+
+  * Then we append the new list item to the main people list.
+
+* Ask the class the following question(s):
+
+  * "What needs to happen when a user clicks the "edit" button?"
+
+  * The modal needs to display on the page, and the contents of the modal should populate with details about the person that we clicked.
+
+* Ask the class the following question(s):
+
+  * "What needs to happen when a user clicks the `save` button?"
+
+  * The modal needs to disappear.
+
+  * We need some way of keeping track of which person has which description.
+
+* Ask the class the following question(s):
+
+  * 'How can we make our web applications more interactive?'
+
+* Use student answers to transition to the next demo.
+
+### 17.  Instructor Do: On Click Demo  (5 min)
+
+* Open [10-Ins_Onclick/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/10-Ins_Onclick/index.html) in the browser and demonstrate its functionality:
+
+  * When we click on the toggle switch, the background color of the navigation and the footer both change colors.
+
+* Open [10-Ins_Onclick/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/10-Ins_Onclick/script.js) in your IDE and point out the following:
+
+  * We assign each queried element to a variable so that we can reuse it.
+
+  ```js
+  var themeSwitcher = document.querySelector("#theme-switcher");
+  var container = document.querySelector(".container");
+  ```
+
+  * `addEventListener` is the DOM method responsible for listening to events on an element.
+
+  * `addEventListener` has 2 required parameters: The type of event to listen for and a callback function to execute when that event is triggered.
+
+  ```js
+  themeSwitcher.addEventListener("click", function() {
+    if (mode === "dark") {
+      mode = "light";
+      container.setAttribute("class", "light");
+    } else {
+      mode = "dark";
+      container.setAttribute("class", "dark");
+    }
+  });
+  ```
+
+### 18.  Students Do: addEventListener (15 min)
+
+* Direct students to the next activity, found in [11-Stu_Onclick/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/11-Stu_Onclick/Unsolved)
+
+```md
+# addEventListener On Click
+
+In this activity, we are going to create a button that increments a counter when clicked.
+
+## Instructions
+
+* In a file called `index.html`, create a button containing the string "Increment".
+
+* In a file called `script.js`, create an event listener with a callback that increments the counter and displays the updated count on the webpage.
+
+* Add a button that decrements the counter when clicked.
+
+## Bonus
+
+* Add some code to ensure that the count never gets below 0.
+```
+
+### 19. Instructor Do: Review OnClick (5 min)
+
+* Open the file [11-Stu_Onclick/Solved/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/11-Stu_Onclick/Solved/index.html) in the browser.
+
+  * Clicking on the increment or decrement buttons raises or lowers our number dependant on which button we click.
+
+  * The count in the middle gets updated every time the button gets pressed.
+
+  * The count never falls below 0.
+
+* Open [11-Stu_Onclick/Solved/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/11-Stu_Onclick/Solved/script.js) in your IDE.
+
+  * We initialize global variables for `count` variable, `incrementEl`, and the `decrementEl` elements in DOM.
+
+  ```js
+  var count = 0;
+  var incrementEl = document.querySelector("#increment");
+  var decrementEl = document.querySelector("#decrement");
+  ```
+
+  * The second argument of `addEventListener` is an anonymous callback function. This function will execute the body of the callback each time the event is triggered.
+
+  ```js
+  incrementEl.addEventListener("click", function() {
+    count++;
+    setCounterText();
+  });
+  ```
+
+  * 🗒 Note that many students may have appended the count to the page inline instead of breaking it out into its own function.
+
+  * To complete the bonus we need a conditional that ensures that the count only decrements if the current value is greater than 0.
+
+  ```js
+  decrementEl.addEventListener("click", function() {
+    if(count > 0) {
+      count--;
+      setCounterText();
+    }
+  });
+  ```
+
+### 20. END (0 min)
 
 ### Lesson Plan Feedback
 
