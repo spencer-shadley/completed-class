@@ -1,4 +1,4 @@
-## 24.3 Lesson Plan - Project Presentations <!--links--> &nbsp; [⬅️](../02-Day/02-Day-LessonPlan.md) &nbsp; 
+## 24.3 Lesson Plan - Project Presentations <!--links--> &nbsp; [⬅️](../02-Day/02-LESSON-PLAN.md) &nbsp; 
 
 In this lecture, your students will present their project apps to the class. They’ll afterwards answer open-floor questions from you, TAs and classmates. This is a **crucial** lecture for your students, so make sure you follow the advice in this plan. 
 

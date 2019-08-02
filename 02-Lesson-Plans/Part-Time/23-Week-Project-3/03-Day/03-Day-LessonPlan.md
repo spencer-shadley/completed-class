@@ -1,4 +1,4 @@
-## 23.3 Lesson Plan - Portfolio / Project Week <!--links--> &nbsp; [⬅️](../02-Day/02-Day-LessonPlan.md) &nbsp; [➡️](../../24-Week/01-Day/01-Day-LessonPlan.md)
+## 23.3 Lesson Plan - Portfolio / Project Week <!--links--> &nbsp; [⬅️](../02-Day/02-LESSON-PLAN.md) &nbsp; [➡️](../../24-Week/01-Day/01-LESSON-PLAN.md)
 
 ### Overview
 

@@ -1,385 +1,243 @@
+## 17.1 Lesson Plan - Endpoint Testing & Projects (6:30 PM) <!--links--> &nbsp; [⬅️](../../16-Week/03-Day/03-LESSON-PLAN.md) &nbsp; [➡️](../02-Day/02-LESSON-PLAN.md)
 
-# 16.1 Lesson Plan - Linting & Projects (6:30 PM) <!--links--> &nbsp; [⬅️](../../15-Week/03-Day/03-Day-LessonPlan.md) &nbsp; [➡️](../02-Day/02-Day-LessonPlan.md)
+### Overview
 
-## Slideshow
+In this class, we will be introducing students to testing endpoints with Mocha and Chai.
 
-* This lesson's slides are available on Google Drive here: [16-1 Linting and Projects](https://docs.google.com/presentation/d/1DldswLqfUbnvidzyMLhmZUwYpwy_CXI0WPx5pMUuDZo/edit?usp=sharing)
+`Summary: Complete activities 1 - 3 in Unit 17`
 
-* To add slides to the student-facing repository, download the slides as a PDF by navigating to File > "Download as" and choose "PDF document." Add the slide PDF file to your class repository along with other necessary files.
+#### Instructor Notes
 
-* **Note:** Editing access is not available for this document. If you wish to modify the slides, please create a copy by navigating to File > "Make a copy...".
+* Prior to class ensure you have the [Project-2-Starter](../../16-Week/Project-Resources/Project-2-Starter) set up on your machine with dependencies installed, and the databases created (see the schema.sql file in the models folder). You will use this for today's demonstrations. 
 
-- - -
-
-## Overview
-
-* Today's class will be focused on introducing students to project 2 requirements, introducing them to the concept of JavaScript linting and continuous integration with Travis.
-
-* Students will begin work on their second project
-
-## Instructor Priorities
-
-* Students will be given requirements for Project 2.
-
-* Students will be able to create a repository on GitHub and add collaborators.
-
-* Students will be introduced to the concept of linting.
-
-* Students will set up Travis CI to enforce project linting rules.
-
-* Students will brainstorm project ideas, research APIs, and begin initial planning of their projects.
-
-* Students will submit a project proposal (ideas, outlines, APIs) by end of class for feedback.
+* Today will focus on testing API endpoints. This can serve as an opportunity to identify struggling project groups. **All groups** should have a working API at this point. The activities today will help identify groups that don't. Instructional staff should circulate heavily during activities as to identify groups that don't have working API endpoints. 
 
 - - -
 
-## Instructor Notes
+### Class Objectives
 
-* Have your TAs reference [01-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1WzJH4hM68jEdvVVLdHY9USvWf_qQ7cJn/view?usp=sharing) to help keep track of time during class.
+* Project groups will be able to prevent merging a PR that breaks an API endpoint.
 
-* Praise students for making it to their second group projects.
+* Students will write an API test in terms of what the front-end expects.
 
-* Leverage the TAs to help any groups lagging behind during the lesson. We want to give students as much time to brainstorm project ideas as possible.
+* Students will be able to test API endpoints.
 
-* Instructors / TAs, take a few moments before class to review the presentations posted on this link: <https://www.youtube.com/playlist?list=PLe80S_8KApqOTw-2-b-sgzTwwWImepoii>. Do not share these with students as they are Rutgers Specific &mdash; however, use the insight you gain in watching these videos to understand what's possible.
-
-* This week students will have a little less in class time to work on projects. In order to offset this we've provided them with some starter code they can use for their second projects. Take some time to familiarize yourself with the [Project 2 Starter activity](../../../../01-Class-Content/16-project-2/01-Activities/04-Stu_Project-Starter) and be prepared to frame this as a huge time saver for them.
+* Students will be able to articulate the value of API tests for a team working in parallel.
 
 - - -
 
-## Learning Objectives
+### 1. Instructor Do: Welcome (1 min)
 
-* Project groups will create a project repo and add members as collaborators.
+* Welcome students to class and inform them that today we'll cover testing API endpoints with Mocha and Chai. 
 
-* Students will have a project set up with linting and using Travis CI.
+* Assure the class that although a portion of today will be spent expanding upon the previous lesson's testing material, there will be plenty of time for project work afterward.
 
-* Students will submit a project proposal (ideas, outlines, APIs) by end of class for feedback.
+* Ask students to sit with their project groups and then introduce the warm-up activity. 
 
-- - -
+### 2. Student Do: Warm-up (10 min)
 
-### 1. Instructor Do: Welcome Students (3 min)
-
-* Welcome students and explain that as we enter project # 2, we're going to start thinking a little more about _code quality_. Today we'll cover using a JavaScript linter and Travis CI checks to achieve this.
-
-* Explain that later this week we'll also cover the basics of agile development and testing web applications. 
-
-* Unlike project 1, we'll be providing students with some boilerplate code they can use to jump start their applications. Stress that despite the other material we have to cover this week, this will save them time and ensure they can dive in building features for their apps.
-
-* Assure the class that they'll have plenty of time to brainstorm project ideas before submitting their proposals for review by the end of class.
-
-* Students should sit with their groups during today's activities and work to follow along with the examples.
-
-### 2. Instructor Do: Project 2 Slides (10 min)
-
-* Go through the slide deck [16-1 Linting and Projects](https://docs.google.com/presentation/d/1DldswLqfUbnvidzyMLhmZUwYpwy_CXI0WPx5pMUuDZo/edit?usp=sharing).
-
-* Slack out the [requirements for project 2](../Project-Resources/README.md).
-
-* Answer any questions about project requirements.
-
-### 3. Groups Do: Create a Repository (10 mins)
-
-* Have students sit with their project groups as they create a new project repository. Then have them invite each other as collaborators.
-
-* We have created a written guide and video guide on how to connect a GitHub repository to a Heroku Application for continuous deployment. Please provide these to your students along with the following activity instructions.
-
-    [Connect Repo with Heroku Guide](../../../../01-Class-Content/16-project-2/03-Supplemental/Guides/GitHubHerokuConnect.md)
-
-    [Connect Repo with Heroku Video](https://youtu.be/GgNcs9zlFSA?list=PLOFmg4xbN_TPrB6w4rThsFanVxJI_SfER)
-
-* Refer to `16-project-2/01-Activities/01-Stu_Create-Repository`, which contains the following instructions:
-
-* **Instructions**:
+Slack out the following instructions found in [01-Stu_Warmup](../../../../01-Class-Content/17-project-2/01-Activities/01-Stu_Warmup):
 
 ```
-* One group member should create a new Github repo for the project.
+* Complete the `calculateTax` function inside of `tax.js`.
 
-* Protect the repo's master branch as we did during project 1.
+* The function should take 1 parameter that represents the price of the object.
 
-  * Once at the repo's page, click the "Settings" tab.
+* The function should return the total price with 8% tax (`price * 1.08`).
 
-  * Select "Branches" from the left sidebar.
+* The total price should be formatted as a dollar amount (ex: 4.20).
 
-  * Under "Branch protection rules", choose "master" from the dropdown.
-
-  * Check off the following options:
-
-    * "Protect this branch"
-
-    * "Require pull request reviews before merging"
-
-    * "Include administrators"
-
-    * "Require status checks to pass before merging"
-
-    * "Require branches to be up to date before merging"
-  
-  * Click "Save changes"
-
-* Once complete, invite the other group members as collaborators.
-
-* Upon creation of your repository, we would like you and your group to then create a Heroku application and connect your GitHub Repository for automatic deployment.
-
-  * We have created a written guide and video guide on how you can link your GitHub Repo to your Heroku Application for continuous deployment which your instructor will provide.
-
-* Once connection is complete, link your Heroku Applications live link to your TAs.
-```
-
-### 4. Instructor Do: Linting Slides + Overview (5 mins)
-
-* Use the slide deck [16-1 Linting and Projects](https://docs.google.com/presentation/d/1DldswLqfUbnvidzyMLhmZUwYpwy_CXI0WPx5pMUuDZo/edit?usp=sharing), starting with the "Linting" slide, as you go through this section.
-
-* Explain that now we'll discuss linting code with JavaScript.
-
-  * Ask the class: "Can anyone tell me what a JavaScript linter is? Or why we would use one?"
-
-    * A linter is a tool that we can use to analyze our code for potential errors as we're writing it. Linters can also be used to enforce particular styles of coding based on rules we can turn on or off.
-
-    * Linters are useful because they can help teams write more consistent and readable code according to what they consider to be best practices. They're also helpful for identifying potential errors before the code is even run, thus improving overall code quality.
-
-* Exposing students to linting will help during group projects and beyond as most software development teams use some kind of linter to maintain readable and consistent code quality.
-
-* Explain that there are a few different libraries available for linting JavaScript code, but the one we'll be working with is the most popular: [eslint](https://eslint.org/).
-
-* Take a moment to answer any high-level questions about linting, but avoid getting too off track as students will see how eslint works for themselves in the next activity.
-
-### 5. Partners Do: No Lint Example (5 mins)
-
-* In this activity students will examine a JavaScript file without eslint and attempt to identify issues with the code.
-
-* Refer to `16-project-2/01-Activities/02-Stu_No-Lint-Example`, which contains the following instructions:
-
-* **Instructions**:
-
-```
-* Before looking at any code, open Unsolved/index.html in your web browser and study the rendered application.
-
-  * This simple example prompts the user for 2 numbers, and then what sort of mathematical operation they would like to perform. The result is then alerted back to the user.
-
-* Now open Unsolved/example.js in your editor.
-
-  * For what this application is supposed to do, the code works perfectly.
-
-* Discuss with your partner: Even though the code works, what's wrong with it?
-```
-
-### 6. Instructor Do: Review No Lint Example (5 mins)
-
-* As a class, go over the previous activity's [solution](../../../../01-Class-Content/16-project-2/01-Activities/02-Stu_No-Lint-Example/Solved/README.md) comparing each point to parts of the code being referred to.
-
-* Explain that while none of these are actual JavaScript errors, consistency is important because it makes code easier to understand, especially if working on a team with others. Additionally having a linter helps ensure code reviews aren't just nitpicks over stylistic opinions.
-
-* Take a moment to answer any questions but inform the class that in the next activity we'll fix the project using eslint.
-
-### 7. Partners Do: Eslint Example (5 mins)
-
-* In this activity students will use eslint to fix issues with the calculator app from the previous activity.
-
-* Refer to `16-project-2/01-Activities/03-Stu_Eslint-Example`, which contains the following instructions:
-
-* **Instructions**:
-
-```
-* Install the [VS Code Eslint Extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
-
-* Open the Unsolved folder and run `npm install` from your terminal to install dependencies.
-
-* Now open Unsolved/example.js in your code editor. If you were able to complete the previous steps correctly, you should see red annotations under different parts of the code. Hovering over each displays a popover with an eslint rule being broken.
-
-* Work to fix each part of the annotated code.
-
-* **Bonus**:
-
-* Try changing the quote style to enforce single-quotes instead of double-quotes.
+* In a separate file, use mocha and chai to test the function. It should return the proper total for a given price if the price is a number or throw an error if `price` is not a number. 
 
 * **Hints**:
 
-* If you're unsure about what an eslint rule is asking for, type it into Google for examples.
+* Reference the code from last class if needed.
 ```
 
-### 8. Instructor Do: Review Eslint Example (5 mins)
+### 3. Instructor Do: Review (5 min)
 
-* Demonstrate how hovering over the annotations in the `example.js` file brings up the eslint rule being broken in the file.
+* Go over the solution, attempt to spend as little time on the function's implementation as possible, and focus primarily on the tests.
 
-  ![Eslint Annotations](Images/01-Eslint-Annotations.png)
+  ![Warmup](Images/warmup.png)
 
-* Explain that eslint is an npm package that must be installed. The VS Code extension gives us the annotations over our files so we know what to fix in the moment, but only works if we have the eslint npm package installed.
+* Emphasize that testing, like linting, is only useful if everyone on the team does it.
 
-* Additionally eslint provides a cli tool we can use. Run the following command in your terminal to demonstrate this:
+  * If one teammate tests their code locally and it passes, then a second teammate alters the code and merges their changes into master, we don't know if the project still works or not.
+
+  * Testing is only useful if we run our tests *every time* the code is changed. And just like linting Travis can do this automatically for us.
+
+### 4. Instructor Do: EndPoint Testing (10 min)
+
+* Explain to students the importance of testing endpoints:
+
+  * Most web applications need to communicate with a database. A REST API provides an interface for the client to communicate to the server and then in turn to the database.
+
+  * Development teams often use continuous integration tools alongside testing libraries to prevent merging in code that will break existing functionality.
+
+  * In our case we will use Mocha and Chai to test our API routes and utilize Travis CI to ensure that our routes continue to work with each new commit.
+
+* Open up the [Project-2-Starter](../../16-Week/Project-Resources/Project-2-Starter/server.js) and open the `server.js` file in your editor.
+
+  * Walk the class through the new code at the bottom of the `server.js` file:
+
+    ![Export App](Images/export-app.png)
+
+  * If we're running our app in a test environment, pass `{ force: true }` to `db.sequelize.sync`. This will reset the test database, once before any testing begins. This will ensure we can begin tests with a fresh database each time.
+
+  * Even though we aren't exporting `app` for another part of our application to use, we need to make the express app available for testing. By exporting the app and the database, we can then later require it in our test files.
+
+* Now open the [travis.yml](../../16-Week/Project-Resources/Project-2-Starter/.travis.yml) file found in the same folder and point out the `before_install` field:
+
+  ![Travis](Images/travis-yml.png)
+
+  * When new code is pushed up to GitHub, Travis runs all of our application's tests. In order to test an API or any code that interacts with a database, Travis needs to know which database to use. This code creates a temporary `testdb` for this purpose.
+
+* Open [02-Stu_GET-Test](../../../../01-Class-Content/17-project-2/01-Activities/02-Stu_GET-Test/Unsolved) and copy the [example.test.js](../../../../01-Class-Content/17-project-2/01-Activities/02-Stu_GET-Test/Unsolved/example.test.js) file over to the `test` folder in your copy of [Project-2-Starter](../../16-Week/Project-Resources/Project-2-Starter/test/).
+
+* Take a moment to demonstrate the code in your editor.
+
+  ![Get Example](Images/get-example.png)
+
+* Explain that this test verifies that we can retrieve all `example` records from the database using the `/api/examples` endpoint. 
+
+* Run the test locally using `npm run test` and show that it passes. **Note: Be sure to run the schema.sql file in the `models` folder and install dependencies first if you haven't already.**
+
+* Inform the class that while this may look like a lot of code, much of it is be boilerplate we will use for all endpoint tests. Go through each piece one at a time:
+
+  * After requiring dependencies, we set up the `chai-http` plugin. This allows us to start a test server and make HTTP requests to it.
+
+  * The `beforeEach` block tells mocha, that before each test (`it` block), it should run the code inside.
+  
+    * In this case, we're creating a test server and creating a `request` object we can use to make requests to the server. 
+
+    * We're also clearing the test database before each test so we can know *exactly* what should be in it before running tests.
+  
+  * Then inside of the `it` block, we're first inserting some mock data into the test data using `bulkCreate`. This method works like the regular sequelize `create` method, but allows for inserting multiple entries at once.
+
+  * We then make a GET request to the `/api/examples` endpoint. Once the request finishes, we run assertions on the response. In particular, we make sure that:
+
+    * The request completes successfully, i.e. there is no error.
+
+    * The response status is `200`.
+
+    * The response body is an array with 2 elements.
+
+    * The elements in the response body match the elements we saved to the database with the `bulkCreate` method.
+
+* Finally we call the `done` function. This is optionally available as an argument passed into every test. Since this test runs asynchronously, we need to call `done` so that mocha knows when the test is complete.
+
+### 5. Student Do: GET Route (15 min)
+
+* Instructional staff should circulate *heavily* during this activity. All groups need to have a working GET route. If you find a group that does not, TAs should work closely with them during project time today and ensure that they leave with working GET and POST routes. 
+
+Slack out the following instructions found in [02-Stu_GET-Test](../../../../01-Class-Content/17-project-2/01-Activities/02-Stu_GET-Test):
 
   ```
-  npm run lint
+  * Copy `example.test.js` over to the `test` folder in your local project repo. Rename this file to be to match the name of the api you're testing, e.g. `todo.test.js` or `recipes.test.js`.
+
+  * Update the test endpoint to be one in your own project. The endpoint should return all instances of a model from the database.
+
+  * Update the `bulkCreate` method to use your own model name instead of `Example`. Update the data being passed into the `bulkCreate` method to match what is expected by your model's schema.
+
+  * Update the assertions to expect objects matching the ones passed into the bulk create method.
+
+  * Run the tests by running `npm run test` and make sure everything passes.
+
+  * **Hints**:
+
+  * The Project 2 Starter repo included all the necessary dependencies and scripts in the `package.json` for this activity. If you get an error about missing dependencies, double check it wasn't removed beforehand.
+
+  * Ask an Instructor or TA for help if you get stuck!
+
+  * **Bonus**:
+
+  * If you have a route for getting a single record of the same type by id, add a test for it!
   ```
 
-* If you haven't already gone ahead and fixed all the lint errors in the `example.js` file, you should receive errors in the console. Scroll up to see the specific eslint errors and their line numbers.
+### 6. Instructor Do: POST Route (10 min)
 
-* Ask the class: "Where do you think the the eslint rules are being set?
+* Explain that we want to test *all* of our routes, not just GET routes.
 
-  * The `.eslintrc.json` file.
+* Open up [03-Stu_POST-Test](../../../../01-Class-Content/17-project-2/01-Activities/03-Stu_POST-Test/Unsolved) and, like the previous demonstration, copy and paste the [example.post.test.js](../../../../01-Class-Content/17-project-2/01-Activities/03-Stu_POST-Test/Unsolved) file over to the `test` folder in your copy of [Project-2-Starter](../../16-Week/Project-Resources/Project-2-Starter/test/).
 
-* Demonstrate the `.eslintrc.json` file for the class. Explain that this file contains the rules we want eslint to enforce for us. A list of eslint rules and how to use them can be found at [eslint.org](https://eslint.org/docs/rules/).
+* Demonstrate the code in your editor:
 
-  * Eslint also includes the ability to share configs. Companies like Google and AirBnB create and publicly share their own configurations based on style guides used at their companies.
+  ![Post Example](Images/post-example.png)
 
-  * Students can look into how to use these if they wish, but they may find them to be much more restrictive than the simple one we're using now.
+* Explain that this test verifies that we can successfully save an example to the database by using the `POST /api/examples` endpoint.
 
-* Stress that changing conventions used in a project is now as easy as changing an eslint config. If the team decide they would prefer to indent 4 spaces instead of 4 or would prefer single quotes over double quotes, all we need to do is change a rule in the eslint config.
+* Walk through the code as a class. Check for students' understanding of what should now be familiar code. Be sure to highlight the following:
 
-  * Being able to do this so easily helps us stay productive and minimize distractions. Without a linter, getting the entire team on board with and using a new convention could be a much more tedious and stressful process.
+  * Like before, we need to set up `chai-http` in order to start a server and make requests.
 
-* Suggest that students use at least the basic eslint config provided for them in their projects. Take a moment to answer any additional questions.
+  * Before each test, we recreate the request server and reset the test database.
 
-### 9. Instructor Do: Introduce Project 2 Starter (8 mins)
+  * We create the `reqBody` object which will be sent to the endpoint to create a new `example` record in the database.
 
-* In the last project, students should have started with an MVP and then layered on changes. This time, we're giving them a starter project to work with, so instead of doing the initial setup themselves, they're going to write user stories and open issues to layer changes to it.
+  * After the request has been made, we run assertions on the response. In this case, we're checking that:
 
-* Assure the class that it's very common to begin a new project using some kind of pre-built boilerplate as it saves time.
+    * The request completes successfully, i.e. there is no error.
 
-* Open [04-Stu_Project-Starter/Unsolved](../../../../01-Class-Content/16-project-2/01-Activities/04-Stu_Project-Starter/Unsolved) in your editor, run `npm install`, followed by `node server`. Take a moment to demonstrate the rendered application and some of is code.
+    * The response status is `200`.
 
-* Be sure to point out the following:
+    * The response body is an object that matches the `reqBody` object. This indicates that the record was created successfully.
 
-  * The project starter already has express, handlebars, and sequelize set up.
+* Open `apiRoutes.js` and demonstrate this line `res.json(dbExample);` in the POST route is the one that determined the response that we get back. 
 
-  * The project starter has a basic linter set up.
+  ![Post-response](Images/post-res.png)
 
-  * The project starter has a `.travis.yml` file. This will be be largely ignored, but it will be used to make sure that only code that passes the linter can be merged into the Github master branch.
+* This is how we know that we should be testing for an object.
 
-  * Students will need to change a few things for their own apps, but this will be much quicker to get started than beginning from scratch.
+* Emphasize that students should design tests based on the response that they are expecting from their endpoint. Often this means faking or mocking data. What we're testing is that our API works as expected with known data we can verify.
 
-* Change the indentation of a few lines of JavaScript code and demonstrate how running `npm run lint` logs these as errors to the console.
+### 7. Student Do: POST Route (15 min)
 
-  * Lint errors can be fixed manually, or by running `npm run fix` in the terminal. This will fix any errors automatically fixable by eslint across all files. This doesn't fix _all_ lint errors, but it will quickly take care of most.
+* Instructional staff should circulate *heavily* during this activity. All groups need to have a working POST route. If you find a group that does not, TAs should work closely with them until they do or make a note to assist after the lesson. 
 
-* Take a moment to answer any high-level questions. In the next activity groups will add this setup to their empty project repos.
-
-### 10. Groups Do: Project 2 Starter (10 mins)
-
-* In this activity students will add the provided Project 2 Starter code to their group project repos.
-
-* Instructional staff should be walking around making sure each group is successful.
-
-* Stress that once groups have this initial boilerplate added to their project repos, all they need to do now is submit smaller pull-requests to layer on each new change.
-
-* Refer to `16-project-2/01-Activities/04-Stu_Project-Starter`, which contains the following instructions:
-
-* **Instructions**:
+Slack out the following instructions found in [03-Stu_POST-Test](../../../../01-Class-Content/17-project-2/01-Activities/03-Stu_POST-Test):
 
 ```
-* Only one member of each group should complete this activity while the others watch.
+* Copy `example.post.test.js` over to the `test` folder in your local project repo. Rename this file to be to match the name of the api you're testing, e.g. `todo.post.test.js` or `recipes.post.test.js`.
 
-* Copy the entire Unsolved folder to another location on your computers &mdash; wherever you would like your local copy of the group project to be.
+* Update the test endpoint to be one in your own project. The endpoint should use data submitted on `req.body` to create a new instance of a model.
 
-* Rename the copied "Unsolved" folder to the name of your project.
+* Update `reqBody` to match what is expected by your model's schema.
 
-* Open the copied project folder's `package.json` file and change its `name` property to the name of your project, e.g. `bathroom-finder-v2`. If you're unsure now, leave this field as is &mdash; it can be changed later.
+* Update the final assertion to expect an object matching the one sent to the endpoint.
 
-* CD to the root of the copied project folder with your terminal and run the following commands:
+* Run the tests by running `npm run test` and make sure everything passes.
 
-  git init
-  git add .
-  git commit -m "Initial commit"
+* **Hints**:
 
-* Then copy the GitHub repo's remote SSH URL (the same URL you'd use to clone the repo).
+* The Project 2 Starter repo included all the necessary dependencies and scripts in the `package.json` for this activity. If you get an error about missing dependencies, double check it wasn't removed beforehand.
 
-* Run the following commands in your terminal, replacing <remote-url> with your GitHub repo's remote SSH URL.
-
-  git remote add origin <remote-url>
-  git push origin master
-
-* If completed successfully you should see all of the files uploaded to GitHub.
-
-* All other group members should now clone the repo.
-
-* Discuss as a group:
-
-  * How would you now add changes to this project?
+* Ask an Instructor or TA for help if you get stuck!
 ```
 
-### 11. Instructor Do: Introduce Travis CI Slides (5 mins)
+### 8. BREAK (15 min)
 
-* Explain to the class that linters aren't very helpful if some group members choose to ignore their rules.
+### 9. Students Do: Project Work (99 min)
 
-* Explain that in the next activity we're going to set up Travis CI (Continuous Integration).
+* Groups should work on projects while instructional staff make themselves available for assistance.
 
-  * Travis will prevent any code from being merged into master that doesn't pass the linter.
+### 10. END (0 min)
 
-  * Travis will run a check on any new branches PR'd against master. This check may take a minute, but you will only be allowed to merge the code if the lint passes. Otherwise whoever made the PR will have to fix their code and try again.
+# Instructor Do: Private Self-Reflection
 
-* Take a moment to answer any questions. Students will follow step-by-step instructions to add Travis to their repos in the next activity.
+Take some time on your own after class to think about the following questions. If there's anything that you're not sure how to answer, feel free to reach out to the curriculum team!
 
-### 12. Students Do: Travis Setup (10 mins)
-
-* In this activity students will add Travis CI to their projects.
-
-* Instructional staff should be walking around answering questions and making sure groups can complete the activity.
-
-* Refer to `16-project-2/01-Activities/05-Travis-Setup`, which contains the following instructions:
-
-* **Instructions**:
-
-```
-* Only the owner of the project repo should complete this activity, other group members should watch.
-
-* **Part 1**: Protecting Master
-
-* Before we can set up Travis, we must configure the project repo to protect the master branch.
-
-* Navigate to the repo's page, then click the "Settings" tab.
-
-* Select "Branches" from the left sidebar.
-
-* Under "Branch protection rules", choose "master" from the drop-down.
-
-* Check off the following options:
-
-  * "Protect this branch"
-
-  * "Require pull request reviews before merging"
-
-  * "Include administrators"
-
-  * "Require status checks to pass before merging"
-
-  * "Require branches to be up to date before merging"
-
-* Click "Save changes"
-
-* **Part 2**: Add Travis
-
-* Navigate to <https://github.com/marketplace/travis-ci>.
-
-* Select the option to "Set up a new plan" and choose the $0 "Open Source" plan when prompted.
-
-* Click "Install it for free" and then on the next page click "Complete order and begin installation".
-
-* On the next page select the radio button that reads "Only select repositories".
-
-* From the "Select repositories" drop-down, choose your project repo.
-
-* Click the "Install" button to complete the process.
-```
-
-- - -
-
-### 13. Everyone Do: BREAK (15 mins)
-
-- - -
-
-### 14. Groups Do: Project Brainstorming (69 mins)
-
-* Students begin work with groups to identify ideas, research APIs, and create project designs.
-
-* Students should expect to submit initial project idea proposals by the end of class today.
-
-### 15. Instructors Do: Answer Remaining Questions (15 mins)
-
-* Review any overarching questions and offer closing thoughts.
+1. How did today's class go?
+2. How did you teach it?
+3. How well do you feel you did teaching it?
+4. Why are you teaching it?
+5. Why did you teach it that way?
+6. What evidence can I collect to show my students are understanding?
+7. How will my students know they are getting it?
 
 ### Lesson Plan Feedback
 
 How did today's class go?
 
-[Went Well](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=pt&sentiment=positive&lesson=16.01)
+[Went Well](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=pt&sentiment=positive&lesson=17.01)
 
-[Went Poorly](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=pt&sentiment=negative&lesson=16.01)
+[Went Poorly](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=pt&sentiment=negative&lesson=17.01)

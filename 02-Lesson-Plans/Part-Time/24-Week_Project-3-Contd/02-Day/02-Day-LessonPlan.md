@@ -1,4 +1,4 @@
-## 24.2 Lesson Plan - Project Work <!--links--> &nbsp; [⬅️](../01-Day/01-Day-LessonPlan.md) &nbsp; [➡️](../03-Day/03-Day-LessonPlan.md)
+## 24.2 Lesson Plan - Project Work <!--links--> &nbsp; [⬅️](../01-Day/01-LESSON-PLAN.md) &nbsp; [➡️](../03-Day/03-LESSON-PLAN.md)
 
 In today's class, students will have time both to outline their presentations, and to complete work on their projects.
 

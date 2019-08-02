@@ -1,186 +1,95 @@
-# 16.2 Lesson Plan - Agile & Projects (6:30 PM) <!--links--> &nbsp; [⬅️](../02-Day/02-Day-LessonPlan.md) &nbsp; [➡️](../../17-Week/01-Day/01-Day-LessonPlan.md)
+## 17.2 Lesson Plan - Project Work, Pt.2 <!--links--> &nbsp; [⬅️](../01-Day/01-LESSON-PLAN.md) &nbsp; [➡️](../03-Day/03-LESSON-PLAN.md)
 
-### Slideshow
+In today's class, students will have time both to outline their presentations, and to complete work on their projects.
 
-* This lesson's slides are available on Google Drive here: [16-2 Agile and Projects](https://docs.google.com/presentation/d/1WneP_OWJOsJ7ZVsp6_RjIZTZeK61GkqbVv6eS3Nn_oQ/edit?usp=sharing)
+##### Instructor Priorities
 
-* To add slides to the student-facing repository, download the slides as a PDF by navigating to File > "Download as" and choose "PDF document." Add the slide PDF file to your class repository along with other necessary files.
+* Students should have the entirety of today's class to work on their projects. 
 
-* **Note:** Editing access is not available for this document. If you wish to modify the slides, please create a copy by navigating to File > "Make a copy...".
+* Make sure your students spend at least thirty minutes collaborating with teammates on how they'll present their web app. 
 
-* Have your TAs reference [02-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1h9TaBtJmCnxEV7Iprd-UUu0fRw1KbztS/view?usp=sharing) to help keep track of time during class.
+##### Instructor Notes
+
+* This is the last day of class that students have to work on their projects. That's why they need to spend time thinking about how they'll present their app on Saturday. 
+
+* Once again, your students' success post-bootcamp depends on the quality of their projects. Their presentations compose much of this quality—students need to think about how to communicate the development process of their apps if they hope to impress interviewers with their experience.
+
+* The remaining schedule for Project #2 is as follows:
+
+  * Day 5 (Today):
+
+    * Students begin planning their final presentations
+    * Students are given rest of class to work on Projects
+
+  * Day 6:
+    * Students present their final project! 
+
+* Slack out the document on [Describing Technical Projects](../../../../01-Class-Content/17-project-2/03-Supplemental/DescribingTechnicalProjects.pdf), and explain that students _must_ write a "script" according to the template in the document that they can rehearse and use to discuss their projects in technical interviews.
 
 - - -
 
-## Learning Objectives
+### Class Objectives
 
-* Students will know how to use a standup to stay in-sync with their groups and identify blockers early on so they can be removed.
+* To provide students more time and support for their group projects.
 
-* Students will be able to use a Kanban board in their group projects.
-
-* Students will understand the value of a demo-driven playback in keeping stories focused on deliverable features.
-
-* Students will understand the importance of retrospective meetings to make sure they identify where things may have gone wrong in a sprint and how to be more productive during their next sprint.
-
-* Students will have enough understanding of the value of agile methodologies to practice using them within their project groups.
-
-### 1. Instructor Do: Kanban + Slides (5 min)
-
-* Open the slide deck [16-2 Agile and Projects](https://docs.google.com/presentation/d/1WneP_OWJOsJ7ZVsp6_RjIZTZeK61GkqbVv6eS3Nn_oQ/edit?usp=sharing).
-
-* Explain the Kanban concept
-
-  * It's important to have an organized project management system when you tackle any project.  A great tool for this is the Kanban board.
-
-  * Kanban boards give us a birds eye view of the tasks we've completed, are working on, and need to do.
-  
-  * A Kanban board is a simple, visual, drag and drop scheduling system. GitHub has several built-in options for organizing projects. We will be using GitHub Projects.
-
-* Under the Project" tab in GitHub, click the "New Project" button to create a new board (use the automated Kanban template).
-
-  ![Project](Images/project.png)
-
-* In addition to the existing columns, create a new column called Icebox (You will need to exit the "add card" pop-up to access the "add column" area on the right side).
-
-  ![Column](Images/column.png)
-
-* Demonstrate adding all issues to To Do (or Icebox if it's non-essential), by clicking "+ Add Cards" and dragging each issue into the correct column.
-
-  ![Card](Images/card.png)
-
-* Walk the students through board: 
-
-  * There are 4 columns
-
-    1. **To Do**:  What needs to get done next/hasn't been started.
-
-    2. **In Progress**: What's being worked on now/isn't completed/merged.
-
-    3. **Done**: What has been completed, reviewed, and merged into master.
-
-    4. **Icebox**: What may need to be done later, less immediate version of "To Do".
-
-  * Each week should have a set focus - this week that focus is completing the MVP.
-
-  * Every task that is vital to completing the week's goal should go in the 'To Do' column.
-
-  * Other tasks should go in 'Icebox' for review later. Icebox is a great place to put future enhancements that you would like to add
-
-  * When someone begins work on a task, it should be moved to 'In Progress' and once it is complete,reviewed, and the changes are merged into master, the task should be moved to 'Done'.
-
-  * Encourage students to add any new issues to the Icebox column and then to decide as a team if the new issue is absolutely *necessary* to the MVP before moving into the To Do column.
-
-### 2. Student Do: Kanban (10 min)
-
-* Slack out the following instructions and accompanying PDF:
-[06-Stu_Kanban](../../../../01-Class-Content/16-project-2/01-Activities/06-Stu_Kanban)
-
-* Use the `Projects` tab in GitHub to create a new project (use the automated kanban template).
-
-* Add a new column called Icebox (You will need to exit the "add card" pop-up to access the "add column" area on the right side).
-
-* Click "+ Add Cards" and dragging each issue into the correct column, To Do or Icebox.
-
-* **Bonus**:
-
-* If you have extra time, let each team member add some additional features to the Icebox. This is a great place to hold future enhancement ideas. Remember that each feature may need to be broken down into smaller tasks in the future before you open issues and start building them. 
-
-### 3. Instructor Do: Assigning Issues and Stand-up (5 min)
-
-* Demo self-assigning an issue, by clicking "assign yourself" on the right-hand side. 
-
-* Explain assigning issues:
-  
-  * Issues can be assigned to a particular teammate or group of teammates. It helps the team to divide up responsibilities. Issues are generally self-assigned.
-
-  * Not only does it allows to know WHAT is being worked on but WHO is working on it. With this information members will be able to know who to contact if they have questions about a particular feature. 
-
-  ![Assign](Images/assign.png)
-
-* Have the TA self-assign an issue or two as well. 
-
-* Explain that most teams have a daily meeting called a stand-up.
-
-  * When you work with a team, it's important for the whole team to know what each teammate is working on. At most companies this is accomplished by a daily meeting called stand-up.
-
-* Explain the stand-up format.
-
-  * Each teammate will take a turn saying what they did yesterday, what they are planning to do today, and anything blocking their progress.
-
-  * They were originally called standups because everyone would, if able, literally stand up for the duration of the meeting. Now a standup just implies that it's no more than 15 minutes.
-
-  * We hold stand ups daily so team mates can hold each other accountable, but also so they can help each other if they get stuck. This time allows a group to remove blockers, identify redundant work, and be made aware of anything that might need more planning before members work on something that won't be of use.
-
-### 4. Student Do: Assigning Issues and Stand-up (10 min)
-
-* Slack out the following instructions:
-[07-Stu_Standup](../../../../01-Class-Content/16-project-2/01-Activities/07-Stu_Standup/README.md)
-
-* Before your first stand-up, each member of the team should go through the To Do column of the Project Board and self-assign at least one issue. 
-
-  * To do this, click on the issue and on the right choose "self-assign".
-
-* Everyone should have a clear idea of what they intend to accomplish today. Now it's time for your first stand-up!
-
-* Stand if you are able - yep, stand-ups take place standing; this helps to ensure that the meetings are short and to the point. 
-
-* Each member of the team should say what they did yesterday, what they plan to do today, and what, if anything, is blocking their progress. 
-
-* Stand-ups should be held *daily* from this point forward - yes even days that you don't have class (use Slack).
-
-### 5. Instructor Do: Explain Playbacks + Slides (10 min)
-
-* Explain that teams sometimes have a weekly meeting called a "playback". This meeting allows team members to explain and demo completed features and the work they did during this past sprint. (normally a work week). Playbacks are important to keep project managers up to date, as well other team members to what has been accomplished during a sprint. 
-
-* Explain the playback format:
-  
-  * Tell your team what you worked on and how it went.
-  
-  * Show the progress you have made on your work.
-  
-  * Demo any finished work/features. 
-
-* Encourage students to set up time for playbacks at the end of each sprint.
-
-### 6. Instructor Do: Retrospectives + Slides (10 min)
-
-* Explain that a retrospective allows a group to look back on their past week of work and identify where things went well, where they went poorly, and how they might be able to improve their work output next week.
-
-(Put reminders in lesson plan to have instructors remind students to schedule retrospectives!)
-
-* Explain the retrospective format explaining that students should brainstorm for 3-5 minutes on the following topics, writing down the following
-  
-  * What went well?
-  
-  * What went poorly?
-  
-  * What could we do better? (Action items)
-
-  * After the brainstorming session, speak to your group members about what you have written, giving a bit more context to the team.
-
-* Be sure to stress that this is not a planning meeting. Retrospectives are about bringing up problems, not about immediately finding solutions to those problems.
-
-* Encourage students to set up time for retrospectives at the end of each sprint.
-
-### 8. Students Do: Project Work (40 min)
-
-* Continue working on project 2!
+* **Make sure students spend at least a half hour outlining their presentations**.
 
 - - -
 
-### 9. Everyone Do: BREAK (15 min)
+### 0. Welcome Class
+
+* Say your hellos and check if students have any questions about past concepts.
+
+### 1. Everyone Do: Outline Presentation (0:30)
+
+* Announce that students have the next half-hour to outline their presentations.
+
+  * Make sure they don't code. They should consider:
+
+  * The structure of their presentation; 
+  * The key messages they need to show; and 
+  * The details that they should _avoid_ reviewing (they only have 10 minutes to talk).
+
+* Offer these tidbits of advice:
+
+  * The presentation of any project to an audience must flow like a story. Your narrative should open on a conflict, hint at a potential resolution for that problem, depict the steps taken to resolve the issue, and finally end on the resolution of the conflict with an eye toward the future. In other words:
+    1. What problem does your app focus on.
+    2. How does your app solve this problem at a high-level.
+    3. What steps did you take to build the app.
+    4. Show the app running and solving the problem that began your story. Also talk about what features you'd like to add in an update to your app.
+
+* While the groups organize their presentations, offer to answer any questions about Saturday. 
+
+* About 10 minutes in, you should walk around and make sure that students aren't coding. If it looks like they are, just walk up and warmly ask how they're progressing so far with their outline. 
+
+  * Don't accuse them of not following directions; just steer them on course.
+
+### 2. Everyone Do: Project Work (1:00)
+
+* Tell your students that they may work on coding their app again or spend more time on their presentations—whichever they'd prefer.
+
+* TAs and Instructors: For the next 45 minutes, you'll once again be Senior Developers! Visit each group and answer any questions they may have about coding their app or presenting on Saturday. 
+  * Some students may feel nervous with their deadline approaching. Reassure them that they have solid project ideas and that they'll be fine on Saturday as long as they prepare for their presentation.
+  * A few groups might not seem poised to finish their apps time. Tell them to drop any undeveloped and unnecessary features. Even if they can't meet their proposed goal, they should still present a functional app on Saturday. Add in that they can talk about the dropped features as planned updates.
 
 - - -
 
-### 10. Students Do: Project Work (75 min)
+### 3. BREAK (0:15)
 
-* Continue working on project 2!
+- - -
+
+### 4. Everyone Do: Project Work (1:15)
+
+* Allow students to continue working on projects.
+
+* Dismiss class at 9:30.
+
+  * Make yourself and your TAs available for another 30 minutes after class, if possible.
 
 ### Lesson Plan Feedback
 
 How did today's class go?
 
-How did today's class go?
-[Went Well](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=pt&sentiment=positive&lesson=16.02)
+[Went Well](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=pt&sentiment=positive&lesson=17.02)
 
-[Went Poorly](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=pt&sentiment=negative&lesson=16.02)
+[Went Poorly](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=pt&sentiment=negative&lesson=17.02)

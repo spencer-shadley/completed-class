@@ -1,4 +1,4 @@
-## 23.1 Lesson Plan - Portfolio & Career HW Work <!--links--> &nbsp; [⬅️](../../22-Week/03-Day/03-Day-LessonPlan.md) &nbsp; [➡️](../02-Day/02-Day-LessonPlan.md)
+## 23.1 Lesson Plan - Portfolio & Career HW Work <!--links--> &nbsp; [⬅️](../../22-Week/03-Day/03-LESSON-PLAN.md) &nbsp; [➡️](../02-Day/02-LESSON-PLAN.md)
 
 ### Instructors and TAs: Please take the End-Course Instructional Staff Survey if You Haven't Yet
 
