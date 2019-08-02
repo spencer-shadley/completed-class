@@ -14,7 +14,7 @@ In this lecture, your students will present their project apps to the class. The
 
 - - -
 
-### Class Objectives
+### Learning Objectives
 
 * _Arrive early to class_ so that you can set the room up for presentations.
 

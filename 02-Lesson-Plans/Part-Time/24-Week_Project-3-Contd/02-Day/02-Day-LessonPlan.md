@@ -18,7 +18,7 @@ In today's class, students will have time both to outline their presentations, a
 
 - - -
 
-### Class Objectives
+### Learning Objectives
 
 * To provide students more time and support for their group projects.
 

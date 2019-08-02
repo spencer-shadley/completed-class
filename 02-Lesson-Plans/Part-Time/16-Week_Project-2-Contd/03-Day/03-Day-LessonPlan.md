@@ -29,7 +29,7 @@ Students should be able to:
 
 - - -
 
-### Class Objectives
+### Learning Objectives
 
 Students should be able to:
 

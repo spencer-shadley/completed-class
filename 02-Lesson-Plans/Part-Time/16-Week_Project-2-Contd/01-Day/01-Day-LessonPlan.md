@@ -47,7 +47,7 @@
 
 - - -
 
-## Class Objectives
+## Learning Objectives
 
 * Project groups will create a project repo and add members as collaborators.
 

@@ -26,7 +26,7 @@ During this lecture, most of class will center on project work. You and the TAs 
 
 - - -
 
-### Class Objectives
+### Learning Objectives
 
 * Provide students more time and support for their group projects.
 

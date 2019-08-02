@@ -12,7 +12,7 @@
 
 - - -
 
-## Class Objectives
+## Learning Objectives
 
 * Students will know how to use a standup to stay in-sync with their groups and identify blockers early on so they can be removed.
 
