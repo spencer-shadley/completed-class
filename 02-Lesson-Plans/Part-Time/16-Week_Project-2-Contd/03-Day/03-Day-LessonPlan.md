@@ -1,20 +1,14 @@
-## 17.3 Lesson Plan - Project Presentations <!--links--> &nbsp; [⬅️](../02-Day/02-LESSON-PLAN.md) &nbsp; [➡️](../../18-Week/01-Day/01-LESSON-PLAN.md)
+# 16.3 Lesson Plan - Project Presentations <!--links--> &nbsp; [⬅️](../02-Day/02-LESSON-PLAN.md) &nbsp; [➡️](../../18-Week/01-Day/01-LESSON-PLAN.md)
 
-In this lecture, your students will present their project apps to the class. They’ll afterwards answer open-floor questions from you, TAs and classmates. This is a **crucial** lecture for your students, so make sure you follow the advice in this plan. 
+## Overview
 
-##### Instructor Priorities
+In this lecture, your students will present their project apps to the class. They’ll afterwards answer open-floor questions from you, TAs and classmates. This is a **crucial** lecture for your students, so make sure you follow the advice in this plan.
 
-* Students should expect an extended class today--these presentations tend to last longer than our allotted time. 
-
-* Students should know the parts of their apps that impress you and the TAs, as well as what they can improve on for future projects. This will help direct their focus for future assignments (what aspects of web development they need to work on).
-
-##### Instructor Notes
+## Instructor Notes
 
 * Arrive early to support students, and get the room set up.
 
-- - -
-
-### Class Objectives
+## Learning Objectives
 
 * _Arrive early to class_ so that you can set the room up for presentations.
 
@@ -22,13 +16,7 @@ In this lecture, your students will present their project apps to the class. The
 
 - - -
 
-### -1. Instructor Do: Set Up The Room (15 mins before class)
-
-* Come to class early and set up the room.
-
-### 0. Instructor Do: Welcome Class (1 min)
-
-* Say your hellos and check if students have any questions about past concepts.
+## Class Instruction
 
 ### 1. Introduce Presentations
 
