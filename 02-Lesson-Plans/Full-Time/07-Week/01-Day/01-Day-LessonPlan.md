@@ -396,8 +396,7 @@ Tell students this is a challenging unit, but it will make more sense after our 
 
 ### Lesson Plan Feedback
 
-How did today's class go?
+How did today’s lesson go? Your feedback is important. Please take 5 minutes to complete this anonymous survey.
 
-[Went Well](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=ft&sentiment=positive&lesson=07.01)
+[Class Survey](https://forms.gle/nYLbt6NZUNJMJ1h38)
 
-[Went Poorly](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=ft&sentiment=negative&lesson=07.01)
