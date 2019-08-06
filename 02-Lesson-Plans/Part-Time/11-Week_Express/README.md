@@ -7,9 +7,9 @@ This week, students will learn how to set up web servers with Node.js and how ex
 
 ### Lesson Plans
 
-* [13.1 - Intro to Node Servers](01-Day/01-Day-LessonPlan.md)
-* [13.2 - Express Yourself](02-Day/02-Day-LessonPlan.md)
-* [13.3 - Hot Restaurant Activity](03-Day/03-Day-LessonPlan.md)
+* [13.1 - Intro to Node Servers](01-Day/01-LESSON-PLAN.md)
+* [13.2 - Express Yourself](02-Day/02-LESSON-PLAN.md)
+* [13.3 - Hot Restaurant Activity](03-Day/03-LESSON-PLAN.md)
 
 ### Homework Activities
 

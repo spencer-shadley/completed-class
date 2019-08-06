@@ -7,9 +7,9 @@ In this week, we will introduce students to the Sequelize ORM.
 
 ### Lesson Plans
 
-* [15.1 - Lesson Plan](01-Day/01-Day-LessonPlan.md)
-* [15.2 - Lesson Plan](02-Day/02-Day-LessonPlan.md)
-* [15.3 - Lesson Plan](03-Day/03-Day-LessonPlan.md)
+* [15.1 - Lesson Plan](01-Day/01-LESSON-PLAN.md)
+* [15.2 - Lesson Plan](02-Day/02-LESSON-PLAN.md)
+* [15.3 - Lesson Plan](03-Day/03-LESSON-PLAN.md)
 
 ### Homework Activities
 
