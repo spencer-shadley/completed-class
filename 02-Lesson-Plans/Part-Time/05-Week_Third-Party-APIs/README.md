@@ -45,10 +45,12 @@ In this week we will review JavaScript & jQuery fundamentals, as well as touch o
 
 ### Key Activities
 
-* [5.1 - Word Guess](../../../01-Class-Content/05-Third-Party-APIs/01-Activities/01-WordGuess)
-* [5.1 - Captain Planet](../../../01-Class-Content/05-Third-Party-APIs/01-Activities/10-CaptainPlanetGame)
-* [5.2 - This](../../../01-Class-Content/05-Third-Party-APIs/01-Activities/18-ThisExample)
-* [5.2 - Calculator](../../../01-Class-Content/05-Third-Party-APIs/01-Activities/20-jQueryCalculator)
+* [5.1 - Word Guess](../../../01-Class-Content/05-timers/01-Activities/01-WordGuess)
+* [5.1 - Captain Planet](../../../01-Class-Content/05-timers/01-Activities/02-CaptainPlanet)
+* [5.2 - This](../../../01-Class-Content/05-timers/01-Activities/05-This)
+* [5.2 - Stopwatch](../../../01-Class-Content/05-timers/01-Activities/10-Stopwatch)
+* [5.3 - Fizz Buzz](../../../01-Class-Content/05-timers/01-Activities/16-FizzBuzz)
+* [5.3 - Bubble Sort](../../../01-Class-Content/05-timers/01-Activities/13-BubbleSort)
 
 ### Helpful Links
 

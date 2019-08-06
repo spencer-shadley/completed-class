@@ -7,9 +7,9 @@ This week's lesson will introduce students to some more Agile methodologies and 
 
 ### Lesson Plans
 
-* [15.1 - Lesson Plan](01-Day/15.1-LESSON-PLAN.md)
-* [15.2 - Lesson Plan](02-Day/15.2-LESSON-PLAN.md)
-* [15.3 - Lesson Plan](03-Day/15.3-LESSON-PLAN.md)
+* [16.1 - Lesson Plan](01-Day/01-Day-LessonPlan.md)
+* [16.2 - Lesson Plan](02-Day/02-Day-LessonPlan.md)
+* [16.3 - Lesson Plan](03-Day/03-Day-LessonPlan.md)
 
 ### Project Resources
 Project-Resources/Slide-Shows
@@ -29,5 +29,5 @@ There is no homework for this week's lesson. However, there are certain tests st
 
 ### Slide Shows
 
-* [15.1 - Linting and Projects](https://docs.google.com/presentation/d/1DldswLqfUbnvidzyMLhmZUwYpwy_CXI0WPx5pMUuDZo/edit?usp=sharing)
-* [15.2 - Agile and Projects](https://docs.google.com/presentation/d/1WneP_OWJOsJ7ZVsp6_RjIZTZeK61GkqbVv6eS3Nn_oQ/edit?usp=sharing)
+* [16.1 - Linting and Projects](https://docs.google.com/presentation/d/1DldswLqfUbnvidzyMLhmZUwYpwy_CXI0WPx5pMUuDZo/edit?usp=sharing)
+* [16.2 - Agile and Projects](https://docs.google.com/presentation/d/1WneP_OWJOsJ7ZVsp6_RjIZTZeK61GkqbVv6eS3Nn_oQ/edit?usp=sharing)

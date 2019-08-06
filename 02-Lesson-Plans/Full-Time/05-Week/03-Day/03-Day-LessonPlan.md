@@ -469,6 +469,8 @@ node liri movie-this "A Space Odyssey"
 
 ### Lesson Plan Feedback
 
-How did today’s lesson go? Your feedback is important. Please take 5 minutes to complete this anonymous survey.
+How did today's class go?
 
-[Class Survey](https://forms.gle/nYLbt6NZUNJMJ1h38)
+[Went Well](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=ft&sentiment=positive&lesson=05.03)
+
+[Went Poorly](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=ft&sentiment=negative&lesson=05.03)

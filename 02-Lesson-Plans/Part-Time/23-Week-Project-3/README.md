@@ -6,9 +6,9 @@ In this week, students will begin working on their portfolios which will be due 
 
 ### Lesson Plans
 
-* [23.1 - Lesson Plan](01-Day/01-LESSON-PLAN.md)
-* [23.2 - Lesson Plan](02-Day/02-LESSON-PLAN.md)
-* [23.3 - Lesson Plan](03-Day/03-LESSON-PLAN.md)
+* [23.1 - Lesson Plan](01-Day/01-Day-LessonPlan.md)
+* [23.2 - Lesson Plan](02-Day/02-Day-LessonPlan.md)
+* [23.3 - Lesson Plan](03-Day/03-Day-LessonPlan.md)
 
 ### Helpful Links
 
