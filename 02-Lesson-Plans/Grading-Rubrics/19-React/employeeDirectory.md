@@ -1,8 +1,6 @@
 # Employee Directory
 
-![Cheerio Meme](images/cheerioMeme.jpg)
-
-### Statement of completion
+## Statement of completion
 
 Be subjective, grading & feedback should not take more than 5 minutes per assignment.
 
@@ -18,7 +16,7 @@ The deployed assignment utilizes React, React Router, and an API to display a di
 
 4. **Empty Repository**: Grade will be an I
 
-- - - 
+- - -
 
 ### Yes (A or B)
 
