@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const Example = require("./exampleModel.js");
 
-mongoose.connect("mongodb://localhost/schemaexample", { useNewUrlParser: true });
+mongoose.connect("mongodb://localhost/dbExample", { useNewUrlParser: true });
 
 const data = {
   array: ["item1", "item2", "item3"],

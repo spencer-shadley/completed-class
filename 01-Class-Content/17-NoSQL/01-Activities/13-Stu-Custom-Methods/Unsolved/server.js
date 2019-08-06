@@ -6,7 +6,7 @@ const mongoose = require("mongoose");
 
 const PORT = 3000;
 
-const User = require("./userModel.js");
+const User = require("./userModel.js.js");
 
 const app = express();
 
