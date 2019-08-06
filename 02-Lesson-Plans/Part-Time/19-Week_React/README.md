@@ -9,9 +9,9 @@ We'll go over key features of the framework: JSX, components, states, props, lif
 
 ### Lesson Plans
 
-* [19.1 - Lesson Plan](01-Day/01-LESSON-PLAN.md)
-* [19.2 - Lesson Plan](02-Day/02-LESSON-PLAN.md)
-* [19.3 - Lesson Plan](03-Day/03-LESSON-PLAN.md)
+* [19.1 - Lesson Plan](01-Day/01-Day-LessonPlan.md)
+* [19.2 - Lesson Plan](02-Day/02-Day-LessonPlan.md)
+* [19.3 - Lesson Plan](03-Day/03-Day-LessonPlan.md)
 
 ### Homework Activities
 

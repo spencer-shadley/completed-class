@@ -7,9 +7,9 @@ This week, we will discuss JavaScript's brand of OOP by introducing constructors
 
 ### Lesson Plans
 
-* [11.1 - Lesson Plan](01-Day/01-LESSON-PLAN.md)
-* [11.2 - Lesson Plan](02-Day/02-LESSON-PLAN.md)
-* [11.3 - Lesson Plan](03-Day/03-LESSON-PLAN.md)
+* [11.1 - Lesson Plan](01-Day/01-Day-LessonPlan.md)
+* [11.2 - Lesson Plan](02-Day/02-Day-LessonPlan.md)
+* [11.3 - Lesson Plan](03-Day/03-Day-LessonPlan.md)
 
 ### Homework Activities
 

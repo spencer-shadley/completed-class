@@ -7,9 +7,9 @@ In this week, we are starting working with databases by introducing MySQL and SQ
 
 ### Lesson Plans
 
-* [12.1 - Lesson Plan](01-Day/01-LESSON-PLAN.md)
-* [12.2 - Lesson Plan](02-Day/02-LESSON-PLAN.md)
-* [12.3 - Lesson Plan](03-Day/03-LESSON-PLAN.md)
+* [12.1 - Lesson Plan](01-Day/01-Day-LessonPlan.md)
+* [12.2 - Lesson Plan](02-Day/02-Day-LessonPlan.md)
+* [12.3 - Lesson Plan](03-Day/03-Day-LessonPlan.md)
 
 ### Homework Activities
 

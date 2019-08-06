@@ -336,6 +336,8 @@ TODO: Make four routes that display results from your zoo collection
 
 ### Lesson Plan Feedback
 
-How did today’s lesson go? Your feedback is important. Please take 5 minutes to complete this anonymous survey.
+How did today's class go?
 
-[Class Survey](https://forms.gle/nYLbt6NZUNJMJ1h38)
+[Went Well](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=ft&sentiment=positive&lesson=09.04)
+
+[Went Poorly](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=ft&sentiment=negative&lesson=09.04)
