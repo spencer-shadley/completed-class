@@ -6,9 +6,9 @@ This week, we will continue working with the React library and introduce final p
 
 ### Lesson Plans
 
-* [20.1 - Lesson Plan](01-Day/01-Day-LessonPlan.md)
-* [20.2 - Lesson Plan](02-Day/02-Day-LessonPlan.md)
-* [20.3 - Lesson Plan](03-Day/03-Day-LessonPlan.md)
+* [20.1 - Lesson Plan](01-Day/01-LESSON-PLAN.md)
+* [20.2 - Lesson Plan](02-Day/02-LESSON-PLAN.md)
+* [20.3 - Lesson Plan](03-Day/03-LESSON-PLAN.md)
 
 ### Homework Activities
 

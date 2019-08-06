@@ -6,11 +6,11 @@ This week's lesson plans will introduce students to the fundamental concepts and
 
 ### Lesson Plans
 
-* [22.1 - Lesson Plan](01-Day/01-Day-LessonPlan.md)
+* [22.1 - Lesson Plan](01-Day/01-LESSON-PLAN.md)
 
-* [22.2 - Lesson Plan](02-Day/02-Day-LessonPlan.md)
+* [22.2 - Lesson Plan](02-Day/02-LESSON-PLAN.md)
 
-* [22.3 - Lesson Plan](03-Day/03-Day-LessonPlan.md)
+* [22.3 - Lesson Plan](03-Day/03-LESSON-PLAN.md)
 
 ### Slide Shows
 
