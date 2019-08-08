@@ -28,7 +28,7 @@ For the time being we will use JavaScript to write _client_-side code, that is, 
 ## Comprehension Check
 You will be employer-ready if you can answer the following questions:
 1. What are five fundamental concepts of programming?
-2. What is object-oriented programming?
+2. What are objects in JavaScript and why are they important?
 3. What is a function?
 
 
@@ -48,4 +48,4 @@ You will be employer-competitive if you are able to:
 ## Helpful Links
 * [MDN: JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [MDN: JavaScript Basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
-* [Wikipedia: Object Oriented Programming](https://en.wikipedia.org/wiki/Object-oriented_programming)
+* [MDN: JavaScript Object Basics](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics)
