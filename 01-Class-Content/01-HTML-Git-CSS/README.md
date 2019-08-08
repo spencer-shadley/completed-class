@@ -54,9 +54,9 @@ You will be employer-competitive if you are able to:
 * Execute live deployment using GitHub Pages
 
 ## Homework
-* **Build Your Portfolio Page** (Recommended Homework): You will use your newly acquired web development skills to build a simple static site with HTML and CSS. You will take your site live by deploying it to GitHub Pages.
+* **Build Your Portfolio Page** (Recommended Homework): Build a simple static site with HTML and CSS. You will take your site live by deploying it to GitHub Pages.
 
-* **Build A Wireframe Layout** (Easier Homework): You will build a web design skeleton using HTML/CSS.
+* **Build A Wireframe Layout** (Easier Homework): Build a web design skeleton using HTML/CSS.
 
 ## Helpful Links
 * [Version Control](https://en.wikipedia.org/wiki/Version_control)

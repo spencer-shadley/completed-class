@@ -11,7 +11,7 @@ For the time being we will use JavaScript to write _client_-side code, that is, 
 * Code comments
 * console
 * Variables
-* Types
+* Data types
 * Booleans
 * Numbers
 * Strings
@@ -21,7 +21,7 @@ For the time being we will use JavaScript to write _client_-side code, that is, 
 * Logical, comparison and ternary operators
 * for and while loops
 * Functions
-* Alerts, confirms, prompts
+* Alerts, prompts, confirms
 * Global vs local scope
 * Objects
 
