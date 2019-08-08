@@ -41,9 +41,9 @@ You will be employer-competitive if you are able to:
 * Explain and implement the difference between function declarations and expressions
 * Explain and implement comparison and logical operators
 
-## Homework: JavaScript Games
+## Homework: Password Generator
 
-* Create one of two possible computer games: Word Guess or Psychic. These apps will run in the browser, and feature dynamically updated HTML and CSS powered by your JavaScript code.
+* Create an application that allows a user to generate a password that meets certain criteria (length, special characters, numeric characters, lowercase characters, and uppercase characters). This app will run in the browser and will feature dynamically updated HTML and CSS powered by your JavaScript code.
 
 ## Helpful Links
 * [MDN: JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
