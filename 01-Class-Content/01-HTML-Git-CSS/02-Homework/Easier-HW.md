@@ -12,25 +12,7 @@ In this assignment, you will build a web design skeleton using HTML/CSS. Your co
 
 * Just because this is the "easier" assignment does not make it the "quick" one. The process of learning web development is nothing without a serious time investment. While the work may seem strenuous now, you'll find yourself becoming more comfortable with web development as you put more hours into your training.
 
-### Commits
 
-Having an active and healthy commit history on GitHub is important for your future job search. It is also extremely important for making sure your work is saved in your repository. If something breaks, committing often ensures you are able to go back to a working version of your code.
-
-* Committing often is a signal to employers that you are actively working on your code and learning.
-
-  * We use the mantra “commit early and often.”  This means that when you write code that works, add it and commit it!
-
-  * Numerous commits allow you to see how your app is progressing and give you a point to revert to if anything goes wrong.
-
-* Be clear and descriptive in your commit messaging.
-
-  * When writing a commit message, avoid vague messages like "fixed." Be descriptive so that you and anyone else looking at your repository knows what happened with each commit.
-
-* We would like you to have well over 200 commits by graduation, so commit early and often!
-
-### Submission on BCS
-
-* Please submit the link to the Github Repository!
 
 ### Instructions
 
@@ -84,18 +66,77 @@ Having an active and healthy commit history on GitHub is important for your futu
 * Don't forget to review these concepts: `float`, `padding`, `margin`, `display`, `overflow`, `clear` and `text-align`.
 * This will be a tough assignment. Towards the end of the course, you'll look back to this exercise and realize just how much you've grown as a developer. Stay positive!
 
-### Reminder: Submission on BCS
 
-* Please submit the link to the Github Repository!
+
+# Unit 01 Introduction to Web Development, HTML, CSS and Git Homework (Easier): Building a Wireframe
+
+Create an application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code.
+
+The user will be prompted to choose from the following password criteria:
+
+* Length (must be between 8 and 128 characters)
+* Character type:
+  * Special characters
+  * Numeric characters
+  * Lowercase characters
+  * Uppercase characters
+
+The application should validate user input and ensure that at least one character type is selected.
+
+The user will also have the option to click on a button and copy the password to their clipboard.
+
+![password generator demo](./Assets/03-JavaScript-homework-demo.png).
+
+## User Story
+
+AS AN employee with access to sensitive data
+
+I WANT to randomly generate a password that meets certain criteria
+
+SO THAT I can create a strong password that provides greater security
+
+## Business Context
+
+For companies that handle large amounts of sensitive data, weak passwords can pose a real security threat. An application that can generate strong passwords quickly and effortlessly will save employees time and ensure secure access to data.
+
+## Acceptance Criteria
+
+GIVEN a user needs a new, secure password
+
+WHEN prompted for password criteria
+
+THEN a password is generated
 
 - - -
 
-### Minimum Requirements
+## Commit Early and Often
 
-Attempt to complete homework assignment as described in instructions. If unable to complete certain portions, please pseudocode these portions to describe what remains to be completed.
+One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
 
-- - -
+* Your commit history is a signal to employers that you are actively working on projects and learning new skills.
 
-### One More Thing
+* Your commit history allows you to revert your code base in the event that you need to return to a previous state.
 
-If you have any questions about this project or the material we have covered, please post them in the community channels in slack so that your fellow developers can help you! If you're still having trouble, you can come to office hours for assistance from your instructor and TAs.
+Follow these guidelines for committing:
+
+* Make single-purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits.
+
+* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history.
+
+* Don't commit half-done work, for the sake of your collaborators (and your future self!).
+
+* Test your application before you commit to ensure functionality at every step in the development process.
+
+We would like you to have well over 200 commits by graduation, so commit early and often!
+
+## Submission on BCS
+
+You are required to submit the following:
+
+* The URL of the deployed application
+
+* The URL of the GitHub repository
+
+---
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+
