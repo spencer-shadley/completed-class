@@ -1,11 +1,11 @@
 # Unit 02 CSS and Bootstrap Homework: Responsive Portfolio
 
-Responsive design ensures that web applications render well on a variety of devices and window or screen sizes.  In this homework assignment, your challenge is twofold: build a responsive portfolio using Bootstrap and convert a non-responsive site into a responsive portfolio.
+Responsive design ensures that web applications render well on a variety of devices and window or screen sizes. As a developer, you will likely be asked to create a mobile-first application or add responsive design to an existing application. In this homework assignment, your challenge is twofold: build a responsive portfolio using Bootstrap and convert a non-responsive site into a responsive portfolio.
 
 
 ## Instructions
 
-If you opted to do the wireframe (easier) assignment for last homework or if you struggled with the portfolio design, ask a member of the instructional staff to provide you with the solution files. This will provide a starting point for the current assignment.
+If you opted to do the wireframe (easier) assignment for the last homework or if you struggled with the portfolio design, ask a member of the instructional staff to provide you with the solution files. This will provide a starting point for the current assignment.
 
 Create two different versions of a portfolio:
 
@@ -36,8 +36,6 @@ How do you deliver this? Here are some guidelines:
    * Responsive images
 
 * The Bootstrap portfolio should minimize use of media queries.
-
-![](./Assets/04-web-APIs-homework-demo.gif)
 
 
 ### Hints
@@ -130,9 +128,9 @@ We would like you to have well over 200 commits by graduation, so commit early a
 
 You are required to submit the following:
 
-* The URL of the deployed application
+* The URLs of the deployed applications
 
-* The URL of the GitHub repository
+* The URLs of the GitHub repositories
 
 
 ---
