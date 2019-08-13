@@ -1,4 +1,4 @@
-# Unit 01 Introduction to Web Development, HTML, CSS and Git Homework (Recommended): Portfolio
+# Unit 01 HTML, CSS and Git Homework (Recommended): Portfolio
 
 Build a professional portfolio site using HTML/CSS using the following specifications and style guide.
 

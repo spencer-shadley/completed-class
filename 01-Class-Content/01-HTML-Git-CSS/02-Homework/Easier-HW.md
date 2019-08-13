@@ -1,40 +1,23 @@
-## Easier Assignment - Building a Wireframe
+# Unit 01 HTML, CSS and Git Homework (Easier): Building a Wireframe
 
-### Overview
+_If you see this task as too simple or if you finish it within three hours, attempt the second homework assignment._
 
-In this assignment, you will build a web design skeleton using HTML/CSS. Your completed work should look just like the image below:
+Build a web design skeleton using HTML/CSS.
 
-![Final Layout](./Assets/Images/Easier-Layout.png)
+* Create a new GitHub repository and clone it to your computer.
 
-### Student Notes
+* Inside the repo folder on your computer, create the following files: `index.html` and `style.css`.
 
-* This exercise will challenge most students unfamiliar with HTML/CSS. If you see this task as too simple or if you finish it within three hours, attempt the second homework assignment.
+* Recreate the design below using HTML/CSS:
 
-* Just because this is the "easier" assignment does not make it the "quick" one. The process of learning web development is nothing without a serious time investment. While the work may seem strenuous now, you'll find yourself becoming more comfortable with web development as you put more hours into your training.
+![final layout](./Assets/Images/Easier-Layout.png)
 
+* All of your HTML should be inside of the `index.html` file.
 
+* All of your CSS should be inside of the `style.css` file.
 
-### Instructions
+* Your HTML should have each of the following sections:
 
-1. Create a new repository in GitHub called `HW-Wireframe`.
-2. Clone this repository to your computer by following the process we went over in class.
-3. Navigate to the `HW-Wireframe` folder you just cloned onto your machine. Then create two files inside this folder: `index.html` and `style.css`.
-4. Make your initial Git commit and push it to GitHub.
-   * `git add .`
-   * `git commit -m "<COMMENT>"`
-   * `git push origin master`
-   * If this process was done correctly, you should see these two files appear in your repository. This will be your initial test to confirm that you're hooked into GitHub.
-5. Return to your local copies of `index.html` and `style.css`. Using the screenshot at the top of these instructions, recreate the design using HTML/CSS.
-   * All of your HTML should be inside of the `index.html` file.
-   * All of your CSS should be inside of the `style.css` file.
-6. When you finish the assignment, commit your changes with Git and push them into your GitHub repo. Remember:
-   * `git add .`
-   * `git commit -m "<COMMENT>"`
-   * `git push origin master`
-
-### Additional Specifications
-
-1. Your HTML should have each of the following sections:
    * Header
    * Nav
    * Aside (With a Heading)
@@ -42,7 +25,9 @@ In this assignment, you will build a web design skeleton using HTML/CSS. Your co
    * Article (With a Heading) contained within the Section
    * Headers contained within the Article
    * Paragraph contained within the Article
-2. Your CSS should have styles for each of the following elements:
+
+* Your CSS should have styles for each of the following elements:
+
    * Body
      * font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
      * color: '#777'
@@ -57,55 +42,31 @@ In this assignment, you will build a web design skeleton using HTML/CSS. Your co
    * h1 and p
      * color: '#777',
      * background: '#ebebeb'
-3. The width of the section should be:
+     
+* The width of the section should be:
    * section: 495px
 
-### Helpful Hints
-
-* For a refresher on working with Git and GitHub, consult the GitHub Supplemental Guide we sent you in class.
-* Don't forget to review these concepts: `float`, `padding`, `margin`, `display`, `overflow`, `clear` and `text-align`.
-* This will be a tough assignment. Towards the end of the course, you'll look back to this exercise and realize just how much you've grown as a developer. Stay positive!
-
-
-
-# Unit 01 Introduction to Web Development, HTML, CSS and Git Homework (Easier): Building a Wireframe
-
-Create an application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code.
-
-The user will be prompted to choose from the following password criteria:
-
-* Length (must be between 8 and 128 characters)
-* Character type:
-  * Special characters
-  * Numeric characters
-  * Lowercase characters
-  * Uppercase characters
-
-The application should validate user input and ensure that at least one character type is selected.
-
-The user will also have the option to click on a button and copy the password to their clipboard.
-
-![password generator demo](./Assets/03-JavaScript-homework-demo.png).
+* Review these concepts: `float`, `padding`, `margin`, `display`, `overflow`, `clear` and `text-align`.
 
 ## User Story
 
-AS AN employee with access to sensitive data
+AS A web developer
 
-I WANT to randomly generate a password that meets certain criteria
+I WANT to create a wireframe
 
-SO THAT I can create a strong password that provides greater security
+SO THAT I can visualize the layout for an application
 
 ## Business Context
 
-For companies that handle large amounts of sensitive data, weak passwords can pose a real security threat. An application that can generate strong passwords quickly and effortlessly will save employees time and ensure secure access to data.
+Wireframes are created early in the development process to help visualize the layout of an application before design and content are added. A wireframe provides a blueprint for a website that a developer can review with a client. This also allows a developer to make changes to the structure of a website before an application moves forward.
 
 ## Acceptance Criteria
 
-GIVEN a user needs a new, secure password
+GIVEN a developer creates a skeletal framework
 
-WHEN prompted for password criteria
+WHEN building a wireframe
 
-THEN a password is generated
+THEN they are able to visualize the layout for an application
 
 - - -
 
@@ -139,4 +100,3 @@ You are required to submit the following:
 
 ---
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
-
