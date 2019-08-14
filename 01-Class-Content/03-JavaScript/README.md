@@ -43,7 +43,7 @@ You will be employer-competitive if you are able to:
 
 ## Homework: Password Generator
 
-* Create an application that allows a user to generate a password that meets certain criteria (length, special characters, numeric characters, lowercase characters, and uppercase characters). This app will run in the browser and will feature dynamically updated HTML and CSS powered by your JavaScript code.
+Create an application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code.
 
 ## Helpful Links
 * [MDN: JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)

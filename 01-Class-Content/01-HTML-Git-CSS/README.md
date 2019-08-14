@@ -54,7 +54,7 @@ You will be employer-competitive if you are able to:
 * Execute live deployment using GitHub Pages
 
 ## Homework
-* **Portfolio** (Recommended Homework): Build a simple static site with HTML and CSS. You will take your site live by deploying it to GitHub Pages.
+* **Portfolio** (Recommended Homework): Build a professional portfolio site using HTML/CSS following a set of specifications and a style guide.
 
 * **Building A Wireframe** (Easier Homework): Build a web design skeleton using HTML/CSS.
 

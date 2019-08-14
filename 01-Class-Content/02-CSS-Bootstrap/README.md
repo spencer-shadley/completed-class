@@ -43,12 +43,14 @@ You will be employer-competitive if you are able to:
 * Add custom styling to a CSS framework
 * Deploy to GitHub pages
 
-## Homework: Responsiveness Assignment
+## Homework: Responsive Portfolio
 
-In this assignment, you'll create two different portfolios:
+Create two different versions of a portfolio:
 
-* Build your portfolio using the Bootstrap CSS Framework.
-* Enhance the portfolio you made last unit with a mobile-responsive layout.
+* For the first version, use the Bootstrap CSS Framework to create your portfolio.
+
+* For the second version, enhance the portfolio you made last unit with a mobile-responsive layout.
+
 
 ## Helpful Links
 

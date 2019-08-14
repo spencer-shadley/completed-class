@@ -29,13 +29,10 @@ You will be employer-competitive if you are able to:
 * Implement interactivity using event handlers
 * Explain the importance of document.ready() and how to resolve issues related to dynamically generated HTML
 
-## Homework
-**Crystal Collector: Recommended**
-* In this assignment, you'll create another fun and interactive game for web browsers. This time, your app must dynamically update your HTML pages with the jQuery library.
-
-**Star Wars RPG: Challenge**
-* In this assignment, you'll create another fun and interactive game for web browsers. This time, your app must dynamically update your HTML pages with the jQuery library.
+## Homework: Day Planner
+Create a simple calendar application that allows the user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 
 ## Helpful Links
+[MDN: jQuery](https://developer.mozilla.org/en-US/docs/Glossary/jQuery)
 [Wikipedia: jQuery](https://en.wikipedia.org/wiki/JQuery)
 [jQuery Official Website](https://jquery.com/)
