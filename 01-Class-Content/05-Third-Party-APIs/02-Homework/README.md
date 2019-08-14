@@ -2,20 +2,21 @@
 
 Create a simple calendar application that allows the user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 
-<!-- The user will be prompted to choose from the following password criteria:
+The app should display standard business hours (9am-5pm). Each time slot should represent one hour and contain the following:
 
-* Length (must be between 8 and 128 characters)
-* Character type:
-  * Special characters
-  * Numeric characters
-  * Lowercase characters
-  * Uppercase characters
+* the time
 
-The application should validate user input and ensure that at least one character type is selected.
+* a field to hold user input
 
-The user will also have the option to click on a button and copy the password to their clipboard.
+* a save button
 
-![password generator demo](./Assets/03-JavaScript-homework-demo.png). -->
+Clicking on the save button will store the time and user input in localstorage.
+
+Near the top of the calendar, the application should display the current day. Additionally, each hour should be color coded to reflect whether the time slot is in the past, the present, or the future. This will change depending on the time of day.
+
+
+
+![password generator demo](./Assets/03-JavaScript-homework-demo.png).
 
 ## User Story
 
@@ -27,15 +28,15 @@ SO THAT I can manage my time effectively
 
 ## Business Context
 
-For companies that handle large amounts of sensitive data, weak passwords can pose a real security threat. An application that can generate strong passwords quickly and effortlessly will save employees time and ensure secure access to data.
+Poor time management can result in missed meetings and deadlines and create the appearance of unprofessionalism. A daily planner allows employees to see their day at a glance, schedule time effectively, and improve productivity. 
 
 ## Acceptance Criteria
 
-GIVEN an employee needs to plan out their day
+GIVEN an employee adds events to a specific hour in a calendar
 
-WHEN prompted for password criteria
+WHEN the employee clicks the save button
 
-THEN a password is generated
+THEN events are saved to that hour
 
 - - -
 
