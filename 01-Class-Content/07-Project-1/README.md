@@ -20,9 +20,10 @@ You will be employer-competitive if you are able to:
 * Explain and execute git branching workflow in a collaborative project
 * Resolve merge conflicts
 * Explain agile software development
-* Design, build and deploy a client-side web application using GitHub Pages
+* Design, build, and deploy a client-side web application using GitHub Pages
 * Prepare a professional presentation and repository README for your project
 
 ## Helpful Links
 * [Agile Methodology](https://en.wikipedia.org/wiki/Agile_software_development)
 * [Git Branching](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)
+* [Learn Enough Git to Be Dangerous](https://www.learnenough.com/git-tutorial/getting_started)
