@@ -15,6 +15,8 @@ The application should validate user input and ensure that at least one characte
 
 The user will also have the option to click on a button and copy the password to their clipboard.
 
+Your application should also be responsive, ensuring that it adapts to multiple screen sizes.
+
 ![password generator demo](./Assets/03-JavaScript-homework-demo.png)
 
 ## User Story

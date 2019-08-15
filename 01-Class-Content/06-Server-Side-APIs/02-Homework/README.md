@@ -5,7 +5,7 @@ Developers are often tasked with retrieving data from another application's API 
 
 ## Instructions
 
-From scratch, build a weather dashboard application with search functionality to find the weather outlook for multiple cities. Following the [common templates for user stories](https://en.wikipedia.org/wiki/User_story#Common_templates), we can frame this challenge as follows:
+Build a weather dashboard application with search functionality to find current weather conditions and the future weather outlook for multiple cities. Following the [common templates for user stories](https://en.wikipedia.org/wiki/User_story#Common_templates), we can frame this challenge as follows:
 
 ```
 As a traveler
@@ -17,12 +17,36 @@ How do you deliver this? Here are some guidelines:
 
 * Use the [OpenWeather API](https://openweathermap.org/api) to retrieve weather data for cities. The documentation includes a section called How to start that will provide basic setup and usage instructions.
 
+* Use AJAX to hook into the API to retrieve data in JSON format.
+
 * Your app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 
-* Include a search history so that users can access their past searches.
+* Display the following under current weather conditions:
+
+  * City
+
+  * Date
+
+  * Icon image (visual representation of weather conditions)
+
+  * Temperature
+
+  * Humidity
+
+  * Wind speed
+
+  * UV index
+
+* Include a search history so that users can access their past search terms. Clicking on the city name should perform a new search that returns current and future conditions for that city. 
+
+* Include a 5-Day Forecast below the current weather conditions.
+
+![weather dashboard](./Assets/06-Server-Side-APIs-homework-demo.png)
 
 
 ### Hints
+
+* You will need to hard-code some of the parameters in the API's URL. User input will determine some of the other parameters. 
 
 * Use `localStorage` to store any persistent data.
 
