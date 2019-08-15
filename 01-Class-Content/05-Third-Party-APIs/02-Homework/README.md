@@ -10,13 +10,13 @@ The app should display standard business hours (9am-5pm). Each time slot should 
 
 * a save button
 
-Clicking on the save button will store the time and user input in localstorage.
+Clicking on the save button will store the time and user input in `localStorage`.
 
 Near the top of the calendar, the application should display the current day. Additionally, each hour should be color coded to reflect whether the time slot is in the past, the present, or the future. This will change depending on the time of day.
 
+You'll need to use the [Moment.js](https://momentjs.com/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
 
-
-![password generator demo](./Assets/03-JavaScript-homework-demo.png).
+![day planner demo](./Assets/05-Third-Party-APIs-homework-demo.png)
 
 ## User Story
 
@@ -28,7 +28,7 @@ SO THAT I can manage my time effectively
 
 ## Business Context
 
-Poor time management can result in missed meetings and deadlines and create the appearance of unprofessionalism. A daily planner allows employees to see their day at a glance, schedule time effectively, and improve productivity. 
+Poor time management can result in missed meetings and deadlines or create the appearance of unprofessionalism. A daily planner allows employees to see their day at a glance, schedule time effectively, and improve productivity. 
 
 ## Acceptance Criteria
 
