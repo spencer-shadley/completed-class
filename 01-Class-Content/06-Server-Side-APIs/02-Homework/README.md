@@ -15,7 +15,7 @@ so that I can plan a trip accordingly
 
 How do you deliver this? Here are some guidelines:
 
-* Use the [OpenWeather API](https://openweathermap.org/api) to retrieve weather data for cities. The documentation includes a section called How to start that will provide basic setup and usage instructions.
+* Use the [OpenWeather API](https://openweathermap.org/api) to retrieve weather data for cities. The documentation includes a section called "How to start" that will provide basic setup and usage instructions.
 
 * Use AJAX to hook into the API to retrieve data in JSON format.
 
@@ -39,18 +39,36 @@ How do you deliver this? Here are some guidelines:
 
 * Include a search history so that users can access their past search terms. Clicking on the city name should perform a new search that returns current and future conditions for that city. 
 
-* Include a 5-Day Forecast below the current weather conditions.
+* Include a 5-Day Forecast below the current weather conditions. Each day for the 5-Day Forecast should display the following:
+
+  * Date
+
+  * Icon image (visual representation of weather conditions)
+
+  * Temperature
+
+  * Humidity
 
 ![weather dashboard](./Assets/06-Server-Side-APIs-homework-demo.png)
 
 
 ### Hints
 
-* You will need to hard-code some of the parameters in the API's URL. User input will determine some of the other parameters. 
+* Create multiple functions within your application to handle the different parts of the dashboard:
+
+  * Current conditions
+  
+  * 5-Day forecast
+  
+  * Search history
+
+  * UV index
+
+* You will need to make more than one AJAX call.
+
+* You will need to hard-code some of the parameters in the API's URL. User input will determine some of the other parameters.
 
 * Use `localStorage` to store any persistent data.
-
-
 
 
 ## Minimum Requirements
