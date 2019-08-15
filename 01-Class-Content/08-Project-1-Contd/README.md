@@ -10,11 +10,9 @@ If you are opting out of career services, this is *still a required assignment*.
 
 * Pin some repos that you want to share
 
-  * Navigate to your [GitHub Profile](https://github.com/USERNAME?tab=repositories)
+  * Navigate to [GitHub](https://github.com/) and go to your profile.
 
-  * Click "Customize your pinned repositories"
-
-  * Click the "Repositories you contribute to" checkbox (this will allow you to "pin" Project 1 even if you aren't the "owner")
+  * Click "Customize your pins"
 
   * Click the checkboxes for your project and 2-3 homework assignments that you would like to share
 
@@ -40,17 +38,17 @@ Your updated site should have the following content:
 
 * A link to a PDF of your resume
 
-* List of projects. For each project make sure you have the following:
+* A list of projects. For each project, make sure you have the following:
 
   * Project title
 
   * Link to the deployed version
 
-  * Link to the code on GitHub
+  * Link to the GitHub repository
 
 #### Design
 
-The content of your portfolio page is a lot more important than the aesthetics. That said, there are a couple basic requirements your portfolio page should meet:
+The content of your portfolio page is a lot more important than the aesthetics. That said, there are a couple of basic requirements your portfolio page should meet:
 
 * Mobile-friendliness: you don't need advanced responsive styles, but you should ensure that your portfolio page is still readable on different screen sizes
 
