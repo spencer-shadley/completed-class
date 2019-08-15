@@ -15,14 +15,18 @@ so that I can plan a trip accordingly
 
 How do you deliver this? Here are some guidelines:
 
-* 
+* Use the [OpenWeather API](https://openweathermap.org/api) to retrieve weather data for cities. The documentation includes a section called How to start that will provide basic setup and usage instructions.
 
+* Your app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 
+* Include a search history so that users can access their past searches.
 
 
 ### Hints
 
-* Store your questions as an array of objects in a separate file, `questions.js`, following this format:
+* Use `localStorage` to store any persistent data.
+
+
 
 
 ## Minimum Requirements
@@ -34,7 +38,7 @@ How do you deliver this? Here are some guidelines:
 
 ## Bonus
 
-* 
+* Use the [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API) to add the user's current location to the initial landing page.
 
 * Add the application to your portfolio.
 

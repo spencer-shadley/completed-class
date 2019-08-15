@@ -27,7 +27,7 @@ How do you deliver this? Here are some guidelines:
 
 * Refer to the animated GIF in `Assets` for a demonstration of the application functionality.
 
-![](./Assets/04-web-APIs-homework-demo.gif)
+![code quiz](./Assets/04-Web-APIs-homework-demo.gif)
 
 
 ### Hints
