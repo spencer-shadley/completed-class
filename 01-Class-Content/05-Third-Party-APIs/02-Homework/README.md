@@ -36,7 +36,7 @@ GIVEN an employee adds events to a specific hour in a calendar
 
 WHEN the employee clicks the save button
 
-THEN events are saved to that hour
+THEN events are saved in the timeslot for that hour
 
 - - -
 
