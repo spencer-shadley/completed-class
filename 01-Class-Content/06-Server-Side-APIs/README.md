@@ -26,12 +26,12 @@ You will be employer-competitive if you are able to:
 * Explain the benefits and challenges of working with asynchronous JavaScript
 * Explain and execute callbacks to handle asynchronous HTTP requests
 
-## Homework: Giphy Viewer
-* In this assignment, you'll use the GIPHY API to make a dynamic web page that populates with gifs of your choice. To finish this task, you must call the GIPHY API and use JavaScript and jQuery to change the HTML of your site.
+## Homework: Weather Dashboard
+Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Third party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. In this homework assignment, your challenge is to build a weather dashboard using the OpenWeather API.
 
 ## Helpful Links
+* [MDN: AJAX - Getting Started](https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started)
 * [Wikipedia: Web API](https://en.wikipedia.org/wiki/Web_API)
 * [Wikipedia: AJAX](https://en.wikipedia.org/wiki/Ajax_(programming))
 * [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest)
 * [jQuery](https://api.jquery.com/)
-* [Mozilla AJAX Getting Started](https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started)
