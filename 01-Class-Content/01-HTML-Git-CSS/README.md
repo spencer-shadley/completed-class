@@ -1,4 +1,4 @@
-# Unit 1: Introduction to Web Development, HTML, CSS, and Git
+# Unit 01: Introduction to Web Development, HTML, CSS, and Git
 
 ## Overview
 Congratulations! This is the first step in your journey towards a career in full-stack web development. There are many paths that you can take in this field and this unit is the foundation for all of them. Every full-stack web developer must master HTML and CSS, as well as learn how to program browsers, servers, and databases. 
@@ -47,7 +47,7 @@ You will be employer-ready if you can answer the following questions:
 
 ## Learning Objectives
 You will be employer-competitive if you are able to:
-* Build and style static webpages with semantic HTML & CSS
+* Build and style static webpages with semantic HTML and CSS
 * Implement best practices and standards when structuring HTML files using nested elements, indentation, comments, and line breaks
 * Implement CSS styling via class, id and element selectors using external stylesheets, inline styles and embedded style tags
 * Explain the "cascading" in Cascading Style Sheets and implement the box model for HTML elements
@@ -56,9 +56,9 @@ You will be employer-competitive if you are able to:
 * Execute live deployment using GitHub Pages
 
 ## Homework
-* **Portfolio** (Recommended Homework): Build a professional portfolio site using HTML/CSS following a set of specifications and a style guide.
+* **Portfolio** (Recommended Homework): Build a professional portfolio site using HTML and CSS following a set of specifications and a style guide.
 
-* **Building A Wireframe** (Easier Homework): Build a web design skeleton using HTML/CSS.
+* **Build a Wireframe** (Easier Homework): Build a web design skeleton using HTML and CSS.
 
 ## Helpful Links
 * [Version Control](https://en.wikipedia.org/wiki/Version_control)
@@ -66,3 +66,7 @@ You will be employer-competitive if you are able to:
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 * [Pro Git](https://git-scm.com/book/en/v2)
 * [Dev Docs](https://devdocs.io/)
+
+
+---
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

@@ -1,4 +1,4 @@
-# Unit 2: CSS and Bootstrap
+# Unit 02: CSS and Bootstrap
 
 ## Overview
 When web developers find themselves repeating a task, they will often look for programmatic solutions. A prime example is setting up boilerplate HTML and CSS. In the previous unit, you built and deployed a simple portfolio site. Now, imagine you were building portfolios for a list of clients. An efficient approach to this scenario would be to create a master stylesheet and customize copies of it for each individual portfolio. In doing so, you would be implementing a simple CSS framework. 
@@ -48,7 +48,6 @@ You will be employer-competitive if you are able to:
 Create two different versions of a portfolio:
 
 * For the first version, use the Bootstrap CSS Framework to create your portfolio.
-
 * For the second version, enhance the portfolio you made last unit with a mobile-responsive layout.
 
 
@@ -60,3 +59,6 @@ Create two different versions of a portfolio:
 * [!important](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
 * [CDN (wikipedia)](https://en.wikipedia.org/wiki/Content_delivery_network)
 * [GitHub Pages](https://pages.github.com/)
+
+---
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

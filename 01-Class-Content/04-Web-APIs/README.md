@@ -40,7 +40,7 @@ You will be employer-competitive if you are able to:
 
 
 ## Homework: Code Quiz
-As you proceed in your career as a web developer, you will most likely be asked to complete a coding assessment. These assessments are typically a combination of multiple-choice questions and interactive coding challenges. In this homework assignment, your challenge is to build a code quiz of multiple-choice questions.
+As you proceed in your career as a web developer, you will probably be asked to complete a coding assessment. These assessments are typically a combination of multiple-choice questions and interactive coding challenges. In this homework assignment, your challenge is to build a code quiz of multiple-choice questions.
 
 
 ## Helpful Links

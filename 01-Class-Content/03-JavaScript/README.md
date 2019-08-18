@@ -1,4 +1,4 @@
-# Unit 3: JavaScript
+# Unit 03: JavaScript
 
 ## Overview
 We’ve reached an important milestone in our journey: learning to code. This unit will introduce you to the fundamental programming concepts required to solve any computational problem. While the focus of this course is JavaScript, these fundamental concepts can be applied to any programming language. After gaining mastery of JavaScript, it will be relatively easy to learn a second (or third… or fourth...) language.
@@ -49,3 +49,6 @@ Create an application that generates a random password based on user-selected cr
 * [MDN: JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [MDN: JavaScript Basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
 * [MDN: JavaScript Object Basics](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics)
+
+---
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
