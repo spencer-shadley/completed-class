@@ -32,7 +32,7 @@ How do you deliver this? Here are some guidelines:
 
 ### Hints
 
-* Store your questions as an array of objects in a separate file, `questions.js`, following this format:
+* Store your questions as an array of objects in a separate file, `questions.js`, that follows this format:
 
 ```js
 var questions = [
@@ -77,7 +77,7 @@ One of the most important skills to master as a web developer is version control
 
 * Your commit history is a signal to employers that you are actively working on projects and learning new skills.
 
-* Your commit history allows you to revert your code base in the event that you need to return to a previous state.
+* Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
 
 Follow these guidelines for committing:
 

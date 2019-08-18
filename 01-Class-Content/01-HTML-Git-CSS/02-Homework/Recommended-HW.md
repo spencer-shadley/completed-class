@@ -2,7 +2,7 @@
 
 Build a professional portfolio site using HTML and CSS following a set of specifications and a style guide.
 
-## Specifications
+## Instructions
 
 * Create a new GitHub repository and clone it to your computer.
 
@@ -51,8 +51,8 @@ Build a professional portfolio site using HTML and CSS following a set of specif
    * Main content border color: `#dddddd`
 
 * Fonts:
-   * For heading fonts use `font-family: 'Georgia', Times, 'Times New Roman', serif;`.
-   * For all other fonts use `'Arial', 'Helvetica Neue', Helvetica, sans-serif;`.
+   * For heading fonts use `font-family: 'Georgia', Times, 'Times New Roman', serif;`
+   * For all other fonts use `'Arial', 'Helvetica Neue', Helvetica, sans-serif;`
 
 * Profile image in `index.html`:
    * Use a picture of yourself.
@@ -94,7 +94,7 @@ A portfolio is often the first point of contact for employers looking to fill a 
 
 ## Acceptance Criteria
 
-GIVEN an employer or client wants to hire a developer
+GIVEN that an employer or client wants to hire a developer
 
 WHEN viewing their portfolio
 
@@ -108,7 +108,7 @@ One of the most important skills to master as a web developer is version control
 
 * Your commit history is a signal to employers that you are actively working on projects and learning new skills.
 
-* Your commit history allows you to revert your code base in the event that you need to return to a previous state.
+* Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
 
 Follow these guidelines for committing:
 
@@ -128,5 +128,5 @@ You are required to submit the following:
 
 * The URL of the GitHub repository
 
-   ---
-   © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+---
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

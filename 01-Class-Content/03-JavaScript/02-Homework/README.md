@@ -1,19 +1,26 @@
 # Unit 03 JavaScript Homework: Password Generator
 
+## Instructions
+
 Create an application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code.
 
 The user will be prompted to choose from the following password criteria:
 
 * Length (must be between 8 and 128 characters)
+
 * Character type:
+
   * Special characters
+
   * Numeric characters
+
   * Lowercase characters
+
   * Uppercase characters
 
 The application should validate user input and ensure that at least one character type is selected.
 
-The user will also have the option to click on a button and copy the password to their clipboard.
+The user will also have the option to click a button to copy the password to their clipboard.
 
 ![password generator demo](./Assets/03-JavaScript-homework-demo.png).
 
@@ -27,11 +34,11 @@ SO THAT I can create a strong password that provides greater security
 
 ## Business Context
 
-For companies that handle large amounts of sensitive data, weak passwords can pose a real security threat. An application that can generate strong passwords quickly and effortlessly will save employees time and ensure secure access to data.
+For companies that handle large amounts of sensitive data, weak passwords can pose a real security threat. An application that can generate strong passwords quickly and effortlessly saves employees time and ensures secure access to data.
 
 ## Acceptance Criteria
 
-GIVEN a user needs a new, secure password
+GIVEN that a user needs a new, secure password
 
 WHEN prompted for password criteria
 
@@ -45,7 +52,7 @@ One of the most important skills to master as a web developer is version control
 
 * Your commit history is a signal to employers that you are actively working on projects and learning new skills.
 
-* Your commit history allows you to revert your code base in the event that you need to return to a previous state.
+* Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
 
 Follow these guidelines for committing:
 
@@ -67,6 +74,6 @@ You are required to submit the following:
 
 * The URL of the GitHub repository
 
-- - -
+---
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
 

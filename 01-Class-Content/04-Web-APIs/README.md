@@ -9,9 +9,7 @@ We will look at a few of the most important Web APIs in this unit, beginning wit
 
 
 ## Key Topics
-
-The following key topics will be covered in this unit:
-
+The following topics will be covered in this unit:
 * Web APIs and interfaces
 * Timers
 * Document Object Model (DOM)

@@ -1,6 +1,8 @@
 # Unit 01 HTML, CSS, and Git Homework (Easier): Build a Wireframe
 
-_If you see this task as too simple or if you finish it within three hours, attempt the second homework assignment._
+_**Note:** If you see this task as too simple or if you finish it within three hours, attempt the second homework assignment._
+
+## Instructions
 
 Build a web design skeleton using HTML/CSS.
 
@@ -62,7 +64,7 @@ Wireframes are created early in the development process to help visualize the la
 
 ## Acceptance Criteria
 
-GIVEN a developer creates a skeletal framework
+GIVEN that a developer creates a skeletal framework
 
 WHEN building a wireframe
 
@@ -76,7 +78,7 @@ One of the most important skills to master as a web developer is version control
 
 * Your commit history is a signal to employers that you are actively working on projects and learning new skills.
 
-* Your commit history allows you to revert your code base in the event that you need to return to a previous state.
+* Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
 
 Follow these guidelines for committing:
 

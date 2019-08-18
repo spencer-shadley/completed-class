@@ -1,15 +1,16 @@
 # Unit 03: JavaScript
 
 ## Overview
-We’ve reached an important milestone in our journey: learning to code. This unit will introduce you to the fundamental programming concepts required to solve any computational problem. While the focus of this course is JavaScript, these fundamental concepts can be applied to any programming language. After gaining mastery of JavaScript, it will be relatively easy to learn a second (or third… or fourth...) language.
+We’ve reached an important milestone in our journey: learning to code. This unit will introduce you to the fundamental programming concepts that are required to solve any computational problem. Though the focus of this course is JavaScript, the programming concepts you learn can be applied to any programming language. After you master JavaScript, it will be relatively easy to learn a second (or third or fourth) language.
 
-For our web applications to be interactive, we need a means for responding to user actions in the browser. JavaScript is _the_ programming language of the web. Every major browser, such as Firefox or Chrome, ships with a built-in JavaScript engine that runs our code for us. JavaScript allows us to dynamically generate HTML and CSS based on predetermined conditions or user input.
+In order for our web applications to be interactive, we need a way to respond to user actions in the browser. That's where JavaScript comes in. JavaScript is _the_ programming language of the web. It allows us to dynamically generate HTML and CSS based on predetermined conditions or user input. And every major browser, such as Firefox or Chrome, ships with a built-in JavaScript engine that runs our code for us. 
 
-For the time being we will use JavaScript to write _client_-side code, that is, programs that will only run in the browser. In future units, we will use JavaScript to write applications to be run and deployed on servers.
+For the time being, we'll use JavaScript to write client-side code; that is, programs that only run in the browser. In later units, we'll use JavaScript to write applications to be run and deployed on servers.
 
 ## Key Topics
+The following topics are covered in this unit:
 * Code comments
-* console
+* Console
 * Variables
 * Data types
 * Booleans
@@ -18,11 +19,11 @@ For the time being we will use JavaScript to write _client_-side code, that is, 
 * Arrays
 * Conditional statements
 * Equality
-* Logical, comparison and ternary operators
+* Logical, comparison, and ternary operators
 * for and while loops
 * Functions
-* Alerts, prompts, confirms
-* Global vs local scope
+* Alerts, prompts, and confirms
+* Global vs. local scope
 * Objects
 
 ## Comprehension Check
