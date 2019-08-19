@@ -24,4 +24,10 @@
     
     * The entries for all the Mac users in your row. 
 
-**BONUS:** If you finish early, check out the MongoDB documentation and figure out how to find users by an entry in an array.
+## 💡 Hint(s)
+
+* Use the [Mongo guides](https://docs.mongodb.com/guides/) if you are stuck.
+
+## 🏆 Bonus 
+
+* If you finish early, check out the MongoDB documentation and figure out how to find users by an entry in an array.

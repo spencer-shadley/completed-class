@@ -28,21 +28,21 @@ app.get("/", (req, res) => {
 app.post("/submit", (req, res) => {
   console.log(req.body);
 
-  db.notes.insert(req.body, (error, saved) => {
+  db.notes.insert(req.body, (error, data) => {
     if (error) {
-      console.log(error);
+      res.send(error);
     } else {
-      res.send(saved);
+      res.send(data);
     }
   });
 });
 
 app.get("/all", (req, res) => {
-  db.notes.find({}, (error, found) => {
+  db.notes.find({}, (error, data) => {
     if (error) {
-      console.log(error);
+      res.send(error);
     } else {
-      res.json(found);
+      res.json(data);
     }
   });
 });
@@ -52,13 +52,11 @@ app.get("/find/:id", (req, res) => {
     {
       _id: mongojs.ObjectId(req.params.id)
     },
-    (error, found) => {
+    (error, data) => {
       if (error) {
-        console.log(error);
         res.send(error);
       } else {
-        console.log(found);
-        res.send(found);
+        res.send(data);
       }
     }
   );
@@ -76,13 +74,11 @@ app.post("/update/:id", (req, res) => {
         modified: Date.now()
       }
     },
-    (error, edited) => {
+    (error, data) => {
       if (error) {
-        console.log(error);
         res.send(error);
       } else {
-        console.log(edited);
-        res.send(edited);
+        res.send(data);
       }
     }
   );
@@ -93,13 +89,11 @@ app.delete("/delete/:id", (req, res) => {
     {
       _id: mongojs.ObjectID(req.params.id)
     },
-    (error, removed) => {
+    (error, data) => {
       if (error) {
-        console.log(error);
         res.send(error);
       } else {
-        console.log(removed);
-        res.send(removed);
+        res.send(data);
       }
     }
   );
@@ -108,10 +102,8 @@ app.delete("/delete/:id", (req, res) => {
 app.delete("/clearall", (req, res) => {
   db.notes.remove({}, (error, response) => {
     if (error) {
-      console.log(error);
       res.send(error);
     } else {
-      console.log(response);
       res.send(response);
     }
   });
