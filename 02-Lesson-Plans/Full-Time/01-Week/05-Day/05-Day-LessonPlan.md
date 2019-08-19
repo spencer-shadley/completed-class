@@ -413,16 +413,7 @@ in chrome. Widen and shrink the page and point out that whereas your previous ve
 
 * State clearly in the beginning that the Pre-class Drill will be going on, but students can still meet 1:1 with staff for help with other things, as long as one staff member is available to go over the question and answer before class starts.
 
-### 28. Introduce this Unit's Video Guide (01 min)
-
-* Emphasize how helpful a tool these videos can be if a student feels as if they are falling behind or simply wants to review the material once again.
-
-* [Video Guide](../../../../01-Class-Content/01-html-git-css/VideoGuide.md)
-
-* [Video Guide](../../../../01-Class-Content/02-css-bootstrap/VideoGuide.md)
-
-
-# Instructor Do: Private Self-Reflection (0 min)
+### Instructor Do: Private Self-Reflection (0 min)
 
 Take some time on your own after class to think about the following questions. If there's anything that you're not sure how to answer, feel free to reach out to the curriculum team!
 
@@ -436,8 +427,6 @@ Take some time on your own after class to think about the following questions. I
 
 ### Lesson Plan Feedback
 
-How did today's class go?
+How did today’s lesson go? Your feedback is important. Please take 5 minutes to complete this anonymous survey.
 
-[Went Well](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=ft&sentiment=positive&lesson=01.05)
-
-[Went Poorly](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=ft&sentiment=negative&lesson=01.05)
+[Class Survey](https://forms.gle/nYLbt6NZUNJMJ1h38)
