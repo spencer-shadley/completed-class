@@ -13,7 +13,3 @@
 ## 💡 Hint(s)
 
 * Use the [Mongo guides](https://docs.mongodb.com/guides/) if you are stuck.
-
-## 🏆 Bonus 
-
-TODO
