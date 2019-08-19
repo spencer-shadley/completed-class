@@ -6,7 +6,6 @@ In this homework assignment, your challenge is twofold:
 * Build a responsive portfolio using Bootstrap  
 * Convert a non-responsive site to a responsive portfolio
 
-
 ## Instructions
 
 If you opted to do the wireframe (easier) assignment for the last homework or if you struggled with the portfolio design, ask a member of the instructional staff to give you the solution files. This will provide a starting point for the current assignment.
@@ -17,15 +16,14 @@ Create two different versions of a portfolio:
 
 * For the second version, enhance the portfolio you made in the last unit by giving it a mobile-responsive layout.
 
-## User Story
 
 Following the [common templates for user stories](https://en.wikipedia.org/wiki/User_story#Common_templates), we can frame this challenge as follows:
 
-AS A developer
-
-I WANT to create a responsive portfolio
-
-SO THAT I can showcase my applications to potential employers and clients on multiple screens and devices
+```
+As a developer
+I want to create a responsive portfolio
+so that I can showcase my applications to potential employers and clients on multiple screens and devices
+```
 
 
 ## Bootstrap Portfolio Instructions
