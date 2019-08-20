@@ -26,6 +26,6 @@ In this activity you will utilize the axios library to make a request to the Git
 
   * Avoid continually refreshing this page since there's a limit for non-authenticated requests to the GitHub API.
 
-* Check out the [`fs.writeFile` documentation](https://nodejs.org/api/fs.html#fs_fs_writefile_file_data_options_callback). Keep in mind that the async version will utilize promises rather than callbacks.
+* Check out the [`fs.writeFile` documentation](https://nodejs.org/api/fs.html#fs_fs_writefile_file_data_options_callback). Keep in mind that the async version will utilize Promises rather than callbacks.
 
 * Check out the [axios documentation](https://github.com/axios/axios) and look for examples for the `get` method.
