@@ -24,7 +24,7 @@ In this activity you will write code to get a random joke from an API, append th
 
 * Check out the documentation for [fs.appendFile](https://nodejs.org/api/fs.html#fs_fs_appendfile_path_data_options_callback). Keep in mind that the async version will utilize promises rather than callbacks.
 
-* Check out the documentation for [fs.readFile](https://nodejs.org/api/fs.html#fs_fs_readfile_path_options_callback). Keep in mind that the async version will utilize promises rather than callbacks.
+* Check out the documentation for [fs.readFile](https://nodejs.org/api/fs.html#fs_fs_readfile_path_options_callback). Keep in mind that the async version will utilize Promises rather than callbacks.
 
 ## 🏆Bonus
 

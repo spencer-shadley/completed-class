@@ -1,20 +1,20 @@
-# Instructions
+# Mini Project
 
-* You have been tasked with creating a CLI Tool that generates an HTML Portfolio page.
+In this activity you will build a command line tool that generates and HTML portfolio page from user input.
 
-  * Your application will ask the user for information, and output that information into an HTML document.
+## Instructions
 
-* You will need two files for this:
+* Your application should prompt the user for information such as their name, location, bio, LinkedIn URL, and GitHub URL. Feel free to add any additional prompts you think of.
 
-  * `index.js`
-  * `package.json`
+* Using the data collected from the prompts, an HTML document should be constructed containing this information and written to the filesystem. Be sure to add some CSS styling to the document.
 
-* When creating programs we always want to get an MVP (minimum viable product).
+* Some tools and technologies you'll need to accomplish this:
 
-  * Our MVP for this project is just an HTML page displaying the users provides responses with no styling whatsoever.
-
-* When you complete the MVP, you can begin to style the page that is generated.
+  * FS: For writing to the filesystem
+  * Inquirer: For collecting user input
+  * String template literals: For generating a string version of the HTML document before it is written to the filesystem
+  * Promises: For handling asynchronous behavior
 
 ## Hint(s)
 
-* To create your HTML it would be easiest to use a dummy `index.html` document. This will allow you to have HTML syntax highlighting making it easier to write your HTML.
+* It may be a good idea to start building out the HTML skeleton in a real HTML file. Once you're happy with the HTML file's appearance in the browser, you can copy/paste its contents into a string template literal and write a function to insert the user input into the appropriate places in the HTML string before writing it to the filesystem.
