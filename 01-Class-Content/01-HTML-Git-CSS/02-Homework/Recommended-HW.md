@@ -1,20 +1,20 @@
-# Unit 01 HTML, CSS and Git Homework (Recommended): Portfolio
+# Unit 01 HTML, CSS, and Git Homework (Recommended): Portfolio
 
-Build a professional portfolio site using HTML/CSS following a set of specifications and a style guide.
+Build a professional portfolio site using HTML and CSS following a set of specifications and a style guide.
 
-## Specifications
+## Instructions
 
 * Create a new GitHub repository and clone it to your computer.
 
 * Inside the repo folder on your computer, create the following:
 
-   * 3 HTML documents: `index.html`, `contact.html` and `portfolio.html`.
+   * 3 HTML documents: `index.html`, `contact.html`, and `portfolio.html`.
    * A folder called `assets`.
-   * Inside the assets directory, make two additional folders: `css` and `images`.
+   * Inside the `assets` directory, make two additional folders: `css` and `images`.
      * In the `css` folder, make a file called `style.css`.
      * In the `images` folder, save the images you plan on using (like your profile image and the placeholder images for the portfolio).
 
-* Reference these screenshots for your site:
+* Refer to these screenshots for your site:
 
    ![Portfolio About](./Assets/Images/portfolio-about-me.png)
 
@@ -22,26 +22,26 @@ Build a professional portfolio site using HTML/CSS following a set of specificat
 
    ![Portfolio Gallery](./Assets/Images/portfolio-gallery.png)
 
-   * **IMPORTANT** Your site's layout must match the designs in these screenshots. You'll find the specs for these designs below.
+* **IMPORTANT** Your site's layout must match the designs in these screenshots. You'll find the specs for these designs below.
 
-* When you create a website, it's standard practice to code your HTML files before writing any CSS and to write up one HTML file before moving onto the next. Write your HTML semantically, too:
+* When you create a website, it's standard practice to code your HTML files before writing any CSS and to complete one HTML file before moving onto the next. Write your HTML semantically too:
 
-   * If something is a heading, you use a heading tag.
-   * If something is a list, you use an unordered or ordered list tag.
+   * If something is a heading, use a heading element.
+   * If something is a list, use an unordered or ordered list element.
 
-* The content for the `index.html` should be unique to **you**.
+* The content in `index.html` should be unique to you in the following ways:
 
-   * Write a paragraph or two about yourself. Make it fun, show your personality!
+   * Write a paragraph or two about yourself. Make it fun; show your personality!
    * The main logo where it says "Your Name" should say your name. This may make the logo section smaller or wider depending on how long your name is—that is fine and expected.
 
 * After all of your HTML is written, you can begin styling your pages using the `style.css` file you created.
 
    * Be sure to [validate your html](https://validator.w3.org/#validate_by_input).
-   * Consult the specs below these instructions for advice on styling your CSS files.
+   * Consult the following Style Guide section for advice on styling your CSS files.
 
 ## Style Guide
 
-* Colors _Pro-tip: Use the [Eye Dropper](https://chrome.google.com/webstore/detail/eye-dropper/hmdcmlfkchdmnmnmheododdhjedfccka) Chrome extension to find the colors used on web pages._
+* Colors (**Pro Tip:** Use the [Eye Dropper](https://chrome.google.com/webstore/detail/eye-dropper/hmdcmlfkchdmnmnmheododdhjedfccka) Chrome extension to find the colors that are used on webpages.)
    * Teal color (used for headings and backgrounds): `#4aaaa5`
    * Regular font color (used for paragraphs and all text besides the headings): `#777777`
    * Main header background color: `#ffffff`
@@ -51,33 +51,32 @@ Build a professional portfolio site using HTML/CSS following a set of specificat
    * Main content border color: `#dddddd`
 
 * Fonts:
-   * For heading fonts use `font-family: 'Georgia', Times, Times New Roman, serif;`.
-   * For all other fonts use `'Arial', 'Helvetica Neue', Helvetica, sans-serif;`.
+   * For heading fonts use `font-family: 'Georgia', Times, 'Times New Roman', serif;`
+   * For all other fonts use `'Arial', 'Helvetica Neue', Helvetica, sans-serif;`
 
-* Profile Image Found on `index.html`:
+* Profile image in `index.html`:
    * Use a picture of yourself.
    * If you don't have a picture, you can grab a placeholder image from [LoremPixel](http://lorempixel.com/). Save the images to your `images` folder.
 
-* Portfolio Images:
+* Portfolio images:
    * Placeholder images can be found at [LoremPixel](http://lorempixel.com/).
    * Save the images to your `images` folder.
 
-* Background Images:
-   * The background pattern used was found on [Subtle Patterns](https://subtlepatterns.com/). You can browse through that site and find whichever pattern you like.
+* Background images:
+   * The background pattern used was found on [Subtle Patterns](https://subtlepatterns.com/). You can browse through that site and use whichever pattern you like.
 
 * Dimensions:
    * The entire content and the main section content area is `960px` wide.
 
    ![Recommended Dimensions](./Assets/Images/Recommended-Dimensions.png)
 
-* Make your pages more sophisticated by adding style to text links, to image links, and to buttons for when a user hovers their cursor over them. A CSS hover tutorial can be found [here](http://www.codeitpretty.com/2013/06/how-to-use-css-hover-effects.html).
+* Make your pages more sophisticated by adding style to text links, image links, and buttons for when a user hovers their cursor over them. Refer to this [CSS hover tutorial](http://www.codeitpretty.com/2013/06/how-to-use-css-hover-effects.html) for instructions.
 
 * You can use [Adobe Kuler](https://color.adobe.com/create/color-wheel/) to find colors that match the theme (in this case, the primary color is Teal `#4aaaa5`).
 
-* Make a "sticky footer." You will notice the dark grey footer will always rest just below the content. This is fine whenever your site has enough content to push it down past the height of most monitors. But if there isn't much content in the body, the footer could rest in the middle of the page:
-   * Try to code the footer in a way that it will always remain at the bottom of the page, no matter how short the content is. A sticky footer tutorial can be found [here](https://css-tricks.com/couple-takes-sticky-footer/).
-   * Give the Footer the following CSS:
-   * border-top: 8px solid #4aaaa5;
+* Make a "sticky footer." You will notice that the dark gray footer will always rest just below the content. This is fine whenever your site has enough content to push it down past the height of most monitors. But if there isn't much content in the body, the footer could rest in the middle of the page:
+   * Try to code the footer in a way that it will always remain at the bottom of the page, no matter how short the content is. Refer to this [sticky footer tutorial](https://css-tricks.com/couple-takes-sticky-footer/) for guidance.
+   * Give the footer the following CSS: `border-top: 8px solid #4aaaa5;`
 
 * Look into these concepts: `float`, `padding`, `margin`, `display`, `overflow`, `clear` and `text-align`.
 
@@ -91,11 +90,11 @@ SO THAT I can showcase my applications to potential employers and clients
 
 ## Business Context
 
-A portfolio is often the first point of contact for employers looking to fill a position or clients in need of a developer to complete a project. A clean and informative portfolio showcases a developer's strongest work and can lead to employment or more clients.
+A portfolio is often the first point of contact for employers looking to fill a position or clients in need of a developer to complete a project. A clean and informative portfolio showcases a developer's strongest work and can lead to employment and/or more clients.
 
 ## Acceptance Criteria
 
-GIVEN an employer or client wants to hire a developer
+GIVEN that an employer or client wants to hire a developer
 
 WHEN viewing their portfolio
 
@@ -109,7 +108,7 @@ One of the most important skills to master as a web developer is version control
 
 * Your commit history is a signal to employers that you are actively working on projects and learning new skills.
 
-* Your commit history allows you to revert your code base in the event that you need to return to a previous state.
+* Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
 
 Follow these guidelines for committing:
 
@@ -129,5 +128,5 @@ You are required to submit the following:
 
 * The URL of the GitHub repository
 
-- - -
+---
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

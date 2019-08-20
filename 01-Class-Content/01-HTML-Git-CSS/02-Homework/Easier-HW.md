@@ -1,6 +1,8 @@
-# Unit 01 HTML, CSS and Git Homework (Easier): Building a Wireframe
+# Unit 01 HTML, CSS, and Git Homework (Easier): Build a Wireframe
 
-_If you see this task as too simple or if you finish it within three hours, attempt the second homework assignment._
+_**Note:** If you see this task as too simple or if you finish it within three hours, attempt the second homework assignment._
+
+## Instructions
 
 Build a web design skeleton using HTML/CSS.
 
@@ -8,43 +10,43 @@ Build a web design skeleton using HTML/CSS.
 
 * Inside the repo folder on your computer, create the following files: `index.html` and `style.css`.
 
-* Recreate the design below using HTML/CSS:
+* Recreate the following design using HTML and CSS:
 
 ![final layout](./Assets/Images/Easier-Layout.png)
 
-* All of your HTML should be inside of the `index.html` file.
+* All of your HTML should be inside the `index.html` file.
 
-* All of your CSS should be inside of the `style.css` file.
+* All of your CSS should be inside the `style.css` file.
 
 * Your HTML should have each of the following sections:
 
    * Header
    * Nav
-   * Aside (With a Heading)
-   * Section (With a Heading)
-   * Article (With a Heading) contained within the Section
-   * Headers contained within the Article
-   * Paragraph contained within the Article
+   * Aside (with a heading)
+   * Section (with a heading)
+   * Article (with a heading) contained within the section
+   * Headers contained within the article
+   * Paragraph contained within the article
 
 * Your CSS should have styles for each of the following elements:
 
    * Body
-     * font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-     * color: '#777'
-     * background: '#777'
-     * width: '960px'
-     * font-size: '18px'
-   * Header, Nav, Section, Aside, and Footer
-     * background: '#ebebeb'
+     * `font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;`
+     * `color: '#777'`
+     * `background: '#777'`
+     * `width: '960px'`
+     * `font-size: '18px'`
+   * Header, nav, section, aside, and footer
+     * `background: '#ebebeb'`
    * Article
-     * color: '#ebebeb',
-     * background: '#777'
-   * h1 and p
-     * color: '#777',
-     * background: '#ebebeb'
+     * `color: '#ebebeb'`
+     * `background: '#777'`
+   * \<h1\> and \<p\>
+     * `color: '#777'`
+     * `background: '#ebebeb'`
      
 * The width of the section should be:
-   * section: 495px
+   * `section: 495px`
 
 * Review these concepts: `float`, `padding`, `margin`, `display`, `overflow`, `clear` and `text-align`.
 
@@ -62,7 +64,7 @@ Wireframes are created early in the development process to help visualize the la
 
 ## Acceptance Criteria
 
-GIVEN a developer creates a skeletal framework
+GIVEN that a developer creates a skeletal framework
 
 WHEN building a wireframe
 
@@ -76,7 +78,7 @@ One of the most important skills to master as a web developer is version control
 
 * Your commit history is a signal to employers that you are actively working on projects and learning new skills.
 
-* Your commit history allows you to revert your code base in the event that you need to return to a previous state.
+* Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
 
 Follow these guidelines for committing:
 
