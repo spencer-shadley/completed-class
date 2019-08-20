@@ -11,7 +11,3 @@ In this activity, you will create an index on your object store that can be used
 ## 💡 Hint(s)
 
 * Use the [createIndex](https://developer.mozilla.org/en-US/docs/Web/API/IDBObjectStore/createIndex) docs if you are stuck.
-
-## 🏆 Bonus
-
-* TODO

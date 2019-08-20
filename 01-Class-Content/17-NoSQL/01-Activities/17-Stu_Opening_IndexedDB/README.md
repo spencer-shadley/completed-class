@@ -10,8 +10,5 @@ In this activity, you will create a request for an indexedDB database and consol
 ## 💡 Hint(s)
 
 * Use the [open](https://developer.mozilla.org/en-US/docs/Web/API/IDBFactory/open) docs to learn about the arguments it takes.
+
 * You can `console.log` the `request` to so what attributes are available to you.
-
-## 🏆 Bonus
-
-* TODO

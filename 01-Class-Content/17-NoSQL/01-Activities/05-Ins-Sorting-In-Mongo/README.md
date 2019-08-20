@@ -14,22 +14,21 @@
 
 * The id contains a timestamp, so sorting by id will sort by when they were entered to the database.
 
-```
+```sql
 db.animals.find().sort({ _id:1 });
 db.animals.find().sort({ _id:-1 });
 ```
 
 * **Sort by an integer - numLegs:**
 
-```
+```sql
 db.animals.find().sort({ numLegs:1 });
 db.animals.find().sort({ numLegs:-1 });
 ```
 
-
 * **Sort by a string - class:**
 
-```
+```sql
 db.animals.find().sort({ class:1 });
 db.animals.find().sort({ class:-1 });
 ```

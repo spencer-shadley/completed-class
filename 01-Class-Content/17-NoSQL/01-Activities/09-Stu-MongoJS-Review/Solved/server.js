@@ -13,8 +13,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
-
-
 db.on("error", error => {
   console.log("Database Error:", error);
 });
