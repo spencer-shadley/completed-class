@@ -1,5 +1,5 @@
 {
-  "name": "rename-me",
+  "name": "mongo_crud",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",

@@ -44,9 +44,6 @@ $(document).on("click", ".markunread", function() {
   getUnread();
 });
 
-
-// Functions
-
 // Load unread books and render them to the screen
 function getUnread() {
   $("#unread").empty();
