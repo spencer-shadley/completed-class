@@ -8,6 +8,6 @@
 
 * Use the [Mongo guides](https://docs.mongodb.com/guides/) if you are stuck.
 
-## 🏆 Bonus 
+## 🏆 Bonus
 
 * Insert five more documents with one command. Use [https://docs.mongodb.com/manual/tutorial/query-documents/](https://docs.mongodb.com/manual/tutorial/query-documents/) to see how you can accomplish this.

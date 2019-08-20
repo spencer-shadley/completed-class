@@ -14,11 +14,10 @@
 
   * Weight: Send JSON response sorted by weight in descending order.
 
-
 ## 💡 Hint(s)
 
 * Use the [Mongo guides](https://docs.mongodb.com/guides/) if you are stuck.
 
-## 🏆 Bonus 
+## 🏆 Bonus
 
 * Create an additional route that returns the heaviest animal.

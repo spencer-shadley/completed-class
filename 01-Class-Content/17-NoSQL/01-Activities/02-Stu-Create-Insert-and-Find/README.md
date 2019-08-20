@@ -2,27 +2,27 @@
 
 ## Instructions
 
-  * Use the command line to create a classroom database. 
-    
-  * Insert entries for yourself and the people in your row in a `students` collection. 
-    
-  * Each document should have:
+* Use the command line to create a classroom database. 
 
-    * A field of `name` with the person's name.
+* Insert entries for yourself and the people in your row in a `students` collection.
 
-    * A field of `rownumber` which will contain the row number that they are in.
-    
-    * A field of `os` which will contain the Operating System of the computer they are using: 'Mac', 'Win', etc
+* Each document should have:
 
-    * A field of `hobbies` with an array of the hobbies the person likes to do.
+  * A field of `name` with the person's name.
 
-  * Use find commands to get:
+  * A field of `rownumber` which will contain the row number that they are in.
 
-    * A list of everyone in your row.
+  * A field of `os` which will contain the Operating System of the computer they are using: 'Mac', 'Win', etc
 
-    * An entry for a single person.
-    
-    * The entries for all the Mac users in your row. 
+  * A field of `hobbies` with an array of the hobbies the person likes to do.
+
+* Use find commands to get:
+
+  * A list of everyone in your row.
+
+  * An entry for a single person.
+
+  * The entries for all the Mac users in your row.
 
 ## 💡 Hint(s)
 
