@@ -1,5 +1,7 @@
 # User Schema
 
+In this activity you will create a user schema with mongoose.
+
 ## Instructions
 
 * In `userModel.js` add four attributes to your schema.
