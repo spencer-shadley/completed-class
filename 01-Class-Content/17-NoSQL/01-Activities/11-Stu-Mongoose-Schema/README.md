@@ -16,7 +16,7 @@ In this activity you will create a user schema with mongoose.
 
 ## 💡 Hint(s)
 
-* The regex for checking if a string is an email is: /.+\@.+\..+/
+* The regex for checking if a string is an email is: `/.+\@.+\..+/`
 
 ## 🏆 Bonus 
 
