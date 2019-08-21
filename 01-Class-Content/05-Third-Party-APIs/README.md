@@ -39,5 +39,5 @@ Create a simple calendar application that allows the user to save events for eac
 * [jQuery Official Website](https://jquery.com/)
 
 
----
+- - -
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

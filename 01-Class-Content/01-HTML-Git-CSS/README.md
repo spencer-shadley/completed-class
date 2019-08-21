@@ -56,10 +56,9 @@ You will be employer-competitive if you are able to:
 * Perform common commands via the command line to interface with the operating system, such as navigating the file tree and creating and deleting files and directories
 * Execute live deployment using GitHub Pages
 
-## Homework
-* **Portfolio** (Recommended Homework): Build a professional portfolio site using HTML and CSS following a set of specifications and a style guide.
+## Homework: Portfolio
 
-* **Build a Wireframe** (Easier Homework): Build a web design skeleton using HTML and CSS.
+Build a professional portfolio site using HTML and CSS following a set of specifications and a style guide.
 
 ## Helpful Links
 * [Version Control](https://en.wikipedia.org/wiki/Version_control)
@@ -69,5 +68,5 @@ You will be employer-competitive if you are able to:
 * [Dev Docs](https://devdocs.io/)
 
 
----
+- - -
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

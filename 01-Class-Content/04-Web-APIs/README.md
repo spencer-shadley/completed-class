@@ -47,5 +47,5 @@ As you proceed in your career as a web developer, you will probably be asked to 
 * [MDN: Client-side storage](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Client-side_storage)
 
 
----
+- - -
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

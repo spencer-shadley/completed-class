@@ -87,3 +87,6 @@ the default bootstrap theme or an unstyled HTML site.
 
 If you want a slick-looking site, but don't feel good about your CSS skills,
 check out CV, Resume, and Portfolio site templates on [ThemeForest](https://themeforest.net/category/site-templates?tags=cv,resume,portfolio)
+
+- - -
+© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

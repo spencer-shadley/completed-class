@@ -51,5 +51,5 @@ Create an application that generates a random password based on user-selected cr
 * [MDN: JavaScript Basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
 * [MDN: JavaScript Object Basics](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics)
 
----
+- - -
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

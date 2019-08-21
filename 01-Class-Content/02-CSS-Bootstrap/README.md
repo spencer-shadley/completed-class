@@ -60,5 +60,5 @@ Create two different versions of a portfolio:
 * [CDN (wikipedia)](https://en.wikipedia.org/wiki/Content_delivery_network)
 * [GitHub Pages](https://pages.github.com/)
 
----
+- - -
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
