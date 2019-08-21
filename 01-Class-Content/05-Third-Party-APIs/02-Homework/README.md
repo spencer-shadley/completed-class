@@ -1,14 +1,14 @@
-# Unit 05 Third Party APIs Homework: Day Planner
+# Unit 05 Third-Party APIs Homework: Day Planner
 
 Create a simple calendar application that allows the user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 
-The app should display standard business hours (9am-5pm). Each time slot should represent one hour and contain the following:
+The app should display standard business hours (9 a.m. to 5 p.m.). Each time slot should represent one hour and contain the following:
 
-* the time
+* The time
 
-* a field to hold user input
+* A field to hold user input
 
-* a save button
+* A save button
 
 Clicking on the save button will store the time and user input in `localStorage`.
 
@@ -32,7 +32,7 @@ Poor time management can result in missed meetings and deadlines or create the a
 
 ## Acceptance Criteria
 
-GIVEN an employee adds events to a specific hour in a calendar
+GIVEN that an employee adds events to a specific hour in a calendar
 
 WHEN the employee clicks the save button
 
@@ -46,7 +46,7 @@ One of the most important skills to master as a web developer is version control
 
 * Your commit history is a signal to employers that you are actively working on projects and learning new skills.
 
-* Your commit history allows you to revert your code base in the event that you need to return to a previous state.
+* Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
 
 Follow these guidelines for committing:
 
@@ -70,4 +70,3 @@ You are required to submit the following:
 
 - - -
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
-

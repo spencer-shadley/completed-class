@@ -1,6 +1,6 @@
-# Unit 06 Server Side APIs Homework: Weather Dashboard
+# Unit 06 Server-Side APIs Homework: Weather Dashboard
 
-Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Third party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. In this homework assignment, your challenge is to build a weather dashboard using the OpenWeather API.
+Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. In this homework assignment, your challenge is to build a weather dashboard using the OpenWeather API.
 
 
 ## Instructions
@@ -58,7 +58,7 @@ How do you deliver this? Here are some guidelines:
 
   * Current conditions
   
-  * 5-Day forecast
+  * 5-Day Forecast
   
   * Search history
 
@@ -66,7 +66,7 @@ How do you deliver this? Here are some guidelines:
 
 * You will need to make more than one AJAX call.
 
-* You will need to hard-code some of the parameters in the API's URL. User input will determine some of the other parameters.
+* You will need to hardcode some of the parameters in the API's URL. User input will determine some of the other parameters.
 
 * Use `localStorage` to store any persistent data.
 
@@ -91,7 +91,7 @@ One of the most important skills to master as a web developer is version control
 
 * Your commit history is a signal to employers that you are actively working on projects and learning new skills.
 
-* Your commit history allows you to revert your code base in the event that you need to return to a previous state.
+* Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
 
 Follow these guidelines for committing:
 
@@ -115,5 +115,5 @@ You are required to submit the following:
 * The URL of the GitHub repository
 
 
----
+- - -
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
