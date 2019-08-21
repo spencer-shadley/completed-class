@@ -25,9 +25,11 @@ How do you deliver this? Here are some guidelines:
 
   * When time runs out and/or all questions are answered, the user is presented with their final score and asked to enter their initials. Their final score and initials are then stored in `localStorage`.
 
-* Refer to the animated GIF in `Assets` for a demonstration of the application functionality.
+* Your application should also be responsive, ensuring that it adapts to multiple screen sizes.
 
-![](./Assets/04-web-APIs-homework-demo.gif)
+* Refer to the animated GIF below for a demonstration of the application functionality.
+
+![code quiz](./Assets/04-Web-APIs-homework-demo.gif)
 
 
 ### Hints
