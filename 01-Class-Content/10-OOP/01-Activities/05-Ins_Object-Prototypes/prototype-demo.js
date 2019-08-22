@@ -11,8 +11,11 @@ myObject = {
     occupation: "Curriculum Dev"
 };
 
+console.log(myObject);
 console.log(myObject.hasOwnProperty('name'));
 
+console.log("Hello");
 console.log("Hello".toLowerCase());
 
+console.log(1337);
 console.log((1337).toString());
