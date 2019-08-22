@@ -9,9 +9,7 @@ We will look at a few of the most important Web APIs in this unit, beginning wit
 
 
 ## Key Topics
-
-The following key topics will be covered in this unit:
-
+The following topics will be covered in this unit:
 * Web APIs and interfaces
 * Timers
 * Document Object Model (DOM)
@@ -40,7 +38,7 @@ You will be employer-competitive if you are able to:
 
 
 ## Homework: Code Quiz
-As you proceed in your career as a web developer, you will most likely be asked to complete a coding assessment. These assessments are typically a combination of multiple-choice questions and interactive coding challenges. In this homework assignment, your challenge is to build a code quiz of multiple-choice questions.
+As you proceed in your career as a web developer, you will probably be asked to complete a coding assessment. These assessments are typically a combination of multiple-choice questions and interactive coding challenges. In this homework assignment, your challenge is to build a code quiz of multiple-choice questions.
 
 
 ## Helpful Links
@@ -49,5 +47,5 @@ As you proceed in your career as a web developer, you will most likely be asked 
 * [MDN: Client-side storage](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Client-side_storage)
 
 
----
+- - -
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
