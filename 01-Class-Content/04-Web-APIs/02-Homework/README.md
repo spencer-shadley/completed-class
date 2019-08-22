@@ -1,6 +1,6 @@
 # Unit 04 Web APIs Homework: Code Quiz
 
-As you proceed in your career as a web developer, you will likely be asked to complete a coding assessment. These assessments are typically a combination of multiple-choice questions and interactive challenges. In this homework assignment, your challenge is to build a code quiz of multiple-choice questions.
+As you proceed in your career as a web developer, you will probably be asked to complete a coding assessment. These assessments are typically a combination of multiple-choice questions and interactive challenges. In this homework assignment, your challenge is to build a code quiz with multiple-choice questions.
 
 
 ## Instructions
@@ -25,14 +25,16 @@ How do you deliver this? Here are some guidelines:
 
   * When time runs out and/or all questions are answered, the user is presented with their final score and asked to enter their initials. Their final score and initials are then stored in `localStorage`.
 
-* Refer to the animated GIF in `Assets` for a demonstration of the application functionality.
+* Your application should also be responsive, ensuring that it adapts to multiple screen sizes.
 
-![](./Assets/04-web-APIs-homework-demo.gif)
+* Refer to the animated GIF below for a demonstration of the application functionality.
+
+![code quiz](./Assets/04-Web-APIs-homework-demo.gif)
 
 
 ### Hints
 
-* Store your questions as an array of objects in a separate file, `questions.js`, following this format:
+* Store your questions as an array of objects in a separate file, `questions.js`, that follows this format:
 
 ```js
 var questions = [
@@ -77,7 +79,7 @@ One of the most important skills to master as a web developer is version control
 
 * Your commit history is a signal to employers that you are actively working on projects and learning new skills.
 
-* Your commit history allows you to revert your code base in the event that you need to return to a previous state.
+* Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
 
 Follow these guidelines for committing:
 
@@ -101,5 +103,5 @@ You are required to submit the following:
 * The URL of the GitHub repository
 
 
----
+- - -
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
