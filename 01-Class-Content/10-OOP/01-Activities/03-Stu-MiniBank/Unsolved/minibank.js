@@ -55,17 +55,8 @@ function createMiniBank() {
 
 var bank = createMiniBank();
 bank.printBalance();
-<<<<<<< HEAD
-
-var statement = [0]; 
-
-function setBalance() {
-  
-}
-=======
 bank.deposit(40);
 bank.printBalance();
 bank.withdraw(20);
 bank.printStatement();
 bank.printBalance();
->>>>>>> 992ba92af75d6bc9421a3f32f5adcfd63a3652f4

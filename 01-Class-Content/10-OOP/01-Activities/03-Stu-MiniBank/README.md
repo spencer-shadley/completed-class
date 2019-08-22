@@ -1,5 +1,7 @@
 # MiniBank
 
+In this activity you will use objects to create a mini banking application.
+
 ## Instructions
 
 Update the `createMiniBank` function to achieve the following:
