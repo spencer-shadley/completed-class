@@ -11,7 +11,7 @@
 | [flickr](https://www.flickr.com/services/api/)                             | yes             | oauth                     | yes                         |
 | [Pinterest API](https://developers.pinterest.com/)                         | yes             | oauth                     | yes                         |
 | [Google Custom Search API](https://developers.google.com/custom-search/)   | yes             | API key                   | yes                         |
-| [Tumblr API](https://www.tumblr.com/docs/en/api/v2)                        | yes             | oauth                      | yes                         |
+| [Tumblr API](https://www.tumblr.com/docs/en/api/v2)                        | yes             | oauth                     | yes                         |
 | [Marvel API](https://developer.marvel.com/)                                | yes             | API key                   | yes                         |
 | [GeoNames API](http://www.geonames.org/export/web-services.html)           | yes             | username                  | yes                         |
 | [OMDB](http://www.omdbapi.com/)                                            | yes             | n/a                       | n/a                         |

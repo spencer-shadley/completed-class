@@ -127,4 +127,4 @@ $(document).ready(function() {
   }
 });
 
-// Bonus, use location API to get users current location to populate initial landing page.
+// Bonus, use location API to add the user's current location to the initial landing page.
