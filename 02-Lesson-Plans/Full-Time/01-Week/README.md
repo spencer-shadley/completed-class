@@ -69,8 +69,7 @@ In this unit, we will be welcoming our students to their first week of our Full-
 
 ### Homework Activities
 
-* [Build Your Portfolio Page (Recommended Homework)](../../../01-Class-Content/01-html-git-css/02-Homework/Solutions/recommended-homework-solution)
-* [Build A Wireframe Layout (Easier Homework)](../../../01-Class-Content/01-html-git-css/02-Homework/Solutions/easier-homework-solution)
+* [Build Your Portfolio Page](../../../../01-Class-Content/01-HTML-Git-CSS/02-Homework/Solutions)
 * [Portfolio Revisited](../../../01-Class-Content/02-css-bootstrap/02-Homework/Solutions/bootstrap_portfolio/bootstrap-bp)
 
 ### Supplemental Resources

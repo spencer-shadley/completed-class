@@ -12,8 +12,7 @@ Missing something? Spot an issue? Have a suggestion? Please consult our [contrib
 
 ### Unit 1: HTML, CSS, and Git
 
-* [Building a Wireframe (Easier Assignment)](../01-Class-Content/01-html-git-css/02-Homework/Instructions/easier-homework-assignment.md)
-* [That Portfolio Though (Recommended Assignment)](../01-Class-Content/01-html-git-css/02-Homework/Instructions/recommended-homework-assignment.md)
+* [That Portfolio Though](../../01-Class-Content/01-HTML-Git-CSS/02-Homework/README.md)
 
 #### Unit 1 Videos
 
