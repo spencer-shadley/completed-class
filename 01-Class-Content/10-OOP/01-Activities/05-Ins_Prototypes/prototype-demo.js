@@ -12,10 +12,25 @@ myObject = {
 };
 
 console.log(myObject);
-console.log(myObject.hasOwnProperty('name'));
 
 console.log("Hello");
 console.log("Hello".toLowerCase());
 
 console.log(1337);
 console.log((1337).toString());
+
+function Movie(title, releaseYear) {
+    this.title = title;
+    this.releaseYear = releaseYear;
+}
+
+Movie.prototype.logInfo = function() {
+    console.log(`${this.title} was released in ${this.releaseYear}`);
+}
+
+const theShining = new Movie("The Shining", 1980)
+theShining.logInfo();
+
+console.log(theShining.hasOwnProperty('title'));
+console.log(theShining.hasOwnProperty('logInfo'));
+console.log(Movie.prototype.hasOwnProperty('logInfo'));
