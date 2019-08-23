@@ -46,8 +46,7 @@ In this week, we will be welcoming our students to their first week of our Full-
 
 ### Homework Activities
 
-* [Build Your Portfolio Page (Recommended Homework)](../../../01-Class-Content/01-html-git-css/02-Homework/Instructions/recommended-homework-assignment.md)
-* [Build A Wireframe Layout (Easier Homework)](../../../01-Class-Content/01-html-git-css/02-Homework/Instructions/easier-homework-assignment.md)
+* [Build Your Portfolio Page](../../../01-Class-Content/01-HTML-Git-CSS/02-Homework/README.md)
 
 ### Key Activities
 
