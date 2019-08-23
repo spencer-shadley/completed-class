@@ -41,7 +41,7 @@ In this week, we will continue diving into CSS and providing students with a tho
 
 ### Homework Activities
 
-* [Portfolio Revisited](../../../01-Class-Content/02-css-bootstrap/02-Homework/Instructions/homework-instructions.md)
+* [Portfolio Revisited](../../../01-Class-Content/02-CSS-Bootstrap/02-Homework/Master/README.md)
 
 ### Key Activities
 

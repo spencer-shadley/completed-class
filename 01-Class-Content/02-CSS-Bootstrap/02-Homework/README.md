@@ -6,26 +6,6 @@ In this homework assignment, your challenge is twofold:
 * Build a responsive portfolio using Bootstrap  
 * Convert a non-responsive site to a responsive portfolio
 
-## Instructions
-
-If you opted to do the wireframe (easier) assignment for the last homework or if you struggled with the portfolio design, ask a member of the instructional staff to give you the solution files. This will provide a starting point for the current assignment.
-
-Create two different versions of a portfolio:
-
-* For the first version, use the Bootstrap CSS Framework to recreate your portfolio.
-
-* For the second version, enhance the portfolio you made in the last unit by giving it a mobile-responsive layout.
-
-
-Following the [common templates for user stories](https://en.wikipedia.org/wiki/User_story#Common_templates), we can frame this challenge as follows:
-
-```
-As a developer
-I want to create a responsive portfolio
-so that I can showcase my applications to potential employers and clients on multiple screens and devices
-```
-
-
 ## Bootstrap Portfolio Instructions
 
 First, you will use the Bootstrap CSS Framework to recreate your portfolio. How do you deliver this? Here are some guidelines:
@@ -61,7 +41,6 @@ First, you will use the Bootstrap CSS Framework to recreate your portfolio. How 
 
 * Using Bootstrap, make a sticky footer and use sub-rows and sub-columns on your portfolio site (**Hint:** Check out the Bootstrap documentation).
 
-
 ## Mobile-Responsive Portfolio Instructions
 
 Second, you will enhance the portfolio you made in the last unit by giving it a mobile-responsive layout. How do you deliver this? Here are some guidelines:
@@ -90,11 +69,9 @@ Second, you will enhance the portfolio you made in the last unit by giving it a 
 
 * Be sure to include the `viewport` tag in all your HTML files; otherwise, your media queries won't function as expected on mobile devices. (**Hint:** You won't need to use exact pixels for anything other than the container.)
 
-
 ### Hints
 
 * Use the Chrome extensions [Window Resizer](https://chrome.google.com/webstore/detail/window-resizer/kkelicaakdanhinjdeammmilcgefonfh) and [Browser Width](https://chrome.google.com/webstore/detail/browser-width/mlnegepkjlccabakompdmbcmdieaideh) to see the browser dimensions in Chrome.
-
 
 ### Minimum Requirements
 
@@ -102,11 +79,9 @@ Second, you will enhance the portfolio you made in the last unit by giving it a 
 
 * GitHub repository with README describing project
 
-
 ### Bonus
 
 * Incorporate CSS animations in your portfolio. Read more about CSS animations on [the W3C Schools website](http://www.w3schools.com/css/css3_animations.asp).
-
 
 ## Commit Early and Often
 
@@ -128,7 +103,6 @@ Follow these guidelines for committing:
 
 We would like you to have well over 200 commits by graduation, so commit early and often!
 
-
 ## Submission on BCS
 
 You are required to submit the following:
@@ -137,6 +111,6 @@ You are required to submit the following:
 
 * The URLs of the GitHub repositories
 
-
 - - -
+
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
