@@ -406,9 +406,9 @@ Today's class is focused on introducing students to additional CSS styling techn
 
 ### 27. TA Do: Homework 2: Demo (5 min)
 
-* TA should come to the front of the class and explain what Homework #2 will look like. Essentially it is a recreation of the earlier portfolio, but this time using media queries (a concept covered next class) and Bootstrap to build the layout instead. Let them know that they should find this version of the previous assignment much easier to accomplish.
+* TA should come to the front of the class and explain what Homework #2 will look like. Essentially it is a recreation of the earlier portfolio, but this time using Bootstrap to build the layout instead. Let them know that they should find this version of the previous assignment much easier to accomplish.
 
-[02-Homework/Solutions](../../../../01-Class-Content/02-css-bootstrap/02-Homework/Solutions)
+[02-Homework/Master](../../../../01-Class-Content/02-css-bootstrap/02-Homework/Master)
 
 ### 28. Instructor Do: Questions (12 mins, or remaining time)
 
