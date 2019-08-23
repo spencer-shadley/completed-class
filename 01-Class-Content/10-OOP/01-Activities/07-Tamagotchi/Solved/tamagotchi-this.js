@@ -122,4 +122,3 @@ var animal = process.argv[2];
 var method = process.argv[3];
 
 // try calling your chosen animal and method from the terminal example: 'node tamagotchi-this dog letInside'
-animals[animal][method]();
