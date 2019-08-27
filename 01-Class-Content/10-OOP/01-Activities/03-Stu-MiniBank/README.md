@@ -6,7 +6,7 @@ In this activity you will use objects to create a mini banking application.
 
 Update the `createMiniBank` function to achieve the following:
 
-1. Add another private value of `statement` that should be set to an array with one value, `0`. This array will contain all transactions made with the minibank objects.
+1. Add another private value of `statement` that should be set to an array with one value, `0`. This array will contain all transactions made with the MiniBank objects.
 
 2. Add a `setBalance` function that takes a value and updates the private `statement` value to it.
 
