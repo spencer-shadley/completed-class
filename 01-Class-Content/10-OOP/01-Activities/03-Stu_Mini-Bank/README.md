@@ -34,7 +34,7 @@ Then, create a new `minibank` object using the `createMiniBank` function.
 
 5. Print the `minibank` balance.
 
-### Bonus
+## Bonus 🏆
 
 * Add code to throw an error if the user tries to withdraw more money than they have, or try to deposit or withdraw values that aren't positive numbers.
 
