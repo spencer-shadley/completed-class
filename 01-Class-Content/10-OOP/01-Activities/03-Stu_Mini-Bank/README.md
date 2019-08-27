@@ -22,7 +22,7 @@ Update the `createMiniBank` function to achieve the following:
 
 8. Return the `printBalance`, `printStatement`, `deposit`, `withdraw` functions from the `createMiniBank` function.
 
-Then, create a new `minibank` object using the `createMiniBank` function.
+* Then, create a new `minibank` object using the `createMiniBank` function.
 
 1. Print the `minibank` balance.
 
