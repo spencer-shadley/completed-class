@@ -1,68 +1,52 @@
-function createMiniBank() {
-  var balance = 0;
-  var statement = [balance];
-
-  function getBalance() {
-    return balance;
-  }
-
-  function setBalance(value) {
-    balance = value;
-  }
-
-  function updateStatement(value) {
-    statement.push(value);
-  }
-
-  function getStatement() {
-    return statement.slice(0);
-  }
-
-  function printStatement() {
-    var statement = getStatement();
-
+function MiniBank(balance, statement) {
+  this.balance = balance;
+  this.statement = [balance];
+  this.getBalance = function() {
+    return this.balance;
+  },
+  this.setBalance = function(value) {
+    this.balance = value;
+  },
+  this.updateStatement = function(value) {
+    this.statement.push(value);
+  },
+  this.getStatement = function () {
+    return this.statement.slice(0);
+  },
+  this.printStatement = function() {
+    var statement = this.getStatement();
     for (var i = 0; i < statement.length; i++) {
       console.log(`${i + 1}. ${statement[i]}`);
     }
-  }
-
-  function deposit(value) {
+  },
+  this.deposit = function(value) {
     if (typeof value !== "number" || value <= 0) {
       throw new Error("'value' must be a positive number!");
     }
-
-    var newBalance = getBalance() + value;
-    setBalance(newBalance);
-    updateStatement(newBalance);
-
+    var newBalance = this.getBalance() + value;
+    this.setBalance(newBalance);
+    this.updateStatement(newBalance);
     console.log(`Deposited ${value}!`);
-  }
-
-  function withdraw(value) {
+  },
+  this.withdraw = function(value) {
     if (typeof value !== "number" || value <= 0) {
       throw new Error("'value' must be a positive number");
     }
-
-    var newBalance = getBalance() - value;
-
+    var newBalance = this.getBalance() - value;
     if (newBalance < 0) {
       throw new Error("Insufficient funds for this transaction");
     }
-
-    setBalance(newBalance);
-    updateStatement(-value);
-
+    this.setBalance(newBalance);
+    this.updateStatement(-value);
     console.log(`Withdrew ${value}!`);
-  }
-
-  function printBalance() {
-    console.log(`Balance: ${getBalance()}`);
-  }
-
-  return { printBalance, printStatement, deposit, withdraw };
+  },
+  this.printBalance = function() {
+    console.log(`Balance: ${this.getBalance()}`);
+  };
 }
 
-var bank = createMiniBank();
+
+var bank = new MiniBank(0);
 bank.printBalance();
 
 bank.deposit(85);
