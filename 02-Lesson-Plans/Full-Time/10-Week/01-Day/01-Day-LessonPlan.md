@@ -1,508 +1,590 @@
 ## 10.1 - An ES6travaganza (10:00 AM) <!--links--> &nbsp; [⬅️](../../09-Week/05-Day/05-Day-LessonPlan.md) &nbsp; [➡️](../02-Day/02-Day-LessonPlan.md)
 
-_If pacing on activities is a bit too fast this unit, remember that you have
-some time at the end of the week to review. Please let us know by opening
-an issue if any activities in particular need a bit more time, so we can
-adjust the schedule for the unit._
+`Summary: Complete activities 1-9 in Unit 19`
 
 ## Overview
 
-* This week, we will be introducing students to React. For them to be able to understand it, however, they need a basic primer in ES6.
+In this class, we will be introducing students to the basic concepts of ReactJS, JSX, and building layouts through a component-based mindset.
 
-* Thus, in this class we will be introducing students to a few ES6 concepts prevalent in React (and general modern JS) development.
+## Instructor Notes
 
-* Today's class is fast-paced. This class is not meant to be an extensive introduction to all concepts ES6, but instead a basic introduction to some of the more commonly-used concepts. Students are expected to continue their study of these and other ES6 concepts outside of class.
+* It is recommended that you arrange for students to globally install both Create React App before today's class.
 
-* Regarding timing: You can expand/reduce activity times according to student interest and familiarity.
+* Let students know that today's class is meant to be a **gentle** introduction to React. Few if any of your students will have even the faintest knowledge of React &mdash; so this class is all about an initial exposure.
 
-`Summary: Complete activities 1-13 in Unit 19`
+* Let students know that we won't be able to teach them **all** of React in the amount of time we have. In order to "get good" they are going to have to do their own work outside of class. Our role is essentially, to give them the high-points so they understand the terms and know how to proceed.
 
-### Before class
+* Students may feel a little overwhelmed with the new unusual syntax. Remind them that at the end of the day, we're still just working with JavaScript. Prioritize making sure they understand concepts, rather than worrying about them perfectly memorizing syntax. Memorization will come with practice and repetition, so work on instilling concepts early on.
 
-* If you have time, we always recommend personalizing the activities with names/relevant examples for your class! For example, switch up the names in the activities to be students in your class.
+* Explain any unfamiliar ES6 syntax as you go along as necessary, but try not to go deeper than necessary. Students will have plenty of time to practice ES6 as we go through the material over the next two weeks.
 
-* Free to plan to cut out activities that would be less beneficial for your class. For example, if you've already discussed arrow function or `const` and `let`, feel free to skip those activities to spend more time on other topics.
+* **Important:** In order to avoid continuous NPM installs, all of today's activity Solved and Unsolved versions include only a `src` folder. Students and yourself should scaffold out a React app once with Create React App, and then swap out the `src` folder for each activity. It's recommended that you completely restart the dev server between activities.
 
-* Have your TAs reference [01-Day-Time-Tracker](https://drive.google.com/a/trilogyed.com/file/d/1msngMop20uBjk2pCNgYRERPhoxXlfQih/view?usp=sharing) to help keep track of time during class.
+### Learning Objectives
 
-- - -
+* To begin to feel comfortable building static UIs with JSX.
 
-### Class Objectives
+* To gain an initial understanding of the component-based paradigm in ReactJS.
 
-* Students will understand and utilize ES6 arrow functions
+* To dissect and build a few simple examples using ReactJS.
 
-* Students will understand and utilize const/let and block Scope
+## Slides
+@TODO
+[19.1: React Gently](https://docs.google.com/presentation/d/1M35LtiiJlAmDK27cjyifhbhvcTAoYaUF7-9s6k6ZIP8/edit?usp=sharing)
 
-* Students will understand ES2015 modules
+## Time Tracker
+@TODO
+[19.1 Time Tracker](https://docs.google.com/spreadsheets/d/1NjFssI5jL39mLWGlG2LV6qvwezyOaNrjTP3q3QTyrz4/edit#gid=0)
 
-* Students will understand classes, constructors, and class methods
+### 1. Instructor Do: Go Through Slides (15 mins)
 
-* Students will understand truthy/falsy values and and short circuit evaluation
+* This unit uses a web-based slideshow found here: [React Gently](https://react-gently.netlify.com/).
 
-* Students will understand and utilize ternary expressions
+  * Use the left and right arrow keys to cycle through the slides. It is advisable to view the slideshow in fullscreen Chrome.
 
-* Students will understand and utilize the `forEach`, `map`, and `filter` array methods
+* The most important part to get across today is the concept of components &mdash; self-contained modules that are responsible for producing part of an application's UI and functionality (i.e. all of the layout and functionality code for a "chat box" or "like button" might be in the same file or folder). This is radically different from the concept of separating the view and logic layers. When we split up our application into components, we're still separating its concerns, but we aren't necessarily separating its technologies.
 
-* Students will understand ES6 object destructuring
+* Remember to emphasize that today's class is meant to be a primer. Not comprehensive coverage. Don't let them get intimidated.
 
-- - -
+### 2. Partners Do: Installation + Documentation Research (15 mins)
 
-### 1. Preview:  (5 min)
+* Have students work with partners and introduce them to [14-Stu_DocumentationQuestions](../../../../01-Class-Content/19-react/01-Activities/01-Stu_DocumentationQuestions/README.md).
 
-* This week we will finally be learning React. When working with React, it’s common to utilize newer ES6 JavaScript features we haven’t covered yet. Today we’ll go through some of the most commonly used ES6 features, as well as some JavaScript fundamentals students may not have mastered yet. This will not be a deep dive but an introduction to what they will need to know to be successful in React development, and writing more modern JS code!
+* The first task in this assignment instructs them to install Create React App if they haven't already. Instructional staff should be walking around offering assistance with the research questions, as well as the installation process (which should be fairly straight forward).
 
-* Facebook created React.js. Explain that lots of big companies such as AirBnB, Netflix, Atlassian, Khan Academy, and Walmart build with React. Get students excited about today.
+* Have them work with one another on answering the questions listed using the React.js documentation. Have them divide up the work the questions among teammates, and discuss answers afterwards rather than going through them all one at a time together.
 
-* Transition: We’ll cover a lot of ground in this lesson, but it’s okay if students walk away without a totally solid understanding of every concept, they’ll get to continue practicing everything discussed over the next few lessons. For the most part, it'll be beneficial for students to have some exposure to these concepts before seeming them alongside JSX &mdash; which may be confusing all on its own.
+* Let them know that going through the official documentation may feel challenging at first, but encourage them to revisit it again after todays class. Once they have a basic understanding of React, they should find that the React documentation is some of the best there is for any library.
 
-### 2. Instructor Do: Arrow Function Demo (12 min) (HIGH)
+* Encourage them to take this task seriously as it will help them gain a basic sense of things.
 
-* In this demonstration you will give students and overview of arrow functions, including syntax differences, when to use them, and when to avoid them.
+### 3. Instructor Do: Review Questions (10 mins)
 
-* Explain to the class that ES6 introduces a newer shorter syntax for writing functions. Consider the following example found in [01-syntax.js](../../../../01-Class-Content/19-react/01-Activities/01-Ins_ArrowFunction/01-syntax.js).
+* Slack out the [Solved](../../../../01-Class-Content/19-react/01-Activities/01-Stu_DocumentationQuestions/Solved/README.md) version of the activity and call on various students to answer a few of the questions out loud.
 
-  ![Arrow Intro](Images/arrow-intro.png)
+* Most importantly, make sure students have a basic understanding of JSX and components along with some of the motivations behind them.
 
-  * Point out how we can swap out a function expression for the shorter arrow function syntax.
+  * We use components as a way to separate our application into reusable pieces of its UI. This allows us to think about each part of our application's interface in isolation and allows us to quickly build new views into our apps over time since we'll be able to reuse component's we've already created.
 
-  * Bring everyone's attention to how we can optionally shorten this syntax even further by removing the curly braces if the function has only one expression inside of its body. Explain that when we do this the single expression is returned automatically.
+  * Using JSX is optional but most React projects make use of it. JSX allows us to describe the UI our components using familiar HTML-like markup in our JavaScript. This allows us to quickly describe and understand the UI our components will produce as well take advantage of the full power of JavaScript, rather than be limited to the features available in a templating language such as Handlebars.
 
-  * Finally point out that if an arrow function takes a single parameter, we can optionally omit the parentheses around that parameter.
+* Answer any additional questions students may have before moving on, but assure the class things will become clearer as we work with a few examples.
 
-  * Take a few moments to answer any questions about the arrow function syntax before moving on to some behavioral differences between arrow functions and regular functions.
+### 4. Instructor Do: Demo Create React App (14 mins)
 
-* Now walk through the first part of the code in [02-context.js](../../../../01-Class-Content/19-react/01-Activities/01-Ins_ArrowFunction/02-context.js).
+* Demonstrate for students how we can quickly create a React application using Create React App. Run the following command in the terminal and have students follow along if they wish:
 
-  ![Arrow This](Images/arrow-context.png)
+  * `create-react-app reactpractice`
 
-  * Students may still not feel completely comfortable with the `this` keyword in JavaScript yet, inform them that many experienced developers still aren't as it's a tricky topic.
+    * Explain that to scaffold out a React app with create-react-app, we run `create-react-app` followed by a name for our application.
 
-  * When run in the browser `this` inside of the `setTimeout` method refers to the `window`, when run inside of node, it refers to a newly created `Timeout` object. In both cases, `setTimeout` changes `this` to no longer be the `person` object.
+* Once everything has been installed, cd into your application's directory and start the app by running `npm start` in your terminal and navigating to `localhost:3000`. Explain that this command starts our app in development mode, i.e. this "mode" is meant for development as our application will auto-reload as we make changes to it.
 
-  * Explain that we could resolve this issue by using `.bind(this)` as we've done before, but ES6 introduces arrow functions, a shorter more concise syntax for doing just this.
+  ![Create React App](Images/01-Create-React-App.png)
 
-  * Point out how this code works as intended. Explain that this is because an arrow function automatically binds to the context or object it's created inside of, even if it is not a direct property of that object. The arrow function is created when `saySomething` is run, inside of `person` right before the `setTimeout` is run.
+* Show off the resulting web page, then go back to your code and walk the class through the generated boilerplate. In particular, point out the following key aspects:
 
-* Explain that this may seem great, but we can experience unexpected results if we were to write an object's method as an arrow function. Demonstrate [03-arrow-property-methods.js](../../../../01-Class-Content/19-react/01-Activities/01-Ins_ArrowFunction/03-property-methods.js).
+  * A `src` folder is generated, and we'll mostly be working out of here. Anything inside this folder gets processed by Babel, and then combined into a single `bundle.js` file by webpack. You can see what the combined `bundle.js` file looks like if you were to navigate to [localhost:3000/static/js/bundle.js](http://localhost:3000/static/js/bundle.js) in your browser.
 
-  ![Arrow Property Methods](Images/arrow-property-methods.png)
+  * We have an `index.js` file in the `src` directory. This is where execution of our React application begins. In this way, it is similar to the `server.js` file we've been starting all of our node applications with. In order to run any code in our React app, it needs to be directly written here, or else required/imported here.
 
-  * Explain that when working with objects, we typically want to avoid using arrow functions for its methods. In these cases, the arrow function will bind to the context it's created inside of (probably the `window` or `module.exports` object).
+    ![Index](Images/02-Index.png)
 
-  * We can replace regular functions with arrow functions _most_ of the time, but they aren't meant to replace regular functions altogether for reasons like this. Additionally (native, non-transpiled) arrow functions can't be used as constructor functions and also don't have access to Function prototype methods such as `bind`, `call`, and `apply`.
+  * The `src` folder is where our React components will live. For now, we just have an `App` component. Don't go too deep into the specifics of the `App.js` file yet, but point out that this file is producing some JSX, which corresponds to the web page we have rendered in the browser.
 
-  * Students will become more comfortable with when to use and not use arrow functions as they practice using them. For now, they should understand that they can use them most of the time, but they should avoid using them as object methods.
+  * The `src` folder is also where we'd put any tests we'd like to associate with our components. Create React App ships with [Jest](https://facebook.github.io/jest/), a library for running JavaScript tests that work with React out of the box. For our purposes of learning to use React to build applications, we won't dive into writing tests for React apps, but it's nice to know that we **can** without any extra overhead.
 
-* At a minimum, arrow functions give us slightly shorter syntax for writing functions.
+  * Point out the `registerServiceWorker.js` file. At the time of writing, this is a fairly new addition to Create React App. We don't need to understand the contents of this file, and most of the activities we'll go over will have it removed for brevity, but it helps cache API responses to help make our app perform better for users with poor internet connections.
+
+  * We have a `public` folder. This is primarily for containing the `index.html` that will eventually be served to users visiting our application. Point out the `#root` element &mdash; explain that this will contain our entire rendered, React application. Explain that when we build our React application for production, a `bundle.js` file containing all of our application's JavaScript is generated and added inside of the `index.html` file. We can also store files in this folder which we don't want to be processed by Webpack and Babel. For example, we can place static CSS files here or link to external CDNs in the `head` tag of the `index.html`.
+
+  * Assure the class that we're going to see this setup over and over again, and there isn't a need to completely memorize every aspect of the Create React App boilerplate right now. The most important takeaways are:
+
+    * We're going to be writing most of our code inside of the `src` folder.
+
+    * The "entry" file to our React application will be the `index.js` file.
+
+    * We start our React app in development mode with the command `npm start`. This means our app will live update as we change it, which is why we're running our app on a server.
+
+### 5. Partners Do: Hello World Example (15 mins)
+
+* Inform the class that now that we have a high-level understanding of Create React App, they're now going work in groups to dissect a simpler example and answer some questions.
+
+* Introduce students to [HelloReact](../../../../01-Class-Content/19-react/01-Activities/02-Stu_HelloReact/README.md)
+
+### 6. Instructor Do: Review Hello World Example (10 mins)
+
+* Open the [Solved](../../../../01-Class-Content/19-react/01-Activities/15-Stu_HelloReact/Solved/README.md) version of the activity in your IDE and go over the answers with the class. Use the solution as a guide to walk the class through the code.
+
+* Point out how JSX can either represent primitive HTML tags or React components.
+
+* Demonstrate how we can alternatively write all of our component's code inside of `index.js`. Inform them that this is fine for very small examples, but we'll want something closer to the original setup as our projects grow.
+
+* If necessary, take a few extra minutes here to briefly discuss any confusing ES6 syntax. This portion of the lesson utilizes the `const` identifier, and ES2015 modules.
+
+* 🗒Note the following takeaways:
+
+  * `const` works like var, but it's meant for values that aren't going to be reassigned, otherwise `let` is preferred.
+
+  * `ES2015 modules` are part of a new module system introduced with ES6. So far we've been working with CommonJS modules (`module.exports` & `require` syntax) &mdash; which for our purposes today will work similarly.
+
+  * As we'll see a bit later, ES2015 modules allow for finer tune control over what is exported and imported from a module. For now just compare the new syntax to what they're used to.
 
 * Take a moment to answer any lingering questions.
 
-### 3. Students Do: Arrow Function Practice (12 min)
+### 7. Students Do: HelloDiv (10 mins)
 
-* In this activity students will convert a file with pre-written code over to use arrow functions where suitable.
+* In this activity students will write a React component that displays their name and some information about themselves.
 
-* Students won't need to fully understand how all the code in this activity works, just the rules we've established about when arrow functions should and shouldn't be used.
+* **Instructions:** [README](../../../../01-Class-Content/19-react/01-Activities/03-Stu_HelloDiv/README.md)
 
-* **Activity & Instructions**: [02-Stu_ArrowFunctionPractice](../../../../01-Class-Content/19-react/01-Activities/02-Stu_ArrowFunctionPractice)
+### 8. Instructor Do: Review HelloDiv (5 mins)
 
-* Instructional staff should be circulating the room checking in on students progress and making themselves available for assistance.
+* Once time is up, go over the [Solved](../../../../01-Class-Content/19-react/01-Activities/03-Stu_HelloDiv/Solved) version of the activity as a class.
 
-### 4. Instructor Do: Review Arrow Function Practice (12 min)
+* Make sure everyone understands the following concepts:
 
-* Open [Solved/index.js](../../../../01-Class-Content/19-react/01-Activities/02-Stu_ArrowFunctionPractice/Solved/index.js) in your editor and run the code. Point out that even though we've converted a few of the examples over to use arrow functions, the code works exactly the same as it did before.
+  * `HelloDiv` is exported and rendered inside of `App`.
 
-  ![Omit Parens](Images/omit-parens.png)
+  * `App` is exported and then rendered inside of `index.js` as the first argument to the `ReactDOM.render` method.
 
-  * Point out again how we can omit the parentheses around the arrow function parameters if there is only one. This **does not** work if the arrow function has multiple or no parameters. This is optional, assure students that they don't need to do this, but may see code written this way.
+  * The second argument to the `ReactDOM.render` method is the real DOM element that our React application should be rendered inside of.
 
-  ![Omit Curly](Images/omit-curly-braces.png)
+  * `HelloDiv`, like most components we'll write, is a JavaScript function; it returns some JSX.
 
-  * Point out again how we can also omit an arrow function's curly braces if the arrow function body only contains one expression. The single expression is automatically returned from the function when we use this shorter syntax. Students may see code written in this way, but this is also optional, if students prefer, they may continue to use curly braces and the `return` keyword.
+    ![HelloDiv](Images/03-HelloDiv.png)
 
-* Finally point out the `netflixQueue` object. Ask the class: Why didn't we convert the functions here to arrow functions?
+    * Some students may have an error when they tried to render multiple JSX elements. Explain that _normally_, we aren't able to render multiple JSX elements from a component without an enclosing parent tag.
 
-  ![Netflix Object](Images/netflix-queue.png)
+      * This may seem strange at first, but if we think about our component in the same way we think about any other JavaScript function, it makes perfect sense: a JavaScript function can only return one value. To have separate groups of JSX being returned outside of a parent element would be like trying to write a JavaScript function that returns multiple different variables at once.
 
-  * Whenever we're working with objects, we usually don't want to write its methods as as arrow functions since `this` inside of the arrow function will refer to whatever object the one we're defining is inside of (usually the `window` in the browser or `module.exports` in node).
+  * **Note:** With the release of React 16, we _do_ have another option for returning multiple JSX elements from a component: we can return an array.
 
-* Inform the class that the key takeaways for now are:
+    * Based on your students' level of understanding and comfort so far, you may want to skip over explaining this as there aren't any activities or use cases we'll run into where understanding this pattern is required.
 
-  * In most cases, we can replace regular functions with arrow functions.
+    * If you choose to proceed, the `HelloDiv` component can also be written as follows:
 
-  * Arrow functions shouldn’t be object methods.
+    ```js
+      function HelloDiv() {
+        return (
+          <h1>Hey guys! I'm a header!</h1>,
+          <h2>Things I like!</h2>,
+          <ul>
+            <li>Peas</li>
+            <li>Carrots</li>
+            <li>Love</li>
+          </ul>
+        );
+      }
+    ```
 
-### 5. Instructor Do: Let and Block Scope (12 min) (CRITICAL)
+### 9. Instructor Do: Hello Bootstrap (10 mins)
 
-* In this example we will demonstrate the new `let` keyword and how block scoping works.
+* Welcome the class back from break!
 
-* Explain to the class that by now they should be familiar with function scope. Have a volunteer offer up their explanation for what this means.
+* So far we've only just begun to work with React but we've still managed to learn a few key things:
 
-* With function scope, variables defined inside of a function body are only available inside of that function, as well as functions defined inside of that function.
+  * In React, we structure our code into components.
 
-* Explain that ES6 offers us a new way to define variables using `let`. Unlike `var`, `let` is block scoped.
+  * A component is a JavaScript function that describes some part of our application's UI.
 
-* Inform the class that a "block" is created whenever we have a pair of curly braces. This includes loops and conditional statements as well as function bodies. Since `let` is block scoped, any variables we define using `let` inside of a block are only available inside of that block.
+  * Inside of our components, we describe our application's UI using JSX: a markup syntax that resembles HTML.
 
-* This can help us avoid a few silly mistakes in our code. Point out the first example in [index.js](../../../../01-Class-Content/19-react/01-Activities/03-Ins_LetAndBlockScope/index.js).
+* Explain that we're now going to go over how we can add Bootstrap to a React project.
 
-  ![Let For Loop](Images/let-for-loop.png)
+* Replace your React application's src folder with [06-Ins_HelloBootstrap/src](../../../../01-Class-Content/19-react/01-Activities/06-Ins_HelloBootstrap/src) and start the development server by running `npm start`. See the rendered application at [localhost:3000](http://localhost:3000).
 
-  * Point out how our for-loop counter continues to exist after the for-loop has ended. We don’t need it anymore. This could potentially cause issues if we wanted to refer to a different variable with the same name as the counter later.
+  ![No Bootstrap](Images/04-NoBootstrap.png)
 
-  * Even though the `let` declaration is not technically inside of the curly braces, it's considered to be part of the block anyway in this case.
+* Explain to the class that the rendered elements in this example are using Bootstrap classes.
 
-  * Point out how the counter no longer exists after the loop is done when we use `let`.
+  * Without going into the component code yet, assure everyone that all of the React code is correct. Ask the class: Why then isn't my page rendering Bootstrap elements? What did I forget?
 
-  ![Let Conditional](Images/let-conditional.png)
+    * We need to include Bootstrap into our project somehow.
 
-  * Point out how when using `let`, any values defined inside of a conditional block no longer exist outside of the conditional.
+    * Open up the example in your code editor and ask the class: What should I do to if I wanted to add Bootstrap using a CDN?
 
-* If you need to use a variable both inside and outside of  a block, you’d define it outside of the block. Example:
+      * So you don't have to go looking for it: `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"/>`
 
-  ![Let Reassign](Images/let-conditional-reassign.png)
+      * Try to get the class to lead you to the `index.html` file inside of the `public` folder. Ask them: Where should I put this link? Remind them that earlier we mentioned there was a folder where we keep static assets we don't want to be processed.
 
-  * This helps express intent because it tells others more information about where or how we’ll be using the value.
+      * We can add our Bootstrap CDN to `public/index.html` in the Create React App generated code in order to include Bootstrap for all of our components. After adding the CDN, go back to your web browser and demonstrate the updated page.
 
-* Inform the class that going forward, we will no longer be using `var`. Unlike arrow functions and regular functions, we can completely replace `var` with `let`.
+    ![Hello Bootstrap](Images/05-HelloBootstrap.png)
 
-* Take a moment to answer any questions, but avoid getting too off track! We'll go over `const` next!
+* Now open up the `components/HelloBootstrap.js` file and demonstrate the code. The JSX code being rendered is close to the HTML we'd use to render the same Bootstrap elements without React.
 
-### 6. Instructor Do: Constant Reference (12 min)
+  ![Hello Bootstrap](Images/06-HelloBootstrap.png)
 
-* In this demonstration we will cover the new `const` keyword for defining variables and when it should be used.
+* Ask the class: can anyone spot the key difference between this JSX and the HTML we'd normally write?
 
-* Explain to the class that while we can replace all the `var`s in all of our code with `let`, we also have one more new option for declaring variables: `const`.
+  * `className` is used instead of `class`. Explain that this is because in JavaScript, `class` is a reserved word, similar to `var` or `for` or `function`.
 
-* Ask the class: Can anyone tell me what they think `const` is used for in JavaScript?
+    * Explain that there are other differences between HTML and JSX which we'll run into soon.
 
-  * Odds are, if any students have been exposed to another programming language, someone will answer that `const` is like `let`, except that it's for variables which can't be changed. This is _mostly_ true.
+  * Remind students that JSX isn't HTML, so there are a few caveats. JSX is sugar syntax for calls to the `React.createElement` method, and according to [Facebook's React Docs](https://facebook.github.io/react/docs/introducing-jsx.html#specifying-children-with-jsx): "JSX is closer to JavaScript than HTML".
 
-* Explain that `const` has the same rules as `let` for block scoping. There is, however, one one key difference between `const` and `let`: a variable declared with `const` cannot be _reassigned_.
+### 10. Students Do: Hello Bootstrap (10 mins)
 
-* Inform the class that using `const` can help prevent us from accidentally reassigning values we don't mean to, and also helps express intent, helping us document important values in our code for other developers, or for our future selves when we forget how the code works.
+* In this activity, students will be given slightly less starter code and tasked with creating a React application which renders Bootstrap components to the page.
 
-* Open [index.js](../../../../01-Class-Content/19-react/01-Activities/04-Ins_ConstantReference/index.js) and go through each example.
+* **Instructions:** [README](../../../../01-Class-Content/19-react/01-Activities/05-Stu_HelloBootstrap/README.md)
 
-  ![Constant Reference](Images/const-reassign.png)
+### 11. Instructor Do: Review Hello Bootstrap (8 mins)
 
-  * Point out that whenever we try to reassign a variable declared with `const`, we get an error in the console. Whenever we're working with primitive types such as strings or numbers, even modifying the value e.g. `age++`, is considered to be reassigning it. This is because primitive types such as numbers and strings are "passed by value", i.e. a new value is created and referred to in memory anytime we modify variable containing a primitive type.
+* Briefly go over the [Basic Solved](../../../../01-Class-Content/19-react/01-Activities/05-Stu_HelloBootstrap/Solved/Basic) version of the previous activity.
 
-  ![Modifying Constant](Images/const-modify.png)
+  ![Hello Bootstrap Solved](Images/07-HelloBootstrapSolved.png)
 
-  * Point out how in the second example, we can update the array and object as long as we aren't reassigning them completely, i.e. using the `=` operator to assign the variables a new values.
+* The most important takeaways are:
 
-  * Explain that `const` in JavaScript doesn't mean "constant value", but rather "constant reference". Because arrays and objects are non-primitive values, they are "passed by reference", i.e. modifying an array or object doesn't create a new object or array in memory. This is why we can push to the array or update the object's properties.
+  * If we want to render multiple JSX elements, they should be contained within a single parent element, such as a `div`.
 
-  ![Const Reassign](Images/const-reassign-2.png)
+  * Void elements, such as `input` tags, are represented by JSX tags with a self-closing forward slash, i.e. `<input />`.
 
-  * To check for understanding, ask the class: `Why isn't this last example allowed?`
+  * We need to import the `react` library anywhere that we are utilizing JSX.
 
-    * While we can modify arrays and objects declared with `const`, we still can't reassign them completely.
+  * We use `className` instead of `class` because `class` is a reserved word in JavaScript.
 
-* Key takeaways for this demonstration:
+* Take a few moments to demonstrate the [Bonus Solution](../../../../01-Class-Content/19-react/01-Activities/05-Stu_HelloBootstrap/Solved/Bonus). The rendered page should be the same, so you only need to walk demonstrate the code in your editor.
 
-  * Both `const` and `let` are block scoped.
+  * The main takeaway here is that we can define our components in different files and compose multiple components inside of another component (`Navbar`, `Jumbotron`, and `Card` are rendered inside of `App`).
 
-  * Use `let` whenever a value will need to be reassigned.
+    ![Hello Bootstrap Bonus](Images/08-HelloBootstrapBonus.png)
 
-  * Use `const` whenever a value won't need to be reassigned.
-
-### 7. Students Do: Convert Const Let Arrow (15 min) (CRITICAL)
-
-* In this activity students will convert a prebuilt Crystal Guessing Game to use the new ES6 syntax covered so far.
-
-* Stress that students don't need to completely understand all of the code in the activity. They just need to remember what we just overed about `const`, `let`, and arrow functions.
-
-* **Activity & Instructions**: [05-Stu_ConvertConstLetArrow](../../../../01-Class-Content/19-react/01-Activities/05-Stu_ConvertConstLetArrow/Unsolved)
-
-### 8. Instructor Do: Review Convert Const/Let & Arrow (11 min)
-
-* Open [index.js](../../../../01-Class-Content/19-react/01-Activities/05-Stu_ConvertConstLetArrow/Solved/index.js) in your code editor and walk through the code with the class.
-
-* For every `let`, ask the class: "Why it isn't a `const` instead?"
-
-  * Because the value is reassigned somewhere.
-
-* For every `function` keyword: ask the class, "Why isn't an arrow function isn't used instead?"
-
-  * In this activity, constructor functions and functions that are object methods using the `this` keyword are kept as regular functions.
-
-  * For object methods, arrow functions will prevent `this` from binding to the object.
-
-  * Arrow function's can't be used as constructor functions.
-
-* Run the application in the browser and demonstrate that it works the same as it did before.
-
-* Answer any remaining questions about the solution.
-
-### 9. Instructor Do: Truthy/Falsey and Ternary Expressions (14 min) (CRITICAL)
-
-* In this example we will briefly go over short circuit evaluation as well as ternary expressions. While not new to JavaScript, these are heavily used in React and may require some explanation.
-
-* Go over the code in [index.js](../../../../01-Class-Content/19-react/01-Activities/06-Ins_TruthyFalsey/index.js) one at a time and have students guess or explain what each value will log and why. Try to make this part fun! Students are learning about to learn about concept in JavaScript that escapes many professional developers.
-
-  ![Truthy Falsey](Images/truthy-falsey.png)
-
-* Be sure to explain how some values can be cast to `true` or `false` depending on what they are, hence the terms truthy and falsey values.
-
-* An easy way to explain this would be to have students ask themselves if a value _exists_. i.e. `0`, `null`, `undefined`, `""`, are all empty/nonexistent values.
-
-* If you'd like, show the class how a value can be explicitly converted to a boolean using the Boolean constructor. Example:
-
-  ```js
-  const falsey = 0;
-  console.log(Boolean(falsey)); // prints false
-  ```
-
-* Explain the flow our code takes as we use the `||` or `&&` operator, and have students guess how this works as you go through the examples.
-
-  * When using `||` operator, the if the value to the left of the operator is evaluated as truthy, that value is returned and the value on the right is thrown away. If the value on the left of the operator is evaluated as falsey, the value on the right is evaluated and returned whether it's truthy or not.
-
-  * When using the `&&` operator, if the value on the left is evaluated as falsey it is returned and the value on the right is thrown away. If the value on the left is evaluated as truthy, the value on the right is evaluated and returned, whether it's truthy or not.
-
-  * Point out how this works the same here as it does in if/else statements. A final value is returned by the expression and used to decide if the conditional should run or not.
-
-* Explain to students the concept of _Ternary Expressions_.
-
-  * Ternary expressions perform a function similar to if/else statements, with much less code.
-
-  * Ternary expressions are written in the format of `condition ? evalAndReturnIfConditionIsTruthy : evalAndReturnIfConditionIsFalsey`
-
-    ![Ternary](Images/ternary-expression.png)
-
-    * Point out how ternary expressions can be used to assign a value to a variable or execute some basic logic based on a simple condition.
-
-    * Explain that these don't replace if/else statements, but for simple conditionals it might be more elegant to use a ternary expression.
-
-* Take a moment to answer any remaining questions, students will get to practice hands-on in the next activity.
-
-### 10. Student Do: Truthy and Falsey (12 min) (HIGH)
-
-* In this activity students will refactor if/else statements to make use of short-circuit evaluation and ternary expressions. Once complete, the activity code should work the same way.
-
-* **Activity & Instructions**: [Truthy Falsey](../../../../01-Class-Content/19-react/01-Activities/07-Stu_TruthyFalsey/Unsolved)
-
-* Instructional staff should be circulating the room during this activity, checking student progress and making themselves available for assistance.
-
-### 11. Instructor Do: Review Truthy and Falsey (12 min)
-
-* Open [index.js](../../../../01-Class-Content/19-react/01-Activities/07-Stu_TruthyFalsey/Solved/index.js) in your code editor and walk through the code with the class.
-
-* Optionally, if the class had an easy time with this activity, consider showing them the default parameter syntax introduced with ES6:
-
-  ```js
-  const logSomething = something => {
-    something = something || "something";
-    console.log(something); // prints "something"
-  };
-
-  // Can be written as...
-
-  const logSomething = (something = "something") => {
-    console.log(something); // prints "something"
-  };
-  ```
-
-* Be sure to answer any questions students have and provide some encouragement to the class on covering all these features already going into break.
-
-* Great! We have learned a nice little foundation of ES6 syntax and updated some old code to utilize these new features! We also dug into Truthy/Falsy values, Ternary Operators and Short Circuit Evaluation. While some of these are things you have encountered briefly before, getting some more exposure and explanation is always helpful. Let's take a break and get back into it with some new Array methods!
+  * This is powerful because it begins to demonstrate the potential for code reuse. Instead of having to rewrite every UI element from scratch using individual HTML tags, we could write a component once and reuse it across our entire application.
 
 - - -
 
-### 12. Everyone Do: BREAK (35 mins)
-
-* Tell students to take a quick 5 minute break. We'll get another 10 minute break later, but we have a few more concepts to cover.
+### 10. Everyone Do: BREAK (15 mins)
 
 - - -
 
-### 13. Instructor Do: Functional Loops (14 min) (CRITICAL)
+### 13. Instructor Do: JSX Variables (8 mins)
 
-* In this demonstration students will be introduced to new Array methods `forEach`, `filter`, and `map`.
+* Replace your React app's `src` folder with [19-Ins_JSXVariables/src](../../../../01-Class-Content/19-react/01-Activities/06-Ins_JSXVariables/src). Stop the dev server if it is already running. Start the app in dev mode by running `npm start`.
 
-* Explain that `filter` and `map` are used heavily in React when rendering elements from array data. Students have probably seen `forEach` already, but it's a good stepping stone for understanding `filter` and `map`.
+* Once the app starts, open [localhost:3000](http://localhost:3000) in your web browser.
 
-* Go through each example in [index.js](../../../../01-Class-Content/19-react/01-Activities/08-Ins_FunctionalLoops/index.js) one at a time to demonstrate the utility of `forEach`, `filter`, and `map`.
+  ![JSX Variables Demo](Images/09-JSXVariableDemo.png)
 
-  ![Functional Loops](Images/functional-loops.png)
+* Point out that the HTML code being rendered to the browser isn't much different than the code we've already worked with. At first glance, it doesn't appear as though we're doing anything new.
 
-  * Explain how each of these array methods:
+* Open `src/components/JSXVariables.js` and walk the class through the code.
 
-    * Works on an array
+  ![JSX Variables](Images/10-JSXVariables.png)
 
-    * Runs a callback function once for each element in the array
+* Point out the following key points:
 
-    * Passes the each element into the callback as an argument
+  * We can write comments inside of our JSX using JavaScript's multi-line comment syntax inside of curly braces. If we were to try and write regular JavaScript comments inside of our JSX, the code would break.
 
-  * Then work on explaining the differences between each of these methods:
+  * In addition to being able to write comments inside of the curly braces, we can also embed JavaScript expressions. This works similarly to the `{{ }}` double curly braces we've worked with in Handlebars.
 
-    * `forEach` is the simplest. It runs the callback for each element in the array
+    * We use the `name`, `num1`, and `num2` variables inside of our JSX code. Try updating the `name` variable and demonstrating to the class how when the page refreshes, we have the updated name being rendered.
 
-    * `fitler` is similar to `forEach`, but it returns a brand new array using elements in the original array. If an element's callback function returns a truthy value, it is added to the newly returned array, otherwise it is _filtered_ out and doesn't get added to the new array.
+    * Rendering `name` is a fairly simple example, but we can also evaluate entire expressions inside of JSX curly braces. Point out how we're producing random numbers and reversing `name` further down below.
 
-    * `map` is similar in that it also returns a brand new array using elements in the original array. Unlike `filter`, the new array created with `map` is always the same length as the original array. Whatever is returned by the callback on each iteration is what goes into the new array. We can use this to create a new array of modified elements, or elements computed from values in the original array.
+      * Explain that an expression is any valid set of literals, variables, operators, and expressions that evaluates to a single value. In other words, anything we can assign to a variable or pass as a function argument is an expression. This doesn't include loops or conditionals, which we have various ways to deal with that we'll go over later.
 
-* Run each example one at a time and demonstrate the logged output for students.
+    * Explain that these curly braces are how we get data from our JavaScript code into the views React renders.
 
-* If helpful, demonstrate how each piece of functionality can be achieved (with more code) using for-loops.
+      * Point out that this is different from jQuery or vanilla JavaScript where we have to call methods to explicitly set the inner text of an element.
 
-### 14. Students Do: Functional Loops (14 min) (CRITICAL)
+    * Remind everyone that when we were working with Handlebars, we couldn't write raw JavaScript code inside of the `{{}}` double curly braces. Instead we had to use the Handlebars templating language which only exposed certain functionality. Since what we're writing inside of the JSX curly braces is just regular JavaScript, we have access to the full power of JavaScript inside of our views.
 
-* In this activity students will use the `map` and `filter` methods to solve problems they previously would have used for-loops for.
+* Take a moment to answer any questions, but avoid getting too off track.
 
-* Consider live-coding each problem piece by piece over the duration of the activity.
+### 14. Students Do: JSX Variables (10 mins)
 
-* **Activity & Instructions**: [Functional Loops Unsolved](../../../../01-Class-Content/19-react/01-Activities/09-Stu_FunctionalLoops)
+* In this activity students will render JavaScript expressions inside of JSX curly braces.
 
-### 15. Instructor Do: Review Functional Loops (12 min)
+* **Instructions:** [README.md](../../../../01-Class-Content/19-react/01-Activities/07-Stu_JSXVariables/README.md)
 
-* Once time's up, open the [activity solution](../../../../01-Class-Content/19-react/01-Activities/09-Stu_FunctionalLoops/Solved) and go over the code.
+### 15. Instructor Do: Review JSX Variables (5 mins)
 
-* Start by demonstrating the `map` example.
+* Go over the [Solved](../../../../01-Class-Content/19-react/01-Activities/07-Stu_JSXVariables/Solved) version of the activity.
 
-  ![Stu Map](Images/stu-map.png)
+  ![JSX Curly](Images/10-JSXCurly.png)
 
-  * Remind the class that the callback is run once for each element in the array. Whatever it returns is what goes into the corresponding index of the new array.
+* Make sure everyone understands that when we use JSX curly braces, it means we want to evaluate a JavaScript expression inside. The final value of the expression will be rendered to the page.
 
-  * If the arrow function syntax is still confusing, refactor the solutions to use regular functions instead.
+### 16. Instructor Do: CSS Demo (10 mins)
 
-* Then move on to the `filter` example.
+* Inform the class that now we're going to talk about some new built-in options for styling our components.
 
-  ![Stu Filter](Images/stu-filter.png)
+* Replace your React app's `src` folder with [08-Ins_CSSDemo/src](../../../../01-Class-Content/19-react/01-Activities/08-Ins_CSSDemo/src). Stop the dev server if it is already running. Start the app in dev mode by running `npm start`.
 
-  * Point out that we don't need to pass an anonymous function into the `map` and `filter` methods &mdash; we can write a named function and use that instead, as is the case for `isPrime`.
+* Open your browser to [localhost:3000](http://localhost:3000) and demonstrate the rendered application.
 
-  * Remind the class that if the function returns something truthy, that array element is copied to the new array, otherwise it is skipped.
+  ![CSS Demo](Images/11-CSSDemo.png)
 
-    * The first example should contain an array of only prime numbers, the second should only contain numbers larger than `5`.
+* Explain that Create React App allows us to import CSS into our components. Open the `Header` component to demonstrate this.
 
-  * Once again, refactor the solution to regular functions if arrow functions are still a point of confusion.
+  ![Header](Images/12-Header.png)
 
-* Check for understanding by asking questions such as:
+* Point out that we aren't saving the stylesheet to a variable. Instead, whenever we import a stylesheet, an internal style tag is created and added to the document.
 
-  * "When's a time in real life when you need to _filter_ through something?"
+* Demonstrate how the `Header` is using the classes defined in the `Header.css` stylesheet it's importing.
 
-    * When looking for a word in the dictionary, you're _filtering_ out all the words that don't contain the same letters as the one you're looking for.
+  ![Header Styles](Images/13-HeaderStyles.png)
 
-    * When shopping for pants, you're _filtering_ out all the ones on the rack that aren't your size.
+* This approach may be a good idea if we want to keep our component more closely coupled to its styles. Ask the class: How many times have you been working on a project or homework assignment and had a CSS issue because of CSS that was a little messy?
 
-    * When you're looking for your friend in a crowd, you're _filtering_ out everyone that doesn't look like them.
+* By separating our CSS files by component, we'll generally have smaller, more manageable stylesheets. Adding new styles or changing existing ones should be easier as our applications grow larger.
 
-  * "When's a time in real life when you need to _map_ over something?"
+* Explain that we are also able to add inline styles to JSX elements. Open the `Card` component to demonstrate this.
 
-    * When you're _mapping_ through your todolist and marking off all the things you've completed for the day.
+  ![Inline Styles](Images/14-InlineStyles.png)
 
-    * When you're _mapping_ through your laundry pile, categorizing your clothes so you can put them into the correct drawers.
+* Point out that we can set a `style` similarly to how we can when writing regular HTML code, but with two key differences. Ask the class: What's happening inside of our JSX that we wouldn't do with regular HTML?
 
-* Explain that just like how we need to map and filter over things in real life, we often need to in code as well.
+  * React expects the `style` property to be an object, rather than a string.
 
-* Take a moment to answer any remaining questions before the next demonstration.
+  * We're using JSX curly braces to embed the style object.
 
-### 16. Instructor Do: ES6 Classes (12 min)
+* Point out that the object properties are camelCased and non-numerical values are strings. Numerical values will default to pixels if a unit of measurement is expected.
 
-* In this example, students will be introduced to ES6 classes.
+* Explain that writing inline styles with JavaScript objects may feel a little strange, but this has some advantages over using actual stylesheets:
 
-* Explain that many programming languages have the concept of classes. A class can be used as a blueprint for creating new objects or "instances".
+  * Using a `style` property, our styles are scoped to the components they're attached to, meaning we won't have any issues with CSS scoping or naming collisions.
 
-* Up until recently, we used constructor functions in JavaScript to achieve the same effect. Constructor functions often confuse developers as they aren't as clear or as familiar as the class syntax. In order to use constructor functions effectively, developers need to have some understanding of the language's implementation details, e.g. the `prototype` chain, `Object.create`.
+  * Because our styles are defined using a JavaScript, we can can write JavaScript logic to determine what our styles should be at any given point. This will be useful as we begin to build more dynamic apps.
 
-* Explain that fundamentally, classes in ES6 are just a new syntax for JavaScript constructor functions that make it easier to define blueprints for objects.
+* Explain that we could define our component's styles inside of a CSS stylesheet, we could use inline styles, or we could use some mixture of the two.
 
-  * Demonstrate the `Vehicle` class in [Vehicle.js](../../../../01-Class-Content/19-react/01-Activities/10-Ins_Classes/Vehicle.js).
+  * It's up to us to decide how we want to organize our component styles, but there is value in being consistent in whichever approach or hybrid approach we take.
 
-  ![Vehicle Class](Images/vehicle-class.png)
+### 17. Students Do: CSS Props (10 mins)
 
-  * Explain that the `constructor` method is used for receiving arguments as well as setting instance properties.
+* In this activity students will change the appearance of an application's components using inline styles.
 
-  * Below the `constructor` method are all the methods that should be defined on every object created with the Vehicle class.
+* **Instructions:** [README.md](../../../../01-Class-Content/19-react/01-Activities/09-Stu_StyleProp/README.md)
 
-  * Run the code and demonstrate how the `vehicle` object was created and has the properties and methods defined on the class.
+* Slack out `22-Stu_StyleProp/Unsolved`
 
-  * Compare the `Vehicle` class to the commented out `Vehicle` constructor function. Answer any questions before moving on.
+### 18. Instructor Do: Go through Slides (10 mins) (High)
 
-* Open the [Car.js](../../../../01-Class-Content/19-react/01-Activities/10-Ins_Classes/Vehicle.js) file and explain that this class `extends` or "inherits" from the `Vehicle` class. In other words, `Car` has all the attributes and behaviors as `Vehicle`, plus a little extra.
+* This unit uses a web-based slideshow found here: [ReactJS Recap slides](https://docs.google.com/presentation/d/18Q6g_4tMD01MyMUw8euaoldLHdJgJodbbd5XSzXV8UQ/edit?usp=sharing). Be sure to give students enough time to answer each question and discuss before going over the answers.
 
-  ![Car Class](Images/car-class.png)
+  * Use the left and right arrow keys to cycle through the slides. It is advisable to view the slideshow in fullscreen Chrome.
 
-  * Explain that in this relationship, `Vehicle` is known as the "super-class". We could also define a `Bicycle` class that extends from `Vehicle` class if we wanted to share some functionality between them.
+### 19. Instructor Do: Props Demo (15 mins) (High)
 
-  * Inside of the `constructor` method for the `Car` class, `super` refers to the `constructor` method of the super-class: the `constructor` method inside of `Vehicle`.
+* Inform the class that we can conceptualize React components as JavaScript functions.
 
-  * Point out how we didn't have to define an `accelerate` method on `Car` to use it. It was already defined in `Vehicle`.
+* It's a component's job to describe and _return_ some part of our application's UI.
 
-  * Explain how the string template literals work in the `logSpeed` method.
+* Ask the class: If a component is a function that _returns_ some data, what else might a component be able to do?
 
-    * We snuck this ES6 feature in here, but it's simple enough. When writing strings with backticks, we can insert values using `${}` without using the concatenation operator.
+  * Since it's a function, a component can also receive arguments.
 
-    * This also allows us to write multi-line strings without escaping or concatenating multiple strings.
+* This allows us write components that behave differently based on the arguments that they receive.
 
-    * Like many ES6 features, this is optional, students can still use regular string concatenation if they want to, but they should understand what this new syntax does.
+* We call the arguments we pass into React components `props`.
 
-  * Lastly take a quick moment to demonstrate how the ES5 version works.
+* If you haven't already done so, scaffold out a React application by running the following command in your terminal: `create-react-app demoapp`.
 
-* Answer any remaining questions, but explain to the class that they'll be okay walking away with a high-level understanding for now. Once we start working with React, we'll have even further simplified class syntax.
+* This example uses Bootstrap. Add the following link tag to your React app's `public/index.html` file:
 
-### 17. Student Do: Constructor to Class (12 min)
-
-* In this activity students will convert a constructor function to an ES6 class.
-
-* Encourage students to look back at the previous Vehicle example if they get stuck.
-
-* **Activity & Instructions**: [11-Stu_ConstructorToClass](../../../../01-Class-Content/19-react/01-Activities/11-Stu_ConstructorToClass)
-
-### 18. Instructor Do: Review Constructor to Class (12 min)
-
-* Once time's up, go over [the solution](../../../../01-Class-Content/19-react/01-Activities/11-Stu_ConstructorToClass/Solved) as a class.
-
-* Answer any questions before wrapping up for the day.
-
-### 19. END (0 min)
-
-* If time permits, feel free to run through the bonus activities. These aren't crucial right now, so it's okay to encourage students to go through them on their own time.
-
-* Mention that there are a few ES6 features we didn't go into today: Spread operator/rest parameters, generators, the `fetch` API, and more.
-
-* Explain that some of these we'll cover over the next few weeks, but it'd take too much time to go through them all in class. Encourage everyone to spend some time outside of class investigating!
-
-### 20. BONUS Instructor Do: Object Destructuring (12 min)
-
-* In this example, students will be introduced to the ES6 object destructuring syntax.
-
-* Explain that object destructuring is a way for us to pull properties off of an object an onto separate variables for easier access. We can achieve this without ES6, but now we have a newer shorthand for doing so.
-
-* Go through each example inside of [index.js](../../../../01-Class-Content/19-react/01-Activities/12-Ins_ObjDestructuring/index.js).
-
-  * Highlight how we can destructure multiple object properties at once, saving us a few lines of code.
-
-  * Demonstrate how this is also possible with function parameters. This allows us to have named function parameters i.e. if we passed multiple values into a function one at a time, we'd need them to be passed in the specific order intended. Now we can simply expect an object and pull the properties off without worrying about the order they're passed in or write extra code to destructure them the old way.
-
-* If you're ahead of schedule and you feel as though it wouldn't overwhelm the class, feel free to demonstrate how arrays can also be destructured. Example:
-
-  ```js
-  const strangeKids = ["Will", "Mike", "Dustin", "Luke", "Eleven", "Max"];
-  const [kid1, kid2] = strangeKids;
-  console.log(kid1); // prints "Will"
-  console.log(kid2); // prints "Mike"
+  ```html
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"/>
   ```
 
-  * This isn't important to cover at all now, so use your best judgement.
+* Replace your React app's `src` folder with [10-Ins_PropsDemo/src](../../../../01-Class-Content/19-react/01-Activities/10-Ins_PropsDemo/src). Stop the dev server if it is already running. Start the app in dev mode by running `npm start`.
 
-### 21. BONUS Instructor Do: ES2015 Modules (12 min)
+* Demonstrate the rendered page in your web browser:
 
-* In this example, students will be given a brief introduction to ES2015 modules.
+  ![Alert Danger](Images/01-AlertDanger.png)
 
-* Explain that ES6 also introduces a new module system for sharing data between files known as ES2015 modules.
+* This example is rendering a simple Bootstrap alert element. Open `src/components/Alert.js` and demonstrate the code:
 
-* What we've been using so far, `require/module.exports` is part of what's known as commonJS modules.
+  ![Alert Component](Images/02-AlertComponent.png)
 
-* Explain that the ES2015 module system is closer to how modularization is handled in many other programming languages, and gives us a greater degree of control over what is shared and imported between files. ES2015 are also tree-shakeable -- i.e. any unused imports can be excluded from the final application, saving space and helping the application run faster.
+* Explain that every component has access to a `props` argument. Props is always an object containing all of the values passed the component.
 
-* Open the [commonJS](../../../../01-Class-Content/19-react/01-Activities/13-Ins_ES2015Modules/commonJS) folder and go through each file one at a time, demonstrating the path each module takes, how we export/import one or multiple values.
+* We're using `props.type` to determine what the evaluated `className` of the `div` element is.
 
-* Then open the [es2015](../../../../01-Class-Content/19-react/01-Activities/13-Ins_ES2015Modules/es2015) folder. Explain that ES2015 modules don't work yet in node, so we'll need to run the code using Babel, a JavaScript compiler.
+* This component renders `props.children` between it's `div` tags.
 
-* Run `npm install` followed by `npm start` to run the `C.js` file.
+* Compare this to the value of `props` as it is logged to the console:
 
-* Go through each file in [es2015](../../../../01-Class-Content/19-react/01-Activities/13-Ins_ES2015Modules/es2015) and explain that the result of both approaches is the same here.
+  ![Logged Props](Images/03-LoggedProps.png)
+
+* Point out that since `props.type` is equal to "danger", then the computed `className` of the `div` in the `Alert` component is "alert alert-danger". This Bootstrap class is providing our component its styles.
+
+* The `Alert` component is also receiving a `children` prop with a value set to "Invalid id or password" &mdash; the same message being displayed inside of the rendered Bootstrap alert element.
+
+* Open `src/App.js` in your editor and explain to the class how these props are being passed into the `Alert` component.
+
+  ![Alert Props](Images/04-AlertProps.png)
+
+* We have 2 ways of passing props into a component:
+
+* First, we can set an attribute to the rendered component's tag.
+
+  * We're passing a `type` prop equal to `danger`.
+
+* Second, we can give a component a sibling tag and pass an expression between the tags.
+
+  * We don't name this prop, it is automatically set a `children` key.
+
+  * We're passing a `children` prop equal to "Invalid user id or password".
+
+* Demonstrate how you can change what is rendered by the `Alert` component by passing it a different `type` and `children` prop.
+
+  * For example, setting `type` to "success" and `children` to "Welcome Back!" would render the following in the browser:
+
+    ![Alert Success](Images/05-AlertSuccess.png)
+
+* Explain that having this familiar syntax for passing props to our components is another way for JSX to be similar to HTML. We don't need to explicitly call any functions or modify any object properties ourselves.
+
+* Explain that props allow us to customize our components so that we can reuse them in different situations.
+
+  * For example, we might use this `Alert` component on a sign-in page and render a different alert depending on whether or not a user has successfully logged into their account.
+
+* Inform the class that we can pass any type of data as a prop, including strings, numbers, arrays, functions, even entire components.
+
+* Props are the primary means by which we pass data around our React apps. React utilizes a unidirectional data flow, meaning data only flows one direction: from the top down, parent to child.
+
+  * This unidirectional data flow makes changes in React apps more predictable and easier to debug.
+
+* Ask the class: If a prop inside of our component isn't what we expect it to be, where could we look to find out why?
+
+  * We could look at the component's parent.
+
+  * In this example, `App` and `Alert` have a parent/child relationship. `Alert` is being rendered inside of `App` and `App` is passing props to `Alert`.
+
+* Take a moment to answer any questions before the first activity.
+
+### 20. Partners Do: Calculator Props (10 mins)
+
+* In this activity students will work with a partner to write a component that accepts props, performs arithmetic and renders the result.
+
+* **Instructions:** [README](../../../../01-Class-Content/19-react/01-Activities/11-Stu_PropsCalculator/README.md)
+
+### 21. Instructor Do: Review Calculator Props (10 mins)
+
+* Open [PropsCalculator solved](../../../../01-Class-Content/19-react/01-Activities/11-Stu_PropsCalculator/Solved) in your IDE.
+
+* Demonstrate how the completed example renders the result of each problem in the browser:
+
+  ![Rendered Math](Images/01-RenderedMath.png)
+
+* Demonstrate the code inside of the `Calculator` component:
+
+  ![Calculator](Images/02-CalculatorCode.png)
+
+* Point out how we're passing each `Math` component 3 props:
+
+  * `num1`
+
+  * `operator`
+
+  * `num2`
+
+* Point out how the numbers are wrapped in JSX curly braces, but the operator is in quotes.
+
+* Ask the class: Why do you think this is?
+
+  * The operator is a string literal, and we can express that shorthand just using quotes without curly braces. The following are equivalent:
+
+  ```js
+  <Math num1={19} operator={"+"} num2={341} />
+  ```
+
+  * This shorthand only works for string literals. All other values we pass as props need to be in JSX curly braces.
+
+  ```js
+  <Math num1={19} operator="+" num2={341} />
+  ```
+
+* Open the `Math` component and go through the code:
+
+  ![Math Code](Images/03-MathCode.png)
+
+* Point out that the `props` argument should be an object containing all of the values passed to the rendered `Math` component in the `Calculator.js` file.
+
+* We're running a switch case over `props.operator`. Depending on the operator, a different operator is performed with `props.num1` and `props.num2`. The result is stored in the `value` variable.
+
+* Point out how at the bottom of the function, we're returning `<span>{value}</span>`.
+
+* Explain that a function component only renders what is returned from it. With arrow functions, we have to explicitly write the `return` keyword when the function contains more than one statement.
+
+* Explain that we must either return JSX from a component, or nothing at all. This is why we had to wrap the `value` inside of the span tags.
+
+* Take another few minutes to answer any remaining questions.
+
+### 22. Partners Do: Props Review (15 mins)
+
+* Introduce students to [Props review](../../../../01-Class-Content/19-react/01-Activities/12-Stu_PropsReview/)
+
+* In this activity students will work with partners to make an existing React application more DRY through the use of reusable components and props.
+
+* **Instructions:** [README.md](../../../../01-Class-Content/19-react/01-Activities/12-Stu_PropsReview/README.md)
+
+* Instructional staff should be walking around the room available to assist students during this activity.
+
+### 23. Instructor Do: Review Props Review (10 mins)
+
+* Slack out the [solution](../../../../01-Class-Content/19-react/01-Activities/12-Stu_PropsReview/Solved) to the previous activity. Go through the code as a class.
+
+  ![Friend Card](Images/07-RenderedFriends.png)
+
+* Point out how the application being rendered to the browser doesn't look any different to the unsolved version, but now we've made our code more DRY by creating a reusable component, `FriendCard`, to render each friend with the appropriate prop inside of the `App` component.
+
+  ![Friend Card](Images/08-FriendsApp.png)
+
+* Open the `src/components/FriendCard/index.js` file and go through the code.
+
+  ![Friend Card](Images/09-FriendCard.png)
+
+* Point out that we use the `props` argument to access all of the values passed into the `FriendCard` component.
+
+  * Since props is an expression we want to embed inside of our JSX, we use JSX curly braces to do so.
+
+* Ask the class: In a real application, where might all of the friend JSON data come from?
+
+  * Normally we might receive the friend JSON from an AJAX request, and probably won't know ahead of time which friends will need to be rendered.
+
+* In your editor's sidebar, point out how each component is contained inside of its own folder containing a CSS file, and an `index.js` file.
+
+  ![Index Sidebar](Images/10-IndexSidebar.png)
+
+* Ask the class: "Why are we using `index.js` to hold the component instead of `FriendCard.js`?"
+
+  * Whenever we require/import a folder instead of a file, the folder's `index.js` file is required/imported by default (if it exists).
+
+  * This allows us to keep our paths for importing these components short. e.g. we can do:
+
+  ```js
+  import FriendCard from "./components/FriendCard";
+  ```
+
+  * instead of:
+
+  ```js
+  import FriendCard from "./components/FriendCard/FriendCard";
+  ```
+
+  * Giving all of our components their own folder is another option for organizing our React apps. Each folder could contain any CSS or other dependencies the component will need.
+
+* Spend another moment making sure the class understands the overall concept of passing and receiving props. Go back and forth between the `friends.json` file, the `FriendCard` component, and your web browser to visually demonstrate how the data is being used.
+
+* Point out that while is code is more DRY than it was, we're still manually rendering a `FriendCard` for each piece of data &mdash; we'll come back and solve this problem in a later activity!
+
+### 24. END (0 mins)
+
+* If any time remains go over the [solution](../../../../01-Class-Content/19-react/01-Activities/09-Stu_StyleProp/Solved) to the previous activity.
+
+* Listed below are sections of the React Documentation that pertain to today's lesson. All are short reads, encourage students to browse through these resources to help reinforce the concepts covered today.
+
+  * [Hello World](https://facebook.github.io/react/docs/hello-world.html)
+
+  * [Introducing JSX](https://facebook.github.io/react/docs/introducing-jsx.html)
+
+  * [Rendering Elements](https://facebook.github.io/react/docs/rendering-elements.html)
+
+  * [Components and Props](https://facebook.github.io/react/docs/components-and-props.html)
 
 ### Lesson Plan Feedback
 

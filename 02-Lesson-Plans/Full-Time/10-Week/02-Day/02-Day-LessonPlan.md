@@ -8,13 +8,6 @@
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, please create a copy by navigating to File > "Make a copy...".
 
-- - -
-
-_If pacing on activities is a bit too fast this unit, remember that you have
-some time at the end of the week to review. Please let us know by opening
-an issue if any activities in particular need a bit more time, so we can
-adjust the schedule for the unit._
-
 ### Overview
 
 In this class, we will be introducing students to the basic concepts of ReactJS, JSX, and building layouts through a component-based mindset.
@@ -22,20 +15,6 @@ In this class, we will be introducing students to the basic concepts of ReactJS,
 We will then be deepening students understanding of ReactJS. They further expand upon their understanding of props, learn how to programmatically render components from a list of data, and introduce the concept of class components and component state.
 
 `Summary: Complete activities 14-31 in Unit 19`
-
-##### Instructor Priorities
-
-* Students should be able to articulate a basic definition of components.
-
-* Students should be able to scaffold out React applications with Create React App.
-
-* Students should begin to feel comfortable building static UIs with JSX.
-
-* Students should firmly understand how to pass data between parent and child components &mdash; and vice versa.
-
-* Students should understand the difference between states and props and the use cases for each.
-
-* Students should be able to use the Array.prototype.map method in order to programmatically render components from a list of data.
 
 #### Instructor Notes
 
@@ -49,10 +28,14 @@ We will then be deepening students understanding of ReactJS. They further expand
 
 * Explain any unfamiliar ES6 syntax as you go along as necessary, but try not to go deeper than necessary. Students will have plenty of time to practice ES6 as we go through the material over the next two weeks.
 
-
 * **Important:** In order to avoid continuous NPM installs, all of today's activity Solved and Unsolved versions include only a `src` folder. Students and yourself should scaffold out a React app once with Create React App, and then swap out the `src` folder for each activity.
 
 * The latter part of today's class  (starting with props) will be more challenging than the last class for many students. Syntax errors will abound as students confusedly mix states and props, and forget to pass attributes to their child components. Explain that memorizing syntax will come with time and practice, it's far more important to understand the concepts covered as exact syntax can always be looked up.
+
+* _If pacing on activities is a bit too fast this unit, remember that you have
+some time at the end of the week to review. Please let us know by opening
+an issue if any activities in particular need a bit more time, so we can
+adjust the schedule for the unit._
 
 * All of the Solved/Unsolved activities contain only the application's `src` folder. At the start of class scaffold out a React application using Create React App, and swap out the `src` folder for each activity to avoid repetitive npm installs.
 
@@ -76,573 +59,31 @@ We will then be deepening students understanding of ReactJS. They further expand
 
 * To introduce the concept of class components and component state.
 
-- - -
+* Students should be able to articulate a basic definition of components.
 
-### 1. Instructor Do: Welcome and Encouragement (0 mins)
+* Students should be able to scaffold out React applications with Create React App.
 
-### 2. Instructor Do: Go Through Slides (8 mins)
+* Students should begin to feel comfortable building static UIs with JSX.
 
-* Open the slide deck [10-2 Intro to React, Components, and JSX](https://docs.google.com/presentation/d/1h8JiIv92PQukSjoBCQkVuvLZD0VlxnTTxbxli3Uh_lM/edit?usp=sharing).
+* Students should firmly understand how to pass data between parent and child components &mdash; and vice versa.
 
-  * For this section, go up to the "Take a Break!" slide.
+* Students should understand the difference between states and props and the use cases for each.
 
-* The most important part to get across today is the concept of components &mdash; self-contained modules that are responsible for producing part of an application's UI and functionality (i.e. all of the layout and functionality code for a "chat box" or "like button" might be in the same file or folder). This is radically different from the concept of separating the view and logic layers. When we split up our application into components, we're still separating its concerns, but we aren't necessarily separating its technologies.
-
-* Remember to emphasize that today's class is meant to be a primer. Not comprehensive coverage. Don't let them get intimidated.
-
-### 3. Partners Do: Installation + Documentation Research (10 mins)
-
-* Slack out [README](../../../../01-Class-Content/19-react/01-Activities/14-Stu_DocumentationQuestions/README.md)
-
-* Have students work with partners and go through [14-Stu_DocumentationQuestions](../../../../01-Class-Content/19-react/01-Activities/14-Stu_DocumentationQuestions/README.md).
-
-* The first task in this assignment instructs them to install Create React App if they haven't already. Instructional staff should be walking around offering assistance with the research questions, as well as the installation process (which should be fairly straight forward).
-
-* Have them work with one another on answering the questions listed using the React.js documentation. Have them divide up the work the questions among teammates, and discuss answers afterwards rather than going through them all one at a time together.
-
-* Let them know that going through the official documentation may feel challenging at first, but encourage them to revisit it again after todays class. Once they have a basic understanding of React, they should find that the React documentation is some of the best there is for any library.
-
-* Encourage them to take this task seriously as it will help them gain a basic sense of things.
-
-### 4. Instructor Do: Review Questions (10 mins) (High)
-
-* Slack out the [Solved](../../../../01-Class-Content/19-react/01-Activities/14-Stu_DocumentationQuestions/Solved/README.md) version of the activity and call on various students to answer a few of the questions out loud.
-
-* Most importantly, make sure students have a basic understanding of JSX and components along with some of the motivations behind them.
-
-  * We use components as a way to separate our application into reusable pieces of its UI. This allows us to think about each part of our application's interface in isolation and allows us to quickly build new views into our apps over time since we'll be able to reuse component's we've already created.
-
-  * Using JSX is optional but most React projects make use of it. JSX allows us to describe the UI our components using familiar HTML-like markup in our JavaScript. This allows us to quickly describe and understand the UI our components will produce as well take advantage of the full power of JavaScript, rather than be limited to the features available in a templating language such as Handlebars.
-
-* Answer any additional questions students may have before moving on, but assure the class things will become clearer as we work with a few examples.
-
-### 5. Instructor Do: Demo Create React App (8 mins)
-
-* Demonstrate for students how we can quickly create a React application using Create React App. Run the following command in the terminal and have students follow along if they wish:
-
-  * `create-react-app reactpractice`
-
-    * Explain that to scaffold out a React app with create-react-app, we run `create-react-app` followed by a name for our application.
-
-* Once everything has been installed, cd into your application's directory and start the app by running `npm start` in your terminal and navigating to `localhost:3000`. Explain that this command starts our app in development mode, i.e. this "mode" is meant for development as our application will auto-reload as we make changes to it.
-
-  ![Create React App](Images/01-Create-React-App.png)
-
-* Show off the resulting web page, then go back to your code and walk the class through the generated boilerplate. In particular, point out the following key aspects:
-
-  * A `src` folder is generated, and we'll mostly be working out of here. Anything inside this folder gets processed by Babel, and then combined into a single `bundle.js` file by webpack. You can see what the combined `bundle.js` file looks like if you were to navigate to [localhost:3000/static/js/bundle.js](http://localhost:3000/bundle.js) in your browser.
-
-  * We have an `index.js` file in the `src` directory. This is where execution of our React application begins. In this way, it is similar to the `server.js` file we've been starting all of our node applications with. In order to run any code in our React app, it needs to be directly written here, or else required/imported here.
-
-    ![Index](Images/02-Index.png)
-
-  * The `src` folder is where our React components will live. For now, we just have an `App` component. Don't go too deep into the specifics of the `App.js` file yet, but point out that this file is producing some JSX, which corresponds to the web page we have rendered in the browser.
-
-  * The `src` folder is also where we'd put any tests we'd like to associate with our components. Create React App ships with [Jest](https://facebook.github.io/jest/), a library for running JavaScript tests that work with React out of the box. For our purposes of learning to use React to build applications, we won't dive into writing tests for React apps, but it's nice to know that we **can** without any extra overhead.
-
-  * Point out the `registerServiceWorker.js` file. At the time of writing, this is a fairly new addition to Create React App. We don't need to understand the contents of this file, and most of the activities we'll go over will have it removed for brevity, but it helps cache API responses to help make our app perform better for users with poor internet connections.
-
-  * We have a `public` folder. This is primarily for containing the `index.html` that will eventually be served to users visiting our application. Point out the `#root` element &mdash; explain that this will contain our entire rendered, React application. Explain that when we build our React application for production, a `bundle.js` file containing all of our application's JavaScript is generated and added inside of the `index.html` file. We can also store files in this folder which we don't want to be processed by Webpack and Babel. For example, we can place static CSS files here or link to external CDNs in the `head` tag of the `index.html`.
-
-  * Assure the class that we're going to see this setup over and over again, and there isn't a need to completely memorize every aspect of the Create React App boilerplate right now. The most important takeaways are:
-
-    * We're going to be writing most of our code inside of the `src` folder.
-
-    * The "entry" file to our React application will be the `index.js` file.
-
-    * We start our React app in development mode with the command `npm start`. This means our app will live update as we change it, which is why we're running our app on a server.
-
-### 6. Partners Do: Hello World Example (10 mins)
-
-* Inform the class that now that we have a high-level understanding of Create React App, they're now going work in groups to dissect a simpler example and answer some questions.
-
-  * Slack out [15-Stu_HelloReact/Unsolved](../../../../01-Class-Content/19-react/01-Activities/15-Stu_HelloReact/Unsolved)
-
-* **Instructions:** [README](../../../../01-Class-Content/19-react/01-Activities/15-Stu_HelloReact/README.md)
-
-* **Folder:** [Unsolved](../../../../01-Class-Content/19-react/01-Activities/15-Stu_HelloReact/Unsolved)
-
-### 7. Instructor Do: Review Hello World Example (10 mins)
-
-* Slack out the [Solved](../../../../01-Class-Content/19-react/01-Activities/15-Stu_HelloReact/Solved/README.md) version of the activity and go over the answers with the class. Use the solution as a guide to walk the class through the code.
-
-* Point out how JSX can either represent primitive HTML tags or React components.
-
-* Demonstrate how we can alternatively write all of our component's code inside of `index.js`. Inform them that this is fine for very small examples, but we'll want something closer to the original setup as our projects grow.
-
-* If necessary, take a few extra minutes here to briefly discuss any confusing ES6 syntax. This portion of the lesson utilizes the `const` identifier, arrow functions, and ES2015 modules.
-
-  * Major ES6 takeaways are:
-
-    * `const` works like var, but it's meant for values that aren't going to be reassigned, otherwise `let` is preferred.
-
-    * `arrow functions` are shorter function syntax where `this` is bound to the context where the function was created.
-
-      * If an arrow function body contains a single expression (such as a block of JSX code), that expression is implicitly returned without having to use the `return` keyword or curly braces.
-
-      * Arrow functions aren't meant to replace regular functions altogether, as they lack a few features we won't have to worry about today. But they can make for some more elegant code if used properly.
-
-    * `ES2015 modules` are part of a new module system introduced with ES6. So far we've been working with CommonJS modules (`module.exports` & `require` syntax) &mdash; which for our purposes today will work similarly.
-
-      * As we'll see a bit later, ES2015 modules allow for finer tune control over what is exported and imported from a module. For now just compare the new syntax to what they're used to.
-
-* Take a moment to answer any lingering questions.
-
-### 8. Students Do: HelloDiv (10 mins) (Critical)
-
-* In this activity students will write a React component that displays their name and some information about themselves.
-
-* **Instructions:** [README](../../../../01-Class-Content/19-react/01-Activities/16-Stu_HelloDiv/README.md)
-
-* Slack out [16-Stu_HelloDiv/Unsolved](../../../../01-Class-Content/19-react/01-Activities/16-Stu_HelloDiv/Unsolved)
-
-### 9. Instructor Do: Review HelloDiv (5 mins)
-
-* Once time is up, go over the [Solved](../../../../01-Class-Content/19-react/01-Activities/16-Stu_HelloDiv/Solved) version of the activity as a class.
-
-* Make sure everyone understands the following concepts:
-
-  * `HelloDiv` is exported and rendered inside of `App`.
-
-  * `App` is exported and then rendered inside of `index.js` as the first argument to the `ReactDOM.render` method.
-
-  * The second argument to the `ReactDOM.render` method is the real DOM element that our React application should be rendered inside of.
-
-  * `HelloDiv`, like most components we'll write, is a JavaScript function; it returns some JSX.
-
-    ![HelloDiv](Images/03-HelloDiv.png)
-
-    * Some students may have an error when they tried to render multiple JSX elements. Explain that _normally_, we aren't able to render multiple JSX elements from a component without an enclosing parent tag. 
-    
-      * This may seem strange at first, but if we think about our component in the same way we think about any other JavaScript function, it makes perfect sense: a JavaScript function can only return one value. To have separate groups of JSX being returned outside of a parent element would be like trying to write a JavaScript function that returns multiple different variables at once.
-
-  * **Note:** With the release of React 16, we _do_ have another option for returning multiple JSX elements from a component: we can return an array. 
-  
-    * Based on your students' level of understanding and comfort so far, you may want to skip over explaining this as there aren't any activities or use cases we'll run into where understanding this pattern is required.
-    
-    * If you choose to proceed, the `HelloDiv` component can also be written as follows:
-
-    ```jsx
-      const HelloDiv = () => [
-        <h1>Hey guys! I'm a header!</h1>,
-        <h2>Things I like!</h2>,
-        <ul>
-          <li>Peas</li>
-          <li>Carrots</li>
-          <li>Love</li>
-        </ul>
-      ];
-    ```
+* Students should be able to use the Array.prototype.map method in order to programmatically render components from a list of data.
 
 - - -
 
-### 10. Instructor Do: Hello Bootstrap (10 mins)
-
-* Welcome the class back from break!
-
-* So far we've only just begun to work with React but we've still managed to learn a few key things:
-
-  * In React, we structure our code into components.
-
-  * A component is a JavaScript function that describes some part of our application's UI.
-
-  * Inside of our components, we describe our application's UI using JSX: a markup syntax that resembles HTML.
-
-* Explain that we're now going to go over how we can add Bootstrap to a React project.
-
-* Replace your React application's src folder with [17-Ins_HelloBootstrap/src](../../../../01-Class-Content/19-react/01-Activities/17-Ins_HelloBootstrap/src) and start the development server by running `npm start`. See the rendered application at [localhost:3000](http://localhost:3000).
-
-  ![No Bootstrap](Images/04-NoBootstrap.png)
-
-* Explain to the class that the rendered elements in this example are using Bootstrap classes.
-
-  * Without going into the component code yet, assure everyone that all of the React code is correct. Ask the class: Why then isn't my page rendering Bootstrap elements? What did I forget?
-
-    * We need to include Bootstrap into our project somehow.
-
-    * Open up the example in your code editor and ask the class: What should I do to if I wanted to add Bootstrap using a CDN?
-
-      * So you don't have to go looking for it: `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"/>`
-
-      * Try to get the class to lead you to the `index.html` file inside of the `public` folder. Ask them: Where should I put this link? Remind them that earlier we mentioned there was a folder where we keep static assets we don't want to be processed.
-
-      * We can add our Bootstrap CDN to `public/index.html` in the Create React App generated code in order to include Bootstrap for all of our components. After adding the CDN, go back to your web browser and demonstrate the updated page.
-
-    ![Hello Bootstrap](Images/05-HelloBootstrap.png)
-
-* Now open up the `components/HelloBootstrap.js` file and demonstrate the code. The JSX code being rendered is close to the HTML we'd use to render the same Bootstrap elements without React.
-
-  ![Hello Bootstrap](Images/06-HelloBootstrap.png)
-
-* Ask the class: can anyone spot the key difference between this JSX and the HTML we'd normally write?
-
-  * `className` is used instead of `class`. Explain that this is because in JavaScript, `class` is a reserved word, similar to `var` or `for` or `function`.
-
-    * Explain that there are other differences between HTML and JSX which we'll run into soon.
-
-  * Remind students that JSX isn't HTML, so there are a few caveats. JSX is sugar syntax for calls to the `React.createElement` method, and according to [Facebook's React Docs](https://facebook.github.io/react/docs/introducing-jsx.html#specifying-children-with-jsx): "JSX is closer to JavaScript than HTML".
-
-### 11. Students Do: Hello Bootstrap (10 mins)
-
-* In this activity, students will be given slightly less starter code and tasked with creating a React application which renders Bootstrap components to the page.
-
-* **Instructions:** [README](../../../../01-Class-Content/19-react/01-Activities/18-Stu_HelloBootstrap/README.md)
-
-* Slack out `05-Stu_HelloBootstrap/Unsolved`
-
-### 12. Instructor Do: Review Hello Bootstrap (5 mins)
-
-* Briefly go over the [Basic Solved](../../../../01-Class-Content/19-react/01-Activities/18-Stu_HelloBootstrap/Solved/Basic) version of the previous activity.
-
-  ![Hello Bootstrap Solved](Images/07-HelloBootstrapSolved.png)
-
-* The most important takeaways are:
-
-  * If we want to render multiple JSX elements, they should be contained within a single parent element, such as a `div`.
-
-  * Void elements, such as `input` tags, are represented by JSX tags with a self-closing forward slash, i.e. `<input />`.
-
-  * We need to import the `react` library anywhere that we are utilizing JSX.
-
-  * We use `className` instead of `class` because `class` is a reserved word in JavaScript.
-
-* Take a few moments to demonstrate the [Bonus Solution](../../../../01-Class-Content/19-react/01-Activities/18-Stu_HelloBootstrap/Solved/Bonus). The rendered page should be the same, so you only need to walk demonstrate the code in your editor.
-
-  * The main takeaway here is that we can define our components in different files and compose multiple components inside of another component (`Navbar`, `Jumbotron`, and `Card` are rendered inside of `App`).
-
-    ![Hello Bootstrap Bonus](Images/08-HelloBootstrapBonus.png)
-
-  * This is powerful because it begins to demonstrate the potential for code reuse. Instead of having to rewrite every UI element from scratch using individual HTML tags, we could write a component once and reuse it across our entire application.
-
-### 13. Instructor Do: JSX Variables (8 mins)
-
-* Replace your React app's `src` folder with [19-Ins_JSXVariables/src](../../../../01-Class-Content/19-react/01-Activities/19-Ins_JSXVariables/src), run the app in developer mode with `npm start`.
-
-* Once the app starts, open [localhost:3000](http://localhost:3000) in your web browser.
-
-  ![JSX Variables Demo](Images/09-JSXVariableDemo.png)
-
-* Point out that the HTML code being rendered to the browser isn't much different than the code we've already worked with. At first glance, it doesn't appear as though we're doing anything new.
-
-* Open `src/components/JSXVariables.js` and walk the class through the code.
-
-  ![JSX Variables](Images/10-JSXVariables.png)
-
-* Point out the following key points:
-
-  * We can write comments inside of our JSX using JavaScript's multi-line comment syntax inside of curly braces. If we were to try and write regular JavaScript comments inside of our JSX, the code would break.
-
-  * In addition to being able to write comments inside of the curly braces, we can also embed JavaScript expressions. This works similarly to the `{{ }}` double curly braces we've worked with in Handlebars.
-
-    * We use the `name`, `num1`, and `num2` variables inside of our JSX code. Try updating the `name` variable and demonstrating to the class how when the page refreshes, we have the updated name being rendered.
-
-    * Rendering `name` is a fairly simple example, but we can also evaluate entire expressions inside of JSX curly braces. Point out how we're producing random numbers and reversing `name` further down below.
-
-      * Explain that an expression is any valid set of literals, variables, operators, and expressions that evaluates to a single value. In other words, anything we can assign to a variable or pass as a function argument is an expression. This doesn't include loops or conditionals, which we have various ways to deal with that we'll go over later.
-
-    * Explain that these curly braces are how we get data from our JavaScript code into the views React renders.
-
-      * Point out that this is different from jQuery or vanilla JavaScript where we have to call methods to explicitly set the inner text of an element.
-
-    * Remind everyone that when we were working with Handlebars, we couldn't write raw JavaScript code inside of the `{{}}` double curly braces. Instead we had to use the Handlebars templating language which only exposed certain functionality. Since what we're writing inside of the JSX curly braces is just regular JavaScript, we have access to the full power of JavaScript inside of our views.
-
-* Take a moment to answer any questions, but avoid getting too off track.
-
-### 14. Students Do: JSX Variables (10 mins) (Critical)
-
-* In this activity students will render JavaScript expressions inside of JSX curly braces.
-
-* **Instructions:** [README.md](../../../../01-Class-Content/19-react/01-Activities/20-Stu_JSXVariables/README.md)
-
-* Slack out `20-Stu_JSXVariables/Unsolved`
-
-### 15. Instructor Do: Review JSX Variables (5 mins)
-
-* Go over the [Solved](../../../../01-Class-Content/19-react/01-Activities/20-Stu_JSXVariables/Solved) version of the activity.
-
-  ![JSX Curly](Images/10-JSXCurly.png)
-
-* Make sure everyone understands that when we use JSX curly braces, it means we want to evaluate a JavaScript expression inside. The final value of the expression will be rendered to the page.
-
-### 16. Instructor Do: CSS Demo (8 mins) (High)
-
-* Inform the class that now we're going to talk about some new built-in options for styling our components.
-
-* Replace your React app's `src` folder with [21-Ins_CSSDemo/src](../../../../01-Class-Content/19-react/01-Activities/21-Ins_CSSDemo/src), run the app in developer mode with `npm start`.
-
-* Open your browser to [localhost:3000](http://localhost:3000) and demonstrate the rendered application.
-
-  ![CSS Demo](Images/11-CSSDemo.png)
-
-* Explain that Create React App allows us to import CSS into our components. Open the `Header` component to demonstrate this.
-
-  ![Header](Images/12-Header.png)
-
-* Point out that we aren't saving the stylesheet to a variable. Instead, whenever we import a stylesheet, an internal style tag is created and added to the document.
-
-* Demonstrate how the `Header` is using the classes defined in the `Header.css` stylesheet it's importing.
-
-  ![Header Styles](Images/13-HeaderStyles.png)
-
-* This approach may be a good idea if we want to keep our component more closely coupled to its styles. Ask the class: How many times have you been working on a project or homework assignment and had a CSS issue because of CSS that was a little messy?
-
-* By separating our CSS files by component, we'll generally have smaller, more manageable stylesheets. Adding new styles or changing existing ones should be easier as our applications grow larger.
-
-* Explain that we are also able to add inline styles to JSX elements. Open the `Card` component to demonstrate this.
-
-  ![Inline Styles](Images/14-InlineStyles.png)
-
-* Point out that we can set a `style` similarly to how we can when writing regular HTML code, but with two key differences. Ask the class: What's happening inside of our JSX that we wouldn't do with regular HTML?
-
-  * React expects the `style` property to be an object, rather than a string.
-
-  * We're using JSX curly braces to embed the style object.
-
-* Point out that the object properties are camelCased and non-numerical values are strings. Numerical values will default to pixels if a unit of measurement is expected.
-
-* Explain that writing inline styles with JavaScript objects may feel a little strange, but this has some advantages over using actual stylesheets:
-
-  * Using a `style` property, our styles are scoped to the components they're attached to, meaning we won't have any issues with CSS scoping or naming collisions.
-
-  * Because our styles are defined using a JavaScript, we can can write JavaScript logic to determine what our styles should be at any given point. This will be useful as we begin to build more dynamic apps.
-
-* Explain that we could define our component's styles inside of a CSS stylesheet, we could use inline styles, or we could use some mixture of the two.
-
-  * It's up to us to decide how we want to organize our component styles, but there is value in being consistent in whichever approach or hybrid approach we take.
-
-### 17. Students Do: CSS Props (10 mins)
-
-* In this activity students will change the appearance of an application's components using inline styles.
-
-* **Instructions:** [README.md](../../../../01-Class-Content/19-react/01-Activities/22-Stu_StyleProp/README.md)
-
-* Slack out [22-Stu_StyleProp/Unsolved](../../../../01-Class-Content/19-react/01-Activities/22-Stu_StyleProp/Unsolved)
-
-### 18. Break (30 mins)
-
-### 19. Instructor Do: Go through Slides (8 mins)
-
-* For this section, start after the "Take a Break!" slide with the slide that says "Components" and continue until the final "Time to Code!" slide.
-
-### 20. Instructor Do: Props Demo (10 mins) (High)
-
-* Inform the class that we can conceptualize React components as JavaScript functions.
-
-* It's a component's job to describe and _return_ some part of our application's UI.
-
-* Ask the class: If a component is a function that _returns_ some data, what else might a component be able to do?
-
-  * Since it's a function, a component can also receive arguments.
-
-* This allows us write components that behave differently based on the arguments that they receive.
-
-* We call the arguments we pass into React components `props`.
-
-* If you haven't already done so, scaffold out a React application by running the following command in your terminal: `create-react-app demoapp`.
-
-* This example uses Bootstrap. Add the following link tag to your React app's `public/index.html` file:
-
-  ```
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
-  ```
-
-* Replace your React app's `src` folder with [23-Ins_PropsDemo/src](../../../../01-Class-Content/19-react/01-Activities/23-Ins_PropsDemo/src) and start the development server by running `npm start`.
-
-* Demonstrate the rendered page in your web browser:
-
-  ![Alert Danger](Images/01-AlertDanger.png)
-
-* This example is rendering a simple Bootstrap alert element. Open [src/components/Alert.js](../../../../01-Class-Content/19-react/01-Activities/23-Ins_PropsDemo/src/components/Alert.js)  and demonstrate the code:
-
-  ![Alert Component](Images/02-AlertComponent.png)
-
-* Explain that every component has access to a `props` argument. Props is always an object containing all of the values passed the component.
-
-* We're using `props.type` to determine what the evaluated `className` of the `div` element is.
-
-* This component renders `props.children` between it's `div` tags.
-
-* Compare this to the value of `props` as it is logged to the console:
-
-  ![Logged Props](Images/03-LoggedProps.png)
-
-* Point out that since `props.type` is equal to "danger", then the computed `className` of the `div` in the `Alert` component is "alert alert-danger". This Bootstrap class is providing our component its styles.
-
-* The `Alert` component is also receiving a `children` prop with a value set to "Invalid id or password" &mdash; the same message being displayed inside of the rendered Bootstrap alert element.
-
-* Open [src/App.js](../../../../01-Class-Content/19-react/01-Activities/23-Ins_PropsDemo/src/App.js) in your editor and explain to the class how these props are being passed into the `Alert` component.
-
-  ![Alert Props](Images/04-AlertProps.png)
-
-* We have 2 ways of passing props into a component:
-
-  1. We can set an attribute to the rendered component's tag.
-
-     * We're passing a `type` prop equal to `danger`.
-
-  2. We can give a component a sibling tag and pass an expression between the tags.
-
-     * We don't name this prop, it is automatically set a `children` key.
-
-     * We're passing a `children` prop equal to "Invalid user id or password".
-
-* Demonstrate how you can change what is rendered by the `Alert` component by passing it a different `type` and `children` prop.
-
-  * For example, setting `type` to "success" and `children` to "Welcome Back!" would render the following in the browser:
-
-    ![Alert Success](Images/05-AlertSuccess.png)
-
-* Explain that having this familiar syntax for passing props to our components is another way for JSX to be similar to HTML. We don't need to explicitly call any functions or modify any object properties ourselves.
-
-* Explain that props allow us to customize our components so that we can reuse them in different situations.
-
-  * For example, we might use this `Alert` component on a sign-in page and render a different alert depending on whether or not a user has successfully logged into their account.
-
-* Inform the class that we can pass any type of data as a prop, including strings, numbers, arrays, functions, even entire components.
-
-* Props are the primary means by which we pass data around our React apps. React utilizes a unidirectional data flow, meaning data only flows one direction: from the top down, parent to child.
-
-  * This unidirectional data flow makes changes in React apps more predictable and easier to debug.
-
-* Ask the class: If a prop inside of our component isn't what we expect it to be, where could we look to find out why?
-
-  * We could look at the component's parent.
-
-  * In this example, `App` and `Alert` have a parent/child relationship. `Alert` is being rendered inside of `App` and `App` is passing props to `Alert`.
-
-* Take a moment to answer any questions before the next activity.
-
-### 21. Partners Do: Calculator Props (10 mins)
-
-* In this activity students will work with a partner to write a component that accepts props, performs arithmetic and renders the result.
-
-* Slack out [24-Stu_PropsCalculator/Unsolved](../../../../01-Class-Content/19-react/01-Activities/24-Stu_PropsCalculator/Unsolved)
-
-* **Instructions:** [README](../../../../01-Class-Content/19-react/01-Activities/24-Stu_PropsCalculator/README.md)
-
-### 22. Instructor Do: Review Calculator Props (10 mins) (High)
-
-* Slack out the [solution](../../../../01-Class-Content/19-react/01-Activities/24-Stu_PropsCalculator/Solved) to the previous activity. Go through the code as a class.
-
-* Demonstrate how the completed example renders the result of each problem in the browser:
-
-  ![Rendered Math](Images/01-RenderedMath.png)
-
-* Demonstrate the code inside of the `Calculator` component:
-
-  ![Calculator](Images/02-CalculatorCode.png)
-
-* Point out how we're passing each `Math` component 3 props:
-
-  * `num1`
-
-  * `operator`
-
-  * `num2`
-
-* Point out how the numbers are wrapped in JSX curly braces, but the operator is in quotes.
-
-  * Ask the class: Why do you think this is?
-
-    * The operator is a string literal, and we can express that shorthand just using quotes without curly braces. The following are equivalent:
-
-      ```jsx
-      <Math num1={19} operator={"+"} num2={341} />
-      ```
-
-      ```jsx
-      <Math num1={19} operator="+" num2={341} />
-      ```
-
-    * This shorthand only works for string literals. All other values we pass as props need to be in JSX curly braces.
-
-* Open the `Math` component and go through the code:
-
-  ![Math Code](Images/03-MathCode.png)
-
-* Point out that the `props` argument should be an object containing all of the values passed to the rendered `Math` component in the `Calculator.js` file.
-
-* We're running a switch case over `props.operator`. Depending on the operator, a different operator is performed with `props.num1` and `props.num2`. The result is stored in the `value` variable.
-
-* Point out how at the bottom of the function, we're returning `<span>{value}</span>`.
-
-* Explain that a function component only renders what is returned from it. With arrow functions, we have to explicitly write the `return` keyword when the function contains more than one statement.
-
-* Explain that we must either return JSX from a component, or nothing at all. This is why we had to wrap the `value` inside of the span tags.
-
-* Take another few minutes to answer any remaining questions.
-
-### 23. Partners Do: Props Review (10 mins)
-
-* Slack out [25-Stu_PropsReview/Unsolved](../../../../01-Class-Content/19-react/01-Activities/25-Stu_PropsReview/Unsolved)
-
-* In this activity students will work with partners to make an existing React application more DRY through the use of reusable components and props.
-
-* **Instructions:** [README.md](../../../../01-Class-Content/19-react/01-Activities/25-Stu_PropsReview/README.md)
-
-* Instructional staff should be walking around the room available to assist students during this activity.
-
-### 24. Instructor Do: Review Props Review (10 mins)
-
-* Slack out the [solution](../../../../01-Class-Content/19-react/01-Activities/25-Stu_PropsReview/Solved) to the previous activity. Go through the code as a class.
-
-  ![Friend Card](Images/07-RenderedFriends.png)
-
-* Point out how the application being rendered to the browser doesn't look any different to the unsolved version, but now we've made our code more DRY by creating a reusable component, `FriendCard`, to render each friend with the appropriate prop inside of the `App` component.
-
-  ![Friend Card](Images/08-FriendsApp.png)
-
-* Open the [src/components/FriendCard/index.js](../../../../01-Class-Content/19-react/01-Activities/25-Stu_PropsReview/Solved/src/components/FriendCard/index.js) file and go through the code.
-
-  ![Friend Card](Images/09-FriendCard.png)
-
-* Point out that we use the `props` argument to access all of the values passed into the `FriendCard` component.
-
-  * Since props is an expression we want to embed inside of our JSX, we use JSX curly braces to do so.
-
-* Ask the class: In a real application, where might all of the friend JSON data come from?
-
-  * Normally we might receive the friend JSON from an AJAX request, and probably won't know ahead of time which friends will need to be rendered.
-
-* In your editor's sidebar, point out how each component is contained inside of its own folder containing the component, a CSS file, and an `index.js` file.
-
-  ![Index Sidebar](Images/10-IndexSidebar.png)
-
-* Ask the class: "Why are we using `index.js` to hold the component instead of `FriendCard.js`?"
-
-  * Whenever we require/import a folder instead of a file, the folder's `index.js` file is required/imported by default (if it exists).
-
-  * This allows us to keep our paths for importing these components short. e.g. we can do:
-
-  ```js
-  import FriendCard from "./components/FriendCard"
-  ```
-
-  * instead of:
-
-  ```js
-  import FriendCard from "./components/FriendCard/FriendCard"
-  ```
-
-  * Giving all of our components their own folder is another option for organizing our React apps. Each folder could contain any CSS or other dependencies the component will need.
-
-* Spend another moment making sure the class understands the overall concept of passing and receiving props. Go back and forth between the `friends.json` file, the `FriendCard` component, and your web browser to visually demonstrate how the data is being used.
-
-* Point out that while is code is more DRY than it was, we're still manually rendering a `FriendCard` for each piece of data &mdash; we'll come back and solve this problem in a later activity!
-
-### 25. Students Do: Component Map (10 mins)
-
-* Slack out [26-Stu_ComponentMap/Unsolved](../../../../01-Class-Content/19-react/01-Activities/26-Stu_ComponentMap/Unsolved)
+### 1. Students Do: Component Map (10 mins) (Critical)
 
 * In this activity, students will utilize the map method in order to render JSX from an array of objects.
 
-* **Instructions:** [README.md](../../../../01-Class-Content/19-react/01-Activities/26-Stu_ComponentMap/README.md)
+* **Instructions:** [README.md](../../../../01-Class-Content/19-react/01-Activities/13-Stu_ComponentMap)
 
 * Instructional staff should be walking around the room making themselves available for assistance.
 
-### 26. Instructor Do: Review Component Map (10 mins)
+### 2. Instructor Do: Review Component Map (10 mins)
 
-* Slack out the [solutions](../../../../01-Class-Content/19-react/01-Activities/26-Stu_ComponentMap/Solved) to the previous activity and go over the code as a class.
+* Slack out the [solutions](../../../../01-Class-Content/19-react/01-Activities/13-Stu_ComponentMap/Solved) to the previous activity and go over the code as a class.
 
 * For the basic solution:
 
@@ -686,7 +127,7 @@ We will then be deepening students understanding of ReactJS. They further expand
 
 * Answer any questions before the break.
 
-### 27. Instructor Do: Introduce Stateful Components (15 mins)
+### 3. Instructor Do: Introduce Stateful Components (20 mins)
 
 * Explain to the class that what we've been working with so far are known as stateless, functional components. Sometimes called "dumb components".
 
@@ -704,7 +145,7 @@ We will then be deepening students understanding of ReactJS. They further expand
 
   * Explain that a component can set and update its own state, whereas its props are always received from up above and considered immutable (can't/shouldn't be changed).
 
-* Replace your Create React App's `src` folder with [27-Ins_BasicState](../../../../01-Class-Content/19-react/01-Activities/27-Ins_BasicState/src). Start the app in dev mode by running `npm start`.
+* Replace your Create React App's `src` folder with [14-Ins_BasicState](../../../../01-Class-Content/19-react/01-Activities/14-Ins_BasicState/src). Stop the dev server if it is already running. Start the app in dev mode by running `npm start`.
 
 * Open your browser to [localhost:3000](http://localhost:3000) and demonstrate the rendered app.
 
@@ -712,7 +153,7 @@ We will then be deepening students understanding of ReactJS. They further expand
 
 * Whenever we click the "Increment" button, the click counter goes up by 1. Point out that this is the first time we've built in any kind of dynamic behavior such as event listeners and UI updates into our React apps.
 
-* Open [src/components/Counter.js](../../../../01-Class-Content/19-react/01-Activities/27-Ins_BasicState/src/components/Counter.js) in your editor, walk the class through the code:
+* Open `src/components/Counter.js` in your editor, walk the class through the code:
 
   ![Class Component](Images/14-ClassComponent.png)
 
@@ -752,7 +193,7 @@ We will then be deepening students understanding of ReactJS. They further expand
 
       ```js
       // This wouldn't work as expected
-      this.state.count = this.state.count + 1
+      this.state.count = this.state.count + 1;
       ```
 
 * Take a moment to answer any high-level questions the class may have. Most importantly make sure they understand the following:
@@ -763,17 +204,17 @@ We will then be deepening students understanding of ReactJS. They further expand
 
   * The `onClick` prop can be used to set a click event listener to an element.
 
-### 28. Partners Do: Decrement Counter (10 mins)
+### 4. Partners Do: Decrement Counter (10 mins)
 
-* Slack out [28-Stu_DecrementCounter/Unsolved](../../../../01-Class-Content/19-react/01-Activities/28-Stu_DecrementCounter/Unsolved)
+* Slack out `15-Stu_DecrementCounter/Unsolved`
 
 * In this activity students will add a "Decrement" button and event handler to the previous Click Counter example.
 
-* **Instructions:** [README.md](../../../../01-Class-Content/19-react/01-Activities/28-Stu_DecrementCounter/README.md)
+* **Instructions:** [README.md](../../../../01-Class-Content/19-react/01-Activities/15-Stu_DecrementCounter/README.md)
 
-### 29. Instructor Do: Review Decrement Counter (10 mins)
+### 5. Instructor Do: Review Decrement Counter (10 mins) (High)
 
-* Slack out the [solved](../../../../01-Class-Content/19-react/01-Activities/28-Stu_DecrementCounter/Solved) versions of the previous activity and go over both solutions.
+* Slack out the [solved](../../../../01-Class-Content/19-react/01-Activities/15-Stu_DecrementCounter/Solved) versions of the previous activity and go over both solutions.
 
   ![Decrement Counter](Images/05-DecrementCounter.png)
 
@@ -809,7 +250,400 @@ We will then be deepening students understanding of ReactJS. They further expand
 
 * Take a moment to answer any additional questions.
 
-### 30. TAs DO: Slack out information (0 mins)
+### 6. Students Do: Friend Refactor (20 mins) (Critical)
+
+* Slack out `29-Stu_FriendRefactor/Unsolved`
+
+* In this activity students will further refactor the Friends List application from earlier to use class components, events, and programmatically render the `FriendCard` components.
+
+* **Instructions:** [README.md](../../../../01-Class-Content/19-react/01-Activities/16-Stu_FriendRefactor/README.md)
+
+### 7. Instructor Do: Review Friend Refactor (15 mins)
+
+* Go over the [solution](../../../../01-Class-Content/19-react/01-Activities/16-Stu_FriendRefactor/Solved) to the previous activity.
+
+* Demonstrate the completed application in the browser. Point out how we can remove friends by clicking the red x icon.
+
+  ![Friend Refactor](Images/09-FriendRefactor.png)
+
+* Briefly go over the syntax for writing a class component. Be sure to point out the constructor method, how we set the application's initial state. Explain that when defining object properties with ES6, if the object's key and value have the same name, we can omit the colon &mdash; this is just an optional shorthand syntax.
+
+* Point out how we bind the `removeFriend` method inside of the constructor. Ask the class: how does this method remove a friend?
+
+* Point out how inside of the `removeFriend` method we use the filter method to create a new `friends` array from `this.state.friends`. We include only friends with an `id` property **not** equal to the `id` being received into this method. Then we use the `setState` method in order to set `this.state.friends` equal to the new filtered friends array.
+
+  ![Friend Refactor App](Images/10-FriendRefactorApp.png)
+
+* Explain that when we update our component's state by removing one of the friend objects, our component re-renders itself. On the new render, `FriendCard` components are created for each object in `this.state.friends`, which no longer includes the deleted friend. This then triggers our component to re-render, now minus one friend.
+
+  * Remind students that in React, we never modify state directly, but we create new state instead. If the state we're modifying is an array, we'll often use the filter or map method.
+
+* Scroll down to the code where we map over `this.state.friends` and render a `FriendCard` component for each element.
+
+  * Point out the props being passed, in particular, the `id` and the `key` prop. Remind the class that whenever we map over a list of data and return JSX, React wants us to give each element a unique `key` prop. React uses this value internally to help it efficiently render and re-render components from arrays of data.
+
+    * Explain that the `key` prop is unusual because it's used by React but isn't actually available for us to use inside of the component we pass it to. We pass the friend `id` in as a separate prop because we'll need it inside of the `FriendCard` component.
+
+* Open up the `FriendCard` component.
+
+  ![Friend Refactor Card](Images/11-FriendRefactorCard.png)
+
+* Point out how we've attached the `onClick` handler to the "remove" span. When clicked, it calls the `removeFriend` method and passes in `props.id`.
+
+* Ask the class: Why do we have the `removeFriend` handler wrapped inside of another function?
+
+  * Explain that since our event handlers need to be callbacks, we normally can't pass in arguments without invoking them right away. But by wrapping the `removeFriend` method in an another function, we can pass the `id` prop into the inner `removeFriend` method. When the span is clicked, it calls the anonymous callback function, which then calls the `removeFriend` method with the friend's `id` as an argument.
+
+* Take a moment to answer any lingering questions.
+
+### 8. Instructor Do: Demonstrate Forms (15 mins)
+
+In this example we will demonstrate how to handle simple forms with React.
+
+* Swap out your application's `src` folder with [src](../../../../01-Class-Content/19-react/01-Activities/17-Ins_FormsDemo/src). Stop the dev server if it is already running. Start the app in dev mode by running `npm start`.
+
+* Open [localhost:3000](http://localhost:3000) in your web browser and demonstrate the rendered application.
+
+  * ![Form Demo](Images/15-FormDemo.png)
+
+  * Whenever we type into the input fields we see the input appended to the "Hello" statement.
+
+  * When we click the "Submit" button, we get an alert with the provided first and last name.
+
+    ![Form Demo Submit](Images/16-FormDemoSubmit.png)
+
+* Now open `src/Form.js` and demonstrate the underlying code. It may be easier to begin with this component's `render` method.
+
+  ![Form Render](Images/17-FormDemoRender.png)
+
+  * Point out the following props attached to the `input` elements:
+
+    * `value`: set to `this.state.firstName` or `this.state.lastName`
+
+    * `name`: set to `firstName` or `lastName`
+
+    * `onChange`: both set to `this.handleInputChange`
+
+* Then go up to the component's `constructor` method. Point out how `this.state.firstName` and `this.state.lastName` are both initially set to an empty string.
+
+  * To make sure everyone is following along so far, ask the class: Where is this state object coming from? Why do we use it?
+
+    * A component's "state" is a property defined on a class component instance used for storing values that we want to associate with it. This property is recognized by React and can be used to embed data inside a component's UI which we want to update over time. Whenever a component's state is updated, its `render` method is fired along with the `render` methods of all of its children. This updates the application's UI to display the new data without having to refresh the browser.
+
+* Then scroll back down to the `render` method and point out how each input has a `value` prop set to the value of one of these state properties.
+
+  ![Form Logic](Images/18-FormDemoLogic.png)
+
+* Ask the class: What would happen if I pre-set the first and last name states to values other than empty strings?
+
+  * The text inside of each input field is determined by their `value` prop. By changing this component's initial state, we're also changing the initial values of the input fields. Demonstrate this live for the class.
+
+* Then scroll down to the `handleInputChange` method. Ask the class: What do you think this method's job is?
+
+  * This method is responsible for updating our state as the user types into the input fields.
+
+* Then ask: What do you think would happen if I removed the `onChange` props from the input fields?
+
+  * Proceed to remove the `onChange` props from both input elements. You should now be unable to type any new characters into the input fields after doing to.
+
+  * Explain that `onChange`, like `onClick` or `onSubmit`, is a built-in event we can listen for by attaching a prop to a primitive JSX tag (a JSX tag that represents a basic HTML element).
+
+  * Explain that by removing the `onChange` prop, we are no longer responding to the input's "change" event and thus are no longer updating our `Form` component's state. The `value` prop on each input field continues to point to the same unchanging state value.
+
+  * Explain that if we were to also remove the `value` prop from an input field altogether, then we could update it, but it wouldn't update our state and we wouldn't have access to its value if we needed it. Explain that we use the `value` and `onChange` props on the input element to sync its value with our components state.
+
+* Go back to the `handleInputChange` method and walk through its logic.
+
+  * `handleInputChange`, like all event handlers, is passed an `event` object that describes the event that took place. We pull off the `name` and `value` properties from the `event.target` object. These correspond to the `name` and `value` properties attached to the element the event was triggered from.
+
+    * Since each input field has a `name` prop set to the name of the state property holding its value, we can run the following code to update the appropriate state:
+
+      ```js
+      this.setState({
+        [name]: value
+      });
+      ```
+
+    * Starting with ECMAScript 2015, the object initializer syntax also supports computed property names. That allows you to put an expression in brackets [], that will be computed and used as the property name. Refer to the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#Computed_property_names).
+
+    * If students have questions regarding this syntax, demonstrate the same approach in ES5:
+
+      ```js
+      const newState = {};
+      newState[name] = value;
+      this.setState(newState);
+      ```
+
+* Scroll down to the `handleFormSubmit` method. Ask the class: Why are we running `event.preventDefault()`?
+
+  * The default behavior of an HTML form submission, is to refresh the entire web page. We want to prevent the form's default behavior in lieu of our own. Remind the class that we also had to deal with this back when working with jQuery.
+
+* Be sure to point out the code where we throw an alert with the user's first and last name before resetting our `firstName` and `lastName` state to empty strings to clear our input fields. Take a moment to make sure everyone understands how the string template literal syntax is working.
+
+  * String template literals can be used to write multi-line strings and embed expressions without breaking the string. Instead we'd use the ${<expression>} token to embed expressions inside of our string.
+
+* Take another few minutes to make sure everyone understands the code at least well enough to be able to refer back to this example as a starting point as they're building their own React forms.
+
+### 9. Students Do: Fun With Forms (15 mins)
+
+* In this activity students will add some new functionality to the previous form example.
+
+* **Instructions:** [README](../../../../01-Class-Content/19-react/01-Activities/18-Stu_FunWithForms/README.md)
+
+### 10. Everyone Do: Break (30 mins)
+
+### 11. Instructor Do: Review Fun With Forms (10 mins)
+
+### 12. Instructor Do: AJAX Demo (15 mins)
+
+In this example we will demonstrate AJAX requests with React.
+
+* Replace your application's `src` folder with [19-Ins_AJAX/src](../../../../01-Class-Content/20-react/01-Activities/19-Ins_AJAX/src). Paste the Bootstrap CDN into `public/index.html`. You may use the snippet provided below:
+
+  ```html
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"/>
+  ```
+
+* Install the `axios` library by running the following command:
+
+   ```
+   npm install axios
+   ```
+
+* Stop the dev server if it is already running. Start the app in dev mode by running `npm start`.
+
+* Navigate to [localhost:3000](http://localhost:3000) and demonstrate the application's functionality.
+
+  ![Giphy Demo](Images/03-Giphy-Demo.png)
+
+  * This app searches the Giphy API for whatever is typed into the input field and then displays the results below.
+
+  * When we first load the app, we should see kitten related results.
+
+* Open the `src/components` folder and point out the three files inside:
+
+  * `ResultList.js`
+
+  * `SearchForm.js`
+
+  * `SearchResultContainer.js`
+
+* Explain to the class that `SearchResultContainer` contains and renders the `ResultList` and `SearchForm` components. This is our application's only stateful component.
+
+* Briefly demonstrate this without digging into each component's exact functionality in your editor just yet.
+
+  ![Render](Images/04-Search-Container-Render.png)
+
+* Ask the class: Why do you think `SearchResultContainer` is a stateful component, but `SearchForm` and `ResultList` aren't?
+
+  * It's possible to make every component in our React application stateful. But it's usually cleaner and less error prone to have some kind of parent component which contains all of the data and functionality its children will need, and then pass those down as props.
+
+  * Quick aside: Slack out this [article written by Dan Abramov](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0) (Redux Author, React Core Contributor, Create React App Core Contributor) for students to read through on their own time. He describes the pattern of separating components into "container" and "presentational" components. In a nutshell, this can be explained as follows:
+
+    * Container components are primarily concerned with how things _work_ and render very little, if any of their own markup. Instead they mostly render other components and pass down the logic and data they need to work.
+
+    * Presentational components are concerned with how things _look_ and typically don't contain any logic that doesn't have to do with their own individual UI.
+
+    * This pattern helps us build components with little to no coupling that can more easily be reused in different parts of app or even across applications. It also lets us stub out our applications appearance by writing presentational components first, and then writing container components once we're ready to make things work.
+
+  * This isn't important for students to totally understand now, but slack out the article for them to check out later. The most important takeaway should be that there should be a few of these "container" components which act as the "brain" for their children. In our case this is `SearchResultContainer`.
+
+* Now, open `src/components/SearchResultContainer.js` and walk through the code.
+
+  * Our initial state has a `search` property set to an empty string and a `results` property set to an empty array.
+
+    ![Initial State](Images/05-Initial-Giphy-State.png)
+
+  * We have a new unfamiliar method defined called `componentDidMount`. Explain that like the `render` method, this method is built-in to React and automatically run **after the component is rendered for the first time.**
+
+    ![Component Did Mount](Images/06-Component-Did-Mount.png)
+
+  * Inside of this method we run the `searchGiphy` method and pass in "kittens" as an argument. Before getting into how exactly the `searchGiphy` method works, explain that this code searches the Giphy API and updates our application's `result` state using the results from the AJAX request. By writing this code inside of the `componentDidMount` method, we're saying we want it to run after the initial component render, before state updates take place.
+
+  * Explain that when working with class components in React, we are able to hook into to a few different **component lifecycle events**, that allow us to automatically execute logic at certain times.
+
+    * Explain that these component lifecycle events are similar to some of the DOM lifecycle events we've worked with in vanilla JavaScript or jQuery. For example, in jQuery, `$(document).ready` runs when the entire web page is loaded.
+
+    * In React, `componentDidMount` runs after a component and all of its children have been initially rendered and mounted to the DOM, and have no further expected initialization steps.
+
+    * Explain that there are a few different React component lifecycle events we can hook into but `componentDidMount` is probably the one we'll use most frequently as this is the best place to run any async code we need to populate our component's state after the component mounts.
+
+    * Ask the class: Why wouldn't we just run our `searchGiphy` method inside of our component's constructor and populate our initial state there? That is, assuming we went back to explicitly using the constructor method.
+
+      * Constructor functions run synchronously and AJAX requests are asynchronous. So we might not have the async data available by the time the component is instantiated.
+
+      * Additionally, running our async code inside of the constructor could cause extra re-renders of our component &mdash; making our application feel slow or glitchy on startup &mdash or introduce difficult to track down bugs.
+
+      * By the time `componentDidMount` is run, there's no more work for our component needs to do. Even if the AJAX request fails or takes a long time to complete, we'd still have our component and its children rendered to some degree.
+
+      * Explain that `componentDidMount` is called automatically once per component instance.
+
+      * Explain that, technically, `render` is another component lifecycle event, but rather than only running once, the `render` method is called every time our component's state is updated or anytime our component receives new props.
+
+      * Slack out this [article on the React component lifecycle](https://engineering.musefind.com/react-lifecycle-methods-how-and-when-to-use-them-2111a1b692b1) for students to read on their own time.
+
+  * Go to the `searchGiphy` method and ask the class: What do you think this method is doing? Without even knowing what this `API` object is, what does it look like this method is doing?
+
+    * This method is searching the Giphy API, passing in `this.state.search` as a query. It's then setting `this.state.results` to the JSON array that comes back from the AJAX request.
+
+  * Open `src/utils/API.js` and go through the code inside of our API helper.
+
+     ![Component Did Mount](Images/07-API.png)
+
+    * This file exports an object with a `search` method. Go back to the `SearchResultContainer` and point out how this `search` method corresponds to `API.search`.
+
+    * This `search` method accepts a `query` parameter and returns the following:
+
+      ```js
+      axios.get(BASEURL + query + APIKEY);
+      ```
+
+    * Explain that axios is a third party library we've installed for the purpose of making AJAX requests. React itself doesn't ship with any functionality for making AJAX requests. Instead we can use whatever library we'd like for this.
+
+    * Axios functions _very_ similarly to `$.ajax` in jQuery.
+
+    * By running `axios.get`, we're saying we want to perform a GET request.
+
+    * At the very least, the `axios.get` method requires one argument: the url we want to send the request to. We construct the full Giphy API URL using the `BASEURL`, `query`, and `APIKEY` strings. This should remind students of a few weeks ago when we initially worked with the Giphy API using jQuery.
+
+    * Explain that like `$.ajax`, all of axios's methods return a promise object. By returning this method call, we can deal with what happens _after_ the request in our code which imports this module. i.e. point out how we run the `.then` and `.catch` inside of `SearchResultContainer`.
+
+  * Explain that there are other libraries available for making AJAX requests. We even have a `fetch` method built into modern browsers which is similar, but tends to require more configuration to perform simple requests. We could have even imported jQuery and used `$.ajax` if we wanted to. But it's a better idea to use a smaller, single purpose library for making our AJAX requests.
+
+  * Explain that by writing our logic for performing AJAX requests inside of this `API.js` helper file, we no longer need to care about how exactly the AJAX request is implemented in our components. We'd simply require the file and declaratively make a request using a minimum amount of information instead.
+
+  * Go back to the `searchGiphy` method inside of the `SearchResultContainer` component and briefly go over its code once more now that we've explained the `API` object.
+
+    ![Search Result Container](Images/08-Search-Result-Container.png)
+
+  * Point out that the `handleInputChange` method should look familiar to the previous examples, but re-explain how it works if necessary. Demonstrate how we pass this method to the `SearchForm` component as a prop and set the `onChange` prop of its input field to this method.
+
+  * Inside of the `SearchResultContainer`, the `handleFormSubmit` method is a _little_ different compared to the previous example. Point out how when the form is submitted, we first prevent its default behavior with `event.preventDefault()`. Then we call `this.searchGiphy` which searches the Giphy API for the value of `this.state.search`.
+
+  * Finally, open the `ResultList` component and demonstrate how this component renders a list of images it receives on its `results` prop.
+
+* Take another few minutes to explain any parts of this code which may still not be entirely clear. The major takeaways for this example should be:
+
+  * Most of our application's components should be stateless components primarily concerned with some part of our application's presentation.
+
+  * A smaller number of components should be stateful class components which contain part of our application's business logic and state. Generally these "container" components render our stateless "presentational" components and pass down data and functionality on a need to know basis.
+
+  * `componentDidMount` is a component lifecycle event. This event is triggered once after the component has initially rendered for the first time. This is the best place to perform any initial AJAX requests. There are a few others lifecycle events available, but `componentDidMount` is the one they'll probably end up using the most frequently.
+
+  * We're using the `axios` library to perform our AJAX requests. React itself is primarily concerned with our application's view layer and doesn't include any kind of method for creating AJAX requests. We are free to use whatever library we'd like to perform AJAX requests in React.
+
+  * We're putting our logic for creating AJAX requests into our `API.js` helper file. This way, we don't have to worry about how exactly requests to the Giphy API are performed inside of the components that need to make them.
+
+### 13. Students Do: AJAX (15 mins)
+
+* In this activity students will create a simple React application with which users can query the OMDB API and display information about the movie searched for.
+
+* **Instructions:** [README.md](../../../../01-Class-Content/20-react/01-Activities/20-Stu_AJAX/README.md)
+
+### 14. Instructor Do: Review AJAX (15 mins)
+
+* Once time's up slack out the [03-Stu_AJAX/Solved](../../../../01-Class-Content/20-react/01-Activities/20-Stu_AJAX/Solved) folder and demonstrate the activity solution in your web browser. Be sure to point out the following:
+
+  ![OMDB Browser](Images/09-OMDBBrowser.png)
+
+  * When we search for a movie using the form on the right side, some information about the movie is displayed in the left card.
+
+  * When the component first "mounts", some information about the movie "The Matrix" is displayed.
+
+  * Ask the class: In what part of our application would we be performing this initial AJAX request to the OMDB API?
+
+    * Inside of the `componentDidMount` lifecycle method of `OmdbContainer`. As mentioned before, this method is where we want to perform any initial async logic for our components.
+
+      ![OMDB Did Mount](Images/10-OMDBDidMount.png)
+
+  * Point out the `handleInputChange` method inside of the `OmdbContainer` component. Have a volunteer explain to you how this code works.
+
+    ![Handle Input Change](Images/11-HandleInputChange.png)
+
+    * This method pulls the `value` and `name` properties off of the input element the event was triggered from, and uses those values to set the appropriate state.
+
+  * Ask the class: Since we definitely only have one input field under the control of this `handleInputChange` method, could we decrease the amount of code being used inside of this method?
+
+    * Yes, the current setup accounts for the possibility of adding new input fields. But if we were positive we'd only have one input field, we could use the following code instead:
+
+      ```js
+      handleInputChange = event => {
+        this.setState({
+          search: event.target.value,
+        });
+      };
+      ```
+
+  * Go through the code inside of the `handleFormSubmit` method. Have a volunteer explain what the code is doing and when it's called.
+
+    ![Handle Form Submit](Images/12-HandleFormSubmit.png)
+
+    * Whenever the form is submitted, we first prevent the event's default behavior. By default, whenever we submit an HTML form, it tries to reload the web page. Then we run the `searchMovies` method and pass in `this.state.search` as a query.
+
+  * Now scroll down to the `render` method and point out the section of code where the `MovieDetail` component is being rendered.
+
+  * Point out the ternary expression inside of the JSX curly braces. Explain while we can't use an `if` statement inside of JSX curly braces, we _can_ use a ternary expression or short circuit evaluation.
+
+    * If necessary, take a few moments to explain the syntax of a ternary expression.
+
+  * Explain that if we didn't want to write this much logic inside of our `render` method, we could also extract this code into a new method and call that inside of the `render` instead. For example, we could define the following method on the `OmdbContainer` component:
+
+  ```js
+  renderMovie = () => {
+    if (this.state.result.Title) {
+      return (
+        <MovieDetail
+          src={this.state.result.Poster}
+          director={this.state.result.Director}
+          genre={this.state.result.Genre}
+          released={this.state.result.Released}
+        />
+      );
+    } else {
+      return <h3>No Results to Display</h3>;
+    }
+  };
+  ```
+
+  * And then use it in our `render` method like so:
+
+    ```js
+      {this.renderMovie()}
+    ```
+
+* Explain that any technique they used to get this part to work is probably okay and encourage them to revisit the [React Documentation on Conditional Rendering](https://facebook.github.io/react/docs/conditional-rendering.html) to learn more about what Facebook has to say on the topic.
+
+* Take another few minutes to answer any remaining questions.
+
+### 15. Students Do: Conditional Render (20 mins)
+
+* In this activity students will render one of four different components based upon a component's state. This example is meant to further practice conditional rendering with React and demonstrate the need for a component router.
+
+* **Instructions:** [README.md](../../../../01-Class-Content/20-react/01-Activities/21-Stu_ConditionalRender/README.md)
+
+### 16. Instructor Do: Review Conditional Render (15 mins)
+
+* Once time's up slack out the [04-Stu_ConditionalRender/Solved](../../../../01-Class-Content/20-react/01-Activities/21-Stu_ConditionalRender/Solved) version of the activity and go through it as a class. Be sure to demonstrate the solution in your web browser before going into the JavaScript code in your editor.
+
+  ![Conditional Demo](Images/13-Conditional-Demo.png)
+
+* Point out how when we click the different navigation items, a different component is rendered. Point out that the address bar doesn't _actually_ change when we do this, but we are still rendering different content depending on our application state.
+
+* Explain that `PortfolioContainer` maintains the state for the currently active page and passes this down to `NavTabs` along with a method for changing the currently active page.
+
+  ![NavTabs](Images/14-NavTabs.png)
+
+* Demonstrate the `PortfolioContainer` code and point out how we're using a method to return the appropriate JSX depending on `this.state.currentPage` inside of this component.
+
+  ![Conditional Render](Images/15-ConditionalRender.png)
+
+* Explain that we could have also used a series of ternary operators or short circuit evaluations to accomplish this, but since we have more than a few conditionals, doing it this way can help keep some excess component logic out of the `render` method.
+
+* Take a few moments to answer any lingering questions.
+
+### 17. Instructor Do: Review Material (30 mins)
+
+### 18. TAs DO: Slack out information (0 mins)
 
 * Slack out the [solved](../../../../01-Class-Content/19-react/01-Activities/31-Stu_FunWithForms/Solved) version of the previous activity. If any time remains go through the code as a class.
 
@@ -823,7 +657,7 @@ We will then be deepening students understanding of ReactJS. They further expand
 
   * [State and Lifecycle](https://facebook.github.io/react/docs/state-and-lifecycle.html)
 
-### 33. End (0 mins)
+### 19. End (0 mins)
 
 ### Lesson Plan Feedback
 
