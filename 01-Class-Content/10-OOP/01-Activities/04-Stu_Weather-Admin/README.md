@@ -1,4 +1,8 @@
-# **Instructions**
+# Weather Admin
+
+In this activity you will create a CLI based weather application that will give updates about the weather at the searched location.
+
+## Instructions
 
 * There are two ways to run this app: as a user or as an administrator. To run as admin, type `node CLI.js admin` To run as a user, type `node CLI.js user bob "los angeles, ca"`, where the user mode must provide a name and a location as additional arguments.
 

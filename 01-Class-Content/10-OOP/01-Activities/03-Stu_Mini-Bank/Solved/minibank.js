@@ -1,4 +1,4 @@
-function MiniBank(balance, statement) {
+function MiniBank(balance) {
   this.balance = balance;
   this.statement = [balance];
   this.getBalance = function() {
