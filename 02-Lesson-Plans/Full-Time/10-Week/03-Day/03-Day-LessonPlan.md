@@ -1,50 +1,34 @@
 ## 10.3 - Continuing React State (10:00 AM) <!--links--> &nbsp; [⬅️](../02-Day/02-Day-LessonPlan.md) &nbsp; [➡️](../04-Day/04-Day-LessonPlan.md)
 
-_If pacing on activities is a bit too fast this unit, remember that you have
-some time at the end of the week to review. Please let us know by opening
-an issue if any activities in particular need a bit more time, so we can
-adjust the schedule for the unit._
+## Overview
 
-### Overview
+In this class, we will be introducing students to the concept of React Hooks. We will further expand on their introduction to managing component state and cover side effects, global state, and pure functions. We will introduce three of the most common built-in Hooks: `useState`, `useEffect`, and `useContext`. Once students have experience creating each one, they will create their own Custom Hooks.
 
-After continuing some of yesterday's lesson on React state,
-we will be deepening students understanding of ReactJS. We will further expand on their introduction to managing component state and cover performing AJAX requests, using forms, and conditionally rendering components.
+## Instructor Notes
 
-`Summary: Complete activities 28-32 in Unit 19 & 1-6 in Unit 20`
+* `Summary: Complete activities 20-state/01-Activities/23-Stu_PupsterApp/ through 21-react/01-Activities/05-Ins_CustomHook.`
 
-##### Instructor Priorities
-
-* Students should be able to use forms with React.
-
-* Students should understand how to conditionally render components.
-
-* Students should be able to utilize the axios library for making AJAX requests.
-
-* Students should have a basic understanding of React Router.
-
-#### Instructor Notes
-
-* In today's class we'll introduce some new class component syntax, cover using forms with React, perform AJAX requests with axios, and go over conditionally rendering components before introducing students to the React Router library.
-
-* You should scaffold out a React application with Create React App at the beginning of class and suggest students do the same. The activities we go over today will only include the applications `src` folder which you should replace in your React app's boilerplate to avoid. It's recommended that that you stop and restart the dev server between each activity.
+* As in previous lessons, you will want to scaffold out a React application with Create React App at the beginning of class and suggest students do the same. The activities we go over today will only include the applications `src` folder which you will replace in your React app's boilerplate to avoid repetitive installs. It's recommended that you completely restart the dev server between activities.
 
 * Today's lesson will feature more instructor led demonstrations than the previous class, be sure to spend some time before class reviewing the examples.
 
-* Have your TAs reference [03-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1pc-N0bdGeB2OY9PcHONY-nQvZ14QbVNM/view?usp=sharing) to help keep track of time during class.
+## Learning Objectives
 
-* **Important:** In order to avoid continuous NPM installs, all of today's activity Solved and Unsolved versions include only a src folder. Students and yourself should scaffold out a React app once with Create React App, and then swap out the src folder for each activity.
+* Articulate the term "effect" in the broader sense of programming.
 
-- - -
+* Utilize React's most common built-in Hooks: `useState`, `useEffect`, and `useContext`.
 
-### Class Objectives
+* Transform a React application that manages state with a class component into an application that uses functional components with React Hooks.
 
-* To deepen understanding of managing state with React components.
+* Create a custom reusable Hook that follows the 2 rules of Hooks.
 
-* To cover conditional rendering React components.
+## Slides
 
-* To introduce the axios library and the concept of the component lifecycle.
+[Introduction to React Hooks](https://docs.google.com/presentation/d/1mnPdZODvhGs0j6s4EEuATbmQjFM7XpzFxrUnsOzNsGE/edit?usp=sharing)
 
-* To introduce routing with React Router.
+## Time Tracker
+
+[10.3 Time Tracker](https://docs.google.com/spreadsheets/d/1ASbpL8oT5cczjoafZYe3-aoT4F1aL3c8TClOOUrV-XQ/edit?usp=sharing)
 
 - - -
 
@@ -70,7 +54,7 @@ we will be deepening students understanding of ReactJS. We will further expand o
 
   * We won't have enough time to teach _all_ of React Router, nor will students need to know all of the library. Instead we'll be going over the fundamental ~20% of syntax that they're likely going to be using 80% of the time. After that, students should feel more comfortable going through the official documentation for answers.
 
-* Replace your React application's `src` folder with [22-Ins_IntroReactRouter/src](../../../../01-Class-Content/20-react/01-Activities/22-Ins_IntroReactRouter/src).
+* Replace your React application's `src` folder with [22-Ins_IntroReactRouter/src](../../../../01-Class-Content/20-state/01-Activities/22-Ins_IntroReactRouter/src).
 
 * This example uses Bootstrap, so if you haven't already, add the Bootstrap CDN to your `index.html` file.
 
@@ -164,11 +148,11 @@ we will be deepening students understanding of ReactJS. We will further expand o
 
 * In this activity students will work with partners to create a full React application from scratch complete with routing and AJAX requests to the [Dog Ceo API](https://dog.ceo/dog-api/).
 
-* **Instructions:** [README](../../../../01-Class-Content/20-react/01-Activities/23-Stu_PupsterApp/README.md)
+* **Instructions:** [README](../../../../01-Class-Content/20-state/01-Activities/23-Stu_PupsterApp/README.md)
 
 ### 3. Instructor Do: Review Pupster (15 mins)
 
-* As a class, go over [23-Stu_PupsterApp/Solved](../../../../01-Class-Content/20-react/01-Activities/23-Stu_PupsterApp/Solved) version of the previous activity. The most important points to cover are:
+* As a class, go over [23-Stu_PupsterApp/Solved](../../../../01-Class-Content/20-state/01-Activities/23-Stu_PupsterApp/Solved) version of the previous activity. The most important points to cover are:
 
   * How each route is rendering each component.
 

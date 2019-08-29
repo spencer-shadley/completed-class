@@ -1,75 +1,37 @@
 ## 10.2 - Intro to React, Components and JSX (10:00 AM) <!--links--> &nbsp; [⬅️](../01-Day/01-Day-LessonPlan.md) &nbsp; [➡️](../03-Day/03-Day-LessonPlan.md)
 
-### Slideshow
-
-* This lesson's slides are available on Google Drive here: [10-2 Intro to React, Components, and JSX](https://docs.google.com/presentation/d/1h8JiIv92PQukSjoBCQkVuvLZD0VlxnTTxbxli3Uh_lM/edit?usp=sharing)
-
-* To add slides to the student-facing repository, download the slides as a PDF by navigating to File > "Download as" and choose "PDF document." Add the slide PDF file to your class repository along with other necessary files.
-
-* **Note:** Editing access is not available for this document. If you wish to modify the slides, please create a copy by navigating to File > "Make a copy...".
-
-### Overview
+## Overview
 
 In this class, we will be introducing students to the basic concepts of ReactJS, JSX, and building layouts through a component-based mindset.
 
 We will then be deepening students understanding of ReactJS. They further expand upon their understanding of props, learn how to programmatically render components from a list of data, and introduce the concept of class components and component state.
 
-`Summary: Complete activities 14-31 in Unit 19`
 
-#### Instructor Notes
+## Instructor Notes
+
+* `Summary: Complete activities 19-react/01-Activities/13-Stu_ComponentMap through 20-state/01-Activities/21-Stu_ConditionalRender`.
 
 * It is recommended that you arrange for students to globally install both Create React App before today's class.
 
-* Let students know that today's class is meant to be a **gentle** introduction to React. Few if any of your students will have even the faintest knowledge of React &mdash; so this class is all about an initial exposure.
-
-* Let students know that we won't be able to teach them **all** of React in the amount of time we have. In order to "get good" they are going to have to do their own work outside of class. Our role is essentially, to give them the high-points so they understand the terms and know how to proceed.
-
-* Students may feel a little overwhelmed with the new unusual syntax. Remind them that at the end of the day, we're still just working with JavaScript. Prioritize making sure they understand concepts, rather than worrying about them perfectly memorizing syntax. Memorization will come with practice and repetition, so work on instilling concepts early on.
-
-* Explain any unfamiliar ES6 syntax as you go along as necessary, but try not to go deeper than necessary. Students will have plenty of time to practice ES6 as we go through the material over the next two weeks.
-
 * **Important:** In order to avoid continuous NPM installs, all of today's activity Solved and Unsolved versions include only a `src` folder. Students and yourself should scaffold out a React app once with Create React App, and then swap out the `src` folder for each activity.
 
-* The latter part of today's class  (starting with props) will be more challenging than the last class for many students. Syntax errors will abound as students confusedly mix states and props, and forget to pass attributes to their child components. Explain that memorizing syntax will come with time and practice, it's far more important to understand the concepts covered as exact syntax can always be looked up.
+* Today's class will be more challenging than the last class for many students. Syntax errors will abound as students confusedly mix states and props, and forget to pass attributes to their child components. Explain that memorizing syntax will come with time and practice, it's far more important to understand the concepts covered as exact syntax can always be looked up.
 
-* _If pacing on activities is a bit too fast this unit, remember that you have
-some time at the end of the week to review. Please let us know by opening
-an issue if any activities in particular need a bit more time, so we can
-adjust the schedule for the unit._
+## Learning Objectives
 
-* All of the Solved/Unsolved activities contain only the application's `src` folder. At the start of class scaffold out a React application using Create React App, and swap out the `src` folder for each activity to avoid repetitive npm installs.
+* Build forms with React.
 
-* Have your TAs reference [02-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1iLRPgJ40JwEFAQCm3Y1X7LbVWiSVsA7H/view?usp=sharing) to help keep track of time during class.
+* Pass props between React components.
 
-- - -
+* Programmatically render components from an array of data.
 
-### Class Objectives
+* Differentiate between class components and functional components.
 
-* To begin to feel comfortable building static UIs with JSX.
+* Conditionally render components.
 
-* To gain an initial understanding of the component-based paradigm in ReactJS.
+## Time Tracker
 
-* To dissect and build a few simple examples using ReactJS.
-
-* To deepen understanding of passing props between React components.
-
-* To gain a firm understanding of the concept of child-parent relationships in React.
-
-* To be able to programmatically render components from an array of data.
-
-* To introduce the concept of class components and component state.
-
-* Students should be able to articulate a basic definition of components.
-
-* Students should be able to scaffold out React applications with Create React App.
-
-* Students should begin to feel comfortable building static UIs with JSX.
-
-* Students should firmly understand how to pass data between parent and child components &mdash; and vice versa.
-
-* Students should understand the difference between states and props and the use cases for each.
-
-* Students should be able to use the Array.prototype.map method in order to programmatically render components from a list of data.
+[10.2 Time Tracker](https://docs.google.com/spreadsheets/d/1NpQ3y8IoBqP3Uuq9Wv2RwxK3HXdx8tp8TudcoJLBDh4/edit?usp=sharing)
 
 - - -
 
@@ -398,7 +360,7 @@ In this example we will demonstrate how to handle simple forms with React.
 
 In this example we will demonstrate AJAX requests with React.
 
-* Replace your application's `src` folder with [19-Ins_AJAX/src](../../../../01-Class-Content/20-react/01-Activities/19-Ins_AJAX/src). Paste the Bootstrap CDN into `public/index.html`. You may use the snippet provided below:
+* Replace your application's `src` folder with [19-Ins_AJAX/src](../../../../01-Class-Content/20-state/01-Activities/19-Ins_AJAX/src). Paste the Bootstrap CDN into `public/index.html`. You may use the snippet provided below:
 
   ```html
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"/>
@@ -538,11 +500,11 @@ In this example we will demonstrate AJAX requests with React.
 
 * In this activity students will create a simple React application with which users can query the OMDB API and display information about the movie searched for.
 
-* **Instructions:** [README.md](../../../../01-Class-Content/20-react/01-Activities/20-Stu_AJAX/README.md)
+* **Instructions:** [README.md](../../../../01-Class-Content/20-state/01-Activities/20-Stu_AJAX/README.md)
 
 ### 14. Instructor Do: Review AJAX (15 mins)
 
-* Once time's up slack out the [03-Stu_AJAX/Solved](../../../../01-Class-Content/20-react/01-Activities/20-Stu_AJAX/Solved) folder and demonstrate the activity solution in your web browser. Be sure to point out the following:
+* Once time's up slack out the [03-Stu_AJAX/Solved](../../../../01-Class-Content/20-state/01-Activities/20-Stu_AJAX/Solved) folder and demonstrate the activity solution in your web browser. Be sure to point out the following:
 
   ![OMDB Browser](Images/09-OMDBBrowser.png)
 
@@ -619,11 +581,11 @@ In this example we will demonstrate AJAX requests with React.
 
 * In this activity students will render one of four different components based upon a component's state. This example is meant to further practice conditional rendering with React and demonstrate the need for a component router.
 
-* **Instructions:** [README.md](../../../../01-Class-Content/20-react/01-Activities/21-Stu_ConditionalRender/README.md)
+* **Instructions:** [README.md](../../../../01-Class-Content/20-state/01-Activities/21-Stu_ConditionalRender/README.md)
 
 ### 16. Instructor Do: Review Conditional Render (15 mins)
 
-* Once time's up slack out the [04-Stu_ConditionalRender/Solved](../../../../01-Class-Content/20-react/01-Activities/21-Stu_ConditionalRender/Solved) version of the activity and go through it as a class. Be sure to demonstrate the solution in your web browser before going into the JavaScript code in your editor.
+* Once time's up slack out the [04-Stu_ConditionalRender/Solved](../../../../01-Class-Content/20-state/01-Activities/21-Stu_ConditionalRender/Solved) version of the activity and go through it as a class. Be sure to demonstrate the solution in your web browser before going into the JavaScript code in your editor.
 
   ![Conditional Demo](Images/13-Conditional-Demo.png)
 
@@ -642,6 +604,12 @@ In this example we will demonstrate AJAX requests with React.
 * Take a few moments to answer any lingering questions.
 
 ### 17. Instructor Do: Review Material (30 mins)
+
+* Ask the students the following questions and use their answers to guide your review:
+
+  * ☝️ Which concepts today were difficult to grasp?
+
+  * ☝️ Are there any activities that we've done today that you would like to spend some time walking through?
 
 ### 18. TAs DO: Slack out information (0 mins)
 

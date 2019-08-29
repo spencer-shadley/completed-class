@@ -1,12 +1,37 @@
-## 10.4 - Mern <!--links--> &nbsp; [⬅️](../03-Day/03-Day-LessonPlan.md) &nbsp; [➡️](../05-Day/05-Day-LessonPlan.md)
+## 10.4 - The Context API <!--links--> &nbsp; [⬅️](../03-Day/03-Day-LessonPlan.md) &nbsp; [➡️](../05-Day/05-Day-LessonPlan.md)
 
-### Class Objectives
+## Overview
 
-* To obtain a basic understanding of connecting a Create React App to an Express backend.
+This class introduces students to the React Context API, an easier and lighter weight alternative to state management libraries like Redux or MobX. Learning how to use the Context API will also introduce students to the concept of state management, as well as the benefits/pitfalls of tightly-coupled components.
 
-* To become comfortable communicating with an Express server from a React app.
+## Instructor Notes
 
-* To increase understanding and comfort using React Router.
+* `Summary: Complete activities  through `
+
+* The demos and activities will only include the `src` folder which you will need to replace in your React app's boilerplate to avoid repetitive installs. It's recommended that you completely restart the dev server between activities.
+
+* Today's lesson will rely on instructor led demonstrations, so be sure to spend some time before class reviewing the examples.
+
+## Learning Objectives
+
+* Create Context Objects and use them as a means to share state.
+
+* Learn about general good practices when working with component-based applications.
+
+* Identify proper use cases of Context API, while staying aware of its shortcomings.
+
+* Utilize a combination of Context Objects, Providers, and consumers via the `useContext` Hook to manage global state.
+
+* Use multiple Context Providers to manage complex state.
+
+## Slides
+
+[The Context API](https://docs.google.com/presentation/d/1OQQGzZCevIaoeCDnVikP_sKR6dtxGqcwj4PB4tbWk0A/edit?usp=sharing)
+
+## Time Tracker
+
+[10.4 Time Tracker](https://docs.google.com/spreadsheets/d/144jIaroDbesRzXbTiQAu32knQ9HjNfeNUwO-1czv6t0/edit?usp=sharing)
+
 
 - - -
 
@@ -127,9 +152,7 @@
   </div>
   ```
 
-### 3. Stoke Curiousity (10 mins)
-
-@TODO
+### 3. Stoke Curiosity (10 mins)
 
 * Tell the students that this unit covers content that is considered the bleeding edge of React. It is important to note that although some of the concepts are brand-new, they are being quickly adopted into the React ecosystem by the community.
 
@@ -145,7 +168,7 @@
 
 ### 4. Students Do: Prop Drilling (20 mins)
 
-* Introduce [Prop Drilling Unsolved](../../../../01-Class-Content/20-react/01-Activities/08-Stu_PropDrilling/Unsolved) 
+* Introduce [Prop Drilling Unsolved](../../../../01-Class-Content/20-state/01-Activities/08-Stu_PropDrilling/Unsolved) 
 
 ```md
   # Prop Drilling
@@ -209,9 +232,9 @@
 
 ### 5. Instructor Do: Review Prop Drilling (15 mins)
 
-* Run `npm start` in [Prop Drilling Solved](../../../../01-Class-Content/20-react/01-Activities/08-Stu_PropDrilling/Solved)  and demonstrate the functioning application in your browser.
+* Run `npm start` in [Prop Drilling Solved](../../../../01-Class-Content/20-state/01-Activities/08-Stu_PropDrilling/Solved)  and demonstrate the functioning application in your browser.
 
-* Open [Gallery.js](../../../../01-Class-Content/20-react/01-Activities/08-Stu_PropDrilling/Solved/src/pages/Gallery.js)  in your IDE. Point out the following key aspects of the activity:
+* Open [Gallery.js](../../../../01-Class-Content/20-state/01-Activities/08-Stu_PropDrilling/Solved/src/pages/Gallery.js)  in your IDE. Point out the following key aspects of the activity:
 
   * `Gallery.js` is a stateful component responsible for application logic such as performing API requests. It stores the data response from API requests in state.
 
@@ -323,7 +346,7 @@
 
 * Answer any questions related to `Gallery.js`.
 
-* Then open [Components/Card](../../../../01-Class-Content/20-react/01-Activities/08-Stu_PropDrilling/Solved/src/components/CardContainer/index.js) and point out the following:
+* Then open [Components/Card](../../../../01-Class-Content/20-state/01-Activities/08-Stu_PropDrilling/Solved/src/components/CardContainer/index.js) and point out the following:
 
   * The CardContainer component imports the Card component and passes to it the title, language, email, and handleBtnClick, props received from the Gallery component.
 
@@ -346,7 +369,7 @@ function CardContainer({ title, image, language, email, handleBtnClick }) {
 export default CardContainer;
 ```
 
-* Next, open [Components/Card](../../../../01-Class-Content/20-react/01-Activities/08-Stu_PropDrilling/Solved/src/components/Card/index.js)  and point out the following:
+* Next, open [Components/Card](../../../../01-Class-Content/20-state/01-Activities/08-Stu_PropDrilling/Solved/src/components/Card/index.js)  and point out the following:
 
   * The Card component imports the CardBtn and CardTitle components.
 
@@ -396,7 +419,7 @@ import "./style.css";
 
 ```
 
-* Next, open [Components/Card](../../../../01-Class-Content/20-react/01-Activities/08-Stu_PropDrilling/Solved/src/components/CardBtn/index.js)   and point out the following:
+* Next, open [Components/Card](../../../../01-Class-Content/20-state/01-Activities/08-Stu_PropDrilling/Solved/src/components/CardBtn/index.js)   and point out the following:
 
   * The `CardBtn` component receives props from the Card component and renders them as attributes.
 
@@ -450,11 +473,11 @@ const CardBtn = (props) => {
 
 ### 7. Instructor Do: useContext Demo (10 mins)
 
-* Run [useContext Demo](../../../../01-Class-Content/20-react/01-Activities/09-Ins_useContext/)   by copying the `src` folder into your prepared CRA application. Navigate to http://localhost:3000/ in your browser and demonstrate the following:
+* Run [useContext Demo](../../../../01-Class-Content/20-state/01-Activities/09-Ins_useContext/)   by copying the `src` folder into your prepared CRA application. Navigate to http://localhost:3000/ in your browser and demonstrate the following:
 
   * The application still works the same as the previous iteration, but this time utilizes global state.
 
-* Open [DeveloperContext.js](../../../../01-Class-Content/20-react/01-Activities/09-Ins_useContext/src/utils/DeveloperContext.js) in your IDE and explain the following:
+* Open [DeveloperContext.js](../../../../01-Class-Content/20-state/01-Activities/09-Ins_useContext/src/utils/DeveloperContext.js) in your IDE and explain the following:
 
   * We create and export a new Context object initialized with default values:
   *
@@ -471,7 +494,7 @@ const CardBtn = (props) => {
   export default DeveloperContext;
   ```
 
-* Open [Developer.js](../../../../01-Class-Content/20-react/01-Activities/09-Ins_useContext/src/components/Developer.js) in your IDE and explain the following:  
+* Open [Developer.js](../../../../01-Class-Content/20-state/01-Activities/09-Ins_useContext/src/components/Developer.js) in your IDE and explain the following:  
 
   * We import the `DeveloperContext` object:
 
@@ -503,7 +526,7 @@ const CardBtn = (props) => {
 
   * 🎗️ Just like the Context API, the best use-case for `useContext` is avoiding prop drilling.
 
-* Open [App.js](../../../../01-Class-Content/20-react/01-Activities/09-Ins_useContext/src/App.js)
+* Open [App.js](../../../../01-Class-Content/20-state/01-Activities/09-Ins_useContext/src/App.js)
  and explain the following:
 
   * We import the `DeveloperContext`:
@@ -526,7 +549,7 @@ const CardBtn = (props) => {
 
 ### 8. Students Do: Hooking in Context Activity (15 mins)
 
-* Introduce students to [useContext unsolved](../../../../01-Class-Content/20-react/01-Activities/10-Stu_useContext/Unsolved)
+* Introduce students to [useContext unsolved](../../../../01-Class-Content/20-state/01-Activities/10-Stu_useContext/Unsolved)
 
 ```md
   In this activity we will practice using the useContext Hook in React by creating a global state for our articles.
@@ -552,7 +575,7 @@ const CardBtn = (props) => {
 
 ### 9. Instructor Do: Review Hooking in Context Activity (10 mins)
 
-* Open up [useContext Solved Search page](../../../../01-Class-Content/20-react/01-Activities/10-Stu_useContext/Solved/src/pages/Search/index.js) in your IDE.
+* Open up [useContext Solved Search page](../../../../01-Class-Content/20-state/01-Activities/10-Stu_useContext/Solved/src/pages/Search/index.js) in your IDE.
 
   * Note that the `articleState` only contains the necessary properties: `title`, `description`, and `url`.
 
@@ -588,7 +611,7 @@ const CardBtn = (props) => {
     }, [search]);
   ```
 
-* Open up [SearchResults component](../../../../01-Class-Content/20-react/01-Activities/10-Stu_useContext/Solved/src/components/SearchResults/index.js).
+* Open up [SearchResults component](../../../../01-Class-Content/20-state/01-Activities/10-Stu_useContext/Solved/src/components/SearchResults/index.js).
 
   * First, we import the context object from its utility file.
 
@@ -632,9 +655,9 @@ const CardBtn = (props) => {
 
 ### 11. Instructor Do: Demo Dynamic Context (10 mins)
 
-* Run [DynamicContext Demo](../../../../01-Class-Content/20-react/01-Activities/11-Ins_DynamicContext/) in your browser to demonstrate the application. Click each button and show that the alert changes for each button.
+* Run [DynamicContext Demo](../../../../01-Class-Content/20-state/01-Activities/11-Ins_DynamicContext/) in your browser to demonstrate the application. Click each button and show that the alert changes for each button.
 
-* Open [AlertContext.js Solved](../../../../01-Class-Content/20-react/01-Activities/11-Ins_DynamicContext/src/AlertContext.js) in your IDE and point out the following:
+* Open [AlertContext.js Solved](../../../../01-Class-Content/20-state/01-Activities/11-Ins_DynamicContext/src/AlertContext.js) in your IDE and point out the following:
 
   * The Context Object has been isolated to its own file.
 
@@ -659,7 +682,7 @@ const CardBtn = (props) => {
   export default AlertContext;
   ```
 
-* Open [App.js Solved](../../../../01-Class-Content/20-react/01-Activities/11-Ins_DynamicContext/src/App.js) and point out the following:
+* Open [App.js Solved](../../../../01-Class-Content/20-state/01-Activities/11-Ins_DynamicContext/src/App.js) and point out the following:
 
   * We import our Home component from pages and our AlertContext object from the components directory.
 
@@ -697,7 +720,7 @@ const CardBtn = (props) => {
 
   * 📝 We did not pass props to the `Home` component.
 
-* Open [Home.js Solved](../../../../01-Class-Content/20-react/01-Activities/11-Ins_DynamicContext/src/pages/Home.js) in your IDE and point out that there are no references to props.
+* Open [Home.js Solved](../../../../01-Class-Content/20-state/01-Activities/11-Ins_DynamicContext/src/pages/Home.js) in your IDE and point out that there are no references to props.
 
   ```js
   function Home() {
@@ -720,7 +743,7 @@ const CardBtn = (props) => {
   }
   ```
 
-* Open [Content.js Solved](../../../../01-Class-Content/20-react/01-Activities/11-Ins_DynamicContext/src/components/Content.js) and point out the following:
+* Open [Content.js Solved](../../../../01-Class-Content/20-state/01-Activities/11-Ins_DynamicContext/src/components/Content.js) and point out the following:
 
   * We import the `useContext` Hook, the `Alert` component and the `AlertContext` object:
 
@@ -758,7 +781,7 @@ const CardBtn = (props) => {
 
   * 📝 We pass to the `Alert` component props pulled off the `alert` object.
 
-* Open [Alert.js Solved](../../../../01-Class-Content/20-react/01-Activities/11-Ins_DynamicContext/src/components/Alert.js) and point out that it accepts props as we expect it to.
+* Open [Alert.js Solved](../../../../01-Class-Content/20-state/01-Activities/11-Ins_DynamicContext/src/components/Alert.js) and point out that it accepts props as we expect it to.
 
 ```js
 const Alert = (props) => {
@@ -821,7 +844,7 @@ const Alert = (props) => {
 
 ### 13. Instructor Do: Review Dynamic Context (10 mins)
 
-* Open [Dynamic Context solved](../../../../01-Class-Content/20-react/01-Activities/12-Stu_DynamicContext/Solved) in your IDE and point out the following:
+* Open [Dynamic Context solved](../../../../01-Class-Content/20-state/01-Activities/12-Stu_DynamicContext/Solved) in your IDE and point out the following:
 
   * The solution is designed to showcase how a single Context Object may be used in multiple places. In this example, we primarily use the UserContext in our `CardImg` and `CardTitleText` components to display the user's information. However, we still make use of the consumer in the `CardBtn` component as well to handle the button click. 
 
@@ -877,7 +900,7 @@ const Alert = (props) => {
     );
   ```
 
-* Open [UserContext.js Solved](../../../../01-Class-Content/20-react/01-Activities/12-Stu_DynamicContext/src/utils/UserContext.js) in your IDE and point out the following:
+* Open [UserContext.js Solved](../../../../01-Class-Content/20-state/01-Activities/12-Stu_DynamicContext/src/utils/UserContext.js) in your IDE and point out the following:
 
   * The User Context was added to a separate file in order to decouple it from any particular component.
 

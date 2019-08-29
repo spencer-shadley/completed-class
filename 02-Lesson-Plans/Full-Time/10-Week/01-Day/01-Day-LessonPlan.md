@@ -1,12 +1,12 @@
-## 10.1 - An ES6travaganza (10:00 AM) <!--links--> &nbsp; [⬅️](../../09-Week/05-Day/05-Day-LessonPlan.md) &nbsp; [➡️](../02-Day/02-Day-LessonPlan.md)
-
-`Summary: Complete activities 1-9 in Unit 19`
+## 10.1 - Intro to React (10:00 AM) <!--links--> &nbsp; [⬅️](../../09-Week/05-Day/05-Day-LessonPlan.md) &nbsp; [➡️](../02-Day/02-Day-LessonPlan.md)
 
 ## Overview
 
 In this class, we will be introducing students to the basic concepts of ReactJS, JSX, and building layouts through a component-based mindset.
 
 ## Instructor Notes
+
+* `Summary: Complete activities 19-react/01-Activities/01-Stu_DocumentationQuestions through 19-react/01-Activities/12-Stu_PropsReview`.
 
 * It is recommended that you arrange for students to globally install both Create React App before today's class.
 
@@ -29,16 +29,18 @@ In this class, we will be introducing students to the basic concepts of ReactJS,
 * To dissect and build a few simple examples using ReactJS.
 
 ## Slides
-@TODO
-[19.1: React Gently](https://docs.google.com/presentation/d/1M35LtiiJlAmDK27cjyifhbhvcTAoYaUF7-9s6k6ZIP8/edit?usp=sharing)
+
+[React Gently](https://docs.google.com/presentation/d/1M35LtiiJlAmDK27cjyifhbhvcTAoYaUF7-9s6k6ZIP8/edit?usp=sharing)
+
+[ReactJS Recap slides](https://docs.google.com/presentation/d/18Q6g_4tMD01MyMUw8euaoldLHdJgJodbbd5XSzXV8UQ/edit?usp=sharing)
 
 ## Time Tracker
-@TODO
-[19.1 Time Tracker](https://docs.google.com/spreadsheets/d/1NjFssI5jL39mLWGlG2LV6qvwezyOaNrjTP3q3QTyrz4/edit#gid=0)
+
+[10.1 Time Tracker](https://docs.google.com/spreadsheets/d/1NjFssI5jL39mLWGlG2LV6qvwezyOaNrjTP3q3QTyrz4/edit?usp=sharing)
 
 ### 1. Instructor Do: Go Through Slides (15 mins)
 
-* This unit uses a web-based slideshow found here: [React Gently](https://react-gently.netlify.com/).
+* This unit uses a web-based slideshow found here: [React Gently](https://docs.google.com/presentation/d/1M35LtiiJlAmDK27cjyifhbhvcTAoYaUF7-9s6k6ZIP8/edit?usp=sharing).
 
   * Use the left and right arrow keys to cycle through the slides. It is advisable to view the slideshow in fullscreen Chrome.
 
@@ -573,8 +575,6 @@ In this class, we will be introducing students to the basic concepts of ReactJS,
 * Point out that while is code is more DRY than it was, we're still manually rendering a `FriendCard` for each piece of data &mdash; we'll come back and solve this problem in a later activity!
 
 ### 24. END (0 mins)
-
-* If any time remains go over the [solution](../../../../01-Class-Content/19-react/01-Activities/09-Stu_StyleProp/Solved) to the previous activity.
 
 * Listed below are sections of the React Documentation that pertain to today's lesson. All are short reads, encourage students to browse through these resources to help reinforce the concepts covered today.
 
