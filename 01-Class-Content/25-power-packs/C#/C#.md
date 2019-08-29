@@ -1776,9 +1776,6 @@ public static void MakeBadges(List<Employee> employees) {
 }
 ```
 
-
-             
-
 *Program.cs*
 
 ```c#
