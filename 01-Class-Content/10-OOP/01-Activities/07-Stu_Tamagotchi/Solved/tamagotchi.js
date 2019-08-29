@@ -4,10 +4,10 @@ var DigitalPal = function() {
   this.sleepy = false;
   this.bored = true;
   this.age = 0;
-}
+};
 // method which feeds the digitalpal when they are hungry and sets them to sleepy
 DigitalPal.prototype.feed = function() {
-  if (this.hungry === true) {
+  if (this.hungry) {
     console.log("That was yummy!");
     this.hungry = false;
     this.sleepy = true;
@@ -17,10 +17,10 @@ DigitalPal.prototype.feed = function() {
   }
 };
 
-// method which puts the digitalPal to sleep when they are sleepy, increases their age by one,
-// and sets them to bored
+// method which puts the digitalPal to sleep when they are sleepy, increases
+// their age by one, and sets them to bored
 DigitalPal.prototype.sleep = function() {
-  if (this.sleepy === true) {
+  if (this.sleepy) {
     console.log("ZZzzZZZzzZZz~~");
     this.sleepy = false;
     this.bored = true;
@@ -33,7 +33,7 @@ DigitalPal.prototype.sleep = function() {
 
 // method which allows the user to play with their digitalpal when they are bored and sets them to hungry
 DigitalPal.prototype.play = function() {
-  if (this.bored === true) {
+  if (this.bored) {
     console.log("Yay! Let's play!");
     this.bored = false;
     this.hungry = true;
@@ -50,20 +50,23 @@ DigitalPal.prototype.increaseAge = function() {
 };
 
 
-// creates a new "digitalpal" object with the name "dog"
-var dog = new DigitalPal();
+// Create a new animals object to contain our new Digital Pals
+var animals = {};
+
+// creates a new DigitalPal object with the name "dog"
+animals.dog = new DigitalPal();
 
 // adds the property "outside" to the "dog" object and sets it to false
-dog.outside = false;
+animals.dog.outside = false;
 
 // adds the method "bark" to the "dog" object which prints a message to the screen
-dog.bark = function() {
+animals.dog.bark = function() {
   console.log("Woof! Woof!");
 };
 
-// adds the method "letoutside" to the "dog" object which lets "dog" outside when it's outside
-dog.letOutside = function() {
-  if (this.outside === false) {
+// adds the method "letoutside" to the "dog" object which lets "dog" outside when it is outside
+animals.dog.letOutside = function() {
+  if (!this.outside) {
     console.log("Yay! I love the outdoors!");
     this.outside = true;
     this.bark();
@@ -73,9 +76,9 @@ dog.letOutside = function() {
   }
 };
 
-// adds the method "letInside" to the "dog" object which lets "dog" inside when it's outside
-dog.letInside = function() {
-  if (this.outside === true) {
+// adds the method "letInside" to the "dog" object which lets "dog" inside when it is outside
+animals.dog.letInside = function() {
+  if (this.outside) {
     console.log("Aww... Do I have to?");
     this.outside = false;
   }
@@ -84,19 +87,19 @@ dog.letInside = function() {
   }
 };
 
-// creates a new "digitalpal" object with the name "cat"
-var cat = new DigitalPal();
+// creates a new DigitalPal object with the name "cat"
+animals.cat = new DigitalPal();
 
-// adds the property "houseQuality" to the "cat" object
-cat.houseQuality = 100;
+// adds the property "housequality" to the "cat" object
+animals.cat.houseQuality = 100;
 
 // adds the "meow" method to the "cat" object which prints a message to the screen
-cat.meow = function() {
+animals.cat.meow = function() {
   console.log("Meow! Meow!");
 };
 
-// adds the "destroyFurniture" method to the "cat" object which decreases the "cat.houseQuality" value by ten
-cat.destroyFurniture = function() {
+// adds the "destroyfurniture" method to the "cat" object which decreases the "animals.cat.housequality" value by ten
+animals.cat.destroyFurniture = function() {
   if (this.houseQuality - 10 > 0) {
     this.houseQuality -= 10;
     this.bored = false;
@@ -108,11 +111,15 @@ cat.destroyFurniture = function() {
   }
 };
 
-// adds the "buynewfurniture" method to the "cat" object which increases the "cat.housequality" value by fifty
-cat.buyNewFurniture = function() {
+// adds the "buyNewFurniture" method to the "cat" object which increases the "animals.cat.houseQuality" value by fifty
+animals.cat.buyNewFurniture = function() {
   this.houseQuality += 50;
   console.log("Are you sure that's a good idea?");
 };
 
-// Try calling an animal's method below
-// Example: cat.destroyFurniture();
+// Grabbing command line arguments for animal and method
+var animal = process.argv[2];
+var method = process.argv[3];
+
+// try calling your chosen animal and method from the terminal example: 'node tamagotchi-this dog letInside'
+animals[animal][method]();
