@@ -1,12 +1,31 @@
-function Movie(releaseYear, title) {
-  this.releaseYear = releaseYear;
-  this.title = title;
+// constructor which can be used to create objects with the ".raining", ".noise",
+// and ".makenoise" properties
+function Animal(raining, noise) {
+  this.raining = raining;
+  this.noise = noise;
+  this.makeNoise = function() {
+    if (this.raining === true) {
+      console.log(this.noise);
+    }
+  };
 }
 
-Movie.prototype.logInfo = function() {
-  console.log(`${this.title} was release in ${this.releaseYear}`);
-}
+// sets the variables "dogs" and "cats" to be animal objects and initializes them with raining and noise properties
+var dogs = new Animal(true, "Woof!");
+var cats = new Animal(false, "Meow!");
 
-var newmovie = new Movie("l", "p")
-newmovie.logInfo = ()=>console.log("yo")
-newmovie.logInfo()
+// calling dogs and cats makeNoise methods
+dogs.makeNoise();
+cats.makeNoise();
+
+// if we want, we can change an objects properties after they're created
+cats.raining = true;
+cats.makeNoise();
+
+var massHysteria = function(dogs, cats) {
+  if (dogs.raining === true && cats.raining === true) {
+    console.log("DOGS AND CATS LIVING TOGETHER! MASS HYSTERIA!");
+  }
+};
+
+massHysteria(dogs, cats);
