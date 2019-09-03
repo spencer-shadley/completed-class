@@ -1,255 +1,443 @@
-## 3.1 Lesson Plan - JavaScript and jQuery Review & Intro to Timing Events (10:00 AM) <!--links--> &nbsp; [⬅️](../../02-Week/05-Day/05-Day-LessonPlan.md) &nbsp; [➡️](../02-Day/02-Day-LessonPlan.md)
+# 01-Day Lesson Plan - Events continued & Intro to Timing Events (10:00 AM) <!--links--> &nbsp; [⬅️](../../02-Week/05-Day/05-Day-LessonPlan.md) &nbsp; [➡️](../02-Day/02-Day-LessonPlan.md)
 
-### Slideshow
+## Overview
 
-* This lesson's slides are available on Google Drive here: [03-1 JavaScript and jQuery Review](https://docs.google.com/presentation/d/1IaujFMuxXQ1GG3XV-S7qDnFn70_8FJ7tLMN9mNEvPqg/edit?usp=sharing)
+In this class students will finish working on their ToDo application. They will then spend the remainder of the class working on a Timer Application.
 
-* To add slides to the student-facing repository, download the slides as a PDF by navigating to File > "Download as" and choose "PDF document." Add the slide PDF file to your class repository along with other necessary files.
+## Instructor Notes
 
-* **Note:** Editing access is not available for this document. If you wish to modify the slides, please create a copy by navigating to File > "Make a copy...".
+`Summary: Review JavaScript and jQuery & Complete activities 04-08 in Unit 04`
+* The code associated with local and session storage may seem simple, but the concepts and their use cases may be confusing for students seeing these things for the first time. 
 
-- - -
-
-### Overview
-
-In this class, we will be providing students an opportunity to review old JavaScript activities to gain a stronger foothold in the fundamentals. We will briefly review JavaScript and jQuery concepts before learning about Timing Events.
-
-
-`Summary: Review JavaScript and jQuery & Complete activities 04-08 in Unit 05`
-
-##### Instructor Priorities
-
-* Students should have confidence and mastery of concepts covered so far.
-* Students should have the extended opportunity for supported coding.
-* Students should revisit critical assignments, exercises, and homework covered in class so far.
-
-##### Instructor Notes
-
-* The first half of today's class is dedicated to review. At this point in the program, students likely feel weathered by the JavaScript immersion. Let them know this is their chance to get caught up!
-
-* During today's activities, focus on pairing like-level students so they can review old material with one another. If possible, work with TAs to organize these groups before class begins. Pairing like-levels also helps as it allows you and the TAs concentrate on students who need the most significant help. Consider pulling these students out of class and working with them in another space if one is available. 
-
-* Make sure to congratulate students today. They are only two weeks in and they have learned a ton. Now is a good opportunity to remind them that not long ago they came through the door knowing little to nothing about web development and today they can already build an entire working website! Pretty impressive.
-
-* Have your TAs reference [01-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1frWbVNmH40LiTXTzNlBfZDVx3F_i4_O1/view?usp=sharing) to help keep track of time during class.
-
-### Sample Class Video (Highly Recommended)
-* To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3c0be955-68fd-43e3-a7a8-ec392346e29c)
+* Students will be pseudocoding the ToDo List application at the beginning of class. Familiarize yourself with the code and functionality to more easily help students through this process.
 
 - - -
 
-### Class Objectives
+## Learning Objectives
 
-* Students will ask conceptual questions regarding any of the subjects covered so far (HTML, CSS, Git, Github Pages, JavaScript, jQuery)
-* Students will absorb a high-level recap of the most important subjects covered to date.
-* Students will group code previous or new projects.
-* Students will reinforce their knowledge of JavaScript & jQuery.
-* Students will understand JavaScript Timing Events including `setTimeout`, `clearTimeout`, & `setInterval`.
+* By the end of class students will be able to:
 
-- - -
+  * Use local storage and session storage.
 
-### 1. Instructor Do: Cover Day's Agenda (5 mins)
+  * Describe the differences between the two.
 
-* Explain to the class that today will be focused on providing an opportunity for review and recalibration. The class will be divided into three sections.
-  1. A few moments to answer lingering questions;
-  2. A high-level overview of all the major topics covered; and
-  3. Two hours of coding in small groups, either redoing select assignments or working on a new project.
+  * Identify when client side storage is the right solution.
 
-### 2. Instructor Do: Collect Student Feedback (10 mins) (High)
-
-* Using Poll Everywhere or a similar anonymous method have students provide open feedback regarding the general subjects or concepts they feel least comfortable with. Be sure to provide adequate time for all students to provide feedback
-
-* Then, offer brief (VERY BRIEF) commentary on the subjects.
-
-* Open the floor to specific questions tied to these subjects
-
-### 3. Instructor Do: Organize Groups (5 mins)
-
-* Divide the class into pre-defined groups based on personalities and general mastery of the subject so far. Be sure to pair strong students with strong students and weaker students with weaker ones. If possible, this should be done PRIOR to class if possible.
-
-* Have students switch seats and join their defined groups
-
-### 4. Instructor Do: Review (20 mins) (High)
-
-* Using the slide deck ([03-1 JavaScript and jQuery Review](https://docs.google.com/presentation/d/1IaujFMuxXQ1GG3XV-S7qDnFn70_8FJ7tLMN9mNEvPqg/edit?usp=sharing)) provided as a guide, quickly list and explain (at a high-level) the key takeaways students should feel comfortable with at this point in the class. Encourage the class to take note of any topics that remain difficult and to write them down as you speak.
-
-* Be sure to ask individual students questions from time to time to maintain engagement!
-
-* After discussing each section, give the groups a moment to talk to one another and confirm that they understand the topics presented. If there are any issues, encourage them to raise the questions to one another &mdash; and if no member of the team can can answer, to then raise it to the class.
-
-* Continue this way until all topics have been covered. Just aim to have at least 2 hours of class time left by the time this recap is complete.
-
-### 5. Instructor Do: Provide Activity Guidelines (5 mins)
-
-* Task the student groups with choosing one of four different group assignments to work on for the next part of class. Each group should decide which activity/ies to choose based on the following paradigm.
-
-* Slack out the following instructions:
-
-* **Instructions:**
-
-  * As a group, choose to complete one of the following tasks. Use the information provided below as a guide.
-
-    * Can you and your team comfortably build the Word Guess Game (HW 3) from scratch?
-
-      * No? Then start with Word Guess.
-
-    * Can you and your team conceptually explain how "Captain Planet The Game” works?
-
-      * No? Then start by dissecting "Captain Planet the Game".
-
-    * Can you and your team comfortably use jQuery to modify HTML based on clicks?
-
-      * No? Then start with Lottery Generator.
-
-    * Can you and your team comfortably create a grid-based design with Bootstrap?
-
-      * No? Then start with the Bootstrap Portfolio assignment.
-
-### 6. Students Do: Activities (100 mins) (Critical)
-
-* Students begin coding. Be sure to encourage them to try coding from scratch if possible. TAs and Instructors should use this time to assist students where needed.
+  * Use all of the units concepts to build a persistent ToDo list as well as a Work Timer.
 
 - - -
 
-### 7. LUNCH BREAK (30 mins)
+### Instructor Do: Welcome Students and refresher (10 mins)
 
-- - -
+* Welcome students to class
 
-### 8. Students Do: Coin Flipper (15 mins)
+* Open [25-Stu_Render-Todos/Solved](../../../../01-Class-Content/04-web-apis/01-Activities/25-Stu_Render-Todos/Solved) and point out the following: 
 
-* Students will be building an app that allows them to guess the outcome of a coin flip, and track their wins/losses.
+  * First we create our `renderTodos()` function. 
 
-* Without showing the the code, open [04-CoinFlip/Solved](../../../../01-Class-Content/05-timers/01-Activities/04-CoinFlip/Solved/coin-flip-solution.html) your web browser and demonstrate its functionality.
+    ```js
+    function renderTodos() {
 
-* Slack out the following instructions and files to the class:
+      // ...
+    }
+    ```
 
-* **Instructions:**
+  * Next inside our function we set the `innerHTML` of our `todoList` element to be a blank string. 
 
-  * Make a Coin Flipper game.
+    ```js
+    function renderTodos() {
+      todoList.innerHTML = "";
+    ```
 
-  * Follow the directions in the html file.
-
-  * How the app works:
-
-    * The user chooses Heads or Tails, and the computer randomly selects heads or tails and displays the outcome on the screen. The app then displays whether or not the user won or lost.
-    * If heads, use: <http://random-ize.com/coin-flip/us-quarter/us-quarter-front.jpg>
-    * If tails, display: <http://random-ize.com/coin-flip/us-quarter/us-quarter-back.jpg>
-
-  * **BONUS**:
-    * Put your JavaScript in its own file and link to it in the HTML.
-    * Keep track of the number of Heads or Tails and display the results on the screen.
-    * Add CSS styling.
-
-* **Folder**: [04-CoinFlip/Unsolved](../../../../01-Class-Content/05-timers/01-Activities/04-CoinFlip/Unsolved)
-
-### 9. Everyone Do: Coin Flipper Review (10 mins) (High)
-
-* Walk through the solution to the previous activity, [04-CoinFlip/Solved](../../../../01-Class-Content/05-timers/01-Activities/04-CoinFlip/Solved/), in your editor.
-
-* Call on students and quiz them about what different parts of the solution are doing.
-
-### 10. Instructor Do: Recap (5 mins)
-
-* Recap key concepts from the Coin Flipper exercise and answer any final questions.
-
-### 11. Partners Do: This Activity (10 mins)
-
-* For this next exercise, make sure students are working with a partner!
-
-* Slack out the following instructions and files:
-
-* **Instructions**:
-
-  * Find a partner.
-  * Together, open the supplied HTML file and answer all questions.
-
-* **Folder**: [05-This/Unsolved](../../../../01-Class-Content/05-timers/01-Activities/05-This/Unsolved)
-
-### 12. Everyone Do: This Review (5 mins)
-
-* Open the solution to the previous activity, [05-This/Solved](../../../../01-Class-Content/05-timers/01-Activities/05-This/Solved) in your editor.
-
-* Choose a team/pair of students to go over their solution to the exercise.
-
-* Run each function to see if they are correct or not.
-
-### 13. Instructor Do: Timeout (10 mins) (High)
-
-* Explain to the class that in programming, we sometimes want events to occur after a certain amount of time. Some examples include:
-
-  * Digital clocks/timers
-
-  * Exams that have a time limit to complete
-
-  * Games that have give the user a certain amount of time to complete a task
-
-* Open [06-Timeout/timeout.html](../../../../01-Class-Content/05-timers/01-Activities/06-Timeout/timeout.html) and demonstrate the application's functionality in your web browser.
-
-  * When the page loads, an alert is automatically thrown one second later.
-
-  * When the `Button Timeout Start` button is clicked, a different alert is thrown three seconds later.
-
-  * The initial alert can be canceled if the `Window Alert Cancel` button is clicked during the one second window after page load.
-
-  * The alert thrown by the `Button Timeout Start` button can be canceled if the `Button Timeout Cancel` button is clicked during the three second window.
-
-* Open the code in your editor and go over `setTimeout` and `clearTimeout` (we will get to `setInterval` after the break). Be sure to point out the following:
-
-  * `setTimeout` accepts two arguments:
-    
-    * A function to run.
-
-    * The number of milliseconds to **wait before** running the function.
+  * We then set the `todoCountSpan` text content to the length of our `todos` array.
   
-  * `setTimeout` returns a reference to the created timer that we can store this in a variable.
+  ```js
+    todoCountSpan.textContent = todos.length;
+  }
+  ```
 
-  * `clearTimeout` can be used to cancel a timer we have a reference to.
+  * Next we create a for loop that sets the value of the todos array at each index to a variable todo. 
+  
+  ```js
+  for (var i = 0; i < todos.length; i++) {
+    var todo = todos[i];
+  ```
+  
+  * We then creates a new `li` element and set the `textContent` of the newly created `li` to the variable we created at the beginning of our loop. 
+          
+  ```js
+  var li = document.createElement("li");
+  li.textContent = todo;
+  ```
 
-* Be sure to mention these are vanilla JavaScript methods, not jQuery!
+  *Finally, we append our new list item to our existing `todoList` as a child.
 
-* Take a moment to answer any additional questions.
+  ```js
+  todoList.appendChild(li);
+  ```
 
-### 14. Instructor Do: Context (5 mins)
+  * Now that we have created a function that will render our todos, we can invoke it after our array variable declaration.
 
-* Open [07-Context/context.html](../../../../01-Class-Content/05-timers/01-Activities/07-Context/context.html). Demonstrate the code in your browser and then in the editor.
+  ```js
+  var todos = ["Learn HTML", "Learn CSS", "Learn JavaScript"];
+  renderTodos();
+  ```
 
-* Explain that the `this` keyword inside of a function executed by `setTimeout` refers to the window object.
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
 
-* Don't dwell on this but mention it: the functions are run in a different `execution context`.
+  * ☝️ So how do we go about adding todos?
 
-  * So for `setTimeout(person.sayHi, 50);`, inside the `sayHi` function, `this` is the window, it isn't the person object anymore.
+  * 🙋 Use the discussion to transition to the first activity.
 
-  * To be able to access the person object in the `sayHi` function when passing it to `setTimeout`, you have to use the person object in `sayHi`.
+### 2. Students Do: Add ToDos (10 mins)
 
-* Don't talk about call or bind here - WE DO NOT WANT TO FREAK THE STUDENTS OUT!
+* Direct students to the first ac activity, found in [26-Stu_Add-Todos/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/26-Stu_Add-Todos/Unsolved)
 
-### 15. Students Do: Simple Timer (10 mins) (Critical)
+```md
+# Add ToDo's
 
-* Slack out the following instructions and files:
+In this activity, we will be continuing to build on our Todo activity. This time, we'll be adding the `add` functionality.
 
-* **Instructions**:
+## Instructions
 
-  * Make a page with a a simple timer that sends an alert and plays a sound after 15 seconds.
-  * Have it send an alert when 5 seconds has passed, 10 seconds has passed and when the time is up.
-  * You will use this to time the break!
+* Add an event listener so that when a user hits enter, the value from the todo input field is pushed to our todo array.
 
-* **Folder**: [08-SimpleTimer/Unsolved](../../../../01-Class-Content/05-timers/01-Activities/08-SimpleTimer/Unsolved)
+* Make sure that empty values are not pushed to the array.
 
-### 16. Instructor Do: Simple Timer Recap (5 mins)
+* Once the value has been added to the array, clear the input field and re-render the todo list.
+```
 
-* Open the solution to the Simple Timer activity in [08-SimpleTimer/Solved](../../../../01-Class-Content/05-timers/01-Activities/08-SimpleTimer/Solved)
+### 2. Instructor Do: Review Add Todos (5 mins)
 
-* Recap the key concepts of the exercise and answer any remaining questions.
+* Open [26-Stu_Add-Todos/Solved/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/26-Stu_Add-Todos/Solved/index.html) in your browser and briefly demonstrate the new functionality by adding new items to the todo list.
 
-### 17. TA's Do: Introduce Homework (2 mins)
+* Next navigate to [26-Stu_Add-Todos/Solved/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/26-Stu_Add-Todos/Solved/script.js) in your IDE and point out the following:
 
-* Present the homework - there are two options, a basic trivia game and a slightly more advanced one.
+  * We're listening for the `submit` event. Note that it would also be acceptable to add a keydown listener and check if the key pressed is enter. Mention that instead listening for `submit`, requires less code. Additionally, the callback function doesn't need to be ran needlessly every time the user presses a key.
 
-* The students have learned everything they need to complete the homework, and can complete it tonight.
+  ```js
+  todoForm.addEventListener("submit", function(event) {
+  event.preventDefault();
+  ```
 
-* Play the two videos ([advanced-trivia-demo](https://youtu.be/xhmmiRmxQ8Q) and [basic-trivia-demo](https://youtu.be/fBIj8YsA9dk))
+  * 🗒 It's worth noting that there are two form behaviors that most commonly cause the `submit` event. The `return` key is pressed within a text input field or a submit button is clicked. This could be desired behavior, but remind students that there are situations where this behavior is not desired.
 
-### 18. End (0 mins)
+  * The `.trim()` method removes whitespace from before and after the input.
+
+  ```js
+  var todoText = todoInput.value.trim();
+  ```
+
+  * If the todoText is empty, return. This will prevent us from pushing empty strings to the todos array.
+
+  ```js
+  if (todoText === "") {
+    return;
+  }
+  ```
+
+  * Lastly, we push the `todoText` to the todos array, reset its value, and render the todos again.
+
+  ```js
+  todos.push(todoText);
+  todoInput.value = "";
+
+  renderTodos();
+  });
+  ```
+
+* Answer any questions before moving to the next activity.
+
+### 3. Students Do: Complete Todos (15 mins)
+
+* Direct students towards the next activity located in [27-Stu_Complete-Todos/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/27-Stu_Complete-Todos/Unsolved).
+
+```md
+# Complete Todos
+
+In this activity, we will create a "complete" button that successfully removes a todo item from the list when clicked.
+
+## Instructions
+
+* Modify your `renderTodos()` function:
+
+  * When a new todo is created, add a `data-index` for each `li`.
+
+  * Generate a button that says "complete" and append it to your `li`.
+
+* Add an event listener so that when a user clicks the complete button, it accesses the `data-index` value and removes that todo element from the list.
+
+## Hint
+
+* You can use `setAttribute` for `data-index` and `splice` to remove your todo from the list.
+```
+
+### 4. Instructor Do: Review Complete Todos (10 mins)
+
+* Open [27-Stu_Complete-Todos/Solved/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/27-Stu_Complete-Todos/Solved) in your IDE and point out the following:
+
+  * First show students the unsolved `renderTodos()` function for context.
+
+  ```js
+  function renderTodos() {
+
+    todoList.innerHTML = "";
+    todoCountSpan.textContent = todos.length;
+
+    for (var i = 0; i < todos.length; i++) {
+      var todo = todos[i];
+
+      var li = document.createElement("li");
+      li.textContent = todo;
+      todoList.appendChild(li);
+    }
+  }
+  ```
+
+  * In order to track which todo we are going to mark as complete, we need set a `data-index` that points to each todo's index, `i` from our for loop.
+
+  ```js
+  li.setAttribute("data-index", i);
+  ```
+
+  * Next we can create a "Complete" button for each item and set it's text to "Complete".
+
+  ```js
+  var button = document.createElement("button");
+      button.textContent = "Complete";
+  ```
+
+  * Finally we append our newly updated button to our `li`.
+
+  ```js
+  li.appendChild(button);
+  ```
+
+  * Now that our todo can be marked as complete, we have to create an event listener for our button that removes it from the list when clicked.
+
+  ```js
+  todoList.addEventListener("click", function(event) {
+  ```
+  * Next we set a variable for `event.target`. When an element is clicked, we check if it was a button and if so, grab the `data-index` of that element.
+
+  ```js
+  var element = event.target;
+  ```
+
+  * We then use `.splice` to remove the element with that index and rerender or todos by calling `renderTodos()`. The `.splice` method allows us to change the contents of an array. We can use it to remove, replace, or add new elements. 
+
+  ```js
+  if (element.matches("button") === true) {
+    var index = element.parentElement.getAttribute("data-index");
+    todos.splice(index, 1);
+    renderTodos();
+  ```
+
+* Check for understanding and answer any lingering questions before moving on.
+
+### 5. Students Do: Local Storage Todos (10 mins)
+
+* Direct students towards their next activity located in [28-Stu_Local-Storage-Todos/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/28-Stu_Local-Storage-Todos/Unsolved).
+
+  ```md
+  # Local Storage Todo's
+
+  In this activity, we will work on storing our todos in `localStorage`. 
+
+  ## Instructions
+
+  * Inside the `init()` function:
+
+    * Set a variable called `storedTodos` that retrieves the todos from `localStorage` and parses the JSON string to an object.
+
+    * Check if the todos were retrieved from `localStorage` and if so, set a `todos` variable with the `storedTodos`.
+
+    * Lastly, render the todos to the DOM.
+
+  * Inside the `storeTodos()` function:
+
+    * Stringify and set the "todos" key in `localStorage` to the `todos` array.
+
+  ## Hint
+
+  * You will need to use `JSON.stringify` and `JSON.parse`.
+  ```
+
+### 6. Instructor Do: Review Local Storage Todos (5 mins)
+
+* Open [28-Stu_Local-Storage-Todos/Solved/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/28-Stu_Local-Storage-Todos/Solved/script.js) in your IDE and walk students through the solved code.
+
+* Inside the `init()` function we set a variable called `storedTodos` that retrieves the todos from `localStorage` and parses the JSON string to an object.
+
+  ```js
+  var storedTodos = JSON.parse(localStorage.getItem("todos"));
+  ```
+
+* We then check if the todos were retrieved from `localStorage` and if so, set a `todos` variable with the `storedTodos` and the render the todos to the DOM.
+
+  ```js
+  if (storedTodos !== null) {
+      todos = storedTodos;
+    }
+
+  renderTodos();
+  ```
+
+* Inside our `storeTodos()` function we stringify and set the "todos" key in `localStorage` to the `todos` array.
+
+  ```js
+  localStorage.setItem("todos", JSON.stringify(todos));
+  ```
+
+* Answer any questions before letting students out for break.
+
+- - -
+
+### 7. Everyone Do: BREAK (40 mins)
+
+- - -
+
+### 8. Students Do: Timer App (90 mins)
+
+* Direct students to their final activity of the day located in [29-Stu_Timer-App/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/29-Stu_Timer-App/Unsolved)
+
+```md
+# Tomato Timer
+
+## Instructions
+
+* In this activity, we will be creating a "tomato" timer that allows the user to set a timer with working and resting periods. We will also store the length of each period in local storage so that the user's preferences persist, even if the browser is closed.
+
+* You have been provided with all of the HTML and CSS that you'll need. 
+
+* Begin by opening `index.html` in your browser. Take a moment to identify different elements on the page that will need functionality:
+
+  * Time left display
+
+  * Start button
+
+  * Pause button
+
+  * Stop button
+
+  * Status toggle
+
+* **Part One** Create functions in `script.js` to add support for the following features:
+
+  1. Create a function that initializes the timer by taking the minutes input from the user and setting the `tototalSeconds` variable. Since we'll be using this function to reset as well, clear any existing intervals.
+
+  2. When the timer starts, update the DOM every second to reflect the time left. It is recommended that you create separate functions to properly format the minutes and seconds.
+
+  3. When the timer is finished, alert the user that it is time to take a break.
+
+* **Part Two**: Add functionality to the pause and stop buttons.
+
+  1. The pause button should temporarily stop the timer. This means that if play is pressed again, the timer will continue where it left off.
+
+  2. The stop button should reset the timer. If play is pressed again, the timer should start over.
+
+* **Part Three**: Add the ability to switch back and forth between working time and resting time.
+
+  1. Set up a variable to keep track of which mode the timer is in.
+
+  2. If the timer is in working mode, then it should alert the user "Time for a break!" upon completion.
+
+  3. If the timer is in resting mode, it should alert the user "Time to get back to work!" upon completion.
+
+  4. Whenever the switch is clicked, the DOM should update with the current status, and the timer should reset.
+
+  5. Make sure that the timer is using minutes of work in work mode and minutes of rest, respectively. 
+
+* **Part Four**: Add localStorage to the application
+
+  1. Every time the user starts a timer, the minutes of work and minutes of rest should be saved to localStorage.
+
+  2. Upon page load, the minutes of work and minutes of rest input fields should be initialized to their previously stored values.
+```
+
+### 9. Instructor Do: Review Timer App (20 mins)
+
+* Open [29-Stu_Timer-App/Solved](../../../../01-Class-Content/04-web-apis/01-Activities/29-Stu_Timer-App/Solved/script.js) in your IDE and point out the following key aspects:
+
+  * We create a function called `starTimer`. We will use it to call our `setTime` function.
+  
+  ```js
+  function startTimer() {
+    setTime();
+  ```
+  
+  * We create a `setInterval` function and store it inside a variable called interval.
+
+  ```js
+    interval = setInterval(function() {
+      secondsElapsed++;
+      renderTime();
+    }, 1000);
+  }
+  ```
+
+  * Ask the class, "Why do we store our setInterval into a variable?"
+
+  * So we can clear it later.
+
+  * We create a function call `pauseTimer` which will clear our interval and call our `renderTime` function.
+
+  ```js
+  function pauseTimer() {
+    clearInterval(interval);
+    renderTime();
+  }
+  ```
+
+  * We create a function called `stopTimer`. When this function is invoked we set our secondsElapsed to `0`, and call our `setTime` and `renderTime` functions.
+
+  ```js
+  function stopTimer() {
+    secondsElapsed = 0;
+    setTime();
+    renderTime();
+  }
+  ```
+
+  * We create a `setTimePreferences` function. We use `localStorage.setItem`, naming the key `preferences` and stringifying our work minutes and rest minutes so they can be added into localstorage.
+
+  ```js
+  function setTimePreferences() {
+    localStorage.setItem(
+      "preferences",
+      JSON.stringify({
+        workMinutes: workMinutesInput.value.trim(),
+        restMinutes: restMinutesInput.value.trim()
+      })
+    );
+   ```
+
+  * We create a `getTimePreferences` function. Next we `JSON.Parse` the getting of our `preferences` localstorage item to turn our stringified object back into an object
+
+  ```js
+  function getTimePreferences() {
+    var preferences = JSON.parse(localStorage.getItem("preferences"));
+  ```
+
+* If preferences exists in localstorage and has a key/value pair of `workMinutes` we set our `workMinutesInput.value` to be equal to our preference objects `workMinutes` value.
+
+  ```js
+  if (preferences) {
+    if (preferences.workMinutes) {
+      workMinutesInput.value = preferences.workMinutes;
+    }
+  ```
+  
+  * If preferences instead has no `workMinutes` but has `restMinutes` then we set our `restMinutesInput.value` to be equal to our preference objects `restMinutes` value.
+
+  ```js
+    if (preferences.restMinutes) {
+      restMinutesInput.value = preferences.restMinutes;
+    }
+  }
+  ```
+
+* Answer any remaining questions students may have and end class for the day.
 
 ### Lesson Plan Feedback
 

@@ -1,12 +1,12 @@
-# 4.1 Lesson Plan - Intro to Web APIs (10:00 AM) <!--links--> &nbsp; [⬅️]() &nbsp; [➡️]()
+# 04-Day Lesson Plan  Lesson Plan - Intro to Web APIs and Events (10:00 AM) <!--links--> &nbsp; [⬅️]() &nbsp; [➡️]()
 
-## Overview
+### Overview
 
-Todays class will be students first introduction to the DOM. We are going to use web APIs to get elements, set attributes, create elements, append elements, and even work with timers.
+Todays class will be students first introduction to the DOM. We are going to use web APIs to get elements, set attributes, create elements, append elements, and even work with timers. We will further students' understanding of DOM Manipulation by using events, and prevent default form behaviors.
 
 ## Instructor Notes
 
-`Complete activities 1-11  in 04-web-apis`
+`Complete activities 1-13 in 04-web-apis`
 
 * This is a critical unit as it introduces real-world use cases for the programming concepts students learned in the previous unit (JavaScript) and will set them up for success when transitioning to front-end frameworks (React) at the end of the course.
 
@@ -32,7 +32,9 @@ Todays class will be students first introduction to the DOM. We are going to use
 
   * Use timers/intervals to execute code based on some amount of time passing.
 
-  * To use event listeners such as click, keydown, and change.
+  * Use event listeners.
+
+  * Prevent default form behavior with `event.preventDefault()`.
 
 ### 1. Instructor Do: Welcome Students (10 mins)
 
@@ -42,11 +44,11 @@ Todays class will be students first introduction to the DOM. We are going to use
 
   * **Web APIs (Title)**: Today will be an introduction to the DOM.
 
-  * **What are the three building blocks of the web?**: What are the 3 main components of the web?
+  *  **What are the three building blocks of the web?**: What are the 3 main components of the web?
 
-  * **Building Blocks of the Web**: The building blocks of the web are HTML, CSS, and JS.
+  *  **Building Blocks of the Web**: The building blocks of the web are HTML, CSS, and JS.
 
-  * **How (or where) do we connect all three?**: How do all three of these building blocks come together?
+  *  **How (or where) do we connect all three?**: How do all three of these building blocks come together?
 
   * **They are connected in the web browser**: The browser brings together HTML, CSS and JavaScript to create interactive webpages and applications.
 
@@ -108,11 +110,11 @@ In this activity you will `console.log(this)` and dig around inside the returned
 
 ### 4. Instructor Do: Traverse The DOM (10 mins)
 
-* Navigate to the MDN Docs on [The DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) and ask the class the following question(s):
+* Navigate to the MDN Docs on [The DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) and and ask the class the following question(s):
 
 * What is our root element?
 
-  * The document (#document)
+  * The document (#document) 
 
 * Where is the HTML node?
 
@@ -200,7 +202,7 @@ In this activity you are going to use the Chrome Dev Console and `.style.propert
     * Change its last child element to have a font size of `50px`.
 
     * Change its first child element to have a font color of `orange`.
-
+    
     * Change its last child elements parent to have a font size of `40px`.
 
 ## Bonus
@@ -325,9 +327,7 @@ In this activity you are going to use JavaScript to add `hrefs` to `a` tags, `sr
 
 * Answer any questions that remain and then dismiss the class for their break.
 
-### 10. BREAK (45 mins)
-
-### 11. Instructor Do: Create and Append (10 mins)
+### 10. Instructor Do: Create and Append (10 mins)
 
 * Welcome students back from break and get right into our next topic, creating HTML elements and appending them to the DOM via JavaScript.
 
@@ -357,7 +357,7 @@ In this activity you are going to use JavaScript to add `hrefs` to `a` tags, `sr
 
 * Answer any questions before proceeding to the next activity.
 
-### 12. Student Do: Look Ma! No HTML! (30 mins)
+### 11. Student Do: Look Ma! No HTML! (35 mins)
 
 * Direct students to the next activity, found in [07-Stu_LookMaNoHTML](../../../../01-Class-Content/04-web-apis/01-Activities/07-Stu_LookMaNoHTML/Unsolved).
 
@@ -383,7 +383,7 @@ In this activity you are going to use DOM methods to create an entire HTML page.
   * Some extra styling to all elements.
 ```
 
-### 13. Instructor Do: Review Look Ma No HTML! (5 mins)
+### 12. Instructor Do: Review Look Ma No HTML! (10 mins)
 
 * Navigate to [07-Stu_LookMaNoHTML/Solved](../../../../01-Class-Content/04-web-apis/01-Activities/07-Stu_LookMaNoHTML/Solved)and open the solved `script.js` file in your IDE.
 
@@ -398,6 +398,12 @@ In this activity you are going to use DOM methods to create an entire HTML page.
   * Finally we go through all of our elements and use `.setAttribute` to change the styles and set image sources.
 
 * Answer any questions students have about the solution and move onto our final topic of the day, timers.
+
+- - -
+
+### 13. BREAK (30 mins)
+
+- - -
 
 ### 14. Instructor Do: Timers and Intervals (10 mins)
 
@@ -525,7 +531,7 @@ In this activity you are going to create a speed reading application. It will in
   }, speed);
   ```
 
-  * As opposed to a fixed value, i.e.,
+   * As opposed to a fixed value, i.e.,
 
    ```js
    }, 1000);
@@ -548,7 +554,7 @@ In this activity you are going to create a speed reading application. It will in
   }
   ```
 
-### 17. Instructor Do: Demo Events (10 mins)
+### 17. Instructor Do: Demo Events (5 min)
 
 * Open [fs-ground-04-web-APIs-event-demo](https://coding-boot-camp.github.io/fs-ground-04-web-APIs-event-demo/) and demonstrate the application functionality:
 
@@ -610,7 +616,7 @@ In this activity you are going to create a speed reading application. It will in
 
 * Use student answers to transition to the next demo.
 
-### 17.  Instructor Do: On Click Demo  (5 min)
+### 19.  Instructor Do: On Click Demo  (10 min)
 
 * Open [10-Ins_Onclick/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/10-Ins_Onclick/index.html) in the browser and demonstrate its functionality:
 
@@ -641,7 +647,7 @@ In this activity you are going to create a speed reading application. It will in
   });
   ```
 
-### 18.  Students Do: addEventListener (15 min)
+### 20.  Students Do: addEventListener (15 min)
 
 * Direct students to the next activity, found in [11-Stu_Onclick/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/11-Stu_Onclick/Unsolved)
 
@@ -663,7 +669,7 @@ In this activity, we are going to create a button that increments a counter when
 * Add some code to ensure that the count never gets below 0.
 ```
 
-### 19. Instructor Do: Review OnClick (5 min)
+### 21. Instructor Do: Review OnClick (10 min)
 
 * Open the file [11-Stu_Onclick/Solved/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/11-Stu_Onclick/Solved/index.html) in the browser.
 
@@ -705,7 +711,7 @@ In this activity, we are going to create a button that increments a counter when
   });
   ```
 
-### 20. END (0 min)
+### 22. END (0 mins)
 
 ### Lesson Plan Feedback
 
