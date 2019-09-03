@@ -1,41 +1,27 @@
-## 03-Day Lesson Plan - JavaScript Juggernauts <!--links--> &nbsp; [⬅️](../02-Day/02-Day-LessonPlan.md) &nbsp; [➡️](../04-Day/04-Day-LessonPlan.md)
+# 03-Day Lesson Plan - JavaScript Juggernauts <!--links--> &nbsp; [⬅️](../02-Day/02-Day-LessonPlan.md) &nbsp; [➡️](../04-Day/04-Day-LessonPlan.md)
 
-### Slideshow
-
-* This lesson's slides are available on Google Drive here: [02-3 JavaScript Juggernauts](https://docs.google.com/presentation/d/125gRzxzcksXeUqDrjQMEfJf31XM2PC5aDTK3sN9VtxA/edit?usp=sharing)
-
-* To add slides to the student-facing repository, download the slides as a PDF by navigating to File > "Download as" and choose "PDF document." Add the slide PDF file to your class repository along with other necessary files.
-
-* **Note:** Editing access is not available for this document. If you wish to modify the slides, please create a copy by navigating to File > "Make a copy...".
-
-- - -
-
-### Overview
+## Overview
 
 In this class, we will be introducing students to the concept of JavaScript Objects.
 
-`Summary: Complete activities 28-34 in Unit 03`
-
-##### Instructor Priorities
-
-* Students should understand what an object is and what its syntax conveys (properties and values).
-* Students should understand how the `30-GandalfTheGreyObjects` example works.
+`Summary: Complete activities 28-34 in Unit 03 and activities 1 and 2 from Unit 04`
 
 ##### Instructor Notes
 
-* This class is relatively light in terms of activities and content. Feel free to sprinkle in examples when you feel it will be helpful. Towards the end of class, there is a trivia example that might be very helpful to students homework-wise.
+* This is a critical unit as it introduces real-world use cases for the programming concepts students learned in the previous unit (JavaScript) and will set them up for success when transitioning to front-end frameworks (React) at the end of the course.
 
-* As usual, have your TAs reference [03-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1ARtFPnNAd5awL3v5yFaj6t2ytrIbQos0/view?usp=sharing) to help keep track of time during class.
+* JavaScript is what ties together HTML and CSS and brings the user experience to life. Let students know that the work they are doing with JavaScript now will pay off heavily as the course proceeds.
 
-### Sample Class Video (Highly Recommended)
+* Students will be working with JavaScript throughout the whole course, be sure to remind them often that these are the building blocks for success.
 
-* To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=585e0c30-0ced-b6e0-062e-45adf61b3627)
+* That said, the activities are designed to encourage independent exploration and experimentation as there are dozens of DOM methods available to developers and we will only scratch the surface here with those most commonly used. So have fun!
 
 - - -
 
 ### Class Objectives
 
 * To gain an understanding of JavaScript Functions and Objects.
+
 * To begin utilizing the basic JavaScript learned so far to build simple JavaScript games.
 
 - - -
@@ -151,7 +137,7 @@ In this class, we will be introducing students to the concept of JavaScript Obje
 
     ![/Images/8-RunCarGame_1.png](Images/8-RunCarGame_1.png)
 
-### 11. Students Do: Run that Car (30 mins)
+### 11. Students Do: Run that Car (35 mins)
 
 * Slack out the following files and instructions. It's up to you whether students work individually or whether they work in pairs.
 
@@ -205,7 +191,7 @@ In this class, we will be introducing students to the concept of JavaScript Obje
 
 - - -
 
-### 14. Everyone Do: Scope & Callbacks (20 mins)
+### 14. Everyone Do: Scope & Callbacks (25 mins)
 
 * Open and Slack out [scope-examples.html](../../../../01-Class-Content/03-javascript/01-Activities/33-Scope/scope-examples.html) in `33-Scope`.
 
@@ -275,45 +261,298 @@ In this class, we will be introducing students to the concept of JavaScript Obje
 
 * Slack out [scope-solved.html](../../../../01-Class-Content/03-javascript/01-Activities/33-Scope/Solved/scope-solved.html) in `33-Scope/Solved` before moving on.
 
-### 15. Students Do: Question Game (45 mins)
+### 15. Instructor Do: Welcome Students (10 mins)
 
-* Do one last activity. (If limited on time, feel free to skip this activity or just go straight to the solution.)
+* Welcome students to class
 
-* Slack out the following instructions:
+* Open the slide deck [2.3 Web API SlideShow](https://docs.google.com/presentation/d/1TprKO9KQMBEhIC6f0UNvcQkY38lS0XOmZIt6zwzjWdE/edit#slide=id.g5bb6559bdb_0_10) and follow these prompts on their corresponding slides:
 
-  * **Instructions**
+  * **Web APIs (Title)**: Today will be an introduction to the DOM.
 
-    * Starting from a blank HTML file, create an array with 10 question objects. Each object in the array should be structured as follows: 
+  *  **What are the three building blocks of the web?**: What are the 3 main components of the web?
 
-      `{ q: "QUESTION", a: "ANSWER" }`
+  *  **Building Blocks of the Web**: The building blocks of the web are HTML, CSS, and JS.
 
-    * Then create code that will ask the user questions, one by one. The user must answer by hitting t (for true) or f (for false).
+  *  **How (or where) do we connect all three?**: How do all three of these building blocks come together?
 
-    * Check the user's answer against the correct answer, and provide them with an alert telling them if they are right or wrong.
+  * **They are connected in the web browser**: The browser brings together HTML, CSS and JavaScript to create interactive webpages and applications.
 
-    * Bonus: Keep track of the user's score.
+  * **What is a web browser?**: What exactly is a web browser?
 
-    * Hint: Don’t worry about having DRY code to start with. Just focus on getting working code first.
+  * **Web Browser**: A web browser, or browser, is a program used to access information on the World Wide Web. Each individual webpage, image, or video can be accessed via a specific Unified Resource Link(URL)
 
-### 16. Instructor Do: Review Activity and Introduce Workbook (10 mins)
+  * **What is an AP?**: What is an API?
 
-* Review [question-game-solved.html](../../../../01-Class-Content/03-javascript/01-Activities/34-QuestionGame/Solved/question-game-solved.html) in `34-QuestionGame` with the class.
+  * **Application Programming Interface (API)**: An API (Application Programming Interface) is a set of features and rules that exist inside an application enabling interaction with the it through software. This is opposed to having interaction happen solely through user interaction. 
 
-* Encourage students to go through the solution themselves at home.
+  * **What are web APIs?**: What are web APIs?
 
-* Introduce the JavaScript Workbook:
+  * **Web APIs**: Web APIs are built into your web browser and contains methods that allow us to manipulate a web page via JavaScript.
 
-  * "For those of you who are new to coding, the last few lessons probably felt overwhelming. It can be tempting to spend lots of time outside of class reviewing lectures and watching youtube videos on JavaScript, but the best way to learn to code is through practice"
+* Call on one or two students to provide an answer, then proceed to the first activity of the day.
 
-  * "We've put together a workbook for you to help you practice the things we've learned this unit. It's quite long, but don't worry, you don't need to read it or work through it from front to back. Instead, you should use it as a reference throughout the class. Spend some time this week reading and practicing the topics that you've struggled with and refer back to it whenever you need."
+### 16. Student Do: this Window (10 mins)
 
-* Slack out the workbook link `https://javascript-workbook.netlify.com/`
+* Direct students to the first activity, found in [01-Stu_This-Window](../../../../01-Class-Content/04-web-apis/01-Activities/01-Stu_This-Window)
 
-### 17. Group Do: Homework Time (40 min)
+```md
+# This, The Window, and the DOM
 
-* Use the remaining time for students to finish this units first homework. This should be enough time to complete the assignment.
+In this activity you will `console.log(this)` and dig around inside the returned object, answering some questions along the way.
 
-* If students seemed to struggle today, you can use this time to review difficult topics or spend more time on one of the class activities rather than on homework.
+## Instructions
+
+* First open the provided `index.html` in the browser and navigate to the console.
+
+* What is logged?
+
+  * The `window` object. In this use case, `this` refers to the window. The `window` is an object representation of an open window in a browser.
+
+* Click into the `window` object and begin looking at the numerous properties and methods that it contains.
+
+* Make your way down to `document` and click into it.
+
+* Spend some time looking through the properties and methods contained within `window.document`.
+```
+
+### 17. Instructor Do: Review this Window and introduce the DOM (10 mins)
+
+* Return to [slide deck](https://docs.google.com/presentation/d/1TprKO9KQMBEhIC6f0UNvcQkY38lS0XOmZIt6zwzjWdE/edit#slide=id.g5bb6559bdb_0_10) and follow the remaining prompts corresponding to the slides.
+
+  * **What is window.document?**: What is `window.document`?
+
+  * **The Document Object Model (DOM)**: The DOM is an Object-oriented representation of HTML. It allows us to use JavaScript to interact with the document.  
+
+  * **What is the node tree of this HTML?**: What would the node tree of this HTML look like?
+
+  * **What are the parent, child, and sibling nodes?**: What are the parent, child, and sibling nodes of this node tree?
+
+  * **Node Relationships: Parent, Child, Sibling**: Cover the solution with students and explain the relationships and node tree as a whole.
+
+  * **What is traversing the DOM?**: What is traversing the dom?
+
+* Call on one or two students to provide an answer, then proceed to demoing DOM Traversal.
+
+### 18. Instructor Do: Traverse The DOM (10 mins)
+
+* Navigate to the MDN Docs on [The DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) and and ask the class the following question(s):
+
+* What is our root element?
+
+  * The document (#document) 
+
+* Where is the HTML node?
+
+  * document.documentElement (html)
+
+* Where is the head of an HTML page?
+
+  * document.head (head)
+
+* Where is the body of an HTML page?
+
+  * document.body (body)
+
+* We can use these as starting points to begin moving our way down the DOM tree.
+
+* Open the Chrome Dev Tools and enter the following commands one by one.
+
+  ```js
+  console.log(document.body);
+
+  console.log(document.body.children);
+
+  console.log(document.body.children[3]);
+
+  console.log(document.body.children[3].childNodes[7]);
+
+  console.log(document.body.children[3].childNodes[7].style.fontSize = "20px");
+  ```
+
+  * When using the style method, properties with two words such as font-size become a single word and camelCased. Font-size becomes fontSize.
+
+* Point out the following:
+
+  * `.children` is returned as an Array and to move forward with it, we must specify the index. It returns all children *elements*.
+
+  * `.childNodes` is also returned as an Array and to move forward also requires an index to be given. It returns all children *nodes*.
+
+  * When using the `style` method, properties with two words such as `font-size` become a single word and camelCased. `font-size` becomes `fontSize`.
+
+  * Here is one more example of `.style`.
+
+  ```js
+  console.log(document.body.children[3].childNodes[7].parentElement.style.color = "red");
+  ```
+
+* For the final slide and demo, return to the slide deck [4.1 SlideShow](https://docs.google.com/presentation/d/1TprKO9KQMBEhIC6f0UNvcQkY38lS0XOmZIt6zwzjWdE/edit#slide=id.g5bb6559bdb_0_10) and follow these prompts on their corresponding slides:
+
+* 19. **Our Goal Today**: The goal of the day is to build a speed reading application. We will receive an input of how many words per millisecond a user would like to read at, and then display one word at a time to our user at the specified speed.
+
+* Ask the class the following question(s):
+
+  * What do we not (yet) know to build this application?
+
+  * What do we think the steps are to build this application?
+
+* Use student answers to transition to the next activity.
+
+### 19. Student Do: Traverse That DOM (10 mins)
+
+* Direct students to the next activity, found in [02-Stu_Traverse-That-DOM](../../../../01-Class-Content/04-web-apis/01-Activities/02-Stu_Traverse-That-DOM/Unsolved)
+
+```md
+# Traverse That DOM
+
+In this activity you are going to use the Chrome Dev Console and `.style.property` to change the styling of elements on our page.
+
+## Instructions
+
+* Create an `script`
+
+* Using the provided `index.html`, complete the following
+
+  * Target the div with the ID of `articles`.
+
+    * Change its font size to `50px`.
+
+    * Change its first childs, last child to have a font color of `blue`.
+
+    * Change its previous sibling to have a background color of `black`.
+
+  * Target the div with the ID of `main`.
+
+    * Change its second child node so the text is `underlined`.
+
+    * Change its last child element to have a font size of `50px`.
+
+    * Change its first child element to have a font color of `orange`.
+    
+    * Change its last child elements parent to have a font size of `40px`.
+
+## Bonus
+
+* Change 3 other elements styles that we did not ask for above.
+```
+
+### 20. Instructor Do: Review Traverse That DOM (5 mins)
+
+* Open [02-Stu_Traverse-That-DOM Solved/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/02-Stu_Traverse-That-DOM/Solved) in your IDE and point out the following points to students:
+
+  * We first gather our two main divs into variables for easy access.
+
+  ```js
+  var artDiv = document.getElementById("articles");
+  var mainDiv = document.getElementById("main");
+  ```
+
+  * For each of the following lines, ask a student to explain what the line of code achieves.
+
+  ```js
+  artDiv.children[0].lastElementChild.style.color = "white";
+  artDiv.children[0].style.fontSize = "50px";
+  artDiv.previousElementSibling.style.background = "black";
+
+  mainDiv.childNodes[1].style.textDecoration = "underline";
+  mainDiv.lastElementChild.style.fontSize = "50px";
+  mainDiv.firstElementChild.style.color = "white";
+  ```
+
+* Ask the class, "What other properties or attributes can be set using JS?". 
+
+  * We can change any attribute or property using only JavaScript.
+
+* Ask the class, "How would we do that?". Call on one or two students and then proceed to the next demo.
+
+### 21. Instructor Do: Setting Attributes (10 mins)
+
+* Navigate to [03-Ins_Setting-Attribute index.html](../../../../01-Class-Content/04-web-apis/01-Activities/03-Ins_Setting-Attribute/index.html) and open it in your browser.
+
+* Ask the class, "How do we feel about this style?"
+
+* We can traverse the DOM and set styles via the `.style` method, now we are going to learn about `.setAttribute`.
+
+* `setAttribute` is a DOM method that allows us to add any attribute to an element. We can use it to add styles, hrefs, img srcs, and any other attribute you would like to add.
+
+* If the attribute already exists, the value will be updated. If there is no attribute, a new attribute is added with the specified name and value.
+
+* Navigate to [03-Ins_Setting-Attribute script.js](../../../../01-Class-Content/04-web-apis/01-Activities/03-Ins_Setting-Attribute/script.js) in your IDE.
+
+  * When we uncomment this code and navigate back to the page styles will have been changed and an image added, all via JavaScript.
+
+* Here we used `querySelector` and `querySelectorAll` to gather our elements into variables rather than using the more specific document methods. 
+
+  * We used `querySelector` because it allows us to select an element by tag, class name, or ID. This makes it more flexible than using `getElementById` or `getElementByClassName`.
+
+  * We used `querySelectorAll` because it allows us to select all elements of the same tag, class name, or ID. This is much more useful than `getElementsByTagName` or other group selectors.
+
+  * These two methods are the most useful and versatile because they can be used to target any element we would ever like to target.
+
+* Ask the class, "How was all of the styling done if there is no CSS?"
+
+  * All the styling done to the page uses the method, `.setAttribute`.
+
+  * The `setAttribute` method takes in two arguments, first is the name of the attribute, and the second is its value. i.e., `setAttribute("style", "color:white;");
+
+  * The major difference between setting styles with `.setAttribute` vs the `.style` methods is that when using `setAttribute` we enter the CSS properties and values like we would in a normal external stylesheet or inline styling.
+
+* Answer any questions students may have and let them know its their turn to work with `setAttribute()`.
+
+### 22. Student Do: Setting Attributes (10 mins)
+
+* Direct students to the next activity, found in [05-Stu_Setting-Attributes](../../../../01-Class-Content/04-web-apis/01-Activities/05-Stu_Setting-Attributes/Unsolved).
+
+```md
+# Setting Attributes
+
+In this activity you are going to use JavaScript to add `hrefs` to `a` tags, `src` to `img` tags, along with some styles all while traversing the DOM.
+
+## Instructions
+
+* Open `index.html` and familiarize yourself with the structure of the HTML.
+
+* Inside of your provided `script` complete the following: 
+
+  * Give a `src` and `alt` attribute to the 3 provided `img` tags.
+
+  * Give a `href` attribute to the 3 provided `a` tags.`
+
+  * Add styles via `setAttribute` to make the page look decent. Recommended: margins and padding.
+
+* **Hint**: You may need a for loop!
+```
+
+### 23. Instructor Do: Review Setting Attributes (5 mins)
+
+* Navigate to [05-Stu_Setting-Attributes script.js](../../../../01-Class-Content/04-web-apis/01-Activities/05-Stu_Setting-Attributes/Solved/script.js) and open it in your IDE, point out the following to students:
+
+  * We first gather all of our elements we would like to target.
+
+  ```js
+  var main = document.getElementById("main");
+  var sitesEl = document.querySelectorAll("sites");
+  var site1El = document.querySelector(".site1");
+  var site2El = document.querySelector(".site2");
+  var site3El = document.querySelector(".site3");
+  var siteTitles = document.querySelectorAll("h4");
+  ```
+
+  * We can then use the array returned by `.children` to navigate and setAttributes to elements.
+
+  ```js
+  site1El.children[1].setAttribute("href", "https://google.com");
+  ```
+
+  * Whenever we use `setAttribute` it takes two arguments. The first being the name of the attribute and the second its value.
+
+  ```js
+  site1El.children[1].children[0].setAttribute("src", "http://placekitten.com/200/200");
+  site1El.children[1].children[0].setAttribute("style", "padding:10px;");
+  ```
+
+* Answer any questions that remain and then dismiss the class for their break.
+
+### 24. END (0 mins)
 
 ### Lesson Plan Feedback
 

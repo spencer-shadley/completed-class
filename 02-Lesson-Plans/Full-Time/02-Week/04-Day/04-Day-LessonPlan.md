@@ -1,12 +1,12 @@
 # 04-Day Lesson Plan  Lesson Plan - Intro to Web APIs and Events (10:00 AM) <!--links--> &nbsp; [⬅️]() &nbsp; [➡️]()
 
-### Overview
+## Overview
 
 Todays class will be students first introduction to the DOM. We are going to use web APIs to get elements, set attributes, create elements, append elements, and even work with timers. We will further students' understanding of DOM Manipulation by using events, and prevent default form behaviors.
 
 ## Instructor Notes
 
-`Complete activities 1-13 in 04-web-apis`
+`Complete activities 3-13 in 04-web-apis`
 
 * This is a critical unit as it introduces real-world use cases for the programming concepts students learned in the previous unit (JavaScript) and will set them up for success when transitioning to front-end frameworks (React) at the end of the course.
 
@@ -36,450 +36,7 @@ Todays class will be students first introduction to the DOM. We are going to use
 
   * Prevent default form behavior with `event.preventDefault()`.
 
-### 1. Instructor Do: Welcome Students (10 mins)
-
-* Welcome students to class
-
-* Open the slide deck [4.1 SlideShow](https://docs.google.com/presentation/d/1TprKO9KQMBEhIC6f0UNvcQkY38lS0XOmZIt6zwzjWdE/edit#slide=id.g5bb6559bdb_0_10) and follow these prompts on their corresponding slides:
-
-  * **Web APIs (Title)**: Today will be an introduction to the DOM.
-
-  *  **What are the three building blocks of the web?**: What are the 3 main components of the web?
-
-  *  **Building Blocks of the Web**: The building blocks of the web are HTML, CSS, and JS.
-
-  *  **How (or where) do we connect all three?**: How do all three of these building blocks come together?
-
-  * **They are connected in the web browser**: The browser brings together HTML, CSS and JavaScript to create interactive webpages and applications.
-
-  * **What is a web browser?**: What exactly is a web browser?
-
-  * **Web Browser**: A web browser, or browser, is a program used to access information on the World Wide Web. Each individual webpage, image, or video can be accessed via a specific Unified Resource Link(URL)
-
-  * **What is an AP?**: What is an API?
-
-  * **Application Programming Interface (API)**: An API (Application Programming Interface) is a set of features and rules that exist inside an application enabling interaction with the it through software. This is opposed to having interaction happen solely through user interaction. 
-
-  * **What are web APIs?**: What are web APIs?
-
-  * **Web APIs**: Web APIs are built into your web browser and contains methods that allow us to manipulate a web page via JavaScript.
-
-* Call on one or two students to provide an answer, then proceed to the first activity of the day.
-
-### 2. Student Do: this Window (10 mins)
-
-* Direct students to the first activity, found in [01-Stu_This-Window](../../../../01-Class-Content/04-web-apis/01-Activities/01-Stu_This-Window)
-
-```md
-# This, The Window, and the DOM
-
-In this activity you will `console.log(this)` and dig around inside the returned object, answering some questions along the way.
-
-## Instructions
-
-* First open the provided `index.html` in the browser and navigate to the console.
-
-* What is logged?
-
-  * The `window` object. In this use case, `this` refers to the window. The `window` is an object representation of an open window in a browser.
-
-* Click into the `window` object and begin looking at the numerous properties and methods that it contains.
-
-* Make your way down to `document` and click into it.
-
-* Spend some time looking through the properties and methods contained within `window.document`.
-```
-
-### 3. Instructor Do: Review this Window and introduce the DOM (10 mins)
-
-* Return to [slide deck](https://docs.google.com/presentation/d/1TprKO9KQMBEhIC6f0UNvcQkY38lS0XOmZIt6zwzjWdE/edit#slide=id.g5bb6559bdb_0_10) and follow the remaining prompts corresponding to the slides.
-
-  * **What is window.document?**: What is `window.document`?
-
-  * **The Document Object Model (DOM)**: The DOM is an Object-oriented representation of HTML. It allows us to use JavaScript to interact with the document.  
-
-  * **What is the node tree of this HTML?**: What would the node tree of this HTML look like?
-
-  * **What are the parent, child, and sibling nodes?**: What are the parent, child, and sibling nodes of this node tree?
-
-  * **Node Relationships: Parent, Child, Sibling**: Cover the solution with students and explain the relationships and node tree as a whole.
-
-  * **What is traversing the DOM?**: What is traversing the dom?
-
-* Call on one or two students to provide an answer, then proceed to demoing DOM Traversal.
-
-### 4. Instructor Do: Traverse The DOM (10 mins)
-
-* Navigate to the MDN Docs on [The DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) and and ask the class the following question(s):
-
-* What is our root element?
-
-  * The document (#document) 
-
-* Where is the HTML node?
-
-  * document.documentElement (html)
-
-* Where is the head of an HTML page?
-
-  * document.head (head)
-
-* Where is the body of an HTML page?
-
-  * document.body (body)
-
-* We can use these as starting points to begin moving our way down the DOM tree.
-
-* Open the Chrome Dev Tools and enter the following commands one by one.
-
-  ```js
-  console.log(document.body);
-
-  console.log(document.body.children);
-
-  console.log(document.body.children[3]);
-
-  console.log(document.body.children[3].childNodes[7]);
-
-  console.log(document.body.children[3].childNodes[7].style.fontSize = "20px");
-  ```
-
-  * When using the style method, properties with two words such as font-size become a single word and camelCased. Font-size becomes fontSize.
-
-* Point out the following:
-
-  * `.children` is returned as an Array and to move forward with it, we must specify the index. It returns all children *elements*.
-
-  * `.childNodes` is also returned as an Array and to move forward also requires an index to be given. It returns all children *nodes*.
-
-  * When using the `style` method, properties with two words such as `font-size` become a single word and camelCased. `font-size` becomes `fontSize`.
-
-  * Here is one more example of `.style`.
-
-  ```js
-  console.log(document.body.children[3].childNodes[7].parentElement.style.color = "red");
-  ```
-
-* For the final slide and demo, return to the slide deck [4.1 SlideShow](https://docs.google.com/presentation/d/1TprKO9KQMBEhIC6f0UNvcQkY38lS0XOmZIt6zwzjWdE/edit#slide=id.g5bb6559bdb_0_10) and follow these prompts on their corresponding slides:
-
-* 19. **Our Goal Today**: The goal of the day is to build a speed reading application. We will receive an input of how many words per millisecond a user would like to read at, and then display one word at a time to our user at the specified speed.
-
-* Ask the class the following question(s):
-
-  * What do we not (yet) know to build this application?
-
-  * What do we think the steps are to build this application?
-
-* Use student answers to transition to the next activity.
-
-### 5. Student Do: Traverse That DOM (10 mins)
-
-* Direct students to the next activity, found in [02-Stu_Traverse-That-DOM](../../../../01-Class-Content/04-web-apis/01-Activities/02-Stu_Traverse-That-DOM/Unsolved)
-
-```md
-# Traverse That DOM
-
-In this activity you are going to use the Chrome Dev Console and `.style.property` to change the styling of elements on our page.
-
-## Instructions
-
-* Create an `script`
-
-* Using the provided `index.html`, complete the following
-
-  * Target the div with the ID of `articles`.
-
-    * Change its font size to `50px`.
-
-    * Change its first childs, last child to have a font color of `blue`.
-
-    * Change its previous sibling to have a background color of `black`.
-
-  * Target the div with the ID of `main`.
-
-    * Change its second child node so the text is `underlined`.
-
-    * Change its last child element to have a font size of `50px`.
-
-    * Change its first child element to have a font color of `orange`.
-    
-    * Change its last child elements parent to have a font size of `40px`.
-
-## Bonus
-
-* Change 3 other elements styles that we did not ask for above.
-```
-
-### 6. Instructor Do: Review Traverse That DOM (5 mins)
-
-* Open [02-Stu_Traverse-That-DOM Solved/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/02-Stu_Traverse-That-DOM/Solved) in your IDE and point out the following points to students:
-
-  * We first gather our two main divs into variables for easy access.
-
-  ```js
-  var artDiv = document.getElementById("articles");
-  var mainDiv = document.getElementById("main");
-  ```
-
-  * For each of the following lines, ask a student to explain what the line of code achieves.
-
-  ```js
-  artDiv.children[0].lastElementChild.style.color = "white";
-  artDiv.children[0].style.fontSize = "50px";
-  artDiv.previousElementSibling.style.background = "black";
-
-  mainDiv.childNodes[1].style.textDecoration = "underline";
-  mainDiv.lastElementChild.style.fontSize = "50px";
-  mainDiv.firstElementChild.style.color = "white";
-  ```
-
-* Ask the class, "What other properties or attributes can be set using JS?". 
-
-  * We can change any attribute or property using only JavaScript.
-
-* Ask the class, "How would we do that?". Call on one or two students and then proceed to the next demo.
-
-### 7. Instructor Do: Setting Attributes (10 mins)
-
-* Navigate to [03-Ins_Setting-Attribute index.html](../../../../01-Class-Content/04-web-apis/01-Activities/03-Ins_Setting-Attribute/index.html) and open it in your browser.
-
-* Ask the class, "How do we feel about this style?"
-
-* We can traverse the DOM and set styles via the `.style` method, now we are going to learn about `.setAttribute`.
-
-* `setAttribute` is a DOM method that allows us to add any attribute to an element. We can use it to add styles, hrefs, img srcs, and any other attribute you would like to add.
-
-* If the attribute already exists, the value will be updated. If there is no attribute, a new attribute is added with the specified name and value.
-
-* Navigate to [03-Ins_Setting-Attribute script.js](../../../../01-Class-Content/04-web-apis/01-Activities/03-Ins_Setting-Attribute/script.js) in your IDE.
-
-  * When we uncomment this code and navigate back to the page styles will have been changed and an image added, all via JavaScript.
-
-* Here we used `querySelector` and `querySelectorAll` to gather our elements into variables rather than using the more specific document methods. 
-
-  * We used `querySelector` because it allows us to select an element by tag, class name, or ID. This makes it more flexible than using `getElementById` or `getElementByClassName`.
-
-  * We used `querySelectorAll` because it allows us to select all elements of the same tag, class name, or ID. This is much more useful than `getElementsByTagName` or other group selectors.
-
-  * These two methods are the most useful and versatile because they can be used to target any element we would ever like to target.
-
-* Ask the class, "How was all of the styling done if there is no CSS?"
-
-  * All the styling done to the page uses the method, `.setAttribute`.
-
-  * The `setAttribute` method takes in two arguments, first is the name of the attribute, and the second is its value. i.e., `setAttribute("style", "color:white;");
-
-  * The major difference between setting styles with `.setAttribute` vs the `.style` methods is that when using `setAttribute` we enter the CSS properties and values like we would in a normal external stylesheet or inline styling.
-
-* Answer any questions students may have and let them know its their turn to work with `setAttribute()`.
-
-### 8. Student Do: Setting Attributes (10 mins)
-
-* Direct students to the next activity, found in [05-Stu_Setting-Attributes](../../../../01-Class-Content/04-web-apis/01-Activities/05-Stu_Setting-Attributes/Unsolved).
-
-```md
-# Setting Attributes
-
-In this activity you are going to use JavaScript to add `hrefs` to `a` tags, `src` to `img` tags, along with some styles all while traversing the DOM.
-
-## Instructions
-
-* Open `index.html` and familiarize yourself with the structure of the HTML.
-
-* Inside of your provided `script` complete the following: 
-
-  * Give a `src` and `alt` attribute to the 3 provided `img` tags.
-
-  * Give a `href` attribute to the 3 provided `a` tags.`
-
-  * Add styles via `setAttribute` to make the page look decent. Recommended: margins and padding.
-
-* **Hint**: You may need a for loop!
-```
-
-### 9. Instructor Do: Review Setting Attributes (5 mins)
-
-* Navigate to [05-Stu_Setting-Attributes script.js](../../../../01-Class-Content/04-web-apis/01-Activities/05-Stu_Setting-Attributes/Solved/script.js) and open it in your IDE, point out the following to students:
-
-  * We first gather all of our elements we would like to target.
-
-  ```js
-  var main = document.getElementById("main");
-  var sitesEl = document.querySelectorAll("sites");
-  var site1El = document.querySelector(".site1");
-  var site2El = document.querySelector(".site2");
-  var site3El = document.querySelector(".site3");
-  var siteTitles = document.querySelectorAll("h4");
-  ```
-
-  * We can then use the array returned by `.children` to navigate and setAttributes to elements.
-
-  ```js
-  site1El.children[1].setAttribute("href", "https://google.com");
-  ```
-
-  * Whenever we use `setAttribute` it takes two arguments. The first being the name of the attribute and the second its value.
-
-  ```js
-  site1El.children[1].children[0].setAttribute("src", "http://placekitten.com/200/200");
-  site1El.children[1].children[0].setAttribute("style", "padding:10px;");
-  ```
-
-* Answer any questions that remain and then dismiss the class for their break.
-
-### 10. Instructor Do: Create and Append (10 mins)
-
-* Welcome students back from break and get right into our next topic, creating HTML elements and appending them to the DOM via JavaScript.
-
-* Navigate to [06-Ins_Create-Append/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/06-Ins_Create-Append/Solved/index.html) in your browser and demo its functionality.
-
-  * It will ask for a tag to create using prompts, and append the given element to the page.
-  
-  * If a proper tag name is not given it will let the user know and not create the element.
-
-* Ask the class, "How was this functionality achieved?"
-
-  * This is done using the DOM methods `.createElement` and `.appendChild`.
-
-  * When using `.createElement` we pass in the name of the tag we would like to create and store it as a variable so we can later add it to the DOM.
-
-  ```js
-  var newDiv = document.createElement("div");
-  ```
-
-  * For us to show our newly created div on the page, we need to append it to the DOM via an existing element.
-
-  ```js
-  document.body.appendChild(newDiv);
-  ```
-
-  * The above code would `append` newDiv to the body as a child element.
-
-* Answer any questions before proceeding to the next activity.
-
-### 11. Student Do: Look Ma! No HTML! (35 mins)
-
-* Direct students to the next activity, found in [07-Stu_LookMaNoHTML](../../../../01-Class-Content/04-web-apis/01-Activities/07-Stu_LookMaNoHTML/Unsolved).
-
-```md
-# Look Ma! No HTML
-
-In this activity you are going to use DOM methods to create an entire HTML page.
-
-## Instructions
-
-* You have been provided a standard HTML document. 
-
-* You may only work inside your `script`.
-
-* Inside `script` and using only DOM methods, create an entire HTML page. It should include:
-
-  * A centered h1 with a centered h2 under it.
-
-  * A centered image, with a center caption under it.
-
-  * A list of your favorite foods (or some other list of favorites).
-
-  * Some extra styling to all elements.
-```
-
-### 12. Instructor Do: Review Look Ma No HTML! (10 mins)
-
-* Navigate to [07-Stu_LookMaNoHTML/Solved](../../../../01-Class-Content/04-web-apis/01-Activities/07-Stu_LookMaNoHTML/Solved)and open the solved `script.js` file in your IDE.
-
-* The solution is split into 4 sections, go through each section with the class.
-
-  * The first portion contains all of our references to existing elements, as well as all of our `.createElement` calls.
-
-  * The next portion sets all of the `textContent` of our created elements.
-
-  * Next we begin the process of appending all of our created elements with the newly modified text content.
-
-  * Finally we go through all of our elements and use `.setAttribute` to change the styles and set image sources.
-
-* Answer any questions students have about the solution and move onto our final topic of the day, timers.
-
-- - -
-
-### 13. BREAK (30 mins)
-
-- - -
-
-### 14. Instructor Do: Timers and Intervals (10 mins)
-
-* Executing code on a timer or interval allows us to set some amount of time to pass between functionality.
-
-* Ask the class, "Where are timers used in applications?"
-
-  * Countdowns
-
-  * Calendars
-
-  * Games
-
-* Navigate to [08-Ins_Timers-Intervals](../../../../01-Class-Content/04-web-apis/01-Activities/08-Ins_Timers-Intervals) and open the `index.html` in your browser. Demo the application to students and point out the following:
-
-  * After the countdown completes, an image is loaded to the browser all without user interaction.
-
-* Ask the class, "What allowed us to do this?"
-
-  * The `setInterval` function allows us to complete code after a specific amount of time has passed.
-
-* Navigate to [08-Ins_Timers-Intervals script.js](../../../../01-Class-Content/04-web-apis/01-Activities/08-Ins_Timers-Intervals/script.js) and open it in your IDE. Explain the following points to students:
-
-  * First we declare our `setInterval` function and assign it to a variable. We will get to why we store it in a variable at the end.
-
-  ```js
-  var timerInterval = setInterval(function() {
-  ```
-
-  * Next, we decrement our `secondsLeft` variable that we initially set to `10`.
-
-  ```js
-  secondsLeft--;
-  ```
-
-  * As each second passes we set the textContent of our `timeEl` to display the `secondsLeft` variable concatenated with a string. If our `secondsLeft` is 0, we then `clearInterval` and execute our `sendMessage` function.
-
-  ```js
-  timeEl.textContent = secondsLeft + " seconds left till colorsplosion.";
-  if(secondsLeft === 0) {
-    clearInterval(timerInterval);
-    sendMessage();
-  }
-  ```
-
-* Sometimes programmers want functionality to happen after a set period of time, and not all right away. We use timers to achieve this result.
-
-* `setTimeout` and `setInterval` are two methods that allow for us to execute code based on time.
-
-  * These two methods are actually above the `document` object and are attached directly to the `window`.
-
-* When using either of these timer methods, The first parameter is a function to be executed. The second parameter indicates the amount of time in milliseconds before execution.
-
-  ```js
-  setTimeout(function(){
-    console.log("complete");
-  }, 1000);
-
-  setInterval(function(){
-    console.log("this will show every second");
-  }, 1000)
-  ```
-
-* `setTimeout` will execute the body of the function one time, once the allotted amount of time has passed.
-
-  * `setInterval` will execute the body of the function every X amount of milliseconds as specified in the second argument to the `setInterval` function.
-
-* Ask the class why they think we might need to clear an interval that we started.
-
-  * If we do not `clearInterval`, the interval would continue to run indefinitely. We stored our `setInterval` function in a variable so we could pass that instance into our `clearInterval`, stopping execution.
-
-  * `setTimeout` has its own method for stopping execution, `clearTimeout`.
-
-* Answer any questions students may have about the demo. 
-
-### 15. Student Do: Speed Reader (20 mins)
+### 1. Student Do: Speed Reader (20 mins)
 
 * Direct students to the final activity of class, in [09-Stu_SpeedReader](../../../../01-Class-Content/04-web-apis/01-Activities/09-Stu_SpeedReader/Unsolved).
 
@@ -501,7 +58,7 @@ In this activity you are going to create a speed reading application. It will in
 * Fill out the necessary code that would create a countdown timer. When that timer completes, it should dissapear and speed reading should begin.
 ```
 
-### 16. Instructor Do: Review Speed Reader (10 mins)
+### 2. Instructor Do: Review Speed Reader (10 mins)
 
 * Navigate to [09-Stu_SpeedReader/Solved](../../../../01-Class-Content/04-web-apis/01-Activities/09-Stu_SpeedReader/Solved)
 
@@ -554,7 +111,7 @@ In this activity you are going to create a speed reading application. It will in
   }
   ```
 
-### 17. Instructor Do: Demo Events (5 min)
+### 3. Instructor Do: Demo Events (5 min)
 
 * Open [fs-ground-04-web-APIs-event-demo](https://coding-boot-camp.github.io/fs-ground-04-web-APIs-event-demo/) and demonstrate the application functionality:
 
@@ -574,7 +131,7 @@ In this activity you are going to create a speed reading application. It will in
 
   * Use student answers to transition to the next activity.
 
-### 18. Instructor Do: Pseudocode Modal Demo (10 min)
+### 4. Instructor Do: Pseudocode Modal Demo (10 min)
 
 * Open a new (blank) file in your IDE and lead students in outlining the steps to build the modal activity in pseudocode. Refer to the following pseudocode example. There is no one *right* solution. The purpose of this activity is to reinforce problem solving strategies and prepare students for technical interview questions.
 
@@ -616,7 +173,7 @@ In this activity you are going to create a speed reading application. It will in
 
 * Use student answers to transition to the next demo.
 
-### 19.  Instructor Do: On Click Demo  (10 min)
+### 5.  Instructor Do: On Click Demo  (10 min)
 
 * Open [10-Ins_Onclick/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/10-Ins_Onclick/index.html) in the browser and demonstrate its functionality:
 
@@ -647,7 +204,7 @@ In this activity you are going to create a speed reading application. It will in
   });
   ```
 
-### 20.  Students Do: addEventListener (15 min)
+### 6.  Students Do: addEventListener (15 min)
 
 * Direct students to the next activity, found in [11-Stu_Onclick/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/11-Stu_Onclick/Unsolved)
 
@@ -669,7 +226,7 @@ In this activity, we are going to create a button that increments a counter when
 * Add some code to ensure that the count never gets below 0.
 ```
 
-### 21. Instructor Do: Review OnClick (10 min)
+### 7. Instructor Do: Review OnClick (10 min)
 
 * Open the file [11-Stu_Onclick/Solved/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/11-Stu_Onclick/Solved/index.html) in the browser.
 
@@ -711,7 +268,819 @@ In this activity, we are going to create a button that increments a counter when
   });
   ```
 
-### 22. END (0 mins)
+### 8. Instructor Do: Demo Events (5 min)
+
+* Open [fs-ground-04-web-APIs-event-demo](https://coding-boot-camp.github.io/fs-ground-04-web-APIs-event-demo/) and demonstrate the application functionality:
+
+  * We can add people to the list.
+  
+  * Clicking `edit` next to any name opens a modal.
+
+  * We can add details about the person and `save` the data.
+
+  * We can return to any person on the list, and see that the details are still there. 
+
+  * 📝 Our form is not routing us to a new page! How?
+
+* Ask the class the following question(s):
+
+  * "How would we build this application?"
+
+  * Use student answers to transition to the next activity.
+
+### 9. Instructor Do: Pseudocode Modal Demo (10 min)
+
+* Open a new (blank) file in your IDE and lead students in outlining the steps to build the modal activity in pseudocode. Refer to the following pseudocode example. There is no one *right* solution. The purpose of this activity is to reinforce problem solving strategies and prepare students for technical interview questions.
+
+* Ask the class the following question(s):
+
+  * "What is the first thing our app needs so a user can add another user to the list?"
+
+  * We need an input field for `name`.
+
+  * We need some way to gather the data from `name` when `Add Person` is pressed.
+
+* Ask the class the following question(s):
+
+  * "When a user adds a new user to the HTML form and clicks `Add Person`, what happens next?"
+
+  * We need to dynamically create a new list item.
+
+  * We append an `edit` button to that new list item.
+
+  * Then we append the new list item to the main people list.
+
+* Ask the class the following question(s):
+
+  * "What needs to happen when a user clicks the "edit" button?"
+
+  * The modal needs to display on the page, and the contents of the modal should populate with details about the person that we clicked.
+
+* Ask the class the following question(s):
+
+  * "What needs to happen when a user clicks the `save` button?"
+
+  * The modal needs to disappear.
+
+  * We need some way of keeping track of which person has which description.
+
+* Ask the class the following question(s):
+
+  * 'How can we make our web applications more interactive?'
+
+* Use student answers to transition to the next demo.
+
+### 10  Instructor Do: On Click Demo  (5 min)
+
+* Open [10-Ins_Onclick/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/10-Ins_Onclick/index.html) in the browser and demonstrate its functionality:
+
+  * When we click on the toggle switch, the background color of the navigation and the footer both change colors.
+
+* Open [10-Ins_Onclick/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/10-Ins_Onclick/script.js) in your IDE and point out the following:
+
+  * We assign each queried element to a variable so that we can reuse it.
+
+  ```js
+  var themeSwitcher = document.querySelector("#theme-switcher");
+  var container = document.querySelector(".container");
+  ```
+
+  * `addEventListener` is the DOM method responsible for listening to events on an element.
+
+  * `addEventListener` has 2 required parameters: The type of event to listen for and a callback function to execute when that event is triggered.
+
+  ```js
+  themeSwitcher.addEventListener("click", function() {
+    if (mode === "dark") {
+      mode = "light";
+      container.setAttribute("class", "light");
+    } else {
+      mode = "dark";
+      container.setAttribute("class", "dark");
+    }
+  });
+  ```
+
+### 11.  Students Do: addEventListener (15 min)
+
+* Direct students to the next activity, found in [11-Stu_Onclick/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/11-Stu_Onclick/Unsolved)
+
+```md
+# addEventListener On Click
+
+In this activity, we are going to create a button that increments a counter when clicked.
+
+## Instructions
+
+* In a file called `index.html`, create a button containing the string "Increment".
+
+* In a file called `script.js`, create an event listener with a callback that increments the counter and displays the updated count on the webpage.
+
+* Add a button that decrements the counter when clicked.
+
+## Bonus
+
+* Add some code to ensure that the count never gets below 0.
+```
+
+### 12. Instructor Do: Review OnClick (5 min)
+
+* Open the file [11-Stu_Onclick/Solved/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/11-Stu_Onclick/Solved/index.html) in the browser.
+
+  * Clicking on the increment or decrement buttons raises or lowers our number dependant on which button we click.
+
+  * The count in the middle gets updated every time the button gets pressed.
+
+  * The count never falls below 0.
+
+* Open [11-Stu_Onclick/Solved/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/11-Stu_Onclick/Solved/script.js) in your IDE.
+
+  * We initialize global variables for `count` variable, `incrementEl`, and the `decrementEl` elements in DOM.
+
+  ```js
+  var count = 0;
+  var incrementEl = document.querySelector("#increment");
+  var decrementEl = document.querySelector("#decrement");
+  ```
+
+  * The second argument of `addEventListener` is an anonymous callback function. This function will execute the body of the callback each time the event is triggered.
+
+  ```js
+  incrementEl.addEventListener("click", function() {
+    count++;
+    setCounterText();
+  });
+  ```
+
+  * 🗒 Note that many students may have appended the count to the page inline instead of breaking it out into its own function.
+
+  * To complete the bonus we need a conditional that ensures that the count only decrements if the current value is greater than 0.
+
+  ```js
+  decrementEl.addEventListener("click", function() {
+    if(count > 0) {
+      count--;
+      setCounterText();
+    }
+  }); 
+  ```
+
+* Open [fs-ground-04-web-APIs-event-demo](https://coding-boot-camp.github.io/fs-ground-04-web-APIs-event-demo/) and demonstrate the application functionality:
+
+  * We can add people to the list.
+  
+  * Clicking `edit` next to any name opens a modal.
+
+  * We can add details about the person and `save` the data.
+
+  * We can return to any person on the list, and see that the details are still there. 
+
+  * 📝 Our form is not routing us to a new page! How?
+
+* Ask the class the following question(s):
+
+  * "How would we build this application?"
+
+  * Use student answers to transition to the next activity.
+
+ 2. Instructor Do: Pseudocode Modal Demo (10 min)
+
+* Open a new (blank) file in your IDE and lead students in outlining the steps to build the modal activity in pseudocode. Refer to the following pseudocode example. There is no one *right* solution. The purpose of this activity is to reinforce problem solving strategies and prepare students for technical interview questions.
+
+* Ask the class the following question(s):
+
+  * "What is the first thing our app needs so a user can add another user to the list?"
+
+  * We need an input field for `name`.
+
+  * We need some way to gather the data from `name` when `Add Person` is pressed.
+
+* Ask the class the following question(s):
+
+  * "When a user adds a new user to the HTML form and clicks `Add Person`, what happens next?"
+
+  * We need to dynamically create a new list item.
+
+  * We append an `edit` button to that new list item.
+
+  * Then we append the new list item to the main people list.
+
+* Ask the class the following question(s):
+
+  * "What needs to happen when a user clicks the "edit" button?"
+
+  * The modal needs to display on the page, and the contents of the modal should populate with details about the person that we clicked.
+
+* Ask the class the following question(s):
+
+  * "What needs to happen when a user clicks the `save` button?"
+
+  * The modal needs to disappear.
+
+  * We need some way of keeping track of which person has which description.
+
+* Ask the class the following question(s):
+
+  * 'How can we make our web applications more interactive?'
+
+* Use student answers to transition to the next demo.
+
+### 13.  Instructor Do: On Click Demo  (5 min)
+
+* Open [10-Ins_Onclick/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/10-Ins_Onclick/index.html) in the browser and demonstrate its functionality:
+
+  * When we click on the toggle switch, the background color of the navigation and the footer both change colors.
+
+* Open [10-Ins_Onclick/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/10-Ins_Onclick/script.js) in your IDE and point out the following:
+
+  * We assign each queried element to a variable so that we can reuse it.
+
+  ```js
+  var themeSwitcher = document.querySelector("#theme-switcher");
+  var container = document.querySelector(".container");
+  ```
+
+  * `addEventListener` is the DOM method responsible for listening to events on an element.
+
+  * `addEventListener` has 2 required parameters: The type of event to listen for and a callback function to execute when that event is triggered.
+
+  ```js
+  themeSwitcher.addEventListener("click", function() {
+    if (mode === "dark") {
+      mode = "light";
+      container.setAttribute("class", "light");
+    } else {
+      mode = "dark";
+      container.setAttribute("class", "dark");
+    }
+  });
+  ```
+
+### 14.  Students Do: addEventListener (15 min)
+
+* Direct students to the next activity, found in [11-Stu_Onclick/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/11-Stu_Onclick/Unsolved)
+
+```md
+# addEventListener On Click
+
+In this activity, we are going to create a button that increments a counter when clicked.
+
+## Instructions
+
+* In a file called `index.html`, create a button containing the string "Increment".
+
+* In a file called `script.js`, create an event listener with a callback that increments the counter and displays the updated count on the webpage.
+
+* Add a button that decrements the counter when clicked.
+
+## Bonus
+
+* Add some code to ensure that the count never gets below 0.
+```
+
+### 15. Instructor Do: Review OnClick (5 min)
+
+* Open the file [11-Stu_Onclick/Solved/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/11-Stu_Onclick/Solved/index.html) in the browser.
+
+  * Clicking on the increment or decrement buttons raises or lowers our number dependant on which button we click.
+
+  * The count in the middle gets updated every time the button gets pressed.
+
+  * The count never falls below 0.
+
+* Open [11-Stu_Onclick/Solved/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/11-Stu_Onclick/Solved/script.js) in your IDE.
+
+  * We initialize global variables for `count` variable, `incrementEl`, and the `decrementEl` elements in DOM.
+
+  ```js
+  var count = 0;
+  var incrementEl = document.querySelector("#increment");
+  var decrementEl = document.querySelector("#decrement");
+  ```
+
+  * The second argument of `addEventListener` is an anonymous callback function. This function will execute the body of the callback each time the event is triggered.
+
+  ```js
+  incrementEl.addEventListener("click", function() {
+    count++;
+    setCounterText();
+  });
+  ```
+
+  * 🗒 Note that many students may have appended the count to the page inline instead of breaking it out into its own function.
+
+  * To complete the bonus we need a conditional that ensures that the count only decrements if the current value is greater than 0.
+
+  ```js
+  decrementEl.addEventListener("click", function() {
+    if(count > 0) {
+      count--;
+      setCounterText();
+    }
+  }); 
+  ```
+
+  - - -
+
+### 16. Everyone Do: BREAK (30 min)
+
+- - -
+
+### 17. Instructor Do: Intro to event.preventDefault (10 min)
+
+* We will be spending some more time with forms. We will be learning about how to prevent some of the default form behavior so that we can manipulate data before sending it to a server.
+
+* Ask the class the following question(s):
+
+  * "What do you remember about forms?"
+
+  * There are several type of inputs including check boxes, text fields, radio buttons, and select.
+
+  * Forms also have default behaviors that occur on submission.
+
+* Explain that if a button inside a `<form>` element is clicked, the information in all texts fields within the page is cleared out. This is default behavior that the browser enforces with all buttons within the form.
+
+* Ask the students why this may be a problem.
+
+  * We may want to retain that information on the page after the form has been submitted.
+
+  * We could have other buttons within the form that should not submit the results.
+
+* To avoid this default behavior, we use method called prevent default. 
+
+* Open [12-Ins_Preventing_Default_Events/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/12-Ins_Preventing_Default_Events/script.js) in your IDE.
+
+  * We pass the callback to `addEventListener`, which has a parameter that represents the event object.
+
+  ```js
+  submitEl.addEventListener("click", function(event) {
+    event.preventDefault();
+
+    console.log(event);
+    
+    var response = "Thank you for your submission " + nameInput.value + "! We will reach out to you at " + emailInput.value + ".";
+    submissionResponseEl.textContent = response;
+  });
+  ```
+
+* Open [12-Ins_Preventing_Default_Events/index.js](../../../../01-Class-Content/04-web-apis/01-Activities/12-Ins_Preventing_Default_Events/index.html) in your browser and open the dev tools. 
+
+  * Enter values into the input fields and click on the submit button.
+
+  * Demonstrate that the entire click object appears in the console.
+
+  * In the console, expand the `event` object and let students know that the event object is a large object that contains lots of data about the mouse event.
+
+* Ask the class the following question(s):
+
+  * What are these properties are used for?"
+
+  * `ctrlKey` and `altKey` are booleans used to describe whether or not the user was holding down the key while they clicked.
+
+  * If students ask about properties that you're unsure about, demonstrate that we can find out how they work by searching the [Mouse Event section of Mozilla's Documentation](https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent).
+
+* The event object contains metadata about a users interaction with the webpage. While the event we just observed is a mouse event, there are also keyboard events, mouse scroll events, and more.
+
+* Return to [12-Ins_Preventing_Default_Events/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/12-Ins_Preventing_Default_Events/script.js) in your IDE and comment out the `event.preventDefault()` line. 
+
+* With the console open submit values again.
+
+  * We click the button and we submit the form. 
+  
+  * When this happens, the event object appears in the console for a brief moment and all inputs are cleared. 
+  
+  * This is the default behavior for form submissions. In order to prevent this default behavior, we use the `event.preventDefault` method.
+
+* Answer any questions before moving onto the next activity.
+
+### 18. Student Do: Tip Calculator (15 min)
+
+* Direct students to the next activity, found in[13-Stu_Preventing_Default_Events/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/13-Stu_Preventing_Default_Events/Unsolved)
+
+```md
+# Preventing Default Events
+
+In this activity, we are going to create a form that calculates a suggested tip amount based off of the total of the bill.
+
+## Instructions
+
+* In a file called `index.html`, create a form with the following elements:
+
+1. An input for the total price of the meal
+
+2. An input for the tip percentage
+
+3. A button to calculate the tip
+
+* In a file called `script.js`, create an event listener that utilizes the values from the input fields to calculate the reccommended tip and the new total of the bill with tip included.
+
+* Once these values are calculated, display them on the page.
+
+## Bonus 
+
+* Add a feature that gives users the option to evenly split the total between any number of people. Make sure to add code to ensure that the split total will be rounded to two decimal places. 
+
+## Hint
+
+* In JavaScript, we have a function that rounds a number to a given point called `toFixed()`. For more information, visit the docs at [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed)
+```
+
+### 19. Instructor Do: Review Tip Calculator (5 min)
+
+* Navigate to [13-Stu_Preventing_Default_Events/Solved/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/13-Stu_Preventing_Default_Events/Solved/index.html) and open it in your browser.
+
+* Enter a total into the input field and click the `Calculate Tip` button. 
+
+* Click the `I'm feeling lucky` button and point out that the tip changes with every click.
+
+* Split the tip between any number of people and point out that the input field has increment and decrement buttons built in.
+
+  * The built in buttons are due to the attribute `type=number`. The input field also has the attribute `min=0` which prevents the user from decrementing once they reach zero.
+
+* Open [13-Stu_Preventing_Default_Events/Solved/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/13-Stu_Preventing_Default_Events/Solved/script.js) in your IDE and point out the following:
+
+  * No functions are actually executed until the bottom of the file. 
+
+* Some students may have chosen to write the callback function inline. This is completely fine. 
+
+* Ask the class the following question(s):
+
+  * "Why might it be helpful to write a separate function for that code?
+
+  * Writing a named function helps separate the logic from the event listener.
+
+  * Creating a named function also allows the function to be reused throughout the program. Any other function could call `addTip` if needed.
+
+  ```js
+  submitEl.addEventListener("click", addTip);
+  ```
+
+  * We still have access to the click event inside `addTip` since it is being called as a callback in the `addEventListener` function.
+
+  ```js
+  function addTip() {
+  event.preventDefault();
+  ```
+
+  * We get the values from the total and tip percentage input fields, then call `calculateTip`. Remind the students that the value from input fields of `type=text` are always strings.
+  
+  ```js
+  var tipPercentage = tipEl.value;
+  var total = totalEl.value;
+  var tipAmount = calculateTip(total, tipPercentage);
+  ```
+
+  * `toFixed(n)` is a number prototype method that returns a number and rounds it to the *nth* decimal place. Here, `n` is a variable that we use to describe an unspecified number in a series of numbers. We use this method because we want our total to be rounded to the nearest cent.
+
+  * Even though `total` and `tipPercentage` are strings, we can still multiply them. This is because in JavaScript, the `*` operator coerces both arguments from strings into numbers before multiplying them. This is also the case for all arithmetic operators *except* for addition.
+
+  ```js
+  function calculateTip(total, tipPercentage) {
+    var roundedResult = (total * tipPercentage).toFixed(2);
+    return roundedResult;
+  }
+  ```
+
+  * Since both `total` and `tipAmount` are strings, we need to convert them into numbers before adding them. Remind students that the `+` operator concatenates strings.
+
+  * To do this, we use a global method called `parseFloat()` which takes a string as an argument and returns a decimal number, or floating point number. 
+  
+  * If any student asks what a floating point number is, simply explain that it is a number that contains a fraction. We use the term `float` to differentiate from the other type of number, `Integer`.
+
+  ```js
+  function calculateTotal(total, tipAmount) {
+    return parseFloat(total) + parseFloat(tipAmount);
+  }
+  ```
+
+  * Next point out that the bonus can be achieved by taking the text content of the `total` element and dividing it by the value from a field that describes how many people to split the bill between.
+
+  * Lastly, `toFixed` should be used to ensure that the split amount only contains two decimal places.
+
+  * Remind the students that they must use `event.preventDefault` to stop the form from automatically attempting to submit when the `split` button is clicked.
+
+  ```js
+  function splitTotal() {
+    event.preventDefault();
+
+    var total = document.querySelector("#new-total").textContent;
+    var numPeople = document.querySelector("#num-people").value;
+    
+    var newTotal = (total / numPeople).toFixed(2);
+    document.querySelector("#split-total").textContent = newTotal;
+  }
+  ```
+
+* Briefly open [13-Stu_Preventing_Default_Events/Solved/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/13-Stu_Preventing_Default_Events/Solved/index.html) in your browser and point out the following.
+  
+  * We query the elements `num-people`, `split`, and `split-total` in our JavaScript file.
+
+  * We can add the attributes `type="number"` and `min="0"`. This means that the value from the input field will now be a number and will increment by whole numbers if the user uses the small arrow buttons to increase or decrease the value.
+
+  * 🗒 Note that this does not replace validation and will not prevent users from manually entering a number smaller than zero.
+
+  ```html
+  <h2>
+    Bonus:
+  </h2>
+  <h4>
+    Split between <input id="num-people" type="number" min="0" /> people
+  </h4>
+  <button id="split" >
+    Split
+  </button>
+  <h2>Each person will pay: <span id="split-total"></span></h2>
+  ```
+
+### 20. Instructor Do: Demo key events (5 min)
+
+* Open [14-Ins_Other_Events/index.html](../../../../01-Class-Content/04-Web-APIs/01-Activities/14-Ins_Other_Events/index.html) in your browser.
+
+* Demonstrate that the application works as intended by switching the typeface.
+
+  * Select serif, then go back to sans-serif. 
+
+  * Type some random text in the textarea.
+
+* Open `index.html` and point out the following:
+
+  * The form element only needs `<select>`, a `<textarea>`, and a `<button>` to clear the text.
+
+```html
+<form>
+  <select id="typeface">
+    <option value="serif">
+      serif
+    </option>
+    <option value="sans-serif">
+      sans-serif
+    </option>
+  </select>
+  <div style="margin-top: 50px;">
+    <textarea id="textarea" placeholder="Your input" ></textarea>
+    <div>
+      <button id="clear">Clear</button>
+    </div>
+  </div>
+</form>
+```
+
+* Open [14-Ins_Other_Events/script.js](../../../../01-Class-Content/04-Web-APIs/01-Activities/14-Ins_Other_Events/script.js) and point out the following: 
+
+  * We use `querySelector` to gather all of the elements we would like to target into variables.
+
+  ```js
+  var typefaceEl = document.querySelector("#typeface");
+  var clearEl = document.querySelector("#clear");
+  var h1El = document.querySelector("#h1");
+  var h2El = document.querySelector("#h2");
+  var h3El = document.querySelector("#h3");
+  var pEl = document.querySelector("#p");
+  var textAreaEl = document.querySelector("#textarea");
+  ```
+  * We create an array of elements so that we can later loop over them.
+  
+  ```js
+  var elements = [
+    h1El, h2El, h3El, pEl
+  ];
+  ```
+
+  * We add a listener to the typeface `<select>` element. A *change* listener will execute its callback every time the value of the `<select>` element is changed. This is how we get our desired behavior of updating the CSS every time the font typeface is changed.
+
+  ```js
+  var typeface;
+
+  typefaceEl.addEventListener("change", function(event) {
+    event.preventDefault();
+    typeface = typefaceEl.value;
+    document.querySelector(".container").style.fontFamily = typeface;
+  });
+  ```
+
+  * In our textarea, we've added an event listener to the keydown event. First we use a conditional to make sure that the key is a letter, number, or space. We use the `key` property since `keyCode` and `charCode` have been deprecated.
+
+  * We create an array of all alphanumeric characters, then we use `Array.includes` to make sure that the key pressed is alphanumeric. 
+
+  * Once we've determined that the key being pressed is a valid choice, we append the string to each element in our `elements` array.
+
+  ```js
+  textAreaEl.addEventListener("keydown", function(event) {
+    event.preventDefault();
+    var key = event.key.toLowerCase();
+    var alphabetNumericCharacters = "abcdefghijklmnopqrstuvwxyz0123456789 ".split("");
+    if (alphabetNumericCharacters.includes(key)) {
+      elements.forEach(function(element) {
+        element.textContent += event.key;
+      });
+    }
+  });
+  ```
+
+  * Lastly, we add a `clear` function that will clear out the `textContent` of each element when its button is pressed.
+
+  ```js
+  clearEl.addEventListener("click", function(event) {
+    event.preventDefault();
+    textAreaEl.value = "";
+    elements.forEach(function(element) {
+      element.textContent = "";
+    });
+  });
+  ```
+
+### 21. Student Do: Listening For Other Events (15 min)
+
+* Direct students to the next activity, found in [15-Stu_Other_Events/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/15-Stu_Other_Events/Unsolved)
+
+```md
+# Listening For Other Events
+
+## Instructions
+
+* In this activity, we are going to create a webpage that will allow us to view some meta data about different kinds of events.
+
+* Open the `index.html` file in your browser and take a moment to study the application.
+
+* Take a moment to study the code in `index.html` then add the following functionality to the application:
+
+  1. The select element should trigger the `toggleDisplay` function in `script.js`.
+
+  2. If `key` is selected, the event's code, key, and status (keydown or keyup) should be displayed in the `#key-events` div when the user presses a key anywhere on the document.
+
+  3. If `click` is selected, the text content of the event's target, and the cursor's x and y coordinates should be displayed in the `#click-events` div when the user clicks the anywhere on document.
+
+## Bonus
+
+* If time permits, take a moment to research some other JavaScript events.
+```
+
+### 22. Instructor Do: Review Other Events (5 min)
+
+* Open [15-Stu_Other_Events/Solved/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/15-Stu_Other_Events/Solved/index.html) in your browser.
+
+* Demonstrate that the application works by holding down a key for a couple of seconds, then releasing it.
+
+* Select the *click events* option and click on an html element or two.
+
+  * Point out that if we click the on a spot that doesn't have an html element, the `textContent` from each element on the page is appending to the `target` span.
+
+* Ask students why clicking on a blank spot on the page adds the entire page to `target`.
+
+  * This is because the `textContent` property returns **all** text content from the DOM node and its children.
+
+* Next open [15-Stu_Other_Events/Solved/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/15-Stu_Other_Events/Solved/script.js) and go over the solution.
+
+  * We grab the `key` and `code` properties and append them to their respective span elements on the page.
+
+  * Since this function is only ran if the keydown activity, we can explicitly set the status text content to be `KEYDOWN Event`.
+
+  * Remind students that although we did not write this function inline with the event listener, we still have access to its  
+
+  ```js
+  function keydown(event) {
+    var keyPress = event.key;
+    var keyCode = event.code;
+    document.querySelector("#key").textContent = keyPress;
+    document.querySelector("#code").textContent = code;
+    var status = document.querySelector("#status");
+    status.textContent = "KEYDOWN Event";
+  }
+  ```
+
+* Ask the class the following question(s):
+
+  * 'What other types of user interactions might we want to capture?'
+
+  * Hover/mouseover events
+
+  * onChange events
+
+  * onLoad events
+
+* Answer any remaining questions and let students out for break.
+
+### 23. Instructor Do: Demo Event Bubbling and Propagation (10 min)
+
+* Open [16-Ins_Event_Bubbling/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/16-Ins_Event_Bubbling/index.html) in your IDE and point out the following: 
+
+  * Each `div` has an event listener set up that will change its background color to the color specified. 
+
+* Ask the class the following question(s):
+
+  * "What will happen when the innermost button is clicked?"
+
+  * We will see that every `div` changes colors
+
+* Refresh the page and click the middle `div`. Point out the following: 
+
+  * We only see the two outer divs change colors.
+
+* Ask the class the following question(s):
+
+  * "Why are we seeing this behavior."
+
+  * Many students may think that this behavior happens because a parent event triggers the same event on all of its children.
+
+  * We have instantiated an event listener on a div that has parent elements which also have event listeners. 
+
+  * When an event occurs on an element with an event listener, it **bubbles** up through each of its parent DOM nodes until it reaches the top. We can prevent this behavior by using a method called `event.stopPropagation`.
+
+* Open [16-Ins_Event_Bubbling/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/16-Ins_Event_Bubbling/script.js) and give the students a minute to observe the code. 
+
+* Then uncomment every `stopPropagation()` function call and click each button in the same order as previously demonstrated.
+
+  * This is a good moment to reiterate that `stopPropagation` is taking the click event and preventing it from bubbling *up*.
+
+  * If students are having a tough time grasping this concept, try commenting out every `stopPropagation` call except for the second from outermost call. Then open the page in your browser and click on the innermost button.
+
+### 24. Student Do: Event Bubbling (15 min)
+
+* Direct students to the next activity, found in [17-Stu_Event_Bubbling/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/17-Stu_Event_Bubbling/Unsolved)
+
+```md
+# Event Bubbling
+
+In this activity, we are going to create an image carousel that allows us to cycle through images. 
+
+## Instructions
+
+* In a file called `index.html`, create a div that contains two buttons: `previous` and `next`. The carousel should support the following features: 
+
+  1. When the `next` button is clicked, the image should change to the next image in the array. If the image has reached the end of the array, the image should start over at the start of the array.
+
+  2. When the `previous` button is clicked, the image should change to the previous image in the array. If the image has reached the start of the array, the image should start over at the end of the array.
+
+  3. When the user clicks on an image, they will be navigated to the url that hosts that image.
+```
+
+### 25. Instructor Do: Review Event Bubbling (5 min)
+
+* Open [17-Stu_Event_Bubbling/Solved/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/17-Stu_Event_Bubbling/Solved/index.html) in the browser.
+
+* Demonstrate that the application works by clicking through the images four times, then clicking on an image.
+
+  * Point out that the user is only navigated away if they click on the image.
+
+* Open [17-Stu_Event_Bubbling/Solved/script](../../../../01-Class-Content/04-web-apis/01-Activities/17-Stu_Event_Bubbling/Solved/script.js) in your IDE
+
+  * First, we initialize our element variables and create an array to hold the links to the images. We also initialize our background image.
+
+  ```js
+  box.style.backgroundImage = "url('https://picsum.photos/300/200')";
+  var index = 0;
+  var images = [
+    "https://picsum.photos/300/200",
+    "https://picsum.photos/300/201",
+    "https://picsum.photos/300/202",
+    "https://picsum.photos/300/203"
+  ];
+  ```
+
+  * When the image container is clicked, we use `window.location.href` to navigate the browser to the url that hosts the image.
+
+  ```js
+  box.onclick = function(event) {
+    window.location.href = images[index];
+  };
+  ```
+
+  * Next, we set up the `navigate` function, which handles click events on both the `previous` and `next` buttons. Alternatively, students may have created two separate functions to handle each button click.
+
+  ```js
+  function navigate(direction) {
+    index = index + direction;
+    if (direction === -1 && 
+        index < 0) { 
+      index = length - 1; 
+    }
+    if (direction === 1 && 
+        !images[index]) { 
+      index = 0;
+    }
+    current = "url('" + images[index] + "')";
+    box.style.backgroundImage = current;
+  }
+  ```
+
+  * We add an event listener to each button, calling `event.stopPropagation();` to prevent the click event from bubbling up to our image container.
+
+  * If students are still struggling to grasp the importance of `event.stopPropagation()`, comment it out in both callbacks. Then click on the `next` button and explain that without `event.stopPropagation()`, the click event from the button bubbles up and triggers the click event on `box`.
+
+  ```js
+  next.addEventListener("click", function(event){
+    event.stopPropagation();
+    navigate(1);
+  });
+  prev.addEventListener("click", function(event) {
+    event.stopPropagation();
+    navigate(-1);
+  });
+  navigate(0);
+  ```
+
+
+### 26. END (0 mins)
 
 ### Lesson Plan Feedback
 

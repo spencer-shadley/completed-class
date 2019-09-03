@@ -2,547 +2,20 @@
 
 ## Overview
 
-In this class, we will further students' understanding of DOM Manipulation using events. We will create an activity that dynamically creates modals for each item in a list, and will work with client side storage.
+- - -
 
 ## Instructor Notes
 
-* `Summary: Complete activities 10-25 in Unit 04`
+`Complete activities 19-29 in Unit 04`
 
-* Today's class is focused on providing students with additional exposure to the DOM, this time focusing on events. The primary focus of today should be to ensure that students feel comfortable setting up click listeners and using their callbacks to manipulate the DOM.
+### Class Objectives
 
-* This is students first exposure to persistence in their web applications. Its going to be very exciting so use that energy to your advantage. Get students interested in the fact that they can now take their applications to the next level with persistent data.
-
-* The code associated with local and session storage may seem simple, but the concepts and their use cases may be confusing for students seeing these things for the first time.
-
-* Students will be pseudocoding the ToDo List application at the beginning of class. Familiarize yourself with the code and functionality to more easily help students through this process.
-
-## Class Objectives
-
-* By the end of class students will be able to:
-
-  * Use event listeners such as click, keydown, and change.
-
-  * Stop the propagation of events.
-
-  * Dynamically generate DOM elements whose events are delegated.
-
-  * Use local storage and session storage.
-
-  * Describe the differences between the two.
-
-  * Identify when client side storage is the right solution.
-
-  * Use all of the units concepts to build a persistent ToDo list as well as a Work Timer.
-
-## Slides
-
-N/A
-
-## Time Tracker
-
+* To gain an initial understanding of lexical scope in JavaScript.
+* To build a semi-complex jQuery calculator application in teams.
 
 - - -
 
-### 1. Instructor Do: Intro to event.preventDefault (10 min)
-
-* We will be spending some more time with forms. We will be learning about how to prevent some of the default form behavior so that we can manipulate data before sending it to a server.
-
-* Ask the class the following question(s):
-
-  * "What do you remember about forms?"
-
-  * There are several type of inputs including check boxes, text fields, radio buttons, and select.
-
-  * Forms also have default behaviors that occur on submission.
-
-* Explain that if a button inside a `<form>` element is clicked, the information in all texts fields within the page is cleared out. This is default behavior that the browser enforces with all buttons within the form.
-
-* Ask the students why this may be a problem.
-
-  * We may want to retain that information on the page after the form has been submitted.
-
-  * We could have other buttons within the form that should not submit the results.
-
-* To avoid this default behavior, we use method called prevent default. 
-
-* Open [12-Ins_Preventing_Default_Events/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/12-Ins_Preventing_Default_Events/script.js) in your IDE.
-
-  * We pass the callback to `addEventListener`, which has a parameter that represents the event object.
-
-  ```js
-  submitEl.addEventListener("click", function(event) {
-    event.preventDefault();
-
-    console.log(event);
-    
-    var response = "Thank you for your submission " + nameInput.value + "! We will reach out to you at " + emailInput.value + ".";
-    submissionResponseEl.textContent = response;
-  });
-  ```
-
-* Open [12-Ins_Preventing_Default_Events/index.js](../../../../01-Class-Content/04-web-apis/01-Activities/12-Ins_Preventing_Default_Events/index.html) in your browser and open the dev tools. 
-
-  * Enter values into the input fields and click on the submit button.
-
-  * Demonstrate that the entire click object appears in the console.
-
-  * In the console, expand the `event` object and let students know that the event object is a large object that contains lots of data about the mouse event.
-
-* Ask the class the following question(s):
-
-  * What are these properties are used for?"
-
-  * `ctrlKey` and `altKey` are booleans used to describe whether or not the user was holding down the key while they clicked.
-
-  * If students ask about properties that you're unsure about, demonstrate that we can find out how they work by searching the [Mouse Event section of Mozilla's Documentation](https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent).
-
-* The event object contains metadata about a users interaction with the webpage. While the event we just observed is a mouse event, there are also keyboard events, mouse scroll events, and more.
-
-* Return to [12-Ins_Preventing_Default_Events/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/12-Ins_Preventing_Default_Events/script.js) in your IDE and comment out the `event.preventDefault()` line. 
-
-* With the console open submit values again.
-
-  * We click the button and we submit the form. 
-  
-  * When this happens, the event object appears in the console for a brief moment and all inputs are cleared. 
-  
-  * This is the default behavior for form submissions. In order to prevent this default behavior, we use the `event.preventDefault` method.
-
-* Answer any questions before moving onto the next activity.
-
-### 2. Student Do: Tip Calculator (15 min)
-
-* Direct students to the next activity, found in[13-Stu_Preventing_Default_Events/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/13-Stu_Preventing_Default_Events/Unsolved)
-
-```md
-# Preventing Default Events
-
-In this activity, we are going to create a form that calculates a suggested tip amount based off of the total of the bill.
-
-## Instructions
-
-* In a file called `index.html`, create a form with the following elements:
-
-1. An input for the total price of the meal
-
-2. An input for the tip percentage
-
-3. A button to calculate the tip
-
-* In a file called `script.js`, create an event listener that utilizes the values from the input fields to calculate the reccommended tip and the new total of the bill with tip included.
-
-* Once these values are calculated, display them on the page.
-
-## Bonus 
-
-* Add a feature that gives users the option to evenly split the total between any number of people. Make sure to add code to ensure that the split total will be rounded to two decimal places. 
-
-## Hint
-
-* In JavaScript, we have a function that rounds a number to a given point called `toFixed()`. For more information, visit the docs at [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed)
-```
-
-### 3. Instructor Do: Review Tip Calculator (5 min)
-
-* Navigate to [13-Stu_Preventing_Default_Events/Solved/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/13-Stu_Preventing_Default_Events/Solved/index.html) and open it in your browser.
-
-* Enter a total into the input field and click the `Calculate Tip` button. 
-
-* Click the `I'm feeling lucky` button and point out that the tip changes with every click.
-
-* Split the tip between any number of people and point out that the input field has increment and decrement buttons built in.
-
-  * The built in buttons are due to the attribute `type=number`. The input field also has the attribute `min=0` which prevents the user from decrementing once they reach zero.
-
-* Open [13-Stu_Preventing_Default_Events/Solved/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/13-Stu_Preventing_Default_Events/Solved/script.js) in your IDE and point out the following:
-
-  * No functions are actually executed until the bottom of the file. 
-
-* Some students may have chosen to write the callback function inline. This is completely fine. 
-
-* Ask the class the following question(s):
-
-  * "Why might it be helpful to write a separate function for that code?
-
-  * Writing a named function helps separate the logic from the event listener.
-
-  * Creating a named function also allows the function to be reused throughout the program. Any other function could call `addTip` if needed.
-
-  ```js
-  submitEl.addEventListener("click", addTip);
-  ```
-
-  * We still have access to the click event inside `addTip` since it is being called as a callback in the `addEventListener` function.
-
-  ```js
-  function addTip() {
-  event.preventDefault();
-  ```
-
-  * We get the values from the total and tip percentage input fields, then call `calculateTip`. Remind the students that the value from input fields of `type=text` are always strings.
-  
-  ```js
-  var tipPercentage = tipEl.value;
-  var total = totalEl.value;
-  var tipAmount = calculateTip(total, tipPercentage);
-  ```
-
-  * `toFixed(n)` is a number prototype method that returns a number and rounds it to the *nth* decimal place. Here, `n` is a variable that we use to describe an unspecified number in a series of numbers. We use this method because we want our total to be rounded to the nearest cent.
-
-  * Even though `total` and `tipPercentage` are strings, we can still multiply them. This is because in JavaScript, the `*` operator coerces both arguments from strings into numbers before multiplying them. This is also the case for all arithmetic operators *except* for addition.
-
-  ```js
-  function calculateTip(total, tipPercentage) {
-    var roundedResult = (total * tipPercentage).toFixed(2);
-    return roundedResult;
-  }
-  ```
-
-  * Since both `total` and `tipAmount` are strings, we need to convert them into numbers before adding them. Remind students that the `+` operator concatenates strings.
-
-  * To do this, we use a global method called `parseFloat()` which takes a string as an argument and returns a decimal number, or floating point number. 
-  
-  * If any student asks what a floating point number is, simply explain that it is a number that contains a fraction. We use the term `float` to differentiate from the other type of number, `Integer`.
-
-  ```js
-  function calculateTotal(total, tipAmount) {
-    return parseFloat(total) + parseFloat(tipAmount);
-  }
-  ```
-
-  * Next point out that the bonus can be achieved by taking the text content of the `total` element and dividing it by the value from a field that describes how many people to split the bill between.
-
-  * Lastly, `toFixed` should be used to ensure that the split amount only contains two decimal places.
-
-  * Remind the students that they must use `event.preventDefault` to stop the form from automatically attempting to submit when the `split` button is clicked.
-
-  ```js
-  function splitTotal() {
-    event.preventDefault();
-
-    var total = document.querySelector("#new-total").textContent;
-    var numPeople = document.querySelector("#num-people").value;
-    
-    var newTotal = (total / numPeople).toFixed(2);
-    document.querySelector("#split-total").textContent = newTotal;
-  }
-  ```
-
-* Briefly open [13-Stu_Preventing_Default_Events/Solved/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/13-Stu_Preventing_Default_Events/Solved/index.html) in your browser and point out the following.
-  
-  * We query the elements `num-people`, `split`, and `split-total` in our JavaScript file.
-
-  * We can add the attributes `type="number"` and `min="0"`. This means that the value from the input field will now be a number and will increment by whole numbers if the user uses the small arrow buttons to increase or decrease the value.
-
-  * 🗒 Note that this does not replace validation and will not prevent users from manually entering a number smaller than zero.
-
-  ```html
-  <h2>
-    Bonus:
-  </h2>
-  <h4>
-    Split between <input id="num-people" type="number" min="0" /> people
-  </h4>
-  <button id="split" >
-    Split
-  </button>
-  <h2>Each person will pay: <span id="split-total"></span></h2>
-  ```
-
-### 4. Instructor Do: Demo key events (5 min)
-
-* Open [14-Ins_Other_Events/index.html](../../../../01-Class-Content/04-Web-APIs/01-Activities/14-Ins_Other_Events/index.html) in your browser.
-
-* Demonstrate that the application works as intended by switching the typeface.
-
-  * Select serif, then go back to sans-serif. 
-
-  * Type some random text in the textarea.
-
-* Open `index.html` and point out the following:
-
-  * The form element only needs `<select>`, a `<textarea>`, and a `<button>` to clear the text.
-
-```html
-<form>
-  <select id="typeface">
-    <option value="serif">
-      serif
-    </option>
-    <option value="sans-serif">
-      sans-serif
-    </option>
-  </select>
-  <div style="margin-top: 50px;">
-    <textarea id="textarea" placeholder="Your input" ></textarea>
-    <div>
-      <button id="clear">Clear</button>
-    </div>
-  </div>
-</form>
-```
-
-* Open [14-Ins_Other_Events/script.js](../../../../01-Class-Content/04-Web-APIs/01-Activities/14-Ins_Other_Events/script.js) and point out the following: 
-
-  * We use `querySelector` to gather all of the elements we would like to target into variables.
-
-  ```js
-  var typefaceEl = document.querySelector("#typeface");
-  var clearEl = document.querySelector("#clear");
-  var h1El = document.querySelector("#h1");
-  var h2El = document.querySelector("#h2");
-  var h3El = document.querySelector("#h3");
-  var pEl = document.querySelector("#p");
-  var textAreaEl = document.querySelector("#textarea");
-  ```
-  * We create an array of elements so that we can later loop over them.
-  
-  ```js
-  var elements = [
-    h1El, h2El, h3El, pEl
-  ];
-  ```
-
-  * We add a listener to the typeface `<select>` element. A *change* listener will execute its callback every time the value of the `<select>` element is changed. This is how we get our desired behavior of updating the CSS every time the font typeface is changed.
-
-  ```js
-  var typeface;
-
-  typefaceEl.addEventListener("change", function(event) {
-    event.preventDefault();
-    typeface = typefaceEl.value;
-    document.querySelector(".container").style.fontFamily = typeface;
-  });
-  ```
-
-  * In our textarea, we've added an event listener to the keydown event. First we use a conditional to make sure that the key is a letter, number, or space. We use the `key` property since `keyCode` and `charCode` have been deprecated.
-
-  * We create an array of all alphanumeric characters, then we use `Array.includes` to make sure that the key pressed is alphanumeric. 
-
-  * Once we've determined that the key being pressed is a valid choice, we append the string to each element in our `elements` array.
-
-  ```js
-  textAreaEl.addEventListener("keydown", function(event) {
-    event.preventDefault();
-    var key = event.key.toLowerCase();
-    var alphabetNumericCharacters = "abcdefghijklmnopqrstuvwxyz0123456789 ".split("");
-    if (alphabetNumericCharacters.includes(key)) {
-      elements.forEach(function(element) {
-        element.textContent += event.key;
-      });
-    }
-  });
-  ```
-
-  * Lastly, we add a `clear` function that will clear out the `textContent` of each element when its button is pressed.
-
-  ```js
-  clearEl.addEventListener("click", function(event) {
-    event.preventDefault();
-    textAreaEl.value = "";
-    elements.forEach(function(element) {
-      element.textContent = "";
-    });
-  });
-  ```
-
-### 5. Student Do: Listening For Other Events (15 min)
-
-* Direct students to the next activity, found in [15-Stu_Other_Events/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/15-Stu_Other_Events/Unsolved)
-
-```md
-# Listening For Other Events
-
-## Instructions
-
-* In this activity, we are going to create a webpage that will allow us to view some meta data about different kinds of events.
-
-* Open the `index.html` file in your browser and take a moment to study the application.
-
-* Take a moment to study the code in `index.html` then add the following functionality to the application:
-
-  1. The select element should trigger the `toggleDisplay` function in `script.js`.
-
-  2. If `key` is selected, the event's code, key, and status (keydown or keyup) should be displayed in the `#key-events` div when the user presses a key anywhere on the document.
-
-  3. If `click` is selected, the text content of the event's target, and the cursor's x and y coordinates should be displayed in the `#click-events` div when the user clicks the anywhere on document.
-
-## Bonus
-
-* If time permits, take a moment to research some other JavaScript events.
-```
-
-### 6. Instructor Do: Review Other Events (5 min)
-
-* Open [15-Stu_Other_Events/Solved/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/15-Stu_Other_Events/Solved/index.html) in your browser.
-
-* Demonstrate that the application works by holding down a key for a couple of seconds, then releasing it.
-
-* Select the *click events* option and click on an html element or two.
-
-  * Point out that if we click the on a spot that doesn't have an html element, the `textContent` from each element on the page is appending to the `target` span.
-
-* Ask students why clicking on a blank spot on the page adds the entire page to `target`.
-
-  * This is because the `textContent` property returns **all** text content from the DOM node and its children.
-
-* Next open [15-Stu_Other_Events/Solved/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/15-Stu_Other_Events/Solved/script.js) and go over the solution.
-
-  * We grab the `key` and `code` properties and append them to their respective span elements on the page.
-
-  * Since this function is only ran if the keydown activity, we can explicitly set the status text content to be `KEYDOWN Event`.
-
-  * Remind students that although we did not write this function inline with the event listener, we still have access to its  
-
-  ```js
-  function keydown(event) {
-    var keyPress = event.key;
-    var keyCode = event.code;
-    document.querySelector("#key").textContent = keyPress;
-    document.querySelector("#code").textContent = code;
-    var status = document.querySelector("#status");
-    status.textContent = "KEYDOWN Event";
-  }
-  ```
-
-* Ask the class the following question(s):
-
-  * 'What other types of user interactions might we want to capture?'
-
-  * Hover/mouseover events
-
-  * onChange events
-
-  * onLoad events
-
-* Answer any remaining questions and let students out for break.
-
-- - -
-
-### 7. Everyone Do: BREAK (30 min)
-
-- - -
-
-### 8. Instructor Do: Demo Event Bubbling and Propagation (10 min)
-
-* Open [16-Ins_Event_Bubbling/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/16-Ins_Event_Bubbling/index.html) in your IDE and point out the following: 
-
-  * Each `div` has an event listener set up that will change its background color to the color specified. 
-
-* Ask the class the following question(s):
-
-  * "What will happen when the innermost button is clicked?"
-
-  * We will see that every `div` changes colors
-
-* Refresh the page and click the middle `div`. Point out the following: 
-
-  * We only see the two outer divs change colors.
-
-* Ask the class the following question(s):
-
-  * "Why are we seeing this behavior."
-
-  * Many students may think that this behavior happens because a parent event triggers the same event on all of its children.
-
-  * We have instantiated an event listener on a div that has parent elements which also have event listeners. 
-
-  * When an event occurs on an element with an event listener, it **bubbles** up through each of its parent DOM nodes until it reaches the top. We can prevent this behavior by using a method called `event.stopPropagation`.
-
-* Open [16-Ins_Event_Bubbling/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/16-Ins_Event_Bubbling/script.js) and give the students a minute to observe the code. 
-
-* Then uncomment every `stopPropagation()` function call and click each button in the same order as previously demonstrated.
-
-  * This is a good moment to reiterate that `stopPropagation` is taking the click event and preventing it from bubbling *up*.
-
-  * If students are having a tough time grasping this concept, try commenting out every `stopPropagation` call except for the second from outermost call. Then open the page in your browser and click on the innermost button.
-
-### 9. Student Do: Event Bubbling (20 min)
-
-* Direct students to the next activity, found in [17-Stu_Event_Bubbling/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/17-Stu_Event_Bubbling/Unsolved)
-
-```md
-# Event Bubbling
-
-In this activity, we are going to create an image carousel that allows us to cycle through images. 
-
-## Instructions
-
-* In a file called `index.html`, create a div that contains two buttons: `previous` and `next`. The carousel should support the following features: 
-
-  1. When the `next` button is clicked, the image should change to the next image in the array. If the image has reached the end of the array, the image should start over at the start of the array.
-
-  2. When the `previous` button is clicked, the image should change to the previous image in the array. If the image has reached the start of the array, the image should start over at the end of the array.
-
-  3. When the user clicks on an image, they will be navigated to the url that hosts that image.
-```
-
-### 10. Instructor Do: Review Event Bubbling (5 min)
-
-* Open [17-Stu_Event_Bubbling/Solved/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/17-Stu_Event_Bubbling/Solved/index.html) in the browser.
-
-* Demonstrate that the application works by clicking through the images four times, then clicking on an image.
-
-  * Point out that the user is only navigated away if they click on the image.
-
-* Open [17-Stu_Event_Bubbling/Solved/script](../../../../01-Class-Content/04-web-apis/01-Activities/17-Stu_Event_Bubbling/Solved/script.js) in your IDE
-
-  * First, we initialize our element variables and create an array to hold the links to the images. We also initialize our background image.
-
-  ```js
-  box.style.backgroundImage = "url('https://picsum.photos/300/200')";
-  var index = 0;
-  var images = [
-    "https://picsum.photos/300/200",
-    "https://picsum.photos/300/201",
-    "https://picsum.photos/300/202",
-    "https://picsum.photos/300/203"
-  ];
-  ```
-
-  * When the image container is clicked, we use `window.location.href` to navigate the browser to the url that hosts the image.
-
-  ```js
-  box.onclick = function(event) {
-    window.location.href = images[index];
-  };
-  ```
-
-  * Next, we set up the `navigate` function, which handles click events on both the `previous` and `next` buttons. Alternatively, students may have created two separate functions to handle each button click.
-
-  ```js
-  function navigate(direction) {
-    index = index + direction;
-    if (direction === -1 && 
-        index < 0) { 
-      index = length - 1; 
-    }
-    if (direction === 1 && 
-        !images[index]) { 
-      index = 0;
-    }
-    current = "url('" + images[index] + "')";
-    box.style.backgroundImage = current;
-  }
-  ```
-
-  * We add an event listener to each button, calling `event.stopPropagation();` to prevent the click event from bubbling up to our image container.
-
-  * If students are still struggling to grasp the importance of `event.stopPropagation()`, comment it out in both callbacks. Then click on the `next` button and explain that without `event.stopPropagation()`, the click event from the button bubbles up and triggers the click event on `box`.
-
-  ```js
-  next.addEventListener("click", function(event){
-    event.stopPropagation();
-    navigate(1);
-  });
-  prev.addEventListener("click", function(event) {
-    event.stopPropagation();
-    navigate(-1);
-  });
-  navigate(0);
-  ```
-
-### 11 Instructor Do: Event Delegation Demo (10 min)
+### 1. Instructor Do: Event Delegation Demo (10 min)
 
 * So far we've been manually assigning click listeners to each individual element. Prompt the students with the following question: 
 
@@ -581,7 +54,7 @@ In this activity, we are going to create an image carousel that allows us to cyc
   });
   ```
 
-### 12. Student Do: Event Delegation (20 min)
+### 2. Student Do: Event Delegation (20 min)
 
 * Direct students to the next activity, found in [19-Stu_Event_Delegation/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/19-Stu_Event_Delegation/Unsolved)
 
@@ -609,7 +82,7 @@ In this activity, we are going to create an image carousel that allows us to cyc
 * Use event delegation to make the modal close if the user clicks away from the modal.
 ```
 
-### 13. Instructor Do: Review Event Delegation (10 min)
+### 3. Instructor Do: Review Event Delegation (10 min)
 
 * Take a moment to demonstrate the app, just as you did in the beginning of class.
 
@@ -661,8 +134,7 @@ In this activity, we are going to create an image carousel that allows us to cyc
     }
   });
   ```
-
-  ### 14. Instructor Do: Preview Client Side Storage (5 mins)
+### 4. Instructor Do: Preview Client Side Storage (5 mins)
 
 * Welcome students to class.
 
@@ -690,7 +162,7 @@ In this activity, we are going to create an image carousel that allows us to cyc
  
 * Use student answers to transition to the first activity of the day.
 
-### 15. Instructor Do: Todo Local Storage Pseudocode (10 mins)
+### 5. Instructor Do: Todo Local Storage Pseudocode (10 mins)
 
 * Open a new (blank) file in your IDE and lead students in outlining the steps to build the ToDo List application in pseudocode.
 
@@ -728,7 +200,7 @@ In this activity, we are going to create an image carousel that allows us to cyc
 
 * Use students answers regarding storage to transition to the next demo.
 
-### 16. Instructor Do: Demo Local Storage (5 mins)
+### 6. Instructor Do: Demo Local Storage (5 mins)
 
 * Open [20-Ins_Local-Storage-Counter](../../../../01-Class-Content/04-web-apis/01-Activities/20-Ins_Local-Storage-Counter/index.html) in your browser and demo the functionality of the application:
 
@@ -810,7 +282,7 @@ In this activity, we are going to create an image carousel that allows us to cyc
   
 * Answer any questions before proceeding to the next activity. 
 
-### 17. Student Do: Local Storage (15 mins)
+### 7. Student Do: Local Storage (15 mins)
 
 * Direct students to the next activity, found in [21-Stu_Local-Storage-User/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/21-Stu_Local-Storage-User/Unsolved/script.js)
 
@@ -838,7 +310,7 @@ In this activity, we are going to create an image carousel that allows us to cyc
 * Make sure you call `renderLastRegistered()` after you set your `localStorage`.
 ```
 
-### 18. Instructor Do: Review Local Storage Activity (5 mins)
+### 8. Instructor Do: Review Local Storage Activity (5 mins)
 
 * Open [21-Stu_Local-Storage-User/Solved/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/21-Stu_Local-Storage-User/Solved/script.js) and explain the following: 
 
@@ -879,7 +351,7 @@ In this activity, we are going to create an image carousel that allows us to cyc
 
 * Answer any questions before proceeding to the next activity.
 
-### 19. Instructor Do: Local Storage with Uh-oh (5 min)
+### 9. Instructor Do: Local Storage with Uh-oh (5 min)
 
 * Open [22-Ins_Local-Storage-Uh-oh/index.html](../../../../01-Class-Content/04-Web-APIs/01-Activities/22-Ins_Local-Storage-Uh-oh/index.html) in your browser and explain the following: 
 
@@ -927,7 +399,7 @@ In this activity, we are going to create an image carousel that allows us to cyc
 
 * Use student answers to transition to the next activity. 
 
-### 20. Student Do: Local Storage With Objects (15 mins)
+### 10. Student Do: Local Storage With Objects (15 mins)
 
 * Direct students to [23-Stu_Local-Storage-Objects/Unsolved/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/23-Stu_Local-Storage-Objects/Unsolved/script.js).
 
@@ -947,7 +419,7 @@ In this activity, we are going to create an image carousel that allows us to cyc
 * Inside your event listener modify `localStorage.setItem("user", user);` and `localStorage.getItem("user");` so they save and render the data.
 ```
 
-### 22. Instructor Do: Review Local Storage With Objects (5 mins)
+### 11. Instructor Do: Review Local Storage With Objects (5 mins)
 
 * Open [23-Stu_Local-Storage-Objects/Solved/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/23-Stu_Local-Storage-Objects/Solved/script.js) and point out the following: 
 
@@ -980,7 +452,7 @@ In this activity, we are going to create an image carousel that allows us to cyc
 
   * Because its text, we are able to store it into `localstorage` as the string that is required.
 
-### 23. Instructor Do: Demo Data-Attributes (5 mins)
+### 12. Instructor Do: Demo Data-Attributes (5 mins)
 
 * Open [24-Ins_Data-Attributes/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/24-Ins_Data-Attributes/index.html) in your browser and demo the functionality of the application:
 
@@ -1037,7 +509,7 @@ In this activity, we are going to create an image carousel that allows us to cyc
 
 * Answer any questions before proceeding to the next activity.
 
-### 24. Students Do: Render Todos (10 mins)
+### 13. Students Do: Render Todos (10 mins)
 
 * Direct students to the next activity, found in [25-Stu_Render-Todos/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/25-Stu_Render-Todos/Unsolved).
 
@@ -1065,7 +537,7 @@ In this activity you will be writing code to render an array of todo items to th
   * Finally the new `li` should be appended to the `ul` provided.
 ```
 
-### 25. Instructor Do: Review Render Todos (5 mins)
+### 14. Instructor Do: Review Render Todos (5 mins)
 
 * Open [25-Stu_Render-Todos/Solved](../../../../01-Class-Content/04-web-apis/01-Activities/25-Stu_Render-Todos/Solved) and point out the following: 
 
@@ -1119,9 +591,363 @@ In this activity you will be writing code to render an array of todo items to th
   renderTodos();
   ```
 
-### END (0  mins)
+* Answer any questions before proceeding to the next activity. 
 
-### Lesson Plan Feedback
+- - -
+
+### 15. Everyone Do: BREAK (30 mins)
+
+- - - 
+
+### 16. Students Do: Add Todos (10 mins)
+
+* Direct students to the next activity, found in [26-Stu_Add-Todos/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/26-Stu_Add-Todos/Unsolved)
+
+```md
+# Add ToDo's
+
+In this activity, we will be continuing to build on our Todo activity. This time, we'll be adding the `add` functionality.
+
+## Instructions
+
+* Add an event listener so that when a user hits enter, the value from the todo input field is pushed to our todo array.
+
+* Make sure that empty values are not pushed to the array.
+
+* Once the value has been added to the array, clear the input field and re-render the todo list.
+```
+
+### 17. Instructor Do: Review Add Todos (5 mins)
+
+* Open [26-Stu_Add-Todos/Solved/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/26-Stu_Add-Todos/Solved/index.html) in your browser and briefly demonstrate the new functionality by adding new items to the todo list.
+
+* Next navigate to [26-Stu_Add-Todos/Solved/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/26-Stu_Add-Todos/Solved/script.js) in your IDE and point out the following:
+
+  * We're listening for the `submit` event. Note that it would also be acceptable to add a keydown listener and check if the key pressed is enter. Mention that instead listening for `submit`, requires less code. Additionally, the callback function doesn't need to be ran needlessly every time the user presses a key.
+
+  ```js
+  todoForm.addEventListener("submit", function(event) {
+  event.preventDefault();
+  ```
+
+  * 🗒 It's worth noting that there are two form behaviors that most commonly cause the `submit` event. The `return` key is pressed within a text input field or a submit button is clicked. This could be desired behavior, but remind students that there are situations where this behavior is not desired.
+
+  * The `.trim()` method removes whitespace from before and after the input.
+
+  ```js
+  var todoText = todoInput.value.trim();
+  ```
+
+  * If the todoText is empty, return. This will prevent us from pushing empty strings to the todos array.
+
+  ```js
+  if (todoText === "") {
+    return;
+  }
+  ```
+
+  * Lastly, we push the `todoText` to the todos array, reset its value, and render the todos again.
+
+  ```js
+  todos.push(todoText);
+  todoInput.value = "";
+
+  renderTodos();
+  });
+  ```
+
+* Answer any questions before moving to the next activity.
+
+### 18. Students Do: Complete Todos (15 mins)
+
+* Direct students towards the next activity located in [27-Stu_Complete-Todos/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/27-Stu_Complete-Todos/Unsolved).
+
+```md
+# Complete Todos
+
+In this activity, we will create a "complete" button that successfully removes a todo item from the list when clicked.
+
+## Instructions
+
+* Modify your `renderTodos()` function:
+
+  * When a new todo is created, add a `data-index` for each `li`.
+
+  * Generate a button that says "complete" and append it to your `li`.
+
+* Add an event listener so that when a user clicks the complete button, it accesses the `data-index` value and removes that todo element from the list.
+
+## Hint
+
+* You can use `setAttribute` for `data-index` and `splice` to remove your todo from the list.
+```
+
+### 19. Instructor Do: Review Complete Todos (10 mins)
+
+* Open [27-Stu_Complete-Todos/Solved/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/27-Stu_Complete-Todos/Solved) in your IDE and point out the following:
+
+  * First show students the unsolved `renderTodos()` function for context.
+
+  ```js
+  function renderTodos() {
+
+    todoList.innerHTML = "";
+    todoCountSpan.textContent = todos.length;
+
+    for (var i = 0; i < todos.length; i++) {
+      var todo = todos[i];
+
+      var li = document.createElement("li");
+      li.textContent = todo;
+      todoList.appendChild(li);
+    }
+  }
+  ```
+
+  * In order to track which todo we are going to mark as complete, we need set a `data-index` that points to each todo's index, `i` from our for loop.
+
+  ```js
+  li.setAttribute("data-index", i);
+  ```
+
+  * Next we can create a "Complete" button for each item and set it's text to "Complete".
+
+  ```js
+  var button = document.createElement("button");
+      button.textContent = "Complete";
+  ```
+
+  * Finally we append our newly updated button to our `li`.
+
+  ```js
+  li.appendChild(button);
+  ```
+
+  * Now that our todo can be marked as complete, we have to create an event listener for our button that removes it from the list when clicked.
+
+  ```js
+  todoList.addEventListener("click", function(event) {
+  ```
+  * Next we set a variable for `event.target`. When an element is clicked, we check if it was a button and if so, grab the `data-index` of that element.
+
+  ```js
+  var element = event.target;
+  ```
+
+  * We then use `.splice` to remove the element with that index and rerender or todos by calling `renderTodos()`. The `.splice` method allows us to change the contents of an array. We can use it to remove, replace, or add new elements. 
+
+  ```js
+  if (element.matches("button") === true) {
+    var index = element.parentElement.getAttribute("data-index");
+    todos.splice(index, 1);
+    renderTodos();
+  ```
+
+* Check for understanding and answer any lingering questions before moving on.
+
+### 20. Students Do: Local Storage Todos (10 mins)
+
+* Direct students towards their next activity located in [28-Stu_Local-Storage-Todos/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/28-Stu_Local-Storage-Todos/Unsolved).
+
+  ```md
+  # Local Storage Todo's
+
+  In this activity, we will work on storing our todos in `localStorage`. 
+
+  ## Instructions
+
+  * Inside the `init()` function:
+
+    * Set a variable called `storedTodos` that retrieves the todos from `localStorage` and parses the JSON string to an object.
+
+    * Check if the todos were retrieved from `localStorage` and if so, set a `todos` variable with the `storedTodos`.
+
+    * Lastly, render the todos to the DOM.
+
+  * Inside the `storeTodos()` function:
+
+    * Stringify and set the "todos" key in `localStorage` to the `todos` array.
+
+  ## Hint
+
+  * You will need to use `JSON.stringify` and `JSON.parse`.
+  ```
+
+### 21. Instructor Do: Review Local Storage Todos (5 mins)
+
+* Open [28-Stu_Local-Storage-Todos/Solved/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/28-Stu_Local-Storage-Todos/Solved/script.js) in your IDE and walk students through the solved code.
+
+* Inside the `init()` function we set a variable called `storedTodos` that retrieves the todos from `localStorage` and parses the JSON string to an object.
+
+  ```js
+  var storedTodos = JSON.parse(localStorage.getItem("todos"));
+  ```
+
+* We then check if the todos were retrieved from `localStorage` and if so, set a `todos` variable with the `storedTodos` and the render the todos to the DOM.
+
+  ```js
+  if (storedTodos !== null) {
+      todos = storedTodos;
+    }
+
+  renderTodos();
+  ```
+
+* Inside our `storeTodos()` function we stringify and set the "todos" key in `localStorage` to the `todos` array.
+
+  ```js
+  localStorage.setItem("todos", JSON.stringify(todos));
+  ```
+
+* Answer any questions before letting students out for break.
+
+### 22. Students Do: Timer App (60 mins)
+
+* Direct students to their final activity of the day located in [29-Stu_Timer-App/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/29-Stu_Timer-App/Unsolved)
+
+```md
+# Tomato Timer
+
+## Instructions
+
+* In this activity, we will be creating a "tomato" timer that allows the user to set a timer with working and resting periods. We will also store the length of each period in local storage so that the user's preferences persist, even if the browser is closed.
+
+* You have been provided with all of the HTML and CSS that you'll need. 
+
+* Begin by opening `index.html` in your browser. Take a moment to identify different elements on the page that will need functionality:
+
+  * Time left display
+
+  * Start button
+
+  * Pause button
+
+  * Stop button
+
+  * Status toggle
+
+* **Part One** Create functions in `script.js` to add support for the following features:
+
+  1. Create a function that initializes the timer by taking the minutes input from the user and setting the `tototalSeconds` variable. Since we'll be using this function to reset as well, clear any existing intervals.
+
+  2. When the timer starts, update the DOM every second to reflect the time left. It is recommended that you create separate functions to properly format the minutes and seconds.
+
+  3. When the timer is finished, alert the user that it is time to take a break.
+
+* **Part Two**: Add functionality to the pause and stop buttons.
+
+  1. The pause button should temporarily stop the timer. This means that if play is pressed again, the timer will continue where it left off.
+
+  2. The stop button should reset the timer. If play is pressed again, the timer should start over.
+
+* **Part Three**: Add the ability to switch back and forth between working time and resting time.
+
+  1. Set up a variable to keep track of which mode the timer is in.
+
+  2. If the timer is in working mode, then it should alert the user "Time for a break!" upon completion.
+
+  3. If the timer is in resting mode, it should alert the user "Time to get back to work!" upon completion.
+
+  4. Whenever the switch is clicked, the DOM should update with the current status, and the timer should reset.
+
+  5. Make sure that the timer is using minutes of work in work mode and minutes of rest, respectively. 
+
+* **Part Four**: Add localStorage to the application
+
+  1. Every time the user starts a timer, the minutes of work and minutes of rest should be saved to localStorage.
+
+  2. Upon page load, the minutes of work and minutes of rest input fields should be initialized to their previously stored values.
+```
+
+### 23. Instructor Do: Review Timer App (10 mins)
+
+* Open [29-Stu_Timer-App/Solved](../../../../01-Class-Content/04-web-apis/01-Activities/29-Stu_Timer-App/Solved/script.js) in your IDE and point out the following key aspects:
+
+  * We create a function called `starTimer`. We will use it to call our `setTime` function.
+  
+  ```js
+  function startTimer() {
+    setTime();
+  ```
+  
+  * We create a `setInterval` function and store it inside a variable called interval.
+
+  ```js
+    interval = setInterval(function() {
+      secondsElapsed++;
+      renderTime();
+    }, 1000);
+  }
+  ```
+
+  * Ask the class, "Why do we store our setInterval into a variable?"
+
+  * So we can clear it later.
+
+  * We create a function call `pauseTimer` which will clear our interval and call our `renderTime` function.
+
+  ```js
+  function pauseTimer() {
+    clearInterval(interval);
+    renderTime();
+  }
+  ```
+
+  * We create a function called `stopTimer`. When this function is invoked we set our secondsElapsed to `0`, and call our `setTime` and `renderTime` functions.
+
+  ```js
+  function stopTimer() {
+    secondsElapsed = 0;
+    setTime();
+    renderTime();
+  }
+  ```
+
+  * We create a `setTimePreferences` function. We use `localStorage.setItem`, naming the key `preferences` and stringifying our work minutes and rest minutes so they can be added into localstorage.
+
+  ```js
+  function setTimePreferences() {
+    localStorage.setItem(
+      "preferences",
+      JSON.stringify({
+        workMinutes: workMinutesInput.value.trim(),
+        restMinutes: restMinutesInput.value.trim()
+      })
+    );
+   ```
+
+  * We create a `getTimePreferences` function. Next we `JSON.Parse` the getting of our `preferences` localstorage item to turn our stringified object back into an object
+
+  ```js
+  function getTimePreferences() {
+    var preferences = JSON.parse(localStorage.getItem("preferences"));
+  ```
+
+* If preferences exists in localstorage and has a key/value pair of `workMinutes` we set our `workMinutesInput.value` to be equal to our preference objects `workMinutes` value.
+
+  ```js
+  if (preferences) {
+    if (preferences.workMinutes) {
+      workMinutesInput.value = preferences.workMinutes;
+    }
+  ```
+  
+  * If preferences instead has no `workMinutes` but has `restMinutes` then we set our `restMinutesInput.value` to be equal to our preference objects `restMinutes` value.
+
+  ```js
+    if (preferences.restMinutes) {
+      restMinutesInput.value = preferences.restMinutes;
+    }
+  }
+  ```
+
+* Answer any remaining questions students may have and end class for the day.
+
+### 24. END (0 mins)
+
+- - -
+
+## Lesson Plan Feedback
 
 How did today’s lesson go? Your feedback is important. Please take 5 minutes to complete this anonymous survey.
 
