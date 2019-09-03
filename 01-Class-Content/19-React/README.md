@@ -14,8 +14,6 @@ In 2013, the developers at Facebook released React, a library that addresses thi
 * JSX
 * JSX variables
 * Props
-* State
-* gh-pages
 
 ## Comprehension Check
 You will be employer-ready if you can answer the following questions:
@@ -30,10 +28,9 @@ You will be employer-competitive if you are able to:
 * Compose functional and stateful components and explain their differences
 * Explain one-way data binding and its relationship to components and props
 * Compose event handlers and update application state based on user form input
-* Build and deploy a static React application to GitHub Pages using gh-pages
 
-## Homework: Clicky Game
-* For this assignment, you'll create a memory game with React. This assignment will require you to break up your application's UI into components, manage component state, and respond to user events.
+## Homework: Employee Directory
+* For this assignment, you'll create a employee directory with React. This assignment will require you to break up your application's UI into components, manage component state, and respond to user events.
 
 ## Helpful Links
 * [Why did we build React?](https://reactjs.org/blog/2013/06/05/why-react.html)
