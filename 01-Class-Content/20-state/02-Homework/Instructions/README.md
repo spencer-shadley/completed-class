@@ -4,7 +4,9 @@ In this assignment, you will be creating a marketplace that allows users to view
 
 ## Instructions
 
+```
 As a customer, I want to be able to search through Best Buy's directory and add items to my shopping cart. Once I'm finished shopping, I want to be able to navigate to my shopping cart and view a short summary of the items that I purchased.
+```
 
 How do you deliver this? Here are some guidelines:
 
