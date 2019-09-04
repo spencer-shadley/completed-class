@@ -1,12 +1,14 @@
-# 04-Day Lesson Plan  Lesson Plan - Intro to Web APIs and Events (10:00 AM) <!--links--> &nbsp; [⬅️]() &nbsp; [➡️]()
+# 2.4 Lesson Plan - Intro to Web APIs and Events (10:00 AM) <!--links--> &nbsp; [⬅️]() &nbsp; [➡️]()
+
+- - -
 
 ## Overview
 
 Todays class will be students first introduction to the DOM. We are going to use web APIs to get elements, set attributes, create elements, append elements, and even work with timers. We will further students' understanding of DOM Manipulation by using events, and prevent default form behaviors.
 
-## Instructor Notes
+## Instructor Notes 
 
-`Complete activities 3-13 in 04-web-apis`
+`Complete activities 8-19 in 04-web-apis`
 
 * This is a critical unit as it introduces real-world use cases for the programming concepts students learned in the previous unit (JavaScript) and will set them up for success when transitioning to front-end frameworks (React) at the end of the course.
 
@@ -20,23 +22,97 @@ Todays class will be students first introduction to the DOM. We are going to use
 
 * By the end of class students will be able to:
 
-  * Use the console to inspect the `window` object via `this`.
-
-  * Use various web APIs to traverse the DOM.
-
-  * Query the DOM for elements by their selector.
-
-  * Use `setAttribute()` to add styles to specific elements.
-
-  * Create an entire HTML page using only JavaScript.
-
   * Use timers/intervals to execute code based on some amount of time passing.
 
   * Use event listeners.
 
   * Prevent default form behavior with `event.preventDefault()`.
 
-### 1. Student Do: Speed Reader (20 mins)
+  * To use event listeners such as click, keydown, and change.
+
+  * Prevent default form behavior with `event.preventDefault()`.
+
+  * Stop the propagation of events. 
+
+  * Dynamically generate DOM elements whose events are delegated.
+
+- - -
+
+### 1. Instructor Do: Timers and Intervals (15 mins)
+
+* Executing code on a timer or interval allows us to set some amount of time to pass between functionality.
+
+* Ask the class, "Where are timers used in applications?"
+
+  * Countdowns
+
+  * Calendars
+
+  * Games
+
+* Navigate to [08-Ins_Timers-Intervals](../../../../01-Class-Content/04-web-apis/01-Activities/08-Ins_Timers-Intervals) and open the `index.html` in your browser. Demo the application to students and point out the following:
+
+  * After the countdown completes, an image is loaded to the browser all without user interaction.
+
+* Ask the class, "What allowed us to do this?"
+
+  * The `setInterval` function allows us to complete code after a specific amount of time has passed.
+
+* Navigate to [08-Ins_Timers-Intervals script.js](../../../../01-Class-Content/04-web-apis/01-Activities/08-Ins_Timers-Intervals/script.js) and open it in your IDE. Explain the following points to students:
+
+  * First we declare our `setInterval` function and assign it to a variable. We will get to why we store it in a variable at the end.
+
+  ```js
+  var timerInterval = setInterval(function() {
+  ```
+
+  * Next, we decrement our `secondsLeft` variable that we initially set to `10`.
+
+  ```js
+  secondsLeft--;
+  ```
+
+  * As each second passes we set the textContent of our `timeEl` to display the `secondsLeft` variable concatenated with a string. If our `secondsLeft` is 0, we then `clearInterval` and execute our `sendMessage` function.
+
+  ```js
+  timeEl.textContent = secondsLeft + " seconds left till colorsplosion.";
+  if(secondsLeft === 0) {
+    clearInterval(timerInterval);
+    sendMessage();
+  }
+  ```
+
+* Sometimes programmers want functionality to happen after a set period of time, and not all right away. We use timers to achieve this result.
+
+* `setTimeout` and `setInterval` are two methods that allow for us to execute code based on time.
+
+  * These two methods are actually above the `document` object and are attached directly to the `window`.
+
+* When using either of these timer methods, The first parameter is a function to be executed. The second parameter indicates the amount of time in milliseconds before execution.
+
+  ```js
+  setTimeout(function(){
+    console.log("complete");
+  }, 1000);
+
+  setInterval(function(){
+    console.log("this will show every second");
+  }, 1000)
+  ```
+
+* `setTimeout` will execute the body of the function one time, once the allotted amount of time has passed.
+
+  * `setInterval` will execute the body of the function every X amount of milliseconds as specified in the second argument to the `setInterval` function.
+
+* Ask the class why they think we might need to clear an interval that we started.
+
+  * If we do not `clearInterval`, the interval would continue to run indefinitely. We stored our `setInterval` function in a variable so we could pass that instance into our `clearInterval`, stopping execution.
+
+  * `setTimeout` has its own method for stopping execution, `clearTimeout`.
+
+* Answer any questions students may have about the demo. 
+
+### 2. Student Do: Speed Reader (35 mins)
 
 * Direct students to the final activity of class, in [09-Stu_SpeedReader](../../../../01-Class-Content/04-web-apis/01-Activities/09-Stu_SpeedReader/Unsolved).
 
@@ -58,7 +134,7 @@ In this activity you are going to create a speed reading application. It will in
 * Fill out the necessary code that would create a countdown timer. When that timer completes, it should dissapear and speed reading should begin.
 ```
 
-### 2. Instructor Do: Review Speed Reader (10 mins)
+### 3. Instructor Do: Review Speed Reader (10 mins)
 
 * Navigate to [09-Stu_SpeedReader/Solved](../../../../01-Class-Content/04-web-apis/01-Activities/09-Stu_SpeedReader/Solved)
 
@@ -111,7 +187,7 @@ In this activity you are going to create a speed reading application. It will in
   }
   ```
 
-### 3. Instructor Do: Demo Events (5 min)
+### 4. Instructor Do: Demo Events (10 min)
 
 * Open [fs-ground-04-web-APIs-event-demo](https://coding-boot-camp.github.io/fs-ground-04-web-APIs-event-demo/) and demonstrate the application functionality:
 
@@ -131,7 +207,7 @@ In this activity you are going to create a speed reading application. It will in
 
   * Use student answers to transition to the next activity.
 
-### 4. Instructor Do: Pseudocode Modal Demo (10 min)
+### 5. Instructor Do: Pseudocode Modal Demo (10 min)
 
 * Open a new (blank) file in your IDE and lead students in outlining the steps to build the modal activity in pseudocode. Refer to the following pseudocode example. There is no one *right* solution. The purpose of this activity is to reinforce problem solving strategies and prepare students for technical interview questions.
 
@@ -173,7 +249,7 @@ In this activity you are going to create a speed reading application. It will in
 
 * Use student answers to transition to the next demo.
 
-### 5.  Instructor Do: On Click Demo  (10 min)
+### 6.  Instructor Do: On Click Demo  (10 min)
 
 * Open [10-Ins_Onclick/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/10-Ins_Onclick/index.html) in the browser and demonstrate its functionality:
 
@@ -204,7 +280,7 @@ In this activity you are going to create a speed reading application. It will in
   });
   ```
 
-### 6.  Students Do: addEventListener (15 min)
+### 7.  Students Do: addEventListener (15 min)
 
 * Direct students to the next activity, found in [11-Stu_Onclick/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/11-Stu_Onclick/Unsolved)
 
@@ -226,164 +302,7 @@ In this activity, we are going to create a button that increments a counter when
 * Add some code to ensure that the count never gets below 0.
 ```
 
-### 7. Instructor Do: Review OnClick (10 min)
-
-* Open the file [11-Stu_Onclick/Solved/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/11-Stu_Onclick/Solved/index.html) in the browser.
-
-  * Clicking on the increment or decrement buttons raises or lowers our number dependant on which button we click.
-
-  * The count in the middle gets updated every time the button gets pressed.
-
-  * The count never falls below 0.
-
-* Open [11-Stu_Onclick/Solved/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/11-Stu_Onclick/Solved/script.js) in your IDE.
-
-  * We initialize global variables for `count` variable, `incrementEl`, and the `decrementEl` elements in DOM.
-
-  ```js
-  var count = 0;
-  var incrementEl = document.querySelector("#increment");
-  var decrementEl = document.querySelector("#decrement");
-  ```
-
-  * The second argument of `addEventListener` is an anonymous callback function. This function will execute the body of the callback each time the event is triggered.
-
-  ```js
-  incrementEl.addEventListener("click", function() {
-    count++;
-    setCounterText();
-  });
-  ```
-
-  * 🗒 Note that many students may have appended the count to the page inline instead of breaking it out into its own function.
-
-  * To complete the bonus we need a conditional that ensures that the count only decrements if the current value is greater than 0.
-
-  ```js
-  decrementEl.addEventListener("click", function() {
-    if(count > 0) {
-      count--;
-      setCounterText();
-    }
-  });
-  ```
-
-### 8. Instructor Do: Demo Events (5 min)
-
-* Open [fs-ground-04-web-APIs-event-demo](https://coding-boot-camp.github.io/fs-ground-04-web-APIs-event-demo/) and demonstrate the application functionality:
-
-  * We can add people to the list.
-  
-  * Clicking `edit` next to any name opens a modal.
-
-  * We can add details about the person and `save` the data.
-
-  * We can return to any person on the list, and see that the details are still there. 
-
-  * 📝 Our form is not routing us to a new page! How?
-
-* Ask the class the following question(s):
-
-  * "How would we build this application?"
-
-  * Use student answers to transition to the next activity.
-
-### 9. Instructor Do: Pseudocode Modal Demo (10 min)
-
-* Open a new (blank) file in your IDE and lead students in outlining the steps to build the modal activity in pseudocode. Refer to the following pseudocode example. There is no one *right* solution. The purpose of this activity is to reinforce problem solving strategies and prepare students for technical interview questions.
-
-* Ask the class the following question(s):
-
-  * "What is the first thing our app needs so a user can add another user to the list?"
-
-  * We need an input field for `name`.
-
-  * We need some way to gather the data from `name` when `Add Person` is pressed.
-
-* Ask the class the following question(s):
-
-  * "When a user adds a new user to the HTML form and clicks `Add Person`, what happens next?"
-
-  * We need to dynamically create a new list item.
-
-  * We append an `edit` button to that new list item.
-
-  * Then we append the new list item to the main people list.
-
-* Ask the class the following question(s):
-
-  * "What needs to happen when a user clicks the "edit" button?"
-
-  * The modal needs to display on the page, and the contents of the modal should populate with details about the person that we clicked.
-
-* Ask the class the following question(s):
-
-  * "What needs to happen when a user clicks the `save` button?"
-
-  * The modal needs to disappear.
-
-  * We need some way of keeping track of which person has which description.
-
-* Ask the class the following question(s):
-
-  * 'How can we make our web applications more interactive?'
-
-* Use student answers to transition to the next demo.
-
-### 10  Instructor Do: On Click Demo  (5 min)
-
-* Open [10-Ins_Onclick/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/10-Ins_Onclick/index.html) in the browser and demonstrate its functionality:
-
-  * When we click on the toggle switch, the background color of the navigation and the footer both change colors.
-
-* Open [10-Ins_Onclick/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/10-Ins_Onclick/script.js) in your IDE and point out the following:
-
-  * We assign each queried element to a variable so that we can reuse it.
-
-  ```js
-  var themeSwitcher = document.querySelector("#theme-switcher");
-  var container = document.querySelector(".container");
-  ```
-
-  * `addEventListener` is the DOM method responsible for listening to events on an element.
-
-  * `addEventListener` has 2 required parameters: The type of event to listen for and a callback function to execute when that event is triggered.
-
-  ```js
-  themeSwitcher.addEventListener("click", function() {
-    if (mode === "dark") {
-      mode = "light";
-      container.setAttribute("class", "light");
-    } else {
-      mode = "dark";
-      container.setAttribute("class", "dark");
-    }
-  });
-  ```
-
-### 11.  Students Do: addEventListener (15 min)
-
-* Direct students to the next activity, found in [11-Stu_Onclick/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/11-Stu_Onclick/Unsolved)
-
-```md
-# addEventListener On Click
-
-In this activity, we are going to create a button that increments a counter when clicked.
-
-## Instructions
-
-* In a file called `index.html`, create a button containing the string "Increment".
-
-* In a file called `script.js`, create an event listener with a callback that increments the counter and displays the updated count on the webpage.
-
-* Add a button that decrements the counter when clicked.
-
-## Bonus
-
-* Add some code to ensure that the count never gets below 0.
-```
-
-### 12. Instructor Do: Review OnClick (5 min)
+### 8. Instructor Do: Review OnClick (5 min)
 
 * Open the file [11-Stu_Onclick/Solved/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/11-Stu_Onclick/Solved/index.html) in the browser.
 
@@ -425,168 +344,7 @@ In this activity, we are going to create a button that increments a counter when
   }); 
   ```
 
-* Open [fs-ground-04-web-APIs-event-demo](https://coding-boot-camp.github.io/fs-ground-04-web-APIs-event-demo/) and demonstrate the application functionality:
-
-  * We can add people to the list.
-  
-  * Clicking `edit` next to any name opens a modal.
-
-  * We can add details about the person and `save` the data.
-
-  * We can return to any person on the list, and see that the details are still there. 
-
-  * 📝 Our form is not routing us to a new page! How?
-
-* Ask the class the following question(s):
-
-  * "How would we build this application?"
-
-  * Use student answers to transition to the next activity.
-
- 2. Instructor Do: Pseudocode Modal Demo (10 min)
-
-* Open a new (blank) file in your IDE and lead students in outlining the steps to build the modal activity in pseudocode. Refer to the following pseudocode example. There is no one *right* solution. The purpose of this activity is to reinforce problem solving strategies and prepare students for technical interview questions.
-
-* Ask the class the following question(s):
-
-  * "What is the first thing our app needs so a user can add another user to the list?"
-
-  * We need an input field for `name`.
-
-  * We need some way to gather the data from `name` when `Add Person` is pressed.
-
-* Ask the class the following question(s):
-
-  * "When a user adds a new user to the HTML form and clicks `Add Person`, what happens next?"
-
-  * We need to dynamically create a new list item.
-
-  * We append an `edit` button to that new list item.
-
-  * Then we append the new list item to the main people list.
-
-* Ask the class the following question(s):
-
-  * "What needs to happen when a user clicks the "edit" button?"
-
-  * The modal needs to display on the page, and the contents of the modal should populate with details about the person that we clicked.
-
-* Ask the class the following question(s):
-
-  * "What needs to happen when a user clicks the `save` button?"
-
-  * The modal needs to disappear.
-
-  * We need some way of keeping track of which person has which description.
-
-* Ask the class the following question(s):
-
-  * 'How can we make our web applications more interactive?'
-
-* Use student answers to transition to the next demo.
-
-### 13.  Instructor Do: On Click Demo  (5 min)
-
-* Open [10-Ins_Onclick/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/10-Ins_Onclick/index.html) in the browser and demonstrate its functionality:
-
-  * When we click on the toggle switch, the background color of the navigation and the footer both change colors.
-
-* Open [10-Ins_Onclick/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/10-Ins_Onclick/script.js) in your IDE and point out the following:
-
-  * We assign each queried element to a variable so that we can reuse it.
-
-  ```js
-  var themeSwitcher = document.querySelector("#theme-switcher");
-  var container = document.querySelector(".container");
-  ```
-
-  * `addEventListener` is the DOM method responsible for listening to events on an element.
-
-  * `addEventListener` has 2 required parameters: The type of event to listen for and a callback function to execute when that event is triggered.
-
-  ```js
-  themeSwitcher.addEventListener("click", function() {
-    if (mode === "dark") {
-      mode = "light";
-      container.setAttribute("class", "light");
-    } else {
-      mode = "dark";
-      container.setAttribute("class", "dark");
-    }
-  });
-  ```
-
-### 14.  Students Do: addEventListener (15 min)
-
-* Direct students to the next activity, found in [11-Stu_Onclick/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/11-Stu_Onclick/Unsolved)
-
-```md
-# addEventListener On Click
-
-In this activity, we are going to create a button that increments a counter when clicked.
-
-## Instructions
-
-* In a file called `index.html`, create a button containing the string "Increment".
-
-* In a file called `script.js`, create an event listener with a callback that increments the counter and displays the updated count on the webpage.
-
-* Add a button that decrements the counter when clicked.
-
-## Bonus
-
-* Add some code to ensure that the count never gets below 0.
-```
-
-### 15. Instructor Do: Review OnClick (5 min)
-
-* Open the file [11-Stu_Onclick/Solved/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/11-Stu_Onclick/Solved/index.html) in the browser.
-
-  * Clicking on the increment or decrement buttons raises or lowers our number dependant on which button we click.
-
-  * The count in the middle gets updated every time the button gets pressed.
-
-  * The count never falls below 0.
-
-* Open [11-Stu_Onclick/Solved/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/11-Stu_Onclick/Solved/script.js) in your IDE.
-
-  * We initialize global variables for `count` variable, `incrementEl`, and the `decrementEl` elements in DOM.
-
-  ```js
-  var count = 0;
-  var incrementEl = document.querySelector("#increment");
-  var decrementEl = document.querySelector("#decrement");
-  ```
-
-  * The second argument of `addEventListener` is an anonymous callback function. This function will execute the body of the callback each time the event is triggered.
-
-  ```js
-  incrementEl.addEventListener("click", function() {
-    count++;
-    setCounterText();
-  });
-  ```
-
-  * 🗒 Note that many students may have appended the count to the page inline instead of breaking it out into its own function.
-
-  * To complete the bonus we need a conditional that ensures that the count only decrements if the current value is greater than 0.
-
-  ```js
-  decrementEl.addEventListener("click", function() {
-    if(count > 0) {
-      count--;
-      setCounterText();
-    }
-  }); 
-  ```
-
-  - - -
-
-### 16. Everyone Do: BREAK (30 min)
-
-- - -
-
-### 17. Instructor Do: Intro to event.preventDefault (10 min)
+### 9. Instructor Do: Intro to event.preventDefault (10 min)
 
 * We will be spending some more time with forms. We will be learning about how to prevent some of the default form behavior so that we can manipulate data before sending it to a server.
 
@@ -653,7 +411,13 @@ In this activity, we are going to create a button that increments a counter when
 
 * Answer any questions before moving onto the next activity.
 
-### 18. Student Do: Tip Calculator (15 min)
+- - -
+
+### 10. Break (30 mins)
+
+- - -
+
+### 11. Student Do: Tip Calculator (15 min)
 
 * Direct students to the next activity, found in[13-Stu_Preventing_Default_Events/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/13-Stu_Preventing_Default_Events/Unsolved)
 
@@ -685,7 +449,7 @@ In this activity, we are going to create a form that calculates a suggested tip 
 * In JavaScript, we have a function that rounds a number to a given point called `toFixed()`. For more information, visit the docs at [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed)
 ```
 
-### 19. Instructor Do: Review Tip Calculator (5 min)
+### 12. Instructor Do: Review Tip Calculator (5 min)
 
 * Navigate to [13-Stu_Preventing_Default_Events/Solved/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/13-Stu_Preventing_Default_Events/Solved/index.html) and open it in your browser.
 
@@ -792,7 +556,7 @@ In this activity, we are going to create a form that calculates a suggested tip 
   <h2>Each person will pay: <span id="split-total"></span></h2>
   ```
 
-### 20. Instructor Do: Demo key events (5 min)
+### 13. Instructor Do: Demo key events (5 min)
 
 * Open [14-Ins_Other_Events/index.html](../../../../01-Class-Content/04-Web-APIs/01-Activities/14-Ins_Other_Events/index.html) in your browser.
 
@@ -889,7 +653,7 @@ In this activity, we are going to create a form that calculates a suggested tip 
   });
   ```
 
-### 21. Student Do: Listening For Other Events (15 min)
+### 14. Student Do: Listening For Other Events (15 min)
 
 * Direct students to the next activity, found in [15-Stu_Other_Events/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/15-Stu_Other_Events/Unsolved)
 
@@ -915,7 +679,7 @@ In this activity, we are going to create a form that calculates a suggested tip 
 * If time permits, take a moment to research some other JavaScript events.
 ```
 
-### 22. Instructor Do: Review Other Events (5 min)
+### 15. Instructor Do: Review Other Events (5 min)
 
 * Open [15-Stu_Other_Events/Solved/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/15-Stu_Other_Events/Solved/index.html) in your browser.
 
@@ -960,7 +724,7 @@ In this activity, we are going to create a form that calculates a suggested tip 
 
 * Answer any remaining questions and let students out for break.
 
-### 23. Instructor Do: Demo Event Bubbling and Propagation (10 min)
+### 16. Instructor Do: Demo Event Bubbling and Propagation (10 min)
 
 * Open [16-Ins_Event_Bubbling/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/16-Ins_Event_Bubbling/index.html) in your IDE and point out the following: 
 
@@ -994,7 +758,7 @@ In this activity, we are going to create a form that calculates a suggested tip 
 
   * If students are having a tough time grasping this concept, try commenting out every `stopPropagation` call except for the second from outermost call. Then open the page in your browser and click on the innermost button.
 
-### 24. Student Do: Event Bubbling (15 min)
+### 17. Student Do: Event Bubbling (20 min)
 
 * Direct students to the next activity, found in [17-Stu_Event_Bubbling/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/17-Stu_Event_Bubbling/Unsolved)
 
@@ -1014,7 +778,7 @@ In this activity, we are going to create an image carousel that allows us to cyc
   3. When the user clicks on an image, they will be navigated to the url that hosts that image.
 ```
 
-### 25. Instructor Do: Review Event Bubbling (5 min)
+### 18. Instructor Do: Review Event Bubbling (5 min)
 
 * Open [17-Stu_Event_Bubbling/Solved/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/17-Stu_Event_Bubbling/Solved/index.html) in the browser.
 
@@ -1079,8 +843,127 @@ In this activity, we are going to create an image carousel that allows us to cyc
   navigate(0);
   ```
 
+### 19. Instructor Do: Event Delegation Demo (10 min)
 
-### 26. END (0 mins)
+* So far we've been manually assigning click listeners to each individual element. Prompt the students with the following question: 
+
+  * What if we need to assign event listeners to several objects on the page? Is there a way that we can easily handle all of these events without duplicating code?
+
+  * Students may reply with a `for` loop. This would work, but it still requires us to create several event listeners.
+
+* Show the students the code in `index.html` but do not open `script.js` yet.
+
+* Then, open `index.html` in the browser and add a couple of items to the shopping cart.
+
+  * Ask the students what JavaScript code they think is necessary for this behavior. Specifically, ask them where they would set up the event listeners.
+
+  * Students may suggest that the event listener is added to each button. 
+
+* Open `script.js` and direct students to the `addEventListener` line. 
+
+  * Note that the event listener was added to the entire list. Then, within the callback, we determine whether or not the clicked item was a button or not by using `event.target.nodeName`. This technique is known as **event delegation**. 
+
+  * Instead of writing a for loop and adding event listeners to every button element, we added an event listener to its parent element. Not only does this simplify our code, but in some cases, it reduces the need for `event.stopPropagation`. Ex: If click events from a child element is triggering the event on its parent, we can set up a conditional that identifies the `target`, then executes a callback accordingly.
+
+  * 🗒 Be sure to mention that event delegation is the technique of listening for events on a parent element, then **delegating** those events differently, depending on the target.
+
+  ```js
+  var listEl = document.querySelector("#grocery-list");
+  var shoppingCartEl = document.querySelector("#shopping-cart");
+  var groceries = ["Bananas", "Apples", "Oranges", "Grapes", "Blueberries"];
+
+  listEl.addEventListener("click", function(event) {
+    event.preventDefault();
+    if(event.target.matches("button")) {
+      var item = document.createElement("div");
+      item.textContent = groceries[parseFloat(event.target.parentElement.id)];
+      shoppingCartEl.append(item);
+    }
+  });
+  ```
+
+### 20. Student Do: Event Delegation (20 min)
+
+* Direct students to the next activity, found in [19-Stu_Event_Delegation/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/19-Stu_Event_Delegation/Unsolved)
+
+```md
+# Event Delegation
+
+## Instructions
+
+* In this activity, we are going to create a friends list that allows us to edit information about that friend in a modal.
+
+* Take a moment to study the code in `index.html`. You will not need to add any additional code to this file. Additionally, all of the CSS has been provided.
+
+* In `script.js`, add support the following features: 
+
+  1. When the `Add Person` button is clicked, the person should be added to both the people array and the list elements.
+
+  2. If `edit` is clicked, event delegation should be used to handle the click event.
+
+  3. When the user clicks on edit, the modal should appear with the modal header property already populated with the person's name. If a description exists, the textarea should be populated with the person's description. If not, the description should be left blank.
+
+  4. When the `save` button is clicked, the description of the current person should be updated in the people array.
+
+## Bonus
+
+* Use event delegation to make the modal close if the user clicks away from the modal.
+```
+
+### 21. Instructor Do: Review Event Delegation (10 min)
+
+* Take a moment to demonstrate the app, just as you did in the beginning of class.
+
+  * Open [19-Stu_Event_Delegation/Solved/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/19-Stu_Event_Delegation/Solved/index.html) in your browser.
+
+  * Add a person to the list, this time note that doing so adds a person to an array in our JavaScript file, then appends a new HTML element, `li`, to the page.
+
+  * Save the data, then edit a different person. 
+
+  * Return to the person you first editted, and mention that the data is still there.
+
+* Open [19-Stu_Event_Delegation/Solved/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/19-Stu_Event_Delegation/Solved/script.js) and explain the following functions:
+
+  * In `handleClick`, we check to see if the element clicked is a `span`. This is sufficient because this is the only span element on the page at this time.
+
+  * Then we set up variables for the name and description of the person that we clicked on.
+
+  * The `textContent` of the modal header is set to the name and the value of the description textarea is set to any existing description. The logical OR operator ensures that the description is set to an empty string if the value in our array is undefined. 
+
+  ```js
+  function handleClick(event) {
+    if (event.target.matches("span")) {
+      modalEl.style.display = "block";
+      currentId = parseInt(event.target.parentElement.id);
+      var name = people[currentId].name;
+      var description = people[currentId].description;
+      modalNameEl.textContent = name;
+      descriptionEl.value = description || "";
+    }
+  }
+  ```
+
+  * Remind students that `save` isn't actually persisting the data in a database. We are simply updating the description property of the current person in our people array. This data will remain until we close the browser or reload the page.
+
+  ```js
+  saveBtn.addEventListener("click", function(event) {
+    event.preventDefault();
+    people[currentId].description = descriptionEl.value;
+    close();
+  });
+  ```
+
+  * To setup the behavior to close when the modal is clicked away from, we add an event listener to the document object. We use event delegation to check if the element clicked is the modal container. If so, we close the modal.
+
+  ```js
+  document.addEventListener("click", function(event) {
+    if (event.target === modalEl) {
+      close();
+    }
+  });
+  ```
+
+### 22. End (0 min)
 
 ### Lesson Plan Feedback
 
