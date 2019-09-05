@@ -75,11 +75,21 @@ How do you deliver this? Here are some guidelines:
 
 * Functional, deployed application.
 
-* GitHub repository with README describing project.
+* GitHub repository with a unique name and a README describing the project.
 
 * User can search for weather reports by city using the openweathermap API.
 
-* After searching for a city, the following information is displayed: current temperature, current humidity, windspeed, uv index, and 5 day forecast.
+* After searching for a city, the following information is displayed:
+
+  *  Current temperature
+
+  *  Current humidity
+
+  *  Windspeed
+
+  *  Uv index
+
+  *  5 day forecast
 
 * Application uses icons to represent weather conditions.
 
