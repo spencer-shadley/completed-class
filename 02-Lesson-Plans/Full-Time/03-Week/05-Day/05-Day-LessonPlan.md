@@ -1,19 +1,12 @@
-## 05-Day Lesson Plan - Real-World API Application Development <!--links--> &nbsp; [⬅️](../04-Day/04-Day-LessonPlan.md) &nbsp; [➡️](../../04-Week/01-Day/01-Day-LessonPlan.md)
+# 4.5 Lesson Plan - Real-World API Application Development (10:00 AM) <!--links--> &nbsp; [⬅️](../02-Day/02-LESSON-PLAN.md) &nbsp; [➡️](../../07-Week/01-Day/01-LESSON-PLAN.md)
 
-### Overview
+## Overview
 
 In this class, we will be culminating our introduction of APIs with a team-based "real-world" activity in which students create a New York Times Archive Search Application.
 
 `Overview: Complete activities 12-16 in Unit 06`
 
-##### Instructor Priorities
-
-* Students should be praised for their progress so far -- they've just completed the front-end portion of our class!
-* Students should complete each of the mini Ajax exercises in preparation for their homework assignment
-* Students should be exposed to the idea of working in feature teams to complete a project.
-* Students should be pushed to create a semi-complex "real-world" application that utilizes APIs
-
-##### Instructor Notes
+## Instructor Notes
 
 * Today's class is composed of two parts:
 
@@ -26,23 +19,27 @@ In this class, we will be culminating our introduction of APIs with a team-based
 
 * Note to Instructors: The API for the New York Times has been going through a series of revamps since this lesson plan was created. The concepts and routes are the same, but the the documentation interface has changed. Be prepared to be flexible.
 
-* TAs should reference [05-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1ALlADJZDEeiubfb3l-Lspa3T_XavDk3h/view?usp=sharing) to help keep track of time during class.
-
-### Sample Class Video (Highly Recommended)
-* To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e47e9e10-e6bd-4fd5-bce7-6f7d630fd936)
-
-- - -
-
-### Class Objectives
+## Learning Objectives
 
 * To further build mastery of dynamic element generation and AJAX calls
+
 * To provide "real-world" application development scenario that requires collaborative coding
 
+## Slides
+
+* N/A
+
+## Time Tracker
+
+[Unit 06 Server Side APIs Day 3 Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1cKEvNJfuPjDYE7kIgcGN1Znt8GvxCftS/view?usp=sharing) to help keep track of time during class.
+
 - - -
+
+## Class Instruction
 
 ### 1. Instructor Do: Congratulatory Monologue on Full-Stack (5 min)
 
-* Take a few moments at the start of class to offer students a few congratulatory words. They've undergone over 3 weeks of grueling (and often frustrating) work -- and are probably feeling a bit burnt out. Re-invigorate them! Let them know that the rate of their progress is astounding! And that they've learned in just a few short weeks what a self-taught developer might have taken months to learn.
+* Take a few moments at the start of class to offer students a few congratulatory words. They've undergone over 6 weeks of grueling (and often frustrating) work -- and are probably feeling a bit burnt out. Re-invigorate them! Let them know that the rate of their progress is astounding! And that they've learned in just a few short weeks what a self-taught developer might have taken months to learn.
 
 * Give students a few moments to ask questions. Encourage them to ask questions about anything -- code, career, anxiety. Build a rapport here!
 
@@ -137,7 +134,7 @@ In this class, we will be culminating our introduction of APIs with a team-based
 
 ### 6. Partners Do: Creating Elements Dynamically (15 min)
 
-* Next open [14-DynamicElements/Solved/dynamic-elements-solution.html](../../../../01-Class-Content/06-ajax/01-Activities/14-DynamicElements/Solved/dynamic-elements-solution.html) and demonstrate the application in the browser.
+* Next open [14-DynamicElements/Solved/dynamic-elements-solution.html](../../../../01-Class-Content/06-ajax/01-Activities/14-DynamicElements/Solved/dynamic-elements-solution.html)  and demonstrate the application in the browser.
 
 * Point out the application (similarly to the last exercise) allows you to trigger gifs about animals.
 
@@ -146,6 +143,7 @@ In this class, we will be culminating our introduction of APIs with a team-based
 * **Folder:**
 
   * [14-DynamicElements/Unsolved](../../../../01-Class-Content/06-ajax/01-Activities/14-DynamicElements/Unsolved)
+
 
 * **Instructions:**
 
@@ -171,7 +169,7 @@ In this class, we will be culminating our introduction of APIs with a team-based
 
 * Slack out the [video review](https://www.youtube.com/watch?v=UVBmX4cZkHY) for the activity.
 
-### 8. Everyone Do: Reiterate Concepts (10 min)
+### 8. Everyone Do: Reiterate Concepts (15 min)
 
 * Spend a few moments re-iterating the high-level concepts we've been discussing in class.
 
@@ -207,7 +205,7 @@ In this class, we will be culminating our introduction of APIs with a team-based
 
   * Using the comments provided in the code, add in the code necessary to provide stop/start animation to your application.
 
-### 10. Instructor Do: Review Pausing Gifs (5 min)
+### 10. Instructor Do: Review Pausing Gifs (10 min)
 
 * Open the [15-PausingGifs/Solved/pausing-gifs-solution.html](../../../../01-Class-Content/06-ajax/01-Activities/15-PausingGifs/Solved/pausing-gifs-solution.html) file in your editor and walk students through the solution.
 
@@ -217,17 +215,17 @@ In this class, we will be culminating our introduction of APIs with a team-based
 
     ![5-Pause](Images/5-Pause.png)
 
-### 11. Instructor Do: NYT Group Formation (5 min)
+### 11. Instructor Do: NYT Group Formation (10 min)
 
 * Finally, break students into groups of four (with two students from each section). Before going on break, have students sign up for a New York Times API key via the following url: <https://developer.nytimes.com/signup>. It only takes a minute to sign up, but can take up to 10 minutes for a registered API key to be emailed, so it's best to take care of this before going on break.
 
 - - -
 
-### 12. LUNCH BREAK (30 min)
+### 12. BREAK (30 min)
 
 - - -
 
-### 13. Students Do: NYT Example Intro (10 min)
+### 13. Students Do: NYT Example Intro (15 min)
 
 * Re-introduce the NYT Article Search Application by visiting this link [nytarticle-search-fsf.herokuapp.com](https://nytarticle-search-fsf.herokuapp.com/).
 
@@ -322,7 +320,7 @@ In this class, we will be culminating our introduction of APIs with a team-based
 
 * Continue helping students throughout this process. Be prepared to help students at very different levels in the process. Look back at the solution throughout the process as needed.
 
-### 16. Students Do: NYT Example - Bug Cases (25 min)
+### 16. Students Do: NYT Example - Bug Cases (30 min)
 
 * After time, let students know that they should ideally be working on bug handling.
 
@@ -376,17 +374,9 @@ In this class, we will be culminating our introduction of APIs with a team-based
 
 * Finally, slack students the following YouTube URL so they can watch a [video solution for the NYT App](https://www.youtube.com/watch?v=QiIlhmeGYuk).
 
+### 19. END (0 mins)
 
-### 19. Introduce the Unit Video Guide (3 mins)
-
-* Emphasize how helpful a tool these videos can be if a student feels as if they are falling behind or simply wants to review the material once again.
-
-* [Video Guide](../../../../01-Class-Content/05-timers/VideoGuide.md)
-
-* [Video Guide](../../../../01-Class-Content/06-ajax/VideoGuide.md)
-
-
-# Instructor Do: Private Self-Reflection (0 min)
+### Instructor Do: Private Self-Reflection (0 min)
 
 Take some time on your own after class to think about the following questions. If there's anything that you're not sure how to answer, feel free to reach out to the curriculum team!
 
@@ -398,11 +388,8 @@ Take some time on your own after class to think about the following questions. I
 6. What evidence can I collect to show my students are understanding?
 7. How will my students know they are getting it?
 
-
 ### Lesson Plan Feedback
 
-How did today's class go?
+How did today’s lesson go? Your feedback is important. Please take 5 minutes to complete this anonymous survey.
 
-[Went Well](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=ft&sentiment=positive&lesson=03.05)
-
-[Went Poorly](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=ft&sentiment=negative&lesson=03.05)
+[Class Survey](https://forms.gle/nYLbt6NZUNJMJ1h38)
