@@ -570,6 +570,8 @@ In this activity you are going to use DOM methods to create an entire HTML page.
 
 ### Lesson Plan Feedback
 
-How did today’s lesson go? Your feedback is important. Please take 5 minutes to complete this anonymous survey.
+How did today's class go?
 
-[Class Survey](https://forms.gle/nYLbt6NZUNJMJ1h38)
+[Went Well](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=ft&sentiment=positive&lesson=02.03)
+
+[Went Poorly](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=ft&sentiment=negative&lesson=02.03)
