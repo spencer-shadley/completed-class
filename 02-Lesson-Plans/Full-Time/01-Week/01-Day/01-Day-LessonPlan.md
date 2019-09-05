@@ -1,33 +1,18 @@
 ## 1.1 Lesson Plan - The Zen of Coding (10:00 AM) <!--links--> &nbsp;  &nbsp; [➡️](../02-Day/02-Day-LessonPlan.md)
 
-### Slideshow
-
-* This lesson's slides are available on Google Drive here: [01-1 The Zen of Coding](https://docs.google.com/presentation/d/1GDnp_iOyLS4PfZKapMaXeqkQakY8iHiAEIqv3Hz5_aE/edit?usp=sharing)
-
-* To add slides to the student-facing repository, download the slides as a PDF by navigating to File > "Download as" and choose "PDF document." Add the slide PDF file to your class repository along with other necessary files.
-
-* **Note:** Editing access is not available for this document. If you wish to modify the slides, please create a copy by navigating to File > "Make a copy...".
-
-- - -
-
-### Overview
-
-
-##### Instructor Priorities
-
-* Students will have each of the following installed and ready to use: Git, Heroku, Node, Visual Studio Code, and Slack.
-* Students will be exposed to the basic bash/terminal commands: `cd`, `ls`, and `mkdir`.
-* Students will complete the "My First HTML Page" activity.
-* Students will understand the utility of version control (handling conflicts + reverting bad code).
-* Students will complete the Git exercise.
-
-##### Instructor Notes
+## Overview
 
 * First off, welcome and thank you so much for being a part of our program! Thanks to instructors/TAs like yourself, we're helping hundreds of students across the world achieve their career goals and their creative dreams. You have plenty of time to work with these students, and their progress will astound you. Buckle in! You're in for a fun ride!
 
 * Today's class is all about making students feel comfortable. Today is just the first of many days where some of your students will seem "lost". Make sure they know that you are there for them from Day 1 and that they can succeed if they persist through the challenges.
 
+## Instructor Notes
+
 * Use the [ZenOfCoding Slide Deck](https://docs.google.com/presentation/d/1GDnp_iOyLS4PfZKapMaXeqkQakY8iHiAEIqv3Hz5_aE/edit?usp=sharing) provided as an initial guide for today's class. During the first few units of the class, we'll be using slide decks more extensively to give students a sense of structure. As we move further into the course, slide decks will be used less frequently as we dive into a more code-centric approach. Feel free to modify the slides to your own style, but be sure to cover the same activities.
+
+* To add slides to the student-facing repository, download the slides as a PDF by navigating to File > "Download as" and choose "PDF document." Add the slide PDF file to your class repository along with other necessary files.
+
+* **Note:** Editing access is not available for this document. If you wish to modify the slides, please create a copy by navigating to File > "Make a copy...".
 
 * Feel free to add in your own slides to include your bio and any projects or applications you've worked on.
 
@@ -57,22 +42,26 @@
 
 * There's a ton of material to cover here, but adjust it as necessary. Just make sure you leave enough time for the critical activities as this is essential for keeping classes in sync across sections.
 
-* Have your TAs reference [01-Day-TimeTracker](https://docs.google.com/spreadsheets/d/1q6IWOA9IWVEAVZDgITp6uDk0wMDm_yVSHqM6CtPEvSk/edit?usp=sharing) to help keep track of time during class.
-
-### Sample Class Video (Highly Recommended)
+## Sample Class Video (Highly Recommended)
 
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=de3c75c1-3446-47a5-9546-8e05cbdee2a7)
 
-- - -
+## Learning Objectives
 
-### Class Objectives
+* Give students time to introduce themselves to one another and the instructional team
+* Confirm that students have completed all required pre-work (software + tools installation)
+* Practice basic terminal/bash commands
+* Create a basic HTML page
+* Articulate the value of Git version control
+* Gain initial exposure to the concept of "adding, committing, and pushing" code to GitHub
 
-* To allow students time to introduce themselves to one another and the instructional team
-* To confirm that students have completed all required pre-work (software + tools installation)
-* To introduce basic terminal/bash commands
-* To create a basic HTML page
-* To understand the value of Git version control
-* To gain initial exposure to the concept of "adding, committing, and pushing" code to GitHub
+## Slides
+
+* [1.1 The Zen of Coding](https://docs.google.com/presentation/d/16w9IckM1lvu3L6qATB1XnkJU1bwNnVtQjXJNPfj9lDc/edit?usp=sharing)
+
+## Time Tracker
+
+[1.1 Time Tracker](https://docs.google.com/spreadsheets/d/1q6IWOA9IWVEAVZDgITp6uDk0wMDm_yVSHqM6CtPEvSk/edit?usp=sharing)
 
 - - -
 
@@ -84,7 +73,7 @@
 
 ### 2. Instructor Do: Begin Slide Deck + Introductions (15 mins)
 
-* Open the slide deck [01-1 The Zen of Coding](https://docs.google.com/presentation/d/1GDnp_iOyLS4PfZKapMaXeqkQakY8iHiAEIqv3Hz5_aE/edit?usp=sharing). Use it as a guide for the remaining sections, but keeping a close eye on your TAs to make sure you are keeping track of time. Be concise when you can!
+* Open the slide deck [1.1 The Zen of Coding](https://docs.google.com/presentation/d/1GDnp_iOyLS4PfZKapMaXeqkQakY8iHiAEIqv3Hz5_aE/edit?usp=sharing). Use it as a guide for the remaining sections, but keeping a close eye on your TAs to make sure you are keeping track of time. Be concise when you can!
 
 * Have every student in the class introduce themselves (name, background, reason they joined). Try to keep things lighthearted as they share their ideas, but remember to try and keep things brief. We have a lot to go over in class today, and we'll need all the time we can get.
 
