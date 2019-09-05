@@ -1,4 +1,4 @@
-## 1.2 Lesson Plan - Going Pro with HTML/CSS (10:00 AM) <!--links--> &nbsp; [⬅️](../01-Day/01-Day-LessonPlan.md) &nbsp; [➡️](../03-Day/03-Day-LessonPlan.md)
+# 01.2 Lesson Plan - Going Pro with HTML/CSS (10:00 AM) <!--links--> &nbsp; [⬅️](../01-Day/01-Day-LessonPlan.md) &nbsp; [➡️](../03-Day/03-Day-LessonPlan.md)
 
 ## Overview
 

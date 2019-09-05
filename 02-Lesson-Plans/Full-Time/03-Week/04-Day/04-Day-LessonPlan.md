@@ -1,4 +1,4 @@
-# 3.4 Lesson Plan - APIs and Advanced AJAX (10:00 AM) <!--links--> &nbsp; [⬅️](../03-Day/03-Day-LessonPlan.md) &nbsp; [➡️](../05-Day/05-Day-LessonPlan.md)
+# 03.4 Lesson Plan - APIs and Advanced AJAX (10:00 AM) <!--links--> &nbsp; [⬅️](../03-Day/03-Day-LessonPlan.md) &nbsp; [➡️](../05-Day/05-Day-LessonPlan.md)
 
 ## Overview
 
