@@ -1,29 +1,12 @@
 ## 04-Day Lesson Plan - Down and Dirty CSS <!--links--> &nbsp; [⬅️](../03-Day/03-Day-LessonPlan.md) &nbsp; [➡️](../05-Day/05-Day-LessonPlan.md)
 
-### Slideshow
-
-* This lesson's slides are available on Google Drive here: [01-4 Going Live](https://docs.google.com/presentation/d/1x6vxXnVqLOAvx8NwZyYH4nAcefXlddFl-nLQvHUe0Bo/edit?usp=sharing)
-
-* To add slides to the student-facing repository, download the slides as a PDF by navigating to File > "Download as" and choose "PDF document." Add the slide PDF file to your class repository along with other necessary files.
-
-* **Note:** Editing access is not available for this document. If you wish to modify the slides, please create a copy by navigating to File > "Make a copy...".
-
-- - -
-
-### Overview
+## Overview
 
 Today's class is focused on introducing students to additional CSS styling techniques with typography, pseudo-classes, and external CSS frameworks. Towards the end of the course, students will be given their first glimpse of the Bootstrap Framework.
 
-`Summary: Complete Activities 7-11 in Unit 02`
+## Instructor Notes
 
-##### Instructor Priorities
-
-* Students will be given a clear perspective on how to approach the class
-* Students will understand both the concept of an external pre-made CSS stylesheet and how to incorporate one
-* Students will understand how to incorporate a custom Google Font
-* Students will be able to loosely explain why the Bootstrap Framework is useful and how to incorporate the Bootstrap CSS stylesheet
-
-##### Instructor Notes
+* `Summary: Complete Activities 7-11 in Unit 02`
 
 * The first series of slides in the class are intended to preempt sentiments your students may be experiencing. It's important to let students know that it's completely okay if they feel like things are moving quickly, and that the best way to succeed in the course is to expect some level of confusion as an unavoidable part of the learning experience, but to continue practicing at home.
 
@@ -37,20 +20,25 @@ Today's class is focused on introducing students to additional CSS styling techn
 
 * If you finish early, there is an extra "Layout" exercise hidden in the slideshow. Unhide it and have students work on it.
 
-* Have your TAs reference [04-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1yBrZwQRzXXYCcTkb4Spxu2CqShsGcmzi/view?usp=sharing) to help keep track of time during class. (Note: If this class falls on a Saturday, click the "Saturday" tab on the spreadsheet to see the appropriate schedule.)
 
-### Sample Class Video (Highly Recommended)
+## Sample Class Video (Highly Recommended)
 
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b4127cc6-5025-4c0b-95c0-9f348b6b9f6d)
 
-- - -
+## Learning Objectives
 
-### Class Objectives
+* Work with CSS properties used for adjusting a website's typography
+* Utilize custom fonts provided from Google Fonts
+* Work with CSS pseudo classes to style elements based on special states
+* Utilize the Bootstrap CSS framework for website development
 
-* To work with CSS properties used for adjusting a website's typography
-* To utilize custom fonts provided from Google Fonts
-* To work with CSS pseudo classes to style elements based on special states
-* To utilize the Bootstrap CSS framework for website development
+## Slides
+
+[Going Live](https://docs.google.com/presentation/d/1_TFrS_Gy9-wAO3SIHrfpRys7ZRtuVt7PQFoSCslUiEw/edit?usp=sharing)
+
+## Time Tracker
+
+[1.4 Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1yBrZwQRzXXYCcTkb4Spxu2CqShsGcmzi/view?usp=sharing)
 
 - - -
 
