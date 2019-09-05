@@ -1,4 +1,4 @@
-# 2.5 Lesson Plan: Client Side Storage (10:00 AM) <!--links--> &nbsp; [⬅️]() &nbsp; [➡️]()
+# 02.5 Lesson Plan: Client Side Storage (10:00 AM) <!--links--> &nbsp; [⬅️](../../02-Week/04-Day/04-Day-LessonPlan.md) &nbsp; [➡️](../03-Week/01-Day/01-Day-LessonPlan.md)
 
 ## Overview
 
