@@ -1,4 +1,4 @@
-# 2.4 Lesson Plan - Intro to Web APIs and Events (10:00 AM) <!--links--> &nbsp; [⬅️]() &nbsp; [➡️]()
+# 02.4 Lesson Plan - Intro to Web APIs and Events (10:00 AM) <!--links--> &nbsp; [⬅️](../../02-Week/03-Day/03-Day-LessonPlan.md) &nbsp; [➡️](../04-Day/04-Day-LessonPlan.md)
 
 - - -
 
