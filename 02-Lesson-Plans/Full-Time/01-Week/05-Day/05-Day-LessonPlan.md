@@ -1,28 +1,12 @@
 ## 05-Day Lesson Plan - Bootstrap Layouts and Responsive Designs <!--links--> &nbsp; [⬅️](../04-Day/04-Day-LessonPlan.md) &nbsp; [➡️](../../02-Week/01-Day/01-Day-LessonPlan.md)
 
-### Slideshow
-
-* This lesson's slides are available on Google Drive here: [01-5 Bootstrap Layouts and Responsive Designs](https://docs.google.com/presentation/d/10y3JDcwwZzMbcOMkWN17n9rv5sKumd7qJxYcajJpcPY/edit?usp=sharing)
-
-* To add slides to the student-facing repository, download the slides as a PDF by navigating to File > "Download as" and choose "PDF document." Add the slide PDF file to your class repository along with other necessary files.
-
-* **Note:** Editing access is not available for this document. If you wish to modify the slides, please create a copy by navigating to File > "Make a copy...".
-
-- - -
-
-### Overview
+## Overview
 
 Today's class is focused on introducing students to the concept of grid-based web design and the utilization of Bootstrap for grid-layouts. Towards the end of the class, we will also be covering mobile-responsive web design using media queries and viewports.
 
-`Summary: Complete Activities 12-18 in Unit 02`
+## Instructor Notes
 
-##### Instructor Priorities
-
-* Students will complete each of the layout "workshops" as a class.
-* Students will complete the two Bootstrap grid activities.
-* Students will complete the media query activities.
-
-##### Instructor Notes
+* `Summary: Complete Activities 12-18 in Unit 02`
 
 * Today's class has historically been one of our most fun classes. It's fun because we go through the process of showing students both how to visualize websites as grids as well as how to create their own grid-based layouts. Many students have an "Aha!" moment as they realize just how CSS frameworks like Bootstrap can dramatically save time when it comes to layout building.
 
@@ -34,24 +18,28 @@ Today's class is focused on introducing students to the concept of grid-based we
 
 * Depending on how well you are doing on time, feel free to create mini-exercises on the fly to ensure students understand the grid.
 
-* Have your TAs reference [05-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1bGN3U3s51orzmYm8V5B_6kf6BolAxrkc/view?usp=sharing) to help keep track of time during class. (Note: If this class falls on a Saturday, click the "Saturday" tab on the spreadsheet to see the appropriate schedule.)
-
-### Sample Class Video (Highly Recommended)
+## Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=27b66830-c7ee-4c52-8183-4f550da580e0)
 
-- - -
+## Learning Objectives
 
-### Class Objectives
+* Gain a conceptual understanding of the role of grid-based web design in modern web development
+* Utilize the Bootstrap grid system to create complete web layouts
+* Understand the concept of mobile responsive web design and the use of media queries to achieve it
 
-* To gain a conceptual understanding of the role of grid-based web design in modern web development
-* To utilize the Bootstrap grid system to create complete web layouts
-* To understand the concept of mobile responsive web design and the use of media queries to achieve it
+## Slides
+
+[1.5 Bootstrap Layouts and Responsive Designs](https://docs.google.com/presentation/d/1D0UN5gkoBznFUz5RdtTz-PkMuCxaJPqE963ybguOPEc/edit?usp=sharing)
+
+## Time Tracker
+
+* [1.5 Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1bGN3U3s51orzmYm8V5B_6kf6BolAxrkc/view?usp=sharing)
 
 - - -
 
 ### 1. Instructor Do: Welcome Students (1 min)
 
-* Welcome students back to class. Then open the slide deck [01-5 Bootstrap Layouts and Responsive Designs](https://docs.google.com/presentation/d/10y3JDcwwZzMbcOMkWN17n9rv5sKumd7qJxYcajJpcPY/edit?usp=sharing).
+* Welcome students back to class. Then open the slide deck [1.5 Bootstrap Layouts and Responsive Designs](https://docs.google.com/presentation/d/1D0UN5gkoBznFUz5RdtTz-PkMuCxaJPqE963ybguOPEc/edit?usp=sharing).
 
 ### 2. Instructor / TA Do: Emotional Monologue (10 min)
 
