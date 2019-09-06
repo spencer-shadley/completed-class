@@ -4,28 +4,28 @@ New features, suggestions and feedback should be discussed on the [#05-web-dev-c
 
 If your Issue is not a bug report it will be promptly, but politley, closed. 
 
-**Describe the bug**
+## Describe the Bug
 A clear and concise description of what the bug is.
 
-**Location**
+## Location
 [Link to the file or folder](URL)
 
-**Steps To Reproduce (if applicable)**
+## Steps To Reproduce (if applicable)
 1. Go to '...'
 2. Click on '....'
 3. Scroll down to '....'
 4. See error
 
-**Expected behavior**
+## Expected behavior (if applicable)
 A clear and concise description of what you expected to happen.
 
-**Screenshots**
+## Screenshots
 If applicable, add screenshots to help explain your problem.
 
-**Environment**
+## Environment
  - OS: [e.g. iOS]
  - Browser [e.g. chrome, safari]
  - Version [e.g. 22]
 
-**Additional context**
+## Additional context
 Add any other context about the problem here.
