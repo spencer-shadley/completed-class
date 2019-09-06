@@ -52,14 +52,6 @@ A lot of time will be spent ensuring that students have properly installed all o
 
   * [Unit 01-HTML-CSS Day 3 Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1PzMXJ6g2HKj29TV3pOCicV8W1k6eqHx9/view?usp=sharing)
 
-## Unit Algorithms
-
-  * [01-arithmetic](../../../01-Class-Content/01-HTML-CSS/03-Algorithms/01-arithmetic)
-
-  * [02-odd-or-even](../../../01-Class-Content/01-HTML-CSS/03-Algorithms/02-odd-or-even)
-
-  * [03-log-nums](../../../01-Class-Content/01-HTML-CSS/03-Algorithms/03-log-nums)
-
 ## Career Services
 
 Add the weekly CS announcement.
