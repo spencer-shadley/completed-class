@@ -51,7 +51,3 @@ A lot of time will be spent ensuring that students have properly installed all o
   * [Unit 01-HTML-CSS Day 2 Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1Yc3sDlBo8bxe4YHqOfqitYa_nanse0OA/view?usp=sharing)
 
   * [Unit 01-HTML-CSS Day 3 Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1PzMXJ6g2HKj29TV3pOCicV8W1k6eqHx9/view?usp=sharing)
-
-## Career Services
-
-Add the weekly CS announcement.

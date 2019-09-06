@@ -49,7 +49,3 @@ Be ready to have your troubleshooting hat on for helping students debug GitHub P
   * [02-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1Dx5IKqvZOsUcPSx3T5FLPmWrMR4kPrSK/view?usp=sharing)
 
   * [Unit 02-CSS-Bootstrap Day 3 Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1GIlEdmWazA-gaTGmtRkxQPJeQrSaRqlj/view?usp=sharing)
-
-## Career Services
-
-Add the weekly CS announcement.
