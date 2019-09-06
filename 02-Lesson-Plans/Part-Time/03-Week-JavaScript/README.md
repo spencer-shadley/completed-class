@@ -8,9 +8,9 @@ In this week we will be introducing students to their first taste of JavaScript.
 
 ## Instructor / TA Notes
 
-* In every activity moving forward, pre-coded instructor demos are provided for you. However, because of the simplicity of many of the demos, you are encouraged to code your own examples on the fly. Part of the reason we have pre-coded versions is for when we share the directory with students since it becomes easy to copy over into the in-class repo. Don't let that limit your imagination though!
+In every activity moving forward, pre-coded instructor demos are provided for you. However, because of the simplicity of many of the demos, you are encouraged to code your own examples on the fly. Part of the reason we have pre-coded versions is for when we share the directory with students since it becomes easy to copy over into the in-class repo. Don't let that limit your imagination though!
 
-* This week is filled with a lot of brand new topics. If you fall behind, make sure to adjust your plan accordingly.
+This week is filled with a lot of brand new topics. If you fall behind, make sure to adjust your plan accordingly.
 
 ## Heads Up
 
