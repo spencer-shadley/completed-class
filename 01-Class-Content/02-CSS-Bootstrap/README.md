@@ -45,10 +45,7 @@ You will be employer-competitive if you are able to:
 
 ## Homework: Responsive Portfolio
 
-Create two different versions of a portfolio:
-
-* For the first version, use the Bootstrap CSS Framework to create your portfolio.
-* For the second version, enhance the portfolio you made in the last unit with a mobile-responsive layout.
+Use the Bootstrap CSS Framework to recreate your portfolio.
 
 
 ## Helpful Links
