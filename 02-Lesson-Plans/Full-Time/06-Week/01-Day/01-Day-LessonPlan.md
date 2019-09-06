@@ -24,7 +24,7 @@ Today we will be diving into constructors some more by introducing user input in
 
 ##### Instructor Notes
 
-* At the start of class you will be introducing students to [JobTrack](https://jobtrack.trilogyed.com), which will be made freely available to students. If possible, take a moment to go through the [short slideshow](https://docs.google.com/presentation/d/1XduSzeA8u9D08JBWFi232FuvLv9axBSCpEpVC0Zgf6M/edit?usp=sharing) before class.
+* At the start of class you will be reintroducing students to the Career Services support that is available to them in their job search. If possible, take a moment to go through the short slideshow at the start of class.
 
 * Constructors are extremely useful in creating objects of similar types and allow for the development of very interesting applications. So long as your students have a firm understanding of how objects function, they should find today's lesson and activities very enjoyable.
 
@@ -64,43 +64,15 @@ Today we will be diving into constructors some more by introducing user input in
 
 * Before diving into the new material, however, we have a small activity for them to work through beforehand to reintroduce them to objects.
 
-### 2. Instructor Do: Introduce JobTrack (15 min)
+### 2. Instructor Do: Reintroduce Career Serices (15 min)
 
-* Inform the class that we'll be providing them free access to JobTrack.
+* Welcome the class and ask them to raise their hand if they are actively engaged in or intend to engage in a job search at the end of the program.
 
-* Go through the slides found in [JobTrack.pptx](https://docs.google.com/presentation/d/1XduSzeA8u9D08JBWFi232FuvLv9axBSCpEpVC0Zgf6M/edit?usp=sharing). Be sure to highlight the following:
+* Remind the class that, now that they are over two-thirds of the way through the program, this is a great time to start thinking about their job search and engaging with the many Career Services options provided as part of the program.
 
-  * JobTrack is a platform that helps job seekers plan and track their job search. Features include:
+* Go through the [slides on Career Services](https://docs.google.com/presentation/d/18inCMR9TB47q3yEY-YflqA-96cBqXheM9X0BrD0Gk9Y/edit#slide=id.p7).
 
-    * Logging applied for positions and companies and their contact info.
-
-    * Reminders for when to follow up after an interview.
-
-    * Works on all your devices.
-
-    * Provides your career director visibility into how your job search is going.
-
-* Slack out the following instructions:
-
-  ```
-  STEP 1: Sign in to JobTrack at https://jobtrack.trilogyed.com using BCS credentials
-
-  STEP 2: Install the Chrome extension from https://chrome.google.com/webstore/detail/jobtrack-for-chrome/ojhnaheochknmclpabkpialdgkkcboni)
-
-  Step 3: Find three jobs you think you’ll be interested in:
-
-  Visit Dice.com, Indeed.com, Angel.co, or go to the career website of a company you’re interested in
-
-  If Chrome extension installed, open it on the job posting and enter the details
-
-  If no Chrome extension, copy the URL, switch to JobTrack and enter the URL, Company Name and Job Title
-
-  When ready to apply to jobs, return to JobTrack and use these jobs as a starting point
-
-  *Career Director will discuss these jobs on coaching call to identify what your ideal job is and how to attain it*
-  ```
-
-* Make sure the entire class is able to log into JobTrack successfully and was able to download the Chrome extension. Students may not be able to complete all of step 3 in the time allotted, but have them get the process started.
+* If there are any questions, advise students to reach out to their Student Success Manager.
 
 ### 3. Students Do: Raining Cats and Dogs (15 mins)
 
