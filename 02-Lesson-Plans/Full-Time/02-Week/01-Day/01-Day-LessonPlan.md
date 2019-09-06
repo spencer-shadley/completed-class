@@ -1,22 +1,14 @@
-## 3.1 Lesson Plan - Joys of JavaScript (10:00 AM) <!--links--> &nbsp; [⬅️](../../02-Week/03-Day/03-Day-LessonPlan.md) &nbsp; [➡️](../02-Day/02-Day-LessonPlan.md)
-
-### Slideshow
-
-* This lesson's slides are available on Google Drive here: [03-1 The Joys of JavaScript](https://docs.google.com/presentation/d/16lWA3gU8ZBvZNKHxBvZM791ntfvXf-6xQUNN3Bk-nL4/edit?usp=sharing)
-
-* To add slides to the student-facing repository, download the slides as a PDF by navigating to File > "Download as" and choose "PDF document." Add the slide PDF file to your class repository along with other necessary files.
-
-* **Note:** Editing access is not available for this document. If you wish to modify the slides, please create a copy by navigating to File > "Make a copy...".
+# 02.1 Lesson Plan - Joys of JavaScript (10:00 AM) <!--links--> &nbsp; [⬅️](../../01-Week/05-Day/05-Day-LessonPlan.md) &nbsp; [➡️](../02-Week/02-Day/02-Day-LessonPlan.md)
 
 - - -
 
-### Overview
+## Overview
 
 Today's class is focused on providing students with the very basics of JavaScript. For many, this will be their first foray into JavaScript as a programming language.
 
 `Summary: Complete Activities 1-13 in Unit 03`
 
-##### Instructor Priorities
+## Instructor Priorities
 
 * Students should understand what each of the following terms means: `console.log`, `alert`, `prompt`, `confirm`, `variable`, `array`, and `if/else`.
 * Students should complete the `03-PizzaVariables` activity.
@@ -24,7 +16,7 @@ Today's class is focused on providing students with the very basics of JavaScrip
 * Students should complete the `09-ConditionalActivity` activity.
 * Students should be given a primer on arrays and guided through examples of their use.
 
-##### Instructor Notes
+## Instructor Notes
 
 * Welcome to Week 3! In this class you will be giving students their first primer on JavaScript as a programming language. Many of your students will have little clue what JavaScript is, let alone how to use it. Be prepared for the simplest bugs, from missing quotation marks to utter confusion in setting a variable. Today you suckle your children with the wisdom of the fundamentals!
 
@@ -42,17 +34,19 @@ Today's class is focused on providing students with the very basics of JavaScrip
 
 * Have your TAs reference [01-Day-TimeTracker](01-Day-TimeTracker.xlsx) to help keep track of time during class.
 
-### Sample Class Video (Highly Recommended)
-* To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b6546197-13d6-4922-b516-08490303c913)
-
-- - -
-
-### Class Objectives
+## Class Objectives
 
 * To gain a preliminary grasp of JavaScript definitions and of basic syntax.
 
 * To utilize variables, logging, arrays, and if/else statements to create simple JavaScript applications.
 
+## Slides
+
+* This lesson's slides are available on Google Drive here: [03-1 The Joys of JavaScript](https://docs.google.com/presentation/d/16lWA3gU8ZBvZNKHxBvZM791ntfvXf-6xQUNN3Bk-nL4/edit?usp=sharing)
+
+* To add slides to the student-facing repository, download the slides as a PDF by navigating to File > "Download as" and choose "PDF document." Add the slide PDF file to your class repository along with other necessary files.
+
+* **Note:** Editing access is not available for this document. If you wish to modify the slides, please create a copy by navigating to File > "Make a copy...".
 - - -
 
 ### 1. Instructor Do: How to Learn JavaScript (5 mins)

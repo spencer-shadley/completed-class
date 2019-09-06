@@ -1,4 +1,4 @@
-## 1.1 Lesson Plan - The Zen of Coding (10:00 AM) <!--links--> &nbsp;  &nbsp; [➡️](../02-Day/02-Day-LessonPlan.md)
+# 01.1 Lesson Plan - The Zen of Coding (10:00 AM) <!--links--> &nbsp;  &nbsp; [➡️](../02-Day/02-Day-LessonPlan.md)
 
 ## Overview
 
