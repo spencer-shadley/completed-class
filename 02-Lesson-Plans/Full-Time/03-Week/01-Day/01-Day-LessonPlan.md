@@ -22,9 +22,11 @@ In this class, we will be introducing students to the concept of DOM Manipulatio
 
 ## Slides
 
-[05.1: jQuery Begins](https://docs.google.com/presentation/d/1rb9HSOoezZzelSK7HQk-6tVKDBU8VBX3jQGuQpd04CQ/edit?usp=sharing)
+[03-1 - JavaScript and jQuery Review](https://docs.google.com/presentation/d/1j_68fLQ8UeKonC6wZHD2z0W-3u00akFx4845fJXhyrE/edit?usp=sharing)
 
 ## Time Tracker
+
+[3.1 Time Tracker](https://drive.google.com/open?id=1frWbVNmH40LiTXTzNlBfZDVx3F_i4_O1)
 
 - - -
 
@@ -32,7 +34,7 @@ In this class, we will be introducing students to the concept of DOM Manipulatio
 
 ### 1.  Instructor Do: Welcome Students and Admin Items (5 mins)
 
-* Welcome students to class then open the [slide deck](https://docs.google.com/presentation/d/1rb9HSOoezZzelSK7HQk-6tVKDBU8VBX3jQGuQpd04CQ/edit?usp=sharing).
+* Welcome students to class then open the [slide deck](https://docs.google.com/presentation/d/1j_68fLQ8UeKonC6wZHD2z0W-3u00akFx4845fJXhyrE/edit?usp=sharing).
 
 ### 3.  Instructor Do: DOM Manipulation (10 mins)
 

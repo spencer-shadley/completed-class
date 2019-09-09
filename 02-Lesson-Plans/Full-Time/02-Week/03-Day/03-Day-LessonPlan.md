@@ -34,6 +34,14 @@ In this class, we will be introducing students to the concept of JavaScript Obje
 
   * Create an entire HTML page using only JavaScript.
 
+## Slides
+
+* [3.3 JavaScript Juggernauts](https://docs.google.com/presentation/d/1FNWk2sW-UI3f18ndhHOF3GIpCrjxgWA_T3wbzsaGYj4/edit?usp=sharing)
+
+## Time Tracker
+
+* [3.3 Time Tracker](https://drive.google.com/open?id=1ARtFPnNAd5awL3v5yFaj6t2ytrIbQos0)
+
 - - -
 
 ### 1. Everyone Do: Window Object & Scope (25 mins)
@@ -259,7 +267,7 @@ In this activity you will `console.log(this)` and dig around inside the returned
 
 ### 9. Instructor Do: Review this Window and introduce the DOM (10 mins)
 
-* Return to [slide deck](https://docs.google.com/presentation/d/1TprKO9KQMBEhIC6f0UNvcQkY38lS0XOmZIt6zwzjWdE/edit#slide=id.g5bb6559bdb_0_10) and follow the remaining prompts corresponding to the slides.
+* Return to [slide deck](https://docs.google.com/presentation/d/1FNWk2sW-UI3f18ndhHOF3GIpCrjxgWA_T3wbzsaGYj4/edit?usp=sharing) and follow the remaining prompts corresponding to the slides.
 
   * **What is window.document?**: What is `window.document`?
 

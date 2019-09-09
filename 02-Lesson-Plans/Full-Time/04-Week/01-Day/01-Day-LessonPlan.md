@@ -1,33 +1,12 @@
 ## 4.1 - Intro to Client-Side Storage & Firebase (10:00 AM) <!--links--> &nbsp; [⬅️](../../03-Week/05-Day/05-Day-LessonPlan.md) &nbsp; [➡️](../02-Day/02-Day-LessonPlan.md)
 
-
-### Overview
+## Overview
 
 In this class, we will be introducing the concept of data persistence and simple client-side approaches to maintain content between browser sessions. We will also be introducing Firebase, an easy-to-use server-side database that makes it easy to power our front-end applications with expansive datasets.
 
-`Summary: Complete Activities 1-13 in Unit 07`
+## Instructor Notes
 
-##### Instructor Priorities
-
-* Students should be able to articulate definitions of data persistence, client-side storage, and server-side storage.
-
-* Students should have a conceptual understanding of the pros and cons of client-side vs. server-side storage.
-
-* Students should become familiar with the concepts of `localStorage` and `cookies`.
-
-* Students should complete the Sign-in Page with localStorage activity.
-
-* Students should complete the To-Do App with localStorage activity.
-
-* Students should understand the following:
-
-  * How to setup and initialize a new Firebase
-  * `.set({})`
-  * `.on("value")`
-
-* Students should complete + understand the Firebase "Down Counter" Application
-
-##### Instructor Notes
+* `Summary: Complete Activities 1-13 in Unit 07`
 
 * Avoid "live coding" any of the cookies examples. Cookies are challenging to demonstrate live as it requires first creating a deployed repo and then constantly pushing to the [deployed site](http://cookie-example-rcb.herokuapp.com/). Demonstrate the pre-coded solution, point out this limitation, and move on. Students do NOT need to know how to code cookies (or localStorage) for the homework.
 

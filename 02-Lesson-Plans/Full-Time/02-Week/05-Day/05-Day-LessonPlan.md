@@ -24,6 +24,13 @@ Todays class will be about client side storage APIs and continuing to work on th
 
   * Use all of the units concepts to build a persistent ToDo list as well as a Work Timer.
 
+## Slides
+
+* [02-5 - jQuery Jubilee](https://docs.google.com/presentation/d/1OLol2xQemLl4uhvtKg7J3qx6hL4v59UTT9uRxlvfHNs/edit?usp=sharing)
+
+## Time Tracker
+
+* [2.5 Time Tracker](https://drive.google.com/open?id=1pMNSNFWZUhsn3Np9FY_JIerDZyBs0jz2)
 - - -
 
 ### 1. Instructor Do: Preview Client Side Storage (5 mins)

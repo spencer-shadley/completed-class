@@ -31,7 +31,7 @@ In this class, we will be culminating our introduction of APIs with a team-based
 
 ## Time Tracker
 
-[Unit 06 Server Side APIs Day 3 Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1cKEvNJfuPjDYE7kIgcGN1Znt8GvxCftS/view?usp=sharing) to help keep track of time during class.
+* [3.5 Time Tracker](https://drive.google.com/open?id=1ALlADJZDEeiubfb3l-Lspa3T_XavDk3h) to help keep track of time during class.
 
 - - -
 

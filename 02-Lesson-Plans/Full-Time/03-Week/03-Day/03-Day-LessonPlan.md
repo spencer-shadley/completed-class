@@ -16,23 +16,23 @@
 
 * **Extra Resources:** Send out the following link during class and encourage students to practice with the [Whiteboarding Overview and Questions](https://coding-bootcamp-whiteboarding-algorithms.readthedocs-hosted.com/en/latest/). This was given with the course pre-work but now is the time where a lot of it will start clicking for students since learning JavaScript.
 
-* Have your TAs reference [03-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/192W9stZpLCBdZQARTa5jizw3cyRqMhc0/view?usp=sharing) to help keep track of time during class.
-
 ### Class Objectives
 
-* By the end of class students will be able to...
+  * Answer conceptual problems with visualization.
 
-    * Answer conceptual problems with visualization.
+  * Visualize and pseudocode problems and solutions
 
-    * Visualize and pseudocode problems and solutions
+  * Introduce the concept and utility of APIs and JSON in web applications
 
-    * Introduce the concept and utility of APIs and JSON in web applications
-
-    * Use a variety of APIs and the process for building endpoint URLs to utilize them
+  * Use a variety of APIs and the process for building endpoint URLs to utilize them
 
 ## Slides
 
+N/A
+
 ## Time Tracker
+
+* [3.3 Time Tracker](https://drive.google.com/open?id=1OlaJokSTSUfgy84NSb6JW2rGCvZT9Lyj)
 
 - - -
 

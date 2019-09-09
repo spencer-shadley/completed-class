@@ -34,7 +34,15 @@ Todays class will be students first introduction to the DOM. We are going to use
 
   * Stop the propagation of events. 
 
-  * Dynamically generate DOM elements whose events are delegated.
+  * Dynamically generate DOM elements whose events are delegated.'
+
+## Slides
+
+* [02-4 - jQuery Begins](https://drive.google.com/open?id=1NkVWhp8MifNK-eINQ1J-VoQ_34lRqL_Qv97s4u3FT9I)
+
+## Time Tracker
+
+* [2.4 Time Tracker](https://drive.google.com/open?id=1oQJ_WfCRs8tYzWbIxoDmMZLLMxDm7SFY)
 
 - - -
 

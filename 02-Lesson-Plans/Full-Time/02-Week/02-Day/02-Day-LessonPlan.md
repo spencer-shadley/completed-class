@@ -1,27 +1,12 @@
 # 02.2 Lesson Plan - Jumping for JavaScript (10:00 AM) <!--links--> &nbsp; [⬅️](../01-Day/01-Day-LessonPlan.md) &nbsp; [➡️](../03-Day/03-Day-LessonPlan.md)
 
-### Slideshow
-
-* This lesson's slides are available on Google Drive here: [02-2 Jumping for JavaScript](https://docs.google.com/presentation/d/1DHqKz5v9CAG3d6FaBO_aGZG7w2IvwCv5dgIhbk7FG60/edit?usp=sharing)
-
-* To add slides to the student-facing repository, download the slides as a PDF by navigating to File > "Download as" and choose "PDF document." Add the slide PDF file to your class repository along with other necessary files.
-
-* **Note:** Editing access is not available for this document. If you wish to modify the slides, please create a copy by navigating to File > "Make a copy...".
-
-- - -
-
-### Overview 
+## Overview 
 
 Today's class is focused on re-introducing students to the concept of `for` loops and of how they can be used in combination with arrays, if/else statements, and other common programming tools to create a Rock-Paper-Scissors game. We will be introducing students to the concept of JavaScript Functions.
 
-`Summary: Complete Activities 19-27 in Unit 03`
+## Instructor Notes
 
-##### Instructor Priorities
-
-* Students should complete the `23-RPS-Coded` activity.
-* Students should understand what a function is and why it is useful (to DRY up code).
-
-##### Instructor Notes
+* `Summary: Complete Activities 19-27 in Unit 03`
 
 * In today's class, you will be recapping the concept of `for` loops, the concept of combining arrays, conditionals, and user inputs to create more sophisticated JavaScript applications. Much of what students have learned to date will culminate in the last activity of the day where they will work together to build a rock-paper-scissors game.
 
@@ -29,18 +14,20 @@ Today's class is focused on re-introducing students to the concept of `for` loop
 
 * Students should be given a substantial amount of time to complete the rock-paper-scissors activity. They will not have been given everything they need to complete the activity. The idea is for students to become more comfortable with the idea of working without knowing _everything_. Reveal bits of the solution using the code in the `23-RPS-Coded` directory while students are working. Throughout class, show these bits of the solution on the projector, and try to help guide students through the problem.
 
-* Have your TAs reference [02-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1xoY07o7JjATmVDa57B0CTw-b6CyVcQlM/view?usp=sharing) to help keep track of time during class. Your instructor NEEDS to leave enough time for students to complete the rock-paper-scissors game.
-
 * **Note**: Even if you don't cover an activity in class, still include it in the list of activities you share into your local repo. Students will be able to look back at these activities on their own time.
 
-### Sample Class Video (Highly Recommended)
-* To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0441f776-86a3-4379-8733-84c357e64172)
-
-- - -
-
-### Class Objectives
+## Class Objectives
 
 * To use `for` loops, arrays, and conditional logic to create a rock-paper-scissors game.
+
+
+## Slides
+
+* [2.2 - Jumping for JS](https://docs.google.com/presentation/d/1hKgGl_19fRL0xpABAhDlNNvadOFVBUeqjGdM82wNmL0/edit?usp=sharing)
+
+## Time Tracker
+
+* [2.2 Time Tracker](https://drive.google.com/a/2tor.com/file/d/1uv1od7JanFYduaVjkH_pyI4sp1k7ZdkW/view?usp=sharing)
 
 - - -
 

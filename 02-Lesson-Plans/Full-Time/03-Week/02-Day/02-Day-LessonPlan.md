@@ -20,11 +20,11 @@ In this class, we will further students' understanding of DOM Manipulation using
 
 ## Slides
 
-[05.2: jQuery Jubilee](https://docs.google.com/presentation/d/1OWXiM3iGOFjB_ThjNEPvRLQpRPymP-K6vx953rd8AtU/edit?usp=sharing)
+N/A
 
 ## Time Tracker
 
-* Have your TAs reference [02-Day-TimeTracker](02-Day-TimeTracker.xlsx) to help keep track of time during class.
+* [3.2 Time Tracker](https://drive.google.com/open?id=1z5r_tPe7Vpszs15neF8i6FJhUR5b70LT)
 
 - - -
 
