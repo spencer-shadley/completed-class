@@ -1,260 +1,360 @@
-## 3.1 Lesson Plan - JavaScript and jQuery Review & Intro to Timing Events (10:00 AM) <!--links--> &nbsp; [⬅️](../../02-Week/05-Day/05-Day-LessonPlan.md) &nbsp; [➡️](../02-Day/02-Day-LessonPlan.md)
+# 03.1 Lesson Plan - Javascript and jQuery Review (10:00 AM) <!--links--> &nbsp; [⬅️](../../02-Week/05-Day/05-Day-LessonPlan.md) &nbsp; [➡️](../02-Day/02-Day-LessonPlan.md)
 
-### Slideshow
+## Overview
 
-* This lesson's slides are available on Google Drive here: [03-1 JavaScript and jQuery Review](https://docs.google.com/presentation/d/1IaujFMuxXQ1GG3XV-S7qDnFn70_8FJ7tLMN9mNEvPqg/edit?usp=sharing)
+In this class, we will be introducing students to the concept of DOM Manipulation using both JavaScript and jQuery.
 
-* To add slides to the student-facing repository, download the slides as a PDF by navigating to File > "Download as" and choose "PDF document." Add the slide PDF file to your class repository along with other necessary files.
+`Summary: Complete activities 01-09 in Unit 05`
 
-* **Note:** Editing access is not available for this document. If you wish to modify the slides, please create a copy by navigating to File > "Make a copy...".
+## Instructor Notes
 
-- - -
+* Today's class is focused on JavaScript and jQuery DOM manipulations. As you discuss each of the activities, also try to offer your students some perspective on code organization strategies. While the activities may be too complex to live-code, consider at least outlining how you would approach them if you had to "start from scratch". Often, students are most confused by how to start activities when it comes to the separation of variables, events, and functions.
 
-### Overview
+* In today's class, expect students to have many issues with jQuery syntax. Be encouraging and let them know that the syntax will seem more intuitive over time. For now, they should just try to utilize the syntax as is.
 
-In this class, we will be providing students an opportunity to review old JavaScript activities to gain a stronger foothold in the fundamentals. We will briefly review JavaScript and jQuery concepts before learning about Timing Events.
+* Starting with today's class, slides will play a less prominent role. Warn students of this and let them know that their time spent coding is where real learning will happen.
 
+## Learning Objectives
 
-`Summary: Review JavaScript and jQuery & Complete activities 04-08 in Unit 05`
+* To gain a cursory understanding of the jQuery library.
 
-##### Instructor Priorities
+* To understand the steps needed to utilize the jQuery library to manipulate the DOM.
 
-* Students should have confidence and mastery of concepts covered so far.
-* Students should have the extended opportunity for supported coding.
-* Students should revisit critical assignments, exercises, and homework covered in class so far.
+## Slides
 
-##### Instructor Notes
+[05.1: jQuery Begins](https://docs.google.com/presentation/d/1rb9HSOoezZzelSK7HQk-6tVKDBU8VBX3jQGuQpd04CQ/edit?usp=sharing)
 
-* The first half of today's class is dedicated to review. At this point in the program, students likely feel weathered by the JavaScript immersion. Let them know this is their chance to get caught up!
-
-* During today's activities, focus on pairing like-level students so they can review old material with one another. If possible, work with TAs to organize these groups before class begins. Pairing like-levels also helps as it allows you and the TAs concentrate on students who need the most significant help. Consider pulling these students out of class and working with them in another space if one is available. 
-
-* Make sure to congratulate students today. They are only two weeks in and they have learned a ton. Now is a good opportunity to remind them that not long ago they came through the door knowing little to nothing about web development and today they can already build an entire working website! Pretty impressive.
-
-* Have your TAs reference [01-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1frWbVNmH40LiTXTzNlBfZDVx3F_i4_O1/view?usp=sharing) to help keep track of time during class.
-
-### Sample Class Video (Highly Recommended)
-* To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3c0be955-68fd-43e3-a7a8-ec392346e29c)
+## Time Tracker
 
 - - -
 
-### Class Objectives
+## Class Instruction
 
-* Students will ask conceptual questions regarding any of the subjects covered so far (HTML, CSS, Git, Github Pages, JavaScript, jQuery)
-* Students will absorb a high-level recap of the most important subjects covered to date.
-* Students will group code previous or new projects.
-* Students will reinforce their knowledge of JavaScript & jQuery.
-* Students will understand JavaScript Timing Events including `setTimeout`, `clearTimeout`, & `setInterval`.
+### 1.  Instructor Do: Welcome Students and Admin Items (5 mins)
 
-- - -
+* Welcome students to class then open the [slide deck](https://docs.google.com/presentation/d/1rb9HSOoezZzelSK7HQk-6tVKDBU8VBX3jQGuQpd04CQ/edit?usp=sharing).
 
-### 1. Instructor Do: Cover Day's Agenda (5 mins)
+### 3.  Instructor Do: DOM Manipulation (10 mins)
 
-* Explain to the class that today will be focused on providing an opportunity for review and recalibration. The class will be divided into three sections.
-  1. A few moments to answer lingering questions;
-  2. A high-level overview of all the major topics covered; and
-  3. Two hours of coding in small groups, either redoing select assignments or working on a new project.
+* Spend a few moments explaining the concept of DOM manipulation. If you are hazy about the concept of the DOM, you may want to read this article <https://css-tricks.com/dom/>.
 
-### 2. Instructor Do: Collect Student Feedback (10 mins) (High)
+* Effectively the DOM is the version of HTML / CSS interpreted by the browser.
 
-* Using Poll Everywhere or a similar anonymous method have students provide open feedback regarding the general subjects or concepts they feel least comfortable with. Be sure to provide adequate time for all students to provide feedback
+* With regards to the slide, we can use JavaScript and jQuery to modify the DOM to dynamically change the HTML that gets displayed.
 
-* Then, offer brief (VERY BRIEF) commentary on the subjects.
+* Visit the to-do list site on the slide [http://todomvc.com/examples/jquery/#/all
+  ](http://todomvc.com/examples/jquery/#/all) to provide a simple example that the addition of to-dos is effectively adding HTML in real-time.
 
-* Open the floor to specific questions tied to these subjects
+* You can even go into the Chrome Developer tools to show this more clearly.
 
-### 3. Instructor Do: Organize Groups (5 mins)
+### 4.  Instructor Demo: DOM Manipulation with Plain JS (15 mins)
 
-* Divide the class into pre-defined groups based on personalities and general mastery of the subject so far. Be sure to pair strong students with strong students and weaker students with weaker ones. If possible, this should be done PRIOR to class if possible.
+* Proceed with the first demonstration of class: `01-DOM_Manipulation`. In this first demo, you will show students how to modify the DOM using vanilla JavaScript. In later portions of the class, you will re-do this activity using jQuery.
 
-* Have students switch seats and join their defined groups
+* This example is broken down into parts. Reveal each file one by one.
 
-### 4. Instructor Do: Review (20 mins) (High)
+  * `1.html` is intended to simply show the empty div `empty-div` that we've created. This div will be used to hold our dynamic content.
 
-* Using the slide deck ([03-1 JavaScript and jQuery Review](https://docs.google.com/presentation/d/1IaujFMuxXQ1GG3XV-S7qDnFn70_8FJ7tLMN9mNEvPqg/edit?usp=sharing)) provided as a guide, quickly list and explain (at a high-level) the key takeaways students should feel comfortable with at this point in the class. Encourage the class to take note of any topics that remain difficult and to write them down as you speak.
+  * `2.html` is intended to show that we can "select" this div using `document.getElementById`. We can then populate the div using the `innerHTML` property. At this point, opening the file in the browser will showcase the text being displayed.
 
-* Be sure to ask individual students questions from time to time to maintain engagement!
+      ![image-1](Images/1-js-generators-1.png)
+      ![image-2](Images/1-js-generators-2.png)
 
-* After discussing each section, give the groups a moment to talk to one another and confirm that they understand the topics presented. If there are any issues, encourage them to raise the questions to one another &mdash; and if no member of the team can can answer, to then raise it to the class.
+  * `3.html` is intended to show that adding another line of `innerHTML` will replace the earlier text.
 
-* Continue this way until all topics have been covered. Just aim to have at least 2 hours of class time left by the time this recap is complete.
+      ![image-3](Images/1-js-generators-3.png)
+      ![image-4](Images/1-js-generators-4.png)
 
-### 5. Instructor Do: Provide Activity Guidelines (5 mins)
+  * `4.html` shows that this replacement can be corrected if we create a new div dynamically and use the `appendChild` method to display it as well.
 
-* Task the student groups with choosing one of four different group assignments to work on for the next part of class. Each group should decide which activity/ies to choose based on the following paradigm.
+      ![image-5](Images/1-js-generators-5.png)
 
-* Slack out the following instructions:
+  * `5.html` shows that we can use the `setAttribute` method to change the CSS style
+
+      ![image-6](Images/1-js-generators-6.png)
+      ![image-7](Images/1-js-generators-7.png)
+      ![image-8](Images/1-js-generators-8.png)
+      ![image-9](Images/1-js-generators-9.png)
+
+* Go over any questions from the previous example, then slack out the file `5.html`.
+
+### 5. Students Do: Generating HTML with Plain JS (15 mins)
+
+* Slack out the following file and instructions:
+
+* **File:**
+
+  * `drinklist-unsolved.html` in `02-JSDrinkList/Unsolved`
 
 * **Instructions:**
 
-  * As a group, choose to complete one of the following tasks. Use the information provided below as a guide.
+  * Using the file sent to you as a starting point, add the missing code such that your JavaScript generates HTML content that displays all of the drink options.
 
-    * Can you and your team comfortably build the Word Guess Game (HW 3) from scratch?
+  * HINT:  You will need a for-loop. Inside your for-loop you will need to use each of the following methods: `createElement`, `.innerHTML`, and `.appendChild`.
 
-      * No? Then start with Word Guess.
+  * BONUS: Instead of using a `for` loop, try searching about the use of the jQuery `.each` method.
 
-    * Can you and your team conceptually explain how "Captain Planet The Game” works?
+### 6.  Instructor Do: Review Activity (10 mins)
 
-      * No? Then start by dissecting "Captain Planet the Game".
+* Review the activity. In discussing the solution, point out how:
 
-    * Can you and your team comfortably use jQuery to modify HTML based on clicks?
+  * We utilized the `getElementByID` method to grab the div we'll be placing content into. We then store this element into a variable.
 
-      * No? Then start with Lottery Generator.
+  * We then use a for-loop to loop through the drink list.
 
-    * Can you and your team comfortably create a grid-based design with Bootstrap?
+  * Inside the for-loop we continually create divs and change the `innerHTML` of each div to match the contents of each drink in the array.
 
-      * No? Then start with the Bootstrap Portfolio assignment.
+  * Finally, we used the `appendChild` method to add the new divs we created to the original one.
 
-### 6. Students Do: Activities (100 mins) (Critical)
+    ![image-10](Images/2-js-drink-list-1.png)
+    ![image-11](Images/2-js-drink-list-2.png)
 
-* Students begin coding. Be sure to encourage them to try coding from scratch if possible. TAs and Instructors should use this time to assist students where needed.
+* Slack out the solution and the [video review](https://www.youtube.com/watch?v=9_9-NeU2L_U) when complete
 
-- - -
+### 7. Instructor Do: Introduce jQuery (10 mins)
 
-### 7. LUNCH BREAK (30 mins)
+* Spend a few moments to introduce the concept of jQuery.
 
-- - -
+* In your discussion, explain that:
 
-### 8. Students Do: Coin Flipper (15 mins)
+  * JavaScript alone is not ideal for performing these kinds of HTML modifications. Instead, jQuery provides a simplified syntax for doing the same tasks.
 
-* Students will be building an app that allows them to guess the outcome of a coin flip, and track their wins/losses.
+  * Explain the concept of a "library" (i.e. a pre-built set of JavaScript methods that allow you to more easily perform functions.) Try to have students see how this concept of a library is similar to the concept of a CSS Framework like Bootstrap.
 
-* Without showing the the code, open [04-CoinFlip/Solved](../../../../01-Class-Content/05-timers/01-Activities/04-CoinFlip/Solved/coin-flip-solution.html) your web browser and demonstrate its functionality.
+  * Go through the slides on use cases.
 
-* Slack out the following instructions and files to the class:
+### 8.  Instructor Do: DOM Manipulation with jQuery (10 mins)
+
+* Now return to the example completed before. But this time, use jQuery (`03-jQueryGenerators`).
+
+* As with the last case, this one is divided into separate files to make it easier to explain in pieces.
+
+  * `1.html` shows how we add in the jQuery library script at the top and that we use the $ selector to grab the div of interest. It also shows that we can change the HTML and append in just two lines. Be sure to point out how much simpler this is then the plain javascript version.
+
+    ![image-12](Images/3-jQuery-generators-1.png)
+
+  * `2.html` points out that we could also create separate divs on the fly.
+
+  * `3.html` points out that we can change the HTML class as well.
+
+    ![image-13](Images/3-jQuery-generators-2.png)
+    ![image-14](Images/3-jQuery-generators-3.png)
+
+* Slack out the file `3.html` when complete.
+
+### 9. Students Do: Generating HTML with jQuery (15 mins)
+
+* Proceed with the drinkList exercise. This time students will re-complete it using jQuery.
+
+* Slack out the following file and instructions.
+
+* **File:**
+
+  * `jquery-drink-list-unsolved.html` in `05-jQueryDrinkList/Unsolved`
 
 * **Instructions:**
 
-  * Make a Coin Flipper game.
+  * Re-factor (re-write) your previous drinkList code from earlier, but this time use jQuery to complete all of the same tasks.
 
-  * Follow the directions in the html file.
+  * Your final code should NOT have any of the following methods: `createElement`, `innerHTML`, or `appendChild`.
 
-  * How the app works:
+  * HINT: Don’t forget to “incorporate” jQuery before you begin.
 
-    * The user chooses Heads or Tails, and the computer randomly selects heads or tails and displays the outcome on the screen. The app then displays whether or not the user won or lost.
-    * If heads, use: <http://random-ize.com/coin-flip/us-quarter/us-quarter-front.jpg>
-    * If tails, display: <http://random-ize.com/coin-flip/us-quarter/us-quarter-back.jpg>
+### 10. Instructor Do: Review Activity (10 mins)
 
-  * **BONUS**:
-    * Put your JavaScript in its own file and link to it in the HTML.
-    * Keep track of the number of Heads or Tails and display the results on the screen.
-    * Add CSS styling.
+* Review the previous exercise. In your review point out each of the following
 
-* **Folder**: [04-CoinFlip/Unsolved](../../../../01-Class-Content/05-timers/01-Activities/04-CoinFlip/Unsolved)
+  * We used jQuery to grab the `drink-options` div.
 
-### 9. Everyone Do: Coin Flipper Review (10 mins) (High)
+  * We then created a new div and added content about the drinks (in a single line)
 
-* Walk through the solution to the previous activity, [04-CoinFlip/Solved](../../../../01-Class-Content/05-timers/01-Activities/04-CoinFlip/Solved/), in your editor.
+  * We then looped through and used the `append` to add the content to the page.
 
-* Call on students and quiz them about what different parts of the solution are doing.
+      ![image-15](Images/4-jQuery-drink-list-1.png)
 
-### 10. Instructor Do: Recap (5 mins)
+### 11. Instructor Do: On Click Basic (10 mins)
 
-* Recap key concepts from the Coin Flipper exercise and answer any final questions.
+* Open the file `onclick.html` in `05-OnClickBasic`. Then walk students through the syntax for `on-click` events. Specifically, point out how:
 
-### 11. Partners Do: This Activity (10 mins)
+  * The code has a jQuery selector to select the html element (button, header, anything)
 
-* For this next exercise, make sure students are working with a partner!
+  * It then has a `.on('click', function(){})` syntax for capturing the event.
 
-* Slack out the following instructions and files:
+  * Inside that event's function is the code that results from the click.
 
-* **Instructions**:
+      ![image-16](Images/5-onclick-basic.png)
 
-  * Find a partner.
-  * Together, open the supplied HTML file and answer all questions.
+* Students will likely be confused by the syntax. Let them know to use it for now -- and that it will make more sense over time as we learn other concepts.
 
-* **Folder**: [05-This/Unsolved](../../../../01-Class-Content/05-timers/01-Activities/05-This/Unsolved)
+### 12. Partners Do: Sandwich Clicking (25 mins)
 
-### 12. Everyone Do: This Review (5 mins)
+* Slack out the following file and instructions. If you are attempting the bonus, find some fun images online.
 
-* Open the solution to the previous activity, [05-This/Solved](../../../../01-Class-Content/05-timers/01-Activities/05-This/Solved) in your editor.
+* **File:**
 
-* Choose a team/pair of students to go over their solution to the exercise.
+  * `sandwich-click-unsolved.html` in `06-SandwichClick/Unsolved`
 
-* Run each function to see if they are correct or not.
+* **Instructions:**
 
-### 13. Instructor Do: Timeout (10 mins) (High)
+  * Add in the missing code such that clicking any of the sandwiches causes…
 
-* Explain to the class that in programming, we sometimes want events to occur after a certain amount of time. Some examples include:
+    1. An alert message to popup saying something snarky about the sandwich type.
 
-  * Digital clocks/timers
+    2. A second alert message that displays to the user the number of that specific sandwich they’ve eaten.
 
-  * Exams that have a time limit to complete
+    3. HINT: You will need counter variables.
 
-  * Games that have give the user a certain amount of time to complete a task
+  * BONUS: Add an image to the `image-div` on the click event.
 
-* Open [06-Timeout/timeout.html](../../../../01-Class-Content/05-timers/01-Activities/06-Timeout/timeout.html) and demonstrate the application's functionality in your web browser.
+- - -
 
-  * When the page loads, an alert is automatically thrown one second later.
+### 13. BREAK (30 mins)
 
-  * When the `Button Timeout Start` button is clicked, a different alert is thrown three seconds later.
+- - -
 
-  * The initial alert can be canceled if the `Window Alert Cancel` button is clicked during the one second window after page load.
+### 14. Instructor Do: Review Activity (10 mins)
 
-  * The alert thrown by the `Button Timeout Start` button can be canceled if the `Button Timeout Cancel` button is clicked during the three second window.
+* Review the activity. Be sure to talk about:
 
-* Open the code in your editor and go over `setTimeout` and `clearTimeout` (we will get to `setInterval` after the break). Be sure to point out the following:
+  * The use of counter variables at the top.
+    ![image-17](Images/6-sandwich-1.png)
 
-  * `setTimeout` accepts two arguments:
-    
-    * A function to run.
+  * The on-click events tied to each of the sandwich headers. The on-click events trigger the counter to go up and creates the alerts.
+    ![image-18](Images/6-sandwich-2.png)
+    ![image-19](Images/6-sandwich-3.png)
 
-    * The number of milliseconds to **wait before** running the function.
-  
-  * `setTimeout` returns a reference to the created timer that we can store this in a variable.
+  * In discussing the bonus, point out how images can be added. Note that we are injecting HTML with the src pointing to the jpg.
+    ![image-20](Images/6-sandwich-4.png)
 
-  * `clearTimeout` can be used to cancel a timer we have a reference to.
+* Slack out the solution and the [video review](https://www.youtube.com/watch?v=6BLReDBUZRk) when done.
 
-* Be sure to mention these are vanilla JavaScript methods, not jQuery!
+### 15. Partners Do: Trigger Random (15 mins)
 
-* Take a moment to answer any additional questions.
+* Slack out the following file and instructions.
 
-### 14. Instructor Do: Context (5 mins)
+* **File:**
 
-* Open [07-Context/context.html](../../../../01-Class-Content/05-timers/01-Activities/07-Context/context.html). Demonstrate the code in your browser and then in the editor.
+  * `trigger-random-unsolved.html` in `07-TriggerRandom/Unsolved`
 
-* Explain that the `this` keyword inside of a function executed by `setTimeout` refers to the window object.
+* **Instructions:**
 
-* Don't dwell on this but mention it: the functions are run in a different `execution context`.
+  * Add in the missing code such that clicking the big blue button triggers a random number (between 1 and 1000) to be selected and prominently displayed in the random-number div.
 
-  * So for `setTimeout(person.sayHi, 50);`, inside the `sayHi` function, `this` is the window, it isn't the person object anymore.
+    * Hint: None. You got this.
 
-  * To be able to access the person object in the `sayHi` function when passing it to `setTimeout`, you have to use the person object in `sayHi`.
+### 16. Instructor Do: Review Activity (5 mins)
 
-* Don't talk about call or bind here - WE DO NOT WANT TO FREAK THE STUDENTS OUT!
+* Review the activity. Be sure to point out that:
 
-### 15. Students Do: Simple Timer (10 mins) (Critical)
+  * We latched onto the `random-button` using its ID. Let them know where to focus their attention: Not the classes, and not the spans. The ID is what mattered in this case.
 
-* Slack out the following instructions and files:
+    ![image-21](Images/7-trigger-random-1.png)
 
-* **Instructions**:
+  * We then created a click event tied to this `random-button`. This event triggers a random number between 1 and 1000 to be generated and printed to the HTML.
 
-  * Make a page with a a simple timer that sends an alert and plays a sound after 15 seconds.
-  * Have it send an alert when 5 seconds has passed, 10 seconds has passed and when the time is up.
-  * You will use this to time the break!
+    ![image-22](Images/7-trigger-random-2.png)
 
-* **Folder**: [08-SimpleTimer/Unsolved](../../../../01-Class-Content/05-timers/01-Activities/08-SimpleTimer/Unsolved)
+* Slack out the solution when done.
 
-### 16. Instructor Do: Simple Timer Recap (5 mins)
+### 17. Partners Do: Lottery Generator (20 mins)
 
-* Open the solution to the Simple Timer activity in [08-SimpleTimer/Solved](../../../../01-Class-Content/05-timers/01-Activities/08-SimpleTimer/Solved)
+* Open the file `lottery-generator-solved.html` in the browser. Show students how the final result of their work will look.
 
-* Recap the key concepts of the exercise and answer any remaining questions.
+* Then slack out the following file and instructions.
 
-### 17. TA's Do: Introduce Homework (2 mins)
+* **File:**
 
-* Present the homework - there are two options, a basic trivia game and a slightly more advanced one.
+  * `trigger-random-unsolved.html` in `07-TriggerRandom`
 
-* The students have learned everything they need to complete the homework, and can complete it tonight.
+* **Instructions:**
 
-* Play the two videos ([advanced-trivia-demo](https://youtu.be/xhmmiRmxQ8Q) and [basic-trivia-demo](https://youtu.be/fBIj8YsA9dk))
+  * Using the code from the previous random number generator as a starting point, create a lottery generator.
 
-### 18. End (0 mins)
+    * In our case, the lottery number should pick 9 random numbers (and always 9 numbers). As an example: 886563264.
+
+    * Display this number in the random-number div.
+
+    * Then when a user clicks again, have the code create a new row with the latest number at the top.
+
+### 18. Instructor Do: Review Activity (5 mins)
+
+* Review the activity. Be sure to discuss that:
+
+  * We needed to create a for loop that created 9 different numbers. Without this for loop, we couldn't guarantee that we'd have 9 numbers. Also point out that we are using `prepend` as opposed to `append` so that the newest number shows up at the top.
+    ![image-23](Images/8-lottery-1.png)
+
+  * The end result of the lottery looks like the below.
+    ![image-24](Images/8-lottery-2.png)
+
+* Slack out the solution and [video review](https://www.youtube.com/watch?v=Nh4wxhzePIs) when done.
+
+### 19.  Instructor Do: Captain Planet Game  (5 min)
+
+* Open the slide deck: [3.1 jQuery Jubilee](https://docs.google.com/presentation/d/1OWXiM3iGOFjB_ThjNEPvRLQpRPymP-K6vx953rd8AtU/edit?usp=sharing).
+
+* Open the file `captain-planet-game.html` in `10-CaptainPlanetGame/Solved` in the Browser. Click on various buttons and show students how Captain Planet is being modified in response to the clicks.
+
+  ![image-1](Images/1-captain-planet.png)
+
+### 20.  Students Do: Pseudocode Captain Planet (10 min)
+
+* Proceed with the first activity, in which you ask students to pseudocode the game's logic and structure.
+
+### 21.  Instructor Do: Review Pseudocode (5 min)
+
+* Allow students to share their pseudocode breakdowns.
+
+* Then show your own pseudocode outline (shown on slide).
+
+### 22.  Students Do: Create a Superpower Captain Planet (15 min)
+
+* Slack out the code for the game.
+
+* Then task students with dissecting it, and adding additional code to create a new power for Captain Planet. At base, this requires them to create a new button, create a new on-click event, and then create code that changes the CSS for Captain Planet in response to button clicks.
+
+* **Folder:**
+
+  * `10-CaptainPlanetGame` in `10-CaptainPlanetGame/Unsolved`
+
+* **Instructions:**
+
+  * Look at the jQuery API Docs [(https://api.jquery.com/)](https://api.jquery.com/) and add a button of your own that gives Captain Planet a new power.
+
+  * Examples:
+
+    * Click to… Stretch Captain Planet!
+    * Click to… Trigger a maniacal laugh!
+    * Click to… Create clones of Captain Planet!
+    * Click to… Create fire or water (hint: images)!
+
+  * Slack out a screenshot of the working example.
+
+* **Instructor:**
+  * Feel free to give students additional time here if necessary. Make sure the majority of your students have at least a basic example that works.
+
+### 23.  Instructor Do: Review Captain Planet (5 min)
+
+* Have a student with a working solution share their code with you. Then ask them to present at the front of class.
+
+* If no one one has a working example, quickly create code of your own that "stretches" Captain Planet. You can use the version found in `Solved->captain-planet-game.html` as an example.
+
+### 24.  Instructor Do: jQuery Recap (10 min)
+
+* Next, spend a few moments going through the jQuery recap slides. The most important thing to explain in discussing these slides is the fact that jQuery is "capturing" HTML elements using the `$()`, and that we are then applying various methods to that element (or a different one in response).
+
+* Finally, point out that students shouldn't be expecting to memorize all of the jQuery library. Point out that coding is all about understanding a general concept, and then "looking up" the exact code when needed.
+
+* Field any questions that remain before ending for the day
+
+### 25. END (0 mins)
+
+- - -
 
 ### Lesson Plan Feedback
 
 How did today's class go?
 
 [Went Well](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=ft&sentiment=positive&lesson=03.01)
+
 
 [Went Poorly](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=ft&sentiment=negative&lesson=03.01)
