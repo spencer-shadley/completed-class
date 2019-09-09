@@ -1,32 +1,49 @@
-## Unit 7 - Project 1 
+# Unit 07: Project-1
 
-### Overview
+## Overview
 
-In this week, students will begin work on their first Project of the Boot Camp, an API-powered web application that pulls data from multiple sources in a creative way.
+Brief description of the concepts covered in this unit.
 
-### Learning Objectives
+  * Refer to the [Class Content Unit Overview](../../../01-Class-Content/07-Project-1/README.md) for detailed information on key topics, learning objectives and homework.
 
-* By the end of this unit, students will be able to:
-  * Explain the key components of compelling web applications.
-  * Conceptualize and build creative apps that rely on outside data sources.
-  * Assign tasks and resolve merge conflicts using Git and GitHub.
+## Instructor / TA Notes
 
-### Key Topics
+All the touchy-feely and logistical stuff that instructional staff needs to know to be successful starting this unit.
 
-* Collaborative Front-End Development
-* Git Workflow In Groups
+## Heads Up
 
+Alert instructional staff to expectations for the next unit, i.e: installations, challenging topics, preparation for projects, etc.
+
+## Helpful Links
 
 ### Lesson Plans
 
-* [7.1 - Lesson Plan](01-Day/07.1-LessonPlan.md)
-* [7.2 - Lesson Plan](02-Day/07.2-LessonPlan.md)
-* [7.3 - Lesson Plan](03-Day/07.3-LessonPlan.md)
+  * [07.1 - Lesson Plan](01-Day/07.1-LESSON-PLAN.md)
 
-### Helpful Links
+  * [07.2 - Lesson Plan](02-Day/07.2-LESSON-PLAN.md)
 
-* [API Resources](01-Day/Supplemental/API_Resources.docx)
+  * [07.3 - Lesson Plan](03-Day/07.3-LESSON-PLAN.md)
 
-### Slide Shows
+### Slide Decks
 
-* [8.1 - GitHub Collaboration and Project Week](https://docs.google.com/presentation/d/1zWh3vjCMYaRm71DSM-Amy0PL272Fa-a39IwDuIMMokY/edit?usp=sharing)
+  * [07.1: Project Week](https://docs.google.com/presentation/d/1mCsAsRtwjGncXqq17bIJUZGNV26wqjqeuhWTQvnoLa0/edit?usp=sharing)
+
+### Time Tracker(s)
+
+  * [Unit 07-Project-1 Day 1 Time Tracker](trackerlink)
+
+  * [Unit 07-Project-1 Day 2 Time Tracker](trackerlink)
+
+  * [Unit 07-Project-1 Day 3 Time Tracker](trackerlink)
+
+## Unit Algorithms
+
+  * [01-swap-case](../../../01-Class-Content/07-Project-1/03-Algorithms/01-swap-case)
+
+  * [02-longest-word](../../../01-Class-Content/07-Project-1/03-Algorithms/02-longest-word)
+
+  * [03-acronym-builder](../../../01-Class-Content/07-Project-1/03-Algorithms/03-acronym-builder)
+
+## Career Services
+
+Add the weekly CS announcement.
