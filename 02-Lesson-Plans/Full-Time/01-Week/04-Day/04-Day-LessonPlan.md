@@ -34,7 +34,7 @@ Today's class is focused on introducing students to additional CSS styling techn
 
 ## Slides
 
-[Going Live](https://docs.google.com/presentation/d/1_TFrS_Gy9-wAO3SIHrfpRys7ZRtuVt7PQFoSCslUiEw/edit?usp=sharing)
+[1.4 Going Live](https://docs.google.com/presentation/d/1_TFrS_Gy9-wAO3SIHrfpRys7ZRtuVt7PQFoSCslUiEw/edit?usp=sharing)
 
 ## Time Tracker
 

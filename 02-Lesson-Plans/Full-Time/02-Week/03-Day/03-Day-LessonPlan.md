@@ -36,11 +36,11 @@ In this class, we will be introducing students to the concept of JavaScript Obje
 
 ## Slides
 
-* [3.3 JavaScript Juggernauts](https://docs.google.com/presentation/d/1FNWk2sW-UI3f18ndhHOF3GIpCrjxgWA_T3wbzsaGYj4/edit?usp=sharing)
+* [2.3 JavaScript Juggernauts](https://docs.google.com/presentation/d/1FNWk2sW-UI3f18ndhHOF3GIpCrjxgWA_T3wbzsaGYj4/edit?usp=sharing)
 
 ## Time Tracker
 
-* [3.3 Time Tracker](https://drive.google.com/open?id=1ARtFPnNAd5awL3v5yFaj6t2ytrIbQos0)
+* [2.3 Time Tracker](https://drive.google.com/open?id=1ARtFPnNAd5awL3v5yFaj6t2ytrIbQos0)
 
 - - -
 

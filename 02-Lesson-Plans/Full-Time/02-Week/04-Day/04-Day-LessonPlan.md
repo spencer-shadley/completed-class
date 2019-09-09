@@ -38,7 +38,7 @@ Todays class will be students first introduction to the DOM. We are going to use
 
 ## Slides
 
-* [02-4 - jQuery Begins](https://drive.google.com/open?id=1NkVWhp8MifNK-eINQ1J-VoQ_34lRqL_Qv97s4u3FT9I)
+* [2.4 jQuery Begins](https://drive.google.com/open?id=1NkVWhp8MifNK-eINQ1J-VoQ_34lRqL_Qv97s4u3FT9I)
 
 ## Time Tracker
 

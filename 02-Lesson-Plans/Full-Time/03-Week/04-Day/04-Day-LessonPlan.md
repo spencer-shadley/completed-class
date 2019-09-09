@@ -22,7 +22,7 @@ In this class, students will be building upon their knowledge of AJAX to retriev
 
 ## Slides
 
-[03-4: Advanced AJAX](https://docs.google.com/presentation/d/12gsOr-L8qMjppsT0aFzZvrm8ZwfvGI1w_EuBnqjAjGY/edit?usp=sharing)
+[3.4 Advanced AJAX](https://docs.google.com/presentation/d/12gsOr-L8qMjppsT0aFzZvrm8ZwfvGI1w_EuBnqjAjGY/edit?usp=sharing)
 
 ## Time Tracker
 

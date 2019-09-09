@@ -32,7 +32,7 @@ Today's class is focused on providing students with the very basics of JavaScrip
 
 ## Slides
 
-* [02-1 - The Joys of JavaScript](https://docs.google.com/presentation/d/1ozIKdqhqnrWS6vU2glLUxFwzCbZmu9h0lDo8cMAYa1I/edit?usp=sharing)
+* [02.1 The Joys of JavaScript](https://docs.google.com/presentation/d/1ozIKdqhqnrWS6vU2glLUxFwzCbZmu9h0lDo8cMAYa1I/edit?usp=sharing)
 
 ## Time Tracker
 

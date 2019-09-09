@@ -23,7 +23,7 @@ Today's class is focused on re-introducing students to the concept of `for` loop
 
 ## Slides
 
-* [2.2 - Jumping for JS](https://docs.google.com/presentation/d/1hKgGl_19fRL0xpABAhDlNNvadOFVBUeqjGdM82wNmL0/edit?usp=sharing)
+* [2.2 Jumping for JS](https://docs.google.com/presentation/d/1hKgGl_19fRL0xpABAhDlNNvadOFVBUeqjGdM82wNmL0/edit?usp=sharing)
 
 ## Time Tracker
 

@@ -22,7 +22,7 @@ In this class, we will be introducing students to the concept of DOM Manipulatio
 
 ## Slides
 
-[03-1 - JavaScript and jQuery Review](https://docs.google.com/presentation/d/1j_68fLQ8UeKonC6wZHD2z0W-3u00akFx4845fJXhyrE/edit?usp=sharing)
+[3.1 JavaScript and jQuery Review](https://docs.google.com/presentation/d/1j_68fLQ8UeKonC6wZHD2z0W-3u00akFx4845fJXhyrE/edit?usp=sharing)
 
 ## Time Tracker
 

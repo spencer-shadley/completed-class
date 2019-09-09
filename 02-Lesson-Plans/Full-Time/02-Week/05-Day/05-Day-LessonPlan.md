@@ -26,7 +26,7 @@ Todays class will be about client side storage APIs and continuing to work on th
 
 ## Slides
 
-* [02-5 - jQuery Jubilee](https://docs.google.com/presentation/d/1OLol2xQemLl4uhvtKg7J3qx6hL4v59UTT9uRxlvfHNs/edit?usp=sharing)
+* [2.5 jQuery Jubilee](https://docs.google.com/presentation/d/1OLol2xQemLl4uhvtKg7J3qx6hL4v59UTT9uRxlvfHNs/edit?usp=sharing)
 
 ## Time Tracker
 
