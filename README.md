@@ -28,8 +28,6 @@ You will find grading rubrics, links to slide decks and time trackers, and lesso
 
 For information regarding onboarding and training, consult the [Instructor Onboarding Guide](https://coding-bootcamp-instructor-onboarding-prework.readthedocs-hosted.com/en/latest/).
 
-For additional guides and resources for instructional staff, consult the [Wiki](https://github.com/coding-boot-camp/FullStack-Ground/wiki).
-
 Have a suggestion or feedback? Please submit it through our [FullStack-Ground Feedback & Suggestions Survey](https://forms.gle/pRduJubbPK9fu22R7)
 
 Found a bug? [Log an Issue](https://github.com/coding-boot-camp/FullStack-Ground/issues).
