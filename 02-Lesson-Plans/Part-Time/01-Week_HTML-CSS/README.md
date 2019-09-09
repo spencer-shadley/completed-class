@@ -4,7 +4,7 @@
 
 In this week, we will be welcoming our students to their first week of our Full-Stack Web Development Boot Camp. We'll be walking them through the very basics of HTML/CSS, Git Version Control, and Terminal/Console commands.
 
-  * Visit the [Class Content Unit Overview](../../../01-Class-Content/01-HTML-CSS/README.md) for detailed information on key topics, learning objectives and homework.
+  * Refer to the [Class Content Unit Overview](../../../01-Class-Content/01-HTML-CSS/README.md) for detailed information on key topics, learning objectives and homework.
 
 ## Instructor / TA Notes
 
@@ -19,8 +19,6 @@ A lot of time will be spent ensuring that students have properly installed all o
 ## Helpful Links
 
 * [Generating an SSH Key for GitHub](https://help.github.com/articles/generating-an-ssh-key/)
-
-* [Learn Git](https://www.codecademy.com/learn/learn-git)
 
 * [Try Git](https://try.github.io/levels/1/challenges/1)
 

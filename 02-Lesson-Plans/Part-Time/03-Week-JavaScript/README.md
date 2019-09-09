@@ -4,7 +4,7 @@
 
 In this week we will be introducing students to their first taste of JavaScript. They will then use their newfound understanding of variables, arrays, loops, and conditionals to create a simple Password Generator.
 
-  * Visit [the Class Content Unit Overview](../../../01-Class-Content/03-JavaScript/README.md) for detailed information on key topics, learning objectives and homework.
+  * Refer to the [Class Content Unit Overview](../../../01-Class-Content/03-JavaScript/README.md) for detailed information on key topics, learning objectives and homework.
 
 ## Instructor / TA Notes
 
@@ -12,15 +12,7 @@ In every activity moving forward, pre-coded instructor demos are provided for yo
 
 This week is filled with a lot of brand new topics. If you fall behind, make sure to adjust your plan accordingly.
 
-## Heads Up
-
-This week you will be Slacking out JavaScript files to students. Slack adds hidden characters to JavaScript which render the code dysfunctional. To avoid this issue, make sure that students are downloading the file directly from Slack and that they're NOT just copying and pasting from the snippets you send out. This will single-handedly confuse a ton of students.
-
 ## Helpful Links
-
-* [Eloquent JavaScript](http://eloquentjavascript.net/)
-
-* [JavaScript and jQuery](http://www.amazon.com/JavaScript-JQuery-Interactive-Front-End-Development/dp/1118531647/ref=sr_1_1?s=books&ie=UTF8&qid=1460751938&sr=1-1)
 
 ### Lesson Plans
 

@@ -4,7 +4,7 @@
 
 In this week, we will continue diving into CSS and providing students with a thorough series on Bootstrap. Additionally, we'll cover deployments with GitHub Pages.
 
-  * Visit [the Class Content Unit Overview](../../../01-Class-Content/02-CSS-Bootstrap/README.md) for detailed information on key topics, learning objectives and homework.
+  * Refer to the [Class Content Unit Overview](../../../01-Class-Content/02-CSS-Bootstrap/README.md) for detailed information on key topics, learning objectives and homework.
 
 ## Instructor / TA Notes
 
@@ -15,16 +15,6 @@ This week, your primary focus as instructors/TAs is to ensure students are able 
 Be ready to have your troubleshooting hat on for helping students debug GitHub Pages deploys, as the surface area for problems is somewhat large.
 
 ## Helpful Links
-
-* [Github Pages](https://pages.github.com/)
-
-* [Google Fonts](https://www.google.com/fonts)
-
-* [Web Design with HTML, CSS, JavaScript, and jQuery Book Set](https://www.amazon.com/Web-Design-HTML-JavaScript-jQuery/dp/1118907442)
-
-* [Bootstrap - Official Page](http://getbootstrap.com/)
-
-* [Bootstrap - W3Schools](http://www.w3schools.com/bootstrap/bootstrap_get_started.asp)
 
 ### Lesson Plans
 

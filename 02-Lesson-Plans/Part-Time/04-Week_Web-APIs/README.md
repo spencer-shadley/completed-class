@@ -4,7 +4,7 @@
 
 In this week we will be introducing students to some of the most popular Web APIs. They will then use their newfound understanding of DOM manipulation, events, localStorage, and timers to create a quiz application.
 
-  * Visit [the Class Content Unit Overview](../../../01-Class-Content/04-Web-APIs/README.md) for detailed information on key topics, learning objectives and homework.
+  * Refer to the [Class Content Unit Overview](../../../01-Class-Content/04-Web-APIs/README.md) for detailed information on key topics, learning objectives and homework.
 
 ## Instructor / TA Notes
 
@@ -15,12 +15,6 @@ This is a critical unit as it introduces real-world use cases for the programmin
 Students are very likely to come across jQuery solutions when searching for DOM/event resources. Make sure to let them know that we will cover jQuery in the next unit, so for now, do not consult resources that include the word `jQuery` or the `$` variable.
 
 ## Helpful Links
-
-* [Wikipedia: DOM](https://en.wikipedia.org/wiki/Document_Object_Model)
-
-* [MDN: DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
-
-* [MDN: Client-side storage](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Client-side_storage)
 
 ### Lesson Plans
 

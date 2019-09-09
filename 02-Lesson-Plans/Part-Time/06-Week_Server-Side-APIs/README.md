@@ -1,56 +1,49 @@
-## Unit 6 - Server-Side APIs
+# Unit 06: Server-Side-APIs
 
-### Overview
+## Overview
 
-In this week we will be introducing students to the concept of APIs and the use of AJAX queries to retrieve and parse data in JSON formats. Throughout the week we'll be specifically working with the Giphy, OMDb, and New York Times APIs.
+Brief description of the concepts covered in this unit.
 
-Make sure students sign up and obtain THEIR OWN PERSONAL API KEY for any APIs we might use, as the publics keys that we provide could be deactivated at any time.
+  * Refer to the the [Class Content Unit Overview](../../../01-Class-Content/06-Server-Side-APIs/README.md) for detailed information on key topics, learning objectives and homework.
 
-Be sure to slack out this [tutorial on the OpenWeatherMap API](http://osp123.github.io/tutorials/html/weatherAPI.html) as pre-reading for this week's content.
+## Instructor / TA Notes
 
-### Learning Objectives
+All the touchy-feely and logistical stuff that instructional staff needs to know to be successful starting this unit.
 
-* By the end of this unit, students will be able to:
-  * Explain how APIs work.
-  * Parse JSON data from remote APIs.
-  * Use AJAX to update web apps with remote content.
-  * Delegate tasks in collaborative settings—data, layout, styling and so on.
+## Heads Up
 
-### Key Topics
+Alert instructional staff to expectations for the next unit, i.e: installations, challenging topics, preparation for projects, etc.
 
-* APIs
-* JSON
-* AJAX
+## Helpful Links
 
 ### Lesson Plans
 
-* [6.1 - Lesson Plan](01-Day/06.1-LessonPlan.md)
-* [6.2 - Lesson Plan](02-Day/06.2-LessonPlan.md)
-* [6.3 - Lesson Plan](03-Day/06.3-LessonPlan.md)
+  * [06.1 - Lesson Plan](01-Day_APIs-and-AJAX/06.1-LESSON-PLAN.md)
 
-### Homework Activities
+  * [06.2 - Lesson Plan](02-Day_Advanced-AJAX/06.2-LESSON-PLAN.md)
 
-* [Giphy Viewer](../../../01-Class-Content/06-ajax/02-Homework/Instructions/homework.md)
-* [Homework Demo](https://youtu.be/BqreERTLjgQ)
+  * [06.3 - Lesson Plan](03-Day_APIs-Continued/06.3-LESSON-PLAN.md)
 
-### Key Activities
+### Slide Decks
 
-* [6.1 - Button Triggered AJAX](../../../01-Class-Content/06-ajax/01-Activities/03-AJAX_to_HTML)
-* [6.1 - Giphy API](../../../01-Class-Content/06-ajax/01-Activities/04-Giphy_API)
-* [6.2 - Working OMDb Movie App](../../../01-Class-Content/06-ajax/01-Activities/10-WorkingMovieApp)
-* [6.3 - Dynamic Elements](../../../01-Class-Content/06-ajax/01-Activities/14-DynamicElements)
-* [6.3 - Pausing Gifs](../../../01-Class-Content/06-ajax/01-Activities/15-PausingGifs)
-* [6.3 - NYT Search Application](../../../01-Class-Content/06-ajax/01-Activities/16-NYTSearch)
+  * [06.1 - Slide Deck Title](slidelink)
 
-### Helpful Links
+### Time Tracker(s)
 
-* [AJAX Documentation](http://api.jquery.com/jquery.ajax/)
-* [Giphy API](https://developers.giphy.com/docs/)
-* [OMDb API](http://www.omdbapi.com/)
-* [Open Weather Map API](http://openweathermap.org/api)
-* [New York Times Article API](http://developer.nytimes.com/docs/read/article_search_api_v2)
-* [NYT Activity Video Walkthrough (Highly Recommended)](https://youtu.be/RQTVw6XJAac?list=PLgJ8UgkiorCnCFzNp0dP0zJyeFAgstYTj)
+  * [Unit 06-Server-Side-APIs Day 1 Time Tracker](trackerlink)
 
-### Slide Shows
+  * [Unit 06-Server-Side-APIs Day 2 Time Tracker](trackerlink)
 
-* [6.2 - Advanced AJAX](https://docs.google.com/presentation/d/1AMZW0G8cYnEdqeIMZMoNUQRsM1PVgykP7afZ_31wJE4/edit?usp=sharing)
+  * [Unit 06-Server-Side-APIs Day 3 Time Tracker](trackerlink)
+
+## Unit Algorithms
+
+  * [01-factorial](../../../01-Class-Content/06-Server-Side-APIs/03-Algorithms/01-factorial)
+
+  * [02-is-palindrome](../../../01-Class-Content/06-Server-Side-APIs/03-Algorithms/02-is-palindrome)
+
+  * [03-title-case](../../../01-Class-Content/06-Server-Side-APIs/03-Algorithms/03-title-case)
+
+## Career Services
+
+Add the weekly CS announcement.
