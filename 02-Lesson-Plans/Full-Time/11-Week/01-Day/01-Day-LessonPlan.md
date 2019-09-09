@@ -557,7 +557,7 @@ return (
 
 - - -
 
-### 10. Everyone Do: BREAK (15 mins)
+### 10. Everyone Do: BREAK (30 mins)
 
 - - -
 
