@@ -6,7 +6,7 @@
 
 Today's class is focused on providing students with the very basics of JavaScript. For many, this will be their first foray into JavaScript as a programming language.
 
-`Summary: Complete Activities 1-13 in Unit 03`
+`Summary: Complete Activities 1-18 in Unit 03`
 
 ## Instructor Priorities
 
@@ -32,8 +32,6 @@ Today's class is focused on providing students with the very basics of JavaScrip
 
 ![1-SlackDownload](Images/1-SlackDownload.png)
 
-* Have your TAs reference [01-Day-TimeTracker](01-Day-TimeTracker.xlsx) to help keep track of time during class.
-
 ## Class Objectives
 
 * To gain a preliminary grasp of JavaScript definitions and of basic syntax.
@@ -42,16 +40,21 @@ Today's class is focused on providing students with the very basics of JavaScrip
 
 ## Slides
 
-* This lesson's slides are available on Google Drive here: [03-1 The Joys of JavaScript](https://docs.google.com/presentation/d/16lWA3gU8ZBvZNKHxBvZM791ntfvXf-6xQUNN3Bk-nL4/edit?usp=sharing)
+* This lesson's slides are available on Google Drive here: [02-1 The Joys of JavaScript](https://docs.google.com/presentation/d/16lWA3gU8ZBvZNKHxBvZM791ntfvXf-6xQUNN3Bk-nL4/edit?usp=sharing)
 
 * To add slides to the student-facing repository, download the slides as a PDF by navigating to File > "Download as" and choose "PDF document." Add the slide PDF file to your class repository along with other necessary files.
 
 * **Note:** Editing access is not available for this document. If you wish to modify the slides, please create a copy by navigating to File > "Make a copy...".
+
+## Time Tracker
+
+[01-Day-TimeTracker](https://docs.google.com/spreadsheets/d/1TXphd6IzAbm8pISaGQZOkbvyAL0D9LvCkC5DhKzwFeQ/edit?usp=sharing)
+
 - - -
 
 ### 1. Instructor Do: How to Learn JavaScript (5 mins)
 
-* Welcome students and see how they are doing while opening up the slide deck [03-1 The Joys of JavaScript](https://docs.google.com/presentation/d/16lWA3gU8ZBvZNKHxBvZM791ntfvXf-6xQUNN3Bk-nL4/edit?usp=sharing).
+* Welcome students and see how they are doing while opening up the slide deck [23-1 The Joys of JavaScript](https://docs.google.com/presentation/d/16lWA3gU8ZBvZNKHxBvZM791ntfvXf-6xQUNN3Bk-nL4/edit?usp=sharing).
 
 Begin going through the slides.
 
@@ -468,31 +471,7 @@ Begin going through the slides.
       ```
     * Don't use an array!
 
-### 37. Instructor Do: Review Activity (Optional) (0 mins)
-
-* Review `another-loop-solved.html` in `19-AnotherLoop/Solution`.
-
-  * Point out that in this case, the iterator is not an array length but an integer.
-
-  * Point out that the length is **one less than** the final number desired.
-
-      ![/Images/6-AnotherLoop.png](Images/6-AnotherLoop.png)
-
-* Then Slack out `another-loop-solved.html`
-
-### 38. Partners Do: Loop with Conditions (10 mins)
-
-* **Instructions**
-
-  * Starting from scratch, write code that loops through the following array and that logs the name of each animal on the farm to the console:
-
-    ```
-    var myFarm = ["chickens", "pigs", "cows", "horses", "ostriches"];
-    ```
-
-  * Then check if the first letter in the animal's name begins with a "c" or "o." If it does, create an alert saying, "Starts with 'c' or 'o'!"
-
-  * **Hint**: You can access the first character of a string as if it were the first element of an array.
+### 37. END (0 mins)
 
 ### Lesson Plan Feedback
 
