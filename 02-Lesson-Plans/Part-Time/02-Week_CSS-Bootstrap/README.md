@@ -14,6 +14,8 @@ This week, your primary focus as instructors/TAs is to ensure students are able 
 
 Be ready to have your troubleshooting hat on for helping students debug GitHub Pages deploys, as the surface area for problems is somewhat large.
 
+Next week, we begin 
+
 ## Helpful Links
 
 ### Lesson Plans
