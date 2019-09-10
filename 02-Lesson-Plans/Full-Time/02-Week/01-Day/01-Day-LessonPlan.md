@@ -321,7 +321,7 @@ Begin going through the slides.
 
 ### 26. Instructor Do: Welcome Students (1 min)
 
-* Welcome students. Then open the slide deck [03-2 Jumping for JavaScript](https://docs.google.com/presentation/d/1Em_iAbGzyujB5RXe-NF9KGYTzfiFN3R63Z1NRpH9MVc/edit?usp=sharing).
+* Welcome students. Then open the slide deck [Jumping for JavaScript](https://docs.google.com/presentation/d/1Em_iAbGzyujB5RXe-NF9KGYTzfiFN3R63Z1NRpH9MVc/edit?usp=sharing).
 
 * Introduce students to the overall objectives of today's class.
 

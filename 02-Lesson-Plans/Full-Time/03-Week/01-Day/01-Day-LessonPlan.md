@@ -22,7 +22,7 @@ In this class, we will be introducing students to the concept of DOM Manipulatio
 
 ## Slides
 
-[3.1 JavaScript and jQuery Review](https://docs.google.com/presentation/d/1j_68fLQ8UeKonC6wZHD2z0W-3u00akFx4845fJXhyrE/edit?usp=sharing)
+[3.1 JQuery Begins](https://drive.google.com/open?id=1NkVWhp8MifNK-eINQ1J-VoQ_34lRqL_Qv97s4u3FT9I)
 
 ## Time Tracker
 
@@ -34,7 +34,7 @@ In this class, we will be introducing students to the concept of DOM Manipulatio
 
 ### 1.  Instructor Do: Welcome Students and Admin Items (5 mins)
 
-* Welcome students to class then open the [slide deck](https://docs.google.com/presentation/d/1j_68fLQ8UeKonC6wZHD2z0W-3u00akFx4845fJXhyrE/edit?usp=sharing).
+* Welcome students to class then open the [slide deck](https://drive.google.com/open?id=1NkVWhp8MifNK-eINQ1J-VoQ_34lRqL_Qv97s4u3FT9I).
 
 ### 3.  Instructor Do: DOM Manipulation (10 mins)
 
@@ -292,7 +292,7 @@ In this class, we will be introducing students to the concept of DOM Manipulatio
 
 ### 19.  Instructor Do: Captain Planet Game  (5 min)
 
-* Open the slide deck: [3.1 jQuery Jubilee](https://docs.google.com/presentation/d/1OWXiM3iGOFjB_ThjNEPvRLQpRPymP-K6vx953rd8AtU/edit?usp=sharing).
+* Open the slide deck: [3.1 jQuery Begins](https://drive.google.com/open?id=1NkVWhp8MifNK-eINQ1J-VoQ_34lRqL_Qv97s4u3FT9I).
 
 * Open the file `captain-planet-game.html` in `10-CaptainPlanetGame/Solved` in the Browser. Click on various buttons and show students how Captain Planet is being modified in response to the clicks.
 

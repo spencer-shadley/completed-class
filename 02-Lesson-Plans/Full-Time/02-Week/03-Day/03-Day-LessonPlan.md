@@ -36,7 +36,7 @@ In this class, we will be introducing students to the concept of JavaScript Obje
 
 ## Slides
 
-* [2.3 JavaScript Juggernauts](https://docs.google.com/presentation/d/1FNWk2sW-UI3f18ndhHOF3GIpCrjxgWA_T3wbzsaGYj4/edit?usp=sharing)
+* [2.3 The DOM](https://docs.google.com/presentation/d/10VJ5KHiEK_G4P2-av7h2zNhDDlTRm20kztov2fAT-0s/edit?usp=sharing)
 
 ## Time Tracker
 
@@ -215,7 +215,7 @@ In this class, we will be introducing students to the concept of JavaScript Obje
 
 ### 7. Instructor Do: Intro Web APIs (10 mins)
 
-* Open the slide deck [4.1 SlideShow](https://docs.google.com/presentation/d/1TprKO9KQMBEhIC6f0UNvcQkY38lS0XOmZIt6zwzjWdE/edit#slide=id.g5bb6559bdb_0_10) and follow these prompts on their corresponding slides:
+* Open the slide deck [2.3 The DOM](https://docs.google.com/presentation/d/10VJ5KHiEK_G4P2-av7h2zNhDDlTRm20kztov2fAT-0s/edit?usp=sharing) and start on the Web APIs slide. Follow these prompts on their corresponding slides:
 
   * **Web APIs (Title)**: Today will be an introduction to the DOM.
 
@@ -267,7 +267,7 @@ In this activity you will `console.log(this)` and dig around inside the returned
 
 ### 9. Instructor Do: Review this Window and introduce the DOM (10 mins)
 
-* Return to [slide deck](https://docs.google.com/presentation/d/1FNWk2sW-UI3f18ndhHOF3GIpCrjxgWA_T3wbzsaGYj4/edit?usp=sharing) and follow the remaining prompts corresponding to the slides.
+* Return to [slide deck](https://docs.google.com/presentation/d/10VJ5KHiEK_G4P2-av7h2zNhDDlTRm20kztov2fAT-0s/edit?usp=sharing) and follow the remaining prompts corresponding to the slides.
 
   * **What is window.document?**: What is `window.document`?
 
@@ -335,7 +335,7 @@ In this activity you will `console.log(this)` and dig around inside the returned
   console.log(document.body.children[3].childNodes[7].parentElement.style.color = "red");
   ```
 
-* For the final slide and demo, return to the slide deck [4.1 SlideShow](https://docs.google.com/presentation/d/1TprKO9KQMBEhIC6f0UNvcQkY38lS0XOmZIt6zwzjWdE/edit#slide=id.g5bb6559bdb_0_10) and follow these prompts on their corresponding slides:
+* For the final slide and demo, return to the slide deck [2.3 The DOM](https://docs.google.com/presentation/d/10VJ5KHiEK_G4P2-av7h2zNhDDlTRm20kztov2fAT-0s/edit?usp=sharing) and follow these prompts on their corresponding slides:
 
 * 19. **Our Goal Today**: The goal of the day is to build a speed reading application. We will receive an input of how many words per millisecond a user would like to read at, and then display one word at a time to our user at the specified speed.
 
