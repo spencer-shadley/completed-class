@@ -22,8 +22,6 @@ Today's class is focused on providing students with the very basics of JavaScrip
 
 ![1-SlackDownload](Images/1-SlackDownload.png)
 
-* Have your TAs reference [01-Day-TimeTracker](01-Day-TimeTracker.xlsx) to help keep track of time during class.
-
 ## Class Objectives
 
 * To gain a preliminary grasp of JavaScript definitions and of basic syntax.
@@ -36,15 +34,13 @@ Today's class is focused on providing students with the very basics of JavaScrip
 
 ## Time Tracker
 
-* [2.1 Time Tracker](https://drive.google.com/a/2tor.com/file/d/1uv1od7JanFYduaVjkH_pyI4sp1k7ZdkW/view?usp=sharing)
+* [2.1 Time Tracker](https://drive.google.com/open?id=1TXphd6IzAbm8pISaGQZOkbvyAL0D9LvCkC5DhKzwFeQ)
 
 - - -
 
 ### 1. Instructor Do: How to Learn JavaScript (5 mins)
 
-* Welcome students and see how they are doing while opening up the slide deck [03-1 The Joys of JavaScript](https://docs.google.com/presentation/d/16lWA3gU8ZBvZNKHxBvZM791ntfvXf-6xQUNN3Bk-nL4/edit?usp=sharing).
-
-Begin going through the slides.
+* Open the slide deck [2-1 The Joys of JavaScript](https://docs.google.com/presentation/d/16lWA3gU8ZBvZNKHxBvZM791ntfvXf-6xQUNN3Bk-nL4/edit?usp=sharing) and begin going through the slides.
 
 * Take a moment to let students know the agenda for today.
 
@@ -459,31 +455,7 @@ Begin going through the slides.
       ```
     * Don't use an array!
 
-### 37. Instructor Do: Review Activity (Optional) (0 mins)
-
-* Review `another-loop-solved.html` in `19-AnotherLoop/Solution`.
-
-  * Point out that in this case, the iterator is not an array length but an integer.
-
-  * Point out that the length is **one less than** the final number desired.
-
-      ![/Images/6-AnotherLoop.png](Images/6-AnotherLoop.png)
-
-* Then Slack out `another-loop-solved.html`
-
-### 38. Partners Do: Loop with Conditions (10 mins)
-
-* **Instructions**
-
-  * Starting from scratch, write code that loops through the following array and that logs the name of each animal on the farm to the console:
-
-    ```
-    var myFarm = ["chickens", "pigs", "cows", "horses", "ostriches"];
-    ```
-
-  * Then check if the first letter in the animal's name begins with a "c" or "o." If it does, create an alert saying, "Starts with 'c' or 'o'!"
-
-  * **Hint**: You can access the first character of a string as if it were the first element of an array.
+### 37. END (0 mins)
 
 ### Lesson Plan Feedback
 

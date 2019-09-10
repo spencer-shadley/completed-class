@@ -40,7 +40,7 @@ In this class, we will be introducing students to the concept of JavaScript Obje
 
 ## Time Tracker
 
-* [2.3 Time Tracker](https://drive.google.com/open?id=1ARtFPnNAd5awL3v5yFaj6t2ytrIbQos0)
+* [2.3 Time Tracker](https://drive.google.com/open?id=1Y3Fa1NTc3oTe1C6bRXDeTYTJZPfV4e_eN8_WyGT0mRM)
 
 - - -
 
