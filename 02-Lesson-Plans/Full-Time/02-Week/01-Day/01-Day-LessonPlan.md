@@ -40,7 +40,7 @@ Today's class is focused on providing students with the very basics of JavaScrip
 
 ## Slides
 
-* This lesson's slides are available on Google Drive here: [02-1 The Joys of JavaScript](https://docs.google.com/presentation/d/16lWA3gU8ZBvZNKHxBvZM791ntfvXf-6xQUNN3Bk-nL4/edit?usp=sharing)
+[02-1 The Joys of JavaScript](https://docs.google.com/presentation/d/16lWA3gU8ZBvZNKHxBvZM791ntfvXf-6xQUNN3Bk-nL4/edit?usp=sharing)
 
 * To add slides to the student-facing repository, download the slides as a PDF by navigating to File > "Download as" and choose "PDF document." Add the slide PDF file to your class repository along with other necessary files.
 
@@ -54,9 +54,7 @@ Today's class is focused on providing students with the very basics of JavaScrip
 
 ### 1. Instructor Do: How to Learn JavaScript (5 mins)
 
-* Welcome students and see how they are doing while opening up the slide deck [23-1 The Joys of JavaScript](https://docs.google.com/presentation/d/16lWA3gU8ZBvZNKHxBvZM791ntfvXf-6xQUNN3Bk-nL4/edit?usp=sharing).
-
-Begin going through the slides.
+* Open the slide deck [2-1 The Joys of JavaScript](https://docs.google.com/presentation/d/16lWA3gU8ZBvZNKHxBvZM791ntfvXf-6xQUNN3Bk-nL4/edit?usp=sharing) and begin going through the slides.
 
 * Take a moment to let students know the agenda for today.
 
