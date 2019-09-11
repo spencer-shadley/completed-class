@@ -38,7 +38,7 @@ This week is filled with a lot of brand new topics. If you fall behind, make sur
 
   * [Unit 03-JavaScript Day 3 Time Tracker](https://drive.google.com/open?id=14DlwTNjSH6v3gc5rCts2IgVY0SZK8v_G)
 
-## Unit Algorithms
+## Algorithms
 
   * [01-arithmetic](../../../01-Class-Content/03-JavaScript/03-Algorithms/01-arithmetic)
 
