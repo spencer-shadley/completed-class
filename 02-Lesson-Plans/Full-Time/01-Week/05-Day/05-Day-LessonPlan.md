@@ -33,7 +33,7 @@ Today's class is focused on introducing students to the concept of grid-based we
 
 ## Time Tracker
 
-* [1.5 Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1bGN3U3s51orzmYm8V5B_6kf6BolAxrkc/view?usp=sharing)
+* [1.5 Time Tracker](https://docs.google.com/spreadsheets/d/1JMOlRLktISQF8jSzqkiUwRXOnoNUDcauwiOtsCH7ufg/edit?usp=sharing)
 
 - - -
 
