@@ -28,13 +28,13 @@ Todays class will be students first introduction to the DOM. We are going to use
 
   * Prevent default form behavior with `event.preventDefault()`.
 
-  * To use event listeners such as click, keydown, and change.
-
-  * Prevent default form behavior with `event.preventDefault()`.
-
-  * Stop the propagation of events. 
+  * Stop the propagation of events.
 
   * Dynamically generate DOM elements whose events are delegated.
+
+## Time Tracker
+
+[04-Day-TimeTracker](https://docs.google.com/spreadsheets/d/150xWlv1jCL2KGjajT-tUBiH5VnOQp6Vp2-0kAlxUhEE/edit?usp=sharing)
 
 - - -
 

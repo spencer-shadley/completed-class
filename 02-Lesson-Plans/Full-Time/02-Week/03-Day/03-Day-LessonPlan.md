@@ -34,6 +34,13 @@ In this class, we will be introducing students to the concept of JavaScript Obje
 
   * Create an entire HTML page using only JavaScript.
 
+## Slides
+
+[4.1 SlideShow](https://docs.google.com/presentation/d/1TprKO9KQMBEhIC6f0UNvcQkY38lS0XOmZIt6zwzjWdE/edit#slide=id.g5bb6559bdb_0_10)
+
+## Time Tracker
+
+[03-Day-TimeTracker](https://docs.google.com/spreadsheets/d/1Y3Fa1NTc3oTe1C6bRXDeTYTJZPfV4e_eN8_WyGT0mRM/edit?usp=sharing)
 - - -
 
 ### 1. Everyone Do: Window Object & Scope (25 mins)
@@ -207,7 +214,7 @@ In this class, we will be introducing students to the concept of JavaScript Obje
 
 ### 7. Instructor Do: Intro Web APIs (10 mins)
 
-* Open the slide deck [4.1 SlideShow](https://docs.google.com/presentation/d/1TprKO9KQMBEhIC6f0UNvcQkY38lS0XOmZIt6zwzjWdE/edit#slide=id.g5bb6559bdb_0_10) and follow these prompts on their corresponding slides:
+* Open the slide deck [2.3 SlideShow](https://docs.google.com/presentation/d/1TprKO9KQMBEhIC6f0UNvcQkY38lS0XOmZIt6zwzjWdE/edit#slide=id.g5bb6559bdb_0_10) and follow these prompts on their corresponding slides:
 
   * **Web APIs (Title)**: Today will be an introduction to the DOM.
 

@@ -38,7 +38,7 @@ Today's class is focused on introducing students to additional CSS styling techn
 
 ## Time Tracker
 
-[1.4 Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1yBrZwQRzXXYCcTkb4Spxu2CqShsGcmzi/view?usp=sharing)
+[1.4 Time Tracker](https://docs.google.com/spreadsheets/d/1N0ZeL_gR2-W_QwEwyegKS6HJTwqnPrHxnQoXOjRBoVs/edit?usp=sharing)
 
 - - -
 
