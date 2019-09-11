@@ -14,9 +14,7 @@ In this class, students will be building upon their knowledge of AJAX to retriev
 
 * Today's Weather in Bujumbura Activity will require students to use an API key from [OpenWeatherMap API](http://openweathermap.org/api). Please have them apply for one before class starts in order to have it approved and activated in time for the activity. 
 
-- - -
-
-### Class Objectives
+## Class Objectives
 
 * To solidify understanding of APIs, JSONs, and their roles in full-stack web development
 
@@ -24,7 +22,11 @@ In this class, students will be building upon their knowledge of AJAX to retriev
 
 ## Slides
 
-[04.4: Advanced AJAX](https://docs.google.com/presentation/d/1AMZW0G8cYnEdqeIMZMoNUQRsM1PVgykP7afZ_31wJE4/edit?usp=sharing)
+[3.4 Advanced AJAX](https://docs.google.com/presentation/d/12gsOr-L8qMjppsT0aFzZvrm8ZwfvGI1w_EuBnqjAjGY/edit?usp=sharing)
+
+## Time Tracker
+
+* [3.4 Time Tracker](https://drive.google.com/open?id=15HUVqK-u2qIJT7hXgAIJKNScNyipzlzY)
 
 - - -
 
@@ -111,7 +113,7 @@ In this class, students will be building upon their knowledge of AJAX to retriev
 
 * Begin class by welcoming students and asking if there are any lingering questions.
 
-* Then open up the slide deck [06-2 Advanced AJAX](https://docs.google.com/presentation/d/1AMZW0G8cYnEdqeIMZMoNUQRsM1PVgykP7afZ_31wJE4/edit?usp=sharing) and begin presenting the slides. Encourage students to answer questions and ask questions. Draw upon your own insight regarding APIs to try and further solidify their understanding of the role APIs play in web development. Show the videos included in the slide deck when appropriate.
+* Then open up the slide deck [06-2 Advanced AJAX](https://docs.google.com/presentation/d/12gsOr-L8qMjppsT0aFzZvrm8ZwfvGI1w_EuBnqjAjGY/edit?usp=sharing) and begin presenting the slides. Encourage students to answer questions and ask questions. Draw upon your own insight regarding APIs to try and further solidify their understanding of the role APIs play in web development. Show the videos included in the slide deck when appropriate.
 
 * Just be sure to keep focused and stay on track of time!
 
