@@ -22,7 +22,7 @@ In this class, we will be introducing students to the concept of DOM Manipulatio
 
 ## Slides
 
-[3.1 JQuery Begins](https://drive.google.com/open?id=1NkVWhp8MifNK-eINQ1J-VoQ_34lRqL_Qv97s4u3FT9I)
+[3.1 JQuery Begins](https://docs.google.com/presentation/d/1NBt77MEEZDhJS9_mYzqgaSLQs8eQNHnd1ay38bKlnHI/edit?usp=sharing)
 
 ## Time Tracker
 
@@ -34,7 +34,7 @@ In this class, we will be introducing students to the concept of DOM Manipulatio
 
 ### 1.  Instructor Do: Welcome Students and Admin Items (5 mins)
 
-* Welcome students to class then open the [slide deck](https://drive.google.com/open?id=1NkVWhp8MifNK-eINQ1J-VoQ_34lRqL_Qv97s4u3FT9I).
+* Welcome students to class then open the [slide deck](https://docs.google.com/presentation/d/1NBt77MEEZDhJS9_mYzqgaSLQs8eQNHnd1ay38bKlnHI/edit?usp=sharing).
 
 ### 3.  Instructor Do: DOM Manipulation (10 mins)
 
@@ -292,7 +292,7 @@ In this class, we will be introducing students to the concept of DOM Manipulatio
 
 ### 19.  Instructor Do: Captain Planet Game  (5 min)
 
-* Open the slide deck: [3.1 jQuery Begins](https://drive.google.com/open?id=1NkVWhp8MifNK-eINQ1J-VoQ_34lRqL_Qv97s4u3FT9I).
+* Open the slide deck: [3.1 jQuery Begins](https://docs.google.com/presentation/d/1NBt77MEEZDhJS9_mYzqgaSLQs8eQNHnd1ay38bKlnHI/edit?usp=sharing).
 
 * Open the file `captain-planet-game.html` in `10-CaptainPlanetGame/Solved` in the Browser. Click on various buttons and show students how Captain Planet is being modified in response to the clicks.
 
@@ -342,7 +342,7 @@ In this class, we will be introducing students to the concept of DOM Manipulatio
 
 ### 24.  Instructor Do: jQuery Recap (10 min)
 
-* Next, spend a few moments going through the jQuery recap slides. The most important thing to explain in discussing these slides is the fact that jQuery is "capturing" HTML elements using the `$()`, and that we are then applying various methods to that element (or a different one in response).
+* Next, spend a few moments going through the [jQuery recap slides](https://docs.google.com/presentation/d/1NBt77MEEZDhJS9_mYzqgaSLQs8eQNHnd1ay38bKlnHI/edit?usp=sharing). The most important thing to explain in discussing these slides is the fact that jQuery is "capturing" HTML elements using the `$()`, and that we are then applying various methods to that element (or a different one in response).
 
 * Finally, point out that students shouldn't be expecting to memorize all of the jQuery library. Point out that coding is all about understanding a general concept, and then "looking up" the exact code when needed.
 
