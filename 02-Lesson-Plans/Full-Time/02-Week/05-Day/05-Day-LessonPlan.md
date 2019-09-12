@@ -20,9 +20,13 @@ Todays class will be about client side storage APIs and continuing to work on th
 
 * To build a semi-complex jQuery calculator application in teams.
 
+## Slides
+
+N/A
+
 ## Time Tracker
 
-[05-Day-TimeTracker](https://docs.google.com/spreadsheets/d/12Lrx9Wl-DbPaY9m83dvaBBsWIErYDRHRWWgRIbU9WhQ/edit?usp=sharing)
+* [2.5 Time Tracker](https://drive.google.com/open?id=12Lrx9Wl-DbPaY9m83dvaBBsWIErYDRHRWWgRIbU9WhQ)
 
 - - -
 
