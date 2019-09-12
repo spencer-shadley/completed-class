@@ -2,13 +2,15 @@
 
 ## Overview
 
-Brief description of the concepts covered in this unit.
+In this week we will review JavaScript & jQuery fundamentals, as well as touch on timing events, debugger, and sample interview questions.
 
   * Refer to the [Class Content Unit Overview](../../../01-Class-Content/05-Third-Party-APIs/README.md) for detailed information on key topics, learning objectives and homework.
 
 ## Instructor / TA Notes
 
-All the touchy-feely and logistical stuff that instructional staff needs to know to be successful starting this unit.
+* In this week's classes, expect students to have many issues with jQuery syntax. Be encouraging and let them know that the syntax will seem more intuitive over time. For now, they should just try to utilize the syntax as is.
+
+* Starting this week, slides will play a less prominent role. Warn students of this and let them know that their time spent coding is where real learning will happen.
 
 ## Heads Up
 
