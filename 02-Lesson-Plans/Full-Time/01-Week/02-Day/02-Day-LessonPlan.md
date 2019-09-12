@@ -27,7 +27,7 @@ In this class we will be introducing students to the basics of HTML/CSS and then
 
 ## Time Tracker
 
-* [1.2 Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/10vHQZl8JSk5bNJYMlgC6Jc15ivMM6ujR/view?usp=sharing)
+* [1.2 Time Tracker](https://docs.google.com/spreadsheets/d/17iJQJG14grX0Mj9RAvdFQR5sBv5PgHMhe0VdwNyEF0E/edit?usp=sharing)
 
 ### 1. Instructor Do: Open Slide Deck + Welcome Students (1 min)
 

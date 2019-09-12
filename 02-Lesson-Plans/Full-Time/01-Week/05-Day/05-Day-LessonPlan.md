@@ -33,7 +33,7 @@ Today's class is focused on introducing students to the concept of grid-based we
 
 ## Time Tracker
 
-* [1.5 Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1bGN3U3s51orzmYm8V5B_6kf6BolAxrkc/view?usp=sharing)
+* [1.5 Time Tracker](https://docs.google.com/spreadsheets/d/1JMOlRLktISQF8jSzqkiUwRXOnoNUDcauwiOtsCH7ufg/edit?usp=sharing)
 
 - - -
 
@@ -400,15 +400,6 @@ in chrome. Widen and shrink the page and point out that whereas your previous ve
 * Strongly encourage students to attend the pre-class office hours. Remind them that the instructional staff has outside commitments as well, and that you understand the pressures of making this kind of time commitment, but that they owe it to themselves to invest fully in this experience. Interview prep will go a long way towards helping them understand JavaScript better and making them more competitive in their career search after graduation.
 
 * State clearly in the beginning that the Pre-class Drill will be going on, but students can still meet 1:1 with staff for help with other things, as long as one staff member is available to go over the question and answer before class starts.
-
-### 28. Introduce this Unit's Video Guide (01 min)
-
-* Emphasize how helpful a tool these videos can be if a student feels as if they are falling behind or simply wants to review the material once again.
-
-* [Video Guide](../../../../01-Class-Content/01-html-git-css/VideoGuide.md)
-
-* [Video Guide](../../../../01-Class-Content/02-css-bootstrap/VideoGuide.md)
-
 
 # Instructor Do: Private Self-Reflection (0 min)
 

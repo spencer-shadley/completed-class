@@ -20,11 +20,11 @@ In this class, we will further students' understanding of DOM Manipulation using
 
 ## Slides
 
-[05.2: jQuery Jubilee](https://docs.google.com/presentation/d/1OWXiM3iGOFjB_ThjNEPvRLQpRPymP-K6vx953rd8AtU/edit?usp=sharing)
+[3.2 jQuery Jubilee](https://docs.google.com/presentation/d/1OLol2xQemLl4uhvtKg7J3qx6hL4v59UTT9uRxlvfHNs/edit?usp=sharing)
 
 ## Time Tracker
 
-* Have your TAs reference [02-Day-TimeTracker](02-Day-TimeTracker.xlsx) to help keep track of time during class.
+* [3.2 Time Tracker](https://drive.google.com/open?id=1z5r_tPe7Vpszs15neF8i6FJhUR5b70LT)
 
 - - -
 
@@ -80,7 +80,7 @@ In this class, we will further students' understanding of DOM Manipulation using
 
 ### 5. Instructor Do: Intro Lexical Scope (10 min)
 
-* Proceed to the Lexical Scope slides. Warn students that this section is pretty heavy on theory.
+* Proceed to the [Lexical Scope slide deck](https://docs.google.com/presentation/d/1OLol2xQemLl4uhvtKg7J3qx6hL4v59UTT9uRxlvfHNs/edit?usp=sharing). Warn students that this section is pretty heavy on theory.
 
 * Proceed with basic definitions of scope, using analogies to boxes or other simple concepts when possible. Mention the concept of nested functions -- before moving to the first code dissection. (Students will be dissecting the code example shown in the slides).
 

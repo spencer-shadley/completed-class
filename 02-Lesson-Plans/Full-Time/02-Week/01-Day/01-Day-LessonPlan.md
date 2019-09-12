@@ -6,17 +6,9 @@
 
 Today's class is focused on providing students with the very basics of JavaScript. For many, this will be their first foray into JavaScript as a programming language.
 
-`Summary: Complete Activities 1-13 in Unit 03`
-
-## Instructor Priorities
-
-* Students should understand what each of the following terms means: `console.log`, `alert`, `prompt`, `confirm`, `variable`, `array`, and `if/else`.
-* Students should complete the `03-PizzaVariables` activity.
-* Students should complete the `07-SushiPrompt` activity.
-* Students should complete the `09-ConditionalActivity` activity.
-* Students should be given a primer on arrays and guided through examples of their use.
-
 ## Instructor Notes
+
+* `Summary: Complete Activities 1-13 in Unit 03`
 
 * Welcome to Week 3! In this class you will be giving students their first primer on JavaScript as a programming language. Many of your students will have little clue what JavaScript is, let alone how to use it. Be prepared for the simplest bugs, from missing quotation marks to utter confusion in setting a variable. Today you suckle your children with the wisdom of the fundamentals!
 
@@ -24,15 +16,11 @@ Today's class is focused on providing students with the very basics of JavaScrip
 
 * In every case for today, pre-coded instructor demos are provided for you. However, because of the simplicity of today's class, feel free to code your own examples on the fly. Part of the reason we have pre-coded versions is for when we share the directory with students since it becomes easy to copy over into the in-class repo. Don't let that limit your imagination though! 
 
-* **Important Point:** In today's class you will be Slacking out JavaScript files to students. For whatever reason, Slack adds hidden characters to JavaScript which render the code dysfunctional. To avoid this happening, make sure that students are downloading the file directly from Slack and that they're NOT just copying and pasting from the snippets you send out. This will single-handedly confuse a ton of students. Make sure they are doing this.
-
-* After each activity, be sure to Slack out the complete solution so students can use them during the next activity.
+* After each activity, be sure to add the complete solution to the student repo so students can use them during the next activity.
 
 * You may want to Slack a PDF of the slide deck out to students in advance as well. Your choice!
 
 ![1-SlackDownload](Images/1-SlackDownload.png)
-
-* Have your TAs reference [01-Day-TimeTracker](01-Day-TimeTracker.xlsx) to help keep track of time during class.
 
 ## Class Objectives
 
@@ -42,18 +30,17 @@ Today's class is focused on providing students with the very basics of JavaScrip
 
 ## Slides
 
-* This lesson's slides are available on Google Drive here: [03-1 The Joys of JavaScript](https://docs.google.com/presentation/d/16lWA3gU8ZBvZNKHxBvZM791ntfvXf-6xQUNN3Bk-nL4/edit?usp=sharing)
+* [02.1 The Joys of JavaScript](https://docs.google.com/presentation/d/1ozIKdqhqnrWS6vU2glLUxFwzCbZmu9h0lDo8cMAYa1I/edit?usp=sharing)
 
-* To add slides to the student-facing repository, download the slides as a PDF by navigating to File > "Download as" and choose "PDF document." Add the slide PDF file to your class repository along with other necessary files.
+## Time Tracker
 
-* **Note:** Editing access is not available for this document. If you wish to modify the slides, please create a copy by navigating to File > "Make a copy...".
+* [2.1 Time Tracker](https://drive.google.com/open?id=1TXphd6IzAbm8pISaGQZOkbvyAL0D9LvCkC5DhKzwFeQ)
+
 - - -
 
 ### 1. Instructor Do: How to Learn JavaScript (5 mins)
 
-* Welcome students and see how they are doing while opening up the slide deck [03-1 The Joys of JavaScript](https://docs.google.com/presentation/d/16lWA3gU8ZBvZNKHxBvZM791ntfvXf-6xQUNN3Bk-nL4/edit?usp=sharing).
-
-Begin going through the slides.
+* Open the slide deck [2-1 The Joys of JavaScript](https://docs.google.com/presentation/d/16lWA3gU8ZBvZNKHxBvZM791ntfvXf-6xQUNN3Bk-nL4/edit?usp=sharing) and begin going through the slides.
 
 * Take a moment to let students know the agenda for today.
 
@@ -330,7 +317,7 @@ Begin going through the slides.
 
 ### 26. Instructor Do: Welcome Students (1 min)
 
-* Welcome students. Then open the slide deck [03-2 Jumping for JavaScript](https://docs.google.com/presentation/d/1Em_iAbGzyujB5RXe-NF9KGYTzfiFN3R63Z1NRpH9MVc/edit?usp=sharing).
+* Welcome students. Then open the slide deck [Jumping for JavaScript](https://docs.google.com/presentation/d/1Em_iAbGzyujB5RXe-NF9KGYTzfiFN3R63Z1NRpH9MVc/edit?usp=sharing).
 
 * Introduce students to the overall objectives of today's class.
 
@@ -468,31 +455,7 @@ Begin going through the slides.
       ```
     * Don't use an array!
 
-### 37. Instructor Do: Review Activity (Optional) (0 mins)
-
-* Review `another-loop-solved.html` in `19-AnotherLoop/Solution`.
-
-  * Point out that in this case, the iterator is not an array length but an integer.
-
-  * Point out that the length is **one less than** the final number desired.
-
-      ![/Images/6-AnotherLoop.png](Images/6-AnotherLoop.png)
-
-* Then Slack out `another-loop-solved.html`
-
-### 38. Partners Do: Loop with Conditions (10 mins)
-
-* **Instructions**
-
-  * Starting from scratch, write code that loops through the following array and that logs the name of each animal on the farm to the console:
-
-    ```
-    var myFarm = ["chickens", "pigs", "cows", "horses", "ostriches"];
-    ```
-
-  * Then check if the first letter in the animal's name begins with a "c" or "o." If it does, create an alert saying, "Starts with 'c' or 'o'!"
-
-  * **Hint**: You can access the first character of a string as if it were the first element of an array.
+### 37. END (0 mins)
 
 ### Lesson Plan Feedback
 
