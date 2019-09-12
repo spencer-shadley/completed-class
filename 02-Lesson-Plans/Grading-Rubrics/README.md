@@ -16,4 +16,4 @@ Once you reach the end of the rubric, you should be presented with a recommended
 
 ![Recommended Grade](Assets/03-recommended-grade.png)
 
-You're encouraged to personalize the feedback before submitting it via Bootcampspot, but avoid spending more and a minute or two doing so. Written feedback should be brief and concise. Invite students who desire additional support to come to office hours to discuss.
+You're encouraged to personalize the feedback before submitting it via Bootcampspot, but avoid spending more than a minute or two doing so. Written feedback should be brief and concise. Invite students who desire additional support to come to office hours to discuss.
