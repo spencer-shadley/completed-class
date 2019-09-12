@@ -26,17 +26,17 @@
 
 	* The fourth method is "increaseAge()" - This method is called by the sleep() method when the DigitalPal goes to sleep and increases the DigitalPal's age by one while also printing "Happy Birthday to me! I am "+age+" old!"
 
-	* The fifth method is bark() - Prints out "Woof! Woof!" when run
+	* The fifth method is "bark()" - Prints out "Woof! Woof!" when run
 
-	* the sixth method is goOutside() - If outside is false, prints "Yay! I love the outdoors!", sets outside to true, and runs bark(). If outside is true, prints "We're already outside though..."
+	* the sixth method is "goOutside()" - If outside is false, prints "Yay! I love the outdoors!", sets outside to true, and runs bark(). If outside is true, prints "We're already outside though..."
 
-	* the seventh method is goInside() - If outside is true, prints "Do we have to? Fine..." and sets outside to false. If outside is false, prints "I'm already inside..."
+	* the seventh method is "goInside()" - If outside is true, prints "Do we have to? Fine..." and sets outside to false. If outside is false, prints "I'm already inside..."
 	
-  * the eighth method is meow() - prints out "Meow! Meow!" when run
+  * the eighth method is "meow()" - prints out "Meow! Meow!" when run
 
-  * the ninth method is destroyFurniture() - Decreases houseCondition by 10 and prints "MUAHAHAHAHA! TAKE THAT FURNITURE!" to the screen. Also sets bored to false and sleepy to true. If houseCondition is equal to 0, then this should not run anymore.
+  * the ninth method is "destroyFurniture()" - Decreases houseCondition by 10 and prints "MUAHAHAHAHA! TAKE THAT FURNITURE!" to the screen. Also sets bored to false and sleepy to true. If houseCondition is equal to 0, then this should not run anymore.
 
-  * the tenth method is buyNewFurniture() - Increases houseCondition by 50 and prints "Are you sure about that?" to the screen.
+  * the tenth method is "buyNewFurniture()" - Increases houseCondition by 50 and prints "Are you sure about that?" to the screen.
 
 * Create a variable named "dog" that is set to a new DigitalPal
 
