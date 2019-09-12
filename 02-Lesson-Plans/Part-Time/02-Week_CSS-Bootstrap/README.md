@@ -14,7 +14,7 @@ This week, your primary focus as instructors/TAs is to ensure students are able 
 
 Be ready to have your troubleshooting hat on for helping students debug GitHub Pages deploys, as the surface area for problems is somewhat large.
 
-Next week, we begin 
+Next week, we begin JavaScript, make sure to review the slide decks in advance.
 
 ## Helpful Links
 
@@ -38,6 +38,6 @@ Next week, we begin
 
   * [Unit 02-CSS-Bootstrap Day 1 Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/12s1Zl-VSOa1ZhgxSrjfON-SUHvKgvaiF/view?usp=sharing)
 
-  * [02-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1Dx5IKqvZOsUcPSx3T5FLPmWrMR4kPrSK/view?usp=sharing)
+  * [Unit 02-CSS-Bootstrap Day 2 Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1Dx5IKqvZOsUcPSx3T5FLPmWrMR4kPrSK/view?usp=sharing)
 
   * [Unit 02-CSS-Bootstrap Day 3 Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1GIlEdmWazA-gaTGmtRkxQPJeQrSaRqlj/view?usp=sharing)

@@ -2,17 +2,22 @@
 
 ## Overview
 
-Brief description of the concepts covered in this unit.
+In this week, students will begin work on their first Project of the Boot Camp, an API-powered web application that pulls data from multiple sources in a creative way.
 
   * Refer to the [Class Content Unit Overview](../../../01-Class-Content/07-Project-1/README.md) for detailed information on key topics, learning objectives and homework.
 
 ## Instructor / TA Notes
 
-All the touchy-feely and logistical stuff that instructional staff needs to know to be successful starting this unit.
+Some students may complain about group configurations, be sure to remind them of the following:
+
+  * In the real-world, you don't get to choose your co-workers.
+  * Working collaboratively is an important skill to acquire as a developer.
+
+Make sure to spend plenty of time making sure that students can follow best practices while collaborating with git.
 
 ## Heads Up
 
-Alert instructional staff to expectations for the next unit, i.e: installations, challenging topics, preparation for projects, etc.
+Next week, in addition to project work, we will spend a day practicing whiteboard interview questions. Even though the lesson plans are lighter, be sure to review them and spend some time familiarizing yourself with the algorithms. 
 
 ## Helpful Links
 
@@ -30,20 +35,12 @@ Alert instructional staff to expectations for the next unit, i.e: installations,
 
 ### Time Tracker(s)
 
-  * [Unit 07-Project-1 Day 1 Time Tracker](trackerlink)
+N/A
 
-  * [Unit 07-Project-1 Day 2 Time Tracker](trackerlink)
-
-  * [Unit 07-Project-1 Day 3 Time Tracker](trackerlink)
-
-## Unit Algorithms
+## Algorithms
 
   * [01-swap-case](../../../01-Class-Content/07-Project-1/03-Algorithms/01-swap-case)
 
   * [02-longest-word](../../../01-Class-Content/07-Project-1/03-Algorithms/02-longest-word)
 
   * [03-acronym-builder](../../../01-Class-Content/07-Project-1/03-Algorithms/03-acronym-builder)
-
-## Career Services
-
-Add the weekly CS announcement.

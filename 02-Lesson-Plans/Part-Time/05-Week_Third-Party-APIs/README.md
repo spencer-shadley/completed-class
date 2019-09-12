@@ -14,7 +14,7 @@ In this week we will review JavaScript & jQuery fundamentals, as well as touch o
 
 ## Heads Up
 
-Alert instructional staff to expectations for the next unit, i.e: installations, challenging topics, preparation for projects, etc.
+Next week we will work with Server-Side APIs. It is recommended that you try to fill any conceptual holes students have about JavaScript objects this week.
 
 ## Helpful Links
 
@@ -30,22 +30,20 @@ Alert instructional staff to expectations for the next unit, i.e: installations,
 
   * [05.1: jQuery Begins](https://docs.google.com/presentation/d/1rb9HSOoezZzelSK7HQk-6tVKDBU8VBX3jQGuQpd04CQ/edit?usp=sharing)
 
+  * [05.2: jQuery Jubilee](https://docs.google.com/spreadsheets/d/1zPJ1kckA8CR5vwSH0orofzkBmloTrkeD9DeTfwXFndM/edit?usp=sharing)
+
 ### Time Tracker(s)
 
-  * [Unit 05-Third-Party-APIs Day 1 Time Tracker](trackerlink)
+  * [Unit 05-Third-Party-APIs Day 1 Time Tracker](https://drive.google.com/open?id=1iei7_OBRKt3S6pqxTWTgCLo9JhlUrxMI)
 
-  * [Unit 05-Third-Party-APIs Day 2 Time Tracker](trackerlink)
+  * [Unit 05-Third-Party-APIs Day 2 Time Tracker](https://drive.google.com/open?id=1zPJ1kckA8CR5vwSH0orofzkBmloTrkeD9DeTfwXFndM)
 
-  * [Unit 05-Third-Party-APIs Day 3 Time Tracker](trackerlink)
+  * [Unit 05-Third-Party-APIs Day 3 Time Tracker](https://drive.google.com/open?id=192W9stZpLCBdZQARTa5jizw3cyRqMhc0)
 
-## Unit Algorithms
+## Algorithms
 
   * [01-fizz-buzz](../../../01-Class-Content/05-Third-Party-APIs/03-Algorithms/01-fizz-buzz)
 
   * [02-max-num](../../../01-Class-Content/05-Third-Party-APIs/03-Algorithms/02-max-num)
 
   * [03-vowel-count](../../../01-Class-Content/05-Third-Party-APIs/03-Algorithms/03-vowel-count)
-
-## Career Services
-
-Add the weekly CS announcement.

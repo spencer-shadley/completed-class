@@ -2,7 +2,7 @@
 
 ## Overview
 
-Brief description of the concepts covered in this unit.
+In this class students will continue working with their project groups. They will also have the opporunity to practice whiteboard interview questions under pressure.
 
   * Refer to the [Class Content Unit Overview](../../../01-Class-Content/08-Project-1-Contd/README.md) for detailed information on key topics, learning objectives and homework.
 
@@ -34,15 +34,11 @@ Alert instructional staff to expectations for the next unit, i.e: installations,
 
 ### Slide Decks
 
-  * [08.1 - Slide Deck Title](slidelink)
+N/A
 
 ### Time Tracker(s)
 
-  * [Unit 08-Project-1-Contd Day 1 Time Tracker](trackerlink)
-
-  * [Unit 08-Project-1-Contd Day 2 Time Tracker](trackerlink)
-
-  * [Unit 08-Project-1-Contd Day 3 Time Tracker](trackerlink)
+N/A
 
 ## Algorithms
 
@@ -51,7 +47,3 @@ Alert instructional staff to expectations for the next unit, i.e: installations,
   * [02-reverse-in-place](../../../01-Class-Content/08-Project-1-Contd/03-Algorithms/02-reverse-in-place)
 
   * [03-look-say-sequence](../../../01-Class-Content/08-Project-1-Contd/03-Algorithms/03-look-say-sequence)
-
-## Career Services
-
-Add the weekly CS announcement.

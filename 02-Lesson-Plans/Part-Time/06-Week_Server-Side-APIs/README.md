@@ -2,17 +2,23 @@
 
 ## Overview
 
-Brief description of the concepts covered in this unit.
+In this week we will be introducing students to the concept of APIs and the use of AJAX queries to retrieve and parse data in JSON formats. Throughout the week we'll be specifically working with the Giphy, OMDb, and New York Times APIs.
 
   * Refer to the the [Class Content Unit Overview](../../../01-Class-Content/06-Server-Side-APIs/README.md) for detailed information on key topics, learning objectives and homework.
 
 ## Instructor / TA Notes
 
-All the touchy-feely and logistical stuff that instructional staff needs to know to be successful starting this unit.
+In this week we will be introducing students to the concept of APIs and the use of AJAX queries to retrieve and parse data in JSON formats. Throughout the week we'll be specifically working with the Giphy, OMDb, and New York Times APIs.
+
+Make sure students sign up and obtain THEIR OWN PERSONAL API KEY for any APIs we might use, as the publics keys that we provide could be deactivated at any time.
+
+Be sure to slack out this [tutorial on the OpenWeatherMap API](http://osp123.github.io/tutorials/html/weatherAPI.html) as pre-reading for this week's content.
 
 ## Heads Up
 
-Alert instructional staff to expectations for the next unit, i.e: installations, challenging topics, preparation for projects, etc.
+Next week we start to work on projects. It is recommended that you use some of the group assignments this week to gauge which students will work well together on projects.
+
+Make sure that these groups are created prior to class 07.1. Groups are made up of 3 or 4 students. Three is ideal, but not always possible. In groups of four (or more), it is easy for weaker students to be cut out of the workflow or hide behind their stronger teammates. **DO NOT allow students to work alone or in pairs.** Group projects are one of the few opportunities for students to work collaboratively. 
 
 ## Helpful Links
 
@@ -26,24 +32,20 @@ Alert instructional staff to expectations for the next unit, i.e: installations,
 
 ### Slide Decks
 
-  * [06.1 - Slide Deck Title](slidelink)
+  * [06.2: Advanced AJAX](https://docs.google.com/presentation/d/1AMZW0G8cYnEdqeIMZMoNUQRsM1PVgykP7afZ_31wJE4/edit?usp=sharing)
 
 ### Time Tracker(s)
 
-  * [Unit 06-Server-Side-APIs Day 1 Time Tracker](trackerlink)
+  * [Unit 06-Server-Side-APIs Day 1 Time Tracker](https://drive.google.com/open?id=11CiggEoIl3yBXPuXxmg4nduILI1gt1SO)
 
-  * [Unit 06-Server-Side-APIs Day 2 Time Tracker](trackerlink)
+  * [Unit 06-Server-Side-APIs Day 2 Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1Qm5-P-WZLiQVf_FKK_wanOgzIQgpVR9_/view?usp=sharing)
 
-  * [Unit 06-Server-Side-APIs Day 3 Time Tracker](trackerlink)
+  * [Unit 06-Server-Side-APIs Day 3 Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1cKEvNJfuPjDYE7kIgcGN1Znt8GvxCftS/view?usp=sharing)
 
-## Unit Algorithms
+## Algorithms
 
   * [01-factorial](../../../01-Class-Content/06-Server-Side-APIs/03-Algorithms/01-factorial)
 
   * [02-is-palindrome](../../../01-Class-Content/06-Server-Side-APIs/03-Algorithms/02-is-palindrome)
 
   * [03-title-case](../../../01-Class-Content/06-Server-Side-APIs/03-Algorithms/03-title-case)
-
-## Career Services
-
-Add the weekly CS announcement.
