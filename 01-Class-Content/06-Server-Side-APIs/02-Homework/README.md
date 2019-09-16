@@ -73,10 +73,29 @@ How do you deliver this? Here are some guidelines:
 
 ## Minimum Requirements
 
-* Functional, deployed application
+* Functional, deployed application.
 
-* GitHub repository with README describing project
+* GitHub repository with a unique name and a README describing the project.
 
+* User can search for weather reports by city using the openweathermap API.
+
+* After searching for a city, the following information is displayed:
+
+  *  Current temperature
+
+  *  Current humidity
+
+  *  Windspeed
+
+  *  Uv index
+
+  *  5 day forecast
+
+* Application uses icons to represent weather conditions.
+
+* Application stores previously searched for cities in localstorage and displays them to the user.
+
+* Application loads last searched city forecast on page load.
 
 ## Bonus
 

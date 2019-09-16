@@ -1,27 +1,12 @@
-## 2.2 Lesson Plan - Jumping for JavaScript (10:00 AM) <!--links--> &nbsp; [⬅️](../01-Day/01-Day-LessonPlan.md) &nbsp; [➡️](../03-Day/03-Day-LessonPlan.md)
+# 02.2 Lesson Plan - Jumping for JavaScript (10:00 AM) <!--links--> &nbsp; [⬅️](../01-Day/01-Day-LessonPlan.md) &nbsp; [➡️](../03-Day/03-Day-LessonPlan.md)
 
-### Slideshow
-
-* This lesson's slides are available on Google Drive here: [02-2 Jumping for JavaScript](https://docs.google.com/presentation/d/1DHqKz5v9CAG3d6FaBO_aGZG7w2IvwCv5dgIhbk7FG60/edit?usp=sharing)
-
-* To add slides to the student-facing repository, download the slides as a PDF by navigating to File > "Download as" and choose "PDF document." Add the slide PDF file to your class repository along with other necessary files.
-
-* **Note:** Editing access is not available for this document. If you wish to modify the slides, please create a copy by navigating to File > "Make a copy...".
-
-- - -
-
-### Overview
+## Overview 
 
 Today's class is focused on re-introducing students to the concept of `for` loops and of how they can be used in combination with arrays, if/else statements, and other common programming tools to create a Rock-Paper-Scissors game. We will be introducing students to the concept of JavaScript Functions.
 
-`Summary: Complete Activities 19-27 in Unit 03`
+## Instructor Notes
 
-##### Instructor Priorities
-
-* Students should complete the `23-RPS-Coded` activity.
-* Students should understand what a function is and why it is useful (to DRY up code).
-
-##### Instructor Notes
+* `Summary: Complete Activities 19-27 in Unit 03`
 
 * In today's class, you will be recapping the concept of `for` loops, the concept of combining arrays, conditionals, and user inputs to create more sophisticated JavaScript applications. Much of what students have learned to date will culminate in the last activity of the day where they will work together to build a rock-paper-scissors game.
 
@@ -29,30 +14,27 @@ Today's class is focused on re-introducing students to the concept of `for` loop
 
 * Students should be given a substantial amount of time to complete the rock-paper-scissors activity. They will not have been given everything they need to complete the activity. The idea is for students to become more comfortable with the idea of working without knowing _everything_. Reveal bits of the solution using the code in the `23-RPS-Coded` directory while students are working. Throughout class, show these bits of the solution on the projector, and try to help guide students through the problem.
 
-* Have your TAs reference [02-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1xoY07o7JjATmVDa57B0CTw-b6CyVcQlM/view?usp=sharing) to help keep track of time during class. Your instructor NEEDS to leave enough time for students to complete the rock-paper-scissors game.
-
 * **Note**: Even if you don't cover an activity in class, still include it in the list of activities you share into your local repo. Students will be able to look back at these activities on their own time.
 
-### Sample Class Video (Highly Recommended)
-* To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0441f776-86a3-4379-8733-84c357e64172)
+## Class Objectives
+
+## Slides
+
+[02.2 Jumping for JavaScript](https://docs.google.com/presentation/d/1DHqKz5v9CAG3d6FaBO_aGZG7w2IvwCv5dgIhbk7FG60/edit?usp=sharing)
+
+## Time Tracker
+
+[02-Day-TimeTracker](https://docs.google.com/spreadsheets/d/1tomx7GIzFECE_P7dwcWzijJm7rBsWE2AsJtvIBbhnwo/edit?usp=sharing)
 
 - - -
 
-### Class Objectives
+### 1. Instructor Do: Welcome Students (5 mins)
 
-* To use `for` loops, arrays, and conditional logic to create a rock-paper-scissors game.
-
-- - -
-
-### 1. Instructor Do: Welcome Students (1 mins)
-
-* Welcome students. Then open the slide deck [02-2 Jumping for JavaScript](https://docs.google.com/presentation/d/1DHqKz5v9CAG3d6FaBO_aGZG7w2IvwCv5dgIhbk7FG60/edit?usp=sharing).
-
-### 2. Instructor Do: Today's Class (1 mins)
+* Welcome students. Then open the slide deck [02.2 Jumping for JavaScript](https://docs.google.com/presentation/d/1DHqKz5v9CAG3d6FaBO_aGZG7w2IvwCv5dgIhbk7FG60/edit?usp=sharing).
 
 * Introduce students to the overall objectives of today's class.
 
-### 3. Everyone Do: Basics Recap (10 mins)
+### 2. Everyone Do: Basics Recap (10 mins)
 
 * Spend a few moments helping students to remember what was covered during the last class. Try to move swiftly through these slides. Ideally, this should take you less than 10 minutes.
 
@@ -62,7 +44,7 @@ Today's class is focused on re-introducing students to the concept of `for` loop
 
   * We'll re-open and continue going through slides after lunch.
 
-### 4. Students Do: Another Loop (5 mins)
+### 3. Students Do: Another Loop (5 mins)
 
 * Slack out the following instructions.
 
@@ -78,7 +60,7 @@ Today's class is focused on re-introducing students to the concept of `for` loop
       ```
     * Don't use an array!
 
-### 5. Instructor Do: Review Activity (5 mins)
+### 4. Instructor Do: Review Activity (5 mins)
 
 * Review [another-loop-solved.html](../../../../01-Class-Content/03-javascript/01-Activities/19-AnotherLoop/Solved/another-loop-solved.html) in `19-AnotherLoop/Solution`.
 
@@ -90,7 +72,7 @@ Today's class is focused on re-introducing students to the concept of `for` loop
 
 * Then Slack out `another-loop-solved.html`
 
-### 6. Partners Do: Loop with Conditions (Optional) (10 mins)
+### 5. Partners Do: Loop with Conditions (10 mins)
 
 * **Instructions**
 
@@ -104,13 +86,13 @@ Today's class is focused on re-introducing students to the concept of `for` loop
 
   * **Hint**: You can access the first character of a string as if it were the first element of an array.
 
-### 7. Instructor Do: Review Activity (5 mins)
+### 6. Instructor Do: Review Activity (5 mins)
 
 * Review [hard-loop.html](../../../../01-Class-Content/03-javascript/01-Activities/20-HardLoop/Solved/hard-loop.html) in `20-HardLoop/Solution`.
 
     ![Images/7-HardLoop.png](Images/7-HardLoop.png)
 
-### 8. Everyone Do: Browser Events (10 mins) (Critical)
+### 7. Everyone Do: Browser Events (10 mins) 
 
 * Explain that the next activity requires students to be familiar with the notion of browser events.
 
@@ -155,7 +137,7 @@ Today's class is focused on re-introducing students to the concept of `for` loop
 ![This short snippet demonstrates most of the concepts students will need for the RPS activity.](Images/11-events.png)
 _This short snippet demonstrates most of the concepts students will need for the RPS activity._
 
-### 9. Instructor Do: Demo RPS (2 mins)
+### 8. Instructor Do: Demo RPS (5 mins)
 
 * Take a couple of minutes to demonstrate the final application `23-RPS-Coded`.
 
@@ -169,7 +151,7 @@ _This short snippet demonstrates most of the concepts students will need for the
 
 * Take an extra few minutes here if necessary to make sure everyone understands the rules of Rock, Paper, Scissors (it's not uncommon for a few students to have never played as it's not universally popular around the world.)
 
-### 10. Students Do: Pseudocode RPS (3 mins)
+### 9. Students Do: Pseudocode RPS (5 mins)
 
 * Once they've played a few rounds, have them pseudocode a solution that lays out the steps involved in playing rock-paper-scissors against a computer.
 
@@ -189,7 +171,7 @@ _This short snippet demonstrates most of the concepts students will need for the
 
 * Encourage students to use this pseudocode as a starting point or as a guide with which to finish their own sketch of the application.
 
-### 11. Partners Do: Coding out RPS (60 mins) (Critical)
+### 10. Partners Do: Coding out RPS (60 mins) 
 
 * Slack out the following files and instructions to students.
 
@@ -207,7 +189,7 @@ _This short snippet demonstrates most of the concepts students will need for the
 
     * **Note**: Don’t worry. We know this is a very challenging assignment. We also know that you won’t know where to start. In fact, we haven’t shown you EVERYTHING you need yet, but that’s okay. Part of being a developer is figuring things out on your own through trial and error.
 
-### 12. Instructor Do: Review RPS (10 mins) (Critical)
+### 11. Instructor Do: Review RPS (10 mins) 
 
 * Open [rps-7.html](../../../../01-Class-Content/03-javascript/01-Activities/23-RPS-Coded/Solved/rps-7.html) in `23-RPS-Coded/Solved`, and walk students through the solution. Use the comments in the solution to help guide the conversation.
 
@@ -217,11 +199,11 @@ _This short snippet demonstrates most of the concepts students will need for the
 
 - - -
 
-### 13. LUNCH BREAK (30 mins)
+### 12. LUNCH BREAK (30 mins)
 
 - - -
 
-### 14.    Partners Do: Array Building    (10 mins)
+### 13.    Partners Do: Array Building    (10 mins)
 
 * In this activity, students just fill in the empty comments for each line of code. This is intended to passively show them how to use `for` loops to populate arrays.
 
@@ -241,7 +223,7 @@ _This short snippet demonstrates most of the concepts students will need for the
 
     * Be prepared to share with the class!
 
-### 15. Instructor Do: Review Activity (10 mins)
+### 14. Instructor Do: Review Activity (10 mins)
 
 * Go over the solution. First, have them try to explain each line of code to you as a class.
 
@@ -251,7 +233,7 @@ _This short snippet demonstrates most of the concepts students will need for the
 
     ![Images/1-LoopTV.png](Images/1-LoopTV.png)
 
-### 16. Instructor Do: Logging - No Functions (5 mins)
+### 15. Instructor Do: Logging - No Functions (5 mins)
 
 * Open [superhero-logging-solved-no-functions.html](../../../../01-Class-Content/03-javascript/01-Activities/26-SuperheroLogging/superhero-logging-solved-no-functions.html) in `26-SuperheroLogging` in Chrome and in your editor.
 
@@ -261,7 +243,7 @@ _This short snippet demonstrates most of the concepts students will need for the
 
 * Slack out the file when done with your explanation.
 
-### 17. Instructor Do: Logging - With Functions (10 mins)
+### 16. Instructor Do: Logging - With Functions (10 mins)
 
 * Open [superhero-logging-solved-with-functions.html](../../../../01-Class-Content/03-javascript/01-Activities/26-SuperheroLogging/superhero-logging-solved-with-functions.html) in `26-SuperheroLogging` in Chrome and in your editor.
 
@@ -281,7 +263,7 @@ _This short snippet demonstrates most of the concepts students will need for the
 
 * Ask if there are any questions, and then proceed to Slack out the file so students can use it as an example for the next activity.
 
-### 18. Partners Do: My First Functions (20 mins) (Critical)
+### 17. Partners Do: My First Functions (20 mins) 
 
 * This next exercise requires students to build simple functions for performing mathematical and string operations.
 
@@ -299,7 +281,7 @@ _This short snippet demonstrates most of the concepts students will need for the
 
     * Hint: Look back to the previous example if you need help.
 
-### 19. Instructor Do: Review Activity (15 mins)
+### 18. Instructor Do: Review Activity (15 mins)
 
 * Review [my-first-functions-solved.html](../../../../01-Class-Content/03-javascript/01-Activities/27-MyFirstFunctions/Solved/my-first-functions-solved.html) in `27-MyFirstFunctions/Solved`, pointing out that each of the functions takes on a similar structure.
 
@@ -320,14 +302,15 @@ _This short snippet demonstrates most of the concepts students will need for the
 
     ![Images/3-MyFirstFunctions_2.png](Images/3-MyFirstFunctions_2.png)
 
-### 20. Group Do: Recap Activity (40 mins)
+### 19. Group Do: Recap Activity (40 mins)
 
 * Use the remaining time up to the complete this units homework assignment.
 
+### 20. END (0 mins)
+
 ### Lesson Plan Feedback
 
-How did today's class go?
+How did today’s lesson go? Your feedback is important. Please take 5 minutes to complete this anonymous survey.
 
-[Went Well](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=ft&sentiment=positive&lesson=02.02)
+[Class Survey](https://forms.gle/nYLbt6NZUNJMJ1h38)
 
-[Went Poorly](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=ft&sentiment=negative&lesson=02.02)
