@@ -447,142 +447,104 @@
         "use strict";
 
         function Model() {
-          this.title = "Group Project I Rubric";
+          this.title = "Unit 8 Professional Materials Rubric";
           this.categories = [
             {
-              title: "Deployment",
+              title: "Portfolio",
               subtitle: null,
               questions: [
                 {
-                  title:
-                    "Group demoed application using deployed live application URL",
-                  score: 5,
-                  message:
-                    "Group did not demo project using live application URL",
-                  status: false
-                }
-              ]
-            },
-            {
-              title: "Concept",
-              subtitle: null,
-              questions: [
-                {
-                  title: "Group presented unique and novel project idea",
-                  score: 5,
-                  message:
-                    "The project concept could have been more unique/novel",
-                  status: false
-                },
-                {
-                  title: "Group clearly and concisely articulated project idea",
-                  score: 5,
-                  message:
-                    "Group could have more clearly and concisely articulated project idea",
-                  status: false
-                }
-              ]
-            },
-            {
-              title: "Technical Acceptance Criteria",
-              subtitle: null,
-              questions: [
-                {
-                  title: "Application uses at least 2 server-side APIs",
-                  score: 5,
-                  message:
-                    "Application doesn't use at least 2 server-side APIs",
-                  status: false
-                },
-                {
-                  title: "Application uses one new third-party API",
-                  score: 5,
-                  message:
-                    "Application doesn't use at least one new third-party API",
-                  status: false
-                },
-                {
-                  title:
-                    "Application doesn't use JS alerts, prompts, or confirms (uses modals instead)",
-                  score: 5,
-                  message:
-                    "Application should use modals instead JS alerts, prompts, and confirms",
-                  status: false
-                },
-                {
-                  title: "Application uses CSS framework other than Bootstrap",
-                  score: 5,
-                  message:
-                    "Application should use CSS framework other than Bootstrap",
-                  status: false
-                },
-                {
-                  title:
-                    "Application is interactive (ie accepts and responds to user input)",
-                  score: 5,
-                  message:
-                    "Application should be interactive (ie should accept and respond to user input)",
-                  status: false
-                }
-              ]
-            },
-            {
-              title: "Presentation",
-              subtitle: null,
-              questions: [
-                {
-                  title:
-                    "Group presented using Powerpoint or similar presentation software",
-                  score: 3 + 1 / 3,
-                  message:
-                    "Group did not present using Powerpoint or similar presentation software"
-                },
-                {
-                  title: "Every group member spoke during presentation",
-                  score: 3 + 1 / 3,
-                  message:
-                    "Not every group member spoke during the presentation"
-                },
-                {
-                  title: "Presentation followed Project Presentation Template",
-                  score: 3 + 1 / 3,
-                  message:
-                    "Presentation didn't follow Project Presentation Template"
-                }
-              ]
-            },
-            {
-              title: "Collaboration",
-              subtitle: null,
-              questions: [
-                {
-                  title:
-                    "There are no major disparities in the number of GitHub contributions between group members",
-                  score: 30,
-                  message:
-                    "There are some major disparities in the number of GitHub contributions between group members",
-                  status: false
-                }
-              ]
-            },
-            {
-              title: "Application Quality",
-              subtitle: null,
-              questions: [
-                {
-                  title:
-                    "Application user experience is intuitive and easy to navigate",
+                  title: "Portfolio contains name, email and phone number",
                   score: 10,
                   message:
-                    "Application user experience could be more intuitive",
+                    "Portfolio does not contain name, email and phone number",
                   status: false
                 },
                 {
                   title:
-                    "Application user interface style is clean and polished",
+                    "Portfolio contains links to GitHub profile, LinkedIn Profile, and Resume PDF",
                   score: 10,
-                  message: "Application user interface needs work",
+                  message:
+                    "Portfolio does not contain links to GitHub profile, LinkedIn Profile, and Resume PDF",
                   status: false
+                },
+                {
+                  title:
+                    "Each project is listed with title, deployment URL, GitHub URL, and a screenshot",
+                  score: 10,
+                  message:
+                    "Each project is not listed with title, deployment URL, GitHub URL, and a screenshot",
+                  status: false
+                },
+                {
+                  title:
+                    "Portfolio has a polished mobile responsive user interface",
+                  score: 10,
+                  message: "Portfolio UI could be more polished",
+                  status: false
+                }
+              ]
+            },
+            {
+              title: "GitHub Profile",
+              subtitle: null,
+              questions: [
+                {
+                  title:
+                    "GitHub profile contains real photo, bio, location, email, and link to deployed portfolio",
+                  score: 10,
+                  message:
+                    "GitHub profile does not contain real photo, bio, location, email, and link to deployed portfolio",
+                  status: false
+                },
+                {
+                  title:
+                    "GitHub profile has at least 2-3 projects pinned to the top",
+                  score: 10,
+                  message:
+                    "GitHub profile does not have at least 2-3 projects pinned to the top",
+                  status: false
+                },
+                {
+                  title:
+                    "Each pinned project has a README containing project descriptions, screenshots, and links to deployed applications",
+                  score: 10,
+                  message:
+                    "Each pinned project does not have a README containing project descriptions, screenshots, and links to deployed applications",
+                  status: false
+                },
+                {
+                  title: "Student is following a few classmates on GitHub",
+                  score: 10,
+                  message: "You should be following a few classmates on GitHub",
+                  status: false
+                }
+              ]
+            },
+            {
+              title: "Resume",
+              subtitle: null,
+              questions: [
+                {
+                  title:
+                    "Resume is clear and concise, tailored for jobs in web development field",
+                  score: 10,
+                  message:
+                    "Resume could me more concise and tailored for jobs in web development",
+                  status: false
+                }
+              ]
+            },
+            {
+              title: "LinkedIn",
+              subtitle: null,
+              questions: [
+                {
+                  title:
+                    "LinkedIn profile has strong bio statement, professional photo, and links to GitHub and portfolio",
+                  score: 10,
+                  message:
+                    "LinkedIn profile does not have strong bio statement, professional photo, and links to GitHub and portfolio"
                 }
               ]
             }
