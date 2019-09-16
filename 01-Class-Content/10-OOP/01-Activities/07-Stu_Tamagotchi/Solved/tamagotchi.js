@@ -4,7 +4,8 @@ var DigitalPal = function() {
   this.sleepy = false;
   this.bored = true;
   this.age = 0;
-}
+  this.houseQuality = 100;
+};
 // method which feeds the digitalpal when they are hungry and sets them to sleepy
 DigitalPal.prototype.feed = function() {
   if (this.hungry) {
@@ -43,63 +44,8 @@ DigitalPal.prototype.play = function() {
   }
 };
 
-// method which is called in "this.sleep" to increase the age of the digitalpal by one
-DigitalPal.prototype.increaseAge = function() {
-  this.age++;
-  console.log("Happy Birthday to me! I am " + this.age + " old!");
-};
-
-
-// Create a new animals object to contain our new Digital Pals
-var animals = {};
-
-// creates a new DigitalPal object with the name "dog"
-animals.dog = new DigitalPal();
-
-// adds the property "outside" to the "dog" object and sets it to false
-animals.dog.outside = false;
-
-// adds the method "bark" to the "dog" object which prints a message to the screen
-animals.dog.bark = function() {
-  console.log("Woof! Woof!");
-};
-
-// adds the method "letoutside" to the "dog" object which lets "dog" outside when it is outside
-animals.dog.letOutside = function() {
-  if (!this.outside) {
-    console.log("Yay! I love the outdoors!");
-    this.outside = true;
-    this.bark();
-  }
-  else {
-    console.log("We're already outside though...");
-  }
-};
-
-// adds the method "letInside" to the "dog" object which lets "dog" inside when it is outside
-animals.dog.letInside = function() {
-  if (this.outside) {
-    console.log("Aww... Do I have to?");
-    this.outside = false;
-  }
-  else {
-    console.log("We're already inside though...");
-  }
-};
-
-// creates a new DigitalPal object with the name "cat"
-animals.cat = new DigitalPal();
-
-// adds the property "housequality" to the "cat" object
-animals.cat.houseQuality = 100;
-
-// adds the "meow" method to the "cat" object which prints a message to the screen
-animals.cat.meow = function() {
-  console.log("Meow! Meow!");
-};
-
-// adds the "destroyfurniture" method to the "cat" object which decreases the "animals.cat.housequality" value by ten
-animals.cat.destroyFurniture = function() {
+// adds the "destroyfurniture" method to the prototype which allows us decreases the "housequality" value by ten
+DigitalPal.prototype.destroyFurniture = function() {
   if (this.houseQuality - 10 > 0) {
     this.houseQuality -= 10;
     this.bored = false;
@@ -111,15 +57,63 @@ animals.cat.destroyFurniture = function() {
   }
 };
 
-// adds the "buyNewFurniture" method to the "cat" object which increases the "animals.cat.houseQuality" value by fifty
-animals.cat.buyNewFurniture = function() {
+// adds the "buyNewFurniture" method to the prototype which increases the "animals.cat.houseQuality" value by fifty
+DigitalPal.prototype.buyNewFurniture = function() {
   this.houseQuality += 50;
   console.log("Are you sure that's a good idea?");
 };
+
+// method which is called in "this.sleep" to increase the age of the digitalpal by one
+DigitalPal.prototype.increaseAge = function() {
+  this.age++;
+  console.log("Happy Birthday to me! I am " + this.age + " old!");
+};
+
+// adds the method "letoutside" to the prototype which lets "dog" outside when it is outside
+DigitalPal.prototype.letOutside = function() {
+  if (!this.outside) {
+    console.log("Yay! I love the outdoors!");
+    this.outside = true;
+    this.bark();
+  }
+  else {
+    console.log("We're already outside though...");
+  }
+};
+
+// adds the method "letInside" to the prototype which lets our DigitalPal inside when it is outside
+DigitalPal.prototype.letInside = function() {
+  if (this.outside) {
+    console.log("Aww... Do I have to?");
+    this.outside = false;
+  }
+  else {
+    console.log("We're already inside though...");
+  }
+};
+
+// adds the method "bark" to the prototype which lets our digitalpal bark
+DigitalPal.prototype.bark = function() {
+  console.log("Woof! Woof!");
+};
+
+// adds the "meow" method to the prototype which lets our pet meow.
+DigitalPal.prototype.meow = function() {
+  console.log("Meow! Meow!");
+};
+
+// Create a new animals object to contain our new Digital Pals
+var animals = {};
+
+// creates a new DigitalPal object with the name "dog"
+animals.dog = new DigitalPal();
+
+// creates a new DigitalPal object with the name "cat"
+animals.cat = new DigitalPal();
 
 // Grabbing command line arguments for animal and method
 var animal = process.argv[2];
 var method = process.argv[3];
 
-// try calling your chosen animal and method from the terminal example: 'node tamagotchi-this dog letInside'
+// try calling your chosen animal and method from the terminal example: 'node tamagotchi cat meow'
 animals[animal][method]();
