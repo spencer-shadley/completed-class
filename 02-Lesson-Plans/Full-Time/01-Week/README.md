@@ -44,15 +44,15 @@ Next week, we begin JavaScript, make sure to review the slide decks in advance.
 
 ### Slide Decks
 
-* [1.1 The Zen of Coding](https://docs.google.com/presentation/d/16w9IckM1lvu3L6qATB1XnkJU1bwNnVtQjXJNPfj9lDc/edit?usp=sharing)
+* [01.1 The Zen of Coding](https://docs.google.com/presentation/d/16w9IckM1lvu3L6qATB1XnkJU1bwNnVtQjXJNPfj9lDc/edit?usp=sharing)
 
-* [1.2 Git-HTML-CSS](https://docs.google.com/presentation/d/1-503hnlqNaj-cPjVjq4KA2VyfbDlvcErquBc73qh_ug/edit?usp=sharing)
+* [01.2 Git-HTML-CSS](https://docs.google.com/presentation/d/1-503hnlqNaj-cPjVjq4KA2VyfbDlvcErquBc73qh_ug/edit?usp=sharing)
 
-* [1.3 Heroes of CSS](https://docs.google.com/presentation/d/1KZAUUZv3TfMkQ0WvN3kJejCbm5EZcr9vqVWGM7x_WUA/edit?usp=sharing)
+* [01.3 Heroes of CSS](https://docs.google.com/presentation/d/1KZAUUZv3TfMkQ0WvN3kJejCbm5EZcr9vqVWGM7x_WUA/edit?usp=sharing)
 
-* [1.4 Going Live](https://docs.google.com/presentation/d/1_TFrS_Gy9-wAO3SIHrfpRys7ZRtuVt7PQFoSCslUiEw/edit?usp=sharing)
+* [01.4 Going Live](https://docs.google.com/presentation/d/1_TFrS_Gy9-wAO3SIHrfpRys7ZRtuVt7PQFoSCslUiEw/edit?usp=sharing)
 
-* [1.5 Bootstrap Layouts and Responsive Designs](https://docs.google.com/presentation/d/1D0UN5gkoBznFUz5RdtTz-PkMuCxaJPqE963ybguOPEc/edit?usp=sharing)
+* [01.5 Bootstrap Layouts and Responsive Designs](https://docs.google.com/presentation/d/1D0UN5gkoBznFUz5RdtTz-PkMuCxaJPqE963ybguOPEc/edit?usp=sharing)
 
 ### Time Tracker(s)
 

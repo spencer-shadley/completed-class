@@ -4,9 +4,7 @@
 
 In this week we will be introducing students to their first taste of JavaScript. They will then use their newfound understanding of variables, arrays, loops, and conditionals to create a simple Password Generator.
 
-Also this week, we will be introducing students to the concept of APIs and the use of AJAX queries to retrieve and parse data in JSON formats. Throughout the week we'll be specifically working with the Giphy, OMDb, and New York Times APIs.
-
-Lastly, we will be introducing students to some of the most popular Web APIs. They will then use their newfound understanding of DOM manipulation, events, localStorage, and timers to create a quiz application.
+Also, we will be introducing students to some of the most popular Web APIs. They will then use their newfound understanding of DOM manipulation, events, localStorage, and timers to create a quiz application.
 
 Refer to the following links for detailed information on key topics, learning objectives and homework:
 
@@ -23,8 +21,6 @@ This week is filled with a lot of brand new topics. If you fall behind, make sur
 ## Heads Up
 
 Students are very likely to come across jQuery solutions when searching for DOM/event resources. Make sure to let them know that we will cover jQuery in the next unit, so for now, do not consult resources that include the word `jQuery` or the `$` variable.
-
-Next week, we have a day dedicated to interview preparation. Make sure that you are familiar with all of the algorithms in the 5.3 Lesson Plan prior to the start of class.
 
 ## Helpful Links
 
@@ -46,7 +42,7 @@ Next week, we have a day dedicated to interview preparation. Make sure that you 
 
 * [02.2 Jumping for JavaScript](https://docs.google.com/presentation/d/1DHqKz5v9CAG3d6FaBO_aGZG7w2IvwCv5dgIhbk7FG60/edit?usp=sharing)
 
-* [2.3 The DOM](https://docs.google.com/presentation/d/10VJ5KHiEK_G4P2-av7h2zNhDDlTRm20kztov2fAT-0s/edit?usp=sharing)
+* [02.3 The DOM](https://docs.google.com/presentation/d/10VJ5KHiEK_G4P2-av7h2zNhDDlTRm20kztov2fAT-0s/edit?usp=sharing)
 
 ### Time Tracker(s)
 
