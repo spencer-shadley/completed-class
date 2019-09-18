@@ -36,7 +36,7 @@ Today's class is focused on providing students with the very basics of JavaScrip
 
 - - -
 
-### 1. Instructor Do: How to Learn JavaScript (10 mins)
+### 1. Instructor Do: How to Learn JavaScript (5 mins)
 
 * Open the slide deck [2-1 The Joys of JavaScript](https://docs.google.com/presentation/d/16lWA3gU8ZBvZNKHxBvZM791ntfvXf-6xQUNN3Bk-nL4/edit?usp=sharing) and begin going through the slides.
 
@@ -50,7 +50,7 @@ Today's class is focused on providing students with the very basics of JavaScrip
   * **Keep Organized:** Many students around this time start to have files in literally every location possible. It gets incredibly confusing trying to help them when everything is so scattered. Let them know that a little folder organization can go a long way in creating easy-to-read applications.
   * **Overall Tips:** Just read these. Self-explanatory. Key point&mdash;encourage students to REDO coding exercises on their own. Many students just go home and re-flip through slides or read through code without actually trying to do it themselves. Hands on experience is a lot better than looking code over secondhand.
 
-### 2. Partners Do: Code Dissection (10 mins)
+### 2. Partners Do: Code Dissection (5 mins)
 
 * Let students know that a big part of JavaScript learning requires you to "learn on the fly".
 
@@ -351,7 +351,7 @@ Today's class is focused on providing students with the very basics of JavaScrip
 
 * Slack out `array-logs-solved.html` in `15-CoolPeopleArray/Solved`	 when finished.
 
-### 28. Everyone Do: Array Setting (5 mins)
+### 28. Everyone Do: Array Setting (10 mins)
 
 * Slack out the file and the instructions below.
 
@@ -373,7 +373,7 @@ Today's class is focused on providing students with the very basics of JavaScrip
 
 * Slack out [`array-setting-solved.html`in `16-ArraySetting/Solved` when finished.
 
-### 29. Instructor Do: For Loops (5 mins)
+### 29. Instructor Do: For Loops (10 mins)
 
 * Go through the slides introducing the concept of `for` loops. Re-use the example of the Zoo Array as shown on the slides.
 
