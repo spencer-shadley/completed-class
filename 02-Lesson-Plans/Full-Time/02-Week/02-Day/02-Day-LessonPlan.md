@@ -185,17 +185,53 @@ _This short snippet demonstrates most of the concepts students will need for the
 
     * Do as much as you can on your own, but don't be afraid to ask for help if you feel your team is struggling.
 
-    * **Note**: Don't use `document.write` as it will delete the contents of the body, including your JavaScript. Instead, use `document.getElementById` in conjunction with the `textContent` property, as you were shown earlier.
-
     * **Note**: Don’t worry. We know this is a very challenging assignment. We also know that you won’t know where to start. In fact, we haven’t shown you EVERYTHING you need yet, but that’s okay. Part of being a developer is figuring things out on your own through trial and error.
 
 ### 11. Instructor Do: Review RPS (10 mins) 
 
-* Open [rps-7.html](../../../../01-Class-Content/03-javascript/01-Activities/23-RPS-Coded/Solved/rps-7.html) in `23-RPS-Coded/Solved`, and walk students through the solution. Use the comments in the solution to help guide the conversation.
+* Open [rps-6.html](../../../../01-Class-Content/03-javascript/01-Activities/23-RPS-Coded/Solved/rps-6.html) in `23-RPS-Coded/Solved`, and walk students through the solution. Use the comments in the solution to help guide the conversation.
 
-    ![Images/9-RPS_4.png](Images/9-RPS_4.png)
+    ```js
+      // Creates an array that lists out all of the options (Rock, Paper, or Scissors).
+      var computerChoices = ["r", "p", "s"];
 
-* Slack out the [video review](https://www.youtube.com/watch?v=Tio88WjwFO0) for this activity and emphasize how helpful videos for challenging activities like this can be.
+      // Creating variables to hold the number of wins, losses, and ties. They start at 0.
+      var wins = 0;
+      var losses = 0;
+      var ties = 0;
+
+      for (var i = 0; i < 10; i++) {
+        // Randomly chooses a choice from the options array. This is the Computer's guess.
+        var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+
+        // Collect the user's response and convert to lower case.
+        var userGuess = prompt("Enter r, p, or s to play!");
+        userGuess = userGuess.toLowerCase();
+
+        // Only run game logic if user chose a valid option
+        if (userGuess === "r" || userGuess === "p" || userGuess === "s") {
+
+          alert("The computer chose " + computerGuess);
+
+          // Win/lose conditions:
+          if ((userGuess === "r" && computerGuess === "s") ||
+            (userGuess === "s" && computerGuess === "p") || 
+            (userGuess === "p" && computerGuess === "r")) {
+            wins++;
+            alert("You've won " + wins + " time(s)!");
+          } else if (userGuess === computerGuess) {
+            ties++;
+            alert("You've tied " + ties + " time(s).");
+          } else {
+            losses++;
+            alert("You've lost " + losses + " time(s).");
+          }
+        }
+      }
+
+      // When the game is over, alert the totals to the user. We can use the \n character to make a line break.
+      alert("Total wins: " + wins + "\nTotal ties: " + ties + "\nTotal losses: " + losses);
+    ```
 
 - - -
 
@@ -203,7 +239,7 @@ _This short snippet demonstrates most of the concepts students will need for the
 
 - - -
 
-### 13.    Partners Do: Array Building    (10 mins)
+### 13. Partners Do: Array Building (10 mins)
 
 * In this activity, students just fill in the empty comments for each line of code. This is intended to passively show them how to use `for` loops to populate arrays.
 
