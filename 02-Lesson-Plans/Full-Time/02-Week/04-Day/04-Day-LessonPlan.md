@@ -42,6 +42,78 @@ N/A
 
 - - -
 
+### 25. Instructor Do: Create and Append (10 mins)
+
+* Welcome students back from break and get right into our next topic, creating HTML elements and appending them to the DOM via JavaScript.
+
+* Navigate to [06-Ins_Create-Append/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/06-Ins_Create-Append/Solved/index.html) in your browser and demo its functionality.
+
+  * It will ask for a tag to create using prompts, and append the given element to the page.
+  
+  * If a proper tag name is not given it will let the user know and not create the element.
+
+* Ask the class, "How was this functionality achieved?"
+
+  * This is done using the DOM methods `.createElement` and `.appendChild`.
+
+  * When using `.createElement` we pass in the name of the tag we would like to create and store it as a variable so we can later add it to the DOM.
+
+  ```js
+  var newDiv = document.createElement("div");
+  ```
+
+  * For us to show our newly created div on the page, we need to append it to the DOM via an existing element.
+
+  ```js
+  document.body.appendChild(newDiv);
+  ```
+
+  * The above code would `append` newDiv to the body as a child element.
+
+* Answer any questions before proceeding to the next activity.
+
+### 26. Student Do: Look Ma! No HTML! (20 mins)
+
+* Direct students to the next activity, found in [07-Stu_LookMaNoHTML](../../../../01-Class-Content/04-web-apis/01-Activities/07-Stu_LookMaNoHTML/Unsolved).
+
+```md
+# Look Ma! No HTML
+
+In this activity you are going to use DOM methods to create an entire HTML page.
+
+## Instructions
+
+* You have been provided a standard HTML document. 
+
+* You may only work inside your `script`.
+
+* Inside `script` and using only DOM methods, create an entire HTML page. It should include:
+
+  * A centered h1 with a centered h2 under it.
+
+  * A centered image, with a center caption under it.
+
+  * A list of your favorite foods (or some other list of favorites).
+
+  * Some extra styling to all elements.
+```
+
+### 27. Instructor Do: Review Look Ma No HTML! (5 mins)
+
+* Navigate to [07-Stu_LookMaNoHTML/Solved](../../../../01-Class-Content/04-web-apis/01-Activities/07-Stu_LookMaNoHTML/Solved)and open the solved `script.js` file in your IDE.
+
+* The solution is split into 4 sections, go through each section with the class.
+
+  * The first portion contains all of our references to existing elements, as well as all of our `.createElement` calls.
+
+  * The next portion sets all of the `textContent` of our created elements.
+
+  * Next we begin the process of appending all of our created elements with the newly modified text content.
+
+  * Finally we go through all of our elements and use `.setAttribute` to change the styles and set image sources.
+
+* Answer any questions students have about the solution and move onto our final topic of the day, timers.
+
 ### 1. Instructor Do: Timers and Intervals (15 mins)
 
 * Executing code on a timer or interval allows us to set some amount of time to pass between functionality.
@@ -116,7 +188,7 @@ N/A
 
 * Answer any questions students may have about the demo. 
 
-### 2. Student Do: Speed Reader (35 mins)
+### 2. Student Do: Speed Reader (30 mins)
 
 * Direct students to the final activity of class, in [09-Stu_SpeedReader](../../../../01-Class-Content/04-web-apis/01-Activities/09-Stu_SpeedReader/Unsolved).
 
@@ -284,7 +356,7 @@ In this activity you are going to create a speed reading application. It will in
   });
   ```
 
-### 7.  Students Do: addEventListener (15 min)
+### 7.  Students Do: addEventListener (10 min)
 
 * Direct students to the next activity, found in [11-Stu_Onclick/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/11-Stu_Onclick/Unsolved)
 
@@ -657,7 +729,7 @@ In this activity, we are going to create a form that calculates a suggested tip 
   });
   ```
 
-### 14. Student Do: Listening For Other Events (15 min)
+### 14. Student Do: Listening For Other Events (10 min)
 
 * Direct students to the next activity, found in [15-Stu_Other_Events/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/15-Stu_Other_Events/Unsolved)
 
@@ -762,7 +834,7 @@ In this activity, we are going to create a form that calculates a suggested tip 
 
   * If students are having a tough time grasping this concept, try commenting out every `stopPropagation` call except for the second from outermost call. Then open the page in your browser and click on the innermost button.
 
-### 17. Student Do: Event Bubbling (20 min)
+### 17. Student Do: Event Bubbling (10 min)
 
 * Direct students to the next activity, found in [17-Stu_Event_Bubbling/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/17-Stu_Event_Bubbling/Unsolved)
 
@@ -886,7 +958,7 @@ In this activity, we are going to create an image carousel that allows us to cyc
   });
   ```
 
-### 20. Student Do: Event Delegation (20 min)
+### 20. Student Do: Event Delegation (15 min)
 
 * Direct students to the next activity, found in [19-Stu_Event_Delegation/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/19-Stu_Event_Delegation/Unsolved)
 
@@ -914,7 +986,7 @@ In this activity, we are going to create an image carousel that allows us to cyc
 * Use event delegation to make the modal close if the user clicks away from the modal.
 ```
 
-### 21. Instructor Do: Review Event Delegation (10 min)
+### 21. Instructor Do: Review Event Delegation (5 min)
 
 * Take a moment to demonstrate the app, just as you did in the beginning of class.
 
