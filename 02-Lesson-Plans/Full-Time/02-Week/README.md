@@ -4,8 +4,6 @@
 
 In this week we will be introducing students to their first taste of JavaScript. They will then use their newfound understanding of variables, arrays, loops, and conditionals to create a simple Password Generator.
 
-Also, we will be introducing students to some of the most popular Web APIs. They will then use their newfound understanding of DOM manipulation, events, localStorage, and timers to create a quiz application.
-
 Refer to the following links for detailed information on key topics, learning objectives and homework:
 
   * [03-JavaScript Unit Overview](../../../01-Class-Content/03-JavaScript/README.md)
@@ -58,12 +56,15 @@ Students are very likely to come across jQuery solutions when searching for DOM/
 
 ## Algorithms
 
+### JavaScript
+
 * [01-arithmetic](../../../01-Class-Content/03-JavaScript/03-Algorithms/01-arithmetic)
 
 * [02-odd-or-even](../../../01-Class-Content/03-JavaScript/03-Algorithms/02-odd-or-even)
 
 * [03-log-nums](../../../01-Class-Content/03-JavaScript/03-Algorithms/03-log-nums)
 
+### Web APIs
 
 * [01-log-even-nums](../../../01-Class-Content/04-Web-APIs/03-Algorithms/01-log-even-nums)
 

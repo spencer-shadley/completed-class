@@ -14,8 +14,6 @@ This is a critical unit as it introduces real-world use cases for the programmin
 
 Students are very likely to come across jQuery solutions when searching for DOM/event resources. Make sure to let them know that we will cover jQuery in the next unit, so for now, do not consult resources that include the word `jQuery` or the `$` variable.
 
-Next week, we have a day dedicated to interview preparation. Make sure that you are familiar with all of the algorithms in the 5.3 Lesson Plan prior to the start of class.
-
 ## Helpful Links
 
 ### Lesson Plans

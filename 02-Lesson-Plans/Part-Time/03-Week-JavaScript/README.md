@@ -24,7 +24,7 @@ This week is filled with a lot of brand new topics. If you fall behind, make sur
 
 ### Slide Decks
 
-  * [Unit 03: The Joys of JavaScript](https://docs.google.com/presentation/d/16lWA3gU8ZBvZNKHxBvZM791ntfvXf-6xQUNN3Bk-nL4/edit?usp=sharing)
+  * [03.1: The Joys of JavaScript](https://docs.google.com/presentation/d/16lWA3gU8ZBvZNKHxBvZM791ntfvXf-6xQUNN3Bk-nL4/edit?usp=sharing)
 
   * [03.2: Jumping for JavaScript](https://docs.google.com/presentation/d/1hKgGl_19fRL0xpABAhDlNNvadOFVBUeqjGdM82wNmL0/edit?usp=sharing)
 

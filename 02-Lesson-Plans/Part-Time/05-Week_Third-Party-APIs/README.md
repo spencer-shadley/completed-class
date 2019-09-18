@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this week we will review JavaScript & jQuery fundamentals, as well as touch on timing events, debugger, and sample interview questions.
+In this week we will review the DOM and JavaScript, and introduce the library jQuery as an alternative method to manipulate the DOM.
 
   * Refer to the [Class Content Unit Overview](../../../01-Class-Content/05-Third-Party-APIs/README.md) for detailed information on key topics, learning objectives and homework.
 
