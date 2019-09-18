@@ -340,7 +340,7 @@ By the end of class students will:
 
   * The answer is, of course, that there is still no data stored within the server. Unlike before, however, we are now all set to start adding data into our tables!
 
-* Open up "animals_db" once more within MySQL Workbench  and type `SELECT * FROM animals_db;` into the editor before highlighting this line of code and running it. Explain this to your students as you type in the code.
+* Open up "animals_db" once more within MySQL Workbench  and type `SELECT * FROM people;` into the editor before highlighting this line of code and running it. Explain this to your students as you type in the code.
 
 * This will bring up a visual of the table we have created and students should note that there is nothing stored within the table just yet. We will be changing this now.
 
