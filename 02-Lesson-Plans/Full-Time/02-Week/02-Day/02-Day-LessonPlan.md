@@ -92,7 +92,7 @@ Today's class is focused on re-introducing students to the concept of `for` loop
 
     ![Images/7-HardLoop.png](Images/7-HardLoop.png)
 
-### 17. Students Do: Random Number Loop (10 mins)
+### 7. Students Do: Random Number Loop (10 mins)
 
 * Slack out the following file and instructions to students.
 
@@ -106,7 +106,7 @@ Today's class is focused on re-introducing students to the concept of `for` loop
 
 * Before they get started on the activity, briefly explain that we're using a built-in JavaScript feature called `Math.random()` to print 10 random numbers, but the numbers are all decimals. Prompt students to do some Googling to change this to print 10 random _whole_ numbers. It shouldn't take long for them to find the answer.
 
-### 18. Instructor Do: Review Random Numbers (5 mins)
+### 8. Instructor Do: Review Random Numbers (5 mins)
 
 * Have a student share what they found. If you're running short on time, or no one has an answer, open the solution at [random-numbers-solved.html](../../../../01-Class-Content/03-javascript/01-Activities/21-RandomNumbers/Solved/random-numbers-solved.html) in `21-RandomNumbers/Solution`
 
@@ -116,7 +116,7 @@ Today's class is focused on re-introducing students to the concept of `for` loop
 
 * If time is short, simply state that this is a common solution when needing random whole numbers, and the more students see and use this syntax, the more it will make sense to them.
 
-### 8. Instructor Do: Demo RPS (5 mins)
+### 9. Instructor Do: Demo RPS (5 mins)
 
 * Take a couple of minutes to demonstrate the final application `23-RPS-Coded`.
 
@@ -130,7 +130,7 @@ Today's class is focused on re-introducing students to the concept of `for` loop
 
 * Take an extra few minutes here if necessary to make sure everyone understands the rules of Rock, Paper, Scissors (it's not uncommon for a few students to have never played as it's not universally popular around the world.)
 
-### 9. Students Do: Pseudocode RPS (5 mins)
+### 10. Students Do: Pseudocode RPS (5 mins)
 
 * Once they've played a few rounds, have them pseudocode a solution that lays out the steps involved in playing rock-paper-scissors against a computer.
 
@@ -150,7 +150,7 @@ Today's class is focused on re-introducing students to the concept of `for` loop
 
 * Encourage students to use this pseudocode as a starting point or as a guide with which to finish their own sketch of the application.
 
-### 10. Partners Do: Coding out RPS (60 mins) 
+### 11. Partners Do: Coding out RPS (60 mins) 
 
 * Slack out the following files and instructions to students.
 
@@ -166,7 +166,7 @@ Today's class is focused on re-introducing students to the concept of `for` loop
 
     * **Note**: Don’t worry. We know this is a very challenging assignment. We also know that you won’t know where to start. In fact, we haven’t shown you EVERYTHING you need yet, but that’s okay. Part of being a developer is figuring things out on your own through trial and error.
 
-### 11. Instructor Do: Review RPS (10 mins) 
+### 12. Instructor Do: Review RPS (10 mins) 
 
 * Open [rps-6.html](../../../../01-Class-Content/03-javascript/01-Activities/23-RPS-Coded/Solved/rps-6.html) in `23-RPS-Coded/Solved`, and walk students through the solution. Use the comments in the solution to help guide the conversation.
 
@@ -214,11 +214,11 @@ Today's class is focused on re-introducing students to the concept of `for` loop
 
 - - -
 
-### 12. LUNCH BREAK (30 mins)
+### 13. LUNCH BREAK (30 mins)
 
 - - -
 
-### 13. Partners Do: Array Building (10 mins)
+### 14. Partners Do: Array Building (10 mins)
 
 * In this activity, students just fill in the empty comments for each line of code. This is intended to passively show them how to use `for` loops to populate arrays.
 
@@ -238,7 +238,7 @@ Today's class is focused on re-introducing students to the concept of `for` loop
 
     * Be prepared to share with the class!
 
-### 14. Instructor Do: Review Activity (10 mins)
+### 15. Instructor Do: Review Activity (10 mins)
 
 * Go over the solution. First, have them try to explain each line of code to you as a class.
 
@@ -248,7 +248,7 @@ Today's class is focused on re-introducing students to the concept of `for` loop
 
     ![Images/1-LoopTV.png](Images/1-LoopTV.png)
 
-### 15. Instructor Do: Logging - No Functions (5 mins)
+### 16. Instructor Do: Logging - No Functions (5 mins)
 
 * Open [superhero-logging-solved-no-functions.html](../../../../01-Class-Content/03-javascript/01-Activities/26-SuperheroLogging/superhero-logging-solved-no-functions.html) in `26-SuperheroLogging` in Chrome and in your editor.
 
@@ -258,7 +258,7 @@ Today's class is focused on re-introducing students to the concept of `for` loop
 
 * Slack out the file when done with your explanation.
 
-### 16. Instructor Do: Logging - With Functions (10 mins)
+### 17. Instructor Do: Logging - With Functions (10 mins)
 
 * Open [superhero-logging-solved-with-functions.html](../../../../01-Class-Content/03-javascript/01-Activities/26-SuperheroLogging/superhero-logging-solved-with-functions.html) in `26-SuperheroLogging` in Chrome and in your editor.
 
@@ -278,7 +278,7 @@ Today's class is focused on re-introducing students to the concept of `for` loop
 
 * Ask if there are any questions, and then proceed to Slack out the file so students can use it as an example for the next activity.
 
-### 17. Partners Do: My First Functions (20 mins) 
+### 18. Partners Do: My First Functions (20 mins) 
 
 * This next exercise requires students to build simple functions for performing mathematical and string operations.
 
@@ -296,7 +296,7 @@ Today's class is focused on re-introducing students to the concept of `for` loop
 
     * Hint: Look back to the previous example if you need help.
 
-### 18. Instructor Do: Review Activity (10 mins)
+### 19. Instructor Do: Review Activity (10 mins)
 
 * Review [my-first-functions-solved.html](../../../../01-Class-Content/03-javascript/01-Activities/27-MyFirstFunctions/Solved/my-first-functions-solved.html) in `27-MyFirstFunctions/Solved`, pointing out that each of the functions takes on a similar structure.
 
@@ -317,11 +317,11 @@ Today's class is focused on re-introducing students to the concept of `for` loop
 
     ![Images/3-MyFirstFunctions_2.png](Images/3-MyFirstFunctions_2.png)
 
-### 19. Group Do: Recap Activity (40 mins)
+### 20. Group Do: Recap Activity (40 mins)
 
 * Use the remaining time up to the complete this units homework assignment.
 
-### 20. END (0 mins)
+### 21. END (0 mins)
 
 ### Lesson Plan Feedback
 
