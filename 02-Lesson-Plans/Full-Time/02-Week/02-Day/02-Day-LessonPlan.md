@@ -92,50 +92,29 @@ Today's class is focused on re-introducing students to the concept of `for` loop
 
     ![Images/7-HardLoop.png](Images/7-HardLoop.png)
 
-### 7. Everyone Do: Browser Events (10 mins) 
+### 17. Students Do: Random Number Loop (10 mins)
 
-* Explain that the next activity requires students to be familiar with the notion of browser events.
+* Slack out the following file and instructions to students.
 
-* Explain that when a user interacts with a web page, the page "keeps track" of many of the user's actions.
+  * **File**:
 
-  * For example, explain that the browser keeps track of what users click on and of where they click.
+    * `random-numbers-unsolved.html` in `21-RandomNumbers/Unsolved`
 
-  * As another example, explain that the browser also keeps track of which keys a user presses.
+  * **Instructions**:
 
-* Open [events-examples.html](../../../../01-Class-Content/03-javascript/01-Activities/21-Events/events-examples.html) in `21-Events`.
+    * Research how to improve on `Math.random()` to generate a random whole number between 1 and 10 instead of a random decimal number.
 
-* Briefly demonstrate the code in Chrome.
+* Before they get started on the activity, briefly explain that we're using a built-in JavaScript feature called `Math.random()` to print 10 random numbers, but the numbers are all decimals. Prompt students to do some Googling to change this to print 10 random _whole_ numbers. It shouldn't take long for them to find the answer.
 
-* Then open the code in your text editor, and explain the following points:
+### 18. Instructor Do: Review Random Numbers (5 mins)
 
-  * We can "hook onto" the event of a user pressing and releasing a key by referring to `document.onkeyup`.
+* Have a student share what they found. If you're running short on time, or no one has an answer, open the solution at [random-numbers-solved.html](../../../../01-Class-Content/03-javascript/01-Activities/21-RandomNumbers/Solved/random-numbers-solved.html) in `21-RandomNumbers/Solution`
 
-  * Setting `document.onkeyup` equal to a function tells JavaScript to execute that function _whenever the event occurs_.
+* Point out that we added a few more things around the random function: `Math.floor(Math.random() * 10) + 1`
 
-    * Point out that the `event` is available within the function.
+* If you have time, explain that multiplying `Math.random()` by 10 will now give us a random number between 0 and 9.999. We're still getting a decimal, though, so we use `Math.floor()` to round down. But now we're only getting a random number between 0 and 9, so we'll always add 1 to bump it up to 1-10.
 
-  * We can get the _key_ that the user pressed by writing `event.key`.
-
-  * We can get our hands on an element on the page that has an ID by using `document.getElementById`.
-
-    * Explain that this always returns a _single_ element.
-
-    * Explain that this gives us access to what is called a DOM node.
-
-      * Explain that a DOM node is a browser's way of representing an HTML element on the page.
-
-      * Explain that unlike the code in an HTML document, this DOM node can be modified "live" by our JavaScript.
-
-  * Finally, explain that this DOM node has a property called `textContent`, which represents the _text_ displayed _inside_ of the element.
-
-    * We've avoided `innerHTML` in this demonstration as a best practice.
-
-* Let students know that they don't have to remember all of this right now.
-
-  * Instead, Slack out the file, and encourage them to refer to it during their next activity whenever necessary.
-
-![This short snippet demonstrates most of the concepts students will need for the RPS activity.](Images/11-events.png)
-_This short snippet demonstrates most of the concepts students will need for the RPS activity._
+* If time is short, simply state that this is a common solution when needing random whole numbers, and the more students see and use this syntax, the more it will make sense to them.
 
 ### 8. Instructor Do: Demo RPS (5 mins)
 
@@ -317,7 +296,7 @@ _This short snippet demonstrates most of the concepts students will need for the
 
     * Hint: Look back to the previous example if you need help.
 
-### 18. Instructor Do: Review Activity (15 mins)
+### 18. Instructor Do: Review Activity (10 mins)
 
 * Review [my-first-functions-solved.html](../../../../01-Class-Content/03-javascript/01-Activities/27-MyFirstFunctions/Solved/my-first-functions-solved.html) in `27-MyFirstFunctions/Solved`, pointing out that each of the functions takes on a similar structure.
 
