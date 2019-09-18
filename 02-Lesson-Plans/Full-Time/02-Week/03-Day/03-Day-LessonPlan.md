@@ -4,7 +4,7 @@
 
 In this class, we will be introducing students to the concept of JavaScript Objects.
 
-`Summary: Complete activities 28-34 in Unit 03 and activities 1-7 in Unit 04`
+`Summary: Complete activities 28-35 in Unit 03 and activities 1-5 in Unit 04`
 
 ## Instructor Notes 
 
