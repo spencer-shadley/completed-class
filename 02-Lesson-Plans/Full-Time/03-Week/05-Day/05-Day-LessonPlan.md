@@ -57,7 +57,7 @@ N/A
 
 * **Folder:**
 
-  * [12-CatButton/Unsolved](../../../../01-Class-Content/06-ajax/01-Activities/12-CatButton/Unsolved)
+  * [12-CatButton/Unsolved](../../../../01-Class-Content/06-Server-Side-APIs/01-Activities/12-CatButton/Unsolved)
 
 * **Instructions:**
 
@@ -100,13 +100,13 @@ N/A
 
 ### 4. Partners Do: Ajax Triggered by Buttons (15 min)
 
-* Open the file [13-ButtonTriggeredAJAX/Solved/button-triggered-ajax-solution.html](../../../../01-Class-Content/06-ajax/01-Activities/13-ButtonTriggeredAJAX/Solved/button-triggered-ajax-solution.html) in your browser. Show students that clicking any one of the buttons triggers a series of gifs by its author to emerge.
+* Open the file [13-ButtonTriggeredAJAX/Solved/button-triggered-ajax-solution.html](../../../../01-Class-Content/06-Server-Side-APIs/01-Activities/13-ButtonTriggeredAJAX/Solved/button-triggered-ajax-solution.html) in your browser. Show students that clicking any one of the buttons triggers a series of gifs by its author to emerge.
 
 * Next slack out the following folder and instructions to students
 
 * **Folder:**
 
-  * [13-ButtonTriggeredAJAX/Unsolved](../../../../01-Class-Content/06-ajax/01-Activities/13-ButtonTriggeredAJAX/Unsolved)
+  * [13-ButtonTriggeredAJAX/Unsolved](../../../../01-Class-Content/06-Server-Side-APIs/01-Activities/13-ButtonTriggeredAJAX/Unsolved)
 
 * **Instructions:**
 
@@ -134,7 +134,7 @@ N/A
 
 ### 6. Partners Do: Creating Elements Dynamically (15 min)
 
-* Next open [14-DynamicElements/Solved/dynamic-elements-solution.html](../../../../01-Class-Content/06-ajax/01-Activities/14-DynamicElements/Solved/dynamic-elements-solution.html)  and demonstrate the application in the browser.
+* Next open [14-DynamicElements/Solved/dynamic-elements-solution.html](../../../../01-Class-Content/06-Server-Side-APIs/01-Activities/14-DynamicElements/Solved/dynamic-elements-solution.html)  and demonstrate the application in the browser.
 
 * Point out the application (similarly to the last exercise) allows you to trigger gifs about animals.
 
@@ -142,7 +142,7 @@ N/A
 
 * **Folder:**
 
-  * [14-DynamicElements/Unsolved](../../../../01-Class-Content/06-ajax/01-Activities/14-DynamicElements/Unsolved)
+  * [14-DynamicElements/Unsolved](../../../../01-Class-Content/06-Server-Side-APIs/01-Activities/14-DynamicElements/Unsolved)
 
 
 * **Instructions:**
@@ -193,13 +193,13 @@ N/A
 
 ### 9. Partners Do: Pausing Gifs (15 min)
 
-* Open the file [15-PausingGifs/Solved/pausing-gifs-solution.html](../../../../01-Class-Content/06-ajax/01-Activities/15-PausingGifs/Solved/pausing-gifs-solution.html) in your browser. Demonstrate that in this application you can start and pause the animation of each gif you click.
+* Open the file [15-PausingGifs/Solved/pausing-gifs-solution.html](../../../../01-Class-Content/06-Server-Side-APIs/01-Activities/15-PausingGifs/Solved/pausing-gifs-solution.html) in your browser. Demonstrate that in this application you can start and pause the animation of each gif you click.
 
 * Then slack out the following folder and instructions to students.
 
 * **Folder:**
 
-  * [15-PausingGifs/Unsolved](../../../../01-Class-Content/06-ajax/01-Activities/15-PausingGifs/Unsolved)
+  * [15-PausingGifs/Unsolved](../../../../01-Class-Content/06-Server-Side-APIs/01-Activities/15-PausingGifs/Unsolved)
 
 * **Instructions:**
 
@@ -207,7 +207,7 @@ N/A
 
 ### 10. Instructor Do: Review Pausing Gifs (10 min)
 
-* Open the [15-PausingGifs/Solved/pausing-gifs-solution.html](../../../../01-Class-Content/06-ajax/01-Activities/15-PausingGifs/Solved/pausing-gifs-solution.html) file in your editor and walk students through the solution.
+* Open the [15-PausingGifs/Solved/pausing-gifs-solution.html](../../../../01-Class-Content/06-Server-Side-APIs/01-Activities/15-PausingGifs/Solved/pausing-gifs-solution.html) file in your editor and walk students through the solution.
 
 * During your discussion, be sure to point out the following:
 

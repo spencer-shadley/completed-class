@@ -118,7 +118,7 @@ N/A
 
 * **Folder**
 
-  * [01-CustomerObject/Unsolved](../../../../01-Class-Content/06-ajax/01-Activities/01-CustomerObject/Unsolved)
+  * [01-CustomerObject/Unsolved](../../../../01-Class-Content/06-Server-Side-APIs/01-Activities/01-CustomerObject/Unsolved)
 
 * **Instructions**
 
@@ -128,7 +128,7 @@ N/A
 
 ### 7. Instructor Do: Review CustomerObject Parsing (5 mins)
 
-* Either live-code the solution yourself or open and demonstrate[01-CustomerObject/Solved](../../../../01-Class-Content/06-ajax/01-Activities/01-CustomerObject/Solved/customer-object-solution.html).
+* Either live-code the solution yourself or open and demonstrate[01-CustomerObject/Solved](../../../../01-Class-Content/06-Server-Side-APIs/01-Activities/01-CustomerObject/Solved/customer-object-solution.html).
 
 * While going over the solution, ask students why phoneNumber required an index parameter but first and last name did not.
 
@@ -276,7 +276,7 @@ N/A
 
 ### 19. Instructor Do: AJAX Query Demo (10 mins)
 
-* Now open up your editor and create an AJAX call to OMDb using the below code as an example. (Alternatively, you can use [02-Ajax_OMDB/single-ajax.html](../../../../01-Class-Content/06-ajax/01-Activities/02-Ajax_OMDB/single-ajax.html). If making your own AJAX call, however, be sure to include a few console logs after the AJAX call to demonstrate asynchronicity. See `single-ajax.html` for details.
+* Now open up your editor and create an AJAX call to OMDb using the below code as an example. (Alternatively, you can use [02-Ajax_OMDB/single-ajax.html](../../../../01-Class-Content/06-Server-Side-APIs/01-Activities/02-Ajax_OMDB/single-ajax.html). If making your own AJAX call, however, be sure to include a few console logs after the AJAX call to demonstrate asynchronicity. See `single-ajax.html` for details.
 
 ![9-AJAX](Images/9-AJAX.png)
 
@@ -305,7 +305,7 @@ N/A
 
 ![10-SpaceJamJson](Images/10-SpaceJamJson.png)
 
-* Add a second AJAX call to another movie. (Alternatively you can use [02-Ajax_OMDB/multiple-ajax.html](../../../../01-Class-Content/06-ajax/01-Activities/02-Ajax_OMDB/multiple-ajax.html).
+* Add a second AJAX call to another movie. (Alternatively you can use [02-Ajax_OMDB/multiple-ajax.html](../../../../01-Class-Content/06-Server-Side-APIs/01-Activities/02-Ajax_OMDB/multiple-ajax.html).
 
 * Open the floor to questions.
 

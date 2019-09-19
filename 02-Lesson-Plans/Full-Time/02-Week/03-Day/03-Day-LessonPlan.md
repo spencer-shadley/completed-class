@@ -515,7 +515,7 @@ In this activity you will `console.log(this)` and dig around inside the returned
 
 ### 18. Student Do: Traverse That DOM (10 mins)
 
-* Direct students to the next activity, found in [02-Stu_Traverse-That-DOM](../../../../01-Class-Content/04-web-apis/01-Activities/02-Stu_Traverse-That-DOM/Unsolved)
+* Direct students to the next activity, found in [03-Stu_Traverse-That-DOM](../../../../01-Class-Content/04-web-apis/01-Activities/03-Stu_Traverse-That-DOM/Unsolved)
 
 ```md
 # Traverse That DOM
@@ -553,7 +553,7 @@ In this activity you are going to use the Chrome Dev Console and `.style.propert
 
 ### 19. Instructor Do: Review Traverse That DOM (5 mins)
 
-* Open [02-Stu_Traverse-That-DOM Solved/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/02-Stu_Traverse-That-DOM/Solved) in your IDE and point out the following points to students:
+* Open [03-Stu_Traverse-That-DOM Solved/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/03-Stu_Traverse-That-DOM/Solved) in your IDE and point out the following points to students:
 
   * We first gather our two main divs into variables for easy access.
 
@@ -582,7 +582,7 @@ In this activity you are going to use the Chrome Dev Console and `.style.propert
 
 ### 20. Instructor Do: Setting Attributes (10 mins)
 
-* Navigate to [03-Ins_Setting-Attribute index.html](../../../../01-Class-Content/04-web-apis/01-Activities/03-Ins_Setting-Attribute/index.html) and open it in your browser.
+* Navigate to [04-Ins_Setting-Attributes index.html](../../../../01-Class-Content/04-web-apis/01-Activities/04-Ins_Setting-Attributes/index.html) and open it in your browser.
 
 * Ask the class, "How do we feel about this style?"
 
@@ -592,7 +592,7 @@ In this activity you are going to use the Chrome Dev Console and `.style.propert
 
 * If the attribute already exists, the value will be updated. If there is no attribute, a new attribute is added with the specified name and value.
 
-* Navigate to [03-Ins_Setting-Attribute script.js](../../../../01-Class-Content/04-web-apis/01-Activities/03-Ins_Setting-Attribute/script.js) in your IDE.
+* Navigate to [03-Ins_Setting-Attribute script.js](../../../../01-Class-Content/04-web-apis/01-Activities/03-Ins_Setting-Attributes/script.js) in your IDE.
 
   * When we uncomment this code and navigate back to the page styles will have been changed and an image added, all via JavaScript.
 
