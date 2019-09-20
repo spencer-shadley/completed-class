@@ -102,7 +102,6 @@ function appMenu() {
       default:
         buildTeam();
       }
-                 
     });
   }
 
