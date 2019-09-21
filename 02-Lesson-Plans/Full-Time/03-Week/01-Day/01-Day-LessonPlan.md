@@ -296,8 +296,6 @@ In this class, we will be introducing students to the concept of DOM Manipulatio
 
 * Open the file `captain-planet-game.html` in `10-CaptainPlanetGame/Solved` in the Browser. Click on various buttons and show students how Captain Planet is being modified in response to the clicks.
 
-  ![image-1](Images/1-captain-planet.png)
-
 ### 19.  Students Do: Pseudocode Captain Planet (10 min)
 
 * Proceed with the first activity, in which you ask students to pseudocode the game's logic and structure.
