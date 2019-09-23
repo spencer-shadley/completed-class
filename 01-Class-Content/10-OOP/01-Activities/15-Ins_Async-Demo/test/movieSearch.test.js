@@ -1,5 +1,5 @@
-const MovieSearch = require("../movieSearch");
 const getMock = require("./__mocks__/getMock");
+const MovieSearch = require("../movieSearch");
 
 describe("MovieSearch", () => {
   describe("buildUrl", () => {
@@ -18,18 +18,8 @@ describe("MovieSearch", () => {
       const movie = new MovieSearch();
       const name = "Rocky";
 
-      expect(movie.search(name)).resolves.toEqual({ data: { } });
-      expect(getMock).toBeCalledWith(movie.buildUrl(name));
-    });
-  });
-
-  describe("writeJson", () => {
-    it("should search the OMDB API for a given movie", () => {
-      const movie = new MovieSearch();
-      const name = "Rocky";
-
-      expect(movie.search(name)).resolves.toEqual({ data: { } });
-      expect(getMock).toBeCalledWith(movie.buildUrl(name));
+      expect(movie.search(name)).resolves.toEqual({ data: {} });
+      expect(getMock).lastCalledWith(movie.buildUrl(name));
     });
   });
 });
