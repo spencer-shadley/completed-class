@@ -1,5 +1,7 @@
-const getMock = require("./__mocks__/getMock");
+const axios = require("axios");
 const MovieSearch = require("../movieSearch");
+
+jest.mock("axios");
 
 describe("MovieSearch", () => {
   describe("buildUrl", () => {
@@ -18,8 +20,14 @@ describe("MovieSearch", () => {
       const movie = new MovieSearch();
       const name = "Rocky";
 
+      axios.get.mockReturnValue(
+        new Promise(function(resolve) {
+          resolve({ data: {} });
+        })
+      );
+
       expect(movie.search(name)).resolves.toEqual({ data: {} });
-      expect(getMock).lastCalledWith(movie.buildUrl(name));
+      expect(axios.get).lastCalledWith(movie.buildUrl(name));
     });
   });
 });
