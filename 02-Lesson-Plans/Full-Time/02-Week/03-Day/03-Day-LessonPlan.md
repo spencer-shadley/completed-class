@@ -1,10 +1,10 @@
-# 02.3 Lesson Plan - JavaScript Juggernauts (10:00 AM) <!--links--> &nbsp; [⬅️](../02-Day/02-Day-LessonPlan.md) &nbsp; [➡️](../04-Day/04-Day-LessonPlan.md)
+# 02.3 Lesson Plan - JavaScript Juggernauts (10:00 AM) 
 
 ## Overview
 
 In this class, we will be introducing students to the concept of JavaScript Objects.
 
-`Summary: Complete activities 28-34 in Unit 03 and activities 1-7 in Unit 04`
+`Summary: Complete activities 28-35 in Unit 03 and activities 1-5 in Unit 04`
 
 ## Instructor Notes 
 
@@ -44,7 +44,189 @@ In this class, we will be introducing students to the concept of JavaScript Obje
 
 - - -
 
-### 1. Everyone Do: Window Object & Scope (25 mins)
+### 1. Instructor Do: Good Array (5 mins)
+
+* Open `good-array.html` in `28-GoodArray`.
+
+* The purpose of this activity is to show students that arrays are useful for looping through lists of numbers.
+
+* This example will then be contrasted by the next example, in which we have two arrays that are related to one another, thus requiring the use of an object pattern instead.
+
+### 2. Instructor Do: Joan of Arc (Bad Arrays) (10 mins)
+
+* Open `joan-of-arc-arrays-unsolved.js` in `29-JoanOfArcArrays/Unsolved` in your editor.
+
+* Take a moment to explain this pattern. The first array has various labels and the second array has the descriptions associated with these labels for our Joan of Arc character.
+
+* This is a perfect example of the limitations of arrays—namely, that they are not useful for describing associations across arrays.
+
+* Have students think for a few moments about how they would link these two arrays so that they could easily determine what Joan of Arc's "Real Name" is or what "Scars" she has.
+
+* Point out that any array combination strategy is going to be overly complex and that there is a much simpler solution to this problem.
+
+* Show how the relationship would be with `joan-of-arc-arrays-solved.js` in `29-JoanOfArcArrays/Solved`.
+
+### 3. Instructor Do: Gandalf The Grey Objects (10 mins)
+
+* Now open `gandalf-the-grey-objects.html` in `30-GandalfTheGreyObjects`.
+
+  * Point out how the `gandalf` object takes on a different form where each property matches up with its value.
+
+  * Also, point out how we can access the values for each property using either square bracket notation (`object["property"]`) or dot notation (`object.property`).
+
+  * Based on the current code, ask students: Why would we need to use bracket notation over dot notation?
+
+    * Bracket notation is required when the property we want to access is a string with spaces. e.g. the code `object["multi-word property"]` would work, but `object.multi-word property` or `object."multi-word property"` would not.
+
+    * We also need to use bracket notation whenever we want to pass a variable to be interpreted as an object property. The gandalf-the-grey-objects example demonstrates this:
+
+      ```js
+      var ageProperty = "age (est)";
+      var years = gandalf[ageProperty];
+      alert("My 401k has been gathering interest for " + years + " years!")
+      ```
+
+    * Had we just written `gandalf.ageProperty`, it would have returned `undefined`, since the `gandalf` object has no property literally named `ageProperty`.
+
+  * Also point out how these objects are very useful for storing related data and how we will be using them more often later when it comes to APIs and to data recall.
+
+  * Let them know that objects are EXTREMELY important.
+
+### 4. Instructor Do: Gandalf The Grey (Slides) (5 mins)
+
+* Proceed with the slides that visually lay out the structure of JavaScript objects.
+
+* Talk through them as you go, and encourage questions frequently. The more readily students understand objects the better.
+
+### 5. Instructor Do: Gandalf The Grey Objects (Repeat) (5 mins)
+
+* Once again go over the same Gandalf The Grey Objects example. Explain the concepts once more. This time, highlight how object properties can also be _other_ objects. We can access those sub-objects simply by chaining dot or bracket notation: `gandalf.favoriteSong.artist`.
+
+* Feel free to create add-on examples of your own:
+
+  * Consider adding new properties.
+
+  * Ask students how they would retrieve specific properties.
+
+  * Go over how you could utilize properties in combination with one another.
+
+* Make sure students understand the gist, and then Slack out the file to them.
+
+### 6. Partners Do: Basic Objects (10 mins)
+
+* Slack out the following file and instructions:
+
+  * **File**
+
+    * `car-object-unsolved.html` in `31-MyFirstObject/Unsolved`
+
+  * **Instructions**
+
+    * With a partner, spend the next few moments studying the code just Slacked to you.
+
+    * Then write code below each comment to log the relevant information about the provided `car` object.
+
+    * Bonus: If you finish early, create a brand new object of your own. Slack out a snippet of the code to the class when you are done. Be creative!
+
+### 7. Instructor Do: Review Activity (10 mins)
+
+* Walk students through `car-object-solved.html` in `31-MyFirstObject/Solved`. In essence, you just need to show students how to retrieve various properties from the car object and how to execute various methods associated with the car object. In your discussion of the previous activity be sure to mention the following:
+
+  * Objects like the `car` object can have properties as strings, numbers, and booleans as well as **methods** that are functions associated with the object.
+
+  * Be sure to explain briefly that a method is simply a function associated with a specific object.
+
+  * Point out the use of the word `this`. In your discussion of the keyword `this` explain that it is simply a way to reference the object itself.
+
+  * You can explain that in later portions of the class we will effectively be creating many instances of the same object, in which case the `this` keyword let's us know which instance of the object we are referencing.
+
+* See if there are any questions before proceeding to Slack out the solution.
+
+### 8. Instructor Do: Car Game Solved (5 mins)
+
+* Open up [car-game-solved.html](../../../../01-Class-Content/03-javascript/01-Activities/32-CarGame/Solved/car-game-solved.html) in `32-CarGame/Solution` in your browser, and demo how the game works for the class. Make sure to go over how the page is taking in user inputs from the `prompt` to run methods stored within the `car` object.
+
+* Point out that the game can be played indefinitely until the user clicks the Cancel button.
+
+### 9. Students Do: Run that Car (15 mins)
+
+* Slack out the following files and instructions. It's up to you whether students work individually or whether they work in pairs.
+
+  * **File**
+
+     * `car-game-unsolved.html` in `32-CarGame/Unsolved`
+
+  * **Instructions**
+
+    * Using the unsolved code as a starting point, create a complete application that meets the following specifications:
+
+      * Users can enter keyboard input (letters).
+
+      * Each of the car's methods are assigned to a key.
+
+      * When the user presses a key, it calls the appropriate function.
+
+      * These letters also trigger a global function called `reWriteStats()` that logs the car's make, model, color, mileage, and `isWorking` status to the console.
+
+    * **HINT:** A "while loop" is already set up for you that will continue to ask the user for input as long as they don't press Cancel. Your logic will go inside this loop.
+
+    * **BONUS:** Prevent the user from being able to drive the car if it needs a tune-up.
+
+### 10. Instructor Do: Review Activity (10 mins)
+
+* Open [car-game-solved.html](../../../../01-Class-Content/03-javascript/01-Activities/32-CarGame/Solved/car-game-solved.html) in `32-CarGame/Solution` in both the browser and in your editor.
+
+* First, show students how the application works once more.
+
+* Then walk students through the solution.
+
+  * In demonstrating the solution, first point out how the code is organized.
+
+  * Talk about how the code is effectively organized into a section for variables, a section for functions, and a section for function calls. Let them know that this is a helpful organization pattern for their upcoming homework assignment.
+
+  * Walk students through how the `while loop` works. Unlike a `for loop`, which has a pre-defined end, this will continue to run until the condition (`letter !== null`) is no longer true.
+
+  * This is how we can let the user play the game for as long as they want. As soon as they click Cancel, however, the `letter` variable will be set to `null`. Thus, our condition is no longer true.
+
+  * If the user presses OK, however, the selected letter is stored into a variable and is then checked using `if` statements against the letters `h, d, w, t`.
+
+  * If any of these letters are pressed, then the appropriate methods on the car are triggered.
+
+  * Then proceed to explain how these key presses also trigger the `reWriteStats()` function to run as well.
+
+  * Scroll up to the function's definition, and then point out how the function effectively just prints all of the updated car object data into the console.
+
+* Ask if there are any questions, answer them, and then proceed to Slack out the solution.
+
+  ```js
+    while (letter !== null) {
+      // Prompt user to input a letter
+      letter = prompt('Type "h" to honk, "d" to drive to work, "w" to drive around the world, or "t" to get a tuneup.');
+
+      // If the letter is h, run the following functions/methods.
+      if (letter === "h") {
+        car.honk();
+        reWriteStats();
+      }
+      // If the letter is d, run the following functions/methods.
+      else if (letter === "d" && car.isWorking) {
+        car.driveToWork();
+        reWriteStats();
+      }
+      // If the letter is w, run the following functions/methods.
+      else if (letter === "w" && car.isWorking) {
+        car.driveAroundWorld();
+        reWriteStats();
+      }
+      // If the letter is t, run the following functions/methods.
+      else if (letter === "t") {
+        car.getTuneUp();
+        reWriteStats();
+      }
+    }
+  ```
+
+### 11. Everyone Do: Window Object & Scope (15 mins)
 
 * Open and Slack out [window-object.html](../../../../01-Class-Content/03-javascript/01-Activities/34-WindowObject/window-object.html) in `34-WindowObject`.
 
@@ -100,21 +282,9 @@ In this class, we will be introducing students to the concept of JavaScript Obje
 
 * Explain that variables `food` and `drink` are global variables, because we defined them outside of any functions. That means `thirdFunction` can access and console.log them. Ask students what the line `console.log(drink)` will print, though.
 
-* Because we named our parameter the same name as a global variable, the parameter takes priority. Suggest that maybe we should use unique names to avoid this problem in the future!
+* Because we named our parameter the same name as a global variable, the parameter takes priority. Suggest that maybe we should use unique names to avoid this problem in the future.
 
-### 2. Instructor Do: Introduce Workbook (10 mins)
-
-* Congratulate students on how much information they've just taken in in the past few days.
-
-* Introduce the JavaScript Workbook:
-
-  * "For those of you who are new to coding, the last few lessons probably felt overwhelming. It can be tempting to spend lots of time outside of class reviewing lectures and watching youtube videos on JavaScript, but the best way to learn to code is through practice"
-
-  * "We've put together a workbook for you to help you practice the things we've learned this unit. It's quite long, but don't worry, you don't need to read it or work through it from front to back. Instead, you should use it as a reference throughout the class. Spend some time this week reading and practicing the topics that you've struggled with and refer back to it whenever you need."
-
-* Slack out the workbook link `https://javascript-workbook.netlify.com/`
-
-### 3. Students Do: Mini-Project (60 mins) (Critical)
+### 12. Students Do: Mini-Project (55 mins)
 
 * Explain that, for the remainder of class, we're going to build something from scratch that utilizes a lot of what they've learned.
 
@@ -132,7 +302,7 @@ In this class, we will be introducing students to the concept of JavaScript Obje
 
     * You'll need to do some research on how to gather some of this information, but here's a hint: it's going to be part of the `window` object we just looked at.
 
-### 4. Instructor Do: Review Project (20 mins)
+### 13. Instructor Do: Review Project (10 mins)
 
 * Time permitting (or if you want to cut the project short), review the solution with the students.
 
@@ -203,17 +373,13 @@ In this class, we will be introducing students to the concept of JavaScript Obje
 
 * Mention that we looked at `window.location.href` before when we wanted to _get_ the current URL. But we can also use the same property to _change_ the URL and take the user to another page or HTML document.
 
-### 5. Instructor Do: Homework (5 min)
-
-* At this point, TAs should introduce students to the homework. This typically just means opening the homework solution in the browser and showing students what the final product looks like or showing the video and talking over it.
-
 - - - 
 
-### 6. BREAK (30 mins)
+### 14. BREAK (30 mins)
 
 - - -
 
-### 7. Instructor Do: Intro Web APIs (10 mins)
+### 15. Instructor Do: Intro Web APIs (10 mins)
 
 * Open the slide deck [2.3 The DOM](https://docs.google.com/presentation/d/10VJ5KHiEK_G4P2-av7h2zNhDDlTRm20kztov2fAT-0s/edit?usp=sharing) and start on the Web APIs slide. Follow these prompts on their corresponding slides:
 
@@ -241,7 +407,7 @@ In this class, we will be introducing students to the concept of JavaScript Obje
 
 * Call on one or two students to provide an answer, then proceed to the first activity of the day.
 
-### 8. Student Do: this Window (10 mins)
+### 16. Student Do: this Window (10 mins)
 
 * Direct students to the first activity, found in [01-Stu_This-Window](../../../../01-Class-Content/04-web-apis/01-Activities/01-Stu_This-Window)
 
@@ -265,7 +431,7 @@ In this activity you will `console.log(this)` and dig around inside the returned
 * Spend some time looking through the properties and methods contained within `window.document`.
 ```
 
-### 9. Instructor Do: Review this Window and introduce the DOM (10 mins)
+### 17. Instructor Do: Review this Window and introduce the DOM (10 mins)
 
 * Return to [slide deck](https://docs.google.com/presentation/d/10VJ5KHiEK_G4P2-av7h2zNhDDlTRm20kztov2fAT-0s/edit?usp=sharing) and follow the remaining prompts corresponding to the slides.
 
@@ -283,7 +449,7 @@ In this activity you will `console.log(this)` and dig around inside the returned
 
 * Call on one or two students to provide an answer, then proceed to demoing DOM Traversal.
 
-### 10. Instructor Do: Traverse The DOM (10 mins)
+### 19. Instructor Do: Traverse The DOM (5 mins)
 
 * Navigate to the MDN Docs on [The DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) and and ask the class the following question(s):
 
@@ -347,9 +513,9 @@ In this activity you will `console.log(this)` and dig around inside the returned
 
 * Use student answers to transition to the next activity.
 
-### 11. Student Do: Traverse That DOM (10 mins)
+### 18. Student Do: Traverse That DOM (10 mins)
 
-* Direct students to the next activity, found in [02-Stu_Traverse-That-DOM](../../../../01-Class-Content/04-web-apis/01-Activities/02-Stu_Traverse-That-DOM/Unsolved)
+* Direct students to the next activity, found in [03-Stu_Traverse-That-DOM](../../../../01-Class-Content/04-web-apis/01-Activities/03-Stu_Traverse-That-DOM/Unsolved)
 
 ```md
 # Traverse That DOM
@@ -385,9 +551,9 @@ In this activity you are going to use the Chrome Dev Console and `.style.propert
 * Change 3 other elements styles that we did not ask for above.
 ```
 
-### 12. Instructor Do: Review Traverse That DOM (5 mins)
+### 19. Instructor Do: Review Traverse That DOM (5 mins)
 
-* Open [02-Stu_Traverse-That-DOM Solved/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/02-Stu_Traverse-That-DOM/Solved) in your IDE and point out the following points to students:
+* Open [03-Stu_Traverse-That-DOM Solved/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/03-Stu_Traverse-That-DOM/Solved) in your IDE and point out the following points to students:
 
   * We first gather our two main divs into variables for easy access.
 
@@ -414,9 +580,9 @@ In this activity you are going to use the Chrome Dev Console and `.style.propert
 
 * Ask the class, "How would we do that?". Call on one or two students and then proceed to the next demo.
 
-### 13. Instructor Do: Setting Attributes (10 mins)
+### 20. Instructor Do: Setting Attributes (10 mins)
 
-* Navigate to [03-Ins_Setting-Attribute index.html](../../../../01-Class-Content/04-web-apis/01-Activities/03-Ins_Setting-Attribute/index.html) and open it in your browser.
+* Navigate to [04-Ins_Setting-Attributes index.html](../../../../01-Class-Content/04-web-apis/01-Activities/04-Ins_Setting-Attributes/index.html) and open it in your browser.
 
 * Ask the class, "How do we feel about this style?"
 
@@ -426,7 +592,7 @@ In this activity you are going to use the Chrome Dev Console and `.style.propert
 
 * If the attribute already exists, the value will be updated. If there is no attribute, a new attribute is added with the specified name and value.
 
-* Navigate to [03-Ins_Setting-Attribute script.js](../../../../01-Class-Content/04-web-apis/01-Activities/03-Ins_Setting-Attribute/script.js) in your IDE.
+* Navigate to [03-Ins_Setting-Attribute script.js](../../../../01-Class-Content/04-web-apis/01-Activities/03-Ins_Setting-Attributes/script.js) in your IDE.
 
   * When we uncomment this code and navigate back to the page styles will have been changed and an image added, all via JavaScript.
 
@@ -448,7 +614,7 @@ In this activity you are going to use the Chrome Dev Console and `.style.propert
 
 * Answer any questions students may have and let them know its their turn to work with `setAttribute()`.
 
-### 14. Student Do: Setting Attributes (10 mins)
+### 21. Student Do: Setting Attributes (10 mins)
 
 * Direct students to the next activity, found in [05-Stu_Setting-Attributes](../../../../01-Class-Content/04-web-apis/01-Activities/05-Stu_Setting-Attributes/Unsolved).
 
@@ -472,7 +638,7 @@ In this activity you are going to use JavaScript to add `hrefs` to `a` tags, `sr
 * **Hint**: You may need a for loop!
 ```
 
-### 15. Instructor Do: Review Setting Attributes (5 mins)
+### 22. Instructor Do: Review Setting Attributes (5 mins)
 
 * Navigate to [05-Stu_Setting-Attributes script.js](../../../../01-Class-Content/04-web-apis/01-Activities/05-Stu_Setting-Attributes/Solved/script.js) and open it in your IDE, point out the following to students:
 
@@ -502,79 +668,9 @@ In this activity you are going to use JavaScript to add `hrefs` to `a` tags, `sr
 
 * Answer any questions that remain and then dismiss the class for their break.
 
-### 16. Instructor Do: Create and Append (10 mins)
 
-* Welcome students back from break and get right into our next topic, creating HTML elements and appending them to the DOM via JavaScript.
 
-* Navigate to [06-Ins_Create-Append/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/06-Ins_Create-Append/Solved/index.html) in your browser and demo its functionality.
-
-  * It will ask for a tag to create using prompts, and append the given element to the page.
-  
-  * If a proper tag name is not given it will let the user know and not create the element.
-
-* Ask the class, "How was this functionality achieved?"
-
-  * This is done using the DOM methods `.createElement` and `.appendChild`.
-
-  * When using `.createElement` we pass in the name of the tag we would like to create and store it as a variable so we can later add it to the DOM.
-
-  ```js
-  var newDiv = document.createElement("div");
-  ```
-
-  * For us to show our newly created div on the page, we need to append it to the DOM via an existing element.
-
-  ```js
-  document.body.appendChild(newDiv);
-  ```
-
-  * The above code would `append` newDiv to the body as a child element.
-
-* Answer any questions before proceeding to the next activity.
-
-### 17. Student Do: Look Ma! No HTML! (25 mins)
-
-* Direct students to the next activity, found in [07-Stu_LookMaNoHTML](../../../../01-Class-Content/04-web-apis/01-Activities/07-Stu_LookMaNoHTML/Unsolved).
-
-```md
-# Look Ma! No HTML
-
-In this activity you are going to use DOM methods to create an entire HTML page.
-
-## Instructions
-
-* You have been provided a standard HTML document. 
-
-* You may only work inside your `script`.
-
-* Inside `script` and using only DOM methods, create an entire HTML page. It should include:
-
-  * A centered h1 with a centered h2 under it.
-
-  * A centered image, with a center caption under it.
-
-  * A list of your favorite foods (or some other list of favorites).
-
-  * Some extra styling to all elements.
-```
-
-### 18. Instructor Do: Review Look Ma No HTML! (5 mins)
-
-* Navigate to [07-Stu_LookMaNoHTML/Solved](../../../../01-Class-Content/04-web-apis/01-Activities/07-Stu_LookMaNoHTML/Solved)and open the solved `script.js` file in your IDE.
-
-* The solution is split into 4 sections, go through each section with the class.
-
-  * The first portion contains all of our references to existing elements, as well as all of our `.createElement` calls.
-
-  * The next portion sets all of the `textContent` of our created elements.
-
-  * Next we begin the process of appending all of our created elements with the newly modified text content.
-
-  * Finally we go through all of our elements and use `.setAttribute` to change the styles and set image sources.
-
-* Answer any questions students have about the solution and move onto our final topic of the day, timers.
-
-### 19. END (0 mins)
+### 23. END (0 mins)
 
 ### Lesson Plan Feedback
 

@@ -1,6 +1,4 @@
-# 02.1 Lesson Plan - Joys of JavaScript (10:00 AM) <!--links--> &nbsp; [⬅️](../../01-Week/05-Day/05-Day-LessonPlan.md) &nbsp; [➡️](../02-Week/02-Day/02-Day-LessonPlan.md)
-
-- - -
+# 02.1 Lesson Plan - Joys of JavaScript (10:00 AM)
 
 ## Overview
 
@@ -52,7 +50,7 @@ Today's class is focused on providing students with the very basics of JavaScrip
   * **Keep Organized:** Many students around this time start to have files in literally every location possible. It gets incredibly confusing trying to help them when everything is so scattered. Let them know that a little folder organization can go a long way in creating easy-to-read applications.
   * **Overall Tips:** Just read these. Self-explanatory. Key point&mdash;encourage students to REDO coding exercises on their own. Many students just go home and re-flip through slides or read through code without actually trying to do it themselves. Hands on experience is a lot better than looking code over secondhand.
 
-### 2. Partners Do: Code Dissection (10 mins) (High)
+### 2. Partners Do: Code Dissection (5 mins)
 
 * Let students know that a big part of JavaScript learning requires you to "learn on the fly".
 
@@ -76,11 +74,7 @@ Today's class is focused on providing students with the very basics of JavaScrip
 
 * **Instructor / TA Note:** Do not go over this activity after the time is done. Just move onto the next activity. Students will come back to this later after they've learned more.  
 
-### 3. Instructor Do: What is JavaScript (2 mins)
-
-* Spend a few brief moments explaining what JavaScript is. Try to emphasize what it does in relation to HTML/CSS (i.e. JavaScript is the language that creates "interactivity and more").
-
-### 4. Instructor Do: Variables Slides + Demo (5 mins)
+### 3. Instructor Do: Variables Slides + Demo (5 mins)
 
 * Go through the preliminary slides on Variables. Wait for the "Instructor Demo" slide before live-coding.
 
@@ -90,7 +84,7 @@ Today's class is focused on providing students with the very basics of JavaScrip
 
 * Make sure students know that strings require quotation marks but that numbers and booleans do not.
 
-### 5. Students Do: Variable Activity (10 mins) (High)
+### 4. Students Do: Variable Activity (10 mins)
 
 * Slack out the following files and instructions to students.
 
@@ -108,7 +102,7 @@ Today's class is focused on providing students with the very basics of JavaScrip
 
     * Finally, look at the rest of the code and try to figure out why the text displayed the way it did.
 
-### 6. Instructor Do: Review Variable Activity (5 mins)
+### 5. Instructor Do: Review Variable Activity (5 mins)
 
 * Spend a few moments reviewing the activity `03-PizzaVariables/Solved`. In discussing the solution, explain both the variable assignment and the way strings are combined in the alerts.
 
@@ -116,7 +110,7 @@ Today's class is focused on providing students with the very basics of JavaScrip
 
     ![3-Variable_2](Images/3-Variable_2.png)
 
-### 7. Instructor Demo: Console Log (5 mins)
+### 6. Instructor Demo: Console Log (5 mins)
 
 * Proceed with the slides and the console log demo. You can either open the solution found in `04-ConsoleLogDemo` or create your own example to show what console log does.
 
@@ -138,13 +132,13 @@ Today's class is focused on providing students with the very basics of JavaScrip
 
   * Refrain from a more detailed discussion of arguments, etc. This explanation is simply to provide context for entities such as `alert`, `console.log`, etc.
 
-### 8. Instructor Do: Console Log Slides (5 mins)
+### 7. Instructor Do: Console Log Slides (5 mins)
 
 * Start to go through the slides on console log.
 
 * Make certain to show students how the `console.log` statement can be used to display text, variables, or a combination of the two.
 
-### 9. Students Do: Console Log Activity (10 mins)
+### 8. Students Do: Console Log Activity (10 mins)
 
 * Slack out the following files and instructions:
 
@@ -158,13 +152,13 @@ Today's class is focused on providing students with the very basics of JavaScrip
 
     * With a partner, discuss the difference between using `console.log` and `alert`.
 
-### 10. Instructor Do: Review Console.log Activity (10 mins)
+### 9. Instructor Do: Review Console.log Activity (10 mins)
 
 * Have students offer their answers to the assignment, and have them explain their changes.
 
 * Also ask students why they might use one form of output versus another.
 
-### 11. Instructor Demo: Alerts, Prompts, Confirms (5 mins)
+### 10. Instructor Demo: Alerts, Prompts, Confirms (5 mins)
 
 * Use the file inside `06-PromptDemo`, and walk students through the code.
 
@@ -180,11 +174,11 @@ Today's class is focused on providing students with the very basics of JavaScrip
 
       ![5-PromptDemo](Images/5-PromptDemo.png)
 
-### 12. Instructor Do: Alerts, Prompts, Confirms Slides (5 mins)
+### 11. Instructor Do: Alerts, Prompts, Confirms Slides (5 mins)
 
 * Go over the remaining slides on this section. Create engagement by having students remind you of the differences between the three functions.
 
-### 13. Students Do: Alert Activity (15 min)
+### 12. Students Do: Alert Activity (15 min)
 
 * At this point, Slack out the following files and instructions.
 
@@ -197,15 +191,15 @@ Today's class is focused on providing students with the very basics of JavaScrip
       * Using a prompt, ask the user, "What kind of \_ do you like?" Store their response in a variable.
       * Alert both variables to the screen.
 
-### 14. Instructor Do: Review Alert Activity (5 mins)
+### 13. Instructor Do: Review Alert Activity (5 mins)
 
 * Go over the previous activity using `prompt-sushi.html` in `07-PromptSushi/Solved`.
 
-### 15. Instructor Note: Document.write (5 min)
+### 14. Instructor Note: Document.write (5 min)
 
 * We have saved all DOM-related tasks for the next unit, so don't mention `document.write` at this point. If students ask how to print information on the screen instead of in alerts, let them know that we'll be going over that soon (but not today!).
 
-### 16. Instructor Demo: If/Else Statement (10 mins)
+### 15. Instructor Demo: If/Else Statement (10 mins)
 
 * Proceed with the slides to the demo of conditionals. Use the file inside `08-ConditionalDemo` as a starting point. Walk students through the fact that the confirm prompt is used to grab a boolean.
 
@@ -229,11 +223,11 @@ Today's class is focused on providing students with the very basics of JavaScrip
       }
     ```
 
-### 17. Instructor Slides: If/Else Statement (5 mins)
+### 16. Instructor Slides: If/Else Statement (5 mins)
 
 * Proceed through the instructor slides on conditionals.
 
-### 18. Partners Do: If/Else Activity #1 (10 mins)
+### 17. Partners Do: If/Else Activity #1 (10 mins)
 
 * Slack out the instructions below.
 
@@ -251,7 +245,7 @@ Today's class is focused on providing students with the very basics of JavaScrip
 
     * Bonus: Ask what the user’s birth year is. If they are under 21, alert the following: "No Sake for you!"
 
-### 19. Instructor Do: Review If/Else Activity #1 (10 mins)
+### 18. Instructor Do: Review If/Else Activity #1 (10 mins)
 
 * Review the solution found in `09-ConditionalActivity`. Point out the uses of conditionals. For the bonus, run the program with various ages, and show students how each elicits a different output.
 
@@ -259,7 +253,7 @@ Today's class is focused on providing students with the very basics of JavaScrip
 
 * Slack out the video review for this activity which can be found [here](https://www.youtube.com/watch?v=rlhhRVO5EOg).
 
-### 20. Everyone Do: If/Else Activity #2 (10 mins)
+### 19. Everyone Do: If/Else Activity #2 (10 mins)
 
 * Show the following file on screen: `conditional-demo-2.html` in `10-ConditionalActivity2`.
 
@@ -271,13 +265,13 @@ Today's class is focused on providing students with the very basics of JavaScrip
 
 - - -
 
-### 21. BREAK (30 mins)
+### 20. BREAK (30 mins)
 
 * Check in with TAs regarding time.
 
 - - -
 
-### 22. Instructor Do: Arrays Slides (5 mins)
+### 21. Instructor Do: Arrays Slides (5 mins)
 
 * Run through the Array example in the slides. Describe arrays as being like "lists" or "collections" of variables. Each variable has its own index ID (sort of like the "pen" number for our Zoo example).
 
@@ -285,13 +279,13 @@ Today's class is focused on providing students with the very basics of JavaScrip
 
 * Indexes start at 0.
 
-### 23. Instructor Do: Array Demo (5 mins)
+### 22. Instructor Do: Array Demo (5 mins)
 
 * Open the file `arrays-demo.html` in `11-ArraysDemo`. Show students how this example matches the one in the slides.
 
 * Point out how the index system works (i.e. starts at 0 and ends one before the length).
 
-### 24. Everyone Do: Class Code Dissection (10 mins)
+### 23. Everyone Do: Class Code Dissection (10 mins)
 
 * Slack out the following file and instructions to students.
 
@@ -309,25 +303,19 @@ Today's class is focused on providing students with the very basics of JavaScrip
 
 * **Instructor / TAs:** Review with the class when complete.
 
-### 25. Instructor Do: Questions (5 mins)
+### 24. Instructor Do: Questions (5 mins)
 
 * If time remains and there isn't sufficient time for the challenges, spend the remainder of the class answering questions.
 
 * If no time remains for the challenges, then encourage students to work on them at home.
 
-### 26. Instructor Do: Welcome Students (1 min)
-
-* Welcome students. Then open the slide deck [Jumping for JavaScript](https://docs.google.com/presentation/d/1Em_iAbGzyujB5RXe-NF9KGYTzfiFN3R63Z1NRpH9MVc/edit?usp=sharing).
-
-* Introduce students to the overall objectives of today's class.
-
-### 27. Everyone Do: Basics Recap (10 mins)
+### 25. Everyone Do: Basics Recap (10 mins)
 
 * Spend a few moments helping students to remember what was covered during the last class. Try to move swiftly through these slides. Ideally this should take you less than 10 minutes.
 
 * Always call on individual students as you go through the slides.
 
-### 28. Everyone Do: Basic JS Dissection (3 mins)
+### 26. Everyone Do: Basic JS Dissection (5 mins)
 
 * Slack out the following file from yesterday and have students re-examine it.
 
@@ -345,7 +333,7 @@ Today's class is focused on providing students with the very basics of JavaScrip
 
 * After you go over the activity, if there are still questions, Slack out the fully commented file `js-dissect-solved.html` in `14-JSDissect/Solved`.
 
-### 29. Everyone Do: Array Logging (5 mins)
+### 27. Everyone Do: Array Logging (5 mins)
 
 * Slack out the file and the instructions below.
 
@@ -363,7 +351,7 @@ Today's class is focused on providing students with the very basics of JavaScrip
 
 * Slack out `array-logs-solved.html` in `15-CoolPeopleArray/Solved`	 when finished.
 
-### 30. Everyone Do: Array Setting (5 mins) (High)
+### 28. Everyone Do: Array Setting (10 mins)
 
 * Slack out the file and the instructions below.
 
@@ -385,11 +373,11 @@ Today's class is focused on providing students with the very basics of JavaScrip
 
 * Slack out [`array-setting-solved.html`in `16-ArraySetting/Solved` when finished.
 
-### 31. Instructor Do: For Loops (5 mins)
+### 29. Instructor Do: For Loops (10 mins)
 
 * Go through the slides introducing the concept of `for` loops. Re-use the example of the Zoo Array as shown on the slides.
 
-### 32. Students Do: For Loop Dissection (5 mins)
+### 30. Students Do: For Loop Dissection (5 mins)
 
 * Slack out the file and the instructions below.
 
@@ -405,7 +393,7 @@ Today's class is focused on providing students with the very basics of JavaScrip
 
     * Feel free to do research if you are stumped. As a hint, look into the phrase “for loop.”
 
-### 33. Instructor Do: For Loops Cont. (10 mins)
+### 31. Instructor Do: For Loops Cont. (10 mins)
 
 * Continue through the slides and demonstrate how the previous example worked.
 
@@ -413,7 +401,7 @@ Today's class is focused on providing students with the very basics of JavaScrip
 
   * Point out how the selected vegetable changes on each loop iteration.
 
-### 34. Students Do: For Loop Zoo (15 mins) (High)
+### 32. Students Do: For Loop Zoo (15 mins)
 
 * Slack out the file and the instructions below.
 
@@ -429,7 +417,7 @@ Today's class is focused on providing students with the very basics of JavaScrip
 
     * Once you think your code is functioning properly, share it with the person sitting next to you.  
 
-### 35. Instructor Do: Review Activity (5 mins) (High)
+### 33. Instructor Do: Review Activity (5 mins)
 
 * Review `zoo-loop-solved.html` in `18-ZooLoop/Solved`.
 
@@ -439,23 +427,7 @@ Today's class is focused on providing students with the very basics of JavaScrip
 
 * Slack out the [video review for this activity](https://www.youtube.com/watch?v=zJO9g7S2_Xo) as well.
 
-### 36. Students Do: Another Loop (Optional) (0 mins)
-
-* If you are AHEAD of schedule and feel like students could benefit from another example, Slack out the following instructions.
-
-  * **Instructions**
-
-    * Starting from scratch, create a `for` loop that console logs the following lines:
-      ```
-      I am 0
-      I am 1
-      I am 2
-      I am 3
-      I am 4
-      ```
-    * Don't use an array!
-
-### 37. END (0 mins)
+### 34. END (0 mins)
 
 ### Lesson Plan Feedback
 

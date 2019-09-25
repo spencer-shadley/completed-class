@@ -8,7 +8,7 @@ Todays class will be students first introduction to the DOM. We are going to use
 
 ## Instructor Notes 
 
-`Complete activities 8-19 in 04-web-apis`
+`Complete activities 6-19 in 04-web-apis`
 
 * This is a critical unit as it introduces real-world use cases for the programming concepts students learned in the previous unit (JavaScript) and will set them up for success when transitioning to front-end frameworks (React) at the end of the course.
 
@@ -42,7 +42,79 @@ N/A
 
 - - -
 
-### 1. Instructor Do: Timers and Intervals (15 mins)
+### 1. Instructor Do: Create and Append (10 mins)
+
+* Welcome students back from break and get right into our next topic, creating HTML elements and appending them to the DOM via JavaScript.
+
+* Navigate to [06-Ins_Create-Append/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/06-Ins_Create-Append/Solved/index.html) in your browser and demo its functionality.
+
+  * It will ask for a tag to create using prompts, and append the given element to the page.
+  
+  * If a proper tag name is not given it will let the user know and not create the element.
+
+* Ask the class, "How was this functionality achieved?"
+
+  * This is done using the DOM methods `.createElement` and `.appendChild`.
+
+  * When using `.createElement` we pass in the name of the tag we would like to create and store it as a variable so we can later add it to the DOM.
+
+  ```js
+  var newDiv = document.createElement("div");
+  ```
+
+  * For us to show our newly created div on the page, we need to append it to the DOM via an existing element.
+
+  ```js
+  document.body.appendChild(newDiv);
+  ```
+
+  * The above code would `append` newDiv to the body as a child element.
+
+* Answer any questions before proceeding to the next activity.
+
+### 2. Student Do: Look Ma! No HTML! (20 mins)
+
+* Direct students to the next activity, found in [07-Stu_LookMaNoHTML](../../../../01-Class-Content/04-web-apis/01-Activities/07-Stu_LookMaNoHTML/Unsolved).
+
+```md
+# Look Ma! No HTML
+
+In this activity you are going to use DOM methods to create an entire HTML page.
+
+## Instructions
+
+* You have been provided a standard HTML document. 
+
+* You may only work inside your `script`.
+
+* Inside `script` and using only DOM methods, create an entire HTML page. It should include:
+
+  * A centered h1 with a centered h2 under it.
+
+  * A centered image, with a center caption under it.
+
+  * A list of your favorite foods (or some other list of favorites).
+
+  * Some extra styling to all elements.
+```
+
+### 3. Instructor Do: Review Look Ma No HTML! (5 mins)
+
+* Navigate to [07-Stu_LookMaNoHTML/Solved](../../../../01-Class-Content/04-web-apis/01-Activities/07-Stu_LookMaNoHTML/Solved)and open the solved `script.js` file in your IDE.
+
+* The solution is split into 4 sections, go through each section with the class.
+
+  * The first portion contains all of our references to existing elements, as well as all of our `.createElement` calls.
+
+  * The next portion sets all of the `textContent` of our created elements.
+
+  * Next we begin the process of appending all of our created elements with the newly modified text content.
+
+  * Finally we go through all of our elements and use `.setAttribute` to change the styles and set image sources.
+
+* Answer any questions students have about the solution and move onto our final topic of the day, timers.
+
+### 4. Instructor Do: Timers and Intervals (15 mins)
 
 * Executing code on a timer or interval allows us to set some amount of time to pass between functionality.
 
@@ -116,7 +188,7 @@ N/A
 
 * Answer any questions students may have about the demo. 
 
-### 2. Student Do: Speed Reader (35 mins)
+### 5. Student Do: Speed Reader (30 mins)
 
 * Direct students to the final activity of class, in [09-Stu_SpeedReader](../../../../01-Class-Content/04-web-apis/01-Activities/09-Stu_SpeedReader/Unsolved).
 
@@ -138,7 +210,7 @@ In this activity you are going to create a speed reading application. It will in
 * Fill out the necessary code that would create a countdown timer. When that timer completes, it should dissapear and speed reading should begin.
 ```
 
-### 3. Instructor Do: Review Speed Reader (10 mins)
+### 6. Instructor Do: Review Speed Reader (10 mins)
 
 * Navigate to [09-Stu_SpeedReader/Solved](../../../../01-Class-Content/04-web-apis/01-Activities/09-Stu_SpeedReader/Solved)
 
@@ -191,7 +263,7 @@ In this activity you are going to create a speed reading application. It will in
   }
   ```
 
-### 4. Instructor Do: Demo Events (10 min)
+### 7. Instructor Do: Demo Events (10 min)
 
 * Open [fs-ground-04-web-APIs-event-demo](https://coding-boot-camp.github.io/fs-ground-04-web-APIs-event-demo/) and demonstrate the application functionality:
 
@@ -211,7 +283,7 @@ In this activity you are going to create a speed reading application. It will in
 
   * Use student answers to transition to the next activity.
 
-### 5. Instructor Do: Pseudocode Modal Demo (10 min)
+### 8. Instructor Do: Pseudocode Modal Demo (10 min)
 
 * Open a new (blank) file in your IDE and lead students in outlining the steps to build the modal activity in pseudocode. Refer to the following pseudocode example. There is no one *right* solution. The purpose of this activity is to reinforce problem solving strategies and prepare students for technical interview questions.
 
@@ -253,7 +325,7 @@ In this activity you are going to create a speed reading application. It will in
 
 * Use student answers to transition to the next demo.
 
-### 6.  Instructor Do: On Click Demo  (10 min)
+### 9.  Instructor Do: On Click Demo  (10 min)
 
 * Open [10-Ins_Onclick/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/10-Ins_Onclick/index.html) in the browser and demonstrate its functionality:
 
@@ -284,7 +356,7 @@ In this activity you are going to create a speed reading application. It will in
   });
   ```
 
-### 7.  Students Do: addEventListener (15 min)
+### 10.  Students Do: addEventListener (10 min)
 
 * Direct students to the next activity, found in [11-Stu_Onclick/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/11-Stu_Onclick/Unsolved)
 
@@ -306,7 +378,7 @@ In this activity, we are going to create a button that increments a counter when
 * Add some code to ensure that the count never gets below 0.
 ```
 
-### 8. Instructor Do: Review OnClick (5 min)
+### 11. Instructor Do: Review OnClick (5 min)
 
 * Open the file [11-Stu_Onclick/Solved/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/11-Stu_Onclick/Solved/index.html) in the browser.
 
@@ -348,7 +420,7 @@ In this activity, we are going to create a button that increments a counter when
   }); 
   ```
 
-### 9. Instructor Do: Intro to event.preventDefault (10 min)
+### 12. Instructor Do: Intro to event.preventDefault (10 min)
 
 * We will be spending some more time with forms. We will be learning about how to prevent some of the default form behavior so that we can manipulate data before sending it to a server.
 
@@ -417,11 +489,11 @@ In this activity, we are going to create a button that increments a counter when
 
 - - -
 
-### 10. Break (30 mins)
+### 13. Break (30 mins)
 
 - - -
 
-### 11. Student Do: Tip Calculator (15 min)
+### 14. Student Do: Tip Calculator (15 min)
 
 * Direct students to the next activity, found in[13-Stu_Preventing_Default_Events/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/13-Stu_Preventing_Default_Events/Unsolved)
 
@@ -453,7 +525,7 @@ In this activity, we are going to create a form that calculates a suggested tip 
 * In JavaScript, we have a function that rounds a number to a given point called `toFixed()`. For more information, visit the docs at [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed)
 ```
 
-### 12. Instructor Do: Review Tip Calculator (5 min)
+### 15. Instructor Do: Review Tip Calculator (5 min)
 
 * Navigate to [13-Stu_Preventing_Default_Events/Solved/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/13-Stu_Preventing_Default_Events/Solved/index.html) and open it in your browser.
 
@@ -560,7 +632,7 @@ In this activity, we are going to create a form that calculates a suggested tip 
   <h2>Each person will pay: <span id="split-total"></span></h2>
   ```
 
-### 13. Instructor Do: Demo key events (5 min)
+### 16. Instructor Do: Demo key events (5 min)
 
 * Open [14-Ins_Other_Events/index.html](../../../../01-Class-Content/04-Web-APIs/01-Activities/14-Ins_Other_Events/index.html) in your browser.
 
@@ -657,7 +729,7 @@ In this activity, we are going to create a form that calculates a suggested tip 
   });
   ```
 
-### 14. Student Do: Listening For Other Events (15 min)
+### 17. Student Do: Listening For Other Events (10 min)
 
 * Direct students to the next activity, found in [15-Stu_Other_Events/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/15-Stu_Other_Events/Unsolved)
 
@@ -683,7 +755,7 @@ In this activity, we are going to create a form that calculates a suggested tip 
 * If time permits, take a moment to research some other JavaScript events.
 ```
 
-### 15. Instructor Do: Review Other Events (5 min)
+### 18. Instructor Do: Review Other Events (5 min)
 
 * Open [15-Stu_Other_Events/Solved/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/15-Stu_Other_Events/Solved/index.html) in your browser.
 
@@ -728,7 +800,7 @@ In this activity, we are going to create a form that calculates a suggested tip 
 
 * Answer any remaining questions and let students out for break.
 
-### 16. Instructor Do: Demo Event Bubbling and Propagation (10 min)
+### 19. Instructor Do: Demo Event Bubbling and Propagation (10 min)
 
 * Open [16-Ins_Event_Bubbling/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/16-Ins_Event_Bubbling/index.html) in your IDE and point out the following: 
 
@@ -762,7 +834,7 @@ In this activity, we are going to create a form that calculates a suggested tip 
 
   * If students are having a tough time grasping this concept, try commenting out every `stopPropagation` call except for the second from outermost call. Then open the page in your browser and click on the innermost button.
 
-### 17. Student Do: Event Bubbling (20 min)
+### 19. Student Do: Event Bubbling (10 min)
 
 * Direct students to the next activity, found in [17-Stu_Event_Bubbling/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/17-Stu_Event_Bubbling/Unsolved)
 
@@ -886,7 +958,7 @@ In this activity, we are going to create an image carousel that allows us to cyc
   });
   ```
 
-### 20. Student Do: Event Delegation (20 min)
+### 20. Student Do: Event Delegation (15 min)
 
 * Direct students to the next activity, found in [19-Stu_Event_Delegation/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/19-Stu_Event_Delegation/Unsolved)
 
@@ -914,7 +986,7 @@ In this activity, we are going to create an image carousel that allows us to cyc
 * Use event delegation to make the modal close if the user clicks away from the modal.
 ```
 
-### 21. Instructor Do: Review Event Delegation (10 min)
+### 21. Instructor Do: Review Event Delegation (5 min)
 
 * Take a moment to demonstrate the app, just as you did in the beginning of class.
 
