@@ -42,6 +42,14 @@ You will be employer-competitive if you are able to:
 * Explain and implement the difference between function declarations and expressions
 * Explain and implement comparison and logical operators
 
+## Algorithms
+
+* 01-arithmetic - Create functions capable of different arithmetic operations.
+
+* 02-odd-or-even - Create a function that determines whether a number is odd or even.
+
+* 03-log-nums - Create a function that prints all whole numbers from 1 to a given number.
+
 ## Homework: Password Generator
 
 Create an application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code.

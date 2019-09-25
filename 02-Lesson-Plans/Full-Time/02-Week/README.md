@@ -1,89 +1,73 @@
-## Intro to JavaScript / Intro to jQuery
+# Unit 02: JavaScript & Web APIs
 
-### Overview
+## Overview
 
-In this unit, we will be introducing students to their first taste of JavaScript. They will then use their newfound understanding of variables, arrays, loops, and conditionals to create a simple WordGuess or Psychic Guessing Game.
+In this unit we will be introducing students to their first taste of JavaScript. They will then use their newfound understanding of variables, arrays, loops, and conditionals to create a simple Password Generator.
 
-Then will be introducing students to jQuery. Students will understand the basic concepts of DOM manipulation, on-click events, and basic GUI building. By the end of the unit they will deepen their understanding of JavaScript scope.
+Refer to the following links for detailed information on key topics, learning objectives and homework:
 
-### Learning Objectives
+  * [03-JavaScript Unit Overview](../../../01-Class-Content/03-JavaScript/README.md)
 
-* By the end of this unit, students will be able to:
-  * Explain the fundamentals of building JavaScript programs to increase employer readiness.
-  * Loop through arrays in order to dynamically manipulate data.
-  * Create and parse JavaScript objects to ensure cohesiveness in their applications.
-  * Use jQuery to dynamically render elements to a webpage from application state, giving static websites more app-like functionality.
-  * Listen to and response to user events to improve interactivity in their web apps.
-  * Explain the concept of the DOM, how its relation to the HTML document, and the rendered webpage.
+  * [04-Web-APIs Unit Overview](../../../01-Class-Content/04-Web-APIs/README.md)
 
-### Key Topics
+## Instructor / TA Notes
 
-* JS Basics
-  * Variables
-  * Arrays
-  * Datatypes
-  * Logging to the console
-  * Alerts, prompts, confirms
-  * if / else conditions
-  * Array functions
+In every activity moving forward, pre-coded instructor demos are provided for you. However, because of the simplicity of many of the demos, you are encouraged to code your own examples on the fly. Part of the reason we have pre-coded versions is for when we share the directory with students since it becomes easy to copy over into the in-class repo. Don't let that limit your imagination though!
 
-* For Loops
-  * Basic loops
-  * Manipulating array data with loops
-  * Iteration
+This unit is filled with a lot of brand new topics. If you fall behind, make sure to adjust your plan accordingly.
 
-* Functions
-  * Function definition
-  * Function arguments
-  * Drying up code with functions
-  * Calling functions
+## Heads Up
 
-* Objects
-  * Object properties
-  * Understanding “this”
-  * Scope
-  * Callbacks
+Students are very likely to come across jQuery solutions when searching for DOM/event resources. Make sure to let them know that we will cover jQuery in the next unit, so for now, do not consult resources that include the word `jQuery` or the `$` variable.
 
-* jQuery
-  * Query the DOM using jQuery
-  * Creating, modifying, and removing elements from the DOM  using jQuery
-  * Listening for and responding to user events using jQuery
-
-* DOM Manipulation
-  * Inspecting the DOM with the element inspector in Chrome Dev Tools
-  * Modify the DOM using vanilla JavaScript and jQuery
-
-* Collaborative Development
-  * Work in groups to build a jQuery calculator
-
+## Helpful Links
 
 ### Lesson Plans
 
-* [2.1 - Lesson Plan](01-Day/01-Day-LessonPlan.md)
-* [2.2 - Lesson Plan](02-Day/02-Day-LessonPlan.md)
-* [2.3 - Lesson Plan](03-Day/03-Day-LessonPlan.md)
-* [2.4 - Lesson Plan](04-Day/04-Day-LessonPlan.md)
-* [2.5 - Lesson Plan](05-Day/05-Day-LessonPlan.md)
+  * [02.1 - Lesson Plan](01-Day/01-Day-LessonPlan.md)
 
-### Homework Activities
+  * [02.2 - Lesson Plan](02-Day/02-Day-LessonPlan.md)
 
-* [Homework Instructions](../../../01-Class-Content/03-javascript/02-Homework/Instructions)
-* [Word Guess Game Demo {Movie}](https://youtu.be/W-IJcC4tYFI)
-* [Psychic Game Demo {Movie}](https://youtu.be/qTc45Lox97g)
-* [Crystal Collector Demo {Movie}](https://youtu.be/yNI0l2FMeCk)
-* [Star Wars RPG Demo {Movie}](https://youtu.be/klN2-ITjRt8)
+  * [02.3 - Lesson Plan](03-Day/03-Day-LessonPlan.md)
 
-### Helpful Links
+  * [02.4 - Lesson Plan](04-Day/04-Day-LessonPlan.md)
 
-* [Eloquent JavaScript](http://eloquentjavascript.net/)
-* [JavaScript and jQuery](http://www.amazon.com/JavaScript-JQuery-Interactive-Front-End-Development/dp/1118531647/ref=sr_1_1?s=books&ie=UTF8&qid=1460751938&sr=1-1)
-* [JavaScript and jQuery](http://www.amazon.com/JavaScript-JQuery-Interactive-Front-End-Development/dp/1118531647/ref=sr_1_1?s=books&ie=UTF8&qid=1460751938&sr=1-1)
-* [What You Should Know About JavaScript Scope](https://spin.atomicobject.com/2014/10/20/javascript-scope-closures/)
+  * [02.5 - Lesson Plan](05-Day/05-Day-LessonPlan.md)
 
-### Slide Shows
+### Slide Decks
 
-* [The Joys of JavaScript](https://docs.google.com/presentation/d/19ATptZp_i6Yz1ZIusX5jFHQ-s-5UIVW4nxr-Xod6C6o/edit?usp=sharing)
-* [Jumping for JavaScript](https://docs.google.com/presentation/d/1DHqKz5v9CAG3d6FaBO_aGZG7w2IvwCv5dgIhbk7FG60/edit?usp=sharing)
-* [JavaScript Juggernauts](https://docs.google.com/presentation/d/125gRzxzcksXeUqDrjQMEfJf31XM2PC5aDTK3sN9VtxA/edit?usp=sharing)
-* [jQuery Begins](https://docs.google.com/presentation/d/1QnP2YtA5yA2UWen0TQUE9PEt6Iyl_9-ZvdxHSSxtQak/edit?usp=sharing)
-* [jQuery Jubilee](https://docs.google.com/presentation/d/12BixBm9kbrRh6-LoCXYNHyTDxysQDJnoHFkxrNHs1ws/edit?usp=sharing)
+* [02.1 The Joys of JavaScript](https://docs.google.com/presentation/d/1ozIKdqhqnrWS6vU2glLUxFwzCbZmu9h0lDo8cMAYa1I/edit?usp=sharing)
+
+* [02.2 Jumping for JavaScript](https://docs.google.com/presentation/d/1DHqKz5v9CAG3d6FaBO_aGZG7w2IvwCv5dgIhbk7FG60/edit?usp=sharing)
+
+* [02.3 The DOM](https://docs.google.com/presentation/d/10VJ5KHiEK_G4P2-av7h2zNhDDlTRm20kztov2fAT-0s/edit?usp=sharing)
+
+### Time Tracker(s)
+
+  * [Unit 02-CSS-Bootstrap & JavaScript Day 1 Time Tracker](https://drive.google.com/open?id=1TXphd6IzAbm8pISaGQZOkbvyAL0D9LvCkC5DhKzwFeQ)
+
+  * [Unit 02-CSS-Bootstrap & JavaScript Day 2 Time Tracker](https://docs.google.com/spreadsheets/d/1tomx7GIzFECE_P7dwcWzijJm7rBsWE2AsJtvIBbhnwo/edit?usp=sharing)
+
+  * [Unit 02-CSS-Bootstrap & JavaScript Day 3 Time Tracker](https://drive.google.com/open?id=1Y3Fa1NTc3oTe1C6bRXDeTYTJZPfV4e_eN8_WyGT0mRM)
+
+  * [Unit 02-CSS-Bootstrap & JavaScript Day 4 Time Tracker](https://drive.google.com/open?id=150xWlv1jCL2KGjajT-tUBiH5VnOQp6Vp2-0kAlxUhEE)
+
+  * [Unit 02-CSS-Bootstrap & JavaScript Day 5 Time Tracker](https://drive.google.com/open?id=12Lrx9Wl-DbPaY9m83dvaBBsWIErYDRHRWWgRIbU9WhQ)
+
+## Algorithms
+
+### JavaScript
+
+* [01-arithmetic](../../../01-Class-Content/03-JavaScript/03-Algorithms/01-arithmetic)
+
+* [02-odd-or-even](../../../01-Class-Content/03-JavaScript/03-Algorithms/02-odd-or-even)
+
+* [03-log-nums](../../../01-Class-Content/03-JavaScript/03-Algorithms/03-log-nums)
+
+### Web APIs
+
+* [01-log-even-nums](../../../01-Class-Content/04-Web-APIs/03-Algorithms/01-log-even-nums)
+
+* [02-countdown](../../../01-Class-Content/04-Web-APIs/03-Algorithms/02-countdown)
+
+* [03-sum-array](../../../01-Class-Content/04-Web-APIs/03-Algorithms/03-sum-array)

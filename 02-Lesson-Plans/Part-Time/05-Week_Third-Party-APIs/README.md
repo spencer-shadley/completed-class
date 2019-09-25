@@ -1,63 +1,49 @@
-## Unit 5 - Third-Party APIs
+# Unit 05: Third-Party-APIs
 
-### Overview
+## Overview
 
-In this week we will review JavaScript & jQuery fundamentals, as well as touch on timing events, debugger, and sample interview questions.
+In this unit we will review the DOM and JavaScript, and introduce the library jQuery as an alternative method to manipulate the DOM.
 
-### Learning Objectives
+  * Refer to the [Class Content Unit Overview](../../../01-Class-Content/05-Third-Party-APIs/README.md) for detailed information on key topics, learning objectives and homework.
 
-* By the end of this unit, students will be able to:
-  * Utilize timers to build JavaScript programs that execute functionality at various times.
-  * Utilize web inspector to debug JavaScript and jQuery scripts.
-  * Conceptualize problems and pseudocode a plan to break down and approach complex problems.
+## Instructor / TA Notes
 
-### Key Topics
+* In this unit's classes, expect students to have many issues with jQuery syntax. Be encouraging and let them know that the syntax will seem more intuitive over time. For now, they should just try to utilize the syntax as is.
 
-* JavaScript / jQuery Review
-  * Looping over array.
-  * Conditional logic.
-  * Querying the DOM.
-  * Modifying the DOM.
-  * Listening to and responding to user events.
+* Starting this unit, slides will play a less prominent role. Warn students of this and let them know that their time spent coding is where real learning will happen.
 
-* Timers
-  * Using setInterval to run a function repeatedly at a given interval and setTimeout to delay a function execution by a given time period.
+## Heads Up
 
-* Debuggers
-  * Using chrome debugging tools to pause and step through execution of a program, inspect values, uncover and resolve bugs.
+Next unit we will work with Server-Side APIs. It is recommended that you try to fill any conceptual holes students have about JavaScript objects this unit.
 
-* Interview Questions
-  * Introduction to common beginner JavaScript algorithm problems.
-  * Pseudo coding to think through problems before implementing solutions.
-  * Whiteboard interviewing practice.
+## Helpful Links
 
 ### Lesson Plans
 
-* [5.1 - Lesson Plan](01-Day/05.1-LessonPlan.md)
-* [5.2 - Lesson Plan](02-Day/05.2-LessonPlan.md)
-* [5.3 - Lesson Plan](03-Day/05.3-LessonPlan.md)
+  * [05.1 - Lesson Plan](01-Day_JS-jQuery-Review/05.1-LESSON-PLAN.md)
 
-### Homework Activities
+  * [05.2 - Lesson Plan](02-Day_Review-Contd/05.2-LESSON-PLAN.md)
 
-* [Choose Your Own Trivia Assignment](https://youtu.be/xhmmiRmxQ8Q)
-* [Basic Trivia (Demo)](https://youtu.be/fBIj8YsA9dk)
-* [Advanced Trivia (Demo)](https://youtu.be/xhmmiRmxQ8Q)
+  * [05.3 - Lesson Plan](03-Day_Interview-Prep/05.3-LESSON-PLAN.md)
 
-### Key Activities
+### Slide Decks
 
-* [5.1 - Word Guess](../../../01-Class-Content/05-timers/01-Activities/01-WordGuess)
-* [5.1 - Captain Planet](../../../01-Class-Content/05-timers/01-Activities/02-CaptainPlanet)
-* [5.2 - This](../../../01-Class-Content/05-timers/01-Activities/05-This)
-* [5.2 - Stopwatch](../../../01-Class-Content/05-timers/01-Activities/10-Stopwatch)
-* [5.3 - Fizz Buzz](../../../01-Class-Content/05-timers/01-Activities/16-FizzBuzz)
-* [5.3 - Bubble Sort](../../../01-Class-Content/05-timers/01-Activities/13-BubbleSort)
+  * [05.1: jQuery Begins](https://docs.google.com/presentation/d/1rb9HSOoezZzelSK7HQk-6tVKDBU8VBX3jQGuQpd04CQ/edit?usp=sharing)
 
-### Helpful Links
+  * [05.2: jQuery Jubilee](https://docs.google.com/spreadsheets/d/1zPJ1kckA8CR5vwSH0orofzkBmloTrkeD9DeTfwXFndM/edit?usp=sharing)
 
-* [Eloquent JavaScript](http://eloquentjavascript.net/)
-* [JavaScript Timing Events](http://www.w3schools.com/js/js_timing.asp)
-* [Debug With Breakpoints](https://developers.google.com/web/tools/chrome-devtools/debug/breakpoints/?hl=en)
+### Time Tracker(s)
 
-### Slide Shows
+  * [Unit 05-Third-Party-APIs Day 1 Time Tracker](https://drive.google.com/open?id=1iei7_OBRKt3S6pqxTWTgCLo9JhlUrxMI)
 
-* [5.1 - JavaScript and jQuery Review](https://docs.google.com/presentation/d/1jEO_4yRmeXRbuS39XqBMX18On4nwcz9vrt3vpxwSpVA/edit?usp=sharing)
+  * [Unit 05-Third-Party-APIs Day 2 Time Tracker](https://drive.google.com/open?id=1zPJ1kckA8CR5vwSH0orofzkBmloTrkeD9DeTfwXFndM)
+
+  * [Unit 05-Third-Party-APIs Day 3 Time Tracker](https://drive.google.com/open?id=192W9stZpLCBdZQARTa5jizw3cyRqMhc0)
+
+## Algorithms
+
+  * [01-fizz-buzz](../../../01-Class-Content/05-Third-Party-APIs/03-Algorithms/01-fizz-buzz)
+
+  * [02-max-num](../../../01-Class-Content/05-Third-Party-APIs/03-Algorithms/02-max-num)
+
+  * [03-vowel-count](../../../01-Class-Content/05-Third-Party-APIs/03-Algorithms/03-vowel-count)
