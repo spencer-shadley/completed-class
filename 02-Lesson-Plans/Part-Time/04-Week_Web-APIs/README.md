@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this week we will be introducing students to some of the most popular Web APIs. They will then use their newfound understanding of DOM manipulation, events, localStorage, and timers to create a quiz application.
+In this unit we will be introducing students to some of the most popular Web APIs. They will then use their newfound understanding of DOM manipulation, events, localStorage, and timers to create a quiz application.
 
   * Refer to the [Class Content Unit Overview](../../../01-Class-Content/04-Web-APIs/README.md) for detailed information on key topics, learning objectives and homework.
 

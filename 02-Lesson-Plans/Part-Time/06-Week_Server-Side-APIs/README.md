@@ -2,21 +2,21 @@
 
 ## Overview
 
-In this week we will be introducing students to the concept of APIs and the use of AJAX queries to retrieve and parse data in JSON formats. Throughout the week we'll be specifically working with the Giphy, OMDb, and New York Times APIs.
+In this unit we will be introducing students to the concept of server-side APIs and the use of AJAX queries to retrieve and parse data in JSON formats. Throughout the unit we'll be specifically working with the Giphy, OMDb, and New York Times APIs.
 
   * Refer to the the [Class Content Unit Overview](../../../01-Class-Content/06-Server-Side-APIs/README.md) for detailed information on key topics, learning objectives and homework.
 
 ## Instructor / TA Notes
 
-In this week we will be introducing students to the concept of APIs and the use of AJAX queries to retrieve and parse data in JSON formats. Throughout the week we'll be specifically working with the Giphy, OMDb, and New York Times APIs.
+In this unit we will be introducing students to the concept of APIs and the use of AJAX queries to retrieve and parse data in JSON formats. Throughout the unit we'll be specifically working with the Giphy, OMDb, and New York Times APIs.
 
 Make sure students sign up and obtain THEIR OWN PERSONAL API KEY for any APIs we might use, as the publics keys that we provide could be deactivated at any time.
 
-Be sure to slack out this [tutorial on the OpenWeatherMap API](http://osp123.github.io/tutorials/html/weatherAPI.html) as pre-reading for this week's content.
+Be sure to slack out this [tutorial on the OpenWeatherMap API](http://osp123.github.io/tutorials/html/weatherAPI.html) as pre-reading for this unit's content.
 
 ## Heads Up
 
-Next week we start to work on projects. It is recommended that you use some of the group assignments this week to gauge which students will work well together on projects.
+Next unit we start to work on projects. It is recommended that you use some of the group assignments this unit to gauge which students will work well together on projects.
 
 Make sure that these groups are created prior to class 07.1. Groups are made up of 3 or 4 students. Three is ideal, but not always possible. In groups of four (or more), it is easy for weaker students to be cut out of the workflow or hide behind their stronger teammates. **DO NOT allow students to work alone or in pairs.** Group projects are one of the few opportunities for students to work collaboratively. 
 

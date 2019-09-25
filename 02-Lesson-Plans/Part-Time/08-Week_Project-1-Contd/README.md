@@ -2,25 +2,29 @@
 
 ## Overview
 
-In this class students will continue working with their project groups. They will also have the opporunity to practice whiteboard interview questions under pressure.
+In this unit students will continue working with their project groups. They will also have the opportunity to practice whiteboard interview questions under pressure.
 
   * Refer to the [Class Content Unit Overview](../../../01-Class-Content/08-Project-1-Contd/README.md) for detailed information on key topics, learning objectives and homework.
 
 ## Instructor / TA Notes
 
-Throughout the week, bring each student to the whiteboard one at a time. If there's no whiteboard available, bring the student to a part of the class separate from other students and have them work on the problem on their laptop in front of you -- preferably on a piece of paper or on a computer using notepad or a program without any kind of intellisense.
+### Algorithms
+
+Throughout the unit, bring each student to the whiteboard one at a time. If there's no whiteboard available, bring the student to a part of the class separate from other students and have them work on the problem on their laptop in front of you -- preferably on a piece of paper or on a computer using notepad or a program without any kind of intellisense.
 
 Explain the problem to the student, show them one or more of the example inputs/outputs provided with the problem. Inform the student that they'll have 10 minutes to complete as much of the problem as possible.
 
 If the student says they're stuck, or goes quiet for up to a minute, offer up a hint. Some are found at the bottom of the Instructions.md file for the problem.
 
-Score students on their performance using this [rubric](@TODO LINK). Submit the form once for each student.
-
 Focus on giving students positive feedback on what they did well. Explain that part of whiteboarding interviews is to see how well they can communicate with the interviewer and that it's possible to do well even without arriving at a correct answer.
+
+### Projects
+
+Make sure to remind students that they should try dealing with merge conflicts and deployment issues as early as possible to avoid broken projects.
 
 ## Heads Up
 
-Alert instructional staff to expectations for the next unit, i.e: installations, challenging topics, preparation for projects, etc.
+In the next unit we begin Node.js so make sure all students have Node installed prior to the start of unit 09.
 
 ## Helpful Links
 

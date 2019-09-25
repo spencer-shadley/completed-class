@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this week, we will be welcoming our students to their first week of our Full-Stack Web Development Boot Camp. We'll be walking them through the very basics of HTML/CSS, Git Version Control, and Terminal/Console commands.
+In this unit, we will be welcoming our students to their first unit of our Full-Stack Web Development Boot Camp. We'll be walking them through the very basics of HTML/CSS, Git Version Control, and Terminal/Console commands.
 
   * Refer to the [Class Content Unit Overview](../../../01-Class-Content/01-HTML-CSS/README.md) for detailed information on key topics, learning objectives and homework.
 
@@ -10,7 +10,7 @@ In this week, we will be welcoming our students to their first week of our Full-
 
 First off, welcome and thank you so much for being a part of our program! Thanks to instructors/TAs like yourself, we're helping hundreds of students across the world achieve their career goals and their creative dreams. You have plenty of time to work with these students, and their progress will astound you. Buckle in! You're in for a fun ride!
 
-The main goal of this week is to help students get adjusted to an "average day" of our bootcamp. Be sure to encourage students plenty and focus heavily on keeping students engaged. This week is crucial in setting the tone for weeks to come.
+The main goal of this unit is to help students get adjusted to an "average day" of our bootcamp. Be sure to encourage students plenty and focus heavily on keeping students engaged. This unit is crucial in setting the tone for units to come.
 
 ## Heads Up
 

@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this week, students will begin work on their first Project of the Boot Camp, an API-powered web application that pulls data from multiple sources in a creative way.
+In this unit, students will begin work on their first Project of the Boot Camp, an API-powered web application that pulls data from multiple sources in a creative way.
 
   * Refer to the [Class Content Unit Overview](../../../01-Class-Content/07-Project-1/README.md) for detailed information on key topics, learning objectives and homework.
 
@@ -17,7 +17,9 @@ Make sure to spend plenty of time making sure that students can follow best prac
 
 ## Heads Up
 
-Next week, in addition to project work, we will spend a day practicing whiteboard interview questions. Even though the lesson plans are lighter, be sure to review them and spend some time familiarizing yourself with the algorithms. 
+Next unit, in addition to project work, we will spend a day practicing whiteboard interview questions. Even though the lesson plans are lighter, be sure to review them and spend some time familiarizing yourself with the algorithms. 
+
+Project presentations are on the third day of next unit. Remember, students must have deployed projects by presentation day, so encourage students to work on deploying their projects by 08.2 at the latest. Since you can always update deployed projects, it is recommended that students deploy early on and update their live version with every new feature.
 
 ## Helpful Links
 
@@ -31,11 +33,11 @@ Next week, in addition to project work, we will spend a day practicing whiteboar
 
 ### Slide Decks
 
-  * [07.1: Project Week](https://docs.google.com/presentation/d/1mCsAsRtwjGncXqq17bIJUZGNV26wqjqeuhWTQvnoLa0/edit?usp=sharing)
+  * [07.1: Project unit](https://docs.google.com/presentation/d/1mCsAsRtwjGncXqq17bIJUZGNV26wqjqeuhWTQvnoLa0/edit?usp=sharing)
 
 ### Time Tracker(s)
 
-N/A
+* [07.1 Time Tracker](https://drive.google.com/open?id=1i6RK5P8ZPQEwF8rcis89Er9LF61jPUTy)
 
 ## Algorithms
 

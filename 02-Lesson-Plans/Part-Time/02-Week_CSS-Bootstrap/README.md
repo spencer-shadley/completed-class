@@ -2,19 +2,19 @@
 
 ## Overview
 
-In this week, we will continue diving into CSS and providing students with a thorough series on Bootstrap. Additionally, we'll cover deployments with GitHub Pages.
+In this unit, we will continue diving into CSS and providing students with a thorough series on Bootstrap. Additionally, we'll cover deployments with GitHub Pages.
 
   * Refer to the [Class Content Unit Overview](../../../01-Class-Content/02-CSS-Bootstrap/README.md) for detailed information on key topics, learning objectives and homework.
 
 ## Instructor / TA Notes
 
-This week, your primary focus as instructors/TAs is to ensure students are able to utilize Github Pages to deploy their websites. Make sure to remind students that although CSS is a broad language with many tricks to learn, they will continue to build their CSS knowledge throughout the entire course.
+This unit, your primary focus as instructors/TAs is to ensure students are able to utilize Github Pages to deploy their websites. Make sure to remind students that although CSS is a broad language with many tricks to learn, they will continue to build their CSS knowledge throughout the entire course.
 
 ## Heads Up
 
 Be ready to have your troubleshooting hat on for helping students debug GitHub Pages deploys, as the surface area for problems is somewhat large.
 
-Next week, we begin JavaScript, make sure to review the slide decks in advance.
+Next unit, we begin JavaScript, make sure to review the slide decks in advance.
 
 ## Helpful Links
 

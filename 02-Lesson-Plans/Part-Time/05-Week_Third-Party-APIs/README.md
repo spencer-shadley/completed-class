@@ -2,19 +2,19 @@
 
 ## Overview
 
-In this week we will review the DOM and JavaScript, and introduce the library jQuery as an alternative method to manipulate the DOM.
+In this unit we will review the DOM and JavaScript, and introduce the library jQuery as an alternative method to manipulate the DOM.
 
   * Refer to the [Class Content Unit Overview](../../../01-Class-Content/05-Third-Party-APIs/README.md) for detailed information on key topics, learning objectives and homework.
 
 ## Instructor / TA Notes
 
-* In this week's classes, expect students to have many issues with jQuery syntax. Be encouraging and let them know that the syntax will seem more intuitive over time. For now, they should just try to utilize the syntax as is.
+* In this unit's classes, expect students to have many issues with jQuery syntax. Be encouraging and let them know that the syntax will seem more intuitive over time. For now, they should just try to utilize the syntax as is.
 
-* Starting this week, slides will play a less prominent role. Warn students of this and let them know that their time spent coding is where real learning will happen.
+* Starting this unit, slides will play a less prominent role. Warn students of this and let them know that their time spent coding is where real learning will happen.
 
 ## Heads Up
 
-Next week we will work with Server-Side APIs. It is recommended that you try to fill any conceptual holes students have about JavaScript objects this week.
+Next unit we will work with Server-Side APIs. It is recommended that you try to fill any conceptual holes students have about JavaScript objects this unit.
 
 ## Helpful Links
 

@@ -2,7 +2,7 @@
 
 ## Overview
 
-In this week we will be introducing students to their first taste of JavaScript. They will then use their newfound understanding of variables, arrays, loops, and conditionals to create a simple Password Generator.
+In this unit we will be introducing students to their first taste of JavaScript. They will then use their newfound understanding of variables, arrays, loops, and conditionals to create a simple Password Generator.
 
 Refer to the following links for detailed information on key topics, learning objectives and homework:
 
@@ -14,7 +14,7 @@ Refer to the following links for detailed information on key topics, learning ob
 
 In every activity moving forward, pre-coded instructor demos are provided for you. However, because of the simplicity of many of the demos, you are encouraged to code your own examples on the fly. Part of the reason we have pre-coded versions is for when we share the directory with students since it becomes easy to copy over into the in-class repo. Don't let that limit your imagination though!
 
-This week is filled with a lot of brand new topics. If you fall behind, make sure to adjust your plan accordingly.
+This unit is filled with a lot of brand new topics. If you fall behind, make sure to adjust your plan accordingly.
 
 ## Heads Up
 
