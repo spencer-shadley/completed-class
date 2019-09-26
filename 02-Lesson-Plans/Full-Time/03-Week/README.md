@@ -1,4 +1,4 @@
-## jQuery & Server-side APIs
+## Week 03: jQuery & Server-side APIs
 
 ### Overview
 
