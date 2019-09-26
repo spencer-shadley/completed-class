@@ -1,4 +1,4 @@
-# 02.3 Lesson Plan - JavaScript Juggernauts (10:00 AM) 
+# 02.3 Lesson Plan - Introduction to Web APIs (10:00 AM) 
 
 ## Overview
 
