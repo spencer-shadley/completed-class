@@ -20,7 +20,7 @@ Today's class is focused on re-introducing students to the concept of `for` loop
 
 ## Slides
 
-[02.2 Jumping for JavaScript](https://docs.google.com/presentation/d/1DHqKz5v9CAG3d6FaBO_aGZG7w2IvwCv5dgIhbk7FG60/edit?usp=sharing)
+[02.2 Jumping for JavaScript](https://docs.google.com/presentation/d/1H8ZjXAP9jCK5b7cS_90eWyCnqNT64zuBeWIgTuThOVg/edit?usp=sharing)
 
 ## Time Tracker
 
@@ -30,7 +30,7 @@ Today's class is focused on re-introducing students to the concept of `for` loop
 
 ### 1. Instructor Do: Welcome Students (5 mins)
 
-* Welcome students. Then open the slide deck [02.2 Jumping for JavaScript](https://docs.google.com/presentation/d/1DHqKz5v9CAG3d6FaBO_aGZG7w2IvwCv5dgIhbk7FG60/edit?usp=sharing).
+* Welcome students. Then open the slide deck [02.2 Jumping for JavaScript](https://docs.google.com/presentation/d/1H8ZjXAP9jCK5b7cS_90eWyCnqNT64zuBeWIgTuThOVg/edit?usp=sharing).
 
 * Introduce students to the overall objectives of today's class.
 
