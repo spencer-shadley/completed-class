@@ -1,4 +1,4 @@
-# 02.5 Lesson Plan - jQuery Calculator (10:00 AM) <!--links--> &nbsp; [⬅️](../04-Day/04-Day-LessonPlan.md) &nbsp; [➡️](../../03-Week/01-Day/01-Day-LessonPlan.md)
+# 02.5 Lesson Plan: Client-side Storage (10:00 AM) <!--links--> &nbsp; [⬅️](../04-Day/04-Day-LessonPlan.md) &nbsp; [➡️](../../03-Week/01-Day/01-Day-LessonPlan.md)
 
 ## Overview
 
@@ -16,9 +16,13 @@ Todays class will be about client side storage APIs and continuing to work on th
 
 ### Class Objectives
 
-* To gain an initial understanding of lexical scope in JavaScript.
+* Use local storage and session storage.
 
-* To build a semi-complex jQuery calculator application in teams.
+* Describe the differences between the two.
+
+* Identify when client side storage is the right solution.
+
+* Use all of the units concepts to build a persistent ToDo list as well as a Work Timer.
 
 ## Slides
 

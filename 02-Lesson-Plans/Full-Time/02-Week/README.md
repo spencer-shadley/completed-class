@@ -36,11 +36,11 @@ Students are very likely to come across jQuery solutions when searching for DOM/
 
 ### Slide Decks
 
-* [02.1 The Joys of JavaScript](https://docs.google.com/presentation/d/1ozIKdqhqnrWS6vU2glLUxFwzCbZmu9h0lDo8cMAYa1I/edit?usp=sharing)
+* [02.1 The Joys of JavaScript](https://docs.google.com/presentation/d/1ccabN1AZ3SmYtLSo7HeadSrvfRK-5ty_X8p4ovCXVlE/edit?usp=sharing)
 
-* [02.2 Jumping for JavaScript](https://docs.google.com/presentation/d/1DHqKz5v9CAG3d6FaBO_aGZG7w2IvwCv5dgIhbk7FG60/edit?usp=sharing)
+* [02.2 Jumping for JavaScript](https://docs.google.com/presentation/d/1H8ZjXAP9jCK5b7cS_90eWyCnqNT64zuBeWIgTuThOVg/edit?usp=sharing)
 
-* [02.3 The DOM](https://docs.google.com/presentation/d/10VJ5KHiEK_G4P2-av7h2zNhDDlTRm20kztov2fAT-0s/edit?usp=sharing)
+* [2.3 JavaScript & Introduction to the DOM](https://docs.google.com/presentation/d/10VJ5KHiEK_G4P2-av7h2zNhDDlTRm20kztov2fAT-0s/edit?usp=sharing)
 
 ### Time Tracker(s)
 

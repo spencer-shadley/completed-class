@@ -1,4 +1,4 @@
-# 02.3 Lesson Plan - JavaScript Juggernauts (10:00 AM) 
+# 02.3 Lesson Plan - Introduction to Web APIs (10:00 AM) 
 
 ## Overview
 
@@ -36,7 +36,7 @@ In this class, we will be introducing students to the concept of JavaScript Obje
 
 ## Slides
 
-* [2.3 The DOM](https://docs.google.com/presentation/d/10VJ5KHiEK_G4P2-av7h2zNhDDlTRm20kztov2fAT-0s/edit?usp=sharing)
+* [2.3 JavaScript & Introduction to the DOM](https://docs.google.com/presentation/d/10VJ5KHiEK_G4P2-av7h2zNhDDlTRm20kztov2fAT-0s/edit?usp=sharing)
 
 ## Time Tracker
 
@@ -45,6 +45,8 @@ In this class, we will be introducing students to the concept of JavaScript Obje
 - - -
 
 ### 1. Instructor Do: Good Array (5 mins)
+
+* Open the slide deck [2.3 JavaScript & Introduction to the DOM](https://docs.google.com/presentation/d/10VJ5KHiEK_G4P2-av7h2zNhDDlTRm20kztov2fAT-0s/edit?usp=sharing) and start on the Web APIs slide. Follow these prompts on their corresponding slides:
 
 * Open `good-array.html` in `28-GoodArray`.
 
@@ -381,7 +383,6 @@ In this class, we will be introducing students to the concept of JavaScript Obje
 
 ### 15. Instructor Do: Intro Web APIs (10 mins)
 
-* Open the slide deck [2.3 The DOM](https://docs.google.com/presentation/d/10VJ5KHiEK_G4P2-av7h2zNhDDlTRm20kztov2fAT-0s/edit?usp=sharing) and start on the Web APIs slide. Follow these prompts on their corresponding slides:
 
   * **Web APIs (Title)**: Today will be an introduction to the DOM.
 

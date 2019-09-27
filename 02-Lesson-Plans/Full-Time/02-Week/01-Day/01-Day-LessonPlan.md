@@ -28,7 +28,7 @@ Today's class is focused on providing students with the very basics of JavaScrip
 
 ## Slides
 
-* [02.1 The Joys of JavaScript](https://docs.google.com/presentation/d/1ozIKdqhqnrWS6vU2glLUxFwzCbZmu9h0lDo8cMAYa1I/edit?usp=sharing)
+* [02.1 The Joys of JavaScript](https://docs.google.com/presentation/d/1ccabN1AZ3SmYtLSo7HeadSrvfRK-5ty_X8p4ovCXVlE/edit?usp=sharing)
 
 ## Time Tracker
 
@@ -38,7 +38,7 @@ Today's class is focused on providing students with the very basics of JavaScrip
 
 ### 1. Instructor Do: How to Learn JavaScript (5 mins)
 
-* Open the slide deck [2-1 The Joys of JavaScript](https://docs.google.com/presentation/d/16lWA3gU8ZBvZNKHxBvZM791ntfvXf-6xQUNN3Bk-nL4/edit?usp=sharing) and begin going through the slides.
+* Open the slide deck [2-1 The Joys of JavaScript](https://docs.google.com/presentation/d/1ccabN1AZ3SmYtLSo7HeadSrvfRK-5ty_X8p4ovCXVlE/edit?usp=sharing) and begin going through the slides.
 
 * Take a moment to let students know the agenda for today.
 
