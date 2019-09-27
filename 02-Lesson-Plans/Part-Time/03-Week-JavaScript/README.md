@@ -26,9 +26,9 @@ This unit is filled with a lot of brand new topics. If you fall behind, make sur
 
   * [03.1: The Joys of JavaScript](https://docs.google.com/presentation/d/16lWA3gU8ZBvZNKHxBvZM791ntfvXf-6xQUNN3Bk-nL4/edit?usp=sharing)
 
-  * [03.2: Jumping for JavaScript](https://docs.google.com/presentation/d/1hKgGl_19fRL0xpABAhDlNNvadOFVBUeqjGdM82wNmL0/edit?usp=sharing)
+  * [03.2: Jumping for JavaScript](https://docs.google.com/presentation/d/1Em_iAbGzyujB5RXe-NF9KGYTzfiFN3R63Z1NRpH9MVc/edit?usp=sharing)
 
-  * [03.3: JavaScript Juggernauts](https://docs.google.com/presentation/d/1RA8D1B9usIgH_2wME5tVkjqIMbadvuFdtmaRz0W0rIo/edit?usp=sharing)
+  * [03.3: JavaScript Juggernauts](https://docs.google.com/presentation/d/1t_1L2ity4_AZe-jlVb6loOg9SJ3rVtCtnX0eDCmxaRs/edit?usp=sharing)
 
 ### Time Tracker(s)
 
