@@ -1,74 +1,51 @@
-## Unit 1 - Intro to Web Development, HTML/CSS, and Git
+# Unit 01: HTML-CSS
 
-### Overview
+## Overview
 
-In this week, we will be welcoming our students to their first week of our Full-Stack Web Development Boot Camp. We'll be walking them through the very basics of HTML/CSS, Git Version Control, and Terminal/Console commands.
+In this unit, we will be welcoming our students to their first unit of our Full-Stack Web Development Boot Camp. We'll be walking them through the very basics of HTML/CSS, Git Version Control, and Terminal/Console commands.
 
-### Learning Objectives
+  * Refer to the [Class Content Unit Overview](../../../01-Class-Content/01-HTML-CSS/README.md) for detailed information on key topics, learning objectives and homework.
 
-* By the end of this unit, students will be able to:
+## Instructor / TA Notes
 
-  * Implement semantic HTML and CSS in order to create  and style static web pages.
+First off, welcome and thank you so much for being a part of our program! Thanks to instructors/TAs like yourself, we're helping hundreds of students across the world achieve their career goals and their creative dreams. You have plenty of time to work with these students, and their progress will astound you. Buckle in! You're in for a fun ride!
 
-  * Apply features of Git and GitHub to track development progress and deploy homework assignment for review.
+The main goal of this unit is to help students get adjusted to an "average day" of our bootcamp. Be sure to encourage students plenty and focus heavily on keeping students engaged. This unit is crucial in setting the tone for units to come.
 
-  * Use terminal commands to create new directories and files.
+## Heads Up
 
-### Key Topics
+A lot of time will be spent ensuring that students have properly installed all of the tools and programs from the prework.
 
-* HTML
-  * Tags
-  * Attributes
-  * Semantic HTML for accessibility
+## Helpful Links
 
-* CSS
-  * Rules to modify element display
-  * Cascading and order of importance
-  * CSS Reset for consistency across devices
+* [Generating an SSH Key for GitHub](https://help.github.com/articles/generating-an-ssh-key/)
 
-* Git & GitHub
-  * Git and the terminal
-  * Git commands (add, commit, push, pull, clone)
-  * Pushing in GitHub
+* [Try Git](https://try.github.io/levels/1/challenges/1)
 
-* Essential console/terminal commands.
-  * cd
-  * touch
-  * mkdir
-  * ls
-  * rm
+* [Learn CSS Layouts](http://learn.shayhowe.com/html-css/positioning-content/)
+
+* [Learn CSS Positioning](http://learn.shayhowe.com/advanced-html-css/detailed-css-positioning/)
 
 ### Lesson Plans
 
-* [1.1 - Lesson Plan](01-Day/01.1-LessonPlan.md)
-* [1.2 - Lesson Plan](02-Day/01.2-LessonPlan.md)
-* [1.3 - Lesson Plan](03-Day/01.3-LessonPlan.md)
+  * [01.1 - Lesson Plan](01-Day_Intro-HTML/01.1-LESSON-PLAN.md)
 
-### Homework Activities
+  * [01.2 - Lesson Plan](02-Day_HTML-CSS/01.2-LESSON-PLAN.md)
 
-* [Build Your Portfolio Page](../../../01-Class-Content/01-HTML-Git-CSS/02-Homework/README.md)
+  * [01.3 - Lesson Plan](03-Day_CSS/01.3-LESSON-PLAN.md)
 
-### Key Activities
+### Slide Decks
 
-* [MyFirstHTML](../../../01-Class-Content/01-html-git-css/01-Activities/03-MyFirstHTML)
-* [HTML/CSS Layout](../../../01-Class-Content/01-html-git-css/01-Activities/06-HTML_CSS_Layout)
-* [Float Layout](../../../01-Class-Content/01-html-git-css/01-Activities/09-FloatLayout-Activity)
-* [Position Example](../../../01-Class-Content/01-html-git-css/01-Activities/10-CSS_PositionedLayout)
+  * [01.1 The Zen of Coding](https://docs.google.com/presentation/d/1u_Eb1i4U395mjrP3sX90Ni3YzAjeIa3gYtIkPYnnG7o/edit?usp=sharing)
 
-### Helpful Links
+  * [01.2 Git'n Pro with HTML/CSS](https://docs.google.com/presentation/d/1VZ7hXJWSI0ksJUnUF21LtqiyemdRR2kFSh4cfh700iU/edit?usp=sharing)
 
-* [Generating an SSH Key for GitHub](https://help.github.com/articles/generating-an-ssh-key/)
-* [Learn Git](https://www.codecademy.com/learn/learn-git)
-* [Try Git](https://try.github.io/levels/1/challenges/1)
-* [Learn CSS Layouts](http://learn.shayhowe.com/html-css/positioning-content/)
-* [Learn CSS Positioning](http://learn.shayhowe.com/advanced-html-css/detailed-css-positioning/)
+  * [01.3 Heroes of CSS](https://docs.google.com/presentation/d/1PDuD-wqPj9I-jmdJ12EyP8SYfw578PDdWu9Qza0ZPuM/edit?usp=sharing)
 
-### Slide Shows
+### Time Tracker(s)
 
-* [1.1 - The Zen of Coding](https://docs.google.com/presentation/d/1Hg-bDqgWSouHcquF_idzDPLsC2xqXouBRX5thXN443s/edit?usp=sharing)
-* [1.2 - Git'n Pro with HTML/CSS](https://docs.google.com/presentation/d/1SMhFndlbubN_GKG0nO1rdozAE9bmtKfwPjjD0a5ePR4/edit?usp=sharing)
-* [1.3 - Heroes of CSS](https://docs.google.com/presentation/d/170VU6CFgYB9BBh51mS7GyrlWkJKxfzEga6KyfVyh2TE/edit?usp=sharing)
+  * [Unit 01-HTML-CSS Day 1 Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/12h2RX508jKlBsY4HR2UMWSrAmlrneFxG/view?usp=sharing)
 
-### Supplemental Resources
+  * [Unit 01-HTML-CSS Day 2 Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1Yc3sDlBo8bxe4YHqOfqitYa_nanse0OA/view?usp=sharing)
 
-* [Basic Git Push Guide (Highly Recommended)](02-Day/Supplemental/GitHub-Help)
+  * [Unit 01-HTML-CSS Day 3 Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1PzMXJ6g2HKj29TV3pOCicV8W1k6eqHx9/view?usp=sharing)

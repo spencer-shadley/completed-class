@@ -1,4 +1,4 @@
-# 03.2 Lesson Plan - Interview Blitz (10:00 AM) <!--links--> &nbsp; [⬅️](../01-Day/01-Day-LessonPlan.md) &nbsp; [➡️](../03-Day/03-Day-LessonPlan.md)
+# 03.2 Lesson Plan - jQuery Jubilee (10:00 AM) <!--links--> &nbsp; [⬅️](../01-Day/01-Day-LessonPlan.md) &nbsp; [➡️](../03-Day/03-Day-LessonPlan.md)
 
 ## Overview
 
@@ -20,21 +20,15 @@ In this class, we will further students' understanding of DOM Manipulation using
 
 ## Slides
 
-[05.2: jQuery Jubilee](https://docs.google.com/presentation/d/1OWXiM3iGOFjB_ThjNEPvRLQpRPymP-K6vx953rd8AtU/edit?usp=sharing)
+[3.2 jQuery Jubilee](https://docs.google.com/presentation/d/1OLol2xQemLl4uhvtKg7J3qx6hL4v59UTT9uRxlvfHNs/edit?usp=sharing)
 
 ## Time Tracker
 
-* Have your TAs reference [02-Day-TimeTracker](02-Day-TimeTracker.xlsx) to help keep track of time during class.
+[3.2 Time Tracker](https://drive.google.com/open?id=1z5r_tPe7Vpszs15neF8i6FJhUR5b70LT)
 
 - - -
 
-### 1. Instructor Do: Welcome & Housekeeping (5 mins)
-
-* Welcome students to class and give an introduction to the day's topics.
-
-* Remind students that homework is due today! Even if they haven't fully completed it they should submit it anyway. Career Services and Academic Support monitor homework and it helps us to know where everyone is in the class.
-
-### 2. Students Do: Fridge Game (25 min)
+### 1. Students Do: Fridge Game (30 min)
 
 * Open the solution file `11-FridgeGame` in `11-FridgeGame/Solved`, and show students how the application works. In short, the application allows users to click on letters from a menu and have those letters appear on the fridge.
 
@@ -56,7 +50,7 @@ In this class, we will further students' understanding of DOM Manipulation using
 
   * Note: This is a challenging exercise. You may want one person to type, while the other two watch over to catch bugs and/or research necessary snippets.
 
-### 3. Instructor Do: Review Fridge Game (15 min)
+### 2. Instructor Do: Review Fridge Game (15 min)
 
 * Spend the time necessary to ensure that the majority of students have a conceptual understanding of how the Fridge Game's code works. In explaining the solution, point out the following:
 
@@ -72,19 +66,19 @@ In this class, we will further students' understanding of DOM Manipulation using
 
 * Slack out the solution and the [video review](https://www.youtube.com/watch?v=gC529k3KzmE) for the activity.
 
-### 4. Instructor Do: Crystal Example (10 min)
+### 3. Instructor Do: Crystal Example (10 min)
 
 * Next, open the files found in the folder `12-CrystalExample`. These files closely match the students' homework assignment.
 
 * They are included in the day's lesson primarily so students can refer back to them while working on their homework assignment. Use your discretion as to how much extra help your students need to complete their homework. If you feel students need a lot of help, feel free to spend time in class going over these examples. Otherwise, simply explain to students that the code is available, and offer a very high level explanation of how they can use the code provided.
 
-### 5. Instructor Do: Intro Lexical Scope (10 min)
+### 4. Instructor Do: Intro Lexical Scope (10 min)
 
-* Proceed to the Lexical Scope slides. Warn students that this section is pretty heavy on theory.
+* Proceed to the [Lexical Scope slide deck](https://docs.google.com/presentation/d/1OLol2xQemLl4uhvtKg7J3qx6hL4v59UTT9uRxlvfHNs/edit?usp=sharing). Warn students that this section is pretty heavy on theory.
 
 * Proceed with basic definitions of scope, using analogies to boxes or other simple concepts when possible. Mention the concept of nested functions -- before moving to the first code dissection. (Students will be dissecting the code example shown in the slides).
 
-### 6. Students Do: Lexical Scope 1 (10 min)
+### 5. Students Do: Lexical Scope 1 (10 min)
 
 * File(s): `13-ScopeOne/Unsolved/index.html`
 
@@ -96,7 +90,7 @@ In this class, we will further students' understanding of DOM Manipulation using
 
   * **HINT**: Read the [MDN docs on closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
 
-### 7. Instructor Do: Review Lexical Scope 1 (5 min)
+### 6. Instructor Do: Review Lexical Scope 1 (5 min)
 
 * Open `13-ScopeOne/Unsolved/index.html` and ask students to answer the questions posed in the comments. The key concept to address is *closures*. Explain the following points:
 
@@ -110,7 +104,7 @@ In this class, we will further students' understanding of DOM Manipulation using
 
 * If students have further questions, refer them to the [MDN docs on closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures).  
 
-### 8. Students Do: Lexical Scope 2 (5 min)
+### 7. Students Do: Lexical Scope 2 (5 min)
 
 * Proceed with the next activity.
 
@@ -128,7 +122,7 @@ In this class, we will further students' understanding of DOM Manipulation using
 
 * Note: Pay attention to the unusual use of the keyword: ‘this”
 
-### 9. Instructor Do: Review Lexical Scope 2 (5 min)
+### 8. Instructor Do: Review Lexical Scope 2 (5 min)
 
 * Proceed with the review. This example may have been more challenging to students, as we introduced the concept of `this` without explanation.
 
@@ -136,7 +130,7 @@ In this class, we will further students' understanding of DOM Manipulation using
 
   ![image-5](Images/3-scope-2.png)
 
-### 10. Students Do: Lexical Scope 3 (10 min)
+### 9. Students Do: Lexical Scope 3 (10 min)
 
 * Proceed with the next activity.
 
@@ -154,7 +148,7 @@ In this class, we will further students' understanding of DOM Manipulation using
 
 * Note: Pay attention to the unusual use of the keyword: ‘this”
 
-### 11. Instructor Do: Review Lexical Scope 3 (5 min)
+### 10. Instructor Do: Review Lexical Scope 3 (5 min)
 
 * Try to have students explain the solutions to the last activity back to you.
 
@@ -164,9 +158,9 @@ In this class, we will further students' understanding of DOM Manipulation using
 
 * Make sure they realize that studying these examples **is not** overly necessary.
 
-### 12. Everyone Do: Brain Teaser (15 min)
+### 11. Everyone Do: Brain Teaser (15 min)
 
-* If you have additional time available in class, proceed with this activity [16-ColorCorrector](../../../../01-Class-Content/05-third-party-apis/01-Activities/16-ColorCorrector).
+* If you have additional time available in class, proceed with this activity [16-ColorCorrector](../../../../01-Class-Content/05-Third-Party-APIs/01-Activities/16-ColorCorrector).
 
 * It's challenging, and will likely take over 40 minutes to complete.  It is not necessary that students finish it.  At best, they may be able to get *started* in class, but will likely need to spend additional time at home if they are interested in completing it.
 
@@ -174,161 +168,182 @@ In this class, we will further students' understanding of DOM Manipulation using
 
 - - -
 
-### 13. BREAK (30 min)
+### 12. BREAK (30 min)
 
 - - -
 
-### 14. Partners Do: The Virtues of Visualizing Problems (10 mins) (High)
 
-* Now, we're going to take on a slew of activities based on the kinds of questions you might face in job interviews for developer positions.
+### 13. Instructor Do: Motivation + Pulse Check (10 mins) (High)
 
-* Add in that before any of that, they'll need to review the concept of visualizing problems.
+* Then, get a gauge of students current understanding by doing a Fist to Five.
 
-* Have them partner up into groups of two to answer this question: What's the highest selling product in Walmart?
+  * Students will raise their hands and show either a fist (don't understand at all) or five fingers (fully understand).
 
-  * Tell them that they can't just come up with a random item and consider their response acceptable. They'll likely be flat-out wrong -- Walmart has sold millions of items over the past 50 years.
+* Then, take a few moments to either respond to the pulse-check -- or simply giving your students a pep talk. It may be a good time to offer students perspective on how quickly they are progressing or the fact that as first-time developers -- they don't need to know "everything". Be creative here. But don't skip this pep talk. Many of your students are likely still feeling pretty defeated because of JavaScript.
 
-  * No Googling, either!
+* **Important Note:** This would also be a good time to let students know that an entire class day next week will be devoted to reviewing old JavaScript activities thoroughly.
 
-  * Instead, they should imagine that their life depended on giving an adequate response.
+* Let students know that the first half of the class will be a series of activities that build on their working knowledge of JavaScript scope. The second half (the more important one) will be focused on building a calculator using jQuery.
 
-  * Offer this tip: "Visualize yourself walking past those sliding doors and into this store. If you were making your weekly trip to Walmart, which item near the entrance would you gravitate toward? If it helps, the produce section is the first you'll see when walking into most Walmarts."
+### 14. Partners Do: Scope Quiz (10 mins)
 
-### 15. Instructor Do: Explain Visualizations (10 mins) (Critical)
+* The first activity is intended to point out a common error students make in working with variables. Often, during the first few weeks of class, students instantiate multiple instances of the same variable. This creates unexpected behaviors as JavaScript handles each variable declaration as its own "local instance".
 
-* Before pooling responses from each group of partners, open up your word processor of choice and increase the size of your font to 48 points. Ask five groups for their answers and type them for the rest of the class to see.
+* Slack out the following file and instructions:
 
-  * Also ask these groups how they came up with their solutions. How did visualization help them decide?
+* **File:**
 
-* After you type their responses, tell them the answer: bananas.
+  * `17-ScopeQuiz` in `17-ScopeQuiz/Unsolved`
 
-  * "Again, visualize yourself going into Walmart (or any supermarket). You see the produce section first and then you wonder: what's the cheapest thing in the produce section? What's the easiest thing to eat?"
-  * " This is the thought process your interviewee will likely care most about. Even if you didn't answer 'bananas,' it’s more important that you **visualized** the problem and responded with something close or at least informed."
+* **Instructions:**
 
-* Explain how job candidates in all fields often encounter so-called **conceptual problems**, questions that offer no certain means to find answers. "Your only recourse is to think high-level and visualize a solution. If you conceive the situation, you'll tend to find a close answer. You must visualize the problem, provide your solution and explain your thought process if you want to impress your interviewers."
+  * Spend a few moments studying the codefile with the person sitting next to you.
 
-### 16. Partners Do: Missing Cards (15 mins) (High)
+  * Then run the program in the browser.
 
-* Tell your class to find their partners from the last activity. Together they'll attempt to solve this next problem.
+  * Once you run the program, you'll find that Code Block 1 leads to different alerts than Code Block 2.
 
-* Slack out these instructions:
+  * Ask your partner which Code Block is behaving the way you would expect.
 
-  * I give you an array of 51 cards. Each card contains two properties: the suit, and the title (a string of either a number or a ranking: king, ace, so on).
+  * Then work with your partner to try and identify the specific difference that is causing the issue with the faulty block.
 
-  * Fifty-two cards form a deck. But I gave you 51. One is missing! How do you find it?
-  * Try to come up with the most efficient steps to solve this.
-    * **Hint**: Using a for loop against an array of values is not the most efficient solution--what if the cards aren't sorted?
+  * Once you spot the issue, try to explain to your partner why JavaScript is handling these Code Blocks differently.
 
-* Remind your class to visualize the problem and to think up a solution in steps. Have them write those steps out. They can even code it out in JavaScript if there's time.
+### 15. Instructor Do: Review Scope Quiz (5 mins)
 
-### 17. Instructor Do: Go Over Missing Cards (5 mins) (High)
+* After giving students a few moments to dissect the code, point out the issue at hand. Specifically, Code Block 2 re-declares the `myVar2` variable inside of the function `a2`.
 
-* Unlike the other exercises of today's lecture, we won't discuss an actual solution to this problem. The 51-card activity should spur your students to problem solve--that's more important than coming up with a real answer.
+* This creates an issue where JavaScript creates a "local instance" of the variable `myVar2`. This local instance is only observable by the function `a2`. This means the function `b2` does not see the changes being made to the variable. Instead, `b2` refers back to the first declaration of `myVar2` and still thinks the value is equal to 1.
 
-* Ask some of your students to explain their pseudocoded solutions. After three or so respond, debrief them--we don't care about finding an actual correct answer.
-  * This is another type of interview question that students should prepare for. The interviewer won't even care about finding a "real" solution--maybe there is none! They just want to measure the candidate's aptitude for thinking about the problems they'll encounter during work.
-    * Will they consider the whole issue before trying to find a solution, or will they rush into the problem and come up with a flimsy response.
-    * If they encounter a major snag on one path to a possible solution, will they give up, stay on the same doubtful train of thought, or think about what other possible answers might exist.
-    * That's why it's important to nail down visualization to conceptualize your problems.
+* Let students know that these scope issues are common sources of bugs for new developers.
 
-### 18. Instructor Do: Explain The Interview Process (10 mins) (High)
+### 16. Partners Do: This Example (10 mins) (High)
 
-* Spend a few minutes talking about the interview experience, but don't go too in-depth about the process (that's Career Services’ forte).
+* Then proceed to the next example. Slack out the following file and example
 
-  * Tell the class that the interview experience will differ depending on the organization and the position. That said, students should expect multiple interviews--some behavior based, others tech based.
-    * Behavioral: A conversation focused on the candidate's personality and whether they'd make a suitable fit for the company's atmosphere.
-    * Tech: Gauging the candidate's sophistication with technologies relevant to the job.
-      * An example: If a company's looking for a front-end dev, they'll want to test their candidates for HTML/CSS, JavaScript, jQuery and the works.
+* **File:**
 
-* If you have any interesting and/or enlightening interview experiences, then, by all means, share them with the class. What should they know about interviews that you wish you’d known beforehand?
+  * `18-ThisExample` in `18-ThisExample`
 
-  * Have some of the TAs chime in if they have any relevant interview experiences and advice.
+* **Instructions:**
 
-* Tell your students that the rest of the class will be devoted to exercises based on the kind of questions they might expect in a tech interview.
+  * Using the comments in the guide answer each of the questions asked in the file.
 
-### 19. Students Do: FizzBuzz (20 mins)
+  * Focus your attention on trying to wrap your mind around the concept of "this" and the unique role it can play in code.
 
-* Tell students that they're now going to code out a very common programming activity: Fizz Buzz. Explain how the developer must write a script that cycles through a series of numbers and prints them out. Add in that there are a few caveats:
+  * Then try to explain to your partner how "this" works, focus on the first three examples.
 
-  * If the number is a multiple of three, the program will print Fizz instead of the number.
-  * Likewise, if the number is a multiple of five, the program will print Buzz.
-  * What if a number is a multiple of both three and five? Then the script will spit out "FizzBuzz."
+### 17. Instructor Do: Review This Example (10 mins) (low)
 
-* "Did you get all that? If not, no worries; just check out your Slack channel." This is your cue to send out the instructions.
+* Go over the solution to this example by explaining the answers to each of the questions `this-solved.html`.
 
-  * Remind students not to start coding until they've thought about how to accomplish this task at a high-level--pseudocode it out! It might not seem necessary for this activity, but interviewers will expect them to think their problems out at a high level before coding a solution.
+* Don't worry about the bonuses. These may confuse the bulk of your students. The key thing to explain is that the keyword `this` refers to the object it falls inside of. Most of the time, `this` is a good way to be self-referencing. (You can leave it at that. Your more advanced students will dig deeper, but don't overwhelm your average student).
 
-* Here are the instructions:
+### 18. Students Do: Cobwebs (10 mins) (low)
 
-**FizzBuzz**
+* Proceed with the next example.
 
-* Write a script that prints the numbers 1 to 100 in the console. But for multiples of three, print `Fizz` instead of the number. For multiples of five, print `Buzz`. For numbers which are multiples of both three and five, print `FizzBuzz`.
+* This example, simply asks students to become more familiar with deeply nested JavaScript Objects, which they will be immersed in during Week 6.
 
-### 20. Instructor Do: Go Over FizzBuzz (5 mins)
+* For some of your students, this will be an enlightening exercise. For others, this will be very basic.
 
-* Ask one of the students in the class to Slack you their solution. Run the code they gave you and test it out. Debug with the student if any issue pops up.
+* For the students in need of an extra challenge, a very difficult bonus is included. The solution is included; students will likely need to continue working on this bonus for days after class.
 
-* Ask another student to answer the problem, and test and debug just like before. Chances are this answer will vary in some manner from the other students -- explain how programmers often solve the same problem in myriad different ways.
+* Slack out the following file and instructions.
 
-  * Add in that they should still be mindful of how they tackle a problem, though--if their potential code lacks elegance or repeats itself when DRY is possible, then they might want to think a bit longer to come up with another solution.
+* **File:**
 
-* Slack out the solution and [video review](https://www.youtube.com/watch?v=oTart7fFefI) for the activity.
+  * `cobweb-starter.html` in `19-Cobweb`
 
-### 21. Students Do: Prime Checker (20 mins) (High)
+* **Instructions:**
 
-* Tell students that the next assignment will be much more challenging than the last two. Implore them to spend at least 5 minutes away from their editors to pseudocode their work.
+* Create the missing the code such that you can retrieve the requested item from the `theCobWeb` object.
 
-  * When five minutes passes during the next activity, announce to the class that they may start writing actual code.
+* Note: This exercise is actually very relevant to work as a web developer, as data is often relayed across websites in the form of deeply nested JavaScript objects like this one.
 
-* Here are the instructions:
+* Bonus: If you finish early, begin pondering the bonus item. This is a **very** challenging exercise. It's impossible to complete in the allotted time. If you're feeling valiant - complete it outside of class and come back to instructors/TAs to go over it. This will arm you for difficult interview questions in the future.
 
-**Prime Checker**:
+### 19. Instructor Do: Review Cobwebs (10 mins)
 
-* Write a function that checks to see if a number is a prime number or not. Have it return `true` if it is, or `false` if it's not.
+* Go over the solution. In this case, feel encouraged to have students come up to the front and type out the code themselves.
 
-* More Info:
+* The solution involves referencing each parent object.
 
-  * More info on Prime numbers: <https://www.mathsisfun.com/prime_numbers.html>
+* Don't go over the bonus! It's too much. Do it after class during office hours.
 
-* **INSTRUCTOR (do not slack this out)**: You may notice that your students have finished earlier than the allotted time. There aren't really many lines of code to get the prime number function working, but it does require a knowledge of a prime number's inherent properties (that's why we included the link in the instructions).
-  * This is more a challenge of conceptualizing the problem then it is a coding skill.
-  * If you do notice that the class has finished early, you should cut the time short and go over the answer.
+### 20. Instructor Do: Intro Calculator + Group Formation (10 mins) (High)
 
-### 22. Instructor Do: Go Over Prime Number activity (5 mins) (High)
+* At this point, proceed to form groups for the calculator activity.
 
-* Ask a student to explain their pseudocoding process for this exercise. Ask them about these concepts in particular:
+* In this case, have students form groups of 3-4 of their own choosing, but ensure that each group includes at least one member from the other section.
 
-  * How long did you spend pseudocoding?
-  * What properties of the prime number did you base your code around?
-    * This will likely be that a prime number cannot be divisible by any numbers other than 1 and itself.
+* Once students are in their groups, open the file: `jQueryCalculator.html` in the browser. Show students how the application works by pressing various buttons and computing the results.
 
-* Ask that student to give you the code they came up with line by line, and to tell you what each line does.
-  * Test out the code to check its validity. If there's a bug, debug it with the student.
+* Point out that this is a challenging exercise that will require the entire group to work together.
 
-### 23. Students Do: File Sorter (30 mins)
+* Encourage students to work in pairs
 
-* Tell the class that they'll have a bit more time to finish the next assignment and that they should spend about 10 minutes pseudocoding. In this case, ask students to look up JavaScript methods that would let them work with the specific characters in a string.
+* Once all students are situated, slack out the following file and instructions.
 
-  * Slack out this link, too: <http://www.w3schools.com/jsref/jsref_obj_string.asp>
-  * Explain that while most in-person interviews won't allow for researching a language mid-question, they can still do this for online questionnaires, so long as they have enough time.
+* **File:**
+  * `jquery-calculator.html` in `20-jQueryCalculator/Unsolved`
 
-* Send your students `sort_by_file_extension.md` inside `15-file_extension`, which also includes their instructions. They're copied here for your convenience:
+* **Instructions:**
+  * Create the JavaScript logic necessary to add functionality to the jQuery Calculator.
 
-**Sort by File Extensions**
+  * Your calculator should be able to handle basic mathematical operations like addition, subtraction, multiplication, etc.
 
-* You have an array of filenames with extensions. Sort the files into arrays based on whether they're videos or images.
+  * You should be making use of the existing buttons.
 
-### 24. Instructor Do: Go Over File Sorter (10 mins)
+  * You should be making use of the existing placeholders for entering content (i.e. "firstNumber", "operator", "secondNumber", "result").
 
-* Ask the class how they did. Remind them that this question is a tough one with that used a method we hadn't spent much time on in class. They shouldn't feel any doubt about their abilities as developers if they couldn't solve it in time.
+  * You should have fun and push yourselves! This is a challenge activity—which means, if you get it done, you are a King of jQuery. If you don't, no sweat. The important thing is that you learned at least a FEW things along the way.
 
-* It’s more important that they offer the interviewee a high-level description of how they would solve it: "basically, always pseudocode before attempting any tough interview question."
+* **Instructor/TAs:** At this time, you may want to let students know about the 1:1 option available during the exercise. Describe these "catch-up" sessions as being "crash-courses" intended to help students go over the basics. Alternatively, if you already have a good idea of which students need the catch-up sessions, avoid making the announcement completely, and simply invite those students to take advantage of the time.
 
-  * Ask if a student who couldn't code out a solution would like to explain at a high level how they would have made a file-sorting program?
+### 21. Everyone Do: Phase 1: Getting Situated + Pseudocoding Stage (20 mins)
 
-* Also ask if anyone in the class coded a solution in time.
-  * If anyone responds, have the student give you the answer line by line. Ask the student how each line works. Run the code and debug any errors you may encounter.
-  * If no one answers, type out the solution and explain how it works: `15-file_extension`.
+* Throughout the activity, you will be offering minimal suggestions about how students should be proceeding and focusing their time.
+
+* Slack the below objectives:
+
+* **Phase I Objectives**
+
+  * For this first 20 minutes, your goals should be to:
+
+    * Become familiar with the various elements of the HTML page as it is written now. (Identify the classes and IDs that matter!)
+
+    * Create a general strategy for how you will accomplish the task:
+
+      * How will you capture button clicks?
+      * What will you do with the numbers clicked?
+      * What will you do when the operator is clicked?
+      * How will you differentiate numbers from operators?
+      * How will you know the "value" of a number clicked?
+      * How will you know when a user is done entering the first number?
+      * Etc.
+
+    * Create a few test "on-click" events. These could just trigger Alert messages for now. If you get further along, then have these buttons alert their "value".
+
+### 22. Everyone Do: Phase 2: Begin Logic (25 mins)
+
+* Slack the below objectives:
+
+* **Phase II Objectives**
+
+  * For the next 30 minutes, your goals should be to:
+
+    * Begin creating sets of variables that you think you will need. As a few suggestions:
+
+      * firstNumber, secondNumber, operator, result
+
+    * Create code that captures the numbers from button clicks, and then displays them on the HTML.
+
+    * Create code that captures an operator click, then immediately tells your code to begin recording the second number. (Example: If a user clicks the "plus" button, you know they are done typing the first number).
+
+    * Create code that checks which operator the user has clicked, then saves this operator for later use in a conditional statement. (Example: If a user clicks the "plus" button, you know you will need to be adding two numbers. If a user clicks the "minus" button, you will need to be subtracting two numbers. Think: if-else statements!)
+
+### 23. End
 
 ### Lesson Plan Feedback
 

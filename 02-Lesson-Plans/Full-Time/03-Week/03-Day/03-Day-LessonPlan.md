@@ -16,23 +16,23 @@
 
 * **Extra Resources:** Send out the following link during class and encourage students to practice with the [Whiteboarding Overview and Questions](https://coding-bootcamp-whiteboarding-algorithms.readthedocs-hosted.com/en/latest/). This was given with the course pre-work but now is the time where a lot of it will start clicking for students since learning JavaScript.
 
-* Have your TAs reference [03-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/192W9stZpLCBdZQARTa5jizw3cyRqMhc0/view?usp=sharing) to help keep track of time during class.
-
 ### Class Objectives
 
-* By the end of class students will be able to...
+  * Answer conceptual problems with visualization.
 
-    * Answer conceptual problems with visualization.
+  * Visualize and pseudocode problems and solutions
 
-    * Visualize and pseudocode problems and solutions
+  * Introduce the concept and utility of APIs and JSON in web applications
 
-    * Introduce the concept and utility of APIs and JSON in web applications
-
-    * Use a variety of APIs and the process for building endpoint URLs to utilize them
+  * Use a variety of APIs and the process for building endpoint URLs to utilize them
 
 ## Slides
 
+N/A
+
 ## Time Tracker
+
+[3.3 Time Tracker](https://drive.google.com/open?id=1OlaJokSTSUfgy84NSb6JW2rGCvZT9Lyj)
 
 - - -
 
@@ -45,68 +45,64 @@
 
 - - -
 
-### 1. Instructor Do: Welcome Students (10 mins)
 
-* Welcome your students back to class. Ask them how they feel the activities have gone so far. Remind your class that this particular class is meant to be challenging and that you don't expect everyone to finish them--most students probably won’t.
+### 12. Everyone Do: Continue Logic Building (45 mins)
 
-  * The point is to emphasize the idea of thinking about each problem at a high level -- to visualize the solution. Even if a student lacks the know how to code out an interview question, they should at least know how their program would work at a conceptual level.
+* Slack out the below objectives:
 
-* You might have one or two students who feel distressed regardless of what you just said. You should tell your class that they can speak 1:1 with either you or a TA if they want to talk about any issues they've encountered today or over the length of the course.
-* You might even want to have a one-to-one with students during the time allotted for the next activity.
+* **Phase III Objectives**
 
-### 2. Instructor Do: Very Brief Introduction to Algorithms (20 mins)
+  * For the next 40 minutes, your goals should be to:
 
-* Introduce the final activity to the class: Bubble Sort. Explain that this is an algorithm commonly taught in Computer Science courses.
+    * Complete the functionality you are missing in your code.
 
-* "But first, we need to briefly go over Computer Algorithms." Slack out [this link](https://www.quora.com/What-is-the-difference-between-algorithm-and-programming) and ask the class to find the answers to the following questions.
+    * Spend a few moments really assessing what you still have to do.
 
-  * What is a computer algorithm?
-    * Answer: A set of steps that a computer can take to solve a particular problem.
-  * How does an algorithm differ from a program?
-    * Answer: While some programs comprise a series of steps, a developer must code them out in a particular language. Algorithms are more high level--developers can apply the steps of an algorithm to different programs in order to solve various problems, like sorting and searching through data.
+    * Get a TA/Instructor to help you set priorities if you are unsure as to how to proceed.
 
-* Tell the class that Computer Scientists consider the Bubble Sort an inefficient, slow algorithm for sorting data. That description is especially true for programs that sort through hundreds of thousands of data entries.
-  * Regardless, it's still important to know how this sorting algorithm works -- otherwise, how would you avoid it? "That's why you'll be making a program that uses this algorithm in your last interview activity."
+### 13. Everyone Do: Refinement (25 mins)
 
-### 3. Students Do: Bubble Sort (60 mins)
+* Slack out the below objectives:
 
-* Slack out the Bubble Sort activity to your students: `13-bubble_sort`.
+* **Phase IV Objectives**
 
-* Make sure students spend at least ten minutes visualizing their solution before they code anything. An algorithm is intrinsically high level; if they don't know how it works, they will not be able to solve the problem.
+  * For the last 25 minutes, your goals should be to:
 
-  * Tell your class that they should not look at any coded-out solution online--they're only cheating themselves if they do.
+    * Complete any remaining functionality in your calculator
 
-* The instructions are provided in the `app.js` file. They're copied here for your convenience:
+    * Handle bugs and edge cases (Example: What if a user tries to type in more numbers after getting the result? Will that mess up the screen?)
 
-**Bubble Sort**
+    * Create code to "restart" the calculator after a user clicks "clear".
 
-* Write a function that sorts an array of numbers in order. You can do this with the Bubble Sort algorithm. If you are unfamiliar with Bubble Sort, use Google to read up on the concept. Spend about 10 minutes pseudocoding your solution before writing any JavaScript.
+### 14. Instructor Do: Review Calculator (10 mins)
 
-* Use the array provided below. Display the unsorted array in the `#start` div of `index.html`.
+* Because this application is pretty massive, the main focus during review is to help students understand **how** they should be re-examining the code on their own. Starting with the code blocks collapsed may help with clarity (as in the below image with the `.on` methods).
 
-* When the user clicks the `button` in `index.html`, the sorted result should be displayed in the `#result` div.
+* Give students the high points. Emphasize the following:
 
-* DO NOT USE JQUERY TO SELECT ELEMENTS. ONLY USE VANILLA JS.
+  * We set a number of variables in the `initializeCalculator` function.
 
-**End Instructions**
+  * We used JQuery to create separate on click listeners for numbers, operators, and equals.
 
-* Note: Ten minutes into the activity, ask a student to explain to their classmates how the Bubble Sort algorithm works. This will ensure that everyone has a clear idea of the concept.
+  * We used `this.value` in the callback function to determine what the value was for a given number or operator.
 
-### 4. Instructor Do: Go Over Bubble Sort (30 mins) 
+  * We created code that would change the HTML content using `.html`
 
-* Tell students that time is up, and remind them that this exercise was meant to be a challenge--they shouldn't doubt their place as budding web developers if they couldn't solve it.
+  * We took numeric inputs for `firstNumber` **until** a user clicks an operator. Once a user clicks an operator, we changed the value of a boolean, called `isOperatorChosen`, and immediately began recording the `secondNumber`.
 
-  * "Remember the key to showing your thought process to the interviewer--visualizing and the problem and pseudocoding the solution."
+  * Once a user clicks the "equal" button, we used conditionals to check which operation they had clicked, then ran that operation on the two numbers.
 
-* Ask a student in the class to explain their pseudocoded sort function.
+* Encourage students to spend some time re-examining this code. Even if they don't yet feel comfortable creating it from scratch, let them know that it has a number of key code snippets that they may find useful at various points in the class.
 
-* Also ask if any students were able to solve the activity. Have them tell you their code line by line--make sure they say what each line does as well. Finally, run the function and test if it works.
+### Review Unit 05 (40 mins)
 
-  * If no students could answer the question, reassure them that this activity was meant to be a challenge for them. Regardless, type out the solution provided `13-bubble_sort` so that they know what a working Bubble Sort looks like.
+* Take a moment to answer lingering questions about the mini project. Once you have answered all questions, proceed to do a review on jQuery.
 
-* Ask the class if they have any questions about today's lectures and the concepts you went over this week.
+* If there are any activities that you needed to cut short due to time constraints, this is a perfect time to review them. 
 
-* Slack out the solution and [video review](https://www.youtube.com/watch?v=t-qAWbYMiUs) for the activity.
+* Ask the class the following question(s) and use their answers to drive the review:
+
+  * ☝️ Are there any activities you thought were challenging and would like to spend more time going over?
 
 - - -
 
@@ -122,7 +118,7 @@
 
 * **Folder**
 
-  * [01-CustomerObject/Unsolved](../../../../01-Class-Content/06-ajax/01-Activities/01-CustomerObject/Unsolved)
+  * [01-CustomerObject/Unsolved](../../../../01-Class-Content/06-Server-Side-APIs/01-Activities/01-CustomerObject/Unsolved)
 
 * **Instructions**
 
@@ -132,7 +128,7 @@
 
 ### 7. Instructor Do: Review CustomerObject Parsing (5 mins)
 
-* Either live-code the solution yourself or open and demonstrate[01-CustomerObject/Solved](../../../../01-Class-Content/06-ajax/01-Activities/01-CustomerObject/Solved/customer-object-solution.html).
+* Either live-code the solution yourself or open and demonstrate[01-CustomerObject/Solved](../../../../01-Class-Content/06-Server-Side-APIs/01-Activities/01-CustomerObject/Solved/customer-object-solution.html).
 
 * While going over the solution, ask students why phoneNumber required an index parameter but first and last name did not.
 
@@ -280,7 +276,7 @@
 
 ### 19. Instructor Do: AJAX Query Demo (10 mins)
 
-* Now open up your editor and create an AJAX call to OMDb using the below code as an example. (Alternatively, you can use [02-Ajax_OMDB/single-ajax.html](../../../../01-Class-Content/06-ajax/01-Activities/02-Ajax_OMDB/single-ajax.html). If making your own AJAX call, however, be sure to include a few console logs after the AJAX call to demonstrate asynchronicity. See `single-ajax.html` for details.
+* Now open up your editor and create an AJAX call to OMDb using the below code as an example. (Alternatively, you can use [02-Ajax_OMDB/single-ajax.html](../../../../01-Class-Content/06-Server-Side-APIs/01-Activities/02-Ajax_OMDB/single-ajax.html). If making your own AJAX call, however, be sure to include a few console logs after the AJAX call to demonstrate asynchronicity. See `single-ajax.html` for details.
 
 ![9-AJAX](Images/9-AJAX.png)
 
@@ -309,7 +305,7 @@
 
 ![10-SpaceJamJson](Images/10-SpaceJamJson.png)
 
-* Add a second AJAX call to another movie. (Alternatively you can use [02-Ajax_OMDB/multiple-ajax.html](../../../../01-Class-Content/06-ajax/01-Activities/02-Ajax_OMDB/multiple-ajax.html).
+* Add a second AJAX call to another movie. (Alternatively you can use [02-Ajax_OMDB/multiple-ajax.html](../../../../01-Class-Content/06-Server-Side-APIs/01-Activities/02-Ajax_OMDB/multiple-ajax.html).
 
 * Open the floor to questions.
 

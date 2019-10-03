@@ -1,4 +1,4 @@
-# 03.1 Lesson Plan - Javascript and jQuery Review (10:00 AM) <!--links--> &nbsp; [⬅️](../../02-Week/05-Day/05-Day-LessonPlan.md) &nbsp; [➡️](../02-Day/02-Day-LessonPlan.md)
+# 03.1 Lesson Plan - jQuery Begins (10:00 AM) <!--links--> &nbsp; [⬅️](../../02-Week/05-Day/05-Day-LessonPlan.md) &nbsp; [➡️](../02-Day/02-Day-LessonPlan.md)
 
 ## Overview
 
@@ -22,9 +22,11 @@ In this class, we will be introducing students to the concept of DOM Manipulatio
 
 ## Slides
 
-[05.1: jQuery Begins](https://docs.google.com/presentation/d/1rb9HSOoezZzelSK7HQk-6tVKDBU8VBX3jQGuQpd04CQ/edit?usp=sharing)
+[3.1 JQuery Begins](https://docs.google.com/presentation/d/1NBt77MEEZDhJS9_mYzqgaSLQs8eQNHnd1ay38bKlnHI/edit?usp=sharing)
 
 ## Time Tracker
+
+[3.1 Time Tracker](https://drive.google.com/open?id=1frWbVNmH40LiTXTzNlBfZDVx3F_i4_O1)
 
 - - -
 
@@ -32,9 +34,9 @@ In this class, we will be introducing students to the concept of DOM Manipulatio
 
 ### 1.  Instructor Do: Welcome Students and Admin Items (5 mins)
 
-* Welcome students to class then open the [slide deck](https://docs.google.com/presentation/d/1rb9HSOoezZzelSK7HQk-6tVKDBU8VBX3jQGuQpd04CQ/edit?usp=sharing).
+* Welcome students to class then open the [slide deck](https://docs.google.com/presentation/d/1NBt77MEEZDhJS9_mYzqgaSLQs8eQNHnd1ay38bKlnHI/edit?usp=sharing).
 
-### 3.  Instructor Do: DOM Manipulation (10 mins)
+### 2.  Instructor Do: DOM Manipulation (10 mins)
 
 * Spend a few moments explaining the concept of DOM manipulation. If you are hazy about the concept of the DOM, you may want to read this article <https://css-tricks.com/dom/>.
 
@@ -47,7 +49,7 @@ In this class, we will be introducing students to the concept of DOM Manipulatio
 
 * You can even go into the Chrome Developer tools to show this more clearly.
 
-### 4.  Instructor Demo: DOM Manipulation with Plain JS (15 mins)
+### 3.  Instructor Demo: DOM Manipulation with Plain JS (10 mins)
 
 * Proceed with the first demonstration of class: `01-DOM_Manipulation`. In this first demo, you will show students how to modify the DOM using vanilla JavaScript. In later portions of the class, you will re-do this activity using jQuery.
 
@@ -78,7 +80,7 @@ In this class, we will be introducing students to the concept of DOM Manipulatio
 
 * Go over any questions from the previous example, then slack out the file `5.html`.
 
-### 5. Students Do: Generating HTML with Plain JS (15 mins)
+### 4. Students Do: Generating HTML with Plain JS (15 mins)
 
 * Slack out the following file and instructions:
 
@@ -94,7 +96,7 @@ In this class, we will be introducing students to the concept of DOM Manipulatio
 
   * BONUS: Instead of using a `for` loop, try searching about the use of the jQuery `.each` method.
 
-### 6.  Instructor Do: Review Activity (10 mins)
+### 5.  Instructor Do: Review Activity (5 mins)
 
 * Review the activity. In discussing the solution, point out how:
 
@@ -111,7 +113,7 @@ In this class, we will be introducing students to the concept of DOM Manipulatio
 
 * Slack out the solution and the [video review](https://www.youtube.com/watch?v=9_9-NeU2L_U) when complete
 
-### 7. Instructor Do: Introduce jQuery (10 mins)
+### 6. Instructor Do: Introduce jQuery (10 mins)
 
 * Spend a few moments to introduce the concept of jQuery.
 
@@ -123,7 +125,7 @@ In this class, we will be introducing students to the concept of DOM Manipulatio
 
   * Go through the slides on use cases.
 
-### 8.  Instructor Do: DOM Manipulation with jQuery (10 mins)
+### 7.  Instructor Do: DOM Manipulation with jQuery (10 mins)
 
 * Now return to the example completed before. But this time, use jQuery (`03-jQueryGenerators`).
 
@@ -142,7 +144,7 @@ In this class, we will be introducing students to the concept of DOM Manipulatio
 
 * Slack out the file `3.html` when complete.
 
-### 9. Students Do: Generating HTML with jQuery (15 mins)
+### 8. Students Do: Generating HTML with jQuery (15 mins)
 
 * Proceed with the drinkList exercise. This time students will re-complete it using jQuery.
 
@@ -160,7 +162,7 @@ In this class, we will be introducing students to the concept of DOM Manipulatio
 
   * HINT: Don’t forget to “incorporate” jQuery before you begin.
 
-### 10. Instructor Do: Review Activity (10 mins)
+### 9. Instructor Do: Review Activity (10 mins)
 
 * Review the previous exercise. In your review point out each of the following
 
@@ -172,7 +174,7 @@ In this class, we will be introducing students to the concept of DOM Manipulatio
 
       ![image-15](Images/4-jQuery-drink-list-1.png)
 
-### 11. Instructor Do: On Click Basic (10 mins)
+### 10. Instructor Do: On Click Basic (10 mins)
 
 * Open the file `onclick.html` in `05-OnClickBasic`. Then walk students through the syntax for `on-click` events. Specifically, point out how:
 
@@ -186,7 +188,7 @@ In this class, we will be introducing students to the concept of DOM Manipulatio
 
 * Students will likely be confused by the syntax. Let them know to use it for now -- and that it will make more sense over time as we learn other concepts.
 
-### 12. Partners Do: Sandwich Clicking (25 mins)
+### 11. Partners Do: Sandwich Clicking (25 mins)
 
 * Slack out the following file and instructions. If you are attempting the bonus, find some fun images online.
 
@@ -208,11 +210,11 @@ In this class, we will be introducing students to the concept of DOM Manipulatio
 
 - - -
 
-### 13. BREAK (30 mins)
+### 12. BREAK (30 mins)
 
 - - -
 
-### 14. Instructor Do: Review Activity (10 mins)
+### 13. Instructor Do: Review Activity (5 mins)
 
 * Review the activity. Be sure to talk about:
 
@@ -228,7 +230,7 @@ In this class, we will be introducing students to the concept of DOM Manipulatio
 
 * Slack out the solution and the [video review](https://www.youtube.com/watch?v=6BLReDBUZRk) when done.
 
-### 15. Partners Do: Trigger Random (15 mins)
+### 14. Partners Do: Trigger Random (15 mins)
 
 * Slack out the following file and instructions.
 
@@ -242,7 +244,7 @@ In this class, we will be introducing students to the concept of DOM Manipulatio
 
     * Hint: None. You got this.
 
-### 16. Instructor Do: Review Activity (5 mins)
+### 15. Instructor Do: Review Activity (5 mins)
 
 * Review the activity. Be sure to point out that:
 
@@ -256,7 +258,7 @@ In this class, we will be introducing students to the concept of DOM Manipulatio
 
 * Slack out the solution when done.
 
-### 17. Partners Do: Lottery Generator (20 mins)
+### 16. Partners Do: Lottery Generator (20 mins)
 
 * Open the file `lottery-generator-solved.html` in the browser. Show students how the final result of their work will look.
 
@@ -276,7 +278,7 @@ In this class, we will be introducing students to the concept of DOM Manipulatio
 
     * Then when a user clicks again, have the code create a new row with the latest number at the top.
 
-### 18. Instructor Do: Review Activity (5 mins)
+### 17. Instructor Do: Review Activity (5 mins)
 
 * Review the activity. Be sure to discuss that:
 
@@ -288,25 +290,23 @@ In this class, we will be introducing students to the concept of DOM Manipulatio
 
 * Slack out the solution and [video review](https://www.youtube.com/watch?v=Nh4wxhzePIs) when done.
 
-### 19.  Instructor Do: Captain Planet Game  (5 min)
+### 18.  Instructor Do: Captain Planet Game  (5 min)
 
-* Open the slide deck: [3.1 jQuery Jubilee](https://docs.google.com/presentation/d/1OWXiM3iGOFjB_ThjNEPvRLQpRPymP-K6vx953rd8AtU/edit?usp=sharing).
+* Open the slide deck: [3.1 jQuery Begins](https://docs.google.com/presentation/d/1NBt77MEEZDhJS9_mYzqgaSLQs8eQNHnd1ay38bKlnHI/edit?usp=sharing).
 
 * Open the file `captain-planet-game.html` in `10-CaptainPlanetGame/Solved` in the Browser. Click on various buttons and show students how Captain Planet is being modified in response to the clicks.
 
-  ![image-1](Images/1-captain-planet.png)
-
-### 20.  Students Do: Pseudocode Captain Planet (10 min)
+### 19.  Students Do: Pseudocode Captain Planet (10 min)
 
 * Proceed with the first activity, in which you ask students to pseudocode the game's logic and structure.
 
-### 21.  Instructor Do: Review Pseudocode (5 min)
+### 20.  Instructor Do: Review Pseudocode (5 min)
 
 * Allow students to share their pseudocode breakdowns.
 
 * Then show your own pseudocode outline (shown on slide).
 
-### 22.  Students Do: Create a Superpower Captain Planet (15 min)
+### 21.  Students Do: Create a Superpower Captain Planet (15 min)
 
 * Slack out the code for the game.
 
@@ -332,21 +332,21 @@ In this class, we will be introducing students to the concept of DOM Manipulatio
 * **Instructor:**
   * Feel free to give students additional time here if necessary. Make sure the majority of your students have at least a basic example that works.
 
-### 23.  Instructor Do: Review Captain Planet (5 min)
+### 22.  Instructor Do: Review Captain Planet (5 min)
 
 * Have a student with a working solution share their code with you. Then ask them to present at the front of class.
 
 * If no one one has a working example, quickly create code of your own that "stretches" Captain Planet. You can use the version found in `Solved->captain-planet-game.html` as an example.
 
-### 24.  Instructor Do: jQuery Recap (10 min)
+### 23.  Instructor Do: jQuery Recap (10 min)
 
-* Next, spend a few moments going through the jQuery recap slides. The most important thing to explain in discussing these slides is the fact that jQuery is "capturing" HTML elements using the `$()`, and that we are then applying various methods to that element (or a different one in response).
+* Next, spend a few moments going through the [jQuery recap slides](https://docs.google.com/presentation/d/1NBt77MEEZDhJS9_mYzqgaSLQs8eQNHnd1ay38bKlnHI/edit?usp=sharing). The most important thing to explain in discussing these slides is the fact that jQuery is "capturing" HTML elements using the `$()`, and that we are then applying various methods to that element (or a different one in response).
 
 * Finally, point out that students shouldn't be expecting to memorize all of the jQuery library. Point out that coding is all about understanding a general concept, and then "looking up" the exact code when needed.
 
 * Field any questions that remain before ending for the day
 
-### 25. END (0 mins)
+### 24. END (0 mins)
 
 - - -
 
