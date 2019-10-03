@@ -474,15 +474,7 @@ In this class, we will be introducing students to the concept of NPM and package
 
   Documentation for the `inspect` package can be found here: [NPM Package: inspect-process](https://www.npmjs.com/package/inspect-process)
 
-### 24. Introduce the Unit Video Guide (3 mins)
-
-* Emphasize how helpful a tool these videos can be if a student feels as if they are falling behind or simply wants to review the material once again.
-
-* [Video Guide](../../../../01-Class-Content/10-nodejs/VideoGuide.md)
-
-* [Video Guide](../../../../01-Class-Content/11-js-constructors/VideoGuide.md)
-
-### 25.	Partners Do: Zombie Challenge (38 mins, remainder of class, optional)
+### 24.	Partners Do: Zombie Challenge (40 mins, remainder of class, optional)
 
 * This is a fairly challenging and time consuming activity, so let students know they may not finish in class, but a solution will be provided to them nonetheless afterwards.
 
@@ -500,7 +492,7 @@ In this class, we will be introducing students to the concept of NPM and package
 
 * **Note for Instructors / TAs**: This is also a good time to help weaker students catch up in class if they are missing more critical concepts.
 
-### 26.	Instructor Do: Review Zombie Challenge	(10 mins)
+### 25.	Instructor Do: Review Zombie Challenge	(10 mins)
 
 * If you have time to review the solution, open the file `zombieGame.js` (`29-ZombieChallenge >SOLVED`).
 

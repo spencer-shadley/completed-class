@@ -1,25 +1,37 @@
-# Unit 21: Regionalized Content
+# Unit 25: Power Packs
 
 ## Overview
-Week 21 is the regionalized content unit—different universities will teach different tech depending on local market demand. Please check your syllabus to see which content applies to your class.
+The field of software development is constantly evolving and expanding. To be employer competitive, it's important to continually add new skills to your repertoire. These Power Packs are designed for you to work through at your own pace.
+
 
 ## Key Topics
-* C#
-* Django
 * Java
-* Laravel
+* C#
+* Python
+* PHP
 
-## Homework
-* **C#:** Your homework for this unit is to use ASP.NET Core to build a CRUD application that allows you to create, view, update, and delete useful code snippets. Think of it as the MVP for an app you'd use to keep track of idiomatic code samples in different languages.
 
-* **Django:** Your homework for this unit is to use Django to build a CRUD application that allows you to create, view, update, and delete useful code snippets. Think of it as the MVP for an app you'd use to keep track of idiomatic code samples in different languages.
+## Homework?
 
-* **Java:** For this unit's assignment, you will design and implement the back-end for a meal tracking application. The application will allow users to keep track of the meals they eat throughout the day; the foods they eat with each meal; and what percentage of their meals are "complete".
+There is no "homework" due for each of the Power Packs, but there are assessments available to test your knowledge. 
 
-* **Laravel:** For this assignment, you'll create an application called My Fitness Buddy (MFB), a lightweight calorie counter and tracker.
+### Java
+
+* [Qualified.io Java Assessment](https://www.qualified.io/assess/5d14bf86b2102e00100f7b1d)
+
+### C# 
+
+* [Qualified.io C# Assessment](https://www.qualified.io/assess/5d442c0c280942000e1ea789)
+
+### Python
+
+
+
+### PHP
+
+
+
 
 ## Helpful Links
-* [C#](https://en.wikipedia.org/wiki/C_Sharp_(programming_language))
-* [Django](https://en.wikipedia.org/wiki/Django_(web_framework))
 * [Java](https://en.wikipedia.org/wiki/Java_(programming_language))
-* [Laravel](https://en.wikipedia.org/wiki/Laravel)
+* [C#](https://en.wikipedia.org/wiki/C_Sharp_(programming_language))
