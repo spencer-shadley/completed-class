@@ -447,34 +447,21 @@
         "use strict";
 
         function Model() {
-          this.title = "Unit 4 Web APIs HW Rubric";
+          this.title = "Unit 10 OOP HW Rubric";
           this.categories = [
             {
               title: "Deployment",
               subtitle: null,
               questions: [
                 {
-                  title: "Student submitted deployed live application URL",
-                  score: 10,
-                  message: "Application isn't deployed",
-                  status: false
-                },
-                {
-                  title:
-                    "Application loads at deployed URL (no 404, or Heroku/GH Pages error)",
-                  score: 10,
-                  message: "Application isn't deployed",
-                  status: false
-                },
-                {
                   title: "Student submitted application GitHub URL",
-                  score: 8,
+                  score: 16,
                   message: "Missing GitHub submission URL",
                   status: false
                 },
                 {
                   title: "GitHub Repo contains application code",
-                  score: 8,
+                  score: 20,
                   message: "GitHub repo is empty",
                   status: false
                 }
@@ -487,45 +474,40 @@
               questions: [
                 {
                   title:
-                    "The first view of the application displays a button used to start the quiz",
-                  score: 6 + 2/3,
-                  message: "First view of the application doesn't display a button to start the quiz",
+                    "Application prompts user for employees to add to roster",
+                  score: 8,
+                  message:
+                    "Application doesn't prompt user for employees to add to the roster",
                   status: false
                 },
                 {
                   title:
-                    "Clicking the 'Start Quiz' button displays a series of questions",
-                  score: 6 + 2/3,
+                    "Application utilizes 'Employee', 'Manager', 'Engineer', and 'Intern' classes to create employee objects as outlined in the HW instructions",
+                  score: 8,
                   message:
-                    "Clicking the 'Start Quiz' button doesn't display a series of questions",
+                    "Application doesn't utilize 'Employee', 'Manager', 'Engineer', and 'Intern' classes to create employee objects as outlined in the HW instructions",
                   status: false
                 },
                 {
                   title:
-                    "Once the quiz begins, a countdown timer starts",
-                  score: 6 + 2/3,
+                    "Application contains templates for each type of employee",
+                  score: 8,
                   message:
-                    "A countdown timer doesn't start when the quiz begins",
+                    "Application doesn't contain templates for each type of employee",
+                  status: false
+                },
+                {
+                  title: "All application tests pass",
+                  score: 8,
+                  message: "Not all application tests pass",
                   status: false
                 },
                 {
                   title:
-                    "If a question is answered incorrectly, additional time is subtracted from the timer",
-                  score: 6 + 2/3,
+                    "Application generates an HTML document displaying the employee roster",
+                  score: 8,
                   message:
-                    "Additional time isn't subtracted from the timer if a question is answered incorrectly",
-                  status: false
-                },
-                {
-                  title: "The timer ends when all questions have been answered or the timer reaches 0",
-                  score: 6 + 2/3,
-                  message: "The timer doesn't stop when it reaches 0 or when all questions have been answered",
-                  status: false
-                },
-                {
-                  title: "After the game ends, the user can save their initials and score to a highscores view using local storage",
-                  score: 6 + 2/3,
-                  message: "Unable to save initials and score to highscores view using local storage",
+                    "Application doesn't generate an HTML document displaying the employee roster",
                   status: false
                 }
               ]
