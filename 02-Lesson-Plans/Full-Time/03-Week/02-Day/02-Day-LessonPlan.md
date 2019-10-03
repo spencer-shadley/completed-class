@@ -1,4 +1,4 @@
-# 03.2 Lesson Plan - jQuery Calculator (10:00 AM) <!--links--> &nbsp; [⬅️](../01-Day/01-Day-LessonPlan.md) &nbsp; [➡️](../03-Day/03-Day-LessonPlan.md)
+# 03.2 Lesson Plan - jQuery Jubilee (10:00 AM) <!--links--> &nbsp; [⬅️](../01-Day/01-Day-LessonPlan.md) &nbsp; [➡️](../03-Day/03-Day-LessonPlan.md)
 
 ## Overview
 
@@ -215,8 +215,6 @@ In this class, we will further students' understanding of DOM Manipulation using
 
 * This creates an issue where JavaScript creates a "local instance" of the variable `myVar2`. This local instance is only observable by the function `a2`. This means the function `b2` does not see the changes being made to the variable. Instead, `b2` refers back to the first declaration of `myVar2` and still thinks the value is equal to 1.
 
-  ![image-1](Images/2-Scope_1.png)
-
 * Let students know that these scope issues are common sources of bugs for new developers.
 
 ### 16. Partners Do: This Example (10 mins) (High)
@@ -240,8 +238,6 @@ In this class, we will further students' understanding of DOM Manipulation using
 * Go over the solution to this example by explaining the answers to each of the questions `this-solved.html`.
 
 * Don't worry about the bonuses. These may confuse the bulk of your students. The key thing to explain is that the keyword `this` refers to the object it falls inside of. Most of the time, `this` is a good way to be self-referencing. (You can leave it at that. Your more advanced students will dig deeper, but don't overwhelm your average student).
-
-  ![3-This](Images/3-This.png)
 
 ### 18. Students Do: Cobwebs (10 mins) (low)
 

@@ -1,4 +1,4 @@
-# 02.5 Lesson Plan - jQuery Calculator (10:00 AM) <!--links--> &nbsp; [⬅️](../04-Day/04-Day-LessonPlan.md) &nbsp; [➡️](../../03-Week/01-Day/01-Day-LessonPlan.md)
+# 02.5 Lesson Plan: Client-side Storage (10:00 AM) <!--links--> &nbsp; [⬅️](../04-Day/04-Day-LessonPlan.md) &nbsp; [➡️](../../03-Week/01-Day/01-Day-LessonPlan.md)
 
 ## Overview
 
@@ -16,9 +16,13 @@ Todays class will be about client side storage APIs and continuing to work on th
 
 ### Class Objectives
 
-* To gain an initial understanding of lexical scope in JavaScript.
+* Use local storage and session storage.
 
-* To build a semi-complex jQuery calculator application in teams.
+* Describe the differences between the two.
+
+* Identify when client side storage is the right solution.
+
+* Use all of the units concepts to build a persistent ToDo list as well as a Work Timer.
 
 ## Slides
 
@@ -225,8 +229,6 @@ N/A
 
   * We are storing our "clicks" with Key/Value pairs.
 
-  ![Timetracker](Images/demo-local-storage.png)
-
 * Ask the class the following question(s):
 
   * Is this a database?
@@ -380,11 +382,9 @@ N/A
   
   * 🔑 We are attempting to store an object in Local Storage. Local storage can only store strings.
 
-![Auth Form Objects](Images/demo-auth-form-objects.gif)
-
 * Let's take a look at our code.
 
-* Open [22-Ins_Local-Storage-Uh-oh/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/22-Ins_Local-Storage-Uh-oh/Unsolved/script.js) in your IDE and point out the following: 
+* Open [22-Ins_Local-Storage-Uh-oh/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/22-Ins_Local-Storage-Uh-oh/script.js) in your IDE and point out the following: 
 
   * We are creating our object with the following code:
 
@@ -475,9 +475,7 @@ N/A
 
 * Open Chrome developer tools to demonstrate how the URLs are changing when we click.
 
-![Gif Demo](Images/gif-player.gif)
-
-* Open [24-Ins_Data-Attributes/script.js](../../../../01-Class-Content/04-Web-APIs/24-Ins-Data-Attributes/script.js) in your IDE and point out the followingL:
+* Open [24-Ins_Data-Attributes/script.js](../../../../01-Class-Content/04-Web-APIs/01-Activities/24-Ins_Data-Attributes/script.js) in your IDE and point out the followingL:
 
  * First we select our image container element.
 

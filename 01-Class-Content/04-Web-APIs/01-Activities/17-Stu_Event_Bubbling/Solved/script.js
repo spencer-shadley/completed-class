@@ -13,7 +13,7 @@ var currentImage;
 function navigate(direction) {
   index = index + direction;
   if (index < 0) { 
-    index = length - 1; 
+    index = images.length - 1; 
   } else if (index > images.length - 1) { 
     index = 0;
   }

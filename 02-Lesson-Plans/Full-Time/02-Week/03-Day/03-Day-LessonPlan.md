@@ -1,4 +1,4 @@
-# 02.3 Lesson Plan - JavaScript Juggernauts (10:00 AM) 
+# 02.3 Lesson Plan - Introduction to Web APIs (10:00 AM) 
 
 ## Overview
 
@@ -36,7 +36,7 @@ In this class, we will be introducing students to the concept of JavaScript Obje
 
 ## Slides
 
-* [2.3 The DOM](https://docs.google.com/presentation/d/10VJ5KHiEK_G4P2-av7h2zNhDDlTRm20kztov2fAT-0s/edit?usp=sharing)
+* [2.3 JavaScript & Introduction to the DOM](https://docs.google.com/presentation/d/10VJ5KHiEK_G4P2-av7h2zNhDDlTRm20kztov2fAT-0s/edit?usp=sharing)
 
 ## Time Tracker
 
@@ -45,6 +45,8 @@ In this class, we will be introducing students to the concept of JavaScript Obje
 - - -
 
 ### 1. Instructor Do: Good Array (5 mins)
+
+* Open the slide deck [2.3 JavaScript & Introduction to the DOM](https://docs.google.com/presentation/d/10VJ5KHiEK_G4P2-av7h2zNhDDlTRm20kztov2fAT-0s/edit?usp=sharing) and start on the Web APIs slide. Follow these prompts on their corresponding slides:
 
 * Open `good-array.html` in `28-GoodArray`.
 
@@ -381,7 +383,6 @@ In this class, we will be introducing students to the concept of JavaScript Obje
 
 ### 15. Instructor Do: Intro Web APIs (10 mins)
 
-* Open the slide deck [2.3 The DOM](https://docs.google.com/presentation/d/10VJ5KHiEK_G4P2-av7h2zNhDDlTRm20kztov2fAT-0s/edit?usp=sharing) and start on the Web APIs slide. Follow these prompts on their corresponding slides:
 
   * **Web APIs (Title)**: Today will be an introduction to the DOM.
 
@@ -515,7 +516,7 @@ In this activity you will `console.log(this)` and dig around inside the returned
 
 ### 18. Student Do: Traverse That DOM (10 mins)
 
-* Direct students to the next activity, found in [02-Stu_Traverse-That-DOM](../../../../01-Class-Content/04-web-apis/01-Activities/02-Stu_Traverse-That-DOM/Unsolved)
+* Direct students to the next activity, found in [03-Stu_Traverse-That-DOM](../../../../01-Class-Content/04-web-apis/01-Activities/03-Stu_Traverse-That-DOM/Unsolved)
 
 ```md
 # Traverse That DOM
@@ -553,7 +554,7 @@ In this activity you are going to use the Chrome Dev Console and `.style.propert
 
 ### 19. Instructor Do: Review Traverse That DOM (5 mins)
 
-* Open [02-Stu_Traverse-That-DOM Solved/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/02-Stu_Traverse-That-DOM/Solved) in your IDE and point out the following points to students:
+* Open [03-Stu_Traverse-That-DOM Solved/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/03-Stu_Traverse-That-DOM/Solved) in your IDE and point out the following points to students:
 
   * We first gather our two main divs into variables for easy access.
 
@@ -582,7 +583,7 @@ In this activity you are going to use the Chrome Dev Console and `.style.propert
 
 ### 20. Instructor Do: Setting Attributes (10 mins)
 
-* Navigate to [03-Ins_Setting-Attribute index.html](../../../../01-Class-Content/04-web-apis/01-Activities/03-Ins_Setting-Attribute/index.html) and open it in your browser.
+* Navigate to [04-Ins_Setting-Attributes index.html](../../../../01-Class-Content/04-web-apis/01-Activities/04-Ins_Setting-Attributes/index.html) and open it in your browser.
 
 * Ask the class, "How do we feel about this style?"
 
@@ -592,7 +593,7 @@ In this activity you are going to use the Chrome Dev Console and `.style.propert
 
 * If the attribute already exists, the value will be updated. If there is no attribute, a new attribute is added with the specified name and value.
 
-* Navigate to [03-Ins_Setting-Attribute script.js](../../../../01-Class-Content/04-web-apis/01-Activities/03-Ins_Setting-Attribute/script.js) in your IDE.
+* Navigate to [03-Ins_Setting-Attribute script.js](../../../../01-Class-Content/04-web-apis/01-Activities/03-Ins_Setting-Attributes/script.js) in your IDE.
 
   * When we uncomment this code and navigate back to the page styles will have been changed and an image added, all via JavaScript.
 

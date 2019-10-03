@@ -1,4 +1,4 @@
-# 03.1 Lesson Plan - Javascript and jQuery Review (10:00 AM) <!--links--> &nbsp; [⬅️](../../02-Week/05-Day/05-Day-LessonPlan.md) &nbsp; [➡️](../02-Day/02-Day-LessonPlan.md)
+# 03.1 Lesson Plan - jQuery Begins (10:00 AM) <!--links--> &nbsp; [⬅️](../../02-Week/05-Day/05-Day-LessonPlan.md) &nbsp; [➡️](../02-Day/02-Day-LessonPlan.md)
 
 ## Overview
 
@@ -295,8 +295,6 @@ In this class, we will be introducing students to the concept of DOM Manipulatio
 * Open the slide deck: [3.1 jQuery Begins](https://docs.google.com/presentation/d/1NBt77MEEZDhJS9_mYzqgaSLQs8eQNHnd1ay38bKlnHI/edit?usp=sharing).
 
 * Open the file `captain-planet-game.html` in `10-CaptainPlanetGame/Solved` in the Browser. Click on various buttons and show students how Captain Planet is being modified in response to the clicks.
-
-  ![image-1](Images/1-captain-planet.png)
 
 ### 19.  Students Do: Pseudocode Captain Planet (10 min)
 

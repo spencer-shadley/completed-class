@@ -1,65 +1,43 @@
-## Unit 2 - CSS and Bootstrap
+# Unit 02: CSS-Bootstrap
 
-### Overview
+## Overview
 
-In this week, we will continue diving into CSS and providing students with a thorough series on Bootstrap. Additionally we'll cover deployments with GitHub Pages.
+In this unit, we will continue diving into CSS and providing students with a thorough series on Bootstrap. Additionally, we'll cover deployments with GitHub Pages.
 
-### Learning Objectives
+  * Refer to the [Class Content Unit Overview](../../../01-Class-Content/02-CSS-Bootstrap/README.md) for detailed information on key topics, learning objectives and homework.
 
-* By the end of this unit, students will be able to:
-  * Incorporate Bootstrap CSS rules to style web pages.
-  * Create mobile-responsive layouts with Bootstrap’s grid system and CSS media queries for a mobile first user experience.
-  * Utilize Git and Github to deploy web apps  so other users can access them online.
+## Instructor / TA Notes
 
-### Key Topics
+This unit, your primary focus as instructors/TAs is to ensure students are able to utilize Github Pages to deploy their websites. Make sure to remind students that although CSS is a broad language with many tricks to learn, they will continue to build their CSS knowledge throughout the entire course.
 
-* Advanced CSS
-  * Modifying css with chrome developer tools.
-  * Understanding css resets.
-  * Identifying css classes and ids.
-  * Incorporating external stylesheets.
-  * Implementing css pseudo classes.
+## Heads Up
 
-* GitHub Pages
-  * Creating new repos on github.
-  * Cloning and navigating to that repo.
-  * Creating new files.
-  * Tracking files with version control.
-  * Pushing changes to github.
+Be ready to have your troubleshooting hat on for helping students debug GitHub Pages deploys, as the surface area for problems is somewhat large.
 
-* Bootstrap
-  * Understanding the connection between bootstrap classes and linked css rules.
-  * Implementing bootstrap components.
-  * Understanding mobile first design through bootstrap.
-  * Implementing media queries.
+Next unit, we begin JavaScript, make sure to review the slide decks in advance.
+
+## Helpful Links
 
 ### Lesson Plans
 
-* [2.1 - Lesson Plan](01-Day/02.1-LessonPlan.md)
-* [2.2 - Lesson Plan](02-Day/02.2-LessonPlan.md)
-* [2.3 - Lesson Plan](03-Day/02.3-LessonPlan.md)
+  * [02.1 - Lesson Plan](01-Day_GitHub-Pages/02.1-LESSON-PLAN.md)
 
-### Homework Activities
+  * [02.2 - Lesson Plan](02-Day_Deeper-CSS/02.2-LESSON-PLAN.md)
 
-* [Portfolio Revisited](../../../01-Class-Content/02-CSS-Bootstrap/02-Homework/Master/README.md)
+  * [02.3 - Lesson Plan](03-Day_Bootstrap/02.3-LESSON-PLAN.md)
 
-### Key Activities
+### Slide Decks
 
-* [Github Pages Deployed Site](../../../01-Class-Content/02-css-bootstrap/01-Activities/06-GithubPagesProject)
-* [Bootstrap Powered](../../../01-Class-Content/02-css-bootstrap/01-Activities/10-WheresCSS)
-* [Bootstrap Layout](../../../01-Class-Content/02-css-bootstrap/01-Activities/16-CardLayout)
-* [Media Queries](../../../01-Class-Content/02-css-bootstrap/01-Activities/18-StudentMedia)
+  * [02.1 Going Live](https://docs.google.com/presentation/d/1Q2ZDjg6QnvftZdLqRCn4xa3X5K_OWUTSZvANwacyASU/edit?usp=sharing)
 
-### Helpful Links
+  * [02.2 Down and Dirty CSS](https://docs.google.com/presentation/d/1mxlN69e3A-RnYpYLQ2oIpnXJAFAOq1OQ2wl_K-si4mw/edit?usp=sharing)
 
-* [Github Pages](https://pages.github.com/)
-* [Google Fonts](https://www.google.com/fonts)
-* [Web Design with HTML, CSS, JavaScript, and jQuery Book Set](https://www.amazon.com/Web-Design-HTML-JavaScript-jQuery/dp/1118907442)
-* [Bootstrap - Official Page](http://getbootstrap.com/)
-* [Bootstrap - W3Schools](http://www.w3schools.com/bootstrap/bootstrap_get_started.asp)
+  * [02.3 Bootstrap Layouts and Responsive Designs](https://docs.google.com/presentation/d/1qLWc1Cha9dZeWjEvtOH1cD06Wq4a80o6z175aRBPdcA/edit?usp=sharing)
 
-### Slide Shows
+### Time Tracker(s)
 
-* [2.1 - Going Live](https://docs.google.com/presentation/d/11RK-NMs6UMCj2pWx5vWG1dQuvKGbQ46QwnzAZtUzaWc/edit?usp=sharing)
-* [2.2 - Down and Dirty CSS](https://docs.google.com/presentation/d/19SuDB8hCpezLxRynQVPVorp147WlHky0Eda3Nflgb80/edit?usp=sharing)
-* [2.3 - Bootstrap Layouts and Responsive Designs](https://docs.google.com/presentation/d/1Jh6q12Se09VVVL93AAdeetbRtGZHv70ZU-U7wnBT6w4/edit?usp=sharing)
+  * [Unit 02-CSS-Bootstrap Day 1 Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/12s1Zl-VSOa1ZhgxSrjfON-SUHvKgvaiF/view?usp=sharing)
+
+  * [Unit 02-CSS-Bootstrap Day 2 Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1Dx5IKqvZOsUcPSx3T5FLPmWrMR4kPrSK/view?usp=sharing)
+
+  * [Unit 02-CSS-Bootstrap Day 3 Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1GIlEdmWazA-gaTGmtRkxQPJeQrSaRqlj/view?usp=sharing)
