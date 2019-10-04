@@ -230,8 +230,12 @@ console.log(weapons); // prints ["dragonglass", "Drogon", "Viserion", "Rhaegal",
 
   * Modify the `addition` function so that is uses the rest operator and maintains the same functionality. You should still be able to pass in any number of arguments. Run the code first in your console to see the functionality.
 
+<<<<<<< HEAD
 
 ### 9. Instructor Do: Review Rest and Spread Syntax (5 mins)
+=======
+### 20. Instructor Do: Review Rest and Spread Syntax (5 mins)
+>>>>>>> 462a98885e7d29729b3547d73506f782db71f5dc
 
 * Open [Solved/index.js](../../../../01-Class-Content/09-NodeJS/28-Stu_Rest_and_Spread/Solved/index.js) and step through the code.
 
@@ -836,7 +840,7 @@ Use the prompts and talking points below to demonstrate the following key point(
 
 * ✔️ We'll need to use the `fs.appendFile` method to append text to a `txt` file, keeping in mind that each line should be separated by a newline character (`\n`).
 
-* Open the [35-Stu-Joke-Saver/Solved/index.js](../../../../01-Class-Content/09-NodeJS/01-Activities/35-Stu-Joke-Saver/Basic/Solved/index.js) in your IDE and point out the following:
+* Open the [35-Stu-Joke-Saver/Solved/index.js](../../../../01-Class-Content/09-NodeJS/01-Activities/35-Stu-Joke-Saver/Solved/Basic/index.js) in your IDE and point out the following:
 
   * We first require the necessary packages.
 
