@@ -44,7 +44,7 @@ None
 
 * Using template literals, you can create multi-line strings and use string interpolation.
 
-* Demo the following code in [10-Ins_Template_Literals/index.js](../../../../01-Class-Content/09-nodejs/02-day/08-Ins_Template_Literals/index.js)
+* Demo the following code in [10-Ins_Template_Literals/index.js](../../../../01-Class-Content/09-NodeJS/23-Ins_Template_Literals/index.js)
 
 ```js
 const arya = {
@@ -68,7 +68,7 @@ console.log(greeting); // prints
 
 ### 2. Student Do: Template Literals (10 mins)
 
-* **File** [Unsolved/index.js](../../../../01-Class-Content/09-nodejs/02-day/09-Stu_Template_Literals/Solved/index.js)
+* **File** [Unsolved/index.js](../../../../01-Class-Content/09-NodeJS/24-Stu_Template_Literals/Solved/index.js)
 
 * **Instructions**
 
@@ -79,7 +79,7 @@ console.log(greeting); // prints
 
 ### 3. Instructor Do: Review Template Literals (5 mins)
 
-* Open [Solved/index.js](../../../../01-Class-Content/09-nodejs/02-day/09-Stu_Template_Literals/Solved/index.js) and review the code.
+* Open [Solved/index.js](../../../../01-Class-Content/09-NodeJS/24-Stu_Template_Literals/Solved/index.js) and review the code.
 
 * Let students know that they will get a lot more practice moving forward, the biggest takeaway is to know that you have this tool available to you.
 
@@ -125,7 +125,7 @@ for (const [key, value] of songs) {
 
 ### 5. Student Do: For...Of (10 mins)
 
-* **File:** [Unsolved/index.js](../../../../01-Class-Content/09-nodejs/02-day/11-Stu_For_Of/Unsolved/index.js)
+* **File:** [Unsolved/index.js](../../../../01-Class-Content/09-NodeJS/26-Stu_For_Of/Unsolved/index.js)
 
 * **Instructions:**
 
@@ -147,7 +147,7 @@ for (const [key, value] of songs) {
 
 * Students will now be introduced to the spread and rest syntax available in ES6.
 
-* Open [12-Ins_Spread_and_Rest/index.js](../../../../01-Class-Content/09-nodejs/02-day/12-Ins_Rest_and_Spread/index.js) and step through the code.
+* Open [12-Ins_Spread_and_Rest/index.js](../../../../01-Class-Content/09-NodeJS/27-Ins_Rest_and_Spread/index.js) and step through the code.
 
 #### Rest Parameters
 
@@ -193,6 +193,7 @@ function howManyArgs(...args) {
 console.log(howManyArgs(0, 1)); // You have passed 2 arguments.
 console.log(howManyArgs("argument!", null, ["one", 2, "three"], 4)); // You have passed 4 arguments.
 ```
+
 * The takeaway here is these variables are now available in an array inside our function, we can also pass in as many as we want.
 
 #### Spread Operator
@@ -219,7 +220,7 @@ console.log(weapons); // prints ["dragonglass", "Drogon", "Viserion", "Rhaegal",
 
 ### 8. Student Do: Rest and Spread Syntax (10 mins)
 
-* **File:** [Unsolved/index.js](../../../../01-Class-Content/09-nodejs/02-day/13-Stu_Rest_and_Spread/Unsolved/index.js)
+* **File:** [Unsolved/index.js](../../../../01-Class-Content/09-NodeJS/28-Stu_Rest_and_Spread/Unsolved/index.js)
 
 * **Instructions:**
 
@@ -232,10 +233,9 @@ console.log(weapons); // prints ["dragonglass", "Drogon", "Viserion", "Rhaegal",
 
 ### 9. Instructor Do: Review Rest and Spread Syntax (5 mins)
 
-* Open [Solved/index.js](../../../../01-Class-Content/09-nodejs/02-day/13-Stu_Rest_and_Spread/Solved/index.js) and step through the code.
+* Open [Solved/index.js](../../../../01-Class-Content/09-NodeJS/28-Stu_Rest_and_Spread/Solved/index.js) and step through the code.
 
-* This first part is relatively straightforeward, but check for understanding to see if there are any hangups for students.
-
+* This first part is relatively straight forward, but check for understanding to see if there are any hangups for students.
 
 ```js
 const songs = ["Creep", "Everlong", "Bulls On Parade", "Song 2", "What I Got"];
@@ -247,7 +247,6 @@ console.log(new_songs); // => ["Creep", "Everlong", "Bulls On Parade", "Song 2",
 * This one might have been a little tricky for students. There is a chance that they have not seen `reduce` before, so take a second to explain what it does. A
 
 * Let students know that it's very common to be introduced to new methods, functions and concepts on the job and they should embrace the uncertainty of new material.
-
 
 ```js
 
@@ -278,7 +277,7 @@ console.log(addition(1, 2, 3, 4, 100)); // 110
 
 * Explain that object destructuring is a way for us to pull properties off of an object an onto separate variables for easier access. We can achieve this without ES6, but now we have a newer shorthand for doing so.
 
-* Go through each example inside of [index.js](../../../../01-Class-Content/09-nodejs/02-day/14-Ins_ObjDestructuring/index.js).
+* Go through each example inside of [index.js](../../../../01-Class-Content/09-NodeJS/29-Ins_ObjDestructuring/index.js).
 
   * Highlight how we can destructure multiple object properties at once, saving us a few lines of code.
 
@@ -341,7 +340,7 @@ console.log(addition(1, 2, 3, 4, 100)); // 110
 
 ### 11. Student Do: Object Destructuring (10 mins)
 
-* **File:** [Unsolved/index.js](../../../../01-Class-Content/09-nodejs/02-day/15-Stu_ObjDestructuring/Unsolved/index.js)
+* **File:** [Unsolved/index.js](../../../../01-Class-Content/09-NodeJS/30-Stu_ObjDestructuring/Unsolved/index.js)
 
 * **Instructions:**
 
@@ -349,7 +348,7 @@ console.log(addition(1, 2, 3, 4, 100)); // 110
 
 ### 12. Instructor Do: Review Object Destructuring (5 mins)
 
-* Open [Solved/index.js](../../../../01-Class-Content/09-nodejs/02-day/15-Stu_ObjDestructuring/Solved/index.js) in your editor and walk students through the solved exercise.
+* Open [Solved/index.js](../../../../01-Class-Content/09-NodeJS/30-Stu_ObjDestructuring/Solved/index.js) in your editor and walk students through the solved exercise.
 
 ```js
 // 1. Object
@@ -412,7 +411,7 @@ console.log(alias, gender, family, spouse); // print them by variable name
 
 ### 15. Instructor Do: Preview (10 mins)
 
-* Welcome the class to our final lesson of Node.js.
+* Welcome the class back from break
 
   * The focus of today will be all things async.
   
@@ -896,7 +895,7 @@ Use the prompts and talking points below to demonstrate the following key point(
 
 * Open [35-Stu-Joke-Saver/Solved/Bonus/index.js](../../../../01-Class-Content/09-NodeJS/01-Activities/35-Stu-Joke-Saver/Solved/Bonus/index.js) in your IDE and explain the following:
 
-  * The functionally of these examples is the same, but there's a key difference in the way the code is written. Promises, similar to jQuery methods, are chainable
+  * The functionally of these examples is the same, but there's a key difference in the way the code is written. Promises, similar to jQuery methods, are chainable.
 
   ```js
   axios
