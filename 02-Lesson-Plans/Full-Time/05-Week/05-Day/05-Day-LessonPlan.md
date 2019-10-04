@@ -232,7 +232,7 @@ In this activity we will update the TV constructor function to be able to search
 
 ### 5. Student Do: ES6 Classes (15 mins)
 
-* Direct students to the instructions found in 
+* Direct students to the instructions found in [19-Stu-Classes/](../../../../01-Class-Content/10-OOP/01-Activities/19-Stu-Classes/)
 
 ```md
 # Classes
@@ -271,7 +271,7 @@ In this activity we will use classes to make two RPG characters match against ea
 
 ### 6. Instructor Do: Review ES6 Classes (5 mins)
 
-* Run [Solved/character.js](../../../../01-Class-Content/10-OOP/01-Activities/Solved/Solved/character.js) in a node process and demonstrate the following:
+* Run [19-Stu-Classes/Solved/character.js](../../../../01-Class-Content/10-OOP/01-Activities/19-Stu-Classes/Solved/character.js) in a node process and demonstrate the following:
 
   * Our Character class takes 3 arguments. 
 
@@ -669,7 +669,7 @@ In this activity we will extend basic vehicle classes with additional functional
 
 ### 11. Student Do: Multiple Classes (20 mins)
 
-* Direct students to the instructions found in [23-Stu-Multiple-Classes](../../../../01-Class-Content/10-OOP/01-Activities/Solved/23-Stu-Multiple-Classes)
+* Direct students to the instructions found in [23-Stu-Multiple-Classes](../../../../01-Class-Content/10-OOP/01-Activities/23-Stu-Multiple-Classes)
 
 ```md
 # Multiple Classes
@@ -875,7 +875,7 @@ The completed game should meet the following criteria:
   game.play();
   ```
 
-* Open [24-Mini-Project/Solved/Letter.js](../../../../01-Class-Content/10-OOP/01-Activities/24-Mini-Project/Solved/Letter.js) in your IDE and explain the following:
+* Open [24-Mini-Project/Solved/lib/Letter.js](../../../../01-Class-Content/10-OOP/01-Activities/24-Mini-Project/Solved/lib/Letter.js) in your IDE and explain the following:
 
   * The Letter Class is responsible for displaying either an underscore or the underlying character for each letter in the word.
 
@@ -921,7 +921,7 @@ The completed game should meet the following criteria:
   module.exports = Letter;
   ```
 
-* Open [24-Mini-Project/Solved/Word.js](../../../../01-Class-Content/10-OOP/01-Activities/24-Mini-Project/Solved/Word.js) in your IDE and explain the following:
+* Open [24-Mini-Project/Solved/lib/Word.js](../../../../01-Class-Content/10-OOP/01-Activities/24-Mini-Project/Solved/lib/Word.js) in your IDE and explain the following:
 
   * In the constructor, we create a new `Letter` object for each character in the word string.
 
@@ -977,7 +977,7 @@ The completed game should meet the following criteria:
   module.exports = Word;
   ```
 
-* Open [24-Mini-Project/Solved/Game.js](../../../../01-Class-Content/10-OOP/01-Activities/24-Mini-Project/Solved/Game.js) in your IDE and explain the following:
+* Open [24-Mini-Project/Solved/lib/Game.js](../../../../01-Class-Content/10-OOP/01-Activities/24-Mini-Project/Solved/lib/Game.js) in your IDE and explain the following:
 
   * The Game constructor is responsible for keeping score and controlling the flow of the overall game.
 

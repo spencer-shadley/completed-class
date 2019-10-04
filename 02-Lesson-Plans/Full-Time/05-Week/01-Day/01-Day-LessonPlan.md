@@ -160,7 +160,7 @@ This lesson introduces Node.js and the concepts of standard library, modules, np
 
 * Open [02-Stu_Hello-Node/Solved/index.js](../../../../01-Class-Content/09-NodeJS/01-Activities/02-Stu_Hello-Node/Solved/index.js) in your IDE and explain the following point(s):
 
-  * We simply use `console.log` to return the string, as previously demonstrated.
+  * We use `console.log` to return the string, as previously demonstrated.
 
   ```js
   console.log("Hellooo, Node!");
@@ -178,7 +178,7 @@ This lesson introduces Node.js and the concepts of standard library, modules, np
 
   * 🙋 We get an error, `window` is not defined in node.
 
-* Edit [02-Stu_Hello-Node/index.js](../../../../01-Class-Content/09-NodeJS/01-Activities/02-Stu_Hello-Node/index.js) to reflect the following: 
+* Edit [02-Stu_Hello-Node/Solved/index.js](../../../../01-Class-Content/09-NodeJS/01-Activities/02-Stu_Hello-Node/Solved/index.js) to reflect the following: 
 
   ```js
   console.log(window);
@@ -194,7 +194,7 @@ This lesson introduces Node.js and the concepts of standard library, modules, np
 
   * 🙋 We can't use prompts, confirms or alerts, because we don't have a browser window.
 
-* Edit [02-Stu_Hello-Node/index.js](../../../../01-Class-Content/09-NodeJS/01-Activities/02-Stu_Hello-Node/index.js) to reflect the following: 
+* Edit [02-Stu_Hello-Node/index.js](../../../../01-Class-Content/09-NodeJS/01-Activities/02-Stu_Hello-Node/Solved/index.js) to reflect the following: 
 
   ```js
   prompt("Hello World!");
@@ -1339,7 +1339,7 @@ npm install badmath --save
 
   * ✔️ We use the `JSON.stringify` optional `replacer` (`null`) and `space` (`\t`) parameters to format our `data` object with pretty-print appearance. 
 
-* Open [15-Stu_Inquirer-Users/index.js](../../../../01-Class-Content/09-NodeJS/01-Activities/15-Stu_Inquirer-Users/index.js) in your IDE and explain the following: 
+* Open [15-Stu_Inquirer-Users/index.js](../../../../01-Class-Content/09-NodeJS/01-Activities/15-Stu_Inquirer-Users/Solved/index.js) in your IDE and explain the following: 
 
   * 🔑 Our application requires two dependencies, one third-party (`inquirer`) the other standard library (`fs`).
 
@@ -1418,7 +1418,7 @@ npm install badmath --save
 
 * In this demonstration you will give students and overview of arrow functions, including syntax differences, when to use them, and when to avoid them.
 
-* Explain to the class that ES6 introduces a newer shorter syntax for writing functions. Consider the following example found in [01-syntax.js](../../../../01-Class-Content/09-NodeJS/16-Ins_ArrowFunction/01-syntax.js).
+* Explain to the class that ES6 introduces a newer shorter syntax for writing functions. Consider the following example found in [01-syntax.js](../../../../01-Class-Content/09-NodeJS/01-Activities/16-Ins_ArrowFunction/01-syntax.js).
 
 * Walk the students through each function below. See if they can point out the differences in syntax.
 
@@ -1448,7 +1448,7 @@ npm install badmath --save
 
 * Take a few moments to answer any questions about the arrow function syntax before moving on to some behavioral differences between arrow functions and regular functions.
 
-* Now walk through the first part of the code in [02-context.js](../../../../01-Class-Content/09-NodeJS/16-Ins_ArrowFunction/02-context.js).
+* Now walk through the first part of the code in [02-context.js](../../../../01-Class-Content/09-NodeJS/01-Activities/16-Ins_ArrowFunction/02-context.js).
 
   ```js
   // Depending on the environment `setTimeout` is called in, it may refer to one of two objects
@@ -1492,7 +1492,7 @@ npm install badmath --save
 
 * Explain that this may seem great, but we can experience unexpected results if we were to write an object's method as an arrow function. 
 
-* Demonstrate [03-arrow-property-methods.js](../../../../01-Class-Content/09-NodeJS/16-Ins_ArrowFunction/03-property-methods.js).
+* Demonstrate [03-arrow-property-methods.js](../../../../01-Class-Content/09-NodeJS/01-Activities/16-Ins_ArrowFunction/03-property-methods.js).
 
   ```js
   // Avoid using arrow functions for object methods
@@ -1530,11 +1530,11 @@ npm install badmath --save
 
 * Students won't need to fully understand how all the code in this activity works, just the rules we've established about when arrow functions should and shouldn't be used.
 
-* **File:** [Arrow Function Practice](../../../../01-Class-Content/09-NodeJS/17-Stu_ArrowFunctionPractice/Unsolved/index.js)
+* **File:** [Arrow Function Practice](../../../../01-Class-Content/09-NodeJS/01-Activities/17-Stu_ArrowFunctionPractice/Unsolved/index.js)
 
 * **Instructions**: 
 
-  * Open [Unsolved/index.js](../../../../01-Class-Content/09-NodeJS/17-Stu_ArrowFunctionPractice/Unsolved/index.js) in your editor and run the code. Take a few moments to study the values logged to the console, but don't worry about understanding every part of the code. For this activity you only need to remember the rules established about when arrow functions should and shouldn't be used.
+  * Open [Unsolved/index.js](../../../../01-Class-Content/09-NodeJS/01-Activities/17-Stu_ArrowFunctionPractice/Unsolved/index.js) in your editor and run the code. Take a few moments to study the values logged to the console, but don't worry about understanding every part of the code. For this activity you only need to remember the rules established about when arrow functions should and shouldn't be used.
 
   * Update this example to use arrow functions **where suitable**. If successful, the code should still work the exact same way.
 
@@ -1548,7 +1548,7 @@ npm install badmath --save
 
 ### 28. Instructor Do: Review Arrow Function Practice (5 mins)
 
-* Open [Arrow Function Practice](../../../../01-Class-Content/09-NodeJS/17-Stu_ArrowFunctionPractice/Solved/index.js) in your editor and run the code. 
+* Open [Arrow Function Practice](../../../../01-Class-Content/09-NodeJS/01-Activities/17-Stu_ArrowFunctionPractice/Solved/index.js) in your editor and run the code. 
 
 * Point out that even though we've converted a few of the examples over to use arrow functions, the code works exactly the same as it did before.
 
@@ -1620,7 +1620,7 @@ npm install badmath --save
 
 * This can help us avoid a few silly mistakes in our code. 
 
-* Point out the first example in [Let Block Scope](../../../../01-Class-Content/09-NodeJS/18-Ins_LetAndBlockScope/index.js).
+* Point out the first example in [Let Block Scope](../../../../01-Class-Content/09-NodeJS/01-Activities/18-Ins_LetAndBlockScope/index.js).
 
   ```js
   // 1. When using var, our counter exists after a for-loop is done
@@ -1714,7 +1714,7 @@ npm install badmath --save
 
 * Inform the class that using `const` can help prevent us from accidentally reassigning values we don't mean to, and also helps express intent, helping us document important values in our code for other developers, or for our future selves when we forget how the code works.
 
-* Open [Constant Reference](../../../../01-Class-Content/09-NodeJS/19-Ins_ConstantReference/index.js) and go through each example.
+* Open [Constant Reference](../../../../01-Class-Content/09-NodeJS/01-Activities/19-Ins_ConstantReference/index.js) and go through each example.
 
   ```js
   // const can be used for values which we will not reassign
@@ -1809,13 +1809,13 @@ npm install badmath --save
 
 * Stress that students don't need to completely understand all of the code in the activity. They just need to remember what we just overed about `const`, `let`, and arrow functions.
 
-* **File:** [Convert Const Let Arrow](../../../../01-Class-Content/09-NodeJS/20-Stu_ConvertConstLetArrow/Unsolved/index.html)
+* **File:** [Convert Const Let Arrow](../../../../01-Class-Content/09-NodeJS/01-Activities/20-Stu_ConvertConstLetArrow/Unsolved/index.html)
 
 * **Instructions**: 
 
-  * Open [Unsolved/index.html](../../../../01-Class-Content/09-NodeJS/20-Stu_ConvertConstLetArrow/Unsolved/index.html) in your web browser and take a moment to understand the application's functionality.
+  * Open [Unsolved/index.html](../../../../01-Class-Content/09-NodeJS/01-Activities/20-Stu_ConvertConstLetArrow/Unsolved/index.html) in your web browser and take a moment to understand the application's functionality.
 
-  * Now open [Unsolved/index.js](../../../../01-Class-Content/09-NodeJS/20-Stu_ConvertConstLetArrow/Unsolved/index.js) in your code editor and convert the existing code over to use the ES6 syntax we've learned about in the previous examples.
+  * Now open [Unsolved/index.js](../../../../01-Class-Content/09-NodeJS/01-Activities/20-Stu_ConvertConstLetArrow/Unsolved/index.js) in your code editor and convert the existing code over to use the ES6 syntax we've learned about in the previous examples.
 
   * Make sure to do the following:
 
@@ -1831,7 +1831,7 @@ npm install badmath --save
 
 ### 32. Instructor Do: Review Convert Const Let Arrow (5 mins)
 
-* Open [Solved/index.js](../../../../01-Class-Content/09-NodeJS/20-Stu_ConvertConstLetArrow/Solved/index.js) in your code editor and walk through the code with the class.
+* Open [Solved/index.js](../../../../01-Class-Content/09-NodeJS/01-Activities/20-Stu_ConvertConstLetArrow/Solved/index.js) in your code editor and walk through the code with the class.
 
 * For every `let`, ask the class: "Why it isn't a `const` instead?"
 
@@ -1856,7 +1856,7 @@ npm install badmath --save
 
 * Explain that `filter` and `map` are used heavily in React when rendering elements from array data. Students have probably seen `forEach` already, but it's a good stepping stone for understanding `filter` and `map`.
 
-* Go through each example in [index.js](../../../../01-Class-Content/09-NodeJS/21-Ins_FunctionalLoops/index.js) one at a time to demonstrate the utility of `forEach`, `filter`, and `map`.
+* Go through each example in [index.js](../../../../01-Class-Content/09-NodeJS/01-Activities/21-Ins_FunctionalLoops/index.js) one at a time to demonstrate the utility of `forEach`, `filter`, and `map`.
 
 ```js
 const moviePatrons = [
@@ -1915,11 +1915,11 @@ console.log(cardedMoviePatrons);
 
 * Consider live-coding each problem piece by piece over the duration of the activity.
 
-* **Files**: [Functional Loops Unsolved](../../../../01-Class-Content/09-NodeJS/22-Stu_FunctionalLoops/Unsolved)
+* **Files**: [Functional Loops Unsolved](../../../../01-Class-Content/09-NodeJS/01-Activities/22-Stu_FunctionalLoops/Unsolved)
 
 * **Instructions**
 
-  * Open [Functional Loops Unsolved](../../../../01-Class-Content/09-NodeJS/22-Stu_FunctionalLoops/Unsolved) and examine the `map.js` and `filter.js` files. 
+  * Open [Functional Loops Unsolved](../../../../01-Class-Content/09-NodeJS/01-Activities/22-Stu_FunctionalLoops/Unsolved) and examine the `map.js` and `filter.js` files. 
 
   * Study the examples provided and complete the problems outlined in the comments.
 
@@ -1929,7 +1929,7 @@ console.log(cardedMoviePatrons);
 
 ### 35. Instructor Do: Review Functional Loops (5 mins)
 
-* Once time's up, open the [activity solution](../../../../01-Class-Content/09-NodeJS/22-Stu_FunctionalLoops/Solved) and go over the code.
+* Once time's up, open the [activity solution](../../../../01-Class-Content/09-NodeJS/01-Activities/22-Stu_FunctionalLoops/Solved) and go over the code.
 
 * Start by demonstrating the `map` example.
 

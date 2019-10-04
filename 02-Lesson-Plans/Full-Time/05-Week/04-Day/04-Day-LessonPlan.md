@@ -794,7 +794,7 @@ In this activity you will work with a partner to dissect the provided testing ex
 
 ### 14. Students Do: Structured Tests (15 mins)
 
-* Direct students to the next activity, found in [11-Ins_Organizing-Tests/Unsolved](../../../../01-Class-Content/10-oop/01-Activities/11-Ins_Organizing-Tests/Unsolved).
+* Direct students to the next activity, found in [12-Stu_Structured-Tests/Unsolved](../../../../01-Class-Content/10-oop/01-Activities/12-Stu_Structured-Tests/Unsolved).
 
   ```md
   # Structured Tests
