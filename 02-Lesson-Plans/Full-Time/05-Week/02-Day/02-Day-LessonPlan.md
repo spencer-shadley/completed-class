@@ -230,12 +230,8 @@ console.log(weapons); // prints ["dragonglass", "Drogon", "Viserion", "Rhaegal",
 
   * Modify the `addition` function so that is uses the rest operator and maintains the same functionality. You should still be able to pass in any number of arguments. Run the code first in your console to see the functionality.
 
-<<<<<<< HEAD
 
 ### 9. Instructor Do: Review Rest and Spread Syntax (5 mins)
-=======
-### 20. Instructor Do: Review Rest and Spread Syntax (5 mins)
->>>>>>> 462a98885e7d29729b3547d73506f782db71f5dc
 
 * Open [Solved/index.js](../../../../01-Class-Content/09-NodeJS/01-Activities/28-Stu_Rest_and_Spread/Solved/index.js) and step through the code.
 
