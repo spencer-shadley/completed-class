@@ -36,7 +36,7 @@ None
 
 ## Class Instruction
 
-### 12. Instructor Do: Template Literals Demo (5 mins)
+### 1. Instructor Do: Template Literals Demo (5 mins)
 
 * Students will now be introducted to template literals, a new feature in ES6.
 
@@ -66,7 +66,7 @@ console.log(greeting); // prints
 
 * Also point out that we created a multiline string without using `\n`.
 
-### 13. Student Do: Template Literals (10 mins)
+### 2. Student Do: Template Literals (10 mins)
 
 * **File** [Unsolved/index.js](../../../../01-Class-Content/09-nodejs/02-day/09-Stu_Template_Literals/Solved/index.js)
 
@@ -77,13 +77,13 @@ console.log(greeting); // prints
   * Then use template literal syntax to display your objects data. When you open `index.html` you should see the results if completed successfully.
 
 
-### 14. Instructor Do: Review Template Literals (5 mins)
+### 3. Instructor Do: Review Template Literals (5 mins)
 
 * Open [Solved/index.js](../../../../01-Class-Content/09-nodejs/02-day/09-Stu_Template_Literals/Solved/index.js) and review the code.
 
 * Let students know that they will get a lot more practice moving forward, the biggest takeaway is to know that you have this tool available to you.
 
-### 15. Instructor Do: For...Of Demo (5 mins)
+### 4. Instructor Do: For...Of Demo (5 mins)
 
 * Students will now be introduced to the For...Of syntax provided in ES6.
 
@@ -123,7 +123,7 @@ for (const [key, value] of songs) {
 
 * Explain that the for...in loop is very flexible and we will continue to learn about it's use cases as we progress through the course.
 
-### 16. Student Do: For...Of (10 mins)
+### 5. Student Do: For...Of (10 mins)
 
 * **File:** [Unsolved/index.js](../../../../01-Class-Content/09-nodejs/02-day/11-Stu_For_Of/Unsolved/index.js)
 
@@ -135,7 +135,7 @@ for (const [key, value] of songs) {
 
   * Add a `class` that changes the color to red (you have to create this class in your CSS file)
 
-### 17. Instructor Do: Review For...Of (5 mins)
+### 6. Instructor Do: Review For...Of (5 mins)
 
 * Review the previous activity. 
 
@@ -143,7 +143,7 @@ for (const [key, value] of songs) {
 
 * They syntax is relatively straightforward, the key takeaway is knowing when to use and and what to use it for.
 
-### 18. Instructor Do: Rest and Spread Demo (5 mins)
+### 7. Instructor Do: Rest and Spread Demo (5 mins)
 
 * Students will now be introduced to the spread and rest syntax available in ES6.
 
@@ -217,7 +217,7 @@ console.log(weapons); // prints ["dragonglass", "Drogon", "Viserion", "Rhaegal",
 
 * Take any clarifying questions before moving on.
 
-### 19. Student Do: Rest and Spread Syntax (10 mins)
+### 8. Student Do: Rest and Spread Syntax (10 mins)
 
 * **File:** [Unsolved/index.js](../../../../01-Class-Content/09-nodejs/02-day/13-Stu_Rest_and_Spread/Unsolved/index.js)
 
@@ -230,7 +230,7 @@ console.log(weapons); // prints ["dragonglass", "Drogon", "Viserion", "Rhaegal",
   * Modify the `addition` function so that is uses the rest operator and maintains the same functionality. You should still be able to pass in any number of arguments. Run the code first in your console to see the functionality.
 
 
-### 20. Instructor Do: Review Rest and Spread Syntax (5 mins)
+### 9. Instructor Do: Review Rest and Spread Syntax (5 mins)
 
 * Open [Solved/index.js](../../../../01-Class-Content/09-nodejs/02-day/13-Stu_Rest_and_Spread/Solved/index.js) and step through the code.
 
@@ -272,7 +272,7 @@ console.log(addition(1, 2, 3, 4, 100)); // 110
 
 * Take any remaining questions before moving on.
 
-### 21. Instructor Do: Object Destructuring (10 mins)
+### 10. Instructor Do: Object Destructuring (10 mins)
 
 * In this example, students will be introduced to the ES6 object destructuring syntax.
 
@@ -339,7 +339,7 @@ console.log(addition(1, 2, 3, 4, 100)); // 110
   betterLogCharacter(jaime);
   ```
 
-### 22. Student Do: Object Destructuring (10 mins)
+### 11. Student Do: Object Destructuring (10 mins)
 
 * **File:** [Unsolved/index.js](../../../../01-Class-Content/09-nodejs/02-day/15-Stu_ObjDestructuring/Unsolved/index.js)
 
@@ -347,7 +347,7 @@ console.log(addition(1, 2, 3, 4, 100)); // 110
 
   * Following the comments in `index.js`, write code that successfully `console.log`'s the statements.
 
-### 23. Instructor Do: Review Object Destructuring (5 mins)
+### 12. Instructor Do: Review Object Destructuring (5 mins)
 
 * Open [Solved/index.js](../../../../01-Class-Content/09-nodejs/02-day/15-Stu_ObjDestructuring/Solved/index.js) in your editor and walk students through the solved exercise.
 
@@ -400,13 +400,17 @@ console.log(alias, gender, family, spouse); // print them by variable name
 
 * Check for understanding and take questions to clarify before closing for the day.
 
+### 13. Review Unit 09 (30 mins)
+
+* Use the remaining time before lunch to review unit 09.
+
 - - -
 
-### BREAK (30 mins)
+### 14. BREAK (30 mins)
 
 - - -
 
-### 1. Instructor Do: Preview (10 mins)
+### 15. Instructor Do: Preview (10 mins)
 
 * Welcome the class to our final lesson of Node.js.
 
@@ -434,7 +438,7 @@ console.log(alias, gender, family, spouse); // print them by variable name
 
 * Answer any high-level questions about the Mini Project or lesson ahead before students begin the first activity of the day.
 
-### 2. Students Do: Callback Review (10 mins)
+### 16. Students Do: Callback Review (10 mins)
 
 * Direct students to the activity found in [31-Stu_Callback-Review](../../../../01-Class-Content/09-NodeJS/01-Activities/31-Stu_Callback-Review/README.md).
 
@@ -472,7 +476,7 @@ In this activity, you will write code to read a file containing a list of dogs a
 * Check out the [`JSON.stringify` documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)
 ```
 
-### 3. Instructor Do: Review Callbacks Activity (5 mins)
+### 17. Instructor Do: Review Callbacks Activity (5 mins)
 
 * Use the prompts and talking points below to demonstrate the following key point(s):
 
@@ -568,7 +572,7 @@ In this activity, you will write code to read a file containing a list of dogs a
 
 * Answer any questions before proceeding to the next demo.
 
-### 4. Instructor Do: Axios Demo (5 mins)
+### 18. Instructor Do: Axios Demo (5 mins)
 
 * Use the prompts and talking points below to demonstrate the following key point(s):
 
@@ -617,7 +621,7 @@ In this activity, you will write code to read a file containing a list of dogs a
 
 * Answer any questions before the next activity.
 
-### 5. Students Do: Axios (10 mins)
+### 19. Students Do: Axios (10 mins)
 
 * Direct students to the activity found in [32-Stu_Axios/README.md](../../../../01-Class-Content/09-NodeJS/01-Activities/33-Stu_Axios/README.md).
 
@@ -655,7 +659,7 @@ In this activity, you will utilize the axios library to make a request to the Gi
 * Check out the [axios documentation](https://github.com/axios/axios) and look for examples for the `get` method.
 ```
 
-### 6. Instructor Do: Review Axios (5 mins)
+### 20. Instructor Do: Review Axios (5 mins)
 
 * Use the prompts and talking points below to demonstrate the following key point(s):
 
@@ -710,7 +714,7 @@ In this activity, you will utilize the axios library to make a request to the Gi
 
 * Answer any questions before moving on to the next demonstration.
 
-### 7. Instructor Do: Introduce Promises (5 mins)
+### 21. Instructor Do: Introduce Promises (5 mins)
 
 Use the prompts and talking points below to demonstrate the following key point(s):
 
@@ -785,7 +789,7 @@ Use the prompts and talking points below to demonstrate the following key point(
 
   * 🙋 Now that we've had a chance to practice writing basic Promise syntax, we're ready to go over some of the benefits of Promises over callbacks. We'll begin to see this during the review of the next activity.
 
-### 8. Students Do: Joke Saver (10 mins)
+### 22. Students Do: Joke Saver (10 mins)
 
 * Direct students to the instructions found in [35-Stu-Joke-Saver/README.md](../../../../01-Class-Content/09-NodeJS/01-Activities/35-Stu-Joke-Saver/README.md):
 
@@ -823,7 +827,7 @@ In this activity, you will write code to get a random joke from an API, append t
 * Chain the calls to `axios.get`, `fs.appendFile`, and `fs.readFile` rather than nest them. See more about Promise chaining from the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises#Chaining).
 ```
 
-### 9. Instructor Do: Review Joke Saver (5 mins)
+### 23. Instructor Do: Review Joke Saver (5 mins)
 
 Use the prompts and talking points below to demonstrate the following key point(s):
 
@@ -935,7 +939,7 @@ Use the prompts and talking points below to demonstrate the following key point(
 
 * Answer any remaining questions before the next activity.
 
-### 10. Instructor Do: Introduce the Promise Constructor (10 mins)
+### 24. Instructor Do: Introduce the Promise Constructor (10 mins)
 
 * Use the following talking points below:
 
@@ -988,7 +992,7 @@ Use the prompts and talking points below to demonstrate the following key point(
 
 * Take a moment to answer any questions before moving on to the next activity.
 
-### 11. Students Do: Promise Constructor (10 mins)
+### 25. Students Do: Promise Constructor (10 mins)
 
 * Direct students to the instructions found in [37-Stu_Promise-Constructor/README.md](../../../../01-Class-Content/09-NodeJS/01-Activities/37-Stu_Promise-Constructor/README.md):
 
@@ -1030,7 +1034,7 @@ In this activity, you will refactor a callback-based asynchronous function to ut
 * Check out the [MDN Documentation on Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 ```
 
-### 12. Instructor Do: Review Promise Constructor (5 mins)
+### 26. Instructor Do: Review Promise Constructor (5 mins)
 
 * Use the prompts and talking points below to demonstrate the following key point(s):
 
@@ -1070,7 +1074,7 @@ In this activity, you will refactor a callback-based asynchronous function to ut
 
 * Answer any remaining questions before the next activity.
 
-### 13. Instructor Do: Introduce Async/Await (10 mins)
+### 27. Instructor Do: Introduce Async/Await (10 mins)
 
 * Use the prompts and talking points below to demonstrate the following key point(s):
 
@@ -1141,7 +1145,7 @@ In this activity, you will refactor a callback-based asynchronous function to ut
 
 * Answer any questions before moving on to the next activity.
 
-### 14. Students Do: Async/Await (15 mins)
+### 28. Students Do: Async/Await (15 mins)
 
 * Direct students to the instructions found in [39-Stu_Async-Await/README.md](../../../../01-Class-Content/09-NodeJS/01-Activities/39-Stu_Async-Await/README.md):
 
@@ -1183,7 +1187,7 @@ In this activity, you will convert a previous Promise-based activity to utilize 
 * Sort animals by age before saving them to the `combined.json` file.
 ```
 
-### 15. Instructor Do: Review Async/Await (10 mins)
+### 29. Instructor Do: Review Async/Await (10 mins)
 
 * Use the prompts and talking points below to demonstrate the following key point(s):
 

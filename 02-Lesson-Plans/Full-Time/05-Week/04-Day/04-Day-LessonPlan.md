@@ -6,6 +6,8 @@ Today's class introduces students to test-driven-development and unit testing Ja
 
 ## Instructor Notes
 
+* Complete activities 07-16 in Unit 10.
+
 ## Learning Objectives
 
 * Explain the benefits of test-driven-development
@@ -30,7 +32,7 @@ N/A
 
 ## Class Instruction
 
-### 13. Student Do: Tamagotchi App (25 mins)
+### 1. Student Do: Tamagotchi App (25 mins)
 
 * Direct students to the final activity, located in [07-Stu_Tamagotchi](../../../../01-Class-Content/10-OOP/01-Activities/07-Stu_Tamagotchi).
 
@@ -84,7 +86,7 @@ N/A
 * BONUS: Make it so your Tamagotchis run off of user-input from the command line. It may sound easy at first, but this can actually be quite challenging. We will be going over this in more detail during the next class.
 ```
 
-### 14. Instructor Do: Review Tamagotchi (5 mins)
+### 2. Instructor Do: Review Tamagotchi (5 mins)
 
 * Open [07-Stu_Tamagotchi/Solved/tamagotchi.js](../../../../01-Class-Content/10-OOP/01-Activities/07-Stu_Tamagotchi/Solved/tamagotchi.js) in your IDE and explain  the following to students:
 
@@ -205,7 +207,7 @@ N/A
   var method = process.argv[3];
   ```
 
-### 1. Instructor Do: Introduce Testing (10 mins)
+### 3. Instructor Do: Introduce Testing (10 mins)
 
 * Welcome students to class.
 
@@ -245,11 +247,11 @@ N/A
 
 * Take a few minutes to answer any questions students may be before proceeding to the next activity.
 
-### 2. Students Do: TDD Research (10 min)
+### 4. Students Do: TDD Research (10 min)
 
 * Direct students to work in pairs to spend the next few minutes researching test-driven-development and its benefits.
 
-### 3. Instructor Do: Review TDD Research (5 min)
+### 5. Instructor Do: Review TDD Research (5 min)
 
 * Ask the class the following question(s) and call on students for the corresponding answer(s):
 
@@ -275,7 +277,7 @@ N/A
 
 * Take a moment to answer any remaining questions.
 
-### 4. Students Do: Testing Dissect (10 min)
+### 6. Students Do: Testing Dissect (10 min)
 
 * Direct students to the next activity, found in [01-Activities/08-Stu_TDD-Dissect](../../../../01-Class-Content/10-oop/01-Activities/08-Stu_TDD-Dissect).
 
@@ -299,7 +301,7 @@ In this activity you will work with a partner to dissect the provided testing ex
 * Have any conclusions as well as remaining questions ready to share during the activity review.
 ```
 
-### 5. Instructor Do: Review TDD Dissect (5 mins)
+### 7. Instructor Do: Review TDD Dissect (5 mins)
 
 * Use the prompts and talking points below to demonstrate the following key point(s):
 
@@ -478,7 +480,7 @@ In this activity you will work with a partner to dissect the provided testing ex
 
 * Take a few minutes to answer lingering questions before the next activity.
 
-### 6. Students Do: TDD (15 mins)
+### 8. Students Do: TDD (15 mins)
 
 * Direct students to the next activity, found in [09-Stu_TDD/Unsolved](../../../../01-Class-Content/10-oop/01-Activities/09-Stu_TDD/Unsolved).
 
@@ -512,7 +514,7 @@ In this activity you will work with a partner to dissect the provided testing ex
   * Use the previous example as a reference.
   ```
 
-### 7. Instructor Do: Review TDD (5 mins)
+### 9. Instructor Do: Review TDD (5 mins)
 
 * Use the prompts and talking points below to demonstrate the following key point(s):
 
@@ -600,7 +602,7 @@ In this activity you will work with a partner to dissect the provided testing ex
 
 * Take a moment to answer any questions before the next activity.
 
-### 8. Students Do: Make The Tests Pass (15 mins)
+### 10. Students Do: Make The Tests Pass (15 mins)
 
 * Direct students to the next activity, found in [10-Stu_Pass-Tests/Unsolved](../../../../01-Class-Content/10-oop/01-Activities/10-Stu_Pass-Tests/Unsolved).
 
@@ -618,7 +620,7 @@ In this activity you will work with a partner to dissect the provided testing ex
   * After completing each method, run `npm run test` in your terminal to verify you correctly implemented the method before moving on to the next one.
   ```
 
-### 9. Instructor Do: Review Make The Tests Pass (5 mins)
+### 11. Instructor Do: Review Make The Tests Pass (5 mins)
 
 * Use the prompts and talking points below to review the following key point(s):
 
@@ -661,7 +663,9 @@ In this activity you will work with a partner to dissect the provided testing ex
 
 * Take a moment to answer any remaining questions about the activity.
 
-### 10. Instructor Do: Organizing Tests (10 mins)
+### 12. BREAK (30 mins)
+
+### 13. Instructor Do: Organizing Tests (10 mins)
 
 * Use the prompts and talking points below to review the following key point(s):
 
@@ -788,7 +792,7 @@ In this activity you will work with a partner to dissect the provided testing ex
 
 * Take a minute to answer any questions about the AAA pattern and positive, negative, and exception tests.
 
-### 11. Students Do: Structured Tests (15 mins)
+### 14. Students Do: Structured Tests (15 mins)
 
 * Direct students to the next activity, found in [11-Ins_Organizing-Tests/Unsolved](../../../../01-Class-Content/10-oop/01-Activities/11-Ins_Organizing-Tests/Unsolved).
 
@@ -838,7 +842,7 @@ In this activity you will work with a partner to dissect the provided testing ex
     * Exception tests: What happens in cases when an error should be thrown?
   ```
 
-### 12. Instructor Do: Review Structured Tests (15 mins)
+### 15. Instructor Do: Review Structured Tests (15 mins)
 
 * Use the prompts and talking points below to demonstrate the following key point(s):
 
@@ -910,11 +914,7 @@ In this activity you will work with a partner to dissect the provided testing ex
 
 - - -
 
-### 13. BREAK (15 mins)
-
-- - -
-
-### 14. Instructor Do: Introduce Mocks (10 mins)
+### 16. Instructor Do: Introduce Mocks (10 mins)
 
 * Use the prompts and talking points below to review the following key point(s):
 
@@ -1011,7 +1011,7 @@ In this activity you will work with a partner to dissect the provided testing ex
 
 * Answer any lingering questions before moving on to the next activity.
 
-### 15. Students Do: First Mock (15 mins)
+### 17. Students Do: First Mock (15 mins)
 
 * Direct students to the next activity, found in [14-Stu_First-Mock/Unsolved](../../../../01-Class-Content/10-oop/01-Activities/14-Stu_First-Mock/Unsolved).
 
@@ -1031,7 +1031,7 @@ In this activity you will work with a partner to dissect the provided testing ex
   * Use the previous demonstration as a reference for setting up mocks and spies.
   ```
 
-### 16. Instructor Do: Review First Mock (10 mins)
+### 18. Instructor Do: Review First Mock (10 mins)
 
 * Use the prompts and talking points below to review the following key point(s):
 
@@ -1069,7 +1069,7 @@ In this activity you will work with a partner to dissect the provided testing ex
 
 * Take a moment to answer any lingering questions.
 
-### 17. Instructor Do: Module Mock Demo (5 mins)
+### 19. Instructor Do: Module Mock Demo (5 mins)
 
 * Use the prompts and talking points below to review the following key point(s):
 
@@ -1125,7 +1125,7 @@ In this activity you will work with a partner to dissect the provided testing ex
 
 * Take a moment to answer any questions about this example before moving on.
 
-### 18. Students Do: Mock FS (10 mins)
+### 20. Students Do: Mock FS (10 mins)
 
 * Direct students to the next activity, found in [16-Stu_Mock-Fs/Unsolved](../../../../01-Class-Content/10-oop/01-Activities/16-Stu_Mock-Fs/Unsolved).
 
@@ -1155,7 +1155,7 @@ In this activity you will write code to mock and spy on the `fs` module to ensur
 * Write tests for a `FileIO.prototype.append` method that should append to a given file. Then update the `Unsolved/fileIO.js` file to include this method using the `fs.appendFileSync` method.
 ```
 
-### 19. Instructor Do: Review Mock FS (10 mins)
+### 21. Instructor Do: Review Mock FS (10 mins)
 
 * Use the prompts and talking points below to review the following key point(s):
 
@@ -1206,7 +1206,7 @@ In this activity you will write code to mock and spy on the `fs` module to ensur
 
 * Answer any lingering questions about testing or mocks before dismissing the class.
 
-### Review (30 mins)
+### 22. Review (30 mins)
 
 ### Lesson Plan Feedback
 

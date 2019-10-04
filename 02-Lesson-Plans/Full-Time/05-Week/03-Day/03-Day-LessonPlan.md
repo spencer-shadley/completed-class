@@ -12,8 +12,7 @@ In this class we will be introducing students to the usage of JavaScript constru
 
 ## Instructor's Notes
 
-@TODO
-* `Summary: Complete activities 1-7 in Unit 10`
+* `Summary: Complete activity 40 in Unit 9 and 1-6 in Unit 10`
 
 * Constructors are extremely useful in creating objects of similar types and allow for the development of very interesting applications. Make sure your students have a firm understanding of how objects function.
 
@@ -39,13 +38,13 @@ In this class we will be introducing students to the usage of JavaScript constru
 
 ## Class Instruction
 
-### 17. Instructor Do: Introduce Mini Project (5 mins)
+### 1. Instructor Do: Introduce Mini Project (5 mins)
 
 * Run the mini-project solution found in [40-Stu_Mini-Project/Solved/Bonus/index.js](../../../../01-Class-Content/09-NodeJS/01-Activities/40-Stu_Mini-Project/Solved/Bonus/index.js) without demonstrating any of the code.
 
 * Answer any questions students may have about the intended functionality of this completed activity.
 
-### 18. Students Do: Mini Project (60 mins)
+### 2. Students Do: Mini Project (60 mins)
 
 * Direct students to the instructions found in [40-Stu_Mini-Project](../../../../01-Class-Content/09-NodeJS/01-Activities/40-Stu_Mini-Project/README.md):
 
@@ -72,7 +71,7 @@ In this activity, you will build a command-line tool that generates and HTML por
 * It may be a good idea to start building out the HTML skeleton in a real HTML file. Once you're happy with the HTML file's appearance in the browser, you can copy/paste its contents into a string template literal and write a function to insert the user input into the appropriate places in the HTML string before writing it to the filesystem.
 ```
 
-### 19. Instructor Do: Review Mini Project (10 mins)
+### 3. Instructor Do: Review Mini Project (10 mins)
 
 * Use the prompts and talking points below to demonstrate the following key point(s):
 
@@ -212,11 +211,15 @@ In this activity, you will build a command-line tool that generates and HTML por
 
 - - -
 
-### BREAK (30 mins)
+### 4. Review Mini Project and Unit 09 (30 mins)
+
+* Continue to answer students lingering questions about the Mini Project. If no questions arise, lead a review session on unit 09 until the break.
+
+### 5. BREAK (30 mins)
 
 - - -
 
-### 1. Instructor Do: Welcome Class (5 mins)
+### 6. Instructor Do: Welcome Class (5 mins)
 
 * Welcome students to class.
 
@@ -254,7 +257,7 @@ In this activity, you will build a command-line tool that generates and HTML por
 
   * 🙋 Program some objects!
 
-### 2. Students Do: Raining Cats and Dogs (15 mins)
+### 7. Students Do: Raining Cats and Dogs (15 mins)
 
 * Direct students to the activity found in [01-Stu_Cats-And-Dogs](../../../../01-Class-Content/10-OOP/01-Activities/01-Stu_Cats-And-Dogs)
 
@@ -292,7 +295,7 @@ In this activity you will make a cat object and dog object each with three keys.
 * See if there is anyway to further optimize your code.
 ```
 
-### 3. Instructor Do: Review Raining Cats and Dogs (5 mins)
+### 8. Instructor Do: Review Raining Cats and Dogs (5 mins)
 
 * Use the prompts and talking points below to demonstrate the following key point(s):
 
@@ -349,7 +352,7 @@ In this activity you will make a cat object and dog object each with three keys.
 
 * Use the discussion to transition to the next topic.
 
-### 4. Instructor Do: Cats and Dogs with Constructors! (10 min)
+### 9. Instructor Do: Cats and Dogs with Constructors! (10 min)
 
 * Use the prompts and talking points below to demonstrate the following key point(s):
 
@@ -409,7 +412,7 @@ In this activity you will make a cat object and dog object each with three keys.
 
 * Use the discussion to transition to the next activity.
 
-### 5. Student Do: MiniBank (20 mins)
+### 10. Student Do: MiniBank (20 mins)
 
 * Direct students to the next activity, found in [03-Stu_Mini-Bank](../../../../01-Class-Content/10-OOP/01-Activities/03-Stu_Mini-Bank/Unsolved).
 
@@ -457,7 +460,7 @@ Update the `createMiniBank` function to achieve the following:
 * Add code to return a copy of the `statement` when `getStatement` is called, rather than returning the original array.
 ```
 
-### 6. Instructor Do: Review Mini-Bank (10 mins)
+### 11. Instructor Do: Review Mini-Bank (10 mins)
 
 * Use the prompts and talking points below to demonstrate the following key point(s):
 
@@ -523,7 +526,7 @@ Update the `createMiniBank` function to achieve the following:
 
   * 🙋 The use of objects and constructors allows us to create a single blueprint, that we can then use to create as many instances of our `MiniBank` as we like.
 
-### 7. Student Do: Weather Admin (15 mins)
+### 12. Student Do: Weather Admin (15 mins)
 
 * Direct students to the next activity located in [04-Stu_Weather-Admin/Unsolved](../../../../01-Class-Content/10-OOP/01-Activities/04-Stu_Weather-Admin/Unsolved).
 
@@ -541,7 +544,7 @@ In this activity you will create a CLI based weather application that will give 
 * Unfortunately, this app is also broken. Try to run it as either a user or admin and fix the actual errors that appear in the console and then any "logic" errors that prevent the expected behavior.
 ```
 
-### 8. Instructor Do: Review Weather Admin (10 mins)
+### 13. Instructor Do: Review Weather Admin (10 mins)
 
 * Use the prompts and talking points below to demonstrate the following key point(s):
 
@@ -676,7 +679,7 @@ In this activity you will create a CLI based weather application that will give 
   }
   ```
 
-### 10. Instructor Do: Introduce Prototypes (15 mins)
+### 14. Instructor Do: Introduce Prototypes (15 mins)
 
 * Use the prompts and talking points below to demonstrate the following key point(s):
 
@@ -764,7 +767,7 @@ In this activity you will create a CLI based weather application that will give 
 
 * Use the discussion to transition to the next topic.
 
-### 11. Student Do: RPG Prototype (20 mins)
+### 15. Student Do: RPG Prototype (20 mins)
 
 * Direct students to the next activity, located in [06-Stu_RPG-Prototypes](../../../../01-Class-Content/10-OOP/01-Activities/06-Stu_RPG-Prototypes).
 
@@ -802,7 +805,7 @@ In this activity you will generate RPG characters using Objects and prototypes.
   * LevelUp: Function which increases this character's Age by 1, their Strength by 5, and their HitPoints by 25.
 ```
 
-### 12. Instructor Do: Review RPG (10 mins)
+### 16. Instructor Do: Review RPG (10 mins)
 
 * Open [06-Stu_RPG-Prototypes/Solved/rpg-prototypes.js](../../../../01-Class-Content/10-OOP/01-Activities/06-Stu_RPG-Prototypes/Solved/rpg-prototypes.js) in your IDE and explain  the following to students:
 
