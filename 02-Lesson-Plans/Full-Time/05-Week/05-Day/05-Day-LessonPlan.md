@@ -1,5 +1,4 @@
-## Day 5 - The Power of Packages (10:00 AM)
-
+## 5.5 - Classes (10:00 AM)
 
 ## Overview
 
@@ -791,7 +790,7 @@ In this activity we will create a store class that allows us to handle different
 
   * 🙋 We break away from `store.js` in this activity so that we can run isolated unit tests. If we were to include all of our method calls in `store.js`, then trying to test individual methods in `store.js` would **also** cause all of the method calls to run.
 
-### 13. Everyone Do: BREAK (40 mins)
+### 13. Everyone Do: BREAK (30 mins)
 
 ### 14. Instructor Do: Introduce Mini Project (5 mins)
 
@@ -1083,7 +1082,11 @@ The completed game should meet the following criteria:
     }
   ```
 
-### 17. END (0 mins)
+### 17. Review Unit 10 (45 mins)
+
+* Continue to answer lingering questions about the Mini Project. If no questions arise, lead a review session on unit 10 for the rest of class.
+
+### 18. END (0 mins)
 
 ### Lesson Plan Feedback
 
