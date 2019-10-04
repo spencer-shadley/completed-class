@@ -1082,11 +1082,8 @@ Take some time on your own after class to think about the following questions. I
 6. What evidence can I collect to show my students are understanding?
 7. How will my students know they are getting it?
 
-
 ### Lesson Plan Feedback
 
-How did today's class go?
+How did today’s lesson go? Your feedback is important. Please take 5 minutes to complete this anonymous survey.
 
-[Went Well](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=ft&sentiment=positive&lesson=10.05)
-
-[Went Poorly](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=ft&sentiment=negative&lesson=10.05)
+[Class Survey](https://forms.gle/nYLbt6NZUNJMJ1h38)
