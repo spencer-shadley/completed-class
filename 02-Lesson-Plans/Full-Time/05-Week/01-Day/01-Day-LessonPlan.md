@@ -20,7 +20,6 @@ This lesson introduces Node.js and the concepts of standard library, modules, np
 
 * If students continually question why they are learning Node.js, emphasize the client-server model.
 
-
 ## Learning Objectives
 
 * Explain the client-server model
@@ -668,7 +667,7 @@ apple
   * You can also export your functions directly. How? 
 ```
 
-### 15. BREAK (15 mins)
+### 15. BREAK (30 mins)
 
 ### 16. Instructor Do: Review Modularization (05 mins)
 
@@ -1281,7 +1280,7 @@ npm install badmath --save
 
   * 📖 If we want to learn more, we can read the [`inquirer` documentation](https://www.npmjs.com/package/inquirer)
 
-### 24. Students Do: Inquirer User (20 mins)
+### 24. Students Do: Inquirer User (10 mins)
 
 * Run [15-Stu_Inquirer-Users/Solved/index.js](../../../../01-Class-Content/09-NodeJS/01-Activities/15-Stu_Inquirer-Users/Solved/index.js) from the command line to demonstrate the application functionality and point out the following: 
 
@@ -1415,7 +1414,7 @@ npm install badmath --save
 
     * 📖 If we want to learn more about JSON.stringify, we can read the [MDN documentation for JSON.stringify()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify).
 
-### 1. Instructor Do: Arrow Function Demo (10 mins)
+### 26. Instructor Do: Arrow Function Demo (10 mins)
 
 * In this demonstration you will give students and overview of arrow functions, including syntax differences, when to use them, and when to avoid them.
 
@@ -1525,7 +1524,7 @@ npm install badmath --save
 
 * Take a moment to answer any lingering questions.
 
-### 2. Student Do: Arrow Function Practice (10 mins)
+### 27. Student Do: Arrow Function Practice (10 mins)
 
 * In this activity students will convert a file with pre-written code over to use arrow functions where suitable.
 
@@ -1547,7 +1546,7 @@ npm install badmath --save
 
   * Instructional staff should be circulating the room checking in on students progress and making themselves available for assistance.
 
-### 3. Instructor Do: Review Arrow Function Practice (5 mins)
+### 28. Instructor Do: Review Arrow Function Practice (5 mins)
 
 * Open [Arrow Function Practice](../../../../01-Class-Content/09-nodejs/02-day/02-Stu_ArrowFunctionPractice/Solved/index.js) in your editor and run the code. 
 
@@ -1607,7 +1606,7 @@ npm install badmath --save
 
   * Arrow functions shouldn’t be object methods.
 
-### 4. Instructor Do: Let and Block Scope (10 mins)
+### 29. Instructor Do: Let and Block Scope (10 mins)
 
 * In this example we will demonstrate the new `let` keyword and how block scoping works.
 
@@ -1701,7 +1700,7 @@ npm install badmath --save
 
 * Take a moment to answer any questions, but avoid getting too off track! We'll go over `const` next!
 
-### 5. Instructor Do: Constant Reference (10 mins)
+### 30. Instructor Do: Constant Reference (10 mins)
 
 * In this demonstration we will cover the new `const` keyword for defining variables and when it should be used.
 
@@ -1804,7 +1803,7 @@ npm install badmath --save
 
   * Use `const` whenever a value won't need to be reassigned.
 
-### 6. Student Do: Convert Const Let Arrow (10 mins)
+### 31. Student Do: Convert Const Let Arrow (10 mins)
 
 * In this activity students will convert a prebuilt Crystal Guessing Game to use the new ES6 syntax covered so far.
 
@@ -1830,7 +1829,7 @@ npm install badmath --save
 
   * Remember that arrow functions can't be used as constructor functions, and they are not suitable for object methods.
 
-### 7. Instructor Do: Review Convert Const Let Arrow (5 mins)
+### 32. Instructor Do: Review Convert Const Let Arrow (5 mins)
 
 * Open [Solved/index.js](../../../../01-Class-Content/09-nodejs/02-day/05-Stu_ConvertConstLetArrow/Solved/index.js) in your code editor and walk through the code with the class.
 
@@ -1850,8 +1849,7 @@ npm install badmath --save
 
 * Answer any remaining questions about the solution.
 
-
-### 8. Instructor Do: Functional Loops (10 mins) 
+### 33. Instructor Do: Functional Loops (10 mins)
 
 * In this demonstration students will be introduced to new Array methods `forEach`, `filter`, and `map`.
 
@@ -1910,7 +1908,7 @@ console.log(cardedMoviePatrons);
 
 * If helpful, demonstrate how each piece of functionality can be achieved (with more code) using for-loops.
 
-### 9. Student Do: Functional Loops (10 mins)
+### 34. Student Do: Functional Loops (10 mins)
 
 * In this activity students will use the `map` and `filter` methods to solve problems they previously would have used for-loops for.
 
@@ -1928,7 +1926,7 @@ console.log(cardedMoviePatrons);
 
 * Use arrow functions as callbacks here.
 
-### 10. Instructor Do: Review Functional Loops (5 mins)
+### 35. Instructor Do: Review Functional Loops (5 mins)
 
 * Once time's up, open the [activity solution](../../../../01-Class-Content/09-nodejs/02-day/07-Stu_FunctionalLoops/Solved) and go over the code.
 
@@ -2009,6 +2007,8 @@ console.log(cardedMoviePatrons);
 * Explain that just like how we need to map and filter over things in real life, we often need to in code as well.
 
 * Take a moment to answer any remaining questions before the next demonstration.
+
+### 36. END (0 min)
 
 ### Lesson Plan Feedback
 
