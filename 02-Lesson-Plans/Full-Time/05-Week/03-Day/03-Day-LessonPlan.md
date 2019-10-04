@@ -1,476 +1,886 @@
-## 5.3 - Project Presentations 1 & New to Node (10:00 AM) <!--links--> &nbsp; [⬅️](../02-Day/02-Day-LessonPlan.md) &nbsp; [➡️](../04-Day/04-Day-LessonPlan.md)
+## 5.3 - Constructors (10:00 AM)
 
-### Slideshow
-
-* This lesson's slides are available on Google Drive here: [05-3 New to Node](https://docs.google.com/presentation/d/1_thzaJ4qUb-gis58By-5t0yjdK533MmADdJrURBU7wI/edit?usp=sharing)
-
-* To add slides to the student-facing repository, download the slides as a PDF by navigating to File > "Download as" and choose "PDF document." Add the slide PDF file to your class repository along with other necessary files.
-
-* **Note:** Editing access is not available for this document. If you wish to modify the slides, please create a copy by navigating to File > "Make a copy...".
-
-- - -
-
-### Instructors and TAs: Please take the Mid-Course Instructional Staff Survey if You Haven't Yet
+## Instructors and TAs: Please take the Mid-Course Instructional Staff Survey
 
 Trilogy as a company values transparency and data-driven change quite highly. As we grow, we know there will be areas that need improvement. It’s hard for us to know what these areas are unless we’re asking questions. Your candid input truly matters to us, as you are vital members of the Trilogy team. In addition to the individual feedback at the end of lesson plans
-we would appreciate your feedback at the following link if you have not already taken the mid-course survey:
+we would appreciate your feedback at the following link:
 [https://docs.google.com/forms/d/e/1FAIpQLSdWXdBydy047_Ys1wm6D5iJY_J-0Mo0BqCjfGc4Er2Bz9jo5g/viewform](https://docs.google.com/forms/d/e/1FAIpQLSdWXdBydy047_Ys1wm6D5iJY_J-0Mo0BqCjfGc4Er2Bz9jo5g/viewform)
 
- 
-### Overview
+## Overview
 
-Your students will present their project apps to the class. They’ll afterwards answer open-floor questions from you, TAs and classmates. This is a **crucial** lecture for your students, so make sure you follow the advice in this plan
+In this class we will be introducing students to the usage of JavaScript constructors and how they can be used to dynamically create objects with similar schemas.
 
-After, we will be introducing students to the basic concepts behind back-end servers and the use of Node as a scripting/server language. Ensure that students have downloaded and installed the LTS version of Node. Ensure that students have downloaded and installed the LTS version of Node. The version number does not matter, just that it is the current LTS version.
+## Instructor's Notes
 
-<img height="300" src="Images/1_Node_LTS.png">
+* `Summary: Complete activity 40 in Unit 9 and 1-6 in Unit 10`
 
-`Summary: Complete Project Presentations & Activities 1-9 in Unit 10`
+* Constructors are extremely useful in creating objects of similar types and allow for the development of very interesting applications. Make sure your students have a firm understanding of how objects function.
 
-##### Instructor Priorities
+## Learning Objectives
 
-* Students should know the parts of their apps that impress you and the TAs, as well as what they can improve on for future projects. This will help direct their focus for future assignments (what aspects of web development they need to work on).
+* By the end of class students will be able to...
 
-* Students should be able to articulate definitions of web servers, web clients, requests, and responses.
+  * Use OOP to create a banking application.
 
-* Students should be able to articulate a preliminary definition of Node and its role in back-end web development.
+  * Use constructor functions to create new objects.
 
-* Students should be able to utilize `process.argv` to capture command line arguments using Node.
+  * Use object prototypes to add methods to objects.
 
-##### Instructor Notes
+## Slides
 
-* In today's class, focus on providing students with a solid understanding of what servers are and what they do. This is important background as we move into utilizing Node and Express for routing and request/response handling.
+[5.3 Intro to OOP Slide Deck](https://docs.google.com/presentation/d/1k9lO6jSIGGYNRDKULu6O1glKQzyvaPTIkRSRnIWbbqg/edit?usp=sharing)
 
-* **DO NOT GO TOO IN-DEPTH AND KEEP TO THE ALLOTED TIME!** Today's slides are intended to provide you with a foundation to build upon as you give a very surface-level introduction to Node. They are not meant to be your cue to drop the biblical truth of Node on your poor students. It will definitely fly over their heads if you do. Keeping things as simple as possible is particularly important when broaching the concept of asynchronous vs synchronous threading. TA's be vigilant in keeping your instructors on track here.
+## Time Tracker
 
-* Most of the exercises in today's class are fairly simple. But do not be surprised if students struggle with basic commands like `process.argv`. The concept of "backend" JavaScript will seem like a foreign concept to many of them.
-
-* Have your TAs reference [Day-3-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1Uwp-ALSyzrH0RMUgnccfwfqEh4XLXXiH/view?usp=sharing) to help keep track of time during class.
-
-### Sample Class Video (Highly Recommended)
-* To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2113e793-7196-409b-a051-a85f00295431)
+[5.3 Time Tracker](https://docs.google.com/spreadsheets/d/1f1TNdbe2vCC49YpQJ5l1r8O-6Vg3KCPh90WLM8yNNIs/edit?usp=sharing)
 
 - - -
 
-### Class Objectives
+## Class Instruction
 
-* _Arrive early to class_ so that you can set the room up for presentations.
+### 1. Instructor Do: Introduce Mini Project (5 mins)
 
-* To provide students more time and support for their group projects.
+* Run the mini-project solution found in [40-Stu_Mini-Project/Solved/Bonus/index.js](../../../../01-Class-Content/09-NodeJS/01-Activities/40-Stu_Mini-Project/Solved/Bonus/index.js) without demonstrating any of the code.
 
-* To formally introduce the concept of servers, web-clients, requests and responses.
+* Answer any questions students may have about the intended functionality of this completed activity.
 
-* To demonstrate the basic process for running Node applications.
+### 2. Students Do: Mini Project (60 mins)
 
-* To introduce the syntax for capturing command line arguments and modularizing JavaScript in Node.
+* Direct students to the instructions found in [40-Stu_Mini-Project](../../../../01-Class-Content/09-NodeJS/01-Activities/40-Stu_Mini-Project/README.md):
 
-- - -
+```md
+# Mini Project
 
-### 1. Presentation Setup (23 min)
+In this activity, you will build a command-line tool that generates and HTML portfolio page from user input.
 
-* Congratulate your class for developing their projects to a state worth presenting. Assure them that they should take pride in what they've done!
+## Instructions
 
-* Tell students to deploy their latest changes to GitHub. After this, all it will take is a quick pull to get any changes.
+* Your application should prompt the user for information such as their name, location, bio, LinkedIn URL, and GitHub URL. Feel free to add any additional prompts you think of.
 
-  * Make sure groups have deployed their app to Github Pages, as well. We want to see their projects in action!
+* Using the data collected from the prompts, an HTML document should be constructed containing this information and written to the filesystem. Be sure to add some CSS styling to the document.
 
-* Give students a rundown of how their presentations should pan out.
+* Some tools and technologies you'll need to accomplish this:
 
-  1. They should last about eight minutes, followed by two-to-four minutes of open-floor Q&A.
-  2. They need to show confidence! All of them have contributed to impressive projects--they need to recognize and project that during their demonstrations.
+  * FS: For writing to the filesystem
+  * Inquirer: For collecting user input
+  * String template literals: For generating a string version of the HTML document before it is written to the filesystem
+  * Promises: For handling asynchronous behavior
 
-* Ask which groups would like to go first, then second, then third and so on. When groups stop responding, assign the remaining teams to random slots (and write this list down).
+## Hint(s)
 
-* It is recommended that you prepare a list of the GitHub Pages links for all deployed repos so that students can quickly launch their apps. 
-
-* If students have hosted presentations on Google Presentations, compile a list of those as well to avoid switching computers.  
-
-### 2. Project Presentations (60 mins)
-
-* Go down the list and send each group up to the front of class.
-
-* When a group nears the 8-minute mark, motion for them to draw their presentation to a close (like pointing to your watch/imaginary watch). **Don't say anything**--you don't want your voice to interrupt their talk.
-
-* Follow each of these presentations up with questions about their projects. Let TAs and classmates ask questions, too.
-
-* Point out what you found impressive and what they can improve on for future demonstrations.
-
-* When they finish - congratulate them! It's challenging to conceive, develop and present a new web app. Remind them that this they accomplished all this in just 4 or 5 weeks, and tell them to imagine what they'll come up with in their next two projects after learning even more web development techniques.
-
-### After Project Demos
-
-After students have presented their projects, please take some time to submit their work to the form below. This will assist future instructional staff.
-
-* [Student Project Examples](https://goo.gl/forms/d82FCYMGeRcrxruQ2)
-
-- - -
-
-### 3. Lunch (30 min)
-
-- - -
-
-### 4. Instructor Do: The Mystery of Backend (Slides) (10 min)
-
-* Open the slide deck [05-3 New to Node](https://docs.google.com/presentation/d/1_thzaJ4qUb-gis58By-5t0yjdK533MmADdJrURBU7wI/edit?usp=sharing)
-
-* When cued by the slide, let students know that these next sets of slides are very important and that it is critical for developers to have a functional understanding of how the modern web works, particularly when it comes to servers.
-
-* Ask your class the same question you asked on week 1: "How would you define full-stack development?" At this point students should be much more savvy than they were on week 1, so expect solid answers.
-
-* Reintroduce students to the full-stack diagram that you you showed in week 1. Once more explain that "full-stack" refers to the constant back and forth communication between the visuals displayed to the user on the browser (front-end) and the data/logic that is stored on the server (back-end).
-
-* Once more demonstrate how a website like YouTube works. Have your students point out the aspects of the site that they recognize as having to do with the front-end (UI/UX). Then have them try to articulate the aspects of the site having to do with the back-end (e.g, video recall, video attribute recall, etc).
-
-* Move into the questions asked by the slides. For each question, have students turn to the person next to them and try to answer them to one another. Then have them answer the question back to you.
-
-* Allow them to Google search answers to questions which they may not be able to solve just yet——namely, "What is a server?"
-
-* If they offer vague answers, push them to try and explain themselves in more detail. Try to convey that we often use words like "server" on a daily basis without fully understanding them.
-
-* Once you've tired them out, go through and explain the definition of each.
-
-* In discussing the concept of servers, web-clients, requests and responses, the key takeaways for students should be:
-
-  * **Server**: Physical hardware or software that takes requests from users and gives something back or completes a process. This might mean returning an HTMl page, a picture, an image manipulation, etc.
-
-    ![1-Server_1](Images/1-Server_1.png)
-
-  * **Web Client**: The user or browser that makes requests to servers. This could be as simple as clicking a URL and "requesting" the page to load. Or it might be more complicated like loading some data and "requesting" the server to parse through it.
-
-    ![1-Server_2](Images/1-Server_2.png)
-
-  * **Request**: Asking for something or some process to happen.
-
-  * **Response**: The result of the request. What is returned after a request.
-
-
-* Make sure students understand this! Encourage them to ask questions.
-
-### 5. Instructor Do: Intro to Node.js (Slides) (10 min)
-
-* Once you are comfortable with their level of understanding, move into the topic of NodeJS.
-
-* Immediately offer them the definition of Node. Have a student read each paragraph of the definition.
-
-  * Mention that if it was before 2009, the class would be learning a new language like PHP.
-
-  * Ryan Dahl invented NodeJs so that JavaScript can be used on the server side.
-
-* Convey the important point that what Node allows us to do is to run JavaScript _outside_ of the browser. It allows us to run JavaScript on a server instead.
-
-* Have students research companies that use Node. The list is pretty endless. Just give them about 10 seconds to do this as it should not take long.
-
-* Go through each of the important reasons why Node is so effective as a server. Emphasize the fact that it uses JavaScript, which means that a front-end JavaScript developer can also do back-end JavaScript without having to learn a new programming language.
-
-* The next few slides on asynchronous vs synchronous threading are tough. Warn students about this.
-
-* Proceed to explain the difference as following (**important**):
-
-  * Let's assume that I (the instructor) am the server and that every single student in the front-row is a web-client asking a question.
-
-  * In synchronous threading -- non-Node approach -- I would have to answer each question I receive in order and completely handle the question before moving on to the new student. I might be able to assign TAs to each help one student, but once I run out of TAs everyone else just has to wait. This would take quite a bit of time.
-
-    ![2-Async_1](Images/2-Async_1.png)
-
-  * In asynchronous threading -- Node approach -- I would check on every single student immediately when they asked their question. Then I would think about each of their questions in the back of my mind, and whenever I came up with the answer to ANY of the questions I would immediately answer that question. I wouldn't wait to solve the first question first, and then hear the second question. I would hear the first and second questions immediately when asked, and then answer whichever of the two (or 20) questions I remembered the answer for first. I'd continue sending answers to the question askers as I come up with answers, until all questions have been answered. No student in this case is waiting for other questions to be answered before they can ask theirs, and they get answers immediately when the answer is available, so the time to answer overall is quicker for everyone.
-
-    ![2-Async_2](Images/2-Async_2.png)
-
-* This is effectively what an asynchronous server does. It takes every request, puts it in the background (via a callback), and comes back to it when its done as to allow for a near infinite number of requests which cannot be bottlenecked.
-
-* Again, let students know that it's okay if they don't fully understand. Also let them know we will re-examine this concept of callbacks at a later time.
-
-### 6. Everyone Do: Quick Node Check (5 min)
-
-* Next have students open up their bash/terminal. To confirm that everyone has Node installed, they should simply type `node` and then hit `enter`.
-
-* Immediately after they should type `1+1` and hit enter. The result should say 2. If it didn't, then they should raise their hand so a TA can assist them in installing Node.
-
-* Next have every student type `ctrl+c` or `cmd+c` to exit Node. (Important as many students will not do this.)
-
-  ![3-TestingNode_1](Images/3-TestingNode_1.png)
-
-* Point out to students that they will know they have quit Node when the cursor changes to show them the file path once again.
-
-### 7. Instructor Do: Hello.js Demo (5 min)
-
-* Create a new file (or open the file inside the `1-HelloNode` folder inside the folder 10). Then run the file via bash using the command `node hello.js`.
-
-* Point out to students that this program printed the word `Hellooooo` in the command window.
-
-  ![4-NodeHello](Images/4-NodeHello.png)
-
-* Point out that this is a big deal because it means we just ran JavaScript OUTSIDE of our browser window. This is powerful stuff since servers aren't "browsers". Woo hoo!!
-
-* Slack out the file to them at this point.
-
-### 8. Students Do: Sriracha.js Activity (5 min)
-
-* Then slack out the following instructions to students.
-
-* **Instructions:**
-
-  * Create a file called `sriracha.js` somewhere on your computer.
-
-  * Inside the file use JavaScript to log the words: "Sriracha. Goes great on.... nothing." (or everything. You choose.)
-
-  * Then run the program using Node in your terminal/bash window.
-
-  * Confirm that it logged the text as you would expect.
-
-* **Instructor:**
-
-* Review this activity when complete.
-
-  ![5-NodeSriracha](Images/5-NodeSriracha.png)
-
-### 9. Instructor Do: Arguments.js Demo (5 min)
-
-* Next create a new file called `arguments.js` (or open the file inside `3-Argument` inside folder 10).
-
-* Inside of this folder write the following code to take in arguments:
-
-  ![6-ProcessArgv](Images/6-ProcessArgv.png)
-
-* Then run the following in Git Bash or terminal `node arguments.js`.
-
-* Have students explain the output. What is being printed here?
-
-* Explain to them that `process.argv` is just printing back the path to Node and the path to our argument.js file.
-
-* Then proceed to rerun the program but this time run the following commands.
-
-```bash
-node arguments.js 'stuff'
-node arguments.js 34
-node arguments.js 'stuff' 34
-node arguments.js 'stuff I like' 34
-node arguments.js stuff I like 34
+* It may be a good idea to start building out the HTML skeleton in a real HTML file. Once you're happy with the HTML file's appearance in the browser, you can copy/paste its contents into a string template literal and write a function to insert the user input into the appropriate places in the HTML string before writing it to the filesystem.
 ```
 
-* Point out that in each case, `process.argv` is re-printing the "arguments" in the form of an array.
-
-  ![7-ProcessArgvArray](Images/7-ProcessArgvArray.png)
-
-### 10. Instructor Do: Arguments.js Addition Demo (5 min)
-
-* Create a new file called `argumentsadd.js` (or open the pre-made file in `4-ArgumentsAddition` folder inside folder 10).
-
-* In this file create code that combines two arguments together. Initially do not use anything like `parseInt` or `parseFloat`.
-
-* Run the program with two strings and demonstrate how it concatenates the strings. Point out to students that we used `process.argv[2]` and `process.argv[3]` to capture the "TRUE" arguments.
-
-  ![8-AddArgs_1](Images/8-AddArgs_1.png)
-
-  ![8-AddArgs_2](Images/8-AddArgs_2.png)
-
-* Repeat the program run, but this time run it so the program takes in two numbers. Point out how the result is non-ideal because it concatenated the numbers. This is because `process.argv` always assumes that you are handing it strings.
-
-  ![8-AddArgs_3](Images/8-AddArgs_3.png)
-
-* Modify your previous `argumentadd.js` file such that you utilize `parseFloat`. Students may be familiar with the concept of `floats`. Use this moment to explain the difference between `floats` (decimal) and `integers`
-
-  ![8-AddArgs_4](Images/8-AddArgs_4.png)
-
-* Rerun the program and use two numbers. Point out that now the program adds the two numbers together properly.
-
-  ![8-AddArgs_5](Images/8-AddArgs_5.png)
-
-* Slack out the `argumentsadd.js` file when done. Let students know that this `process.argv` code will be important for class today.
-
-### 11. Partners Do: Parameter Check Activity (10 min)
-
-* Slack out the following instructions.
-
-* **Instructions:**
-
-  * Create a command line node application that takes in two parameters and outputs whether they are equal or not.
-
-  * HINT: Start by simply logging the value of each argument to console. Then use your usual JavaScript approach (recall that Node is still just JavaScript).
-
-### 12. Instructor Do: Review Parameter Check Activity (5 min)
-
-* Open the file inside of `5-ParameterCheck` folder inside folder 10.
-
-* Review the activity with students using both approaches provided. Explain that the first approach may have been the one they first used, but that they could also refactor (simplify) the code to one line. Both would work.
-
-  ![9-ParameterCheck_1](Images/9-ParameterCheck_1.png)
-
-  ![9-ParameterCheck_2](Images/9-ParameterCheck_2.png)
-
-* See if there are any questions or looks of confusion.
-
-### 13. Students Do: Calculator.js Activity (30 min)
-
-* Then proceed to slack out the following instructions to students.
-
-* **Instructions:**
-
-  * Create a command-line node application that takes in parameters like this:
-
-  * `node calculator.js add 1 2` ... and outputs 3
-  * `node calculator.js subtract 5 2` ... and outputs 3
-  * `node calculator.js multiply 3 2` ... and outputs 6
-  * `node calculator.js divide 8 2` ... and outputs 4
-  * `node calculator.js remainder 7 2`... and outputs 1
-
-  * Bonus: Enable your calculator application to also handle the below cases:
-    `node calculator.js exp 7 2` ... and output 49 (7 squared)
-    `node calculator.js algebra 4x+2=10`... and output 2. (Hint: Assume the algebra will always be in this exact form and will always be addition)
-
-* **Instructor** demo the application yourself by running the above commands with the node application `calculator.js` found inside `6-Calculator` inside folder 10
-
-### 14. Instructor Do: Review Calculator.js (10 min)
-
-* Spend a few moments reviewing the `calculator.js` file. In your discussion, point out that the program effectively has two parts:
-
-  * A section in which we grab the command line arguments using `process.argv`
-
-  * A series of `if`, `else if` statements that check which operand has been selected and based on the selection will perform different mathematical functions on the two numbers provided.
-
-    ![10-Calculator](Images/10-Calculator.png)
-
-* Slack out the file and [video review](https://www.youtube.com/watch?v=JH28RCouqfw) at the end.
-
-### 15. Partners Do: Multiples.js (10 min)
-
-* If you are doing well on time, then proceed with this activity; if not, skip it in favor of the discussion on modularization.
-
-* Slack out the following instructions to students:
-
-* **Instructions:**
-
-  * Write a command line node application that takes in a number from the command line and finds the sum of all the multiples of 6 that are smaller than it. (ex: input: 13... output: 6 + 12 = 18)
-
-  * Bonus:
-
-    * Make the program such that it takes in two parameters: The application now taking in the first number from the command and finds all the multiples of the second smaller than it.
-
-    * Give it a set of default values in case the user doesn't provide parameters.
-
-### 16. Instructor Do: Review Multiples.js (5 min)
-
-* Walk students through the solution found in `multiple.js` and `multipleBonus.js` (`7-Multiples`). Be sure to point out the following in discussing the solution:
-
-  * That we take in command line arguments to capture the input number and the multiples number in the bonus.
-
-  * That we create a for loop that starts from the multipleNumber and iterates by that number all the way through to the input number (example: input is 15, multiple is 6 => 6 + 12 = 18)
-
-  * Then we log the value at the end.
-
-    ![11-Multiples](Images/11-Multiples.png)
-
-    ![11-Multiples_2](Images/11-Multiples_2.png)
-
-* Let students know that this may have been tricky, just because they were unfamiliar with multiples. But the key takeaway is getting more familiar using `process.argv` to capture inputs.
-
-* Slack out the file at the end.
-
-### 17. Instructor Do: Modularization Using Require/Exports (15 min)
-
-* Finally, open up the `ess.js` file inside of `08-Modularization`. Point out to students how we are using the keyword `module.exports`. `module.exports` is a special object that is included in every js file in node by default. It allows us to export data from one file and import it into another using the keyword `require`. Point out how we are adding `essentials` and `niceToHaves` to `module.exports` but not `nonessentials`
-
-
-* Then open the file `run.js`. If possible fold comments at this point and have students try to glean the key aspects of this file.
-
-* Then run the program using `node run.js`. Point out that we were able to access the `essentials` and `nice-to-have's` but not the `nonessentials`.
-
-* Go back to the `run.js` file and point out how:
-
-  * We're using `require` which effectively takes `module.exports` from the other file and makes it accessible here.
-
-    ![12-Essentials_2](Images/12-Essentials_2.png)
-
-  * We're using references to sub-objects within the exported content.
-
-    ![12-Essentials_3](Images/12-Essentials_3.png)
-
-  * We cannot access the properties that were not exported in `ess.js` (e.g. nonessentials).
-
-    ![12-Essentials_1](Images/12-Essentials_1.png)
-
-* Explain that this concept of `require` and `module.exports` will be used repeatedly in later chapters, so it is worth understanding at a high level now.
-
-### 18. Partners Do: Bands.js Activity (15 min)
-
-* Run the program inside `9-Bands` inside folder 10 by using `node run.js` to demo the goal of the next student activity.
-
-* Then slack out the following instructions.
-
-* **Instructions:**
-
-  * Make a JavaScript file called bands.js that exports an object of music genres and bands like this:
-
-  ```javascript
-  {
-    punk: 'Green Day',
-    rap: 'Run DMC',
-    classic: 'Led Zeppelin'
+### 3. Instructor Do: Review Mini Project (10 mins)
+
+* Use the prompts and talking points below to demonstrate the following key point(s):
+
+  * ✔️ We can construct an HTML string using string template literals
+
+  * ✔️ We can use Promises or the async/await syntax to control the flow of asynchronous code
+
+* Open [40-Stu_Mini-Project/Solved/Basic/index.js](../../../../../../../../../../../../01-Class-Content/09-NodeJS/01-Activities/40-Stu_Mini-Project/Solved/Basic/index.js) in your IDE and point out the following:
+
+  * First we require the necessary packages.
+
+  ```js
+  const inquirer = require("inquirer");
+  const fs = require("fs");
+  const util = require("util");
+  ```
+
+  * 📝 We use the `util.promisify` method to take a function that uses Node style callbacks to create a new version of the function that now uses Promises.
+
+  ```js
+  const writeFileAsync = util.promisify(fs.writeFile);
+  ```
+  
+  * We prompt the user for their basic information using `inquirer.prompt`.
+
+  ```js
+  function promptUser() {
+    return inquirer.prompt([
+      {
+        type: "input",
+        name: "name",
+        message: "What is your name?"
+      },
+      {
+        type: "input",
+        name: "location",
+        message: "Where are you from?"
+      },
+      {
+        type: "input",
+        name: "hobby",
+        message: "What is your favorite hobby?"
+      },
+      {
+        type: "input",
+        name: "food",
+        message: "What is your favorite food?"
+      },
+      {
+        type: "input",
+        name: "github",
+        message: "Enter your GitHub Username"
+      },
+      {
+        type: "input",
+        name: "linkedin",
+        message: "Enter your LinkedIn URL."
+      }
+    ]);
   }
   ```
 
-  * Require this JavaScript file in run.js, loop over the values, and console.log them.
+  * We create a function named `generateHTML` that returns a `template literal` which in this case is just an HTML document. Within this template literal we can insert the responses we gathered from our user via inquirer.
 
-  * Make sure the program runs properly when entered into the terminal like this:
-
-  ```bash
-  node run.js
+  ```js
+  function generateHTML(answers) {
+    return `
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Hi! My name is ${answers.name}</h1>
+      <p class="lead">I am from ${answers.location}.</p>
+      <h3>Example heading <span class="badge badge-secondary">Contact Me</span></h3>
+      <ul class="list-group">
+        <li class="list-group-item">My GitHub username is ${answers.github}</li>
+        <li class="list-group-item">LinkedIn: ${answers.linkedin}</li>
+      </ul>
+    </div>
+  </div>
+  </body>
+  </html>`;
+  }
   ```
 
-  * And that the output looks something like the below:
+  * Finally we call our `promptUser` function and on success we generate our HTML file with this customized responses. We then create the file, appending the contents of the HTML template literal we created.
 
-  ```bash
-  A punk band is Green Day
-  A rap band is Run DMC
-  A classic band is Led Zeppelin
+  ```js
+  promptUser()
+    .then(function(answers) {
+      const html = generateHTML(answers);
+
+      return writeFileAsync("index.html", html);
+    })
+    .then(function() {
+      console.log("Successfully wrote to index.html");
+    })
+    .catch(function(err) {
+      console.log(err);
+    });
   ```
 
-  * Bonus:
+* Answer any high-level questions before demonstrating the bonus solution using async/await.
 
-    * Make it so that your program takes in a parameter like 'classic' and then outputs the associated band with it. In this case Led Zeppelin.
+* Open [40-Stu_Mini-Project/Solved/Bonus/index.js](../../../../../../../../../../../../01-Class-Content/09-NodeJS/01-Activities/40-Stu_Mini-Project/Solved/Bonus/index.js) in your IDE and point out the following differences:
 
-    * If no parameter is passed then loop over and output all of them like asked above.
+  * Code using the `await` syntax must be inside of a function declared with the `async` identifier. We're also using a `try/catch` block to handle any errors that may occur when using async/await.
 
-### 19. Instructor Do: Review Bands.js (7 min)
+  ```js
+  async function init() {
+  console.log("hi")
+  try {
+    const answers = await promptUser();
 
-* Walk students through the solution. In discussing the solution, point out:
+    const html = generateHTML(answers);
 
-  * How we exported the bands in an object called myBands.
+    await writeFileAsync("index.html", html);
 
-  * We then imported this data using `require` and stored the data inside of a variable called `bands`.
+    console.log("Successfully wrote to index.html");
+  } catch(err) {
+    console.log(err);
+  }
+  ```
 
-  * We then looped through the `myBands` object using a `for in` loop and reprinted the band names.
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
 
-* Check if there are any questions, then have a TA slack out the solution files.
+  * ☝️ So, how can asynchronous code help developers write better code.
 
-### 20. TA/Instructor Do: Homework Demo (5 min)
+  * 🙋 Asynchronous programming allows our code to execute logic without blocking the rest of the applications functionality.
 
-* Explain to students that this unit's homework is about creating a Siri-like app called "Liri". This app will take in text commands and then outputs various information like concert information, song information, or movie information.
+- - -
 
-* Then Navigate to the folder homework inside folder 10 and folder the `Solutions` folder using terminal or bash.
+### 4. Review Mini Project and Unit 09 (30 mins)
 
-* Run the command `npm install`
+* Continue to answer students lingering questions about the Mini Project. If no questions arise, lead a review session on unit 09 until the break.
 
-* Then run the commands:
+### 5. BREAK (30 mins)
 
+- - -
 
+### 6. Instructor Do: Welcome Class (5 mins)
+
+* Welcome students to class.
+
+* Open the [slide deck](https://docs.google.com/presentation/d/1k9lO6jSIGGYNRDKULu6O1glKQzyvaPTIkRSRnIWbbqg/edit?usp=sharing) and follow these prompts on their corresponding slides:
+
+  * **Constructors (Title)**: Today will be an introduction to OOP, more specifically objects and constructors.
+
+  *  **What is programming?**: So what exactly is programming?
+
+  *  **Programming**: The designing and building of an executable program that will accomplish a specific computing task. Essentially, programming is problem solving.
+
+  *  **What problems do we solve?**: What problems do programmers solve?
+
+  * **Algorithms and Automation**: Programming allows for us to solve almost any task or problem on a computer. There are two primary categories: Algorithms and Automation.
+
+  * **What is DRY?**: What does DRY mean?
+
+  * **DRY**: Dry means “Don’t Repeat Yourself!”. Rewriting code wastes time, memory, and can confuse later readers and/or contributors to your code.
+
+  * **What is an object?**: What is an object?
+
+  * **Objects**: Objects in JavaScript are unordered collections of related data built on a key:value structure where values can be any data-type, including functions. 
+
+  * **Why are Objects important in Javascript**: What makes objects so important?
+
+  * **Everything is an object!**: Well, almost everything. Arrays, Date, Math, even functions are objects! Primitive types are NOT objects.
+
+  * **What is object-oriented programming?**: What is OOP?
+
+  * **OOP**: OOP is a programming paradigm or pattern of programming centered around objects. Problems are thought of in a way in which a collection of objects work together to solve a problem.
+
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
+
+  * ☝️ So, what do you think we are going to do today?
+
+  * 🙋 Program some objects!
+
+### 7. Students Do: Raining Cats and Dogs (15 mins)
+
+* Direct students to the activity found in [01-Stu_Cats-And-Dogs](../../../../01-Class-Content/10-OOP/01-Activities/01-Stu_Cats-And-Dogs)
+
+```md
+# Cats and Dogs
+
+In this activity you will make a cat object and dog object each with three keys.
+
+## Instructions
+
+* Make a dogs object with three keys:
+
+  * First key called "raining" with a value of true
+
+  * Second key called "noise" with a value of "Woof!"
+
+  * Third key called "makeNoise" which contains a function which console.logs the noise to the screen if it is raining dogs
+
+* Next make a cats object with three keys:
+
+  * First key called "raining" with a value of false
+
+  * Second key called "noise" with a value of "Meow!"
+
+  * Third key called "makeNoise" which contains a function which console.logs the noise to the screen if it is raining cats
+
+* Make the dog bark
+
+* Make the cat meow
+
+## 🏆BONUS
+
+* Create a function called "massHysteria" which takes in both the cats and the dogs object and prints "DOGS AND CATS LIVING TOGETHER! MASS HYSTERIA!" if both of the `raining` keys are equal to true.
+
+* See if there is anyway to further optimize your code.
 ```
-node liri concert-this "Childish Gambino"
-node liri spotify-this-song "Hit Me Baby One More Time"
-node liri movie-this "A Space Odyssey"
+
+### 8. Instructor Do: Review Raining Cats and Dogs (5 mins)
+
+* Use the prompts and talking points below to demonstrate the following key point(s):
+
+  * ✔️ Keys can have the value of a function
+
+  * ✔️ Dot notation can be used to modify objects and call methods.
+
+* Open [01-Stu_Cats-And-Dogs Solved/script.js](../../../../01-Class-Content/10-OOP/01-Activities/01-Stu_Cats-And-Dogs/Solved) in your IDE and explain the following points to students:
+
+  * 🔑 We create a `makeNoise` key and give it the value of a function.
+
+  ```js
+  makeNoise: function() {
+    if (this.raining === true) {
+      console.log(this.noise);
+      }
+    }
+  };
+  ```
+
+  * 🔑 We use dot notation to call methods contained in our object.
+
+  ```js
+  dogs.makeNoise();
+  ```
+
+  * 🔑 We can change the value of a key using dot notation as well.
+
+  ```js
+  cats.raining = true;
+  ```
+  
+  * We create a function `massHysteria` which will take in a dogs object and cats object and check that BOTH have a key:value of `raining: true`. 
+
+  ```js
+  const massHysteria = function(dogs, cats) {
+  if (dogs.raining === true && cats.raining === true) {
+    console.log("DOGS AND CATS LIVING TOGETHER! MASS HYSTERIA!");
+    }
+  };
+  ```
+
+  * Finally we invoke our function passing in our two objects.
+
+  ```js
+  massHysteria(dogs, cats);
+  ```
+
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
+
+  * ☝️ What if we wanted to create multiple different animal objects from a blueprint?
+
+  * 🙋 We can use a constructor function to create objects based on a structure we specify.
+
+* Use the discussion to transition to the next topic.
+
+### 9. Instructor Do: Cats and Dogs with Constructors! (10 min)
+
+* Use the prompts and talking points below to demonstrate the following key point(s):
+
+  * ✔️Constructor functions are capitalized and can take in parameters.
+
+  * ✔️The `new` keyword invokes is used to create new objects.
+
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
+
+  * ☝️ What difference do you from the previous activity we worked on?
+
+  * 🙋 We create a constructor function called `Animals`, instead of individual cat and dog objects.
+
+  * ☝️ Why is `Animal` upper-cased. ️
+
+  * 🙋 It is a common naming convention to upper-case the names of constructor functions, as well as classes.
+
+* Open [02-Ins_Cats-And-Dogs-Constructors](../../../../01-Class-Content/10-OOP/01-Activities/02-Ins_Cats-And-Dogs-Constructors/rainingCatsAndDogs-con.js) in your IDE and explain the following points:
+
+  * 🔑 We first declare a constructor function named `Animal`. It will take 2 parameters which will be passed into our keys as their value.
+
+  ```js
+  function Animal(raining, noise) {
+    this.raining = raining;
+    this.noise = noise;
+  ```
+
+  * We give our object a key of `makeNoise` thats value is a function. The function checks if the `raining` key's value is `true`. If it is `console.log` the value of the key `noise`.
+
+  ```js
+  this.makeNoise = function() {
+    if (this.raining === true) {
+      console.log(this.noise);
+    }
+  };
+  ```
+
+  * 🔑 We create a new object via our constructor function using the `new` keyword. We pass in the values we want our keys to have as arguments to the constructor.
+
+  ```js
+  var dogs = new Animal(true, "Woof!");
+  var cats = new Animal(false, "Meow!");
+  ```
+
+  * We can now invoke the `makeNoise` method on our created objects.
+
+  ```js
+  dogs.makeNoise();
+  cats.makeNoise();
+  ```
+
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
+
+  * ☝️ How are constructors useful?
+
+  * 🙋 They allow us to create as many objects as we want, all from a single blueprint. This lessens redundant code.
+
+* Use the discussion to transition to the next activity.
+
+### 10. Student Do: MiniBank (20 mins)
+
+* Direct students to the next activity, found in [03-Stu_Mini-Bank](../../../../01-Class-Content/10-OOP/01-Activities/03-Stu_Mini-Bank/Unsolved).
+
+```md
+# MiniBank
+
+In this activity you will use objects to create a mini banking application.
+
+## Instructions
+
+Update the `createMiniBank` function to achieve the following:
+
+1. Add another private value of `statement` that should be set to an array with one value, `0`. This array will contain all transactions made with the MiniBank objects.
+
+2. Add a `setBalance` function that takes a value and updates the private `statement` value to it.
+
+3. Write an `updateStatement` function that takes in a number and pushes it to the `statement` array.
+
+4. Write a `getStatement` function that returns the `statement` array.
+
+5. Write a `printStatement` function that prints each element in the in the `statement` array on its own line.
+
+6. Write a `deposit` function that takes a value and updates the `balance` value using the `setBalance` function.
+
+7. Write a `withdraw` function that takes a value and subtracts it from the `balance`.
+
+8. Return the `printBalance`, `printStatement`, `deposit`, `withdraw` functions from the `createMiniBank` function.
+
+* Then, create a new `minibank` object using the `createMiniBank` function.
+
+1. Print the `minibank` balance.
+
+2. Deposit some money into the `minibank` object.
+
+3. Print the `minibank` balance.
+
+4. Withdraw some money from the `minibank` object.
+
+5. Print the `minibank` balance.
+
+## Bonus 🏆
+
+* Add code to throw an error if the user tries to withdraw more money than they have, or try to deposit or withdraw values that aren't positive numbers.
+
+* Add code to return a copy of the `statement` when `getStatement` is called, rather than returning the original array.
 ```
 
-* Example of `Spotify` command
-  ![13-Liri_1](Images/13-Liri_1.png)
+### 11. Instructor Do: Review Mini-Bank (10 mins)
 
-* Point out how, in this example, you are using a backend approach to grab information that students previously used AJAX calls for.
+* Use the prompts and talking points below to demonstrate the following key point(s):
 
-* Let them know that this will make a lot more sense by next class.
+  * ✔️ `MiniBank` is made via creating a constructor function.
+
+  * ✔️ We use `typeof` to make sure we get the inputs we want.
+
+* Open [03-Stu_Mini-Bank/Solved](../../../../01-Class-Content/10-OOP/01-Activities/03-Stu_Mini-Bank/Solved/minibank.js) in your IDE and explain the following points to students:
+
+  * 🔑 We create a constructor function called `MiniBank` that will take in one argument, the starting balance.
+
+  ```js
+  function MiniBank(balance) {
+  ```
+
+  * We use `this.` notation to declare functions on our constructor so all objects created from this constructor have access to those methods.
+
+  ```js
+  this.getBalance = function() {
+    return this.balance;
+  },
+  ```
+
+  * 🔑 In our `deposit` function we first check to make sure the provided argument is a number, and the number is greater than 0. We then set our `newBalance` to be equal to our current balance plus the current given value of the deposit.
+
+  ```js
+  this.deposit = function(value) {
+  if (typeof value !== "number" || value <= 0) {
+    throw new Error("'value' must be a positive number!");
+  }
+  var newBalance = this.getBalance() + value;
+  ```
+
+  * After we have gotten our `newBalance` we invoke the `setBalance` function and `updateStatement()` function. Finally we console log the deposited value.
+
+  ```js
+  this.setBalance(newBalance);
+  this.updateStatement(newBalance);
+  console.log(`Deposited ${value}!`);
+  },
+  ```
+
+  * To create our new mini bank via our constructor we invoke the constructor using the `new` keyword.
+
+  ```js
+  var bank = new MiniBank(0);
+  ```
+
+  * Now we can call any of the functions we coded into the constructor earlier.
+
+  ```js
+  bank.printBalance();
+  bank.deposit(85);
+  bank.printBalance();
+  bank.withdraw(20);
+  bank.printBalance();
+  bank.printStatement();
+  ```
+
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
+
+  * ☝️ How does OOP make solving this activity easier?
+
+  * 🙋 The use of objects and constructors allows us to create a single blueprint, that we can then use to create as many instances of our `MiniBank` as we like.
+
+### 12. Student Do: Weather Admin (15 mins)
+
+* Direct students to the next activity located in [04-Stu_Weather-Admin/Unsolved](../../../../01-Class-Content/10-OOP/01-Activities/04-Stu_Weather-Admin/Unsolved).
+
+```md
+# Weather Admin
+
+In this activity you will create a CLI based weather application that will give updates about the weather at the searched location.
+
+## Instructions
+
+* There are two ways to run this app: as a user or as an administrator. To run as admin, type `node CLI.js admin` To run as a user, type `node CLI.js user bob "los angeles, ca"`, where the user mode must provide a name and a location as additional arguments.
+
+* Ideally, users can search for weather data about a location. Every time they search, the place and time get saved to a text file. So when the app is run as admin, the admin user can see a history of all searches.
+
+* Unfortunately, this app is also broken. Try to run it as either a user or admin and fix the actual errors that appear in the console and then any "logic" errors that prevent the expected behavior.
+```
+
+### 13. Instructor Do: Review Weather Admin (10 mins)
+
+* Use the prompts and talking points below to demonstrate the following key point(s):
+
+  * ✔️ NPM packages are brought in with `require`.
+
+  * ✔️ `process.argv` allows us to grab CLI arguments.
+
+* Open [04-Stu_Weather-Admin/Solved](../../../../01-Class-Content/10-OOP/01-Activities/04-Stu_Weather-Admin/Solved) in your IDE and explain the following to students:
+
+  * 🔑 First we require the npm package `weather-js`.
+
+  ```js
+  const weather = require("weather-js");
+  ```
+
+  * We create a constructor function called UserSearch that will take a `name` and `location` as arguments. It will also use `Date.now();` to get the current date.
+
+  ```js
+  const UserSearch = function(name, location) {
+  this.name = name;
+  this.location = location;
+  this.date = Date.now();
+  ```
+
+  * Our constructor also has a method of `getWeather`.  It will make use of the `weather-js` search function to search for weather of a given location. Lastly, we export our `UserSearch` constructor.
+
+  ```js
+  this.getWeather = function() {
+    weather.find({ search: this.location, degreeType: "F" }, function(err, result) {
+      if (err) {
+        console.log(err);
+      }
+      console.log(JSON.stringify(result, null, 2));
+      });
+    };
+  };
+
+  module.exports = UserSearch;
+  ```
+
+* Open [04-Stu_Weather-Admin/Solved/WeatherAdmin.js](../../../../01-Class-Content/10-OOP/01-Activities/04-Stu_Weather-Admin/Solved/WeatherAdmin.js) in your IDE and explain the following points:
+
+  * First we require all the pieces necessary. `fs` is the File System, allowing us to create, delete, or update files on a users local machine. `UserSearch` is our constructor function we exported from `UserSearch.js`. Finally, we import `moment`, an NPM package for dates and times.
+
+  ```js
+  var fs = require("fs");
+  var UserSearch = require("./UserSearch");
+  var moment = require("moment");
+  ```
+
+  * We create a constructor function called `WeatherAdmin`. It is given a method of `getData` which will use the file system to read a `log.txt` file if it exists, and log that data to the console.
+
+  ```js
+  var WeatherAdmin = function() {
+  this.getData = function() {
+    fs.readFile("log.txt", "utf8", function(error, data) {
+      console.log(data);
+    });
+  };
+  ```
+
+  * `WeatherAdmin` also gets a method of `newUserSearch`. This method takes in two arguments, name and location, much like our `UserSearch` constructor. This is so we can pass those two arguments along into the `UserSearch` constructor, as this method will instantiate a new `UserSearch` object and save it to a variable of `newUserSearch`.
+
+  ```js
+  this.newUserSearch = function(name, location) {
+    var newUserSearch = new UserSearch(name, location);
+  ```
+
+  * We set our `logTxt` variable to equal a string we build that will display the name, location, and date of the search. We then call `moment` to get the date, and format it to `MM-DD-YYYY`.
+
+  ```js
+  var logTxt =
+  "\nName: " +
+  newUserSearch.name +
+  " Location: " +
+  newUserSearch.location +
+  " Date: " +
+  moment(newUserSearch.date).format("MM-DD-YYYY");
+  ```
+
+  * We use the `fs.appendFile` method to append the current value of `logTxt` to our `log.txt` file.
+
+  ```js
+  fs.appendFile("log.txt", logTxt, function(err) {
+    if (err) throw err;
+  });
+  ```
+
+  * Next we call the `getWeather` method on our `newUserSearch` object.
+
+  ```js
+  newUserSearch.getWeather();
+  ```
+
+  * Finally we export our `WeatherAdmin` constructor.
+
+  ```js
+  module.exports = WeatherAdmin;
+  ```
+
+* Open [04-Stu_Weather-Admin/Solved/CLI.js](../../../../01-Class-Content/10-OOP/01-Activities/04-Stu_Weather-Admin/Solved/CLI.js) in your IDE and explain the following points:
+
+  * 🔑First we require our WeatherAdmin export from `WeatherAdmin.js`
+
+  ```js
+  const WeatherAdmin = require("./WeatherAdmin");
+  ```
+
+  * 🔑 We use `process.argv`, taking the 3rd argument to find out if the value is `admin` or `user`.
+
+  ```js
+  const loginType = process.argv[2];
+  ```
+
+  * ✔️ We also need `Users` to provide a name and location.
+
+  ```js
+  const userName = process.argv[3];
+  const userLocation = process.argv[4];
+  ```
+
+  * We create an instance of the `WeatherAdmin`. If they are running it as an `admin`, run the `getData` method. If they are not an `admin`, we will run `newUserSearch` passing the arguments from the command line.
+
+  ```js
+  const myAdmin = new WeatherAdmin();
+
+  if (loginType === "admin") {
+    myAdmin.getData();
+  }
+  else {
+    myAdmin.newUserSearch(userName, userLocation);
+  }
+  ```
+
+### 14. Instructor Do: Introduce Prototypes (15 mins)
+
+* Use the prompts and talking points below to demonstrate the following key point(s):
+
+  * ✔️ Objects, arrays, and primitives all have a `.prototype.`
+
+  * ✔️ The `.prototype.` has methods and properties attached to it.
+
+  * ✔️ Methods declared on the prototype are declared once and memory is allocated for them once, but all objects made from it have access.
+
+  * ✔️ Instance methods only exist on a particular instance of an object, prototype methods are on all instances.
+
+* Open [05-Ins_Prototypes/prototype-demo.js](../../../../01-Class-Content/10-OOP/01-Activities/05-Ins_Prototypes/prototype-demo.js) in your IDE, and then open your browser and the Chrome Dev Tools. Copy and paste each code block into your dev tools and explain the following.
+
+  * We create an array, and console log it. Next, we call the `.forEach` and `.map` methods on it.
+
+  ```js
+  myArray = [2, 4, 6, 8];
+  console.log(myArray);
+
+  myArray.forEach((num) => console.log(num));
+
+  myArray.map((x) => console.log(x * 2));
+  ```
+
+  * 🔑 Next we console log the string `Hello`. We then call `"Hello.toLowerCase"`
+
+  ```js
+
+  console.log("Hello");
+  console.log("Hello".toLowerCase());
+
+  console.log(1337);
+  console.log((1337).toString());
+  ```
+
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
+
+  * ☝️ Where did the `.toLowerCase` come from?
+
+  * 🙋 While those two methods did not show up when we console logged our string, the prototype has these methods built in. Arrays, Objects, even primitives all have a prototype which they take their structure and methods from. Any of of these that you create will have the prototype methods available to it via the `.prototype.`. i.e., `Array.prototype.forEach()`
+
+  * We created a constructor function named `Movie`, which will take in two arguments, `title` and `releaseYear`.
+
+  ```js
+  function Movie(title, releaseYear) {
+    this.title = title;
+    this.releaseYear = releaseYear;
+  }
+  ```
+
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
+
+  * ☝️ What if we wanted to add a method to our constructor later on in our code?
+
+  * 🙋 We would add that method to the `Movie.prototype`.
+
+  * 🔑 We declare the title of our method, which will be `logInfo`. We do so by typing `Movie.prototype.logInfo = function(){}`. We can only add to our constructor via the object prototype. When we add a method to an object's prototype, all the objects made from it will get it. If there is something that’s going to be the same between objects, and isn’t going to change, it should be on the prototype. If it is defined on the prototype it is only defined once, and memory for it is only allocated once.
+
+  ```js
+  Movie.prototype.logInfo = function() {
+    console.log(`${this.title} was released in ${this.releaseYear}`);
+  };
+  ```
+
+  * 🔑 When we create a new object via our `Movie` constructor, it will have access to all the methods defined in the constructor, and those that have been added to its prototype.
+
+  ```js
+  const theShining = new Movie("The Shining", 1980)
+  theShining.logInfo();
+  ```
+
+  * Objects also have their own prototype methods built in. Even though our object was created via a constructor function, it still has access to all the built in object prototype methods.
+
+  ```js
+  console.log(theShining.hasOwnProperty('title'));
+  console.log(theShining.hasOwnProperty('logInfo'));
+  console.log(Movie.prototype.hasOwnProperty('logInfo'));
+  ```
+
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
+
+  * ☝️ What does the Object Prototype allow us to do?
+
+  * 🙋 It allows us to reuse properties and methods between objects that need to share them. i.e., all movies can share the same `logInfo` methods, but get their own unique name and release year.
+
+* Use the discussion to transition to the next topic.
+
+### 15. Student Do: RPG Prototype (20 mins)
+
+* Direct students to the next activity, located in [06-Stu_RPG-Prototypes](../../../../01-Class-Content/10-OOP/01-Activities/06-Stu_RPG-Prototypes).
+
+```md
+# Character Creation with Prototypes
+
+In this activity you will generate RPG characters using Objects and prototypes.
+
+## Instructions
+
+* Over the course of this activity you are going to be using constructors to create simplistic characters for use within a very basic Roleplaying Game (RPG)
+
+* Each character created using your constructor should have the following properties:
+
+  * Name: The character's name --> String
+
+  * Profession: What the character does for a living --> String
+
+  * Age: The character's age --> Number
+
+  * Strength: Abstraction for how strong the character is --> Number
+
+  * HitPoints (HP): Abstraction for how much health the character has --> Number
+
+  * PrintStats: Function which prints all of a character's properties to the screen
+
+  * Once you have created your constructor, create two new characters and print their properties to the screen
+
+* Now add 3 methods onto it via the prototype.
+
+  * IsAlive: Function which prints whether or not this character is alive by looking into their hitpoints and determining whether they are above or below zero.
+
+  * Attack: Function which takes in a second character and subtracts this character's strength from their hitpoints.
+
+  * LevelUp: Function which increases this character's Age by 1, their Strength by 5, and their HitPoints by 25.
+```
+
+### 16. Instructor Do: Review RPG (10 mins)
+
+* Open [06-Stu_RPG-Prototypes/Solved/rpg-prototypes.js](../../../../01-Class-Content/10-OOP/01-Activities/06-Stu_RPG-Prototypes/Solved/rpg-prototypes.js) in your IDE and explain  the following to students:
+
+  * ✔️ We create a `Character` constructor that will take in 6 arguments. We assign those arguments to keys in our constructor.
+
+  ```js
+  function Character(name, profession, gender, age, strength, hitpoints) {
+    this.name = name;
+    this.profession = profession;
+    this.gender = gender;
+    this.age = age;
+    this.strength = strength;
+    this.hitpoints = hitpoints;
+  }
+  ```
+
+  * ✔️ We add an `isAlive` function to our object prototype.
+
+  ```js
+  Character.prototype.isAlive = function() {
+    if (this.hitpoints > 0) {
+        console.log(this.name + " is still alive!");
+        console.log("\n-------------\n");
+        return true;
+    }
+    console.log(this.name + " has died!");
+    return false;
+  };
+  ```
+
+  * ✔️ We also add two other functions to our `prototype`. The `attack` method takes in a second object and decreases their "hitpoints" by this character's strength. The `levelUp` method increases `this` character's stats when called.
+
+  ```js
+  Character.prototype.attack = function(character2) {
+    character2.hitpoints -= this.strength;
+  };
+
+  Character.prototype.levelUp = function() {
+    this.age += 1;
+    this.strength += 5;
+    this.hitpoints += 25;
+  };
+  ```
+
+  * ✔️ Finally we can use our constructor to create two characters, calling their methods from the prototype that we added.
+
+  ```js
+  var warrior = new Character("Crusher", "Warrior", "Male", 25, 10, 75);
+  var rogue = new Character("Dodger", "Rogue", "Female", 23, 20, 50);
+
+  warrior.printStats();
+  rogue.printStats();
+
+  rogue.attack(warrior);
+  warrior.printStats();
+  warrior.isAlive();
+
+  rogue.levelUp();
+  rogue.printStats();
+  ```
+
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
+
+  * ☝️  Why don't we just declare the methods in the constructor?
+
+  * 🙋 When we bind a function using the `this` keyword, the method only exists on that instance of the object. For any method bound to `this`, it will be re declared with each new instance of an object.
+
+  * ☝️  How does the prototype help us solve this problem?
+
+  * 🙋 The prototype allows us to declare methods that will be attached to all instances of an object of that prototype. Because the method is applied to the prototype, it is only stored in memory once for all instances.
+
+* Use the discussion to transition to the final activity of the day.
 
 ### Lesson Plan Feedback
 
-How did today's class go?
+How did today’s lesson go? Your feedback is important. Please take 5 minutes to complete this anonymous survey.
 
-[Went Well](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=ft&sentiment=positive&lesson=05.03)
-
-[Went Poorly](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=ft&sentiment=negative&lesson=05.03)
+[Class Survey](https://forms.gle/nYLbt6NZUNJMJ1h38)

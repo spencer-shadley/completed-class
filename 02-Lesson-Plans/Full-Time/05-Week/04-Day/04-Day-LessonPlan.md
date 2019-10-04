@@ -1,362 +1,1215 @@
-## 5.4 - 'Nother Level of Node <!--links--> &nbsp; [⬅️](../03-Day/03-Day-LessonPlan.md) &nbsp; [➡️](../05-Day/05-Day-LessonPlan.md)
- 
-### Overview
+## 5.4 - Test-Driven-Development (10:00 AM)
 
-In this class, we will be building on students' proficiency with Node by introducing them to the fs package for reading and writing files along with the external NPM `axios` package for performing HTTP get requests.
+## Overview
 
-`Summary: Complete Activities 10-19 in Unit 10`
+Today's class introduces students to test-driven-development and unit testing JavaScript applications.
 
-##### Instructor Priorities
+## Instructor Notes
 
-* Students should know how to use the Node internal `fs` package to read, write, and append files.
-* Students should know how to use the external NPM package `axios` to perform GET requests on webpages.
+* Complete activities 07-16 in Unit 10.
 
-##### Instructor Notes
+## Learning Objectives
 
-* Today's class is a fairly gentle intro that is very activity focused. Just be mindful of your timing and it should be a fairly smooth class.
+* Explain the benefits of test-driven-development
 
-* Be warned that the "hard" activity of the day is the Bank.JS activity. This may take some students more time, so play it by ear if additional time is needed. Make sure to leave time to cover Node requests, however, as the knowledge contained within that lesson is crucial to completing the homework.
+* Use unit tests before as a way to define code requirements for code that hasn't been written yet
 
-* Have your TAs reference [Day-4-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1RN4AhjOgZf4rPv-h7NdZsz5ABByRi17F/view?usp=sharing) to help keep track of time during class.
+* Write unit tests for pre-existing JavaScript functions
 
-### Sample Class Video (Highly Recommended)
-* To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7c2586f1-f1fe-4523-b699-a5e3826e02d8)
+* Use mocks to test side effects such as reading/writing to the file system, printing to the console, and AJAX requests
+
+* Use the Arrange, Act, Assert pattern to structure test code
+
+## Slides
+
+N/A
+
+## Time Tracker
+
+[5.4 Time Tracker](https://docs.google.com/spreadsheets/d/1UJ1s_R0XrTLHwYS_HxOX6eT9NIFyI8FOxFCSAymNjw4/edit?usp=sharing)
 
 - - -
 
-### Class Objectives
+## Class Instruction
 
-* To introduce the internal `fs` package for handling reading and writing to files with Node.
-* To introduce the NPM `axios` package for performing HTTP get requests to external websites with Node.
+### 1. Student Do: Tamagotchi App (25 mins)
 
-- - -
+* Direct students to the final activity, located in [07-Stu_Tamagotchi](../../../../01-Class-Content/10-OOP/01-Activities/07-Stu_Tamagotchi).
 
-### 0. Instructor Do: Welcome Students (0:01)
+```md
+# **Instructions**
 
-* Spend a minute to welcome students back to class before jumping straight into the first activity.
+* Remember Tamagotchis? They were those little toys that contained "digital pets" which you could feed, pet, play with, and care for. Kind of like Furbies but a whole lot less terrifying. Over the next thirty minutes or so, you are going to create your own basic Tamagotchi clone using constructors.
 
-### 1.	Students Do: Command Line Equality	(0:10)
+* Create a constructor called "DigitalPal" which will create six properties and 10 methods...
 
-* Slack out the following:
+  * The first property is "hungry" and it initially starts out as false
 
-* **Instructions:**
+  * The second property is "sleepy" and it initially starts out as false
 
-  * Starting from a blank JavaScript file, create a Node application that takes in two command line arguments and checks if they are equal. If the two numbers are equal then output: "true". Otherwise output: "false".
+  * The third property is "bored" and it initially starts out as true
 
-  * Bonus: Check if the two numbers are both multiples of 7. Again output "true" if they are and output "false" if they are not.
+  * The fourth property is "age" and it initially starts out at 0
 
-  * Hint: `console.log(process.argv)` as a starting point if you are completely lost.
+	* the fifth property is "outside" and is initially set to false
 
-### 2.	Instructor Do: Review Command Line Equality	(0:07)
+	* the sixth property is "houseCondition" and is initially set to 100... But not for long...
 
-* Open the file `solution1.js` (`10-CommandLineArg`) and walk students through the solution. Use the comments to guide the conversation.
+	- - - 
 
-    ![/1-Equality_1.png](Images/1-Equality_1.png)
+	* The first method is "feed()" - If hungry is true, print "That was yummy!", set hungry to false, and then set sleepy to true. If hungry is false, print "No thanks! I'm full."
 
-* Then open the file `solution2.js` (`10-CommandLineArg`) and walk students through the re-factored (minified/simplified) solution. Again use the comments to guide the conversation.
+	* The second method is "sleep()" - If sleepy is true, print `Zzzzzzzz`, set sleepy to false, then set bored to true, and then run increaseAge(). If sleepy is false, print "No way! I'm not tired."
 
-    ![/1-Equality_2.png](Images/1-Equality_2.png)
+	* The third method is "play()" - If bored is true, print "Yay! Let's play!", set bored to false, and then set hungry to true. If bored is false, print "Not right now. Later?"
 
-* In discussing the solution, be sure to point out that "re-factored solutions" oftentimes only become apparent after creating the more manual way first.
+	* The fourth method is "increaseAge()" - This method is called by the sleep() method when the DigitalPal goes to sleep and increases the DigitalPal's age by one while also printing "Happy Birthday to me! I am "+age+" old!"
 
-* Check if there are any questions. Then slack out the solution and proceed to the next section.
+	* The fifth method is "bark()" - Prints out "Woof! Woof!" when run
 
-### 3. Instructor Do: Write a File	(0:15)
+	* the sixth method is "goOutside()" - If outside is false, prints "Yay! I love the outdoors!", sets outside to true, and runs bark(). If outside is true, prints "We're already outside though..."
 
-* Open the file `write.js` (`11-WriteFile`). In this example, you will be introducing students to the concept of writing to a text file using Node's internal `fs` package.
+	* the seventh method is "goInside()" - If outside is true, prints "Do we have to? Fine..." and sets outside to false. If outside is false, prints "I'm already inside..."
+	
+  * the eighth method is "meow()" - prints out "Meow! Meow!" when run
 
-* As an internal Node package, `fs` does not require you to install anything prior to running.
+  * the ninth method is "destroyFurniture()" - Decreases houseCondition by 10 and prints "MUAHAHAHAHA! TAKE THAT FURNITURE!" to the screen. Also sets bored to false and sleepy to true. If houseCondition is equal to 0, then this should not run anymore.
 
-* Use the comments in the code to guide the conversation.
+  * the tenth method is "buyNewFurniture()" - Increases houseCondition by 50 and prints "Are you sure about that?" to the screen.
 
-* Then run the program using `node write.js`.
+* Create a variable named "dog" that is set to a new DigitalPal
 
-* Point out that if the file did not exist, then the command `writeFile` would create one for us with the expected text contained within it.
+* Make a second variable named "cat" that is set to a new DigitalPal
 
-    ![/2-Write_1.png](Images/2-Write_1.png)
+* Play around with your newly created digital pets for a bit and see what else you could add in order to make them even more exciting!
 
-    ![/2-Write_2.png](Images/2-Write_2.png)
+* BONUS: Make it so your Tamagotchis run off of user-input from the command line. It may sound easy at first, but this can actually be quite challenging. We will be going over this in more detail during the next class.
+```
 
-* Give students a second to digest the code before slacking it out to them.
+### 2. Instructor Do: Review Tamagotchi (5 mins)
 
-### 4	Everyone Do: Guess readFile	(0:01)
+* Open [07-Stu_Tamagotchi/Solved/tamagotchi.js](../../../../01-Class-Content/10-OOP/01-Activities/07-Stu_Tamagotchi/Solved/tamagotchi.js) in your IDE and explain  the following to students:
 
-* Have students answer the following question:
-
-  * "If the Node method for writing files is writeFile, what do you think the Node method for reading files would be?" (Answer: readFile)
-
-### 5.	Instructor Do: Read a File	(0:10)
-
-* Proceed to the next activity and open the folder `12-ReadFile`.
-
-* Point out how this folder has both a `read.js` file and a `movies.txt` file contained within it.
-
-* Then open the `read.js` code, and use the comments to guide the conversation. Be sure to point out how `readFile` returns three parameters (`err`, `response`, `data`).
-
-    ![/3-Read_1.png](Images/3-Read_1.png)
-
-    ![/3-Read_2.png](Images/3-Read_2.png)
-
-* Students may be confused where these variables are coming from, so this might be a good time to explain that `readFile` is effectively "making" the values and assigning these variables via a callback. DON'T GO TOO IN DEPTH ABOUT CALLBACKS. We'll cover those in more depth next week.
-
-* Run the code using `node read.js`. Point out how the contents of the file were all console logged.
-
-* You can additionally change the contents of the `movies.txt` file and re-run to show that the new contents were read as well.
-
-### 6.	Instructor Do: Show FS Docs + Stack Overflow	(0:07)
-
-* At this point, it's a good time to discuss with students the process of how we "discover" methods like readFile and writeFile.
-
-* First, go to the Node documentation and visit the `fs` documentation: <https://nodejs.org/api/fs.html>. Feel free to slack this link to your students as well.
-
-* Scroll through the documentation and point out the list of methods `fs` provides us. Specifically search for and show the documentation for `fs.readFile`. Explain how that documentation can quickly explain how to use methods as necessary.
-
-    ![/4-Docs_1.png](Images/4-Docs_1.png)
-
-* Then explain that, while documentation can be the most comprehensive source of information on libraries, sometimes it's easier just to search in Google a term like: "How to read files in Node".
-
-* Point out how the first website is not the Node documentation but a tutorial website that more easily shows the method implemented.
-
-    ![/4-Docs_2.png](Images/4-Docs_2.png)
-
-* Be sure to tell students that there is no shame in going to Google first as new developers. Many might wrongfully think this is "just copying and pasting" and not true coding. (Hah! Copying and pasting IS true coding!)
-
-### 7.	Partners Do: Best Things Ever 	(0:15)
-
-* Continue on to the next student activity.
-
-* Then slack out the following instructions and files:
-
-* **File:**
-
-  * `best_things_ever.txt` (`13-BestThingsEver`)
-
-* **Instructions:**
-
-  * Create a Node application that reads the `best_things_ever.txt` file, parses the comma separated elements, and ultimately console logs each element in the file on separate lines.
-
-    * HINT: If you are struggling to figure out how to loop your way through the text, look into the `.split()` method. This could make your life a whole lot easier.
-
-  * Your final output should look something like this:
-
-  ```
-  lazy boy recliner
-    massage
-    meditation
-    hot shower
-    cheese fondue
-    hot coffee with cashew milk
-    kitten falling asleep on my lap
+  * We first create a constructor function named `DigitalPal`. It takes no arguments as the value of the keys are predefined.
+  
+  ```js
+  var DigitalPal = function() {
+    this.hungry = false;
+    this.sleepy = false;
+    this.bored = true;
+    this.age = 0;
+  };
   ```
 
-### 8.	Instructor Do: Review Best Things Ever	(0:10)
+  * We create a function `feed` and attach it to the `.prototype.`. The method `feeds` the DigitalPal when they are hungry and sets them to sleepy
 
-* Review the activity using the solved file `readBest.js` and use the comments as a guide.
+  ```js
+  DigitalPal.prototype.feed = function() {
+    if (this.hungry) {
+      console.log("That was yummy!");
+      this.hungry = false;
+      this.sleepy = true;
+    } else {
+      console.log("No thanks, I'm full.");
+    }
+  };
+  ```
 
-* Be sure to point out how we use `data.split(',')` to separate the elements by commas. Explain that `.split` breaks the elements and stores the contents into an array. We then loop through this generated array and `console.log` each element one element at a time.
+  * We create a method called `sleep`, which puts the DigitalPal to sleep when they are sleepy. It also invokes the `increaseAge` function.
 
-    ![/5-Best_1.png](Images/5-Best_1.png)
+  ```js
+  DigitalPal.prototype.sleep = function() {
+    if (this.sleepy) {
+      console.log("ZZzzZZZzzZZz~~");
+      this.sleepy = false;
+      this.bored = true;
+      this.increaseAge();
+    }
+    else {
+      console.log("No way! I'm not tired!");
+    }
+  };
+  ```
 
-### 9.	Instructor Do: AppendFile	(0:07)
+  * We create a method called `play` which allows the user to play with their DigitalPal when they are bored and sets hungry to `true` and bored to `false.`
 
-* Continue onto the next example by first pointing out how up until now we've been using `writeFile` to write to text files. Explain that `writeFile` simply erases the contents of the file before writing the replacement content. This is not exactly ideal in most situations since, more often than not, we do not want to delete data like that.
+  ```js
+  DigitalPal.prototype.play = function() {
+    if (this.bored) {
+      console.log("Yay! Let's play!");
+      this.bored = false;
+      this.hungry = true;
+    }
+    else {
+      console.log("Not right now. Maybe later?");
+    }
+  };
+  ```
 
-* Explain that if we would like to keep the original content and add to it then we will need to instead use the `appendFile` method.
+  * This is the `increaseAge` method which is called within our `sleep` method. It will increase the age of our DigitalPal by one.
 
-* Open the file `appendFile.js` (`14-AppendFile`).
+  ```js
+  DigitalPal.prototype.increaseAge = function() {
+    this.age++;
+    console.log("Happy Birthday to me! I am " + this.age + " old!");
+  };
+  ```
 
-* Ask a student in class to explain the code to everyone using the comments as a guide.
+  * The `destroyFurniture` will allow us to decrease our `houseQuality`. 
 
-* Point out how `appendFile` works effectively the same as `writeFile`. In fact, it will also create a new file if one does not already exist. Unlike `writeFile`, however, `appendFile` won't clear the contents of a file if that file already exists.
+  ```js
+  DigitalPal.prototype.destroyFurniture = function() {
+    if (this.houseQuality - 10 > 0) {
+      this.houseQuality -= 10;
+      this.bored = false;
+      this.sleepy = true;
+      console.log("MUAHAHAHAHA! TAKE THAT FURNITURE!");
+    }
+    else {
+      console.log("I've already destroyed it all!");
+    }
+  };
+  ```
 
-    ![/6-Append_1.png](Images/6-Append_1.png)
+  * We create and attach a `letOutside` function to our prototype which will let our pet outside, and make them bark!
 
-* Run the application using `node appendFile.js kitty.txt` a few times to demonstrate this.
+  ```js
+  DigitalPal.prototype.letOutside = function() {
+    if (!this.outside) {
+      console.log("Yay! I love the outdoors!");
+      this.outside = true;
+      this.bark();
+    }
+    else {
+      console.log("We're already outside though...");
+    }
+  };
+  ```
 
-* Ask if there are any questions. Then slack out the solution.
+  * We create and attach a `letInside` function to our prototype which will let our pet back inside.
 
-### 10.	Partners Do: Bank.js	(0:30)
+  ```js
+  DigitalPal.prototype.letInside = function() {
+    if (this.outside) {
+      console.log("Aww... Do I have to?");
+      this.outside = false;
+    }
+    else {
+      console.log("We're already inside though...");
+    }
+  };
+  ```
 
-* Navigate to the folder `15-BankJS > Solved` and run each of the following commands for your students to see.
+  * Finally we can grab the command line arguments provided by the user and use store them in variables called `animal` and `method`.
 
-  * `node bank.js total` (this will output the total in the bank)
+  ```js
+  var animal = process.argv[2];
+  var method = process.argv[3];
+  ```
 
-  * `node bank.js deposit <number>` (this will deposit a value of <number> in the bank)
+### 3. Instructor Do: Introduce Testing (10 mins)
 
-  * Again `node bank.js total` (this will show that the total has changed)
+* Welcome students to class.
 
-  * `node bank.js withdraw <number>` (this will withdraw a value of <number> from the bank)
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
 
-  * Again `node bank.js total` (this will show the total has changed)
+  * ☝️ So far, how have we known that our code is working?
 
-  * Finally `node bank.js lotto` (this will buy a lotto ticket that can either lose you 25 cents or gain you $2)
+  * 🙋 We ran it and checked if it did what it was supposed to do.
 
-* The screenshots below show you what the output will roughly look like.
+  * ☝️ So far, how do we known that that by adding new code to our applications, we didn't break something, somewhere else?
 
-    ![/7-Bank_1.png](Images/7-Bank_1.png)
+  * 🙋 We ran the app and clicked around and make sure everything still worked.
 
-* Then open the file `bank.txt` and show how this text file has been "tracking" all of the deposits, withdrawals, and lotto purchases, and that total tallies it up to return the output.
+  * ☝️ Have you ever done this and still pushed up a bug without realizing it?
 
-    ![/7-Bank_2.png](Images/7-Bank_2.png)
+  * 🙋 Yes.
 
-* Let students know that this is what they will be building over the next 25 minutes.
+  * ☝️ Could manual testing be a lot of work, especially for very large applications?
 
-* Slack out the following file and instructions.
+  * 🙋 Yes.
 
-* **File:**
+  * ☝️ Do we think there's a better way?
 
-  * `bank.txt` (`6-BankJS > UNSOLVED`)
+  * 🙋 We could write automated tests.
 
-* **Instructions:**
+* Go over the following points with the class:
+  
+  * Since automated tests are written with code and can be run quickly before new code is merged in, we can be more certain that new code works and doesn't break existing code.
 
-  * Starting from scratch, build a Node application called `bank.js` which allows takes in user inputs via the command line to register bank transactions.
+  * As a new developer at a company, writing tests is a common first task as it gives you a chance to explore and understand the codebase.
 
-  * The transactions possible are:
+  * Tests force us to write better, more understandable and maintainable code that's easier to change.
 
-    * `total` - this should tally up all of the money in the bank balance and display it for the user.
+  * Every application would benefit from automated tests, so its important to understand testing web applications.
+  
+  * It's possible to make an entire career out of writing tests, so if any students really enjoy today's material, that may be a career path they'll want to learn more about.
 
-    * `deposit <number>` - this should add a positive amount to the bank balance. (No need to display the total here)
+* Take a few minutes to answer any questions students may be before proceeding to the next activity.
 
-    * `withdraw <number>` - this should add a negative amount to the bank balance. (No need to display the total here)
+### 4. Students Do: TDD Research (10 min)
 
-    * `lotto` - this should subtract an amount from the bank balance, but if a random number is hit it should add back a larger amount into the bank balance.
+* Direct students to work in pairs to spend the next few minutes researching test-driven-development and its benefits.
 
-  * For all deposits, withdrawals, or lotto purchases the transaction should be registered in the `bank.txt` file.
+### 5. Instructor Do: Review TDD Research (5 min)
 
-  * HINT: Consider making a series of if-else or switch-case statements to identify the "type" of transaction and the "amount" involved (if relevant).
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
 
-  * Bonus: If you finish early, consider finding creative ways to expand the functionality. Perhaps add a login, perhaps always provide the total, perhaps add a warning if the user tries to withdraw more than they hold, etc.
+  * ☝️ What is test-driven-development?
 
-### 11.	Instructor Do: Review Bank.js	(0:07)
+  * 🙋 Test-driven-development is a practice in which tests are written before application code is written. Initially all of the tests fail, but then we implement the functionality we're testing for one piece at a time.
 
-* Slack out the code and provide students a few moments to look over the code before explaining it to them.
+  * ☝️ Why is it helpful to write tests before writing application code?
 
-* Use the comments as a guide to explain how we:
+  * 🙋 By writing tests first, we can define the requirements our application should have ahead of time so we know to what to focus on. We're also more sure that each piece piece of functionality works before moving on to the next.
 
-  * Capture the "transaction type" and "value" via `process.argv[2]` and `process.argv[3]`.
+  * ☝️ What are some other benefits of TDD?
 
-  * Use if-else or switch-case to route the user to specific functions relevant to the given transaction type.
+  * 🙋 Test-driven-development encourages modular, cohesive, and loosely coupled code.
 
-    ![/8-BankCode_1.png](Images/8-BankCode_1.png)
+  * ☝️ What does that mean?
+  
+  * 🙋 When code is modular, it's separated by responsibility into different files and functions. When code is cohesive, the code that its collocated with is of related functionality. When code is loosely coupled, it means that it isn't very entangled or dependent on other parts of the codebase. When a codebase is all three, it's usually easier to understand and update without breaking.
 
-  * If the transaction type is `total` then we will use `readFile` read the contents of `bank.txt` and combine the numbers
+  * ☝️ What are some drawbacks of TDD?
 
-    ![/8-BankCode_2.png](Images/8-BankCode_2.png)
-    ![/8-BankCode_3.png](Images/8-BankCode_3.png)
+  * 🙋 Building applications can take longer if we need to write a lot of tests first. It can also be difficult to write tests for a problem that we're uncertain how to solve right away.
 
-  * If the transaction type is `deposit`, `withdraw`, or `lotto` we will instead use `appendFile` to add a numeric value to the textfile.
+* Take a moment to answer any remaining questions.
 
-* See if there are any questions before slacking out the solutions to students.
+### 6. Students Do: Testing Dissect (10 min)
+
+* Direct students to the next activity, found in [01-Activities/08-Stu_TDD-Dissect](../../../../01-Class-Content/10-oop/01-Activities/08-Stu_TDD-Dissect).
+
+```md
+# TDD Dissect
+
+In this activity you will work with a partner to dissect the provided testing example.
+
+## Instructions
+
+* Open the `index.js` file in your code editor and try to guess what what the code does. Ask yourself: what do you think will be printed to the console in this example?
+
+* Run the `index.js` file in your terminal. Was your guess correct? Ask yourself: how do you think the method chaining is achieved?
+
+* Open the `arithmetic.js` file in your code editor. What do you think the significance of the `plus` and `minus` methods returning `new Arithmetic` is? How does this relate to the method chaining you saw in the `index.js` file?
+
+* Open `test/arithmetic.test.js`. Ask yourself: what is the significance of the `expect` function? What does `toEqual` do? What about the `describe` and `it` functions? Where are these coming from?
+
+* Once you've had some time to consider the above, run `npm run test` in your terminal and examine the output. Do you have a better idea of what the `describe` and `it` functions might be used for?
+
+* Have any conclusions as well as remaining questions ready to share during the activity review.
+```
+
+### 7. Instructor Do: Review TDD Dissect (5 mins)
+
+* Use the prompts and talking points below to demonstrate the following key point(s):
+
+  * ✔️ We're using the Jest testing framework for our automated tests.
+
+  * ✔️ Tests are organized into `describe` and `it` blocks. These are primarily for grouping tests by module, functionality, etc.
+
+  * ✔️ Any file inside of the `test` folder ending with `.test.js` gets run by Jest automatically when we run the `npm run test` script.
+
+  * ✔️ The `expect` function is used for assertions. Assertions are essentially statements that are used to verify that our code is doing what we "expect" it to do.
+
+  * ✔️ The `instanceof` operator can be used to determine if an object was created with a given constructor function.
+
+* Open [08-Stu_TDD-Dissect/arithmetic.js](../../../../01-Class-Content/10-oop/01-Activities/08-Stu_TDD-Dissect/arithmetic.js) and explain the following:
+
+  * The object created by the `Arithmetic` constructor function has a `number` property, and three methods: `plus`, `minus`, and `value`.
+
+  ```js
+  function Arithmetic(number = 0) {
+    this.number = number;
+  }
+  ```
+
+  * We created a `plus` and `minus` method, which return new `Arithmetic` objects containing an updated `number` when invoked.
+
+  ```js
+  Arithmetic.prototype.plus = function(num = 0) {
+    const newNumber = this.number + num;
+
+    return new Arithmetic(newNumber);
+  };
+
+  Arithmetic.prototype.minus = function(num = 0) {
+    const newNumber = this.number - num;
+
+    return new Arithmetic(newNumber);
+  };
+
+  Arithmetic.prototype.value = function() {
+    return this.number;
+  };
+  ```
+  
+* Open [08-Stu_TDD-Dissect/index.js](../../../../01-Class-Content/10-oop/01-Activities/08-Stu_TDD-Dissect/index.js) to demonstrate this:
+
+  * Since the `plus` and `minus` methods return a new `Arithmetic` object, it's possible to chain these methods. The `value` method simply returns the `number` of the `Arithmetic` object.
+
+  ```js
+  const value = new Arithmetic(4)
+    .plus(8)
+    .plus(15)
+    .minus(16)
+    .minus(23)
+    .plus(42)
+    .plus(108)
+    .value();
+
+  console.log(value);
+  ```
+
+* Take a moment to answer any questions about the application code before transitioning to the test code.
+
+* Open [08-Stu_TDD-Dissect/test/arithmetic.test.js](../../../../01-Class-Content/10-oop/01-Activities/08-Stu_TDD-Dissect/test/arithmetic.test.js) and explain the following:
+
+  * 🔑 Jest will run files inside of the `test` folder that end in `.test.js`.
+
+  * 🔑 Tests are grouped into `describe` and `it` blocks.
+
+  ```js
+  describe("Initialization", () => {
+    it("should return an object containing a 'number' property when called with the 'new' keyword", () => {
+      const obj = new Arithmetic();
+
+      expect("number" in obj).toEqual(true);
+    });
+  ```
+
+* The `describe` and `it` blocks are simply used for grouping. Run the `npm run test` command in your terminal to demonstrate the output:
+
+  ```md
+  PASS  test/arithmetic.test.js
+    Arithmetic
+      Initialization
+        ✓ should return an object containing a 'number' property when called with the 'new' keyword (2ms)
+        ✓ should set 'number' when created
+        ✓ should default 'number' to 0
+      plus
+        ✓ should return a new 'Arithmetic' object
+        ✓ should return a new 'Arithmetic' object that has an updated 'number' value
+      minus
+        ✓ should return a new 'Arithmetic' object
+        ✓ should return a new 'Arithmetic' object that has an updated 'number' value
+      value
+        ✓ should return the 'Arithmetic' object's 'number' value
+
+  Test Suites: 1 passed, 1 total
+  Tests:       8 passed, 8 total
+  Snapshots:   0 total
+  Time:        1.482s
+  Ran all test suites.
+  ```
+
+  * 🔑 The `describe` function is used to "describe" what is being tested. And `it` is used to "label" specific things we're testing for, ie "should return an object containing a 'number' property when called with the 'new' keyword".
+
+  * 🔑 Since `describe` and `it` are just used for grouping, you can arrange these in whatever way makes the most sense to you and your team. You can nest `describe` functions inside of other `describe` functions, but `it` functions shouldn't be nested inside of each other should always go inside of `describe` functions.
+
+* Go through a few of the test cases to demonstrate how the `expect` function is used.
+
+  * 🔑 `expect` is what's referred to as an "assertion", it's used to check that our code is doing what it should, e.g.
+
+  ```js
+  it("should default 'number' to 0", () => {
+    const obj = new Arithmetic();
+
+    expect(obj.number).toEqual(0);
+  });
+  ```
+
+  * This code checks that the object created by the `Arithmetic` constructor defaults its `number` property to `0` if not provided one.
+
+* Demonstrate what happens if you change this to be another number and re-run the tests:
+
+  ```md
+  FAIL  test/arithmetic.test.js
+    Arithmetic
+      Initialization
+        ✓ should return an object containing a 'number' property when called with the 'new' keyword (3ms)
+        ✓ should set 'number' when created
+        ✕ should default 'number' to 1 (1ms)
+      plus
+        ✓ should return a new 'Arithmetic' object
+        ✓ should return a new 'Arithmetic' object that has an updated 'number' value
+      minus
+        ✓ should return a new 'Arithmetic' object
+        ✓ should return a new 'Arithmetic' object that has an updated 'number' value
+      value
+        ✓ should return the 'Arithmetic' object's 'number' value (1ms)
+
+    ● Arithmetic › Initialization › should default 'number' to 1
+
+      expect(received).toEqual(expected) // deep equality
+
+      Expected: 1
+      Received: 0
+
+        20 |       const obj = new Arithmetic();
+        21 |
+        22 |       expect(obj.number).toEqual(1);
+           |                          ^
+        23 |     });
+        24 |   });
+        25 |
+
+        at Object.toEqual (test/arithmetic.test.js:22:26)
+
+  Test Suites: 1 failed, 1 total
+  Tests:       1 failed, 7 passed, 8 total
+  Snapshots:   0 total
+  Time:        0.935s, estimated 1s
+  Ran all test suites.
+  ```
+
+  * 🔑 In order for a test to pass, its assertion should evaluate to be true.
+
+  * 🔑 The `instanceof` operator can be used to determine if an object was created with a given constructor function.
+
+  ```js
+  it("should return a new 'Arithmetic' object", () => {
+    const obj = new Arithmetic(9).minus(4);
+
+    expect(obj instanceof Arithmetic).toEqual(true);
+  });
+  ```
+
+  * For now, we're primarily concerned with testing that a function returns what it should in a variety of situations.
+
+* Take a few minutes to answer lingering questions before the next activity.
+
+### 8. Students Do: TDD (15 mins)
+
+* Direct students to the next activity, found in [09-Stu_TDD/Unsolved](../../../../01-Class-Content/10-oop/01-Activities/09-Stu_TDD/Unsolved).
+
+  ```md
+  # TDD
+
+  In this activity you will write tests outlining the expected functionality for application code that haven't been implemented yet.
+
+  ## Instructions
+
+  * Open the `algo.js` file and take a moment to examine the code.
+
+    * The `Algo` constructor function has three empty methods: `reverse`, `isPalindrome`, and `capitalize`.
+
+  * Now open the `test/algo.test.js` file.
+
+    * This file contains `describe` blocks for each method on the `Algo` constructor.
+
+  * Write code to test each method:
+
+    * The `reverse` method should take a string as an argument and return a new reversed version of the string. e.g. "Hello" should return "elloH".
+
+    * The `isPalindrome` method should take a string as an argument and return the boolean `true` if the provided string is a palindrome. A palindrome is a word that is the same backwards as it is forwards, e.g. "racecar". Return `false` is the string is not a palindrome.
+
+    * The `capitalize` method should take a string as an argument and return a new string with the first letter of each word capitalized. e.g. "hello world!" should return "Hello World!".
+
+  * **Important**: Write code for the tests only, the only file you will be modifying is `tests/algo.test.js`. Initially all of your tests will fail since these methods are empty, but using the tests you can define how each method _should_ work.
+
+  ## 💡 Hint(s)
+
+  * Use the previous example as a reference.
+  ```
+
+### 9. Instructor Do: Review TDD (5 mins)
+
+* Use the prompts and talking points below to demonstrate the following key point(s):
+
+  * ✔️ By providing our functions different inputs, we can make sure they work correctly by checking their return values.
+
+  * ✔️ Tests ensure our functions carry out their logic the same way every time.
+
+  * ✔️ Tests allow other developers to quickly see what a function or suite of functions should be achieving.
+
+* Open [09-Stu_TDD/Unsolved](../../../../01-Class-Content/10-oop/01-Activities/09-Stu_TDD/Unsolved) in your IDE and point out the following:
+
+  * We first require the file containing the functions we would like to test.
+
+  ```js
+  const Algo = require("../algo");
+  ```
+
+  * We can then use the `describe` function to begin setting up our tests. We are going to start with the `Algo` definition.
+
+  ```js
+  describe("Algo", () => {
+  ```
+
+  * Now we can begin to test specific functionality. Here we are saying that when passed a string and reversed, it returns the proper reversed string. the `it` method allows us to describe what the function should do in plain english given certain parameters.
+
+  ```js
+  describe("reverse", () => {
+    it("should reverse a given string", () => {
+      const str = "Hello World!";
+      const reversed = "!dlroW olleH";
+
+      const result = new Algo().reverse(str);
+
+      expect(result).toEqual(reversed);
+    });
+  });
+  ```
+
+  * 🔑 In each case, we're checking to see what the method returns given a certain input. We setup the same testing for `isPalindrome` and capitalize.
+
+  ```js
+  describe("isPalindrome", () => {
+    it("should return true if a string is a palindrome", () => {
+      const str = "racecar";
+
+      const result = new Algo().isPalindrome(str);
+
+      expect(result).toEqual(true);
+    });
+
+    it("should return false if a string is not a palindrome", () => {
+      const str = "neon";
+
+      const result = new Algo().isPalindrome(str);
+
+      expect(result).toEqual(false);
+    });
+  ```
+
+  * 🔑 Even though we haven't written code for these methods yet, it would be easy for someone to understand what the methods should do based on these tests.
+
+  ```js
+    describe("capitalize", () => {
+      it("should take a string and return a new string with the first letter of each word capitalized", () => {
+        const str = "capitalize every first word of the string.";
+        const capitalized = "Capitalize Every First Word Of The String.";
+
+        const result = new Algo().capitalize(str);
+
+        expect(result).toEqual(capitalized);
+      });
+    });
+  });
+  ```
+
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
+
+  * ☝️ Do you think these are good tests?
+
+  * 🙋 Yes, if they fail, it means the code isn't doing what it should.
+
+  * ☝️ Do you think these are _enough_ tests?
+
+  * 🙋 No, it doesn't account for things like empty strings, what should happen if given invalid arguments or edge cases like palindromes with different casing or spaces.
+
+* Take a moment to answer any questions before the next activity.
+
+### 10. Students Do: Make The Tests Pass (15 mins)
+
+* Direct students to the next activity, found in [10-Stu_Pass-Tests/Unsolved](../../../../01-Class-Content/10-oop/01-Activities/10-Stu_Pass-Tests/Unsolved).
+
+  ```md
+  # Pass Tests
+
+  In this activity you will be writing code to implement functionality for the Algo constructor you wrote tests for in the previous activity.
+
+  ## Instructions
+
+  * Open the `Unsolved/algo.js` file in your editor.
+
+  * Starting with the `reverse`, method, write code to make the tests in `tests/algo.test.js` pass.
+
+  * After completing each method, run `npm run test` in your terminal to verify you correctly implemented the method before moving on to the next one.
+  ```
+
+### 11. Instructor Do: Review Make The Tests Pass (5 mins)
+
+* Use the prompts and talking points below to review the following key point(s):
+
+  * ✔️ Writing tests before writing code helps us ensure that our code will work.
+
+  * ✔️ Writing tests first allows for more rapid development because we will not have to manually test our code.
+
+* Open [02-Stu_Hello-Node/Solved/index.js](../../../../01-Class-Content/10-oop/01-Activities/10-Stu_Pass-Tests/Solved/algo.js) in your IDE and explain the following point(s):
+
+  * 🔑 Since we had tests written for each method, they will be easier to implement since we didn't have to do any manual testing.
+
+  ```js
+  function Algo() {}
+
+  Algo.prototype.reverse = function(str) {
+    return str
+      .split("")
+      .reverse()
+      .join("");
+  };
+  ```
+
+  * 🔑 Because we had tests written, we can be more reasonably sure that each method works as intended.
+
+  ```js
+  Algo.prototype.isPalindrome = function(str) {
+    return this.reverse(str) === str;
+  };
+  ```
+
+  * There can be multiple ways to implement methods. It is good practice to worry about testing specific implementation details.
+
+  ```js
+  Algo.prototype.capitalize = function(str) {
+    return str.split(" ").map(word => {
+      return word.substring(0, 1).toUpperCase() + word.substring(1);
+    }).join(" ");
+  };
+  ```
+
+* Take a moment to answer any remaining questions about the activity.
+
+### 12. BREAK (30 mins)
+
+### 13. Instructor Do: Organizing Tests (10 mins)
+
+* Use the prompts and talking points below to review the following key point(s):
+
+  * ✔️ When writing tests, it's a good idea to have framework or set of guidelines that can be used for organizing tests and deciding what kinds of things to test for.
+
+  * ✔️ The Arrange Act Assert pattern gives us a guide for how to organize test code in a way that makes sense to us and other.
+
+  * ✔️ When considering what kinds of things to write tests for, it's a good idea to keep in mind positive, negative, and exception tests.
+
+* Open [11-Ins_Organizing-Tests](../../../../01-Class-Content/10-oop/01-Activities/11-Ins_Organizing-Tests) in your IDE and explain the following point(s):
+
+  ```js
+  function Todo(text) {
+    if (typeof text !== "string" || !text.trim().length) {
+      throw new Error("Expected parameter 'text' to be a non empty string");
+    }
+
+    this.text = text;
+  }
+  ```
+
+  * The `todo.js` file contains a `Todo` constructor. This constructor creates an object with a provided `text` value. If `text` is not a string or is an empty string, an error is thrown.
+
+  ```js
+  function TodoList() {
+    this.todos = [];
+  }
+  ```
+
+  * The `TodoList` has a `addTodo` method that adds a new `Todo` object to the array, a `getNextTodo` property that returns the first todo in the array, and a `completeNextTodo` method that removes the first todo in the list and returns it.
+
+  ```js
+  TodoList.prototype.addTodo = function(text) {
+    this.todos.push(new Todo(text));
+  };
+
+  TodoList.prototype.getNextTodo = function() {
+    return this.todos[0];
+  };
+
+  TodoList.prototype.completeNextTodo = function() {
+    return this.todos.shift();
+  };
+  ```
+
+* Open [11-Ins_Organizing-Tests/test/todo.test.js](../../../../01-Class-Content/10-oop/01-Activities/11-Ins_Organizing-Tests/test/todo.test.js) in your IDE and point out the following:
+
+* The tests are split into three parts: Arrange, Act, and Assert.
+
+  * **Arrange**: Any kind of set up you need to run your test.
+
+  * **Act**: Perform the action to be tested.
+
+  * **Assert**: Perform the assertion.
+
+  * We don't necessarily need comments, but it's helpful to separate these with at least a newline character. Not every test will have all three sections, but if we keep the AAA pattern in mind, we can write more organized tests.
+
+  ```js
+  it("should create an object with a 'text' property set to the 'text' argument provided when called with the 'new' keyword", () => {
+    // Arrange
+    const text = "Pick up milk";
+
+    // Act
+    const obj = new Todo(text);
+
+    // Assert
+    expect(obj.text).toEqual(text);
+  });
+  ```
+
+* Open [11-Ins_Organizing-Tests/test/todoList.test.js](../../../../01-Class-Content/10-oop/01-Activities/11-Ins_Organizing-Tests/test/todoList.test.js) in your IDE and explain the following:
+
+  * This file contains a few **positive tests**. We run these tests to make sure things work as intended in likely situations.
+
+  ```js
+  it("should add a new 'Todo' object to its 'todos' array", () => {
+    // Arrange
+    const todoList = new TodoList();
+    const todoText = "Mow Lawn";
+
+    // Act
+    todoList.addTodo(todoText);
+
+    // Assert
+    expect(todoList.todos.length).toEqual(1);
+    expect(todoList.todos[0] instanceof Todo).toEqual(true);
+    expect(todoList.todos[0].text).toEqual(todoText);
+  });
+  ```
+
+  * This file contains a **negative test**. We run these tests to check things work in edge cases or cases where the function should return a negative result. For example if we are checking if `isPalindrome` returns `false` for strings that aren't palindromes.
+
+  ```js
+  it("should return undefined if there are no todos", () => {
+    // Arrange
+    const todoList = new TodoList();
+    let nextTodo;
+
+    // Act
+    nextTodo = todoList.getNextTodo();
+
+    // Assert
+    expect(typeof nextTodo).toEqual("undefined");
+  });
+  ```
+
+  * This file contains an **exception test**. We run these tests to make sure than our code throws errors if/when it should.
+
+  ```js
+  it("should throw an error if not provided text", () => {
+    // Arrange
+    const todoList = new TodoList();
+    const err = new Error(
+      "Expected parameter 'text' to be a non empty string"
+    );
+    const cb = () => todoList.addTodo();
+
+    // Assert
+    expect(cb).toThrowError(err);
+  });
+  ```
+
+  * Not every function will have all three (positive, negative, and exception tests), but keeping them in mind can help us decide what kinds of things we should be testing for.
+
+* Take a minute to answer any questions about the AAA pattern and positive, negative, and exception tests.
+
+### 14. Students Do: Structured Tests (15 mins)
+
+* Direct students to the next activity, found in [11-Ins_Organizing-Tests/Unsolved](../../../../01-Class-Content/10-oop/01-Activities/11-Ins_Organizing-Tests/Unsolved).
+
+  ```md
+  # Structured Tests
+
+  In this activity you will be writing code to test two constructor functions. You will attempt to follow the Arrange Act Assert pattern.
+
+  ## Instructions
+
+  * Open the `Unsolved/child.js` file and examine its contents.
+
+    * This file exports a `Child` constructor function. The constructor function expects to be provided a name and an age.
+
+    * If `name` is not a string or `name` is an empty string, an error is thrown.
+
+    * If `age` is not a number, is `NaN` or is less than `0`, an error is thrown.
+
+    * Otherwise these values are added to the created instance when the constructor is called.
+
+  * Open the `Unsolved/dayCare.js` file and examine its contents:
+
+    * This file requires the `Child` constructor function.
+
+    * This file exports a `DayCare` constructor function.
+
+    * The `DayCare` constructor has an empty `children` array, a capacity of 3, and an `ageLimit` of 6.
+
+    * The `DayCare` constructor has an `addChild` method used for adding `Child` objects to the `children` array, and a `pickupChild` method used for removing a `Child` object from the `children` array.
+
+  * Inside of the `Unsolved/test/child.test.js` file, write code to test that the `Child` constructor works as expected.
+
+  * Inside of the `Unsolved/test/dayCare.test.js`, write code to test that the `DayCare` constructor and methods work as expected.
+
+  * The only files you need to modify for this activity are `Unsolved/test/child.test.js` and `Unsolved/test/dayCare.test.js`.
+
+  ## 💡 Hint(s)
+
+  * After adding each test, run `npm run test` in your terminal to ensure the test passes.
+
+  * When deciding what to test for, consider the following:
+
+    * Positive tests: What happens when things go well?
+
+    * Negative tests: What happens in edge cases or when things shouldn't work?
+
+    * Exception tests: What happens in cases when an error should be thrown?
+  ```
+
+### 15. Instructor Do: Review Structured Tests (15 mins)
+
+* Use the prompts and talking points below to demonstrate the following key point(s):
+
+  * ✔️ We should use the AAA pattern to structure our tests.
+
+  * ✔️ We should keep in mind positive, negative, and exception test cases when deciding what to test for.
+
+* Open [12-Stu_Structured-Tests/Solved/test/child.test.js](../../../../01-Class-Content/10-oop/01-Activities/12-Stu_Structured-Tests/Solved/test/child.test.js) file in your editor and point out the following key points:
+
+  * 🔑 By using the Arrange Act Assert pattern, we can organize our tests into three easy to understand parts.
+
+  ```js
+  it("should not add a child if already at capacity", () => {
+    const dayCare = new DayCare();
+    const child = new Child("Alice", 4);
+    dayCare.children = [
+      new Child("Tammy", 1),
+      new Child("Mark", 2),
+      new Child("Alvin", 1)
+    ];
+
+    dayCare.addChild(child);
+
+    expect(dayCare.children.length).toEqual(3);
+  });
+  ```
+
+  * 🔑 We would use the `toThrowError` or `toThrow` matcher to check than an error was thrown.
+
+  ```js
+  it("should throw an error if not provided a Child object as an argument", () => {
+    const err = new Error(
+      "Expected parameter 'child' to be an instance of Child"
+    );
+    const cb = () => {
+      const dayCare = new DayCare();
+      dayCare.addChild();
+    };
+
+    expect(cb).toThrowError(err);
+  });
+  ```
+
+  * 🔑 We use negative tests to make sure things work as expected in edge cases.
+
+  ```js
+  it("should not add a child if already at capacity", () => {
+    const dayCare = new DayCare();
+    const child = new Child("Alice", 4);
+    dayCare.children = [
+      new Child("Tammy", 1),
+      new Child("Mark", 2),
+      new Child("Alvin", 1)
+    ];
+
+    dayCare.addChild(child);
+
+    expect(dayCare.children.length).toEqual(3);
+  });
+  ```
+
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
+
+  * ☝️ Why is it helpful for a function to purposefully throw an error?
+
+  * 🙋 If we throw a helpful error message when a function is being misused, the issue is easier to track down than if we didn't throw the error and the misuse caused another unexpected error somewhere else in the code.
+
+* Take a minute to answer any remaining questions.
 
 - - -
 
-### 12. Lunch (30 min)
+### 16. Instructor Do: Introduce Mocks (10 mins)
 
-- - -
+* Use the prompts and talking points below to review the following key point(s):
 
-### 13.	Instructor Do: AxiosJS	(0:10)
+  * ✔️ Mocks can be used to replace code with side-effects, such as printing to the console, making AJAX requests, writing/writing to the filesystem so it doesn't happen when tests are being run.
 
-* Proceed to the next example, which will introduce students to the use of the NPM `axios` package.
+  * ✔️ Mocks can be spied on. i.e. we can test whether mocked functions have been called, and what arguments they were called with.
 
-* Open the file [axios.js](../../../../01-Class-Content/10-nodejs/01-Activities/16-Axios/1-MissingPackage).
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
 
-* Don't get too deep initially. Just explain that this code is intended to do a GET request to the wikipedia article on Kudos Bars and will grab the HTML body from it.
+  * ☝️ So far we've just been testing if a function returned what it was supposed to. Why might it be complicated to test something like an AJAX request being called? Or writing to the filesystem?
 
-    ![/9-Request_1.png](Images/9-Axios_1.png)
+  * 🙋 An AJAX request would depend on something outside of the code we're testing which we can't always control, maybe a third-party API somewhere else. Reading from and writing to the filesystem might not be a good idea if our tests end up making changes that can effect the results of running the tests again.
 
-* Try to run the file using `node axios.js`, but point out that an error is experienced.
+* Open [13-Ins_Introduce-Mocks/logger.js](../../../../01-Class-Content/10-oop/01-Activities/13-Ins_Introduce-Mocks/logger.js) file in your IDE and point out the following:
 
-  ![/9-Axios_2.png](Images/9-Axios_2.png)
+  * In order to print different colors to the console, there are special codes for each color that must be included as a first argument to the `console.log` method.
 
-* Ask students if they have any ideas as to what is causing the error before explaining that the issue is due to the fact that the `axios` package is an external NPM package and thus requires us to install it in order to function.
+  ```js
+  function Logger() {
+    // This is just a way of adding methods to the prototype once in a loop
+    // Rather than writing them all out for each color
+    if (!this.init) {
+      Logger.prototype.init = true;
 
-* Ask students if they have any ideas on how to install the package. They most likely will not know how to do this at the moment, but the answer is to run `npm install axios` inside the axios.js folder in Git Bash or terminal.
+      const colors = {
+        black: "\x1b[30m",
+        red: "\x1b[31m",
+        green: "\x1b[32m",
+        yellow: "\x1b[33m",
+        blue: "\x1b[34m",
+        magenta: "\x1b[35m",
+        cyan: "\x1b[36m",
+        white: "\x1b[37m"
+      };
+  ```
 
-* Proceed to install the `axios` package and then re-run the code to show that it works this time.
+  * Rather than manually write out a method for each color, we're using a loop that runs only once the first time a `Logger` object is created with the constructor. This is called the "dynamic prototype pattern".
 
-  ![/9-Axios_3.png](Images/9-Axios_3.png)
+  ```js
+  for (let key in colors) {
+    // Each color method calls console.log with the color as the first argument,
+    // followed by any additional arguments
+    Logger.prototype[key] = function(...args) {
+      console.log(colors[key], ...args);
+    };
+  }
+  ```
 
-* At this point, do a deep dive of the code. Be sure to explain the response argumentwhich is returned by the axios function.
+* Open [13-Ins_Introduce-Mocks/index.js](../../../../01-Class-Content/10-oop/01-Activities/13-Ins_Introduce-Mocks/index.js) file in your terminal and run the file, pointing out the following:
 
-* Ask if there are any questions, then slack out the solution to students.
+  * We first import a `Logger` constructor that creates an object capable of logging to the console in different colors. Run the example in your terminal to demonstrate this, and point out the logs themselves, explaining on a high-level how this is achieved.
 
-### 14.	Instructor Do: OMDB-Axios	(0:07)
+  ```js
+  const Logger = require("./logger");
 
-* Proceed with the next example, which will use the `request` package once again. This time, instead of grabbing * Proceed with the next example, which will use the `axios` package once again. This time, instead of grabbing random HTML content, we will use it to grab specific information from the OMDB API (the API for IMDB).
+  const log = new Logger();
 
-* Open the file [omdbAxios.js](../../../../01-Class-Content/10-nodejs/01-Activities/17-OMDB_Axios).
+  log.red("We can write to the console in different colors!");
 
-* Give students a few moments to look at the code before diving into the explanation or having them explain it to the class if you feel like there are some confident individuals out there.
+  log.blue("We just need to provide an additional argument to the console.log method!");
 
-* Proceed to point out how, like the last file, we use the `axios` package to get data from a website. This time, however, the website is actually an API that provides JSON content.
+  log.magenta("The first argument console.log needs is an 'ANSI Escape Code'");
 
-* Point out how we are thus able to use the `response` and specifically the `response.data.imdbRating` to specifically grab the IMDB rating for our movie of interest (in this case "Remember the Titans").
+  log.green("You can look these up at https://en.wikipedia.org/wiki/ANSI_escape_code#Colors");
 
-    ![/10-OMDB_1.png](Images/10-OMDB_1.png)
+  log.yellow("But they're just codes that represent different colors");
 
-* Ask if there are any questions, before slacking out this solution.
+  log.cyan("The second argument console.log should receive is the message to be printed");
+  ```
 
-### 15.	Partners Do: OMDB-Axios Interactive	(0:20)
 
-* Finally provide the last exercise of the day.
+* Open [13-Ins_Introduce-Mocks/test/logger.test.js](../../../../01-Class-Content/10-oop/01-Activities/13-Ins_Introduce-Mocks/test/logger.test.js) file in your IDE and point out the following key points:
 
-* Slack out the following file and instructions:
+  * 🔑 In this file we're using the `jest.spyOn` method to mock and spy on the `console.log` method. We're also using the `mock.mockImplementation` method to replace `console.log`'s functionality with an empty function that does nothing.
 
-* **File:**
+  ```js
+  it("should print in black", () => {
+    const log = new Logger();
+    const message = "Hello world!";
+    const mock = jest.spyOn(console, "log");
+    mock.mockImplementation(() => {});
 
-  * [omdbInteractiveStarter.js](../../../../01-Class-Content/10-nodejs/01-Activities/18-OMDB_Axios_Students/Unsolved/omdbInteractiveStarter.js)
+    log.black(message);
 
-* **Instructions**
+    expect(mock).toBeCalledWith(colors.black, message);
 
-  * Using the code sent to you earlier as a reference and using the code provided to you as a starter, create a Node application which takes in a movie name as a command line argument then uses the OMDB API to retrieve and return the release date to the console.
+    mock.mockRestore();
+  });
+  ```
 
-  * For this activity you have two options:
+  * 🔑 Since we're mocking the `console.log` method nothing will be printed to the console when the test is run, and we're able to spy on values provided to the `console.log` method. When `log.black` is called, we can verify that `console.log` was also called with the expected message and color.
 
-    * Easier: Require that the user provide a movie with a single word in the title (ex: Cinderella)
+* Open [13-Ins_Introduce-Mocks/test/logger.test.js](../../../../01-Class-Content/10-oop/01-Activities/13-Ins_Introduce-Mocks/test/logger.test.js) in your terminal and run with `npm run test` to demonstrate the console output.
 
-    * Harder: Allow the user to provide a movie with as many words as possible (ex: Forrest Gump).
+* Answer any lingering questions before moving on to the next activity.
 
-  * Hint: Start by figuring out what your API URL should be then use the starter code as a guide.
+### 17. Students Do: First Mock (15 mins)
 
-  * Hint: Remember to `npm install axios` or else your code will not work no matter what.
+* Direct students to the next activity, found in [14-Stu_First-Mock/Unsolved](../../../../01-Class-Content/10-oop/01-Activities/14-Stu_First-Mock/Unsolved).
 
-  * Hint: Be sure to use an OMDB API Key with your axios request. You may use `trilogy`.
+  ```md
+  # First Mock
 
-### 16.	Instructor Do: Review OMDB-Axios Interactive	(0:07)
+  In this activity you will add code to spy on the `console.log` method.
 
-* Open the solution files (First `LevelOne` and then `LevelTwo`).
+  ## Instructions
 
-* Walk students through the solutions using the comments as a guide.
+  * Take a moment to examine the `Unsolved/child.js` and `Unsolved/dayCare.js` files. They should be almost identical to the previous example, but with a few `console.log`s added to the code.
 
-* Be sure to point out how we dynamically generated the queryURL and how we used the `JSON.parse(body)["Year"]` to grab the release year.
+  * Add code to spy on the `console.log` method to ensure that it is called when expected with the correct arguments.
 
-  ![/11-OMDBSolved_1.png](Images/11-OMDBSolved_1.png)
+  ## 💡 Hint(s)
 
-* In discussing the Challenge, you can leave it to students to decipher the "for-loop magic". Effectively, we just append a "+" for all words except the last one in the title.
+  * Use the previous demonstration as a reference for setting up mocks and spies.
+  ```
 
-  ![/11-OMDBSolved_2.png](Images/11-OMDBSolved_2.png)
+### 18. Instructor Do: Review First Mock (10 mins)
 
-### 17.	BONUS: Discuss Sync vs Async Reading	(0:15)
+* Use the prompts and talking points below to review the following key point(s):
 
-* If you explore the folder `19-SyncVAsync` there are two files (`asyncAppend.js` and `syncAppend.js`) that look nearly identical. However, they differ in one significant way. One uses `appendFileSync` and the other uses `appendFile`. If you run each of these applications, you will find that the order by which the variable `secondNumber` prints is reversed.
+  * ✔️ Mocks are used to spy on methods we haven't written ourselves, often to prevent some side effect such as an AJAX request, writing to the console, or reading/writing to the filesystem from actually happening during a test.
 
-  * `syncAppend` displays the `secondNumber` AFTER the append function prints `SAVED`
-  * `asyncAppend` displays the `secondNumber` BEFORE the append function prints `SAVED`.
+  * ✔️ Mocks can be spied on, i.e. we can keep track of mocked functions being called, and what arguments they're called with.
 
-![/12-AsyncVsSync.png](Images/12-AsyncVsSync.png)
+* Open [13-Ins_Introduce-Mocks/test/14-Stu_First-Mock/Solved/test/dayCare.test.js](../../../../01-Class-Content/10-oop/01-Activities/14-Stu_First-Mock/Solved/test/dayCare.test.js) file in your IDE and point out the following:
 
-* This presents a good opportunity to introduce students to the concept of synchronous and asynchronous threading. You can also explain that effectively in asynchronous fashion, all of the "indented blocks" are their own stream. They operate independently of the other streams of code.
+  ```js
+  it("should not add a child over the 'ageLimit'", () => {
+    const child = new Child("Tammy", 8);
+    const dayCare = new DayCare();
+  ```
 
-* Don't expect everyone to follow this, but slack the code out anyway. Your advanced students will benefit.
+  * 🔑 By mocking `console.log`, we can prevent it from running and filling up our terminals when running tests. We're able to spy on the `console.log` method and verify that it was called with the arguments we expect.
 
-### 18. Groups Do: Homework (67 mins, remainder of class)
+  ```js
+  const mock = jest.spyOn(console, "log");
+  mock.mockImplementation(() => {});
 
-* Put students into groups, and have them get started on their homework.
+  dayCare.addChild(child);
+
+  expect(dayCare.children.length).toEqual(0);
+  expect(mock).toBeCalledWith(
+    "Unable to add child, they are over the age limit"
+  );
+  ```
+
+  * 🔑 We can "unmock" `console.log` by using the `mock.mockRestore` method. It's a good idea to clean up any mocks we run at the end of a test to ensure the next test isn't affected.
+
+  ```js
+  mock.mockRestore();
+  ```
+
+* Take a moment to answer any lingering questions.
+
+### 19. Instructor Do: Module Mock Demo (5 mins)
+
+* Use the prompts and talking points below to review the following key point(s):
+
+  * ✔️ There are a few extra steps required to mock third party and built-in node modules, but the idea is the same.
+
+* Open [15-Ins_Module-Mock-Demo/movieSearch.js](../../../../01-Class-Content/10-oop/01-Activities/15-Ins_Module-Mock-Demo/movieSearch.js) file in your IDE and point out the following:
+
+  * This file exports a `MovieSearch` constructor that can be used to create an object used for searching the OMDB API.
+  
+  ```js
+  const axios = require("axios");
+
+  function MovieSearch() {}
+
+  MovieSearch.prototype.buildUrl = function(movie) {
+    return `https://www.omdbapi.com/?t=${movie}&apikey=trilogy`;
+  };
+
+  MovieSearch.prototype.search = function(movie) {
+    return axios.get(this.buildUrl(movie));
+  };
+  ```
+
+  
+* Open [15-Ins_Module-Mock-Demo/test/movieSearch.test.js](../../../../01-Class-Content/10-oop/01-Activities/15-Ins_Module-Mock-Demo/test/movieSearch.test.js) file in your editor and point out the following key points:
+
+  * 🔑 We require axios and mock it, since we want to prevent actual AJAX requests from happening. This is one way of mocking a node module.
+
+  ```js
+  const axios = require("axios");
+  const MovieSearch = require("../movieSearch");
+
+  jest.mock("axios");
+  ```
+
+  * 🔑 We mock the return value of `axios.get` to be a new Promise object that resolves to an object that contains a `data` property that's set to an empty object. We're mocking the return value to this because it's similar to what we would get from the response from the OMDB API.
+
+  ```js
+  it("should search the OMDB API for a given movie", () => {
+    const movie = new MovieSearch();
+    const name = "Rocky";
+
+    axios.get.mockReturnValue(
+      new Promise(function(resolve) {
+        resolve({ data: {} });
+      })
+    );
+
+    expect(movie.search(name)).resolves.toEqual({ data: {} });
+    expect(axios.get).lastCalledWith(movie.buildUrl(name));
+  });
+  ```
+
+* Take a moment to answer any questions about this example before moving on.
+
+### 20. Students Do: Mock FS (10 mins)
+
+* Direct students to the next activity, found in [16-Stu_Mock-Fs/Unsolved](../../../../01-Class-Content/10-oop/01-Activities/16-Stu_Mock-Fs/Unsolved).
+
+```md
+# Mock FS
+
+In this activity you will write code to mock and spy on the `fs` module to ensure its called when expected with the correct arguments.
+
+## Instructions
+
+* Open the `Unsolved/fileIO.js` file and take a moment to examine its contents.
+
+* This file exports a `FileIO` constructor function with methods for reading and writing to the filesystem.
+
+* The `read` and `write` methods use the synchronous versions of `fs.readFile` and `fs.writeFile`, so no callback function is required.
+
+* Open `Unsolved/tests/fileIO/test.js` and add code to mock the `fs` module its `readFileSync` and `writeFileSync` methods so that they don't read from and write to the filesystem.
+
+* Make sure that the `readFileSync` and `writeFileSync` methods are called with the correct arguments when the `FileIO.prototype.read` and `FileIO.prototype.write` methods are called.
+
+## 💡 Hints(s)
+
+* Refer to the previous demonstration to reference how to mock node modules.
+
+## 🏆 Bonus
+
+* Write tests for a `FileIO.prototype.append` method that should append to a given file. Then update the `Unsolved/fileIO.js` file to include this method using the `fs.appendFileSync` method.
+```
+
+### 21. Instructor Do: Review Mock FS (10 mins)
+
+* Use the prompts and talking points below to review the following key point(s):
+
+  * ✔️ There are a few extra steps required to mock third party and built-in node modules, but the idea is the same.
+
+  * ✔️ By mocking the fs module we can avoid requiring our tests to read and write to the filesystem. Not only would this slow down tests, but it could influence how the next test runs.
+
+* Open [16-Stu_Mock-Fs/Solved/test/fileIO.test.js](../../../../01-Class-Content/10-oop/01-Activities/16-Stu_Mock-Fs/Solved/test/fileIO.test.js) file in your editor and point out the following key points:
+
+  * 🔑 We mock the `fs` module by requiring it and using the `jest.mock` method at the top of the file.
+
+  ```js
+  const fs = require("fs");
+  const FileIO = require("../fileIO");
+
+  jest.mock("fs");
+  ```
+
+  * 🔑 Since `fileIO.read` returns the result of `fs.readFileSync`, we can mock it's return value and verify it was called with the expected arguments without actually making a trip to the filesystem.
+
+  ```js
+  it("should call fs.readFileSync with the passed in 'file' argument", () => {
+    const fileIO = new FileIO();
+    const file = "message.txt";
+    let data;
+
+    fs.readFileSync.mockReturnValue("Hello World!");
+    data = fileIO.read(file);
+
+    expect(data).toEqual("Hello World!");
+    expect(fs.readFileSync).lastCalledWith(file, "utf8");
+  });
+  ```
+
+  * 🔑 When testing the `fileIO.write` method, we just need to know that the `fs.writeFileSync` method was called with the correct arguments. We aren't testing that the `fs` module works, only that it's being utilized as expected.
+
+  ```js
+  it("should call fs.writeFileSync with the passed in 'path' and 'data' arguments", () => {
+    const fileIO = new FileIO();
+    const path = "message.txt";
+    const data = "Hello World!";
+  
+    fileIO.write(path, data);
+
+    expect(fs.writeFileSync).lastCalledWith(path, data);
+  });
+  ```
+
+* Answer any lingering questions about testing or mocks before dismissing the class.
+
+### 22. Review (30 mins)
 
 ### Lesson Plan Feedback
 
-How did today's class go?
+How did today’s lesson go? Your feedback is important. Please take 5 minutes to complete this anonymous survey.
 
-[Went Well](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=ft&sentiment=positive&lesson=05.04)
-
-[Went Poorly](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=ft&sentiment=negative&lesson=05.04)
+[Class Survey](https://forms.gle/nYLbt6NZUNJMJ1h38)
