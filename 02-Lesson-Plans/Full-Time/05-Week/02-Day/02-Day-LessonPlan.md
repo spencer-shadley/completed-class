@@ -890,7 +890,7 @@ Use the prompts and talking points below to demonstrate the following key point(
 
 * Open [35-Stu-Joke-Saver/Solved/Bonus/index.js](../../../../01-Class-Content/09-NodeJS/01-Activities/35-Stu-Joke-Saver/Solved/Bonus/index.js) in your IDE and explain the following:
 
-  * The functionally of these examples is the same, but there's a key difference in the way the code is written. Promises, similar to jQuery methods, are chainable
+  * The functionally of these examples is the same, but there's a key difference in the way the code is written. Promises, similar to jQuery methods, are chainable.
 
   ```js
   axios
