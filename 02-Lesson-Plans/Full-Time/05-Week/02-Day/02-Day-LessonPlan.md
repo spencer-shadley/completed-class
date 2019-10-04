@@ -1,46 +1,45 @@
-## Day 2 - Group Projects <!--links--> &nbsp; [⬅️](../01-Day/01-Day-LessonPlan.md) &nbsp; [➡️](../03-Day/03-Day-LessonPlan.md)
+## 5.2 - Node and ES6 (10:00 AM)
 
-### Overview
+## Overview
 
-In this class, class will center on project work. You and the TAs should check up on each group and make sure they're moving smoothly toward completion.
+In this class, we will be building on students' proficiency with Node by introducing them to additional ES6 features that they will be using in Node.
 
-##### Instructor Priorities
+## Instructor Notes 
 
-* Students should have the entirety of class to work on their projects & presentations
+@TODO
+* Complete activities `31-Stu_Callback-Review` through `40-Stu_Mini-Project`
 
-* Make sure students begin work on presentations.
+* While you would have naturally explained Promises and asynchronous behavior on a need to know basis before today, now is the time to dive deep and provide more thorough instruction for these topics.
 
-##### Instructor Notes
+* The most important concept for students to walk away from today understanding better is Promises. If they struggle to understand async/await, assure them that a deeper understanding of Promises makes async/await easier to grasp.
 
-* Your students will be finishing their projects and creating and practicing their presentations.
+* Congratulate the class on any wins today, many JavaScript developers working in the field are unable to accurately explain many of the topics we'll be covering.
 
-* Have your TAs reference [02-Day-Time-Tracker](https://drive.google.com/a/trilogyed.com/file/d/1wbM-Z1WtHfR3X_RUkoNdAD0spK8d6P7o/view?usp=sharing) to help keep track of time during class.
+## Learning Objectives
+
+* Identify and implement how and when to use arrow functions
+* Identify and implement how and when to use let and const variables
+* Identify and destructuring of arrays, functions and objects in ES6
+* Identify and implement how and when to use template literals
+* Identify and apply for...of loops
+* Identify and implement rest and spread syntax
+* Identify and apply array methods forEach, filter and map
+
+
+## Slides 
+
+None
+
+## Time Tracker
+
+[05.2 Time Tracker](https://docs.google.com/spreadsheets/d/1OGxgZt1Vz2yClJ1sTUufEo1UUSw8d-MvTZAluhiH0HU/edit?usp=sharing)
 
 - - -
 
-### Class Objectives
+## Class Instruction
 
-* To continue working on Projects
 
-- - -
 
-### 1. Everyone Do: Project Work! (115 min)
-
-* Welcome students to class, then immediately allow them to work on their projects. 
-
-- - -
-
-### 2. Lunch (30 min)
-
-- - -
-
-### 3. Everyone Do: Project Work! (115 min)
-
-* Instructor / TAs should continue working with individual groups. 
-
-### 4. Instructors Do (10 min)
-
-* Review any overarching questions and offer closing thoughts.
 
 ### Lesson Plan Feedback
 
