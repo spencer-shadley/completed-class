@@ -1,523 +1,1095 @@
-## Day 5 - The Power of Packages <!--links--> &nbsp; [⬅️](../04-Day/04-Day-LessonPlan.md) &nbsp; [➡️](../../06-Week/01-Day/01-Day-LessonPlan.md)
+## 5.5 - Classes (10:00 AM)
 
-### Overview
+## Overview
 
-In this class, we will be introducing students to the concept of NPM and package management. Most notably, we will be introducing students to inquirer.js -- an NPM package for building command line applications which are more capable of taking in user inputs than `process.argv` is.
+In this class, students will learn the benefits of OOP and learn how to apply many OOP practices to their JavaScript applications using ES6 classes.
 
-`Summary: Complete Activities 20-29 in Unit 10`
+## Instructor Notes
 
-##### Instructor Priorities
+* `Summary: Complete activities 17-24 in 10-OOP`
 
-* Students should understand the utility of NPM packages and the process for including them in Node applications.
-* Students should understand how to use the `inquirer.JS` NPM package for handling user inputs on the command line.
+* The primary focus of the class should be introducing students to OOP concepts. Let the students know that it's okay if the new syntax feels overwhelming. The purpose of this lesson is to help students get comfortable with working with code that's organized with OOP practices.
 
-##### Instructor Notes
+* Today's lesson will rely heavily on ES6 classes. It is recommended that you spend some time getting familiar with classes, subclasses, and the `super()` method before class starts.
 
-* **Important:** Before today's class, be sure to sign up for the [MapQuest API](https://developer.mapquest.com/plan_purchase/steps/business_edition/business_edition_free/register) and obtain an API key to use during the later activities. It is also recommended that you have students do the same before class if possible. Alternatively you may wish to just slack out your code (each is free for 15,000 requests).
+## Learning Objectives
 
-* Today's class is incredibly important for both students' immediate homework assignment and their broader proficiency as Node developers. It is of the utmost importance that the majority of your students walk out understanding:
+* Implement ES6 class syntax to instantiate multiple instances of a single type of object.
 
-  * What an NPM package is
+* Construct subclasses that inherit features from a common ancestor class.
 
-  * How to install NPM packages
+* Demonstrate "thinking in OOP" by using objects to control the flow of action in an application.
 
-  * Why NPM Packages are useful
+## Slides
 
-  * How to create and use a `package.json` file for managing packages
+N/A
 
-* The second major goal of today's class is on building their proficiency with the `inquirer.js` package. This will be a package they use frequently, so do whatever necessary to ensure that the majority of your students can use the package in its basic form.
+## Time Tracker
 
-* If `inspect-process` doesn't work well for you or your students, don't sweat it. Students can always use the alternate approach of `console.log`-ing for future debug needs.
-
-* Have your TAs reference [Day-5-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1P5gEudGqV9LRrpenRP9YJ_vrAq9lmSHT/view?usp=sharing) to help keep track of time during class.
-
-### Sample Class Video (Highly Recommended)
-* To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c2ee5062-451f-46fb-a693-a86200fbdbb2)
+[5.5 Time Tracker](https://docs.google.com/spreadsheets/d/1ltQazwswviDsjU8guxw4KfVS6YB0_THMKpfqfM7gjXM/edit?usp=sharing)
 
 - - -
 
-### Class Objectives
+### Class Instruction
 
-* To introduce students to the concept of NPM and the process for including new packages.
-* To introduce students to inquirer.js, an NPM package for building responsive command line applications.
+### 1. Instructor Do: Welcome Students (10 mins)
 
-- - -
+* Navigate to the miniproject in [24/Mini-Project/Solved](../../../../01-Class-Content/10-OOP/01-Activities/24-Mini-Project/Solved/) from the command line and run the following commands:
 
-### 1.	Instructor Do: Welcome Students	(1 min)
+  * `npm install`
 
-* Spend a minute welcoming students back to class before jumping straight into the first activity.
+  * `node index.js` 
 
-### 2.	Students Do: CommandSort Refresher	(15 mins)
+* Demonstrate that the application works by attempting to solve the word guess game.
 
-* Slack out the following:
+* Open a new (blank) file in your IDE and lead students in outlining the steps to build the word guess activity in pseudocode. Refer to the following pseudocode example. There is no one *right* solution. The purpose of this activity is to reinforce problem solving strategies and prepare students for technical interview questions.
 
-* **Files:**
+* Ask the class the following question(s) and call on students for the corresponding answer(s):
 
-  * `commandSortUnsolved.js` (`20-CommandSort > UNSOLVED`)
+  * ☝️ From an Object Oriented perspective, what are three objects we could create to represent this application?
 
-* **Instructions:**
+  * 🙋 A 'game' object, a 'word' object, and a 'letter' object.
 
-  * Starting from a blank file, create a Node-based command-line application that takes in a series of numbers from the user and returns the numbers sorted in ascending order.
+  * ☝️ What kinds of methods could we have inside the 'game' object?
 
-  * Note: Feel free to use Stack Overflow or Google to find the code for sorting integers numerically.
+  * 🙋 Operational things like the initialization of the game, prompting the user for letters, ending the game, etc.
 
-### 3.	Instructor Do: Review CommandSort	(5 mins)
+  * ☝️ What kinds of methods could we have inside the 'word' object?
 
-* Review the solution with your students. In discussing the solution be sure to mention the following:
+  * 🙋 A function that checks to see if the word matches the solution.
 
-  * The use of `process.argv` to hold all of the arguments.
+  * ☝️ What kinds of methods could we have inside the 'letter' object?
 
-  * The conversion of the arguments into an array using a for-loop. Note how the for-loop skips the first two Node arguments.
+  * 🙋 A function that determines whether to display each letter as a `_` or a letter.
 
-  * The use of the JavaScript `.sort` method with an associated function that specifies how the sort should work.
-    ![/01-CommmandSort.png](Images/01-CommandSort.png)
+  * The purpose of pseudocoding here is to practice organizing our code in a way that models real life objects.
 
-* Then slack out the solution and proceed to the next example.
+* Save the pseudocode file and keep it handy so that you can refer to it in the second half of class.  
 
-### 4.	Instructor Do: Axios Refresher	(7 mins)
+*  Ask the class the following question(s) and call on students for the corresponding answer(s):
 
-* For this example, open the file [omdbAxios.js](../../../../01-Class-Content/10-nodejs/01-Activities/21-AxiosRefresher/omdbAxios.js). This file is an exact replica of the code from the last class.
+  * ☝️ Take a moment and look around the room. What kinds of objects are in this room and what kinds of properties/methods could they have?
 
-* Ask students to explain what the code is doing and how it works. Specifically ask students where the `response` argument is coming from.
+  * 🙋 A student might have the method `completeActivities`.
 
-  * ANSWER: The `axios` function creates them.
+  * 🔑 In today's class, we'll be implementing the ES6 class syntax, but we're also going to focus on modeling our code in an object oriented way. This helps us keep our code modular, reusable, and oftentimes simple, since objects in our code can closely resemble objects in the real world.
 
-![/02-AxiosRefresher.png](Images/02-AxiosRefresher.png)
+### 2. Students Do: OOP Prototypes Refresher (15 mins)
 
-* Then run the code to remind students what the code does.
+* Direct students to the instructions found in [17-Stu-Prototype-Review](../../../../01-Class-Content/10-OOP/01-Activities/17-Stu-Prototype-Review)
 
-* Once you feel confident that the majority of students understand it, Slack out the code and proceed to the next example.
+```md
+# Final TV App
 
-### 5.	Instructor Do: Visit NPM and Explain 	(10 mins)
+In this activity we will update the TV constructor function to be able to search the TV Maze API for a given actor's name.
 
-* Ask students how we installed the `axios` package from the last example (Answer: We ran `npm install axios`).
+## Instructions
 
-* Then ask them to explain what NPM is.
+* Open [Unsolved/tv.js](Unsolved/tv.js) and update the constructor function's `findActor` method. It should use the `axios` package to search the TV Maze API using the provided URL.
 
-  * ANSWER: NPM stands for Node Package Manager. It allows us to quickly incorporate pre-made code snippets into our Node applications.
+* Once the data has been retrieved from the API,grab only the first result (it should be an array of JSON objects).
 
-* Then visit the NPM page <https://www.npmjs.com/browse/star> and show the class how the NPM website lists all of the node packages available for inclusion.
+* Save the following information to the `log.txt` file using the `fs.appendFile` method:
 
-* Do a quick search for "axios" and show them that page. <https://www.npmjs.com/package/axios>. Point out how the page offers a README on how to use the package as well as provides basic information on the download statistics. Let them know that packages with more users are obviously more reliable than those with only a few downloads.
+  * The actor's name
+  * The actor's birthday
+  * The actor's gender
+  * The actor's country
+  * The actor's TV Maze URL
 
-* Then do a quick search for other NPM packages like "Request" or "Spotify". Again, show students how each of these packages each have their own README which lists out how to use the package and provide users with a few examples.
+* Once the data has been saved to the `log.txt` file, print it to the console.
 
-* Finally ask students to explain back to you why a standard library like NPM is so useful to developers.
+* Test that your code works properly by running the `cli.js` file with arguments. e.g. `node cli actor Jennifer Aniston`.
 
-  * ANSWER: It gives us a giant arsenal of pre-made code that can speed up our development by leveraging the work of others. Copy-paste coding at its very best.
+### Hints
 
-* Once you feel comfortable with your students' understanding, proceed onto the next example.
+* Implementing the `findActor` method should be very similar to the `findShow` method, refer to this if stuck.
 
-### 6.	Instructor Do: Weather NPM	(10 mins)
+* Check out this sample output from the TV Maze Actors API: <http://api.tvmaze.com/search/people?q=jennifer%20aniston>
+```
 
-* For this example, do an NPM search for "weather-js"
+### 3. Instructor Do: Review OOP Prototypes Refresher (5 mins)
 
-  * NOTE: Be sure to search for "weather-js" and not just "weather" as they will bring up different packages
+* Run [17-Stu-Prototype-Review/Solved/cli.js](../../../../01-Class-Content/10-OOP/01-Activities/17-Stu-Prototype-Review/Solved/cli.js) in a node process and demonstrate the following:
 
-* Explain that this node package will allow us to quickly collect a weather report on a given city or zipcode.
+* Navigate to folder and run the following commands:
 
-* Then open the file `weather.js` (`22-WeatherNPM`).
+  * `node cli.js actor Johnny Depp`
 
-* Quickly walk students through the code at an abstract level before pointing out that it will not work until you complete one critical step. Ask them what that step is.
+  * `node cli.js show Spongebob`
 
-  * ANSWER: Run `npm install weather-js`.
+  * `node cli.js`
 
-* Run `npm install weather-js` in the folder.
+* Ask the class the following question(s):
 
-* Then proceed to run the application using `node weather.js` in Terminal or Git Bash. Enter a city of your choice and show how the application returns a JSON of weather data.
+  * ☝️ How does the command line input relate to the output?"
 
-* Finally, return to the code and walk students through it. In discussing the code, be sure to point out:
+  * 🙋 The output is information from the tvmaze API about the actor Johnny Depp or the Spongebob TV show. When no arguments are provided, we get information about the Andy Griffith Show.
 
-  * The inclusion of the `weather-js` package using require
+* Open [17-Stu-Prototype-Review/Solved/cli.js](../../../../01-Class-Content/10-OOP/01-Activities/17-Stu-Prototype-Review/Solved/cli.js) in your IDE and explain the following:
 
-  * The `weather.find` method which takes in a city, the units of measure, and a variable to hold the results (in this case the variable is `result`).
+  * We create a new instance of TV.
 
-  * The `JSON.stringify` method which takes in the results and "pretty-prints" it.
+  * The third argument in `process.argv` describes which type of search
 
-    * NOTE: the "2" argument specifies the spacing of the JSON data
+  ```js
+  const TV = require("./tv");
 
-    ![/03-WeatherNPM.png](Images/03-WeatherNPM.png)
+  const tv = new TV();
 
-* Wait for questions, before proceeding to slack out the code to students.
+  let search = process.argv[2];
 
-### 7.	Partners Do: Review Weather NPM	(5 mins)
+  let term = process.argv.slice(3).join(" ");
 
-* Ask students to review the code with the person next to them.
+  if (!search) {
+    search = "show";
+  }
+  ```
 
-* Then ask students to explain how the code works back to you. Try to ask pointed questions if you can.
+* Ask the class the following question(s):
 
-* When you feel comfortable with their understanding, proceed onto the next exercise.
+  * ☝️ What is the significance of `process.argv.slice(3).join(" ")`?
 
-### 8.	Students Do: Geocode NPM	(20 mins)
+  * 🙋 `proccess.argv` is an array of each argument provided when the node process is started. Since each argument is separated by a space, we use `slice` and `join` to combine the argument at index 3 with any words that follow it. This way, TV shows and actors that are multiple words long can be searched for.
 
-* Then open the folder `23-GeocodeNPM`. Add your MapQuest API key where specified (sign up for a free API key [here](https://developer.mapquest.com/plan_purchase/steps/business_edition/business_edition_free/register) if you haven't already) and run `node geocodeChallenge.js`.
+* Open [17-Stu-Prototype-Review/Solved/tv.js](../../../../01-Class-Content/10-OOP/01-Activities/17-Stu-Prototype-Review/Solved/tv.js) in your IDE and explain the following:
 
-* When prompted, enter a location or address, e.g. ("Austin, Texas", "1600 Pennsylvania Ave NW, Washington, DC 20500"). Explain to students that the code returns a JSON object that geocodes the location. Explain that this information is very useful when building map-based applications.
+  * Even though TV is an empty anonymous function, that is all we need for this object. 
 
-* Let them know that they will be building this application over the next 20 minutes.
+  * 📝 We choose to create a TV constructor function and use prototype methods for organizational purposes. Remember that this same application could be created without using any objects.
 
-* Slack out the following file and instructions:
+  * We define the `findActor` method on the TV prototype.
 
-* **File:**
+  * Once we get the results back from our query, we append them to the `log.txt` file.
 
-  * `geocode.js` (`23-GeocodeNPM > UNSOLVED`)
+  ```js
+  const TV = function() {};
 
-* **Instructions:**
+  TV.prototype.findActor = function(actor) {
+    const URL = 'http://api.tvmaze.com/search/people?q=' + actor;
 
-  * Sign up for the [Mapquest API](https://developer.mapquest.com/plan_purchase/steps/business_edition/business_edition_free/register) and obtain an API key which will be required for this activity. After signing up and logging in, you can find your API key [here](https://developer.mapquest.com/user/me/profile).
+    axios.get(URL).then((response) => { 
 
-  * Create a Node application which makes use of the [node-geocoder](https://www.npmjs.com/package/node-geocoder) NPM package to obtain detailed geocoding information about a location.
+      const actorData = [
+        'Name: ' + response.data[0].person.name,
+        'Birthday: ' + response.data[0].person.birthday,
+        'Gender: ' + response.data[0].person.gender,
+        'Country: ' + response.data[0].person.country.name,
+        'URL: ' + response.data[0].person.url,
+        '-'.repeat(60)
 
-  * Be sure to replace `YOUR-MAPQUEST-API-CONSUMER-KEY` in the `options` object with your actual MapQuest API key.
+      ].join('\n\n');
 
-  * Then `console.log` the geocoding information to display in your terminal.
+      fs.appendFile('log.txt', actorData, (err) => {
+        if (err) {
+          throw err
+        };
+        console.log(actorData);
+      })
+    })
+  };
+  ```
 
-  * You can choose to make one of two assumptions when completing this application.
+### 4. Instructor Do: ES6 Classes Demo (10 mins)
 
-    * Easier: The user will always provide a location in the following format: "City, State" (example: "Atlanta, GA", "Houston, TX").
+* Open [18-Ins-Classes/shape.js](../../../../01-Class-Content/10-OOP/01-Activities/18-Ins-Classes/shape.js) in your IDE and explain the following:
 
-    * Harder: The user can provide a location in any format. In fact, they can even provide a landmark instead of an address. ("151 Sip Ave, Jersey City NJ", "1600 Pennsylvania Ave NW, Washington, DC 20500", etc.)
+  * This is what an ES6 class declaration looks like. Unlike a constructor function, we do not declare the parameters of the new object at the top of the function. Instead, we use a function that is built in to classes called `constructor`.
 
-  * **Hints:**
+  * 🔑 The syntax for class methods is different than that of any function we've seen before. Instead of using arrow functions or `.prototype`, the syntax looks very similar to the way we declare functions, just without the `function` keyword.
 
-    * Remember to log the output using `JSON.stringify` in a pretty-print format.
+  * 🔑 Although we are now using classes in JavaScript, this does not mean that JavaScript has classical inheritance like some other programming languages. Fundamentally, JavaScript still works the same. Inheritance still happens using prototypes. The `class` syntax merely serves as **syntactical sugar** to make developers' lives easier.
 
-### 9.	Instructor Do: Review Geocode NPM	(7 mins)
+  ```js
+  class Shape {
+    // Just like constructor functions, classes can accept arguments
+    constructor(area, perimeter) {
+      this.area = area;
+      this.perimeter = perimeter;
+    }
 
-* Review the solutions for students starting with the easier option.
+    printInfo() {
+      console.log(`Area: ${this.area}`);
+      console.log(`Perimeter: ${this.perimeter}`);
+    }
+  }
 
-* Open the file `geocodeEasy` (`23-GeocodeNPM > SOLVED`)
+  const shape = new Shape(25, 25);
 
-* In discussing the solution be sure to point out each of the following:
+  shape.printInfo();
 
-  * The inclusion of the `node-geocoder` NPM package
+  ```
 
-  * How we retrieved the city and state information using `process.argv[2]` and `process.argv[3]`
+* Demonstrate that the class works as intended by running the following command in your terminal:
 
-  * How we combined the city and state to have a string called `address`
+  * `node shape.js`
 
-  * How we finally passed the address into the `node-geocoder` function and console.logged the data it returned.
+* Ask the class the following question(s):
 
-  ![/04-GeocoderNPM_1.png](Images/04-GeocoderNPM_1.png)
+  * ☝️ What is the value of `this` within the `printInfo` method?
 
-* Then open the file `geocodeChallenge` (`23-GeocodeNPM > SOLVED`)
+  * 🙋 `this` is equal to the instance of the object that is created with the `new` keyword.
 
-* Let students know that the solution is very similar except for one major difference. In this case, we can't be sure how many words long the address location will be. So instead, we use the `Array.slice` method to grab the part of `process.argv` the user passes in. We then join this into a space seperated string, thus allowing the `node-geocoder` package to handle the heavy lifting of determining if an address is a city, zip code, etc.
+### 5. Student Do: ES6 Classes (15 mins)
 
-  ![/04-GeocoderNPM_2.png](Images/04-GeocoderNPM_2.png)
+* Direct students to the instructions found in [19-Stu-Classes/](../../../../01-Class-Content/10-OOP/01-Activities/19-Stu-Classes/)
 
-* See if there are any questions before proceeding to the next example.
+```md
+# Classes
 
-### 10.	Instructor Do: Send 24-PackageJSON.zip	(1 min)
+In this activity we will use classes to make two RPG characters match against each other.
 
-* Open the folder `24-PackageJSON` and the `weatherDest.js`. Without explaining to students anything about the code, point out that this application uses two different NPM packages.
+## Instructions
 
-* Take a moment to slack out the folder `24-PackageJSON.zip` to students.
+* Open [Unsolved/character.js](Unsolved/character.js) and update the `Character` class. It should instantiate an object with the following properties:
 
-* Have them unzip the code.
+  * Name
+  * Strength
+  * HitPoints
 
-### 11.	Partners Do: Study weatherDest.js	(7 mins)
+* Create a `printStats()` class method that prints the name, strength, and hitPoints for a character.
 
-* Then slack out the following instructions:
+* Create a `attack(opponent)` method that a character can use to deal damage (equal to their strength) to their opponents hitPoints.  
 
-* **Instructions:**
+* Create two instances of a character, giving them different names, strength, and hitPoints. 
 
-  * Take a moment to run the `weatherDest.js` application. (Try to figure out what it takes to run on your own!)
+* Using `setInterval`, make each character take turns attacking each other. 
 
-  * Then, with a partner, spend a few moments answering the following questions:
+* `printStats()` after each attack to visualize the battle.
 
-    * What does the code do?
+* Use an `isAlive` method to check if each character has more than 0 hitPoints every turn. If either character has been defeated, stop the interval and end the game.
 
-    * How does it work at a general level?
+### Bonus
 
-    * How does it work at a line level?
+* Add validation to ensure that each character is provided the proper 3 arguments when created. If any of the arguments are not present, `throw` an error.
 
-### 12.	Instructor Do: Explain weatherDest.js	(7 mins)
+### Hints
 
-* Ask students to explain the code to you as well as its purpose.
+* Before trying to make the characters take turns, try making one character attack another until the game is over.
 
-* After fielding a few responses, run the code yourself using `node weatherDest.js Austin Texas`. (Don't forget to include a location!)
+```
 
-* Explain to students that the code retrieved the complete address as well as the weather forecast for that location.
+### 6. Instructor Do: Review ES6 Classes (5 mins)
 
-* Explain that this necessitated the use of two NPM packages: `node-geocoder` and `weather-js`.
+* Run [19-Stu-Classes/Solved/character.js](../../../../01-Class-Content/10-OOP/01-Activities/19-Stu-Classes/Solved/character.js) in a node process and demonstrate the following:
 
-* Then explain that in future applications we might rely on dozens of packages at the same time, each of which adds to the overall size of the application.
+  * Our Character class takes 3 arguments. 
 
-### 13.	Instructor Do: Intro to Node Packages	(10 mins)
+  * As part of our bonus, we check to make sure the 3 arguments are provided. Here, we check each argument individually. If we wanted to, we could also validate the **type** of data being passed in to `Character`.
 
-* From here, ask students the question: "Why might zipping up code containing NPM packages and sending it around be a bad approach for a collaborative team?"
+  ```js
+  class Character {
+    constructor(name, strength, hitPoints) {
+      // Bonus
+      if (!name) {
+      throw new Error("You are missing the name.");
+      }
+      if (!strength) {
+        throw new Error("You are missing the strength.");
+      }
+      if (!hitPoints) {
+        throw new Error("You are missing the hitPoints.");
+      }
+      this.name = name;
+      this.strength = strength;
+      this.hitPoints = hitPoints;
+    }
+  ```
 
-* After hearing a few student responses, offer the following answers:
+  * `isAlive` checks if a character has 0 or less hitPoints.
 
-  * ANSWER 1: You would have to bundle in each of the large NPM dependencies every time you share your code, which would add to the overall size of the code.
+  ```js
+  isAlive() {
+    if (this.hitPoints <= 0) {
+      console.log(`${this.name} has been defeated!`)
+      return false;
+    }
+    return true;
+  };
+  ```
 
-  * ANSWER 2: If one developer updates the package to use a more recent version, then everyone elses code go out of sync and requires a transfer of files again.
+  * `Attack` deals damage to the provided opponent equal to the characters strength.
 
-  * ANSWER 3: There is no clear and easy way to know which dependencies are being used. If we had many files with each using different dependencies, we'd need to dig into each and every file to figure out the full list.
+  ```js
+  attack(opponent) {
+    console.log(`${this.name} hit ${opponent.name} for ${this.strength}`)
+    opponent.hitPoints -= this.strength;
+  };
+  ```
 
-* Then let students know that Node provides a convenient solution to these problems through **package management**. Be sure to let students know that this is a **VERY IMPORTANT** topic. Stress this to them so as to ensure they are paying attention here.
+  * After we create two characters, we initialize the game to start with Beatrix.
 
-* From here open the file `package.json` in the `24-PackageJSON folder`. Then explain that Node provides a very simple method to create and use files called `package.json`. Explain that these files serve as manifests (or guides) that completely articulate simple things like the name of the project, its description, and most importantly the packages that are being used in the project.
+  ```js
+  const grace = new Character("Grace", 30, 75);
+  const dijkstra = new Character("Dijkstra", 20, 105);
 
-* Now for the _really important part_.
+  let graceTurn = true;
+  ```
 
-  * Delete both the `packages.json` file and the `node_modules` folder from `24-PackageJSON`.
+  * After creating an interval, we toggle the turn.
 
-  * Now open a terminal window and run the command `npm init`. Talk students through the process of creating a `package.json` file. (i.e. simply answer the prompts. Being sure to use a lowercase name for the project). Point out that this step created a `package.json` file.
+  * Next, we check to see if either Grace or Dijkstra has been defeated. If so, we clear the interval and end the game. If not, we have Dijkstra or Grace attack, depending on whose turn it is.
 
-  * Now run the commands `npm install node-geocoder` and `npm install weather-js`.
+  ```js
+  const turnInterval = setInterval(() => {
+    graceTurn = !graceTurn;
 
-  * After running these commands, show students that the `node-geocoder` and `weather-js` packages have been added to our `package.json`.
+    if(!grace.isAlive() || !dijkstra.isAlive()) {
+      clearInterval(turnInterval)
+      console.log("Game over!")
+    } else if(graceTurn) {
+      grace.attack(dijkstra);
+      dijkstra.printStats();
+    } else {
+      dijkstra.attack(grace);
+      grace.printStats();
+    }
+  }, 2000)
+  ```
 
-    ![/05-PackageJSON_3.png](Images/05-PackageJSON_1.png)
+### 7. Instructor Do: Class Inheritance Demo (10 mins)
 
-  * Then show them that the command created a `node_modules` folder with our dependencies as well. This should be no big deal to them at this point.
+* Open [20-Ins-SubClasses/shape.js](../../../../01-Class-Content/10-OOP/01-Activities/20-Ins-Subclasses/shape.js) in your IDE and explain the following:
 
-    ![/05-PackageJSON_3.png](Images/05-PackageJSON_3.png)
+  * Our print info method will print each key in the newly constructed shape.
 
-  * Now go ahead and delete the `node_modules` folder and run the command `npm install`. Show student this command re-created and re-downloaded the NPM packages relevant to our `package.json` file. Be sure to explain that NPM knew to install these packages because they were explicitly mentioned in the `packages.json` file. Be sure to mention that NPM is ALWAYS looking for the `packages.json` file.
+  * We set `module.exports` equal to our `Shape` class so that we can `require` it outside of this file.
 
-  * Explain that you only need to run `npm init` at the start of your development. After that every other developer can simply run `npm install` to work with your project.
+  ```js
+  class Shape {
+    constructor(area, perimeter) {
+      this.area = area;
+      this.perimeter = perimeter;
+    }
 
-* Now take a moment to ask students why this system is better than sending zip files around.
+    printInfo() {
+      for (var key in this) {
+          console.log(`${key}: ${this[key]}`);
+      }
+    }
+  }
 
-  * ANSWER 1: Instead of passing around all the modules between developers, we can simply pass around the core files and the `package.json` file. Each of the developers can then independently download the dependencies when needed.
+  module.exports = Shape;
+  ```
 
-  * ANSWER 2: This let's us easily update the dependencies. We can just change the `package.json` file and, whenever a new developer joins the team, they just run `npm install`.
+* Open [20-Ins-Subclasses/rectangle.js](../../../../01-Class-Content/10-OOP/01-Activities/20-Ins-Subclasses/rectangle.js) in your IDE and explain the following:
 
-* Have students both the steps and benefits to one another before moving on.
+  * First, we bring in `Shape` from `shape.js`.
 
-### 14.	Everyone Do: NPM Install weatherdest	(7 mins)
+  * Then, using the side arguments, we perform some math operations so that we can use `area` and `perimeter`.
 
-* Now slack out the following file [instructions](../../../../01-Class-Content/10-nodejs/01-Activities/24-PackageJSON/README.md)
+  ```js
+  const Shape = require('./shape');
 
-* **Instructions:**
+  class Rectangle extends Shape {
+    constructor(sideA, sideB) {
+      const area = sideA * sideB;
+      const perimeter = (sideA * 2) + (sideB * 2);
+  ```
 
-  * Navigate to the folder where your `weatherDest.js` file is.
+  * Then we pass area and perimeter to the Shape class using `super`.
 
-  * Delete the `node_modules` folder. Then do the following:
+  * 🔑 When we extend a class, we must use `super()` before we try to use the keyword `this`. The `super` keyword calls the parent constructor function of the subclass.
 
-    * Create a `package.json` file (i.e. run `npm init`)
+  * 📝 `super` can also be used as a keyword to access methods from the parent class.
 
-    * Add your dependencies to the `package.json` (i.e. run `npm install node-geocoder` and `npm install weather-js`)
+  ```js
+  super(area, perimeter);
+  this.sideA = sideA;
+  this.sideB = sideB;
+  ```
 
-    * Confirm that you now have a `node_modules` folder with the `node-geocoder` and `weather-js` packages as a result
+  * Since Rectangle extends Shape, we can access the `printInfo`, even though it is defined on the Shape class.
 
-    * Finally, re-run your `weatherDest.js` to confirm that it still works as expected
+  ```js
+  const rectangle = new Rectangle(12, 9);
+  rectangle.printInfo();
+  ```
 
-  * Now delete your `node_modules` folder again but keep your `packages.json` file. This time...
+### 8. Student Do: Class Inheritance (15 mins)
 
-    * Simply run `npm install`
+* Direct students to the instructions found in [21-Stu-Subclasses](../../../../01-Class-Content/10-OOP/01-Activities/21-Stu-Subclasses/)
 
-    * Confirm that you once again have a `node_modules` folder with the `node-geocoder` and `weather-js` packages
+```md
+# SubClasses
 
-    * Finally, re-run `weatherDest.js` to confirm that it still works as expected
+In this activity we will extend basic vehicle classes with additional functionality. 
 
-* **Instructors:** If necessary, run through this example one more time so students are clear on both how to do this and why it is useful.
+## Instructions
 
-- - -
+* Open [vehicle.js](Unsolved/vehicle.js) and take a moment to familiarize yourself with the Vehicle class.
 
-### 15.	Lunch	(30 mins)
+  * All vehicles have `id`, `numberOfWheels`, and `sound` properties. `printInfo` prints the id and number of wheels on the vehicle.
 
-- - -
+* Create a `Car` class that extends the `Vehicle` class. The car should have the following features:
+  * A `color` property
+  * A passengers property
+  * A `checkPassengers()` method that checks to see if there are 4 or less passengers. If not, `console.log` that there are too many passengers.
+  * A `useHorn` method that prints the boat's sound to the console.
 
-### 16.	Instructor Do: Inquirer Intro	(15 mins)
+* Create a `Boat` class that also extends the `Vehicle` class. The boat should have the following features:
+  * A crew property
+  * A `crewSoundOff()` method that prints each member of the crew to the console.
+  * A `useHorn` method that prints the boat's sound to the console.
 
-* As a quick warm-up ask students what code we've been using to grab user inputs so far in Node
+```
 
-  * ANSWER: `process.argv`
+### 9. Instructor Do: Review Class Inheritance (5 mins)
 
-* Explain that while this has worked semi-well, it is obviously pretty limited.
+* Navigate to [21-Stu-Subclasses/Solved/car.js](../../../../01-Class-Content/10-OOP/01-Activities/21-Stu-Subclasses/Solved/car.js) in your terminal and run the following command:
 
-* Then visit (and slack out) the NPM page for Inquirer.js <https://www.npmjs.com/package/inquirer>.
+  * `node car.js`
 
-* Take a moment to explain that this package provides us with enhanced features for creating command line arguments. With Inquirer, we can more easily create a variety of command-line prompts to users including basic input, confirmations, checkboxes, and list selections. Also explain that Inquirer makes it easy for us to include validation in our code as well.
+  * We see that the car prints its vehicle properties and its sound.
 
-* Then navigate to the folder `25-Inquirer_Intro` and run the program by typing `node basic.js`. Complete the prompts as they appear. (Note: If for any reason you are unable to select a Pokemon, then consider updating your version of Bash and Node).
+* Open [21-Stu-Subclasses/Solved/vehicle.js](../../../../01-Class-Content/10-OOP/01-Activities/21-Stu-Subclasses/Solved/vehicle.js) in your IDE and explain the following:
 
-* Then open the file `basic.js` in your editor and walk students through the code. Be sure to point out:
+  * The Vehicle class is a good spot for us to keep a lot of the information that is shared between different types of vehicles.
 
-  * The inclusion of the `inquirer` package (which needed to be installed in advance)
+  ```js
+  class Vehicle {
+    constructor(id, numberOfWheels, sound) {
+      this.id = id;
+      this.numberOfWheels = numberOfWheels;
+      this.sound = sound;
+    }
 
-  * The basic code for creating prompts
+    printInfo() {
+      console.log(`This vehicle has ${this.numberOfWheels} wheels`);
+      console.log(`This vehicle has an id of ${this.id}`);
+    }
+  }
+  module.exports = Vehicle;
+  ```
 
-  * The `.then` function with the resulting code inside
+* Open [21-Stu-Subclasses/Solved/car.js](../../../../01-Class-Content/10-OOP/01-Activities/21-Stu-Subclasses/Solved/car.js) in your IDE and explain the following:
 
-  * The `user` variable which was created by Inquirer to hold all of the results
+  * We `require` the Vehicle so that we can use the `extends` keyword.
 
-  * The `JSON.stringify` function which console.logs the user data
+  * `super()` is called so that **every** Vehicle that is a Car has 4 wheels and makes the `beep` sound.
 
-    ![/06-InquirerIntro.png](Images/06-InquirerIntro.png)
+  * Even though we did not define `this.sound` in our Car class, we can still access it since our Car extends Vehicle and we called `super` as a method.
 
-* Then slack out the code to students.
+  ```js
+  const Vehicle = require("./vehicle");
 
-### 17.	Partners Do: Review Inquirer Intro	(5 min)
+  class Car extends Vehicle {
+    constructor(id, color, passengers) {
+      super(id, 4, "beep");
+      this.color = color;
+      this.passengers = passengers;
+    }
 
-* Slack out the following instructions:
+    useHorn() {
+      console.log(this.sound)
+    }
 
-* **Instructions:**
+  ```
 
-* Spend a few moments studying the code with the person next to you. Be sure each of you understand:
+  * `checkPassengerLength` checks to make sure there are 4 or less passengers. If not we can use a template literal to perform subtraction and get the number of seats remaining.
 
-  * How to install and incorporate the `inquirer` package.
+  ```js
+    checkPassengerLength() {
+      if(this.passengers.length > 4) {
+        console.log("Cars only seat 4 people. You have too many passengers!")
+      }
+      else {
+        console.log(`You have room for ${4-this.passengers.length} people.`)
+      }
+    }
+  }
+  ```
 
-  * How to create the variety of prompts offered by the package.
+* Open [21-Stu-Subclasses/Solved/boat.js](../../../../01-Class-Content/10-OOP/01-Activities/21-Stu-Subclasses/Solved/boat.js) in your IDE and explain the following:
 
-  * The significance of the `.then` function and the variable created (in this case `user`).
+  * Just like our Car class, we need to require Vehicle so that we can extend the Boat class.
 
-* **Instructor:** Have students answer the questions back to you afterwards.
+  * This time we're automatically setting boat-type vehicles to have 0 wheels and make the "bwom" sound.
 
-### 18.	Students Do: Inquirer User Activity	(0:20)
+  * We use `crewSoundOff` to do something different with our passengers.
 
-* Then slack out the next activity.
+  ```js
+  const Vehicle = require("./vehicle");
 
-* **Files:**
+  class Boat extends Vehicle {
+    constructor(id, type, crew) {
 
-  * `userPrompt.js` (`26-Inquirer_Users > UNSOLVED`)
+      super(id, 0, "bwom");
+      this.type = type;
+      this.crew = crew;
+    }
 
-* **Instructions:**
+    useHorn() {
+      console.log(this.sound);
+    }
 
-  * Create a basic command line Node application using the inquirer package.
+    crewSoundOff() {
+      this.crew.forEach((member) => {
+        console.log(`${member.name} reporting for duty!`)
+      })
+    }
+  }
+  ```
 
-  * Your application should ask the user any five questions of your choosing.
+* Ask the class the following question(s):
 
-  * The question set should include at least one:
+  * ☝️ Why did create our two passenger methods, `crewSoundOff` and `checkPassengers`, in their own classes instead of handling it in the Vehicle class?
 
-    * Basic input,
-    * Password
-    * List,
-    * Checkbox,
-    * Confirm
+  * 🙋 It all comes down to organization. Even though we could choose to handle it in Vehicle, that would defeat the purpose of creating a subclass. Since each method is specific to the type of subclass, it makes sense, organizationally, to keep that logic in the subclass.
 
-  * Then if a user's password matches a pre-defined password, re-display the data back to the user with some text.
+### 10. Instructor Do: Multiple Classes Demo (5 mins)
 
-  * HINT: See the inquirer GitHub documentation "examples" page if you need help.
+* Navigate to [22-Ins-Multiple-Classes](../../../../01-Class-Content/10-OOP/01-Activities/22-Ins-Multiple-Classes/) from the command line, run: `node restaurant.js` and explain the following point(s):
 
-  * Remember to get creative with your code!
+  * Every order that is added to the queue is displayed.
 
-### 19.	Instructor Do: Review Inquirer User Activity	(10 mins)
+  * The restaurant's total revenue is displayed.
 
-* Run the program `userPrompt.js` in `26-Inquirer_Users > SOLVED`. Make your way through all of the prompts and explain why you are inputting the data that you are.
+  * At intervals of one second, each order is prepared.
 
-* Then open the file `userPrompt.js` and `package.json` in `26-Inquirer_Users > SOLVED`.
+* Open [22-Ins-Multiple-Classes/item.js](../../../../01-Class-Content/10-OOP/01-Activities/22-Ins-Multiple-Classes/item.js) in your IDE and explain the following:
 
-* Walk students through the code, paying particular attention to how we utilize the user's answer to the password prompt to determine which way to proceed. It's important that students understand that we utilized the user's response by referencing `user.myPassword`.
+  * The Item class only contains the items title and its price.
 
-  ![/07-InquirerUsers.png](Images/07-InquirerUsers.png)
+  ```js
+  class Item {
+    constructor(title, price) {
+      this.title = title;
+      this.price = price;
+    }
+  }
 
-* See if there are any questions before slacking out the solution and the [video review](https://www.youtube.com/watch?v=JJqriV7Q9og).
+  module.exports = Item;
+  ```
 
-### 20.	Partners Do: Inquirer Geocode + Begin ZombieChallenge	(15 mins)
+* Open [22-Ins-Multiple-Classes/order.js](../../../../01-Class-Content/10-OOP/01-Activities/22-Ins-Multiple-Classes/order.js) in your IDE and explain the following:
 
-* Move onto the next activity. Slack out the following file and instructions:
+  * In our application, each order only has one item. 
 
-* **File:**
+  * 📝 Normally, id properties are generated, not passed in as an argument. It is for this reason that we initialize the `Order.lastId` with zero and increment it each time a new Order is created. 
 
-  * `inquirerGeocode.js` (`27-Inquirer_Geocode > UNSOLVED`)
+  * We use `Order.lastId` to define what's known as a **static** value on a class. This also works with constructor functions.
 
-* **Instructions:**
+  ```js
+  class Order {
+    constructor(item) {
+      this.item = item;
 
-  * Working in pairs, convert the geocoding code from earlier today so that it uses inquirer.js instead of process.argv to handle the intake of user inputs.
+      Order.lastId++;
+      this.id = Order.lastId;
+    }
+  }
 
-  * Make sure your new code provides the exact same output as it did with process.argv.
+  Order.lastId = 0;
+  ```
 
-  * HINT: Don't forget to create your package.json file and save the correct packages to it.
+* Open [22-Ins-Multiple-Classes/restaurant.js](../../../../01-Class-Content/10-OOP/01-Activities/22-Ins-Multiple-Classes/restaurant.js) in your IDE and explain the following:
 
-  * HINT: You should not need to change _that much_ code.
+  * We import from `./order/` and `./item/` so that we can use the classes to create new instances later.
 
-  * BONUS: If you finish early, grab a TA's attention so that they can slack out the bonus activity (`29-ZombieChallenge`).
+  * The `takeOrder` method increases the restaurant's revenue by the price of the order, then adds the order to the restaurant's array of orders.
 
-### 21.	Instructor Do: Review Inquirer Geocode	(10 mins)
+  ```js
+  const Order = require("./order");
+  const Item = require("./item");
 
-* Spend a few moments reviewing the solution `inquirer-geocode.js` (`27-Inquirer_Geocode > SOLVED`). In your discussion, focus your students' attention on how we removed the previous `process.argv` code to use the `inquirer.prompt` code instead. Also, explain that we moved the "resulting" code into Inquirer's `.then` function.
+  class Restaurant {
+    constructor(name) {
+      this.name = name;
+      this.orders = [];
+      this.revenue = 0;
+    }
 
-  ![/08-InquirerGeocode.png](Images/08-InquirerGeocode.png)
+    takeOrder(order) {
+      this.revenue += order.item.price;
+      this.orders.push(order);
+      console.log(`Added #${order.id} to the queue`);
+      this.printRevenue();
+    }
 
-* Slack out the solution and the [video review](https://www.youtube.com/watch?v=G9CtacWgYho) for this activity.
+    printRevenue() {
+      console.log(`${this.name} has made ${this.revenue} so far!`)
+    }
+  }
 
-### 22.	Instructor Do: Intro to Debugging Node	(10 mins)
+  ```
 
-* Finally, show students how to use the `inspect-process` package to help debug Node applications.
+  * In `prepareOrders`, set up an interval to remove an element from the front of the array every second. If there are no more orders left, we clear the interval.
 
-* To do so, first install the package `inspect-process` globally by running the command `npm install -g inspect-process`.
+  * Remember, `.shift` returns the element that was popped off the beginning of the array.
 
-* This may be a good time to explain to students the concept of a global package and why you wouldn't want to install everything globally (ANSWER: Packages with different versions might clash if you installed all packages globally).
+  ```js
+  prepareOrders() {
+    const prepareInterval = setInterval(() => {
+      if (this.orders.length === 0) {
+        console.log("Finished cooking all orders!");
 
-* Then open the `weatherDest.js` file in `28-NodeDebug`. Point out how the word `debugger;` has been added to multiple points in the code to serve as "breakpoints".
+        clearInterval(prepareInterval);
+      } else {
+        const order = this.orders.shift();
 
-  ![/09-NodeDebug_1.png](Images/09-NodeDebug_1.png)
+        console.log(`#${order.id} has been prepared.`);
+      }
+    }, 1000);
+  }
+  ```
 
-* Now return to terminal and run the command `inspect weatherDest.js`. If all goes well, this should trigger a browser window to emerge in the Chrome browser with a Developer Tools like interface. Hit the play button a few times to show how the debugger is stepping through the code, allowing you to see the values of various variables each step of the way.
+  * We create a new restaurant called "McJared's" and create three items.
 
-* Ask if there are any questions before proceeding to the next activity.
+  * Then, we map over each item, creating a new order.
 
-  ![/09-NodeDebug_2.png](Images/09-NodeDebug_2.png)
+  * Lastly, we use `orders.forEach` to take each order and prepare all of the orders once we're finished taking orders.
 
-### 23.	Everyone Do:  Debug Node with inspect-process package (10 mins)
+  ```js
+  const restaurant = new Restaurant("McJared's");
 
-* Slack out the following:
+  const items = [
+    new Item("Burger", 5.99),
+    new Item("Soda", 3.5),
+    new Item("Chips", 2.0)
+  ];
 
-* **Instructions:**
+  const orders = items.map(item => new Order(item));
 
-  * Install the Node package `inspect-process` globally on your machine by running `npm install -g inspect-process`.
+  orders.forEach(order => restaurant.takeOrder(order));
 
-  * Then open any Node program we've worked on to date and add the keyword `debugger;` in various places.
+  restaurant.prepareOrders();
 
-  * Then run the program by typing `inspect <NAME OF PROGRAM> <ARGUMENTS>`. e.g. `inspect weatherdest tokyo japan`.
+  ```
 
-  * Experiment with the resulting inspect-process interface to step through the code.
+* Ask the class the following question(s):
 
-  Note: Debugging Node.js applications can get a bit complex. If it works for you... Great! Don't sweat it if the debugger doesn't work right out of the box. You can always just `console.log` when debugging your Node applications.
+  * ☝️ Why did we only call `prepareOrders` once?
 
-  The V8 inspector integration for Node.js is an experimental feature that is still a work in process. Check out the following documentation from the Node.js website for further reading: [V8 Inspector Integration for Node.js](https://nodejs.org/api/debugger.html#debugger_v8_inspector_integration_for_node_js)
+  * 🙋 `prepareOrders` continues to prepare orders until `restaurant.orders.length === 0`.
 
-  Documentation for the `inspect` package can be found here: [NPM Package: inspect-process](https://www.npmjs.com/package/inspect-process)
+  * ☝️ Why do we have all of our initialization and method execution in the `restaurant.js` file and not inside `item.js` or `order.js`?
 
-### 24.	Partners Do: Zombie Challenge (40 mins, remainder of class, optional)
+  * 🙋 Separation of concerns. Our code is easier to navigate if we give each class a clear responsibility. `Restaurant` is in charge of all operational things within the restaurant, whereas `Order` and `Item` are lightweight constructors.
 
-* This is a fairly challenging and time consuming activity, so let students know they may not finish in class, but a solution will be provided to them nonetheless afterwards.
+### 11. Student Do: Multiple Classes (20 mins)
 
-* If students would rather use this time to work on homework, allow them to do so, place the groups that want to work on homework together, and groups that want to work on Zombie Challenge together
+* Direct students to the instructions found in [23-Stu-Multiple-Classes](../../../../01-Class-Content/10-OOP/01-Activities/23-Stu-Multiple-Classes)
 
-* **File:**
+```md
+# Multiple Classes
 
-  * `zombieGame.js` (`10-ZombieChallenge > UNSOLVED`)
+In this activity we will create a store class that allows us to handle different interactions within the store. We will use multiple classes with differing purposes to practice the OOP paradigm.
 
-  * [`ZombieGame`](https://youtu.be/ujDl4IXAagc)
+## Instructions
 
-* **Instructions:**
+* Since we will be using Jest in this activity, run `npm install` from your terminal. Remember that the command to run tests is `npm test`.
 
-  * Follow the instructions in the file sent to you to create a turn-based Zombie RPG game. You can also reference the video sent to you to have a clearer idea of what the final product should look like.
+* Open [test/store.test.js](Unsolved/test/store.test.js) and take a moment to familiarize yourself with the Store class tests.
 
-* **Note for Instructors / TAs**: This is also a good time to help weaker students catch up in class if they are missing more critical concepts.
+* Open [test/toy.test.js](Unsolved/test/toy.test.js) and take a moment to familiarize yourself with the Toy class tests.
 
-### 25.	Instructor Do: Review Zombie Challenge	(10 mins)
+* In the `store.js` file, create a `Store` class with the following properties:
+  * Name
+  * Stock
+  * Revenue
 
-* If you have time to review the solution, open the file `zombieGame.js` (`29-ZombieChallenge >SOLVED`).
+* In `toy.js`, add the following properties:
+  * Name
+  * Price
+  * Count
 
-* Run the program once before proceeding to explain the code. Use the comments to guide your discussion.
+* In the `Store` class, create a method called `processProductSale` that takes in the product's name as a parameter. This method should increase the store's revenue by the price of the toy and decrease the toy's count by one.
 
-  ![/10-ZombieChallenge.png](Images/10-ZombieChallenge.png)
+* If there's no more stock of a given toy, `console.log` a message and do not decrease the toy's `count` property.
 
-* Then slack out the solution and end class with something positive! Let students know they are making amazing progress as Node developers!
+* In the `Store` class, add a method called `replenishStock(name, count)` that increases the stock on a toy by the provided `count` parameter.
 
-# Instructor Do: Private Self-Reflection (0 min)
+* `index.js` will be used to instantiate the objects. Uncomment lines as you add functionality.
 
-Take some time on your own after class to think about the following questions. If there's anything that you're not sure how to answer, feel free to reach out to the curriculum team!
+### Bonus
 
-1. How did today's class go?
-2. How did you teach it?
-3. How well do you feel you did teaching it?
-4. Why are you teaching it?
-5. Why did you teach it that way?
-6. What evidence can I collect to show my students are understanding?
-7. How will my students know they are getting it?
+* In `toy.js` add a method called `calculateTax` that returns the price times a sales tax of 8.875. Don't forget to round to two decimal places.
+
+* Add this number to the total that's printed out in `processProductSale` but do **not** add it to the revenue.
+
+### Hints
+
+* It is recommended that you use these tests as guidance for this activity. Try working on each bit of functionality in conjuncture with its unit test, only moving on when the test passes.
+
+```
+
+### 12. Instructor Do: Review Multiple Classes (5 mins)
+
+* Run [23-Stu-Multiple-Classes/Solved/index.js](../../../../01-Class-Content/10-OOP/01-Activities/23-Stu-Multiple-Classes/Solved/index.js) in your terminal and run the following:
+
+  * `npm install`
+
+  * `npm start`
+
+  * Notice that the Rare Toy can only be purchased once before it goes out of stock. We can continue to purchase Rare Toys by using our `replenishStock` method.
+
+* Open [23-Stu-Multiple-Classes/Solved/index.js](../../../../01-Class-Content/10-OOP/01-Activities/23-Stu-Multiple-Classes/Solved/index.js) in your IDE and explain the following:
+
+  * We purposely purchase enough Rare Toys to make sure that we get a message upon running out of stock.
+
+  ```js
+  store.welcome()
+  store.processProductSale("Action Figure");
+  store.processProductSale("Action Figure");
+  store.processProductSale("Rare Toy");
+  store.processProductSale("Action Figure");
+
+  store.processProductSale("Rare Toy");
+
+  store.replenishStock("Rare Toy", 2);
+  store.processProductSale("Rare Toy");
+
+  store.printRevenue();
+  ```
+
+* Open [23-Stu-Multiple-Classes/Solved/store.js](../../../../01-Class-Content/10-OOP/01-Activities/23-Stu-Multiple-Classes/Solved/store.js) in your IDE and explain the following:
+
+  * We use the name and stock arguments passed in through `new Store` and set the revenue to start at 0.
+
+  * In `processProductSale`, we loop through each stock item in our Store. Once we've found one with a name that matches the name of the product we want to process, we decrease its count by one and increase the store's revenue by the price of the item.
+
+  * In `replenishStock` we find the matching item by name and increase its count by the specified number.
+
+  ```js
+  class Store {
+  constructor(name, stock) {
+    this.name = name;
+    this.stock = stock;
+    this.revenue = 0;
+  }
+
+  processProductSale(name) {
+    this.stock.forEach((item) => {
+      if(item.name === name) {
+        if(item.count > 0) {
+          item.count--;
+          this.revenue += item.price;
+          console.log(`Purchased ${item.name} for ${item.price + item.calculateTax()}`)
+        }
+        else {
+          console.log(`Sorry, ${item.name} is out of stock!`);
+        }
+      }
+    })
+  }
+
+  replenishStock(name, count) {
+    this.stock.forEach((item) => {
+      if(item.name === name) {
+        item.count += count;
+        console.log(`Replenished ${item.name} by ${item.count}`)
+      }
+    })
+  }
+  ```
+
+* Ask the class the following question(s):
+
+  * ☝️ Why did we write our store initialization and product processing in a separate file called `index.js` instead of including it inside `store.js`?
+
+  * 🙋 We break away from `store.js` in this activity so that we can run isolated unit tests. If we were to include all of our method calls in `store.js`, then trying to test individual methods in `store.js` would **also** cause all of the method calls to run.
+
+### 13. Everyone Do: BREAK (30 mins)
+
+### 14. Instructor Do: Introduce Mini Project (5 mins)
+
+* In your terminal, navigate to [24-Mini-Project/Solved](../../../../01-Class-Content/10-OOP/01-Activities/24-Mini-Project/Solved/), run `node index.js` and demonstrate the following:
+
+* Take a moment to try playing a game of word guess. In order to properly demonstrate a won game, it is recommended that you use `word.js` to guide your guesses.
+
+  * We get different responses depending on whether or not our guess was successful.
+
+  * If we guess correctly or run out of guesses, the game is over.
+
+  * Lastly, we can choose to play another game or quit.
+
+* Answer any lingering questions students have about the functionality of the app.
+
+### 15. Student Do: Mini Project (60 mins)
+
+* Direct students to the instructions found in [24-Mini-Project](../../../../01-Class-Content/10-OOP/01-Activities/24-Mini-Project/)
+
+* If there are students struggling to get started, bring up the pseudocode from earlier and recommend that they start with the smallest pieces first.
+
+```md
+# Mini Project: Word Guess
+
+In this assignment, you will create a Word Guess command-line game using OOP. It is up to you whether you decide to use ES6 class syntax or constructor functions. For the purposes of these instructions, we will use `class` syntax.
+
+![Word Guess Cli](Images/01-WordGuess-Cli.gif)
+
+## Instructions
+
+The completed game should meet the following criteria:
+
+1. The completed game should be able to receive user input using the `inquirer` or `prompt` npm packages.
+
+2. Your solution should have, at minimum, three files:
+
+* **Letter.js**: Contains a class, `Letter`. This constructor should be able to either display an underlying character or a blank placeholder (such as an underscore), depending on whether or not the user has guessed the letter. That means the constructor should define:
+
+  * A string value to store the underlying character for the letter
+
+  * A boolean value that stores whether that letter has been guessed yet
+
+  * A function that returns the underlying character if the letter has been guessed, or a placeholder (like an underscore) if the letter has not been guessed
+
+  * A function that takes a character as an argument and checks it against the underlying character, updating the stored boolean value to true if it was guessed correctly
+
+* **Word.js**: Contains a class, `Word`, that depends on the `Letter` class. This is used to create an object representing the current word the user is attempting to guess. That means the class should define:
+
+  * An array of `new` `Letter` objects representing the letters of the underlying word
+
+  * A function that returns a string representing the word. This should call the function on each letter object (the first function defined in `Letter.js`) that displays the character or an underscore and concatenate those together.
+
+  * A function that takes a character as an argument and calls the guess function on each letter object (the second function defined in `Letter.js`)
+
+* **index.js**: The file containing the logic for the course of the game, which depends on `Word.js` and:
+
+  * Randomly selects a word and uses the `Word` class to store it
+
+  * Prompts the user for each guess and keeps track of the user's remaining guesses
+
+3. `Letter.js` *should not* `require` any other files.
+
+4. `Word.js` *should only* require `Letter.js`
+
+5. **HINT:** Write `Letter.js` first and test it on its own before moving on, then do the same thing with `Word.js`
+
+### Hints
+
+* If you name your letter's display function `toString`, JavaScript will call that function automatically whenever casting that object to a string (check out this example: <https://jsbin.com/facawetume/edit?js,console>)
+
+```
+
+### 16. Instructor Do: Review Mini Project (10 mins)
+
+* Open [24-Mini-Project/Solved/index.js](../../../../01-Class-Content/10-OOP/01-Activities/24-Mini-Project/Solved/index.js) in your IDE and explain the following:
+
+  * All we're doing here is initializing a new game with the Game Class from `Game.js`.
+
+  ```js
+  const game = new Game();
+
+  game.play();
+  ```
+
+* Open [24-Mini-Project/Solved/lib/Letter.js](../../../../01-Class-Content/10-OOP/01-Activities/24-Mini-Project/Solved/lib/Letter.js) in your IDE and explain the following:
+
+  * The Letter Class is responsible for displaying either an underscore or the underlying character for each letter in the word.
+
+  * In the constructor, we determine if a character is not a number or a letter, and if not, make it visible right away.
+
+  ```js
+  class Letter {
+    constructor(char) {
+
+      this.visible = !/[a-z1-9]/i.test(char);
+      this.char = char;
+    }
+  ```
+
+  * If the character should not be visible, return an underscore.
+
+  ```js
+    toString() {
+      if (this.visible === true) {
+        return this.char;
+      }
+      return "_";
+    }
+
+    getSolution() {
+      return this.char;
+    }
+  ```
+
+  * We transform the character and the guess to uppercase so that the guess is case insensitive.
+
+  ```js
+    guess(charGuess) {
+      if (charGuess.toUpperCase() === this.char.toUpperCase()) {
+        this.visible = true;
+        return true;
+      }
+
+      return false;
+    }
+  }
+
+  module.exports = Letter;
+  ```
+
+* Open [24-Mini-Project/Solved/lib/Word.js](../../../../01-Class-Content/10-OOP/01-Activities/24-Mini-Project/Solved/lib/Word.js) in your IDE and explain the following:
+
+  * In the constructor, we create a new `Letter` object for each character in the word string.
+
+  * `getSolution` returns a string of all of the solved letters.
+
+  ```js
+  class Word {
+    constructor(word) {
+      this.letters = word.split("").map(function(char) {
+        return new Letter(char);
+      });
+    }
+
+    getSolution() {
+      return this.letters
+        .map(function(letter) {
+          return letter.getSolution();
+        })
+        .join("");
+    }
+
+    toString() {
+      return this.letters.join(" ");
+    }
+  ```
+
+  * `guessLetter` checks to see if the user guessed correctly, then prints the word guessed so far.
+
+  ```js
+    guessLetter(char) {
+      let foundLetter = false;
+      this.letters.forEach(function(letter) {
+        if (letter.guess(char)) {
+          foundLetter = true;
+        }
+      });
+
+      console.log("\n" + this + "\n");
+      return foundLetter;
+    }
+  ```
+
+  * `guessedCorrectly` uses `.every` to only return true if `letter.visible` is true for every letter.
+
+  ```js
+    guessedCorrectly() {
+      return this.letters.every(function(letter) {
+        return letter.visible;
+      });
+    }
+  }
+
+  module.exports = Word;
+  ```
+
+* Open [24-Mini-Project/Solved/lib/Game.js](../../../../01-Class-Content/10-OOP/01-Activities/24-Mini-Project/Solved/lib/Game.js) in your IDE and explain the following:
+
+  * The Game constructor is responsible for keeping score and controlling the flow of the overall game.
+
+  * We define the `play` function to initialize a new game with a different word.
+
+  * `nextWord` grabs a random word from `words.js` and prompts the user for a guess.
+
+  ```js
+  class Game {
+    constructor() {
+      this.guessesLeft = 0;
+    }
+    play() {
+      this.guessesLeft = 10;
+      this.nextWord();
+    }
+
+    nextWord() {
+      const randWord = words[Math.floor(Math.random() * words.length)];
+      this.currentWord = new Word(randWord);
+      console.log("\n" + this.currentWord + "\n");
+      this.makeGuess();
+    }
+  ```
+
+  * `makeGuess` prompts the user for a guess. If they have no guesses remaining, show them the solution, then ask if they want to play again.
+
+  * If the user guessed the word correctly, we reset the guesses and prompt them with another word.
+
+  ```js
+    makeGuess() {
+      this.askForLetter().then(() => {
+        if (this.guessesLeft < 1) {
+          console.log(
+            'No guesses left! Word was: "' +
+              this.currentWord.getSolution() +
+              '"\n'
+          );
+          this.askToPlayAgain();
+
+        } else if (this.currentWord.guessedCorrectly()) {
+          console.log("You got it right! Next word!");
+          this.guessesLeft = 10;
+          this.nextWord();
+
+        } else {
+          this.makeGuess();
+        }
+      });
+    }
+  ```
+
+  * `askToPlayAgain` prompts the user to play again. If they do not, we exit the node process.
+
+  ```js
+    askToPlayAgain() {
+      inquirer
+        .prompt([
+          {
+            type: "confirm",
+            name: "choice",
+            message: "Play Again?"
+          }
+        ])
+        .then(val => {
+          if (val.choice) {
+            this.play();
+          } else {
+            this.quit();
+          }
+        });
+    }
+  ```
+
+  * `askForLetter` is in charge of prompting users for letters, then running `guessLetter` to determine whether or not they've guessed correctly. 
+
+  ```js
+    askForLetter() {
+      return inquirer
+        .prompt([
+          {
+            type: "input",
+            name: "choice",
+            message: "Guess a letter!",
+            validate: function(val) {
+              // The users guess must be a number or letter
+              return /[a-z1-9]/gi.test(val);
+            }
+          }
+        ])
+        .then(val => {
+          const didGuessCorrectly = this.currentWord.guessLetter(val.choice);
+          if (didGuessCorrectly) {
+            console.log(chalk.green("\nCORRECT!!!\n"));
+
+          } else {
+            this.guessesLeft--;
+            console.log(chalk.red("\nINCORRECT!!!\n"));
+            console.log(this.guessesLeft + " guesses remaining!!!\n");
+          }
+        });
+    }
+  ```
+
+### 17. Review Unit 10 (45 mins)
+
+* Continue to answer lingering questions about the Mini Project. If no questions arise, lead a review session on unit 10 for the rest of class.
+
+### 18. END (0 mins)
 
 ### Lesson Plan Feedback
 
-How did today's class go?
+How did today’s lesson go? Your feedback is important. Please take 5 minutes to complete this anonymous survey.
 
-[Went Well](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=ft&sentiment=positive&lesson=05.05)
-
-[Went Poorly](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=ft&sentiment=negative&lesson=05.05)
+[Class Survey](https://forms.gle/nYLbt6NZUNJMJ1h38)
