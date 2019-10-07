@@ -72,7 +72,7 @@ app.js         // Runs the application
 
 ## Minimum Requirements
 
-* Functional, deployed application.
+* Functional application.
 
 * GitHub repository with a unique name and a README describing the project.
 

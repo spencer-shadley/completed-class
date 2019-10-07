@@ -18,4 +18,4 @@ In this activity, you will write and run your first Node.js application.
 
 ## Bonus
 
-* What happens when you log `global`? And `this`?
+* What happens when you log `window`? What happens when you try to use `prompt`, `alert`, or `confirm`?
