@@ -26,7 +26,7 @@ Students are very likely to come across jQuery solutions when searching for DOM/
 
 ### Slide Decks
 
-  * [04.1 Intro to Web APIs](https://docs.google.com/presentation/d/1TprKO9KQMBEhIC6f0UNvcQkY38lS0XOmZIt6zwzjWdE/edit#slide=id.g5bb6559bdb_0_10)
+  * [04.1 Intro to Web APIs](https://docs.google.com/presentation/d/1qeb1b63e9n-1p19RbL4xIq8xA_edNBjeW-mDnzSKJ8E/edit?usp=sharing)
 
 ### Time Tracker(s)
 
