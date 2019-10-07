@@ -30,7 +30,7 @@ Next unit we will work with Server-Side APIs. It is recommended that you try to 
 
   * [05.1: jQuery Begins](https://docs.google.com/presentation/d/1rb9HSOoezZzelSK7HQk-6tVKDBU8VBX3jQGuQpd04CQ/edit?usp=sharing)
 
-  * [05.2: jQuery Jubilee](https://docs.google.com/spreadsheets/d/1zPJ1kckA8CR5vwSH0orofzkBmloTrkeD9DeTfwXFndM/edit?usp=sharing)
+  * [05.2: jQuery Jubilee](https://docs.google.com/presentation/d/1ADUrG6f36_j9B-K4p3OHbrT_BH8X7gGVrHKY25-k4eA/edit?usp=sharing)
 
 ### Time Tracker(s)
 
