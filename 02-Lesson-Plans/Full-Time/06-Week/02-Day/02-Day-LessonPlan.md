@@ -1,424 +1,390 @@
-## 6.2 - Constructors Continued (10:00 AM) <!--links--> &nbsp; [⬅️](../01-Day/01-Day-LessonPlan.md) &nbsp; [➡️](../03-Day/03-Day-LessonPlan.md)
+## 6.2 - Express Yourself (10:00 AM)
 
-### Overview
+## Overview
 
-We will be going over how to use connector functions to link two objects together.
+Today's class is focused on creating an Express-based web server. Students will be introduced to the concepts of routing, request/response handling, and GET/POST requests.
 
-`Summary: Complete Activities 8-15 in Unit 11`
+## Instructor Notes
 
-##### Instructor Priorities
+* `Summary: Complete activities 13-14 in Unit 11`
 
-After today's class, students should be able to:
+* Welcome back! Today's class is one of the most important in the program. You will be walking students through the creation of Node/Express-based APIs and their utilization by front-end interfaces.
 
-* Students should be able to make constructor functions to link two different objects together.
+* Give students a heads-up that today's class is **critical** and that we will be re-using the concepts throughout the remainder of the course. In fact, use your discretion to utilize an additional day of review the following week if warranted. This material is critical for students to succeed as developers. If necessary, you can cut a day from the end of the program to account for the review.
 
-* Students should be able to sketch the architecture of small applications at a high level prior to writing code.
+* A fairly generous amount of time has been left at the tail-end of the course to allow you to spend more flexibility today. Do not feel pressured to "rush" through the material.
 
-  * Implement applications with "clean" architecture.
+* Be sure to slack out the [video walkthrough](https://youtu.be/ygk-kNstqK0) at the end of the activity! This will help students tremendously in understanding how to approach Express based application builds.
 
-* Students should be able to use objects to consolidate related information;
-  * Use constructors to create those objects.
+## Learning Objectives
 
+* To gain a preliminary understanding of the basic elements of an Express server.
 
-##### Instructor Notes
+* To gain an initial understanding of Express routing.
 
-* Demonstrate the use of constructors in a multi-part application in preparation for the homework assignment.
+* To build a complete Express-based web application.
 
-* We will be coming up on MySQL next class. Let student's know to install MySQL Server and Workbench. Guides have been provided so slack these out to students:
+## Slides
 
-  * [MySQL Install Mac](../02-Day/Install_Guides/mysql-mac-guide.md)
-  * [MySQL Install Mac](../02-Day/Install_Guides/mysql-windows-guide.md)
+[11.2: Express Yourself](https://docs.google.com/presentation/d/1H1xhjeQyMGXW7fufs2GJe4j6twEvYpDNhhuZJNcuHEk/edit?usp=sharing)
 
-* If your class runs into trouble with this install process, feel free to use MAMP or any other installation solution that you would prefer to get the class ready.
+## Time Tracker
 
-* Have your TAs refer to the [Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1OqSsyFSCE1bBPxIoM5Ql2ak9iMCwXGP2/view?usp=sharing) to stay on track.
+[06.2 Time Tracker](https://docs.google.com/spreadsheets/d/1OqSsyFSCE1bBPxIoM5Ql2ak9iMCwXGP2/edit#gid=412217995)
 
-### Sample Class Video (Highly Recommended)
+- - -
 
-* To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d4404449-a36d-4dc9-aaa4-44cf64ff824b)
+## Class Instruction
 
----
 
-### Class Objectives
+### 1.	Instructor Do: Postman Demo (0:05)
 
-* To feel 100% comfortable using JavaScript constructors.
-* To create simple applications that take in user input and utilize a constructor so as to create objects.
-* To understand the basics of recursion and to learn how this process can be used to loop through a series of prompts multiple times.
-* Sketch the design of their applications _before_ they start to code.
-* Use constructors to create objects.
+* Have students articulate their answers before explaining to them that `express.json` and `express.urlEncoded` are modules built-in to express that allow Express to receive user posts (JSON, text, etc).
 
----
+* Normally and data sent to the server isn't easily readable by humans, as it comes in as a low level stream.
 
-### 1. Welcome Class (5 mins)
+* Explain that `express.json` and `express.urlEncoded` are examples of **middleware**.
 
-* Welcome the class back and have them open up the team manager application from last time, and ask them how they did.
+  * Middleware is a function which we set to run between our server receiving a request and it being available inside of our routes.
 
-### 2. Everyone Do: Team Manager Summary: Part 1 (10 mins) (High)
+  * Middleware can be defined using the `app.use` method.
 
-* Open up [teamManager-basic.js](../../../../01-Class-Content/11-js-constructors/01-Activities/08-TeamManager/Solved/teamManager-basic.js) within your editor and start to go over the code with your students. This file contains only the first part of the assignment which prints players' stats to the screen, but should help them to understand how to better create and use constructor functions with inquirer.
+  * Middleware can transform the request from the browser before we work with it. In the case of `express.json` and `express.urlEncoded`, it takes the unreadable request and turns it into a readable object and attaches it to `req.body`. By the time the request gets to our routes, our body parsing middleware has already formatted it for us.
 
-* Once you have finished, have them return to their code in an attempt to complete the second part of the Team Manager activity.
+* Then explain to them that in future applications we'll eventually be using jQuery's AJAX methods for sending such post requests to our server.
 
-### 3. Students Do: Team Manager Cont. (20 mins) (Critical)
+* Then have them install the program [Postman](https://www.getpostman.com/). We'll be using Postman so both windows users and mac users can be taught how to send POST requests using the same program. (Note: Students may ask questions like: "Do you always have to use postman to send post requests?" Use this as an opportunity to explain that Postman is simply a GUI for development, and that in future opportunities we'll be using jQuery or other front-end code approaches for sending the same post requests.)
 
-* Have your students work on the second part of the activity. If some students seem to be struggling, have them work alongside students who are moving along at a good pace or help them out yourself.
+* Walk students through the process of sending POST requests in Postman. If you are unfamiliar use the following points as a guide:
 
-* Slack out the following instructions...
+  1. Run your server instance.
+  2. Open Postman.
+  3. Select POST in the drop-down next to the link. Then enter the URL of your server's POST route.
+  4. Click the button: "Body". Click the setting "Raw". Then hit the dropdown that says "Text" and click JSON.
+  5. Enter in a complete JSON. You can use:
+     ```json
+     {
+       "routeName": "darthvader",
+       "name": "Darth Vader",
+       "role": "Sith Lord",
+       "age": 42,
+       "forcePoints": 1900
+     }
+     ```
+  6. Hit "Send"
+  7. Now check back to your Star Wars API to confirm that Postman received the request body.
+     ![Images/01-POSTMAN](Images/01-POSTMAN.png)
 
-* **Instructions**
+### 2.	Students Do: Postman Exercise (0:10)
 
-  * Once your code is functioning properly, move on to create a function called "playGame" which will be run after all of the players have been created and will do the following:
+* Now have students perform the same exercise with their own servers.
 
-    * Run 5 times. Each time the function runs:
-      * Two random numbers between 1 and 20 are rolled and compared against the starters' offensive and defensive stats.
-        * If the first number is lower than the sum of the team's offensive stat, add one point to the team's score.
-        * If the second number is higher than the sum of the team's defensive stat, remove one point from the team's score.
-      * After the score has been changed, prompt the user to allow them to substitute a player from within the starters array with the player from within the subs array.
-    * After the game has finished (been run 5 times):
-      * If the score is positive, run `goodGame` for all of the players currently within the starters array.
-      * If the score is negative, run `badGame` for all of the players currently within the starters array.
-      * If the score is equal to zero, do nothing with the starters.
-      * Give the user a message about if they won, and the status of their starters.
-      * After printing the results, ask the user if they would like to play again.
-        * Run `playGame` from the start once more if they do.
-        * End the program if they don't.
-  
-  * HINT: It has been a while since we have worked with random numbers explicitly. If you are having troubles, look up Math.random on Google and you should find some resources to help.
+* You can slack out the following file and instructions:
 
-### 4. Everyone Do: Team Manager Summary: Part 2 (15 mins)
+* **File:**
 
-* Open up [teamManager-advanced.js](../../../../01-Class-Content/11-js-constructors/01-Activities/08-TeamManager/Solved/teamManager-advanced.js) within your editor and work through the code with your students. Let them know that they should not worry if they managed to complete the first part of the activity but then struggled to complete the second half. So long as they understand the first part of the activity and can follow along with the second part, they are in good shape.
+  * `server5.js` (`12-StarWars-5`)
 
-### 5. Instructor Do: Constructors Within Constructors (10 mins) (High)
+* **Instructions:**
 
-* So far we have held our constructed objects within arrays to great affect, but what if we wanted to call upon those constructed objects within another object? What would we do then?
+  * Use Postman to send a POST request to the server you've been provided. Confirm that your character has been added to the database correctly.
 
-* Well, as it turns out, we can actually nest a constructor within another constructor fairly easily. In fact, it operates very similarly to creating a method within a constructor.
 
-* Open up the folder [09-MovieManager](../../../../01-Class-Content/11-js-constructors/01-Activities/09-MovieManager) within your editor and show your students how we are exporting a constructor function from one file - [castMember.js](../../../../01-Class-Content/11-js-constructors/01-Activities/09-MovieManager/castMember.js) for example - and calling upon it within another; in this case [movie.js](../../../../01-Class-Content/11-js-constructors/01-Activities/09-MovieManager/movie.js)
+### 3.	Instructor Do: Demo sendFile (server6.js + view.html)		(0:05)
 
-* What's more, we are then able to add objects created from the `CastMember` constructor into the `cast` array inside of the object created by the `Movie` constructor.
+* Open the file `server6.js` (`13-StarWars-6`). Look at the line under the `app.get('/')` route. Point out to students the use of the `res.sendFile` code. This code is used to send users a specific HTML file in response to their visiting a route.
 
-  * Open up [main.js](../../../../01-Class-Content/11-js-constructors/01-Activities/09-MovieManager/main.js) walk the class through the code and show them the terminal output.
+  ![5-SendFile](Images/5-SendFile.png)
 
-* Answer any questions about this demonstration before moving on to the next activity.
+* Be sure to point out how we make use of the built in `path` library to join relative and absolute file paths. In this case, we **could** just omit `path.join` pass `sendFile` relatives paths to the HTML files instead, but it's safer to provide absolute paths in case our Express app is ever started from a different directory. Normally this would be an issue, since absolute paths will almost always be different on different computers, as well as on Heroku. Thankfully we can make use of Node's built in `path` library. `path.join` is a function which accepts any number of String arguments, which are also expected to be file paths or partial file paths. `path.join` takes the passed in file paths, combines them into a new path, and returns it.
 
-### 6. Students Do: Filling Up Classrooms (15 mins)
+* The `__dirname` keyword is built into Node and available in every JavaScript file on the server. It's always equal to a the absolute path of the current directory. By passing `__dirname` as well as the relative path to the file we want to send into `path.join`, we'll get back an absolute path to the specified file.
 
-* Answer any questions your students might have before slacking out the following instructions...
+### 4.	Students Do: Dissect .get view.html (0:10)
 
-* **Instructions**
+* **File:**
 
-  * In this activity we are going to make two constructors in two different files in which one constructor calls upon the other within it.
+  * `server6.js` (`13-StarWars-6`)
 
-  * The first constructor function is called "Student" and has the following properties within it...
+* **Instructions:**
 
-    * Name of the student
-    * Favorite subject
-    * Current GPA
+  * Look at the file sent to you then explain to the person next to you what the `res.sendFile` line does. Then try creating a new HTML file and routing to that one instead.
 
-  * The second constructor function is called "Classroom" and has and has the following properties within it...
+### 5.	Instructor Do: Review Activity (0:05)
 
-    * An array of students within the class
-    * Number of students in the class
-    * Name of the professor
-    * Room number
-    * The Student constructor function from above which adds a new student to the class
+* Review the previous exercise and answer any questions. Try to get students to think about the distinction between routing users to "data" and routing them to rendered "HTML" pages. Try to get them to think about when you would use `res.json` and when you would use `res.sendFile`.
 
-  * BONUS: Make it so that that your application can take in user input to add new classes and new students to those classes.
+### 6.	Instructor Do: Demo Complete Application (0:05)
 
-### 7. Instructor Do: Demonstrate Application (5 mins)
+* Open the completed application found in `14-FinalStarWarsApp`. Walk students through the overall folder structure and how there is a mix of the `server.js` file and the HTML files which will be relayed to users. Also point out how we have a new `add.html` file.
 
-* Take a moment to demonstrate the solved version of the [14-Stu_FinalTVApp](../../../../01-Class-Content/11-js-constructors/01-Activities/14-Stu_FinalTVApp/Solved) application that students will be building.
+### 7.	Students Do: Dissect .post (add.html)		(0:10)
 
-  * This application makes use of the [TV Maze API](https://www.tvmaze.com/api) to as a data source.
+* Slack out a zipped copy of `14-FinalStarWarsApp`. Then task students with the following:
 
-  * Be sure to demonstrate how we can search for TV shows using command line arguments, e.g. `node cli show Westworld`.
+* **Instructions:**
 
-  * Demonstrate how we can also search for actors/actresses as well using command line arguments, e.g. `node cli actor Talulah Riley`.
+  * Spend a few moments looking over the code sent to you. First, get the server running, then begin to dissect the JavaScript code found at the bottom of `add.html`.
 
-  * Finally point out how each search logs the same information to a `log.txt` file.
+  * Explain to one another what the code does, what its for, and why its relevant to the application so far. Be sure to explain to one another what the `$.post` code is doing.
 
-    ![TV-App-Example](Images/01-TV-App-Example.gif)
+### 8.	Instructor Do: Review Activity (add.html)	(0:05)
 
-* Explain that we'll proceed step-by-step. Students will:
+* Walk students through the meaning of the JavaScript in `add.html`. Go line by line and explain how jQuery is used to grab the values in the form -- then immediately POSTs these values to the API. The API then saves the records into the database.
 
-  * Write out a high-level application architecture;
+* Answer any questions that remain. Then encourage students to look back at their class repository when completing the homework as there will be additional examples on folder structure relevant to their homework assignment.
 
-  * Implement logic for parsing command-line arguments and running the appropriate functionality in a `cli.js` file.
+* Finally, slack out a link to the [YouTube video walkthrough](https://youtu.be/ygk-kNstqK0?list=PLgJ8UgkiorCmI_wKKVt5FlkTG63sQF6rr) and encourage them to review at home. This will be a _huge_ help to students.
 
-  * Implement the logic for searching for actors or shows using an object generated by a constructor function in a `tv.js` file.
+### 9. Instructor Do: Introduce Heroku (0:05)
 
-### 8. Partners Do: Sketch Architecture (15 mins)
+* Local development is fun, but it's much more fun to deploy and share with others!
 
----
+* Ask students what we've been using so far to deploy, and ask if anyone has any idea why that solution might not work now.
+  * After students give suggestions, explain that GitHub Pages only hosts "static" pages, and doesn't support the server side of our application. 
+  * Explain that GitHub Pages won't actually run any code for your app, it just hosts your HTML, CSS, JS, and other static files. It's similar to accessing your local files through your browser, only they're on a publicly accessible machine.
 
-**Objectives Met**
+* That means we need something that will both host our files _and_ run our server-side code.
 
-* Sketch the architecture of small applications at a high level prior to writing code;
+* Ask them if they can guess what we're going to use to host our full-stack application.
+  * There are a ton of options, but specifically we're going to be using Heroku!
 
----
+* Explain that Heroku is a platform as a service (PaaS). It allows deployment of a back-end and will start up and host your web server and server-side code for you!
+  * Explain that the value here is similar to that of GitHub Pages, but for your whole app.
+  * Heroku will manage your application and give it a public URL that anyone can access.
 
-* Remind students that the application:
+### 10. Students Do: Deploy to Heroku (0:30)
 
-  * Accepts command-line arguments indicating whether the user intends to search for tv shows or tv actors;
+* Tell students that to wrap up today we're going to host that Star Wars app, so that even those in a galaxy far, far away can access it.
 
-  * Makes an API request to one of two different API endpoints; and
+* Then have students login to their Heroku accounts online. Many of them will have forgotten their passwords, and may spend a significant portion of this activity getting set up.
 
-  * Saves the results of the requests to a `log.txt` file and prints the data to the console.
+* **File:**
+  * `01-Activities/14-FinalStarWarsApp` (solution, zipped)
+  * `03-Supplemental/HerokuGuide` (slacked out or link to class repo posted)
 
-* Slack out the following instructions to students.
+* **Instructions:**
+  * Push the finished Star Wars app to heroku following the steps from the guide.
 
-  * **Instructions**:
+  * **BONUS:** Begin making the below additional page for your Star Wars app. Push those changes up as you build the new feature. Specifically, this will require:
+    * Create a new page on your Star Wars website that displays a table of ALL characters in the database. This will involve at minimum:
+      * Creating a route in the server.js file for displaying data
+      * Creating a route in the server.js file for sending users a new HTML file
+      * Creating an HTML file that grabs data from the server.
 
-    * As a best practice, sketch out the architecture of your application _before_ you start writing code.
+* Be sure to walk around and help students as they hit snags or have problems pushing to heroku, consulting the troubleshooting tips below as needed.
 
-    * For this exercise, start by describing what your application does. Do this in a bullet list.
+### 11. Review Unit 11 (30 mins)
 
-    * Next, decide how you might divvy up these responsibilities. Would you write a single module that handles all of them? Would you write one module for each bullet list? Something else? Be sure to justify your decision.
+* Spend some time answering lingering questions about the deployment process. If no questions remain, lead a review on Unit 11 so far.
 
-    * Finally, draw a diagram describing the flow of your application. Don't worry about being _too_ precise here, but include enough detail where you can use it as a guide to explain it to someone else. You can do this either by using pencil and paper or flowchart generation software like [draw.io](https://www.draw.io/).
+- - -
 
-    * Take a moment to study the GIF below if stuck. Remember that this application also prints the logged data to a file named `log.txt`.
+### 12. Break (30 mins)
 
-      ![TV App Example](Images/01-TV-App-Example.gif)
+- - -
 
-### 9. Instructor Do: Review Activity (5 mins)
+### 13. Instructor Do: Welcome (5 mins)
 
-* Ask a group to:
+* Welcome students back to class. 
 
-  * Share their bullet list;
+* Then when everyone gets settled give students a few moments to ask high-level questions regarding the previous class. 
 
-  * Describe the components they would define; and
+* Let students know that the concepts covered this week regarding Node and Express servers are some of the most important concepts in the class. Let them know that it really gets to the heart of what full-stack web development is -- and for this reason, it's important they push themselves to learn it now.
 
-  * Explain why they would define their modules this way.
+* Slack out the below resources:
 
-* Briefly discuss the pros and cons of their solution.
+  * <https://scotch.io/tutorials/use-expressjs-to-get-url-and-post-parameters>
 
-* Open [11-Stu_Architecture/README.md](../../../../01-Class-Content/11-js-constructors/01-Activities/11-Stu_Architecture/README.md) and explain that while there are many ways to write the same application, we've chosen this way to be consistent as we work through the activities as a class.
+  * <https://scotch.io/tutorials/build-a-restful-api-using-node-and-express-4>
 
-![A high-level, diagram view of our TV Show application.](Images/02-TV-Flowchart.png)
+### 14. Instructor Do: Demo End Application (15 mins)
 
-_A high-level, diagram view of our TV application._
+* Then begin to remind students that the best way to learn to code -- especially challenging concepts -- is sometimes just to force yourself to code. For this reason, today's class will be a 4-hour session in which you'll be building a real-world application that makes use of the concepts we're covering so far. 
 
-### 10. Partners Do: Implement CLI (15 mins) (Critical)
+* Slack out the following link: [hot-restaurant.herokuapp.com](http://hot-restaurant.herokuapp.com). 
 
----
+  ![1-HotRestaurant_1](Images/1-HotRestaurant_1.png)
 
-**Objectives Met**
+* Then ask all students to make a Reservation request on the website. 
 
-* Parse command line arguments to determine whether the user is searching for a show or actor, along with which one.
+* Once they are done, visit the page: <http://hot-restaurant.herokuapp.com/tables>. Point out how their reservation requests have been captured and listed on the site. Depending on whether or not they were one of the first five requests, they were added to the reservation list -- otherwise they were put on the waitlist. 
 
----
+  ![1-HotRestaurant_2](Images/1-HotRestaurant_2.png)
 
-* Inform the class that we're going to start with the `CLI` module, since it's the starting point for our application.
+* Then take a few moments to flip through the screens. Point out how there is a page for creating reservations, a page for viewing reservations, and two pages for viewing JSONs of the current reservations and waitlisted parties. 
 
-* Slack out the following instructions.
+  ![1-HotRestaurant_4](Images/1-HotRestaurant_4.png)
 
-  * **Instructions**:
+  ![1-HotRestaurant_5](Images/1-HotRestaurant_5.png)
 
-    * When the completed [cli.js](../../../../01-Class-Content/11-js-constructors/01-Activities/12-Stu_Cli/Solved/cli.js) file is run with node, it should be able to handle command line arguments similar to those below:
+* Let students know that they will be building this application from scratch over the course of the next few hours.
+* Feel free to open up the `phases.md` file found in `15-HotRestaurant` folder and keep it on the screen during the development. Scroll down to the next phase when the time is up.
 
-      ```
-      // Search for The Andy Griffith Show
+### 15. Instructor Do: Group Formation + Initial Instructions (10 mins)
 
-      node cli show The Andy Griffith Show
-      ```
+* Have students divide themselves into groups of 4 (with 2 members from each section). 
 
-      and
+* Then slack out the following instructions:
 
-      ```
-      // Search for the actor Andy Griffith
+* **Instructions:**
 
-      node cli actor Andy Griffith
-      ```
+  * Today you will be building a Node / Express based web applications for handling reservation requests. 
 
-    * In these examples the cli expects input in the following format:
+  * Your application will be made up of two parts: 1) A front-end set of HTML/CSS/JS pages for entering and viewing data and 2) A back-end composed of Node/Express and basic JS for storing, updating, and relaying reservation data.
 
-      ```
-      node cli <show-or-actor> <actor-or-show-name>
-      ```
+  * Spend the time necessary to map this application out. Consider the concepts we've covered in class so far: 
 
-    * To begin, open [cli.js](../../../../01-Class-Content/11-js-constructors/01-Activities/12-Stu_Cli/Unsolved/cli.js) and write code to store the `<show-or-actor>` command line argument in a variable named `search`.
+    * Servers
+    * Routing
+    * APIs
+    * AJAX (GET and POST Requests)
 
-    * Store the `<actor-or-show-name>` command line argument in a variable named `term`. Keep in mind that this argument may contain spaces so it may span multiple indexes of `process.argv`. Check out the [Array Slice Method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice) to achieve this.
+  * You should be referencing the code from the previous Star Wars application.
 
-    * Then write an if/else statement to print to the console whether a show or actor is being searched for.
+  * Feel encouraged to use the following application as a reference: <http://hot-restaurant.herokuapp.com/>
 
-    * We will add some functionality to actually perform the API calls in the next activity.
+  * Note: We know this is a hard activity. We know you aren't yet comfortable with Node or Express. But push yourself. The best way to learn is to push through the discomfort and BUILD! Ask for help when you need it. We're here to help you through the process.
 
-  * **Bonus**:
+  * **Bonus:**
 
-    * Write logic to set up a default search type and default term if either are missing.
+    * If by some miracle you finish early, feel encouraged to work on any one of these additional tasks to take your application to the next level.
 
-### 11. Instructor Do: Review Activity (10 mins) (Critical)
+      * Add code to your server so that it "counts" every time a person visits any of the pages. Display a running count on the website. 
 
-* Open up [cli.js](../../../../01-Class-Content/11-js-constructors/01-Activities/12-Stu_Cli/Solved/cli.js), and walk through the solution.
+      * Add buttons for "checking off" individuals from the reservation list. Once this happens, the next person on the waitlist should be addd to the main reservation list.
 
-  ![CLI Code](Images/03-CLI-Code.png)
+      * Add a button for sending emails to individuals on the wait-list letting them know they have a table ready. You will need to use node-mailer or a similar npm package to make this work. (A hard task, but very cool).
 
-* Emphasize:
+      * Add a button for sending text messages to individuals on the wait-list letting them know they have a table ready. You will need to use the Twilio library to make this work. (A hard task, but very cool). 
 
-  * `process.argv` is an array containing the command line arguments.
+* Let them know that you will be providing them with guidance on how to proceed every 20 minutes or so. 
 
-  * The second index of `process.argv` is the search type argument.
+### 16. Partners Do: Phase I - Pseudocode (15 mins)
 
-  * All remaining indexes of `process.argv` will contain the actor or tv show search term, split into separate index by spaces. We're using the Array `slice` and `join` methods to collect and format this.
+* For this first phase, slack out the following instructions:
 
-  * We're optionally setting default values for the `search` and `term` variables.
+* **Instructions:**
 
-  * We have an if/else statement printing whether a show or actor is being searched for.
+  * Phase I: For this first phase, aim to write out the pieces that will need to be programmed to create the functionality of your application. Try to break it into 6-7 pieces.
 
-* Explain that for now we just have the `console.log` statements, but often times when building applications we need to stub out certain functionality before we have a chance to implement it.
+* **Instructors/TAs:** Once time is up have students share their breakdowns. As a suggestion, here is a list that you can slack them. 
 
-### 12. Partners Do: Implement Find Show (30 mins) (Critical)
+  * Create the front-end (visuals) for home page, reservation form, and reservation views.
 
----
+  * Create a basic server using Express.JS
 
-**Objectives Met**
+  * Create a few array variables that will hold the data
 
-* Use objects to perform AJAX requests, and save data to local files.
+  * Create a set of routes for getting and posting table data
 
-* Use constructors to create those objects.
+  * Create a set of routes for displaying the HTML pages
 
----
+  * Use jQuery to run AJAX calls to GET and POST data from users to the Express server
 
+### 17. Partners Do: Phase II - Frontend + Server Creation (20 mins) (Critical)
 
-* Slack out the following instructions.
+* Proceed with the next phase. Slack out the following instructions to help guide them:
 
-  * **Instructions**:
+* **Instructions:**
 
-    * Open the [tv.js](../../../../01-Class-Content/11-js-constructors/01-Activities/13-Stu_FindShow/Unsolved/tv.js) file. This file contains a constructor function that will be used to create a TV object capable of searching the TV Maze API for shows and actors.
+  * Phase II: For this second phase, aim to complete the following:
 
-    * Install the `axios` package by running `npm install axios` in your terminal. We will use the `axios` module to make AJAX requests to the TV Maze API. Require the `axios` package and the built-in `fs` package at the top of the `tv.js` file.
+    * Backend Team: 
 
-    * Inside of the `TV` constructor function's `findShow` method, use the `axios` package to hit the TV Maze API for the `URL` string.
+      * Create a basic Express server. 
 
-    * Once you have the response body of the AJAX request, use `JSON.parse` to convert it to JSON (it comes back as a string).
+      * Your server at this point should do the BARE MINIMUM. (Effectively, it should just say: "Listening at PORT 3000" when the command `node server.js` is run.)
 
-    * After getting the JSON response from the AJAX request, create a string containing the following information from the returned show data;
+    * Frontend Team:
 
-      * The name of the show
-      * The show's genre(s)
-      * The show's average rating
-      * The show's network name
-      * The show's summary
+      * Create three HTML files one called `home.html`, another called `tables.html`, and another called `reserve.html`. Use dummy data and create pages similar to the one shown to you on the sample Hot Reservation webpage.
 
-    * Save this string to the `log.txt` file using the `fs.appendFile` method. If the file does not already exist, `fs.appendFile` will create it.
+    * All: If you finish early, begin thinking about how the Data, API, and Routes should look.
 
-    * After saving the data to the `log.txt` file, print this information to the console.
+* **Instructors/TAs:**
 
-    * Verify your code works by running the cli file and passing in the name of a TV show, e.g. `node cli show Scrubs`. This should print the specified information to the console and save it to the `log.txt` file.
+  * Have students who accomplished this task share their code with you (via GitHub) and display it on screen. Then have them come up and talk about what they did. 
 
-  * **Hints**:
+### 18. Partners Do: Phase III - API Routing + Frontend Delivery (40 mins) (Critical)
 
-    * Check out some sample output from the TV Maze single show search API: <http://api.tvmaze.com/singlesearch/shows?q=scrubs>.
+* Proceed with the next phase. Slack out the following instructions to help guide them:
 
-    * You would have used the `axios` package for the Liri HW assignment. Refer back to this if you need a refresher on how to use the package.
+  * Phase III: For this third phase, aim to complete the following:
 
-    * Check out the selected answer for the question: [how to append a file in node?](https://stackoverflow.com/questions/3459476/how-to-append-to-a-file-in-node).
+    * Backend Team: 
 
-### 13. Instructor Do: Review Activity (10 mins) (Critical)
+      * Create a set of variables (hint: arrays of objects) for holding the reservation and waitlist data 
 
-* Open up the [tv.js](../../../../01-Class-Content/11-js-constructors/01-Activities/13-Stu_FindShow/Solved/tv.js), and walk through the solution.
+      * Create a set of routes that then display this data as JSONs. Users should be given these JSONs if they visit the appropriate page (i.e. if a user visits `localhost:3000/api/tables` they should see a JSON of table data).
 
-  ![Find Show](Images/04-Find-Show-Code.png)
+    * Frontend Team:
 
-* Emphasize:
+      * Temporarily join the backend team. Your task will be to create Express routes that display your HTML pages when a user visits the appropriate page. (i.e. if a user visits `localhost:3000/tables`... they should be shown the `table.html` page.) 
 
-  * We use the `axios` package to search the TV Maze API, and parse the body as JSON.
+      * If you finish early begin creating the code necessary to convert your form data into JSON objects. 
 
-  * `showData` is just a big multi-line string containing the data we we'll be using. Using an array of strings we join together can be a more human readable way to achieve this than concatenation.
 
-  * We use the `fs.appendFile` method to save this information along with a divider &mdash; just a series of dashes &mdash; to the `log.txt` file.
+### 19. Partners Do: Begin Phase IV - Backend Logic + AJAX (15 mins)
 
-  * When complete we log the data to the console.
+* Proceed with the next phase. Slack out the following instructions to help guide them:
 
-  * Point out how we call the `tv.findShow` method in the [cli.js](../../../../01-Class-Content/11-js-constructors/01-Activities/13-Stu_FindShow/Solved/cli.js) file.
+  * Phase IV: For this fourth phase, aim to complete the following:
 
-### 14. Everyone Do: BREAK (30 mins)
+    * Backend Team: 
 
-### 15. Partners Do: Implement Find Actor (25 mins) (Critical)
+      * Create the logic that handles reservation requests. Your code should work such that POST requests take in JSON objects, checks if there is any space left, then adds the JSON object to either the reservation array or the waitlist array. Your POST route should also respond to requests with a confirmation (true or false) of whether or not the requestor has a reservation (or is on the waiting list).
 
----
+      * You should be using Postman to do all your testing at this point.
 
-**Objectives Met**
+    * Frontend Team:
 
-* Use objects to perform AJAX requests, and save data to local files.
+      * Begin to do serious research on AJAX. Specifically, focus your attention on how AJAX can be used to do both GET and POST requests. 
 
-* Use constructors to create those objects.
+      * Then create the necessary code on your `tables.html` page such that it can retrieve data from the Backend Team's API. In essence you will be creating an AJAX GET request to retrieve the data.
 
----
+      * Then create the necessary code on your `reserve.html` page such that it can send data to the Backend Team's API. In essence you will be creating an AJAX POST request to send the data. 
 
-* Slack out the following instructions.
+    * All: This is the most challenging part of today's activity. Be persistent! You can do this!
 
-  * **Instructions**:
+- - -
 
-    * Open [tv.js](../../../../01-Class-Content/11-js-constructors/01-Activities/13-Stu_FindShow/Unsolved/tv.js) and update the constructor function's `findActor` method. It should use the `axios` package to search the TV Maze API using the provided URL.
-
-    * Once the data has been retrieved from the API, parse it as JSON (it should be a string initially) and grab only the first result (it should be an array of JSON objects).
-
-    * Save the following information to the `log.txt` file using the `fs.appendFile` method:
-
-      * The actor's name
-      * The actor's birthday
-      * The actor's gender
-      * The actor's country
-      * The actor's TV Maze URL
-
-    * Once the data has been saved to the `log.txt` file, print it to the console.
-
-    * Test that your code works properly by running the [cli.js](../../../..//01-Class-Content/11-js-constructors/01-Activities/13-Stu_FindShow/Unsolved/cli.js) file with arguments. e.g. `node cli actor Jennifer Aniston`.
-
-  * **Bonus**:
-
-    * Once you've finished the basic activity, update the `cli.js` file to use the `inquirer` npm package to prompt the user for their search and term rather than `process.argv`.
-
-  * **Hints**:
-
-    * Implementing the `findActor` method should be very similar to the `findShow` method, refer to this if stuck.
-
-    * Check out this sample output from the TV Maze Actors API: <http://api.tvmaze.com/search/people?q=jennifer%20aniston>.
-
-### 16. Instructor Do: Review Activity (15 mins) (Critical)
-
-* Open up [tv.js](../../../../01-Class-Content/11-js-constructors/01-Activities/14-Stu_FinalTVApp/Solved/Basic/tv.js), and walk through the solution.
-
-  ![Find Actor](Images/05-Find-Actor-Code.png)
-
-  * Point out how the code here is very similar to the findShow method.
-
-  * This API endpoint returns an array of actor objects, for our purposes we only want the first result, so we grab the 0th index.
-
-* Time permitting, go over the bonus solution as well.
-
-* Answer any remaining questions and slack out the solutions.
-
-### 17. Everyone Do: Application Review (10 mins)
-
-* Demonstrate the completed application, and have students follow along.
-
-* Foster discussion around the benefits of planning an architecture before writing any code.
-
-  * Also discuss any possible improvements. What else could we add to this application?
-  
-  * Check out the [TV Maze API Documentation Site](https://www.tvmaze.com/api). Point out that we can also search for TV crew or seasons.
-
-  * Highlight the fact that we're very close to creating what could be a useful NPM package someone else may want to use.
-
-* Take this time to address any outstanding questions students may have.
-
----
-
-### 18. End (0 mins)
-
-* **Over Slack tell everyone to download MySQL Workbench so that they are prepared for next class!**
+### End
 
 ### MySQL Install
 
-* Let student's know that next class we will be beginning the MySQL Unit. To prepare, they will need to install MySQL Server and Workbench. Install guides can be found here:
-  * [MySQL Install Mac](../02-Day/Install_Guides/mysql-mac-guide.md)
-  * [MySQL Install Mac](../02-Day/Install_Guides/mysql-windows-guide.md)
+* We will be coming up on MySQL next class. Let student's know to install MySQL Server and Workbench. Guides have been provided so slack these out to students:
+
+  * [MySQL Install Mac](../../12-Week/01-Day/Install_Guides/mysql-mac-guide.md)
+  * [MySQL Install Windows](../../12-Week/01-Day/Install_Guides/mysql-windows-guide.md)
+
+* If your class runs into trouble with this install process, feel free to use MAMP or any other installation solution that you would prefer to get the class ready.
+
+### Troubleshooting Guide
+
+* **Forgetting to git "add -A, git commit -m":** Often students will completely skip the step where they save and commit their changes prior to pushing to GitHub. This will mean their web page is essentially blank. As a starting point, ensure their code is present in GitHub before tinkering with Heroku issues. If they have no code in GitHub, they certainly have no code in Heroku
+
+* **Images and/or CSS not appearing:** All filenames and paths are case sensitive. Ensure that all links in HTML are using case-sensitive paths that match the folder directories casing.
+
+* **Not using relative paths:** Students using absolute paths to reference their CSS, JS, or image files. Help them to convert these to relative paths. 
+
+* **Not knowing where their site deployed:** Show students that they need to login to the site and they will see the new app deployed on their menu. Then help them go to Settings and scroll until you see the "Heroku Domain".
+
+* **Heroku Login not working on Windows:** For first time Windows Users, you need to use `cmd.exe` to login to Heroku. If you do not do this, bash will likely prevent you from logging in  and you will be unable to proceed with Heroku Steps.
+
+* **More than five Heroku apps:** As students progress in the course, they will have many more Heroku apps. Once you get to five apps, Heroku requires users to authenticate their identity with a credit card. This credit card won't be charged, but its a requirement to have more than five active apps.
+
+* **Not using environment variable for port:** Help students update their app so that they are getting the port the app is listening on from `process.env.PORT`.
+
+* **Not having start script in `package.json`:** Help students update their app so that they have a start script in the `scripts` block of their `package.json` file, and ensure that they can run `npm start` to start up their server.
+
+* **Not having production dependencies in `package.json`:** Ensure that any required packages are listed in the `dependencies` block in the `package.json` file.
+
+#### Resources
+
+* [Getting Started on Heroku with Node.js](https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction)
+* [Deploying Node.js Apps on Heroku](https://devcenter.heroku.com/articles/deploying-nodejs)
+* [Scotch.io Heroku Node Tutorial](https://scotch.io/tutorials/how-to-deploy-a-node-js-app-to-heroku)
 
 ### Lesson Plan Feedback
 

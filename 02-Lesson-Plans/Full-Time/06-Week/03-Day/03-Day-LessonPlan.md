@@ -1,124 +1,108 @@
-## 6.3 - Callbacks & Intro to MySQL <!--links--> &nbsp; [⬅️](../02-Day/02-Day-LessonPlan.md) &nbsp; [➡️](../04-Day/04-Day-LessonPlan.md)
+## 6.3 - Intro to MySQL (10:00 AM)
 
-### Overview
+## Overview
 
-Students will gain an understanding of callbacks.
+Today, in the process of building today's assignment, students will reinforce their understanding of Express Servers, Routing, and the utility AJAX for front-end interaction. 
 
 MySQL, while extremely useful and powerful, is unlike any other programming language your students have encountered thus far and will undoubtedly lead to some confusion. As if that were not enough, MySQL brings with it its own unique set of stumbling blocks that can blindside you and trip your class up if you are not prepared for them. Do not worry though, as we are here to help guide you through this opening to one of the web's most powerful server-side storage tools.
 
-`Summary: Complete activity 16 in Unit 11, and activities 1-5 in Unit 12`
+## Instructor Notes
 
-##### Instructor Priorities
+* `Summary: Complete activity 15 in Unit 11 and `
 
-* Students will be able to articulate the relationship between callbacks and functions that receive them as arguments.
-* Students will get MySQL Workbench or Sequel Pro up and running on everyone's computers.
-* Walk students through the creation of a localhost connection to MySQL on their devices.
-* Students will know how to create and use a MySQL database to store data in tables.
-* Students will be able to create and select data from tables using the SQL editor.
+* Towards the end of class, let all students know that there is a thorough video outlining the solution to this activity that you will Slack out. (See Recap + Closing Thoughts) 
 
-##### Instructor Notes
+* Throughout today's class, constantly encourage students to look back at the previous activity from class on the Star Wars Express application. 
 
-* Today's class is most likely not going to be an easy one. As mentioned in the overview above, there are a lot of hurdles which can both intimidate and block students from wanting to dive into and mess around with MySQL. It does not help that, unlike Visual Studio Code, MySQL Workbench does not have the friendliest of designs and seems somewhat cluttered. Make sure to keep your class calm and reassure them that all of this will make more sense as they spend more time with the language and MySQL Workbench.
+* The lesson after the break is most likely not going to be an easy one. As mentioned in the overview above, there are a lot of hurdles which can both intimidate and block students from wanting to dive into and mess around with MySQL. It does not help that, unlike Visual Studio Code, MySQL Workbench does not have the friendliest of designs and seems somewhat cluttered. Make sure to keep your class calm and reassure them that all of this will make more sense as they spend more time with the language and MySQL Workbench.
 
 * Since MySQL has the potential to bring about a lot of errors on its inaugural setup, we have set aside portions of time for the critical assignments for you and your TA's to assist the class as necessary over the course of today's assignments. If some students finish the assignments without issue, then have them also go around and assist those who are still facing problems. Do your best to keep everyone in the class on the same page so that no one is left behind.
 
 * **A few days before this class, tell everyone in your class over Slack to download MySQL Workbench so that everyone is using the same program when they get to class!**
 
-* If student's haven't yet received them, slack the instal guides which can be found here:
-
-  * [MySQL Install Mac](../02-Day/Install_Guides/mysql-mac-guide.md)
-  * [MySQL Install Mac](../02-Day/Install_Guides/mysql-windows-guide.md)
-
 * **Disable Safe Mode Before Class!** In order to demonstrate the importance of unique identifiers and primary keys, we will be deleting rows using where statements that don't use a key column. To demonstrate this successfully, you must disable safe mode by toggling the option in Preferences -> SQL Editor and then reconnecting or by running the command `SET SQL_SAFE_UPDATES = 0;` in workbench.
 
-![alt-text](Images/safe-mode.png)
 
-* Have your TAs reference [03-Day-Time-Tracker](https://drive.google.com/a/trilogyed.com/file/d/1HaQZhIABW3us3z_EtTpz5oj0h888YxWW/view?usp=sharing) to help keep track of time during class.
+## Learning Objectives
 
-### Sample Class Video (Highly Recommended)
-* To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=16ca28b4-b7b2-48c3-b6f0-a86500f734db).
+* To create a real-world application for handling reservations using Node/Express
 
-- - -
+* To have MySQL Workbench or Sequel Pro installed and running on everyone's computers
 
-### Class Objectives
+* To create a localhost connection to a MySQL server and have everyone successfully connect to it
 
-By the end of class students will:
+## Slides
 
-* Be able to explain callbacks and closures.
-* Have MySQL Workbench or Sequel Pro installed and running on everyone's computers.
-* Create a localhost connection to a MySQL server and have everyone successfully connect to it.
-* Successfully create, use, and populate a MySQL database with data.
-* Successfully create, populate, and select data from a MySQL table.
+* N/A
+
+## Time Tracker
+
+[Unit 11-Express Day 3 Time Tracker](https://docs.google.com/spreadsheets/d/1HaQZhIABW3us3z_EtTpz5oj0h888YxWW/edit#gid=1519417688)
 
 - - -
 
-### 1.  Instructor Do: Callbacks (10 min)
+## Class Instruction
 
-**Objectives Met**
 
-* Articulate the relationship between callbacks and functions that receive them as arguments.
+### 1. Partners Do: Continue Phase IV - Backend Logic + AJAX (60 mins)
+
+* Proceed with the fourth phase.
+
+  * Phase IV: For this fourth phase, aim to complete the following:
+
+    * Backend Team: 
+
+      * Create the logic that handles reservation requests. Your code should work such that POST requests take in JSON objects, checks if there is any space left, then adds the JSON object to either the reservation array or the waitlist array. Your POST route should also respond to requests with a confirmation (true or false) of whether or not the requestor has a reservation (or is on the waiting list).
+
+      * You should be using Postman to do all your testing at this point.
+
+    * Frontend Team:
+
+      * Begin to do serious research on AJAX. Specifically, focus your attention on how AJAX can be used to do both GET and POST requests. 
+
+      * Then create the necessary code on your `tables.html` page such that it can retrieve data from the Backend Team's API. In essence you will be creating an AJAX GET request to retrieve the data.
+
+      * Then create the necessary code on your `reserve.html` page such that it can send data to the Backend Team's API. In essence you will be creating an AJAX POST request to send the data. 
+
+    * All: This is the most challenging part of today's activity. Be persistent! You can do this!
+
+### 2. Partners Do: Phase V - De-bugging + Bonus (20 mins)
+
+* Proceed with the final phase. Slack out the following instructions to help guide them:
+
+  * Phase V: For the fifth and final phase, aim to complete the following:
+
+    * All: 
+
+      * Complete any remaining functionality from the previous phase if you need more time. 
+
+      * Then, thoroughly test your application for bugs. Check if there are any obvious ways to crash the application. 
+
+      * Then, if you have more time -- begin to tackle any bonus of your choice. 
+
+### 3. Instructor Do: Recap (5 mins)
+
+* Take the stage again. Let students know that this was a hard activity but an incredibly realistic one. 
+
+* Encourage them by informing them that they've reached a highly significant point in their coding careers. Being able to build front-end and back-end applications like this one will allow them to build any number of applications. 
+
+* Slack out the [video solution](https://youtu.be/G7RvQMW2DOg?list=PLgJ8UgkiorCmI_wKKVt5FlkTG63sQF6rr) and HIGHLY HIGHLY encourage them to review it on their own. Let them know that the accompanying code has been thoroughly commented and that they should consider working in groups to dissect it. 
+
+### 4. Review Mini Project + Unit 11 (35 mins)
+
+* Take a moment to answer lingering questions from the mini project at a high level, then proceed to lead a review on the topics learned in Unit 11.
 
 - - -
 
-* Remind students that we can assign functions as values to variables.
+### 5. Break (30 mins)
 
-* Explain that, since functions are values, we can pass them as arguments to functions.
+- - -
 
-  * Point out that we've used callbacks extensively with jQuery &mdash; every time we use event listeners, as well as with the fs package &mdash; when we write a function to handle what happens after data is read, written, appended, etc.
+### 6. Instructor Do: Introduction to SQL and MySQL (5 mins)
 
-* Explain that functions passed as arguments to other functions are called **callbacks**.
+* Warn them that this part of the lesson will be going over something entirely new, and that it may take them some time to pick up this new language since it is almost entirely unlike any of the other programs they have learned up to this point.
 
-  * Explain that this is because we typically intend for the function _receiving_ the callback to do some work, and then **call back** the function we pass with its results.
-
-  * Explain what happens when we call `fs.appendFile`:
-
-    * First, `fs.appendFile` adds the text we pass in to the file that we specify.
-
-    * Then, one of two things happens. Either:
-
-      * `fs.appendFile` hits an error writing to the file. In this case, _it calls the function we've given it with an **error** argument_.
-
-      * `fs.appendFile` writes the data we want. In this case, _it calls the function we've given it and does not pass it an error.
-
-    * In either case, the `fs.appendFile` function does some work, and then **calls us back** when complete so we can do something afterwards.
-
-  * Explain that callbacks are one way for us to handle what happens right after some asynchronous code completes.
-
-### 2.  Students Do: Callbacks Activity (10 min)
-
-* Slack out the following instructions.
-
-  * **Instructions**:
-
-    * Write a function that accepts a string and a function as arguments. It should log the string, and then run the function.
-
-    * Write a function that accepts a boolean value and a function as arguments. It should run the function if and only if the boolean argument is true.
-
-    * Write a function that accepts a function(F) and a value (V), and returns a function that returns the result of running F on V. This sounds tricky, but it's easier than it sounds—just take it step by step!
-
-    * Finally, write a short message to a file using `fs.writeFile`. Does this function use callbacks? If so, identify them.
-
-### 3.  Instructor Do: Review Activity (5 min)
-
-* Open up [callbacks.js](../../../../01-Class-Content/11-js-constructors/01-Activities/15-Callbacks/Solved/callbacks.js), and step through the solution.
-
-  * Pay special attention to:
-
-    * Explaining that, in each example, `func` is a value that contains a **function**. This is why we can put parentheses after it—this _calls_ the function.
-
-    * Explaining that, when we pass a function a callback, we can do other work _before_ we call the callback. This allows us to reuse functions we already have, but **decorate** them but doing "extra stuff".
-
-      * Briefly explain the notion of function decoration.
-
-* Emphasize that students have been using callbacks from the beginning of their JavaScript studies. Today's lesson simply associates the concept with a name.
-
-* Slack out the solutions and take a few moments to answer outstanding questions.
-
-### 4. Groups Do: Homework (57 min)
-
-* Place students into groups to work on homework.
-
-### 5. Instructor Do: Introduction to SQL and MySQL (5 min)
+* Tell them not to worry though as, despite the difficulties many may face over the course of the class, there will be ample time given to make sure everyone is on the same page.
 
 * Before diving into any of this lesson's demos or even having the students install MySQL Workbench or Sequel Pro on their devices, take some time to go over the purpose SQL and MySQL.
 
@@ -128,7 +112,7 @@ By the end of class students will:
 
 * Data using SQL is stored in tables on the server much like those you would create in Microsoft Excel or in Google Sheets, making the data easy to visualize and search through.
 
-### 6. Everyone Do: Install MySQL Workbench (5 min)
+### 7. Everyone Do: Install MySQL Workbench (5 mins)
 
 * Let students know that debugging installs is a skill they will need as as developer, and to use this as a learning experience at troubleshooting installations and configuring software on their machines. If their install is easy, tell them to help someone who might be having some trouble!
 
@@ -138,7 +122,7 @@ By the end of class students will:
 
 * Make sure that everyone has MySQL Workbench or Sequel Pro installed and booted up before continuing the lesson.
 
-### 7. Instructor Do: Creating a Localhost Connection Demo (10 min)
+### 8. Instructor Do: Creating a Localhost Connection Demo (10 mins)
 
 * Explain to the class how, since we do not have a defined server for them to connect to, we are going to set up something called a "localhost connection" for them to use.
 
@@ -146,23 +130,23 @@ By the end of class students will:
 
   * This is a much better alternative to spending hundreds to thousands of dollars on buying a server itself for the purposes of practicing on.
 
-* Open up MySQL Workbench and click the (+) symbol next to the text which reads "MySQL Connections".
+* Open up MySQL Workbench and click the (+) symbol next to the text which reads "MySQL Connections"
 
-  * Enter "Local Instance MySQL" as your connection name.
+  * Enter "Local Instance MySQL" as your connection name
 
-  * Make sure your connection is set to "Standard (TCP/IP)".
+  * Make sure your connection is set to "Standard (TCP/IP)"
 
-  * Enter "localhost" as the Hostname.
+  * Enter "localhost" as the Hostname
 
   * Enter "3306" as the port for your connection. You can leave this part out of the connection and it could still work.
 
-  * Enter your MySQL username into the Username section (Default is "root").
+  * Enter your MySQL username into the Username section (Default is "root")
 
-  * Click on the **Store In Vault...** button beside the Password option and enter in your MySQL password (Default is empty).
+  * Click on the **Store In Vault...** button beside the Password option and enter in your MySQL password (Default is empty)
 
     * Mac users will see **Store in Keychain**.
 
-  * Leave the Default Schema field empty.
+  * Leave the Default Schema field empty
 
     ![New Connection](Images/New_Connection.png)
 
@@ -174,7 +158,7 @@ By the end of class students will:
 
 * Check to see if there are any questions and answer them to the best of your ability.
 
-### 8. Students Do: Creating a Localhost Connection (30 min)
+### 9. Students Do: Creating a Localhost Connection (25 mins)
 
 * Let the class know that MySQL Workbench or Sequel Pro can sometimes seem a little hard to comprehend when loaded up for the first time and that confusion is perfectly normal.
 
@@ -208,17 +192,17 @@ By the end of class students will:
 
     * Keep the Default Schema field empty
 
-  * Hit "Test Connection" and, if the connection is successful, hit okay and double-click on the newly created field under the "MySQL Connections" text on the home page.
+  * Hit "Test Connection" and, if the connection is successful, hit okay and double-click on the newly created field under the "MySQL Connections" text on the home page
 
     * If the connection fails, raise your hand and one of us will come around to help you out. Until we come by, however, take this time to go online and see if there is anything online which might tell you what went wrong. Do not worry if you cannot find anything though, we will make sure to figure this out.
 
   * If your connection was successful and you have nothing else to do, feel free to help those around you in creating their connections.
 
-  * BONUS: Look into how you can create and use databases using SQL commands.
+  * BONUS: Look into how you can create and use databases using SQL commands
 
-  * BONUS: Look into the reasons why MySQL uses port 3306 as its default.
+  * BONUS: Look into the reasons why MySQL uses port 3306 as its default
 
-### 9. Instructor Do: Connections Vs. Databases (3 min)
+### 10. Instructor Do: Connections Vs. Databases (5 mins)
 
 * Now that everyone has created a connection to the localhost and is comfortably inside the SQL editor, ask your students whether or not this means that they have created a database as well.
 
@@ -232,13 +216,13 @@ By the end of class students will:
 
 * The connection is a road which leads to an empty lot. Before we can populate the area, we first need to lay the foundations for houses (create a database), and build the houses (create a table).
 
-### 10. Instructor Do: Creating a MySQL Database (5 min)
+### 11. Instructor Do: Creating a MySQL Database (5 mins)
 
 * Within the MySQL Workbench editor, type `CREATE DATABASE animals_db;`
 
   * Explain to the class how this line of code will, when executed, create a MySQL database on the server they are connected to.
 
-  * Also make certain to point out the semicolon at the end of the statement.
+  * Also make certain to point out the semicolon at the end of the statement
 
 * Next, find the lightning-bolt symbol just above the editor and click on it to execute your code.
 
@@ -254,11 +238,11 @@ By the end of class students will:
 
   * Nope! We just need to reload our connection and the "animals_db" database will now appear within the navigator. We have just successfully created our first-ever database!
 
-### 11. Instructor Do: Creating a Table (10 min)
+### 12. Instructor Do: Creating a Table (10 mins)
 
 * Now that we have got a database, we start digging into the real meat of MySQL and start creating tables within our new database!
 
-* On the line underneath `CREATE DATABASE animals_db;` type the following lines of code (explaining as you type, see below).
+* On the line underneath `CREATE DATABASE animals_db;` type the following lines of code (explaining as you type, see below)
 
   ```sql
   USE animals_db;
@@ -267,7 +251,7 @@ By the end of class students will:
     name VARCHAR(30) NOT NULL,
     has_pet BOOLEAN NOT NULL,
     pet_name VARCHAR(30),
-    pet_age INTEGER(10),
+    pet_age INTEGER(10)
   );
   ```
 
@@ -292,55 +276,49 @@ By the end of class students will:
 
 * Highlight the above code and then hit the lightning-bolt symbol for MySQL Workbench or 'run selection' for Sequel Pro to run it. Reload your connection to the server and, using the navigator, point out how there is now a table called "people" in our database.
 
-### 12. Students Do: Setting Up FavoriteDB (10 min)
+### 13. Students Do: Setting Up FavoriteDB (10 mins)
 
 * Slack out the following file and instructions
 
 * **File**:
 
-  * [favorite_db_unsolved.sql](../../../../01-Class-Content/12-mysql/01-Activities/02-FavoriteDB-NoData/Unsolved/favorite_db_unsolved.sql)
+  * `favorite_db_unsolved.sql` in `02-FavoriteDB-NoData/Unsolved`
 
 * **Instructions**:
 
   * For the table favorite_foods...
 
-    * Create the column "food" which can take in a 50 character string and cannot be NULL.
-    * Create the column "score" which can take in an integer.
+    * Create the column "food" which can take in a 50 character string and cannot be NULL
+    * Create the column "score" which can take in an integer
 
   * For the table favorite_songs...
 
-    * Create the column "song" which can take in a 100 character string and cannot be NULL.
-    * Create the column "artist" which can take in a 50 character string.
-    * Create the column "score" which can take in an integer.
+    * Create the column "song" which can take in a 100 character string and cannot be NULL
+    * Create the column "artist" which can take in a 50 character string
+    * Create the column "score" which can take in an integer
 
   * For the table favorite_movies...
 
-    * Create the column "movie" which can take in a string and cannot be NULL.
-    * Create the column "five_times" which can take in a boolean.
-    * create the column "score" which can take in an integer.
+    * Create the column "movie" which can take in a string and cannot be NULL
+    * Create the column "five_times" which can take in a boolean
+    * create the column "score" which can take in an integer
 
   * BONUS: Go online and look into how one might go about adding data into a table.
 
-### 13. Everyone Do: Go Over FavoriteDB (5 min)
+### 14. Everyone Do: Go Over FavoriteDB (15 mins)
 
-* Copy and paste the data inside of [favorite_db_unsolved.sql](../../../../01-Class-Content/12-mysql/01-Activities/02-FavoriteDB-NoData/Unsolved/favorite_db_unsolved.sql) into MySQL Workbench or Sequel Pro to go over what each line of code does once more.
+* Copy and paste the data inside of `favoriteDB.SQL` in `02-FavoriteDB-NoData/Solved` into MySQL Workbench or Sequel Pro to go over what each line of code does once more.
 
 * Especially make sure to point out how `DEFAULT` works in this example, as this will help with the homework and make SQL easier to handle.
   * `DEFAULT` is used to insert a default value into a column. In this case, it is used to set the default `BOOLEAN` value for the `five_time` column to `false`.
 
-- - -
+### 15. Adding and Updating Data In Tables (15 mins)
 
-### 14. Lunch (30 min)
-
-- - -
-
-### 15. Adding and Updating Data In Tables (15 min)
-
-* Once everyone is back from lunch, ask the class whether or not there is any data in our tables yet?
+* Once everyone is back from break, ask the class whether or not there is any data in our tables yet?
 
   * The answer is, of course, that there is still no data stored within the server. Unlike before, however, we are now all set to start adding data into our tables!
 
-* Open up "animals_db" once more within MySQL Workbench  and type `SELECT * FROM people;` into the editor before highlighting this line of code and running it. Explain this to your students as you type in the code.
+* Open up "animals_db" once more within MySQL Workbench and type `SELECT * FROM people;` into the editor before highlighting this line of code and running it. Explain this to your students as you type in the code.
 
 * This will bring up a visual of the table we have created and students should note that there is nothing stored within the table just yet. We will be changing this now.
 
@@ -366,7 +344,7 @@ By the end of class students will:
 
 * The code WILL run, but as you can see, the data from the first insert statement has been duplicated. This is because, unlike tables and databases, there can be identical data stored within a table. As such, students should make sure to be careful when adding insert statements into their code.
 
-* Write the following lines of code into the editor underneath the last insert statement and ask the class what they think will happen to the table.
+* Write the following lines of code into the editor underneath the last insert statement and ask the class what they think will happen to the table
 
   ```sql
   INSERT INTO people (name, has_pet)
@@ -389,9 +367,9 @@ By the end of class students will:
 
   * If we did not include that WHERE statement, then our UPDATE would have set the values for all columns instead of those of a specific row. That would have been a pretty major error and is why the WHERE statement is so important.
 
-### 16. Students Do: Adding Data to FavoriteDB (10 Min)
+### 16. Students Do: Adding Data to FavoriteDB (10 Mins)
 
-* Slack out the following instructions.
+* Slack out the following instructions
 
 * **Instructions**
 
@@ -401,13 +379,13 @@ By the end of class students will:
 
   * BONUS: Look into how you you might go about creating a column that can hold a default value within it and how default values work when creating new rows.
 
-  * BONUS: Look into how you might go about creating a column with a default value that automatically go up with each new row.
+  * BONUS: Look into how you might go about creating a column with a default value that automatically go up with each new row
 
-  * BONUS: Look into the concept of making a column the "primary key".
+  * BONUS: Look into the concept of making a column the "primary key"
 
   * ULTRA BONUS: Try to create a column called "id" in one of your tables that can contain an integer, is the primary key for the table, cannot be NULL, and automatically increments with each new row added.
 
-### 17. Instructor Do: The Value of Unique Values (5 min)
+### 17. Instructor Do: The Value of Unique Values (5 mins)
 
 * You know, that duplicate data in our table is starting to become something of an eyesore... Let's change that! Type in the following line of code which should remove the rows that contain the string "Ahmed" within the "name" column.
 
@@ -422,7 +400,7 @@ By the end of class students will:
 
 * To prevent this kind of thing from occurring, programmers will oftentimes want to create a column that automatically populates each new row with unique data. This allows them to select and affect that row more easily.
 
-* Open up [animalsDBWithID.sql](../../../../01-Class-Content/12-mysql/01-Activities/03-animalsDBWithID/animalsDBWithID.sql) and copy the code into MySQL Workbench before running it.
+* Open up `animalsDBWithID.sql` in `03-animals_dbWithID` and copy the code into MySQL Workbench before running it.
 
   * Be sure to note how we have now replaced our old update statement with one in which the WHERE statement now uses the id column to select the row we want to affect.
 
@@ -443,45 +421,11 @@ By the end of class students will:
 
 * This does precisely what we wanted it to: Delete the duplicate, and preserve the original.
 
-### 18. Students Do: Making and Using an ID Column (10 min)
+- - -
 
-* Slack out the following instructions.
+### End
 
-* **Instructions**
-
-  * Make a new database called "programming_db" and switch into it for this activity.
-
-  * Create a table called "programming_languages" which includes a primary key named "id" which will automatically increment which each new row created, a string column called "languages," and a numeric column called "rating."
-
-  * Insert some data into the table and then modify the data using the id column.
-
-  * BONUS: Study up on how to add columns to a table and then create a boolean column called "mastered" which has a default value of `true`.
-
-  * BONUS: Start looking into the concept of joins in SQL.
-
-### 19. Everyone Do: programming_db Solution (5 min)
-
-* Open up [programmingDB](../../../../01-Class-Content/12-mysql/01-Activities/04-programmingDB/Solved/programmingDB.sql) and copy the code into MySQL Workbench.
-
-* Go over the bits of code which create "id" and set it as the primary key once more. Make sure everyone understands how this works and explain how useful this will be in this unit's homework.
-
-### 20. Instructor Do: Breaking Into the Join (10 min)
-
-* Now we are getting into one of the more difficult aspects of MySQL, but tell your class that this information will be very useful to them in the homework should they decide to attempt the challenge assignment.
-
-* Joins allow those using MySQL to combine two or more individual tables together using a value that is shared between them.
-
-* Open up [books.sql](../../../../01-Class-Content/12-mysql/01-Activities/05-booksDB/books.sql) and then copy it into MySQL Workbench. Take a moment to demonstrate the structure of the `books` and `authors` tables.
-
-* Explain that we can utilize joins to combine and display data from both tables. Point out how the `books` table has a foreign key of `authorId` which corresponds to the `id` of a row in the `authors` table. Explain that these tables have what's known as a one-to-many relationship, since a book can only have one author, but an author can have many books.
-
-* Explain that foreign keys are most commonly used to relate tables since primary keys are unique and won't change. Demonstrate each query below, showing students the resulting table, and explaining the differences between each join.
-
-  * INNER JOIN: Combines tables where the specified data-values within a column match one-another.
-
-  * LEFT JOIN: Combines tables and shows all of the values of the first table specified while only the values which match on the second side will be shown.
-
-  * RIGHT JOIN: Combines tables and shows all of the values of the second table specified while only the values which match on the first table will be shown.
+- - -
 
 ### Lesson Plan Feedback
 
