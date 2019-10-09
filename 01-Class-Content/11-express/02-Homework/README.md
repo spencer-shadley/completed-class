@@ -9,6 +9,22 @@ npm start
 
 The user should have a text input that allows them to create and save notes.
 
+It is recommended that you use the following folder structure:
+
+```
+db/             // contains json file that stores notes
+public/         // front end
+  assets/       //Folder contains css and client-side JavaScript
+    css/
+    js/
+  index.html
+  notes.html
+routes/         // API and HTML routes
+  apiRoutes.js  
+  htmlRoutes.js
+server.js       // Runs the application
+```
+
 Following the [common templates for user stories](https://en.wikipedia.org/wiki/User_story#Common_templates), we can frame this challenge as follows:
 
 ```
