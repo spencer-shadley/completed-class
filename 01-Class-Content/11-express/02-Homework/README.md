@@ -47,9 +47,11 @@ When organizing your day, it is important to have a way of tracking the work tha
 
 * GitHub repository with a unique name and a README describing project.
 
-* The application allows the user to input a note.
+* The application allows the user to create a note with a title and description.
 
 * A user has the ability to delete a note.
+
+* The application uses a `json` file to store notes.
 
 * The application uses an Express server to serve all API routes.
 
