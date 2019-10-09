@@ -8,7 +8,7 @@ MySQL, while extremely useful and powerful, is unlike any other programming lang
 
 ## Instructor Notes
 
-* `Summary: Complete activity 15 in Unit 11 and `
+* `Summary: Complete activity 15 in Unit 11 and 1-2 in Unit 12`
 
 * Towards the end of class, let all students know that there is a thorough video outlining the solution to this activity that you will Slack out. (See Recap + Closing Thoughts) 
 

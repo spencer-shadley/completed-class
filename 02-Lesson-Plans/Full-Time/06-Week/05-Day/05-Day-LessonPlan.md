@@ -165,7 +165,7 @@ SELECT * FROM Top5000;
 
 - - -
 
-### 8. BREAK (40 mins)
+### 8. BREAK (30 mins)
 
 - - -
 
@@ -239,6 +239,10 @@ SELECT * FROM Top5000;
 * Open up `TopSongsAndAlbumsCode.js` in `14-TwoTables` and go over the function which was added to the bottom. The query down there is far longer and far more confusing than the rest, so go over it step-by-step in great detail so that everyone in your class understands what it does.
 
 * Once it seems everyone has an idea of how that code works, ask a few brave souls to come up to the front to share their additions to the code with the class. Let them describe their code and field the questions as well, only jumping in when you feel the need to.
+
+### 12. Instructor Do: Review Unit 12 (40 mins)
+
+* Answer any lingering questions from the previous activity. If none remain, proceed to lead a review on Unit 12. If students feel comfortable with MySQL, feel free to review Express instead.
 
 # Instructor Do: Private Self-Reflection (0 min)
 

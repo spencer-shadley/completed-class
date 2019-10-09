@@ -4,9 +4,9 @@
 
 While the first class of the week took us away from JavaScript and Node for a tiny bit, today's class combines the old with the new in a way that shows just how powerful a MySQL server can be. With that being said, be on the lookout for small errors in syntax over the course of today's lesson. MySQL is VERY particular about the syntax that is used and this can lead to stress.
 
-`Summary: Complete activities 6-10 in Unit 12`
-
 ## Instructor's Notes
+
+* `Summary: Complete activities 03-10 in Unit 12`
 
 **IMPORTANT**: If you are using MySQL 8, you will need to have your class run the following query in the MySQL Workbench
 

@@ -11,7 +11,7 @@ In this class, we will provide students with a deep conceptual understanding of 
 
 ## Instructor Notes
 
-* `Summary: Complete activities 01-13 in Unit 11`
+* `Summary: Complete activities 01-12 in Unit 11`
 
 * This class is all about introducing students to the concept of server-side code. Coming into class today, students will have a fairly rudimentary notion of servers. Without your guidance it will be difficult for them to understand how the terminal-side code they've been creating thus far using Node.js fits into the big picture of web development. Today's class is all about filling these conceptual gaps.
 
