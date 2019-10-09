@@ -37,8 +37,6 @@ var renderActiveNote = function() {
   $saveNoteBtn.hide();
   console.log(activeNote);
 
-  $noteTitle.attr("readonly", true);
-  $noteText.attr("readonly", true);
   $noteTitle.val(activeNote.title);
   $noteText.val(activeNote.text);
 };
@@ -80,12 +78,14 @@ var handleNoteDelete = function(event) {
 // Sets the activeNote and displays it
 var handleNoteView = function() {
   activeNote = $(this).data();
+
   renderActiveNote();
 };
 
 // Sets the activeNote to and empty object and allows the user to enter a new note
 var handleNewNoteView = function() {
   activeNote = {};
+
   renderActiveNote();
 };
 
