@@ -1,381 +1,299 @@
-## 7.2 - Express Yourself & Express Mini-Project (10:00 AM) <!--links--> &nbsp; [⬅️](../01-Day/01-Day-LessonPlan.md) &nbsp; [➡️](../03-Day/03-Day-LessonPlan.md)
+# 7.2 Lesson Plan: Bringing it from front to back (10:00 AM)
 
-### Overview
+## Overview
 
-Today, we'll be asking students to create an Express based web application for handling reservation requests. In the process of building today's assignment, students will reinforce their understanding of Express Servers, Routing, and the utility AJAX for front-end interaction.
+Today's course will be building upon the lessons your students have learned the past couple of weeks as they bring all of their front-end and back-end knowledge together to create a fully-functional Node application.
 
-`Summary: Complete activities 11-14 & begin activity 16 in Unit 13`
+`Summary: Complete activities 7-14 in Unit 13`
 
-##### Instructor Priorities
+## Learning Objectives
 
-By the end of class students will:
+* To use HTML/jQuery GET, POST, PUT, and DELETE commands appropriately
 
-* Be guided through the "Star Wars Express" application.
-* Begin the hot restaurant activity.
+* To create full-stack web applications that will Create, Read, Update, and Delete data from a MySQL database
 
-Instructor/TAs should focus on providing students assistance in small-group format.
+* Students will use use Express.js, MySQL and Handlebars together to create a dynamic application
 
-##### Instructor Notes
+## Slides
 
-* Give students a heads-up that today's class is **critical** and that we will be re-using the concepts throughout the remainder of the course.
+* N/A
 
-* Be sure to slack out the [video walkthrough](https://youtu.be/ygk-kNstqK0) at the end of the star wars activity! This will help students tremendously in understanding how to approach Express based application builds.
+## Time Tracker
 
-* The focus for the latter half of the day is to immerse them in a build-it-first approach to learning.
-
-* Stronger students will find today's class refreshing because of the challenge, but weaker students may walk out fairly confused.
-
-* Throughout the hot restaurant activity, encourage students to look back at the Star Wars Express application. 
-
-* Additionally, you may want to slack students a copy of the diagram below as a reference at some point during their coding. It may help them visualize the overall application they are building.
-
-  ![0-Diagram](Images/0-Diagram.png)
-
-* Have your TAs reference [02-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1_TBQZbOvCSu03wmwXG7XU2U7lVzZPjhN/view?usp=sharing) to help keep track of time during class.
-
-### Sample Class Video (Highly Recommended)
-
-* To view an example class lecture visit (Note video may not reflect latest lesson plan): 
-
-[Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7d46ae85-7c8f-459f-ba32-a86c00f79153)
+[7.2 Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1o0kMAeHCM330hksJozYj7rE5ZRopT03F/view?usp=sharing)
 
 - - -
 
-### Class Objectives
+### Class Instruction
 
-* Understand the Star Wars Application
-* Create a real-world application for handling reservations using Node/Express
+### 1. Instructor Do: Using HTTP Requests (15 mins)
+
+* Welcome students to class and let students know about the topic for today. Building a full stack application using `Express.js`, `MySQL`, and `Handlebars`.
+
+* Demonstrate the application stored within the `07-TaskSaver` folder with GET and POST commands in front of students.
+
+* Make sure to copy `07-TaskSaver/schema.sql` into MySQL Workbench and run the code so as to set up the database you will be reading/affecting.
+
+* Also make sure to run `npm install` within the terminal.
+
+* Point out how lines 1–33 in `07-TaskSaver/server.js` is boilerplate code meant to set up the application which we will be able to copy and paste into future applications.
+
+* Explain the routes within `07-TaskSaver/server.js`, being sure to point out how data is being collected and added from our MySQL database.
+
+* Explain how the form's method inside of `07-TaskSaver/views/index.handlebars` is POST and the action of `'/'` points to the following part of the `server.js` file: `app.post('/', function(req, res)`.
+
+* By making it so that the form's method is POST, we are essentially telling our server that we are going to be posting data to our database. It is extremely similar to using a `jQuery.post()` command.
+
+* Explain that you need the `express.json` and `express.urlEncoded` middleware to be able to use `req.body.task` in `07-TaskSaver/server.js` within the `app.post('/', function(req, res)` section.
+
+  * Check to make sure students remember the concept of middleware:
+
+    * Middleware is a function we can run before the browser's request reaches our routes. 
+    
+    * The `express.json` and `express.urlEncoded` middleware transforms the request so that we can read the data that was sent on `req.body`.
+    
+    * Middleware can be defined using the `app.use` method.
+
+* Explain what `{{#each tasks}}` is doing in the `07-TaskSaver/views/index.handlebars` file.
+
+* Explain the following line from the `07-TaskSaver/views/index.handlebars` file: `<textarea type="text" name="task"></textarea>`.
+
+* When data is sent from the front-end to the back-end using the POST method, the key which a specific set of data is contained within is determined by the "name" of the HTML element.
+
+### 2. Partners Do: Understanding TaskSaver (15 mins)
+
+* Before answering any questions regarding the previous section, slack out `07-TaskSaver` to your class and have them set up the application on their computers.
+
+* Have your students go through the code line-by-line with the person sitting next to them as they work to solidify the lessons learned up above.
+
+### 3. Students Do: Wishes Application (20 mins)
+
+* After answering whatever questions your students may have regarding the previous activity, open up the `08-Wishes/Solved` application and demonstrate what your students will be building over the next 20 minutes.
+
+* Slack out the following instructions:
+
+  * **Instructions**
+
+    * Create an app with Express, MySQL and Handlebars.
+
+      * HINT: this app will be very similar to the app your instructor just demonstrated and slacked out. Please feel free to leverage that code when creating this code.
+
+    * Create a `schema.sql` file and create the following inside of that file:
+
+      1. Make a database called "wishes_db"
+
+      2. Inside of that database, make a table called "wishes" which will have a wish column and an id column. The id will be automatically incremented while also being the primary key.
+
+      3. Run your `schema.sql` file within MySQL Workbench before moving onto the next steps.
+
+    * In your `server.js` file, you will have to create two routes: a get route for `'/'` and a post route for `'/'`.
+
+      * Render all of the wishes from the wishes table when the `'/'` get route is hit. Additionally show the form that the user can use to create a new wish. The form will POST to the `'/'` route.
+
+      * The `'/'` post route will insert the wish from the form into the wishes table and will redirect the user back to the `'/'` get route.
+
+### 4. Instructor Do: Wishes Application Summary (10 mins)
+
+* Open up the `08-Wishes` folder and its files within your editor, and go over the code line-by-line with your class, making sure to explain what is happening within your code to the best of your ability.
+
+### 5. Instructor Do: Putting and Deleting (20 mins)
+
+* Open up the `09-DayPlanner` folder within your editor and within your terminal, running `npm install` before running `server.js` and opening up the application within your browser to demonstrate how the application works.
+
+* Point out how we create PUT and DELETE routes with Express.
+
+* Point out how to use jQuery to send PUT and DELETE requests (and that there are no shorthand methods available like for GET and POST).
+
+### 6. Partners Do: Going Over the Day Planner (15 mins)
+
+* Slack out `09-DayPlanner` to your students, have them run the application on their computers, and then have them explain the code to their partners line-by-line.
+
+### 7. Everyone Do: Watch List (25 mins)
+
+* Once everyone seems to have finished picking their way through the code and you have answered whatever questions your students may have had, slack out the following instructions found in `10-WatchList/README.md` file.
+
+  * **Instructions**
+
+    * Create a full-stack application with Express, MySQL and Handlebars.
+
+      * HINT: this web application will be very similar to the app your instructor just demonstrated and slacked out. Please feel free to leverage that code when creating this code.
+
+    * Create a `schema.sql` file. Inside of that file, do the following:
+
+      1. Make a database called moviePlannerDB
+
+      2. Inside of that database make a movies table which will contain a movie column and an id column. The id will be automatically incremented while also being the primary key.
+
+      3. Run your `schema.sql` file within MySQL Workbench before moving onto the next steps.
+
+    * In your server.js file, you will create four routes: `get`, `post`, `put`, and `delete`.
+
+      * Render the main `index.handlebars` when the `'/'` get route is hit with all of the movies from the movies table.
+
+      * Your application should have a set of routes on `'/movies'` for create, update, and delete operations on the movies table.
+
+      * Show a delete button next to each movie. When one of the delete buttons is clicked, the code should send a DELETE request to  delete the associated movie from your database.
+
+      * Additionally, show the form that the user can use to add a movie to be watched.  When the submit button is clicked, the code will post to the `'/movies'` route, which will insert the movie from the form into the movies table and return the ID of the new movie.
+
+      * Have another form that will update a movie in the movies table. The form will include two inputs: an id input and a movie title input. Remember to leverage a PUT method.
+
+      * Remember: best practices for REST include:
+        * Put your REST API on it's own URL (e.g. `'/todos'`).
+        * A POST that creates an item should return the ID of the item it created.
+        * PUT and DELETE should specify the ID of the item they're intended to affect in the URL (e.g. `'/todos/123'`).
+        * If the ID for the item specified in a PUT or DELETE couldn't be found, return a 404.
+        * If an error occurs in the server, return an error code (e.g. 500).
+
+### 8. Instructor Do: WatchList Review (10 mins)
+
+* Open up the `10-WatchList/Solved` folder and its files within your editor, and go over the code line-by-line with your class, making sure to explain what is happening within your code to the best of your ability.
 
 - - -
 
-### 1. Instructor Do: Welcome (1 mins)
-
-* Begin class by welcoming students.
-
-### 2. Instructor Do: Re-demonstrate Previous Solved Activity (10 mins)
-
-* Open the file [11-StarWars-4/server4.js](../../../../01-Class-Content/13-express/01-Activities/11-StarWars-4). This file simply includes a line-by-line commenting example from the end of yesterday. Slack out this file to students so they can look over it during the next few exercises.
-
-### 3. Instructor Do: Show code for Post Route (10 mins)
-
-* Now open the file [12-StarWars-5/server5.js](../../../../01-Class-Content/13-express/01-Activities/12-StarWars-5/server5.js). In this example, simply point students through the fact that we've created a new POST route. Explain that this route will take in JSON inputs then DO work with them. In this case it will save the JSON to the database and return a JSON of the new character.
-
-  ![4-PostReq](Images/4-PostReq.png)
-
-### 4. Students Do: req.body dissection (5 mins) (High)
-
-* Now slack out the following file and instructions.
-
-* **File:**
-
-  * `server5.js` (`12-StarWars-5`)
-
-* **Instructions:**
-
-  * Spend a few moments researching what `express.json` is for and what `req.body` means in the context of Express.
-
-  * Then research how you can POST data to the Express server.
-
-### 5. Instructor Do: Postman Demo (10 mins)
-
-* Have students articulate their answers before explaining to them that `express.json` and `express.urlEncoded` are built in middleware functions that allow Express to receive and parse incoming user posts (JSON, text, etc).
-
-* Normally data sent to the server isn't easily readable by humans, as it comes in as a low level stream.
-
-* Explain that `express.json` and `express.urlEncoded` are examples of **middleware**.
-
-  * Middleware is a function which we set to run between our server receiving a request and it being available inside of our routes.
-
-  * Middleware can be defined using the `app.use` method.
-
-  * Middleware can transform the request from the browser before we work with it. In the case of `express.json` and `express.urlEncoded`, it takes the unreadable request and turns it into a readable object and attaches it to `req.body`. By the time the request gets to our routes, the body parsing middleware has already formatted it for us.
-
-* Then explain to them that in future applications we'll eventually be using jQuery's AJAX methods for sending such post requests to our server.
-
-* Then have them install the program [Postman](https://www.getpostman.com/). We'll be using Postman so both windows users and mac users can be taught how to send POST requests using the same program. (Note: Students may ask questions like: "Do you always have to use postman to send post requests?" Use this as an opportunity to explain that Postman is simply a GUI for development, and that in future opportunities we'll be using jQuery or other front-end code approaches for sending the same post requests.)
-
-* Walk students through the process of sending POST requests in Postman. If you are unfamiliar use the following points as a guide:
-
-  1. Run your server instance.
-  2. Open Postman.
-  3. Select POST in the drop-down next to the link. Then enter the URL of your server's POST route.
-  4. Click the button: "Body". Click the setting "Raw". Then hit the dropdown that says "Text" and click JSON.
-  5. Enter in a complete JSON. You can use:
-     ```json
-     {
-       "routeName": "darthvader",
-       "name": "Darth Vader",
-       "role": "Sith Lord",
-       "age": 42,
-       "forcePoints": 1900
-     }
-     ```
-  6. Hit "Send"
-  7. Now check back to your Star Wars API to confirm that Postman received the request body.
-     ![Images/01-POSTMAN](Images/01-POSTMAN.png)
-
-### 6. Students Do: Postman Exercise (10 mins) (High)
-
-* Now have students perform the same exercise with their own servers.
-
-* You can slack out the following file and instructions:
-
-* **File:**
-
-  * `server5.js` (`12-StarWars-5`)
-
-* **Instructions:**
-
-  * Use Postman to send a POST request to the server you've been provided. Confirm that your character has been added to the database correctly.
-
-### 7. Instructor Do: Demo sendFile (server6.js + view.html) (10 mins)
-
-* Open the file [13-StarWars-6/server6.js](../../../../01-Class-Content/13-express/01-Activities/13-StarWars-6/server6.js). Look at the line under the `app.get('/')` route. Point out to students the use of the `res.sendFile` code. This code is used to send users a specific HTML file in response to their visiting a route.
-
-  ![5-SendFile](Images/5-SendFile.png)
-
-* Be sure to point out how we make use of the built in `path` library to join relative and absolute file paths. In this case, we **could** just omit `path.join` pass `sendFile` relatives paths to the HTML files instead, but it's safer to provide absolute paths in case our Express app is ever started from a different directory. Normally this would be an issue, since absolute paths will almost always be different on different computers, as well as on Heroku. Thankfully we can make use of Node's built in `path` library. `path.join` is a function which accepts any number of String arguments, which are also expected to be file paths or partial file paths. `path.join` takes the passed in file paths, combines them into a new path, and returns it.
-
-* The `__dirname` keyword is built into Node and available in every JavaScript file on the server. It's always equal to a the absolute path of the current directory. By passing `__dirname` as well as the relative path to the file we want to send into `path.join`, we'll get back an absolute path to the specified file.
-
-### 8. Students Do: Dissect .get view.html (10 mins) (High)
-
-* **File:**
-
-  * `server6.js` (`13-StarWars-6`)
-
-* **Instructions:**
-
-  * Look at the file sent to you then explain to the person next to you what the `res.sendFile` line does. Then try creating a new HTML file and routing to that one instead.
-
-### 9. Instructor Do: Review Activity (10 mins)
-
-* Review the previous exercise and answer any questions. Try to get students to think about the distinction between routing users to "data" and routing them to rendered "HTML" pages. Try to get them to think about when you would use `res.json` and when you would use `res.sendFile`.
-
-### 10. Instructor Do: Demo Complete Application (5 mins)
-
-* Open the completed application found in [14-FinalStarWarsApp](../../../../01-Class-Content/13-express/01-Activities/14-FinalStarwarsApp). Walk students through the overall folder structure and how there is a mix of the `server.js` file and the HTML files which will be relayed to users. Also point out how we have a new `add.html` file.
-
-### 11. Students Do: Dissect .post (add.html) (10 mins) (High)
-
-* Slack out a zipped copy of [14-FinalStarWarsApp/server.js](../../../../01-Class-Content/13-express/01-Activities/14-FinalStarwarsApp/server.js). Then task students with the following:
-
-* **Instructions:**
-
-  * Spend a few moments looking over the code sent to you. First, get the server running, then begin to dissect the JavaScript code found at the bottom of `add.html`.
-
-  * Explain to one another what the code does, what its for, and why its relevant to the application so far. Be sure to explain to one another what the `$.post` code is doing.
-
-### 12. Instructor Do: Review Activity (add.html) (10 mins) (High)
-
-* Walk students through the meaning of the JavaScript in `add.html`. Go line by line and explain how jQuery is used to grab the values in the form -- then immediately POSTs these values to the API. The API then saves the records into the database.
-
-* Answer any questions that remain. Then encourage students to look back at their class repository when completing the homework as there will be additional examples on folder structure relevant to their homework assignment.
-
-* Finally, slack out a link to the [YouTube video walkthrough](https://youtu.be/ygk-kNstqK0?list=PLgJ8UgkiorCmI_wKKVt5FlkTG63sQF6rr) and encourage them to review at home. This will be a _huge_ help to students.
-
-### 13. Instructor Do: Introduce Heroku (5 mins) (High)
-
-* Local development is fun, but it's much more fun to deploy and share with others!
-
-* Ask students what we've been using so far to deploy, and ask if anyone has any idea why that solution might not work now.
-
-  * After students give suggestions, explain that GitHub Pages only hosts "static" pages, and doesn't support the server side of our application.
-
-  * Explain that GitHub Pages won't actually run any code for your app, it just hosts your HTML, CSS, JS, and other static files. It's similar to accessing your local files through your browser, only they're on a publically accessible machine.
-
-* That means we need something that will both host our files _and_ run our server-side code.
-
-* Ask them if they can guess what we're going to use to host our full-stack application.
-
-  * There are a ton of options, but specifically we're going to be using Heroku!
-
-* Explain that Heroku is a platform as a service (PaaS). It allows deployment of a back-end and will start up and host your web server and server-side code for you!
-
-  * Explain that the value here is similar to that of GitHub Pages, but for your whole app.
-
-  * Heroku will manage your application and give it a public URL that anyone can access.
-
-### 14. Students Do: Deploy to Heroku (30 mins) (Critical)
-
-* Tell students that we're going to host that Star Wars app, so that even those in a galaxy far, far away can access it.
-
-* Then have students login to their Heroku accounts online. Many of them will have forgotten their passwords, and may spend a significant portion of this activity getting set up.
-
-* **File:**
-  * [01-Activities/14-FinalStarWarsApp](../../../../01-Class-Content/13-express/01-Activities/14-FinalStarwarsApp) (solution, zipped)
-  
-  * [03-Supplemental/HerokuGuide](../../../../01-Class-Content/13-express/03-Supplemental/HerokuGuide.md) (slacked out or link to class repo posted)
-
-* **Instructions:**
-  * Push the finished Star Wars app to heroku following the steps from the guide.
-
-  * **BONUS:** Begin making the below additional page for your Star Wars app. Push those changes up as you build the new feature. Specifically, this will require:
-
-    * Create a new page on your Star Wars website that displays a table of ALL characters in the database. This will involve at minimum:
-
-      * Creating a route in the server.js file for displaying data
-
-      * Creating a route in the server.js file for sending users a new HTML file
-
-      * Creating an HTML file that grabs data from the server.
-
-* Be sure to walk around and help students as they hit snags or have problems pushing to heroku, consulting the troubleshooting tips below as needed.
+### 9. Break (30 mins)
 
 - - -
 
-### Troubleshooting Guide
+### 10. Students Do: Quotes App (20 mins)
 
-* **Forgetting to git "add -A, git commit -m":** Often students will completely skip the step where they save and commit their changes prior to pushing to GitHub. This will mean their web page is essentially blank. As a starting point, ensure their code is present in GitHub before tinkering with Heroku issues. If they have no code in GitHub, they certainly have no code in Heroku
+* Open up the `11-QuotesApp/Solved` folder within git bash and run the `schema.sql` and `seeds.sql` files to set up our database before running `npm install` and `node server.js` so as to demonstrate how the Quotes application they will be making is going to work.
 
-* **Images and/or CSS not appearing:** All filenames and paths are case sensitive. Ensure that all links in HTML are using case-sensitive paths that match the folder directories casing.
+  * Keep your working application open so that it may serve as a reminder to your students on what kind of application they are making during the following activity.
 
-* **Not using relative paths:** Students using absolute paths to reference their CSS, JS, or image files. Help them to convert these to relative paths.
+* Answer any and all questions regarding this application before slacking out the following:
 
-* **Not knowing where their site deployed:** Show students that they need to login to the site and they will see the new app deployed on their menu. Then help them go to Settings and scroll until you see the "Heroku Domain".
+  * **Files**
 
-* **Heroku Login not working on Windows:** For first time Windows Users, you need to use `cmd.exe` to login to Heroku. If you do not do this, bash will likely prevent you from logging in  and you will be unable to proceed with Heroku Steps.
+    * `11-QuotesApp/Unsolved`
 
-* **More than five Heroku apps:** As students progress in the course, they will have many more Heroku apps. Once you get to five apps, Heroku requires users to authenticate their identity with a credit card. This credit card won't be charged, but its a requirement to have more than five active apps.
+  * **Instructions**
 
-* **Not using environment variable for port:** Help students update their app so that they are getting the port the app is listening on from `process.env.PORT`.
+    * Using Express, MySQL, Handlebars, and the starter code which was slacked out to you as a jumping-off point, you will be creating a simple web application which allows users to create, read, update, and delete popular quotes.
 
-* **Not having start script in `package.json`:** Help students update their app so that they have a start script in the `scripts` block of their `package.json` file, and ensure that they can run `npm start` to start up their server.
+    * Your application will have two pages:
 
-* **Not having production dependencies in `package.json`:** Ensure that any required packages are listed in the `dependencies` block in the `package.json` file.
+      * One will show all of the quotes within a database and will allow users to create a new quote or delete an existing one. A button next to each, labeled "Update This Quote," will take users to the other page which shows the quote selected and will allow them to update it with new information.
 
-- - -
+    * Make sure to run the code contained within the `schema.sql` and `seeds.sql` files beforehand so that you have a database with which to work.
 
-### 15. Lunch (25 mins)
+### 11. Everyone Do: Quotes App Review (10 mins)
 
-- - -
+* Open up `11-QuotesApp/Solved/server.js`, `11-QuotesApp/Solved/views/index.handlebars`, and `11-QuotesApp/Solved/views/single-quote.handlebars` within your editor, and go through the code line-by-line with your students, calling upon individuals to explain what the code does before clearing up any lingering confusion by going over it yourself as well.
 
-### 16. Instructor Do: Welcome students back from lunch (5 mins)
+* Explain briefly the `express.static` middleware when you get to it. In short, it is express code that will automatically respond with static files when requests are made that match the path in the defined folder (in this case the `public` folder).
+  * For example, if someone (e.g. the browser) makes a `GET` request for `/assets/css/style.css`, your express app will automatically send back the `CSS` file without you having to write any extra route handlers (or doing any `res.send`s).
+  * Tell students that it's not critical that they understand exactly how this works for now. They can treat it like their other route handling, but the takeaway is that requests for static files (any paths that matching a path in the defined folder) will be handled by `express.static` BEFORE any of the other code they've written is hit.
+    * A common pitfall here is that students may try to have an `index.html` file in the `public` folder and also try to handle the `/` route for GET requests in their `server.js` - warn them that `express.static` will swallow those requests if you put it first!
 
-* Welcome students back from lunch.
+### 12. Instructor Do: Introducing the ORM (20 mins)
 
-* Let students know that the concepts covered regarding Node and Express servers are some of the most important concepts in the class. Let them know that it really gets to the heart of what full-stack web development is -- and for this reason, it's important they push themselves to learn it now.
+* One of the major annoyances of dealing with databases through Node has been how much code we are having to write/rewrite in order to accomplish tasks that are remarkably similar from one activity to the next. In fact, there have even been times where we were having to rewrite repetitive MySQL queries within the very same application. This is far less than ideal code since, as we have discussed in the past, programmers like being able to reuse similar code, time and time again, wherever possible, to simplify/speed-up their apps.
 
-* Slack out the below resources:
+* In the past, we have done this by creating basic functions which take in variables to accomplish similar-but-different tasks. What if I told you that there was a way to do this with MySQL queries as well? That would speed things up and would make working with databases quite a bit simpler, wouldn't it? Thankfully... Object-Relational Mappers (or ORMs) serve just such a purpose, and that is what we are going to be going over in detail today.
 
-  * <https://scotch.io/tutorials/use-expressjs-to-get-url-and-post-parameters>
+* Open up `12-OrmExample` within your folder system, run `12-OrmExample/db/schema.sql` and `12-OrmExample/db/seeds.sql` files within MySQL Workbench, and then open up `12-OrmExample/server.js`, `12-OrmExample/config/connection.js`, and `12-OrmExample/config/orm.js` within your editor to show your students the code it contains. Ask your students if they can spot what is new here...
 
-  * <https://scotch.io/tutorials/build-a-restful-api-using-node-and-express-4>
+  * All of our database-connection code is contained within `connection.js`, which is then required in `orm.js`, which is then required in `server.js`.
 
-### 17. Instructor Do: Demo End Application (10 mins)
+  * `orm.js` contains ALL of our MySQL queries inside of it as methods within an object referred to as "orm."
 
-* Then begin to remind students that the best way to learn to code -- especially challenging concepts -- is sometimes just to force yourself to code.
+  * These methods take in variables which are then used to alter the properties of our queries. In other words, we can now make similar queries to different MySQL tables, columns, and rows without having to write out entirely new MySQL commands every time. Instead, all we have to do is change around the variables we pass into the method we are calling upon.
 
-* Slack out the following link: [hot-restaurant.herokuapp.com](http://hot-restaurant.herokuapp.com).
+* Demonstrate the power of ORMs by running `npm install` and `node server.js` within your terminal.
 
-  ![1-HotRestaurant_1](Images/1-HotRestaurant_1.png)
+  * Feel free to change around the variables passed into your ORM to show how adaptable it is.
 
-* Then ask all students to make a Reservation request on the website.
+* Emphasize time and time again the reasons why writing an ORM is considered helpful: efficiency, legibility, and reusability.
 
-* Once they are done, visit the page: <http://hot-restaurant.herokuapp.com/tables>. Point out how their reservation requests have been captured and listed on the site. Depending on whether or not they were one of the first five requests, they were added to the reservation list -- otherwise they were put on the waitlist.
+### 13. Partners Do: Discussion of ORMs (10 mins)
 
-  ![1-HotRestaurant_2](Images/1-HotRestaurant_2.png)
+* Have students talk to each other about the pros of ORM, and see if they can come up with specific situations in which an ORM would be considered valuable.
 
-* Then take a few moments to flip through the screens. Point out how there is a page for creating reservations, a page for viewing reservations, and two pages for viewing JSONs of the current reservations and waitlisted parties.
+* Call students back together after five minutes or so to share their thoughts regarding the usefulness of ORMs.
 
-  ![1-HotRestaurant_4](Images/1-HotRestaurant_4.png)
+### 14. Students Do: Party Database App (20 mins)
 
-  ![1-HotRestaurant_5](Images/1-HotRestaurant_5.png)
+* Once you have answered any and all questions regarding ORMs and how they are used, Slack out the following:
 
-* Let students know that they will be building this application from scratch over the course today and tomorrow's class.
+  * **Files**
 
-### 18. Instructor Do: Group Formation + Initial Instructions (10 mins)
+    * `13-PartyDatabase/Unsolved`
 
-* Have students divide themselves into groups of 4 (with 2 members from each section).
+  * **Instructions**
 
-* Then slack out the following instructions:
+    * You will be creating a holiday party planner application. We want to help create parties for our clients whilst also keeping track of all the events that we are host. In MySQL, create a database called `party_db` with two tables structured like the tables below. Utilize the provided `schema.sql` and `seeds.sql` file in order to build the tables and seed initial values.
 
-* **Instructions:**
+      | id | party_name              | party_type | party_cost | client_id |
+      | -- | ----------------------- | ---------- | ---------- | --------- |
+      | 1  | Everybody Loves Raymond | tv         | 500        | 1         |
+      | 2  | Big Bang Theory         | tv         | 900        | 1         |
+      | 3  | Top Gun                 | movie      | 200        | 2         |
+      | 4  | Whiskey                 | grown-up   | 300        | 2         |
+      | 5  | Cigar                   | grown-up   | 250        | 3         |
 
-  * You will be building a Node / Express based web applications for handling reservation requests.
+      | id | client_name |
+      | -- | ----------- |
+      | 1  | Bilal       |
+      | 2  | Brianne     |
+      | 3  | Vincent     |
 
-  * Your application will be made up of two parts: 1) A front-end set of HTML/CSS/JS pages for entering and viewing data and 2) A back-end composed of Node/Express and basic JS for storing, updating, and relaying reservation data.
+    * Create a Node MySQL application with an ORM that executes once the server is launched.
 
-  * Spend the time necessary to map this application out. Consider the concepts we've covered in class so far:
+    * You will not need Express or Handlebars for this assignment. Use `console.log` to print the data collected to the console.
 
-    * Servers
-    * Routing
-    * APIs
-    * AJAX (GET and POST Requests)
+    * Create a MySQL database with the tables and data which were slacked out to you.
 
-  * You should be referencing the code from the previous Star Wars application.
+    * Create a Node app and connect it to MySQL with a `config` folder and with a `connection.js` file inside of that folder.
 
-  * Feel encouraged to use the following application as a reference: <http://hot-restaurant.herokuapp.com/>
+    * Create an `orm.js` file, and make an ORM that will do the following:
 
-  * Note: We know this is a hard activity. We know you aren't yet comfortable with Node or Express. But push yourself. The best way to learn is to push through the discomfort and BUILD! Ask for help when you need it. We're here to help you through the process.
+      * Console log all the party names.
+      * Console log all the client names.
+      * Console log all the parties that have a party-type of grown-up.
+      * Console log all the clients and their parties.
 
-* Let them know that you will be providing them with guidance on how to proceed every 20 minutes or so. 
+    * BONUS: create a function within your ORM that will let the user add more clients and parties to the database.
 
-### 19. Partners Do: Phase I - Pseudocode (10 mins)
+### 15. Everyone Do: Party Database App Review (10 mins)
 
-* For this first phase, slack out the following instructions:
+* Open up `13-PartyDatabase`, run `13-PartyDatabase/Solved/db/schema.sql` and `13-PartyDatabase/Solved/db/seeds.sql` within MySQL Workbench, and then open up `13-PartyDatabase/Solved/server.js`, `13-PartyDatabase/Solved/config/connection.js`, and `13-PartyDatabase/Solved/config/orm.js` within your editor before going over the code line-by-line with your students.
 
-* **Instructions:**
+  * Keep `13-PartyDatabase/Solved/server.js` and `13-PartyDatabase/Solved/config/orm.js` open alongside one another so that they can see how the two files are working together.
 
-  * Phase I: For this first phase, aim to write out the pieces that will need to be programmed to create the functionality of your application. Try to break it into 6-7 pieces.
+* Call upon random students within the class, and have them attempt to explain what each line does first before diving into the code and explaining it in more detail.
 
-* **Instructors/TAs:** Once time is up have students share their breakdowns. As a suggestion, here is a list that you can slack them.
+  * Open up `13-PartyDatabase` inside of your terminal, run `npm install` and then—after each new ORM function has been discussed—run `node server.js` in order to show your class visually what each ORM function does.
 
-  * Create the front-end (visuals) for home page, reservation form, and reservation views.
+### 16. Instructor Do: The Asynchronous Problem (10 mins)
 
-  * Create a basic server using Express.JS
+* Open up `14-TheAsynchProblem` within your terminal, run `14-TheAsynchProblem/db/schema.sql` and `14-TheAsynchProblem/db/seeds.sql` inside of MySQL Workbench, and then open up `14-TheAsynchProblem/server.js` and `14-TheAsynchProblem/config/orm.js` within your editor alongside one another.
 
-  * Create a few array variables that will hold the data
+  * Ask your students what they think is going to happen when `node server.js` is run inside of your terminal.
 
-  * Create a set of routes for getting and posting table data
+  * Most of your class will likely think that your code will return data from the database. This is not the case, but let them think that for the time being nonetheless.
 
-  * Create a set of routes for displaying the HTML pages
+* Run `npm install` and then `node server.js` within your terminal only to find that your code has returned "undefined" of all things without any error popping up on the screen. Prompt your students to see if any of them know the reason this occurred.
 
-  * Use jQuery to run AJAX calls to GET and POST data from users to the Express server
+  * The query to our MySQL database is asynchronous to the rest of our JavaScript code, and as such, our server is not waiting for a response from the database before running our `console.log` command. This, as you might imagine, is a big problem and we are going to need to come up with some way to fix it.
 
-### 20. Partners Do: Phase II - Frontend + Server Creation (20 mins) (Critical)
+### 17. Partners Do: Solving the Asynchronous Problem (10 mins)
 
-* Proceed with the next phase. Slack out the following instructions to help guide them:
+* Prompt your class to work in pairs to see if they can come up with the reason why our code is console.logging "undefined" despite no errors being recorded.
 
-* **Instructions:**
+* Also prompt them to see if they can come up with a possible solution to this problem.
 
-  * Phase II: For this second phase, aim to complete the following:
+  * Let them know that they are free to search the web for potential causes/solutions to this issue, as it is a problem that many new coders have faced and that they will continue to face for years and years to come.
 
-    * Backend Team:
+  * Feel free to Slack out the code contained within `14-TheAsynchProblem` to your students to run, test, and mess with on their own. This could help them to discover a solution and should build up their debugging skills.
 
-      * Create a basic Express server.
+* Call the class back together after a solid amount of time to see if anyone knows what the problem is and how we might go about solving it.
 
-      * Your server at this point should do the BARE MINIMUM. (Effectively, it should just say: "Listening at PORT 3000" when the command `node server.js` is run.)
+  * PROBLEM: Our query and the rest of our code are asynchronous and thus no data is being returned before the `console.log` is being executed.
 
-    * Frontend Team:
+  * SOLUTION: Provide our ORM with a callback function which serves to tell the server to wait until the data has been returned before moving on.
 
-      * Create three HTML files one called `home.html`, another called `tables.html`, and another called `reserve.html`. Use dummy data and create pages similar to the one shown to you on the sample Hot Reservation webpage.
-
-    * All: If you finish early, begin thinking about how the Data, API, and Routes should look.
-
-* **Instructors/TAs:**
-
-  * Have students who accomplished this task share their code with you (via GitHub) and display it on screen. Then have them come up and talk about what they did.
-
-### 21. Partners Do: Phase III - API Routing + Frontend Delivery (35 mins)
-
-* Proceed with the next phase. Slack out the following instructions to help guide them:
-
-  * Phase III: For this third phase, aim to complete the following:
-
-    * Backend Team:
-
-      * Create a set of variables (hint: arrays of objects) for holding the reservation and waitlist data.
-
-      * Create a set of routes that then display this data as JSONs. Users should be given these JSONs if they visit the appropriate page (i.e. if a user visits `localhost:3000/api/tables` they should see a JSON of table data).
-
-    * Frontend Team:
-
-      * Temporarily join the backend team. Your task will be to create Express routes that display your HTML pages when a user visits the appropriate page. (i.e. if a user visits `localhost:3000/tables`... they should be shown the `table.html` page.)
-
-      * If you finish early begin creating the code necessary to convert your form data into JSON objects.
-
-### 22. End (0 mins)
+### 18. END (0 mins)
 
 ### Lesson Plan Feedback
 

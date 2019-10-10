@@ -4,7 +4,7 @@
 
 Students will be diving into the basics of Handlebars today, a semantic templating language which can be used to link back-end javascript data to front-end HTML with relative ease.
 
-`Summary: Complete activities 1-5 in Unit 14`
+`Summary: Complete activities 1-6 in Unit 13`
 
 ## Instructor Notes
 
@@ -30,7 +30,7 @@ Students will be diving into the basics of Handlebars today, a semantic templati
 
 ## Time Tracker
 
-[Unit 13-MVC Day 1 Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1m2DjqTWWdgrhLGzWG7-fPeOIj1nV7div/view?usp=sharing)
+[7.1 Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1m2DjqTWWdgrhLGzWG7-fPeOIj1nV7div/view?usp=sharing)
 
 - - -
 

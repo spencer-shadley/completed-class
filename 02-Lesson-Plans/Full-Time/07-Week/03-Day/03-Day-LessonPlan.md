@@ -1,183 +1,269 @@
-## 7.3 - Express Mini-Project Continued & SQL Front to Back <!--links--> &nbsp; [⬅️](../02-Day/02-Day-LessonPlan.md) &nbsp; [➡️](../04-Day/04-Day-LessonPlan.md)
+# 7.3 - ORM And Intro to Sequelize (10:00 AM)
 
-### Overview
+## Overview
 
-`Summary: Complete activity 16 in Unit 13 & activities 01-03 in Unit 14`
+Today we will be introducing students to the basics of Object-Relational Mapping, a system which allows programmers to more easily collect and to manipulate data from databases using reusable methods.
 
-##### Instructor Priorities
+`Summary: Complete activities 14-17 in Unit 13 and 0-6 in Unit 14`
 
-By the end of class students will:
+## Instructor Notes
 
-* Reinforce their understanding of Express Servers, Routing, and the utility AJAX for front-end interaction. 
+* There are A LOT of topics that we will be covering over the course of today's lesson plan, but it is especially important for your students to understand how ORMs function. Make sure to take your time when covering this topic since it is crucial for the homework.
 
-* Go over how to send MySQL data from the back-end to the front-end.
+* If you have not yet covered callbacks, then make certain to go over them in moderate detail today. We have included a "mini-module" on callbacks within this lesson plan as well so that students will come out of this class confident in their ability to use this vital tool.
 
-* Be introduced to sending MySQL data from the back-end to the front-end.
+* The MVC Pattern is not wholly commonplace in HTML/JavaScript web development, but it is widely used within other fields of programming. Let your students know that their comprehension of this framework will assist them in picking up other languages in the future.
 
-##### Instructor Notes
+* When going over ORMs with your class, it is important that you keep the `server.js` files and the `orm.js` files open at the same time. Being able to see both files at the same time should help your students to understand how the code within these files functions alongside each another.
 
-* Let all students know that there is a thorough video outlining the solution to the hot restaurant activity that you will Slack out. (See Recap)
+* At the end of class, make sure you direct students to `MySQLHerokuDeploymentProcess.pdf`. The guide provides step-by-step instructions to setting up a remote MySQL database; your students won't be able to deploy their apps without it.
 
-* As much as possible, focus on providing students assistance in small-group format.
+* Let students know Sequelize is a popular and powerful Node ORM. However, it may be important to note that this week is largely an exercise in learning a new library. Students will have to read documentation, go through tutorials, search and post on StackOverflow in order to find specific answers once they've identified specific problems as they're working through projects.
 
-* We will be going over how to send MySQL data from the back-end to the front-end.
+* You should check out the solutions to this week's homework before starting this class, especially if you haven't used Sequelize before. This will give you a brief rundown of how the ORM works.
 
-* Have your TAs reference [03-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1FIdlo-ohdJ2hk73FFbV3aDQjUuTwCsLF/view?usp=sharing) to help keep track of time during class. 
+  * Be sure to check the answers to the quiz in `02-SequelizeQuestions/solution` before starting the class. You should be an expert on these concepts, so that if students ask you about the answers after the quiz, you can give them a thorough explanation.
 
-### Sample Class Video (Highly Recommended)
-* To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2853f322-e47f-4232-9cd1-a85e00f7735f)
+## Learning Objectives
 
-- - -
+* To create, change, and use a basic ORM to perform CRUD commands on a local MySQL database so as to reduce manual database queries
 
-### Class Objectives
+* To create an Express Application utilizing the MVC design pattern. The app will be structured in the way Ruby On Rails is
 
-* To create a real-world application for handling reservations using Node/Express
+* To strengthen students' understanding of callbacks so that they will know how to use them in association with an ORM
 
-* To send MySQL data from the back-end to the front-end using Expres
+* To introduce Sequelize as a complex tool that simplifies MySQL.
 
-- - -
+## Slides
 
-### 1. Instructor Do: Welcome (1 min)
+* N/A
 
-* Welcome students back, and ask them to get into their groups from yesterday - we're going to finish hot restaurant today!
+## Time Tracker
 
-### 2. Partners Do: Phase IV - Backend Logic + AJAX (60 min)
-
-* Proceed with the next phase. Slack out the following instructions to help guide them:
-
-  * Phase IV: For this fourth phase, aim to complete the following:
-
-    * Backend Team:
-
-      * Create the logic that handles reservation requests. Your code should work such that POST requests take in JSON objects, checks if there is any space left, then adds the JSON object to either the reservation array or the waitlist array. Your POST route should also respond to requests with a confirmation (true or false) of whether or not the requestor has a reservation (or is on the waiting list).
-
-      * You should be using Postman to do all your testing at this point.
-
-    * Frontend Team:
-
-      * Begin to do serious research on AJAX. Specifically, focus your attention on how AJAX can be used to do both GET and POST requests.
-
-      * Then create the necessary code on your `tables.html` page such that it can retrieve data from the Backend Team's API. In essence you will be creating an AJAX GET request to retrieve the data.
-
-      * Then create the necessary code on your `reserve.html` page such that it can send data to the Backend Team's API. In essence you will be creating an AJAX POST request to send the data.
-
-    * All: This is the most challenging part of today's activity. Be persistent! You can do this!
-
-### 3. Partners Do: Phase V - De-bugging + Bonus (20 min)
-
-* Proceed with the final phase. Slack out the following instructions to help guide them:
-
-  * Phase V: For the fifth and final phase, aim to complete the following:
-
-    * All:
-
-      * Complete any remaining functionality from the previous phase if you need more time. 
-
-      * Then, thoroughly test your application for bugs. Check if there are any obvious ways to crash the application.
-
-### 4. Instructor Do: Recap (0:10)
-
-* Take the stage again. Let students know that this was a hard activity but an incredibly realistic one.
-
-* Encourage them by informing them that they've reached a highly significant point in their coding careers. Being able to build front-end and back-end applications like this one will allow them to build any number of applications.
-
-* Then let them know that -- because of how important it is to understand these concepts, they should thoroughly examine the solution after class today.
-
-* Slack out the [video solution](https://youtu.be/G7RvQMW2DOg?list=PLgJ8UgkiorCmI_wKKVt5FlkTG63sQF6rr) and HIGHLY HIGHLY encourage them to review it on their own. Let them know that the accompanying code has been thoroughly commented and that they should consider working in groups to dissect it.
-
-* Finally, say something funny -- you've already done some great education today!
+[7.3 Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1lWJfHZ5OuK5s7vrHEEbxd8zZaKqU620c/view?usp=sharing)
 
 - - -
 
-### 5. Lunch (30 min)
+### 1. Instructor Do: Welcome and The Asynchronous Solution (20 mins)
+
+* Welcome students to class and remind them of the conversation the class ended with yesterday.
+
+* Open up `14-TheAsynchProblem/Solved` within your terminal before opening up `14-TheAsynchProblem/Solved/server.js` and `14-TheAsynchProblem/Solved/config/orm.js` within your editor alongside one another.
+
+* Go over the differences between this code and the last, making certain to point out all of the following:
+
+  1. We added in a `cb` argument to the `selectWhere` function's arguments list. We also executed `cb` (because we're expecting it to be a function) and passed it the data returned from the MySQL query.
+
+  2. In `server.js`, the 4th argument of `orm.selectWhere` is an anonymous function with `res` passed into it as an argument. That function gets sent to `orm.selectWhere` along with `parties`, `party_type`, and `grown-up`.
+
+  3. There are a number of important things occurring in the ORM object:
+
+     * The `selectWhere` method inside `orm.js` builds the query which is then stored within the `queryString` variable.
+
+     * `queryString` gets passed to `connection.query` as well as `[valOfCol]`, which gets placed inside the question mark part of the `queryString`.
+
+     * After we get the data back from `connection.query`, we pass result to `cb` and execute it as `cb(result)`. Recall that `cb` is the anonymous function from `server.js`.
+
+     * The variable `res` now equals `result` and `res` gets console logged within `server.js`.
+
+* Your students are VERY likely to be confused by this since the logic involved is a little abstract. This confusion will be all the worse if your students have never covered callbacks before. In order to stave off this confusion as best you can, however, feel free to open up the files contained within the `15-CallbackReview` folder and go over them with your class. We have also provided you with a "mini-module" taken from the 03, week 11 lesson plan which you can use to review callbacks with your class in even greater detail during the break, after class, or during class if truly necessary.
+
+* It is VERY important that your students understand why the code within `14-TheAsynchProblem/Solved` works, since we can assure you that the asynchronous problem will come up in this week's homework. Because of this, feel free to take extra time to go over the code multiple times and to review callbacks in more depth. The MVC Pattern is important, but it can be covered in lesser detail or at a later date.
+
+### 2. Partners Do: Reviewing the Asynch Solution (20 mins)
+
+* Have students work together to understand how the code contained within `14-TheAsynchProblem/Solved` works.
+
+* Feel free to Slack out the code contained within `14-TheAsynchProblem/Solved` to your students to run, test, and mess with on their own.
+
+* After a solid amount of time has passed, call your class back together to have them explain what is happening within the code that makes it function properly.
+
+### 3. Instructor Do: Introduction to the MVC Pattern (10 mins)
+
+* Once everyone has returned from break, discuss the MVC Pattern with your class and discuss how it is laid out to create a folder/file-system that is both easy to navigate and easy to understand. Feel free to tell your students how this framework is most commonly used in other programming languages like Ruby on Rails and how understanding it will assist them in picking up new languages in the future.
+
+* MVC is a framework for building web applications using a MVC (Model View Controller) design:
+
+  * The Model represents the application core (for instance a list of database records).
+  * The View displays the data (the database records).
+  * The Controller handles the input (to the database records).
+
+* Open up `16-MvcExample` within your file-system to show your students what the MVC Pattern looks like and answer whatever questions they may have regarding its usage and functionality.
+
+### 4. Partners Do: Discussing MVC (15 mins)
+
+* Have students work together to find examples of an MVC Pattern, and discuss what an MVC Pattern actually is.
+
+### 5. Instructor Do: Handlebars #If and #Unless Statements (15 mins)
+
+* Explain the use of `{{#if}}` in Handlebars.
+
+  * The `{{#if}}` helper does just what you would expect it to do. It allows you to implement an `if` block into your Handlebars code. The `{{#if}}` helper outputs the block that it contains if the value given to it is truthy. The tricky bit here is that you cannot use conditionals within these statements. In other words, you are checking to see whether or not a specific variable exists or whether it contains a value inside of it.
+
+* Explain the use of `{{#unless}}` in Handlebars.
+
+  * The `{{#unless}}` statement is pretty much the exact opposite of the `{{#if}}` statement since it will run the block of code contained inside of it if the given expression is false.
+
+### 6. Students Do: Cats Application (30 mins)
+
+* Once you have answered any and all questions your class may have regarding the previous section, Slack out the following:
+
+  * **Files**
+
+    * `17-CatsApp/Unsolved`
+
+  * **Instructions**
+
+    * Add a delete button into the `index.handlebars` file next to each cat.
+
+    * Add on to the following:
+
+      * The `cats.js` file to add a jQuery event handler for the delete button.
+      * The ORM to include a delete key and function
+      * The cat model to include a delete key and function that uses the ORM
+      * The `catsController.js` file to have a `/api/cats/:id` delete route, to call the delete key of the cat model, and to pass in arguments as necessary
+
+### 7. Instructor Do: Cats App Review (10 mins)
+
+* Open `17-CatsApp/Solved` and explain the solution to your students.
+
+* Slack out the `MySQLHerokuDeploymentProcess.pdf`. Tell them that just setting up the remote database for the first time will take a good hour or so; advise them to carve out that time from their schedules so they can submit their homework.
+
+* Tell students that if they have trouble setting up the database, they can always contact you or any of the TAs for support.
+
+* Let students out for break.
 
 - - -
 
-### 6. Students Do: Express Calculator (20 minutes)
+### 8. Break (30 mins)
 
-* After answering any and all questions your students may have, slack out the following instructions for the warm-up assignment...
+- - -
 
-* **Instructions**
+### 9. Instructor Do: Quick ORM Refresher (10 min)
 
-  * You will create an Express calculator application with one get route that is able to take in three parameters: an operation and two numbers.
+* You're going to be going over the concepts of MVC. Open up the PDF inside `00-MVCDiagram`, and ask students which components belong to the model, the view and the controller (the solution is represented in the image below).
 
-  * There are four operation values which a user may use: addition, subtraction, multiplication, and division.
+  ![1-MVC](Images/1-MVC.jpg)
 
-  * When the route is hit, your browser should display the result of the math operation and the two numbers on the screen.
+  * Remember:
+    * The Model represents the application core (our database and it's hook to our back-end).
+    * The View displays the data (our HTML routes and the public files).
+    * The Controller handles the input to our database (accepting input from the view, sending it to the model, taking a response from the model, and sending it back to the view.)
 
-    * For example, when the user goes to the url <http://localhost:3000/add/10/1>, the page should display 11.
+- - -
 
-### 7. Everyone Do: Express Calculator Review (15 minutes)
+### 10. Students Do: Review Chirpy and MySQL (20 min)
 
-* After your class has completed the calculator exercise, open up [01-ExpressCalculator/Solved/expressCalculator.js](../../../../01-Class-Content/14-handlebars/01-Activities/01-ExpressCalculator/Solved/expressCalculator.js) within your editor and have your students go through the code line-by-line with you.
+* Before we get into new material, we are going to do a quick review of MySQL concepts by building a simple app. We will revisit this example later on with the Sequelize ORM, but for now we are only going to use the MySQL package.
 
-    ![ExpressCalculator](Images/ExpressCalculator.png)
+![Chirpy](Images/chirp.PNG)
 
-* Make sure that everyone in your class seems comfortable working with Express. If your students seem confused or lost, feel free to review Express with them. While Handlebars is a very useful templating language, understanding Express is very important in web development.
+* Open up the completed Chirpy activity and demonstrate its functionality. It is a simple twitter-like app that allows you to write new Chirps (tweets), and view all of your previous Chirps.
 
-### 8. Instructor Do: Wizarding Schools (15 minutes)
+* NOTE: Make sure you have used the schema.sql file to create the Chirpy database and the table that will be used to hold our Chirp data. If you haven't done this the app won't work. You can do it before class or do it live as a review for the students.
 
-* Open up [02-MagicalSchools/schema.sql](../../../../01-Class-Content/14-handlebars/01-Activities/02-MagicalSchools/schema.sql) and run it within MySQL Workbench.
+* Slack out the `01-Chirpy-mySQL` folder and the following instructions:
 
-* Open up and run `02-MagicalSchools/magicSchools.js` within both your editor and within your terminal before running the code.
+  * Using the app skeleton provided to you:
+    * Create a MySQL database named `'chirpy'` with a `'chirps'` table to hold your data.
+    * Your `'chirp'` table should include a field for id, author, chirp, and time created.
+    * Modify the connection.js file to create a connection to your database.
+    * Modify the api-routes.js file so that there is a route for adding a new chirp, as well as retrieving all chirps.
+    * Modify the chirps.js file so that the page interacts with the database.
 
-* Make sure to run `npm install` before running `node magicSchools.js` within your terminal.
+* If students finish early, have them work on routes for editing and deleting chirps.
 
-    ![MagicSchools](Images/MagicSchools.png)
+- - -
 
-* Explain to your students how the HTML within your code is being generated and sent to the browser.
+### 11. Instructor Do: Review Chirpy (10 min)
 
-* Information is being taken from the MySQL database, looped through, and then given HTML syntax so that it appears with some basic styling upon the page.
+* Review the main parts of the Chirpy application:
+  * Creation of the database and the table in mySQL Workbench (or your choice of GUI).
+  * Use of mysql npm package to connect to the database as well as configuration of `connection.js` file.
+  * API routes and mySQL queries that were used to retrieve data from the DB.
+  * Making our AJAX calls and displaying data on the front-end.
 
-### 9. Partners Do: Seinfeld Application (20 minutes)
+- - -
 
-* Once all questions regarding MySQL and Express have been answered, copy [03-SeinfeldApp/schema.sql](../../../../01-Class-Content/14-handlebars/01-Activities/03-SeinfeldApp/Solved/schema.sql) into MySQL Workbench and run the code to set up the database.
+### 12. Instructor Do: Introduce Sequelize Before a Quiz (5 min)
 
-* Navigate into the `03-SeinfeldApp` and open up your terminal. Run `npm install` and `server.js`, and then show your students the Seinfeld application in action by going to the following urls:
+* Tell your class while the Chirpy app is functional, there's a way to make it work with our database with a lot less hassle. It might take time to learn, and this week will be a tough one, but this tool is going to take your students from beginners to truly adept MySQL coders.
 
-  * <http://localhost:3000/cast>
-  * <http://localhost:3000/coolness-chart>
-  * <http://localhost:3000/attitude-chart/relaxed>
+* Load up the Sequelize site on your screen and slack out the website to your students. (<http://docs.sequelizejs.com/en/latest/>). Tell the class that Sequelize is a premade ORM that simplifies database queries in Node applications, allowing us to do complex data management with simple JavaScript methods.
 
-* After showing off how the application functions and answering whatever questions your students may have, slack out the following instructions and file...
+* Inform your class that today will focus on getting Sequelize set up on their machines and how to navigate a Sequelize project. You'll be doing this by converting the Chirpy app from the last assignment into a Sequelize app.
 
-[03-SeinfeldApp/schema.sql](../../../../01-Class-Content/14-handlebars/01-Activities/03-SeinfeldApp/Solved/schema.sql)
+- - -
 
-* **Instructions**
+### 13. Partners Do: Sequelize Quiz (15 min)
 
-  * Create a Node Application with Express and MySQL with three Express routes.
+* Slack out the unsolved portion of `02-SequelizeQuestions`.
 
-    * Create a `/cast` route that will display all the actors and their data ordered by their id's.
+* Have your students partner up into two-person teams. Each team will need to come up with answers to the questions in the quiz. Check out the answers in the solved portion in the meantime.
 
-    * Create a `/coolness-chart` route that will display all the actors and their data ordered by their coolness points.
+* Tell them they should use the Sequelize documentation, as well as any info they may find on the usual sites (stack overflow, quora, etc.) to answer these questions.
 
-    * Create a `/attitude-chart/:att` route that will display all the actors for a specific type of attitude.
+- - -
 
-### 10. Instructor Do: Seinfeld Review (15 minutes)
+### 14. Everyone Do: Go over Answers (10 min)
 
-* Go over the previous exercise with the class. Call upon one unique student for each part of the previous exercise to explain what they did for that part of the exercise. If anyone seems lost or confused about a specific part, make sure to go over that section of the code in further detail.
+* "Times up! Let's see how everyone did."
 
-### 11. Instructor Do: SQL + HTML = Bad Idea (5 minutes)
+* Open the unanswered version of `02-SequelizeQuestions` and display it. Go down the list and ask your students to give you their answers. If everyone is stumped, refer to the answers in the solved version, then ask the students if this makes sense. If not, offer more of an explanation.
 
-* Talk with your students about why combining data collected from a MySQL server with HTML might be considered a bad idea.
+* Ask your class the same question you asked on week 1: "How would you define full-stack development?" At this point students should be much more savvy than they were on Week 1, so expect solid answers.
 
-* There are a couple good reasons why you might not want to do this, but the main reason is that you would have to write out a whole lot of HTML and maintain it within a server-side JavaScript file.
+- - -
 
-* It would be far easier if there were a means to template back-end data on the front-end instead.
+### 15. Instructor Do: Chirpy with Sequelize (15 min)
 
-* Luckily there is... and we will be diving into this topic next class.
+* Open the Sequelize version of the Chirpy app and show it off again. This time inform students that this new version of Chirpy is using the Sequelize ORM we just learned about. Slack out the completed Chirpy-Sequelize app `03-Chirpy-Sequelize` and encourage students to follow along as you work through the code.
 
-### 12. Instructor Do: Introduce HW (5 minutes)
+* Open up the Chirpy code in your editor and illustrate the key differences between using Sequelize and stock MySQL.
 
-* Open up your terminal so that you are inside of the [2-Homework/Solutions/BurgerSolution](../../../../01-Class-Content/14-handlebars/02-Homework/Solutions/BurgerSolution) folder, run `npm install`, run `node server.js`, and then open up the application within your browser.
+  * In the connection.js file we require the Sequelize package, and use it to create a connection to our database. This is very similar to how we use the MySQL package.
+  * One of the biggest changes is the addition of a models folder with our new `chirp.js` file.
 
-* Show all the functions for the application, doing your best to explain them.
+    ![ChirpModel](Images/ChirpModel.png)
 
-* Tell your students that it uses Node, Express, MySQL, and the templating language Handlebars which they will be learning later this week.
+    * Note how we first require the Sequelize library, and then the connection that we will use to connect to the database (Sequelize with a little "s").
+    * Reiterate the key aspects of Sequelize models. A model represents a table in the database. Here we are defining the different columns that will be in our table, as well as assigning them a data type. In addition, we sync our model with the database. Sequelize will create a table in our database for each model if it does not already exist. Point out that we don't need to define an id column in our Sequelize models. By default, we're given a NOT NULL, auto-incrementing id of type INTEGER to serve as the primary key. We can explicitly define an id column if we wanted to give it a different configuration, but we can just omit this most of the time.
 
-### 13. Groups Do: Homework (Hot Restaurant) (55 min)
+      ![TableCreation](Images/TableCreation.png)
 
-* Put students into groups to work on homework to work on their Hot Restaurant homework
+  * In api-routes.js we first require the Chirp model, then we use sequelize query methods to query our database. In our example we are using `Model.findAll()` and `Model.create()` but there are many more! Illustrate how instead of having to write out an entire mySQL query string, we can use predefined query methods defined by Sequelize. This allows us to greatly simplify how we retrieve data from our database!
+
+    ![GetAllChirps](Images/GetAllChirps.png)
+  
+  * **Note**: If we were to `console.log` the `result` object returned from a sequelize query, we'd see that it is a large object with many nested keys and methods. It contains a `dataValues` property that contains the record data we're looking for.
+
+  * When we send the large `result` object back to the client using `res.json`, only the `dataValues` property is sent back.
+
+  * This is worth knowing since it may come up when debugging students code.
+
+- - -
+
+### 16. Students Do: Star Wars MySQL to Sequelize (25 min)
+
+* Now it's the students' turn to get their hands dirty with Sequelize. They will be taking an app that currently uses the MySQL package, and updating it to use the Sequelize ORM.
+
+* Open the Star Wars app `04-StarWars` and demonstrate its functionality. Inform students that they will be taking this fully functioning app and converting it to use Sequelize!
+
+* Slack them the Star Wars skeleton folder `04-StarWars` along with the following instructions:
+  * Using the instructions in server.js, reconfigure the Star Wars app to use the Sequelize ORM.
+  * If you need help, refer to the previous example for guidance.
+
+* Note that a question mark will appear in certain `get` routes. This `?` character indicates an _optional parameter_—these routes will load even if the parameter wrapped in `:?` is absent from the request.
+  * _A question mark in an Express route indicates an optional parameter._
+    ![A question mark in an Express route indicates an optional parameter.](Images/OptionalParameters.png)
+
+### 17. Instructor Do: Review Star Wars Example (10 min)
+
+* Review the Star Wars app with the class, touching once again on the major differences and advantages of using the Sequelize ORM.
+
+* Dismiss the class for a break if all checks out.
+
+### 18. End (0 mins)
 
 ### Lesson Plan Feedback
 
