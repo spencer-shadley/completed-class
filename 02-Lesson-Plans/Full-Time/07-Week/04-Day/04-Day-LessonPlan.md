@@ -1,331 +1,368 @@
-## 7.4 - Intro to Handlebars & Bringing it from the Front to the Back (10:00 AM) <!--links--> &nbsp; [⬅️](../03-Day/03-Day-LessonPlan.md) &nbsp; [➡️](../05-Day/05-Day-LessonPlan.md)
+# 7.4 - Intro to Handlebars & Bringing it from the Front to the Back (10:00 AM)
 
-### Overview
+## Overview
 
-Students will be diving into the basics of Handlebars today, a semantic templating language which can be used to link back-end JavaScript data to front-end HTML with relative ease.
+In this class, we will introduce students to the Sequelize ORM. This tool makes coding with MySQL databases a smoother experience--once you get past the learning curve.
 
-Students will bring all of their front-end and back-end knowledge together to create a fully-functional Node application.
+`Summary: Complete activities 5-10 in Unit 15`
 
-`Summary: Complete activities 4-10 in Unit 14`
+## Instructor Notes
 
-##### Instructor Priorities
+* Make sure you change all of the connection information so the examples have your MySQL username/password!
 
-By the end of class students will
+* If you don't want to have to do it live, create the databases required to show off today's exercises before class!
 
-* Be able to pass server-side data to the page using Express and Handlebars.
+* THIS IS TOUGH STUFF! This week, tell your class to not feel discouraged if there are concepts that they can't nail down completely. Tell them to try their best, but to speak with you or a TA if they're unsure of anything.
 
-* Have a firm understanding of how to use GET, POST, PUT, and DELETE commands for sending data from the front-end to the back-end
+* Let students know Sequelize is a popular and powerful Node ORM. However, it may be important to note that this week is largely an exercise in learning a new library. Students will have to read documentation, go through tutorials, search and post on StackOverflow in order to find specific answers once they've identified specific problems as they're working through projects.
 
-* Be able to apply the basics of CRUD (Create. Read. Update. Delete.) to create a full-stack web application.
+* You should check out the solutions to this week's homework before starting this class, especially if you haven't used Sequelize before. This will give you a brief rundown of how the ORM works.
 
-* Know how to use Express, MySQL, and Handlebars all together to create dynamic webpages.
+  * Be sure to check the answers to the quiz in `02-SequelizeQuestions/solution` before starting the class. You should be an expert on these concepts, so that if students ask you about the answers after the quiz, you can give them a thorough explanation.
 
-##### Instructor Notes
+* **BE VERY CAREFUL TO NOT GO TOO IN DEPTH.** There are a ton of components that make Sequelize work, but much of it is boilerplate that doesn't need much explanation. Focus on the parts we tell you about in this guide.
 
-* Handlebars can seem daunting at first, but it is ultimately a very powerful templating tool which your students might find useful. Try to keep to a pace that your students seem comfortable learning, so as to make sure no one is left behind.
+* **DO NOT HAVE STUDENTS CONNECT TO A REMOTE DATABASE WHEN DEVELOPING LOCALLY.** The correct process is described in `Supplemental/SequelizeHerokuDeploymentProcess.pdf`, and if you try to skip this, your students may not be able to work on activities or homework on your classroom's internet connection (also, using a remote database for local development is considered bad practice).
 
-* Have your TAs reference [04-Day-Time-Tracker](https://drive.google.com/a/trilogyed.com/file/d/1U31r-8iDzB3bkWm5D818JGwUKI09bKx1/view?usp=sharing) to help keep track of time during class.
+## Learning Objectives
 
-### Sample Class Video (Highly Recommended)
-* To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=69a17268-b438-4fdc-8103-a85f00f88ab9)
+* To introduce Sequelize as a complex tool that simplifies MySQL.
 
-- - -
+* To demonstrate the makeup of a Sequelize directory, how to make one, and how to make queries using Sequelize.
 
-### Class Objectives
+## Slides
 
-* To understand semantic templating using Handlebars
-* To understand the basic syntax for Handlebars-based web applications
-* To create an Express connection to a front-end application which takes in MySQL data and prints it to the screen using Handlebars
-* To use HTML/jQuery GET, POST, PUT, and DELETE commands appropriately
-* To create full-stack web applications that will Create, Read, Update, and Delete data from a MySQL database
-* To use Express.js, MySQL and Handlebars together to create a dynamic application
+* N/A
+
+## Time Tracker
+
+[Unit 14-Full-Stack Day 1 Time Tracker](https://drive.google.com/open?id=1hhhhRhzITwdyGRmChzaGApP6bUNvMxJQ)
 
 - - -
 
-### 1. Instructor Do: Introduction to Handlebars (25 min)
+### 1. Students Do: Sequelize Library (25 min)
 
-* Open up the `04-HandlebarsLunch` folder and then open up `04-HandlebarsLunch/server.js` within your editor.
+* Welcome students to class and let them know we will start by getting right to work!
 
-* Point out how we are still utilizing Express to send data from the back-end to the front-end, but now we have provided `handlebars` as our templating engine.
+* In this activity, students will be building the backend of a Sequelize application.
 
-* Handlebars is what is known as a "Semantic Templating" framework for JavaScript and HTML. Templating Engines like these are used as a replacement for constructing long strings of HTML within your JavaScript code, which will save us a lot of time and unnecessary work. They are a simpler method through which we can dynamically create or fill HTML elements.
+* Open the Sequelize-Library solution `05-SequelizeLibrary` and demonstrate its functionality. Add a few books to the library then show students how we can search for books by title/author/genre, choose to view all books, or view short/long books.
 
-* Open up your browser and navigate to the [NPM Express-handlbars](https://www.npmjs.com/package/express-handlebars#usage) to show them how simple the syntax for Handlebars is.
+* This app will require students to research more advanced sequelize querying. Urge students to use the Sequelize documentation to find these answers.
 
-* Handlebars has a specific folder structure it expects to find, and will not function without it. It requires that you create a `views` folder within the root of your application, which contains all of your Handlebars files. It will also contain a `layouts` folder inside of `views`, which contains your `main.handlebars` file.
-
-  * `main.handlebars` will be our default layout, where we will inject our views into.
-
-* Open up the `04-HandlebarsLunch` folder once more in order to show your class how this folder system is constructed.
-
-![Handlebars expects to find views and layouts directories in specific locations.](Images/8-handlebars-folder-structure.png)
-
-_Handlebars expects to find the views and layouts directories in specific locations._
-
-* Open up `04-HandlebarsLunch/server.js` and direct them to `app.engine`.
-
-  ![app.engine](Images/appEngine.png)
-
-  * Our first argument tells Express that our templating engine is going to be responsible for all files with the `handlebars` extension.
-
-  * The second argument directs the templating engine to our `defaultLayout` which we have set as main. Because of this, handlebars will look for a `main.handlebars` inside of our `layouts` directory. `main.handlebars` will contain our primary layout of our HTML, and a `{{{body}}}` variable which our `views` will replace.
-
-* Move onto the next line, `app.set`.
-
-  ![app.set](Images/appSet.png)
-
-  * The first argument here lets express know we are setting our view engine. The next argument sets that view engine as `handlebars`.
-
-* Open up `04-HandlebarsLunch/views/layouts/main.handlebars` and `04-HandlebarsLunch/views/index.handlebars` within your editor, and go over this code with your class.
-
-* Start by showing your class how `04-HandlebarsLunch/views/layouts/main.handlebars` contains the declaration of our HTML and only seems to contain one Handlebars element in the form of `{{{ body }}}`. Explain how the usage of triple curly-brackets tells your program to read and render HTML elements while double curly-brackets will not.
-
-![Our main layout contains a single Handlebars variable to interpolate.](Images/8-layout-main.png)
-
-_Our main layout contains a single Handlebars variable to interpolate._
-
-* For Example, `{{{ <p> Hello World </p> }}}` would show up in our HTML as `<p>Hello World</p>` while, if we had used double curly-brackets, our code would look really ugly and come out as something like `&lt;p&gt;Hello World&lt;/p&gt;`.
-
-* The `04-HandlebarsLunch/views/layouts/main.handlebars` code uses triple curly-brackets because we are going to be passing our other Handlebars components into it using statments like `res.render('index', lunches[1])` in our `04-HandlebarsLunch/server.js` file where `index` is a Handlebars component.
-
-* Now turn your focus onto `04-HandlebarsLunch/views/index.handlebars` and discuss with your class how this file is taking in the variable `lunch` and is placing it with a pair of `<h1>` tags before sending that file into `04-HandlebarsLunch/views/layouts/main.handlebars` to be used. The method we use to pass the data into `04-HandlebarsLunch/views/index.handlebars` is just like any other Express statement.
-
-![Lunches](Images/Lunches.png)
-
-### 2. Partners Do: Explaining Lunches Application (10 min)
-
-* Slack out a zipped version of `04-HandlebarsLunch` to your students, have them open it up, and to those students around them, have them explain how the code functions. Once they are finished going over `main` and `index`, instruct them to look into `all-lunches` in an attempt to figure out how the code in there works as well.
-
-* Tell them that, if they are lost or confused, the [Handlebars Website](http://handlebarsjs.com/) could be helpful in figuring the code out.
-
-### 3. Everyone Do: Explaining Lunches Cont. and the "Each" Helper (10 min)
-
-* Call on random students to explain the code to the rest of the class. Start with `04-HandlebarsLunch/views/layouts/main.handlebars`, `04-HandlebarsLunch/views/index.handlebars`, and `04-HandlebarsLunch/server.js` before having them move on to try and explain how `04-HandlebarsLunch/views/all-lunches.handlebars` functions.
-
-* Open up `04-HandlebarsLunch/views/all-lunches.handlebars` within your editor, and go over the `{{#each foods}}` and `{{/each}}` statements in particular.
-
-* The `{{#each}}` helper within Handlebars is essentially a for-loop which loops through an array and inserts the values of said array into your HTML code. It will do this for however many variables are contained within your array and will append your HTML instead of replacing it.
-
-![Handlebars each blocks are analogous to for loops.](Images/10-handlebars-each.png)
-
-_Handlebars each blocks are analogous to for loops._
-
-* There are other helpers which Handlebars uses, but we will be getting into those later on.
-
-### 4. Instructor Do: Demo the Warm Up (5 min)
-
-* Open up the `06-HandlebarsAnimals/Solved` folder within your terminal before running `npm install` and `node server.js` so as to demonstrate what your students will want to create in their warm-up activity.
-
-* Go to the following routes to show off how the application works:
-  * <http://localhost:3000/dog>
-  * <http://localhost:3000/all-pets>
-  * <http://localhost:3000/all-non-pets>
-
-### 5. Students Do: Handlebars Animals (20 min)
-
-* Answer whatever questions your students may have about the application's functions before slacking out the following:
-
-  * **Files**
-
-    * `06-HandlebarsAnimals/Unsolved`
-
-  * **Instructions**
-
-    * You will edit the `server.js` file, the `dog.handlebars` file, and the `index.handlebars` file in an attempt to recreate the application that we demonstrated just a couple of minutes ago. Instructions on what to do are contained within each file you will have to edit.
-
-    * You won't be using MySQL for this exercise but will instead be using the animals array in the `server.js` file.
-
-### 6. Everyone Do: Handlebars Animals Review (15 min)
-
-* Open up the files contained within [06-HandlebarsAnimals/Solved](../../../../01-Class-Content/14-handlebars/01-Activities/06-HandlebarsAnimals/Solved), and go over the previous exercise with the class.
-
-* Call on a unique student for each part of the activity to explain what they did for their respective parts. Make sure to step in and to explain aspects of the code with which your class might be struggling.
-
-### 7. Partners Do: Ben and Jerry's App (15 min)
-
-* Answer whatever questions your students may have and then slack out the following activity...
-
-* **Instructions**
-
-  * In this activity, you are going to be creating your own Ben and Jerry's App where users can see all of the different flavors Ben and Jerry's have to offer while also getting specific information on a flavor by searching for it within the URL.
-    ```
-    var icecreams = [
-      {name: 'vanilla', price: 10, awesomeness: 3},
-      {name: 'chocolate', price: 4, awesomeness: 8},
-      {name: 'banana', price: 1, awesomeness: 1},
-      {name: 'greentea', price: 5, awesomeness: 7},
-      {name: 'jawbreakers', price: 6, awesomeness: 2},
-    ];
-    ```
-  * Do not use MySQL for this assignment! Use the `icecreams` variable above as your data. Add the variable to your `server.js` file.
-
-  * Using handlebars and express, create a route called `/icecreams/:name`. When the route is hit, it will display the name, price and awesomeness for that specific ice cream.
-
-  * Create an `/icecreams` route. It will loop over all the ice creams and display them all to the user.
-
-### 8. Everyone Do: Ben and Jerry's App Review (5 min)
-
-* Open up the `05-BenAndJerrys` folder within your editor.
-
-* Go over the previous exercise with the class. Call on a unique student for each part of the previous exercise to explain what they did for their respective parts. If your class seemed to have struggled on a particular part of the activity, make sure to cover that section in more detail during this time.
-
-### 9. Instructor Do: In Need of Some REST (15 min)
-
-* Explain HTTP (Hypertext Transfer Protocol) actions in the context of REST to the class.
-
-* REST stands for Representational State Transfer, and it is essentially a set of standards for the web. RESTful applications have a uniform interface, are stateless, are cacheable, keep the server separate from the client, and are a layered system in that there may be intermediary servers between the client and the database with which they are working.
-
-* Do not worry if your students have some problems understanding all of these constraints, as a lot of this language is inherently difficult to understand. If they would like to learn more about the subject, however, then feel free to slack out [RestApiTutorial.com](http://www.restapitutorial.com/lessons/whatisrest.html), which has a lot more information on how RESTful styling works.
-
-* Your students actually already know half of the HTTP actions (GET and POST), but there are two other HTTP actions which we have not yet covered: PUT and DELETE.
-
-  * GET requests read data from a database.
-
-  * POST requests are used to create new data into a database.
-
-  * PUT requests are used to update a row within a database.
-
-  * DELETE requests are used to delete a row from a database.
-
-* It is not actually a requirement to use RESTful conventions as you can select, create, update, and delete data from a database using nothing but GET requests. You should not do this, however, because it is a best practice to use GET requests only to retrieve information whilst letting other request types handle inserting, updating, and deleting.
-
-* You should follow best practice, but it is helpful to realize that it doesn't have to be that way in order to get your application to work.
-
-### 10. Partners Do: Understanding GET, POST, PUT, and DELETE (5 min)
-
-* Have students explain GET, POST, PUT and DELETE to each other as best they can before calling them back together and having four randomly selected students explain to the class what each method does.
+* Slack them the Sequelize Library skeleton folder `05-SequelizeLibrary` along with the following instructions:
+  * Instructions
+    * Create a `'sequelize_library'` DB.
+    * Modify `'connection.js'` to include your MySQL user/database information.
+    * In the `'models'` folder, modify the `book.js` file to create a book model. Further details can be found inside this file.
+      * Your book model must include a title, author, genre, page numbers.
+    * Modify `'api-routes.js'` using sequelize query methods to create the required routes.
 
 - - -
 
-### 11. Lunch (30 min)
+### 2. Instructor Do: Go over Sequelize Library (10 min)
+
+* Go over Sequelize implementation. Focus on aspects of this activity that were new such as the advanced querying techniques as well as the CRUD operations. Inform students that this was a difficult activity and that we will spend more time with CRUD operations next class.
 
 - - -
 
-### 12. Instructor Do: Using HTTP Requests (15 min)
+### 3. Instructor Do: Intro to Sequelize CLI (20 min)
 
-* Demonstrate the application stored within the [07-TaskSaver](../../../../01-Class-Content/14-handlebars/01-Activities/07-TaskSaver) folder with GET and POST commands in front of students.
+* Explain to students that we can also initialize Sequelize projects using the Sequelize Command Line Interface.
 
-* Make sure to copy `07-TaskSaver/schema.sql` into MySQL Workbench and run the code so as to set up the database you will be reading/affecting.
+* This will allow us to quickly start new projects, take advantage of advanced Sequelize features, as well as work with multiple models more easily at scale an ultimately have to write less code as our project grows.
 
-* Also make sure to run `npm install` within the terminal.
+* Slack out the Sequelize CLI Skeleton `06-SequelizeCLI` as well as the `Supplemental/SequelizeQuickStartGuide.pdf` have the students follow along with you as you initialize a new project using the Sequelize CLI.
 
-* Point out how lines 1–33 in `07-TaskSaver/server.js` is boilerplate code meant to set up the application which we will be able to copy and paste into future applications.
+We will be using this method of setting up Sequelize projects going forward, so encourage students to practice with this guide before next class.
 
-* Explain the routes within `07-TaskSaver/server.js`, being sure to point out how data is being collected and added from our MySQL database.
+**NOTE**: The Sequelize CLI has a lot of functionality, including creating models via the CLI. **We will only be using be using the CLI to initialize an index.js file, and a config.json file**. Discourage model creation with the CLI (if it comes up at any point), as while this is fine for simple models, it will create far more trouble than it's worth later in the week when our models become more complex if students have never written them by hand before.
 
-* Explain how the form's method inside of `07-TaskSaver/views/index.handlebars` is POST and the action of `'/'` points to the following part of the `server.js` file: `app.post('/', function(req, res)`.
+- - -
 
-* By making it so that the form's method is POST, we are essentially telling our server that we are going to be posting data to our database. It is extremely similar to using a `jQuery.post()` command.
+### 4. Instructor Do: Homework and Sequelize Guide (5 mins)
 
-* Explain that you need the `express.json` and `express.urlEncoded` middleware to be able to use `req.body.task` in `07-TaskSaver/server.js` within the `app.post('/', function(req, res)` section.
+* Send your students the instructions for this topic's `02-Homework/Instructions`.
 
-  * Check to make sure students remember the concept of middleware:
+* Stress that students should deploy their assignments as early as possible, refer to the deployment guide provided, and ask for help if they're unable to sooner rather than later. Explain that not deployed assignments will take a grade hit.
 
-    * Middleware is a function we can run before the browser's request reaches our routes.
+* Emphasize as much as possible how important it is to have deployed projects on their portfolio when it comes to the job search. It cannot be overstated.
 
-    * The `express.json` and `express.urlEncoded` middleware transforms the request so that we can read the data that was sent on `req.body`.
+* Essentially they'll be taking last assignment and converting it from a pure MySQL project to one incorporating Sequelize. This will mean connecting their MySQL database to Sequelize, creating a Burger Model, and updating their current queries to use Sequelize queries.
 
-    * Middleware can be defined using the `app.use` method.
+* With what they've learned yesterday and today, this will be a perfect way for them to work through Sequelize's intricacies.
 
-* Explain what `{{#each tasks}}` is doing in the `07-TaskSaver/views/index.handlebars` file.
+* With the Sequelize Quick Start guide and examples we went over in class, students should know enough to at least get started tonight.
 
-* Explain the following line from the `07-TaskSaver/views/index.handlebars` file: `<textarea type="text" name="task"></textarea>`.
+* Slack out the `Supplemental/SequelizeHerokuDeploymentProcess.pdf`. This describes the process for deploying a Sequelize application to Heroku and making use of JawsDB.
 
-* When data is sent from the front-end to the back-end using the POST method, the key which a specific set of data is contained within is determined by the "name" of the HTML element.
+### 5. Instructor Do: Pulse Check and Sequelize Review (10 min)
 
-### 13. Partners Do: Understanding TaskSaver (15 min)
+* Ask students how the week is going so far, and what they think of Sequelize.
 
-* Before answering any questions regarding the previous section, slack out [07-TaskSaver](../../../../01-Class-Content/14-handlebars/01-Activities/07-TaskSaver) to your class and have them set up the application on their computers.
+  * Answer any questions students might have about using the package
 
-* Have your students go through the code line-by-line with the person sitting next to them as they work to solidify the lessons learned up above.
+* Give them a quick back and forth on some of the basics of Sequelize.
+  * What is Sequelize?
+    * An ORM designed for Node that lets users handle complex SQL database queries with JavaScript methods, rather than typing out SQL code.
 
-### 14. Students Do: Wishes Application (15 min)
+  * What is a Sequelize model?
 
-* After answering whatever questions your students may have regarding the previous activity, open up the [08-Wishes](../../../../01-Class-Content/14-handlebars/01-Activities/08-Wishes) application and demonstrate what your students will be building over the next 20 minutes.
+    * A representation of a table as a JavaScript object that Sequelize uses to help expedite the coding of data queries.
 
-* Slack out the following instructions:
+  * What Sequelize CRUD methods did we already go over?
+    * findOne
+    * findAll
+    * create
 
-  * **Instructions**
+- - -
 
-    * Create an app with Express, MySQL and Handlebars.
+### 6. Instructor Do: TodoList Demo (10 mins)
 
-      * HINT: this app will be very similar to the app your instructor just demonstrated and slacked out. Please feel free to leverage that code when creating this code.
+* Praise your students for picking up the concepts you just discussed, but just to be sure you're on the same plane, you have an exercise for them to do.
 
-    * Create a `schema.sql` file and create the following inside of that file:
+* Inform students that today they are going to play the role of a backend developer. We have a todo list app that previously was using a simple ORM to communicate with a database, but now we're coming in to perform a few upgrades.
 
-      1. Make a database called "wishes_db"
+* Open the `10-Sequelize-Validations/Solved`  folder. In terminal run `npm install` and then `node server`. Navigate to `localhost:8080` and explain to your students that by the end of class they will have fully converted this todo list app to use sequelize instead of the ORM its currently using.
 
-      2. Inside of that database, make a table called "wishes" which will have a wish column and an id column. The id will be automatically incremented while also being the primary key.
+* Let students know that this application makes use of each CRUD action. It allows the user to CREATE new todo items, it READS todos from the database, it allows the user to UPDATE current todo items, and allows a user to DELETE todos.
 
-      3. Run your `schema.sql` file within MySQL Workbench before moving onto the next steps.
+* Be sure to demonstrate each piece of functionality to the class. You can toggle a todo's edit mode by clicking it. Inform them that they will be converting one piece of functionality at a time per activity, and **things will inevitably break temporarily while we're doing that**. This is important to keep in mind as we'll be working with the same application throughout this lesson.
 
-    * In your `server.js` file, you will have to create two routes: a get route for `'/'` and a post route for `'/'`.
+* Inform students they won't need to (and shouldn't) touch any front end JavaScript or HTML.
 
-      * Render all of the wishes from the wishes table when the `'/'` get route is hit. Additionally show the form that the user can use to create a new wish. The form will POST to the `'/'` route.
+* Answer any questions before the exercise begins.
 
-      * The `'/'` post route will insert the wish from the form into the wishes table and will redirect the user back to the `'/'` get route.
+- - -
 
-### 15. Instructor Do: Wishes Application Summary (15 min)
+### 7. Student Do: Connect to Sequelize and Create a Todo Model (25 mins)
 
-* Open up the [08-Wishes](../../../../01-Class-Content/14-handlebars/01-Activities/08-Wishes) folder and its files within your editor, and go over the code line-by-line with your class, making sure to explain what is happening within your code to the best of your ability.
+Slack out the following folder and instructions:
 
-### 16. Instructor Do: Putting and Deleting (20 min)
+* Folder: `07-ORM-To-Sequelize/Unsolved`
 
-* Open up the [09-DayPlanner](../../../../01-Class-Content/14-handlebars/01-Activities/09-DayPlanner) folder within your editor and within your terminal, running `npm install` before running `server.js` and opening up the application within your browser to demonstrate how the application works.
+* INSTRUCTIONS:
 
-* Point out how we create PUT and DELETE routes with Express
+  1) Create a new local MYSQL database called 'todolist', but don't create any tables.
 
-* Point out how to use jQuery to send PUT and DELETE requests (and that there are no shorthand methods available like for GET and POST).
+  2) Delete any references to the orm.js file inside the `api-routes.js` file.
 
-### 17. Partners Do: Going Over the Day Planner (15 min)
+  3) Delete the config folder.
 
-* Slack out `09-DayPlanner` to your students, have them run the application on their computers, and then have them explain the code to their partners line-by-line.
+  4) While inside the activity folder, run npm install in terminal.
 
-### 18. Everyone Do: Watch List (20 min)
+  5) In terminal, type in the following command: "sequelize init:models & sequelize init:config". If this produces an error, then you may not have the sequelize and the sequelize-cli installed globally. Fix this by running `npm install -g sequelize sequelize-cli` in your terminal and trying again.
 
-* Once everyone seems to have finished picking their way through the code and you have answered whatever questions your students may have had, slack out the following instructions:
+  6) Step 5 should have created a config and a models folder for us. Navigate to the config folder, open `config.json`, and modify the development object's "database","username" and "password" values to match your MYSQL database on your machine.
 
-  * **Instructions**
+  7) Navigate to the models folder and create a new file called `todo.js`. Create a Todo model with columns for "text" (DataTypes.STRING), and "complete" (DataTypes.BOOLEAN).
 
-    * Create a full-stack application with Express, MySQL and Handlebars.
+  8) Navigate to the server.js file and require all of our models by requiring the models folder. Save this to a variable and name it "db".
 
-      * HINT: this web application will be very similar to the app your instructor just demonstrated and slacked out. Please feel free to leverage that code when creating this code.
+  9) Sync the models by running db.sequelize.sync() before we start the express server.
 
-    * Create a `schema.sql` file. Inside of that file, do the following:
+  10) In your terminal, run "node server". Check MYSQL Workbench to see if a Todos table was created. If so, you were successful. If not, check your terminal for any errors.
 
-      1. Make a database called moviePlannerDB
+**Refer to the Sequelize Quick Start Guide in the Supplemental folder if you experience any issues**
 
-      2. Inside of that database make a movies table which will contain a movie column and an id column. The id will be automatically incremented while also being the primary key.
+- - -
 
-      3. Run your `schema.sql` file within MySQL Workbench before moving onto the next steps.
+### 8. Instructor Do: Review the ORM-To-Sequelize Activity (10 mins)
 
-    * In your server.js file, you will create four routes: `get`, `post`, `put`, and `delete`.
+* When time's up, load up the `07-ORM-To-Sequelize/Solved` solution on your machine. Be sure to show students your `config.json` file as well as your Todo model.
+  ![Todo Model](Images/1-Todo-Model.png)
 
-      * Render the main `index.handlebars` when the `'/'` get route is hit with all of the movies from the movies table.
+* Then highlight the fact that we sync() our models in the `server.js` file before we start our server. This is what ensures our tables are created and ready when we try and start up our express server.
+  ![Sync Models](Images/2-Models-Sync.png)
 
-      * Your application should have a set of routes on `'/movies'` for create, update, and delete operations on the movies table.
+* Show them where our models are required inside of the `api-routes.js` file where will use it in the next exercise.
 
-      * Show a delete button next to each movie. When one of the delete buttons is clicked, the code should send a DELETE request to  delete the associated movie from your database.
+* Show students how the Todos table its made for us when we run `node server` and our database syncs.
 
-      * Additionally, show the form that the user can use to add a movie to be watched.  When the submit button is clicked, the code will post to the `'/movies'` route, which will insert the movie from the form into the movies table and return the ID of the new movie.
+* Inform the class that they will be implementing functionality to retrieve Todos from the database using the Sequelize "findAll" and "create" methods.
 
-      * Have another form that will update a movie in the movies table. The form will include two inputs: an id input and a movie title input. Remember to leverage a PUT method.
+- - -
 
-      * Remember: best practices for REST include:
+### 9. Partners Do: findAll and create (20 mins)
 
-        * Put your REST API on it's own URL (e.g. `'/todos'`).
+Slack out the following folder and instructions:
 
-        * A POST that creates an item should return the ID of the item it created.
+* Folder: `08-Sequelize-Create-Read/Unsolved`
 
-        * PUT and DELETE should specify the ID of the item they're intended to affect in the URL (e.g. `'/todos/123'`).
+* INSTRUCTIONS:
 
-        * If the ID for the item specified in a PUT or DELETE couldn't be found, return a 404.
+  1) Open the folder and run `npm install`.
 
-        * If an error occurs in the server, return an error code (e.g. 500).
+  2) Update the `config.json` file's development object with your own local MYSQL database settings.
 
-### 19. Everyone Do: Watch List (15 min)
+  3) Navigate to the `api-routes.js` folder.
 
-* Open up the [10-WatchList](../../../../01-Class-Content/14-handlebars/01-Activities/10-WatchList) folder and its files within your editor, and go over the code line-by-line with your class, making sure to explain what is happening within your code to the best of your ability.
+  4) Add a Sequelize findAll method inside the GET route which finds all of the todos and returns them to the user as JSON.
+
+  5) Add a Sequelize create method to the POST route to save a new todo to the database using the data sent to the server in req.body.
+
+  6) To test if this worked, open your terminal and run `node server` and navigate to localhost:8080. If you are able to save new todos, you were successful.
+
+  7) Hint: We can access the Todo model here with "db.Todo"
+
+  If you get stuck or finish early, check out the Sequelize Star Wars solution from last class, or try and see if you and your partner can make sense of Sequelize's docs for the findAll and create methods
+
+  <http://docs.sequelizejs.com/class/lib/model.js~Model.html#static-method-findAll>
+
+  <http://docs.sequelizejs.com/class/lib/model.js~Model.html#static-method-create>
+
+- - -
+
+### 10. Everyone Do: Review findAll and create (10 mins)
+
+* Go through the `08-Sequelize-Create-Read/Solved` as a class.
+
+* Point out how in the `api-routes.js` file, the db.Todo.create method takes in an object with the values we want our new Todo to have as an argument.
+  ![Todo Create Find](Images/3-Todo-Create-Find.png)
+
+* Run the app, create a new todo and open your terminal. There will be a console log of the data being passed to the db.Todo.create method, as well as the MySQL code this executes.
+
+* **Note**: If we were to `console.log` the `dbTodo` object returned from a sequelize query, we'd see that it is a large object with many nested keys and methods. It contains a `dataValues` property that contains the record data we're looking for.
+
+  * When we send the large `dbTodo` object back to the client using `res.json`, only the `dataValues` property is sent back.
+
+  * This is worth knowing since it may come up when debugging students code.
+
+* Answer any remaining questions about this exercise.
+
+- - -
+
+### 11. BREAK (30 mins)
+
+- - -
+
+### 12. Instructor Demo: Update and Delete (5 mins)
+
+* Inform students that now they will be working on functionality to delete todos and to update todos.
+
+* Open the solved file `09-Sequelize-Update-Delete/Solved` and run the program. Show students how they can delete todo items by clicking the `x` button on the todo. Refresh the page to prove that todo is gone.
+
+* Demonstrate how when clicking a todo item, you can update the todos text. After editing, hit "Enter" to finish editing, or click anywhere else on the page to cancel editing. Also demonstrate how clicking the check mark toggles a todo's complete property. Refresh the page again to prove this works.
+
+- - -
+
+### 13. Partners Do: Update and Delete (20 mins)
+
+* Slack out the following folder and instructions.
+
+  * Folder: `09-Sequelize-Update-Delete/Unsolved`.
+
+* INSTRUCTIONS:
+
+   1) Open the folder slacked out to you
+
+   2) Run `npm install`
+
+   3) Update the `config.json` file's development object with your own local MYSQL database settings.
+
+   4) Inside the `api-routes.js` file, look for the DELETE route and add a Sequelize method to delete the todo with the id available to us in `req.params.id`.
+
+   5) Inside of the same file, look for the PUT route and add a Sequelize method to update a todo with the new todo data available to us inside req.body.
+
+   6) Again, you won't need to touch the front end HTML or JavaScript to make any of this work.
+
+   7) **HINT**: you will need to pass in an options object with a "where" attribute into both methods in order to filter these queries to target the Todos we want to update or delete.
+   <http://docs.sequelizejs.com/en/latest/docs/querying/#where>
+
+   8) Navigate to localhost:8080. If you can update and delete todos without errors, you were successful.
+
+   9) If you get stuck or finish early, discuss the documentation for the `update` and `destroy` methods with your partner here:
+
+   <http://docs.sequelizejs.com/class/lib/model.js~Model.html#static-method-update>
+
+   <http://docs.sequelizejs.com/class/lib/model.js~Model.html#static-method-destroy>
+
+**Instructors and TA's should be walking around offering support during this exercise**
+
+### 14. Everyone Do: Review Update and Delete (15 mins)
+
+* Slack out the `09-Sequelize-Update-Delete/Solved` folder and have students explain to you how the "where" query attribute works when it comes to filtering the records you want to query.
+  ![Todo Update](Images/4-Todo-Update.png)
+  ![Todo Destroy](Images/5-Todo-Destroy.png)
+
+* Inform students that now that they have a good grasp on CRUD actions with Sequelize, as well as how to filter queries with "where", they already know how to do what they'll be doing 80% of the time with an ORM.
+
+* Answer any remaining questions about this exercise.
+
+* Explain to students that at first the Sequelize documentation can be a little difficult to navigate, but after understanding the basics they're much more useful.
+
+* Thank students for working to find answers to the past few exercises. Reading documentation is it's own skill they'll become better at with practice. In the meantime, we've created a Sequelize CRUD actions cheat sheet for them that should make basic usage much easier.
+
+* Slack out the Sequelize CRUD actions cheat sheet `Supplemental/SequelizeCRUDActionsCheatSheet.pdf`.
+
+### 15. Instructor Do: Validations (5 mins)
+
+* Explain to the class that as some of them may have already noticed, there's a small flaw with our todolist application. And that is that while our Todos table's text column won't save any data type other than a Sequelize.STRING, it is possible to save a todo with empty text or even one with a null text value.
+
+* While it is possible to restrict this functionality client side (and we definitely should at some point), if someone knew how to use Chrome Developer Tools, they could circumvent any restrictions we put in our front-end JavaScript.
+
+* Knowing that any code we write on the client is potentially available for the user to tamper with. Ask the class what steps we might be able to take on the back end to validate what we're receiving to put into our database.
+
+- - -
+
+### 16. Everyone Do: Discuss With Partners (10 mins)
+
+* Have the class discuss with their partners for a few minutes about what options we may have to further restrict what kinds of data can be saved into our Todos table.
+
+* After a few minutes have any volunteers suggest their solutions. Most likely suggestions will be to have a conditional that checks the value before trying to insert it. Some may suggest that Sequelize may have something built in for this.
+
+* Inform students that Sequelize does indeed have built in validations and flags we can include with our models.
+
+* An example of a validation might include making sure that text is a URL or email, or that a credit card number is formatted correctly.
+
+* A flag might include making sure a value is not null before entering it into the database or having a default value for a field if one is not supplied.
+
+* The difference is that flags are ways for us to implement MYSQL constraints we're already familiar with such as "NOT NULL" or "DEFAULT" and validations are additional built in or custom methods we can run before Sequelize inserts a record.
+
+- - -
+
+### 17. Partners Do: Sequelize Validations (15 mins)
+
+* Slack out the following folder in `Activities/10-Sequelize-Validations`
+
+  * Folder: `10-Sequelize-Validations/Unsolved`
+
+* INSTRUCTIONS:
+
+  1) Open the folder slacked out to you.
+
+  2) Run `npm install`.
+
+  3) Update the `config.json` file's development object with your own local MYSQL database settings.
+
+  4) Modify the `todo.js` file so that the Todo model has a flag to prevent the text field from being null. Also add a validation to make sure the text field is at least one character, but no more than 140 characters.
+
+  5) Modify the complete field in our Todo model so that it supplies a default value of false if one is not supplied during Todo creation.
+
+  6) Once a Sequelize model has been created and synced for the first time, any changes we make to our Todo model won't be picked up by our database. The easiest way to get around this during the development process is to pass "{ force: true }" as an argument into our sync method inside `server.js` file. This will make it so that every time we run our app, our Todos table will be dropped and recreated with the new configuration. More info here under: <http://docs.sequelizejs.com/class/lib/sequelize.js~Sequelize.html#instance-method-sync>
+
+  7) Navigate to localhost:8080 to test that this worked. Try to save a Todo without any text in it, and then try and save a Todo with over 140 characters. If these didn't save and you see errors in your console that have to do with validation, you were successful.
+
+  8) **Big Hint**: Sequelize documentation on validations with examples can be found here: <http://docs.sequelizejs.com/en/latest/docs/models-definition/#validations>
+
+- - -
+
+### 18. Instructor: Review Validations and Dismiss Class (10 mins)
+
+* Slack out `10-Sequelize-Validations/Solved` and show students how we added validations and flags to the Todo model. Go through each new item and have students try and explain to you what they believe each piece of new code does.
+  ![Validations](Images/6-Validations.png)
+
+* Assure students there's no need to memorize these. Validations are some of the easier things to look up in the Sequelize documentation. Or even easier, refer back to this project.
+
+* Inform the class that we've just covered a lot of ground today. We've learned everything and more needed to complete this week's homework assignment. If they feel they haven't caught onto everything, encourage them to continue practicing, check out the solution files, and browse through the Sequelize documentation. Of course, they can also talk to you or a TA between classes for one-on-one advice.
+
+### 19. Instructor Do: Questions and Review (15 mins)
+
+* Take this remaining time to ask students if they have any questions from today's material or anything covered this week.
+
+* Answer any questions you can and encourage students to bring further questions to you or a TA during post class office hours.
+
+### 20. END (0 mins)
 
 ### Lesson Plan Feedback
 
