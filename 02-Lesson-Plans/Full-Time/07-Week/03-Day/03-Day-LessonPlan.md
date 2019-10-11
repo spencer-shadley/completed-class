@@ -40,7 +40,7 @@ Today we will be introducing students to the basics of Object-Relational Mapping
 
 ## Time Tracker
 
-[7.3 Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1lWJfHZ5OuK5s7vrHEEbxd8zZaKqU620c/view?usp=sharing)
+[7.3 Time Tracker](https://docs.google.com/spreadsheets/d/1IHQg3XLQeSlLU-XpC-Jfi0DlUKsKVOMvcLTaGZ22cbU/edit?usp=sharing)
 
 - - -
 

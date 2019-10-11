@@ -20,7 +20,7 @@ Today's course will be building upon the lessons your students have learned the 
 
 ## Time Tracker
 
-[7.2 Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1o0kMAeHCM330hksJozYj7rE5ZRopT03F/view?usp=sharing)
+[7.2 Time Tracker](https://docs.google.com/spreadsheets/d/1XbDjm7AZdupRlGdaYNkX1dqalr8iQ3h_QOC5Y38NCOY/edit?usp=sharing)
 
 - - -
 

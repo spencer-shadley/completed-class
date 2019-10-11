@@ -12,8 +12,6 @@ Students will be diving into the basics of Handlebars today, a semantic templati
 
 * Handlebars can seem daunting at first, but it is ultimately a very powerful templating tool which your students might find useful. Try to keep to a pace that your students seem comfortable learning, so as to make sure no one is left behind.
 
-* Have your TAs reference [01-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1m2DjqTWWdgrhLGzWG7-fPeOIj1nV7div/view?usp=sharing) to help keep track of time during class.
-
 ## Learning Objectives
 
 * To send MySQL data from the back-end to the front-end using Express
@@ -30,7 +28,7 @@ Students will be diving into the basics of Handlebars today, a semantic templati
 
 ## Time Tracker
 
-[7.1 Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1m2DjqTWWdgrhLGzWG7-fPeOIj1nV7div/view?usp=sharing)
+[7.1 Time Tracker](https://docs.google.com/spreadsheets/d/1xJT6D-8jx_mKq5YYg75Lucuywrgr9qvuEAhY5Pe3QJA/edit?usp=sharing)
 
 - - -
 

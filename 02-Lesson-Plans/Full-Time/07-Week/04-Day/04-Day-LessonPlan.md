@@ -4,7 +4,7 @@
 
 In this class, we will introduce students to the Sequelize ORM. This tool makes coding with MySQL databases a smoother experience--once you get past the learning curve.
 
-`Summary: Complete activities 5-10 in Unit 15`
+`Summary: Complete activities 5-10 in Unit 14`
 
 ## Instructor Notes
 
@@ -36,7 +36,7 @@ In this class, we will introduce students to the Sequelize ORM. This tool makes 
 
 ## Time Tracker
 
-[Unit 14-Full-Stack Day 1 Time Tracker](https://drive.google.com/open?id=1hhhhRhzITwdyGRmChzaGApP6bUNvMxJQ)
+[7.4 Time Tracker](https://docs.google.com/spreadsheets/d/1rPeGkGA46_D9zdANiFy0lDZ42eXrefIDdDUL7NTSE1A/edit?usp=sharing)
 
 - - -
 
