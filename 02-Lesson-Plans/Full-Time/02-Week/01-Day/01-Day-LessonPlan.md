@@ -20,6 +20,10 @@ Today's class is focused on providing students with the very basics of JavaScrip
 
 ![1-SlackDownload](Images/1-SlackDownload.png)
 
+### Algorithms
+
+Starting with Unit 3, students are provided with common problems they will see in interviews. They can find these problems in each unit's folder. Recommend that students try to solve one or two before class during office hours. Help students with any questions they might have about these problems and work through the solutions.
+
 ## Class Objectives
 
 * To gain a preliminary grasp of JavaScript definitions and of basic syntax.

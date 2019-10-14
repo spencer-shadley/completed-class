@@ -16,6 +16,8 @@ Be ready to have your troubleshooting hat on for helping students debug GitHub P
 
 Next unit, we begin JavaScript, make sure to review the slide decks in advance.
 
+Next unit we will also provide students with common problems they will see in interviews. It is recommended that you familiarize yourself with these problems so that you can help students with any questions they might have.
+
 ## Helpful Links
 
 ### Lesson Plans
