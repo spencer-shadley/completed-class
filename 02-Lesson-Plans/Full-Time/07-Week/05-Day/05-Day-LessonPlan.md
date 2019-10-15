@@ -1,346 +1,397 @@
-## 7.5 - The Power of the ORM <!--links--> &nbsp; [⬅️](../04-Day/04-Day-LessonPlan.md) &nbsp; [➡️](../../08-Week/01-Day/01-Day-LessonPlan.md)
+# 7.5 Lesson Plan - Getting Associated with Relations (10:00 AM)
 
-### Overview
+## Overview
 
-Today we will be introducing students to the basics of Object-Relational Mapping, a system which allows programmers to more easily collect and to manipulate data from databases using reusable methods.
+In today's class we'll reinforce the concepts we went over in the last class including CRUD actions, and passing in options into our queries, such as the "where" query attribute. We will also introduce the concept of relations in Sequelize.
 
-`Summary: Complete activities 11-18 in Unit 14`
+`Summary: Complete activities 11-14 in Unit 14`
 
-##### Instructor Priorities
+* When using any of the `Supplemental PDFs`, please download and open. Do NOT preview on GitHub as they may not display properly in the browser.
 
-By the end of class students will
+## Instructor Notes
 
-* Be able to create a basic ORM that will allow them to create, read, update, and delete data from MySQL databases.
+* `12-Blog-CRUD/Solved` and `14-Post-Author-Joins/Solved` are the solution files it would be most beneficial to become familiar with before class. These are what students will be building the back-end for throughout class.
 
-* Have a firm grasp on how to use JavaScript callbacks, especially when they are used in conjunction with an ORM.
+* Today students will see some unfamiliar syntax and there will be a good amount of going through the Sequelize docs, though we'll save them some time and trouble by pointing them in the right direction.
 
-* Be introduced to the MVC Pattern for setting up their file-system path.
+* Make sure you have a MySQL database named "blogger" created on your machine before class starts.
 
-##### Instructor Notes
+* Odds are some students will finish activities very early, while others will struggle with some of the new syntax introduced. Try and have these students work together if possible.
 
-* There are A LOT of topics that we will be covering over the course of today's lesson plan, but it is especially important for your students to understand how ORMs function. Make sure to take your time when covering this topic since it is crucial for the homework.
+* Throughout class, stress to students that today will be all back-end coding. The exercises are all built in a way where they don't need to modify any client side code in order to better focus on Sequelize.
 
-* If you have not yet covered callbacks, then make certain to go over them in moderate detail today. We have included a "mini-module" on callbacks within this lesson plan as well so that students will come out of this class confident in their ability to use this vital tool.
+* **Important**: Like last class, today's activities will be based around a series of iterative builds. As we're going along, there will be parts of the application that won't be 100% function at the end of some activities.
 
-* The MVC Pattern is not wholly commonplace in HTML/JavaScript web development, but it is widely used within other fields of programming. Let your students know that their comprehension of this framework will assist them in picking up other languages in the future.
+  * The instructions for each activity will explain how to verify that it was completed correctly, i.e. "sequelize should have created a table with these values" or "if done correctly the blog table should have an authors column".
 
-* When going over ORMs with your class, it is important that you keep the `server.js` files and the `orm.js` files open at the same time. Being able to see both files at the same time should help your students to understand how the code within these files functions alongside each another.
+  * Make sure students are starting with the unsolved version for each activity, instead of just continuing to build on the previous activity. This will help ensure they're getting started on the right foot.
 
-* At the end of class, make sure you direct students to `MySQLHerokuDeploymentProcess.pdf`. The guide provides step-by-step instructions to setting up a remote MySQL database; your students won't be able to deploy their apps without it.
+  * We have created a sequelize deployment guide, video deployment guide, quick start guide, and CRUD action cheat sheet. These resources will be incredibly helpful to students so please be sure to zip up the Supplemental Folder and provide it to your students.
 
-* Have your TAs reference [05-Day-Time-Tracker](https://drive.google.com/a/trilogyed.com/file/d/1BwaClWlyStxL16vKctQrmMCJR0w6iqxn/view?usp=sharing) to help keep track of time during class.
+  * [Supplemental Materials](../../../../02-lesson-plans/part-time/15-Week/Supplemental)
 
-### Sample Class Video (Highly Recommended)
-* To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=247ef209-dadd-4779-a335-a871014dc0d5)
+## Learning Objectives
+
+* To reinforce the concepts covered in the first 2 days, primarily CRUD and model creation with Sequelize.
+
+* To introduce the concept of relations using Sequelize.
+
+* To introduce the "include" option for performing joins with our queries.
+
+* To get students used to looking through Sequelize's documentation for answers to specific questions.
+
+* Students will create a blog app with a content management system that can be used to update it's data.
+
+## Slides
+
+## Time Tracker
+
+[7.5 Time Tracker](https://docs.google.com/spreadsheets/d/1Is75JSnNnV4nQe-sKwHIB_Ite_paVc4IRaUT5WxlXA8/edit?usp=sharing)
 
 - - -
 
-### Class Objectives
+## Class Instruction
 
-* To create, change, and use a basic ORM to perform CRUD commands on a local MySQL database so as to reduce manual database queries
-* To create an Express Application utilizing the MVC design pattern. The app will be structured in the way Ruby On Rails is
-* To strengthen students' understanding of callbacks so that they will know how to use them in association with an ORM
+### 1. Instructor Do: Welcome Students and Sequelize Review (15 min)
+
+* Welcome students to class and explain todays focus.
+
+* Ask students what we went over in the last class.
+
+  * What CRUD methods did we learn? Ask students to briefly try and name as many as they can.
+
+    * `findOne`: finds a single record from a table
+    * `findAll`: finds all records from a table
+    * `create`: creates a new record in a table
+    * `update`: updates a record or records in a table
+    * `destroy`: deletes a record or records from a table
+
+  * What does "where" do? What might we use it for?
+
+    * It's an object we can pass in to a Sequelize query. It lets us be more specific about which records we want to target.
+
+  * What are validations and/or flags?
+    * Optional built in Sequelize helpers that let us do things like set up default values for columns, or make sure text is within a certain length before inserting it.
 
 - - -
 
-### 1. Instructor Do: Welcome Students to Class (2 min)
-
-* Welcome your students to class.
-
-* Let your class know that they will be facing quite a wide variety of topics today but that you and your TAs will be there to support them the whole way so that no one is left behind. To make sure they are mentally prepared for the teachings to come, however, we have a small warm-up activity for them to work on before diving into anything else.
-
-### 2. Students Do: Quotes App (15 min)
-
-* Open up the [11-QuotesApp/Solved](../../../../01-Class-Content/14-handlebars/01-Activities/11-QuotesApp/Solved) folder within git bash and run the `schema.sql` and `seeds.sql` files to set up our database before running `npm install` and `node server.js` so as to demonstrate how the Quotes application they will be making is going to work.
-
-  * Keep your working application open so that it may serve as a reminder to your students on what kind of application they are making during the following activity.
-
-* Answer any and all questions regarding this application before slacking out the following:
-
-  * **Files**
-
-    * `11-QuotesApp/Unsolved`
-
-  * **Instructions**
-
-    * Using Express, MySQL, Handlebars, and the starter code which was slacked out to you as a jumping-off point, you will be creating a simple web application which allows users to create, read, update, and delete popular quotes.
-
-    * Your application will have two pages:
-
-      * One will show all of the quotes within a database and will allow users to create a new quote or delete an existing one. A button next to each, labeled "Update This Quote," will take users to the other page which shows the quote selected and will allow them to update it with new information.
-
-    * Make sure to run the code contained within the `schema.sql` and `seeds.sql` files beforehand so that you have a database with which to work.
-
-### 3. Everyone Do: Quotes App Review (10 min)
-
-* Open up `11-QuotesApp/Solved/server.js`, `11-QuotesApp/Solved/views/index.handlebars`, and `11-QuotesApp/Solved/views/single-quote.handlebars` within your editor, and go through the code line-by-line with your students, calling upon individuals to explain what the code does before clearing up any lingering confusion by going over it yourself as well.
-
-* Explain briefly the `express.static` middleware when you get to it. In short, it is express code that will automatically respond with static files when requests are made that match the path in the defined folder (in this case the `public` folder).
-  * For example, if someone (e.g. the browser) makes a `GET` request for `/assets/css/style.css`, your express app will automatically send back the `CSS` file without you having to write any extra route handlers (or doing any `res.send`s).
-  * Tell students that it's not critical that they understand exactly how this works for now. They can treat it like their other route handling, but the takeaway is that requests for static files (any paths that matching a path in the defined folder) will be handled by `express.static` BEFORE any of the other code they've written is hit.
-    * A common pitfall here is that students may try to have an `index.html` file in the `public` folder and also try to handle the `/` route for GET requests in their `server.js` - warn them that `express.static` will swallow those requests if you put it first!
-
-### 4. Instructor Do: Introducing the ORM (20 min)
-
-* One of the major annoyances of dealing with databases through Node has been how much code we are having to write/rewrite in order to accomplish tasks that are remarkably similar from one activity to the next. In fact, there have even been times where we were having to rewrite repetitive MySQL queries within the very same application. This is far less than ideal code since, as we have discussed in the past, programmers like being able to reuse similar code, time and time again, wherever possible, to simplify/speed-up their apps.
-
-* In the past, we have done this by creating basic functions which take in variables to accomplish similar-but-different tasks. What if I told you that there was a way to do this with MySQL queries as well? That would speed things up and would make working with databases quite a bit simpler, wouldn't it? Thankfully... Object-Relational Mappers (or ORMs) serve just such a purpose, and that is what we are going to be going over in detail today.
-
-* Open up `12-OrmExample` within your folder system, run `12-OrmExample/db/schema.sql` and `12-OrmExample/db/seeds.sql` files within MySQL Workbench, and then open up `12-OrmExample/server.js`, `12-OrmExample/config/connection.js`, and `12-OrmExample/config/orm.js` within your editor to show your students the code it contains. Ask your students if they can spot what is new here...
-
-  * All of our database-connection code is contained within `connection.js`, which is then required in `orm.js`, which is then required in `server.js`.
-
-  * `orm.js` contains ALL of our MySQL queries inside of it as methods within an object referred to as "orm."
-
-  * These methods take in variables which are then used to alter the properties of our queries. In other words, we can now make similar queries to different MySQL tables, columns, and rows without having to write out entirely new MySQL commands every time. Instead, all we have to do is change around the variables we pass into the method we are calling upon.
-
-* Demonstrate the power of ORMs by running `npm install` and `node server.js` within your terminal.
-
-  * Feel free to change around the variables passed into your ORM to show how adaptable it is.
-
-* Emphasize time and time again the reasons why writing an ORM is considered helpful: efficiency, legibility, and reusability.
-
-### 5. Partners Do: Discussion of ORMs (10 min)
-
-* Have students talk to each other about the pros of ORM, and see if they can come up with specific situations in which an ORM would be considered valuable.
-
-* Call students back together after five minutes or so to share their thoughts regarding the usefulness of ORMs.
-
-### 6. Students Do: Party Database App (20 min)
-
-* Once you have answered any and all questions regarding ORMs and how they are used, Slack out the following:
-
-  * **Files**
-
-    * `13-PartyDatabase/Unsolved`
-
-  * **Instructions**
-
-    * You will be creating a holiday party planner application. We want to help create parties for our clients whilst also keeping track of all the events that we are host. In MySQL, create a database called `party_db` with two tables structured like the tables below. Utilize the provided `schema.sql` and `seeds.sql` file in order to build the tables and seed initial values.
-
-      | id | party_name              | party_type | party_cost | client_id |
-      | -- | ----------------------- | ---------- | ---------- | --------- |
-      | 1  | Everybody Loves Raymond | tv         | 500        | 1         |
-      | 2  | Big Bang Theory         | tv         | 900        | 1         |
-      | 3  | Top Gun                 | movie      | 200        | 2         |
-      | 4  | Whiskey                 | grown-up   | 300        | 2         |
-      | 5  | Cigar                   | grown-up   | 250        | 3         |
-
-      | id | client_name |
-      | -- | ----------- |
-      | 1  | Bilal       |
-      | 2  | Brianne     |
-      | 3  | Vincent     |
-
-    * Create a Node MySQL application with an ORM that executes once the server is launched.
-
-    * You will not need Express or Handlebars for this assignment. Use `console.log` to print the data collected to the console.
-
-    * Create a MySQL database with the tables and data which were slacked out to you.
-
-    * Create a Node app and connect it to MySQL with a `config` folder and with a `connection.js` file inside of that folder.
-
-    * Create an `orm.js` file, and make an ORM that will do the following:
-
-      * Console log all the party names.
-      * Console log all the client names.
-      * Console log all the parties that have a party-type of grown-up.
-      * Console log all the clients and their parties.
-
-    * BONUS: create a function within your ORM that will let the user add more clients and parties to the database.
-
-### 7. Everyone Do: Party Database App Review (10 min)
-
-* Open up [13-PartyDatabase](../../../../01-Class-Content/14-handlebars/01-Activities/13-PartyDatabase), run `13-PartyDatabase/Solved/db/schema.sql` and `13-PartyDatabase/Solved/db/seeds.sql` within MySQL Workbench, and then open up `13-PartyDatabase/Solved/server.js`, `13-PartyDatabase/Solved/config/connection.js`, and `13-PartyDatabase/Solved/config/orm.js` within your editor before going over the code line-by-line with your students.
-
-  * Keep `13-PartyDatabase/Solved/server.js` and `13-PartyDatabase/Solved/config/orm.js` open alongside one another so that they can see how the two files are working together.
-
-* Call upon random students within the class, and have them attempt to explain what each line does first before diving into the code and explaining it in more detail.
-
-  * Open up `13-PartyDatabase/Solved` inside of your terminal, run `npm install` and then—after each new ORM function has been discussed—run `node server.js` in order to show your class visually what each ORM function does.
-
-### 8. Instructor Do: The Asynchronous Problem (10 min)
-
-* Open up [14-TheAsynchProblem](../../../../01-Class-Content/14-handlebars/01-Activities/14-TheAsyncProblem) within your terminal, run `14-TheAsynchProblem/db/schema.sql` and `14-TheAsynchProblem/db/seeds.sql` inside of MySQL Workbench, and then open up `14-TheAsynchProblem/server.js` and `14-TheAsynchProblem/config/orm.js` within your editor alongside one another.
-
-  * Ask your students what they think is going to happen when `node server.js` is run inside of your terminal.
-
-  * Most of your class will likely think that your code will return data from the database. This is not the case, but let them think that for the time being nonetheless.
-
-* Run `npm install` and then `node server.js` within your terminal only to find that your code has returned "undefined" of all things without any error popping up on the screen. Prompt your students to see if any of them know the reason this occurred.
-
-  * The query to our MySQL database is asynchronous to the rest of our JavaScript code, and as such, our server is not waiting for a response from the database before running our `console.log` command. This, as you might imagine, is a big problem and we are going to need to come up with some way to fix it.
-
-### 9. Partners Do: Solving the Asynchronous Problem (10 min)
-
-* Prompt your class to work in pairs to see if they can come up with the reason why our code is console.logging "undefined" despite no errors being recorded.
-
-* Also prompt them to see if they can come up with a possible solution to this problem.
-
-  * Let them know that they are free to search the web for potential causes/solutions to this issue, as it is a problem that many new coders have faced and that they will continue to face for years and years to come.
-
-  * Feel free to Slack out the code contained within `14-TheAsynchProblem` to your students to run, test, and mess with on their own. This could help them to discover a solution and should build up their debugging skills.
-
-* Call the class back together after a solid amount of time to see if anyone knows what the problem is and how we might go about solving it.
-
-  * PROBLEM: Our query and the rest of our code are asynchronous and thus no data is being returned before the `console.log` is being executed.
-
-  * SOLUTION: Provide our ORM with a callback function which serves to tell the server to wait until the data has been returned before moving on.
-
-### 10. Instructor Do: The Asynchronous Solution (15 min)
-
-* Open up `15-TheAsynchSolution` within your terminal before opening up `15-TheAsynchSolution/server.js` and `15-TheAsynchSolution/config/orm.js` within your editor alongside one another.
-
-* Go over the differences between this code and the last, making certain to point out all of the following:
-
-  1. We added in a `cb` argument to the `selectWhere` function's arguments list. We also executed `cb` (because we're expecting it to be a function) and passed it the data returned from the MySQL query.
-
-  2. In `server.js`, the 4th argument of `orm.selectWhere` is an anonymous function with `res` passed into it as an argument. That function gets sent to `orm.selectWhere` along with `parties`, `party_type`, and `grown-up`.
-
-  3. There are a number of important things occurring in the ORM object:
-
-     * The `selectWhere` method inside `orm.js` builds the query which is then stored within the `queryString` variable.
-
-     * `queryString` gets passed to `connection.query` as well as `[valOfCol]`, which gets placed inside the question mark part of the `queryString`.
-
-     * After we get the data back from `connection.query`, we pass result to `cb` and execute it as `cb(result)`. Recall that `cb` is the anonymous function from `server.js`.
-
-     * The variable `res` now equals `result` and `res` gets console logged within `server.js`.
-
-* Your students are VERY likely to be confused by this since the logic involved is a little abstract. This confusion will be all the worse if your students have never covered callbacks before. In order to stave off this confusion as best you can, however, feel free to open up the files contained within the `16-CallbackReview` folder and go over them with your class. We have also provided you with a "mini-module" taken from the 03, unit 11 lesson plan which you can use to review callbacks with your class in even greater detail during the break, after class, or during class if truly necessary.
-
-* It is VERY important that your students understand why the code within `15-TheAsynchSolution` works, since we can assure you that the asynchronous problem will come up in this unit's homework. Because of this, feel free to take extra time to go over the code multiple times and to review callbacks in more depth. The MVC Pattern is important, but it can be covered in lesser detail or at a later date.
-
-### 11. Partners Do: Reviewing the Asynch Solution (10 min)
-
-* Have students work together to understand how the code contained within `15-TheAsynchSolution` works.
-
-* Feel free to Slack out the code contained within `15-TheAsynchSolution` to your students to run, test, and mess with on their own.
-
-* After a solid amount of time has passed, call your class back together to have them explain what is happening within the code that makes it function properly.
+### 2. Instructor Do: Demo App (10 mins)
+
+* **Before demonstrating the app, make sure you update the `config.json` file in the `config` folder to match your own MySQL database.**
+* Open and run the `12-Blog-CRUD/Solved` folder. Navigate to `localhost:8080` and explain to your students that they will be setting up much of the back-end for this blogging Content Management System app. Show students how we can create posts, delete posts, and edit posts. Additionally we can select which categories of posts we want to see by using the drop down on the blog page.
+* Answer any questions about the desired functionality of this app before the exercise begins, but try not to get too off topic. We just want them to understand what the app does right now. There's no need to worry about the front end code today, and we'll just be creating the post model in this first activity.
 
 - - -
 
-### 12. Lunch (30 min)
+### 3. Warm Up: Create a Post Model (15 mins)
+
+Slack out the following folder and instructions:
+
+* **Folder**: `11-Post-Model/Unsolved`
+
+* **INSTRUCTIONS**:
+
+  The goal of this exercise is to create a Post model using Sequelize.
+
+  1) Open the folder slacked out to you, run `npm install`
+
+  2) Create a new MySQL database and name it `blogger`. Don't create any tables.
+
+  3) Open the `config` folder and update the `config.json` file's `development` object to match your own local MySQL database.
+
+  4) Go to the `models` folder and open the `post.js` file.
+
+  5) Create a Sequelize `Post` model here. The model should have a title property of type DataTypes.STRING, a body property of DataTypes.TEXT, and a category property of DataTypes.STRING. 
+  (<http://docs.sequelizejs.com/manual/tutorial/models-definition.html#data-types>)
+
+  6) To check if this worked, run `node server` in your terminal. Then open MySQL Workbench to check if a Posts table has been created.
+
+  **Note**: We still have some code to add in the next exercise to get this app fully functioning, just concentrate on creating the Post model and verifying that you were successful for now.
+
+  **BONUS**
+
+  If you complete the activity before time's up, try adding the following:
+
+  1) Flags to the title and body to prevent NULL values from being entered.
+
+  2) A validation to the title so that it must be between 1 and 160 characters.
+
+  3) A validation to the body so that it must be at least 1 character long.
+
+  4) A flag to the category so that it has a default value of "Personal" if a value is not supplied.
 
 - - -
 
-### 12. Instructor Do: Introduction to the MVC Pattern (5 min)
+### 4. Instructor Do: Review the Post Model Activity (15 mins)
 
-* Once everyone has returned from lunch, discuss the MVC Pattern with your class and discuss how it is laid out to create a folder/file-system that is both easy to navigate and easy to understand. Feel free to tell your students how this framework is most commonly used in other programming languages like Ruby on Rails and how understanding it will assist them in picking up new languages in the future.
+* When time's up, load up the solved version of the activity on your machine `11-Post-Model/Solved`.
 
-* MVC is a framework for building web applications using a MVC (Model View Controller) design:
+  * Be sure to show students the `config.json` file and how you updated it to match you local MySQL database.
 
-  * The Model represents the application core (for instance a list of database records).
-  * The View displays the data (the database records).
-  * The Controller handles the input (to the database records).
+  * Show students the `post.js` file and walk through each part of the code, have students try and explain what each piece is doing.
 
-* Open up [16-MvcExample](../../../../01-Class-Content/14-handlebars/01-Activities/16-MvcExample) within your file-system to show your students what the MVC Pattern looks like and answer whatever questions they may have regarding its usage and functionality.
+    * Go over the validations and flags, but inform students not to worry if they didn't have time for the bonus. It's more important to understand creating models first.
 
-### 13. Partners Do: Discussing MVC (5 min)
+* Start the server and show the class how a Posts table was created for us in MySQL Workbench.
 
-* Have students work together to find examples of an MVC Pattern, and discuss what an MVC Pattern actually is.
+* Answer any remaining questions, if there are none, ask the class:
 
-### 14. Instructor Do: Handlebars #If and #Unless Statements (10 min)
+  * What is the difference between DataTypes.STRING and DataTypes.TEXT? We haven't used this until just now.
 
-* Explain the use of `{{#if}}` in Handlebars.
+    * STRING is the equivalent of varchar (255) in MySQL. Useful for storing relatively small values.
 
-  * The `{{#if}}` helper does just what you would expect it to do. It allows you to implement an `if` block into your Handlebars code. The `{{#if}}` helper outputs the block that it contains if the value given to it is truthy. The tricky bit here is that you cannot use conditionals within these statements. In other words, you are checking to see whether or not a specific variable exists or whether it contains a value inside of it.
+    * TEXT is a virtually unlimited amount of storage for characters. We might use this if we needed to store something larger or of unknown size.
 
-* Explain the use of `{{#unless}}` in Handlebars.
+    * This isn't something they need to memorize, a quick search of `Sequelize Data Types` will bring this right up.
 
-  * The `{{#unless}}` statement is pretty much the exact opposite of the `{{#if}}` statement since it will run the block of code contained inside of it if the given expression is false.
+* Navigate to the `server.js` file and point out the section of code where we sync our database.
 
-### 15. Students Do: Cats Application (20 min)
+  * Point out the `{ force: true }` object inside of the sync method. What is this doing?
 
-* Once you have answered any and all questions your class may have regarding the previous section, Slack out the following:
-
-  * **Files**
-
-    * [17-CatsAppProblem/Unsolved](../../../../01-Class-Content/14-handlebars/01-Activities/17-CatsApp/Unsolved)
-
-  * **Instructions**
-
-    * Add a delete button into the `index.handlebars` file next to each cat.git c
-
-    * Add on to the following:
-
-      * The ORM to include a delete key and function.
-      * The cat model to include a delete key and function that uses the ORM.
-      * The `catsController.js` file to have a `/api/cats/:id` delete route, to call the delete key of the cat model, and to pass in arguments as necessary.
-
-### 16. Instructor Do: Wrap Up (5 min)
-
-* Ask the class to give a show of hands for who finished the assignment. MySQL with Express can be a doozy so make sure you encourage them if the hands count looks slim.
-
-* Slack out the [MySQLHerokuDeploymentProcess.pdf](../../../../01-Class-Content/14-handlebars/03-Supplemental/MySQLHerokuDeploymentProcess.pdf). Tell them that just setting up the remote database for the first time will take a good hour or so; advise them to carve out that time from their schedules so they can submit their homework.
-
-* Tell students that if they have trouble setting up the database, they can always contact you or any of the TAs for support.
-
-### 17. Groups Do: Homework (63 min)
-
-* Have students work on their Eat Da Burger homework.
+    * This means that whenever we sync our database (whenever we start our app), we want to drop our tables and recreate them with any updated schemas. This is useful during the development process when we're experimenting with our database structure. During today's activities we'll be changing our models quite a bit, so this is useful to have. We'd want to remove this before deploying to a production environment. (otherwise we'd lose all of our data whenever our app starts)
 
 - - -
 
-### -- OPTIONAL -- Instructor Do: Callback Mini-Module
+### 5. Instructor Do: Introduce CRUD Activity (10 mins)
 
-* Explain to students the importance of callback functions and their role in giving JavaScript its asynchronous abilities. You can utilize the following example as a guide for this.
+* Open the `12-Blog-CRUD/Solved` folder inside and start the server.
 
+* Demonstrate to students again how in the solved copy we're able to retrieve all posts, retrieve posts of a certain category, create new posts, update posts, and delete posts.
 
-```
-Let's say that we are aspiring chefs, and we're following a recipe to cook chicken parmesan with a side-salad.
+* Inform students that now they'll be setting up the additional back-end functionality for this code inside of the `api-routes.js` file.
 
-1) Set out a bowl of flour, a bowl of breadcrumbs, and some beaten eggs.
-2) Flour the chicken.
-3) Dip the chicken in your batter.
-4) Hit that chicken with some breadcrumbs.
-5) Throw the chicken in a preheated oven, and set a timer to 20 minutes.
-6) Take the chicken out of the oven.
-7) Pour marinara sauce over the chicken.
-8) Sprinkle mozzarella on top.
+* Again, stress that they won't need to (and shouldn't) modify any of the client side code to make this work.
 
-The first five steps are fairly simple. They take us through the process of making chicken parmesan, one step at a time, in a linear fashion. Step number five, however, has us setting a timer for twenty minutes, and then, if we were following the recipe word-for-word, removing the chicken from the oven immediately afterwards, before it ever had the chance to finish cooking. That's certainly not what we want to happen since no one wants to eat raw chicken. As such, we should specify in our recipe that steps 6, 7, and 8 should only occur when the timer has gone off.
+- - -
 
-1) Set out a bowl of flour, a bowl of breadcrumbs, and some beaten eggs.
-2) Flour the chicken.
-3) Dip the chicken in your batter.
-4) Hit that chicken with some breadcrumbs.
-5) Throw the chicken in a preheated oven and set a timer to 20 minutes.*
+### 6. Partners Do: CRUD Activity (20 mins)
 
-*WHEN the timer has gone off...
-5.1) Take the chicken out of the oven.
-5.2) Pour marinara sauce over the chicken.
-5.3) Sprinkle mozzarella on top.
+Slack out the following folder and instructions:
 
-By doing this, step 5 must reach its completion before any future steps can be taken with our chicken. This is a great example of having a callback within code since one function(the finishing touches on our meal) requires a previous function(the preparation of the chicken) to reach completion beforehand.
+* **Folder**: `12-Blog-CRUD/Unsolved`
 
-Since we don't want to just wait around for 20 minutes doing nothing, however, we can jump tracks to our second recipe and work on that side-salad whilst waiting for our original five steps to reach completion. As such, we are no longer working synchronously on one recipe, but instead, we're working asynchronously on two recipes at once (working on one during the downtime of another).
-```
+* **INSTRUCTIONS**:
 
-* Emphasize that your students have already had some experience with callbacks before in the form of API calls and in setting up event listeners using jQuery.
+  The goal of this exercise is to add Sequelize CRUD methods inside each route specified in the comments in the api-routes.js file.
 
-* To reassure students that this isn't something entirely new for them, refer to the somewhat familiar piece of jQuery code below:
+  1) Open the folder slacked out to you, run `npm install`
 
-```js
-$(‘#colorChangeButton’).on(‘click’, function(e) {
-    $(‘body’).css({background: ‘black’});
-});
-```
+  2) Open the `config` folder and update the `config.json` file's `development` object to match your own local MySQL database.
 
-* Point out to your students how this code has two distinct parts: an onClick event associated with pressing the `#colorChangeButton` and an inline function which specifies what we would like to happen when that button is pressed (turn the page's background black).
+  3) Navigate to the `api-routes.js` file inside of the `routes` folder.
 
-  * The inline function within this example is being passed into the onClick code as a parameter. This means that our inline function will only be called when `#colorChangeButton` is pressed, thus linking an event to a specified action.
+  4) Fill in each route with the code described in the comments to add each CRUD action.
 
-  * Functions passed as parameters for other functions are called "callbacks"
+* We can test our code works by checking to see if we have the following functionality (recommended order):
 
-* While callbacks included within applications as simple as those above do not seem all that helpful overall, they can be an exceptionally helpful tool in creating applications which include asynchronous elements. This is because they ensure that specific functions run through until completion before starting up any code which may require the data created, modified, and/or stored within those functions. In other words, callbacks can force synchronous behavior upon otherwise asynchronous code.
+  * Create a new post
+  * Get a list of all posts
+    * Get a list of all posts of a category
+    * Edit a post
+    * Delete a post
 
-  * When you start placing functions within one another like we did in the previous example, each new function is added onto something called "The Stack."
+* **If things aren't working as expected, check to see if any errors logged to the terminal.**
 
-  * "The Stack" is a fairly simple concept to understand when placed into the context of something like pancakes. When you order a large stack of pancakes at a restaurant, you are going to want to eat from the top of the stack before working your way down towards the bottom. In essence, you are removing each pancake from the stack individually in order to reach the plate.
+- - -
 
-  * In other words, each new function added onto the stack is run before moving onto the function beneath it. Once data has been returned from the function above, the function below will start.
+### 7. Everyone Do: Review the CRUD activity (15 mins)
+
+* Go through the solution in `12-Blog-CRUD/Solved` together. Have students explain to you what each method does, what the "where" attribute is doing in the methods using it.
+
+* Answer any remaining questions about the solution. Feel free to spend a bit more time reviewing this activity if necessary. 
+
+- - -
+
+### 8. Instructor Do: Demo Post Author Relationships (15 mins)
+
+* Open the `14-Post-Author-Joins/Solved` application in Chrome and demonstrate how the app's functionality has changed some.
+
+  * We've gotten rid of categories, but now we have a second model, Authors. In this example, Authors have Posts, and Posts belong to Authors. 
+
+  * Demonstrate how when we first start the app and try and create a new post, we're directed to the `author-manager.html` page, where we must first create an Author.
+
+  * Demonstrate how after creating an Author, we now have the option to create a new Post for that Author.
+
+  * After creating a new Post, we are redirected to the blog page where we see the Author's name by that Post.
+
+  * After creating a few Authors with Posts, navigate to `localhost:8080/api/posts` to show students what the data returned fro the API looks like now. Each Post has a nested Author object. This lets us easily grab information about the Author who wrote the Post with very little work on the client side.
+
+* Answer any questions about the app's functionality here, or why we might want to include the Author with a Post object when doing a GET request.
+* Concentrate on making sure students understand what the app is supposed to do, but try not to go into too much detail about the implementation here. We're going to talk about how we can restructure our models and queries to make this happen over the next few exercises.
+
+- - -
+
+### 9. Partners Do: Discuss Relations (10 mins)
+
+Slack out the following image and instructions and have students discuss with their partners.
+
+**Image**: [`3-Relationship-Exercise`](Images/3-Relationship-Exercise.png) 
+
+**Post**
+
+![Post Model](Images/1-Post-Model.png)
+
+**Author**
+
+![Post Model](Images/2-Author-Model.png)
+
+* **Instructions:** 
+
+  * How can we restructure our database tables if we wanted the ability to form a relationship between a Post and an Author?
+
+  * What would we have to change with these tables to make that possible?
+
+    * Which table would have a foreign key and why?
+    * What would that look like?
+
+  * Remember, an Author can and will have multiple Posts, but a Post will only have a single Author.
+
+  * Assume we won't be making a third table.
+
+- - -
+
+### 10. Everyone Do: Discuss Relations (10 mins)
+
+* As a class discuss together the previous activity.
+
+* Have any volunteers explain their solutions to the class.
+
+* We're not so much looking for "the right" answer here, since there are multiple ways to create relations between tables, but we do want them to understand the solution we're going to be going with.
+
+* We're going to have a foreign key for the Author ID on the Posts table because:
+
+  * It would allow us to have multiple Posts all pointing to the same Author.
+
+  * We could make the foreign key a NOT NULL column. This way we could restrict a Post's creation if there is no Author.
+
+Show students the image below or slack it out to illustrate what this might look like:
+
+**Posts Table**
+
+![Post Author Relation](Images/4-Post-Author-Relation.png)
+
+- - -
+
+## 11. BREAK (30 mins)
+
+- - -
+
+### 12. Instructor Do: Introduce Sequelize Associations (10 mins)
+
+* Explain to the class that what we went over in the last activity is considered a `belongsTo` association, as well as a `hasMany` association in Sequelize. These are some of the most common types of associations.
+
+  * A Post **belongsTo** an Author.
+  * An Author **hasMany** posts.
+
+* This may be confusing at first, so we're going to do an exercise to hopefully help make this more clear. This exercise will have some unfamiliar syntax, so instructors and TA's should be walking around offering assistance.
+
+- - -
+
+### 13. Groups Do: Sequelize Associations (20 mins)
+
+* Slack out the following folder and instructions:
+
+  * **Folder:** `13-Post-Author-Association/Unsolved`
+
+* **INSTRUCTIONS:**
+
+  The goal of this exercise is to modify the Post and Author models so that they are associated with eachother.
+
+  1) Open the folder slacked out to you.
+
+  2) Run `npm install`
+
+  3) Open the `config` folder and update the `config.json` file's `development` object to match your own local MySQL database.
+
+  4) Navigate to the `post.js` file.
+
+  5) You will need to set an `associate` property to the `Post` model after it's defined. There's an example of this type of association being done here: 
+  <https://github.com/sequelize/express-example/blob/master/models/task.js>
+
+  * This may take a few tries to implement correctly in your own Post model (There's a lot of curly braces there!). You can verify your code works by starting your node server and then checking MySQL Workbench. If the Posts table now has a foreign key of AuthorId, you were successful.
+
+  **Bonus**: If you complete the exercise before time's up, navigate to the author.js file and add a **hasMany** association from the Author model to the Post Model. An example of this type of association can be found here: 
+  <https://github.com/sequelize/express-example/blob/master/models/user.js>
+
+  **Note** After this activity we have just one more step to complete the app and get it fully functioning.
+
+- - -
+
+### 14. Instructor Do: Review Sequelize Associations (20 mins)
+
+* Open the solved version of the previous exercise `13-Post-Author-Association/Solved` in your editor and navigate to the posts.js file.
+
+* Explain to the class that this while this may be some unfamiliar syntax, we don't need to perfectly understand how it all works to use it. A lot of Sequelize code is boilerplate we need not concern ourselves too much with. Nonetheless, it can be helpful to have some understanding:
+
+![Post belongsTo](Images/5-Post-BelongsTo.png)
+
+* We set the `associate` property of the `Task` model equal to a function which has a `models` parameter.
+* Inside of this function we run the `Post.belongsTo` method and pass in some configuration.
+* The object's only key is `classMethods` and it's value is another object. 
+* This inner object has a key of `associate`.
+* We specify that we want to associate our `Post` model with `models.Author`.
+* We run the **belongsTo** method on Posts and take in models.Author as an argument.
+* We're adding a flag to our foreign key (AuthorId) saying this cannot be null. In other words, it won't let us create a Post without an Author.
+* **Explain that for the most part they can create an association just by copying and pasting this code. There's no need to worry about memorizing it.**
+* Briefly go over the **hasMany** association in the Author model. This was part of the bonus and isn't actually required to put a foreign key on the Post model, but it's VERY helpful as it helps us easily perform joins whether we're doing a find on Posts, or a find on Authors. This will be more clear in the next exercise!
+  ![Author Associate](Images/8-Author-Associate.png)
+* There are other types of associations we can do with Sequelize, but belongsTo and hasMany are some of the most common and what we'll be using here.
+
+  * <http://docs.sequelizejs.com/en/latest/docs/associations/> Sequelize's docs are very thorough when it comes to the different types of relations that are available.
+
+* We're almost done! While we've set up our relations, we haven't actually specified that we want to return joined data to the user inside of our queries, therefore our app won't work as expected quite yet. 
+* Inform students that in the next activity we're going to direct them to a section of Sequelize's documentation to see if they might be able to figure out how we need to change our queries to make this work.
+
+- - -
+
+### 15. Groups Do: Joins (25 mins)
+
+* Slack out the following folder and instructions:
+
+  * **Folder:** `14-Post-Author-Joins/Unsolved`
+
+* **INSTRUCTIONS:**
+
+  The goal of this exercise is to modify our find queries in both post-api-routes.js and author-api-routes.js to use Sequelize's "include" option. We can use "include" to say that we want to return associated data.
+
+  1) Open the folder slacked out to you
+
+  2) Run `npm install`
+
+  3) Open the `config` folder and update the `config.json` file's `development` object to match your own local MySQL database.
+
+  4) Navigate to the `post-api-routes.js` file.
+
+  5) Add the "include" option to the queries specified in the comments. This is a feature called "eager loading". We want to "include" the Author model. Examples can be found here:
+  <http://docs.sequelizejs.com/manual/tutorial/models-usage.html#eager-loading>
+
+  6) Navigate to the `author-api-routes.js` file and add the "include" option to the queries specified in the comments. Here we want to "include" the Post model.
+
+  7) If successful the application should now be fully functional. After you create a few Authors with a few posts, try navigating to either `localhost:8080/api/posts` or `localhost:8080/api/authors` to make sure the JSON returned for both routes includes all of the data.
+
+  **Hint**: The "include" key goes on the same options object as the "where" attribute we've been using. Examples can be found at the link supplied.
+
+- - -
+
+### 16. Instructor: Review and Dismiss Class (15 mins)
+
+* Slack out the solution to the previous exercise  `14-Post-Author-Joins/Solved`
+
+* Show students how by just adding `include: [<models>]` as an option in our query we can easily get the associated data.
+
+* Create a few quick posts and demonstrate how when we navigate to `localhost:8080/api/authors` we get all of the author data with their Posts attached. Demonstrate the same for `localhost:808/api/posts` and note how the same is true in the reverse.
+
+* In MySQL, this is what's known as a "left outer join". We can do others with Sequelize, but this gives us very convenient access to both pieces of associated data.
+
+![Post Eager Loading](Images/6-Post-Eager-Loading.png)
+
+### 17. Instructor Do: Questions and Review (15 mins)
+
+* Take this remaining time to ask students if they have any questions from today's material or anything covered this week.
+
+* Answer any questions you can and encourage students to bring further questions to you or a TA during post class office hours.
+
+### 18. END (0 mins)
 
 # Instructor Do: Private Self-Reflection (0 min)
 
