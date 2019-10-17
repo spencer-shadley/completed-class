@@ -1,39 +1,47 @@
-## Week 15 - Sequelized
+# Unit 14: Full-Stack
 
-### Overview
+## Overview
 
-In this week, we will introduce students to the Sequelize ORM.
+This unit, we will introduce students to the Sequelize ORM as well as some validations.
 
+  * Refer to the [Class Content Unit Overview](../../../01-Class-Content/14-Full-Stack/README.md) for detailed information on key topics, learning objectives and homework.
+
+## Instructor / TA Notes
+
+* Make sure you change all of the connection information so the examples have your MySQL username/password!
+
+* Be careful not to go to in-depth this unit. There are a ton of components that make Sequelize work, but much of it is boilerplate that doesn't need much explanation.
+
+## Heads Up
+
+Next unit we begin project work, so make sure to set up groups before the first class in the next unit.
+
+## Helpful Links
 
 ### Lesson Plans
 
-* [15.1 - Lesson Plan](01-Day/01-Day-LessonPlan.md)
-* [15.2 - Lesson Plan](02-Day/02-Day-LessonPlan.md)
-* [15.3 - Lesson Plan](03-Day/03-Day-LessonPlan.md)
+  * [14.1 - Lesson Plan](01-Day_Intro-Sequielize/14.1-LESSON-PLAN.md)
 
-### Homework Activities
+  * [14.2 - Lesson Plan](02-Day_CRUD-Sequelize/14.2-LESSON-PLAN.md)
 
-* [Burger 2: The Sequel](../../../01-Class-Content/15-sequelize/02-Homework/Instructions/homework_instructions.md)
+  * [14.3 - Lesson Plan](03-Day_Relationships/14.3-LESSON-PLAN.md)
 
-### Key Activities
+### Slide Decks
 
-* [Simple Sequelize Demo](../../../01-Class-Content/15-sequelize/01-Activities/03-Chirpy-Sequelize)
-* [Setting Up a Sequelize Project with the Sequelize CLI](../../../01-Class-Content/15-sequelize/01-Activities/06-SequelizeCLI/Unsolved)
-* [Converting an ORM App to Use Sequelize](../../../01-Class-Content/15-sequelize/01-Activities/07-ORM-To-Sequelize)
-* [Sequelize CREATE and READ](../../../01-Class-Content/15-sequelize/01-Activities/08-Sequelize-Create-Read)
-* [Sequelize UPDATE and DELETE](../../../01-Class-Content/15-sequelize/01-Activities/09-Sequelize-Update-Delete)
-* [One-to-One, One-to-Many Associations](../../../01-Class-Content/15-sequelize/01-Activities/13-Post-Author-Association)
-* [Join Associated Models with Sequelize Queries](../../../01-Class-Content/15-sequelize/01-Activities/14-Post-Author-Joins)
+  * N/A
 
-### Helpful Links
+### Time Tracker(s)
 
-* [Heroku Deployment Guide for Sequelize Projects](../../../01-Class-Content/15-sequelize/03-Supplemental/Guides/SequelizeHerokuDeploymentProcess.md)
-* [Sequelize Quick Start Guide](../../../01-Class-Content/15-sequelize/03-Supplemental/Guides/SequelizeQuickStartGuide.pdf)
-* [Sequelize CRUD Actions Cheat Sheet](../../../01-Class-Content/15-sequelize/03-Supplemental/Guides/SequelizeCRUDActionsCheatSheet.pdf)
-* [Passport and Sequelize Example](../../../01-Class-Content/15-sequelize/03-Supplemental/Sequelize-Passport-Example)
-* [Sequelize Queries](http://docs.sequelizejs.com/en/latest/docs/querying/)
-* [Sequelize Associations Part 1](http://docs.sequelizejs.com/en/latest/docs/associations/)
-* [Sequelize Association Part 2](http://docs.sequelizejs.com/en/latest/api/associations/)
-* [Sequelize Migrations](http://docs.sequelizejs.com/en/latest/docs/migrations/)
-* [bcrypt (NPM)](https://www.npmjs.com/package/bcrypt)
-* [Encryption vs Hashing](http://www.securityinnovationeurope.com/blog/whats-the-difference-between-hashing-and-encrypting)
+  * [Unit 14-Full-Stack Day 1 Time Tracker](https://drive.google.com/open?id=1hhhhRhzITwdyGRmChzaGApP6bUNvMxJQ)
+
+  * [Unit 14-Full-Stack Day 2 Time Tracker](https://drive.google.com/open?id=1Mrx_oFfptIJqvzQ9aGrt6Fi_Q3dz8lUI)
+
+  * [Unit 14-Full-Stack Day 3 Time Tracker](https://drive.google.com/open?id=1p94kdnJhDLKraeBkv6bm3vLfF07TxaAK)
+
+## Algorithms
+
+  * [01-double-triple-map](../../../01-Class-Content/14-Full-Stack/03-Algorithms/01-double-triple-map)
+
+  * [02-array-intersection](../../../01-Class-Content/14-Full-Stack/03-Algorithms/02-array-intersection)
+
+  * [03-squares-of-a-sorted-array](../../../01-Class-Content/14-Full-Stack/03-Algorithms/03-squares-of-a-sorted-array)

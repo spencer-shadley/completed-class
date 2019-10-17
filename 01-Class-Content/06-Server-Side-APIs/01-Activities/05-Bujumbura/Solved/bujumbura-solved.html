@@ -41,6 +41,10 @@
         $(".humidity").text("Humidity: " + response.main.humidity);
         $(".temp").text("Temperature (F) " + response.main.temp);
 
+        // Converts the temp to Kelvin with the below formula
+        var tempF = (response.main.temp - 273.15) * 1.80 + 32;
+        $(".tempF").text("Temperature (Kelvin) " + tempF);
+
         // Log the data in the console as well
         console.log("Wind Speed: " + response.wind.speed);
         console.log("Humidity: " + response.main.humidity);
