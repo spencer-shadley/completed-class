@@ -6,9 +6,13 @@ In this class, students will continue working on their API Projects. They will a
 
 ## Instructor Notes
 
-* More project work! Instructors / TAs should rotate between groups helping in whatever ways they can.
+* ❗️ Project presentations are a rare opportunity for students to practice speaking on technical topics in front of an audience of peers.
 
-* Today's focus should be on giving students time to work on their projects and on students giving presentations of their project ideas at the end of class.
+* Limit presentations to 10 minutes: 7 or 8 for the presentation itself followed by 2 or 3 minutes for Q & A. This will ensure that every group presents and allow padding for transitions between groups. 
+
+* Prior to class, prepare a list of questions to ask each group to encourage discussion.
+
+* Prior to class, and during presentations if necessary, collaborate with your TAs to prepare a slide deck of superlative "awards" for groups. Refer to [this example](https://docs.google.com/presentation/d/1Tca5VT_S13ioFUO-pewh_g9dJaBQ9prg-vsRwMjyDXU/edit?usp=sharing).
 
 ## Time Tracker
 
@@ -24,7 +28,7 @@ In this class, students will continue working on their API Projects. They will a
 
 - - -
 
-### 5. Groups Do: Project Work! (120 mins)
+### 1. Groups Do: Project Work! (160 mins)
 
 * Students should continue working on projects.
 
@@ -32,29 +36,15 @@ In this class, students will continue working on their API Projects. They will a
 
 - - -
 
-### 6. Everyone Do: BREAK! (30 mins)
+### 2. Everyone Do: BREAK! (30 mins)
 
 - - -
 
-### 8. Groups Do: Micro Presentations! (60 mins)
+### 3. Groups Do: Presentations! (80 mins)
 
-* Spend the last part of class having students give quick micro-presentations of their projects.
+* Spend the last part of class having students give presentations of their projects.
 
-* Make sure each group can tell you the absolute minimum they hope to have done by presentation day. Manage expectations around any project ideas which feel overly ambitions.
-
-* Once each group has presented their overall idea, give the rest of the class an opportunity to ask questions. If there are none, feel free to ask any of the following:
-
-  * How do you plan to split up the work?
-
-  * Who's group leader?
-
-  * How are things going so far?
-
-  * How did you come up with the idea?
-
-  * What was the hardest part of developing this project?
-
-### 9. END (0 mins)
+### 4. END (0 mins)
 
 ### Lesson Plan Feedback
 
