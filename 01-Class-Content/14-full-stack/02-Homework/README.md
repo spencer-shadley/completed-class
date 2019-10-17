@@ -22,7 +22,7 @@ When joining a new team, you will be expected to inspect a lot of code that you 
 
 ## Minimum Requirements
 
-* A link to a document or video with instructions on how to interact with the code in `Develop/`.
+* A link to a document or video with instructions on how what each section of code is doing in `Develop/`.
 
 - - -
 
