@@ -1,33 +1,47 @@
-## Week 15 - Agile Methodologies and Project 2
+# Unit 15: Project-2
 
-### Overview
+## Overview
 
-This week's lesson will introduce students to some more Agile methodologies and workflows. This is also a project week so classes will be split evenly between presentation of new material and independent work.
+In this unit, we will work with eslint and begin project 2 work.
 
+  * Refer to the [Class Content Unit Overview](../../../01-Class-Content/15-Project-2/README.md) for detailed information on key topics, learning objectives and homework.
+
+## Instructor / TA Notes
+
+Encourage students to spend time pseudocoding their project and researching APIs before writing any code.
+
+## Heads Up
+
+On Day 03 of the next unit, students will present their projects. Emphasize that students should focus on deploying a lean MVP, then add features with any time they have left.
+
+## Helpful Links
 
 ### Lesson Plans
 
-* [16.1 - Lesson Plan](01-Day/01-Day-LessonPlan.md)
-* [16.2 - Lesson Plan](02-Day/02-Day-LessonPlan.md)
-* [16.3 - Lesson Plan](03-Day/03-Day-LessonPlan.md)
+  * [15.1 - Lesson Plan](01-Day/15.1-LESSON-PLAN.md)
 
-### Project Resources
-Project-Resources/Slide-Shows
+  * [15.2 - Lesson Plan](02-Day/15.2-LESSON-PLAN.md)
 
-* [Project Requirements - Slide Deck](https://docs.google.com/presentation/d/1DldswLqfUbnvidzyMLhmZUwYpwy_CXI0WPx5pMUuDZo/edit?usp=sharing)
-* [Project Resources Folder - See README](Project-Resources)
+  * [15.3 - Lesson Plan](03-Day/15.3-LESSON-PLAN.md)
 
-### Homework Activities
+### Slide Decks
 
-There is no homework for this week's lesson. However, there are certain tests students are required to incorporate into their project for the week, [available here](Project-Resources).
+  * [15.1: Linting and Projects](https://docs.google.com/presentation/d/1DldswLqfUbnvidzyMLhmZUwYpwy_CXI0WPx5pMUuDZo/edit?usp=sharing)
 
-### Helpful Links
+  * [15.2: Agile & Projects](https://docs.google.com/presentation/d/1T7rSHI5Jpg6aE0OR7HhiJy4VEKcO8lm2eSwTUj5Wml8/edit?usp=sharing)
 
-* [Chai Documentation](http://chaijs.com/)
-* [Writing Testable JavaScript](http://alistapart.com/article/writing-testable-javascript)
-* [What Every Unit Test Needs](https://medium.com/javascript-scene/what-every-unit-test-needs-f6cd34d9836d#.56kpjhvo9)
+### Time Tracker(s)
 
-### Slide Shows
+  * [Unit 15-Project-2 Day 1 Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1WzJH4hM68jEdvVVLdHY9USvWf_qQ7cJn/view?usp=sharing)
 
-* [16.1 - Linting and Projects](https://docs.google.com/presentation/d/1DldswLqfUbnvidzyMLhmZUwYpwy_CXI0WPx5pMUuDZo/edit?usp=sharing)
-* [16.2 - Agile and Projects](https://docs.google.com/presentation/d/1WneP_OWJOsJ7ZVsp6_RjIZTZeK61GkqbVv6eS3Nn_oQ/edit?usp=sharing)
+  * [Unit 15-Project-2 Day 2 Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1h9TaBtJmCnxEV7Iprd-UUu0fRw1KbztS/view?usp=sharing)
+
+  * [Unit 15-Project-2 Day 3 Time Tracker](https://drive.google.com/a/trilogyed.com/file/d/1wtudESHJJegwHM01rCUe25iLxEflW2Zs/view?usp=sharing)
+
+## Algorithms
+
+  * [01-square-root](../../../01-Class-Content/15-Project-2/03-Algorithms/01-square-root)
+
+  * [02-needle-in-the-haystack](../../../01-Class-Content/15-Project-2/03-Algorithms/02-needle-in-the-haystack)
+
+  * [03-remove-duplicates](../../../01-Class-Content/15-Project-2/03-Algorithms/03-remove-duplicates)
