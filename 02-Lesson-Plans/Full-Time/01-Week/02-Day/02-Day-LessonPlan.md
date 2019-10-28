@@ -1,51 +1,37 @@
-## 1.2 Lesson Plan - Going Pro with HTML/CSS (10:00 AM) <!--links--> &nbsp; [⬅️](../01-Day/01-Day-LessonPlan.md) &nbsp; [➡️](../03-Day/03-Day-LessonPlan.md)
+# 01.2 Lesson Plan - Going Pro with HTML/CSS (10:00 AM) <!--links--> &nbsp; [⬅️](../01-Day/01-Day-LessonPlan.md) &nbsp; [➡️](../03-Day/03-Day-LessonPlan.md)
 
-### Slideshow
-
-* This lesson's slides are available on Google Drive here: [01-2 Git'n Pro with HTML/CSS](https://docs.google.com/presentation/d/14u7huMWQcjyN7cSwTEd3pvWfhczMp-KccY6ZGZ7ypns/edit?usp=sharing)
-
-* To add slides to the student-facing repository, download the slides as a PDF by navigating to File > "Download as" and choose "PDF document." Add the slide PDF file to your class repository along with other necessary files.
-
-* **Note:** Editing access is not available for this document. If you wish to modify the slides, please create a copy by navigating to File > "Make a copy...".
-
-- - -
-
-### Overview
+## Overview
 
 In this class we will be introducing students to the basics of HTML/CSS and then some more advanced CSS.
 
-`Summary: Complete Activities 4-9 in Unit 01`
+## Instructor Notes
 
-#### Instructor Priorities
-
-* Students will complete both the HTML and CSS examples.
-* Students will become fairly comfortable linking CSS files to HTML files using relative file paths in various directories.
-* Students will have a working knowledge of the terms "float", "box model", and "CSS positioning."
-* Students will gain initial exposure to working with CSS to build wireframe layouts.
-* Instructor will attempt to complete all slides within time allotment.
-
-##### Instructor Notes
+* `Summary: Complete Activities 4-9 in Unit 01`
 
 * There's a ton of material to cover here, but adjust it as necessary. Just make sure you leave enough time for the critical activities as this is essential for keeping classes in sync across sections.
 
 * Have your TAs reference [02-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/10vHQZl8JSk5bNJYMlgC6Jc15ivMM6ujR/view?usp=sharing) to help keep track of time during class.
 
-### Sample Class Video (Highly Recommended)
+## Sample Class Video (Highly Recommended)
 
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f2d65f7f-799e-4d4d-a712-15ffcef6e2a1)
 
-- - -
-
-### Class Objectives
+## Learning Objectives
 
 * To gain initial exposure to HTML/CSS and how the two are linked using element selectors
 * To become comfortable working with HTML relative paths
 
-- - -
+## Slides
+
+* [1.2 Git-HTML-CSS](https://docs.google.com/presentation/d/1-503hnlqNaj-cPjVjq4KA2VyfbDlvcErquBc73qh_ug/edit?usp=sharing)
+
+## Time Tracker
+
+* [1.2 Time Tracker](https://docs.google.com/spreadsheets/d/17iJQJG14grX0Mj9RAvdFQR5sBv5PgHMhe0VdwNyEF0E/edit?usp=sharing)
 
 ### 1. Instructor Do: Open Slide Deck + Welcome Students (1 min)
 
-* Take the first minute of class to welcome students back and to open up your slide deck, [01-2 Git'n Pro with HTML/CSS](https://docs.google.com/presentation/d/14u7huMWQcjyN7cSwTEd3pvWfhczMp-KccY6ZGZ7ypns/edit?usp=sharing).
+* Take the first minute of class to welcome students back and to open up your slide deck, [01-2 Git-HTML-CSS](https://docs.google.com/presentation/d/1-503hnlqNaj-cPjVjq4KA2VyfbDlvcErquBc73qh_ug/edit?usp=sharing).
 
 ### 2. Instructor Do: Admin Items (Slides) (1 min)
 
@@ -408,8 +394,6 @@ Explain that the syntax for the `.clearfix` class may appear strange now, but it
 
 ### Lesson Plan Feedback
 
-How did today's class go?
+How did today’s lesson go? Your feedback is important. Please take 5 minutes to complete this anonymous survey.
 
-[Went Well](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=ft&sentiment=positive&lesson=01.02)
-
-[Went Poorly](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=ft&sentiment=negative&lesson=01.02)
+[Class Survey](https://forms.gle/nYLbt6NZUNJMJ1h38)

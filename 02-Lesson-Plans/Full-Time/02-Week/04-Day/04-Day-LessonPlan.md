@@ -1,453 +1,1048 @@
-## 04-Day Lesson Plan - jQuery Begins <!--links--> &nbsp; [⬅️](../03-Day/03-Day-LessonPlan.md) &nbsp; [➡️](../05-Day/05-Day-LessonPlan.md)
-
-### Slideshow
-
-* This lesson's slides are available on Google Drive here: [02-4 jQuery Begins](https://docs.google.com/presentation/d/1QnP2YtA5yA2UWen0TQUE9PEt6Iyl_9-ZvdxHSSxtQak/edit?usp=sharing)
-
-* To add slides to the student-facing repository, download the slides as a PDF by navigating to File > "Download as" and choose "PDF document." Add the slide PDF file to your class repository along with other necessary files.
-
-* **Note:** Editing access is not available for this document. If you wish to modify the slides, please create a copy by navigating to File > "Make a copy...".
+# 02.4 Lesson Plan - Events and Event Handling (10:00 AM) <!--links--> &nbsp; [⬅️](../../02-Week/03-Day/03-Day-LessonPlan.md) &nbsp; [➡️](../04-Day/04-Day-LessonPlan.md)
 
 - - -
 
-### Overview
+## Overview
 
-In this class, we will be introducing students to the concept of DOM Manipulation using both JavaScript and jQuery.
+Todays class will be students first introduction to the DOM. We are going to use web APIs to get elements, set attributes, create elements, append elements, and even work with timers. We will further students' understanding of DOM Manipulation by using events, and prevent default form behaviors.
 
-`Summary: Complete activities 01-12 in Unit 04`
+## Instructor Notes 
 
-##### Instructor Priorities
+`Complete activities 6-19 in 04-web-apis`
 
-* Students should understand how to incorporate the jQuery library into their applications
-* Students should complete the `06-SandwichClick` activity.
-* Students should complete the `07-TriggerRandom` activity.
-* Students should complete the `08-LotteryGenerator` activity.
-* Students should understand how the `10-CaptainPlanetGame` works and be able to add new on-click events to it.
-* Students should complete the `11-FridgeGame` Activity.
+* This is a critical unit as it introduces real-world use cases for the programming concepts students learned in the previous unit (JavaScript) and will set them up for success when transitioning to front-end frameworks (React) at the end of the course.
 
-##### Instructor Notes
+* JavaScript is what ties together HTML and CSS and brings the user experience to life. Let students know that the work they are doing with JavaScript now will pay off heavily as the course proceeds.
 
-* Today's class is focused on JavaScript and jQuery DOM manipulations. As you discuss each of the activities, also try to offer your students some perspective on code organization strategies. While the activities may be too complex to live-code, consider at least outlining how you would approach them if you had to "start from scratch". Often, students are most confused by how to start activities when it comes to the separation of variables, events, and functions.
+* Students will be working with JavaScript throughout the whole course, be sure to remind them often that these are the building blocks for success.
 
-* In today's class, expect students to have many issues with jQuery syntax. Be encouraging and let them know that the syntax will seem more intuitive over time. For now, they should just try to utilize the syntax as is.
+* That said, the activities are designed to encourage independent exploration and experimentation as there are dozens of DOM methods available to developers and we will only scratch the surface here with those most commonly used. So have fun!
 
-* Starting with today's class, slides will play a less prominent role. Warn students of this and let them know that their time spent coding is where real learning will happen.
+## Class Objectives
 
-* Today's class is also focused on providing students with additional exposure to jQuery for DOM manipulation. As an instructor, ensure students understand the [10-CaptainPlanetGame](../../../../01-Class-Content/04-jquery/01-Activities/10-CaptainPlanetGame) and the [11-FridgeGame](../../../../01-Class-Content/04-jquery/01-Activities/11-FridgeGame).
+* By the end of class students will be able to:
 
-* Also, as a heads-up, next unit there will be an entire class allotted for reviewing JavaScript. So if your students seem winded -- give them a heads-up as well.
+  * Use timers/intervals to execute code based on some amount of time passing.
 
-* Have your TAs reference [04-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1oQJ_WfCRs8tYzWbIxoDmMZLLMxDm7SFY/view?usp=sharing) to help keep track of time during class.
+  * Use event listeners.
 
-### Sample Class Video (Highly Recommended)
-* To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a48b6376-8fd3-4475-a020-b67dfcf6fed2)
+  * Prevent default form behavior with `event.preventDefault()`.
 
-- - -
+  * Stop the propagation of events.
 
-### Class Objectives
+  * Dynamically generate DOM elements whose events are delegated.
 
-* To gain a cursory understanding of the jQuery library.
-* To understand the steps needed to utilize the jQuery library to manipulate the DOM.
-* To use jQuery DOM manipulation to create simple games.
+## Slides
+
+N/A
+
+## Time Tracker
+
+* [2.4 Time Tracker](https://drive.google.com/open?id=150xWlv1jCL2KGjajT-tUBiH5VnOQp6Vp2-0kAlxUhEE)
 
 - - -
 
-### 1.  Instructor Do: Welcome Students (1 min)
+### 1. Instructor Do: Create and Append (10 mins)
 
-* Welcome students to class then open the slide deck [02-4 jQuery Begins](https://docs.google.com/presentation/d/1QnP2YtA5yA2UWen0TQUE9PEt6Iyl_9-ZvdxHSSxtQak/edit?usp=sharing).
+* Welcome students back from break and get right into our next topic, creating HTML elements and appending them to the DOM via JavaScript.
 
-### 2.  Instructor Do: Admin Items (5 mins)
+* Navigate to [06-Ins_Create-Append/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/06-Ins_Create-Append/Solved/index.html) in your browser and demo its functionality.
 
-* Spend a few moments going through the administrative slides. Specifically, let students know that going forward there will be less utilization of slides. Remind them that the best way to learn to code is to actually code.
+  * It will ask for a tag to create using prompts, and append the given element to the page.
+  
+  * If a proper tag name is not given it will let the user know and not create the element.
 
-### 3.  Instructor Do: Today's Class (1 min)
+* Ask the class, "How was this functionality achieved?"
 
-* Go through the day's objectives.
+  * This is done using the DOM methods `.createElement` and `.appendChild`.
 
-### 4.  Instructor Do: DOM Manipulation (5 mins)
+  * When using `.createElement` we pass in the name of the tag we would like to create and store it as a variable so we can later add it to the DOM.
 
-* Spend a few moments explaining the concept of DOM manipulation. If you are hazy about the concept of the DOM, you may want to read this article <https://css-tricks.com/dom/>.
+  ```js
+  var newDiv = document.createElement("div");
+  ```
 
-* Effectively the DOM is the version of HTML / CSS interpreted by the browser.
+  * For us to show our newly created div on the page, we need to append it to the DOM via an existing element.
 
-* With regards to the slide, we can use JavaScript and jQuery to modify the DOM to dynamically change the HTML that gets displayed.
+  ```js
+  document.body.appendChild(newDiv);
+  ```
 
-* Visit the to-do list site on the slide [http://todomvc.com/examples/jquery/#/all
-  ](http://todomvc.com/examples/jquery/#/all) to provide a simple example that the addition of to-dos is effectively adding HTML in real-time.
+  * The above code would `append` newDiv to the body as a child element.
 
-* You can even go into the Chrome Developer tools to show this more clearly.
+* Answer any questions before proceeding to the next activity.
 
-### 5.  Instructor Demo: DOM Manipulation with Plain JS (10 mins)
+### 2. Student Do: Look Ma! No HTML! (20 mins)
 
-* Proceed with the first demonstration of class: [01-DOM_Manipulation](../../../../01-Class-Content/04-jquery/01-Activities/01-DOM_Manipulation). In this first demo, you will show students how to modify the DOM using vanilla JavaScript. In later portions of the class, you will re-do this activity using jQuery.
+* Direct students to the next activity, found in [07-Stu_LookMaNoHTML](../../../../01-Class-Content/04-web-apis/01-Activities/07-Stu_LookMaNoHTML/Unsolved).
 
-* This example is broken down into parts. Reveal each file one by one.
+```md
+# Look Ma! No HTML
 
-  * `1.html` is intended to simply show the empty div `empty-div` that we've created. This div will be used to hold our dynamic content.
+In this activity you are going to use DOM methods to create an entire HTML page.
 
-  * `2.html` is intended to show that we can "select" this div using `document.getElementById`. We can then populate the div using the `innerHTML` property. At this point, opening the file in the browser will showcase the text being displayed.
+## Instructions
 
-      ![image-1](Images/1-js-generators-1.png)
-      ![image-2](Images/1-js-generators-2.png)
+* You have been provided a standard HTML document. 
 
-  * `3.html` is intended to show that adding another line of `innerHTML` will replace the earlier text.
+* You may only work inside your `script`.
 
-      ![image-3](Images/1-js-generators-3.png)
-      ![image-4](Images/1-js-generators-4.png)
+* Inside `script` and using only DOM methods, create an entire HTML page. It should include:
 
-  * `4.html` shows that this replacement can be corrected if we create a new div dynamically and use the `appendChild` method to display it as well.
+  * A centered h1 with a centered h2 under it.
 
-      ![image-5](Images/1-js-generators-5.png)
+  * A centered image, with a center caption under it.
 
-  * `5.html` shows that we can use the `setAttribute` method to change the CSS style
+  * A list of your favorite foods (or some other list of favorites).
 
-      ![image-6](Images/1-js-generators-6.png)
-      ![image-7](Images/1-js-generators-7.png)
-      ![image-8](Images/1-js-generators-8.png)
-      ![image-9](Images/1-js-generators-9.png)
+  * Some extra styling to all elements.
+```
 
-* Go over any questions from the previous example, then slack out the file `5.html`.
+### 3. Instructor Do: Review Look Ma No HTML! (5 mins)
 
-### 6.Students Do: Generating HTML with Plain JS (10 mins)
+* Navigate to [07-Stu_LookMaNoHTML/Solved](../../../../01-Class-Content/04-web-apis/01-Activities/07-Stu_LookMaNoHTML/Solved)and open the solved `script.js` file in your IDE.
 
-* Slack out the following file and instructions:
+* The solution is split into 4 sections, go through each section with the class.
 
-* **File:**
+  * The first portion contains all of our references to existing elements, as well as all of our `.createElement` calls.
 
-  * `drinklist-unsolved.html` in `02-JSDrinkList/Unsolved`
+  * The next portion sets all of the `textContent` of our created elements.
 
-* **Instructions:**
+  * Next we begin the process of appending all of our created elements with the newly modified text content.
 
-  * Using the file sent to you as a starting point, add the missing code such that your JavaScript generates HTML content that displays all of the drink options.
+  * Finally we go through all of our elements and use `.setAttribute` to change the styles and set image sources.
 
-  * HINT:  You will need a for-loop. Inside your for-loop you will need to use each of the following methods: `createElement`, `.innerHTML`, and `.appendChild`.
+* Answer any questions students have about the solution and move onto our final topic of the day, timers.
 
-  * BONUS: Instead of using a `for` loop, try searching about the use of the jQuery `.each` method.
+### 4. Instructor Do: Timers and Intervals (15 mins)
 
-### 7.  Instructor Do: Review Activity (5 mins)
+* Executing code on a timer or interval allows us to set some amount of time to pass between functionality.
 
-* Review the activity. In discussing the solution, point out how:
+* Ask the class, "Where are timers used in applications?"
 
-  * We utilized the `getElementByID` method to grab the div we'll be placing content into. We then store this element into a variable.
+  * Countdowns
 
-  * We then use a for-loop to loop through the drink list.
+  * Calendars
 
-  * Inside the for-loop we continually create divs and change the `innerHTML` of each div to match the contents of each drink in the array.
+  * Games
 
-  * Finally, we used the `appendChild` method to add the new divs we created to the original one.
+* Navigate to [08-Ins_Timers-Intervals](../../../../01-Class-Content/04-web-apis/01-Activities/08-Ins_Timers-Intervals) and open the `index.html` in your browser. Demo the application to students and point out the following:
 
-    ![image-10](Images/2-js-drink-list-1.png)
-    ![image-11](Images/2-js-drink-list-2.png)
+  * After the countdown completes, an image is loaded to the browser all without user interaction.
 
-* Slack out the solution and the [video review](https://www.youtube.com/watch?v=9_9-NeU2L_U) when complete
+* Ask the class, "What allowed us to do this?"
 
-### 8. Instructor Do: Introduce jQuery (10 mins)
+  * The `setInterval` function allows us to complete code after a specific amount of time has passed.
 
-* Spend a few moments to introduce the concept of jQuery.
+* Navigate to [08-Ins_Timers-Intervals script.js](../../../../01-Class-Content/04-web-apis/01-Activities/08-Ins_Timers-Intervals/script.js) and open it in your IDE. Explain the following points to students:
 
-* In your discussion, explain that:
+  * First we declare our `setInterval` function and assign it to a variable. We will get to why we store it in a variable at the end.
 
-  * JavaScript alone is not ideal for performing these kinds of HTML modifications. Instead, jQuery provides a simplified syntax for doing the same tasks.
+  ```js
+  var timerInterval = setInterval(function() {
+  ```
 
-  * Explain the concept of a "library" (i.e. a pre-built set of JavaScript methods that allow you to more easily perform functions.) Try to have students see how this concept of a library is similar to the concept of a CSS Framework like Bootstrap.
+  * Next, we decrement our `secondsLeft` variable that we initially set to `10`.
 
-  * Go through the slides on use cases.
+  ```js
+  secondsLeft--;
+  ```
 
-### 9.  Instructor Do: DOM Manipulation with jQuery (10 mins)
+  * As each second passes we set the textContent of our `timeEl` to display the `secondsLeft` variable concatenated with a string. If our `secondsLeft` is 0, we then `clearInterval` and execute our `sendMessage` function.
 
-* Now return to the example completed before. But this time, use [03-jQueryGenerators](../../../../01-Class-Content/04-jquery/01-Activities/03-jQueryGenerators).
+  ```js
+  timeEl.textContent = secondsLeft + " seconds left till colorsplosion.";
+  if(secondsLeft === 0) {
+    clearInterval(timerInterval);
+    sendMessage();
+  }
+  ```
 
-* As with the last case, this one is divided into separate files to make it easier to explain in pieces.
+* Sometimes programmers want functionality to happen after a set period of time, and not all right away. We use timers to achieve this result.
 
-  * `1.html` shows how we add in the jQuery library script at the top and that we use the $ selector to grab the div of interest. It also shows that we can change the HTML and append in just two lines. Be sure to point out how much simpler this is then the plain javascript version.
+* `setTimeout` and `setInterval` are two methods that allow for us to execute code based on time.
 
-    ![image-12](Images/3-jQuery-generators-1.png)
+  * These two methods are actually above the `document` object and are attached directly to the `window`.
 
-  * `2.html` points out that we could also create separate divs on the fly.
+* When using either of these timer methods, The first parameter is a function to be executed. The second parameter indicates the amount of time in milliseconds before execution.
 
-  * `3.html` points out that we can change the HTML class as well.
+  ```js
+  setTimeout(function(){
+    console.log("complete");
+  }, 1000);
 
-    ![image-13](Images/3-jQuery-generators-2.png)
-    ![image-14](Images/3-jQuery-generators-3.png)
+  setInterval(function(){
+    console.log("this will show every second");
+  }, 1000)
+  ```
 
-* Slack out the file `3.html` when complete.
+* `setTimeout` will execute the body of the function one time, once the allotted amount of time has passed.
 
+  * `setInterval` will execute the body of the function every X amount of milliseconds as specified in the second argument to the `setInterval` function.
 
-### 10. Students Do: Generating HTML with jQuery (10 mins)
+* Ask the class why they think we might need to clear an interval that we started.
 
-* Proceed with the drinkList exercise. This time students will re-complete it using jQuery.
+  * If we do not `clearInterval`, the interval would continue to run indefinitely. We stored our `setInterval` function in a variable so we could pass that instance into our `clearInterval`, stopping execution.
 
-* Slack out the following file and instructions.
+  * `setTimeout` has its own method for stopping execution, `clearTimeout`.
 
-* **File:**
+* Answer any questions students may have about the demo. 
 
-  * `jquery-drink-list-unsolved.html` in `04-jQueryDrinkList/Unsolved`
+### 5. Student Do: Speed Reader (30 mins)
 
-* **Instructions:**
+* Direct students to the final activity of class, in [09-Stu_SpeedReader](../../../../01-Class-Content/04-web-apis/01-Activities/09-Stu_SpeedReader/Unsolved).
 
-  * Re-factor (re-write) your previous drinkList code from earlier, but this time use jQuery to complete all of the same tasks.
+```md
+# Speed Reader 
 
-  * Your final code should NOT have any of the following methods: `createElement`, `innerHTML`, or `appendChild`.
+In this activity you are going to create a speed reading application. It will input a single word on the screen at a time, changing to the next word after 1 second. This equates to reading at 60 Words Per Minute (WPM).
 
-  * HINT: Don’t forget to “incorporate” jQuery before you begin.
+## Instructions
 
-### 11. Instructor Do: Review Activity (5 mins)
+* The app should countdown from 5, and when the countdown is finished it should print one word to the screen every second. Each word replaces the other.
 
-* Review the previous exercise. In your review point out each of the following
+* Open `index.html` and create the necessary HTML. You will need at least 3 elements.
 
-  * We used jQuery to grab the `drink-options` div.
+* Open `script`.
 
-  * We then created a new div and added content about the drinks (in a single line)
+  * The two function names have been created for you, as well as a poem to speed read.
 
-  * We then looped through and used the `append` to add the content to the page.
+* Fill out the necessary code that would create a countdown timer. When that timer completes, it should dissapear and speed reading should begin.
+```
 
-      ![image-15](Images/4-jQuery-drink-list-1.png)
+### 6. Instructor Do: Review Speed Reader (10 mins)
 
-### 12. Instructor Do: On Click Basic (5 mins)
+* Navigate to [09-Stu_SpeedReader/Solved](../../../../01-Class-Content/04-web-apis/01-Activities/09-Stu_SpeedReader/Solved)
 
-* Open the file `onclick.html` in `05-OnClickBasic`. Then walk students through the syntax for `on-click` events. Specifically, point out how:
+* Open the solved `script` file and show students the completed solution.
 
-  * The code has a jQuery selector to select the HTML element (button, header, anything)
+* Point out these main points to students:
 
-  * It then has a `.on('click', function(){})` syntax for capturing the event.
+  * In our `prepareRead` function we store our interval in a variable so we can clear it later.
 
-  * Inside that event's function is the code that results from the click.
+  ```js
+  var timeInterval = setInterval(function() {
+  ```
 
-      ![image-16](Images/5-onclick-basic.png)
+  * When the timer has run out, we empty the `textContent` of the `timerEl` and then execute our `speedRead` function.
 
-* Students will likely be confused by the syntax. Let them know to use it for now -- and that it will make more sense over time as we learn other concepts.
+  ```js
+  if (timeLeft === 0) {
+    timerEl.textContent = " ";
+    speedRead();
+    clearInterval(timeInterval);
+  }
+  ```
 
-### 13. Partners Do: Sandwich Clicking (20 mins)
+  * We used a prompt to ask the user to enter the speed at which they would like to read, we passed that response in as the second argument of our `speedRead` setInterval.
 
-* Slack out the following file and instructions. If you are attempting the bonus, find some fun images online.
+  ```js
+  }, speed);
+  ```
 
-* **File:**
+   * As opposed to a fixed value, i.e.,
 
-  * `sandwich-click-unsolved.html` in `06-SandwichClick/Unsolved`
+   ```js
+   }, 1000);
+   ```
 
-* **Instructions:**
+  * In the beginning of our `speedRead` function we append our `bodyEl`, generated via `createElement`, to the `mainEl` of our HTML page.
 
-  * Add in the missing code such that clicking any of the sandwiches causes…
+  ```js
+  mainEl.append(bodyEl);
+  ```
 
-    1. An alert message to pop-up saying something snarky about the sandwich type.
+  * We use an `if` statement to check whether the piece we are reading is over. When `words[i]` begins to evaluate to undefined and not a word, we terminate the interval via `clearInterval`. As long as `words[i]` evaluates to a word from our array, we make the content of our `mainEl` reflect that.
 
-    2. A second alert message that displays to the user the number of that specific sandwich they’ve eaten.
+  ```js
+  if (words[i] === undefined) {
+    clearInterval(poemInterval);
+  } else {
+    mainEl.textContent = words[i];
+    i++;
+  }
+  ```
 
-    3. HINT: You will need counter variables.
+### 7. Instructor Do: Demo Events (10 min)
 
-  * BONUS: Add an image to the `image-div` on the click event.
+* Open [fs-ground-04-web-APIs-event-demo](https://coding-boot-camp.github.io/fs-ground-04-web-APIs-event-demo/) and demonstrate the application functionality:
 
-### 14. Instructor Do: Review Activity (5 mins)
+  * We can add people to the list.
+  
+  * Clicking `edit` next to any name opens a modal.
 
-* Review the activity. Be sure to talk about:
+  * We can add details about the person and `save` the data.
 
-* The use of counter variables at the top.
-![image-17](Images/6-sandwich-1.png)
+  * We can return to any person on the list, and see that the details are still there. 
 
-* The on-click events tied to each of the sandwich headers. The on-click events trigger the counter to go up and creates the alerts.
-![image-18](Images/6-sandwich-2.png)
-![image-19](Images/6-sandwich-3.png)
+  * 📝 Our form is not routing us to a new page! How?
 
-* In discussing the bonus, point out how images can be added. Note that we are injecting HTML with the src pointing to the jpg.
-![image-20](Images/6-sandwich-4.png)
+* Ask the class the following question(s):
 
-* Slack out the solution and the [video review](https://www.youtube.com/watch?v=6BLReDBUZRk) when done.
+  * "How would we build this application?"
+
+  * Use student answers to transition to the next activity.
+
+### 8. Instructor Do: Pseudocode Modal Demo (10 min)
+
+* Open a new (blank) file in your IDE and lead students in outlining the steps to build the modal activity in pseudocode. Refer to the following pseudocode example. There is no one *right* solution. The purpose of this activity is to reinforce problem solving strategies and prepare students for technical interview questions.
+
+* Ask the class the following question(s):
+
+  * "What is the first thing our app needs so a user can add another user to the list?"
+
+  * We need an input field for `name`.
+
+  * We need some way to gather the data from `name` when `Add Person` is pressed.
+
+* Ask the class the following question(s):
+
+  * "When a user adds a new user to the HTML form and clicks `Add Person`, what happens next?"
+
+  * We need to dynamically create a new list item.
+
+  * We append an `edit` button to that new list item.
+
+  * Then we append the new list item to the main people list.
+
+* Ask the class the following question(s):
+
+  * "What needs to happen when a user clicks the "edit" button?"
+
+  * The modal needs to display on the page, and the contents of the modal should populate with details about the person that we clicked.
+
+* Ask the class the following question(s):
+
+  * "What needs to happen when a user clicks the `save` button?"
+
+  * The modal needs to disappear.
+
+  * We need some way of keeping track of which person has which description.
+
+* Ask the class the following question(s):
+
+  * 'How can we make our web applications more interactive?'
+
+* Use student answers to transition to the next demo.
+
+### 9.  Instructor Do: On Click Demo  (10 min)
+
+* Open [10-Ins_Onclick/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/10-Ins_Onclick/index.html) in the browser and demonstrate its functionality:
+
+  * When we click on the toggle switch, the background color of the navigation and the footer both change colors.
+
+* Open [10-Ins_Onclick/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/10-Ins_Onclick/script.js) in your IDE and point out the following:
+
+  * We assign each queried element to a variable so that we can reuse it.
+
+  ```js
+  var themeSwitcher = document.querySelector("#theme-switcher");
+  var container = document.querySelector(".container");
+  ```
+
+  * `addEventListener` is the DOM method responsible for listening to events on an element.
+
+  * `addEventListener` has 2 required parameters: The type of event to listen for and a callback function to execute when that event is triggered.
+
+  ```js
+  themeSwitcher.addEventListener("click", function() {
+    if (mode === "dark") {
+      mode = "light";
+      container.setAttribute("class", "light");
+    } else {
+      mode = "dark";
+      container.setAttribute("class", "dark");
+    }
+  });
+  ```
+
+### 10.  Students Do: addEventListener (10 min)
+
+* Direct students to the next activity, found in [11-Stu_Onclick/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/11-Stu_Onclick/Unsolved)
+
+```md
+# addEventListener On Click
+
+In this activity, we are going to create a button that increments a counter when clicked.
+
+## Instructions
+
+* In a file called `index.html`, create a button containing the string "Increment".
+
+* In a file called `script.js`, create an event listener with a callback that increments the counter and displays the updated count on the webpage.
+
+* Add a button that decrements the counter when clicked.
+
+## Bonus
+
+* Add some code to ensure that the count never gets below 0.
+```
+
+### 11. Instructor Do: Review OnClick (5 min)
+
+* Open the file [11-Stu_Onclick/Solved/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/11-Stu_Onclick/Solved/index.html) in the browser.
+
+  * Clicking on the increment or decrement buttons raises or lowers our number dependant on which button we click.
+
+  * The count in the middle gets updated every time the button gets pressed.
+
+  * The count never falls below 0.
+
+* Open [11-Stu_Onclick/Solved/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/11-Stu_Onclick/Solved/script.js) in your IDE.
+
+  * We initialize global variables for `count` variable, `incrementEl`, and the `decrementEl` elements in DOM.
+
+  ```js
+  var count = 0;
+  var incrementEl = document.querySelector("#increment");
+  var decrementEl = document.querySelector("#decrement");
+  ```
+
+  * The second argument of `addEventListener` is an anonymous callback function. This function will execute the body of the callback each time the event is triggered.
+
+  ```js
+  incrementEl.addEventListener("click", function() {
+    count++;
+    setCounterText();
+  });
+  ```
+
+  * 🗒 Note that many students may have appended the count to the page inline instead of breaking it out into its own function.
+
+  * To complete the bonus we need a conditional that ensures that the count only decrements if the current value is greater than 0.
+
+  ```js
+  decrementEl.addEventListener("click", function() {
+    if(count > 0) {
+      count--;
+      setCounterText();
+    }
+  }); 
+  ```
+
+### 12. Instructor Do: Intro to event.preventDefault (10 min)
+
+* We will be spending some more time with forms. We will be learning about how to prevent some of the default form behavior so that we can manipulate data before sending it to a server.
+
+* Ask the class the following question(s):
+
+  * "What do you remember about forms?"
+
+  * There are several type of inputs including check boxes, text fields, radio buttons, and select.
+
+  * Forms also have default behaviors that occur on submission.
+
+* Explain that if a button inside a `<form>` element is clicked, the information in all texts fields within the page is cleared out. This is default behavior that the browser enforces with all buttons within the form.
+
+* Ask the students why this may be a problem.
+
+  * We may want to retain that information on the page after the form has been submitted.
+
+  * We could have other buttons within the form that should not submit the results.
+
+* To avoid this default behavior, we use method called prevent default. 
+
+* Open [12-Ins_Preventing_Default_Events/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/12-Ins_Preventing_Default_Events/script.js) in your IDE.
+
+  * We pass the callback to `addEventListener`, which has a parameter that represents the event object.
+
+  ```js
+  submitEl.addEventListener("click", function(event) {
+    event.preventDefault();
+
+    console.log(event);
+    
+    var response = "Thank you for your submission " + nameInput.value + "! We will reach out to you at " + emailInput.value + ".";
+    submissionResponseEl.textContent = response;
+  });
+  ```
+
+* Open [12-Ins_Preventing_Default_Events/index.js](../../../../01-Class-Content/04-web-apis/01-Activities/12-Ins_Preventing_Default_Events/index.html) in your browser and open the dev tools. 
+
+  * Enter values into the input fields and click on the submit button.
+
+  * Demonstrate that the entire click object appears in the console.
+
+  * In the console, expand the `event` object and let students know that the event object is a large object that contains lots of data about the mouse event.
+
+* Ask the class the following question(s):
+
+  * What are these properties are used for?"
+
+  * `ctrlKey` and `altKey` are booleans used to describe whether or not the user was holding down the key while they clicked.
+
+  * If students ask about properties that you're unsure about, demonstrate that we can find out how they work by searching the [Mouse Event section of Mozilla's Documentation](https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent).
+
+* The event object contains metadata about a users interaction with the webpage. While the event we just observed is a mouse event, there are also keyboard events, mouse scroll events, and more.
+
+* Return to [12-Ins_Preventing_Default_Events/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/12-Ins_Preventing_Default_Events/script.js) in your IDE and comment out the `event.preventDefault()` line. 
+
+* With the console open submit values again.
+
+  * We click the button and we submit the form. 
+  
+  * When this happens, the event object appears in the console for a brief moment and all inputs are cleared. 
+  
+  * This is the default behavior for form submissions. In order to prevent this default behavior, we use the `event.preventDefault` method.
+
+* Answer any questions before moving onto the next activity.
 
 - - -
 
-### 15. LUNCH BREAK (30 mins)
+### 13. Break (30 mins)
 
 - - -
 
-### 16. Partners Do: Trigger Random (12 mins)
+### 14. Student Do: Tip Calculator (15 min)
 
-* Slack out the following file and instructions.
+* Direct students to the next activity, found in[13-Stu_Preventing_Default_Events/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/13-Stu_Preventing_Default_Events/Unsolved)
 
-* **File:**
+```md
+# Preventing Default Events
 
-  * `trigger-random-unsolved.html` in `07-TriggerRandom/Unsolved`
+In this activity, we are going to create a form that calculates a suggested tip amount based off of the total of the bill.
 
-* **Instructions:**
+## Instructions
 
-  * Add in the missing code such that clicking the big blue button triggers a random number (between 1 and 1000) to be selected and prominently displayed in the random-number div.
+* In a file called `index.html`, create a form with the following elements:
 
-    * Hint: None. You got this.
+1. An input for the total price of the meal
 
-### 17. Instructor Do: Review Activity (5 mins)
+2. An input for the tip percentage
 
-* Review the activity. Be sure to point out that:
+3. A button to calculate the tip
 
-  * We latched onto the `random-button` using its ID. Let them know where to focus their attention: Not the classes, and not the spans. The ID is what mattered in this case.
+* In a file called `script.js`, create an event listener that utilizes the values from the input fields to calculate the reccommended tip and the new total of the bill with tip included.
 
-    ![image-21](Images/7-trigger-random-1.png)
+* Once these values are calculated, display them on the page.
 
-  * We then created a click event tied to this `random-button`. This event triggers a random number between 1 and 1000 to be generated and printed to the HTML.
+## Bonus 
 
-    ![image-22](Images/7-trigger-random-2.png)
+* Add a feature that gives users the option to evenly split the total between any number of people. Make sure to add code to ensure that the split total will be rounded to two decimal places. 
 
-* Slack out the solution when done.
+## Hint
 
-### 18. Partners Do: Lottery Generator (15 mins)
+* In JavaScript, we have a function that rounds a number to a given point called `toFixed()`. For more information, visit the docs at [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed)
+```
 
-* Open the file `lottery-generator-solved.html` in the browser. Show students how the final result of their work will look.
+### 15. Instructor Do: Review Tip Calculator (5 min)
 
-* Then slack out the following file and instructions.
+* Navigate to [13-Stu_Preventing_Default_Events/Solved/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/13-Stu_Preventing_Default_Events/Solved/index.html) and open it in your browser.
 
-* **File:**
+* Enter a total into the input field and click the `Calculate Tip` button. 
 
-  * `trigger-random-unsolved.html` in `07-TriggerRandom`
+* Click the `I'm feeling lucky` button and point out that the tip changes with every click.
 
-* **Instructions:**
+* Split the tip between any number of people and point out that the input field has increment and decrement buttons built in.
 
-  * Using the code from the previous random number generator as a starting point, create a lottery generator.
+  * The built in buttons are due to the attribute `type=number`. The input field also has the attribute `min=0` which prevents the user from decrementing once they reach zero.
 
-    * In our case, the lottery number should pick 9 random numbers (and always 9 numbers). As an example: 886563264.
+* Open [13-Stu_Preventing_Default_Events/Solved/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/13-Stu_Preventing_Default_Events/Solved/script.js) in your IDE and point out the following:
 
-    * Display this number in the random-number div.
+  * No functions are actually executed until the bottom of the file. 
 
-    * Then when a user clicks again, have the code create a new row with the latest number at the top.
+* Some students may have chosen to write the callback function inline. This is completely fine. 
 
-### 19. Instructor Do: Review Activity (5 mins)
+* Ask the class the following question(s):
 
-* Review the activity. Be sure to discuss that:
+  * "Why might it be helpful to write a separate function for that code?
 
-  * We needed to create a for loop that created 9 different numbers. Without this for loop, we couldn't guarantee that we'd have 9 numbers. Also, point out that we are using `prepend` as opposed to `append` so that the newest number shows up at the top.
-    ![image-23](Images/8-lottery-1.png)
+  * Writing a named function helps separate the logic from the event listener.
 
-  * The end result of the lottery looks like the below.
-    ![image-24](Images/8-lottery-2.png)
+  * Creating a named function also allows the function to be reused throughout the program. Any other function could call `addTip` if needed.
 
-* Slack out the solution and [video review](https://www.youtube.com/watch?v=Nh4wxhzePIs) when done.
+  ```js
+  submitEl.addEventListener("click", addTip);
+  ```
 
-### 20. NumberChecker (15 mins)
+  * We still have access to the click event inside `addTip` since it is being called as a callback in the `addEventListener` function.
 
-* If any additional time remains, slack out the following activity. This activity is useful for students in completing the homework, but it is not necessary for them to complete it in class.
+  ```js
+  function addTip() {
+  event.preventDefault();
+  ```
 
-* **File:**
+  * We get the values from the total and tip percentage input fields, then call `calculateTip`. Remind the students that the value from input fields of `type=text` are always strings.
+  
+  ```js
+  var tipPercentage = tipEl.value;
+  var total = totalEl.value;
+  var tipAmount = calculateTip(total, tipPercentage);
+  ```
 
-  * `Unsolved/number-checker.html` in `09-NumberChecker`
+  * `toFixed(n)` is a number prototype method that returns a number and rounds it to the *nth* decimal place. Here, `n` is a variable that we use to describe an unspecified number in a series of numbers. We use this method because we want our total to be rounded to the nearest cent.
 
-* **Instructions:**
+  * Even though `total` and `tipPercentage` are strings, we can still multiply them. This is because in JavaScript, the `*` operator coerces both arguments from strings into numbers before multiplying them. This is also the case for all arithmetic operators *except* for addition.
 
-* Using the file slacked out as an example, create code in which:
+  ```js
+  function calculateTip(total, tipPercentage) {
+    var roundedResult = (total * tipPercentage).toFixed(2);
+    return roundedResult;
+  }
+  ```
 
-  * A computer picks a random number between 1 and 4
+  * Since both `total` and `tipAmount` are strings, we need to convert them into numbers before adding them. Remind students that the `+` operator concatenates strings.
 
-  * Users then “click” the buttons numbered 1 – 4.
+  * To do this, we use a global method called `parseFloat()` which takes a string as an argument and returns a decimal number, or floating point number. 
+  
+  * If any student asks what a floating point number is, simply explain that it is a number that contains a fraction. We use the term `float` to differentiate from the other type of number, `Integer`.
 
-  * If the user’s number matches the computer’s number, display text informing them that they won in the Result card. Otherwise, display text informing them that they lost.
+  ```js
+  function calculateTotal(total, tipAmount) {
+    return parseFloat(total) + parseFloat(tipAmount);
+  }
+  ```
 
-  * If you finish early, try to improve the aesthetics.
+  * Next point out that the bonus can be achieved by taking the text content of the `total` element and dividing it by the value from a field that describes how many people to split the bill between.
+
+  * Lastly, `toFixed` should be used to ensure that the split amount only contains two decimal places.
+
+  * Remind the students that they must use `event.preventDefault` to stop the form from automatically attempting to submit when the `split` button is clicked.
+
+  ```js
+  function splitTotal() {
+    event.preventDefault();
+
+    var total = document.querySelector("#new-total").textContent;
+    var numPeople = document.querySelector("#num-people").value;
+    
+    var newTotal = (total / numPeople).toFixed(2);
+    document.querySelector("#split-total").textContent = newTotal;
+  }
+  ```
+
+* Briefly open [13-Stu_Preventing_Default_Events/Solved/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/13-Stu_Preventing_Default_Events/Solved/index.html) in your browser and point out the following.
+  
+  * We query the elements `num-people`, `split`, and `split-total` in our JavaScript file.
+
+  * We can add the attributes `type="number"` and `min="0"`. This means that the value from the input field will now be a number and will increment by whole numbers if the user uses the small arrow buttons to increase or decrease the value.
+
+  * 🗒 Note that this does not replace validation and will not prevent users from manually entering a number smaller than zero.
+
+  ```html
+  <h2>
+    Bonus:
+  </h2>
+  <h4>
+    Split between <input id="num-people" type="number" min="0" /> people
+  </h4>
+  <button id="split" >
+    Split
+  </button>
+  <h2>Each person will pay: <span id="split-total"></span></h2>
+  ```
+
+### 16. Instructor Do: Demo key events (5 min)
+
+* Open [14-Ins_Other_Events/index.html](../../../../01-Class-Content/04-Web-APIs/01-Activities/14-Ins_Other_Events/index.html) in your browser.
+
+* Demonstrate that the application works as intended by switching the typeface.
+
+  * Select serif, then go back to sans-serif. 
+
+  * Type some random text in the textarea.
+
+* Open `index.html` and point out the following:
+
+  * The form element only needs `<select>`, a `<textarea>`, and a `<button>` to clear the text.
+
+```html
+<form>
+  <select id="typeface">
+    <option value="serif">
+      serif
+    </option>
+    <option value="sans-serif">
+      sans-serif
+    </option>
+  </select>
+  <div style="margin-top: 50px;">
+    <textarea id="textarea" placeholder="Your input" ></textarea>
+    <div>
+      <button id="clear">Clear</button>
+    </div>
+  </div>
+</form>
+```
 
-### 21.  Instructor Do: Captain Planet Game  (5 mins)
+* Open [14-Ins_Other_Events/script.js](../../../../01-Class-Content/04-Web-APIs/01-Activities/14-Ins_Other_Events/script.js) and point out the following: 
 
-* Open the file [captain-planet-game.html](../../../../01-Class-Content/04-jquery/01-Activities/10-CaptainPlanetGame/Solved/captain-planet-game.html) in `10-CaptainPlanetGame/Solved` in the Browser. Click on various buttons and show students how Captain Planet is being modified in response to the clicks.
+  * We use `querySelector` to gather all of the elements we would like to target into variables.
 
-  ![image-1](Images/1-captain-planet.png)
+  ```js
+  var typefaceEl = document.querySelector("#typeface");
+  var clearEl = document.querySelector("#clear");
+  var h1El = document.querySelector("#h1");
+  var h2El = document.querySelector("#h2");
+  var h3El = document.querySelector("#h3");
+  var pEl = document.querySelector("#p");
+  var textAreaEl = document.querySelector("#textarea");
+  ```
+  * We create an array of elements so that we can later loop over them.
+  
+  ```js
+  var elements = [
+    h1El, h2El, h3El, pEl
+  ];
+  ```
 
-### 22.  Students Do: Pseudocode Captain Planet  (5 mins)
+  * We add a listener to the typeface `<select>` element. A *change* listener will execute its callback every time the value of the `<select>` element is changed. This is how we get our desired behavior of updating the CSS every time the font typeface is changed.
 
-* Proceed with the first activity, in which you ask students to pseudocode the game's logic and structure.
+  ```js
+  var typeface;
 
-### 23.  Instructor Do: Review Pseudocode (5 mins)
+  typefaceEl.addEventListener("change", function(event) {
+    event.preventDefault();
+    typeface = typefaceEl.value;
+    document.querySelector(".container").style.fontFamily = typeface;
+  });
+  ```
 
-* Allow students to share their pseudocode breakdowns.
+  * In our textarea, we've added an event listener to the keydown event. First we use a conditional to make sure that the key is a letter, number, or space. We use the `key` property since `keyCode` and `charCode` have been deprecated.
 
-* Then show your own pseudocode outline (shown on slide).
+  * We create an array of all alphanumeric characters, then we use `Array.includes` to make sure that the key pressed is alphanumeric. 
 
-### 24.  Students Do: Create a Superpower Captain Planet (12 mins)
+  * Once we've determined that the key being pressed is a valid choice, we append the string to each element in our `elements` array.
 
-* Slack out the code for the game.
+  ```js
+  textAreaEl.addEventListener("keydown", function(event) {
+    event.preventDefault();
+    var key = event.key.toLowerCase();
+    var alphabetNumericCharacters = "abcdefghijklmnopqrstuvwxyz0123456789 ".split("");
+    if (alphabetNumericCharacters.includes(key)) {
+      elements.forEach(function(element) {
+        element.textContent += event.key;
+      });
+    }
+  });
+  ```
 
-* Then task students with dissecting it, and adding additional code to create a new power for Captain Planet. At base, this requires them to create a new button, create a new on-click event, and then create code that changes the CSS for Captain Planet in response to button clicks.
+  * Lastly, we add a `clear` function that will clear out the `textContent` of each element when its button is pressed.
 
-* **Folder:**
+  ```js
+  clearEl.addEventListener("click", function(event) {
+    event.preventDefault();
+    textAreaEl.value = "";
+    elements.forEach(function(element) {
+      element.textContent = "";
+    });
+  });
+  ```
 
-  * `10-CaptainPlanetGame` in `10-CaptainPlanetGame/Unsolved`
+### 17. Student Do: Listening For Other Events (10 min)
 
-* **Instructions:**
+* Direct students to the next activity, found in [15-Stu_Other_Events/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/15-Stu_Other_Events/Unsolved)
 
-  * Look at the jQuery API Docs [(https://api.jquery.com/)](https://api.jquery.com/) and add a button of your own that gives Captain Planet a new power.
+```md
+# Listening For Other Events
 
-  * Examples:
+## Instructions
 
-    * Click to… Stretch Captain Planet!
-    * Click to… Trigger a maniacal laugh!
-    * Click to… Create clones of Captain Planet!
-    * Click to… Create fire or water (hint: images)!
+* In this activity, we are going to create a webpage that will allow us to view some meta data about different kinds of events.
 
-  * Slack out a screenshot of the working example.
+* Open the `index.html` file in your browser and take a moment to study the application.
 
-* **Instructor:**
-  * Feel free to give students additional time here if necessary. Make sure the majority of your students have at least a basic example that works.
+* Take a moment to study the code in `index.html` then add the following functionality to the application:
 
-### 25.  Instructor Do: Review Captain Planet    (5 mins)
+  1. The select element should trigger the `toggleDisplay` function in `script.js`.
 
-* Have a student with a working solution share their code with you. Then ask them to present at the front of the class.
+  2. If `key` is selected, the event's code, key, and status (keydown or keyup) should be displayed in the `#key-events` div when the user presses a key anywhere on the document.
 
-* If no one has a working example, quickly create code of your own that "stretches" Captain Planet. You can use the version found in [10-CaptainPlanetGame/Solved/captain-planet-game.html](../../../../01-Class-Content/04-jquery/01-Activities/10-CaptainPlanetGame/Solved/captain-planet-game.html) as an example.
+  3. If `click` is selected, the text content of the event's target, and the cursor's x and y coordinates should be displayed in the `#click-events` div when the user clicks the anywhere on document.
 
-### 26.  Instructor Do: jQuery Recap   (5 mins)
+## Bonus
 
-* Next, spend a few moments going through the jQuery recap slides. The most important thing to explain in discussing these slides is the fact that jQuery is "capturing" HTML elements using the `$()`, and that we are then applying various methods to that element (or a different one in response).
+* If time permits, take a moment to research some other JavaScript events.
+```
 
-* Finally, point out that students shouldn't expect to memorize all of the jQuery library. Point out that coding is all about understanding a general concept, and then "looking up" the exact code when needed.
+### 18. Instructor Do: Review Other Events (5 min)
 
-* Field any questions that remain before proceeding to the next activity.
+* Open [15-Stu_Other_Events/Solved/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/15-Stu_Other_Events/Solved/index.html) in your browser.
 
-### 27. Students Do: Fridge Game  (30 mins)
+* Demonstrate that the application works by holding down a key for a couple of seconds, then releasing it.
 
-* Open the solution file [11-FridgeGame](../../../../01-Class-Content/04-jquery/01-Activities/11-FridgeGame/Solved/fridge.html) in `11-FridgeGame/Solved`, and show students how the application works. In short, the application allows users to click on letters from a menu and have those letters appear on the fridge.
+* Select the *click events* option and click on an html element or two.
 
-* Then, slack out the below folder and instructions.
+  * Point out that if we click the on a spot that doesn't have an html element, the `textContent` from each element on the page is appending to the `target` span.
 
-* **Folder:**
+* Ask students why clicking on a blank spot on the page adds the entire page to `target`.
 
-  * `Unsolved` in `11-FridgeGame/Unsolved`
+  * This is because the `textContent` property returns **all** text content from the DOM node and its children.
 
-* **Instructions:**
+* Next open [15-Stu_Other_Events/Solved/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/15-Stu_Other_Events/Solved/script.js) and go over the solution.
 
-  * Working in groups of 3, complete the code for the fridge activity such that:
+  * We grab the `key` and `code` properties and append them to their respective span elements on the page.
 
-    1. JavaScript dynamically generates buttons for each of the letters on the screen.
+  * Since this function is only ran if the keydown activity, we can explicitly set the status text content to be `KEYDOWN Event`.
 
-    2. Clicking any of the buttons leads the SAME letter to be displayed on the screen.
+  * Remind students that although we did not write this function inline with the event listener, we still have access to its  
 
-    3. Hitting the clear button erases all of the letters from the fridge.
+  ```js
+  function keydown(event) {
+    var keyPress = event.key;
+    var keyCode = event.code;
+    document.querySelector("#key").textContent = keyPress;
+    document.querySelector("#code").textContent = code;
+    var status = document.querySelector("#status");
+    status.textContent = "KEYDOWN Event";
+  }
+  ```
 
-  * Note: This is a challenging exercise. You may want one person to type, while the other two watch over to catch bugs and/or research necessary snippets.
+* Ask the class the following question(s):
 
+  * 'What other types of user interactions might we want to capture?'
 
-### 28. Instructor Do: Review Fridge Game   (10 mins)
+  * Hover/mouseover events
 
-* Spend the time necessary to ensure that the majority of students have a conceptual understanding of how the Fridge Game's code works. In explaining the solution, point out the following:
+  * onChange events
 
-  * The creation of an array that holds all of the letters;
+  * onLoad events
 
-  * The for loop used to take letters from the array, associate each with a data-attribute and text, and then append them onto the page. Students will be confused about the concepts of `.addClass`, `.attr`, and `.text`. Spend the time necessary to explain each.
+* Answer any remaining questions and let students out for break.
 
-    ![image-2](Images/2-fridge-1.png)
+### 19. Instructor Do: Demo Event Bubbling and Propagation (10 min)
 
-  * The on-click event needed to capture button clicks. Be sure to point out how we use the data-attribute (via the `.attr` method) to know which letter was clicked. This is a **KEY POINT**.
+* Open [16-Ins_Event_Bubbling/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/16-Ins_Event_Bubbling/index.html) in your IDE and point out the following: 
 
-    ![image-3](Images/2-fridge-2.png)
+  * Each `div` has an event listener set up that will change its background color to the color specified. 
 
-* Slack out the solution and the [video review](https://www.youtube.com/watch?v=gC529k3KzmE) for the activity.
+* Ask the class the following question(s):
 
-### 29. Instructor Do: Crystal Example (9 mins)
+  * "What will happen when the innermost button is clicked?"
 
-* Next, open the files found in the folder [12-CrystalExample](../../../../01-Class-Content/04-jquery/01-Activities/12-CrystalExample). These files closely match the students' homework assignment.
+  * We will see that every `div` changes colors
 
-* They are included in the day's lesson primarily so students can refer back to them while working on their homework assignment. Use your discretion as to how much extra help your students need to complete their homework. If students need a lot of extra help and you have some extra time available, go through the examples one by one as a class. Otherwise just demo the final example and highlight the key pieces of code, suggesting students go through the rest on their own.
+* Refresh the page and click the middle `div`. Point out the following: 
 
-### 30. TAs Do: Intro HW    (2 mins)
+  * We only see the two outer divs change colors.
 
-* Have TAs introduce the next homework assignment. This may just involve showing the homework videos and talking over them.
+* Ask the class the following question(s):
+
+  * "Why are we seeing this behavior."
+
+  * Many students may think that this behavior happens because a parent event triggers the same event on all of its children.
+
+  * We have instantiated an event listener on a div that has parent elements which also have event listeners. 
+
+  * When an event occurs on an element with an event listener, it **bubbles** up through each of its parent DOM nodes until it reaches the top. We can prevent this behavior by using a method called `event.stopPropagation`.
+
+* Open [16-Ins_Event_Bubbling/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/16-Ins_Event_Bubbling/script.js) and give the students a minute to observe the code. 
+
+* Then uncomment every `stopPropagation()` function call and click each button in the same order as previously demonstrated.
+
+  * This is a good moment to reiterate that `stopPropagation` is taking the click event and preventing it from bubbling *up*.
+
+  * If students are having a tough time grasping this concept, try commenting out every `stopPropagation` call except for the second from outermost call. Then open the page in your browser and click on the innermost button.
+
+### 19. Student Do: Event Bubbling (10 min)
+
+* Direct students to the next activity, found in [17-Stu_Event_Bubbling/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/17-Stu_Event_Bubbling/Unsolved)
+
+```md
+# Event Bubbling
+
+In this activity, we are going to create an image carousel that allows us to cycle through images. 
+
+## Instructions
+
+* In a file called `index.html`, create a div that contains two buttons: `previous` and `next`. The carousel should support the following features: 
+
+  1. When the `next` button is clicked, the image should change to the next image in the array. If the image has reached the end of the array, the image should start over at the start of the array.
+
+  2. When the `previous` button is clicked, the image should change to the previous image in the array. If the image has reached the start of the array, the image should start over at the end of the array.
+
+  3. When the user clicks on an image, they will be navigated to the url that hosts that image.
+```
+
+### 18. Instructor Do: Review Event Bubbling (5 min)
+
+* Open [17-Stu_Event_Bubbling/Solved/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/17-Stu_Event_Bubbling/Solved/index.html) in the browser.
+
+* Demonstrate that the application works by clicking through the images four times, then clicking on an image.
+
+  * Point out that the user is only navigated away if they click on the image.
+
+* Open [17-Stu_Event_Bubbling/Solved/script](../../../../01-Class-Content/04-web-apis/01-Activities/17-Stu_Event_Bubbling/Solved/script.js) in your IDE
+
+  * First, we initialize our element variables and create an array to hold the links to the images. We also initialize our background image.
+
+  ```js
+  box.style.backgroundImage = "url('https://picsum.photos/300/200')";
+  var index = 0;
+  var images = [
+    "https://picsum.photos/300/200",
+    "https://picsum.photos/300/201",
+    "https://picsum.photos/300/202",
+    "https://picsum.photos/300/203"
+  ];
+  ```
+
+  * When the image container is clicked, we use `window.location.href` to navigate the browser to the url that hosts the image.
+
+  ```js
+  box.onclick = function(event) {
+    window.location.href = images[index];
+  };
+  ```
+
+  * Next, we set up the `navigate` function, which handles click events on both the `previous` and `next` buttons. Alternatively, students may have created two separate functions to handle each button click.
+
+  ```js
+  function navigate(direction) {
+    index = index + direction;
+    if (direction === -1 && 
+        index < 0) { 
+      index = length - 1; 
+    }
+    if (direction === 1 && 
+        !images[index]) { 
+      index = 0;
+    }
+    current = "url('" + images[index] + "')";
+    box.style.backgroundImage = current;
+  }
+  ```
+
+  * We add an event listener to each button, calling `event.stopPropagation();` to prevent the click event from bubbling up to our image container.
+
+  * If students are still struggling to grasp the importance of `event.stopPropagation()`, comment it out in both callbacks. Then click on the `next` button and explain that without `event.stopPropagation()`, the click event from the button bubbles up and triggers the click event on `box`.
+
+  ```js
+  next.addEventListener("click", function(event){
+    event.stopPropagation();
+    navigate(1);
+  });
+  prev.addEventListener("click", function(event) {
+    event.stopPropagation();
+    navigate(-1);
+  });
+  navigate(0);
+  ```
+
+### 19. Instructor Do: Event Delegation Demo (10 min)
+
+* So far we've been manually assigning click listeners to each individual element. Prompt the students with the following question: 
+
+  * What if we need to assign event listeners to several objects on the page? Is there a way that we can easily handle all of these events without duplicating code?
+
+  * Students may reply with a `for` loop. This would work, but it still requires us to create several event listeners.
+
+* Show the students the code in `index.html` but do not open `script.js` yet.
+
+* Then, open `index.html` in the browser and add a couple of items to the shopping cart.
+
+  * Ask the students what JavaScript code they think is necessary for this behavior. Specifically, ask them where they would set up the event listeners.
+
+  * Students may suggest that the event listener is added to each button. 
+
+* Open `script.js` and direct students to the `addEventListener` line. 
+
+  * Note that the event listener was added to the entire list. Then, within the callback, we determine whether or not the clicked item was a button or not by using `event.target.nodeName`. This technique is known as **event delegation**. 
+
+  * Instead of writing a for loop and adding event listeners to every button element, we added an event listener to its parent element. Not only does this simplify our code, but in some cases, it reduces the need for `event.stopPropagation`. Ex: If click events from a child element is triggering the event on its parent, we can set up a conditional that identifies the `target`, then executes a callback accordingly.
+
+  * 🗒 Be sure to mention that event delegation is the technique of listening for events on a parent element, then **delegating** those events differently, depending on the target.
+
+  ```js
+  var listEl = document.querySelector("#grocery-list");
+  var shoppingCartEl = document.querySelector("#shopping-cart");
+  var groceries = ["Bananas", "Apples", "Oranges", "Grapes", "Blueberries"];
+
+  listEl.addEventListener("click", function(event) {
+    event.preventDefault();
+    if(event.target.matches("button")) {
+      var item = document.createElement("div");
+      item.textContent = groceries[parseFloat(event.target.parentElement.id)];
+      shoppingCartEl.append(item);
+    }
+  });
+  ```
+
+### 20. Student Do: Event Delegation (15 min)
+
+* Direct students to the next activity, found in [19-Stu_Event_Delegation/Unsolved](../../../../01-Class-Content/04-web-apis/01-Activities/19-Stu_Event_Delegation/Unsolved)
+
+```md
+# Event Delegation
+
+## Instructions
+
+* In this activity, we are going to create a friends list that allows us to edit information about that friend in a modal.
+
+* Take a moment to study the code in `index.html`. You will not need to add any additional code to this file. Additionally, all of the CSS has been provided.
+
+* In `script.js`, add support the following features: 
+
+  1. When the `Add Person` button is clicked, the person should be added to both the people array and the list elements.
+
+  2. If `edit` is clicked, event delegation should be used to handle the click event.
+
+  3. When the user clicks on edit, the modal should appear with the modal header property already populated with the person's name. If a description exists, the textarea should be populated with the person's description. If not, the description should be left blank.
+
+  4. When the `save` button is clicked, the description of the current person should be updated in the people array.
+
+## Bonus
+
+* Use event delegation to make the modal close if the user clicks away from the modal.
+```
+
+### 21. Instructor Do: Review Event Delegation (5 min)
+
+* Take a moment to demonstrate the app, just as you did in the beginning of class.
+
+  * Open [19-Stu_Event_Delegation/Solved/index.html](../../../../01-Class-Content/04-web-apis/01-Activities/19-Stu_Event_Delegation/Solved/index.html) in your browser.
+
+  * Add a person to the list, this time note that doing so adds a person to an array in our JavaScript file, then appends a new HTML element, `li`, to the page.
+
+  * Save the data, then edit a different person. 
+
+  * Return to the person you first editted, and mention that the data is still there.
+
+* Open [19-Stu_Event_Delegation/Solved/script.js](../../../../01-Class-Content/04-web-apis/01-Activities/19-Stu_Event_Delegation/Solved/script.js) and explain the following functions:
+
+  * In `handleClick`, we check to see if the element clicked is a `span`. This is sufficient because this is the only span element on the page at this time.
+
+  * Then we set up variables for the name and description of the person that we clicked on.
+
+  * The `textContent` of the modal header is set to the name and the value of the description textarea is set to any existing description. The logical OR operator ensures that the description is set to an empty string if the value in our array is undefined. 
+
+  ```js
+  function handleClick(event) {
+    if (event.target.matches("span")) {
+      modalEl.style.display = "block";
+      currentId = parseInt(event.target.parentElement.id);
+      var name = people[currentId].name;
+      var description = people[currentId].description;
+      modalNameEl.textContent = name;
+      descriptionEl.value = description || "";
+    }
+  }
+  ```
+
+  * Remind students that `save` isn't actually persisting the data in a database. We are simply updating the description property of the current person in our people array. This data will remain until we close the browser or reload the page.
+
+  ```js
+  saveBtn.addEventListener("click", function(event) {
+    event.preventDefault();
+    people[currentId].description = descriptionEl.value;
+    close();
+  });
+  ```
+
+  * To setup the behavior to close when the modal is clicked away from, we add an event listener to the document object. We use event delegation to check if the element clicked is the modal container. If so, we close the modal.
+
+  ```js
+  document.addEventListener("click", function(event) {
+    if (event.target === modalEl) {
+      close();
+    }
+  });
+  ```
+
+### 22. End (0 min)
 
 ### Lesson Plan Feedback
 
-How did today's class go?
+How did today’s lesson go? Your feedback is important. Please take 5 minutes to complete this anonymous survey.
 
-[Went Well](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=ft&sentiment=positive&lesson=02.04)
-
-[Went Poorly](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=ft&sentiment=negative&lesson=02.04)
+[Class Survey](https://forms.gle/nYLbt6NZUNJMJ1h38)

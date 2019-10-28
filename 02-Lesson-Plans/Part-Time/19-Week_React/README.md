@@ -1,56 +1,50 @@
-## Week 19 - React
+# Unit 19: React
 
-### Overview
+## Overview
 
-This week, we will introduce students to React, a declarative, efficient, and flexible JavaScript library for building user interfaces. Before that, however,
-they need a basic primer in ES6.
+This unit, we will introduce students to React, a declarative, efficient, and flexible JavaScript library for building user interfaces. We'll go over key features of the framework: JSX, components, states, props, lifecycle events and so on.
 
-We'll go over key features of the framework: JSX, components, states, props, lifecycle events and so on. By the end of this unit, students should understand how React lets web devs build quicker and less resource-hungry sites than mere HTML and jQuery.
+  * Refer to the [Class Content Unit Overview](../../../01-Class-Content/19-React/README.md) for detailed information on key topics, learning objectives and homework.
+
+## Instructor / TA Notes
+
+* In order to avoid continuous NPM installs, all of this week's activities' Solved and Unsolved versions include only a `src` folder. Students and yourself should scaffold out a React app once with Create React App, and then swap out the `src` folder for each activity. It's recommended that you completely restart the dev server between activities.
+
+* Students may feel a little overwhelmed with the new unusual syntax. Remind them that at the end of the day, we're still just working with JavaScript. Prioritize making sure they understand concepts, rather than worrying about them perfectly memorizing syntax.
+
+## Heads Up
+
+Next week we will learn more complex techniques for managing state in React. Avoid spending too much time on Class Components, since we will be focusing primarily on using React Hooks, which can only be used at the top level of functional components.
+
+## Helpful Links
 
 ### Lesson Plans
 
-* [19.1 - Lesson Plan](01-Day/01-LESSON-PLAN.md)
-* [19.2 - Lesson Plan](02-Day/02-LESSON-PLAN.md)
-* [19.3 - Lesson Plan](03-Day/03-LESSON-PLAN.md)
+  * [19.1 - Lesson Plan](01-Day_Intro-React/19.1-LESSON-PLAN.md)
 
-### Homework Activities
+  * [19.2 - Lesson Plan](02-Day_Props-Lists-Stateful/19.2-LESSON-PLAN.md)
 
-* [Homework Instructions](../../../01-Class-Content/19-react/02-Homework/Instructions/homework_instructions.md)
-* [Working Demo of Homework](https://react-google-books-fsf.herokuapp.com/)
+  * [19.3 - Lesson Plan](03-Day_React-Router/19.3-LESSON-PLAN.md)
 
-### Key Activities
+### Slide Decks
 
-* [19.1 - Arrow Function Practice](../../../01-Class-Content/19-react/01-Activities/02-Stu_ArrowFunctionPractice)
-* [19.1 - Convert Const/Let](../../../01-Class-Content/19-react/01-Activities/05-Stu_ConvertConstLetArrow)
-* [19.1 - Truthy Falsey](../../../01-Class-Content/19-react/01-Activities/07-Stu_TruthyFalsey)
-* [19.1 - Functional Loops/New Array Methods](../../../01-Class-Content/19-react/01-Activities/09-Stu_FunctionalLoops)
-* [19.1 - Constructor To Class](../../../01-Class-Content/19-react/01-Activities/11-Stu_ConstructorToClass)
-* [19.2 - Documentation Questions](../../../01-Class-Content/19-react/01-Activities/14-Stu_DocumentationQuestions)
-* [19.2 - Hello React](../../../01-Class-Content/19-react/01-Activities/15-Stu_HelloReact)
-* [19.2 - Hello Bootstrap](../../../01-Class-Content/19-react/01-Activities/18-Stu_HelloBootstrap)
-* [19.2 - JSX Variables](../../../01-Class-Content/19-react/01-Activities/20-Stu_JSXVariables)
-* [19.3 - Calculator Props](../../../01-Class-Content/19-react/01-Activities/24-Stu_PropsCalculator)
-* [19.3 - Props Review](../../../01-Class-Content/19-react/01-Activities/25-Stu_PropsReview)
-* [19.3 - Component Map](../../../01-Class-Content/19-react/01-Activities/26-Stu_ComponentMap)
-* [19.3 - Decrement Counter](../../../01-Class-Content/19-react/01-Activities/28-Stu_DecrementCounter)
-* [19.3 - Friend Refactor](../../../01-Class-Content/19-react/01-Activities/29-Stu_FriendRefactor)
+  * [19.1: React Gently](https://docs.google.com/presentation/d/1M35LtiiJlAmDK27cjyifhbhvcTAoYaUF7-9s6k6ZIP8/edit?usp=sharing)
+
+  * [19.2: ReactJS Recap slides](https://docs.google.com/presentation/d/18Q6g_4tMD01MyMUw8euaoldLHdJgJodbbd5XSzXV8UQ/edit?usp=sharing)
 
 
-### Helpful Links
+### Time Tracker(s)
 
-* [React Documentation](https://facebook.github.io/react/docs/getting-started.html)
-* [Babel Documentation](https://babeljs.io/docs/setup/#installation)
-* [JSX Documentation](https://facebook.github.io/react/docs/jsx-in-depth.html)
-* [React ES6 Classes](https://facebook.github.io/react/docs/reusable-components.html#es6-classes)
-* [ES6 Cheatsheet](https://github.com/DrkSephy/es6-cheatsheet)
-* [React Router Tutorials](https://github.com/ReactTraining/react-router/tree/master/docs)
-* [React Lifecycle Methods](https://levelup.gitconnected.com/componentdidmakesense-react-lifecycle-explanation-393dcb19e459)
+  * [Unit 19-React Day 1 Time Tracker](https://docs.google.com/spreadsheets/d/1FW-TdKwx-Kxrj8FgsBC1WwaX_U2z8mGikRnT8oUYU6U/edit#gid=1012596571)
 
-### Slide Shows
+  * [Unit 19-React Day 2 Time Tracker](https://docs.google.com/spreadsheets/d/1nK5WnZMudSzo7mAkiDdfCEEb2ihM9ooU/edit#gid=1423861022)
 
-* [19.2 - Intro to React, Components, and JSX](https://docs.google.com/presentation/d/1cvbWQLefPF83BhscOQIjDlYyF5pH5522XPtXXcpSbnw/edit?usp=sharing)
-* [19.3 - Props, Lists, and Stateful Components](https://docs.google.com/presentation/d/1faUXH0URyyeOLSzuQKfHI-rm7EA81GV_meokERR8pDw/edit?usp=sharing)
+  * [Unit 19-React Day 3 Time Tracker](https://docs.google.com/spreadsheets/d/1nK5WnZMudSzo7mAkiDdfCEEb2ihM9ooU/edit#gid=1423861022)
 
-### Additional Course Resources
+## Algorithms
 
-* [Curriculum Resources](https://github.com/coding-boot-camp/curriculum-resources)
+  * [01-maximum-continuous-subarray](../../../01-Class-Content/19-React/03-Algorithms/01-maximum-continuous-subarray)
+
+  * [02-merge-meeting-times](../../../01-Class-Content/19-React/03-Algorithms/02-merge-meeting-times)
+
+  * [03-int-to-roman](../../../01-Class-Content/19-React/03-Algorithms/03-int-to-roman)

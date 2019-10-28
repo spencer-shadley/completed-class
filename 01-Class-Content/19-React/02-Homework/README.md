@@ -1,61 +1,53 @@
-# Clicky Game
+# Unit 19 React Homework: Employee Directory
 
-### Statement of completion
+## Overview
 
-Be subjective, grading & feedback should not take more than 5 minutes per assignment.
+For this assignment, you'll create a employee directory with React. This assignment will require you to break up your application's UI into components, manage component state, and respond to user events.
 
-**Repository Naming**
+## User Story
 
-* It will be enticing and easy for students to name their homework something like Unit X Homework, Week X Homework, or Homework X. This has been discouraged in their homework instructions and any repositories without a more unique name should receive an `I` until the name is changed.
+* As a user, I want to be able to view my entire employee directory at once so that I have quick access to their information.
 
-**README.md**
+## Business Context
 
-* An `A` README would contain the following:
-  * Technologies used and *WHY*
-  * Specifics about any special functionality
-  * Screenshots if necessary
-  * Struggles faced and how they were overcome
+An employee or manager would benefit greatly from being able to view non-sensitive data about other employees. It would be particularly helpful to be able to filter employees by name.
 
-* If the students README does not contain all of these things, or is just blank/nonexisten give them an `I` until fixed.
+## Acceptance Criteria
 
-**Criteria**
+Given a table of random users, when the user loads the page, a table of employees should render. 
 
-The deployed React application renders multiple images to the page, listens for click events to the images, and keeps track of the user's score. The deployed assignment has been added to their deployed portfolio with a link provided in the submission.
+The user should be able to:
 
-**Is the above statement correct?**
+  * Sort the table by at least one category
 
-1. **Yes**: Grade will be an A or a B
+  * Filter the users by at least one property.
 
-2. **No**: Grade will be a C
+## Commit Early and Often
 
-3. **No idea, can't test**: Grade will be a D or an  F
+One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
 
-4. **Empty Repository**: Grade will be an I
+1. Your commit history is a signal to employers that you are actively working on projects and learning new skills
 
-- - - 
+2. Your commit history allows you to revert your code base in the event that you need to return to a previous state
 
-### Yes (A or B)
+Follow these guidelines for committing:
 
-If the student's assignment was pristine, give them an A, and an encouraging sentence for feedback.
+* Make single purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits
 
-If the student's assignment had a few areas for improvement, give them a B, and 2 or 3 specific pieces of feedback.
+* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history
 
-### No (C)
+* Don't commit half done work, for the sake of your collaborators (and your future self!)
 
-Give the student a C, and 2 or 3 specific pieces of feedback. Invite the student to office hours to go over topics not mastered.
+* Test your application before you commit to ensure functionality at every step in the development process
 
-### No idea (D or F)
+We would like you to have well over 200 commits by graduation, so commit early and often!
 
-If the project isn't deployed, the student receives a D.
 
-If the student submitted a homework but nothing works or functions, the student receives an F.
+## Submission on BCS
 
-Either way, explain to the student why they received that grade and invite them to visit office hours for help.
+You are required to submit the following:
 
-### Empty Repository (I)
+* the URL to the deployed application
 
-Students should receive this grade **only** if they submit an empty repository. If the student attempted the homework assignment and was simply unable to get it fully functioning, they should still receive a normal letter grade, not an 'Incomplete'.
+* the URL to the Github repository
 
-- - - 
-
-**Good Luck!**
