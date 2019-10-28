@@ -7,6 +7,28 @@ In order for our web applications to be interactive, we need a way to respond to
 
 For the time being, we'll use JavaScript to write client-side code; that is, programs that only run in the browser. In later units, we'll use JavaScript to write applications to be run and deployed on servers.
 
+Starting this week, we are going to begin providing weekly algorithm problems for you to work on. Go through each problem according to the schedule outlined below. Spend up to a few hours trying to solve each problem without looking at the solution. If you're unable to solve a problem, study the solution to understand why it works then come back and try again later. Ask your instructional staff for help during office hours if you're having trouble understanding anything.
+
+### Part Time Schedule
+
+* **Week 3** - Problems 1 - 5
+
+* **Week 4** - Problems 6 - 9
+
+* **Week 5** - Problems 10 - 13
+
+* **Week 6** - Problems 14 - 17
+
+* **Week 7** - Problems 18 - 21
+
+### Full Time Schedule
+
+* **Week 2** - Problems 1 - 9
+
+* **Week 3** - Problems 10 - 17
+
+* **Week 4** - Problems 18 - 21
+
 ## Key Topics
 The following topics are covered in this unit:
 * Code comments
@@ -41,6 +63,14 @@ You will be employer-competitive if you are able to:
 * Explain the importance of objects in JavaScript and create objects containing both properties and methods
 * Explain and implement the difference between function declarations and expressions
 * Explain and implement comparison and logical operators
+
+## Algorithms
+
+* 01-arithmetic - Create functions capable of different arithmetic operations.
+
+* 02-odd-or-even - Create a function that determines whether a number is odd or even.
+
+* 03-log-nums - Create a function that prints all whole numbers from 1 to a given number.
 
 ## Homework: Password Generator
 

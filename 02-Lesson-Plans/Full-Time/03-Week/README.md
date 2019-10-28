@@ -1,4 +1,4 @@
-## JavaScript / jQuery Review, Timers, Debugger, and Introduction to APIs and AJAX
+# Week 03: jQuery & Server-side APIs
 
 ### Overview
 

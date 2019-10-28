@@ -1,494 +1,38 @@
 ## 10.3 - Continuing React State (10:00 AM) <!--links--> &nbsp; [⬅️](../02-Day/02-Day-LessonPlan.md) &nbsp; [➡️](../04-Day/04-Day-LessonPlan.md)
 
-_If pacing on activities is a bit too fast this unit, remember that you have
-some time at the end of the week to review. Please let us know by opening
-an issue if any activities in particular need a bit more time, so we can
-adjust the schedule for the unit._
+## Overview
 
-### Overview
+In this class, we will be introducing students to the concept of React Hooks. We will further expand on their introduction to managing component state and cover side effects, global state, and pure functions. We will introduce three of the most common built-in Hooks: `useState`, `useEffect`, and `useContext`. Once students have experience creating each one, they will create their own Custom Hooks.
 
-After continuing some of yesterday's lesson on React state,
-we will be deepening students understanding of ReactJS. We will further expand on their introduction to managing component state and cover performing AJAX requests, using forms, and conditionally rendering components.
+## Instructor Notes
 
-`Summary: Complete activities 28-32 in Unit 19 & 1-6 in Unit 20`
+* `Summary: Complete activities 20-state/01-Activities/23-Stu_PupsterApp/ through 21-react/01-Activities/05-Ins_CustomHook.`
 
-##### Instructor Priorities
-
-* Students should be able to use forms with React.
-
-* Students should understand how to conditionally render components.
-
-* Students should be able to utilize the axios library for making AJAX requests.
-
-* Students should have a basic understanding of React Router.
-
-#### Instructor Notes
-
-* In today's class we'll introduce some new class component syntax, cover using forms with React, perform AJAX requests with axios, and go over conditionally rendering components before introducing students to the React Router library.
-
-* You should scaffold out a React application with Create React App at the beginning of class and suggest students do the same. The activities we go over today will only include the applications `src` folder which you should replace in your React app's boilerplate to avoid. It's recommended that that you stop and restart the dev server between each activity.
+* As in previous lessons, you will want to scaffold out a React application with Create React App at the beginning of class and suggest students do the same. The activities we go over today will only include the applications `src` folder which you will replace in your React app's boilerplate to avoid repetitive installs. It's recommended that you completely restart the dev server between activities.
 
 * Today's lesson will feature more instructor led demonstrations than the previous class, be sure to spend some time before class reviewing the examples.
 
-* Have your TAs reference [03-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1pc-N0bdGeB2OY9PcHONY-nQvZ14QbVNM/view?usp=sharing) to help keep track of time during class.
+## Learning Objectives
 
-* **Important:** In order to avoid continuous NPM installs, all of today's activity Solved and Unsolved versions include only a src folder. Students and yourself should scaffold out a React app once with Create React App, and then swap out the src folder for each activity.
+* Articulate the term "effect" in the broader sense of programming.
+
+* Utilize React's most common built-in Hooks: `useState`, `useEffect`, and `useContext`.
+
+* Transform a React application that manages state with a class component into an application that uses functional components with React Hooks.
+
+* Create a custom reusable Hook that follows the 2 rules of Hooks.
+
+## Slides
+
+[Introduction to React Hooks](https://docs.google.com/presentation/d/1mnPdZODvhGs0j6s4EEuATbmQjFM7XpzFxrUnsOzNsGE/edit?usp=sharing)
+
+## Time Tracker
+
+[10.3 Time Tracker](https://docs.google.com/spreadsheets/d/1ASbpL8oT5cczjoafZYe3-aoT4F1aL3c8TClOOUrV-XQ/edit?usp=sharing)
 
 - - -
 
-### Class Objectives
-
-* To deepen understanding of managing state with React components.
-
-* To cover conditional rendering React components.
-
-* To introduce the axios library and the concept of the component lifecycle.
-
-* To introduce routing with React Router.
-
-- - -
-
-### 1. Instructor Do: Welcome Class and State Review (5 mins) (Critical)
-
-* Open [27-Ins_BasicState](../../../../01-Class-Content/19-react/01-Activities/27-Ins_BasicState/src/components/Counter.js) in your editor for a quick review.
-
-![Class Component](Images/14-ClassComponent.png)
-
-* Call on students to answer the following questions one at time, filling in gaps in their explanations as necessary:
-
-  * **Q:** What is the difference between `props` and `state`?
-    **A:** `props` are passed down from the parent component and are immutable. `state` stores data that is going to change and is stored in the component class itself rather than coming from a parent component.
-  * **Q:** What is the purpose of calling `setState`?
-    **A:** `setState` re-renders the component and all its children any time the state changes.
-  * **Q:** What is the render method?
-    **A:** `render` is a required method on any subclass of React.Component. Its job is to return the JSX that the component should render.
-  * **Q:** How do we set a click event listener on an element in React?
-    **A:** We use the `onClick` prop.
-
-### 2. Students Do: Friend Refactor (20 mins) (Critical)
-
-* Slack out [29-Stu_FriendRefactor/Unsolved](../../../../01-Class-Content/19-react/01-Activities/29-Stu_FriendRefactor/Unsolved)
-
-* In this activity students will further refactor the Friends List application from earlier to use class components, events, and programmatically render the `FriendCard` components.
-
-* **Instructions:** [README.md](../../../../01-Class-Content/19-react/01-Activities/29-Stu_FriendRefactor/README.md)
-
-### 3. Instructor Do: Review Friend Refactor (15 mins)
-
-* Go over the [solution](../../../../01-Class-Content/19-react/01-Activities/29-Stu_FriendRefactor/Solved) to the previous activity.
-
-* Demonstrate the completed application in the browser. Point out how we can remove friends by clicking the red x icon.
-
-  ![Friend Refactor](Images/09-FriendRefactor.png)
-
-* Briefly go over the syntax for writing a class component. Be sure to point out the constructor method, how we set the application's initial state. Explain that when defining object properties with ES6, if the object's key and value have the same name, we can omit the colon &mdash; this is just an optional shorthand syntax.
-
-* Point out how we bind the `removeFriend` method inside of the constructor. Ask the class: how does this method remove a friend?
-
-* Point out how inside of the `removeFriend` method we use the filter method to create a new `friends` array from `this.state.friends`. We include only friends with an `id` property **not** equal to the `id` being received into this method. Then we use the `setState` method in order to set `this.state.friends` equal to the new filtered friends array.
-
-  ![Friend Refactor App](Images/10-FriendRefactorApp.png)
-
-* Explain that when we update our component's state by removing one of the friend objects, our component re-renders itself. On the new render, `FriendCard` components are created for each object in `this.state.friends`, which no longer includes the deleted friend. This then triggers our component to re-render, now minus one friend.
-
-  * Remind students that in React, we never modify state directly, but we create new state instead. If the state we're modifying is an array, we'll often use the filter or map method.
-
-* Scroll down to the code where we map over `this.state.friends` and render a `FriendCard` component for each element.
-
-  * Point out the props being passed, in particular, the `id` and the `key` prop. Remind the class that whenever we map over a list of data and return JSX, React wants us to give each element a unique `key` prop. React uses this value internally to help it efficiently render and re-render components from arrays of data.
-
-    * Explain that the `key` prop is unusual because it's used by React but isn't actually available for us to use inside of the component we pass it to. We pass the friend `id` in as a separate prop because we'll need it inside of the `FriendCard` component.
-
-* Open up the `FriendCard` component.
-
-  ![Friend Refactor Card](Images/11-FriendRefactorCard.png)
-
-* Point out how we've attached the `onClick` handler to the "remove" span. When clicked, it calls the `removeFriend` method and passes in `props.id`.
-
-* Ask the class: Why do we have the `removeFriend` handler wrapped inside of another function?
-  * Explain that since our event handlers need to be callbacks, we normally can't pass in arguments without invoking them right away. But by wrapping the `removeFriend` method in an another function, we can pass the `id` prop into the inner `removeFriend` method. When the span is clicked, it calls the anonymous callback function, which then calls the `removeFriend` method with the friend's `id` as an argument.
-
-* Take a moment to answer any lingering questions.
-
-### 4. Instructor Do: Demonstrate Forms (15 mins) (High)
-
-In this example we will demonstrate how to handle simple forms with React.
-
-* Swap out your application's `src` folder with [src](../../../../01-Class-Content/19-react/01-Activities/30-Ins_FormsDemo/src). Stop the dev server if it is already running. Start the app in dev mode by running `npm start`.
-
-* Open [localhost:3000](http://localhost:3000) in your web browser and demonstrate the rendered application.
-
-  ![Form Demo](Images/15-FormDemo.png)
-
-  * Whenever we type into the input fields we see the input appended to the "Hello" statement.
-
-  * When we click the "Submit" button, we get an alert with the provided first and last name.
-
-    ![Form Demo Submit](Images/16-FormDemoSubmit.png)
-
-* Now open [src/components/Form/index.js](../../../../01-Class-Content/19-react/01-Activities/30-Ins_FormsDemo/src/components/Form/index.js) and demonstrate the underlying code. It may be easier to begin with this component's `render` method.
-
-  ![Form Render](Images/17-FormDemoRender.png)
-
-  * Point out the following props attached to the `input` elements:
-
-    * `value`: set to `this.state.firstName` or `this.state.lastName`
-
-    * `name`: set to `firstName` or `lastName`
-
-    * `onChange`: both set to `this.handleInputChange`
-
-* Then go up to the component's `constructor` method. Point out how `this.state.firstName` and `this.state.lastName` are both initially set to an empty string.
-
-  * To make sure everyone is following along so far, ask the class: Where is this state object coming from? Why do we use it?
-
-    * A component's "state" is a property defined on a class component instance used for storing values that we want to associate with it. This property is recognized by React and can be used to embed data inside a component's UI which we want to update over time. Whenever a component's state is updated, its `render` method is fired along with the `render` methods of all of its children. This updates the application's UI to display the new data without having to refresh the browser.
-
-* Then scroll back down to the `render` method and point out how each input has a `value` prop set to the value of one of these state properties.
-
-  ![Form Logic](Images/18-FormDemoLogic.png)
-
-* Ask the class: What would happen if I pre-set the first and last name states to values other than empty strings?
-  * The text inside of each input field is determined by their `value` prop. By changing this component's initial state, we're also changing the initial values of the input fields. Demonstrate this live for the class.
-
-* Then scroll down to the `handleInputChange` method. Ask the class: What do you think this method's job is?
-
-  * This method is responsible for updating our state as the user types into the input fields.
-
-* Then ask: What do you think would happen if I removed the `onChange` props from the input fields?
-
-  * Proceed to remove the `onChange` props from both input elements. You should now be unable to type any new characters into the input fields after doing to.
-
-  * Explain that `onChange`, like `onClick` or `onSubmit`, is a built-in event we can listen for by attaching a prop to a primitive JSX tag (a JSX tag that represents a basic HTML element).
-
-  * Explain that by removing the `onChange` prop, we are no longer responding to the input's "change" event and thus are no longer updating our `Form` component's state. The `value` prop on each input field continues to point to the same unchanging state value.
-
-  * Explain that if we were to also remove the `value` prop from an input field altogether, then we could update it, but it wouldn't update our state and we wouldn't have access to its value if we needed it. Explain that we use the `value` and `onChange` props on the input element to sync its value with our components state.
-
-* Go back to the `handleInputChange` method and walk through its logic.
-
-  * `handleInputChange`, like all event handlers, is passed an `event` object that describes the event that took place. We pull off the `name` and `value` properties from the `event.target` object. These correspond to the `name` and `value` properties attached  to the element the event was triggered from.
-
-    * Since each input field has a `name` prop set to the name of the state property holding its value, we can run the following code to update the appropriate state:
-
-      ```js
-      this.setState({
-        [name]: value
-      });
-      ```
-
-    * Starting with ECMAScript 2015, the object initializer syntax also supports computed property names. That allows you to put an expression in brackets [], that will be computed and used as the property name. Refer to the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#Computed_property_names).
-
-    * If students have questions regarding this syntax, demonstrate the same approach in ES5:
-
-      ```js
-      const newState = {};
-      newState[name] = value;
-      this.setState(newState);
-      ```
-
-* Scroll down to the `handleFormSubmit` method. Ask the class: Why are we running `event.preventDefault()`?
-
-  * The default behavior of an HTML form submission, is to refresh the entire web page. We want to prevent the form's default behavior in lieu of our own. Remind the class that we also had to deal with this back when working with jQuery.
-
-* Be sure to point out the code where we throw an alert with the user's first and last name before resetting our `firstName` and `lastName` state to empty strings to clear our input fields. Take a moment to make sure everyone understands how the string template literal syntax is working.
-
-  * String template literals can be used to write multi-line strings and embed expressions without breaking the string. Instead we'd use the ${<expression>} token to embed expressions inside of our string.
-
-* Take another few minutes to make sure everyone understands the code at least well enough to be able to refer back to this example as a starting point as they're building their own React forms.
-
-### 5. Students Do: Fun With Forms (15 mins)
-
-* Slack out [31-Stu_FunWithForms/Unsolved](../../../../01-Class-Content/19-react/01-Activities/31-Stu_FunWithForms/Unsolved)
-
-* In this activity students will add some new functionality to the previous form example.
-
-* **Instructions:** [README](../../../../01-Class-Content/19-react/01-Activities/31-Stu_FunWithForms/README.md)
-
-### 6. Students Do: A Formal Review (10 mins)
-
-* Slack out [01-Stu_FormalReview/Unsolved](../../../../01-Class-Content/20-react/01-Activities/01-Stu_FormalReview/Unsolved)
-
-* In this activity students will work to connect a simple form to a component's state.
-
-* **Instructions:** [README](../../../../01-Class-Content/20-react/01-Activities/01-Stu_FormalReview/README.md)
-
-### 7. Instructor Do: Review A Formal Review (5 mins)
-
-* Go over the [01-Stu_FormalReview/Solved](../../../../01-Class-Content/20-react/01-Activities/01-Stu_FormalReview/Solved) version of the previous activity.
-
-  ![Form Review Demo](Images/01-FormReviewDemo.gif)
-
-* Point out the following key aspects of the activity:
-
-  * Each input tag has a `value`, `onChange`, and `name` prop.
-
-  * When the `onChange` event is fired, the `handleInputChange` method is called.
-
-  * When `handleInputChange` is called, the `name` and `value` properties are used to update the appropriate state.
-
-  * Whenever we "submit" form, we must prevent the default event if we plan to handle the submission using AJAX.
-
-    ![Form Review Code](Images/02-FormReviewCode.png)
-
-- - -
-
-### 8. LUNCH (30 mins)
-
-- - -
-
-### 9. Instructor Do: AJAX Demo (15 mins)
-
-In this example we will demonstrate AJAX requests with React.
-
-* Replace your application's `src` folder with [02-Ins_AJAX/src](../../../../01-Class-Content/20-react/01-Activities/02-Ins_AJAX/src). Paste the Bootstrap CDN into `public/index.html`. You may use the snippet provided below:
-
-  ```html
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"/>
-  ```
-
-* Install the `axios` library by running the following command:
-
-   ```
-   npm install axios
-   ```
-
-* Stop the dev server if it is already running. Start the app in dev mode by running `npm start`.
-
-* Navigate to [localhost:3000](http://localhost:3000) and demonstrate the application's functionality.
-
-  ![Giphy Demo](Images/03-Giphy-Demo.png)
-
-  * This app searches the Giphy API for whatever is typed into the input field and then displays the results below.
-
-  * When we first load the app, we should see kitten related results.
-
-* Open the [src/components](../../../../01-Class-Content/20-react/01-Activities/02-Ins_AJAX/src/components) folder and point out the three files inside:
-
-  * `ResultList.js`
-
-  * `SearchForm.js`
-
-  * `SearchResultContainer.js`
-
-* Explain to the class that `SearchResultContainer` contains and renders the `Results` and `Search` components. This is our application's only stateful component.
-
-* Briefly demonstrate this without digging into each component's exact functionality in your editor just yet.
-
-  ![Render](Images/04-Search-Container-Render.png)
-
-* Ask the class: Why do you think `SearchResultContainer` is a stateful component, but `SearchForm` and `ResultList` aren't?
-
-  * It's possible to make every component in our React application stateful. But it's usually cleaner and less error prone to have some kind of parent component which contains all of the data and functionality its children will need, and then pass those down as props.
-
-  * Quick aside: Slack out this [article written by Dan Abramov](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0) (Redux Author, React Core Contributor, Create React App Core Contributor) for students to read through on their own time. He describes the pattern of separating components into "container" and "presentational" components. In a nutshell, this can be explained as follows:
-
-    * Container components are primarily concerned with how things _work_ and render very little, if any of their own markup. Instead they mostly render other components and pass down the logic and data they need to work.
-
-    * Presentational components are concerned with how things _look_ and typically don't contain any logic that doesn't have to do with their own individual UI.
-
-    * This pattern helps us build components with little to no coupling that can more easily be reused in different parts of app or even across applications. It also lets us stub out our applications appearance by writing presentational components first, and then writing container components once we're ready to make things work.
-
-  * This isn't important for students to totally understand now, but slack out the article for them to check out later. The most important takeaway should be that there should be a few of these "container" components which act as the "brain" for their children. In our case this is `SearchResultContainer`.
-
-* Now, open [src/components/SearchResultContainer.js](../../../../01-Class-Content/20-react/01-Activities/02-Ins_AJAX/src/components/SearchResultContainer.js) and walk through the code.
-
-  * Our initial state has a `search` property set to an empty string and a `results` property set to an empty array.
-
-    ![Initial State](Images/05-Initial-Giphy-State.png)
-
-  * We have a new unfamiliar method defined called `componentDidMount`. Explain that like the `render` method, this method is built-in to React and automatically run **after the component is rendered for the first time.**
-
-    ![Component Did Mount](Images/06-Component-Did-Mount.png)
-
-  * Inside of this method we run the `searchGiphy` method and pass in "kittens" as an argument. Before getting into how exactly the `searchGiphy` method works, explain that this code searches the Giphy API and updates our application's `result` state using the results from the AJAX request. By writing this code inside of the `componentDidMount` method, we're saying we want it to run after the initial component render, before state updates take place.
-
-  * Explain that when working with class components in React, we are able to hook into to a few different **component lifecycle events**, that allow us to automatically execute logic at certain times.
-
-    * Explain that these component lifecycle events are similar to some of the DOM lifecycle events we've worked with in vanilla JavaScript or jQuery. For example, in jQuery, `$(document).ready` runs when the entire web page is loaded.
-
-    * In React, `componentDidMount` runs after a component and all of its children have been initially rendered and mounted to the DOM, and have no further expected initialization steps.
-
-    * Explain that there are a few different React component lifecycle events we can hook into but `componentDidMount` is probably the one we'll use most frequently as this is the best place to run any async code we need to populate our component's state after the component mounts.
-
-    * Ask the class: Why wouldn't we just run our `searchGiphy` method inside of our component's constructor and populate our initial state there? That is, assuming we went back to explicitly using the constructor method.
-
-      * Constructor functions run synchronously and AJAX requests are asynchronous. So we might not have the async data available by the time the component is instantiated.
-
-      * Additionally, running our async code inside of the constructor could cause extra re-renders of our component &mdash; making our application feel slow or glitchy on startup &mdash or introduce difficult to track down bugs.
-
-      * By the time `componentDidMount` is run, there's no more work for our component needs to do. Even if the AJAX request fails or takes a long time to complete, we'd still have our component and its children rendered to some degree.
-
-      * Explain that `componentDidMount` is called automatically once per component instance.
-
-      * Explain that, technically, `render` is another component lifecycle event, but rather than only running once, the `render` method is called every time our component's state is updated or anytime our component receives new props.
-
-      * Slack out this [article on the React component lifecycle](https://engineering.musefind.com/react-lifecycle-methods-how-and-when-to-use-them-2111a1b692b1) for students to read on their own time.
-
-  * Go to the `searchGiphy` method and ask the class: What do you think this method is doing? Without even knowing what this `API` object is, what does it look like this method is doing?
-
-    * This method is searching the Giphy API, passing in `this.state.search` as a query. It's then setting `this.state.results` to the JSON array that comes back from the AJAX request.
-
-  * Open `src/utils/API.js` and go through the code inside of our API helper.
-
-     ![Component Did Mount](Images/07-API.png)
-
-    * This file exports an object with a `search` method. Go back to the `SearchResultContainer` and point out how this `search` method corresponds to `API.search`.
-
-    * This `search` method accepts a `query` parameter and returns the following:
-
-      ```js
-      axios.get(BASEURL + query + APIKEY);
-      ```
-
-    * Explain that axios is a third party library we've installed for the purpose of making AJAX requests. React itself doesn't ship with any functionality for making AJAX requests. Instead we can use whatever library we'd like for this.
-
-    * Axios functions _very_ similarly to `$.ajax` in jQuery.
-
-    * By running `axios.get`, we're saying we want to perform a GET request.
-
-    * At the very least, the `axios.get` method requires one argument: the url we want to send the request to. We construct the full Giphy API URL using the `BASEURL`, `query`, and `APIKEY` strings. This should remind students of a few weeks ago when we initially worked with the Giphy API using jQuery.
-
-    * Explain that like `$.ajax`, all of axios's methods return a promise object. By returning this method call, we can deal with what happens _after_ the request in our code which imports this module. i.e. point out how we run the `.then` and `.catch` inside of `SearchResultContainer`.
-
-  * Explain that there are other libraries available for making AJAX requests. We even have a `fetch` method built into modern browsers which is similar, but tends to require more configuration to perform simple requests. We could have even imported jQuery and used `$.ajax` if we wanted to. But it's a better idea to use a smaller, single purpose library for making our AJAX requests.
-
-  * Explain that by writing our logic for performing AJAX requests inside of this `API.js` helper file, we no longer need to care about how exactly the AJAX request is implemented in our components. We'd simply require the file and declaratively make a request using a minimum amount of information instead.
-
-  * Go back to the `searchGiphy` method inside of the `SearchResultContainer` component and briefly go over its code once more now that we've explained the `API` object.
-
-    ![Search Result Container](Images/08-Search-Result-Container.png)
-
-  * Point out that the `handleInputChange` method should look familiar to the previous examples, but re-explain how it works if necessary. Demonstrate how we pass this method to the `Search` component as a prop and set the `onChange` prop of its input field to this method.
-
-  * Inside of the `SearchResultContainer`, the `handleFormSubmit` method is a _little_ different compared to the previous example. Point out how when the form is submitted, we first prevent its default behavior with `event.preventDefault()`. Then we call `this.searchGiphy` which searches the Giphy API for the value of `this.state.search`.
-
-  * Finally, open the `Results` component and demonstrate how this component renders a list of images it receives on its `results` prop.
-
-* Take another few minutes to explain any parts of this code which may still not be entirely clear. The major takeaways for this example should be:
-
-  * Most of our application's components should be stateless components primarily concerned with some part of our application's presentation.
-
-  * A smaller number of components should be stateful class components which contain part of our application's business logic and state. Generally these "container" components render our stateless "presentational" components and pass down data and functionality on a need to know basis.
-
-  * `componentDidMount` is a component lifecycle event. This event is triggered once after the component has initially rendered for the first time. This is the best place to perform any initial AJAX requests. There are a few others lifecycle events available, but `componentDidMount` is the one they'll probably end up using the most frequently.
-
-  * We're using the `axios` library to perform our AJAX requests. React itself is primarily concerned with our application's view layer and doesn't include any kind of method for creating AJAX requests. We are free to use whatever library we'd like to perform AJAX requests in React.
-
-  * We're putting our logic for creating AJAX requests into our `API.js` helper file. This way, we don't have to worry about how exactly requests to the Giphy API are performed inside of the components that need to make them.
-
-### 10. Students Do: AJAX (15 mins) (High)
-
-* Slack out [03-Stu_AJAX/Unsolved](../../../../01-Class-Content/20-react/01-Activities/03-Stu_AJAX/Unsolved)
-
-* In this activity students will create a simple React application with which users can query the OMDB API and display information about the movie searched for.
-
-* **Instructions:** [README.md](../../../../01-Class-Content/20-react/01-Activities/03-Stu_AJAX/README.md)
-
-### 11. Instructor Do: Review AJAX (15 mins)
-
-* Once time's up slack out the [03-Stu_AJAX/Solved](../../../../01-Class-Content/20-react/01-Activities/03-Stu_AJAX/Solved) folder and demonstrate the activity solution in your web browser. Be sure to point out the following:
-
-  ![OMDB Browser](Images/09-OMDBBrowser.png)
-
-  * When we search for a movie using the form on the right side, some information about the movie is displayed in the left card.
-
-  * When the component first "mounts", some information about the movie "The Matrix" is displayed.
-
-  * Ask the class: In what part of our application would we be performing this initial AJAX request to the OMDB API?
-
-    * Inside of the `componentDidMount` lifecycle method of `OmdbContainer`. As mentioned before, this method is where we want to perform any initial async logic for our components.
-
-      ![OMDB Did Mount](Images/10-OMDBDidMount.png)
-
-  * Point out the `handleInputChange` method inside of the `OmdbContainer` component. Have a volunteer explain to you how this code works.
-
-    ![Handle Input Change](Images/11-HandleInputChange.png)
-
-    * This method pulls the `value` and `name` properties off of the input element the event was triggered from, and uses those values to set the appropriate state.
-
-  * Ask the class: Since we definitely only have one input field under the control of this `handleInputChange` method, could we decrease the amount of code being used inside of this method?
-
-    * Yes, the current setup accounts for the possibility of adding new input fields. But if we were positive we'd only have one input field, we could use the following code instead:
-
-      ```js
-      handleInputChange = event => {
-        this.setState({
-          search: event.target.value,
-        });
-      };
-      ```
-
-  * Go through the code inside of the `handleFormSubmit` method. Have a volunteer explain what the code is doing and when it's called.
-
-    ![Handle Form Submit](Images/12-HandleFormSubmit.png)
-
-    * Whenever the form is submitted, we first prevent the event's default behavior. By default, whenever we submit an HTML form, it tries to reload the web page. Then we run the `searchMovies` method and pass in `this.state.search` as a query.
-
-  * Now scroll down to the `render` method and point out the section of code where the `MovieDetail` component is being rendered.
-
-  * Point out the ternary expression inside of the JSX curly braces. Explain while we can't use an `if` statement inside of JSX curly braces, we _can_ use a ternary expression or short circuit evaluation.
-
-    * If necessary, take a few moments to explain the syntax of a ternary expression.
-
-  * Explain that if we didn't want to write this much logic inside of our `render` method, we could also extract this code into a new method and call that inside of the `render` instead. For example, we could define the following method on the `OmdbContainer` component:
-
-  ```js
-  renderMovie = () => {
-    if (this.state.result.Title) {
-      return (
-        <MovieDetail
-          src={this.state.result.Poster}
-          director={this.state.result.Director}
-          genre={this.state.result.Genre}
-          released={this.state.result.Released}
-        />
-      );
-    } else {
-      return <h3>No Results to Display</h3>;
-    }
-  };
-  ```
-
-  * And then use it in our `render` method like so:
-
-    ```js
-      {this.renderMovie()}
-    ```
-
-* Explain that any technique they used to get this part to work is probably okay and encourage them to revisit the [React Documentation on Conditional Rendering](https://facebook.github.io/react/docs/conditional-rendering.html) to learn more about what Facebook has to say on the topic.
-
-* Take another few minutes to answer any remaining questions.
-
-### 12. Students Do: Conditional Render (20 mins)
-
-* Slack out [04-Stu_ConditionalRender/Unsolved](../../../../01-Class-Content/20-react/01-Activities/04-Stu_ConditionalRender/Unsolved)
-
-* In this activity students will render one of four different components based upon a component's state. This example is meant to further practice conditional rendering with React and demonstrate the need for a component router.
-
-* **Instructions:** [README.md](../../../../01-Class-Content/20-react/01-Activities/04-Stu_ConditionalRender/README.md)
-
-### 13. Instructor Do: Review Conditional Render (15 mins)
-
-* Once time's up slack out the [04-Stu_ConditionalRender/Solved](../../../../01-Class-Content/20-react/01-Activities/04-Stu_ConditionalRender/Solved) version of the activity and go through it as a class. Be sure to demonstrate the solution in your web browser before going into the JavaScript code in your editor.
-
-  ![Conditional Demo](Images/13-Conditional-Demo.png)
-
-* Point out how when we click the different navigation items, a different component is rendered. Point out that the address bar doesn't _actually_ change when we do this, but we are still rendering different content depending on our application state.
-
-* Explain that `PortfolioContainer` maintains the state for the currently active page and passes this down to `NavTabs` along with a method for changing the currently active page.
-
-  ![NavTabs](Images/14-NavTabs.png)
-
-* Demonstrate the `PortfolioContainer` code and point out how we're using a method to return the appropriate JSX depending on `this.state.currentPage` inside of this component.
-
-  ![Conditional Render](Images/15-ConditionalRender.png)
-
-* Explain that we could have also used a series of ternary operators or short circuit evaluations to accomplish this, but since we have more than a few conditionals, doing it this way can help keep some excess component logic out of the `render` method.
-
-* Take a few moments to answer any lingering questions.
-
-### 14. Instructor Do: Introduce React Router (20 mins) (Critical)
+### 1. Instructor Do: Introduce React Router (20 mins)
 
 * Explain that so far we've just been working with React applications with only one page of content, but in the real world, web applications have multiple &mdash; often complex &mdash; pages and routes.
 
@@ -510,7 +54,7 @@ In this example we will demonstrate AJAX requests with React.
 
   * We won't have enough time to teach _all_ of React Router, nor will students need to know all of the library. Instead we'll be going over the fundamental ~20% of syntax that they're likely going to be using 80% of the time. After that, students should feel more comfortable going through the official documentation for answers.
 
-* Replace your React application's `src` folder with [05-Ins_IntroReactRouter/src](../../../../01-Class-Content/20-react/01-Activities/05-Ins_IntroReactRouter/src).
+* Replace your React application's `src` folder with [22-Ins_IntroReactRouter/src](../../../../01-Class-Content/20-state/01-Activities/22-Ins_IntroReactRouter/src).
 
 * This example uses Bootstrap, so if you haven't already, add the Bootstrap CDN to your `index.html` file.
 
@@ -578,7 +122,7 @@ In this example we will demonstrate AJAX requests with React.
 
       * The `Link` component also has some additional functionality, such as allowing us to pass props into the component rendered at the specified route if we wanted to.
 
-      * We can treat this component exactly the same as we would a regular anchor tag, except we'd use the `to` prop rather than `src` to specify the path we want to navigate to.
+      * We can treat this component exactly the same as we would a regular anchor tag, except we'd use the `to` prop rather than `href` to specify the path we want to navigate to.
 
       * Explain that we can utilize `window.location.pathname` in order to get the path we're currently on if we need it. In our case we're using it to determine which `a` element should have the "active" class and be highlighted.
 
@@ -598,17 +142,17 @@ In this example we will demonstrate AJAX requests with React.
 
       * Using `props.match.url` might be a good idea as opposed to just hard coding `/contact/learn` into the `path` prop (which would also work). This way if we update a route higher up in our application, we don't need to update all of the other nested route `path` props.
 
-### 15. Partners Do: Pupster App (40 mins)
+### 2. Partners Do: Pupster App (45 mins)
 
-* Slack out [06-Stu_PupsterApp/Solved](../../../../01-Class-Content/20-react/01-Activities/06-Stu_PupsterApp/Solved)
+* Slack out `06-Stu_PupsterApp/Solved`
 
 * In this activity students will work with partners to create a full React application from scratch complete with routing and AJAX requests to the [Dog Ceo API](https://dog.ceo/dog-api/).
 
-* **Instructions:** [README](../../../../01-Class-Content/20-react/01-Activities/06-Stu_PupsterApp/README.md)
+* **Instructions:** [README](../../../../01-Class-Content/20-state/01-Activities/23-Stu_PupsterApp/README.md)
 
-### 16. Instructor Do: Review Pupster (10 mins)
+### 3. Instructor Do: Review Pupster (15 mins)
 
-* As a class, go over [06-Stu_PupsterApp/Solved](../../../../01-Class-Content/20-react/01-Activities/06-Stu_PupsterApp/Solved) version of the previous activity. The most important points to cover are:
+* As a class, go over [23-Stu_PupsterApp/Solved](../../../../01-Class-Content/20-state/01-Activities/23-Stu_PupsterApp/Solved) version of the previous activity. The most important points to cover are:
 
   * How each route is rendering each component.
 
@@ -618,7 +162,592 @@ In this example we will demonstrate AJAX requests with React.
 
 * Take a few moments to answer any lingering questions.
 
-### 17. Instructor Do: Recommend Material (0 mins)
+* Congratulate the class on making it halfway through React! Remind them that this is a difficult subject but they've already come a long way.
+
+### 4. Review Unit 19 (30 mins)
+
+### 5. Break (30 mins)
+
+### 6. Instructor Do: Hooks Slide and Discussion (20 mins)
+
+* Welcome the students to the second main focus of this unit: React Hooks.
+
+* Open the [slide deck](https://docs.google.com/presentation/d/1mnPdZODvhGs0j6s4EEuATbmQjFM7XpzFxrUnsOzNsGE/edit?usp=sharing)
+
+1. **Discuss Managing State**: Take a moment to talk about managing state.
+
+  * Ask the students to discuss amongst each other how they've managed React state thus far.
+
+  * After a few minutes, collect some different points from the class and discuss some of the pros and cons of both methods.
+
+3. **Class Components vs Context API**: Class components paired with the `setState` method is the most common way to manage state.
+
+  * Benefits:
+
+  * Setting state will force the component to re-render. This ensures that the component and all of its children will be up-to-date with the latest state.
+
+  * Drawbacks:
+
+  * Since state only flows in one direction, all components that need to use the state must be children of the stateful component.
+
+  * Updating state from deep within the component hierarchy is often difficult.
+
+  * You are forced to use the keyword `this` and use a class component.
+
+  * The Context API is another tool that can be used to manage state.
+
+  * Benefits:
+
+  * Updating state from deep within the component hierarchy is made to be easier since "prop drilling" can be avoided.
+
+  * Drawbacks:
+
+  * The most effective way to manage complex states still requires the use of `setState` to ensure that the latest changes are reflected in each component.
+
+4. **Managing State**: Managing state can be difficult since there is no one-size-fits-all solution.
+
+  * If your application is complex, it might warrant the use of a state management library like mobX or Redux.
+
+  * If your application only has a few stateful properties, the best solution may be managing state in a single component.
+
+  * There is no "right" way to manage your state. The more applications that you create, the better you will become at gauging what the right state management tool is for the job.
+
+  * For all situations that have states that are too complex for a single component, and not complex enough for Redux or MobX, we use Hooks.
+
+6. **Hooks**: Hooks are functions that let you "hook into" React state and lifecycle features from function components.
+
+  * For all situations that have states that are too complex for a single component, and not complex enough for Redux or MobX, we use Hooks.
+
+  * React has no plans to deprecate class components, but Hooks can do everything a class component can and more.
+
+7. **The 4 Hooks**: We will be covering for different kind of Hooks.
+
+  * `useState` allows you to use state in a functional component.
+
+  * `useEffect` replaces lifecycle methods like `componentDidMount` and `componentDidUpdate`.
+
+  * An **effect**, also commonly referred to as a **side effect**, is a term used to describe the result of affecting the “outside world”.
+
+  * This includes, but is not limited to: Data fetching, subscribing to events, and changes to the DOM.
+
+  * `useContext` grants read access to a Context Object as long as it is being used within the object's Provider.
+
+   * We will be covering the built-in Hooks `useState`, `useEffect`, and `useContext`, but emphasize that there are many more Hooks. The strong developer community around React has created a plethera of different Custom Hooks that you can plug into your applications.
+
+  * Custom Hooks can be any reusable function, often built from logic extracted from existing functions.
+
+8. **2 Rules of Hooks**: There are 2 rules of Hooks that must be complied with:
+
+  * Only call Hooks from top-level components. This means **never** call Hooks from within loops, conditionals, or nested functions.
+
+  * It is important that Hooks are always called in the same order, like component lifecycle methods.
+
+  * It is also what makes it possible for React to store the state of Hooks when using useState or useEffect.
+
+9. **2 Rules of Hooks**
+
+  * Hooks may only be called from React components. **Never** call a Hook from a regular JavaScript function.
+
+  * This makes it so that all stateful logic is easy to find for the developer.
+
+### 7. Instructor Do: useState Demo (10 mins)
+
+* Run `08-Ins_useState` by copying the `src` folder into your prepared CRA application. Navigate to http://localhost:3000/ in your browser and demonstrate the following:
+
+  * When the application loads, 'Status' is set to the default string, 'content'.
+
+  * Clicking the 'Encourage Laziness' button changes 'Status' to 'lazy'.
+
+  * Clicking the 'Fill with Determination' button changes 'Status' to 'determined'.
+
+* Open [08-Ins_useState/src/App.js](../../../../01-Class-Content/21-react/01-Activities/08-Ins_useState/src/App.js) in your IDE and explain the following:
+
+  * From React, we import `useState`.
+
+  ```js
+  import React, { useState } from "react";
+  ```
+
+  * `useState` is a built-in Hook that will _always_ return an array of two elements. The first returned element is a snapshot of the current state. The second returned element is a function that allows us to _overwrite_ the current state.
+
+  * We destructure the array returned from `useState` into two variables: `developerState` and `setDeveloperState`, and initialize state with an object containing `mood`, `lifeLongLearner` and `excitementLevel` properties.
+
+  ```js
+  const [developerState, setDeveloperState] = useState({
+    mood: "content",
+    lifeLongLearner: true,
+    excitementLevel: 9000
+    })
+  ```
+
+  * 📝 The function will _not_ merge with the existing state as `setState` does. This means that whatever is passed into useState will _overwrite_ the object that was previously there.
+
+  * The `changeMood` function accepts a parameter, `mood`, and calls the `setDeveloperState` method:
+
+  ```js
+  const changeMood = (mood) => {
+    setDeveloperState({
+      mood: mood,
+      lifeLongLearner: developerState.lifeLongLearner,
+      excitementLevel: developerState.excitementLevel
+    });
+  };
+  ```
+
+  * 📝 If we want to change _just one_ property, such as `mood`, with `setDeveloperState`, we need to update the entire object, not just the property in question. This is because `setDeveloperState` _overwrites_ the previous state, instead of merging it with the existing state, as `this.setState` does.
+
+  * 💡To avoid repeating yourself, you can shorten this code by using the spread notation `...`. Like `setDeveloperState({...developerState, mood})`.
+
+  * Setting the `onClick` attribute to an arrow function that _returns_ the function that we want to call when the button is clicked.
+
+  ```js
+  <button onClick={()=>changeMood("lazy")}>Encourage Laziness</button>
+  <button onClick={()=>changeMood("determined")}>Fill with Determination</button>
+  ```
+
+  * If we were to pass it the function by itself, then the `changeMood` function would be _called_ directly, resulting in an infinite loop.
+
+* Answer any questions before beginning the activity.
+
+### 8. Students Do: useState Activity (15 mins)
+
+Files: [09-Stu_useState/Unsolved](../../../../01-Class-Content/21-react/01-Activities/09-Stu_useState/Unsolved)
+
+```md
+  In this activity we will practice using the useState hook in React.
+
+  ## Instructions
+
+  * Replace your React application's src folder with [Unsolved/src](Unsolved/src).
+
+  * If you created a new React app, you will need to add the Bootstrap link to `index.html`.
+
+  * Start the application in dev mode by running `npm start` in your terminal.
+
+  * Open your browser to [localhost:3000](http://localhost:3000) and study the rendered application.
+
+  * Update this application to accomplish the following:
+
+  * In `pages/Signup/index.js`, replace `NAME_HERE` and `PASSWORD_HERE` with code that will display both the name and password.
+
+  * The state of the Signup component should be handled by the useState Hook.
+
+  * When the value of an input field changes, the state should update, causing the component to render.
+
+  * Upon form submission, the `handleSubmit` method should `console.log` the username and password.
+```
+
+### 9. Instructor Do: Review useState Activity (10 mins)
+
+* Run [09-Stu_useState/Solved](../../../../01-Class-Content/21-react/01-Activities/09-Stu_useState/Solved) by copying the `src` folder into your prepared CRA application. Navigate to http://localhost:3000/ in your browser and demonstrate the following:
+
+  * Email and password values entered into the input fields are rendered in the DOM.
+
+* Open `src/pages/Signup/index.js` and explain the following:
+
+  * We import `useState` from `react`:
+
+  ```js
+  import React, { useState } from "react";
+  ```
+
+  * Using array destructuring, we initialize `username` and `password` variables for state and `setUsername` and `setPassword` setter methods, by invoking `useState` twice:
+
+  ```js
+   const [username, setUsername] = useState();
+   const [password, setPassword] = useState();
+   ```
+
+  * 🔑 Since we're not specifying a default value, we won't pass anything to `useState()`.
+
+  * 🎗️ `useState` overwrites the current state instead of merging state like `this.setState` does.
+
+  * In the `<input>` components in the `return` block, we use the `onChange` method to call our setter methods for username and password and pass each the value of the target that triggered the event:
+
+  ```js
+    <Col size="12">
+      <input
+        className="form-control"
+        type="text"
+        placeholder="Username"
+        name="username"
+        onChange={e => setUsername(e.target.value)}
+      />
+    </Col>
+  </Row>
+  <Row className="form-group">
+    <Col size="12">
+      <input
+        className="form-control"
+        type="password"
+        placeholder="Password"
+        name="password"
+        onChange={e => setPassword(e.target.value)}
+      />
+    </Col>
+  ```
+
+* Some students may have tried to use the `value` attribute. Ask them why using `value` with `onChange` might be a bad idea.
+
+* It all comes down to controlled input vs uncontrolled input.
+
+  * **Controlled input** accepts its current value as a prop and has a callback that allows you to change its value. Whenever `onChange` updates its value, it's essentially the input controlling itself.
+
+  * **Uncontrolled input** is an input that gets its value from somewhere else. In our case, if `value={username}`, then the input would be getting its value from the state.  
+
+  * The combination of the two would result in the component going from uncontrolled to controlled, which is considered bad practice.
+
+### 10. Instructor Do: useEffect Demo (10 mins)
+
+* Next, we will introduce students to the `useEffect` Hook.
+
+  * Let the students know that effects, often referred to as side effects, are bits of code responsible for the modification of state, often in the "outside world". In React, effects are most commonly used for data fetching and manually changing the DOM.
+
+  * For example, if one were to create a method that is responsible for creating a user, they could separate it into one regular method that creates the object/validates the data and one effect method that saves the user to a database.
+
+* Open up [10-Ins_useEffect/App.js](../../../../01-Class-Content/21-react/01-Activities/10-Ins_useEffect/App.js) in your IDE.
+
+  * Let the students know that `useEffect` is a method that takes two arguments.
+
+  * The first argument is a function that you want to run after the component mounts.
+
+  * The second argument is an array of dependencies, commonly referred to as "deps". Every time the component re-renders, the `useEffect` Hook will check to see if any of the values in its dependency array have changed. If they have, then the function that you supplied as the first argument of `useEffect` will run again. If not, React will skip the effect for that particular render.
+
+  * Ex: If `[props.name]` is provided, then `useEffect` will run once upon initial page render, then once every subsequent render that is caused by a change in `props.name`.
+
+  * When an empty array is provided, `useEffect` will only run when the component renders the first time.
+
+  * Explain that if we supplied `developerState` as a dependency, it would cause an infinite loop. This is because every single time `developerState` would change, it would call `useEffect`, forcing `developerState` to change again.
+
+  ```js
+  useEffect(() => {
+    // For demonstration purposes, we mock an API call.
+    const developer = getDeveloper();
+    setDeveloperState(developer);
+    console.log("Developer State:");
+    console.log(developerState);
+  }, []);
+  ```
+
+* Open your browser again and demonstrate that the state appears in the console once upon page render, then after every time a button is pressed.
+
+  * Recall that the button click still uses the `useState` hook, which causes the component to re-render.
+
+### 11. Students Do: useEffect Activity (20 mins)
+
+Files: [11-Stu_useEffect/Unsolved/src/App.js](../../../../01-Class-Content/21-react/01-Activities/08-Ins_useState/Unsolved/src/App.js)
+
+```md
+  In this activity we will practice using the useState and useEffect Hooks in React by transforming a stateful class component into a functional component with React Hooks.
+
+  ## Instructions
+
+  * Replace your React application's src folder with [Unsolved/src](Unsolved/src).
+
+  * If you created a new React app, you will need to install axios and React Router.
+
+  * Start the application in dev mode by running `npm start` in your terminal.
+
+  * Open your browser to [localhost:3000](http://localhost:3000) and study the rendered application.
+
+  * Update this application to accomplish the following:
+
+  * Create a functional component in place of the class component.
+
+  * Replace `this.state` and all instances of `this.setState` using the `useState` Hook.
+
+  * Update the component with the `useEffect` Hook to eliminate the need for `componentDidMount`.
+
+```
+
+### 12. Instructor Do: Review useEffect (10 mins)
+
+* Run [11-Stu_useEffect/Solved/](../../../../01-Class-Content/21-react/01-Activities/08-Ins_useState/Solved/) by copying the `src` folder into your prepared CRA application. Navigate to http://localhost:3000/ in your browser and demonstrate the following:
+
+  * The application immediately queries the Wikipedia API based on input.
+
+* Open `11-Stu-useEffect/Solved/src/pages/Search/index.js` and explain the following:
+
+  * All of the states have been set up at the top of the file.
+
+  ```js
+  const [search, setSearch] = useState("Wikipedia");
+  const [title, setTitle] = useState("");
+  const [description, setDescription] = useState("");
+  const [url, setUrl] = useState("");
+  const [error, setError] = useState("");
+  ```
+
+  * 📝 `search` is the only term provided with a default value. We could also create a single object to hold the values, but in using separate Hooks our code is more readable and manages state better. We pass `search` to the `useEffect` hook in the 'deps' array. `useEffect` will run when the component mounts, then after each time the value in the search input field changes.
+
+  ```js
+  useEffect(() => {
+    document.title = "Wikipedia Searcher";
+    if(!search) {
+      return;
+    }
+    API.searchTerms(search)
+      .then(res => {
+        if(res.data.length === 0) {
+          throw new Error("No results found.");
+        }
+        if (res.data.status === "error") {
+          throw new Error(res.data.message);
+        }
+        setTitle(res.data[1]);
+        setDescription(res.data[2][0]);
+        setUrl(res.data[3][0]);
+      })
+      .catch(err => setError(err));
+  }, [state]);
+  ```
+
+  * The `if(!search)` conditional ensures that we do not run a query if the input field is empty.
+
+  * The `handleInputChange` method now simply uses our `setSearch` hook.
+
+  ```js
+  const handleInputChange = event => {
+      setSearch(event.target.value);
+    };
+  ```
+
+* Ask students the following questions:
+
+  * ☝️ What was the point of this? (Feel free to make a bad pun here).
+
+  * 🙋 Writing functional components is much cleaner. Using Hooks allows you to write fewer lines of code and manage your state in a less complex way. (No `this` keyword required!)
+
+  * ☝️ If we use Hooks, can state be used by other components?
+
+  * 🙋 No. The state used within a single component cannot be used by different components.
+
+  * ☝️ Can you think of a concept that would allow us to share state across components?
+
+  * 🙋 We can add this functionality by using the Context API with the built in `useContext` Hook.
+
+### 13. Instructor Do: Custom Hooks Demo (10 mins)
+
+* Take a moment to ask the class to recite the two rules of Hook.
+
+  * Only call Hooks from top-level components. This means **never** call Hooks from within loops, conditionals, or nested functions.
+
+  * Hooks may only be called from React components. **Never** call a Hook from a regular JavaScript function.
+
+* Next, introduce the class to the concept of custom Hooks. Remind the class that the two rules of Hooks still apply to custom Hooks.
+
+  * Custom Hooks can be practically anything! Custom Hooks are best suited to extract logic that may be repeated.
+
+  * Custom Hooks are a great way to keep your React functions pure.
+
+* In addition to the two rules of Hooks, let students know that custom Hooks must start with the word `use` so that React can ensure that your code is adhering to the two rules of Hooks.
+
+* Let students know that just as with `useState` and `useEffect`, different components that use the same custom Hook do **not** share the same state. If you wish to have two components that use the same state, you should use `useContext` or combine and custom Hook with `useContext`.
+
+* Open [CustomHook Demo](../../../../01-Class-Content/21-react/01-Activities/05-Ins_CustomHook/) in your browser.
+
+  * Show students that when you change the value of the `name` input field, the corresponding section in the card updates.
+
+  * Open the console and demonstrate that every change in either field causes an object to be logged.
+
+* Open [useUserModel.js](../../../../01-Class-Content/21-react/01-Activities/05-Ins_CustomHook/src/utils/useUserModel.js) in your IDE.
+
+  * The purpose of this Hook is to control the user model. Each property of the `userModel` will be an object with the properties `value` and a method for changing the value named `onChange`.
+
+  * Point out that the Custom Hook is a top level function. Within it we can use Hooks like `useEffect` and `useState`.
+
+  * Our Hook starts with the word `use` so that we can easily identify it.
+
+  * We set the `nameState` and `statusState` to have default string values. ImageState is set to a default image from our `assets` folder.
+
+  * The Hook returns an object with an `error` property that will return an error if the `nameState` is ever left empty.
+
+  ```js
+  import { useState } from 'react';
+
+  import profileImage from "../assets/images/profile.png";
+
+  const useUserModel = () => {
+    let [nameState, setName] = useState('Bob')
+    let [statusState, setStatus] = useState('Excited');
+    let [imageState, setImage] = useState(profileImage);
+
+    return {
+      error: nameState === '' ? 'Please enter a name' : "",
+      name: {
+        value: nameState,
+        onChange: e => setName(e.target.value),
+      },
+      image: {
+        value: imageState,
+        onChange: e => setImage(e.target.value),
+      },
+      status: {
+        value: statusState,
+        onChange: e => setStatus(e.target.value),
+      }
+    }
+  }
+
+  export default useUserModel;
+
+  ```
+
+* Open [App.js](../../../../01-Class-Content/21-react/01-Activities/05-Ins_CustomHook/src/App.js) and explain the following:
+
+  * Our state is managed with a Context Object called `UserContext`.
+
+  * The `useEffect` hook is **only** being used to show the developer every time that `userModel` changes.
+
+  ```js
+  import React, { useEffect } from 'react';
+  import './App.css';
+
+  import useUserModel from "./utils/useUserModel";
+  import UserContext from "./utils/UserContext";
+  import UserCard from './components/UserCard';
+  import UserForm from './components/UserForm';
+
+  const App = () => {
+
+    const userModel = useUserModel();
+
+    useEffect(() => {
+      console.log(userModel)
+
+    }, [userModel]);
+
+    return (
+      <div className="container text-center">
+        <h1 className="mt-4 mb-4">Welcome to the Person Creator!</h1>
+        <div className="jumbotron">
+          <UserContext.Provider value={ userModel }>
+            <UserForm />
+            <UserCard />
+          </UserContext.Provider>
+        </div>
+      </div>
+    );
+  };
+
+  export default App;
+  ```
+
+### 14. Students Do: Custom Hooks (15 mins)
+
+* Introduce [CustomHook Unsolved](../../../../01-Class-Content/21-react/01-Activities/06-Stu_CustomHook/Unsolved)
+
+* In this activity we will practice using Custom Hooks by creating a `useDebounce` Hook that will delay the invoking of a function for a given number of milliseconds.
+
+```md
+
+  * Replace your React application's src folder with [Unsolved/src](Unsolved/src).
+
+  * Start the application in dev mode by running `npm start` in your terminal.
+
+  * Open your browser to [localhost:3000](http://localhost:3000) and study the rendered application.
+
+  * Update this application to accomplish the following:
+
+  * Create a new Custom Hook called `useDebounce` that takes in the two parameters `value` and `delay`.
+
+  * Use `setTimeout` to handle the value of the debouncer.
+
+  * Update the `Search` page so that the useEffect Hook is listening for the value returned from the `useDebounce` Hook. Pass in a `delay` value of 500.
+
+  * The finished application should only search for a new article if there has been a period of 500 milliseconds without any user input.
+
+```
+
+### 15. Instructor Do: Review Custom Hooks (10 mins)
+
+* Open [15-Stu_CustomHooks/](../../../../01-Class-Content/21-react/01-Activities/15-Stu_CustomHooks/) in your browser.
+
+  * Type `software developer` into the Article Search Bar.
+
+  * Point out that the article below the search bar only updated once you finished typing.
+
+  * Slowly type out each letter of `software developer` and demonstrate that the API call occurs if there has been a period of over 500 milliseconds without any input changing.
+
+* Open [15-Stu_CustomHooks/Solved/src/utils/debounceHook.js](../../../../01-Class-Content/21-react/01-Activities/15-Stu_CustomHooks/Solved/src/utils/debounceHook.js) in your IDE and point out the following:
+
+  * We will use the `useEffect` and `useState` Hooks in our custom Hook.
+
+  * Our Custom Hook starts with the word `use`.
+
+  * `useDebounce` takes in two parameters: `value` and `delay`.
+
+  * The state is controlled with a Hook at the top level of our `useDebounce` Hook.
+
+  * We create a `setTimeout` method and set it to a variable called `handler` so that we may later `clearTimeout`.
+
+  * We `return` a function that clears the timeout.
+
+  * Inside the `useEffect` Hook, if a `return` statement is provided, then the function that is returned gets run every time the component unmounts **or** right before the next `useEffect` is called. This is known as a "cleanup" function because it is designed to tie up the loose ends in effects that are dependant on outside effects. In our case, the outside effect is the `handler` timeout we created.
+
+  ```js
+  import { useEffect, useState } from "react";
+
+  const useDebounce = (value, delay) => {
+    const [debouncedValue, setDebouncedValue] = useState(value);
+    useEffect(() => {
+      const handler = setTimeout(() => {
+        setDebouncedValue(value);
+      }, delay);
+      // Cancel the timeout if value or delay changes
+      return () => {
+        clearTimeout(handler);
+      };
+    },
+    // Only call the effect if value or delay changes.
+    [value, delay]
+    );
+
+    return debouncedValue;
+  };
+  export default useDebounce;
+  ```
+
+* Open [15-Stu_CustomHooks/Solved/src/utils/debounceHook.js](../../../../01-Class-Content/21-react/01-Activities/15-Stu_CustomHooks/Solved/src/utils/debounceHook.js) in your IDE and point out the following:
+
+  * The `debouncedSearchTerm` variable is set up **outside** of the `useEffect` Hook. We pass in the existing `search` variable that is tied to our component state and pass in 500 as our second parameter.
+
+  * First, we will check to make sure that the input text is not empty.
+
+  * Then we ensure that `debouncedSearchTerm` is not `undefined` or `null`.
+
+  * `useEffect` receives `debouncedSearchTerm` so that it will only run when the debounced term changes instead of running whenever `search` changes.
+
+```js
+const debouncedSearchTerm = useDebounce(search, 500);
+
+  useEffect(() => {
+    document.title = "Wikipedia Searcher";
+    if(!search) {
+      return;
+    }
+    if(debouncedSearchTerm) {
+      API.searchTerms(search)
+        .then(res => {
+          if(res.data.length === 0) {
+            throw new Error("No results found.");
+          }
+          if (res.data.status === "error") {
+            throw new Error(res.data.message);
+          }
+          setArticleState({
+            title: res.data[1],
+            description: res.data[2][0],
+            url: res.data[3][0]
+          });
+        })
+        .catch(err => setError(err));
+    }
+
+  }, [debouncedSearchTerm]);
+```
+
+### 16. Instructor Do: Recommend Material (0 mins)
 
 * Recommend students go through the following material at home before next class if possible. These articles will help them better understand the material covered today in class.
 
@@ -632,12 +761,10 @@ In this example we will demonstrate AJAX requests with React.
 
 * Congratulate the class on making it halfway through React! Remind them that this is a difficult subject but they've already come a long way.
 
-### 18. End (0 mins)
+### 17. End (0 mins)
 
 ### Lesson Plan Feedback
 
-How did today's class go?
+How did today’s lesson go? Your feedback is important. Please take 5 minutes to complete this anonymous survey.
 
-[Went Well](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=ft&sentiment=positive&lesson=10.03)
-
-[Went Poorly](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=ft&sentiment=negative&lesson=10.03)
+[Class Survey](https://forms.gle/nYLbt6NZUNJMJ1h38)

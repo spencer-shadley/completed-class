@@ -1,409 +1,373 @@
-## 6.1 Lesson Plan - Constructors (10:00 AM) <!--links--> &nbsp; [⬅️](../../05-Week/05-Day/05-Day-LessonPlan.md) &nbsp; [➡️](../02-Day/02-Day-LessonPlan.md)
+## 6.1 Lesson Plan - Intro to Node Servers (10:00 AM) 
 
 ### Instructors and TAs: Please take the Mid-Course Instructional Staff Survey if You Haven't Yet
 
-Trilogy as a company values transparency and data-driven change quite highly. As we grow, we know there will be areas that need improvement. It’s hard for us to know what these areas are unless we’re asking questions. Your candid input truly matters to us, as you are vital members of the Trilogy team. In addition to the individual feedback at the end of lesson plans
-we would appreciate your feedback at the following link if you have not already taken the mid-course survey:
-[Instructional Staff Survey](https://docs.google.com/forms/d/e/1FAIpQLSdWXdBydy047_Ys1wm6D5iJY_J-0Mo0BqCjfGc4Er2Bz9jo5g/viewform)
- 
-### Overview
+Trilogy as a company values transparency and data-driven change quite highly. As we grow, we know there will be areas that need improvement. It’s hard for us to know what these areas are unless we’re asking questions. Your candid input truly matters to us, as you are vital members of the Trilogy team. In addition to the individual feedback at the end of lesson plans we would appreciate your feedback at the following link if you have not already taken the mid-course survey:
+[https://docs.google.com/forms/d/e/1FAIpQLSdWXdBydy047_Ys1wm6D5iJY_J-0Mo0BqCjfGc4Er2Bz9jo5g/viewform](https://docs.google.com/forms/d/e/1FAIpQLSdWXdBydy047_Ys1wm6D5iJY_J-0Mo0BqCjfGc4Er2Bz9jo5g/viewform)
 
-In this class we will be introducing students to the usage of JavaScript constructors and how they can be used to dynamically create objects with similar schemas.
+## Overview
 
-Today we will be diving into constructors some more by introducing user input into the mix.
+In this class, we will provide students with a deep conceptual understanding of server-side code and use vanilla Node.js to create basic servers.
 
-`Summary: Complete Activities 1 - 7 & Begin Activity 8 in Unit 11`
+## Instructor Notes
 
-##### Instructor Priorities
+* `Summary: Complete activities 01-12 in Unit 11`
 
-* Reintroduce students to the basics of JavaScript objects (properties and methods)
-* Students should understand how to create a basic JavaScript constructor
-* Students should be able to use constructors and user input to dynamically create objects
-* Build upon students' knowledge of constructors by linking it to user input
-* Introduce and help students overcome the complex relationship between loops, user input, and constructors
+* This class is all about introducing students to the concept of server-side code. Coming into class today, students will have a fairly rudimentary notion of servers. Without your guidance it will be difficult for them to understand how the terminal-side code they've been creating thus far using Node.js fits into the big picture of web development. Today's class is all about filling these conceptual gaps.
 
-##### Instructor Notes
+* Consistently, in this unit, we'll be relying on an analogy that servers are like "big empty boxes". In this analogy, we fill these boxes with sub-modules or code snippets that enable the server to have the functionality we need. Do your part in using this analogy to provide your students with a visual understanding of how server-side code works.
 
-* At the start of class you will be introducing students to [JobTrack](https://jobtrack.trilogyed.com), which will be made freely available to students. If possible, take a moment to go through the [short slideshow](https://docs.google.com/presentation/d/1XduSzeA8u9D08JBWFi232FuvLv9axBSCpEpVC0Zgf6M/edit?usp=sharing) before class.
+* Also note that in today's class, we will be introducing students to the plain Node approach for creating servers. Let them know that for today's class understanding the exact syntax is _less_ important than understanding the conceptual picture. You can also let them know that in the next class they will be introduced to Express.js, which will simplify some of the code complexity of today.
 
-* Constructors are extremely useful in creating objects of similar types and allow for the development of very interesting applications. So long as your students have a firm understanding of how objects function, they should find today's lesson and activities very enjoyable.
 
-* At the beginning of this class, make sure to go over the basics of objects once again so as to help your students recall how they are created and used. This will ultimately help them in understanding constructors better.
+## Learning Objectives
 
-* Your students should feel quite comfortable in their ability to use javascript constructors.
+* To gain a conceptual understanding of server-side code.
 
-* The one stumbling block that your class may encounter today will likely come in the form of utilizing loops, user input, and constructors all together to create multiple objects. Be sure to go over some of the workarounds to these challenges before having your class tackle any of the later activities.
+* To learn the fundamentals of building a server using plain Node.js to listen and respond to client-side requests.
 
-* We will be coming up on MySQL in two classes. Let student's know to install MySQL Server and Workbench. Guides have been provided so slack these out to students:
+## Slides
 
-  * [MySQL Install Mac](../02-Day/Install_Guides/mysql-mac-guide.md)
-  * [MySQL Install Windows](../02-Day/Install_Guides/mysql-windows-guide.md)
+[11.1: Intro to Node Servers](https://docs.google.com/presentation/d/1EWJxjwlLUBqfhVrYlfqNG6RJGDVBZCYOYRitbnVHeD0/edit?usp=sharing)
 
-* If your class runs into trouble with this install process, feel free to use MAMP or any other installation solution that you would prefer to get the class ready.
+## Time Tracker
 
-* Have your TAs reference [01-Day-Time-Tracker](https://drive.google.com/a/trilogyed.com/file/d/105fwzlYpuj5EqJutMqekdjo9_fcyiMhE/view?usp=sharing) to help keep track of time during class.
-
-### Sample Class Video (Highly Recommended)
-* To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a860f003-e8ae-4340-975c-d1bc46888751).
+[06.1 Time Tracker](https://docs.google.com/spreadsheets/d/105fwzlYpuj5EqJutMqekdjo9_fcyiMhE/edit#gid=194207795)
 
 - - -
 
-### Class Objectives
+## Class Instructions
 
-* To master the basics of JavaScript objects.
-* To create basic JavaScript constructors for usage in Node applications.
-* To create a simple Node application which uses methods contained within a constructed object.
-* To feel 100% comfortable using javascript constructors.
-* To create simple applications that take in user input and utilize a constructor so as to create objects.
+### 1. Instructor Do: Server-Side Slide Show (0:25)
+
+* Welcome students to class and then dive into the slide deck [13-1 Intro to Node Servers](https://docs.google.com/presentation/d/1gWWPh5lp7DNAlYQwaj9idZ1WLmVc5w1VY_D46de8KOE/edit?usp=sharing). Be sure to spend the appropriate amount of time with this presentation. It offers students important warnings about the challenge of this week's class as well as advice on succeeding in the week ahead.
+
+* Use the presentation as cues to ask your students basic review questions on servers and clients. Try to call on individual students as you proceed through these slides.
+
+* Spend the appropriate amount of time discussing the physical (hardware) nature of servers. Ensure that students understand that servers are little more than central computers that respond to requests from users accessing the machine.
+
+![Central Server](Images/00-Server.png)
+
+* Use this time to also preface the fact that during development, we use our machines to both emulate the client-side (browser) and the central server (`localhost`). Warn students that this is a concept that will seem tricky, but is fundamentally important to keep straight. You can specifically use the line: "In a way, our computer will be modeling two different computers at once."
+
+* Then proceed through the slides on "Building a Server". Offer the students the perspective that when they purchase a server or a server instance from a cloud provider, they are only getting an empty box. It is up to them as developers to create the code that powers this box, such that it can respond to requests in the ways we've talked about thus far.
+
+![LocalHost](Images/00-Server3.png)
+
+* Use the slides provided to walk students through the core functions common to most servers:
+
+  * Listeners that listen for client-side requests.
+
+  * URL Parsers for breaking down the URLs that clients make requests to. (You can use the example of how news websites use URLs that mix dates and article titles to identify, which resource to grab)
+
+  * Route Handling for determining what _happens_ when a user visits or sends data to a specific URL.
+
+  * The ability to send HTML or send JSONs in response to users requesting data.
+
+  * The ability to receive POSTs (i.e. data that users send).
+
+  * The ability to initiate more complex server-side logic in response to any of these requests.
+
+  * And more (Authentication, Logging, Database Connections, etc.)
+
+* From here proceed with the coding activities.
+
+### 2. Instructor Do: My First Server (0:20)
+
+* In this exercise, go through the process of re-creating the server.js file found in `01-FirstServer`. If at all possible, create this server "live" and comment on it as you go.
+
+  ![/Images/001-ServerBasic.png](Images/001-ServerBasic.png)
+
+* During your commentary be sure to point out how:
+
+  * We incorporated the `http` module. This, in essence, is a package ("small box") which allows our server ("big box") to have the capability of handling http requests and responses. HTTP is package that comes with the standard Node library.
+
+  * We specified a port. This could be anything between 80 and above. In essence, a port is like a portal through which servers and clients communicate. The number itself doesn't matter so much for right now, but later we'll be using port 80 which is the standard port URLs use.
+
+  * We created a function for handling requests and responses and then gave this function to our created server.
+
+  * Finally, we set up the server such that it listens at the PORT specified.
+
+* Once you have completed the code write-up, run the application by typing `node server.js` from the command line. Then visit the URL `localhost:PORT`, where `PORT` is the port you specified in the server file. Point out how this emulates our browser (client) making a request of our localhost (server), and in turn receiving a single string response.
+
+  ![/Images/001-ServerBasic2.png](Images/001-ServerBasic2.png)
+
+  ![/Images/001-ServerBasic3.png](Images/001-ServerBasic3.png)
+
+* Answer any questions that remain for this example before proceeding to the next activity.
+
+### 3. Students Do: Two Servers App (0:20)
+
+* Now it's students' turn to build a web server (or rather two). Slack out the following:
+
+* **Instructions**
+
+  * Using the previous example as a guide, create an app that has two web servers: one that listens on port 7000 and one that listens on port 7500.
+
+  * Each server will respond with a different inspirational quote of your choosing.
+
+  **Bonus**
+
+  * Randomly select the quotes from a predefined array.
+
+### 4. Instructor Do: Review Two Servers App (0:05)
+
+* Congratulate the students for having just built their very own web servers!
+
+* Run `02-Two-Servers/Solved/server.js` and demonstrate how the message differs when you visit `http://localhost:7000` vs `http://localhost:7500`.
+
+* Then open the code and explain to students the solution. In offering your solution, be sure to mention that in this example, we effectively created two servers. Each server used a different port, a different listener, and a different function for handling requests.
+
+![Two Servers](Images/02-Two-Servers.png)
+
+* Slack a copy of the completed app to the class: `02-Two-Servers/Solved/server.js`.
+
+* Then proceed to the next demo.
+
+### 5. Instructor Do: Portfolio Server (0:15)
+
+* In this demonstration, you will be showing students a basic "url parsing" and "routing" example. Remember! Let students know that the exact syntax of this example isn't what's important. (They will be using Express in the next class to do it more simply). However, they should take the time necessary to understand what is happening here at a conceptual level.
+
+* Open the file `server.js` inside of `03-Portfolio`. Run the application using Node.js.
+
+![actiity3.png](Images/activity3.png)
+
+* In discussing the code, point out the following discussion items:
+  * The use of the abbreviated terms `req` and `res`, which are short for request and response.
+
+  * The use of the switch-case statement which routes the code to a different function depending on the URL provided.
+  * Finally, the way in which we created HTML dynamically and rendered it on the page in each function.
+
+* Slack out the solution when complete.
+
+### 6. Students Do: Discuss Portfolio (0:05)
+
+* Have students discuss the code with one another before asking them to re-explain it back to you. Tie up any loose ends that may remain.
+
+### 7. Instructor Do: Serving HTML (0:15)
+
+* In this next activity, we will be using `fs` to read and serve HTML files.
+
+* Open the code for `04-Serving-HTML/server.js` and give students a minute to look it over. Ask them what they think is going to happen when you visit `localhost:80`?
+
+![Serving HTML](Images/03-Serving-HTML.png)
+
+* Run `04-Serving-HTML/server.js` and open `localhost:80` in your browser. It's a website!
+
+* Point out how, in this example, we used the `fs` package to read in the `index.html` file. We then used the node server to output this same file back to the user as a response.
+
+### 8. Students Do: Discuss Serving HTML (0:05)
+
+* Have students discuss the code with one another before asking them to re-explain it back to you. Tie up any loose ends that may remain.
 
 - - -
 
-### 1. Instructor Do: Welcome Class (5 mins)
-
-* Welcome your students to class and tell them that today we will be revisiting objects and building upon our past knowledge of them to create more dynamic object-oriented applications.
-
-* Before diving into the new material, however, we have a small activity for them to work through beforehand to reintroduce them to objects.
-
-### 2. Instructor Do: Introduce JobTrack (15 min)
-
-* Inform the class that we'll be providing them free access to JobTrack.
-
-* Go through the slides found in [JobTrack.pptx](https://docs.google.com/presentation/d/1XduSzeA8u9D08JBWFi232FuvLv9axBSCpEpVC0Zgf6M/edit?usp=sharing). Be sure to highlight the following:
-
-  * JobTrack is a platform that helps job seekers plan and track their job search. Features include:
-
-    * Logging applied for positions and companies and their contact info.
-
-    * Reminders for when to follow up after an interview.
-
-    * Works on all your devices.
-
-    * Provides your career director visibility into how your job search is going.
-
-* Slack out the following instructions:
-
-  ```
-  STEP 1: Sign in to JobTrack at https://jobtrack.trilogyed.com using BCS credentials
-
-  STEP 2: Install the Chrome extension from https://chrome.google.com/webstore/detail/jobtrack-for-chrome/ojhnaheochknmclpabkpialdgkkcboni)
-
-  Step 3: Find three jobs you think you’ll be interested in:
-
-  Visit Dice.com, Indeed.com, Angel.co, or go to the career website of a company you’re interested in
-
-  If Chrome extension installed, open it on the job posting and enter the details
-
-  If no Chrome extension, copy the URL, switch to JobTrack and enter the URL, Company Name and Job Title
-
-  When ready to apply to jobs, return to JobTrack and use these jobs as a starting point
-
-  *Career Director will discuss these jobs on coaching call to identify what your ideal job is and how to attain it*
-  ```
-
-* Make sure the entire class is able to log into JobTrack successfully and was able to download the Chrome extension. Students may not be able to complete all of step 3 in the time allotted, but have them get the process started.
-
-### 3. Students Do: Raining Cats and Dogs (15 mins)
-
-* Slack out the following instructions.
-
-* **Instructions**
-
-  * Make a dogs object with three keys...
-
-    * First key called "raining" with a value of true.
-
-    * Second key called "noise" with a value of "Woof!"
-
-    * Third key called "makeNoise" which contains a function which console.logs the noise to the screen if it is raining dogs.
-
-  * Make a cats object with three keys...
-
-    * First key called "raining" with a value of false.
-
-    * Second key called "noise" with a value of "Meow!"
-
-    * Third key called "makeNoise" which contains a function which console.logs the noise to the screen if it is raining cats.
-
-  * Make the dog bark.
-
-  * Make the cat meow.
-
-  * BONUS: Create a function called "massHysteria" which takes in both the cats and the dogs object and prints "DOGS AND CATS LIVING TOGETHER! MASS HYSTERIA!" if both of the `raining` keys are equal to true.
-
-  * BONUS: Look to see if you can find any means to simplify your code further and further.
-
-### 4. Everyone Do: Raining Cats and Dogs Demo (10 mins)
-
-* Open up your editor and call upon a couple students at random to come up and code out specific parts of the assignment whilst explaining their logic to the class.
-
-* Run the completed code in Git Bash and then go over the code line-by-line with the class.
-
-  * The code should look similar to the code we have provided you in [rainingCatsAndDogs-noCon.js](../../../../01-Class-Content/11-js-constructors/01-Activities/01-RainingCatsAndDogs-NoCon/Solved/rainingCatsAndDogs-noCon.js)
-
-    * This is what will print out on screen...
-      ![Mass Hysteria](Images/massHysteria.png)
-
-  * Make certain to point out how we created keys and methods within the dogs and cats objects.
-
-  * Also make certain to point out how we were able to call the values/methods of our cats and dogs objects later on in the code.
-
-* Ask the class if they see anything in this code which seems redundant upon further examination.
-
-  * The cats and dogs objects have the same keys and the same overall layout. The only thing that differs between the two is the data contained within their keys.
-
-* Ask your students if any of them came up with a foolproof way to get rid of this redundancy.
-
-  * Answer... JavaScript Constructors!
-
-  * Another potential answer could be JavaScript prototypes, but if this solution comes up then tell the class that we may go over prototypes later on if we have time.
-
-### 5. Instructor Do: Cats and Dogs, Constructed Together! (15 mins)
-
-* Open [rainingCatsAndDogs-con.js](../../../../01-Class-Content/11-js-constructors/01-Activities/02-RainingCatsAndDogs-Con/rainingCatsAndDogs-con.js) within your editor and ask your students to point out the differences between this code and the one we created for the last activity. Go over the code as they discover differences.
-
-* This code uses what's known as a constructor and it is essentially a function which can be called upon to create an object with a particular layout.
-
-  * Be sure to point out how the first letter of the constructor is capitalized. This syntax is to make it easier for coders to distinguish constructors from their other functions.
-
-* In order to create an object using a constructor, you would initialize a specified variable to hold the value `new Constructor()` where `Constructor()` is the function created earlier.
-
-  * This tells the computer to create a new object using the predefined constructor schema.
-
-* Objects created using this method can then be called as per usual.
-
-  * Warn your students that they should never call a constructor function by itself. If this is done, it will create global variables for those keys within it, potentially overwriting any variables that share the same name.
-
-### 6. Students Do: Character Creation (30 mins)
-
-* See if there are any questions and then Slack out the following activity.
-
-* **Instructions**
-
-  * Over the course of this activity you are going to be using constructors to create simplistic characters for use within a very basic Roleplaying Game (RPG).
-
-  * Each character created using your constructor should have the following properties...
-
-    * Name: The character's name --> String
-
-    * Profession: What the character does for a living --> String
-
-    * Gender: The character's gender --> String
-
-    * Age: The character's age --> Integer
-
-    * Strength: Abstraction for how strong the character is --> Integer
-
-    * HitPoints (HP): Abstraction for how much health the character has --> Integer.
-
-    * PrintStats: Function which prints all of a character's properties to the screen.
-
-  * Once you have created your constructor, create two new characters and print their properties to the screen.
-
-    * Fool around and get comfortable with your constructor before moving onto the next parts of the activity.
-
-  * Now that you feel comfortable with your constructor, it is time to start making this character creation system a little more reactive by adding in some more methods...
-
-    * IsAlive: Function which prints whether or not this character is alive by looking into their hitpoints and determining whether they are above or below zero.
-
-    * Attack: Function which takes in a second character's hitpoints and subtracts this character's strength from it.
-
-    * LevelUp: Function which increases this character's Age by 1, their Strength by 5, and their HitPoints by 25.
-
-  * BONUS: After completing the previous sections and making sure they work, you now have everything you need to create a very basic RPG where two characters fight one another. Don't worry if you cannot finish this part of the activity as, by completing the above sections you are well on your way to mastering constructors!
-
-### 7. Everyone Do: Character Creation Summary (15 mins)
-
-* Open up [characterCreate.js](../../../../01-Class-Content/11-js-constructors/01-Activities/03-CharacterCreate/Solved/characterCreate.js)  in your editor and start to go over the code line-by-line, making certain to point out how this constructor would allow for programmers to create any number of "Character" objects by changing up the values passed into the constructor.
-
-* Also make certain to point out how the `Character.attack()` and `Character.levelUp()` methods can be called to alter the values contained within either object. This allows us to run these methods instead of having to create external functions to do the same thing.
-
-* See if anyone in the class was able to tackle the bonus - no worries if no one did - and then start working alongside the class to construct a very basic RPG where two characters attack each other until one is defeated.
-
-  * The solution to this can be found within [characterCreate-withRPG.js](../../../../01-Class-Content/11-js-constructors/01-Activities/03-CharacterCreate/Solved/characterCreate-withRPG.js)  in case you are low on time or no one in the class was able to come up with a solution to the problem.
-
-  * Output of the code should look something like this...
-
-    ![SimpleRPG](Images/simpleRPG.png)
-
-### 8. Everyone Do: Building On Constructors (10 mins)
-
-* Ask them how we might want to go about adding new and unique properties/methods to constructed objects.
-
-  * They may not wholly understand why you would want to do this, so explain to your students how there may be some cases in which you may want constructed objects to differ in some way.
-
-  * For example, a teacher and student object could both be constructed from a basic Programmer object, but we may want the teacher property to include a unique property called `programsToGrade` which would not be included in the student object.
-
-* There is a very simple solution to this problem as it is EXACTLY like adding new properties and methods to regular JavaScript objects. All you have to do is assign a new property by calling the object (`student`), attach the new property to it after a period (`student.HW`), and then assign it a value (`student.HW="completed"`).
-
-  * The same would go for adding a new method except it would be declared to `function(){}`.
-
-### 9. Students Do: Tamagotchi Time (35 mins)
-
-* See if there are any questions and then Slack out the following activity.
-
-* **Instructions**
-
-  * Remember Tamagotchis? They were those little toys that contained "digital pets" which you could feed, pet, play with, and care for. Kind of like Furbies but a whole lot less terrifying. Over the next thirty minutes or so, you are going to create your own basic Tamagotchi clone using constructors.
-
-  * Create a constructor called "DigitalPal" which will create four properties and four methods...
-
-    * The first property is "hungry" and it initially starts out as false.
-
-    * The second property is "sleepy" and it initially starts out as false.
-
-    * The third property is "bored" and it initially starts out as true.
-
-    * The fourth property is "age" and it initially starts out at 0.
-
-    * The first method is "feed()" - If hungry is true, print "That was yummy!", set hungry to false, and then set sleepy to true. If hungry is false, print "No thanks! I'm full."
-
-    * The second method is "sleep()" - If sleepy is true, print `Zzzzzzz`, set sleepy to false, then set bored to true, and then run increaseAge(). If sleepy is false, print "No way! I'm not tired."
-
-    * The third method is "play()" - If bored is true, print "Yay! Let's play!", set bored to false, and then set hungry to true. If bored is false, print "Not right now. Later?"
-
-    * The fourth method is "increaseAge()" - This method runs within the sleepy() method when the DigitalPal goes to sleep and increases the DigitalPal's age by one while also printing "Happy Birthday to me! I am "+age+" old!"
-
-  * Create a variable named "Dog" that is set to a new DigitalPal before adding the following unique properties/methods to it...
-
-    * Outside - Initially set to false.
-
-    * Bark() - Prints out "Woof! Woof!" when run.
-
-    * goOutside() - If outside is false, prints "Yay! I love the outdoors!", sets outside to true, and runs Bark(). If outside is true, prints "We're already outside though..."
-
-    * goInside() - If outside is true, prints "Do we have to? Fine..." and sets outside to false. If outside is false, prints "I'm already inside..."
-
-  * Make a second variable named "Cat" that is set to a new DigitalPal and add the following methods to it:
-
-    * HouseCondition - Initially set to 100... But not for long...
-
-    * meow() - prints out "Meow! Meow!" when run.
-
-    * destroyFurniture() - Lowers HouseCondition by 10 and prints `MUAHAHAHAHA! TAKE THAT FURNITURE!` to the screen. Also sets bored to false and sleepy to true. If HouseCondition is equal to 0, then this should not run anymore.
-
-    * buyNewFurniture() - Raises HouseCondition by 50 and prints "Are you sure about that?" to the screen.
-
-  * Play around with your newly created digital pets for a bit and see what else you could add in order to make them even more exciting!
-
-  * BONUS: Make it so your Tamagotchis run off of user-input. It may sound easy at first, but this can actually be quite challenging. We will be going over this in more detail during the next class.
-
-### 10. Everyone Do: Tamagotchi Summary (15 mins)
-
-* Ask your class to raise their hands if they managed to get their "Digital Pets" to function properly and then call upon some of the more confident students to come up to the front of the class to code out the many different parts of the activity.
-
-  * This activity has a lot of parts to it, so you should be able to get everyone to come up to code out sections of it. We would recommend having each student who comes up tackle at least one method.
-
-* Once the code is complete, add in the code to make it so the program will run a few lines in the console and then go over it once more.
+### 9. Break (0:30)
 
 - - -
 
-### 11. Lunch (30 min)
+### 10. Students Do: Serve-Favorites (0:30)
 
-- - -
+* Next, run the `server.js` file found in `05-Serve-Favorites/Solved`. Visit each of the routes in that file (i.e. `localhost:8080/food`, `localhost:8080/movies`, etc.). Point out how the contents of the page changes each time.
 
-### 12. Students Do: Constructing Programmers (5 mins)
+* Then slack out the following activity for students to complete.
 
-* Slack out the following instructions...
+* **Instructions:**
 
-* **Instructions**
+  * Create a website with four routes:
+    * Home
+    * Favorite Food
+    * Favorite Movies
+    * Favorite CSS Frameworks
+  * Each route should be triggered by a different URL.
+  * Each route should display an HTML page listing your favorite three things of each.
+  * Be sure to use `fs` to serve your HTML files.
 
-  * In this activity, we are going to create a constructor function called "Programmer" which can be used to create objects containing information on various programmers.
+### 11. Instructor Do: Review Students Serve Favorites (0:10)
 
-  * Your "Programmer" constructor should be able to take in the following information...
+* Open up the `server.js` file found in `05-Serve-Favorites/Solved` and review the code in this example. During your discussion, be sure to point out:
 
-    * The programmer's name
-    * Their position/job title
-    * How old they are
-    * Favorite programming language
+  * How we created the basic skeleton of a Node server (requiring: `http` and the port number)
 
-  * Now create a method for the constructor that would print all of the information contained within an object to the console.
+  * How we set up a listener to initiate the server's handling of requests.
 
-  * Finally, create a "Programmer" object and call the method to print its contents.
+  * Created a function `handleRequest` which takes in a request URL, parses it, then relays the user to the correct page.
 
-### 13. Everyone Do: Constructing Programmers Summary (5 mins)
+    ![08-StudentsServe](Images/08-StudentsServe.png)
 
-* Once everyone has completed the activity, open up [programmers.js](../../../../01-Class-Content/11-js-constructors/01-Activities/05-Programmers/Solved/programmers.js) inside of your editor and discuss it with the class whilst answering any questions which they might have.
+  * This solution contains a lot of repeated code.  Ask your students if they have any suggestions how we might refactor this.  Then open `server-bonus.js` and point out how we implement just one `fs.readFile()` command by passing in a filePath into a `renderHTML` function.      
 
-* Point out how the process of creating new Programmer in this example could get rather tiresome since we are constantly having to modify our code each and every time. This is where user input comes in to save the day.
+### 12. Instructor Do: Request Methods (0:10)
 
-### 14. Instructor Do: Input + Constructors = Less Work Overall (5 mins)
+* Up until now, students have just been exposed to GET requests. (They may not even realize it yet, but all the URL visits they've made thus far have been GET requests). In this activity, we will very briefly introduce them to other HTTP methods.
 
-* Open up [programmersWithPrompt.js](../../../../01-Class-Content/11-js-constructors/01-Activities/06-ProgrammersWithPrompt/programmersWithPrompt.js) within your editor and start to go over the code with your students.
+* Open `06-Request-Methods/server.js` in your editor.
 
-* Be certain to run `npm install inquirer` within your terminal before executing the code.
+![Request Methods](Images/04-Request-Methods.png)
 
-* Make sure to point out how the creation of our new Programmer object and the calling of its `printInfo()` are located within the `.then` statement.
+* Briefly run through the code and explain that this app is going to log the type of request it receives, along with any information that was sent with the request.
 
-  * This is done so as to ensure that the constructor can appropriately grab the answers while also making certain that the `printInfo()` method is only run when there is a populated object. Doing otherwise would return an error.
+* Have students download the application [Postman](https://www.getpostman.com/). If you've never worked with Postman before, it's a simple application interface for performing HTTP request (GET, POST, PUT, DELETE, and more).
 
-### 15. Everyone Do: Making Multiples With Recursion (15 mins)
+![Postman](Images/10-Methods.png)
 
-* Slack out the above code to your students and let them play around with if for a little bit \[3-5 minutes or so] with the intention of creating multiple objects.
+* Run the server and use Postman to make different types of requests. Show the students how every time a request is made, it is logged in the server's console.
 
-  * The majority of your students will attempt to use a loop of some kind in order to accomplish this task. That will not work. If you wish, you can tell them this beforehand or you could let them stumble across the error for themselves.
+* Let the students know that the body of Postman requests must be sent in `raw`, and GET requests cannot have a body in Postman
 
-* After a short amount of time, call your class' attention back to the front and open up [programmersLoop-noRecursion.js](../../../../01-Class-Content/11-js-constructors/01-Activities/07-ProgrammersLoop/programmersLoop-noRecursion.js) within your editor and go over the code written with your class. Ask them all what they think this code will print to the console.
+![Posted](Images/06-Posted.png)
 
-  * After you have gotten a couple answers, open up terminal and execute the code.
+* Alternatively you can use CURL
 
-  * Be certain to run `npm install inquirer` beforehand or else the code will not run at all.
+  * `curl -i -H "Accept: application/json" -X GET -d "firstName=james" http://localhost:8080`
+  * `curl -i -H "Accept: application/json" -X POST -d "firstName=james" http://localhost:8080`
+  * `curl -i -H "Accept: application/json" -X PUT -d "firstName=james" http://localhost:8080`
+  * `curl -i -H "Accept: application/json" -X DELETE -d "firstName=james" http://localhost:8080`
 
-* Something similar to the following should print to your terminal... Which seems odd...
+* Slack students a copy of this server code: `06-Request-Methods/server.js`.
 
-  ![promptLoopFail](Images/promptLoopFail.png)
+* Let students know that we will be fleshing out this concept over the course of the week.
 
-* It appears that inquirer is asking the same question five times at once and is only accepting a single response. This creates five Programmer objects that are all exactly the same as each other which is not useful at all. What gives!?
+### 13. Instructor Do: Introduce Friend Finder Homework (0:05)
 
-  * Well, it turns out that our for loop is the culprit here. It is not waiting for the previous instance of inquirer to complete before moving onto the next one. As such, inquirer is being run multiple times at the same time.
+* Finally, end the class by opening the solution to the Homework (FriendFinder). Run the application using `node server.js` then visit `localhost`. Walk students through the basic gist of the application, describing it as a type of dating application or compatibility test. In essence, the application saves each user's survey responses in the database, then compares the responses against everyone in the database to identify the best match.
 
-* The way in which we solve this is by utilizing a coding technique called "recursion" to call upon inquirer only after the last instance has been completed. Seems complex, but it is actually quite a simple/helpful tool once you get the hang of it.
+* Stress that students should deploy their assignment as early as possible and ask for help if they run into issues. Explain that a non-deployed assignment will take a grade hit and won't help students professionally.
 
-* Open up [programmersLoop-recursion.js](../../../../01-Class-Content/11-js-constructors/01-Activities/07-ProgrammersLoop/programmersLoop-recursion.js)  within your editor and go over the code with your class.
 
-  * Once you have gone over the code, run it within your terminal to show how it works.
+### 14.	Instructor Do: Quick Recap "Server" Concepts (0:05)
 
-  ![promptLoopSuccess](Images/promptLoopSuccess.png)
+* Begin class by welcoming students. Then, open the slide deck [13-2 Express Yourself](https://docs.google.com/presentation/d/1T9dRhxABZyECQLFhctoAr2yZ4FhJjMD-wPguCgoTMBA/edit?usp=sharing) and walk students through the slides. These are fairly light slides meant merely to offer a visualization of routing. Feel free to cut slides completely if you feel they detract from your teaching style.
 
-* While this code works, it is still not 100% effective since our objects are still only obtainable within our function and we are not able to access them afterwards. In order to counteract this, we will want to push all of our objects into an array so that we can call upon them individually at a later time.
+* Use the slides to help you guide students through a recap of the concepts behind servers.
 
-* Open up [programmersLoop-recursionArray.js](../../../../01-Class-Content/11-js-constructors/01-Activities/07-ProgrammersLoop/programmersLoop-recursionArray.js) , run the code, and then go through the new additions.
+### 15.	Everyone Do: Introduce Express (0:05)
 
-  * Run the code in terminal and answer whatever questions your class may have before slacking out this final bit of code and moving onto the next activity.
+* Use the slides to introduce the concept of the Express framework and routing.
 
-### 16. Students Do: Team Manager (45 mins)
+* At one point in the slideshow you will be pointed to the NYT Scraper App website. Remind students how the webpage works (namely that the site lets users retrieve articles from the New York Times and store them in a "saved" list). Then use the proceeding slides to discuss the concept of GET and POST routes. Give them a heads-up that we'll be able to use AJAX and jQuery to make both these types of communications.
 
-* This is a 2 part assignment. Part 2 will be completed at the start of class tomorrow.
+### 16.	Instructor Do: Demo basic routing with server1.js (0:05)
 
-* Slack out the following instructions for part 1...
+* Before you start working with the code go to the link: [starwars-express-fsf.herokuapp.com/](https://starwars-express-fsf.herokuapp.com/) and show students how the page works. Essentially, you can type in a Star Wars Character's name and search the "database" to see his/her properties. You can also add characters to the database using the simple form. Add a character and show how it gets displayed on both the page and the API. (Note: When searching do not enter spaces between character names).
 
-* **Instructions**
+  ![1-FinalApp](Images/1-FinalApp.png)
 
-  * Over the course of this assignment you are going to put together a function which uses constructors and user input to create and manage a team of players.
+* To show the API you can simply go to this link: <http://starwars-express-fsf.herokuapp.com/api>. The api also accepts an additional parameter at the end of the URL in the form of <http://starwars-express-fsf.herokuapp.com/api/charactername>. As an example: <http://starwars-express-fsf.herokuapp.com/api/yoda>.
 
-  * Start out by creating a constructor function called "Player" with the following properties and methods...
+* Now open the file `server1.js` (`08-StarWars-1`). Walk students through the general gist of the code. _For now the key focus is to give them an understanding of express(), routing, and the listener_.
 
-    * `name`: Property which contains the player's name.
-    * `position`: Property which holds the player's position.
-    * `offense`: Property which is a value between 1 and 10 to show how good this player is on offense.
-    * `defense`: Property which is a value between 1 and 10 to show how good this player is on defense.
-    * `goodGame`: Method which increases either the player's offense or defense property based upon a coinflip.
-    * `badGame`: Method which decreases either the player's offense or defense property based upon a coinflip.
-    * `printStats`: Method which prints all of the player's properties to the screen.
+* Run the `server1.js` file and show them how it works. (Don't forget to talk about `npm install`).
 
-  * Now create a program which allows the user to create 3 unique players; 2 starters and a sub. It should take as user input the name, position, offense, and defense of each player.
+* Once you've discussed the key pieces proceed to the first activity.
 
-  * Once all of the players have been created, print their stats.
+### 17.	Students Do: Add Route to server1.js (0:10)
 
-  * HINT: Remember to use recursion when looping with inquirer! Otherwise your program might not return the prompts as you expect.
+* Slack out the following file and instructions:
 
-### 17. Dismiss class (1 min)
+* **File:**
 
-* Encourage the class to continue working on this, and tell them we'll go over part 1 and begin part 2 tomorrow!
+  * `server1.js` (`08-StarWars-1`)
+
+* **Instructions:**
+
+  * Work with those around you to confirm your `server1.js` file working. This means figuring out: what dependencies to install, how to run the file, and how to view the resulting website in your browser. This step requires you to make ZERO changes to the code file. At this point, you are just getting the file you are given to run.
+
+  * Then, once you've gotten the original code to display in the browser, create a new `Obi Wan Kenobi route` to display Kenobi's information. Use the comments and the previous code in the file as a guide.
+
+  * Help those around you when done.
+
+### 18.	Instructor Do: Review Previous Activity (0:05)
+
+* Review the previous activity by coding it out yourself. Your solution should look like something of the below:
+
+```js
+var obiwankenobi = {
+  name: "Obi Wan Kenobi",
+  role: "Jedi Knight",
+  age: 42,
+  forcePoints: 1350
+}
+
+app.get('/obiwankenobi', function(req, res){
+  res.json(obiwankenobi);
+})
+```
+
+### 19.	Partners Do: Dissect req.params (0:05)
+
+* Next slack out the following file and instructions.
+
+* **File:**
+
+  * `server2.js` (`09-StarWars-2`)
+
+* **Instructions:**
+
+  * Examine the code sent to you. Once again, run the `server2.js` file and view the page in the browser. Troubleshoot any issues that arise. Again NO CODE CHANGES required.
+
+  * Then once you have a working server instance, begin to examine the file. Try to explain to yourself and those around you what the significance of `/:character` and `req.params.character` is.
+
+  * Create a test case to check your hypothesis.
+
+### 20. Instructor Do: Review Previous Activity (0:05)
+
+* Have students try to explain to you what they found.
+
+* If no one offers the correct answer, explain that the `/:character` syntax is a way of saying we have a "variable" parameter in the URL route. Show them via the browser that this means they can search for a given character using the URL and it will display in the console.
+
+  ![2-reqParams](Images/2-reqParams.png)
+
+### 21.	Partners Do: Dissect Parameter Match (0:05)
+
+* Now slack out the next file:
+
+* **File:**
+
+  * `server3.js` (`10-StarWars-3`)
+
+* **Instructions:**
+
+  * Examine the code flagged in the comments. Explain to those around you what it does and how it works. Be sure to create test cases that confirm your hypothesis.
+
+### 22.	Instructor Do: Review Previous Activity (0:05)
+
+* Use the same process as before to ask students to explain the for-loop concept to you.
+
+* If no one offers the correct answer, explain that this for-loop "checks" which character is being sought after in the URL -- then finds that character's information and re-displays it back to the user in the form of a JSON.
+
+  ![3-searchParam](Images/3-searchParam.png)
+
+* Show them how this works by searching for the character `yoda`. Then try searching for a non-existent character like `hansolo`.
+
+* Ask students of an example where this concept of routing where the URL is changing might be found. (suggested answer: Newspapers. Every newspaper has a url like `/2016/01/01/Great-story-of-the-day` )
+
+### 23.	Instructor Do: Re-demonstrate Previous Solved Activity (0:10)
+
+* If needed, open the file `server4.js` (`11-StarWars-4`). This file simply includes a line-by-line commenting of the previous example. Slack out this file to students so they can look over it during the next few exercises.
+
+### 24.	Instructor Do: Show code for Post Route (0:05)
+
+* Now open the file `server5.js` (`12-StarWars-5`). In this example, simply point students through the fact that we've created a new POST route. Explain that this route will take in JSON inputs then DO work with them. In this case it will save the JSON to the database and return a JSON of the new character.
+
+  ![4-PostReq](Images/4-PostReq.png)
+
+### 25.	Students Do: req.body dissection (0:10)
+
+* Now slack out the following file and instructions.
+
+* **File:**
+
+  * `server5.js` (`12-StarWars-5`)
+
+* **Instructions:**
+
+  * Spend a few moments researching what `express.json` is for and what `req.body` means in the context of Express.
+
+  * Then research how you can POST data to the Express server.
 
 ### Lesson Plan Feedback
 
-How did today's class go?
+How did today’s lesson go? Your feedback is important. Please take 5 minutes to complete this anonymous survey.
 
-[Went Well](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=ft&sentiment=positive&lesson=06.01)
-
-[Went Poorly](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=ft&sentiment=negative&lesson=06.01)
+[Class Survey](https://forms.gle/nYLbt6NZUNJMJ1h38)

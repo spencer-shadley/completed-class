@@ -1,18 +1,12 @@
-## 6.5 - MySQL Big Data (10:00 AM) <!--links--> &nbsp; [⬅️](../04-Day/04-Day-LessonPlan.md) &nbsp; [➡️](../../07-Week/01-Day/01-Day-LessonPlan.md)
+## 6.5 - MySQL Big Data (10:00 AM) 
 
-### Overview
+## Overview
 
 Today's class focuses on using those MySQL skills students have acquired earlier in the week to deal with big data. On top of this, students should also become proficient in creating/using "schema.sql" and "seeds.sql" files while also learning how to import data using .CSV files.
 
-`Summary: Complete Activities 11-14 in Unit 12`
+## Instructor Notes
 
-##### Instructor Priorities
-
-* Students should feel confident in their abilities to create, read, update, and delete MySQL server data.
-* Students should know how to create and use "schema.sql" and "seeds.sql" files.
-* Students should have a firm understanding of how to import and export data using .CSV files.
-
-##### Instructor Notes
+* `Summary: Complete activities 11-14 in Unit 12`
 
 * Today's class is far gentler than the past two have been and should be looked at as a time to help everyone catch up with one-another. Throughout the assignment, you and your TA's should be moving about the room to help those who seem to be struggling.
 
@@ -20,28 +14,29 @@ Today's class focuses on using those MySQL skills students have acquired earlier
 
 * Despite all of this, today should hopefully be an easier day for your students as the assignment itself is not terribly challenging overall.
 
-* **Extra Resources:** Send out the following link before or after class and encourage students to tackle the two MySQL questions in [Whiteboarding Overview and Questions](https://coding-bootcamp-whiteboarding-algorithms.readthedocs-hosted.com/en/latest/).
+* **Extra Resources:** Send out the following link before or after class and encourage students to tackle the two MySQL questions in [Whiteboarding Overview and Questions](https://coding-bootcamp-whiteboarding-algorithms.readthedocs-hosted.com/en/latest/). This was given with the course pre-work but after this week, students should be able to accomplish those questions.
 
-* Have your TAs reference [05-Day-Time-Tracker](https://drive.google.com/a/trilogyed.com/file/d/1f2mWnABZScVsJKpcUxVUoLgP5hZJCpd0/view?usp=sharing) to help keep track of time during class.
+* Have your TAs reference [03-Day-TimeTracker](https://drive.google.com/a/trilogyed.com/file/d/1bgCBIYaRmjrEVbjAGkY1GKW-BGA2eyuj/view?usp=sharing) to help keep track of time during class.
 
-### Sample Class Video (Highly Recommended)
-* To view an example class lecture visit (Note video may not reflect latest lesson plan): 
-[Class Video 1](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=edc8c23a-4672-4504-99cc-a86a00fa8023).
-[Class Video 2](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7ec2876b-1d87-459f-b9d4-a86a010bd0d9).
+## Learning Objectives
+
+* To introduce students to the processes of creating and working within databases which deal with large data
+
+* To help solidify the foundations of MySQL and SQL syntax
+
+* To learn how to create MySQL schemas and import large amounts of external data into a database
+
+## Slides
+
+* N/A
+
+## Time Tracker
+
+[6.5 Time Tracker](https://docs.google.com/spreadsheets/d/1f2mWnABZScVsJKpcUxVUoLgP5hZJCpd0/edit#gid=489496587)
 
 - - -
 
-### Class Objectives
-
-* To introduce students to the processes of creating and working within databases which deal with large data.
-* To help solidify the foundations of MySQL and SQL syntax.
-* To learn how to create MySQL schemas and import large amounts of external data into a database.
-
-- - -
-
-### 0. Instructor Do: Welcome The Class (1 min)
-
-* Spend a minute or so welcoming the class to today's lesson while everyone gets settled.
+## Class Instruction
 
 ### Optional - MySQL Quiz (10 minutes)
 
@@ -57,7 +52,7 @@ If your class is struggling with MySQL fundamentals (Connecting, creating schema
 
 ### 2. Partners Do: Examining The Dataset (10 mins)
 
-* Slack out [TopSongs.csv](../../../../01-Class-Content/12-mysql/01-Activities/12-Top5000Schema/Unsolved/TopSongs.csv) to the class and have them look through it for a few minutes after telling them that this is the dataset they will be working with today. It contains 5000 lines of music data within it.
+* Slack out `TopSongs.csv` in `12-Top5000Schema` to the class and have them look through it for a few minutes after telling them that this is the dataset they will be working with today. It contains 5000 lines of music data within it.
 
 * Explain the data that each column contains. Reading the first from left to right, we have:
 
@@ -89,15 +84,15 @@ If your class is struggling with MySQL fundamentals (Connecting, creating schema
 
 * **Instructions**
 
-  * It's time to test your skills in creating databases and tables as you create a database called `top_songsDB` which will eventually house all of the music data contained within [TopSongs.csv](../../../../01-Class-Content/12-mysql/01-Activities/12-Top5000Schema/Unsolved/TopSongs.csv).
+  * It's time to test your skills in creating databases and tables as you create a database called `top_songsDB` which will eventually house all of the music data contained within `TopSongs.csv`
 
-    * Within your database create a table called `Top5000` and create columns capable of holding all of the data contained within [TopSongs.csv](../../../../01-Class-Content/12-mysql/01-Activities/12-Top5000Schema/Unsolved/TopSongs.csv) properly.
+    * Within your database create a table called `Top5000` and create columns capable of holding all of the data contained within `TopSongs.csv` properly.
 
-    * All of your code should be written and saved within a filed called `schema.sql` so that you can use this same code later should the need ever arise.
+    * All of your code should be written and saved within a filed called `schema.sql` so that you can use this same code later should the need ever arise
 
-    * HINT: Try to have your table's columns match those within the CSV file as closely as possible or else you may find the next step in this assignment more difficult than it would otherwise be.
+    * HINT: Try to have your table's columns match those within the CSV file as closely as possible or else you may find the next step in this assignment more difficult than it would otherwise be
 
-    * BONUS: Create a `seeds.sql` file that contains the data for the first three songs found within [TopSongs.csv](../../../../01-Class-Content/12-mysql/01-Activities/12-Top5000Schema/Unsolved/TopSongs.csv).
+    * BONUS: Create a `seeds.sql` file that adds the data for the first three songs found within `TopSongs.csv` to your table
 
     * BONUS: Look into how MySQL Workbench can import and export data files. What file types does it accept? How does it convert the data?
 
@@ -111,7 +106,7 @@ If your class is struggling with MySQL fundamentals (Connecting, creating schema
 
 * After the student has gone over their code and you have made sure everything works correctly, you may want to work your way through the code with the class one more time to make certain they all understand how everything works. Remember, this class is as much about catch-up and review as it is about working with big data.
 
-### 5. Instructor Do: Importing Data Demo (10 mins)
+### 6. Instructor Do: Importing Data Demo (10 mins)
 
 * When everyone's questions have been answered to the best of your ability, open up MySQL Workbench and navigate into your `TopSongsDB` database. Keep yourself open to questions as you walk students through importing data.
 
@@ -129,11 +124,11 @@ SELECT * FROM Top5000;
 
   * MySQL Workbench may say that it is "Not Responding" while importing... It is lying. When MySQL Workbench is importing a large file, it devotes all of its processes to that task and this makes it seem like the program has frozen when it is still working. Just be patient and give it time to import.
 
-  * If you don't want to deal with the full 5000 rows of data and want to go with something a touch more manageable, we have also provided you with [Top1000Songs.csv](../../../../01-Class-Content/12-mysql/01-Activities/12-Top5000Schema/Unsolved/Top1000Songs.csv) which holds significantly less data inside of it.
+  * If you don't want to deal with the full 5000 rows of data and want to go with something a touch more manageable, we have also provided you with `Top1000Songs.csv` in `12-Top5000Schema` which holds significantly less data inside of it.
 
 * When the file has been fully imported, select apply in the lower-right portion of the table-display screen to commit your additions to the database.
 
-  * Once again, this may take some time so do not freak out if it looks like MySQL Workbench has frozen.
+  * Once again, this may take some time so do not freak out if it looks like MySQL Workbench has frozen
 
     ![Top5000](Images/Top5000.png)
 
@@ -145,32 +140,38 @@ SELECT * FROM Top5000;
 
 * **Files**
 
-  * [TopSongs.csv](../../../../01-Class-Content/12-mysql/01-Activities/13-Top5000Code/Unsolved/TopSongs.csv)
+  * `TopSongs.csv` in `13-Top5000Schema`
 
-  * [Top1000Songs.csv](../../../../01-Class-Content/12-mysql/01-Activities/13-Top5000Code/Unsolved/Top1000Songs.csv)
+  * `Top1000Songs.csv` in `13-Top5000Schema`
 
 * **Instructions**
 
-  * Now that we have learned how to import big collections of data into a server, it is time to put this new knowledge to the test by importing all of the data contained within [TopSongs.csv](../../../../01-Class-Content/12-mysql/01-Activities/13-Top5000Code/Unsolved/TopSongs.csv) into our database.
+  * Now that we have learned how to import big collections of data into a server, it is time to put this new knowledge to the test by importing all of the data contained within `TopSongs.csv` into our database.
 
-    * HINT: Remember, bigger datasets require more time to import properly, so be patient.
+    * HINT: Remember, bigger datasets require more time to import properly, so be patient
 
-    * HINT: If you feel that the import process is taking far too long, feel free to use [Top1000Songs.csv](../../../../01-Class-Content/12-mysql/01-Activities/13-Top5000Code/Unsolved/Top1000Songs.csv) instead. We would highly recommend working with the bigger dataset if you can, however.
+    * HINT: If you feel that the import process is taking far too long, feel free to use `Top1000Songs.csv` instead. We would highly recommend working with the bigger dataset if you can, however.
 
-    * HINT: Take the downtime you have been given to start on the next part of the activity.
+    * HINT: Take the downtime you have been given to start on the next part of the activity
 
   * With all of your data successfully imported into the database, begin working on a Node console application which will allow you to collect more specialized pieces of data. For example...
 
-    * A query which returns all data for songs sung by a specific artist.
-    * A query which returns all artists who appear within the top 5000 more than once.
-    * A query which returns all data contained within a specific range.
-    * A query which searches for a specific song in the top 5000 and returns the data for it.
+    * A query which returns all data for songs sung by a specific artist
+    * A query which returns all artists who appear within the top 5000 more than once
+    * A query which returns all data contained within a specific range
+    * A query which searches for a specific song in the top 5000 and returns the data for it
 
   * HINT: There are some MySQL queries which could make some of these tasks even easier to accomplish. Feel free to look at MySQL's documentation to find some of them.
 
-### 8. Everyone Do: Going Over Working With Big Data (15 mins)
+- - -
 
-* Open up [TopSongsCode.js](../../../../01-Class-Content/12-mysql/01-Activities/13-Top5000Code/Solved/topSongsCode.js) within your editor and go over it with the class, going over the steps we used to create the database and import our table-data into it once more as well so that your students are 100% clear on how this process works.
+### 8. BREAK (30 mins)
+
+- - -
+
+### 9. Everyone Do: Going Over Working With Big Data (15 mins)
+
+* Open up `TopSongsCode.js` in `13-Top5000Code` within your editor and go over it with the class, going over the steps we used to create the database and import our table-data into it once more as well so that your students are 100% clear on how this process works.
 
 * We used some new SQL commands within our code which your students may not have found unless they decided to look online. These include the `GROUP BY` and `BETWEEN`statements.
 
@@ -208,11 +209,6 @@ SELECT * FROM Top5000;
   
   * If any time remains go over [this article explaining MySQL indexes](https://atech.blog/viaduct/mysql-indexes-primer) as a class or otherwise suggest students read over it when they have a chance later.
 
-- - -
-
-### 9. Lunch (30 min)
-
-- - -
 
 ### 10. Students Do: Two Tables Are Better Than One (60 mins)
 
@@ -226,7 +222,7 @@ SELECT * FROM Top5000;
 
 * **Files**
 
-  * [TopAlbums.csv](../../../../01-Class-Content/12-mysql/01-Activities/14-TwoTables/Unsolved/TopAlbums.csv)
+  * `TopAlbums.csv` in `14-TwoTables`
 
 * **Instructions**
 
@@ -240,13 +236,13 @@ SELECT * FROM Top5000;
 
 ### 11. Everyone Do: Going Over Two Tables (15 mins)
 
-* Open up [TopSongsAndAlbumsCode.js](../../../../01-Class-Content/12-mysql/01-Activities/14-TwoTables/Solved/topSongsAndAlbumsCode.js) and go over the function which was added to the bottom. The query down there is far longer and far more confusing than the rest, so go over it step-by-step in great detail so that everyone in your class understands what it does.
+* Open up `TopSongsAndAlbumsCode.js` in `14-TwoTables` and go over the function which was added to the bottom. The query down there is far longer and far more confusing than the rest, so go over it step-by-step in great detail so that everyone in your class understands what it does.
 
 * Once it seems everyone has an idea of how that code works, ask a few brave souls to come up to the front to share their additions to the code with the class. Let them describe their code and field the questions as well, only jumping in when you feel the need to.
 
-### 12. Groups Do: Homework (40 mins)
+### 12. Instructor Do: Review Unit 12 (40 mins)
 
-* Place students into groups to work on homework.
+* Answer any lingering questions from the previous activity. If none remain, proceed to lead a review on Unit 12. If students feel comfortable with MySQL, feel free to review Express instead.
 
 # Instructor Do: Private Self-Reflection (0 min)
 
@@ -260,10 +256,9 @@ Take some time on your own after class to think about the following questions. I
 6. What evidence can I collect to show my students are understanding?
 7. How will my students know they are getting it?
 
+
 ### Lesson Plan Feedback
 
-How did today's class go?
+How did today’s lesson go? Your feedback is important. Please take 5 minutes to complete this anonymous survey.
 
-[Went Well](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=ft&sentiment=positive&lesson=06.05)
-
-[Went Poorly](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=ft&sentiment=negative&lesson=06.05)
+[Class Survey](https://forms.gle/nYLbt6NZUNJMJ1h38)
