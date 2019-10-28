@@ -1,98 +1,69 @@
-## Intro to Web Development, HTML/CSS, Git, Github Pages Deployments and Bootstrap
+# Unit 01-02: HTML-Git-CSS
 
-### Overview
+## Overview
 
-In this unit, we will be welcoming our students to their first week of our Full-Stack Web Development Boot Camp. We'll be walking them through the very basics of HTML/CSS, Git Version Control, and Terminal/Console commands. We'll also be introducing students to live deployments using Github Pages. We will also be providing them with a thorough series on Bootstrap.
+In this unit, we will be welcoming our students to their first unit of our Full-Stack Web Development Boot Camp. We'll be walking them through the very basics of HTML/CSS, Git Version Control, and Terminal/Console commands.
 
-### Learning Objectives
+We'll also continue diving into CSS and providing students with a thorough series on Bootstrap. Additionally, we'll cover deployments with GitHub Pages.
 
-* By the end of this unit, students will be able to:
-  * Implement semantic HTML and CSS in order to create  and style static web pages.
-  * Apply features of Git and GitHub to track development progress and deploy homework assignment for review.
-  * Use terminal commands to create new directories and files.
-  * Incorporate Bootstrap CSS rules to style web pages.
-  * Create mobile-responsive layouts with Bootstrap’s grid system and CSS media queries for a mobile first user experience.
-  * Utilize Git and Github to deploy web apps  so other users can access them online.
+Refer to the following links for detailed information on key topics, learning objectives and homework:
 
-### Key Topics
+  * [HTML-Git-CSS Unit Overview](../../../01-Class-Content/01-HTML-Git-CSS/README.md)
 
-* HTML
-  * Tags
-  * Attributes
-  * Semantic HTML for accessibility
+  * [CSS-Bootstrap Unit Overview](../../../01-Class-Content/02-CSS-Bootstrap/README.md)
 
-* CSS
-  * Rules to modify element display
-  * Cascading and order of importance
-  * CSS Reset for consistency across devices
+## Instructor / TA Notes
 
-* Essential console/terminal commands.
-  * cd
-  * touch
-  * mkdir
-  * ls
-  * rm
+First off, welcome and thank you so much for being a part of our program! Thanks to instructors/TAs like yourself, we're helping hundreds of students across the world achieve their career goals and their creative dreams. You have plenty of time to work with these students, and their progress will astound you. Buckle in! You're in for a fun ride!
 
-* Git & GitHub
-  * Git and the terminal
-  * Git commands (add, commit, push, pull, clone)
-  * Pushing in GitHub
+The main goal of this unit is to help students get adjusted to an "average day" of our bootcamp. Be sure to encourage students plenty and focus heavily on keeping students engaged. This unit is crucial in setting the tone for units to come.
 
-* Advanced CSS
-  * Modifying css with chrome developer tools.
-  * Understanding css resets.
-  * Identifying css classes and ids.
-  * Incorporating external stylesheets.
-  * Implementing css pseudo classes.
+Also, Make sure to remind students that although CSS is a broad language with many tricks to learn, they will continue to build their CSS knowledge throughout the entire course.
 
-* GitHub Pages
-  * Creating new repos on github.
-  * Cloning and navigating to that repo.
-  * Creating new files.
-  * Tracking files with version control.
-  * Pushing changes to github.
+## Heads Up
 
-* Bootstrap
-  * Understanding the connection between bootstrap classes and linked css rules.
-  * Implementing bootstrap components.
-  * Understanding mobile first design through bootstrap.
-  * Implementing media queries.
+A lot of time will be spent ensuring that students have properly installed all of the tools and programs from the prework.
 
+Be ready to have your troubleshooting hat on for helping students debug GitHub Pages deploys, as the surface area for problems is somewhat large.
+
+Next unit, we begin JavaScript, make sure to review the slide decks in advance.
+
+Next unit we will also provide students with common problems they will see in interviews. It is recommended that you familiarize yourself with these problems so that you can help students with any questions they might have.
+
+## Helpful Links
 
 ### Lesson Plans
 
-* [1.1 - Lesson Plan](01-Day/01-Day-LessonPlan.md)
-* [1.2 - Lesson Plan](02-Day/02-Day-LessonPlan.md)
-* [1.3 - Lesson Plan](03-Day/03-Day-LessonPlan.md)
-* [1.4 - Lesson Plan](04-Day/04-Day-LessonPlan.md)
-* [1.5 - Lesson Plan](05-Day/05-Day-LessonPlan.md)
+  * [01.1 - Lesson Plan](01-Day/01-Day-LessonPlan.md)
 
-### Homework Activities
+  * [01.2 - Lesson Plan](02-Day/02-Day-LessonPlan.md)
 
-* [Build Your Portfolio Page](../../../../01-Class-Content/01-HTML-Git-CSS/02-Homework/Master)
-* [Portfolio Revisited](../../../01-Class-Content/02-CSS-Bootstrap/02-Homework/Master)
+  * [01.3 - Lesson Plan](03-Day/03-Day-LessonPlan.md)
 
-### Supplemental Resources
+  * [01.4 - Lesson Plan](04-Day/04-Day-LessonPlan.md)
 
-* [Basic Git Push Guide (Highly Recommended)](03-Day/Supplemental/GitPullGuide)
+  * [01.5 - Lesson Plan](05-Day/05-Day-LessonPlan.md)
 
-### Helpful Links
+### Slide Decks
 
-* [Generating an SSH Key for GitHub](https://help.github.com/articles/generating-an-ssh-key/)
-* [Learn Git](https://www.codecademy.com/learn/learn-git)
-* [Try Git](https://try.github.io/levels/1/challenges/1)
-* [Learn CSS Layouts](http://learn.shayhowe.com/html-css/positioning-content/)
-* [Learn CSS Positioning](http://learn.shayhowe.com/advanced-html-css/detailed-css-positioning/)
-* [Github Pages](https://pages.github.com/)
-* [Google Fonts](https://www.google.com/fonts)
-* [Web Design with HTML, CSS, JavaScript, and jQuery Book Set](http://www.amazon.com/Web-Design-HTML-JavaScript-jQuery/dp/1118907442)
-* [Bootstrap - Official Page](http://getbootstrap.com/)
-* [Bootstrap - W3Schools](http://www.w3schools.com/bootstrap/bootstrap_get_started.asp)
+* [01.1 The Zen of Coding](https://docs.google.com/presentation/d/16w9IckM1lvu3L6qATB1XnkJU1bwNnVtQjXJNPfj9lDc/edit?usp=sharing)
 
-### Slide Shows
+* [01.2 Git-HTML-CSS](https://docs.google.com/presentation/d/1-503hnlqNaj-cPjVjq4KA2VyfbDlvcErquBc73qh_ug/edit?usp=sharing)
 
-* [The Zen of Coding](https://docs.google.com/presentation/d/1GDnp_iOyLS4PfZKapMaXeqkQakY8iHiAEIqv3Hz5_aE/edit?usp=sharing)
-* [Git'n Pro with HTML/CSS](https://docs.google.com/presentation/d/14u7huMWQcjyN7cSwTEd3pvWfhczMp-KccY6ZGZ7ypns/edit?usp=sharing)
-* [Heroes of CSS](https://docs.google.com/presentation/d/1qyjvRo_DEEt-tzbfB6S6OxoQFyHRdApN7cjgCIXJ2e8/edit?usp=sharing)
-* [Going Live](https://docs.google.com/presentation/d/1x6vxXnVqLOAvx8NwZyYH4nAcefXlddFl-nLQvHUe0Bo/edit?usp=sharing)
-* [Bootstrap Layouts and Responsive Designs](https://docs.google.com/presentation/d/10y3JDcwwZzMbcOMkWN17n9rv5sKumd7qJxYcajJpcPY/edit?usp=sharing)
+* [01.3 Heroes of CSS](https://docs.google.com/presentation/d/1KZAUUZv3TfMkQ0WvN3kJejCbm5EZcr9vqVWGM7x_WUA/edit?usp=sharing)
+
+* [01.4 Going Live](https://docs.google.com/presentation/d/1_TFrS_Gy9-wAO3SIHrfpRys7ZRtuVt7PQFoSCslUiEw/edit?usp=sharing)
+
+* [01.5 Bootstrap Layouts and Responsive Designs](https://docs.google.com/presentation/d/1D0UN5gkoBznFUz5RdtTz-PkMuCxaJPqE963ybguOPEc/edit?usp=sharing)
+
+### Time Tracker(s)
+
+  * [Unit 01-HTML-Git-CSS Day 1 Time Tracker](https://docs.google.com/spreadsheets/d/1q6IWOA9IWVEAVZDgITp6uDk0wMDm_yVSHqM6CtPEvSk/edit?usp=sharing)
+
+  * [Unit 01-HTML-Git-CSS Day 2 Time Tracker](https://docs.google.com/spreadsheets/d/17iJQJG14grX0Mj9RAvdFQR5sBv5PgHMhe0VdwNyEF0E/edit?usp=sharing)
+
+  * [Unit 01-HTML-Git-CSS Day 3 Time Tracker](https://docs.google.com/spreadsheets/d/10aVn2TGj08ji_fJ0G2sKhfS7EprRXF2Frvs-9punxN8/edit?usp=sharing)
+
+  * [Unit 01-HTML-Git-CSS Day 4 Time Tracker](https://docs.google.com/spreadsheets/d/1N0ZeL_gR2-W_QwEwyegKS6HJTwqnPrHxnQoXOjRBoVs/edit?usp=sharing)
+
+  * [Unit 01-HTML-Git-CSS Day 5 Time Tracker](https://docs.google.com/spreadsheets/d/1JMOlRLktISQF8jSzqkiUwRXOnoNUDcauwiOtsCH7ufg/edit?usp=sharing)

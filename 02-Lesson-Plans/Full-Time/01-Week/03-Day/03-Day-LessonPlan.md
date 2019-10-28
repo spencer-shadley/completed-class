@@ -1,30 +1,14 @@
-## 1.3 Lesson Plan - Heroes of CSS (10:00 AM) <!--links--> &nbsp; [⬅️](../02-Day/02-Day-LessonPlan.md) &nbsp; [➡️](../04-Day/04-Day-LessonPlan.md)
+# 01.3 Lesson Plan - Heroes of CSS (10:00 AM) <!--links--> &nbsp; [⬅️](../02-Day/02-Day-LessonPlan.md) &nbsp; [➡️](../04-Day/04-Day-LessonPlan.md)
 
-### Slideshow
-
-* This lesson's slides are available on Google Drive here: [01-3 Heroes of CSS](https://docs.google.com/presentation/d/1qyjvRo_DEEt-tzbfB6S6OxoQFyHRdApN7cjgCIXJ2e8/edit?usp=sharing)
-
-* To add slides to the student-facing repository, download the slides as a PDF by navigating to File > "Download as" and choose "PDF document." Add the slide PDF file to your class repository along with other necessary files.
-
-* **Note:** Editing access is not available for this document. If you wish to modify the slides, please create a copy by navigating to File > "Make a copy...".
-
-- - -
-
-### Overview
+## Overview
 
 In today's class, we'll be covering the bulk of CSS layout and positioning techniques. We'll also be touching on relative file paths.
 
 We're also focused on empowering students with GitHub Pages for live deployments.
 
-`Summary: Complete Activities 10 & 11 in Unit 01 and Activities 1-6 in Unit 02`
+## Instructor Notes
 
-##### Instructor Priorities
-
-* Students will learn how to incorporate CSS resets
-* Students will learn to deploy their websites using Github Pages
-* Students will be exposed to the concept of pull requests in GitHub
-
-##### Instructor Notes
+* `Summary: Complete Activities 10 & 11 in Unit 01 and Activities 1-6 in Unit 02`
 
 * Way to go, you made it -- Hump day! Not to unnerve you, but today is one of the most challenging class sessions you'll have in the entire program. There's a lot to cover, it's easy to get side-tracked, and students' nerves are running high.
 
@@ -40,26 +24,30 @@ We're also focused on empowering students with GitHub Pages for live deployments
 
 * Also, later in this class, your focus as instructors/TAs is to ensure students are able to utilize Github Pages to deploy their websites. Going forward from today, students will be expected to submit Homework with links to both their GitHub repository and a live deployed website. Be ready to have your troubleshooting hat on for helping them debug deploys, as the surface area for problems is somewhat large.
 
-* Have your TAs reference [03-Day-TimeTracker](https://docs.google.com/spreadsheets/d/10aVn2TGj08ji_fJ0G2sKhfS7EprRXF2Frvs-9punxN8/edit?usp=sharing) to help keep track of time during class.
-
-### Sample Class Video (Highly Recommended)
+## Sample Class Video (Highly Recommended)
 * To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a2e0037f-9a39-4942-83bb-3b555d224a64)
 
-- - -
+## Learning Objectives
 
-### Class Objectives
+* Recap the basic topics covered to date
+* Engage in a deep dive of HTML/CSS for layout design and element positioning
+* Offer a conceptual introduction to CSS reset and downloadable style sheets
+* Work with Google Developer tools for site inspection
+* Utilize Github Pages for website deployment
 
-* To recap the basic topics covered to date
-* To engage in a deep dive of HTML/CSS for layout design and element positioning
-* To offer a conceptual introduction to CSS reset and downloadable style sheets
-* To work with Google Developer tools for site inspection
-* To utilize Github Pages for website deployment
+## Slides
+
+* [1.3 Heroes of CSS](https://docs.google.com/presentation/d/1KZAUUZv3TfMkQ0WvN3kJejCbm5EZcr9vqVWGM7x_WUA/edit?usp=sharing)
+
+## Time Tracker
+
+* [1.3 Time Tracker](https://docs.google.com/spreadsheets/d/10aVn2TGj08ji_fJ0G2sKhfS7EprRXF2Frvs-9punxN8/edit?usp=sharing)
 
 - - -
 
 ### 1. Instructor Do: Welcome + Admin Tasks (Slides) (5 mins)
 
-* Open the Slide Deck [01-3 Heroes of CSS](https://docs.google.com/presentation/d/1qyjvRo_DEEt-tzbfB6S6OxoQFyHRdApN7cjgCIXJ2e8/edit?usp=sharing).
+* Open the Slide Deck [01-3 Heroes of CSS](https://docs.google.com/presentation/d/1KZAUUZv3TfMkQ0WvN3kJejCbm5EZcr9vqVWGM7x_WUA/edit?usp=sharing).
 
 * Welcome students back to class and flip through the Admin slides.
 
@@ -412,8 +400,6 @@ Not every website can be a personal website, however, as there are many times in
 
 ### Lesson Plan Feedback
 
-How did today's class go?
+How did today’s lesson go? Your feedback is important. Please take 5 minutes to complete this anonymous survey.
 
-[Went Well](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=ft&sentiment=positive&lesson=01.03)
-
-[Went Poorly](http://www.surveygizmo.com/s3/4325914/FS-Curriculum-Feedback?format=ft&sentiment=negative&lesson=01.03)
+[Class Survey](https://forms.gle/nYLbt6NZUNJMJ1h38)

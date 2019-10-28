@@ -1,17 +1,47 @@
 # Unit 01 HTML, CSS, and Git Homework: Portfolio
 
-## Instructions
-
 Build a professional portfolio site using HTML and CSS following a set of specifications and a style guide.
 
-* Create a new GitHub repository and clone it to your computer.
+
+## User Story
+
+AS A web developer
+
+I WANT a deployed portfolio
+
+SO THAT I can showcase my applications to potential employers and clients
+
+
+## Business Context
+
+A portfolio is often the first point of contact for employers looking to fill a position or clients in need of a developer to complete a project. A clean and informative portfolio showcases a developer's strongest work and can lead to employment and/or more clients.
+
+
+## Acceptance Criteria
+
+GIVEN that an employer or client wants to hire a developer
+
+WHEN viewing their portfolio
+
+THEN they are able to learn about the developer, find contact information, and follow links to projects and repositories
+
+
+## Instructions
+
+* Create a new GitHub repository, initialize it with a `README.md `, and clone it to your local development environment.
+
+   * ❗ Follow best practices for your README as outlined in the `Good-README-Guide`
 
 * Inside the repo folder on your computer, create the following:
 
    * 3 HTML documents: `index.html`, `contact.html`, and `portfolio.html`.
+
    * A folder called `assets`.
+
    * Inside the `assets` directory, make two additional folders: `css` and `images`.
+
      * In the `css` folder, make a file called `style.css`.
+
      * In the `images` folder, save the images you plan on using (like your profile image and the placeholder images for the portfolio).
 
 * Refer to these screenshots for your site:
@@ -56,10 +86,8 @@ Build a professional portfolio site using HTML and CSS following a set of specif
 
 * Profile image in `index.html`:
    * Use a picture of yourself.
-   * If you don't have a picture, you can grab a placeholder image from [LoremPixel](http://lorempixel.com/). Save the images to your `images` folder.
 
 * Portfolio images:
-   * Placeholder images can be found at [LoremPixel](http://lorempixel.com/).
    * Save the images to your `images` folder.
 
 * Background images:
@@ -70,35 +98,12 @@ Build a professional portfolio site using HTML and CSS following a set of specif
 
    ![Recommended Dimensions](./Assets/Images/Recommended-Dimensions.png)
 
-* Make your pages more sophisticated by adding style to text links, image links, and buttons for when a user hovers their cursor over them. Refer to this [CSS hover tutorial](http://www.codeitpretty.com/2013/06/how-to-use-css-hover-effects.html) for instructions.
-
-* You can use [Adobe Kuler](https://color.adobe.com/create/color-wheel/) to find colors that match the theme (in this case, the primary color is Teal `#4aaaa5`).
-
 * Make a "sticky footer." You will notice that the dark gray footer will always rest just below the content. This is fine whenever your site has enough content to push it down past the height of most monitors. But if there isn't much content in the body, the footer could rest in the middle of the page:
    * Try to code the footer in a way that it will always remain at the bottom of the page, no matter how short the content is. Refer to this [sticky footer tutorial](https://css-tricks.com/couple-takes-sticky-footer/) for guidance.
    * Give the footer the following CSS: `border-top: 8px solid #4aaaa5;`
 
 * Look into these concepts: `float`, `padding`, `margin`, `display`, `overflow`, `clear` and `text-align`.
 
-## User Story
-
-AS A web developer
-
-I WANT to create a portfolio
-
-SO THAT I can showcase my applications to potential employers and clients
-
-## Business Context
-
-A portfolio is often the first point of contact for employers looking to fill a position or clients in need of a developer to complete a project. A clean and informative portfolio showcases a developer's strongest work and can lead to employment and/or more clients.
-
-## Acceptance Criteria
-
-GIVEN that an employer or client wants to hire a developer
-
-WHEN viewing their portfolio
-
-THEN they are able to learn about the developer, find contact information, and follow links to projects and repositories
 
 - - -
 
@@ -122,6 +127,7 @@ Follow these guidelines for committing:
 
 We would like you to have well over 200 commits by graduation, so commit early and often!
 
+
 ## Submission on BCS
 
 You are required to submit the following:
@@ -130,3 +136,4 @@ You are required to submit the following:
 
 - - -
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+
