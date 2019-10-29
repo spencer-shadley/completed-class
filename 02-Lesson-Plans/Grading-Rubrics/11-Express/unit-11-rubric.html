@@ -454,14 +454,27 @@
               subtitle: null,
               questions: [
                 {
+                  title: "Student submitted deployed live application URL",
+                  score: 10,
+                  message: "Application isn't deployed",
+                  status: false
+                },
+                {
+                  title:
+                    "Application loads at deployed URL (no 404, or Heroku/GH Pages error)",
+                  score: 10,
+                  message: "Application isn't deployed",
+                  status: false
+                },
+                {
                   title: "Student submitted application GitHub URL",
-                  score: 19,
+                  score: 8,
                   message: "Missing GitHub submission URL",
                   status: false
                 },
                 {
                   title: "GitHub Repo contains application code",
-                  score: 16,
+                  score: 8,
                   message: "GitHub repo is empty",
                   status: false
                 }
@@ -474,41 +487,41 @@
               questions: [
                 {
                   title:
-                    "Application allows users to create a note",
-                  score: 40 / 5,
-                  message: "Application doesn't allows users to create a note",
+                    "Application allows user to create and save persistent notes",
+                  score: 8,
+                  message: "Application doesn't allow user to create and save persistent notes",
                   status: false
                 },
                 {
                   title:
-                    "Application allows users to delete notes",
-                  score: 40 / 5,
+                    "Application allows user to view previously saved notes",
+                  score: 8,
                   message:
-                    "Application doesn't allow users to delete notes",
+                    "Application doesn't allow user to view previously saved notes",
                   status: false
                 },
                 {
                   title:
-                    "Application stores notes in a json file",
-                  score: 40 / 5,
+                    "Application allows user to delete notes",
+                  score: 8,
                   message:
-                    "Application doesn't store notes in a json file",
+                    "Application doesn't allow user to delete notes",
                   status: false
                 },
                 {
                   title:
-                    "Application uses an Express server to serve all API routes",
-                  score: 40 / 5,
+                    "Application front-end connects to express backend",
+                  score: 8,
                   message:
-                    "Application doesn't use an Express server to serve all API routes",
+                    "Application front-end doesn't connect to express backend",
                   status: false
                 },
                 {
-                  title: "Application uses an Express server to serve all HTML routes",
-                  score: 40 / 5,
-                  message: "Application doesn't use an Express server to serve all HTML routes",
+                  title: "Application backend stores notes in JSON file",
+                  score: 8,
+                  message: "Application backend doesn't store notes in JSON file",
                   status: false
-                },
+                }
               ]
             },
             {
@@ -553,10 +566,10 @@
               questions: [
                 {
                   title:
-                    "Application user experience is intuitive and easy to navigate",
+                    "Application console is free of errors",
                   score: 10,
                   message:
-                    "Application user experience could be more intuitive",
+                    "Application console contains errors",
                   status: false
                 }
               ]
