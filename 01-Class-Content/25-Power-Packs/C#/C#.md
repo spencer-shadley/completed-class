@@ -64,7 +64,6 @@ Runtime Environment:
 .
 ```
 
-
 If you get an error like "command not found," you may need to manually add a link to dotnet in your executable path. See [this GitHub issue](https://github.com/dotnet/cli/issues/2544) for more details.
 
 # Lesson 2: Hello, World!
@@ -106,13 +105,13 @@ namespace CatWorx.BadgeMaker
 }
 ```
 
-Let’s run the app. In the command line, type dotnet run. 
+Let’s run the app. In the command line, type dotnet run.
 
 The output should read "Hello, World!". Congrats—you are now a C# developer!
 
 Next, let’s take a deeper dive into our C# app to understand how it works.
 
-Namespaces 
+## Namespaces
 
 Next, you will notice the keyword namespace followed by the name of the app, CatWorx.BadgeMaker. Namespaces in C# are used to organize and provide a level of separation in the code—something like modules in Node.js. 
 
@@ -120,7 +119,7 @@ Namespaces can be thought of as containers that have members. A member can be an
 
 * Following namespace CatWorx.BadgeMaker, everything inside the curly braces can be interpreted as members of that namespace.
 
-* **Note:** Common conventions normally use a company name for the root namespace to ensure it is unique. 
+* **Note:** Common conventions normally use a company name for the root namespace to ensure it is unique.
 
 * On the very first line, we are importing—you guessed it—a common namespace called System.
 
@@ -134,7 +133,7 @@ The System namespace is part of the .NET framework and is a collection of common
 
 To learn more, check out [Microsoft’s documentation on System Namespace](https://docs.microsoft.com/en-us/dotnet/api/system?view=netframework-4.8).
 
-# The Main Method
+## The Main Method
 
 Within the namespace will be a class named Program and a static method named Main. We will go into further details about classes in C# a bit later in this tutorial, but for now we will take a closer look at the Main method in Program.
 
@@ -165,7 +164,7 @@ static void Main (string[] args) //Entry Point
 
 Now that we have a basic understanding of how a program is set up, let’s explore how to build our own. First let’s explore C#’s built-in data types.
 
-# Data Types
+## Data Types
 
 Like JavaScript, C# has various data types that can store values, each with their own set of properties and unique behavior. The main distinction, however, is that C# is a statically typed language. This means that the data type is explicitly labeled when a variable is declared. Whereas in JavaScript, declaring a variable with the keyword var allowed the data type to be inferred, C# variables must be declared with a data type. The number one advantage of a statically typed language is that there is added stability and potential error catching done automatically by the compiler. 
 
@@ -202,7 +201,7 @@ Console.WriteLine("greeting" + greeting);
 
 If you decided to copy and paste the code into VS Code, you will notice syntax errors. All the double quotes may need to be replaced by double quotes in VS Code due to incorrect character interpretation.
 
-### String Interpolation
+## String Interpolation
 
 Alternatively, there are a few other ways to print variables in C#. You might recognize some similarities to JavaScript in the following code example:
 
@@ -297,7 +296,7 @@ Convert.Int32
 
 Now let’s move on to some more complex data structures that will allow us to start building our application.
 
-# Data Structures
+## Data Structures
 
 In this section, we will look at the following C# data structures:
 
@@ -403,7 +402,7 @@ Pretty laborious, right? Just imagine how time-consuming this would be if you wo
 
 In order to print out every element in the list without needing to hard code each element at every index, let’s think back to JavaScript and see if we can use a function to loop through our list.
 
-# Loops
+## Loops
 
 Time to put your googling skills to work! See if you can find the correct function to iterate through the employees list.
 
@@ -439,7 +438,7 @@ Try to think of how the foreach statement can be used to iterate through a dicti
 
 *Insert Reflective Question students can answer independently, and has them chew on an important concept you’ve covered above. *
 
-# Let’s Review
+## Let’s Review
 
 We covered a lot of topics in this unit so far, including many of the fundamental differences between C# and JavaScript. 
 
@@ -453,21 +452,21 @@ In this lesson, you learned:
 
 * Data types in C#
 
-    * Strings
+  * Strings
 
-    * Numbers
+  * Numbers
 
-    * Arrays vs. lists
+  * Arrays vs. lists
 
-    * Dictionaries
+  * Dictionaries
 
-    * Booleans
+  * Booleans
 
 * Iteration
 
-    * for loops
+  * for loops
 
-    * foreach
+  * foreach
 
 With these essential building blocks under you belt, you can continue on to build a security badge application and learn more about the utilitarian nature of the C# language as well as the .NET framework.
 
@@ -477,7 +476,7 @@ Now that you have a basic understanding of the C# syntax, let’s move on and le
 
 Part 2: Create the Employee Entity
 
-# Intro
+## Intro
 
 Now that we have our development environment set up, we're ready to build our badge-making app. We’ll build on the foundation of C# fundamentals covered in Step 1 as we learn how to:
 
@@ -548,7 +547,7 @@ Run the program in the VS Code terminal by typing dotnet run. After typing in a 
 
 Now that we have an interactive command-line program, we can remove the hard coded list of names and accept all names from the user. 
 
-# Get multiple employee names using a while loop, and store them in a list
+Get multiple employee names using a while loop, and store them in a list
 
 Similar to the way we iterated over the hard coded list of employee names and output each one to Console.WriteLine(), we can loop over Console.ReadLine() and store user input into the employee list.  
 
@@ -609,7 +608,13 @@ Before we run this, let's think about how this application will behave. The firs
 
 Hint: We check for an empty string, indicating that the user pressed Enter without typing a name.
 
-One solution is to break out of the loop if the user presses Enter without typing a name. This will return an empty string ("") from Console.Readline(). We can check for this and break out of the loop: 
+One solution is to break out of the loop if the user presses Enter without typing a name. This will return an empty string `("")` from
+
+```c#
+Console.Readline().
+```
+
+We can check for this and break out of the loop: 
 
 ```c#
 while (true)
@@ -630,7 +635,7 @@ while (true)
 
 Remember, whenever you write a while statement, be sure to provide a mechanism to exit it, or you'll create an infinite loop!
 
-Now the employees list can be populated entirely from the command line! Nice work. 
+Now the employees list can be populated entirely from the command line! Nice work.
 
 # Organize the Code
 
@@ -1748,7 +1753,7 @@ Let’s break down the parts of the code:
 
 ## Set Up System.Drawing
 
-## Let’s see what we can find about how to modify or manipulate graphics in C#. Let's begin with a quick internet search for "graphics C#". You’ll probably find as one of your search results the Graphics class in the System.Drawing namespace in [Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.graphics?view=netframework-4.8). 
+Let’s see what we can find about how to modify or manipulate graphics in C#. Let's begin with a quick internet search for "graphics C#". You’ll probably find as one of your search results the Graphics class in the System.Drawing namespace in [Microsoft Docs](https://docs.microsoft.com/en-us/dotnet/api/system.drawing.graphics?view=netframework-4.8). 
 
 Upon further inspection, this choice seems promising. Scrolling on the side menu on the left shows the variety of tools available in the System.Drawing namespace, including some that sound applicable for our application like Graphics, Size Converter, Font, Rectangle, or Image.
 
@@ -1770,9 +1775,6 @@ public static void MakeBadges(List<Employee> employees) {
   Image newImage = Image.FromFile("badge.png");
 }
 ```
-
-
-             
 
 *Program.cs*
 
