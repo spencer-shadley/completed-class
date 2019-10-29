@@ -447,7 +447,7 @@
         "use strict";
 
         function Model() {
-          this.title = "Unit 19 React HW Rubric";
+          this.title = "Unit 20 State HW Rubric";
           this.categories = [
             {
               title: "Deployment",
@@ -481,25 +481,42 @@
                 },
                 {
                   title:
-                    "Application allows user to view a list of random employees",
+                    "Application has a functioning database",
                   score: 10,
-                  message: "Application does not show a table of random employees",
+                  message: "Application does not have a functioning database",
                   status: false
                 },
                 {
                   title:
-                    "Application should sort the table by at least one category",
+                    "Application show user products and allow user to scroll through products",
                   score: 10,
                   message:
-                    "Application does not sort the table by at least one category",
+                    "Application does not show products or allow user to scroll through products",
                   status: false
                 },
                 {
                   title:
-                    "Application filters users by at least one property",
+                    "Application user to add product to shopping cart",
                   score: 10,
                   message:
-                    "Application does not filter users by at least one property",
+                    "Application does not allow user to add product to shopping cart",
+                  status: false
+                }
+              ]
+            },
+            {
+              title: "Bonus",
+              subtitle: null,
+              questions: [{
+                  title: "Application shows a LOADING action on global state and displays a loader to the user when waiting on data",
+                  score: 10 / 6,
+                  message: "**Bonus**: Application doesn't show a LOADING action and displays no loader to user when waiting",
+                  status: false
+                },
+                {
+                  title: "Application contains user authentication",
+                  score: 10 / 6,
+                  message: "**Bonus**: Application doesn't contain any user authentication",
                   status: false
                 }
               ]
