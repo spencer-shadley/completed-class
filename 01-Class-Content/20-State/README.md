@@ -1,36 +1,36 @@
 # Unit 20: React Week 2
 
 ## Overview
-In the previous unit, we built and deployed our first static React application to GitHub Pages. In this unit, we will integrate React as the View layer into a full-stack web application using the MVC paradigm and deploy it to Heroku. The stack we will work with is known as MERN, short for MongoDB Express React and Node. 
+In this unit, we will work with complex state management techniques. We will use a combination of React Hooks and the Context API to create a state management flow similar to Redux.
 
 ## Key Topics
-* React Router
-* Lifecycle methods
-* MERN 
-* Proxy
-* AJAX calls
+* React Hooks
+* The Context API
+* Store
+* Reducers
+* Effects
+* Redux design patterns 
 
 ## Comprehension Check
 You will be employer-ready if you can answer the following questions:
-1. What is required to work with a MERN application in a development environment?
-2. What is React Router doing in the context of an SPA?
-3. How does one configure a MERN application for deployment to a production environment?
+1. What conditions must be met when creating React Hooks?
+2. At a high level, how does the Context API reduce "prop-drilling"?
+3. How does one manage state in a complex application?
 
 ## Learning Objectives
 You will be employer-competitive if you are able to:
-* Explain the importance and use of React lifecycle methods
-* Explain and identify the pros and cons of React Single-Page Applications
-* Implement React Router for conditional rendering of components
-* Configure a proxy server for local development of a MERN application
-* Implement MVC paradigm in a MERN application
-* Distinguish the differences between a Container Component and a Presentational Component
-* Successfully configure and deploy a MERN application to Heroku
+* Utilize React's most common built-in Hooks: `useState`, `useEffect`, and `useContext`.
+* Transform a React application that manages state with a class component into an application that uses functional components with React Hooks.
+* Utilize a combination of Context Objects, Providers, and consumers via the `useContext` Hook to manage global state.
+* Transform an app that manages state in Container components into one that follows a Redux pattern.
+* Identify the appropriate time to make a React app use Redux or follow a similar design pattern.
+* Implement a Redux-like store in a React app.
 
-## Homework: Google Books Search
-* In this activity, you'll create a new React-based Google Books Search app. This assignment requires you to create React components, work with helper/util functions, and utilize React lifecycle methods to query and display books based on user searches. You'll also use Node, Express and MongoDB so that users can save books to review or purchase later.
+## Homework: 🏬 Online Marketplace
+* In this assignment, you will be creating a marketplace that allows users to view products from Best Buy. The user will be able to view details about the product, and if they decide, add the product to a shopping cart.
 
 ## Helpful Links
-* [React Router](https://reacttraining.com/react-router/)
-* [Proxying API Requests in Development](https://facebook.github.io/create-react-app/docs/proxying-api-requests-in-development)
-* [React Lifecycle Methods Diagram](http://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
 * [Presentational vs. Container Components](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0)
+* [Context API Docs](https://reactjs.org/docs/context.html)
+* [React Hooks Docs](https://reactjs.org/docs/hooks-intro.html)
+* [A Complete Guide to useEffect()](https://overreacted.io/a-complete-guide-to-useeffect/)
