@@ -15,7 +15,7 @@ function addPersonToList(event) {
   var name = nameEl.value;
   var li = document.createElement("li");
   li.id = people.length;
-  li.innerHTML = name + " <span>edit</span>";
+  li.innerHTML = name + " <button>edit</button>";
   people.push({ name: name });
   peopleListEl.append(li);
 }
