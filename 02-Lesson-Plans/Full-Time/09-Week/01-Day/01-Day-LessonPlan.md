@@ -28,7 +28,7 @@ In this class, you will introduce the concept of the NoSQL database with MongoDB
 
 ## Time Tracker
 
-[9.1: Intro To MongoDB Time Tracker](https://docs.google.com/spreadsheets/d/1C-zfaTXOhNrgey7S0YsHv_vlX2YogdaGv5Jm_Vi5qBM/edit?usp=sharing)
+[9.1: Intro To MongoDB Time Tracker](https://docs.google.com/spreadsheets/d/1C-zfaTXOhNrgey7S0YsHv_vlX2YogdaGv5Jm_Vi5qBM/edit#gid=0)
 
 ### 1. Instructor Do: What is MongoDB (10 min)
 
@@ -550,7 +550,19 @@ db.animals.find().sort({ class:-1 });
 
 * When you are done take any clarifying questions before moving on.
 
-### 11. Student Do: MongoJS Sorting (20 mins)
+* Use the prompts and talking points below to demonstrate the following key point(s):
+
+  * ✔ MongoJS wraps `mongodb-native` and emulates the official MongoDB API.
+
+* Have the students visit [MongoJS](https://www.npmjs.com/package/mongojs) in their browser.
+
+* Ask for a volunteer to guess how you might use `MongoJS`: `find`, `insert`, `remove` and `sort`.
+
+* These methods are nearly identical to running them in the `mongo` shell so they will feel comfortable with MongoJS.
+
+* Tell the class not to worry if they are confused, they will get plenty of practice moving forward.
+
+### 11. Student Do: MongoJS Sorting (15 mins)
 
 * Open [06-Stu-MongoJS-Sorting/Solved/server.js](../../../../01-Class-Content/17-noSQL/01-Activities/06-Stu-MongoJS-Sorting/Solved/server.js) solution on your machine, and run `server.js` with Node.
 
@@ -574,11 +586,7 @@ db.animals.find().sort({ class:-1 });
 
 * Tell your students to ask you or a TA for help if they have any questions while working on the assignment.
 
-- - -
-
-### 12. BREAK (30 mins)
-
-- - -
+### 12. Break (30 mins)
 
 ### 13. Instructor Do: Review Mongo JS Sorting (5 mins)
 
@@ -626,7 +634,7 @@ db.animals.find().sort({ class:-1 });
 
 * Take any clarifying questions before moving on.
 
-### 16. Instructor Do: Demonstrate Robo 3T (10 mins)
+### 16. Instructor Do: Demonstrate Robo 3T (5 mins)
 
 * Instruct your students to open the application. They should see a window like this:
 
@@ -642,124 +650,7 @@ db.animals.find().sort({ class:-1 });
 
 * When you are done take any clarifying questions before moving on.
 
-### 12. Student Do: MongoJS Sorting (15 mins)
-
-* Direct students to the next activity located in [06-Stu-MongoJS-Sorting/Unsolved/server.js](../../../../01-Class-Content/17-NoSQL/01-Activities/06-Stu-MongoJS-Sorting/Unsolved/server.js).
-
-```md
-# MongoJS Sorting
-
-## Instructions
-
-* Review the two routes provided to you.
-
-  * Get `/`: Displays a simple "Hello World" message (no mongo required).
-  
-  * Get `/all`: Send JSON response with all animals.
-
-* Create two additional routes that display results from your zoo collection:
-
-  * name: Send JSON response sorted by name in ascending order.
-
-  * weight: Send JSON response sorted by weight in descending order.
-
-## 💡 Hint(s)
-
-* Use the [Mongo guides](https://docs.mongodb.com/guides/) if you are stuck.
-
-## 🏆 Bonus 
-
-* Create an additional route that returns the heaviest animal.
-```
-
-### 13. Instructor Do: Review Mongo JS Sorting (5 mins)
-
-* Open [06-Stu-MongoJS-Sorting/Unsolved/server.js](../../../../01-Class-Content/17-NoSQL/01-Activities/06-Stu-MongoJS-Sorting/Unsolved/server.js) on your machine and ask for volunteers to help guide you through the activity.
-
-* After each route, start the `server.js` file and use your web browser to check the route. 
-
-* When you are done take any clarifying questions before moving on.
-
-### 14. Student Do: MongoJS CRUD (20 mins)
-
-* Change into [07-Stu-Mongo-CRUD/Solved/server.js](../../../../01-Class-Content/17-NoSQL/01-Activities/07-Stu-Mongo-CRUD/Solved) in your terminal.
-
-* Make sure you have `mongod` running in an open tab then run `npm install` and `npm start` in another tab.
-
-* Visit `localhost:3000` and demonstrate the solved version of the app by creating, updating and deleting a few notes.
-
-  * Note that to update a note you have to click on it's title, then update the form and submit.
-
-* After demoing, direct students to the unsolved activity located in [07-Stu-Mongo-CRUD/Unsolved/server.js](../../../../01-Class-Content/17-NoSQL/01-Activities/07-Stu-Mongo-CRUD/Unsolved/server.js)
-
-```md
-# MongoJS CRUD
-
-In this activity you will build the backend for a note-taking app.
-
-## Instructions
-
-  * Update the [server.js](Unsolved/server.js) file to include the following six routes.
-
-  * Save a note to the database's collection `POST: /submit`.
-
-  * Retrieve all notes from the database's collection `GET: /all`.
-  
-  * Retrieve one note in the database's collection by it's ObjectId `GET: /find/:id`.
-    
-  * Update one note in the database's collection by it's ObjectId `POST: /update/:id`.
-
-  * Delete one note from the database's collection by it's ObjectId `DELETE: /delete/:id`.
-
-  * Clear the entire note collection `DELETE: /clearall`.
-
-## 💡 Hint(s)
-
-* You can see a list of methods available to you here. [https:github.com/mafintosh/mongojs#api](https://github.com/mafintosh/mongojs#api).
-
-## 🏆 Bonus 
-
-* Insert five more documents with one command. Use [https://docs.mongodb.com/manual/tutorial/query-documents/](https://docs.mongodb.com/manual/tutorial/query-documents/) to see how you can accomplish this.
-
-```
-
-### 15. Instructor Do: Review MongoJS CRUD (10 mins)
-
-* Use the prompts and talking points below to review the following key point(s):
-
-  * ✔ All of our routes take a request and response as arguments.
-
-  * ✔ Our `/submit` route uses `insert` to create a new record.
-
-  * ✔ Our `/all` route uses `find` to return all data.
-
-  * ✔ Our `/find/:id` route uses `findOne` to search by `ObjectID`.
-
-  * ✔ Our `/update` routes finds the object by `ObjectID` and calls `$set` to update the item.
-
-   * ✔ Our `/clearall` routes calls `remove` on our collection to delete everything.
-
-* Open [07-Stu-Mongo-CRUD/Solved/server.js](../../../../01-Class-Content/17-NoSQL/01-Activities/07-Stu-Mongo-CRUD/Solved/server.js) in your IDE and walk students through the code.
-
-* Since there is a good amount of code, ask students to help lead you through the areas they found difficult. 
-
-* Use the talking points above to review the most important aspects.
-
-* Take any further questions before moving on.
-
-### 16. Instructor Do: Demonstrate Robo 3T (10 mins)
-
-* Instruct your students to open Robo 3T and click the connect button.
-
-* Have your students follow along as you select the `classroom` DB, then the `Collections` folder, and then as you double click the `classroom` collection. You should see the documents you entered into the collection earlier in the lecture. 
-
-* Now, tell the class that when they right click in the section where the documents are listed (and you should do the same), they will see an `Insert Documents` option. Click it, and you'll see a window where you can type in a `BSON` document. As long as what you enter is valid JSON, your data will show up in the collection when you hit save.
-
-  * Enter a document similar to the image below:
-
-    ![7-RoboDoc](Images/7-RoboDoc.jpg)
-
-### 17. Student Do: Robot 3T Practice (10 mins)
+### 17. Student Do: Robot 3T Practice (5 mins)
 
 * Instruct students to drop their classroom collection and create a new one.
 
@@ -799,7 +690,405 @@ In this activity you will build the backend for a note-taking app.
 * By the end of the exercise, you should have every student's information in your classroom collection.
 ```
 
-### 18. END (0 mins)
+## 18. Instructor Do: Reintroduce Career Services (10 mins)
+
+* Ask the students to raise their hand if they are actively engaged in or intend to engage in a job search at the end of the program.
+
+* Remind the class that, now that they are over two-thirds of the way through the program, this is a great time to start thinking about their job search and engaging with the many Career Services options provided as part of the program.
+
+* Go through the [slides on Career Services](https://docs.google.com/presentation/d/18inCMR9TB47q3yEY-YflqA-96cBqXheM9X0BrD0Gk9Y/edit#slide=id.p7).
+
+* If there are any questions, advise students to reach out to their Student Success Manager.
+
+### 19. Instructor Do: Demo MongoJS Warmup (5 mins)
+
+* Open [09-Stu-Mongojs-Review/Solved/server.js](../../../../01-Class-Content/17-noSQL/01-Activities/09-Stu-Mongojs-Review/Solved/server.js) on your machine. Run `npm install` then `node server.js` to launch the application.
+
+* Demonstrate to the students how the app lets you add books as well as mark books read or unread.
+
+  * Note the fact that an explicit route for the root, `http://localhost:3000` does not exist. However, the page still loads `index.html` from the `/public` folder. 
+
+* Explain to the students that this is a convention from the static middleware that we are using. 
+
+  * Point to this line: `app.use(express.static("public"));`
+
+* Tell the class that in the next activity they will complete the routes in the server file so the site can display and edit the book data.
+
+### 20. Student Do: MongoJS Warm Up (15 mins)
+
+* Direct the students towards the activity located in [09-Stu-Mongojs-Review/Unsolved/server.js](../../../../01-Class-Content/17-noSQL/01-Activities/09-Stu-Mongojs-Review/Unsolved/server.js)
+
+```md
+# MongoJS Review
+
+## Instructions
+
+* Complete the routes in the server file so the site can display and edit the book data. 
+
+## 💡 Hint(s)
+
+* Use the [Mongo guides](https://docs.mongodb.com/guides/) if you are stuck.
+
+## 🏆 Bonus 
+
+* Insert five more documents with one command. Use [https://docs.mongodb.com/manual/tutorial/query-documents/](https://docs.mongodb.com/manual/tutorial/query-documents/) to see how you can accomplish this.
+
+```
+
+### 21. Instructor Do: Review MongoJS Warmup (5 mins)
+  
+* Open [09-Stu-Mongojs-Review/Solved/server.js](../../../../01-Class-Content/17-noSQL/01-Activities/09-Stu-Mongojs-Review/Solved/server.js) and scroll down to the routes.
+
+* Use the prompts and talking points below to review each route.
+
+* Our `/submit` route uses `save` to create a new record.
+
+```js
+app.post("/submit", ({ body }, res) => {
+  const book = body;
+
+  book.read = false;
+
+  db.books.save(book, (error, data) => {
+    if (error) {
+      res.send(error);
+    } else {
+      res.send(data);
+    }
+  });
+});
+```
+
+* Our `/read` route uses `find` to return books that have `read: true`.
+
+```js
+app.get("/read", (req, res) => {
+  db.books.find({ read: true }, (error, data) => {
+    if (error) {
+      res.send(error);
+    } else {
+      res.json(data);
+    }
+  });
+});
+```
+
+* Our `/unread` route uses `find` to return books that have `read: false`.
+
+```js
+app.get("/unread", (req, res) => {
+  db.books.find({ read: false }, (error, data) => {
+    if (error) {
+      res.send(error);
+    } else {
+      res.json(data);
+    }
+  });
+});
+```
+
+* Our `/markread/:id` route finds a book by `ObjectID` and uses `update` to set `read: true`.
+
+```js
+app.put("/markread/:id", ({ params }, res) => {
+  db.books.update(
+    {
+      _id: mongojs.ObjectId(params.id)
+    },
+    {
+      $set: {
+        read: true
+      }
+    },
+
+    (error, data) => {
+      if (error) {
+        res.send(error);
+      } else {
+        res.send(data);
+      }
+    }
+  );
+});
+```
+
+* Our `/markunread/:id` route finds a book by `ObjectID` and uses `update` to set `read: false`.
+
+```js
+app.put("/markunread/:id", ({ params }, res) => {
+  db.books.update(
+    {
+      _id: mongojs.ObjectId(params.id)
+    },
+    {
+      $set: {
+        read: false
+      }
+    },
+
+    (error, data) => {
+      if (error) {
+        res.send(error);
+      } else {
+        res.send(data);
+      }
+    }
+  );
+});
+```
+
+* When you are done, take any clarifying questions and move on to the next demonstration.
+
+### 22. Instructor Do: Introduce Mongoose (10 mins)
+
+* Tell the class that they are now going to be introduced to Mongoose, an Object Data Modeling (ODM) library for Mongo and Node. 
+
+* Use the prompts and talking points below to demonstrate the following key point(s):
+
+  * ✔ Mongoose lets you define schemas for your collections.
+
+  * ✔ It also helps manage data relationships and enforce validations.
+
+* Next open [10-Ins-Mongoose-Schema](../../../../01-Class-Content/17-NoSQL/01-Activities/10-Ins-Mongoose-Schema) in your IDE and run `npm install` followed by `node server.js`.
+
+* In your terminal you should see the following if the connection was successful.
+
+```js
+{ array: [ 'item1', 'item2', 'item3' ],
+  _id: 5d445e4e98a11a33f37d6010,
+  boolean: false,
+  string:
+   '"Don\'t worry if it doesn\'t work right. If everything did, you\'d be out of a job" - Mosher\'s Law of Software Engineering',
+  number: 42,
+  date: 2019-08-02T16:01:18.500Z,
+  __v: 0 }
+```
+
+* Step through the code that we used to make our db connection and schema.
+
+* We first require the Mongoose package and our `exampleModel` file, which contains our schema.
+
+  ```js
+  const mongoose = require("mongoose");
+  const Example = require("./exampleModel.js"); // we will go over this file next as it contains our schema
+  ```
+
+* We then open a connection `mongodb://localhost/dbExample` on our locally running instance of MongoDB.
+
+  ```js
+  mongoose.connect("mongodb://localhost/dbExample", { useNewUrlParser: true });
+  ```
+
+* Then we create some data to insert into our database.
+
+  ```js
+  const data = {
+    array: ["item1", "item2", "item3"],
+    boolean: false,
+    string:
+      "We are learning mongoose!",
+    number: 42
+  };
+  ```
+
+* Next we call `create` on our `Example` schema and pass in our data.
+
+  ```js
+  Example.create(data)
+    .then(dbExample => {
+      console.log(dbExample);
+    })
+    .catch(({ message }) => {
+      console.log(message);
+    });
+  ```
+
+* Now open [10-Ins-Mongoose-Schema](../../../../01-Class-Content/17-NoSQL/01-Activities/10-Ins-Mongoose-Schema/exampleModel.js) in your editor.
+
+* Tell the class that Mongoose models are similar to those in sequelize. 
+
+* We define a schema for the model and then use the model to query our database. 
+
+* Next, step through each section of the code.
+
+* First we import mongoose and create a `Schema` reference.
+
+  ```js
+  const mongoose = require("mongoose");
+  const Schema = mongoose.Schema;
+  ```
+
+* Next we create a new schema called `ExampleSchema`.
+
+  ```js
+  const ExampleSchema = new Schema({
+    string: {
+      type: String,
+      trim: true,
+      required: "String is Required" // validator
+    },
+
+    number: {
+      type: Number,
+      unique: true, // this is not a validator, but a built in helper
+      required: true // validator
+    },
+
+    email: {
+      type: String,
+      match: [/.+@.+\..+/, "Please enter a valid e-mail address"]
+    },
+
+    boolean: Boolean,
+
+    array: Array,
+
+    date: {
+      type: Date,
+      default: Date.now
+    },
+
+    longstring: {
+      type: String,
+      validate: [({ length }) => length >= 6, "Longstring should be longer."]
+    }
+  });
+  ```
+  
+* We then compile our schema into a Model.
+
+  ```js
+  const Example = mongoose.model("Example", ExampleSchema);
+  export default Example;
+  ```
+
+* Tell the class that all schema types have the built-in `required` validator. 
+
+* Point out that numbers have `min` and `max` validators while strings have `enum`, `match`, `minlength`, and `maxlength` validators.
+
+* Ask the students the following question(s):
+
+  * ☝️ What are the benefits of using Mongoose?
+
+  * 🙋 It let's use create a schema, enforce validations and overall make it easier to interface with a Mongoose database.
+
+* Take any clarifying questions before moving on to the students activity.
+
+### 23. Instructor Do: Demo Solved Mongoose Schema (5 mins)
+
+* Open [11-Stu-Mongoose-Schema/Solved](../../../../01-Class-Content/17-NoSQL/01-Activities/11-Stu-Mongoose-Schema/Solved) on your machine and run `npm install` then `node server.js` to launch the app. 
+
+* Create a new user and demonstrate the response.
+
+  ```js
+  {
+    "_id": "5cfab6403da88328fcc7ac39",
+    "username": "demo",
+    "password": "demo",
+    "email": "demo@gmail.com",
+    "userCreated": "2019-06-07T19:08:48.294Z",
+    "__v": 0
+  }
+  ```
+
+* Try to create another user with the same email to demonstrate the validations.
+
+  ```js
+  {
+    "driver": true,
+    "name": "MongoError",
+    "index": 0,
+    "code": 11000,
+    "errmsg": "E11000 duplicate key error collection: userdb.users index: email_1 dup key:  {: \"demo@gmail.com\" }"
+  }
+  ```
+
+* Tell the students that in the next activity they will implement the schema validations that they see here.
+
+### 24. Student Do: Mongoose Schema (15 mins)
+
+* Direct students towards the next activity located in [11-Stu-Mongoose-Schema/Unsolved](../../../../01-Class-Content/17-NoSQL/01-Activities/11-Stu-Mongoose-Schema/Unsolved).
+
+```md
+# User Schema
+
+In this activity you will create a user schema with mongoose.
+
+## Instructions
+
+* In `userModel.js` add four attributes to your schema.
+
+  * username: A string that will be be required, and also trimmed.
+
+  * password: A string that will be required, trimmed, and at least 6 characters.
+
+  * email: A string that must be a valid email address and unique in our collection.
+
+  * userCreated: A date that will default to the current date.
+
+## 💡 Hint(s)
+
+* The regex for checking if a string is an email is: /.+\@.+\..+/
+
+## 🏆 Bonus 
+
+* Insert five more documents with one command. Use [https://docs.mongodb.com/manual/tutorial/query-documents/](https://docs.mongodb.com/manual/tutorial/query-documents/) to see how you can accomplish this.
+
+```
+
+### 25. Instructor Do: Review Mongoose Schema (10 mins)
+
+* Use the prompts and talking points below to demonstrate the following Mongoose key point(s):
+
+  * ✔ We can use `required` to check for the presence of an attribute.
+
+  * ✔ We can use `validate` to enforce a validation.
+
+* Open [11-Stu-Mongoose-Schema/Solved](../../../../01-Class-Content/17-NoSQL/01-Activities/11-Stu-Mongoose-Schema/Solved) in your IDE and step through each attribute, checking for understanding.
+
+```js
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
+
+const UserSchema = new Schema({
+  username: {
+    type: String,
+    trim: true,
+    required: "Username is Required"
+  },
+
+  password: {
+    type: String,
+    trim: true,
+    required: "Password is Required",
+    validate: [({ length }) => length >= 6, "Password should be longer."]
+  },
+
+  email: {
+    type: String,
+    unique: true,
+    match: [/.+@.+\..+/, "Please enter a valid e-mail address"]
+  },
+
+  userCreated: {
+    type: Date,
+    default: Date.now
+  }
+});
+```
+
+* Students may be confused with `match`, explain that it uses a regular expression to check for a valid email address.
+
+* Ask the students the following question(s):
+
+  * ☝️ What is the `match` method checking for in our `email` attribute?
+
+  * 🙋 It is checking the regular expression against the user's email input.
+
+* Take any clarifying questions before moving on to the students activity.
+
+
+### 26. END (0 mins)
 
 ### Lesson Plan Feedback
 
