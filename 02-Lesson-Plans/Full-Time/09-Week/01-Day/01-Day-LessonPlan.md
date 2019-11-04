@@ -22,9 +22,13 @@ In this class, you will introduce the concept of the NoSQL database with MongoDB
   
 * Perform basic CRUD actions on their Mongo database.
 
+* Create a Mongoose schema to dictate rules for their MongoDB data.
+
 ## Slides
 
 [9.1: Intro To MongoDB](https://docs.google.com/presentation/d/1JHT8-zZ-JWHg_zKDXEVy-leNegSipr26HBTNIEl3J3Y/edit?usp=sharing)
+
+[9.1: Career Services](https://docs.google.com/presentation/d/18inCMR9TB47q3yEY-YflqA-96cBqXheM9X0BrD0Gk9Y/edit#slide=id.p7)
 
 ## Time Tracker
 
