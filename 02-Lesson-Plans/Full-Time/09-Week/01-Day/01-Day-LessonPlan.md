@@ -24,11 +24,11 @@ In this class, you will introduce the concept of the NoSQL database with MongoDB
 
 ## Slides
 
-[17.1: Intro To MongoDB](https://docs.google.com/presentation/d/1JHT8-zZ-JWHg_zKDXEVy-leNegSipr26HBTNIEl3J3Y/edit?usp=sharing)
+[9.1: Intro To MongoDB](https://docs.google.com/presentation/d/1JHT8-zZ-JWHg_zKDXEVy-leNegSipr26HBTNIEl3J3Y/edit?usp=sharing)
 
 ## Time Tracker
 
-[17.1: Intro To MongoDB Time Tracker](https://docs.google.com/spreadsheets/d/1a4JbqI3NUd2qe6nKqYF_w5X0TXz7tG_TKXa1fcvuaXM/edit?usp=sharing)
+[9.1: Intro To MongoDB Time Tracker](https://docs.google.com/spreadsheets/d/1C-zfaTXOhNrgey7S0YsHv_vlX2YogdaGv5Jm_Vi5qBM/edit?usp=sharing)
 
 ### 1. Instructor Do: What is MongoDB (10 min)
 
