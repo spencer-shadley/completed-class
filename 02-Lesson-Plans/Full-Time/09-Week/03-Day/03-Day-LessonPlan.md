@@ -1,332 +1,560 @@
-## Day 3 - Project Presentations #2 & Masters of MongoDB <!--links--> &nbsp; [⬅️](../02-Day/02-Day-LessonPlan.md) &nbsp; [➡️](../04-Day/04-Day-LessonPlan.md)
+# 9.3 Lesson Plan - Web Performance (6:30 PM)
 
-### Slideshow
+## Overview
 
-* This lesson's slides are available on Google Drive here: [09-3 Masters of MongoDB](https://docs.google.com/presentation/d/1iLeQv0Q6OF81PJc0NMFqCgfRFfYvP0eArvZBPXY6ago/edit?usp=sharing)
-
-* To add slides to the student-facing repository, download the slides as a PDF by navigating to File > "Download as" and choose "PDF document." Add the slide PDF file to your class repository along with other necessary files.
-
-* **Note:** Editing access is not available for this document. If you wish to modify the slides, please create a copy by navigating to File > "Make a copy...".
+In this lesson we will complete the Mini Project for Unit 17, then begin the performance unit. We will use Lighthouse to audit the performance of webpages, and go through the different options we have to increase performance in our applications. Performance is an incredibly important aspect of being a developer. While building large applications, keeping them performing is a top priority.
 
 - - -
 
-### Overview
+## Learning Objectives
 
-Your students will present their project apps to the class. They’ll afterwards answer open-floor questions from you, TAs and classmates. This is a **crucial** lecture for your students, so make sure you follow the advice in this plan
+* By the end of class student's will be able to...
+  * Articulate the meaning of web performance and how it effects their users.
+  * Explain how assets like JavaScript files and images impact the performance of a web page.
+  * Use Lighthouse to audit a sites various performance metrics.
+  * Use minification to lower JS file sizes.
+  * Use the compression npm package to enable gzip compression in their applications
+  * Use online image compression to compress image files while retaining image quality.
+  * Explain and implement lazy loading into their applications so images are only loaded as needed.
 
-Next, you will introduce the concept of the NoSQL database with MongoDB, go over its pros and cons compared with MySQL, and ultimately detail all of the required steps to employ MongoDB in future projects.
+## Instructor Notes
 
-`Summary: Complete Project Presentations & Activities 1-4 in Unit 18`
+* We will be making use of students Project 2 during the first half of todays class. Ensure all students have a deployed project to work with.
 
-##### Instructor Priorities
+* Todays class you will be using an auditing system by Google called Lighthouse. Familiarize yourself with the tool prior to class. You can find the documentation [here](https://developers.google.com/web/tools/lighthouse/). 
 
-* Students should know the parts of their apps that impress you and the TAs, as well as what they can improve on for future projects. This will help direct their focus for future assignments (what aspects of web development they need to work on).
+  * Lighthouse can hang in some browsers, if possible please use Chrome.
 
-* Students should be able to install MongoDB on their machines within the first hour of class. If anyone has trouble getting it running, you or a TA should offer that student assistance.
-* Students should understand how to make queries with MongoDB. Meeting this goal will build the necessary foundation for the next lecture, which will incorporate such queries with Node.js files.
-* Students should install Robo 3T by the end of class. This UI will make everyone's life easier.
+* Improving scores in Lighthouse will be a big win for students today, so be sure to slowly go through the first audit report of the day to give students an understanding of how they can improve.
 
-##### Instructor Notes
+## Slides
 
-* _Arrive early to class_ so that you can set the room up for presentations.
+* N/A
 
-* To provide students more time and support for their group projects.
+## Time Tracker
 
-* Before class, take a look at the slide show.
-
-* _The Road Ahead_:
-
-* The current slide lines out a path from now to the end of the course, marked with the libraries that we originally planned to teach our students.
-
-* _Your Goals_: Feel free to edit these slides so they include the best goals that students set out in the beginning of the course.
-
-* Before class, make sure you install MongoDB and Robo 3T on your machine--you'll need both.
-
-* If you haven't used MongoDB much in the past, take a look at this unit's queries and solutions. This should prime you for the lecture.
-
-* Have your TAs reference [03-Day-Time-Tracker](https://drive.google.com/a/trilogyed.com/file/d/1MP5hDL6bBeo_kgofoCPX0Xcsz4cVCyQH/view?usp=sharing) to help keep track of time during class.
-
-### Sample Class Video (Highly Recommended)
-
-* To view an example class lecture visit (Note video may not reflect latest lesson plan): [Class Video](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0b8bb8ff-4cf2-4633-9e7b-274922782a35)
+[9.3 Time Tracker](https://docs.google.com/spreadsheets/d/1nwgyx7Oo_jpMzea59A-Tm79aVMSAIPyyCKJHndB4oHg/edit#gid=0)
 
 - - -
 
-### Class Objectives
+## Class Instruction
 
-By the end of class students will:
 
-* Be introduced the concepts of _non-relational databases_ like MongoDB.
+### 1. Intro Mini Project (5 mins)
 
-* Demonstrate how to create databases in MongoDB and store data with the program, from basic fields to more advanced queries.
+* Change into [26-Stu-Mini-Project](../../../../01-Class-Content/17-NoSQL/01-Activities/26-Stu-Mini-Project/Solved/public/db.js) in your terminal and run `npm install` folowed by `node server.js` to launch your app at [http://localhost:3000/](http://localhost:3000/)
 
-* Start preparing for this unit's homework assignment, which relies on storing data in MongoDB.
+* Demo the functionality of the app and tell students they are going to build the IndexedDB storage functionality in the next activty.
 
-- - -
+* Let students ask questions and then move on to the next activity.
 
-### 1. Presentation Setup (20 min)
+### 2. Student Do: Mini Project (60 mins)
 
-* Congratulate your class for developing their projects to a state worth presenting. Assure them that they should take pride in what they've done!
+* Direct students to the activity instructions found in [26-Stu-Mini-Project](../../../../01-Class-Content/17-NoSQL/01-Activities/26-Stu-Mini-Project/Unsolved):
 
-* Tell students to deploy their latest changes to GitHub. After this, all it will take is a quick pull to get any changes.
+```md
+# Mini Project
 
-  * Make sure groups have deployed their app to Heroku, as well. We want to see their projects in action!
+In this activity, you will implement IndexedDB so the budget tracker persists data. Write all of your IndexedDB code in `public/db.js`.
 
-* Give students a rundown of how they're presentations should pan out.
+## Instructions
 
-  1. They should last about eight minutes, followed by two-to-four minutes of open-floor Q&A.
-  2. They need to show confidence! All of them have contributed to impressive projects--they need to recognize and project that during their demonstrations.
+* Create a new db request for a `budget` database.
 
-* Ask which groups would like to go first, then second, then third and so on. When groups stop responding, assign the remaining teams to random slots (and write this list down).
+* Inside `onupgradeneeded`, create an object store called `pending` and set `autoIncrement` to `true`.
 
-### 2. Project Presentations (60 mins)
+* Inside your `saveRecord()` function:
 
-* Go down the list and send each group up to the front of class.
+  * Create a transaction on the `pending` object store with `readwrite` access.
 
-* When a group nears the 8-minute mark, motion for them to draw their presentation to a close (like pointing to your watch/imaginary watch). **Don't say anything**--you don't want your voice to interrupt their talk.
+  * Access your pending object store.
 
-* Follow each of these presentations up with questions about their projects. Let TAs and classmates ask questions, too.
+  * Add a record to your store with the `add` method.
 
-* Point out what you found impressive and what they can improve on for future demonstrations.
+* Inside the `checkDatabase` function:
 
-* When they finish - congratulate them! It's challenging to conceive, develop and present a new web app.
-
-### 3. Introduce Portfolio Update (2 min)
-
-Open up the instructions for updating the students portfolio
-
-* [Portfolio Update Instructions](../../../../01-Class-Content/09-portfolio-update/01-Homework/Instructions/README.md)
-
-* Explain to students the importance of having an up-to-date portfolio, whether it be for the job search or just networking! Let them know how proud you are of the hard work they have done and to go ahead and update their portfolios to add and show off this finished project.
-
-### After Project Demos
-
-After students have presented their projects, please take some time to submit their work to the form below. This will assist future instructional staff.
-
-* [Student Project Examples](https://goo.gl/forms/d82FCYMGeRcrxruQ2)
-
-- - -
-
-### 4. Lunch (30 min)
-
-- - -
-
-### 5. Instructor Do: Open Slideshow, congratulate students (5 min)
-
-* Open the slideshow file in your assignment directory. Then welcome students to class.
-
-* Offer students EXTREME levels of encouragement with their projects.
-
-* If you think it's appropriate, have students share a few of their reflections on project week out loud.
-
-* Then offer students guidance on how they can improve on their teamwork and presentation skills for their final projects.
-
-### 6. Instructor Do: The Road Ahead (Slides) (5 min)
-
-* The next few slides will offer advice on how to make the most of the final weeks of this class.
-
-* With everything they've learned so far, most students will already be hirable. Encourage them to start looking for employment and internships if they want to find work now.
-
-* Open the slide with the road ahead. Tell them that these next few skills are not necessary to find work but will open up more job opportunities and make them more hirable for the positions they apply for.
-
-* Load the next slide. Tell your students they should absolutely talk with you or a TA since they still have time to get this assistance. Add in that they should look through the code repos of any topics that they haven't been able to wrap their heads around. Encourage them to do this now, and load the next slide. Tell them that this is a habit you shouldn't delay--"Let's be honest, if you aren't going to start now, you probably aren't going to after graduation."
-
-* Load the next slide with the student goals, and read off their goals. Then load the final slide of the section and offer encouragement.
-
-### 7. Instructor Do: What is MongoDB (Slides) (15 min)
-
-* Load the "What's MongoDB" slide. Tell them that it's a popular NoSQL database.
-
-* What's a NoSQL database? Simply put, a database that doesn't use SQL's table-based relationship model. Instead, MongoDB uses a document-oriented model.
-
-* Tell the class that if they parsed JSON objects before ("which you have"), you'll feel somewhat close to home here. The data in these databases gets stored as BSON, or "Binary JSON."
-
-  * IMPORTANT: Don't focus too much on the semantics here. We could go on about binary code, but we don't want to lose focus.
-
-* "MongoDB has tons of drivers and packages for connecting to Node, C++, Java, etc." This means that students can use this for their projects in this class and beyond.
-
-* Go to the next slide and detail how the MySQL tables in the slide become joined with an explicit command, relying on joins to bring relevant data together.
-
-  ![1-Joins](Images/1-Joins.jpg)
-
-* Go to the next slide, which shows a BSON version of the same data. Explain how BSON data doesn't always need to be joined for certain complex data structures, since BSON supports Objects Within Objects. Add in that once we get this data to the site, it will be a cinch to traverse; it's the same routine as picking out JSON data.
-
-  ![2-NoSQL](Images/2-NoSQL.jpg)
-
-* Open the MongoDB storage slide and explain to them that MongoDB databases store collections with documents of data. Keep the screen up and ask the class how this compares with MySQL.
-
-  ![3-Collection](Images/3-Collection.jpg)
-
-* After a student or two gives you their answers, load the next slide and tell them to take note of these differences and similarities.
-
-  ![4-Differences](Images/4-Differences.jpg)
-
-* But also tell them to take note (and this is _important_) that MongoDB is still an inherently different style of data storage than MySQL. A BSON document is basically a more flexible JSON, and individual documents can include strings, ints, booleans and even other objects.
-
-### 8. Students Do: Quick Activity (Slides) (10 min)
-
-* Load up the next slide with the quick activity. Tell them to work with a partner to answer the following questions:
-
-  * What are the advantages of using a NoSQL database like MongoDB according to the MongoDB Website?
+  * Open a transaction on your `pending` object store.
   
-  * What are the advantages of using a NoSQL database like MongoDB according to the web (places like Quora)?
+  * Access your `pending` object store.
+
+  * Get all records from store and set to a variable.
+
+* Inside `getAll.onsuccess`:
+
+  * If successful, open a transaction on your `pending` object store.
+
+  * Access your `pending` object store.
+
+  * Clear all items in your store.
+
+## 💡 Hint(s)
+
+* You can use the the comments in `public/db.js` as a guide.
+
+## 🏆 Bonus
+
+* Create a button that resets all funds to zero in your indexedDB.
+
+```
+
+### 3. Instructor Do: Review Mini Project (10 mins)
+
+* Treat this review as a question and answer session to help students who might be stuck, since there are 10 minutes allotted.
+
+* Open [26-Stu-Mini-Project](../../../../01-Class-Content/17-NoSQL/01-Activities/26-Stu-Mini-Project/Solved/public/db.js) in your IDE and walk students review the solved code, letting the students ask questions about the key methods and functions they had to write.
+
+  * `onupgradeneeded`
+
+  * `saveRecord()`
+
+  * `checkDatabase()`
+
+  * `saveRecord()`
+
+  * `onsuccess`
+
+* Ask for volunteers to share or help if students are stuck.
+
+### 4. Instructor Do: Review Unit 17 (45 mins)
+
+* Take some time answering lingering questions about the Mini Project. If no questions remain, lead a review on the topics learned in Unit 17. 
+
+### 5. Break (30 mins)
+
+
+### 6. Instructor Do: Welcome/Intro Web Performance (5 mins)
+
+* Welcome students to class and then open Google Chrome. 
+
+* Open your Dev Tools Network Tab and Throttle your connection to `Slow 3G`
+
+  * ![Throttle Connection](./Images/throttleConnection.png)
+
+* Navigate to [Amazon.com](https://amazon.com/).
   
-  * What are the disadvantages of using a NoSQL database like MongoDB according to the web (places like Quora)?
+  * The page is going to load extremely slowly.
 
-### 9. Instructor Do: Answer the Questions from the Quick Activity (Slides) (5 min)
+* Ask the class, "What can the Network Tab show us?"
 
-* Go over the answers to these questions, with the Quick Activity slide still loaded on your machine. Listen and comment on their answers. Here are some answers from different web sites.
+  * The network tab gives developers a view into what assets are being loaded and when, as well as total load times. Direct the students attention to the loading time chart.
 
-  * What are the advantages of using a noSQL database like MongoDB according to the MongoDB Website? 
+  ![Network Chart](./Images/networkChart.png)
 
-    * "Relational databases require that schemas be defined before you can add data. For example, you might want to store data about your customers such as phone numbers, first and last name, address, city and state – a SQL database needs to know what you are storing in advance."
-    * "Object-oriented programming that is easy to use and flexible."
+  * Amazon will load assets for well over a minute, and this traffic can all be watched inside of our dev tools.
 
-  * What are the advantages of using a noSQL database like MongoDB according to the web (places like Quora)? (<http://stackoverflow.com/questions/2117372/what-are-the-advantages-of-using-a-schema-free-database-like-mongodb-compared-to>)
+* Ask the class, "What is throttling?"
 
-    * Deep query-ability. MongoDB supports dynamic queries on documents using a document-based query language that's nearly as powerful as SQL.
-    * No schema migrations. Since MongoDB is schema-free, your code defines your schema.
+  * Throttling a connection is the act of using software to deliberately slow down or "throttle" a connections speed to be slower than it would normally.
 
-  * What are the disadvantages of using a NoSQL database like MongoDB according to the web (places like Quora)? (<http://stackoverflow.com/questions/2117372/what-are-the-advantages-of-using-a-schema-free-database-like-mongodb-compared-to>)
-    * Sometimes, using joins and having strict schemas is actually preferable to MongoDB.
-    * "If your database has a lot of relations and normalization, it might make little sense to use something like MongoDB. It's all about finding the right tool for the job."
+* Ask the class, "Why would we want to throttle our connection?"
 
-### 10. Students Do: Installing MongoDB (20 min)
+  * While we might have a nice and fast connection, a large portion of the planet does not have access to speeds even comparable to a slow 3g cellular network. 
 
-* Tell students to consult the installation guide [Supplemental/Installing-MongoDB.md](../../../../01-Class-Content/18-mongo-mongoose/03-Supplemental/Installing-MongoDB.md), and to spend about 15 to 20 minutes to install and configure MongoDB on their machines.
+  * By throttling our connection, we can see how our users with worse connections might experience our content, and will help us understand what is slowing loading times most.
+  
+* Loading times like we are seeing with a throttled connection on Amazon can be a huge deterrent to users.
 
-* Tell them to ask you or one of the TAs for help if they have any questions while installing or configuring MongoDB.
+* Ask the class, "Have you ever left a webpage due to it taking too long to load"
 
-* At the 15-minute mark, ask if there are any people who haven't been able to install and configure MongoDB yet. Assist anyone who needs help.
+  * It's safe to say anyone who has used the internet has experienced this.. This is a common occurrence all over the world, as not all people have access to fast network connections.
+  
+  * One of the biggest factors that leads to a poor user experience is slow page load times.
 
-* Ask the class if they can start up MongoDB by typing <code>mongod</code> into their terminal/bash windows. Their terminal/bash screens should look like this:
+* Ask the class, "What do you think the most important part of the user experience is?". Call on one or two students for answers.
 
-    ![5-mongod](Images/5-Mongod.jpg)
+  * Performance. Speed and response times are paramount, as making users wait for response to input or loading information is a guaranteed way to lose those users.
 
-* If there are any remaining students who do not have it installed and configured, ask them to talk with a TA to figure out the issue.
+  * When it comes to the web every second counts. Todays class will be about how webpages can be optimized to save the end user time and provide a more fluid experience.
 
-### 11. Instructor and Students Do: Initial MongoDB Queries (15 min)
+* Ask the class, "How do we know what is causing our page to perform poorly or well?"
 
-* Instruct your students to open <code>mongod</code> if they don't already have it open. Tell them they must keep the window open so that MongoDB can continue to run.
+  * Getting concrete analysis on the performance metrics of a web page is important in improving it in the future.
 
-* While they have mongod running, tell them to open another terminal/bash window and run <code>mongo</code> to start up the mongo shell.
+* Use student answers to transition to demoing Lighthouse.
 
-* Slack out the `01-Create-Insert-and-Find` to the class and follow along with the comments. Tell them that you'll be going over how to create a database, insert data into a collection and find stored data.
+### 7. Instructor Do: Demo Lighthouse (10 mins)
 
-### 12. Students Do: MongoDB Basics (15 min)
+* Open the [Gallery App](https://ancient-brushlands-76706.herokuapp.com/) and run the application. Let students know this is an application they will be working with after break later today.
 
-* Send students the skeleton of [02-Starting-With-Mongo](../../../../01-Class-Content/18-mongo-mongoose/01-Activities/02-Starting-With-Mongo). Here are the instructions for your reference.
+  * Google has created a tool called Lighthouse which will allow us to run an audit on our page and find out different metrics about how it performs and what is hindering its performance. Lighthouse is a quality auditing tool developed by Google for analyzing web pages.
 
-```
-A. Use the command line to create a classroom database. Insert entries for yourself and the people in your row in a students collection. Each document should have:
+  * It provides audits for performance, accessibility, SEO, and progressive web applications.
 
-1. A field of name with the person's name.
-2. A field of rownumber which will contain the row number that they are in.
-3. A field of os which will contain the Operating System of the computer they are using: 'Mac', 'Win', etc
-4. A field of hobbies with an array of the hobbies the person likes to do.
+  * Lighthouse can be run directly from our Chrome Dev Tools. This makes it a fast, simple, and effective way to get insights into our pages overall performance metrics.
 
-B. Use find commands to get:
+  * Open chrome dev tools, and click the `Audits` tab.
 
-1. A list of everyone in your row.
-2. An entry for a single person.
-3. The entries for all the Mac users in your row.
+  ![Audits Tab](Images/auditsTab.png)
 
-BONUS:
-If you finish early, check out the MongoDB documentation and figure out how to find users by an entry in an array.
-```
+  * Scroll down and click `Run Audits`
 
-### 13. Instructor Do: Go Over Last Exercise (5 min)
+  ![Run Audits](Images/runAudits.png)
 
-* Ask students if they were able to finish the assignment. Call on one of the people who say yes to answer the first question, using the solution file as a reference.
+* Open the generated `Audit Report` and walk students through the following:
 
-* Go down the list of questions and ask students to answer them, entering them into the bash/terminal window you're using to demonstrate.
+  * The *performance* section will be the first you encounter, and one of the most useful for todays class. This section will tell us why our site might be performing poorly and delivering a poor user experience. It will also give us actionable items to fix.
 
-  * When directed, ask the class for additional names, hobbies, etc., so you may fill out the classroom collection.
+  * Hovering over the different status signs next to the times shown will give you information on what that test means.
 
-### 14. Instructor Do: Removing, Updating and Dropping in MongoDB (15 mins)
+  ![Hover](Images/performanceSection.png)
 
-* Open up the [03-Update-Delete-and-Drop](../../../../01-Class-Content/18-mongo-mongoose/01-Activities/03-Update-Delete-and-Drop) and demonstrate the included queries on your screen. Make sure students are following along, entering them into the bash/terminal window you're using to demonstrate.
+  * Each audit has a reference doc explaining why the audit is important, as well as how to fix it. These reference docs will lay out why this metric is important to the user experience and give reasons why we might be lacking in the specified audit.
 
-* When you're finished, slack out the file to your students.
+  * One of the main metrics Lighthouse looks for is the *first meaningful paint*.
 
-### 15. Students Do: Taking Candy from Basket Weavers (20 min)
+  * A paint occurs when content is loaded on the screen. Lighthouse measures the first *Contentful* paint, which means when any content is loaded. It also measures the first *meaningful* paint which occurs when the primary content becomes visible.
 
-* Send Students the skeleton of [04-Student-Update-Delete-and-Drop/Unsolved/updateAndDelete.md](../../../../01-Class-Content/18-mongo-mongoose/01-Activities/04-Student-Update-Delete-and-Drop/Unsolved/updateAndDelete.md). Here are the instructions for your reference.
+  * One of the most important metrics it takes is *Time to Interactive*. This is the time it takes for the webpage being audited to become usable. A long delay in interactivity can lead to page abandonment.
 
-```
-Go back to your classroom database.
+* Ask the class, "What is web page abandonment?"
 
-You've decided to take on a new hobby. Add Extreme Basket Weaving to your array of hobbies.
+  * Abandonment occurs when a user leaves a web page without completing the task they set out to.
 
-While practicing for your Extreme Basket Weaving Competition, you broke the computer of the person next to you. They're using a new Operating System now. Change their os field.
+* When working on improving a webpage's performance, we should use Lighthouse to complete frequent audits. These can be incredibly helpful in pinpointing where our efforts should be focused.
 
-Another student in your row saw you break that computer and wisely decided to move. Remove them from your database.
+### 8. Student Do: Lighthouse Audit (10 mins)
 
-You are worried everyone else will leave and you'll have to sit all alone. You decide to bribe everyone who didn’t leave with candy. Add a field of gavecandy with a value of false to everyone in the array so you can keep track.
+* Direct students to the activity instructions found in [01-Stu_Lighthouse](../../../../01-Class-Content/18-PWA/01-Activities/01-Stu_Lighthouse/README.md)
 
-All this work made you hungry, so you bought yourself some candy. Change the value of gavecandy to true in your entry.
-```
+```md
+# Lighthouse Audits
 
-### 16. Instructor Do: Go Over the Answers (5 min)
+In this activity you will use Google Lighthouse to audit your second group project to find out performance metrics.
 
-* Ask students if they were able to finish the assignment. Call on one of the folks who say yes to answer the first question, using the solution file as a reference.
+## Instructions
 
-* Go down the list of questions and ask students to answer them. Enter their answers into the bash/terminal window you're using to demonstrate the solutions.
+* We are going to utilize your second group project for these coming activities to check its performance metrics.
 
-### 17. Students Do: Install Robo  3T (5 min)
+* Navigate to the deployed URL of your project.
 
-* Tell students that while it's entirely possible to keep track of MongoDB data in the `mongo` shell, entering queries to merely view data can become tedious.
+* Open the Chrome Dev Tools and click the `Audits` tab.
 
-* Enter Robo  3T.
+* Scroll down and click `Run Audits` and allow Lighthouse to run.
 
-  * Tell students that this program is similar to MySQL Workbench, providing a simple user interface to view document collections.
-  * Instruct your students to press the green install button for the free edition of the program. <https://robomongo.org/download>
-
-* After 3 minutes, ask the class if they were able to install the program. If any students ran into an issue, assist them or direct them to a TA.
-
-### 18. Instructor Do: Demonstrate Robo  3T (9 min)
-
-* Instruct your students to open the application. They should see a window like this:
-
-  ![6-roboConnect](Images/6-roboConnect.jpg)
-
-* They should hit the connect button. Do the same to show students what comes next.
-
-* Have your students follow along as you select the classroom DB, then the Collections folder, and then as you double click the classroom collection. You should see the documents you entered into the collection earlier in the lecture.
-
-* Now, tell the class that when they right click in the section where the documents are listed (and you should do the same), they will see an Insert Documents option. Click it, and you'll see a window where you can type in a BSON document. As long as what you enter is valid JSON, your data will show up in the collection when you hit save.
-
-  * Enter a document similar to the image below:
-
-    ![7-RoboDoc](Images/7-RoboDoc.jpg)
-
-### 19. Students Do: Final Assignment (8 mins)
-
-* Instruct students to drop their classroom collection and create a new one.
-
-* Then, slack out these instructions:
-
-```
-ONLY USE ROBO 3T FOR THIS ASSIGNMENT
-
-In a new classroom collection, reenter your name, os, and hobby info array. This should be entered using the right-click -> Insert Object method.
-
-Next, slack out your name, os and hobbies into the classroom chat.
-
-As student info comes in, add it into the database.
-
-As students enter their BSON info into slack, insert it into your database.
-
-By the end of the exercise, you should have every student's information in your classroom collection.
+* Read through the provided report and be prepared to talk about the `Opportunities` portion of your audit!
 ```
 
-### 20. Wrap Up (1 min)
+### 9. Instructor Do: Review Audits (5 mins)
 
-* Tell students that they've covered a lot of ground today, and that next class they'll apply what they've learned to create full-stack apps that scrape data from other websites. 
+* Ask the class the following question(s):
 
-* Tell them that if they would like extra practice after class, they should read the documentation for the MongoJS npm package. They will be using that package in the next class to combine MongoDB with Node.
+  * What are some of the 'Opportunities' for improvement you found in your applications?
 
-* Ask if there's anything you might be able to clear up about today's lecture. If all is well, dismiss the class.
+  * How long did the first content paint take?
+
+  * How long did the first meaningful paint take?
+
+  * How long did it take to become interactive?
+
+* Are there any commonalities you hear?
+
+### 10. Instructor Do: JS Minification (10 mins)
+
+* Ask the class the following question(s):
+
+* "What do you think minification means"?
+
+  * Minification is the process of taking our code and removing all unnecessary characters and whitespace without loss of functionality in an attempt to save file space.
+
+* Ask the class, "Where have we seen minification before?"
+
+  * Bootstrap and jQuery are two examples of minified source code
+
+* Open [Online Minification](http://refresh-sf.com/) and paste the following code into the textarea:
+
+    ```js
+    var myArray = [1, 2, 3, 4, 5];
+
+    for(var i=0; i < myArray.length; i++){
+      console.log(myArray[i]);
+    }
+    ```
+
+* Click the JavaScript button to minify the code snippet and explain the following point(s):
+
+* ![Minify JS](Images/minifyJS.png)
+
+  * The minifier moved our `myArray` declaration into our `for loop`.
+
+  * The minifier removed all whitespace between characters, and put all of our code on one line.
+
+  * The minification process resulted in a 25% decrease in the size of the JavaScript.
+
+  ![Minified](Images/minification.png)
+
+  * While the code may look different after minification, it will function exactly the same
+
+* Ask the class, "What are the benefits of minification?"
+
+  * Minification saves us space, and smaller file sizes create faster downloads for the user. The faster our assets can download, the faster the page will load them for our user.
+
+### 11. Student Do: Minify your JavaScript (10 mins)
+
+* Direct students to the activity instructions located in [02-Stu_Minifiy-JS](../../../../01-Class-Content/18-PWA/01-Activities/02-Stu_Minifify-JS/README.md)
+
+```md
+# Minify Your JS
+
+In this activity you will minify your JavaScript using an online tool.
+
+## Instructions
+
+* Using the project you audited previously, navigate to [Online JavaScript/CSS/HTML Compressor](http://refresh-sf.com/)
+
+* Copy the contents of one of your JS files into the compressor and click on the `JavaScript` button.
+
+* Note the resulting Input/Output sizes of the JS as shown to the bottom right of the textarea.
+
+* Create a `dist` folder in the root of your project.
+
+  * Create an `index.js` file inside of your `dist` folder.
+
+  * Copy/paste the minified JS of your dist folder into your `dist/index.js`
+
+* Be sure to link your `dist/index.js` code to your application.
+```
+### 12. Instructor Do: Review Minification (5 mins)
+
+* Ask the class the following question(s):
+
+  * How much of a reduction they saw in JS sizes from Input to Output?
+
+  * How this could benefit developers, especially those with massive code bases?
+
+* While the minified code certainly appears different than the code we input to start, all of the functionality is retained.
+
+* Ask the class, "Why might we not want to edit our minified code?".
+
+  * It is important to have minified code in it's own file. It is not recommended to attempt editing minified code as it can be difficult to read, and even more difficult to debug due to the lack of readability.
+
+* Ask the class the following question(s):
+
+  * How might we minify image files?
+
+* Use students answers to transition to the next activity.
+
+### 13. Instructor Do: Compression npm package (10 mins)
+
+* Ask the class, "What do we do with files that are so large they are slowing load times?"
+
+  * We compress those files.
+
+* Ask the class, "What is a zip file?"
+  
+  * A `.zip` file is a compressed version of a normal folder. When you `unzip` it, the folder contains all of the information it had before it was zipped.
+
+* On the web we can use something called GZip compression via an NPM Package called `compression`.
+
+  * GZip is a form of data compression -- it takes a piece of data and makes it smaller. The original data can be restored by un-zipping the compressed file.
+
+  * It is relevant to web apps and web sites because the HTTP protocol includes the ability to gzip data that is being sent.
+
+  * This middleware will enable compression for our project, allowing for compressed versions of our files to be sent over the network for faster download times.
+
+* Navigate to [compression npm](https://www.npmjs.com/package/compression)
+
+* Tell the class that using this middleware enables compression with just 3 lines of code.
+
+* Now we are going to show students around the `Network` tab in Chrome Dev Tools.
+
+* Open up your `network` tab in the chrome dev tools. Navigate to the [New York Times](https://www.nytimes.com/). 
+
+  ![Network Tab](Images/networkTab.png)
+
+* Point students to all the incoming network traffic shown, and more specifically the file sizes column.
+
+  ![Network Traffic](Images/networkTraffic.png)
+
+* There is a file size showing the compressed size (Smaller number) and its uncompressed size (larger number).
+
+  * Files that don't have two numbers are uncompressed files being sent unchanged.
+
+### 14. Students Do: Enable Compression (10 mins)
+
+* Direct students to the activity instructions located [03-Stu_Enable-Compression](../../../../01-Class-Content/18-PWA/01-Activities/03-Stu_Enable-Compression/README.md)
+
+```md
+# GZip Compression
+
+In this activity you are going to use an NPM package called compression to enable GZip compression in your project.
+
+## Instructions
+
+* Navigate to [compression npm](https://www.npmjs.com/package/compression)
+
+  * Read about the installation procedure and some of the API's functionality. Use the docs to enable compression in your application.
+
+* Once completed, navigate to your page and look at the traffic via the Network tab.
+
+  * You should be able to see the sizes of the files your page is requesting.
+
+  * Take note of the differing file sizes.
+
+  * This shows your Uncompressed/Compressed file sizes.
+```
+
+### 15. Instructor Do: Review Compression (5 mins)
+
+* Open [03-Stu_Enable-Compression](../../../../01-Class-Content/18-PWA/01-Activities/03-Stu_Enable-Compression/Solved) in your IDE and explain the following points
+
+  * We first `npm install compression`
+
+  * We then add the following code to our `server.js`:
+
+  ```js
+  const express = require("express");
+  const mongoose = require("mongoose");
+  const compression = require("compression");
+
+  const app = express();
+
+  app.use(compression());
+  ```
+
+* Answer any questions before proceeding to break.
+
+### 16. Instructor Do: Image Compression (10 mins)
+
+* Ask the class the following question(s):
+
+* Have you ever gone to a site and experienced slow image loading times?
+
+  * Images are one of the most used assets on the web. They are everywhere, and there are more than you can imagine.
+
+  * This is normally due to oversized images or high resolution images being downloaded and taking time. Images are one of the main culprits in slowing down web loading times.
+
+* How might we be able to fix the problem of images that are too large?
+
+  * We can use a concept called *Image Compression*. For the purposes of our course we are going to talk about *Lossy Image Compression*.
+
+* What do we mean by "lossy" image compression?
+
+  * What lossy image compression basically means is that some of the image data is lost during compression. Once an image has used lossy compression, you cannot reverse the process due to this loss of data. The data lost will normally result in almost unnoticeable changes in image quality most of the time. 
+
+### 17. Student Do: Image Compression (10 mins)
+
+* Direct students to the activity instructions located in [04-Stu_Image-Compression](../../../../01-Class-Content/18-PWA/01-Activities/04-Stu_Image-Compression/README.md)
+
+```md
+# Image Compression
+
+In this activity you are going to use an online compression tool to decrease image file sizes for the Gallery App.
+
+## Instructions
+
+* In this activity you will be using ImageOptim Online to compress images.
+
+* First, unzip the `uncompressedImages.zip` file.
+
+* Next, navigate to [ImageOptim Online](https://imageoptim.com/online)
+
+* Select the following options:
+
+  * Quality - Medium
+
+  * Color Quality - Auto
+
+  * Format - JPEG
+
+* Now that our options are selected, click `Choose Files`.
+
+* This will prompt you to select an image or images you would like to pass through the compressor.
+
+* Go ahead and choose 3-5 images. Before accepting the choices, note the original file sizes so you can compare against the compressed image.
+
+* Finally, click `Submit`.
+
+* Once the compression is complete, a `zip` file will automatically download to your computer.
+
+  * This will most likely be downloaded to your `Downloads` folder.
+```
+
+### 18. Instructor Do: Review Image Compression (5 mins)
+
+* Ask the class the following question(s):
+
+* Did you see a loss in image quality?
+
+  * Image compression allows us to lower load times for our users without a loss of visual fidelity.
+
+* Do you see the benefits of compressing images?
+
+  * When we can save space while maintaining visual quality, that is a win win. It allows for us to have high resolution images for our page while we are still decreasing download/load times for our user.
+
+* What are some other things we can do to decrease our load times?
+
+  * We can load only images that are present on the screen. If the image is not visible to the user, we shouldn't bother downloading it yet.
+
+* Ask the class, "What if a user doesn't scroll through all of the images?"
+
+  * Now that we have compressed all of our images, we are certainly saving space. Point out, we are loading all 38 images when there is only 6-9 images showing at any time. If a students user is on mobile, it would only be 1-2 images at any time.
+
+  * This poses multiple problems. It not only makes loading slower, but is costly when it comes to data and those people using mobile who may not have an unlimited data plan. We certainly don't want to cost our user time and money, so what can be done?
+
+* Ask the class, "Why do we load all of the images at page load, if the user might not see them all?"
+
+  * Loading everything at once is the default. There is a concept in programming referred to as `lazy loading` that allows us to only download assets as they are needed.
+
+* Use students answers to transition to the next activity.
+
+### 19. Instructor Do: Lazy Loading (10 mins)
+
+* Open our completed [Lazy Loading Gallery App](https://ancient-brushlands-76706.herokuapp.com/) and demo the lazy loading functionality by scrolling to the bottom of the page.
+
+  * If it loads too quickly, open your `Network` tab in your Dev Tools and throttle to `slow 3g`, disable cache, and refresh the page.
+
+  * ![Throttle Connection](Images/throttleConnection.png)
+
+* Ask the class, "What would enable us to know when an image is coming into the users viewport?"
+
+  * A Web API based on `scroll` events and the viewport intersection would allow us to keep an eye on when an element is or is not in view of our user.
+
+  * In the case of this application, we are loading 38 images when we may not need them all. Using lazy loading, If images were scrolled onto the screen that event would then load the images if they had entered the viewport.
+
+* Ask the class, "What web API would allow us this functionality?
+
+  * The `Intersection Observer API`. It provides a way to asynchronously observe when an element is or is not within our users viewport. 
+
+  * We can use this API to watch and then target elements as they enter the viewport
+
+* Ask the class, "How can the Intersection Observer API help us with loading images?"
+
+  * We are able to target images we would like, and observe them. As they enter the viewport of our user we can trigger a function that will then and only then load the image that has entered the viewport.
+
+  * Let's look at a code snippet that enables image lazy loading via JavaScript.
+  
+* Walk through the comments below:
+
+```js
+function initLazyImages() {
+  // Gather all of our images into a variable
+  const lazyImages = document.querySelectorAll(".lazy-image"); 
+  
+  function onIntersection(imageEntities) {
+    imageEntities.forEach(image => {
+      // When the image begins to intersect viewport, execute the if code block
+      if (image.isIntersecting) {
+        // Now that it is in viewport, we do not need to observe it anymore.
+        observer.unobserve(image.target);
+        // Set the image src to the image that has entered viewport.
+        image.target.src = image.target.dataset.src;
+      }
+    });
+  }
+  // Create a new instance of Intersection Observer
+  const observer = new IntersectionObserver(onIntersection);
+  // Observe all images on load.
+  lazyImages.forEach(image => observer.observe(image));
+}
+```
+
+* Ask the class, "How does this benefit our user?"
+
+  * By loading only necessary images, we can cut download/load times consistently and ensure as fast an experience as possible.
+
+* Let the students know that they will be trying lazy loading out themselves in the next lesson.
+
+### 20. End
 
 ### Lesson Plan Feedback
 
