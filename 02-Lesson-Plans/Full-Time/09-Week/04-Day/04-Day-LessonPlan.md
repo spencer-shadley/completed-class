@@ -1,4 +1,4 @@
-# 9.4 Lesson Plan - PWAs (6:30 PM)
+# 9.4 Lesson Plan - PWAs (10:00 AM)
 
 ## Overview
 
