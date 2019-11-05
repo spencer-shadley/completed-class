@@ -1,4 +1,4 @@
-# 9.3 Lesson Plan - Web Performance (6:30 PM)
+# 9.3 Lesson Plan - Web Performance (10:00 AM)
 
 ## Overview
 

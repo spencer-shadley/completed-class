@@ -66,19 +66,13 @@ In this class, we will further students' understanding of DOM Manipulation using
 
 * Slack out the solution and the [video review](https://www.youtube.com/watch?v=gC529k3KzmE) for the activity.
 
-### 3. Instructor Do: Crystal Example (10 min)
-
-* Next, open the files found in the folder `12-CrystalExample`. These files closely match the students' homework assignment.
-
-* They are included in the day's lesson primarily so students can refer back to them while working on their homework assignment. Use your discretion as to how much extra help your students need to complete their homework. If you feel students need a lot of help, feel free to spend time in class going over these examples. Otherwise, simply explain to students that the code is available, and offer a very high level explanation of how they can use the code provided.
-
-### 4. Instructor Do: Intro Lexical Scope (10 min)
+### 3. Instructor Do: Intro Lexical Scope (10 min)
 
 * Proceed to the [Lexical Scope slide deck](https://docs.google.com/presentation/d/1OLol2xQemLl4uhvtKg7J3qx6hL4v59UTT9uRxlvfHNs/edit?usp=sharing). Warn students that this section is pretty heavy on theory.
 
 * Proceed with basic definitions of scope, using analogies to boxes or other simple concepts when possible. Mention the concept of nested functions -- before moving to the first code dissection. (Students will be dissecting the code example shown in the slides).
 
-### 5. Students Do: Lexical Scope 1 (10 min)
+### 4. Students Do: Lexical Scope 1 (10 min)
 
 * File(s): `13-ScopeOne/Unsolved/index.html`
 
@@ -90,7 +84,7 @@ In this class, we will further students' understanding of DOM Manipulation using
 
   * **HINT**: Read the [MDN docs on closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
 
-### 6. Instructor Do: Review Lexical Scope 1 (5 min)
+### 5. Instructor Do: Review Lexical Scope 1 (5 min)
 
 * Open `13-ScopeOne/Unsolved/index.html` and ask students to answer the questions posed in the comments. The key concept to address is *closures*. Explain the following points:
 
@@ -104,7 +98,7 @@ In this class, we will further students' understanding of DOM Manipulation using
 
 * If students have further questions, refer them to the [MDN docs on closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures).  
 
-### 7. Students Do: Lexical Scope 2 (5 min)
+### 6. Students Do: Lexical Scope 2 (5 min)
 
 * Proceed with the next activity.
 
@@ -122,7 +116,7 @@ In this class, we will further students' understanding of DOM Manipulation using
 
 * Note: Pay attention to the unusual use of the keyword: ‘this”
 
-### 8. Instructor Do: Review Lexical Scope 2 (5 min)
+### 7. Instructor Do: Review Lexical Scope 2 (5 min)
 
 * Proceed with the review. This example may have been more challenging to students, as we introduced the concept of `this` without explanation.
 
@@ -130,7 +124,7 @@ In this class, we will further students' understanding of DOM Manipulation using
 
   ![image-5](Images/3-scope-2.png)
 
-### 9. Students Do: Lexical Scope 3 (10 min)
+### 8. Students Do: Lexical Scope 3 (10 min)
 
 * Proceed with the next activity.
 
@@ -148,7 +142,7 @@ In this class, we will further students' understanding of DOM Manipulation using
 
 * Note: Pay attention to the unusual use of the keyword: ‘this”
 
-### 10. Instructor Do: Review Lexical Scope 3 (5 min)
+### 9. Instructor Do: Review Lexical Scope 3 (5 min)
 
 * Try to have students explain the solutions to the last activity back to you.
 
@@ -158,7 +152,7 @@ In this class, we will further students' understanding of DOM Manipulation using
 
 * Make sure they realize that studying these examples **is not** overly necessary.
 
-### 11. Everyone Do: Brain Teaser (15 min)
+### 10. Everyone Do: Brain Teaser (15 min)
 
 * If you have additional time available in class, proceed with this activity [16-ColorCorrector](../../../../01-Class-Content/05-Third-Party-APIs/01-Activities/16-ColorCorrector).
 
@@ -168,12 +162,12 @@ In this class, we will further students' understanding of DOM Manipulation using
 
 - - -
 
-### 12. BREAK (30 min)
+### 11. BREAK (30 min)
 
 - - -
 
 
-### 13. Instructor Do: Motivation + Pulse Check (10 mins) (High)
+### 12. Instructor Do: Motivation + Pulse Check (10 mins) (High)
 
 * Then, get a gauge of students current understanding by doing a Fist to Five.
 
@@ -185,7 +179,7 @@ In this class, we will further students' understanding of DOM Manipulation using
 
 * Let students know that the first half of the class will be a series of activities that build on their working knowledge of JavaScript scope. The second half (the more important one) will be focused on building a calculator using jQuery.
 
-### 14. Partners Do: Scope Quiz (10 mins)
+### 13. Partners Do: Scope Quiz (10 mins)
 
 * The first activity is intended to point out a common error students make in working with variables. Often, during the first few weeks of class, students instantiate multiple instances of the same variable. This creates unexpected behaviors as JavaScript handles each variable declaration as its own "local instance".
 
@@ -209,7 +203,7 @@ In this class, we will further students' understanding of DOM Manipulation using
 
   * Once you spot the issue, try to explain to your partner why JavaScript is handling these Code Blocks differently.
 
-### 15. Instructor Do: Review Scope Quiz (5 mins)
+### 14. Instructor Do: Review Scope Quiz (5 mins)
 
 * After giving students a few moments to dissect the code, point out the issue at hand. Specifically, Code Block 2 re-declares the `myVar2` variable inside of the function `a2`.
 
@@ -217,7 +211,7 @@ In this class, we will further students' understanding of DOM Manipulation using
 
 * Let students know that these scope issues are common sources of bugs for new developers.
 
-### 16. Partners Do: This Example (10 mins) (High)
+### 15. Partners Do: This Example (10 mins) (High)
 
 * Then proceed to the next example. Slack out the following file and example
 
@@ -233,13 +227,13 @@ In this class, we will further students' understanding of DOM Manipulation using
 
   * Then try to explain to your partner how "this" works, focus on the first three examples.
 
-### 17. Instructor Do: Review This Example (10 mins) (low)
+### 16. Instructor Do: Review This Example (10 mins) (low)
 
 * Go over the solution to this example by explaining the answers to each of the questions `this-solved.html`.
 
 * Don't worry about the bonuses. These may confuse the bulk of your students. The key thing to explain is that the keyword `this` refers to the object it falls inside of. Most of the time, `this` is a good way to be self-referencing. (You can leave it at that. Your more advanced students will dig deeper, but don't overwhelm your average student).
 
-### 18. Students Do: Cobwebs (10 mins) (low)
+### 17. Students Do: Cobwebs (10 mins) (low)
 
 * Proceed with the next example.
 
@@ -263,7 +257,7 @@ In this class, we will further students' understanding of DOM Manipulation using
 
 * Bonus: If you finish early, begin pondering the bonus item. This is a **very** challenging exercise. It's impossible to complete in the allotted time. If you're feeling valiant - complete it outside of class and come back to instructors/TAs to go over it. This will arm you for difficult interview questions in the future.
 
-### 19. Instructor Do: Review Cobwebs (10 mins)
+### 18. Instructor Do: Review Cobwebs (10 mins)
 
 * Go over the solution. In this case, feel encouraged to have students come up to the front and type out the code themselves.
 
@@ -271,7 +265,7 @@ In this class, we will further students' understanding of DOM Manipulation using
 
 * Don't go over the bonus! It's too much. Do it after class during office hours.
 
-### 20. Instructor Do: Intro Calculator + Group Formation (10 mins) (High)
+### 19. Instructor Do: Intro Calculator + Group Formation (10 mins) (High)
 
 * At this point, proceed to form groups for the calculator activity.
 
@@ -301,7 +295,7 @@ In this class, we will further students' understanding of DOM Manipulation using
 
 * **Instructor/TAs:** At this time, you may want to let students know about the 1:1 option available during the exercise. Describe these "catch-up" sessions as being "crash-courses" intended to help students go over the basics. Alternatively, if you already have a good idea of which students need the catch-up sessions, avoid making the announcement completely, and simply invite those students to take advantage of the time.
 
-### 21. Everyone Do: Phase 1: Getting Situated + Pseudocoding Stage (20 mins)
+### 20. Everyone Do: Phase 1: Getting Situated + Pseudocoding Stage (20 mins)
 
 * Throughout the activity, you will be offering minimal suggestions about how students should be proceeding and focusing their time.
 
@@ -325,7 +319,7 @@ In this class, we will further students' understanding of DOM Manipulation using
 
     * Create a few test "on-click" events. These could just trigger Alert messages for now. If you get further along, then have these buttons alert their "value".
 
-### 22. Everyone Do: Phase 2: Begin Logic (25 mins)
+### 21. Everyone Do: Phase 2: Begin Logic (35 mins)
 
 * Slack the below objectives:
 
@@ -343,7 +337,7 @@ In this class, we will further students' understanding of DOM Manipulation using
 
     * Create code that checks which operator the user has clicked, then saves this operator for later use in a conditional statement. (Example: If a user clicks the "plus" button, you know you will need to be adding two numbers. If a user clicks the "minus" button, you will need to be subtracting two numbers. Think: if-else statements!)
 
-### 23. End
+### 22. End
 
 ### Lesson Plan Feedback
 
