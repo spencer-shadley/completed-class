@@ -46,3 +46,5 @@ Project presentations are on the third day of next unit. Remember, students must
   * [02-longest-word](../../../01-Class-Content/07-Project-1/03-Algorithms/02-longest-word)
 
   * [03-acronym-builder](../../../01-Class-Content/07-Project-1/03-Algorithms/03-acronym-builder)
+
+  * [04-reverse-words](../../../01-Class-Content/07-Project-1/03-Algorithms/04-reverse-words)
