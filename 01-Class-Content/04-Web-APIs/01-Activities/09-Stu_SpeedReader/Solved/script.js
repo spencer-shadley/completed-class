@@ -38,7 +38,7 @@ function speedRead() {
       i++;
     }
 
-  }, wordsPerMillisecond);
+  }, wordsPerMillisecond * 100);
 }
 
 prepareRead();
