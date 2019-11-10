@@ -1,57 +1,119 @@
-# Commands
+# Bash / Terminal Commands
 
-* `cd <DIRECTORY-NAME>` (changes directory to `DIRECTORY-NAME`)
+These are the basic commands for navigating directories in a Terminal or Git Bash window
 
-* `cd ~` (changes to home directory)
+## View information about a directory or file
 
-* `cd ..` (moves up one directory)
+### Print the current (working) directory
 
-* `ls` (lists files in directory)
+`pwd`
 
-* `ls -a` (lists files in a directory _including hidden files_)
+### List directories and files in the current directory
 
-* `cat <FILE-NAME>` (print contents of `FILE-NAME`)
+`ls`
 
-* `pwd` (shows current directory)
+### List directories and all files (INCLUDING HIDDEN) files in the current directory
 
-* `mkdir <DIRECTORY-NAME>` (creates new directory `DIRECTORY-NAME`)
+`ls -a`
 
-* `rmdir <DIRECTORY-NAME>` (removes `DIRECTORY-NAME` if empty)
+### Print contents of a file
 
-* `rmdir -r <DIRECTORY-NAME>` (removes `DIRECTORY-NAME` _even if non-empty_)
+`cat <path/to/filename>`
 
-* `touch <FILE-NAME>` (creates a file)
+## Moving in directories
 
-* `rm <FILE-NAME>` (deletes file)
+### Change directory
 
-* `rm -r <DIRECTORY-NAME>` (deletes `DIRECTORY-NAME`, note the -r)
+`cd <path/to/desired/directory>` (changes directory to `path/to/desired/directory`)
 
-* `mv <OLD-DIR-OR-FILE-NAME> <NEW-DIR-OR-FILE-NAME` (renames or moves `OLD-DIR-OR-FILE-NAME` as/to `NEW-DIR-OR-FILE-NAME`)
+### Change to home directory
 
-* `open .` (opens the current directory. _mac specific_)
+`cd ~`
 
-* `open <FILE-NAME>` (opens `FILE-NAME`. _mac specific_)
+### Move one directory up
 
-* `explorer <FILE-NAME>` (opens `FILE-NAME`. _windows specific_)
+`cd ..`
 
-* `explorer .` (opens the current directory. _windows specific_)
+## File and directory manipulations
 
-* `code <FILE-OR-DIRECTORY>` (opens `FILE-OR-DIRECTORY` in VS Code)
+### Make a new file
 
-* `cowsay "moo!"` (prints "moo!" with a picture of a cow)
+`touch <my-cool-new-filename>`
 
-# Extras
+### Make a new directory
 
-* Pressing the `tab` key after typing `cd some-di` will autocomplete to `cd some-directory-name`
+`mkdir <my-cool-new-directory>`
 
-* `.` can be used as an alias for the current directory's path
+### Delete a file
 
-* `..` can be used as an alias for the parent directory's path
+`rm <name-of-file-to-delete>`
 
-* `~` can be used as an alias for your home directory
+### Delete a directory
 
-* `ctrl+C` while something is running in the terminal will stop whatever is running
+`rmdir <name-of-directory-to-delete>`
 
-* `up_arrow` will cycle through previous commands
+(alternative command)
 
-* `../..` `/` can contentate directories (ex. `cd ../../..` to move up three directories)
+`rm -r <name-of-directory-to-delete>`
+
+### Delete a NON-EMPTY directory
+
+`rmdir -r <name-of-directory-to-delete>`
+
+### Copy a file
+
+`cp <filename-to-copy> <filename-to-copy-to>`
+
+### Move or rename a file
+
+`mv <filename-source> <filename-destination>`
+
+## Open files and directories
+
+### Open file or directory in Visual Studio Code
+
+`code <FILE-OR-DIRECTORY>`
+
+### Windows
+
+#### Open the current directory in Windows Explorer
+
+`explorer .`
+
+#### Open a file
+
+`<name-of-file-to-open>`
+
+(alternative)
+
+`explorer <name-of-file-to-open>`
+
+### Mac
+
+#### Open the current directory
+
+`open .`
+
+#### Open a file
+
+`open <name-of-file-to-open>`
+
+## Print cows
+
+`cowsay "moo!"`
+
+## Extras
+
+* Press `tab` key once to autocomplete once you have typed a unique portion of a file name. 
+
+* `.` is an alias for the current directory's path
+
+* `..` is an alias for the parent directory's path
+
+* `~` is an alias for your home directory
+
+* Pressing `ctrl+C` while something is running in the terminal will stop whatever is running
+
+* `up_arrow` cycles through previous commands
+
+* `../..` contentates directories (ex. `cd ../../..` to move up three directories)

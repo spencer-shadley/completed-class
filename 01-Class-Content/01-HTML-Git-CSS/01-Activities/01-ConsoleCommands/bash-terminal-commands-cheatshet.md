@@ -16,8 +16,7 @@ These are the basic commands for navigating directories in a Terminal or Git Bas
 
 `cd ..`
 
-
-#### View Folders and Files in the Directory
+#### View Current Directory and Files in the Directory
 
 `ls`
 
