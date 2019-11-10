@@ -1,3 +1,6 @@
+# Temp files
+~*.pptx
+
 # Logs
 logs
 *.log
