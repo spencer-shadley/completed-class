@@ -6,7 +6,7 @@ In this class, we will be building on students' proficiency with Node by introdu
 
 ## Instructor Notes
 
-* Complete activities `31-Stu_Callback-Review` through `40-Stu_Mini-Project`
+* Complete activities `24-Stu_Template_Literals` through `39-Stu_Async-Await`
 
 * While you would have naturally explained Promises and asynchronous behavior on a need to know basis before today, now is the time to dive deep and provide more thorough instruction for these topics.
 
