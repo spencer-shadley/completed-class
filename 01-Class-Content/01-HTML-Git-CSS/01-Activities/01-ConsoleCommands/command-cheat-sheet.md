@@ -98,10 +98,6 @@ These are the basic commands for navigating directories in a Terminal or Git Bas
 
 `open <name-of-file-to-open>`
 
-## Print cows
-
-`cowsay "moo!"`
-
 ## Extras
 
 * Press `tab` key once to autocomplete once you have typed a unique portion of a file name. 
