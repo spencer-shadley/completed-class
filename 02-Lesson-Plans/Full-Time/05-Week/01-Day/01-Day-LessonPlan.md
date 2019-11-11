@@ -12,7 +12,7 @@ This lesson introduces Node.js and the concepts of standard library, modules, np
 
 ## Instructor Notes
 
-* Complete activities `01-Ins_Node-Demo` through `15-Stu_Inquirer-Users`
+* Complete activities `01-Ins_Node-Demo` through `22-Stu_FunctionalLoops`
 
 * Ensure that students have [downloaded and installed the LTS version of Node](https://nodejs.org/en/). The version number does not matter, just that it is the LTS version.
 

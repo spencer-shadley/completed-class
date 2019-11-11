@@ -20,11 +20,11 @@ Next unit we will start project 3. In the following unit we will cover Computer 
 
 ### Lesson Plans
 
-  * [20.1 - Lesson Plan](01-Day_Hooks/20.1-LESSON-PLAN.md)
+  * [20.1 - Lesson Plan](./01-Day_Hooks/20.1-LESSON-PLAN.md)
 
-  * [20.2 - Lesson Plan](02-Day_Context-API/20.2-LESSON-PLAN.md)
+  * [20.2 - Lesson Plan](./02-Day_Context-API/20.2-LESSON-PLAN.md)
 
-  * [20.3 - Lesson Plan](03-Day_State-Management/20.3-LESSON-PLAN.md)
+  * [20.3 - Lesson Plan](./03-Day_State-Management/20.3-LESSON-PLAN.md)
 
 ### Slide Decks
 
