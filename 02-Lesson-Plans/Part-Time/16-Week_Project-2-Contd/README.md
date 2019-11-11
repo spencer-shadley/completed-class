@@ -10,6 +10,8 @@ In this unit, we will continue to work on project 2, with presentations on the t
 
 Encourage students to spend time deciding how they want to present their project before project day presentations.
 
+In Unit 18, students have the option to complete the Java asynchronous unit. Make sure you add this to the class repo now, and let students know where to find it. Note that the Java unit is completely optional.
+
 ## Heads Up
 
 Before next unit, make sure you install MongoDB and Robo 3T on your machine--you'll need both.
