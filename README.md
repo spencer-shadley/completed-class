@@ -13,6 +13,6 @@ This repo is where the instructional staff will push class activities and resour
 
 ## Repo Structure
 
-* Each unit has it's own directory
-* Inside each unit directory each day has it's own directory
+* Each unit has its own directory
+* Inside each unit directory each day has its own directory
 * Inside each day are any relevant slidedecks, resources, activities and homework solutions
