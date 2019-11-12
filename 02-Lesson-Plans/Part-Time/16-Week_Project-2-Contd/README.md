@@ -10,7 +10,15 @@ In this unit, we will continue to work on project 2, with presentations on the t
 
 Encourage students to spend time deciding how they want to present their project before project day presentations.
 
-In Unit 18, students have the option to complete the Java asynchronous unit. Make sure you add this to the class repo now, and let students know where to find it. Note that the Java unit is completely optional.
+### Regional Content
+
+At the start of this unit, you will add regional content to the class-specific repo.
+
+The four programming languages included in Regional content are Java, C#, PHP, and Python. Each folder contains its own Power Pack, a unit of async content for that programming language.
+
+Because this content is asynchronous, you won’t teach it during your class. You will provide it to students by uploading it to the class-specific repo.
+
+This content is self-paced, self-guided, and designed to help students continue to learn new skills after their boot camp has ended. It will also allow them to keep coding and stay engaged while they search for their first developer role. You should remind students that in order to be employer-competitive, it is important that they continuously add new skills and technologies to their knowledge base.
 
 ## Heads Up
 

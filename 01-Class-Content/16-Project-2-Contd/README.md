@@ -3,7 +3,13 @@
 ## Overview
 Welcome to Project 2! This is yet another important milestone in your full-stack journey: designing and building your first full-stack web application. You and your team will design and build an app using the MVC paradigm and your own server-side API. You will also continue to add to your professional repertoire with testing, continuous integration and linting tools.
 
-In this unit, there is also an optional, asynchronous Java unit that you may complete. You can find it in the `25-Power-Packs` folder.
+### Regional Content
+
+Starting in this unit, you will have access to Regional content.
+
+The four programming languages included in Regional content are Java, C#, PHP, and Python. Each folder contains its own Power Pack, a unit of async content for that programming language.
+
+This content is self-paced, self-guided, and designed to help you to continue to learn new skills after the boot camp has ended. It will also allow help you keep coding and stay engaged while you search for your first developer role. Remember, in order to be employer-competitive, it is important that you continuously add new skills and technologies to your knowledge base.
 
 ## Key Topics
 * Linting
