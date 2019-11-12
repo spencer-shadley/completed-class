@@ -2,7 +2,7 @@
 
 ## About this repo
 
-This repo is where the instructional staff will push class activities and resources so that the students have access to them. You will push to GitHub (not GitLab) when submitting your assignments.
+This repo is where the instructional staff will push class activities and resources so that you have access to them. You will push to GitHub (not GitLab) when submitting your assignments.
 
 ## Upload Schedule
 
