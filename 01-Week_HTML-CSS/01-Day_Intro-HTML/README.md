@@ -17,4 +17,4 @@
 ([HTML HOME](https://www.w3schools.com/html/default.asp) through [HTML Paragraphs](https://www.w3schools.com/html/html_paragraphs.asp))
 * Make an HTML page (don't turn this in, just for practice)
     * Watch the [walkthrough video](https://www.youtube.com/watch?v=ieb6Svbc10E&index=1&list=PLgJ8UgkiorCnMLsUevoQRxH8t9bt7ne14) if you feel a bit lost.
-* (optional) More practice: https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML
+* (optional) More practice: [Mozilla's Introduction to HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML)

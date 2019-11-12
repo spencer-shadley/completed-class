@@ -62,6 +62,7 @@ Build a professional portfolio site using HTML and CSS following a set of specif
 
 ## Helpful Links
 * [W3Schools HTML Tutorial](https://www.w3schools.com/html/)
+* [Mozilla's Introduction to HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML)
 * [Version Control](https://en.wikipedia.org/wiki/Version_control)
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
