@@ -72,6 +72,6 @@ Build a professional portfolio site using HTML and CSS following a set of specif
 |File or Directory|Description|
 |---|---|
 |[activities](activities)|The in-class activities|
-| [WeBDev 01.1 The Zen of Coding.pptx](WeBDev%2001.1%20The%20Zen%20of%20Coding.pptx) | Slidedeck presented in class|
+| [WebDev 01.1 The Zen of Coding.pptx](WebDev%2001.1%20The%20Zen%20of%20Coding.pptx) | Slidedeck presented in class|
 |[UW Technologies.twbx](UW%20Technologies.twbx)|Tableau workbook on the different technologies we'll be learning as shown in the slidedeck. Feel free to play with the word clouds or just ignore this.|
 |README.md|This file|
