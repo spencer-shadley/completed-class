@@ -14,7 +14,7 @@ Encourage students to spend time deciding how they want to present their project
 
 At the start of this unit, you will add regional content to the class-specific repo.
 
-The four programming languages included in Regional content are Java, C#, PHP, and Python. Each folder contains its own Power Pack, a unit of async content for that programming language.
+The four programming languages included in Regional content are Java, C#, PHP, and Python. Each folder contains its own Power Pack, a unit of async content for that programming language. These folders are located [here](../../../01-Class-Content/25-Power-Packs/).
 
 Because this content is asynchronous, you won’t teach it during your class. You will provide it to students by uploading it to the class-specific repo.
 
