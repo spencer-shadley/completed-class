@@ -7,9 +7,7 @@ Welcome to Project 2! This is yet another important milestone in your full-stack
 
 Starting in this unit, you will have access to Regional content.
 
-The four programming languages included in Regional content are Java, C#, PHP, and Python. Each folder contains its own Power Pack, a unit of async content for that programming language.
-
-This content is self-paced, self-guided, and designed to help you to continue to learn new skills after the boot camp has ended. It will also allow help you keep coding and stay engaged while you search for your first developer role. Remember, in order to be employer-competitive, it is important that you continuously add new skills and technologies to your knowledge base.
+This content is self-paced, self-guided, and designed to help you to continue to learn new skills after the boot camp has ended. Since you may complete it at any time, this will have no bearing on your grade. Remember, in order to be employer-competitive, it is important that you continuously add new skills and technologies to your knowledge base.
 
 ## Key Topics
 * Linting
