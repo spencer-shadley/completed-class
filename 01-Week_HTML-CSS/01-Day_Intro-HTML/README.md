@@ -67,7 +67,7 @@ Build a professional portfolio site using HTML and CSS following a set of specif
 * [Pro Git](https://git-scm.com/book/en/v2)
 * [Dev Docs](https://devdocs.io/)
 
-## Files
+## Files and Directories
 
 |File or Directory|Description|
 |---|---|
