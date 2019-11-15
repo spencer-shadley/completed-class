@@ -1,37 +1,38 @@
-## Project Work <!--links--> &nbsp; [⬅️](../02-Day/02-Day-LessonPlan.md) &nbsp; [➡️](../04-Day/04-Day-LessonPlan.md)
+# 12.3 Project Work (10:00 AM)
 
-### Overview
+## Overview
 
 During this lecture, most of class will center on project work. You and the TAs should check up on each group and make sure they're moving smoothly toward presentations.
 
-##### Instructor Priorities
+## Instructor Priorities
 
 * Students should have the entirety of class to work on their projects.
 
 * Make sure your students make measurable progress with their project work.
 
-##### Instructor Notes
+## Instructor Notes
 
-* Your students will be nearing the end of their projects. Even though it's the middle of the week, you should push students to finish their apps soon so they have optimal time to practice their presentations.
+* Students are happily moving along with their projects, make sure they are on the right track and remind them of deadlines. Provide any support you can where necessary
 
 * It's **crucial** that you steer any off-course projects back on track.
 
   * To that end, you should remind students that they can reach out to you and the TAs for support outside of class.
 
-* Have your TAs reference [03-Day-Time-Tracker](https://drive.google.com/a/trilogyed.com/file/d/1WS79fxVCS8wePrivj0dEgsPlwoSUzl_K/view?usp=sharing) to help keep track of time during class.
-- - -
-
-### Class Objectives
+## Class Objectives
 
 * Provide students more time and support for their group projects.
 
+## Slides
+
+N/A
+
+## Time Tracker
+
+[12.3 Time Tracker](https://docs.google.com/spreadsheets/d/1SjnxSA2fO5lNMdzaooD0j_P7ubuxw4X-dpx72aOKk9I/edit?usp=sharing)
+
 - - -
 
-### 0. Welcome Class
-
-* Say your hellos and check if students have any questions about past concepts.
-
-### 1. Instructor Do: Ask About Projects (0:05)
+### 1. Instructor Do: Ask About Projects (5 mins)
 
 * Tell your students how you're excited to see the projects they'll present. You should talk about how your impressed with the concepts they've come up with, that they should feel proud about working toward the goals they devised.
 
@@ -39,11 +40,7 @@ During this lecture, most of class will center on project work. You and the TAs 
   * Answer these reassuringly—if you ever had similar doubts, chime in with your experiences on overcoming them.  
   * If no one says anything, they're likely apprehensive about admitting fears to their classmates. Assure them that if they're anxious about their project work, then no doubt other students feel the same way. Encourage them to share these thoughts—talking about them is an essential step to overcoming them.
 
-### 2. Students Do: Deploy a Project, Homework, or Activity and Include in Portfolio (20 min)
-
-* Students should deploy at least one project, homework, or activity that they've completed and link to it from their portfolio page.
-
-### 2. Everyone Do: Project Work (1:35)
+### 2. Students Do: Project Work (120 mins)
 
 * Ensure that students have deployed at least one project, homework, or activity and linked to it from their portfolio before they move on.
 
@@ -56,15 +53,17 @@ During this lecture, most of class will center on project work. You and the TAs 
 
 - - -
 
-### 3. Lunch (30 mins)
+### 3. Break (30 mins)
 
 - - -
 
-### 4. Everyone Do: Project Work (2:00)
+### 4. Everyone Do: Project Work (115 mins)
 
 * Allow students to continue working on their projects.
 
   * Rotate between groups to offer help to whomever needs it.
+
+### 5. End (0 mins)
 
 ### Lesson Plan Feedback
 
