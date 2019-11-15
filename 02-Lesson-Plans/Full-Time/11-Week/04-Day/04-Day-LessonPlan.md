@@ -1,4 +1,4 @@
-## 04-Day Lesson Plan - Basics of Algorithms and Sorting Algorithms <!--links--> &nbsp; [⬅️](../03-Day/03-Day-LessonPlan.md) &nbsp; [➡️](../05-Day/05-Day-LessonPlan.md)
+## 04-Day Lesson Plan - Sorting Algorithms <!--links--> &nbsp; [⬅️](../03-Day/03-Day-LessonPlan.md) &nbsp; [➡️](../05-Day/05-Day-LessonPlan.md)
 
 ### Overview
 
