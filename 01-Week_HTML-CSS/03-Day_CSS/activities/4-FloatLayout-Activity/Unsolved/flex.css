@@ -1,23 +1,29 @@
 /**
- * Float Layout Activity
+ * Flex Layout Activity
  **/
-
-* {
-  box-sizing: border-box;
-  text-align: center;
-}
 
 body {
 }
 
 header {
-  padding: 20px;
-  margin-bottom: 20px;
-  color: #333;
-  background: #ccc;
 }
 
 section {
+}
+
+section, footer, header {
+}
+
+p {
+}
+
+aside {
+}
+
+footer {
+}
+
+#full {
 }
 
 #left {
@@ -29,14 +35,27 @@ section {
 #right {
 }
 
-#full {
+#left-aside {
 }
 
 #division {
 }
 
-aside {
+#division-p-1 {
 }
 
-footer {
+#division-p-2 {
+}
+
+#division-p-1,
+#division-p-2 {
+}
+
+#top-container {
+}
+
+.top-item {
+}
+
+.text-container {
 }
