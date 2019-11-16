@@ -45,18 +45,6 @@ footer {
   height: 100%;
 }
 
-#left {
-  background: #666;
-}
-
-#middle {
-  background: #888;
-}
-
-#right {
-  background: #666;
-}
-
 #left-aside {
   flex-grow: 1;
 }
@@ -85,15 +73,17 @@ footer {
 #top-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  background: #444;
   height: 60px;
 }
 
 .top-item {
-  flex-grow: 1;
   color: white;
   display: flex;
   align-items: center;
+  background: #666;
+  padding: 0 10px;
 }
 
 .text-container {
