@@ -32,8 +32,6 @@
 
   * `background`
 
-  * `float`
-
   * `width` (read up on width by percents)
 
   * `color`
