@@ -102,7 +102,7 @@ THEN they are able to learn about the developer, find contact information, and f
    * Try to code the footer in a way that it will always remain at the bottom of the page, no matter how short the content is. Refer to this [sticky footer tutorial](https://css-tricks.com/couple-takes-sticky-footer/) for guidance.
    * Give the footer the following CSS: `border-top: 8px solid #4aaaa5;`
 
-* Look into these concepts: `float`, `padding`, `margin`, `display`, `overflow`, `clear` and `text-align`.
+* Look into these concepts: `flex`, `padding`, `margin`, `display`, `overflow`, and `text-align`.
 
 
 - - -
