@@ -3,7 +3,7 @@
  **/
 
 .box-set {
-  position: relative;
+  /* position: static; */
   height: 400px;
   background: darkgray;
 }

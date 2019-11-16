@@ -4,7 +4,7 @@
 
 * Create a file called `positioning.html` and a file called `positioning.css`. 
 
-* Using HTML/CSS, create the layout shown on the screen.
+* Using HTML/CSS, create the layout shown in `4-PositioningActivity.png`.
 
 * For reference, the colors used on the screen are `#eee` and `#999`.
 
