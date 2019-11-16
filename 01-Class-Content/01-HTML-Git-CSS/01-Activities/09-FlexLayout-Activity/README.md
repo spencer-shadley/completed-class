@@ -12,6 +12,8 @@
 
 * Hint: You will need to apply each of the following CSS properties at least once:
 
+  * flex
+
   * padding
 
   * margin
@@ -24,14 +26,6 @@
 
   * color
 
-  * clear
-
-  * overflow
-
   * height
-
-  * font-size
-
-  * line-height
 
 * If you finish early Slack the TAs or raise your hand to call their attention. TAs will reassign you to help others in the class.
