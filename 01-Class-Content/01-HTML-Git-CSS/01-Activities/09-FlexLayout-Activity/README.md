@@ -12,20 +12,32 @@
 
 * Hint: You will need to apply each of the following CSS properties at least once:
 
-  * flex
+  * `flex`
 
-  * padding
+  * `flex-grow`
 
-  * margin
+  * `flex-direction`
 
-  * background
+  * `align-items`
 
-  * float
+  * `justify-content`
 
-  * width (read up on width by percents)
+  * `text-align`
 
-  * color
+  * `border`
 
-  * height
+  * `padding`
+
+  * `margin`
+
+  * `background`
+
+  * `float`
+
+  * `width` (read up on width by percents)
+
+  * `color`
+
+  * `height`
 
 * If you finish early Slack the TAs or raise your hand to call their attention. TAs will reassign you to help others in the class.
