@@ -127,6 +127,8 @@ Follow these guidelines for committing:
 
 We would like you to have well over 200 commits by graduation, so commit early and often!
 
+For this project you need to have *at least* 5 commits (and should probably have much more than this.)
+
 
 ## Submission on BCS
 
