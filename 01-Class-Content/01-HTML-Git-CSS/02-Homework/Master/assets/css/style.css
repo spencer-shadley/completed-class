@@ -123,6 +123,7 @@ h3, h2 {
 
 .main-section {
   max-width: 960px;
+  width: 100%;
   padding: 30px;
   margin: 0 1em;
   background: #ffffff;
