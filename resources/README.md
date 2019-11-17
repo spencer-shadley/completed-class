@@ -5,3 +5,4 @@ Resources relevant to a specific day can be found in their corresponding directo
 | File               | Description                                      |
 |--------------------|--------------------------------------------------|
 | [class-resources.md](class-resources.md) | Locations of the main tools we use in this class |
+| [documentation.md](documenation.md) | Sites with helpful documentation of the web |
