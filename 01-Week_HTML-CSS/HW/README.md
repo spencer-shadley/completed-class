@@ -28,21 +28,21 @@ THEN they are able to learn about the developer, find contact information, and f
 
 ## Instructions
 
-* Create a new GitHub repository, initialize it with a `README.md `, and clone it to your local development environment.
+* Create a new GitHub repository, initialize it with a `README.md` and clone it to your local development environment.
 
    * ❗ Follow best practices for your README as outlined in the [Good-README-Guide](../Resources/Good-README-Guide/README.md)
 
-* Inside the repo folder on your computer, create the following:
+* Inside the repo directory on your computer create the following:
 
-   * 3 HTML documents: `index.html`, `contact.html`, and `portfolio.html`.
+   * 3 HTML documents: `index.html`, `contact.html` and `portfolio.html`.
 
-   * A folder called `assets`.
+   * A directory called `assets`.
 
-   * Inside the `assets` directory, make two additional folders: `css` and `images`.
+   * Inside the `assets` directory, make two additional directorys: `css` and `images`.
 
-     * In the `css` folder, make a file called `style.css`.
+     * In the `css` directory include your `.css` files
 
-     * In the `images` folder, save the images you plan on using (like your profile image and the placeholder images for the portfolio).
+     * In the `images` directory, save the images you plan on using (like your profile image and the placeholder images for the portfolio).
 
 * Refer to these screenshots for your site:
 
@@ -57,14 +57,14 @@ THEN they are able to learn about the developer, find contact information, and f
 * When you create a website, it's standard practice to code your HTML files before writing any CSS and to complete one HTML file before moving onto the next. Write your HTML semantically too:
 
    * If something is a heading, use a heading element.
-   * If something is a list, use an unordered or ordered list element.
+   * If something is a paragraph use a paragraph element.
 
 * The content in `index.html` should be unique to you in the following ways:
 
    * Write a paragraph or two about yourself. Make it fun; show your personality!
    * The main logo where it says "Your Name" should say your name. This may make the logo section smaller or wider depending on how long your name is—that is fine and expected.
 
-* After all of your HTML is written, you can begin styling your pages using the `style.css` file you created.
+* After all of your HTML is written, you can begin styling your pages using the `.css` file(s) you created.
 
    * Be sure to [validate your html](https://validator.w3.org/#validate_by_input).
    * Consult the following Style Guide section for advice on styling your CSS files.
@@ -88,7 +88,7 @@ THEN they are able to learn about the developer, find contact information, and f
    * Use a picture of yourself.
 
 * Portfolio images:
-   * Save the images to your `images` folder.
+   * Save the images to your `images` directory.
 
 * Background images:
    * The background pattern used was found on [Subtle Patterns](https://subtlepatterns.com/). You can browse through that site and use whichever pattern you like.
@@ -102,8 +102,7 @@ THEN they are able to learn about the developer, find contact information, and f
    * Try to code the footer in a way that it will always remain at the bottom of the page, no matter how short the content is. Refer to this [sticky footer tutorial](https://css-tricks.com/couple-takes-sticky-footer/) for guidance.
    * Give the footer the following CSS: `border-top: 8px solid #4aaaa5;`
 
-* Look into these concepts: `flex`, `padding`, `margin`, `display`, `overflow`, and `text-align`.
-
+* Look into these concepts: `flex`, `padding`, `margin`, `display`, `position` and `text-align`.
 
 - - -
 
