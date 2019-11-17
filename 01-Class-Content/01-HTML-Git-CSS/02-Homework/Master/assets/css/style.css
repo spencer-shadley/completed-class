@@ -160,6 +160,7 @@ h3, h2 {
 }
 
 .auth-image {
+  float: left;
   width: 200px;
   height: auto;
   margin-top: 10px;
