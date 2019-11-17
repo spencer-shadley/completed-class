@@ -34,8 +34,3 @@
 	background: #4aaaa5;
 	border-bottom: 0;
 }
-
-#profile-image-container {
-	display: flex;
-	justify-content: center;
-}
