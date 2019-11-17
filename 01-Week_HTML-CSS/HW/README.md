@@ -30,7 +30,7 @@ THEN they are able to learn about the developer, find contact information, and f
 
 * Create a new GitHub repository, initialize it with a `README.md `, and clone it to your local development environment.
 
-   * ❗ Follow best practices for your README as outlined in the `Good-README-Guide`
+   * ❗ Follow best practices for your README as outlined in the [Good-README-Guide](../Resources/Good-README-Guide/README.md)
 
 * Inside the repo folder on your computer, create the following:
 
