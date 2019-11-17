@@ -140,13 +140,16 @@ h3, h2 {
 
 .work {
   position: relative;
-  width: 274px;
   margin: 20px 15px 25px 15px;
   overflow: auto;
 }
 
 .work:nth-child(even) {
   margin-right: 40px;
+}
+
+.work, .work img {
+  width: 274px;
 }
 
 .work img {
