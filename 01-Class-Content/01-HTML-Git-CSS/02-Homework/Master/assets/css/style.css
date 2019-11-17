@@ -134,13 +134,13 @@ h3, h2 {
 #projects {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .work {
   position: relative;
   width: 274px;
   margin: 20px 15px 25px 15px;
-  /* margin: 20px 0 25px; */
   overflow: auto;
 }
 
