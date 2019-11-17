@@ -115,9 +115,10 @@ h3, h2 {
 
 #main-container {
   padding-top: 130px;
-  min-height: calc(100vh - 70px);
   display: flex;
   justify-content: center;
+  padding-bottom: 3em;
+  min-height: calc(100vh - 70px);
 }
 
 .main-section {
