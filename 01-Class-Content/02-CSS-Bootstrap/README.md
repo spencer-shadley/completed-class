@@ -56,6 +56,3 @@ Use the Bootstrap CSS Framework to recreate your portfolio.
 * [!important](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
 * [CDN (wikipedia)](https://en.wikipedia.org/wiki/Content_delivery_network)
 * [GitHub Pages](https://pages.github.com/)
-
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
