@@ -1,4 +1,4 @@
-# Unit 02: CSS and Bootstrap
+# Week 02: CSS and Bootstrap
 
 ## Overview
 When web developers find themselves repeating a task, they often look for programmatic solutions. A prime example is setting up boilerplate HTML and CSS that can be reused. In the previous unit, you built and deployed a simple portfolio site. Now imagine that you're building portfolios for several clients. An efficient approach to this scenario would be to create a master stylesheet and then customize copies of it for each portfolio. In doing so, you'd be implementing a simple CSS framework. 
