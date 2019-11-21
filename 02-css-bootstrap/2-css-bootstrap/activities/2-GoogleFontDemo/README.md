@@ -8,4 +8,8 @@ This activity demonstrates how to incorporate new fonts into a web page.
 
 ## Bonus
 
-* If you finish early, read about Font Awesome icons and see if you can figure out how to incorporate one onto your page. 
+* If you finish early, try adding your code to a GitHub repo.
+
+## Bonus 2
+
+* Deploy your GitHub repo using GitHub Pages. Send a link in #01-class-activities

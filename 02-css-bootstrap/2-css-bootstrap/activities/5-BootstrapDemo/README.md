@@ -12,7 +12,7 @@ In this activity, we'll get some experience working with Bootstrap components.
 
   * Look through the Bootstrap CSS or Components list and incorporate at least three Bootstrap elements onto your page.
 
-  * Slack a screenshot of your page to your section’s channel when you are done.
+  * Slack a screenshot of your page to #01-class-activities when you are done.
 
   * Hint: First include a link to Bootstrap’s CSS. Then visit the Bootstrap page on CSS or Components. 
 
