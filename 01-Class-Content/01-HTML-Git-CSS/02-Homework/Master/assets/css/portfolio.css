@@ -7,7 +7,6 @@
 .work {
     position: relative;
 	margin: 20px 15px 25px 15px;
-	overflow: auto;
 }
 
 .work:nth-child(even) {
