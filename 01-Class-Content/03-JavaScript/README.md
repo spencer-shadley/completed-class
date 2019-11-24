@@ -34,7 +34,6 @@ You will be employer-ready if you can answer the following questions:
 2. What are objects in JavaScript and why are they important?
 3. What is a function?
 
-
 ## Learning Objectives
 You will be employer-competitive if you are able to:
 * Identify and declare variables containing primitive and object data types in JavaScript

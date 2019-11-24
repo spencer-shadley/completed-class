@@ -27,7 +27,7 @@ Explain each part of the code below:
 
 * Ask students if they have an answer. 
 
-* Make sure you touch on each of the following:
+* Make sure you touch on each of the following. One of the TAs should include the below in a markdown file as the solution file:
 
   * DOCTYPE: instructions to the browser about what version of HTML is being used.
 
