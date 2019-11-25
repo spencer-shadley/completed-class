@@ -29,6 +29,8 @@ Explain each part of the code below:
 
 * Make sure you touch on each of the following. One of the TAs should include the below in a markdown file as the solution file:
 
+# 1. Explanat
+
   * DOCTYPE: instructions to the browser about what version of HTML is being used.
 
   * head: a container for elements about that give information about the website like the title, scripts, styles, and meta information. 
