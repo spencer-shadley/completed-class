@@ -26,6 +26,8 @@ First, you will use the Bootstrap CSS Framework to recreate your portfolio. How 
 
 * On an `xs` screen, content should take up the entire screen. On `sm` and larger screens, you should have some margins on the left and right sides of the screen. Check out various sites on your mobile device vs. your computer to see examples of these differences.
 
+* [Example interactions](https://drive.google.com/file/d/1Sgw4rF_sv2KNturAFJWbnZpYeF1j9GwU/view)
+
 
 ### Minimum Requirements
 
