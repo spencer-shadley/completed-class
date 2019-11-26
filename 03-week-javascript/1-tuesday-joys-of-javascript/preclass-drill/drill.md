@@ -1,6 +1,6 @@
 # What is the syntax for an id, class, element, child and descendant selector?
 
-# What is needed to start using Bootstrap>
+# What is needed to start using Bootstrap?
 
 # How do you add multiple classes to the same element?
 
