@@ -5,6 +5,8 @@
 * element: `some-element-tag-name`
 * child: `element1 > element2` (selects all `element2`s which are direct children of an `element1`)
 * descendant: `element1 element2` (selects all `element2`s which are descendants of an `element1`)
+* [CSS Selectors on W3Schools](https://www.w3schools.com/css/css_selectors.asp)
+* [CSS Combinators on W3Schools](https://www.w3schools.com/css/css_combinators.asp)
 
 # What is needed to start using Bootstrap
 
