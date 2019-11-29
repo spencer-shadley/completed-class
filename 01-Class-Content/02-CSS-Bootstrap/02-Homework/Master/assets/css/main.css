@@ -66,28 +66,6 @@ main {
 
 /* END NAV */
 
-/* CONNECT W/ ME CSS */
-
-.connect-header {
-	/* Typography */
-	font-size: 25px;
-}
-
-.connect-photo {
-	/* Box-model */
-	width: 55px;
-	height: 55px;
-}
-
-#images {
-	/* Box-model */
-	padding-top: 15px;
-	/* Typography */
-	text-align: center;
-}
-
-/* END CONNECT W/ ME */
-
 /* BEGIN FOOTER */
 
 .footer {
