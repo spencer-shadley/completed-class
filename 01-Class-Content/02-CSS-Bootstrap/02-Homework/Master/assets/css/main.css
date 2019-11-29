@@ -47,7 +47,7 @@ main {
 
 /* override bootstrap hover color and border */
 
-#navbarTogglerDemo01 .nav-link:hover {
+#navbarToggler .nav-link:hover {
 	color: #4aaaa5;
 }
 
