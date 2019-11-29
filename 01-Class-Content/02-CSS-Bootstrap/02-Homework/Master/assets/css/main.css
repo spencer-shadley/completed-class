@@ -1,5 +1,3 @@
-/* --- STYLES FOR ALL PAGES --- */
-
 body {
 	/* Typography */
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -49,7 +47,7 @@ main {
 
 /* override bootstrap hover color and border */
 
-.navbar-default .navbar-nav>li>a:hover {
+#navbarTogglerDemo01 .nav-link:hover {
 	color: #4aaaa5;
 }
 
