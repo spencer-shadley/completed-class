@@ -88,8 +88,6 @@ nav a:first-child {
 /* footer */
 
 footer {
-	position: absolute;
-	bottom: 0;
 	width: 100%;
 	padding: 30px 0;
 	font-size: 12px;
@@ -110,10 +108,11 @@ h3, h2 {
 /* main */
 
 #main-container {
-	padding-top: 130px;
 	display: flex;
 	justify-content: center;
+	padding-top: 130px;
 	padding-bottom: 40px;
+	min-height: calc(100vh - 70px);
 }
 
 .main-section {
