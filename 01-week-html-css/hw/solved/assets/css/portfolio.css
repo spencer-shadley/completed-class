@@ -1,0 +1,38 @@
+#projects {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.work {
+	position: relative;
+	margin: 20px 15px 25px 15px;
+}
+
+.work:nth-child(even) {
+	margin-right: 40px;
+}
+
+.work, .work img {
+	width: 274px;
+}
+
+.work img {
+	border: 0 none;
+	opacity: 0.8;
+}
+
+.work h3 {
+	/* position this within its nearest relative container */
+	position: absolute;
+	width: 100%;
+	bottom: 20px;
+	padding: 15px;
+	margin-bottom: 0;
+	font-weight: 300;
+	line-height: 30px;
+	color: #ffffff;
+	text-align: center;
+	background: #4aaaa5;
+	border-bottom: 0;
+}
