@@ -4,4 +4,6 @@
 
 ### Instructions
 
-* Research how to improve on `Math.random()` to generate a random whole number between 1 and 10 instead of a random decimal number.
+* Research how to improve on `Math.random()` to generate 10 random whole numbers between 1 and 10
+
+* **Hint:** Don't do it all at once - build up slowly to meet the entire criteria

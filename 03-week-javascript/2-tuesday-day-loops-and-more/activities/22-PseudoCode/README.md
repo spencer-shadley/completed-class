@@ -11,3 +11,5 @@
 * Think of basic elements like loops, if-else statements, arrays, alerts, etc.
 
 * Be prepared to share your outlines approach.
+
+* **Hint:** Try playing rock, paper, scissors first. This really helps. You might want to keep playing as you pseudo-code.
