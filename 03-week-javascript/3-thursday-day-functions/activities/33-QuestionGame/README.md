@@ -4,7 +4,7 @@
 
 ### Instructions
 
-* Starting from a blank HTML file, create an array with 10 question objects. Each object in the array should be structured as follows: 
+* Starting from a blank HTML file, create an array with 5 question objects. Each object in the array should be structured as follows: 
 
   `{ q: "QUESTION", a: "ANSWER" }`
 
