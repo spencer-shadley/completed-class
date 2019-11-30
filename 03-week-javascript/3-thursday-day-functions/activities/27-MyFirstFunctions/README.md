@@ -12,4 +12,4 @@
 
 * **HINT:** Look back to previous example if you need help.
 
-* **BONUS:** If you finish w/ the first four functions create two functions, `adderReturn()` and `multiplierReturn()`, that return the value when you call the function rather than using console.log.
+* **BONUS:** If you finish the first four functions create two functions, `adderReturn()` and `multiplierReturn()`, that return the value when you call the function rather than using `console.log`.
