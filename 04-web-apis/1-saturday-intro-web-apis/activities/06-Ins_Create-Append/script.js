@@ -1,21 +1,34 @@
-var tagName = prompt("Please enter an HTML Tag (ex. h1, h2, p, div):", "enter tag");
+var didUserCancel = false;
+while (!didUserCancel) {
+  var tagName = prompt('Please enter an HTML Tag (ex. h1, h2, p, div):', 'enter tag');
+  didUserCancel = tagName === null;
 
-if (tagName !== "h1" && tagName !== "h2" && tagName !== "p" && tagName !== "div") {
-  alert("please enter a valid tag");
-} else {
+  if (!didUserCancel) {
+    if (!isValidTagName(tagName)) {
+      alert('please enter a valid tag');
+    }
+    else {
+      createAndAppendElement(tagName);
+    }
+  }
+}
+
+function createAndAppendElement(tagName) {
   var tag = document.createElement(tagName);
-  tag.textContent = "This was made via prompts. It's a " + tagName;
+  tag.textContent = "This was made via prompts. It's a(n) " + tagName;
   document.body.appendChild(tag);
 }
 
-var nextTag = confirm("Would you like to add another tag?");
-if (nextTag === true) {
-  var secondTagName = prompt("Please enter another  HTML Tag (ex. h1, h2, p, div):", "enter tag here");
-  if(secondTagName !== "h1" && secondTagName !== "h2" && secondTagName !== "p" && secondTagName !== "div") {
-    alert("please enter a valid tag");
-  } else {
-    var secondTag = document.createElement(secondTagName);
-    secondTag.textContent = "This is our second tag via prompts, it's a " + secondTagName;
-    document.body.appendChild(secondTag);
+function isValidTagName(tagName) {
+  var acceptableTagNames = ['p', 'div', 'strong', 'b', 'i', 'em', 'mark', 'small', 'del', 'ins', 'sub', 'sup'];
+  return isValidHTag(tagName) || acceptableTagNames.includes(tagName);
+}
+
+function isValidHTag(tagName) {
+  for (var i = 1; i <= 6; ++i) {
+    if (tagName === 'h' + i) {
+      return true;
+    }
   }
+  return false;
 }

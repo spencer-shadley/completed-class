@@ -1,14 +1,15 @@
-var timeEl = document.querySelector(".time");
-var mainEl = document.getElementById("main");
+var timeEl = document.querySelector('.time');
+var mainEl = document.getElementById('main');
 
 var secondsLeft = 10;
 
 function setTime() {
-  var timerInterval = setInterval(function() {
-    secondsLeft--;
-    timeEl.textContent = secondsLeft + " seconds left till colorsplosion.";
+  var timerInterval = setInterval(function () {
+    --secondsLeft;
+    time
+    El.textContent = secondsLeft + ' seconds left till colorsplosion.';
 
-    if(secondsLeft === 0) {
+    if (secondsLeft === 0) {
       clearInterval(timerInterval);
       sendMessage();
     }
@@ -17,13 +18,12 @@ function setTime() {
 }
 
 function sendMessage() {
-  timeEl.textContent = " ";
+  timeEl.textContent = ' ';
 
-  var imgEl = document.createElement("img");
+  var imgEl = document.createElement('img');
 
-  imgEl.setAttribute("src", "images/image_1.jpg");
+  imgEl.setAttribute('src', 'images/image_1.jpg');
   mainEl.appendChild(imgEl);
-
 }
 
 setTime();

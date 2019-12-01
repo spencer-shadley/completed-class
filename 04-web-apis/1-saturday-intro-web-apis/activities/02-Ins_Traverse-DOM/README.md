@@ -1,6 +1,6 @@
 # Demo DOM Traversal
 
-* Explain that every document will have the same root elements: Property (node)
+* Every document will have the same root elements: Property (node)
 
 * The document (#document) 
 
@@ -36,7 +36,7 @@
   console.log(document.body.children[3].childNodes[7].parentElement.style.color = "red");
   ```
 
-* Point out the following:
+* Interesting notes:
 
   * `.children` is returned as an Array and to move forward with it, we must specify the index. It returns all children *elements*.
 
