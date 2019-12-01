@@ -11,3 +11,11 @@
 * **HINT:** You will need to use the `.toLowerCase()` method. Research if you don't remember how to use it.
 
 * Be prepared to share when time is up.
+
+#### Bonus 1
+
+* Try logging just the array and see what happens
+
+#### Bonus 2
+
+* Alternate between printing out all lowercase and all uppercase

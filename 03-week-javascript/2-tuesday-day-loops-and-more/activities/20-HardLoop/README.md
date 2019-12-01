@@ -16,4 +16,4 @@ var myFarm = ['chickens', 'pigs', 'cows', 'horses', 'ostriches'];
 
 ### Bonus
 
-* `console.log` "I just saw an animal like that!" when the name of animal is the same number of characters as the previous animal's name
+* `console.log` "I just saw an animal like that!" when the current animal's name is the same number of characters as the previous animal's name

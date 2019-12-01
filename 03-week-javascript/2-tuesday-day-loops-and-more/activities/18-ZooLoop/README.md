@@ -10,7 +10,7 @@
 
 * Once you think your code is functioning properly, share it with the person sitting next to you.
 
-### Bonus
+### Bonus (hard)
 
 * Ask the user if they would like to add more to the array
 
@@ -20,4 +20,4 @@
 
 * Do this until the user declines adding more to the array
 
-* When the user declines, `console.log` each item in the array
+* When the user declines, `console.log` the array

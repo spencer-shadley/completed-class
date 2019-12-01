@@ -26,6 +26,6 @@ I am 4
 
 ### Bonus 3
 
-* Create a loop that prints every power of 2 between 0 and 1024
+* Create a loop that prints every power of 2 between 2 and 1024
 
-* **HINT** Be careful not to get stuck in an infinite loop on this one!
+* **HINT** Be careful not to get stuck in an infinite loop on the bonuses! This will cause your browser tab to hang for a while...
