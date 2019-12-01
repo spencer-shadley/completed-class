@@ -1,6 +1,6 @@
 # Explain the CSS Box Model
 
-The CSS Box Model are the "boxes" which compose every HTML element. Each element is contained in a series of boxes, starting with the content which is surrounded by a padding "box", border "box" and finally a margin "box".
+The term box model is way of referencing the space that an element takes up on a page. It consists of margin (the space between the element and other elements), border, padding (the space between the content and border) and the content. Each of these "space"s is considered a "box", altogether composing the full "CSS Box Model".
 
 ## Bonus
 
@@ -9,6 +9,21 @@ Create a page with a blue div with each of the four Box Model properties set to 
 See [drill-solution.html](drill-solution.html)
 
 # Explain each part of the below code
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <script type="text/javascript" src="app.js></script>
+</body>
+</html>
+```
 
   * `DOCTYPE`: instructions to the browser about what version of HTML is being used.
 
