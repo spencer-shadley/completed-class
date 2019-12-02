@@ -4,14 +4,11 @@ body {
 }
 
 ul {
+  display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-}
-
-li {
-  float: left;
 }
 
 li a {
@@ -33,6 +30,7 @@ li a {
 }
 
 /* Dark Mode */
+
 .dark {
   background-color: #333;
   color: white;
@@ -48,6 +46,7 @@ li a {
 }
 
 /* Light Mode */
+
 .light {
   background-color: #2196F3;
   color: white;
@@ -63,6 +62,7 @@ li a {
 }
 
 /* Styling the Switch button */
+
 .switch {
   position: relative;
   display: inline-block;
@@ -71,6 +71,7 @@ li a {
 }
 
 /* Hide default HTML checkbox */
+
 .switch input {
   opacity: 0;
   width: 0;
@@ -78,6 +79,7 @@ li a {
 }
 
 /* The slider */
+
 .slider {
   position: absolute;
   cursor: pointer;
@@ -102,21 +104,22 @@ li a {
   transition: .4s;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: rgb(29, 128, 210);
 }
 
-input:focus + .slider {
+input:focus+.slider {
   box-shadow: 0 0 1px rgb(29, 128, 210);
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
 
 /* Rounded sliders */
+
 .slider.round {
   border-radius: 34px;
 }
@@ -129,6 +132,7 @@ input:checked + .slider:before {
   margin: 20px;
   display: flex;
 }
+
 .col {
   margin: 20px;
 }
