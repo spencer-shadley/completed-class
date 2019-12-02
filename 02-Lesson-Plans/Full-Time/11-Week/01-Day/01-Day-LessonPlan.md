@@ -22,7 +22,7 @@ In this class, we will be deepening students understanding of ReactJS through re
 
 ## Slides
 
-[21.1: MERN](https://docs.google.com/presentation/d/1pTDZ37jFNFVHDa6v9qxRHr_CtKVWj0WOJ2O5p_ZlDEY/edit?usp=sharing)
+[11.1: MERN](https://docs.google.com/presentation/d/1pTDZ37jFNFVHDa6v9qxRHr_CtKVWj0WOJ2O5p_ZlDEY/edit?usp=sharing)
 
 [Final Projects](https://docs.google.com/presentation/d/1ulUf1lCaj4sH1K7ym8sZL1IOuvHDeiwbe_NAOBqhwE8/edit?usp=sharing)
 
@@ -33,8 +33,6 @@ In this class, we will be deepening students understanding of ReactJS through re
 - - -
 
 ### 1. Instructor Do: Welcome Class (5 mins)
-
-* Welcome your students back to week 2 of React!
 
 * Take a moment to congratulate them on making it this far. This is historically by far one of the most challenging topics covered in the entire course.
 

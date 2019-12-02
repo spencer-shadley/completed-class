@@ -1,58 +1,38 @@
-## Day 2 Lesson Plan - Portfolio / Project Week <!--links--> &nbsp; [⬅️](../01-Day/01-Day-LessonPlan.md) &nbsp; [➡️](../03-Day/03-Day-LessonPlan.md)
+# 12.2 - Project Week (10:00 AM)
 
-### Overview
+## Overview
 
-In this class, students will continue working on their Portfolios & Career HW for half of class and Final Projects for the remaining half.
+In this class, students will continue working on their Final Projects for the entirety of the class
 
-##### Instructor Priorities
+## Class Objectives
 
-* Students are supported in creation of their portfolios like any other HW assignment or project.
+* Provide students more time and support for their group projects.
 
-* Students should write at least one LinkedIn recommendation for a classmate.
+## Slides
 
-* Students opted out of Career Services are encouraged to participate - it's the developer's resume! However, they are welcome to work on final projects.
+N/A
 
-* Have your TAs reference [02-Day-Time-Tracker](https://drive.google.com/a/trilogyed.com/file/d/1zw3nfFgK89jkG4ehGVvBo2IRaIX-MjQd/view?usp=sharing) to help keep track of time during class.
+## Time Tracker
 
-- - -
-### 1. Instructor Do: Peer Recommendations (5 min)
-
-* Explain to students that LinkedIn recommendations from peers and coworkers are a key way to lend credibility to their profiles.
-
-* It's important that the recommendation be genuine and specific.
-
-* **Slack** out this sample recommendation:
-
-  * I worked with Amy on the “Developers Without Borders” project. I can't overstate how vital she was to the team's success. She single-handedly built the virtual community, creating the tools and policies to facilitate coordination between a group of developers spread around the globe. She's a strong javascript developer who picks up new technologies as rapidly as you can throw them at her. Behind a strong analytical mindset lays a creative and very human-oriented soul which made Amy a great colleague to work with. Her approach to problem solving makes her someone who will push the envelope, go beyond status quo, and seek for creative solutions even when faced with complex issues.
-
-
-### 2. Students Do: Peer Recommendations (25 min)
-
-* **Instructions**
-
-  * Write a personalized LinkedIn recommendation for one or more peers you can wholeheartedly vouch for.
-
-  * When you finish your recommendations, endorse some classmates' skills.
-
-### 2. Students Do: Deploy a Project, Homework, or Activity and Include in Portfolio (20 min)
-
-* Students should deploy at least one project, homework, or activity that they've completed and link to it from their portfolio page.
-
-### 2.Students Do:  Portfolio & Career HW Work (70 mins)
-
-* Ensure that students have deployed at least one project, homework, or activity and linked to it from their portfolio before they move on.
-
-* Students continue working on their portfolios and / or any unfinished career homework.
+[12.2 Time Tracker](https://docs.google.com/spreadsheets/d/1tTcw0eXLGVV9q8q9KuwQIT2vz5HdagpARCrVo35kWTw/edit?usp=sharing)
 
 - - -
 
-### 4. BREAK (15 min)
+### 1. Project Work (120 mins)
+
+* Students will work on their final project.
 
 - - -
 
-### 5. Students Do: Project Work! (120 min)
+### 2. BREAK (39 min)
+
+- - -
+
+### 3. Students Do: Project Work! (120 min)
 
 * Students continue working on final projects for the remainder of class.
+
+### 4. End (0 mins)
 
 ### Lesson Plan Feedback
 

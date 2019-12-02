@@ -1,14 +1,14 @@
-## Project Work <!--links--> &nbsp; [⬅️](../03-Day/03-Day-LessonPlan.md) &nbsp; [➡️](../05-Day/05-Day-LessonPlan.md)
+# 12.4 Project Work (10:00 AM)
 
 In today's class, students will have time both to outline their presentations, and to complete work on their projects.
 
-##### Instructor Priorities
+## Instructor Priorities
 
 * Students should have the entirety of today's class to work on their projects.
 
 * Make sure your students spend at least thirty minutes on how they'll present their web app.
 
-##### Instructor Notes
+## Instructor Notes
 
 * This is the last day of class that students have to work on their projects. That's why they need to spend time thinking about how they'll present their app.
 
@@ -16,7 +16,13 @@ In today's class, students will have time both to outline their presentations, a
 
 * Slack out the document on [Describing Technical Projects](../../../../01-Class-Content/17-project-2/03-Supplemental/DescribingTechnicalProjects.pdf), and explain that students _must_ write a "script" according to the template in the document that they can rehearse and use to discuss their projects in technical interviews.
 
-* Have your TAs reference [04-Day-Time-Tracker](https://drive.google.com/a/trilogyed.com/file/d/1qsOZ2vZYfkN7qSLyW42xl5lBt8Z2rX6C/view?usp=sharing) to help keep track of time during class.
+## Slides 
+
+N/A
+
+# Time Tracker
+
+[12.4 Time Tracker](https://docs.google.com/spreadsheets/d/14WYmU8pD8cQJrNsdWn4F3H0jDX1T5Ykff8XtprmHZBw/edit?usp=sharing)
 
 - - -
 
@@ -28,11 +34,7 @@ In today's class, students will have time both to outline their presentations, a
 
 - - -
 
-### 0. Welcome Class
-
-* Say your hellos and check if students have any questions about past concepts.
-
-### 1. Everyone Do: Outline Presentation (0:30)
+### 1. Everyone Do: Outline Presentation (30 mins)
 
 * Announce that students have the next half-hour to outline their presentations.
 
@@ -56,7 +58,7 @@ In today's class, students will have time both to outline their presentations, a
 
   * Don't accuse them of not following directions; just steer them on course.
 
-### 2. Everyone Do: Project Work (1:30)
+### 2. Everyone Do: Project Work (90 mins)
 
 * Tell your students that they may work on coding their app again or spend more time on their presentations—whichever they'd prefer.
 
@@ -66,13 +68,15 @@ In today's class, students will have time both to outline their presentations, a
 
 - - -
 
-### 3. Lunch (0:30)
+### 3. Break (30 mins)
 
 - - -
 
-### 4. Everyone Do: Project Work (2:00)
+### 4. Everyone Do: Project Work (120 mins)
 
 * Allow students to continue working on projects.
+
+### 5. End (0 mins)
 
 ### Lesson Plan Feedback
 
