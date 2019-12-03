@@ -4,15 +4,15 @@
 
 ### Instructions
 
-* In groups of 4, begin the process of coding out the rock-paper-scissors game.
+* In groups of 4, begin the process of coding out the rock-paper-scissors game
 
-* Have users play the game 10 times, then show them their total scores.
+* Have users play the game 10 times, then show them their total scores
 
 **Rules for rock-paper-scissors**
 
-* Rock: wins against scissors, loses to paper, and ties against itself.
-* Paper: wins against rock, loses to scissors, and ties against itself.
-* Scissors: wins against paper, loses to rock, and ties against itself.
+* Rock: wins against scissors, loses to paper and ties against itself
+* Paper: wins against rock, loses to scissors and ties against itself
+* Scissors: wins against paper, loses to rock and ties against itself
 
 ![3-RPS-Example-Picture](Images/9-RPS-example.png)
 

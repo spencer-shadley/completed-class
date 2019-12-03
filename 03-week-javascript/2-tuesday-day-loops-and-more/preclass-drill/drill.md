@@ -8,7 +8,7 @@
 
 ## Bonus
 
-* Create a page with a blue div with each of the four Box Model properties set to specific values
+Create a page with a blue div with each of the four Box Model properties set to specific values
 
 # Explain each line of the below code
 
@@ -27,4 +27,4 @@
 </html>
 ```
 
-# What line of code is needed to make a page responsive?
+# Which line of code is needed to make a page responsive?

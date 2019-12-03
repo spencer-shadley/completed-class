@@ -1,50 +1,52 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>My First Object</title>
-  </head>
-  <body>
 
-    <script>
+<head>
+  <meta charset="UTF-8">
+  <title>My First Object</title>
+</head>
 
-      var car = {
-        make: "Honda",
-        model: "Fit",
-        color: "Blue Raspberry",
-        mileage: 3000,
-        isWorking: true,
+<body>
 
-        driveToWork: function() {
+  <script>
 
-          alert("Old Mileage: " + this.mileage);
+    var car = {
+      make: 'Tesla',
+      model: 'Cybertruck',
+      color: 'Matte Black',
+      mileage: 3000,
+      isWorking: true,
 
-          this.mileage = this.mileage + 8;
+      driveToWork: function () {
 
-          alert("New mileage: " + this.mileage);
-        },
+        alert('Old Mileage: ' + this.mileage);
 
-        driveAroundWorld: function() {
+        this.mileage = this.mileage + 4;
 
-          alert("Old Mileage: " + this.mileage);
+        alert('New mileage: ' + this.mileage);
+      },
 
-          this.mileage = this.mileage + 24000;
+      driveAroundWorld: function () {
 
-          alert("New Mileage: " + this.mileage);
-          alert("Car needs a tuneup!");
+        alert('Old Mileage: ' + this.mileage);
 
-          this.isWorking = false;
-        },
+        this.mileage = this.mileage + 24000;
 
-        getTuneUp: function() {
-          alert("Car is ready to go!");
-          this.isWorking = true;
-        },
+        alert('New Mileage: ' + this.mileage);
+        alert('Car needs a tuneup!');
 
-        honk: function() {
-          alert("Honk! Honk!");
-        }
-      };
+        this.isWorking = false;
+      },
+
+      getTuneUp: function () {
+        alert('Car is ready to go!');
+        this.isWorking = true;
+      },
+
+      honk: function () {
+        alert('Honk! Honk!');
+      }
+    };
 
 
       // How would we log...
@@ -61,7 +63,8 @@
 
       // How would we run the getTuneUp method?
 
-    </script>
-    
-  </body>
+  </script>
+
+</body>
+
 </html>
