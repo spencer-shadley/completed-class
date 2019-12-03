@@ -1,29 +1,49 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Loops</title>
-  </head>
-  <body>
 
-    <h1>Open the console to see the magic!</h1>
+<head>
+  <meta charset="UTF-8">
+  <title>Loops</title>
+</head>
 
-    <script>
+<body>
 
-      // Loops from 0 to 4.
-      for (var i = 0; i < 5; i++) {
-        // Prints a message and the current i value to the console.
-        console.log("I am " + i);
-      }
+  <h1>Open the console to see the magic!</h1>
 
-      // Equivalent
-      // console.log("I am 0");
-      // console.log("I am 1");
-      // console.log("I am 2");
-      // console.log("I am 3");
-      // console.log("I am 4");
+  <script>
 
-    </script>
-    
-  </body>
+    // Loops from 0 to 4
+    for (var i = 0; i < 5; i++) {
+      // Prints a message and the current i value to the console
+      console.log('I am ' + i);
+    }
+
+    // Equivalent
+    // console.log('I am 0');
+    // console.log('I am 1');
+    // console.log('I am 2');
+    // console.log('I am 3');
+    // console.log('I am 4');
+
+    // Bonus
+
+    console.log('Create a loop that prints all the odd numbers from 1 to 15');
+    for (var i = 1; i <= 15; i += 2) {
+      console.log(i);
+    }
+
+    console.log('Create a loop that prints all the numbers which are a multiple of 5 between 100 and 125');
+    for (var i = 100; i <= 125; i += 5) {
+      console.log(i);
+    }
+
+    console.log('Create a loop that prints every power of 2 between 2 and 1024');
+    for (var i = 2; i <= 1024; i *= 2) {
+      console.log(i);
+    }
+
+  </script>
+
+</body>
+
 </html>

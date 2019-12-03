@@ -1,25 +1,42 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Loops</title>
-  </head>
-  <body>
 
-    <h1>Open the console to see the magic!</h1>
+<head>
+  <meta charset="UTF-8">
+  <title>Loops</title>
+</head>
 
-    <script>
+<body>
 
-      // Array of zoo animals.
-      var zooAnimals = ["Zebra", "Rhino", "Giraffe", "Owl"];
+  <h1>Open the console to see the magic!</h1>
 
-      // Loops through the array to print each zoo animal.
-      for (var i = 0; i < zooAnimals.length; i++) {
-        // Logs the animal at index position i to the console. This code is executed each we go through the loop.
-        console.log(zooAnimals[i]);
-      }
+  <script>
 
-    </script>
+    // Array of zoo animals
+    var zooAnimals = ['Zebra', 'Rhino', 'Giraffe', 'Owl'];
 
-  </body>
+    // Loops through the array to print each zoo animal
+    for (var i = 0; i < zooAnimals.length; i++) {
+      // Logs the animal at index position i to the console. This code is executed each we go through the loop.
+      console.log('animal: ' + zooAnimals[i]);
+    }
+
+    // Bonus!
+
+    // create a variable to store the user's inputs
+    var animeList = [];
+
+    // loop until the user stops asking to add more anime
+    for (var shouldAllowUserAnime = true; shouldAllowUserAnime; shouldAllowUserAnime = confirm('Would you like to add another anime?')) {
+      var animeToAdd = prompt('Add an anime');
+      animeList.push(animeToAdd);
+    }
+
+    // print the anime
+    console.log(animeList);
+
+  </script>
+
+</body>
+
 </html>

@@ -12,11 +12,11 @@
 
     // The array of questions for our quiz game.
     var questions = [
-      { q: "The sky is blue.", a: "t" },
-      { q: "There are 365 days in a year.", a: "t" },
-      { q: "There are 42 ounces in a pound.", a: "f" },
-      { q: "The Declaration of Independence was created in 1745.", a: "f" },
-      { q: "Bananas are vegetables.", a: "f" }
+      { q: 'The sky is blue.', a: true },
+      { q: 'There are 365 days in a year.', a: true },
+      { q: 'There are 42 ounces in a pound.', a: false },
+      { q: 'The Declaration of Independence was created in 1745.', a: false },
+      { q: 'Bananas are vegetables.', a: false }
     ];
 
     // We start the game with a score of 0.
@@ -28,19 +28,19 @@
       var answer = confirm(questions[i].q);
 
       // Compare answers
-      if ((answer === true && questions[i].a === "t") ||
-        (answer === false && questions[i].a === "f")) {
+      if ((answer && questions[i].a) ||
+        (!answer && !questions[i].a)) {
         // Increase score
         score++;
-        alert("Correct!");
+        alert('Correct!');
       }
       else {
-        alert("Wrong!");
+        alert('Wrong!');
       }
     }
 
     // Show total at end
-    alert("You got " + score + "/" + questions.length);
+    alert('You got ' + score + '/' + questions.length);
 
   </script>
 

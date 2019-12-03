@@ -1,33 +1,48 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Partners Loop</title>
-  </head>
-  <body>
 
-    <script>
+<head>
+  <meta charset="UTF-8">
+  <title>Partners Loop</title>
+</head>
 
-      // This is our starting myFarm array.
-      var myFarm = ["chickens", "pigs", "cows", "horses", "ostriches"];
+<body>
 
-      // Creating a variable to hold our array length.
-      var arrayLength = myFarm.length;
+  <script>
 
-      // Looping through our myFarm array.
-      for (var j = 0; j < arrayLength; j++) {
+    // This is our starting myFarm array
+    var myFarm = ['chickens', 'pigs', 'cows', 'horses', 'ostriches'];
 
-        // Console out the farm animal in the current index.
-        console.log(myFarm[j]);
+    // Creating a variable to hold our array length
+    var arrayLength = myFarm.length;
 
-        // If the first character in the current animal is "c" or "o", alert the following message.
-        if (myFarm[j].charAt(0) === "c" || myFarm[j].charAt(0) === "o") {
-          alert("Starts with a c or an o!");
-        }
+    // Looping through our myFarm array
+    for (var i = 0; i < arrayLength; i++) {
+      var animal = myFarm[i];
 
+      // Console out the farm animal in the current index
+      console.log(animal);
+
+      // If the first character in the current animal is 'c' or 'o', alert the following message
+      if (animal.charAt(0) === 'c' || animal.charAt(0) === 'o') {
+        alert(animal + ' starts with a c or an o!');
       }
+    }
 
-    </script>
-    
-  </body>
+    // BONUS!
+
+    // Looping through our myFarm array
+    for (var i = 1; i < arrayLength; i++) {
+      var currAnimal = myFarm[i];
+      var prevAnimal = myFarm[i - 1];
+
+      if (currAnimal.length === prevAnimal.length) {
+        console.log('I just saw an animal like that!');
+      }
+    }
+
+  </script>
+
+</body>
+
 </html>

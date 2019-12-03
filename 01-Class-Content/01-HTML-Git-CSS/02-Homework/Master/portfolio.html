@@ -10,17 +10,6 @@
 
 <body>
 
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo">Your Name</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
-
   <div id="main-container" class="container">
     <section class="main-section">
       <h1>Portfolio</h1>
@@ -62,6 +51,19 @@
       Copyright &copy;
     </div>
   </footer>
+
+  <!--  This is placed at the bottom to avoid the positioned images from having a higher stacking context order without resorting to z-index 
+        More info: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context -->
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Your Name</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 </body>
 
 </html>

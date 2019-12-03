@@ -1,87 +1,90 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>My First Object</title>
-  </head>
-  <body>
 
-    <h1>Open the console to see the magic!</h1>
+<head>
+  <meta charset="UTF-8">
+  <title>My First Object</title>
+</head>
 
-    <script>
+<body>
 
-      // Creating our car object.
-      var car = {
+  <h1>Open the console to see the magic!</h1>
 
-        // Properties of our car object.
-        make: "Honda",
-        model: "Fit",
-        color: "Blue Raspberry",
-        mileage: 3000,
-        isWorking: true,
+  <script>
 
-        // Creating the driveToWork method.
-        // A method is a function associated with an object.
-        driveToWork: function() {
+    // Creating our car object.
+    var car = {
 
-          // When we say "this" (as in this.mileage) we are referring to the object the method is a part of.
-          // In this case, we will alert the mileage of the car object.
-          alert("Old Mileage: " + this.mileage);
+      // Properties of our car object.
+      make: 'Tesla',
+      model: 'Cybertruck',
+      color: 'Matte Black',
+      mileage: 3000,
+      isWorking: true,
 
-          // Adding 8 to the car's mileage.
-          this.mileage = this.mileage + 8;
+      // Creating the driveToWork method.
+      // A method is a function associated with an object.
+      driveToWork: function () {
 
-          // Alerting the car's new mileage.
-          alert("New mileage: " + this.mileage);
-        },
+        // When we say "this" (as in this.mileage) we are referring to the object the method is a part of.
+        // In this case, we will alert the mileage of the car object.
+        alert('Old Mileage: ' + this.mileage);
 
-        // The driveAroundWorld method adds 24,000 miles to our car, sets isWorking to false, and makes some alerts.
-        driveAroundWorld: function() {
+        // Adding 8 to the car's mileage.
+        this.mileage = this.mileage + 8;
 
-          alert("Old Mileage: " + this.mileage);
+        // Alerting the car's new mileage.
+        alert('New mileage: ' + this.mileage);
+      },
 
-          this.mileage = this.mileage + 24000;
+      // The driveAroundWorld method adds 24,000 miles to our car, sets isWorking to false, and makes some alerts.
+      driveAroundWorld: function () {
 
-          alert("New Mileage: " + this.mileage);
-          alert("Car needs a tuneup!");
+        alert('Old Mileage: ' + this.mileage);
 
-          this.isWorking = false;
-        },
+        this.mileage = this.mileage + 24000;
 
-        // The getTuneUp method sets isWorking to true and alerts a message.
-        getTuneUp: function() {
-          alert("Car is ready to go!");
-          this.isWorking = true;
-        },
+        alert('New Mileage: ' + this.mileage);
+        alert('Car needs a tuneup!');
 
-        // The honk method alerts a honking message.
-        honk: function() {
-          alert("Honk! Honk!");
-        }
-      };
+        this.isWorking = false;
+      },
+
+      // The getTuneUp method sets isWorking to true and alerts a message.
+      getTuneUp: function () {
+        alert('Car is ready to go!');
+        this.isWorking = true;
+      },
+
+      // The honk method alerts a honking message.
+      honk: function () {
+        alert('Honk! Honk!');
+      }
+    };
 
 
-      // How would we log...
+    // How would we log...
 
-      // The car's make?
-      console.log(car.make);
+    // The car's make?
+    console.log(car.make);
 
-      // The car's model?
-      console.log(car.model);
+    // The car's model?
+    console.log(car.model);
 
-      // The car's mileage?
-      console.log(car.mileage);
+    // The car's mileage?
+    console.log(car.mileage);
 
-      // How would we run the car's driveToWork method?
-      car.driveToWork();
+    // How would we run the car's driveToWork method?
+    car.driveToWork();
 
-      // How would we run the car's driveAroundWorld method?
-      car.driveAroundWorld();
+    // How would we run the car's driveAroundWorld method?
+    car.driveAroundWorld();
 
-      // How would we run the getTuneUp method?
-      car.getTuneUp();
+    // How would we run the getTuneUp method?
+    car.getTuneUp();
 
-    </script>
-    
-  </body>
+  </script>
+
+</body>
+
 </html>
