@@ -6,4 +6,4 @@
 | [GitHub](https://github.com/) | Where you `push` your assignments. This is where your code lives. |
 | [BootcampSpot](https://bootcampspot.com/) | The admin stuff. Submit homework, take attendance, see course calendar, etc. |
 | [Panopto](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=59769e26-feb7-4894-85f4-aaeb0003f9d9) | Class recordings |
-| [House Cup](https://house-cup-bootcamp.herokuapp.com/) | See your house's points! |
+| [House Cup](https://house-cup-bootcamp.herokuapp.com/) | See your house's points and how to earn points! |
