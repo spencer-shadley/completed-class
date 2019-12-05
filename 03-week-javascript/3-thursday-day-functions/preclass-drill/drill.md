@@ -5,3 +5,5 @@
 * What differentiates these elements from others?
 
 # What are the common git commands and workflow?
+
+* What is the purpose of git-pull? 
