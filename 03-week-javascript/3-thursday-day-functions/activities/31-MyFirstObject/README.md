@@ -8,4 +8,8 @@
 
 * Then write code below each comment to log the relevant information about the provided `car` object.
 
-* **BONUS:** If you finish early, create a brand new object of your own. Slack out a snippet of the code to the class when you are done. Be creative!
+* **BONUS 1:** If you finish early, create a brand new object of your own. Slack out a snippet of the code to the class when you are done. Be creative!
+
+* **BONUS 2:** Create an array of car objects and print them.
+
+* **BONUS 3:** Give each car a random color
