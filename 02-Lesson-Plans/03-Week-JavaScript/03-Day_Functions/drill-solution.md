@@ -19,7 +19,7 @@ Self-closing tags are used for what are called void elements like horizontal rul
 
 TL;DR - They can't contain additional content.
 
-# What are the common git commands and workflow?
+# What are common git commands and common git workflows?
 
 ## Commands
 
