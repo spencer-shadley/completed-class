@@ -4,4 +4,4 @@
 * Give three examples of self-closing tags.
 * What differentiates these elements from others?
 
-# What are the common git commands and workflow?
+# What are common git commands and common git workflows?
