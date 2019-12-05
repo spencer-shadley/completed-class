@@ -6,7 +6,7 @@
 
 * In groups of 4, begin the process of coding out the rock-paper-scissors game
 
-* Have users play the game 10 times, then show them their total scores
+* Have users play the game 3 times, then show them their total scores
 
 **Rules for rock-paper-scissors**
 
