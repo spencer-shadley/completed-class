@@ -15,6 +15,8 @@
 1. Place that piece of bread on the remaining piece of bread such that each corner of bread is aligned
 1. Consume the sandwich
 
+[Where the above code fails](https://minecraft.makecode.com/courses/csintro/functions/unplugged). Pseudocoding this is actually nearly impossible!
+
 # Write a function that takes in two numbers and outputs the max (the greater of the two numbers)
 
 ```js
