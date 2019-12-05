@@ -12,4 +12,6 @@
 
 * **HINT:** Look back to previous example if you need help.
 
-* **BONUS:** If you finish the first four functions create two functions, `adderReturn()` and `multiplierReturn()`, that return the value when you call the function rather than using `console.log`.
+* **BONUS 1:** If you finish the first four functions create two functions, `adderReturn()` and `multiplierReturn()`, that return the value when you call the function rather than using `console.log`.
+
+* **BONUS 2:** Write a function with four parameters. The first parameter is used to determine which operation (add or multiply) to use and the next three are combined using that operation which is output with `console.log`.
