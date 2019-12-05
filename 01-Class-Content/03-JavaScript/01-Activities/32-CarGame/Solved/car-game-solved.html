@@ -12,13 +12,12 @@
 
     // VARIABLES
     // ==========================================================================
-    var letter;
 
     var car = {
       make: 'Tesla',
       model: 'Cybertruck',
-      color: 'Matte Black',
-      mileage: 3000,
+      color: 'Steel Gray',
+      mileage: 0,
       isWorking: true,
 
       driveToWork: function () {
@@ -68,6 +67,7 @@
 
     // A while loop makes more sense here than a for loop, because we don't know how long the user will want to play the game
     // This loop will end when the user presses Cancel, thus setting the letter variable to "null"
+    var letter;
     while (letter !== null) {
       // Prompt user to input a letter
       letter = prompt("Type 'h' to honk, 'd' to drive to work, 'w' to drive around the world, or 't' to get a tuneup.");

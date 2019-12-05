@@ -18,8 +18,8 @@
       // Properties of our car object.
       make: 'Tesla',
       model: 'Cybertruck',
-      color: 'Matte Black',
-      mileage: 3000,
+      color: 'Steel Gray',
+      mileage: 0,
       isWorking: true,
 
       // Creating the driveToWork method.
@@ -82,6 +82,25 @@
 
     // How would we run the getTuneUp method?
     car.getTuneUp();
+
+    // Bonus 2: Create an array of cars. Try making one for each of Tesla's models.
+    // Later we can make this more powerful using something called "constructors"
+
+    var teslaModelNames = ['Roadster', 'Model S', 'Model X', 'Model 3', 'Roadster 2', 'Model Y', 'Semitruck', 'Cybertruck'];
+    var teslas = [];
+    var colors = ['Red', 'Blue', 'White', 'Black'];
+
+    for(var i = 0; i < teslaModelNames.length; i++) {
+      var colorIndex = Math.floor(Math.random() * colors.length)
+      var tesla = {
+        make: 'Tesla',
+        model: teslaModelNames[i],
+        mileage: 0,
+        color: colors[colorIndex]
+      }
+      teslas.push(tesla);
+    }
+    console.log(teslas);
 
   </script>
 

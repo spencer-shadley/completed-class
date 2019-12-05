@@ -18,10 +18,11 @@
     // Creates a Function called "adder" that takes three arguments (x, y, z).
     function adder(x, y, z) {
 
-      // The function should add the arguments together, and log the result to the console.
+      // The function should add the arguments together and log the result to the console.
       console.log(x + y + z);
     }
 
+    // BONUS!
     // We can also create a version of "adder" that returns its result.
     function adderReturn(x, y, z) {
       return x + y + z;
@@ -51,11 +52,11 @@
 
       // If anyone of them is NOT a string... it will note that.
       else {
-        console.log("No... I don't believe these are strings.");
+        console.log("No... I don't believe these are all strings.");
       }
     }
 
-    // Creates a Function called 'vowelChecker' that takes in a single argument (x).
+    // Creates a Function called 'vowelChecker' that has a single parameter (x).
     function vowelChecker(x) {
 
       // vowelChecker will grab the first letter (character)...
@@ -77,6 +78,25 @@
       }
     }
 
+    function combineUsingOperator(operator, x, y, z) {
+      var combinedValue;
+      if (operator === 'add') {
+        combinedValue = adderReturn(x, y, z);
+      }
+      else if (operator === 'multiply') {
+        combinedValue = multiplierReturn(x, y, z);
+      }
+
+      // This is a "ternary if"
+      // It's shorthand for a small if/else statement
+      // <condition> ? <return value when true> : <return value when false>
+      console.log(combinedValue ? combinedValue : 'Inavlid input!');
+    }
+
+    function printLineBreak() {
+      console.log('-------------------');
+    }
+
     // FUNCTION EXECUTION
     // ================================================================================
 
@@ -86,35 +106,44 @@
     // Calling our adder function.
     adder(1, 2, 3);
 
-    console.log('-------------------');
+    printLineBreak();
 
     // If we use the version that returns its result:
     var result = adderReturn(1, 2, 3);
     console.log(result);
+    // alternative:
+    // console.log(adderReturn(1, 2, 3))
 
-    console.log('-------------------');
+    printLineBreak();
 
     // Calling our multiplier function.
     multiplier(2, 3, 4);
 
-    console.log('-------------------');
+    printLineBreak();
 
     // If we use the version that returns its result:
     result = multiplierReturn(2, 3, 4);
     console.log(result);
 
-    console.log('-------------------');
+    printLineBreak();
 
     // Calling our isString function.
     isString('Ahmed', 'Bad', 'Monkey');
     isString(2, 'Way', 'Street');
 
-    console.log('-------------------');
-
+    printLineBreak();
+    
     // Calling our vowelChecker function.
     vowelChecker('Eek');
     vowelChecker('Nah');
 
+    printLineBreak();
+
+    // Calling our combined operator function
+    combineUsingOperator('add', 2, 3, 4);
+    combineUsingOperator('multiply', 2, 3, 4);
+    combineUsingOperator('invalid', 1, 2, 3);
+    
   </script>
 
 </body>
