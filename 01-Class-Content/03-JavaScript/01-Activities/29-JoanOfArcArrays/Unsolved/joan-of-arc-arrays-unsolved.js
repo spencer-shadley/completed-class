@@ -9,3 +9,9 @@ var joanOfArcInfoValues = [
   "Took an arrow to the shoulder and a crossbow bolt to the thigh while trying to liberate Paris.",
   "Stands for French unity and nationalism."
 ];
+
+for(var i = 0; i < joanOfArcInfoParts.length; i++) {
+  var part = joanOfArcInfoParts[i];
+  var value = joanOfArcInfoValues[i];
+  console.log(part + ': ' + value);
+}
