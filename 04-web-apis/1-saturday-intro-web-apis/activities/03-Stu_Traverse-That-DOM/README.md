@@ -1,10 +1,12 @@
+# 03-Stu_Traverse-That-DOM
+
 # Traverse That DOM
 
 In this activity you are going to use the Chrome Dev Console and `.style.property` to change the styling of elements on our page.
 
 ## Instructions
 
-* Create an `script.js`
+* Create an `script.js` (hint: Google "how to link javascript to HTML")
 
 * Using the provided `index.html`, complete the following
 
@@ -28,4 +30,8 @@ In this activity you are going to use the Chrome Dev Console and `.style.propert
 
 ## Bonus
 
-* Change 3 other elements styles that we did not ask for above.
+Change 3 other elements styles that we did not ask for above.
+
+## Bonus 2
+
+Customize your favorite site using the console to execute JavaScript
