@@ -6,7 +6,7 @@ In this activity you are going to use the Chrome Dev Console and `.style.propert
 
 ## Instructions
 
-* Create an `script.js` (hint: Google "how to link javascript to HTML")
+* Create an `script.js`
 
 * Using the provided `index.html`, complete the following
 
