@@ -15,5 +15,3 @@ In this activity you will `console.log(this)` and dig around inside the returned
 * Make your way down to `document` and click into it.
 
 * Spend some time looking through the properties and methods contained within `window.document`.
-
-
