@@ -16,3 +16,12 @@ button {
   background-color: #247BA0;
   color: white;
 }
+
+#update-amount {
+  display: block;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+}
