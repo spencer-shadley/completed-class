@@ -32,6 +32,8 @@ Your application's GitHub repository should contain a README.md file explaining 
 
 ![password generator demo](./Assets/03-JavaScript-homework-demo.png)
 
+[password generator video](https://drive.google.com/file/d/1ZL_l8TgqYRaf4f838Eh63yBujYhi3b5W/view)
+
 ## User Story
 
 AS AN employee with access to sensitive data
