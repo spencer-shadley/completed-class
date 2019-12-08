@@ -1,3 +1,5 @@
+# 11-Stu_Onclick
+
 # addEventListener On Click
 
 In this activity, we are going to create a button that increments a counter when clicked.
@@ -10,6 +12,20 @@ In this activity, we are going to create a button that increments a counter when
 
 * Add a button that decrements the counter when clicked.
 
-## Bonus
+## Bonus 1
 
 * Add some code to ensure that the count never gets below 0.
+
+## Bonus 2
+
+* Update the code such that when the buttons are:
+
+    * clicked it increments/decrements the count by 5
+
+    * moused over it increments by 1
+
+    * moused out it decrements by 1
+
+## Bonus 3
+
+* Add another button that updates by a custom user-inputted amount

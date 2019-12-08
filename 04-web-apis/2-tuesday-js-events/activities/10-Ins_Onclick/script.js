@@ -2,12 +2,10 @@ var themeSwitcher = document.querySelector('#theme-switcher');
 var container = document.querySelector('.container');
 var mode = 'dark';
 
-themeSwitcher.addEventListener('click', function () {
-  if (mode === 'dark') {
-    mode = 'light';
-  }
-  else {
-    mode = 'dark';
-  }
-  container.setAttribute('class', mode);
-});
+// all the event types - https://developer.mozilla.org/en-US/docs/Web/Events
+// click, keypress, resize, mouseover, load, ...
+themeSwitcher.addEventListener('click', handleClick);
+
+function handleClick() {
+  container.setAttribute('class', mode === dark ? 'light' : 'dark');
+}
