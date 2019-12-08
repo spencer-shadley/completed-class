@@ -48,7 +48,7 @@ var questions = [
     choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
     answer: "parentheses"
   },
-  ///etc.
+  // etc.
 ];
 ```
 

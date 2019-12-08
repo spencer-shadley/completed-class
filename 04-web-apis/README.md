@@ -45,7 +45,3 @@ As you proceed in your career as a web developer, you will probably be asked to 
 * [Wikipedia: DOM](https://en.wikipedia.org/wiki/Document_Object_Model)
 * [MDN: DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
 * [MDN: Client-side storage](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Client-side_storage)
-
-
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
