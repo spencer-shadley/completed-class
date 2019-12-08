@@ -161,9 +161,7 @@ function copyToClipboard() {
   passwordText.select();
   document.execCommand('copy');
 
-  alert(
-    'Your password ' + passwordText.value + ' was copied to your clipboard.'
-  );
+  alert('Your password ' + passwordText.value + ' was copied to your clipboard.');
 }
 
 // Add event listener to generate button
