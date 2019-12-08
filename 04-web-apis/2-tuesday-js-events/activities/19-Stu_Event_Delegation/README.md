@@ -2,7 +2,7 @@
 
 ## Instructions
 
-* In this activity, we are going to create a friends list that allows us to edit information about that friend in a modal.
+* In this activity, we are going to create a friends list that allows us to edit information about that friend in a modal dialog.
 
 * Take a moment to study the code in `index.html`. You will not need to add any additional code to this file. Additionally, all of the CSS has been provided.
 

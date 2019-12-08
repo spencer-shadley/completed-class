@@ -1,32 +1,32 @@
-var addBtn = document.querySelector("#add-btn");
-var peopleListEl = document.querySelector("#people-list");
-var nameEl = document.querySelector("#name");
-var modalEl = document.querySelector("#modal-container");
-var modalNameEl = document.querySelector("#modal-name");
-var descriptionEl = document.querySelector("#description");
-var closeEl = document.querySelector(".close");
-var saveBtn = document.querySelector("#save");
+var addButton = document.querySelector('#add-btn');
+var peopleListElement = document.querySelector('#people-list');
+var nameElement = document.querySelector('#name');
+var modalElement = document.querySelector('#modal-container');
+var modalNameElement = document.querySelector('#modal-name');
+var descriptionElement = document.querySelector('#description');
+var closeElement = document.querySelector('.close');
+var saveButton = document.querySelector('#save');
 
-var people = [{ name: "Bob" }];
+var people = [{ name: 'Spencer' }];
 var currentId = 0;
 
 function addPersonToList(event) {
   event.preventDefault();
-  var name = nameEl.value;
-  var li = document.createElement("li");
+  var name = nameElement.value;
+  var li = document.createElement('li');
   li.id = people.length;
-  li.innerHTML = name + " <button>edit</button>";
+  li.innerHTML = name + ' <button>edit</button>';
   people.push({ name: name });
-  peopleListEl.append(li);
+  peopleListElement.append(li);
 }
 
 function close() {
-  modalEl.style.display = "none";
+  modalElement.style.display = 'none';
 }
 
 function handleClick() {
-  // Use event delegation to handle when the user clicks "edit"
+  // Use event delegation to handle when the user clicks 'edit'
 }
 
-closeEl.addEventListener("click", close);
-addBtn.addEventListener("click", addPersonToList);
+closeElement.addEventListener('click', close);
+addButton.addEventListener('click', addPersonToList);

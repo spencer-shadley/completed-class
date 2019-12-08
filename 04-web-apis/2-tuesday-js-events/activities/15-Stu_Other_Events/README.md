@@ -2,7 +2,7 @@
 
 ## Instructions
 
-* In this activity, we are going to create a webpage that will allow us to view some meta data about different kinds of events.
+* In this activity, we are going to create a webpage that will allow us to view some metadata about different kinds of events.
 
 * Open the `index.html` file in your browser and take a moment to study the application.
 

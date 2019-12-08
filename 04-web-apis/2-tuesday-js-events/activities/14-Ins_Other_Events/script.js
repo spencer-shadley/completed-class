@@ -1,38 +1,37 @@
-var typefaceEl = document.querySelector("#typeface");
-var clearEl = document.querySelector("#clear");
-var h1El = document.querySelector("#h1");
-var h2El = document.querySelector("#h2");
-var h3El = document.querySelector("#h3");
-var pEl = document.querySelector("#p");
-var textAreaEl = document.querySelector("#textarea");
+var typefaceElement = document.querySelector('#typeface');
+var clearElement = document.querySelector('#clear');
+var h1Element = document.querySelector('#h1');
+var h2Element = document.querySelector('#h2');
+var h3Element = document.querySelector('#h3');
+var pElement = document.querySelector('#p');
+var textAreaElement = document.querySelector('#textarea');
 
 var elements = [
-  h1El, h2El, h3El, pEl
+  h1Element, h2Element, h3Element, pElement
 ];
-
 
 var typeface;
 
-typefaceEl.addEventListener("change", function(event) {
+typefaceElement.addEventListener('change', function (event) {
   event.preventDefault();
-  typeface = typefaceEl.value;
-  document.querySelector(".container").style.fontFamily = typeface;
+  typeface = typefaceElement.value;
+  document.querySelector('.container').style.fontFamily = typeface;
 });
 
-textAreaEl.addEventListener("keydown", function(event) {
+textAreaElement.addEventListener('keydown', function (event) {
   var key = event.key.toLowerCase();
-  var alphabetNumericCharacters = "abcdefghijklmnopqrstuvwxyz0123456789 ".split("");
-  if (alphabetNumericCharacters.includes(key)) {
-    elements.forEach(function(element) {
+  var alphaNumericCharacters = 'abcdefghijklmnopqrstuvwxyz0123456789'.split('');
+  if (alphaNumericCharacters.includes(key)) {
+    elements.forEach(function (element) {
       element.textContent += event.key;
     });
   }
 });
 
-clearEl.addEventListener("click", function(event) {
+clearElement.addEventListener('click', function (event) {
   event.preventDefault();
-  textAreaEl.value = "";
-  elements.forEach(function(element) {
-    element.textContent = "";
+  textAreaElement.value = '';
+  elements.forEach(function (element) {
+    element.textContent = '';
   });
 });
