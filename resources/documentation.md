@@ -2,6 +2,8 @@
 
 | Site               | Description |
 |--------------------|--------------------------------------------------|
+| [MDN: jQuery](https://developer.mozilla.org/en-US/docs/Glossary/jQuery) | Mozilla's documentation for jQuery |
+| [jQuery Official Website](https://jquery.com/) | jQuery's website includes both documentation and tutorials. I recommend seeking tutorials from elsewhere, however. |
 | [MDN: DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) | Mozilla's documentation for DOM |
 | [Wikipedia: DOM](https://en.wikipedia.org/wiki/Document_Object_Model) | Wikipedia of The Document Object Model |
 | [MDN: Client-side storage](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Client-side_storage) | Mozilla's documentation for Client-side storage |
