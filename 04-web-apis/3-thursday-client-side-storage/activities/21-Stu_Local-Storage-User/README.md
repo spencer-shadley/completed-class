@@ -12,7 +12,7 @@
 
   * Fill in code here to retrieve the last registered credentials from local storage.
   
-  * If the last registered is null, return early from this function.
+  * If the last registered is `null`, return early from this function.
   
   * Else set the text of the `userEmailSpan`, `userPasswordSpan` to their corresponding values from local storage.
   
