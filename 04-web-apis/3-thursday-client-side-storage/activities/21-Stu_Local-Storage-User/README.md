@@ -11,11 +11,3 @@
 * In the `renderLastRegistered()` function you will need to:
 
   * Fill in code here to retrieve the last registered credentials from local storage.
-  
-  * If the last registered is `null`, return early from this function.
-  
-  * Else set the text of the `userEmailSpan`, `userPasswordSpan` to their corresponding values from local storage.
-  
-## Hints
-
-* Make sure you call `renderLastRegistered()` after you set your `localStorage`.
