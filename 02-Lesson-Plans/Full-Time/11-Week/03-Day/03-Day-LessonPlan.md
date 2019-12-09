@@ -1,4 +1,4 @@
-## 11.3 Lesson Plan - Final Projects (10:00 AM) <!--links--> &nbsp;  &nbsp; [➡️](../04-Day/04-Day-LessonPlan.md)
+## 11.3 Lesson Plan - Basics of Algorithms (10:00 AM) <!--links--> &nbsp;  &nbsp; [➡️](../04-Day/04-Day-LessonPlan.md)
 
 ### Instructors and TAs: Please take the End-Course Instructional Staff Survey
 

@@ -1,46 +1,51 @@
-## Week 20 - React Continued
+# Unit 20: State
 
-This week, we will continue working with the React library and introduce final projects.
+## Overview
 
-- - -
+In this unit, we will be covering state management techniques in React. We will cover React Hooks, the Context API, and creating a Redux-like store.
+
+  * Refer to the [Class Content Unit Overview](../../../01-Class-Content/20-State/README.md) for detailed information on key topics, learning objectives and homework.
+
+## Instructor / TA Notes
+
+* This unit includes some cutting edge state management techniques that are best utilized in complex systems. Reassure students that are struggling that this unit is meant to serve as an introduction to more complex systems, and may take a while to fully grasp.
+
+* 20.3 will rely heavily on Redux concepts. It is recommended that you spend some time getting familiar with the activities before class starts.
+
+## Heads Up
+
+Next unit we will start project 3. In the following unit we will cover Computer Science basics, so be sure to brush up on BigO, sorting, and algorithm basics.
+
+## Helpful Links
 
 ### Lesson Plans
 
-* [20.1 - Lesson Plan](01-Day/01-Day-LessonPlan.md)
-* [20.2 - Lesson Plan](02-Day/02-Day-LessonPlan.md)
-* [20.3 - Lesson Plan](03-Day/03-Day-LessonPlan.md)
+  * [20.1 - Lesson Plan](./01-Day_Hooks/20.1-LESSON-PLAN.md)
 
-### Homework Activities
+  * [20.2 - Lesson Plan](./02-Day_Context-API/20.2-LESSON-PLAN.md)
 
-* [Homework Instructions](../../../01-Class-Content/20-react/02-Homework/Instructions/homework_instructions.md)
-* [Working Demo of Homework](https://react-google-books-fsf.herokuapp.com/)
+  * [20.3 - Lesson Plan](./03-Day_State-Management/20.3-LESSON-PLAN.md)
 
-### Key Activities
+### Slide Decks
 
-* [20.1 - A Form-al Review](../../../01-Class-Content/20-react/01-Activities/01-Stu_FormalReview)
-* [20.1 - Stu AJAX](../../../01-Class-Content/20-react/01-Activities/03-Stu_AJAX)
-* [20.1 - Conditional Render](../../../01-Class-Content/20-react/01-Activities/04-Stu_ConditionalRender)
-* [20.1 - Pupster App](../../../01-Class-Content/20-react/01-Activities/06-Stu_PupsterApp)
-* [20.2 - Mern](../../../01-Class-Content/20-react/01-Activities/07-Ins_Mern)
-* [20.2 - Recipes](../../../01-Class-Content/20-react/01-Activities/08-Stu_Recipes)
-* [20.2 - AJAX Books](../../../01-Class-Content/20-react/01-Activities/09-Stu_AJAXBooks)
-* [20.2 - AJAX Form Delete](../../../01-Class-Content/20-react/01-Activities/10-Stu_AJAXFormDelete)
-* [20.2 - AJAX Form Delete](../../../01-Class-Content/20-react/01-Activities/11-Stu_ReactRouter)
+  * [20.1: Introduction to React Hooks](https://docs.google.com/presentation/d/1mnPdZODvhGs0j6s4EEuATbmQjFM7XpzFxrUnsOzNsGE/edit?usp=sharing)
 
-### Helpful Links
+  * [20.2: The React Context API](https://docs.google.com/presentation/d/1OQQGzZCevIaoeCDnVikP_sKR6dtxGqcwj4PB4tbWk0A/edit?usp=sharing)
 
-* [React Documentation](https://facebook.github.io/react/docs/getting-started.html)
-* [Babel Documentation](https://babeljs.io/docs/setup/#installation)
-* [JSX Documentation](https://facebook.github.io/react/docs/jsx-in-depth.html)
-* [React ES6 Classes](https://facebook.github.io/react/docs/reusable-components.html#es6-classes)
-* [ES6 Cheatsheet](https://github.com/DrkSephy/es6-cheatsheet)
-* [React Router Tutorials](https://github.com/ReactTraining/react-router/tree/master/docs)
+  * [20.3: State Management with the Store](https://docs.google.com/presentation/d/1rRxhoiKoa6op_sE3Z0koGxq6SSy97UQHe-SrnLmvnL8/edit?usp=sharing)
 
-### Slide Shows
+### Time Tracker(s)
 
-* [20.2 - MERN](https://docs.google.com/presentation/d/1vbL_5t4cDnjToul2X2u_9cPrAb-ubGdJzTS5VCCLSE0/edit?usp=sharing)
-* [20.3 - Final Projects](https://docs.google.com/presentation/d/1Aj6gOUCAL9sLp7e4Vhi66SNannRUAt7K70V9CZ2jsmI/edit?usp=sharing)
+  * [Unit 20-State Day 1 Time Tracker](https://docs.google.com/spreadsheets/d/1x48PZdW5LcbW6zhbt1rR7EyB3mXwDGuu/edit#gid=2065026216)
 
-### Additional Course Resources
+  * [Unit 20-State Day 2 Time Tracker](https://docs.google.com/spreadsheets/d/1kPyiZ1NE0jWtqyP3c43eynx2KP0yu8WU/edit#gid=1301242405)
 
-* [Curriculum Resources](https://github.com/coding-boot-camp/curriculum-resources)
+  * [Unit 20-State Day 3 Time Tracker](https://docs.google.com/spreadsheets/d/1leakcpggPx4VrMbcjiyqDcneB8YpdGrv/edit#gid=1139601353)
+
+## Algorithms
+
+  * [01-roman-to-int](../../../01-Class-Content/20-State/03-Algorithms/01-roman-to-int)
+
+  * [02-rotation-point](../../../01-Class-Content/20-State/03-Algorithms/02-rotation-point)
+
+  * [03-simplify-path](../../../01-Class-Content/20-State/03-Algorithms/03-simplify-path)

@@ -1,237 +1,1098 @@
-## 9.1 Lesson Plan - Endpoint Testing & Projects (10:00 AM) <!--links--> &nbsp; [⬅️](../../08-Week/05-Day/05-Day-LessonPlan.md) &nbsp; [➡️](../02-Day/02-Day-LessonPlan.md)
+# 9.1 - Masters of MongoDB (10:00 AM)
 
-### Overview
+## Overview
 
-In this class, we will be introducing students to testing endpoints with Mocha and Chai.
+In this class, you will introduce the concept of the NoSQL database with MongoDB, go over its pros and cons compared with MySQL, and ultimately detail all of the required steps to employ MongoDB in future projects.
 
-`Summary: Complete activities 1 - 3 in Unit 17`
+## Instructor Notes
 
+* Complete activities `1-8` in `17-NoSQL`
 
-#### Instructor Notes
+* Before class, make sure you install MongoDB and Robo 3T on your machine--you'll need both.
 
-* Prior to class ensure you have the [Project-2-Starter](../../08-Week/Project-Resources/Project-2-Starter) set up on your machine with dependencies installed, and the databases created (see the schema.sql file in the models folder). You will use this for today's demonstrations.
+* If you haven't used MongoDB much in the past, take a look at this week's queries and solutions. This should prime you for the lecture.
 
-* Today will focus on testing API endpoints. This can serve as an opportunity to identify struggling project groups. **All groups** should have a working API at this point. The activities today will help identify groups that don't. Instructional staff should circulate heavily during activities as to identify groups that don't have working API endpoints. 
+## Learning Objectives
 
-* Have your TAs reference [01-Day-Time-Tracker](https://drive.google.com/a/trilogyed.com/file/d/1rot_0D0H6hQGR6FRnMgjaVJmoXCX8ZEq/view?usp=sharing) to help keep track of time during class.
+* Identify and explain the differences between SQL and noSQL databases.
 
-- - -
+* Install MongoDB and Robo 3T.
 
-### Class Objectives
-
-By the end of class students will:
-
-* Be able to prevent merging a PR that breaks an API endpoint.
-
-* Write an API test in terms of what the front-end expects.
-
-* Be able to test API endpoints.
-
-* Be able to articulate the value of API tests for a team working in parallel.
-
-- - -
-
-### 1. Instructor Do: Welcome (1 min)
-
-* Welcome students to class and inform them that today we'll cover testing API endpoints with Mocha and Chai. 
-
-* Assure the class that although a portion of today will be spent expanding upon the previous lesson's testing material, there will be plenty of time for project work afterward.
-
-* Ask students to sit with their project groups and then introduce the warm-up activity. 
-
-### 2. Student Do: Warm-up (10 min)
-
-Slack out the following instructions found in [01-Stu_Warmup](../../../../01-Class-Content/17-project-2/01-Activities/01-Stu_Warmup):
-
-```
-* Complete the `calculateTax` function inside of `tax.js`.
-
-* The function should take 1 parameter that represents the price of the object.
-
-* The function should return the total price with 8% tax (`price * 1.08`).
-
-* The total price should be formatted as a dollar amount (ex: 4.20).
-
-* In a separate file, use mocha and chai to test the function. It should return the proper total for a given price if the price is a number or throw an error if `price` is not a number. 
-
-* **Hints**:
-
-* Reference the code from last class if needed.
-```
-
-### 3. Instructor Do: Review (5 min)
-
-* Go over the solution, attempt to spend as little time on the function's implementation as possible, and focus primarily on the tests.
-
-  ![Warmup](Images/warmup.png)
-
-* Emphasize that testing, like linting, is only useful if everyone on the team does it.
-
-  * If one teammate tests their code locally and it passes, then a second teammate alters the code and merges their changes into master, we don't know if the project still works or not.
-
-  * Testing is only useful if we run our tests *every time* the code is changed. And just like linting Travis can do this automatically for us.
-
-### 4. Instructor Do: EndPoint Testing (10 min)
-
-* Explain to students the importance of testing endpoints:
-
-  * Most web applications need to communicate with a database. A REST API provides an interface for the client to communicate to the server and then in turn to the database.
-
-  * Development teams often use continuous integration tools alongside testing libraries to prevent merging in code that will break existing functionality.
-
-  * In our case we will use Mocha and Chai to test our API routes and utilize Travis CI to ensure that our routes continue to work with each new commit.
-
-* Open up the [Project-2-Starter](../../08-Week/Project-Resources/Project-2-Starter/server.js) and open the `server.js` file in your editor.
-
-  * Walk the class through the new code at the bottom of the `server.js` file:
-
-    ![Export App](Images/export-app.png)
-
-  * If we're running our app in a test environment, pass `{ force: true }` to `db.sequelize.sync`. This will reset the test database, once before any testing begins. This will ensure we can begin tests with a fresh database each time.
-
-  * Even though we aren't exporting `app` for another part of our application to use, we need to make the express app available for testing. By exporting the app and the database, we can then later require it in our test files.
-
-* Now open the [travis.yml](../../08-Week/Project-Resources/Project-2-Starter/.travis.yml) file found in the same folder and point out the `before_install` field:
-
-  ![Travis](Images/travis-yml.png)
-
-  * When new code is pushed up to GitHub, Travis runs all of our application's tests. In order to test an API or any code that interacts with a database, Travis needs to know which database to use. This code creates a temporary `testdb` for this purpose.
-
-* Open [02-Stu_GET-Test](../../../../01-Class-Content/17-project-2/01-Activities/02-Stu_GET-Test/Unsolved) and copy the [example.test.js](../../../../01-Class-Content/17-project-2/01-Activities/02-Stu_GET-Test/Unsolved/example.test.js) file over to the `test` folder in your copy of [Project-2-Starter](../../08-Week/Project-Resources/Project-2-Starter/test/).
-
-* Take a moment to demonstrate the code in your editor.
-
-  ![Get Example](Images/get-example.png)
-
-* Explain that this test verifies that we can retrieve all `example` records from the database using the `/api/examples` endpoint.
-
-* Run the test locally using `npm run test` and show that it passes. **Note: Be sure to run the schema.sql file in the `models` folder and install dependencies first if you haven't already.**
-
-* Inform the class that while this may look like a lot of code, much of it is be boilerplate we will use for all endpoint tests. Go through each piece one at a time:
-
-  * After requiring dependencies, we set up the `chai-http` plugin. This allows us to start a test server and make HTTP requests to it.
-
-  * The `beforeEach` block tells mocha, that before each test (`it` block), it should run the code inside.
+* Create a Mongo database.
   
-    * In this case, we're creating a test server and creating a `request` object we can use to make requests to the server.
+* Perform basic CRUD actions on their Mongo database.
 
-    * We're also clearing the test database before each test so we can know *exactly* what should be in it before running tests.
+* Create a Mongoose schema to dictate rules for their MongoDB data.
+
+## Slides
+
+[9.1: Intro To MongoDB](https://docs.google.com/presentation/d/1JHT8-zZ-JWHg_zKDXEVy-leNegSipr26HBTNIEl3J3Y/edit?usp=sharing)
+
+[9.1: Career Services](https://docs.google.com/presentation/d/18inCMR9TB47q3yEY-YflqA-96cBqXheM9X0BrD0Gk9Y/edit#slide=id.p7)
+
+## Time Tracker
+
+[9.1: Intro To MongoDB Time Tracker](https://docs.google.com/spreadsheets/d/1C-zfaTXOhNrgey7S0YsHv_vlX2YogdaGv5Jm_Vi5qBM/edit#gid=0)
+
+### 1. Instructor Do: What is MongoDB (10 min)
+
+* Welcome students to class.
+
+* Open the [slide deck](https://docs.google.com/presentation/d/1hXNcmzYqwlhgM-C78vNFKwX10PhW_iwIo0guwzHO48c/edit?usp=sharing) and follow these prompts with their corresponding slides:
+
+  * **Introduction to MongoDB (Title)**: Today's class will be an introduction to MongoDB. 
+
+  * **What's MongoDB?**: MongoDB is a very popular noSQL database that uses a document-oriented model as opposed to a table-based relational model (SQL). MongoDB stores data in BSON format (effectively, compressed JSONs).
+
+  * **Relational Databases**: Relational databases rely heavily on joins to combine relevant data.
+
+  * **Document Database (NoSQL)**: NoSQL databases on the other hand are effectively JSON objects and are very flexible. 
   
-  * Then inside of the `it` block, we're first inserting some mock data into the test data using `bulkCreate`. This method works like the regular sequelize `create` method, but allows for inserting multiple entries at once.
+  * **MongoDB Storage**: Mongo databases contain collections which contain documents. 
 
-  * We then make a GET request to the `/api/examples` endpoint. Once the request finishes, we run assertions on the response. In particular, we make sure that:
+  * **Mongo Terms**: Use this slide to cover the relevant Mongo terms.
 
-    * The request completes successfully, i.e. there is no error.
+### 2. Students Do: Installing MongoDB / Robo 3T (20 min)
 
-    * The response status is `200`.
+**Part 1: Install Mongo**
 
-    * The response body is an array with 2 elements.
+* Have students install MongoDB by using the [03-Supplemental/Installing-MongoDB.md](../../../../01-Class-Content/17-NoSQL/03-Supplemental/Installing-MongoDB.md).
 
-    * The elements in the response body match the elements we saved to the database with the `bulkCreate` method.
+* After 10 minutes ask the class:
 
-* Finally we call the `done` function. This is optionally available as an argument passed into every test. Since this test runs asynchronously, we need to call `done` so that mocha knows when the test is complete.
+  * Can everyone start up MongoDB by typing `mongod` into your terminal/bash window?
 
-### 5. Student Do: GET Route (15 min)
+  * If mongo is successfully installed, their terminal/bash screens will look like this:
 
-* Instructional staff should circulate *heavily* during this activity. All groups need to have a working GET route. If you find a group that does not, TAs should work closely with them during project time today and ensure that they leave with working GET and POST routes.
-
-Slack out the following instructions found in [02-Stu_GET-Test](../../../../01-Class-Content/17-project-2/01-Activities/02-Stu_GET-Test):
-
-  ```
-  * Copy `example.test.js` over to the `test` folder in your local project repo. Rename this file to be to match the name of the api you're testing, e.g. `todo.test.js` or `recipes.test.js`.
-
-  * Update the test endpoint to be one in your own project. The endpoint should return all instances of a model from the database.
-
-  * Update the `bulkCreate` method to use your own model name instead of `Example`. Update the data being passed into the `bulkCreate` method to match what is expected by your model's schema.
-
-  * Update the assertions to expect objects matching the ones passed into the bulk create method.
-
-  * Run the tests by running `npm run test` and make sure everything passes.
-
-  * **Hints**:
-
-  * The Project 2 Starter repo included all the necessary dependencies and scripts in the `package.json` for this activity. If you get an error about missing dependencies, double check it wasn't removed beforehand.
-
-  * Ask an Instructor or TA for help if you get stuck!
-
-  * **Bonus**:
-
-  * If you have a route for getting a single record of the same type by id, add a test for it!
+  ```bash
+  ➜  ~ mongod
+  2019-05-03T11:00:35.067-0400 I CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+  2019-05-03T11:00:35.110-0400 I CONTROL  [initandlisten] MongoDB starting : pid=785 port=27017 dbpath=/data/db 64-bit host=Daniels-MBP-2
+  2019-05-03T11:00:35.110-0400 I CONTROL  [initandlisten] db version v4.0.3
+  2019-05-03T11:00:35.110-0400 I CONTROL  [initandlisten] git version: 7ea530946fa7880364d88c8d8b6026bbc9ffa48c
+  2019-05-03T11:00:35.110-0400 I CONTROL  [initandlisten] allocator: system
+  2019-05-03T11:00:35.110-0400 I CONTROL  [initandlisten] modules: none
+  2019-05-03T11:00:35.110-0400 I CONTROL  [initandlisten] build environment:
+  2019-05-03T11:00:35.110-0400 I CONTROL  [initandlisten]     distarch: x86_64
+  2019-05-03T11:00:35.110-0400 I CONTROL  [initandlisten]     target_arch: x86_64
   ```
 
-### 6. Instructor Do: POST Route (10 min)
+* If there are any remaining students who do not have it installed and configured, ask them to raise their hand so a TA can help debug the issue.
 
-* Explain that we want to test *all* of our routes, not just GET routes.
+**Part 2: Install Robo 3T**
 
-* Open up [03-Stu_POST-Test](../../../../01-Class-Content/17-project-2/01-Activities/03-Stu_POST-Test/Unsolved) and, like the previous demonstration, copy and paste the [example.post.test.js](../../../../01-Class-Content/17-project-2/01-Activities/03-Stu_POST-Test/Unsolved) file over to the `test` folder in your copy of [Project-2-Starter](../../08-Week/Project-Resources/Project-2-Starter/test/).
+* Tell the class that they are now going to install Robo 3T, a native cross-platform MongoDB management tool that will make working with MongoDB easier and more intuitive.
 
-* Demonstrate the code in your editor:
+* Direct the students to the Mongo 3T install page [https://robomongo.org/download](https://robomongo.org/download) and have them click the green download button.
 
-  ![Post Example](Images/post-example.png)
+  ![Download Robo 3T](Images/install-robo-3t.png)
 
-* Explain that this test verifies that we can successfully save an example to the database by using the `POST /api/examples` endpoint.
+* Next have them choose their OS and download the application.
 
-* Walk through the code as a class. Check for students' understanding of what should now be familiar code. Be sure to highlight the following:
+  ![Download Robo 3T](Images/choose-os.png)
 
-  * Like before, we need to set up `chai-http` in order to start a server and make requests.
+* After installing students should be able to successfully open Robo 3T on their machine.
 
-  * Before each test, we recreate the request server and reset the test database.
+* Ask the students the following question(s):
 
-  * We create the `reqBody` object which will be sent to the endpoint to create a new `example` record in the database.
+  * ☝️ Did anyone have trouble installing Mongo or Robot 3T
 
-  * After the request has been made, we run assertions on the response. In this case, we're checking that:
+  * 🙋 If yes, have a TA come around and help those students.
 
-    * The request completes successfully, i.e. there is no error.
+* Take any questions before moving on.
 
-    * The response status is `200`.
+### 3. Instructor Do: Create, Insert and Find (10 min) 
 
-    * The response body is an object that matches the `reqBody` object. This indicates that the record was created successfully.
+* In order to get set up for the activity, direct the students to:
+  
+  * Run `mongod` in one tab, if they haven't already. Explain that `mongod` is the primary daemon process for the MongoDB system that handles data access and requests and background management operations. Tell them that when you start `mongod` you're telling your machine to start the MongoDB process and run it in the background.
+  
+  * Run `mongo` to start up the mongo shell in another tab. Explain that `mongo` is the command-line shell that connects to the specific instance of `mongod` that they just started.
 
-* Open `apiRoutes.js` and demonstrate this line `res.json(dbExample);` in the POST route is the one that determined the response that we get back. 
+* Next explain that you'll be going over how to create a database, insert data into a collection and find stored data using MongoDB.
 
-  ![Post-response](Images/post-res.png)
+* Following the comments and queries located in [01-Ins-Create-Insert-and-Find/queries.md](../../../..01-Class-Content/17-NoSQL/01-Activities/01-Ins-Create-Insert-and-Find/README.md), demonstrate to the class how to create a new database, insert and find new records.
 
-* This is how we know that we should be testing for an object.
+* Switch to a new database:
 
-* Emphasize that students should design tests based on the response that they are expecting from their endpoint. Often this means faking or mocking data. What we're testing is that our API works as expected with known data we can verify.
+  ```
+  use lessondb
+  ```
 
-### 7. Student Do: POST Route (15 min)
+* Show the current db:
 
-* Instructional staff should circulate *heavily* during this activity. All groups need to have a working POST route. If you find a group that does not, TAs should work closely with them until they do or make a note to assist after the lesson. 
+  ```
+  db
+  ```
 
-Slack out the following instructions found in [03-Stu_POST-Test](../../../../01-Class-Content/17-project-2/01-Activities/03-Stu_POST-Test):
+* Insert data:
+
+  ```js
+  db.places.insert({"continent": "Africa", "country":"Morocco", "majorcities": ["Casablanca", "Fez", "Marrakech"]})
+  ```
+
+* As a class, come up with five more countries and insert them into the db using the same syntax as above.
+
+  * Observe where the data was entered in the MongoDB instance (in mongod).
+
+* Find all data in the collection:
+
+  ```js
+  db.places.find()
+  ```
+
+  * NOTE: the MongoDB `_id` was created automatically.
+
+  * This id is specific for each doc in the collection:
+
+* Add `.pretty()` to make your data more readable:
+
+  ```
+  db.places.find().pretty()
+  ```
+
+* Find specific data by matching a field:
+
+  ```js
+  db.places.find({"continent": "Africa"})
+  db.places.find({"country": "Morocco"})
+  ```
+
+* Find specific data by matching an _id:
+
+  ```js
+  db.places.find({_id: ObjectId("5416fe1d94bcf86cd785439036")})`
+  ```
+
+* When you are done tell the class that this is just the beginning as they will be sharpening their mongo skills in the coming days and weeks.
+
+* Ask the students the following question(s):
+
+  * ☝️ What keyword do we use to switch to a new database?
+
+  * 🙋 The `use` keyword.
+
+  * ☝️ What keyword do we use to find data?
+
+  * 🙋 The `find` keyword.
+
+* Take any questions before moving on.
+
+### 4. Students Do: Create, Insert and Find data in MongoDB (10 min)
+
+* Direct students to the instructions of their next activity in [02-Create-Insert-and-Find/Unsolved/README.md](../../../../01-Class-Content/17-NoSQL/01-Activities/02-Create-Insert-and-Find/Unsolved/README.md).
+
+```md
+# Creating, Inserting and Finding in MongoDB
+
+## Instructions
+
+* Use the command line to create a classroom database. 
+
+* Insert entries for yourself and the people in your row in a `students` collection.
+
+* Each document should have:
+
+  * A field of `name` with the person's name.
+
+  * A field of `rownumber` which will contain the row number that they are in.
+
+  * A field of `os` which will contain the Operating System of the computer they are using: 'Mac', 'Win', etc
+
+  * A field of `hobbies` with an array of the hobbies the person likes to do.
+
+* Use find commands to get:
+
+  * A list of everyone in your row.
+
+  * An entry for a single person.
+
+  * The entries for all the Mac users in your row.
+
+## 💡 Hint(s)
+
+* Use the [Mongo guides](https://docs.mongodb.com/guides/) if you are stuck.
+
+## 🏆 Bonus
+
+* If you finish early, check out the MongoDB documentation and figure out how to find users by an entry in an array.
 
 ```
-* Copy `example.post.test.js` over to the `test` folder in your local project repo. Rename this file to be to match the name of the api you're testing, e.g. `todo.post.test.js` or `recipes.post.test.js`.
 
-* Update the test endpoint to be one in your own project. The endpoint should use data submitted on `req.body` to create a new instance of a model.
+### 5. Instructor Do: Review Create, Insert and Find data in MongoDB (5 min)
 
-* Update `reqBody` to match what is expected by your model's schema.
+* Open [02-Stu-Create-Insert-and-Find/Solved/README.md](../../../../01-Class-Content/17-NoSQL/01-Activities/02-Stu-Create-Insert-and-Find/Solved/README.md) in your IDE and run the following commands.
 
-* Update the final assertion to expect an object matching the one sent to the endpoint.
+* Create a classroom db and insert a classmate**
 
-* Run the tests by running `npm run test` and make sure everything passes.
+  ```sql
+  use classroom
+  db.students.insert({name: 'Steve', row:3, os:'Mac', hobbies:['Coding', 'Reading', 'Running'] })
+  ```
 
-* **Hints**:
+* Find all students in row 3**
 
-* The Project 2 Starter repo included all the necessary dependencies and scripts in the `package.json` for this activity. If you get an error about missing dependencies, double check it wasn't removed beforehand.
+  ```sql
+  db.students.find({row:3})
+  ```
 
-* Ask an Instructor or TA for help if you get stuck!
+* Find students named Steve**
+
+  ```sql
+  db.students.find({name:'Steve'})
+  ```
+
+* Find students in row 3 that use Mac's**
+
+  ```sql
+  db.students.find({row:3, os:'Mac'})
+  ```
+
+* BONUS: Find by entry in an array**
+
+  ```sql
+  db.students.find({"hobbies": {$in: ["Coding"]}})
+  ```
+
+* Ask the students the following question(s):
+
+  * ☝️ How do we find a record inside an array?
+
+  * 🙋 Review the syntax using `db.students.find({"hobbies": {$in: ["Coding"]}})` as an example.
+
+* Take any questions before moving on.
+
+### 6. Instructor Do: Updating, Deleting and Dropping in MongoDB (10 mins)
+
+* Use the prompts and talking points below to review the following key point(s):
+
+  * ✔ We use `update` to update a value.
+
+  * ✔ We use `$set` to replace the value of a field with the specified value.
+
+  * ✔ We use `push` to update values in an array.
+
+  * ✔ We use `remove` to delete items.
+
+  * ✔ We use `drop` to drop a collection.
+
+* Open [03-Ins-Update-Delete-and-Drop/queries.md](../../../../01-Class-Content/17-NoSQL/01-Activities/03-Ins-Update-Delete-and-Drop/README.md) in your IDE and lead students the following commands.
+
+* Make sure you are using the database, `lessondb`,  that we created earlier.
+
+  ```sql
+  db
+  use lessondb
+  ```
+
+**Update**
+
+* Tell the class that we update data using `db.[COLLECTION_NAME].update()`
+
+  ```sql
+  db.places.update({"country": "Morocco"}, {$set: {"continent": "Antarctica"}})
+  ```
+
+* Note that the above will only update the first entry it matches.
+  
+* Explain that to update multiple entries we add `{multi: true}`.
+
+  ```sql
+  db.places.update({"country": "Morocco"}, {$set: {"continent": "Antarctica"}}, {multi: true})
+  ```
+
+* Recall from the earlier demo the structure of our document:
+
+  ```sql
+  db.places.insert({"continent": "Africa", "country": "Morocco", "majorCities": ["Casablanca", "Fez", "Marrakech"]})
+  ```
+
+* Ask the students the following question(s):
+
+  * ☝️ What do you think will happen when I run the following command, even though there is not a `capital` field in the document?
+
+    ```sql
+    db.places.update({"country": "Morocco"}, {$set: {"capital": "Rabat"}})
+    ```
+
+  * 🙋 `$set` will create the field `capital`.
+
+* Tell the class that the newly created field can now be updated with the same command:
+
+  ```sql
+  db.places.update({"country": "Morocco"}, {$set: {"capital": "RABAT"}})
+  ```
+
+* We can update the values in an array with `$push`:
+
+  ```sql
+  db.places.update({"country": "Morocco"}, {$push: {"majorcities": "Agadir"}})
+  ```
+
+**Delete**
+
+* We delete an entry with `db.[COLLECTION_NAME].remove()`
+
+  ```sql
+  db.places.remove({"country": "Morocco"})
+  ```
+
+* We can also empty a collection with `db.[COLLECTION_NAME].remove()`
+
+  ```sql
+  db.places.remove({})
+  ```
+
+**Drop**
+
+* We drop a collection with `db.[COLLECTION_NAME].drop()`
+
+  ```sql
+  db.places.drop()
+  ```
+
+* To drop a database:
+
+  ```sql
+  db.dropDatabase()
+  ```
+
+* Ask the students the following question(s):
+
+  * ☝️ What does the `$push` method do?
+
+  * 🙋 It updates the values in an array, `db.places.update({"country": "Morocco"}, {$push: {"majorcities": "Agadir"}})`
+
+  * ☝️ Which method deletes an entry from a collection?
+
+  * 🙋 We can use remove, `db.[COLLECTION_NAME].remove()`
+
+* Take any clarifying questions before moving on.
+
+### 7. Students Do: Update, Delete and Drop in MongoDB (15 min)
+
+* Direct students towards the next activity in [04-Student-Update-Delete-and-Drop/Unsolved/README.md](../../../../01-Class-Content/17-NoSQL/01-Activities/04-Stu-Update-Delete-and-Drop/Unsolved/README.md)
+
+```md
+# Update, Delete and Drop in MongoDB
+
+* Go back to your classroom database. You've decided to take on a new hobby, extreme basket weaving. While practicing for your Extreme Basket Weaving Competition, you broke the computer of the person next to you. They're now using a new operating system now. Another student in your row saw you break that computer and wisely decided to move. You are worried everyone else will leave and you'll have to sit all alone. You decide to bribe everyone who didn’t leave with candy. All this work made you hungry, so you bought yourself some candy. 
+  
+## Instructions
+
+* Add Extreme Basket Weaving to your array of hobbies.
+
+* Change the operating system of the student next to you.
+
+* Remove the student to the other side of you from your database.
+
+* Add a field of `gavecandy` with a value of `false` to everyone in the array.
+
+* Change the value of `gavecandy` to true for yourself.
+
+## 💡 Hint(s)
+
+* Use the [Mongo guides](https://docs.mongodb.com/guides/) if you are stuck.
+
+## 🏆 Bonus 
+
+* Insert five more documents with one command. Use [https://docs.mongodb.com/manual/tutorial/query-documents/](https://docs.mongodb.com/manual/tutorial/query-documents/) to see how you can accomplish this.
+
 ```
 
-### 8. Students Do: Project Work (54 min)
+### 8. Instructor Do: Review Update, Delete and Drop in MongoDB (5 min)
 
-* Groups should work on projects while instructional staff make themselves available for assistance.
+* Open [04-Stu-Update-Delete-and-Drop/Solved/README.md](../../../../01-Class-Content/17-NoSQL/01-Activities/04-Stu-Update-Delete-and-Drop/Solved/README.md) in your IDE and walk students through the queries.
 
-- - -
+* Go back to your classroom database.
 
-### 8. Everyone Do: BREAK (30 min)
+  ```sql
+  db
+  use classroom
+  ```
 
-- - -
+* You've decided to take on a new hobby. Add Extreme Basketweaving to your array of hobbies.
 
-### 9. Students Do: Project Work (120 min)
+  ```sql
+  db.students.update({name: "Steve"}, {$push: {"hobbies":"Extreme Basket weaving"}})
+  ```
 
-* Groups should work on projects while instructional staff make themselves available for assistance.
+* While practicing for your Extreme Basket weaving Competition, you broke the computer of the person next to you. They're using a new Operating System now. Change their os field.
+
+  ```sql
+  db.students.update({name: [name of neighbor]}, {$set: {os:[name of another os]}})
+  ```
+
+* Another student in your row saw you break that computer and wisely decided to move. Remove them from your database.
+
+  ```sql
+  db.students.remove({name: [name of another neighbor]})
+  ```
+
+* You are worried everyone else will leave and you'll have to sit all alone. You decide to bribe everyone who didn't leave with candy. Add a field of `gavecandy` with a value of false to everyone in the array so you can keep track.
+
+  ```sql
+  db.students.update({}, {$set: {gavecandy:false}}, {multi:true})
+  ```
+
+* All this work made you hungry, so you bought yourself some candy. Change the value of `gavecandy` to `true` in your entry.
+
+  ```sql
+  db.students.update({name:'Steve'}, {$set: {gavecandy:true}})
+  ```
+
+## Bonus
+
+* Insert five more documents with one command.
+
+  ```sql
+  db.students.insertMany([
+    {name: 'Jane', row:1, os:'Mac', hobbies:['Coding', 'Sleeping', 'Karate'] },
+    {name: 'Mary', row:2, os:'Mac', hobbies:['Baseball', 'Basketball', 'Tai Chi'] },
+    {name: 'Alexis', row:3, os:'Lin', hobbies:['Gaming', 'Reading', 'Gardening'] },
+    {name: 'Gary', row:4, os:'Mac', hobbies:['Walking', 'Reading', 'Mountain Climbing'] },
+    {name: 'Ed', row:5, os:'Win', hobbies:['Coding', 'Karate', 'Scuba Diving'] }
+  ]);
+  ```
+
+* Return all documents of students who have reading as a hobby or a mac operating system.
+
+  ```sql
+  db.students.find(
+      {$or:[
+          {"hobbies":{"$in":["Reading"]}},
+          {"os":{"$in":["mac"]}}
+      ]}
+  )
+  ```
+
+* Ask the students the following question(s):
+
+  * ☝️ What does the `$push` method do?
+
+  * 🙋 It updates the values in an array, `db.places.update({"country": "Morocco"}, {$push: {"majorcities": "Agadir"}})`
+
+  * ☝️ Which method deletes an entry from a collection?
+
+  * 🙋 We can use remove, `db.[COLLECTION_NAME].remove()`
+
+* When you are done take any clarifying questions before moving on.
+
+### 9. Instructor Do: Sorting in MongoDB (10 mins)
+
+* Use the prompts and talking points below to demonstrate the following key point(s):
+
+  * ✔ MongoDB has a way to sort results just like MySQL.
+
+  * ✔ We can sort by `integer`, `_id` and `class`.
+
+* Tell the students to create a new db named `zoo` and insert 10 animals with the following attributes:
+
+  * `numLegs` an integer that points to the number of legs.
+
+  * `class` as string that points to the animal's class ("reptile", "mammal" etc).
+
+  * `weight` an integer that points to the animals weight.
+
+  * `name` a string that points to the animal's name.
+
+* Example:
+
+  ```js
+  {
+    "name": "Panda",
+    "numLegs": 4,
+    "class": "mammal",
+    "weight": 254
+  }
+  ```
+
+* Open [05-Ins-Sorting-In-Mongo/README.md](../../../../01-Class-Content/17-NoSQL/01-Activities/05-Ins-Sorting-In-Mongo/README.md) in your IDE and demonstrate some of the most common ways we sort using MongoDB.
+
+* In the mongo shell, run the following commands one at a time having students follow along.
+
+* **Sort by id:**
+
+* The id contains a timestamp, so sorting by id will sort by when they were entered to the database.
+
+  * Explain that a value of `1` is for ascending order and `-1` is for descending order.
+
+```sql
+db.animals.find().sort({ _id:1 });
+db.animals.find().sort({ _id:-1 });
+```
+
+* **Sort by an integer - numLegs:**
+
+```sql
+db.animals.find().sort({ numLegs:1 });
+db.animals.find().sort({ numLegs:-1 });
+```
+
+* **Sort by a string - class:**
+
+```sql
+db.animals.find().sort({ class:1 });
+db.animals.find().sort({ class:-1 });
+```
+
+* When you are done, check for understanding and take any further questions before moving on.
+
+### 10. Instructor Do: Introduction to MongoJS (10 mins)
+
+* Tell the class that now that they have an understanding of how MongoDB works we are going to dive into MongoJS.
+
+* MongoJS wraps `mongodb-native` and emulates the official MongoDB API.
+
+  * We are going to use this to interact with our Node.JS applications.
+  
+* Ask the students the following question(s):
+
+  * ☝️ What does the `sort` method use to determine what order to put records in?
+
+  * 🙋 The `timestamp`.
+
+* When you are done take any clarifying questions before moving on.
+
+* Use the prompts and talking points below to demonstrate the following key point(s):
+
+  * ✔ MongoJS wraps `mongodb-native` and emulates the official MongoDB API.
+
+* Have the students visit [MongoJS](https://www.npmjs.com/package/mongojs) in their browser.
+
+* Ask for a volunteer to guess how you might use `MongoJS`: `find`, `insert`, `remove` and `sort`.
+
+* These methods are nearly identical to running them in the `mongo` shell so they will feel comfortable with MongoJS.
+
+* Tell the class not to worry if they are confused, they will get plenty of practice moving forward.
+
+### 11. Student Do: MongoJS Sorting (15 mins)
+
+* Open [06-Stu-MongoJS-Sorting/Solved/server.js](../../../../01-Class-Content/17-noSQL/01-Activities/06-Stu-MongoJS-Sorting/Solved/server.js) solution on your machine, and run `server.js` with Node.
+
+* Visit the different routes in your web browser to show students the results:
+
+  * `/` will display a simple hello world message.
+  * `/all` will display JSON with every animal in your zoo collection.
+  * `/name` will display JSON with every animal, sorted by name.
+  * `/weight` will display JSON with every animal, sorted by weight.
+
+* Next direct students towards the unsolved version located in [06-Stu-MongoJS-Sorting/Unsolved/server.js](../../../../01-Class-Content/17-noSQL/01-Activities/06-Stu-MongoJS-Sorting/Unsolved/server.js) and have them complete the activity.
+
+* **Instructions:**
+
+* Create four routes that display results from your zoo collection
+
+  * 0: Root: Displays a simple "Hello World" message (no mongo required).
+  * 1: All: Send JSON response with all animals
+  * 2: Name: Send JSON response sorted by name in ascending order
+  * 3: Weight: Send JSON response sorted by weight in descending order
+
+* Tell your students to ask you or a TA for help if they have any questions while working on the assignment.
+
+### 12. Break (30 mins)
+
+### 13. Instructor Do: Review Mongo JS Sorting (5 mins)
+
+* Ask the students how the activity went, and encourage anyone who had trouble using it. 
+
+* Remember, even if it is similar to using the `mongo` shell, this is still the first time they've used this node package.
+
+* Open [06-Stu-MongoJS-Sorting/Unsolved/server.js](../../../../01-Class-Content/17-noSQL/01-Activities/06-Stu-MongoJS-Sorting/Unsolved/server.js) on your machine and ask for volunteers to help guide you through the activity.
+
+* After each route, start the `server.js` file and use your web browser to check the route. 
+
+* If it works, great! If not, ask the student who gave the answer if you had mistyped something (since they gave the answer they'll probably be able to point out the error better than anyone).
+
+* Answer any clarifying questions before moving on.
+
+### 14. Student Do: MongoJS CRUD (20 mins)
+
+* Open [07-Stu-Mongo-CRUD/Solved/server.js](../../../../01-Class-Content/17-noSQL/01-Activities/07-Stu-Mongo-CRUD/Solved/server.js) on your machine and demonstrate the solved version of the app by creating, updating and deleting a few notes.
+
+  * Note that to update a note you have to click on it's title, then update the form and submit.
+
+* After demoing, direct students to the unsolved activity located in [07-Stu-Mongo-CRUD/Unsolved/server.js](../../../../01-Class-Content/17-noSQL/01-Activities/07-Stu-Mongo-CRUD/Unsolved/server.js)
+
+* **Instructions:**
+
+  * Update the [server.js](Unsolved/server.js) file to include the following six routes.
+
+  * You can see a list of methods available to you here. [https: github.com/mafintosh/mongojs#api](https://github.com/mafintosh/mongojs#api).
+
+  * Save a note to the database's collection `POST: /submit`
+
+  * Retrieve all notes from the database's collection `GET: /all`
+  
+  * Retrieve one note in the database's collection by it's ObjectId `GET: /find/:id`
+    
+  * Update one note in the database's collection by it's ObjectId `POST: /update/:id`
+
+  * Delete one note from the database's collection by it's ObjectId `DELETE: /delete/:id`
+
+  * Clear the entire note collection `DELETE: /clearall`
+
+### 15. Instructor Do: Review MongoJS CRUD (10 mins)
+
+* Open [07-Stu-Mongo-CRUD/Solved/server.js](../../../../01-Class-Content/17-noSQL/01-Activities/07-Stu-Mongo-CRUD/Solved/server.js) and walk students through the code.
+
+* Take any clarifying questions before moving on.
+
+### 16. Instructor Do: Demonstrate Robo 3T (5 mins)
+
+* Instruct your students to open the application. They should see a window like this:
+
+  ![6-roboConnect](Images/6-roboConnect.jpg)
+
+* They should hit the connect button. Do the same to show students what comes next.
+
+  * `/all` will display JSON with every animal in your zoo collection.
+
+  * `/name` will display JSON with every animal, sorted by name.
+
+  * `/weight` will display JSON with every animal, sorted by weight.
+
+* When you are done take any clarifying questions before moving on.
+
+### 17. Student Do: Robot 3T Practice (5 mins)
+
+* Instruct students to drop their classroom collection and create a new one.
+
+* **Instructions:**
+
+  * ONLY USE ROBO 3T FOR THIS ASSIGNMENT
+
+  * In a new classroom collection, re-enter your `name`, `os`, and `hobby` info array. 
+  
+    * This should be entered using the `right-click -> Insert Object` method. 
+
+  * Next, Slack out your `name`, `os` and `hobbies` into the classroom chat.
+
+  * As students enter their BSON info into slack, insert it into your database.
+
+  * By the end of the exercise, you should have every student's information in your classroom collection.
+
+* Direct students to the next activity located in [08-Stu-Robo-3T](../../../../01-Class-Content/17-NoSQL/01-Activities/08-Stu-Robo-3T/README.md).
+
+```md
+# Robot 3T
+
+* In this activity, you will practice using Robo 3T.
+
+## Instructions
+
+* Drop your classroom collection and create a new one.
+
+* In a new classroom collection, re-enter your `name`, `os`, and `hobby` info array. 
+
+  * This should be entered using the `right-click -> Insert Object` method. 
+
+* Next, Slack out your `name`, `os` and `hobbies` into the classroom chat.
+
+* As students enter their BSON info into slack, insert it into your database.
+
+* By the end of the exercise, you should have every student's information in your classroom collection.
+```
+
+## 18. Instructor Do: Reintroduce Career Services (10 mins)
+
+* Ask the students to raise their hand if they are actively engaged in or intend to engage in a job search at the end of the program.
+
+* Remind the class that, now that they are over two-thirds of the way through the program, this is a great time to start thinking about their job search and engaging with the many Career Services options provided as part of the program.
+
+* Go through the [slides on Career Services](https://docs.google.com/presentation/d/18inCMR9TB47q3yEY-YflqA-96cBqXheM9X0BrD0Gk9Y/edit#slide=id.p7).
+
+* If there are any questions, advise students to reach out to their Student Success Manager.
+
+### 19. Instructor Do: Demo MongoJS Warmup (5 mins)
+
+* Open [09-Stu-Mongojs-Review/Solved/server.js](../../../../01-Class-Content/17-noSQL/01-Activities/09-Stu-Mongojs-Review/Solved/server.js) on your machine. Run `npm install` then `node server.js` to launch the application.
+
+* Demonstrate to the students how the app lets you add books as well as mark books read or unread.
+
+  * Note the fact that an explicit route for the root, `http://localhost:3000` does not exist. However, the page still loads `index.html` from the `/public` folder. 
+
+* Explain to the students that this is a convention from the static middleware that we are using. 
+
+  * Point to this line: `app.use(express.static("public"));`
+
+* Tell the class that in the next activity they will complete the routes in the server file so the site can display and edit the book data.
+
+### 20. Student Do: MongoJS Warm Up (15 mins)
+
+* Direct the students towards the activity located in [09-Stu-Mongojs-Review/Unsolved/server.js](../../../../01-Class-Content/17-noSQL/01-Activities/09-Stu-Mongojs-Review/Unsolved/server.js)
+
+```md
+# MongoJS Review
+
+## Instructions
+
+* Complete the routes in the server file so the site can display and edit the book data. 
+
+## 💡 Hint(s)
+
+* Use the [Mongo guides](https://docs.mongodb.com/guides/) if you are stuck.
+
+## 🏆 Bonus 
+
+* Insert five more documents with one command. Use [https://docs.mongodb.com/manual/tutorial/query-documents/](https://docs.mongodb.com/manual/tutorial/query-documents/) to see how you can accomplish this.
+
+```
+
+### 21. Instructor Do: Review MongoJS Warmup (5 mins)
+  
+* Open [09-Stu-Mongojs-Review/Solved/server.js](../../../../01-Class-Content/17-noSQL/01-Activities/09-Stu-Mongojs-Review/Solved/server.js) and scroll down to the routes.
+
+* Use the prompts and talking points below to review each route.
+
+* Our `/submit` route uses `save` to create a new record.
+
+```js
+app.post("/submit", ({ body }, res) => {
+  const book = body;
+
+  book.read = false;
+
+  db.books.save(book, (error, data) => {
+    if (error) {
+      res.send(error);
+    } else {
+      res.send(data);
+    }
+  });
+});
+```
+
+* Our `/read` route uses `find` to return books that have `read: true`.
+
+```js
+app.get("/read", (req, res) => {
+  db.books.find({ read: true }, (error, data) => {
+    if (error) {
+      res.send(error);
+    } else {
+      res.json(data);
+    }
+  });
+});
+```
+
+* Our `/unread` route uses `find` to return books that have `read: false`.
+
+```js
+app.get("/unread", (req, res) => {
+  db.books.find({ read: false }, (error, data) => {
+    if (error) {
+      res.send(error);
+    } else {
+      res.json(data);
+    }
+  });
+});
+```
+
+* Our `/markread/:id` route finds a book by `ObjectID` and uses `update` to set `read: true`.
+
+```js
+app.put("/markread/:id", ({ params }, res) => {
+  db.books.update(
+    {
+      _id: mongojs.ObjectId(params.id)
+    },
+    {
+      $set: {
+        read: true
+      }
+    },
+
+    (error, data) => {
+      if (error) {
+        res.send(error);
+      } else {
+        res.send(data);
+      }
+    }
+  );
+});
+```
+
+* Our `/markunread/:id` route finds a book by `ObjectID` and uses `update` to set `read: false`.
+
+```js
+app.put("/markunread/:id", ({ params }, res) => {
+  db.books.update(
+    {
+      _id: mongojs.ObjectId(params.id)
+    },
+    {
+      $set: {
+        read: false
+      }
+    },
+
+    (error, data) => {
+      if (error) {
+        res.send(error);
+      } else {
+        res.send(data);
+      }
+    }
+  );
+});
+```
+
+* When you are done, take any clarifying questions and move on to the next demonstration.
+
+### 22. Instructor Do: Introduce Mongoose (10 mins)
+
+* Tell the class that they are now going to be introduced to Mongoose, an Object Data Modeling (ODM) library for Mongo and Node. 
+
+* Use the prompts and talking points below to demonstrate the following key point(s):
+
+  * ✔ Mongoose lets you define schemas for your collections.
+
+  * ✔ It also helps manage data relationships and enforce validations.
+
+* Next open [10-Ins-Mongoose-Schema](../../../../01-Class-Content/17-NoSQL/01-Activities/10-Ins-Mongoose-Schema) in your IDE and run `npm install` followed by `node server.js`.
+
+* In your terminal you should see the following if the connection was successful.
+
+```js
+{ array: [ 'item1', 'item2', 'item3' ],
+  _id: 5d445e4e98a11a33f37d6010,
+  boolean: false,
+  string:
+   '"Don\'t worry if it doesn\'t work right. If everything did, you\'d be out of a job" - Mosher\'s Law of Software Engineering',
+  number: 42,
+  date: 2019-08-02T16:01:18.500Z,
+  __v: 0 }
+```
+
+* Step through the code that we used to make our db connection and schema.
+
+* We first require the Mongoose package and our `exampleModel` file, which contains our schema.
+
+  ```js
+  const mongoose = require("mongoose");
+  const Example = require("./exampleModel.js"); // we will go over this file next as it contains our schema
+  ```
+
+* We then open a connection `mongodb://localhost/dbExample` on our locally running instance of MongoDB.
+
+  ```js
+  mongoose.connect("mongodb://localhost/dbExample", { useNewUrlParser: true });
+  ```
+
+* Then we create some data to insert into our database.
+
+  ```js
+  const data = {
+    array: ["item1", "item2", "item3"],
+    boolean: false,
+    string:
+      "We are learning mongoose!",
+    number: 42
+  };
+  ```
+
+* Next we call `create` on our `Example` schema and pass in our data.
+
+  ```js
+  Example.create(data)
+    .then(dbExample => {
+      console.log(dbExample);
+    })
+    .catch(({ message }) => {
+      console.log(message);
+    });
+  ```
+
+* Now open [10-Ins-Mongoose-Schema](../../../../01-Class-Content/17-NoSQL/01-Activities/10-Ins-Mongoose-Schema/exampleModel.js) in your editor.
+
+* Tell the class that Mongoose models are similar to those in sequelize. 
+
+* We define a schema for the model and then use the model to query our database. 
+
+* Next, step through each section of the code.
+
+* First we import mongoose and create a `Schema` reference.
+
+  ```js
+  const mongoose = require("mongoose");
+  const Schema = mongoose.Schema;
+  ```
+
+* Next we create a new schema called `ExampleSchema`.
+
+  ```js
+  const ExampleSchema = new Schema({
+    string: {
+      type: String,
+      trim: true,
+      required: "String is Required" // validator
+    },
+
+    number: {
+      type: Number,
+      unique: true, // this is not a validator, but a built in helper
+      required: true // validator
+    },
+
+    email: {
+      type: String,
+      match: [/.+@.+\..+/, "Please enter a valid e-mail address"]
+    },
+
+    boolean: Boolean,
+
+    array: Array,
+
+    date: {
+      type: Date,
+      default: Date.now
+    },
+
+    longstring: {
+      type: String,
+      validate: [({ length }) => length >= 6, "Longstring should be longer."]
+    }
+  });
+  ```
+  
+* We then compile our schema into a Model.
+
+  ```js
+  const Example = mongoose.model("Example", ExampleSchema);
+  export default Example;
+  ```
+
+* Tell the class that all schema types have the built-in `required` validator. 
+
+* Point out that numbers have `min` and `max` validators while strings have `enum`, `match`, `minlength`, and `maxlength` validators.
+
+* Ask the students the following question(s):
+
+  * ☝️ What are the benefits of using Mongoose?
+
+  * 🙋 It let's use create a schema, enforce validations and overall make it easier to interface with a Mongoose database.
+
+* Take any clarifying questions before moving on to the students activity.
+
+### 23. Instructor Do: Demo Solved Mongoose Schema (5 mins)
+
+* Open [11-Stu-Mongoose-Schema/Solved](../../../../01-Class-Content/17-NoSQL/01-Activities/11-Stu-Mongoose-Schema/Solved) on your machine and run `npm install` then `node server.js` to launch the app. 
+
+* Create a new user and demonstrate the response.
+
+  ```js
+  {
+    "_id": "5cfab6403da88328fcc7ac39",
+    "username": "demo",
+    "password": "demo",
+    "email": "demo@gmail.com",
+    "userCreated": "2019-06-07T19:08:48.294Z",
+    "__v": 0
+  }
+  ```
+
+* Try to create another user with the same email to demonstrate the validations.
+
+  ```js
+  {
+    "driver": true,
+    "name": "MongoError",
+    "index": 0,
+    "code": 11000,
+    "errmsg": "E11000 duplicate key error collection: userdb.users index: email_1 dup key:  {: \"demo@gmail.com\" }"
+  }
+  ```
+
+* Tell the students that in the next activity they will implement the schema validations that they see here.
+
+### 24. Student Do: Mongoose Schema (15 mins)
+
+* Direct students towards the next activity located in [11-Stu-Mongoose-Schema/Unsolved](../../../../01-Class-Content/17-NoSQL/01-Activities/11-Stu-Mongoose-Schema/Unsolved).
+
+```md
+# User Schema
+
+In this activity you will create a user schema with mongoose.
+
+## Instructions
+
+* In `userModel.js` add four attributes to your schema.
+
+  * username: A string that will be be required, and also trimmed.
+
+  * password: A string that will be required, trimmed, and at least 6 characters.
+
+  * email: A string that must be a valid email address and unique in our collection.
+
+  * userCreated: A date that will default to the current date.
+
+## 💡 Hint(s)
+
+* The regex for checking if a string is an email is: /.+\@.+\..+/
+
+## 🏆 Bonus 
+
+* Insert five more documents with one command. Use [https://docs.mongodb.com/manual/tutorial/query-documents/](https://docs.mongodb.com/manual/tutorial/query-documents/) to see how you can accomplish this.
+
+```
+
+### 25. Instructor Do: Review Mongoose Schema (10 mins)
+
+* Use the prompts and talking points below to demonstrate the following Mongoose key point(s):
+
+  * ✔ We can use `required` to check for the presence of an attribute.
+
+  * ✔ We can use `validate` to enforce a validation.
+
+* Open [11-Stu-Mongoose-Schema/Solved](../../../../01-Class-Content/17-NoSQL/01-Activities/11-Stu-Mongoose-Schema/Solved) in your IDE and step through each attribute, checking for understanding.
+
+```js
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
+
+const UserSchema = new Schema({
+  username: {
+    type: String,
+    trim: true,
+    required: "Username is Required"
+  },
+
+  password: {
+    type: String,
+    trim: true,
+    required: "Password is Required",
+    validate: [({ length }) => length >= 6, "Password should be longer."]
+  },
+
+  email: {
+    type: String,
+    unique: true,
+    match: [/.+@.+\..+/, "Please enter a valid e-mail address"]
+  },
+
+  userCreated: {
+    type: Date,
+    default: Date.now
+  }
+});
+```
+
+* Students may be confused with `match`, explain that it uses a regular expression to check for a valid email address.
+
+* Ask the students the following question(s):
+
+  * ☝️ What is the `match` method checking for in our `email` attribute?
+
+  * 🙋 It is checking the regular expression against the user's email input.
+
+* Take any clarifying questions before moving on to the students activity.
+
+
+### 26. END (0 mins)
 
 ### Lesson Plan Feedback
 

@@ -1,8 +1,8 @@
-## 11.2 - Final Projects (10:00 AM) <!--links--> &nbsp; [⬅️](../01-Day/01-Day-LessonPlan.md) &nbsp; [➡️](../03-Day/03-Day-LessonPlan.md)
+## 11.2 - Review and Final Project (10:00 AM) <!--links--> &nbsp; [⬅️](../01-Day/01-Day-LessonPlan.md) &nbsp; [➡️](../03-Day/03-Day-LessonPlan.md)
 
 ## Overview
 
-After doing a review of Databases and React and giving some help and time for students to work on their homework, you'll prime your students to conceptualize their final projects. You'll run down the list of expectations and requirements for each of their weekly deliverables. Aside from that, you and the TAs will stick around to make sure each team has a solid idea for their project--they should have one by the end of the class.
+After doing a review of databases and React and giving some help and time for students to work on their homework, you'll prime your students to conceptualize their final projects. You'll run down the list of expectations and requirements for each of their weekly deliverables. Aside from that, you and the TAs will stick around to make sure each team has a solid idea for their project--they should have one by the end of the class.
 
 ## Instructor Priorities
 
@@ -16,7 +16,7 @@ After doing a review of Databases and React and giving some help and time for st
 
 ## Class Objectives
 
-* To lead a review time with your students for any questions they may still have about prior material since their second project. Primarily Databasing and React content.
+* To lead a review time with your students for any questions they may still have about prior material since their second project. Primarily database and React content.
 
 * To help students with their current homework assignment as it is a hard one!
 
@@ -34,13 +34,13 @@ After doing a review of Databases and React and giving some help and time for st
 
 ### 1. Instructor Do: Lead a review on Databases and React (60 mins)
 
-* We are going to open today's class with a review on some content we have covered since the conclusion of Project 2. Primarily we will be reviewing Databases and React in preparation for your final projects.
+* We are going to open today's class with a review on some content we have covered since the conclusion of Project 2. Primarily we will be reviewing databases and React in preparation for your final projects.
 
-* Open the floor to students with specific questions about anything they may not be clear on, including any databasing material or React questions.
+* Open the floor to students with specific questions about anything they may not be clear on, including any database material or React questions.
 
-* After students have had time to ask specific questions, go into a basic review of Database material.
+* After students have had time to ask specific questions, go into a basic review of database material.
 
-* After completing your review of Databases, begin a review of the React content that has been covered over the past few classes to make sure students have a solid grasp of the fundamentals for their final project.
+* After completing your review of databases, begin a review of the React content that has been covered over the past few classes to make sure students have a solid grasp of the fundamentals for their final project.
 
 ### 2. Everyone Do: Work on homework! (60 mins)
 

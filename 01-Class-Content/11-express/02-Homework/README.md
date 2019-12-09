@@ -1,61 +1,46 @@
 # Unit 11 Express Homework: Note Taker
 
-Create an express application that uses a json file to save a user's todo notes. To run the application, run the following commands in your terminal:
+## Description
 
-```sh
-npm install
-npm start
-```
+Create an application that can be used to write, save, and delete notes. This application will use an express backend and save and retrieve note data from a JSON file.
 
-The user should have a text input that allows them to create and save notes.
+* The application frontend has already been created, it's your job to build the backend and connect the two.
 
-It is recommended that you use the following folder structure:
+* The following HTML routes should be created:
 
-```
-db/             // contains json file that stores notes
-public/         // front end
-  assets/       //Folder contains css and client-side JavaScript
-    css/
-    js/
-  index.html
-  notes.html
-routes/         // API and HTML routes
-  apiRoutes.js  
-  htmlRoutes.js
-server.js       // Runs the application
-```
+  * GET `/notes` - Should return the `notes.html` file.
 
-Following the [common templates for user stories](https://en.wikipedia.org/wiki/User_story#Common_templates), we can frame this challenge as follows:
+  * GET `*` - Should return the `index.html` file
 
-```
-AS A user
+* The application should have a `db.json` file on the backend that will be used to store and retrieve notes using the `fs` module.
 
-I WANT a note taker application
+* The following API routes should be created:
 
-SO THAT I can create and refer to notes
-```
+  * GET `/api/notes` - Should read the `db.json` file and return all saved notes as JSON.
 
-Refer to the [design mockup](./Assets/09-NodeJS-homework-demo.pdf).
+  * POST `/api/notes` - Should recieve a new note to save on the request body, add it to the `db.json` file, and then return the new note to the client.
+
+  * DELETE `/api/notes/:id` - Should recieve a query paramter containing the id of a note to delete. This means you'll need to find a way to give each note a unique `id` when it's saved. In order to delete a note, you'll need to read all notes from the `db.json` file, remove the note with the given `id` property, and then rewrite the notes to the `db.json` file.
+
+## User Story
+
+AS A user, I want to be able to write and save notes
+
+I WANT to be able to delete notes I've written before
+
+SO THAT I can organize my thoughts and keep track of tasks I need to complete
 
 ## Business Context
 
-When organizing your day, it is important to have a way of tracking the work that you're getting done. Rather than writing this information down, you'll be creating an application that will save everything you need to do in a file that can be editted.
+For users that need to keep track of a lot of information, it's easy to forget or be unable to recall something important. Being able to take persistent notes allows users to have written information available when needed.
 
-## Minimum Requirements
+## Acceptance Criteria
 
-* Functional, deployed application.
+Application should allow users to create and save notes.
 
-* GitHub repository with a unique name and a README describing project.
+Application should allow users to view previously saved notes.
 
-* The application allows the user to create a note with a title and description.
-
-* A user has the ability to delete a note.
-
-* The application uses a `json` file to store notes.
-
-* The application uses an Express server to serve all API routes.
-
-* The application uses an Express server to serve all client-side routes.
+Application should allow users to delete previously saved notes.
 
 - - -
 
@@ -65,7 +50,7 @@ One of the most important skills to master as a web developer is version control
 
 * Your commit history is a signal to employers that you are actively working on projects and learning new skills.
 
-* Your commit history allows you to revert your code base in the event that you need to return to a previous state.
+* Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
 
 Follow these guidelines for committing:
 
@@ -77,15 +62,13 @@ Follow these guidelines for committing:
 
 * Test your application before you commit to ensure functionality at every step in the development process.
 
-We would like you to have more than 200 commits by graduation, so commit early and often!
+We would like you to have well over 200 commits by graduation, so commit early and often!
 
 ## Submission on BCS
 
 You are required to submit the following:
 
-* An animated GIF demonstrating the app functionality
-
-* A generated PDF of your GitHub profile
+* The URL of the deployed application
 
 * The URL of the GitHub repository
 

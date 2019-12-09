@@ -25,9 +25,9 @@ var saveNote = function(note) {
 };
 
 // A function for deleting a note from the db
-var deleteNote = function(title) {
+var deleteNote = function(id) {
   return $.ajax({
-    url: "api/notes/" + title,
+    url: "api/notes/" + id,
     method: "DELETE"
   });
 };
@@ -35,10 +35,18 @@ var deleteNote = function(title) {
 // If there is an activeNote, display it, otherwise render empty inputs
 var renderActiveNote = function() {
   $saveNoteBtn.hide();
-  console.log(activeNote);
 
-  $noteTitle.val(activeNote.title);
-  $noteText.val(activeNote.text);
+  if (activeNote.id) {
+    $noteTitle.attr("readonly", true);
+    $noteText.attr("readonly", true);
+    $noteTitle.val(activeNote.title);
+    $noteText.val(activeNote.text);
+  } else {
+    $noteTitle.attr("readonly", false);
+    $noteText.attr("readonly", false);
+    $noteTitle.val("");
+    $noteText.val("");
+  }
 };
 
 // Get the note data from the inputs, save it to the db and update the view
@@ -49,7 +57,6 @@ var handleNoteSave = function() {
   };
 
   saveNote(newNote).then(function(data) {
-    console.log(data);
     getAndRenderNotes();
     renderActiveNote();
   });
@@ -63,13 +70,12 @@ var handleNoteDelete = function(event) {
   var note = $(this)
     .parent(".list-group-item")
     .data();
-  console.log("note: ", note);
 
   if (activeNote.id === note.id) {
     activeNote = {};
   }
 
-  deleteNote(note.title).then(function() {
+  deleteNote(note.id).then(function() {
     getAndRenderNotes();
     renderActiveNote();
   });
@@ -78,14 +84,12 @@ var handleNoteDelete = function(event) {
 // Sets the activeNote and displays it
 var handleNoteView = function() {
   activeNote = $(this).data();
-
   renderActiveNote();
 };
 
 // Sets the activeNote to and empty object and allows the user to enter a new note
 var handleNewNoteView = function() {
   activeNote = {};
-
   renderActiveNote();
 };
 
@@ -110,7 +114,9 @@ var renderNoteList = function(notes) {
 
     var $li = $("<li class='list-group-item'>").data(note);
     var $span = $("<span>").text(note.title);
-    var $delBtn = $("<i class='fas fa-trash-alt float-right text-danger delete-note'>");
+    var $delBtn = $(
+      "<i class='fas fa-trash-alt float-right text-danger delete-note'>"
+    );
 
     $li.append($span, $delBtn);
     noteListItems.push($li);
@@ -122,7 +128,6 @@ var renderNoteList = function(notes) {
 // Gets notes from the db and renders them to the sidebar
 var getAndRenderNotes = function() {
   return getNotes().then(function(data) {
-    console.log("Render: ", data, typeof data);
     renderNoteList(data);
   });
 };

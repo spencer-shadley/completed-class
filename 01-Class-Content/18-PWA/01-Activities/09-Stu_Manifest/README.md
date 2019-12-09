@@ -1,4 +1,4 @@
-# Student Do: Web App Manifest (10 mins)
+# Web App Manifest
 
 In this activity, you will write your first progressive web application manifest.
 
@@ -12,17 +12,17 @@ In this activity, you will write your first progressive web application manifest
 
 * When finished, run the commands:
 
-  * npm install
-  * npm run seed
-  * npm start
+  * `npm install`
+
+  * `npm run seed`
+
+  * `npm start`
 
 * Navigate to [localhost:3000](localhost:3000) and open `DevTools > Application > Manifest` to verify successful loading of the manifest.
-
 
 ## 💡 Hint(s)
 
 Read the [MDN Web App Manifest documentation](https://developer.mozilla.org/en-US/docs/Web/Manifest) 
-
 
 ## 🏆 Bonus
 

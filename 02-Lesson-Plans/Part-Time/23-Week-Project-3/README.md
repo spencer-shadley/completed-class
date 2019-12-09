@@ -1,17 +1,33 @@
-## Unit 23 - Portfolios and Projects
+# Unit 23: Project-3
 
-### Overview
+## Overview
 
-In this week, students will begin working on their portfolios which will be due for homework this week. They should also spend at least half of class working on their final projects.
+In this unit, students will continue to build their final projects.
+
+  * Refer to the [Class Content Unit Overview](../../../01-Class-Content/23-Project-3/README.md) for detailed information on key topics, learning objectives and homework.
+
+## Heads Up
+
+Project presentations will take place on the last day of class. You may want to refer to your calendar and determine which day of the week it falls on.
+
+## Helpful Links
 
 ### Lesson Plans
 
-* [23.1 - Lesson Plan](01-Day/01-LESSON-PLAN.md)
-* [23.2 - Lesson Plan](02-Day/02-LESSON-PLAN.md)
-* [23.3 - Lesson Plan](03-Day/03-LESSON-PLAN.md)
+  * [23.1 - Lesson Plan](01-Day/23.1-LESSON-PLAN.md)
 
-### Helpful Links
+  * [23.2 - Lesson Plan](02-Day/23.2-LESSON-PLAN.md)
 
-* [Resume Template 1](https://docs.google.com/document/d/1wjbr8KFnCDmpHTFJLCs1FHYh04loZf7rg0l7US2yTxQ/edit)
+  * [23.3 - Lesson Plan](03-Day/23.3-LESSON-PLAN.md)
 
-* [Resume Template 2](https://docs.google.com/document/d/12JqGMhk-vAp4lhxxBItK1NeJRnXP1xOnzUVHVPiF_eE/edit)
+### Slide Decks
+
+  N/A
+
+### Time Tracker(s)
+
+  N/A
+
+## Algorithms
+
+  N/A
