@@ -1,4 +1,4 @@
-# Local Storage Todo's
+# Local Storage TODOs
 
 In this activity, we will working on storing our todos in `localStorage`. 
 

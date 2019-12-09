@@ -1,6 +1,6 @@
-# Add ToDo's
+# Add TODOs
 
-In this activity, we will be continuing to build on our Todo activity. This time, we'll be adding the `add` functionality.
+In this activity we will be adding functionality to a TODO application. Specifically, we will be adding the ability to `add` new TODOs
 
 ## Instructions
 
