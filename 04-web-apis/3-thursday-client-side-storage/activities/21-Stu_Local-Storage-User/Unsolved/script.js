@@ -13,8 +13,8 @@ function displayMessage(type, message) {
 }
 
 function renderLastRegistered() {
-  var email; // TODO: Update me to retrieve from local storage
-  var password; // TODO: Update me to retrieve from local storage
+  var email; // TODO: Update me to retrieve from localStorage
+  var password; // TODO: Update me to retrieve from localStorage
 
   if (email === null || password === null) {
     return;
