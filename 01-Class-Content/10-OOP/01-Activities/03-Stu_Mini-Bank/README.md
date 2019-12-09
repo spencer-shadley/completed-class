@@ -4,7 +4,7 @@ In this activity you will use objects to create a mini banking application.
 
 ## Instructions
 
-Update the `createMiniBank` function to achieve the following:
+Update the `MiniBank` function to achieve the following:
 
 1. Add another private value of `statement` that should be set to an array with one value, `0`. This array will contain all transactions made with the MiniBank objects.
 
@@ -20,9 +20,9 @@ Update the `createMiniBank` function to achieve the following:
 
 7. Write a `withdraw` function that takes a value and subtracts it from the `balance`.
 
-8. Return the `printBalance`, `printStatement`, `deposit`, `withdraw` functions from the `createMiniBank` function.
+8. Return the `printBalance`, `printStatement`, `deposit`, `withdraw` functions from the `MiniBank` function.
 
-* Then, create a new `minibank` object using the `createMiniBank` function.
+* Then, create a new `minibank` object using the `MiniBank` function.
 
 1. Print the `minibank` balance.
 
