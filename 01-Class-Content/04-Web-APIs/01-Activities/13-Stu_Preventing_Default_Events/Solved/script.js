@@ -1,11 +1,10 @@
-var tipEl = document.querySelector('#tip-percentage');
-var totalEl = document.querySelector('#total');
-var submitEl = document.querySelector('#submit');
-var splitEl = document.querySelector('#split');
+var tipElement = document.querySelector('#tip-percentage');
+var totalElement = document.querySelector('#total');
+var submitElement = document.querySelector('#submit');
+var splitElement = document.querySelector('#split');
 
 function calculateTip(total, tipPercentage) {
-  var roundedResult = (total * tipPercentage).toFixed(2);
-  return roundedResult;
+  return (total * tipPercentage).toFixed(2);
 }
 
 function calculateTotal(total, tipAmount) {
@@ -14,8 +13,8 @@ function calculateTotal(total, tipAmount) {
 
 function addTip(event) {
   event.preventDefault();
-  var tipPercentage = tipEl.value * .01;
-  var total = totalEl.value;
+  var tipPercentage = tipElement.value * .01;
+  var total = totalElement.value;
   var tipAmount = calculateTip(total, tipPercentage);
   var newTotal = calculateTotal(tipAmount, total);
   document.querySelector('#tip-amount').textContent = tipAmount;
@@ -32,5 +31,5 @@ function splitTotal(event) {
   document.querySelector('#split-total').textContent = newTotal;
 }
 
-submitEl.addEventListener('click', addTip);
-splitEl.addEventListener('click', splitTotal);
+submitElement.addEventListener('click', addTip);
+splitElement.addEventListener('click', splitTotal);
