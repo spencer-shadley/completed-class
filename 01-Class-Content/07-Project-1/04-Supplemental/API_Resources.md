@@ -4,7 +4,7 @@
 | -------------------------------------------------------------------------- | --------------- | ------------------------- | --------------------------- |
 | [reddit API](https://www.reddit.com/dev/api)                               | yes             | auth                      | yes                         |
 | [Youtube API](https://www.youtube.com/yt/dev/api-resources.html)           | yes             | API key                   | yes/no                      |
-| [Linkedin](https://developer.linkedin.com/)                                | yes             | API key                   | yes                         |
+| [LinkedIn](https://developer.linkedin.com/)                                | yes             | API key                   | yes                         |
 | [Soundcloud](https://developers.soundcloud.com/docs/api/guide)             | yes             | API key                   | yes                         |
 | [Wikipedia](https://www.mediawiki.org/wiki/API:Main_page)                  | yes             | n/a                       | n/a                         |
 | [Rotten Tomatoes](https://developer.fandango.com/Rotten_Tomatoes)          | yes             | API key                   | yes                         |
