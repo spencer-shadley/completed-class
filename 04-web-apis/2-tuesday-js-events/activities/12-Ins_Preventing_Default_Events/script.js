@@ -8,6 +8,9 @@ submitElement.addEventListener('click', function (event) {
 
   console.log(event);
 
-  var response = 'Thank you for your submission ' + nameInput.value + '! We will reach out to you at ' + emailInput.value + '.';
+  var response = 'Thank you for your submission ' +
+    nameInput.value + '! We will reach out to you at ' +
+    emailInput.value + '.';
+
   submissionResponseElement.textContent = response;
 });
