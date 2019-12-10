@@ -4,7 +4,7 @@ In this activity we will work to create an entire React application from scratch
 
 ## Instructions
 
-* Start by scaffolding out a new starter React app by running the following command in your terminal `create-react-app pupster`.
+* Start by scaffolding out a new starter React app by running the following command in your terminal `npx create-react-app pupster`.
 
 * cd into the `pupster` directory and run the following command to install React Router and Axios:
 
