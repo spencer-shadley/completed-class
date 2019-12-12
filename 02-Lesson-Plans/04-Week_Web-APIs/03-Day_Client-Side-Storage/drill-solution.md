@@ -10,14 +10,4 @@ Output: 6
 Input: [ 3, 3, 3 ]
 Output: 3
 
-```js
-function findMax(numbers) {
-  var maxNum = numbers[0];
-  for (var i = 1; i < numbers.length; i++) {
-    if (numbers[i] > maxNum) {
-      maxNum = numbers[i];
-    }
-  }
-  return maxNum;
-}
-```
+See [index.html](index.html) for an example solution.
