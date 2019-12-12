@@ -14,7 +14,7 @@ function toggleDisplay(event) {
   }
 }
 
-function keydown(event) {
+function handleKeyDown(event) {
   var key = event.key;
   var keyCode = event.code;
   document.querySelector('#key').textContent = key;
@@ -22,11 +22,11 @@ function keydown(event) {
   document.querySelector('#status').textContent = 'KEYDOWN Event';
 }
 
-function keyup() {
+function handleKeyUp() {
   document.querySelector('#status').textContent = 'KEYUP Event';
 }
 
-function click(event) {
+function handleClick(event) {
   var target = event.target.textContent;
   var x = event.clientX;
   var y = event.clientY;
@@ -35,7 +35,7 @@ function click(event) {
   document.querySelector('#y').textContent = y;
 }
 
-document.addEventListener('keydown', keydown);
-document.addEventListener('keyup', keyup);
-document.addEventListener('click', click);
+document.addEventListener('keydown', handleKeyDown);
+document.addEventListener('keyup', handleKeyUp);
+document.addEventListener('click', handleClick);
 eventType.addEventListener('change', toggleDisplay);
