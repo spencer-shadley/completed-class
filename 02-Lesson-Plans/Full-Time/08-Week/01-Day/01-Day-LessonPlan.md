@@ -43,8 +43,6 @@
 
 * Explain that later this week we'll also cover the basics of agile development and testing web applications. 
 
-* Unlike project 1, we'll be providing students with some boilerplate code they can use to jump start their applications. Stress that despite the other material we have to cover this week, this will save them time and ensure they can dive in building features for their apps.
-
 * Assure the class that they'll have plenty of time to brainstorm project ideas before submitting their proposals for review by the end of class.
 
 * Students should sit with their groups during today's activities and work to follow along with the examples.
