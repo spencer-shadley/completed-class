@@ -1,9 +1,9 @@
 # Write a function that takes in an integer and outputs the sum of all the numbers from 1 to that integer.
 
 ```js
-function accumulate(num) {
+function accumulate(max) {
   var sum = 0;
-  for (var i = 1; i <= num; ++i) {
+  for (var i = 1; i <= max; ++i) {
     sum += i;
   }
   return sum;
