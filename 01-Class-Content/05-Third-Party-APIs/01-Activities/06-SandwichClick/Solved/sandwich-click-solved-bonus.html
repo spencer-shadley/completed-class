@@ -4,10 +4,6 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Trigger Clicked</title>
-
-	<!-- Added link to the jQuery Library -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
 </head>
 
 <body>
@@ -18,6 +14,9 @@
 	<h3 id="roastbeef">Roast Beef</h3>
 
 	<div id="image-div"></div>
+
+	<!-- Added link to the jQuery Library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 	<script type="text/javascript">
 
@@ -42,35 +41,34 @@
       // Inside each click event is the code to create an alert, update the counter, and show the updated count.
       // Take note that you can chain events onto an element
       // With this even if our ids are created at a later date our events will still always work
-      $("#pbj").on("click", function() {
+      $('#pbj').on('click', function() {
 
-        alert("Mmm... Peanut Butter Jelly Time.");
-        pbjCounter++;
-        alert("You've eaten " + pbjCounter + " PB&J sandwiches");
+        alert('Mmm... Peanut Butter Jelly Time.');
+        ++pbjCounter;
+        alert('You\'ve eaten ' + pbjCounter + ' PB&J sandwiches');
 
         // BONUS
-        $("#image-div").html("<img src='https://i1.wp.com/snotapwi.com/wp-content/uploads/2017/03/PBJ-Sandwiches.jpg?resize=590%2C368&ssl=1' />");
+        $('#image-div').html('<img src=\'https://i1.wp.com/snotapwi.com/wp-content/uploads/2017/03/PBJ-Sandwiches.jpg?resize=590%2C368&ssl=1\' />');
 
       });
-      $("#grilledcheese").on("click", function() {
+      $('#grilledcheese').on('click', function() {
 
-        alert("Nom nom nom. Gooey Gooey Grilled Cheese!");
-        grilledCheeseCounter++;
-        alert("You've eaten " + grilledCheeseCounter + " grilled cheese sandwiches");
+        alert('Nom nom nom. Gooey Gooey Grilled Cheese!');
+        ++grilledCheeseCounter;
+        alert('You\'ve eaten ' + grilledCheeseCounter + ' grilled cheese sandwiches');
 
         // BONUS
-        $("#image-div").html("<img src='http://cdn.funcheap.com/wp-content/uploads/2014/04/The-Perfect-Grilled-Cheese-Sandwich-800-158111.jpg' />");
+        $('#image-div').html('<img src=\'http://cdn.funcheap.com/wp-content/uploads/2014/04/The-Perfect-Grilled-Cheese-Sandwich-800-158111.jpg\' />');
 
       });
-      $("#roastbeef").on("click", function() {
+      $('#roastbeef').on('click', function() {
 
-        alert("No qualms about animal rights here. I'm all about that roast beef.");
-        roastBeefCounter++;
-        alert("You've eaten " + roastBeefCounter + " roast beef sandwiches");
+        alert('No qualms about animal rights here. I\'m all about that roast beef.');
+        ++roastBeefCounter;
+        alert('You\'ve eaten ' + roastBeefCounter + ' roast beef sandwiches');
 
         // BONUS
-        $("#image-div").html("<img src='https://www.cscassets.com/recipes/wide_cknew/wide_25336.jpg' />");
-
+        $('#image-div').html('<img src=\'https://www.cscassets.com/recipes/wide_cknew/wide_25336.jpg\' />');
       });
     });
 
