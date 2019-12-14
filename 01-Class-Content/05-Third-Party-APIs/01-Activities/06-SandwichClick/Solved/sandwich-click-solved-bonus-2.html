@@ -57,7 +57,7 @@
         }
       ];
 
-      sandwiches.forEach(function(sandwich) {
+      $.each(sandwiches, function(i, sandwich) {
         $(sandwich.selector).on('click', function() {
           alert(sandwich.message);
           ++sandwich.numEaten;
