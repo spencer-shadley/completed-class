@@ -37,7 +37,12 @@ router.get("/api/workouts", (req, res) => {
 });
 
 router.get("/api/workouts/range", ({ query }, res) => {
-  Workout.find({ day: { $gte: query.start, $lte: query.end } })
+  console.log(query.start)
+  console.log(new Date(query.start))
+  console.log(new Date(query.end))
+  const start = new Date(query.start)
+  const end = new Date(query.end)
+  Workout.find({ day: { $gte: start, $lte: end } })
     .then(dbWorkouts => {
       res.json(dbWorkouts);
     })

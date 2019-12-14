@@ -8,7 +8,7 @@ mongoose.connect("mongodb://localhost/workout", {
 
 let workoutSeed = [
   {
-    day: new Date(Date.now()),
+    day: new Date().setDate(d.getDate()-10),
     exercises: [
       {
         type: "resistance",
@@ -21,7 +21,7 @@ let workoutSeed = [
     ]
   },
   {
-    day: new Date(Date.now()),
+    day: new Date().setDate(d.getDate()-9),
     exercises: [
       {
         type: "resistance",
@@ -34,7 +34,7 @@ let workoutSeed = [
     ]
   },
   {
-    day: new Date(Date.now()),
+    day: new Date().setDate(d.getDate()-8),
     exercises: [
       {
         type: "resistance",
@@ -47,7 +47,7 @@ let workoutSeed = [
     ]
   },
   {
-    day: new Date(Date.now()),
+    day: new Date().setDate(d.getDate()-7),
     exercises: [
       {
         type: "cardio",
@@ -58,7 +58,7 @@ let workoutSeed = [
     ]
   },
   {
-    day: new Date(Date.now()),
+    day: new Date().setDate(d.getDate()-6),
     exercises: [
       {
         type: "resistance",
@@ -71,7 +71,7 @@ let workoutSeed = [
     ]
   },
   {
-    day: new Date(Date.now()),
+    day: new Date().setDate(d.getDate()-5),
     exercises: [
       {
         type: "resistance",
@@ -84,7 +84,7 @@ let workoutSeed = [
     ]
   },
   {
-    day: new Date(Date.now()),
+    day: new Date().setDate(d.getDate()-4),
     exercises: [
       {
         type: "resistance",
@@ -97,7 +97,7 @@ let workoutSeed = [
     ]
   },
   {
-    day: new Date(Date.now()),
+    day: new Date().setDate(d.getDate()-3),
     exercises: [
       {
         type: "resistance",
@@ -110,7 +110,7 @@ let workoutSeed = [
     ]
   },
   {
-    day: new Date(Date.now()),
+    day: new Date().setDate(d.getDate()-2),
     exercises: [
       {
         type: "resistance",
@@ -123,7 +123,7 @@ let workoutSeed = [
     ]
   },
   {
-    day: new Date(Date.now()),
+    day: new Date().setDate(d.getDate()-1),
     exercises: [
       {
         type: "resistance",

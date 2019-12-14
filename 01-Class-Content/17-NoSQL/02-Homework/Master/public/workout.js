@@ -17,7 +17,7 @@ async function init() {
 }
 
 function tallyExercises(exercises) {
-  return exercises.reduce((acc, curr) => {
+  const tallied = exercises.reduce((acc, curr) => {
     if (curr.type === "resistance") {
       acc.totalWeight = (acc.totalWeight || 0) + curr.weight;
       acc.totalSets = (acc.totalSets || 0) + curr.sets;
@@ -25,9 +25,9 @@ function tallyExercises(exercises) {
     } else if (curr.type === "cardio") {
       acc.totalDistance = (acc.totalDistance || 0) + curr.distance;
     }
-
     return acc;
   }, {});
+  return tallied;
 }
 
 function formatDate(date) {

@@ -1,16 +1,45 @@
 // get all workout data from back-end
-fetch("/api/workouts")
-  .then(response => {
-    return response.json();
-  })
-  .then(data => {
-    populateChart(data);
-  });
 
+// fetch("/api/workouts/range")
+//   .then(response => {
+//     return response.json();
+//   })
+//   .then(data => {
+//     populateChart(data);
+//   });
+
+console.log(new Date(new Date().setDate(new Date().getDate()-5)))
+
+API.getWorkoutsInRange(new Date().setDate(new Date().getDate()-5),new Date().setDate(new Date().getDate()+1))
+
+  function generatePalette() {
+    const arr = [
+    "#003f5c",
+    "#2f4b7c",
+    "#665191",
+    "#a05195",
+    "#d45087",
+    "#f95d6a",
+    "#ff7c43",
+    "ffa600",
+    "#003f5c",
+    "#2f4b7c",
+    "#665191",
+    "#a05195",
+    "#d45087",
+    "#f95d6a",
+    "#ff7c43",
+    "ffa600"
+  ]
+
+  return arr;
+  }
 function populateChart(data) {
   let durations = duration(data);
   let pounds = benchPress(data);
   let workouts = workoutNames(data);
+  const colors = generatePalette();
+  console.log(data)
   let line = document.querySelector("#canvas").getContext("2d");
   let bar = document.querySelector("#canvas2").getContext("2d");
   let pie = document.querySelector("#canvas3").getContext("2d");
@@ -101,6 +130,10 @@ function populateChart(data) {
       ]
     },
     options: {
+      title: {
+        display: true,
+        text: "Pounds Lifted"
+      },
       scales: {
         yAxes: [
           {
@@ -116,18 +149,12 @@ function populateChart(data) {
   let pieChart = new Chart(pie, {
     type: "pie",
     data: {
-      labels: ["Bench Press", "Running", "Dead Lifts", "Squats", "Rowing"],
+      labels: workouts,
       datasets: [
         {
           label: "Excercises Performed",
-          backgroundColor: [
-            "#3e95cd",
-            "#8e5ea2",
-            "#3cba9f",
-            "#e8c3b9",
-            "#c45850"
-          ],
-          data: workouts
+          backgroundColor: colors,
+          data: durations
         }
       ]
     },
@@ -174,6 +201,7 @@ function duration(data) {
       durations.push(exercise.duration);
     });
   });
+  console.log(durations)
 
   return durations;
 }
