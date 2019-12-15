@@ -53,6 +53,11 @@ WHEN the employee clicks the save button
 
 THEN events are saved in the timeblock for that hour
 ```
+
+## Bonus
+
+* Add the ability to see events from previous days and book events on future days
+
 - - -
 
 ## Commit Early and Often
