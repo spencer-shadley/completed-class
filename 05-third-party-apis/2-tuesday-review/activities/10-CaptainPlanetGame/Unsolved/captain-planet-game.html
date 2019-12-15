@@ -174,24 +174,24 @@
 
         // Keyboard move controls
         $(document).keyup(function(e) {
-          switch (e.which) {
+          switch (e.key) {
             // Move Buttons (Keyboard Down)
-            case 40:
+            case 'ArrowDown':
               captainPlanet.animate({ top: '+=200px' }, 'normal');
               break;
 
             // Move Buttons (Keyboard Right)
-            case 39:
+            case 'ArrowRight':
               captainPlanet.animate({ left: '+=200px' }, 'normal');
               break;
 
             // Move Buttons (Keyboard Up)
-            case 38:
+            case 'ArrowUp':
               captainPlanet.animate({ top: '-=200px' }, 'normal');
               break;
 
             // Move Buttons (Keyboard Left)
-            case 37:
+            case 'ArrowLeft':
               captainPlanet.animate({ left: '-=200px' }, 'normal');
               break;
 
