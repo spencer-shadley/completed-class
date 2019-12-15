@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drill Solution</title>
+</head>
+
+<body>
+    <script>
+        // start at each end of the string
+        // move the left and right comparisons one character closer to the middle each iteration
+        // if the characters every mismatch it is not a palindrome
+        function isPalindrome(str) {
+            for (var leftIndex = 0; leftIndex <= str.length / 2; ++leftIndex) {
+                var leftChar = str.charAt(leftIndex);
+                var rightChar = str.charAt(str.length - 1 - leftIndex);
+                if (leftChar !== rightChar) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        function isPalindrome2(str) {
+            return str.split('').reverse().join('') === str;
+        }
+
+        // let's test it!
+        var noon = 'noon';
+        var pizza = 'pizza';
+        var racecar = 'racecar';
+        var tacocat = 'tacocat';
+
+        console.table([
+            {
+                input: noon,
+                actual: isPalindrome(noon),
+                expected: true
+            },
+            {
+                input: pizza,
+                actual: isPalindrome(pizza),
+                expected: false
+            },
+            {
+                input: racecar,
+                actual: isPalindrome(racecar),
+                expected: true
+            },
+            {
+                input: tacocat,
+                actual: isPalindrome(tacocat),
+                expected: true
+            }
+        ])
+    </script>
+</body>
+
+</html>
