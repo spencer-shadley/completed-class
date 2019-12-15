@@ -157,48 +157,57 @@
 
         // Move Buttons
         $('.up-button').on('click', function() {
-          captainPlanet.animate({ top: '-=200px' }, 'normal');
+          move('top', true);
         });
         $('.down-button').on('click', function() {
-          captainPlanet.animate({ top: '+=200px' }, 'normal');
+          move('top', false);
         });
         $('.left-button').on('click', function() {
-          captainPlanet.animate({ left: '-=200px' }, 'normal');
+          move('left', true);
         });
         $('.right-button').on('click', function() {
-          captainPlanet.animate({ left: '+=200px' }, 'normal');
+          move('left', false);
         });
         $('.back-button').on('click', function() {
           captainPlanet.animate({ top: '50px', left: '80px' }, 'fast');
         });
 
         // Keyboard move controls
-        $(document).keyup(function(e) {
-          switch (e.key) {
+        $(document).keyup(function(event) {
+          switch (event.key) {
             // Move Buttons (Keyboard Down)
             case 'ArrowDown':
-              captainPlanet.animate({ top: '+=200px' }, 'normal');
+              move('top', false, event);
               break;
 
             // Move Buttons (Keyboard Right)
             case 'ArrowRight':
-              captainPlanet.animate({ left: '+=200px' }, 'normal');
+              move('left', false, event);
               break;
 
             // Move Buttons (Keyboard Up)
             case 'ArrowUp':
-              captainPlanet.animate({ top: '-=200px' }, 'normal');
+              move('top', true, event);
               break;
 
             // Move Buttons (Keyboard Left)
             case 'ArrowLeft':
-              captainPlanet.animate({ left: '-=200px' }, 'normal');
+              move('left', true, event);
               break;
 
             default:
               break;
           }
         });
+
+        function move(direction, shouldInvert, event) {
+          if (event) {
+            event.preventDefault();
+          }
+          var options = {};
+          options[direction] = (shouldInvert ? '-' : '+') + '=200px';
+          captainPlanet.animate(options, 'normal');
+        }
       });
     </script>
   </body>
