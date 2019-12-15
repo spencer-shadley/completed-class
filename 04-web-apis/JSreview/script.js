@@ -8,11 +8,11 @@ function add(x, y) {
   return sum;
 }
 
-function getSum() {
-  var num1 = Number(firstNumInput.value);
-  var num2 = Number(secondNumInput.value);
+function showSum() {
+  var num1 = parseFloat(firstNumInput.value);
+  var num2 = parseFloat(secondNumInput.value);
   var sum = add(num1, num2);
   answerEl.textContent = sum;
 }
 
-sumButton.addEventListener("click", getSum);
+sumButton.addEventListener("click", showSum);

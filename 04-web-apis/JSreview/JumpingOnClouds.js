@@ -24,7 +24,7 @@
 // Input: Array of Integers (Number of Clouds, varying from 0 to 1)
 // Output: Number (Minimum number of jumps)
 
-let clouds = [0, 0, 1, 0, 0, 1, 0]
+
 
 // *************************
 //  ** WRITE FUNCTION BELOW **
@@ -32,24 +32,44 @@ let clouds = [0, 0, 1, 0, 0, 1, 0]
 
 
 
+function cloudJumping(clouds) {
 
+  var jumps = 0;
+  var length = clouds.length;
 
+  for (var i = 0; i < length; ++i) {
+    if (clouds[i + 2] === 0 && i + 2 < length) {
+      ++i;
+      ++jumps; 
+    } else if (i + 1 < clouds.length){
+      ++jumps;
+    }
+  }
 
+return jumps;
 
-
-
-
-
-
-
-
-
+}
+var clouds = [0, 0, 1, 0, 0, 1, 0]
+// console.log(cloudJumping(clouds));
 let c2 = [0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0]
 
 console.table([
-  jumpingOnClouds(clouds),
-  jumpingOnClouds(c2)
+  cloudJumping(clouds) === 4,
+  cloudJumping(c2) === 9
 ])
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
