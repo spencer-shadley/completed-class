@@ -59,12 +59,16 @@
         // This function sets a random color "word" and a random set of colors "visuals"
         function randColor() {
           // Set random word
-          targetColor = colors[Math.floor(Math.random() * colors.length)];
+          targetColor = getRandomColor();
           $('#rand-target-color').text(targetColor);
 
           // Set random word color
-          targetColorOfText = colors[Math.floor(Math.random() * colors.length)];
+          targetColorOfText = getRandomColor();
           $('#rand-target-color').css('color', targetColorOfText);
+        }
+
+        function getRandomColor() {
+          return colors[Math.floor(Math.random() * colors.length)];
         }
 
         // This function creates the actual "game" logic.
@@ -119,13 +123,8 @@
           userAnswer = event.target.id;
 
           // Compare id to target id
-          if (userAnswer === targetColorOfText) {
-            alert('You win!');
-            reset();
-          } else {
-            alert('Wrong!');
-            reset();
-          }
+          alert(userAnswer === targetColorOfText ? 'You win!' : 'Wrong!');
+          reset();
         });
 
         // Run game
