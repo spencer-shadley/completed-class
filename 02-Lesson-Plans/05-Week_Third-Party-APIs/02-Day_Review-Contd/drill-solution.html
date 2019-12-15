@@ -13,10 +13,11 @@
         // start at each end of the string
         // move the left and right comparisons one character closer to the middle each iteration
         // if the characters every mismatch it is not a palindrome
-        function isPalindrome(str) {
-            for (var leftIndex = 0; leftIndex <= str.length / 2; ++leftIndex) {
-                var leftChar = str.charAt(leftIndex);
-                var rightChar = str.charAt(str.length - 1 - leftIndex);
+        // Note: this is a good example to try debugging in Chrome - set a breakpoint inside the loop!
+        function isPalindrome(word) {
+            for (var leftIndex = 0; leftIndex <= word.length / 2; ++leftIndex) {
+                var leftChar = word.charAt(leftIndex);
+                var rightChar = word.charAt(word.length - 1 - leftIndex);
                 if (leftChar !== rightChar) {
                     return false;
                 }
@@ -24,8 +25,8 @@
             return true;
         }
 
-        function isPalindrome2(str) {
-            return str.split('').reverse().join('') === str;
+        function isPalindrome2(word) {
+            return word.split('').reverse().join('') === word;
         }
 
         // let's test it!
