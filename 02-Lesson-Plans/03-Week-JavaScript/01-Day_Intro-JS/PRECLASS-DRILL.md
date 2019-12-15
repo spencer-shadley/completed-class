@@ -18,7 +18,7 @@ Explain each part of the code below:
 </head>
 <body>
   
-  <script type="text/javascript" src="app.js></script>
+  <script  src="app.js></script>
 </body>
 </html>
 ```

@@ -22,7 +22,7 @@ See [drill-solution.html](drill-solution.html)
 </head>
 <body>
   
-  <script type="text/javascript" src="app.js></script>
+  <script  src="app.js></script>
 </body>
 </html>
 ```
