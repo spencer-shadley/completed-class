@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drill Solution</title>
+</head>
+
+<body>
+    <script>
+        function countVowels(str) {
+            var count = 0;
+            var input = str.toLowerCase();
+            for (var i = 0; i < input.length; ++i) {
+                if (isVowel(input[i])) {
+                    ++count;
+                }
+            }
+            return count;
+        }
+
+        function isVowel(character) {
+            return character === 'a' || character === 'e' || character === 'i' || character === 'o' || character === 'u';
+        }
+
+        // let's test it!
+
+        var oneVowel = 'frog';
+        var multipleVowels = 'croak';
+        var lotsOfVowels = 'expecto patronum';
+        var noVowels = 'rbbt';
+
+        console.table([
+            {
+                input: oneVowel,
+                actual: countVowels(oneVowel),
+                expected: 1,
+            },
+            {
+                input: multipleVowels,
+                actual: countVowels(multipleVowels),
+                expected: 2,
+            },
+            {
+                input: lotsOfVowels,
+                actual: countVowels(lotsOfVowels),
+                expected: 6,
+            },
+            {
+                input: noVowels,
+                actual: countVowels(noVowels),
+                expected: 0,
+            }
+        ]);
+
+        // alternative version
+        function countVowels2(str) {
+            var count = 0;
+            var input = str.toLowerCase();
+            var vowelArr = ['a', 'e', 'i', 'o', 'u'];
+            for (var i = 0; i < input.length; ++i) {
+                if (vowelArr.includes(input[i])) {
+                    ++count;
+                }
+            }
+            return count;
+        }
+    </script>
+</body>
+
+</html>

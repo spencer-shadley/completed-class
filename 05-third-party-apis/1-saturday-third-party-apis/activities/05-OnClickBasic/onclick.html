@@ -3,15 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Trigger Clicked</title>
-
-  <!-- Added link to the jQuery library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
 </head>
 <body>
 
   <!-- Header with an id of click-me -->
   <h3 id="click-me">CLICK ME!</h3>
+
+  <!-- Added link to the jQuery library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <script type="text/javascript">
 
@@ -23,9 +22,14 @@
       // Notice I have the #click-me, click, and then the function
       // So $("#id|.class|element").on("action", function(){});
       // And so whenever it is clicked...
-      $("#click-me").on("click", function() {
-        alert("I've been clicked!");
+      $('#click-me').on('click', function() {
+        alert('I\'ve been clicked!');
       });
+
+      // alternatively you can use the click function
+      // $('#click-me').click(function() {
+      //   alert('I\'ve been clicked!');
+      // });
 
     });
 

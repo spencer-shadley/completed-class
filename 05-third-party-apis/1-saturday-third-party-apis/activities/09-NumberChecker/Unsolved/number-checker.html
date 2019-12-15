@@ -4,20 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Number Checker</title>
-
-  <!-- Added link to the jQuery Library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-  <!-- Added a link to Bootstrap-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-
 </head>
 
 <body>
 
   <div class="jumbotron">
     <h1 class="text-center">Number Guesser</h1>
-    <h2 class="text-center">See if you can guess the number the computer is thinker of!</h2>
+    <h2 class="text-center">See if you can guess the number the computer is thinking of!</h2>
   </div>
 
   <div class="container">
@@ -59,18 +53,21 @@
 
         </div>
 
+        <!-- Added link to the jQuery Library -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
         <script type="text/javascript">
           $(document).ready(function() {
 
             // Here we create the on click event that gets the user's pick
-            $(".btn-choice").on("click", function() {
+            $('.btn-choice').on('click', function() {
 
-              console.log("You clicked a button!!");
+              console.log('You clicked a button!!');
 
               // Add code to have the computer guess a random number between 1 and 4
               // Then determine which button was clicked
               // Compare the computer and user guess
-              // Inform the user if the've guessed correctly or incorrectly
+              // Inform the user if they've guessed correctly or incorrectly
 
             });
           });

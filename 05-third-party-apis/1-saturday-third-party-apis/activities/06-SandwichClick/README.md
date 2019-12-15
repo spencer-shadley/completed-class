@@ -12,4 +12,10 @@
 
   3. **HINT:** You will need counter variables.
 
-* **BONUS:** Add an image to the `image-div` on the click event.
+#### Bonus 1
+
+Add an image to the `image-div` on the click event.
+
+#### Bonus 2
+
+Generate the HTML based on an array of sandwich objects
