@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Scope Activity #1</title>
-  </head>
-  <body>
-    <h1>Scope Activity #1</h1>
-    <h2>✨Open the console to see the magic!✨</h2>
 
-    <script>
-      function outside() {
-        // what is the scope of this variable?
-        var x = 1;
+<head>
+  <meta charset="UTF-8" />
+  <title>Scope Activity #1</title>
+</head>
 
-        // what is the scope of this function and the scope of y?
-        function inside(y) {
-          console.log(x + y);
-        }
+<body>
+  <h1>Scope Activity #1</h1>
+  <h2>✨Open the console to see the magic!✨</h2>
 
-        return inside;
+  <script>
+    function outside() {
+      // what is the scope of this variable?
+      var x = 1;
+
+      // what is the scope of this function and the scope of y?
+      function inside(y) {
+        console.log(x + y);
       }
 
-      // what is happening here?
-      var insideOut = outside();
+      return inside;
+    }
 
-      // What does this return?
-      insideOut(2);
+    // what is happening here?
+    var insideOut = outside();
 
-      // Uncaught ReferenceError: x is not defined.
-      // How does insideOut have access to x?
-      console.log("The value of 'x' outside 'outside()' is: " + x);
-    </script>
-  </body>
+    // What does this return?
+    insideOut(2);
+
+    // Uncaught ReferenceError: x is not defined.
+    // How does insideOut have access to x?
+    console.log("The value of 'x' outside 'outside()' is: " + x);
+  </script>
+</body>
+
 </html>
