@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/coding-boot-camp/FullStack-Ground#readme",
   "devDependencies": {
-    "markdown-link-reporter": "^1.1.1"
+    "markdown-link-reporter": "^1.1.1",
+    "prettier": "1.19.1"
   }
 }
