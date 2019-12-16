@@ -96,9 +96,3 @@ for (var i = 0; i < threeObjects; ++i) {
 
 // Create a basic html button then create an onClick event that triggers an on click event.
 // Do this on a new page or see previous example
-
-// 7. OVERALL STRUCTURE
-// ==========================================================
-
-// Talk to student a little about the approach for "getting started" on an application.
-// Talk about the concept of variables, functions, calls.
