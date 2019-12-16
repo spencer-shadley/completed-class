@@ -44,9 +44,3 @@
 // ==========================================================
 
 // Create a basic html button then create an onClick event that triggers an on click event.
-
-// 7. OVERALL STRUCTURE
-// ==========================================================
-
-// Talk to student a little about the approach for "getting started" on an application.
-// Talk about the concept of variables, functions, calls.
