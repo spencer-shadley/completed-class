@@ -25,12 +25,12 @@ site3El.children[1].children[0].setAttribute('src', 'images/image_3.jpg');
 site3El.children[1].children[0].setAttribute('alt', 'women working');
 site3El.children[1].children[0].setAttribute('style', 'padding:10px;');
 
-for (var i = 0; i < siteTitles.length; i++) {
+for (var i = 0; i < siteTitles.length; ++i) {
   siteTitles[i].setAttribute('style', 'text-decoration: underline; padding-left:10px; margin: 0');
 }
 
 // Bonus
 // For this bonus, comment out line 11
-for (var i = 0; i < sites.length; i++) {
+for (var i = 0; i < sites.length; ++i) {
   site1El.children[1].setAttribute('href', sites[Math.floor(Math.random() * sites.length)]);
 }

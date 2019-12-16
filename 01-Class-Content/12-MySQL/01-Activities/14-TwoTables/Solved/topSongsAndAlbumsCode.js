@@ -69,7 +69,7 @@ function artistSearch() {
     .then(function(answer) {
       var query = "SELECT position, song, year FROM top5000 WHERE ?";
       connection.query(query, { artist: answer.artist }, function(err, res) {
-        for (var i = 0; i < res.length; i++) {
+        for (var i = 0; i < res.length; ++i) {
           console.log("Position: " + res[i].position + " || Song: " + res[i].song + " || Year: " + res[i].year);
         }
         runSearch();
@@ -80,7 +80,7 @@ function artistSearch() {
 function multiSearch() {
   var query = "SELECT artist FROM top5000 GROUP BY artist HAVING count(*) > 1";
   connection.query(query, function(err, res) {
-    for (var i = 0; i < res.length; i++) {
+    for (var i = 0; i < res.length; ++i) {
       console.log(res[i].artist);
     }
     runSearch();
@@ -116,7 +116,7 @@ function rangeSearch() {
     .then(function(answer) {
       var query = "SELECT position,song,artist,year FROM top5000 WHERE position BETWEEN ? AND ?";
       connection.query(query, [answer.start, answer.end], function(err, res) {
-        for (var i = 0; i < res.length; i++) {
+        for (var i = 0; i < res.length; ++i) {
           console.log(
             "Position: " +
               res[i].position +
@@ -172,7 +172,7 @@ function songAndAlbumSearch() {
 
       connection.query(query, [answer.artist, answer.artist], function(err, res) {
         console.log(res.length + " matches found!");
-        for (var i = 0; i < res.length; i++) {
+        for (var i = 0; i < res.length; ++i) {
           console.log(
             i+1 + ".) " +
               "Year: " +

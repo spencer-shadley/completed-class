@@ -66,7 +66,7 @@ $(document).ready(function() {
         $("#forecast").html("<h4 class=\"mt-3\">5-Day Forecast:</h4>").append("<div class=\"row\">");
 
         // loop over all forecasts (by 3-hour increments)
-        for (var i = 0; i < data.list.length; i++) {
+        for (var i = 0; i < data.list.length; ++i) {
           // only look at forecasts around 3:00pm
           if (data.list[i].dt_txt.indexOf("15:00:00") !== -1) {
             // create html elements for a bootstrap card
@@ -122,7 +122,7 @@ $(document).ready(function() {
     searchWeather(history[history.length-1]);
   }
 
-  for (var i = 0; i < history.length; i++) {
+  for (var i = 0; i < history.length; ++i) {
     makeRow(history[i]);
   }
 });

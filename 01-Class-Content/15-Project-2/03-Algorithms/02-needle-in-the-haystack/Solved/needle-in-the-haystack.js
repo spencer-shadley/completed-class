@@ -7,7 +7,7 @@ var strStr = function(str1, str2) {
     return 0;
   }
 
-  for (var i = 0; i < str1.length; i++) {
+  for (var i = 0; i < str1.length; ++i) {
     var char = str1[i];
 
     if (char === str2[0]) {

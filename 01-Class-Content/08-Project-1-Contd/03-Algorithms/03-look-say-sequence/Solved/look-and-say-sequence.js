@@ -6,7 +6,7 @@ var lookAndSay = function(n) {
 
   var currentCount = 1;
   var currentDigit = numString[0];
-  for (var i = 1; i <= numString.length; i++) {
+  for (var i = 1; i <= numString.length; ++i) {
     var digit = numString[i];
 
     if (digit === currentDigit) {

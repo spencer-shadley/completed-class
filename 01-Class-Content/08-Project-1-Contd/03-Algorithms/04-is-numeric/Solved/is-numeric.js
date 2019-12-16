@@ -17,7 +17,7 @@ var isNumeric = function(str) {
   var hasNum = false;
   var hasDecimal = false;
 
-  for (var i = 0; i < str.length; i++) {
+  for (var i = 0; i < str.length; ++i) {
     var char = str[i];
 
     if (digits[char]) {

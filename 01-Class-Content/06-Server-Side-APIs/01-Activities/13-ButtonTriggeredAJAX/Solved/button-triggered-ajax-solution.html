@@ -58,7 +58,7 @@
           var results = response.data;
 
           // Looping over every result item
-          for (var i = 0; i < results.length; i++) {
+          for (var i = 0; i < results.length; ++i) {
 
             // Only taking action if the photo has an appropriate rating
             if (results[i].rating !== "r" && results[i].rating !== "pg-13") {

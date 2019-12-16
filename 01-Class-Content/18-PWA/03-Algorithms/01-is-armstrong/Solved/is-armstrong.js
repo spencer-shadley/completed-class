@@ -4,7 +4,7 @@ var isArmstrong = function(num) {
   var str = String(num);
   var sum = 0;
 
-  for (var i = 0; i < str.length; i++) {
+  for (var i = 0; i < str.length; ++i) {
     var digit = parseInt(str[i]);
     sum += digit ** str.length;
   }

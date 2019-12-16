@@ -5,7 +5,7 @@ var arrayIntersection = function(arr1, arr2) {
   var numMap = {};
   var result = [];
 
-  for (var i = 0; i < arr1.length; i++) {
+  for (var i = 0; i < arr1.length; ++i) {
     var num = arr1[i];
 
     if (numMap[num] === undefined) {
@@ -15,7 +15,7 @@ var arrayIntersection = function(arr1, arr2) {
     }
   }
 
-  for (var i = 0; i < arr2.length; i++) {
+  for (var i = 0; i < arr2.length; ++i) {
     var num = arr2[i];
 
     if (numMap[num]) {

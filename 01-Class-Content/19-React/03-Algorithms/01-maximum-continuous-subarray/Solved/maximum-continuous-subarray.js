@@ -4,7 +4,7 @@ var subSubArray = function(arr) {
   var max = arr[0];
   var currentMax = arr[0];
 
-  for (var i = 0; i < arr.length; i++) {
+  for (var i = 0; i < arr.length; ++i) {
     var num = arr[i];
 
     currentMax = Math.max(currentMax + num, num);

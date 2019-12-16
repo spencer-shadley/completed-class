@@ -94,7 +94,7 @@ function createRatingForm(image) {
   const form = createEl("form");
   form.setAttribute("action", "post");
 
-  for (let i = 1; i <= 5; i++) {
+  for (let i = 1; i <= 5; ++i) {
     const input = createEl("input", "visuallyhidden");
     input.setAttribute("type", "radio");
     input.setAttribute("name", "rating");

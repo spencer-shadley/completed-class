@@ -33,7 +33,7 @@ So we know we definitely need to loop through the number. But we can't loop thro
 var lookAndSay = function(n) {
   var numString = n.toString();
 
-  for (var i = 0; i < numString.length; i++) {
+  for (var i = 0; i < numString.length; ++i) {
     var digit = numString[i];
   }
 };
@@ -54,7 +54,7 @@ var lookAndSay = function(n) {
 
   var currentCount = 1;
   var currentDigit = numString[0];
-  for (var i = 1; i < numString.length; i++) {
+  for (var i = 1; i < numString.length; ++i) {
     var digit = numString[i];
   }
 };
@@ -71,7 +71,7 @@ var lookAndSay = function(n) {
 
   var currentCount = 1;
   var currentDigit = numString[0];
-  for (var i = 1; i < numString.length; i++) {
+  for (var i = 1; i < numString.length; ++i) {
     var digit = numString[i];
 
     if (digit === currentDigit) {
@@ -95,7 +95,7 @@ var lookAndSay = function(n) {
 
   var currentCount = 1;
   var currentDigit = numString[0];
-  for (var i = 1; i < numString.length; i++) {
+  for (var i = 1; i < numString.length; ++i) {
     var digit = numString[i];
 
     if (digit === currentDigit) {
@@ -121,7 +121,7 @@ var lookAndSay = function(n) {
 
   var currentCount = 1;
   var currentDigit = numString[0];
-  for (var i = 1; i <= numString.length; i++) {
+  for (var i = 1; i <= numString.length; ++i) {
     var digit = numString[i];
 
     if (digit === currentDigit) {

@@ -57,7 +57,7 @@ function renderBooks(data) {
     $("#stats").empty();
     $("#stats").show();
 
-    for (var i = 0; i < data.length; i++) {
+    for (var i = 0; i < data.length; ++i) {
 
       var div = $("<div>");
 

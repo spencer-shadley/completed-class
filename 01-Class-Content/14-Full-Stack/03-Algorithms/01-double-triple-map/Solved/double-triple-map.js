@@ -18,7 +18,7 @@ var doubleTripleMap = function(arr) {
 // var doubleTripleMap = function(arr) {
 //   var doubleTripleArr = [];
 
-//   for (var i = 0; i < arr.length; i++) {
+//   for (var i = 0; i < arr.length; ++i) {
 //     var num = arr[i];
 
 //     if (num % 2 === 0) {

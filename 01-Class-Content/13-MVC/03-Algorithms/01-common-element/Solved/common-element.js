@@ -6,12 +6,12 @@
 var commonElement = function(arrA, arrB) {
   var elements = {};
 
-  for (var i = 0; i < arrA.length; i++) {
+  for (var i = 0; i < arrA.length; ++i) {
     var num = arrA[i];
     elements[num] = true;
   }
 
-  for (var i = 0; i < arrB.length; i++) {
+  for (var i = 0; i < arrB.length; ++i) {
     var num = arrB[i];
 
     if (elements[num] === true) {
@@ -25,12 +25,12 @@ var commonElement = function(arrA, arrB) {
 // var commonElement = function(arrA, arrB) {
 //   var elements = new Set();
 
-//   for (var i = 0; i < arrA.length; i++) {
+//   for (var i = 0; i < arrA.length; ++i) {
 //     var num = arrA[i];
 //     elements.add(num);
 //   }
 
-//   for (var i = 0; i < arrB.length; i++) {
+//   for (var i = 0; i < arrB.length; ++i) {
 //     var num = arrB[i];
 
 //     if (elements.has(num)) {

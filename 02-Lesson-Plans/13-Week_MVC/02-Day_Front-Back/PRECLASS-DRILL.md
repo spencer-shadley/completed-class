@@ -31,7 +31,7 @@ var singleWord = function (str){
 
   var newStr = '';
 
-  for (var i = 0; i < str.length; i++){
+  for (var i = 0; i < str.length; ++i){
     if (str[i] !== ' ' ){
       newStr += str[i];
     }

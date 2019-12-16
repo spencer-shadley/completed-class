@@ -5,7 +5,7 @@
 $.get("/api", function(data) {
 
   // for each character that our server sends us back
-  for (var i = 0; i < data.length; i++) {
+  for (var i = 0; i < data.length; ++i) {
     // create a parent div for the oncoming elements
     var wellSection = $("<div>");
     // add a class to this div: 'well'

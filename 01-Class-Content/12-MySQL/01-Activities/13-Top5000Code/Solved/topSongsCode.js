@@ -70,7 +70,7 @@ function artistSearch() {
       var query = "SELECT position, song, year FROM top5000 WHERE ?";
       connection.query(query, { artist: answer.artist }, function(err, res) {
         if (err) throw err;
-        for (var i = 0; i < res.length; i++) {
+        for (var i = 0; i < res.length; ++i) {
           console.log("Position: " + res[i].position + " || Song: " + res[i].song + " || Year: " + res[i].year);
         }
         runSearch();
@@ -82,7 +82,7 @@ function multiSearch() {
   var query = "SELECT artist FROM top5000 GROUP BY artist HAVING count(*) > 1";
   connection.query(query, function(err, res) {
     if (err) throw err;
-    for (var i = 0; i < res.length; i++) {
+    for (var i = 0; i < res.length; ++i) {
       console.log(res[i].artist);
     }
     runSearch();
@@ -119,7 +119,7 @@ function rangeSearch() {
       var query = "SELECT position,song,artist,year FROM top5000 WHERE position BETWEEN ? AND ?";
       connection.query(query, [answer.start, answer.end], function(err, res) {
         if (err) throw err;
-        for (var i = 0; i < res.length; i++) {
+        for (var i = 0; i < res.length; ++i) {
           console.log(
             "Position: " +
               res[i].position +

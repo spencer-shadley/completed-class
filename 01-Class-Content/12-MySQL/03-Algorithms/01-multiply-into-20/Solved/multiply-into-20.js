@@ -4,7 +4,7 @@
 var multiplyInto20 = function(arr) {
   var numMap = {};
 
-  for (var i = 0; i < arr.length; i++) {
+  for (var i = 0; i < arr.length; ++i) {
     var currentNum = arr[i];
 
     var neededNumber = 20 / currentNum;

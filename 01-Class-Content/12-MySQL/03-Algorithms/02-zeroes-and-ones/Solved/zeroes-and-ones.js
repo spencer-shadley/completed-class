@@ -6,7 +6,7 @@ var zeroesAndOnes = function(str) {
   var zeroes = 0;
   var ones = 0;
 
-  for (var i = 0; i < str.length; i++) {
+  for (var i = 0; i < str.length; ++i) {
     var num = str[i];
 
     if (num === "0") {

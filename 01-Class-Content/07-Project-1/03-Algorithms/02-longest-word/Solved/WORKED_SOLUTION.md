@@ -30,7 +30,7 @@ Now in order to check each word, we'll loop through the `words` array:
 var longestWord = function(str) {
   var words = str.split(" ");
 
-  for (var i = 0; i < words.length; i++) {
+  for (var i = 0; i < words.length; ++i) {
     var currentWord = words[i];
   }
 };
@@ -43,7 +43,7 @@ var longestWord = function(str) {
   var words = str.split(" ");
   var longestWord;
 
-  for (var i = 0; i < words.length; i++) {
+  for (var i = 0; i < words.length; ++i) {
     var currentWord = words[i];
 
     if (currentWord.length > longestWord.length) {
@@ -64,7 +64,7 @@ var longestWord = function(str) {
   var words = str.split(" ");
   var longestWord = words[0];
 
-  for (var i = 1; i < words.length; i++) {
+  for (var i = 1; i < words.length; ++i) {
     var currentWord = words[i];
 
     if (currentWord.length > longestWord.length) {

@@ -12,7 +12,7 @@ var isPerfectSquare = function(num) {
     } else if (currentSquare > num) {
       return false;
     } else {
-      i++;
+      ++i;
     }
   }
 };

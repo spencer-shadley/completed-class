@@ -13,14 +13,14 @@ Before writing any code, we should think about how we'd solve this problem _with
 Since we're going through each letter, one by one, we probably need a loop:
 
 ```js
-for (var i = 0; i < str.length; i++) {}
+for (var i = 0; i < str.length; ++i) {}
 ```
 
 We want to check if the current character is a vowel, so we could use an if-statement for this:
 
 ```js
 var vowelCount = function(str) {
-  for (var i = 0; i < str.length; i++) {
+  for (var i = 0; i < str.length; ++i) {
     if (
       str[i] === "a" ||
       str[i] === "e" ||
@@ -39,7 +39,7 @@ If the letter is a vowel, we need to count it:
 var vowelCount = function(str) {
   var count = 0;
 
-  for (var i = 0; i < str.length; i++) {
+  for (var i = 0; i < str.length; ++i) {
     if (
       str[i] === "a" ||
       str[i] === "e" ||
@@ -59,7 +59,7 @@ And finally we need to answer or _return_ the final count. We'll have this after
 var vowelCount = function(str) {
   var count = 0;
 
-  for (var i = 0; i < str.length; i++) {
+  for (var i = 0; i < str.length; ++i) {
     if (
       str[i] === "a" ||
       str[i] === "e" ||
@@ -84,7 +84,7 @@ var vowelCount = function(str) {
   var count = 0;
   var vowels = ["a", "e", "i", "o", "u"];
 
-  for (var i = 0; i < str.length; i++) {
+  for (var i = 0; i < str.length; ++i) {
     var letter = str[i].toLowerCase();
 
     if (vowels.indexOf(letter) !== -1) {

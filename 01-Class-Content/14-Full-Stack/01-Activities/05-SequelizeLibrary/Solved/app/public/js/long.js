@@ -2,7 +2,7 @@
 $.get("/api/books/long", function(data) {
 
   // For each book that our server sends us back
-  for (var i = 0; i < data.length; i++) {
+  for (var i = 0; i < data.length; ++i) {
     // Create a parent div to hold book data
     var wellSection = $("<div>");
     // Add a class to this div: 'well'

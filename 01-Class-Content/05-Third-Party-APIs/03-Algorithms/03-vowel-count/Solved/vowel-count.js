@@ -4,7 +4,7 @@ var vowelCount = function(str) {
   var result = 0;
   var vowels = ["a", "e", "i", "o", "u"];
 
-  for (var i = 0; i < str.length; i++) {
+  for (var i = 0; i < str.length; ++i) {
     var letter = str[i].toLowerCase();
 
     if (vowels.indexOf(letter) !== -1) {
@@ -20,7 +20,7 @@ var vowelCount = function(str) {
 // var vowelCount = function (str) {
 //   var result = 0;
 
-//   for (var i = 0; i < str.length; i++) {
+//   for (var i = 0; i < str.length; ++i) {
 //     var letter = str[i].toLowerCase();
 
 //     if (letter === "a" || letter === "e" || letter === "i" || letter === "o" || letter === "u") {

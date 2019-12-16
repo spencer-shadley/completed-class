@@ -5,7 +5,7 @@
 // If a number is not divisible by 3 or 5, print the number
 
 var fizzBuzz = function(arr) {
-  for (var i = 0; i < arr.length; i++) {
+  for (var i = 0; i < arr.length; ++i) {
     var currentNumber = arr[i];
 
     if (currentNumber % 15 === 0) {

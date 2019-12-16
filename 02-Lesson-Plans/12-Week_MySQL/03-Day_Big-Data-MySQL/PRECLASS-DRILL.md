@@ -34,7 +34,7 @@ Output: false
 var any = function(arr, cb){
   var isTrue = false;
 
-  for (var i = 0; i < arr.length; i++){
+  for (var i = 0; i < arr.length; ++i){
     var cbOutput = cb(arr[i]);
     if(cbOutput){
       isTrue = cbOutput;

@@ -55,7 +55,7 @@ Output: 3
   ```js
   var findMax = function (numArr) {
     var maxNum;
-    for (var i = 0; i < numArr.length; i++){
+    for (var i = 0; i < numArr.length; ++i){
 
     }
     return maxNum;
@@ -67,7 +67,7 @@ Output: 3
 ```js
 
   var maxNum = numArr[0];
-  for (var i = 1; i < numArr.length; i++) {
+  for (var i = 1; i < numArr.length; ++i) {
     if (numArr[i] > maxNum) {
       maxNum = numArr[i];
     }

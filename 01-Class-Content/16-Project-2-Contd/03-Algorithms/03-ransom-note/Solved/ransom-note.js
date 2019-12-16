@@ -7,12 +7,12 @@ var ransomNote = function(magazine, note) {
   var magazineMap = {};
   var noteMap = {};
 
-  for (var i = 0; i < magazineWords.length; i++) {
+  for (var i = 0; i < magazineWords.length; ++i) {
     var word = magazineWords[i];
     magazineMap[word] = (magazineMap[word] || 0) + 1;
   }
 
-  for (var i = 0; i < noteWords.length; i++) {
+  for (var i = 0; i < noteWords.length; ++i) {
     var word = noteWords[i];
     noteMap[word] = (noteMap[word] || 0) + 1;
   }

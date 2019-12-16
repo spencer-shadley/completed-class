@@ -10,7 +10,7 @@ var isAnagram = function(strA, strB) {
   var bLetterMap = {};
   var strLength = strA.length;
 
-  for (var i = 0; i < strLength; i++) {
+  for (var i = 0; i < strLength; ++i) {
     var aLetter = strA[i];
     var bLetter = strB[i];
 

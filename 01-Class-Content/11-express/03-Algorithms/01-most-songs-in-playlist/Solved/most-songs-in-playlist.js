@@ -7,7 +7,7 @@ var mostSongsInPlaylist = function(arr) {
   var totalMins = 0;
   var totalSongs = 0;
 
-  for (var i = 0; i < sortedArr.length; i++) {
+  for (var i = 0; i < sortedArr.length; ++i) {
     var currentSongDuration = sortedArr[i];
 
     if (totalMins + currentSongDuration <= 60) {

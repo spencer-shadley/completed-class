@@ -49,7 +49,7 @@ app.get("/api/characters/:character", function(req, res) {
 
   console.log(chosen);
 
-  for (var i = 0; i < characters.length; i++) {
+  for (var i = 0; i < characters.length; ++i) {
     if (chosen === characters[i].routeName) {
       return res.json(characters[i]);
     }

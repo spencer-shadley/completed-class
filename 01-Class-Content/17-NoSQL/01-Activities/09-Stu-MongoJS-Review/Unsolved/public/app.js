@@ -48,7 +48,7 @@ $(document).on("click", ".markunread", function() {
 function getUnread() {
   $("#unread").empty();
   $.getJSON("/unread", function(data) {
-    for (var i = 0; i < data.length; i++) {
+    for (var i = 0; i < data.length; ++i) {
       $("#unread").prepend("<tr><td>" + data[i].title + "</td><td>" + data[i].author +
         "</td><td><button class='markread' data-id='" + data[i]._id + "'>Mark Read</button></td></tr>");
     }
@@ -60,7 +60,7 @@ function getUnread() {
 function getRead() {
   $("#read").empty();
   $.getJSON("/read", function(data) {
-    for (var i = 0; i < data.length; i++) {
+    for (var i = 0; i < data.length; ++i) {
       $("#read").prepend("<tr><td>" + data[i].title + "</td><td>" + data[i].author +
         "</td><td><button class='markunread' data-id='" + data[i]._id + "'>Mark Unread</button></td></tr>");
     }

@@ -1,7 +1,7 @@
 // 1. funnyCase makes each letter in a string the opposite case as the one before
 var funnyCase = function(string) {
   var newString = "";
-  for (var i = 0; i < string.length; i++) {
+  for (var i = 0; i < string.length; ++i) {
     if (i % 2 === 0) newString += string[i].toLowerCase();
     else newString += string[i].toUpperCase();
   }

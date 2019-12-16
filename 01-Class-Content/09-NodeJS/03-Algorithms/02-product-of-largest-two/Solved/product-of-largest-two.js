@@ -4,7 +4,7 @@ var productOfLargestTwo = function (arr) {
   var largest = null;
   var secondLargest = null;
 
-  for (var i = 0; i < arr.length; i++) {
+  for (var i = 0; i < arr.length; ++i) {
     var currentNumber = arr[i];
 
     if (currentNumber > largest || largest === null) {

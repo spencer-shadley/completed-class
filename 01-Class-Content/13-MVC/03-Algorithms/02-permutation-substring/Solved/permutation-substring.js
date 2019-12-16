@@ -5,7 +5,7 @@
 var permutationSubstring = function(str, sub) {
   var charMap = {};
 
-  for (var i = 0; i < sub.length; i++) {
+  for (var i = 0; i < sub.length; ++i) {
     var char = sub[i];
 
     if (char in charMap) {
@@ -15,7 +15,7 @@ var permutationSubstring = function(str, sub) {
     }
   }
 
-  for (var i = 0; i < str.length; i++) {
+  for (var i = 0; i < str.length; ++i) {
     var char = str[i];
     if (char in charMap) {
       charMap[char] -= 1;

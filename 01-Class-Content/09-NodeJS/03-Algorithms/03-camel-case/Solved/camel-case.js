@@ -4,7 +4,7 @@ var camelCase = function(str) {
   var result = "";
   var words = str.toLowerCase().split(" ");
 
-  for (var i = 0; i < words.length; i++) {
+  for (var i = 0; i < words.length; ++i) {
     var word = words[i];
     var letters = word.split("");
 

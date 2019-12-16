@@ -21,7 +21,7 @@ $(document).ready(function() {
   function initializeRows() {
     $todoContainer.empty();
     var rowsToAdd = [];
-    for (var i = 0; i < todos.length; i++) {
+    for (var i = 0; i < todos.length; ++i) {
       rowsToAdd.push(createNewRow(todos[i]));
     }
     $todoContainer.prepend(rowsToAdd);

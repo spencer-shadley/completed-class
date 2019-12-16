@@ -5,7 +5,7 @@
 var stringMap = function(str) {
   var charMap = {};
 
-  for (var i = 0; i < str.length; i++) {
+  for (var i = 0; i < str.length; ++i) {
     var char = str[i];
 
     if (charMap[char]) {

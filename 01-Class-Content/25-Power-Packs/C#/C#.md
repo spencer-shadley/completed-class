@@ -415,7 +415,7 @@ Can you note all the differences and similarities from Javascript?
 Type and run the following code:
 
 ```c#
-for (int i = 0; i < employees.Count; i++) 
+for (int i = 0; i < employees.Count; ++i) 
 {
   Console.WriteLine(employees[i]);
 }
@@ -528,7 +528,7 @@ namespace CatWorx.BadgeMaker
 
             employees.Add(input);
 
-            for (int i = 0; i < employees.Count; i++) 
+            for (int i = 0; i < employees.Count; ++i) 
 
             {
 
@@ -564,7 +564,7 @@ static void Main(string[] args)
 
     employees.Add(input);
 
-    for (int i = 0; i < employees.Count; i++) 
+    for (int i = 0; i < employees.Count; ++i) 
     {
 
       Console.WriteLine(employees[i]);
@@ -594,7 +594,7 @@ static void Main(string[] args)
 
   } 
 
-  for (int i = 0; i < employees.Count; i++) 
+  for (int i = 0; i < employees.Count; ++i) 
 
   {
 
@@ -702,7 +702,7 @@ static void Main(string[] args)
   // This is our employee-getting code now
   List<string> employees = GetEmployees();
 
-  for (int i = 0; i < employees.Count; i++) 
+  for (int i = 0; i < employees.Count; ++i) 
   {
     Console.WriteLine(employees[i]);
   }
@@ -728,7 +728,7 @@ Let's define PrintEmployees() below GetEmployees():
 ```c#
 static void printEmployees(List<string> employees)
 {
-  for (int i = 0; i < employees.Count; i++) 
+  for (int i = 0; i < employees.Count; ++i) 
   {
 
     Console.WriteLine(employees[i]);
@@ -766,7 +766,7 @@ class Program
   }
   static void PrintEmployees(List<string> employees)
   {
-    for (int i = 0; i < employees.Count; i++)
+    for (int i = 0; i < employees.Count; ++i)
     {
       Console.WriteLine(employees[i]);
     }
@@ -1183,7 +1183,7 @@ static void PrintEmployees(List<Employee> employees)
 When we iterate over employees, we're no longer iterating over strings, but Employee instances! Now we'll get an employee's full name straight from the instance via GetName(). Let's update PrintEmployees() to use GetName():
 
 ```c#
-for (int i = 0; i < employees.Count; i++) 
+for (int i = 0; i < employees.Count; ++i) 
 {
   // each item in employees is now an Employee instance
   Console.WriteLine(employees[i].GetName());
@@ -1361,7 +1361,7 @@ class Employee
 The last step of this section is to print out all of the employee information for each employee. In Program's PrintEmployees() method, update the code in the for block:
 
 ```c#
-for (int i = 0; i < employees.Count; i++) 
+for (int i = 0; i < employees.Count; ++i) 
 {
   string template = "{0,-10}\t{1,-20}\t{2}";
 
@@ -1493,7 +1493,7 @@ namespace CatWorx.BadgeMaker
     // Add List parameter to method
     public static void PrintEmployees(List<Employee> employees) 
     {
-      for (int i = 0; i < employees.Count; i++) 
+      for (int i = 0; i < employees.Count; ++i) 
       {
         string template = "{0,-10}\t{1,-20}\t{2}";
         Console.WriteLine(String.Format(template, employees[i].GetId(), employees[i].GetFullName(), employees[i].GetPhotoUrl()));
@@ -1653,7 +1653,7 @@ using (StreamWriter file = new StreamWriter("data/employees.csv"))
   file.WriteLine("ID,Name,PhotoUrl");
 
   // Loop over employees
-  for (int i = 0; i < employees.Count; i++)
+  for (int i = 0; i < employees.Count; ++i)
   {
     // Write each employee to the file
     string template = "{0},{1},{2}";
@@ -2002,7 +2002,7 @@ If you guessed a for loop, you are correct! Let's do some coding now and impleme
 ```c#
 using(WebClient client = new WebClient())
 {
-  for (int i = 0; i < employees.Count; i++)
+  for (int i = 0; i < employees.Count; ++i)
   {
 
   }
@@ -2045,7 +2045,7 @@ Since we are dealing with an instance of the WebClient as client, let's use it t
 ```c#
 using(WebClient client = new WebClient())
 {
-  for (int i = 0; i < employees.Count; i++)
+  for (int i = 0; i < employees.Count; ++i)
   {
     Stream employeeStream = client.OpenRead(employee[i].GetPhotoUrl());
   }
@@ -2077,7 +2077,7 @@ For the second method, we will convert the Stream into an Image using the Image.
 ```c#
 using(WebClient client = new WebClient())
 {
-  for (int i = 0; i < employees.Count; i++)
+  for (int i = 0; i < employees.Count; ++i)
   {
     Stream employeeStream = client.OpenRead(employee[i].GetPhotoUrl());
     Image photo = Image.FromStream(employeeStream);
@@ -2091,7 +2091,7 @@ To simplify our code's readability and avoid unnecessarily creating variables, w
 ```c#
 using(WebClient client = new WebClient())
 {
-  for (int i = 0; i < employees.Count; i++)
+  for (int i = 0; i < employees.Count; ++i)
   {
     Image photo = Image.FromStream(client.OpenRead(employee[i].GetPhotoUrl()));
   }
@@ -2108,7 +2108,7 @@ Then type the following code into the block of your for loop.
 ```c#
 using(WebClient client = new WebClient())
 {
-  for (int i = 0; i < employees.Count; i++)
+  for (int i = 0; i < employees.Count; ++i)
   {
     Image photo = Image.FromStream(client.OpenRead(employees[i].GetPhotoUrl()));
  
@@ -2137,7 +2137,7 @@ We actually accomplished this step previously in this section and checked our re
 ```c#
 using(WebClient client = new WebClient())
 {
-  for (int i = 0; i < employees.Count; i++)
+  for (int i = 0; i < employees.Count; ++i)
   {
     Image photo = Image.FromStream(client.OpenRead(employee[i].GetPhotoUrl()));
 
@@ -2177,7 +2177,7 @@ Let's now create the canvas that we will be using to create our badge by using t
 ```c#
 using(WebClient client = new WebClient())
 {
-  for (int i = 0; i < employees.Count; i++)
+  for (int i = 0; i < employees.Count; ++i)
   {
     Image photo = Image.FromStream(client.OpenRead(employee[i].GetPhotoUrl()));
 
@@ -2208,7 +2208,7 @@ Let's try that method now. How do you suppose it should look? Try to type out th
 ```c#
 using(WebClient client = new WebClient())
 {
-  for (int i = 0; i < employees.Count; i++)
+  for (int i = 0; i < employees.Count; ++i)
   {
     Image photo = Image.FromStream(client.OpenRead(employee[i].GetPhotoUrl()));
     Image background = Image.FromFile("badge.png");
@@ -2231,7 +2231,7 @@ Add the following highlighted code to insert a badge template Image object named
 ```c#
 using(WebClient client = new WebClient())
 {
-  for (int i = 0; i < employees.Count; i++)
+  for (int i = 0; i < employees.Count; ++i)
   {
      Image photo = Image.FromStream(client.OpenRead(employee[i].GetPhotoUrl()));
      Image background = Image.FromFile("badge.png");
@@ -2258,7 +2258,7 @@ Next, we will insert our employee photo at the coordinates currently held by the
 ```c#
 using(WebClient client = new WebClient())
 {
-  for (int i = 0; i < employees.Count; i++)
+  for (int i = 0; i < employees.Count; ++i)
   {
     Image photo = Image.FromStream(client.OpenRead(employee[i].GetPhotoUrl()));
     Image background = Image.FromFile("badge.png");
@@ -2683,7 +2683,7 @@ Knowing this, the command **json.SelectToken("results")** should give us the ent
 
 ```c#
 // Doesn't work; there's no Count() method on JObject
-for (int i = 0; i < json.SelectToken("results").Count; i++) 
+for (int i = 0; i < json.SelectToken("results").Count; ++i) 
 {
 
 }

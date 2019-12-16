@@ -2,7 +2,7 @@
 // You may not use the built-in `Math.sqrt` method
 
 var sqrt = function(x) {
-  for (var i = 0; i <= x; i++) {
+  for (var i = 0; i <= x; ++i) {
     var squared = i * i;
     
     if (squared === x) {

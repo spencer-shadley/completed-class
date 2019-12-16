@@ -7,7 +7,7 @@ var noMoreThanPrevious = function(str) {
 
   var currentLetter = arr[0];
   var prevLetter;
-  for (var i = 1; i < str.length; i++) {
+  for (var i = 1; i < str.length; ++i) {
     var letter = str[i];
     letterCount[letter] = (letterCount[letter] || 0) + 1;
 

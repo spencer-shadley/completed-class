@@ -29,7 +29,7 @@ Output: 0
 var countVowels = function(str){
 	var count = 0;
 	var input = str.toLowerCase();
-	for (var i = 0; i < input.length; i++){
+	for (var i = 0; i < input.length; ++i){
 	  if(input[i] === "a" || input[i] === "e" || input[i] === "i" || input[i] === "o" || input[i] === "u"){
 		  count++;
     }
@@ -43,7 +43,7 @@ var countVowels = function(str){
 	var count = 0;
 	var input = str.toLowerCase();
 	var vowelArr = [“a”, “e”, “i”, “o”, “u”];
-	for (var i = 0; i < input.length; i++){
+	for (var i = 0; i < input.length; ++i){
 	  if(vowelArr.includes(input[i])){
 		  count++;
     }

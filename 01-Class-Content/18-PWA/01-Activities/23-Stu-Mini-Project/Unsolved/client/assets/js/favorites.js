@@ -32,7 +32,7 @@ function renderPlaceHolders() {
 function createPlaceholders() {
   const fragment = document.createDocumentFragment();
 
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < 4; ++i) {
     const placeholder = createPlaceholder();
     fragment.appendChild(placeholder);
   }

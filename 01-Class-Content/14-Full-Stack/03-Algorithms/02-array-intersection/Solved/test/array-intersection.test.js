@@ -3,7 +3,7 @@ var expect = chai.expect;
 function containSameElements(arr1, arr2) {
   var arr1Copy = JSON.parse(JSON.stringify(arr1));
 
-  for (var i = 0; i < arr2.length; i++) {
+  for (var i = 0; i < arr2.length; ++i) {
     var num = arr2[i];
 
     var arr1Index = arr1Copy.indexOf(num);

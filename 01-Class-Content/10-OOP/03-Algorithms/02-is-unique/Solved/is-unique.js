@@ -4,7 +4,7 @@
 var isUnique = function(arr) {
   var numMap = {};
 
-  for (var i = 0; i < arr.length; i++) {
+  for (var i = 0; i < arr.length; ++i) {
     var currentNumber = arr[i];
 
     if (numMap[currentNumber] === true) {

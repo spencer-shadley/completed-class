@@ -5,7 +5,7 @@ var titleCase = function(str) {
 
   var words = str.split(" ");
 
-  for (var i = 0; i < words.length; i++) {
+  for (var i = 0; i < words.length; ++i) {
     var word = words[i].split("");
 
     word[0] = word[0].toUpperCase();

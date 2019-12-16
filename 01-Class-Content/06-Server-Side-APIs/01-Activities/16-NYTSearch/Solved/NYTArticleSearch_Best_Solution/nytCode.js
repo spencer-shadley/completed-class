@@ -53,7 +53,7 @@ function updatePage(NYTData) {
   console.log("------------------------------------");
 
   // Loop through and build elements for the defined number of articles
-  for (var i = 0; i < numArticles; i++) {
+  for (var i = 0; i < numArticles; ++i) {
     // Get specific article info for current index
     var article = NYTData.response.docs[i];
 

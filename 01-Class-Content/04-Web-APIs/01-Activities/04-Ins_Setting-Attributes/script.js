@@ -12,6 +12,6 @@
 // imgEl[0].setAttribute("src", "images/image_1.jpg");
 // imgEl[0].setAttribute("style", "width:500px; height:200px;");
 
-// for (var i = 0; i < divTags.length; i++) {
+// for (var i = 0; i < divTags.length; ++i) {
 //   divTags[i].setAttribute("style", "text-decoration:underline; color:red;");
 // }

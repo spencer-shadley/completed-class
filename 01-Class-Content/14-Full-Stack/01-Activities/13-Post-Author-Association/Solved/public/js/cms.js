@@ -101,7 +101,7 @@ $(document).ready(function() {
       window.location.href = "/authors";
     }
     var rowsToAdd = [];
-    for (var i = 0; i < data.length; i++) {
+    for (var i = 0; i < data.length; ++i) {
       rowsToAdd.push(createAuthorRow(data[i]));
     }
     authorSelect.empty();

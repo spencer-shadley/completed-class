@@ -6,7 +6,7 @@ var mergeMeetingTimes = function(arr) {
 
   var result = [sortedArr[0]];
 
-  for (var i = 1; i < sortedArr.length; i++) {
+  for (var i = 1; i < sortedArr.length; ++i) {
     var lastMeeting = result[result.length - 1];
     var currentMeeting = sortedArr[i];
 

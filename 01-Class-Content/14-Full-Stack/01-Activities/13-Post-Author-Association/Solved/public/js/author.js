@@ -49,7 +49,7 @@ $(document).ready(function() {
   function getAuthors() {
     $.get("/api/authors", function(data) {
       var rowsToAdd = [];
-      for (var i = 0; i < data.length; i++) {
+      for (var i = 0; i < data.length; ++i) {
         rowsToAdd.push(createAuthorRow(data[i]));
       }
       renderAuthorList(rowsToAdd);

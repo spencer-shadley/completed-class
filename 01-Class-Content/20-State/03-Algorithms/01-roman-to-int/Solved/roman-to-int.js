@@ -13,7 +13,7 @@ var romanToInt = function(str) {
 
   var result = 0;
 
-  for (var i = 0; i < str.length; i++) {
+  for (var i = 0; i < str.length; ++i) {
     var currentNumeral = str[i];
     var nextNumeral = str[i + 1];
 

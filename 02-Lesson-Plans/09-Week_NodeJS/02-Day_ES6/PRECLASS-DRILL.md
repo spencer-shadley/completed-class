@@ -30,7 +30,7 @@ Output: [1,2,3,5]
 
 var deduper = function (numArr){
   var newArr = [];
-  for (var i = 0; i < numArr.length; i++){
+  for (var i = 0; i < numArr.length; ++i){
     if(!newArr.includes(numArr[i])){
       newArr.push(numArr[i]);
     }

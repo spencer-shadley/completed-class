@@ -1,6 +1,6 @@
 // 1. When using var, our counter exists after a for-loop is done
 
-for (var i = 0; i < 5; i++) {
+for (var i = 0; i < 5; ++i) {
   console.log(i);
 }
 

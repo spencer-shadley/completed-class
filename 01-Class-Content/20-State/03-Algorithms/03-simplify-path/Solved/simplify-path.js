@@ -4,7 +4,7 @@ var simplifyPath = function(path) {
   var pathArr = path.split("/");
   var stack = [];
 
-  for (var i = 0; i < pathArr.length; i++) {
+  for (var i = 0; i < pathArr.length; ++i) {
     var section = pathArr[i];
 
     if (!section) {

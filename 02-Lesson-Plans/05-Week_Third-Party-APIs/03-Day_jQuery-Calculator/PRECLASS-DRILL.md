@@ -30,7 +30,7 @@ Output: "o"
 ```js
 
 function firstNonRepeatChar(str) {
-	for (var i = 0; i < str.length; i++) {
+	for (var i = 0; i < str.length; ++i) {
 		var char = str[i];
 		var count = 0;
 		
@@ -64,7 +64,7 @@ Time permitting (and if the class seems up for it), code this solution as an alt
 
 function firstNonRepeatChar(str){
 	var charCount = {};
-	for (var i = 0; i < str.length; i++) {
+	for (var i = 0; i < str.length; ++i) {
 		var char = str[i];
 		if (charCount[char]) {
 			charCount[char]++;

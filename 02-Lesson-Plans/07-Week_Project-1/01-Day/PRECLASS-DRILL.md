@@ -34,7 +34,7 @@ Output: undefined
 
 ```js
 var findDup = function (arr) {
-	for (var i = 0; i < arr.length; i++){
+	for (var i = 0; i < arr.length; ++i){
 		for (var j = 0; j < i; j++){
 			if(arr[i] === arr[j]){
 				return arr[i];
@@ -49,7 +49,7 @@ var findDup = function (arr) {
 ```js
 var firstDup = function(arr){
 	var dups = {};
-	for (var i = 0; i < arr.length; i++) {
+	for (var i = 0; i < arr.length; ++i) {
 		var val = arr[i]
 		if (dups[val]) {
 			return val;

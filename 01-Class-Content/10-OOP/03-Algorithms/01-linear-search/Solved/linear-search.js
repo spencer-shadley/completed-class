@@ -4,7 +4,7 @@
 // You may not use the `indexOf`, `lastIndexOf` or `includes` methods
 
 var linearSearch = function(arr, target) {
-  for (var i = 0; i < arr.length; i++) {
+  for (var i = 0; i < arr.length; ++i) {
     var currentNumber = arr[i];
 
     if (currentNumber === target) {

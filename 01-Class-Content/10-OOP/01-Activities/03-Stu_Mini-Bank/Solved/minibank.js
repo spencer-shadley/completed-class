@@ -15,7 +15,7 @@ function MiniBank(balance) {
   },
   this.printStatement = function() {
     var statement = this.getStatement();
-    for (var i = 0; i < statement.length; i++) {
+    for (var i = 0; i < statement.length; ++i) {
       console.log(`${i + 1}. ${statement[i]}`);
     }
   },

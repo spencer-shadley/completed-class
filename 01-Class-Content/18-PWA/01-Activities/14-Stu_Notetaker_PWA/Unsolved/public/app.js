@@ -26,7 +26,7 @@ function getResults() {
 }
 
 function newTodoSnippet(res) {
-  for (var i = 0; i < res.length; i++) {
+  for (var i = 0; i < res.length; ++i) {
     const data_id = res[i]["_id"];
     const title = res[i]["title"];
     const todoList = document.getElementById("results");

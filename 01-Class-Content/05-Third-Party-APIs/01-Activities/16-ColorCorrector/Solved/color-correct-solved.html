@@ -79,7 +79,7 @@
           });
 
           // Push to text color array
-          for (var i = 0; i < colors.length; i++) {
+          for (var i = 0; i < colors.length; ++i) {
             colorsOfText.push(colors[i]);
           }
 
@@ -89,7 +89,7 @@
           });
 
           // Loop through all colors in the array
-          for (var i = 0; i < colors.length; i++) {
+          for (var i = 0; i < colors.length; ++i) {
             // Create element to hold word
             var holder = document.createElement('li');
             $('#color-picker').append(holder);

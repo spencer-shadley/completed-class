@@ -21,12 +21,12 @@
     var entireClass = [studentsRow1, studentsRow2, studentsRow3];
 
     // How do we print out every single student in Row 1?
-    for (var i = 0; i < studentsRow1.length; i++) {
+    for (var i = 0; i < studentsRow1.length; ++i) {
       console.log(studentsRow1[i]);
     }
 
     // How do we print out every student in Row 2 whose first name begins with J?
-    for (var i = 0; i < studentsRow2.length; i++) {
+    for (var i = 0; i < studentsRow2.length; ++i) {
       if (studentsRow2[i].charAt(0) === 'J') {
         console.log('Starts with a J ' + studentsRow2[i]);
       }

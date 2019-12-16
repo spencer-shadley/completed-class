@@ -109,7 +109,7 @@ var renderNoteList = function(notes) {
 
   var noteListItems = [];
 
-  for (var i = 0; i < notes.length; i++) {
+  for (var i = 0; i < notes.length; ++i) {
     var note = notes[i];
 
     var $li = $("<li class='list-group-item'>").data(note);

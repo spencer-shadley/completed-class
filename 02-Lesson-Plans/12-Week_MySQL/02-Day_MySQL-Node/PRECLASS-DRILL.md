@@ -33,7 +33,7 @@ Output: [-1, 0, 1]
 var map = function(arr, cb){
   var newArr = [];
 
-  for (var i = 0; i < arr.length; i++){
+  for (var i = 0; i < arr.length; ++i){
     var newNum = cb(arr[i]);
     newArr.push(newNum);
   }

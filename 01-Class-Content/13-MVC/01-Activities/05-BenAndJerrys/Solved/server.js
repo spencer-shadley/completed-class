@@ -25,7 +25,7 @@ var icecreams = [
 
 // Routes
 app.get("/icecreams/:name", function(req, res) {
-  for (var i = 0; i < icecreams.length; i++) {
+  for (var i = 0; i < icecreams.length; ++i) {
     if (icecreams[i].name === req.params.name) {
       return res.render("icecream", icecreams[i]);
     }

@@ -36,7 +36,7 @@ app.get("/cast", function(req, res) {
 
     html += "<ul>";
 
-    for (var i = 0; i < result.length; i++) {
+    for (var i = 0; i < result.length; ++i) {
       html += "<li><p> ID: " + result[i].id + "</p>";
       html += "<p> Name: " + result[i].name + "</p>";
       html += "<p> Coolness Points: " + result[i].coolness_points + "</p>";
@@ -57,7 +57,7 @@ app.get("/coolness-chart", function(req, res) {
 
     html += "<ul>";
 
-    for (var i = 0; i < result.length; i++) {
+    for (var i = 0; i < result.length; ++i) {
       html += "<li><p> ID: " + result[i].id + "</p>";
       html += "<p> Name: " + result[i].name + "</p>";
       html += "<p> Coolness Points: " + result[i].coolness_points + "</p>";
@@ -78,7 +78,7 @@ app.get("/attitude-chart/:att", function(req, res) {
 
     html += "<ul>";
 
-    for (var i = 0; i < result.length; i++) {
+    for (var i = 0; i < result.length; ++i) {
       html += "<li><p> ID: " + result[i].id + "</p>";
       html += "<p> Name: " + result[i].name + "</p>";
       html += "<p> Coolness Points: " + result[i].coolness_points + "</p>";

@@ -7,7 +7,7 @@ var caesarCipher = function(str, offset) {
     offset = 26 + offset;
   }
 
-  for (var i = 0; i < str.length; i++) {
+  for (var i = 0; i < str.length; ++i) {
     var char = str[i];
     var charCode = char.charCodeAt(0);
     var offsetChar = char;
