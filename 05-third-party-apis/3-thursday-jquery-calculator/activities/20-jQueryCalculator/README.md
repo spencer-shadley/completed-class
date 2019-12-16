@@ -68,8 +68,14 @@
 
   - Create code to "restart" the calculator after a user clicks "clear".
 
-### Bonus
+### Bonuses
 
-- Don't attempt this bonus until you have completed the calculator
+- Don't attempt these bonuses until you have fully completed the calculator
+
+#### Bonus 1
 
 - Handle user `key` events as well as clicking on the buttons
+
+#### Bonus 2
+
+- Have pressing "equal" repeat the previous operation on the new result when no new operator has been selected
