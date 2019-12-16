@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Drill Solution</title>
+  </head>
+  <body>
+    <script>
+      function average1(numbers) {
+        var sum = 0;
+        for (var i = 0; i < numbers.length; ++i) {
+          sum += numbers[i];
+        }
+        return sum / numbers.length;
+      }
+
+      function average2(numbers) {
+        var sum = numbers.reduce(function(previous, current) {
+          return (current += previous);
+        });
+        return sum / numbers.length;
+      }
+
+      // let's test it!
+      function runTests(testName, callbackFunction) {
+        var testCases = [
+          {
+            input: [5, 3, 7],
+            expected: 5
+          },
+          {
+            input: [4, 4, 4, 4, 4, 4, 4, 4, 4],
+            expected: 4
+          },
+          {
+            input: [3, 54, 9, 233],
+            expected: 74.75
+          },
+          {
+            input: [-4, 3, 78],
+            expected: 25.666666666666668
+          },
+          {
+            input: [4.3, 6.7543, 32],
+            expected: 14.351433333333333
+          }
+        ];
+
+        var results = [];
+        testCases.forEach(function(testCase) {
+          var actual = callbackFunction(testCase.input);
+          results.push({
+            input: testCase.input,
+            expected: testCase.expected,
+            actual: actual,
+            isCorrect: testCase.expected === actual
+          });
+        });
+        console.log(testName);
+        console.table(results);
+      }
+      runTests('average1', average1);
+      runTests('average2', average2);
+    </script>
+  </body>
+</html>
