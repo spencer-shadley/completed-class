@@ -123,18 +123,18 @@ $(document).ready(function() {
     $('#result').text(result);
   }
 
-  $(document).on('keydown', handleKeyDown);
-
   $('.number').on('click', handleNumberClick);
-
-  $('.operator').on('click', function() {
-    updateOperator($(this).val());
-  });
 
   $('.equal').on('click', updateEqual);
 
   // Call initializeCalculater so we can reset the state of our app
   $('.clear').on('click', initializeCalculator);
+
+  $('.operator').on('click', function() {
+    updateOperator($(this).val());
+  });
+
+  $(document).on('keydown', handleKeyDown);
 
   // Call initializeCalculater so we can set the state of our app
   initializeCalculator();
