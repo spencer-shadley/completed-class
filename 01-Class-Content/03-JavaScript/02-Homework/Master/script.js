@@ -11,7 +11,7 @@ var characters = {
   special: createArrayInRange('!', '/')
     .concat(createArrayInRange(':', '@'))
     .concat(createArrayInRange('[', '`'))
-}
+};
 
 // create an array including characters beginning at the
 // ASCII value of start up to, including, the ASCII value for end
@@ -26,9 +26,9 @@ function createArrayInRange(start, end) {
 // Function to prompt user for password options
 function getPasswordOptions() {
   // Variable to store length of password from user input
-  var length = parseInt(prompt(
-    'How many characters would you like your password to contain?'
-  ));
+  var length = parseInt(
+    prompt('How many characters would you like your password to contain?')
+  );
 
   // Conditional statement to check if password length is a number. Prompts end if this evaluates false
   if (isNaN(length)) {
@@ -141,7 +141,7 @@ function generatePassword() {
 }
 
 // Get references to the #copy and #generate elements
-var copyBtn = document.querySelector('#copy');
+var copyButton = document.querySelector('#copy');
 var generateBtn = document.querySelector('#generate');
 
 // Write password to the #password input
@@ -151,8 +151,8 @@ function writePassword() {
 
   passwordText.value = password;
 
-  copyBtn.removeAttribute('disabled');
-  copyBtn.focus();
+  copyButton.removeAttribute('disabled');
+  copyButton.focus();
 }
 
 function copyToClipboard() {
@@ -161,11 +161,13 @@ function copyToClipboard() {
   passwordText.select();
   document.execCommand('copy');
 
-  alert('Your password ' + passwordText.value + ' was copied to your clipboard.');
+  alert(
+    'Your password ' + passwordText.value + ' was copied to your clipboard.'
+  );
 }
 
 // Add event listener to generate button
 generateBtn.addEventListener('click', writePassword);
 
 // Add event listener to copy button
-copyBtn.addEventListener('click', copyToClipboard);
+copyButton.addEventListener('click', copyToClipboard);
