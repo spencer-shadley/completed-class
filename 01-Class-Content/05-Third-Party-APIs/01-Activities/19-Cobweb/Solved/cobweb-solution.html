@@ -53,7 +53,7 @@
           '!'
       );
 
-      // Bonus (Extra Hard): It"s impossible to complete this in the allotted time. Take this home as a challenge and bring it back to your TA/Instructor for the solution.
+      // Bonus (Extra Hard): It's very difficult to complete this in the allotted time. Take this home as a challenge and bring it back to your TA/Instructor for the solution.
       // Create a function using JavaScript (NOT jQuery) for which you can pass the name of an item and theCobWeb
       // and the function returns the smallest web it was found inside of.
       // Your code should work if someone were to modify theCobWeb.
@@ -63,16 +63,16 @@
       //    headphones it should give back otherBigWeb
       // HINT: you should use recursion
       function isObject(o) {
-        return typeof o == 'object';
+        return typeof o === 'object';
       }
 
       function findInObj(obj, itemName, webName) {
         for (key in obj) {
-          if (key == 'item') {
-            if (obj[key] == itemName) {
+          if (key === 'item') {
+            if (obj[key] === itemName) {
               console.log(webName);
             }
-          } else if (key == 'items') {
+          } else if (key === 'items') {
             if (obj[key].indexOf(itemName) > -1) {
               console.log(webName);
             }
