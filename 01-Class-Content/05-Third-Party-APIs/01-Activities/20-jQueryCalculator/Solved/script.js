@@ -1,11 +1,12 @@
 $(document).ready(function() {
   // Make our variables global to the runtime of our application
-  var firstNumber = 0;
-  var secondNumber = 0;
-  var operator = '';
+  // these are all initialized with default values in "initializeCalculator"
+  var firstNumber;
+  var secondNumber;
+  var operator;
+  var isOperatorChosen;
+  var isCalculated;
   var result = 0;
-  var isOperatorChosen = false;
-  var isCalculated = false;
 
   // Use a function to initialize our calculator.
   // This way when the user hits clear, we can guarantee a reset of the app.
@@ -19,21 +20,35 @@ $(document).ready(function() {
     $('#first-number, #second-number, #operator, #result').empty();
   }
 
-  $('.number').on('click', function() {
-    // Check if we've already run a calculation, if so... we'll just.
+  function updateNumbers(number) {
     if (isCalculated) {
       return false;
     }
-
     // If operator is chosen, we should be writing the secondNumber, otherwise, the firstNumber
     if (isOperatorChosen) {
-      secondNumber += $(this).val();
+      secondNumber += number;
       $('#second-number').text(secondNumber);
     } else {
-      firstNumber += $(this).val();
+      firstNumber += number;
       $('#first-number').text(firstNumber);
     }
-  });
+  }
+
+  function handleNumberClick() {
+    updateNumbers($(this).val());
+  }
+
+  $('.number').on('click', handleNumberClick);
+
+  $(document).on('keydown', handleKeyDown);
+
+  function handleKeyDown(event) {
+    var key = event.key;
+    if (!Number.isInteger(key)) {
+      updateNumbers(key);
+    }
+  }
+
   $('.operator').on('click', function() {
     // Check if a first number has already been selected
     // Or we've already run a calculation, if so we just exit.
@@ -50,6 +65,7 @@ $(document).ready(function() {
     // Set the HTML of the #operator to the text of what was clicked
     $('#operator').text($(this).text());
   });
+
   $('.equal').on('click', function() {
     // If we already clicked equal, don't do the calculation again
     if (isCalculated) {
@@ -65,24 +81,34 @@ $(document).ready(function() {
 
     // Based on the operator that was chosen.
     // Then run the operation and set the HTML of the result of that operation
-    if (operator === 'plus') {
-      result = firstNumber + secondNumber;
-    } else if (operator === 'minus') {
-      result = firstNumber - secondNumber;
-    } else if (operator === 'times') {
-      result = firstNumber * secondNumber;
-    } else if (operator === 'divide') {
-      result = firstNumber / secondNumber;
-    } else if (operator === 'power') {
-      result = Math.pow(firstNumber, secondNumber);
+    // this is called a "switch statement" - it is basically a series of if / else ifs
+    // for a shared condition specified in the switch()
+    // you can read this is as "when operator equals plus..., when operator equals minus..., etc."
+    switch (operator) {
+      case 'plus':
+        result = firstNumber + secondNumber;
+        break;
+      case 'minus':
+        result = firstNumber - secondNumber;
+        break;
+      case 'times':
+        result = firstNumber * secondNumber;
+        break;
+      case 'divide':
+        result = firstNumber / secondNumber;
+        break;
+      case 'power':
+        result = Math.pow(firstNumber, secondNumber);
+        break;
+      default:
+        console.error('unsupported operation', operator);
     }
 
     $('#result').text(result);
   });
-  $('.clear').on('click', function() {
-    // Call initializeCalculater so we can reset the state of our app
-    initializeCalculator();
-  });
+
+  // Call initializeCalculater so we can reset the state of our app
+  $('.clear').on('click', initializeCalculator);
 
   // Call initializeCalculater so we can set the state of our app
   initializeCalculator();
