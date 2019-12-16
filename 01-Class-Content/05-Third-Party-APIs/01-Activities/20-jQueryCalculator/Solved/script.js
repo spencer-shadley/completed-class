@@ -92,9 +92,8 @@ $(document).ready(function() {
   });
 
   function updateEqual() {
-    // If we already clicked equal, don't do the calculation again
     if (isCalculated) {
-      return false;
+      firstNumber = result;
     }
 
     // Set isCalculated to true so that we don't get in a weird UI state by clicking buttons again
