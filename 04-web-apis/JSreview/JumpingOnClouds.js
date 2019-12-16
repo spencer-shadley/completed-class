@@ -1,6 +1,6 @@
 // Emma is playing a new mobile game that starts with consecutively numbered clouds.
 // Some of the clouds are thunderheads and others are cumulus.
-// She can jump on any cumulus clouds. 
+// She can jump on any cumulus clouds.
 // She must avoid the thunderheads.
 // Determine the minimum number of jumps it will take Emma to jump from her starting postion to the last cloud.
 // It is always possible to win the game.
@@ -24,68 +24,30 @@
 // Input: Array of Integers (Number of Clouds, varying from 0 to 1)
 // Output: Number (Minimum number of jumps)
 
-
-
 // *************************
 //  ** WRITE FUNCTION BELOW **
 // *************************
 
-
-
 function cloudJumping(clouds) {
-
   var jumps = 0;
   var length = clouds.length;
 
   for (var i = 0; i < length; ++i) {
     if (clouds[i + 2] === 0 && i + 2 < length) {
       ++i;
-      ++jumps; 
-    } else if (i + 1 < clouds.length){
+      ++jumps;
+    } else if (i + 1 < clouds.length) {
       ++jumps;
     }
   }
 
-return jumps;
-
+  return jumps;
 }
-var clouds = [0, 0, 1, 0, 0, 1, 0]
+var clouds = [0, 0, 1, 0, 0, 1, 0];
 // console.log(cloudJumping(clouds));
-let c2 = [0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0]
+let c2 = [0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 1, 0];
 
-console.table([
-  cloudJumping(clouds) === 4,
-  cloudJumping(c2) === 9
-])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.table([cloudJumping(clouds) === 4, cloudJumping(c2) === 9]);
 
 // function jumpingOnClouds(clouds) {
 
@@ -99,9 +61,9 @@ console.table([
 //   let jumps = 0;
 //   // let i = 0;
 
-//   for (let i = 0; i <= clouds.length; i++) {
+//   for (let i = 0; i <= clouds.length; ++i) {
 //     if (i + 2 < clouds.length && clouds[i + 2] === 0) {
-//       i++;
+//       ++i;
 //       jumps++;
 //     } else if (i + 1 < clouds.length) {
 //       jumps++;
@@ -112,7 +74,7 @@ console.table([
 //   //   if (i + 2 < clouds.length && clouds[i + 2] == 0) {
 //   //     i += 2;
 //   //   } else if (i + 1 < clouds.length) {
-//   //     i++;
+//   //     ++i;
 //   //   } else {
 //   //     break;
 //   //   }
