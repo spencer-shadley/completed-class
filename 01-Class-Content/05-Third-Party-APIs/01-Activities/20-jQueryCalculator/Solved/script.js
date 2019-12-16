@@ -44,12 +44,33 @@ $(document).ready(function() {
 
   function handleKeyDown(event) {
     var key = event.key;
-    if (!Number.isInteger(key)) {
+    if (Number.isInteger(parseInt(key))) {
       updateNumbers(key);
+      return;
+    }
+
+    switch (key) {
+      case '=':
+      case 'Enter':
+        updateEqual();
+        break;
+      case 'Backspace':
+      case 'Delete':
+        initializeCalculator();
+        break;
+      case '+':
+      case '-':
+      case '*':
+      case '/':
+      case '^':
+        updateOperator(key);
+        break;
+      default:
+        console.error('unsupported key', key);
     }
   }
 
-  $('.operator').on('click', function() {
+  function updateOperator(op) {
     // Check if a first number has already been selected
     // Or we've already run a calculation, if so we just exit.
     if (!firstNumber || isCalculated) {
@@ -59,14 +80,18 @@ $(document).ready(function() {
     // Set isOperatorChosen to true so we start writing to secondNumber
     isOperatorChosen = true;
 
-    // Store off the operator
-    operator = $(this).val();
+    // Store the operator
+    operator = op;
 
     // Set the HTML of the #operator to the text of what was clicked
-    $('#operator').text($(this).text());
+    $('#operator').text(op);
+  }
+
+  $('.operator').on('click', function() {
+    updateOperator($(this).val());
   });
 
-  $('.equal').on('click', function() {
+  function updateEqual() {
     // If we already clicked equal, don't do the calculation again
     if (isCalculated) {
       return false;
@@ -85,19 +110,19 @@ $(document).ready(function() {
     // for a shared condition specified in the switch()
     // you can read this is as "when operator equals plus..., when operator equals minus..., etc."
     switch (operator) {
-      case 'plus':
+      case '+':
         result = firstNumber + secondNumber;
         break;
-      case 'minus':
+      case '-':
         result = firstNumber - secondNumber;
         break;
-      case 'times':
+      case '*':
         result = firstNumber * secondNumber;
         break;
-      case 'divide':
+      case '/':
         result = firstNumber / secondNumber;
         break;
-      case 'power':
+      case '^':
         result = Math.pow(firstNumber, secondNumber);
         break;
       default:
@@ -105,7 +130,9 @@ $(document).ready(function() {
     }
 
     $('#result').text(result);
-  });
+  }
+
+  $('.equal').on('click', updateEqual);
 
   // Call initializeCalculater so we can reset the state of our app
   $('.clear').on('click', initializeCalculator);
