@@ -74,8 +74,8 @@
 
 #### Bonus 1
 
-- Handle user `key` events as well as clicking on the buttons
+- Have pressing "equal" repeat the previous operation on the new result when no new operator has been selected
 
 #### Bonus 2
 
-- Have pressing "equal" repeat the previous operation on the new result when no new operator has been selected
+- Handle user `key` events as well as clicking on the buttons
