@@ -16,9 +16,9 @@ var fiveArray = ['Ahmed', 'Lexus', 'Tom', 'Jim', 'Joy'];
 // 3. FOR LOOPS
 // ==========================================================
 
-// Create a for loop that loops through and prints "My name is Bob five times"
+// Create a for loop that loops through and prints "My name is Spencer five times"
 for (var i = 0; i < 5; ++i) {
-  console.log('My name is Bob');
+  console.log('My name is Spencer');
 }
 
 // Create a for loop that loops through your five string array and prints each name
@@ -78,8 +78,8 @@ var threeObjects = [
     carsDestroyed: 500
   },
   {
-    name: 'Sams Man',
-    brand: 'Sam',
+    name: 'Prius',
+    brand: 'Toyota',
     carsDestroyed: 2
   }
 ];
