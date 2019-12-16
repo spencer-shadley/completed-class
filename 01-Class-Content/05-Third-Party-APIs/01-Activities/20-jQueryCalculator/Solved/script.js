@@ -38,10 +38,6 @@ $(document).ready(function() {
     updateNumbers($(this).val());
   }
 
-  $('.number').on('click', handleNumberClick);
-
-  $(document).on('keydown', handleKeyDown);
-
   function handleKeyDown(event) {
     var key = event.key;
     if (Number.isInteger(parseInt(key))) {
@@ -87,10 +83,6 @@ $(document).ready(function() {
     $('#operator').text(op);
   }
 
-  $('.operator').on('click', function() {
-    updateOperator($(this).val());
-  });
-
   function updateEqual() {
     if (isCalculated) {
       firstNumber = result;
@@ -130,6 +122,14 @@ $(document).ready(function() {
 
     $('#result').text(result);
   }
+
+  $(document).on('keydown', handleKeyDown);
+
+  $('.number').on('click', handleNumberClick);
+
+  $('.operator').on('click', function() {
+    updateOperator($(this).val());
+  });
 
   $('.equal').on('click', updateEqual);
 
