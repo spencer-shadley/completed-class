@@ -6,11 +6,11 @@
   ```js
   "editor.formatOnSave": true,
   "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-        "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
   ```
 
 # Write the below function
