@@ -2,7 +2,7 @@
 
 - Install the "Prettier" Visual Studio Code extension with millions of downloads
 - Navigate to the GitLab repo root directory and run `npm install`
-- Open your VS Code settings and add:
+- Open your VS Code settings JSON and add:
   ```js
   "editor.formatOnSave": true,
   "[html]": {
