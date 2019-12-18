@@ -18,6 +18,6 @@
   "homepage": "https://uwa.bootcampcontent.com/UWA-Bootcamp/UW-SEA-FSF-PT-11-2019-U-C#readme",
   "devDependencies": {
     "markdown-link-reporter": "^1.1.1",
-    "prettier": "1.19.1"
+    "prettier": "^1.19.1"
   }
 }
