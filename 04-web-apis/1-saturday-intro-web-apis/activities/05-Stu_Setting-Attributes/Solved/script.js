@@ -5,7 +5,13 @@ var site2El = document.querySelector('.site2');
 var site3El = document.querySelector('.site3');
 var siteTitles = document.querySelectorAll('h4');
 
-var sites = ['https://news.ycombinator.com/', 'https://twitter.com', 'https://instagram.com', 'https://google.com', 'https://reddit.com/r/webdev'];
+var sites = [
+  'https://news.ycombinator.com/',
+  'https://twitter.com',
+  'https://instagram.com',
+  'https://google.com',
+  'https://reddit.com/r/webdev'
+];
 
 site1El.children[0].textContent = 'Site 1';
 // site1El.children[1].setAttribute('href', 'https://google.com');
@@ -25,12 +31,18 @@ site3El.children[1].children[0].setAttribute('src', 'images/image_3.jpg');
 site3El.children[1].children[0].setAttribute('alt', 'women working');
 site3El.children[1].children[0].setAttribute('style', 'padding:10px;');
 
-for (var i = 0; i < siteTitles.length; i++) {
-  siteTitles[i].setAttribute('style', 'text-decoration: underline; padding-left:10px; margin: 0');
+for (var i = 0; i < siteTitles.length; ++i) {
+  siteTitles[i].setAttribute(
+    'style',
+    'text-decoration: underline; padding-left:10px; margin: 0'
+  );
 }
 
 // Bonus
 // For this bonus, comment out line 11
-for (var i = 0; i < sites.length; i++) {
-  site1El.children[1].setAttribute('href', sites[Math.floor(Math.random() * sites.length)]);
+for (var i = 0; i < sites.length; ++i) {
+  site1El.children[1].setAttribute(
+    'href',
+    sites[Math.floor(Math.random() * sites.length)]
+  );
 }

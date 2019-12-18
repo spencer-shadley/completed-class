@@ -5,7 +5,7 @@ The objective of this problem is when given a number (`num`), print every number
 So far we've done problems that have included counting up with for-loops. If we wanted to count _up_ from `1` to a given number, we might write code that looks like this:
 
 ```js
-for (var i = 1; i <= num; i++) {
+for (var i = 1; i <= num; ++i) {
   console.log(i);
 }
 ```
@@ -22,7 +22,7 @@ After each iteration of the loop, the counter should move closer to meeting a _c
 
 The loop should continue for as long as the condition is true. In this case, as long as `i` is less than or equal to `num`, the loop should repeat.
 
-3. A final expression: `i++;`
+3. A final expression: `++i;`
 
 The final expression is run at the end of each iteration of the loop. This should bring the _counter_ closer to breaking the _condition_. In this case, the _counter_ is incremented by `1` on each iteration of the loop until it is no longer less than or equal to `num`.
 

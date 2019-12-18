@@ -1,10 +1,12 @@
+# 11-FridgeGame
+
 ### File
 
-* [`fridge`](Unsolved/fridge.html)
+- [`fridge`](Unsolved/fridge.html)
 
 ### Instructions
 
-* Working in groups of 3, complete the code for the fridge activity such that:
+- Working in groups of ~3, complete the code for the fridge activity such that:
 
   1. JavaScript dynamically generates buttons for each of the letters on the screen.
 
@@ -12,4 +14,4 @@
 
   3. Hitting the clear button erases all of the letters from the fridge.
 
-* **NOTE:** This is a challenging exercise. You may want one person to type, while the other two watch over to catch bugs and/or research necessary snippets.
+- **NOTE:** This is a challenging exercise. You may want one person to type (driver), while the other two watch over to catch bugs, research necessary snippets and call out what the next thing to code is (navigators).

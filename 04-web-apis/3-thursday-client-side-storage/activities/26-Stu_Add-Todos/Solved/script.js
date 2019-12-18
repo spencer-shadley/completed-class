@@ -13,7 +13,7 @@ function renderTodos() {
   todoCountSpan.textContent = todos.length;
 
   // Render a new li for each todo
-  for (var i = 0; i < todos.length; i++) {
+  for (var i = 0; i < todos.length; ++i) {
     var todo = todos[i];
 
     var li = document.createElement('li');
@@ -23,7 +23,7 @@ function renderTodos() {
 }
 
 // When form is submitted...
-todoForm.addEventListener('submit', function (event) {
+todoForm.addEventListener('submit', function(event) {
   event.preventDefault();
 
   var todoText = todoInput.value.trim();
