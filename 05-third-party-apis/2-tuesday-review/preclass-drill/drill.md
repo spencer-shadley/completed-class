@@ -1,7 +1,7 @@
 # Setup prettier
 
 - Install the "Prettier" Visual Studio Code extension with millions of downloads
-- Navigate to the GitLab repo root directory and run `npm install`
+- Navigate to the GitLab repo root directory in your terminal and run `npm install`
 - Open your VS Code settings JSON and add:
   ```js
   "editor.formatOnSave": true,
