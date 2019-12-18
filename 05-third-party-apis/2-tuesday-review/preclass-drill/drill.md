@@ -12,6 +12,7 @@
       "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
   ```
+- go to a JavaScript file, add bad style, save (should auto-fix)
 
 # Write the below function
 
