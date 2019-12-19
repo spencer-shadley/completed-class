@@ -51,6 +51,22 @@
               </div>
             </div>
           </div>
+          <div id="sizeControls" class="card">
+            <h4 class="card-header">Superpowers - Change Sizes!</h4>
+            <div class="card-body">
+              <div class="text-center">
+                <button class="btn btn-dark btn-lg normal-button2">
+                  <span class="fa fa-ok"></span> Normal
+                </button>
+                <button class="btn btn-primary btn-lg grow-button2">
+                  <span class="fa fa-plus"></span> Grow
+                </button>
+                <button class="btn btn-danger btn-lg shrink-button2">
+                  <span class="fa fa-minus"></span> Shrink
+                </button>
+              </div>
+            </div>
+          </div>
 
           <!-- Controls (Superpower Visibility) -->
           <div id="visibilityControls" class="card">
@@ -62,6 +78,17 @@
                 </button>
                 <button class="btn btn-info btn-lg invis-button">
                   <span class="fa fa-eye-slash"></span> Invisible
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div id="visibilityControls" class="card">
+            <h4 class="card-header">Superpowers - Clone!</h4>
+            <div class="card-body">
+              <div class="text-center">
+                <button class="btn btn-dark btn-lg clone-button">
+                  <span class="fa fa-eye"></span> Clone
                 </button>
               </div>
             </div>
@@ -104,7 +131,7 @@
         </div>
 
         <!-- Right Card (Captain Planet Hero)-->
-        <div class="col-lg-6">
+        <div class="col-lg-6 captain-container">
           <!-- Captain Planet Image -->
           <img
             src="assets/captain-planet.jpg"
@@ -146,6 +173,15 @@
         $('.shrink-button').on('click', function() {
           captainPlanet.animate({ height: '100px' });
         });
+        $('.normal-button2').on('click', function() {
+          captainPlanet.animate({ width: '300px' });
+        });
+        $('.grow-button2').on('click', function() {
+          captainPlanet.animate({ width: '500px' });
+        });
+        $('.shrink-button2').on('click', function() {
+          captainPlanet.animate({ width: '100px' });
+        });
 
         // Visibility Buttons
         $('.vis-button').on('click', function() {
@@ -170,6 +206,12 @@
         });
         $('.back-button').on('click', function() {
           captainPlanet.animate({ top: '50px', left: '80px' }, 'fast');
+        });
+
+        $('.clone-button').on('click', function() {
+          $('.captain-container').append(
+            '<img class="captain-planet" src="assets/captain-planet.jpg">'
+          );
         });
 
         // Keyboard move controls
