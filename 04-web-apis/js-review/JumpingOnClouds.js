@@ -26,7 +26,7 @@
 
 // *************************
 //  ** WRITE FUNCTION BELOW **
-// *************************
+// *****************************
 
 function cloudJumping(clouds) {
   var jumps = 0;
