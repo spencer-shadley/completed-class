@@ -55,10 +55,7 @@
     <div id="buttons"></div>
     <button id="clear">clear</button>
 
-    <script
-      
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <script>
       $(document).ready(function() {
@@ -135,6 +132,9 @@
           // 10. Then chain the following code onto the "fridgeMagnet" variable: .text($(this).attr("data-letter"))
           // attr acts as both a setter and a getter for attributes depending on whether we supply one argument or two
           // NOTE: There IS a $(data) jQuery method, but it doesn't do what you'd expect. So just use attr.
+          // var currentButton = $(this);
+          // var currentLetter = currentButton.attr('data-letter');
+          // fridgeMagnet.text(currentLetter);
           fridgeMagnet.text($(this).attr('data-letter'));
 
           // 11. Lastly append the fridgeMagnet variable to the "#display" div (provided);
