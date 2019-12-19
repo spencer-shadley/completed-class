@@ -20,17 +20,22 @@ SO THAT I can use it as a starting point for a new project
 
 When joining a new team, you will be expected to inspect a lot of code that you have never seen before. Rather than having a team member explain every line for you, you will dissect the code by yourself, saving any questions for a member of your team.
 
-## Minimum Requirements
+## Acceptance Criteria
 
-* A link to a document or video with instructions on how what each section of code is doing in `Develop/`.
-
+```md
+GIVEN a Node.js application using Sequelize and Passport
+WHEN I follow the walkthrough
+THEN I understand the codebase
+```
 - - -
 
 ## Submission on BCS
 
 You are required to submit the following:
 
-* A link to a Google Doc, video, or equivalent that describes the code in `Develop/`. 
+* A link to a Google Doc or video explaining the application in `Develop/`. 
+
+_Note: Don't forget to change the sharing settings on your Google Doc._
 
 - - -
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
