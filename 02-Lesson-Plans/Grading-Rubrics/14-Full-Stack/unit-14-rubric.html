@@ -447,22 +447,22 @@
         "use strict";
 
         function Model() {
-          this.title = "Unit 44 Full-Stack HW Rubric";
+          this.title = "Unit 14 Full-Stack HW Rubric";
           this.categories = [
             {
               title: "Deployment",
               subtitle: null,
               questions: [
                 {
-                  title: "Student submitted application GitHub URL",
-                  score: 16,
-                  message: "Missing GitHub submission URL",
+                  title: "Student submitted Google Doc or video URL",
+                  score: 30,
+                  message: "Missing submission URL",
                   status: false
                 },
                 {
-                  title: "GitHub Repo contains application code",
-                  score: 20,
-                  message: "GitHub repo is empty",
+                  title: "Google Doc contains written tutorial",
+                  score: 30,
+                  message: "Google Doc is empty",
                   status: false
                 }
               ]
@@ -474,75 +474,18 @@
               questions: [
                 {
                   title:
-                    "Application utilizes Sequelize as an ORM",
-                  score: 30,
+                    "Student provides a clear cursory explanation of how this application works",
+                  score: 20,
                   message:
-                    "Application does not use Sequelize",
+                    "Student does not provide adequate explanation",
                   status: false
                 },
                 {
                   title:
-                    "Application pushes data into a JawsDB database",
-                  score: 10,
+                    "Student explains stepwise how this application functions",
+                  score: 20,
                   message:
-                    "Application does not push data into the MySQL database.",
-                  status: false
-                }
-              ]
-            },
-            {
-              title: "Repository Quality",
-              subtitle: null,
-              questions: [
-                {
-                  title: "Repository has a unique name",
-                  score: 2,
-                  message: "Repo doesn't have a unique name",
-                  status: false
-                },
-                {
-                  title:
-                    "Repository follows best practices for file structure and naming conventions",
-                  score: 2,
-                  message:
-                    "Code doesn't follow recommended file/folder structure",
-                  status: false
-                },
-                {
-                  title:
-                    "Repository follows best practices for variable and function naming conventions, indentation, quality comments, etc.",
-                  score: 3,
-                  message:
-                    "Code doesn't follow good practices for variable names, indentation, lacks quality comments",
-                  status: false
-                },
-                {
-                  title:
-                    "Repository contains quality README with description, screenshot, link to deployed application",
-                  score: 7,
-                  message:
-                    "Repo doesn't include a high quality README with screenshots, a description, link to deployed application",
-                  status: false
-                }
-              ]
-            },
-            {
-              title: "Application Quality",
-              subtitle: null,
-              questions: [
-                {
-                  title:
-                    "Application user experience is intuitive and easy to navigate",
-                  score: 5,
-                  message:
-                    "Application user experience could be more intuitive",
-                  status: false
-                },
-                {
-                  title:
-                    "Application user interface style is clean and polished",
-                  score: 5,
-                  message: "Application user interface needs work",
+                    "Student makes no attempt at stepwise functionality",
                   status: false
                 }
               ]
@@ -553,32 +496,18 @@
                 "If any of of the following are true, partner with your instructor to investigate plagiarism. Contact your SSM if you believe plagiarism has occurred.",
               questions: [
                 {
-                  title: "Application contains a low number of commits",
+                  title: "Google Doc history contains a low number of edits or very large additions (copy/paste)",
                   score: 0,
                   message: null,
                   status: false
                 },
                 {
                   title:
-                    "Application codebase appears advanced for the student, at this point in the course, or in general",
+                    "Tutorial appears advanced for the student, at this point in the course, or in general",
                   score: 0,
                   message: null,
                   status: false
                 },
-                {
-                  title:
-                    "Application package.json file references a different author and/or repository",
-                  score: 0,
-                  message: null,
-                  status: false
-                },
-                {
-                  title:
-                    "Application package.json file references much older versions of npm packages",
-                  score: 0,
-                  message: null,
-                  status: false
-                }
               ]
             }
           ];
