@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Drill Solution</title>
+  </head>
+
+  <body>
+    <script>
+      function firstNonRepeatChar0(str) {
+        if (!str) {
+          console.error('invalid input ' + str);
+          return '';
+        }
+
+        for (var i = 0; i < str.length; ++i) {
+          var currentChar = str[i];
+          var hasRepeatingChar = false;
+
+          for (var j = 0; j < str.length; ++j) {
+            if (str[j] === currentChar && i !== j) {
+              hasRepeatingChar = true;
+              break; // exit the loop early if we've already found a repeat
+            }
+          }
+
+          if (!hasRepeatingChar) {
+            return currentChar;
+          }
+        }
+        return '';
+      }
+
+      function firstNonRepeatChar2(str) {
+        var charCount = {};
+        for (var i = 0; i < str.length; ++i) {
+          var currentChar = str[i];
+          if (charCount[currentChar]) {
+            ++charCount[currentChar];
+          } else {
+            charCount[currentChar] = 1;
+          }
+        }
+        for (var j in charCount) {
+          if (charCount[j] === 1) {
+            return j;
+          }
+        }
+        return '';
+      }
+
+      function firstNonRepeatChar3(str) {
+        for (var i = 0; i < str.length; ++i) {
+          var currentChar = str.charAt(i);
+          if (str.indexOf(currentChar) === str.lastIndexOf(currentChar)) {
+            return currentChar;
+          }
+        }
+        return '';
+      }
+
+      function firstNonRepeatChar4(str) {
+        for (var i = 0; i < str.length; ++i) {
+          var currentChar = str.charAt(i);
+          if (str.split(currentChar).length === 2) {
+            return currentChar;
+          }
+        }
+        return '';
+      }
+
+      // let's test it!
+      function runTests(testName, callbackFunction) {
+        var testCases = [
+          {
+            input: 'wwb',
+            expected: 'b'
+          },
+          {
+            input: 'the quick brown fox jumps over the calm kitten quietly',
+            expected: 'b'
+          },
+          {
+            input: 'this hat is the greatest!',
+            expected: 'g'
+          },
+          {
+            input: 'what a wonderful day it has been!',
+            expected: 'o'
+          },
+          {
+            input: 'asdfghjkl',
+            expected: 'a'
+          },
+          {
+            input: 'ooooffwiwi',
+            expected: ''
+          }
+        ];
+
+        var results = [];
+        testCases.forEach(function(testCase) {
+          var actual = callbackFunction(testCase.input);
+          results.push({
+            input: testCase.input,
+            actual: actual,
+            expected: testCase.expected,
+            isCorrect: testCase.expected === actual
+          });
+        });
+        console.log(testName);
+        console.table(results);
+      }
+      runTests('firstNonRepeatChar0', firstNonRepeatChar0);
+      runTests('firstNonRepeatChar2', firstNonRepeatChar2);
+      runTests('firstNonRepeatChar3', firstNonRepeatChar3);
+      runTests('firstNonRepeatChar4', firstNonRepeatChar4);
+    </script>
+  </body>
+</html>
