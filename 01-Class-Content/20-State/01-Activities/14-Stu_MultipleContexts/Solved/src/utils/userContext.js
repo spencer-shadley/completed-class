@@ -1,12 +1,9 @@
 import React from "react";
 
 const UserContext = React.createContext({
-  firstname: "",
-  lastname: "",
-  email: "",
+  login: "",
   language: "",
   image: "",
-  capitalizeFirstLetter: () => {},
   handleBtnClick: () => {}
 });
 

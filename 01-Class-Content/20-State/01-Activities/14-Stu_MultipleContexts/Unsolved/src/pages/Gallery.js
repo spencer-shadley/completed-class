@@ -5,7 +5,6 @@ import CardContainer from "../components/CardContainer";
 import Row from "../components/Row";
 
 function Gallery() {
-
   const [users, setUsers] = useState([]);
   const [user, setUser] = useState({});
   const [userIndex, setUserIndex] = useState(0);
@@ -18,16 +17,12 @@ function Gallery() {
   function loadUsers() {
     API.getLanguagesList()
       .then(languages => {
-        API.getUsersByLanguage(languages[0]).then((users) => {
+        API.getUsersByLanguage(languages[0]).then(users => {
           setUsers(users);
           setUser(users[0]);
         });
       })
       .catch(err => console.log(err));
-  }
-    
-  function capitalizeFirstLetter(string = "") {
-    return string.charAt(0).toUpperCase() + string.slice(1);
   }
 
   function nextUser(userIndex) {
@@ -61,7 +56,7 @@ function Gallery() {
   }
 
   return (
-    <UserContext.Provider value={{ user, users, userIndex, capitalizeFirstLetter, handleBtnClick }}>
+    <UserContext.Provider value={{ user, users, handleBtnClick }}>
       <div>
         <h1 className="text-center">Welcome to LinkedUp</h1>
         <h3 className="text-center">Click on the arrows to browse users</h3>
@@ -72,6 +67,5 @@ function Gallery() {
     </UserContext.Provider>
   );
 }
-
 
 export default Gallery;

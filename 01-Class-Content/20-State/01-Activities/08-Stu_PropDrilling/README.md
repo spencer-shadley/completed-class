@@ -11,8 +11,14 @@ In this activity we will review passing props down the component tree in React.
 * **Recommended:** Add the Bootstrap and Font Awesome CDNs to your application's `index.html` file:
 
   ```html
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+  <link
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"
+  />
   ```
 
 * Start the application in dev mode by running `npm start` in your terminal.
@@ -24,13 +30,11 @@ In this activity we will review passing props down the component tree in React.
   ```js
   [
     {
-      firstname: "will",
-      lastname: "smith",
-      email: "will.smith@example.com",
+      login: "willsmith",
       language: "JavaScript",
-      image: "https://randomuser.me/api/portraits/med/men/65.jpg",
+      image: "https://api.github.com/users/name"
     }
-  ]
+  ];
   ```
 
 * Update this application to accomplish the following:
@@ -39,17 +43,15 @@ In this activity we will review passing props down the component tree in React.
 
   * The props should be passed through each component layer in the following manner:
 
-    * title (firstname & lastname): Gallery > CardContainer > Card > CardHeading > CardTitle > CardTitleText
+    * title (login): Gallery > CardContainer > Card > CardHeading > CardTitle > CardTitleText
 
     * image: Gallery > CardContainer > Card > CardImage
-
-    * email: Gallery > CardContainer > Card > CardBody
 
     * language: Gallery > CardContainer > Card > CardBody
 
     * handleClick: Gallery > CardContainer > Card > CardBtn
 
-  * Each arrow click should *not* make an additional API call.
+  * Each arrow click should _not_ make an additional API call.
 
 ### Hints
 
