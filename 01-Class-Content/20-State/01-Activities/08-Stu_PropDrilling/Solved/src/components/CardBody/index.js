@@ -1,14 +1,9 @@
 import React from "react";
 
-function CardBody({ language, email }) {
+function CardBody({ language }) {
   return (
     <div>
-      <h4>
-      Favorite language: {language}
-      </h4>
-      <h4>
-      Email: {email}
-      </h4>
+      <h4>Favorite language: {language}</h4>
     </div>
   );
 }
