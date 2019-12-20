@@ -8,7 +8,7 @@ In this activity, we will begin by installing a few helpful packages and then ex
 
 * Begin installing Create React App globally by running the following command in your terminal:
 
-`npm install -g create-react-app`
+`npx create-react-app <appname>` where `<appname>` is what you want to name your app. Example: `npx create-react-app practiceapp`.
 
 ### Part 2
 

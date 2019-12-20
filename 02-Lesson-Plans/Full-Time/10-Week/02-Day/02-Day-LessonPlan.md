@@ -11,7 +11,9 @@ We will then be deepening students understanding of ReactJS. They further expand
 
 * `Summary: Complete activities 19-react/01-Activities/13-Stu_ComponentMap through 20-state/01-Activities/21-Stu_ConditionalRender`.
 
-* It is recommended that you arrange for students to globally install both Create React App before today's class.
+* It is recommended that you arrange for students to globally install both Create React App before today's class. If students have problems running `create-react-app`, direct them to remove their global install and use `npx` to run `create-react-app` instead: 
+
+  * `npm uninstall -g create-react-app npx create-react-app <appname>`
 
 * **Important:** In order to avoid continuous NPM installs, all of today's activity Solved and Unsolved versions include only a `src` folder. Students and yourself should scaffold out a React app once with Create React App, and then swap out the `src` folder for each activity.
 

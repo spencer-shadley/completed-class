@@ -20,6 +20,8 @@
 
 * Must meet good quality coding standards (indentation, scoping, naming)
 
+* Must use Handlebars.js
+
 
 ## Presentation Requirements
 
