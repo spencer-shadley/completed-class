@@ -8,7 +8,13 @@
   </head>
   <body>
     <script>
+      // sum all the numbers in a loop
+      // divide by the total number of items
       function average1(numbers) {
+        if (!isValidInput(numbers)) {
+          return NaN;
+        }
+
         var sum = 0;
         for (var i = 0; i < numbers.length; ++i) {
           sum += numbers[i];
@@ -16,11 +22,36 @@
         return sum / numbers.length;
       }
 
+      // same as average1 but use the reduce function
       function average2(numbers) {
+        if (!isValidInput(numbers)) {
+          return NaN;
+        }
+
         var sum = numbers.reduce(function(previous, current) {
           return (current += previous);
         });
         return sum / numbers.length;
+      }
+
+      // same as average2 but inline the division
+      function average3(numbers) {
+        if (!isValidInput(numbers)) {
+          return NaN;
+        }
+
+        return numbers.reduce(function(previous, current) {
+          return (current += previous / numbers.length);
+        });
+      }
+
+      // helper function
+      function isValidInput(numbers) {
+        if (!Array.isArray(numbers) || numbers.length === 0) {
+          console.error('Input is not an array', numbers);
+          return false;
+        }
+        return true;
       }
 
       // let's test it!
@@ -45,6 +76,22 @@
           {
             input: [4.3, 6.7543, 32],
             expected: 14.351433333333333
+          },
+          {
+            input: [],
+            expected: NaN
+          },
+          {
+            input: null,
+            expected: NaN
+          },
+          {
+            input: undefined,
+            expected: NaN
+          },
+          {
+            input: "I'm going to pass in a string because I can!",
+            expected: NaN
           }
         ];
 
@@ -55,7 +102,11 @@
             input: testCase.input,
             expected: testCase.expected,
             actual: actual,
-            isCorrect: testCase.expected === actual
+            isCorrect:
+              // NaN is not equal to NaN
+              // this is the only value in JavaScript that is not equal to itself
+              (Number.isNaN(this.actual) && Number.isNaN(this.expected)) ||
+              this.expected === this.actual
           });
         });
         console.log(testName);
@@ -63,6 +114,7 @@
       }
       runTests('average1', average1);
       runTests('average2', average2);
+      runTests('average3', average3);
     </script>
   </body>
 </html>
