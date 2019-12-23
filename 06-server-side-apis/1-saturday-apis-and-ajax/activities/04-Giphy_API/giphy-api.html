@@ -10,15 +10,15 @@
   <body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
+      var apiKeyParam = '?api_key=dc6zaTOxFJmzC';
       // Example queryURL for Giphy API
-      var queryURL =
-        'https://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC';
+      var queryURL = 'https://api.giphy.com/v1/gifs/trending' + apiKeyParam;
 
       $.ajax({
         url: queryURL,
         method: 'GET'
-      }).then(function(response) {
-        console.log(response);
+      }).then(function(result) {
+        console.log(result);
       });
     </script>
   </body>
