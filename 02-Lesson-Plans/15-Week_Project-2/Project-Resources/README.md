@@ -16,4 +16,4 @@
 
   * Must meet good quality coding standards (indentation, scoping, naming)
 
-  * Must not expose sensitive API key information on the server, see [Protecting-API-Keys-In-Node.md](../../../../01-Class-Content/10-nodejs/03-Supplemental/Protecting-API-Keys-In-Node.md)
+  * Must not expose sensitive API key information on the server, see [Protecting-API-Keys-In-Node.md]
