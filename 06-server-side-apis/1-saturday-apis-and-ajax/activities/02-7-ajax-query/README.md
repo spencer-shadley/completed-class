@@ -1,4 +1,4 @@
-# 02-5-ajax-query
+# 02-7-ajax-query
 
 ## Instructions
 
