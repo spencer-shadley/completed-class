@@ -25,19 +25,11 @@ We have also created a video guide that you can use along with this guide to hel
 
 6. First, lets enter in our `mLab` database information into our `server.js` for use with localhost.
 
-![Add mLab Info to Server.js](images/AddLocalmLab.png)
-
 7. We now need to replace `<dbuser>` and `<dbpassword>` with our created username and password we created on the `mLab` dashboard.
-
-![Credential Replacement](images/credentialReplace.png)
 
 * We will remove the `<>` surrounding our user and password.
 
-![New Credentials](images/newCredentials.png)
-
 8. Now that this is done, we want to be sure to use our `client/build` folder when running on production. You will need this line of code in your `server.js`.
-
-![Production](images/nodeENVProduction.png)
 
 9. Since the `client/build` folder is a static folder that has to be generated, make sure to run `yarn build` before pushing to GitHub/Heroku if you've made changes to the `client` folder in your app.
 

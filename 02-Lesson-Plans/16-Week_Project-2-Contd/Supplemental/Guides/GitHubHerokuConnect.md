@@ -12,11 +12,7 @@ First, we need to create a new GitHub repository.
 
 2. On the left-side navbar, click the `New` button next to `Repositories`
 
-![New Repository](images/newRepository.png)
-
 3. Name your new repository and then click `Create repository`.
-
-![Create Repository](images/createRepository.png)
 
 ## Create New Heroku Application
 
@@ -26,31 +22,17 @@ Now that we have a GitHub repository, we need to create a new Heroku Application
 
 2. Login and on your dashboard click `New` and then in the dropdown click `Create new app`.
 
-![Create New Heroku App](images/createRepository.png)
-
 3. Next, name your new application and click `Create app`.
-
-![Create App](images/createApp.png)
 
 4. On the `Deploy` tab, click `GitHub` (connect to GitHub)
 
-![GitHub](images/GitHub.png)
-
 5. Next, click `Connect to GitHub`.
-
-![Connect to GitHub](images/connectGitHub.png)
 
 6. A modal will appear asking you to `Authorize Heroku` to access your GitHub. Click `Authorize Heroku`.
 
-![Authorize Heroku](images/authorizeHeroku.png)
-
 7. Now that you have authorized Heroku and given access to your GitHub. Use the search box to search for the repository you created earlier.
 
-![Search for Repo](images/repoSearch.png)
-
 8. Finally, click `Connect` to the right of the repo you created earlier.
-
-![Connect](images/connect.png)
 
 9. Scroll down to the `Automatic Deployment` section, and click `Enable Automatic Deployments`.
 
