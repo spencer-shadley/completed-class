@@ -7,13 +7,13 @@
 body {
   font-size: 14px;
   background-color: #fdfdfd;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 header {
   text-align: center;
   color: tomato;
-  font-family: "Amatic SC", cursive;
+  font-family: 'Amatic SC', cursive;
 }
 
 h1 {
@@ -63,7 +63,7 @@ label {
 
 .slider:before {
   position: absolute;
-  content: " ";
+  content: ' ';
   height: 13px;
   width: 13px;
   left: 2px;
@@ -104,7 +104,7 @@ input:checked + .slider:before {
 }
 
 .timer::before {
-  content: " ";
+  content: ' ';
   display: block;
   position: absolute;
   top: 5px;
@@ -124,7 +124,7 @@ input:checked + .slider:before {
 }
 
 #hand::before {
-  content: " ";
+  content: ' ';
   display: block;
   position: absolute;
   border-left: 10px solid transparent;
@@ -136,7 +136,7 @@ input:checked + .slider:before {
 }
 
 #hand::after {
-  content: " ";
+  content: ' ';
   display: block;
   position: absolute;
   height: 25px;
@@ -163,7 +163,7 @@ input:checked + .slider:before {
 }
 
 .time::after {
-  content: " ";
+  content: ' ';
   display: block;
   clear: both;
 }
@@ -200,7 +200,7 @@ button {
 }
 
 .inputs::after {
-  content: " ";
+  content: ' ';
   display: block;
   clear: both;
 }

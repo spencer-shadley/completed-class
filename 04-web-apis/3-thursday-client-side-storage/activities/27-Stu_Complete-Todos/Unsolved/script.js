@@ -23,7 +23,7 @@ function renderTodos() {
 }
 
 // When form is submitted...
-todoForm.addEventListener('submit', function (event) {
+todoForm.addEventListener('submit', function(event) {
   event.preventDefault();
 
   var todoText = todoInput.value.trim();

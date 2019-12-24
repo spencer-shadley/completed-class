@@ -10,10 +10,6 @@ var resetButton = document.getElementById('button-6');
 var timerPlus10Button = document.getElementById('button-7');
 var timerMinus10Button = document.getElementById('button-8');
 
-
 // Create any variables we need
 
-
-
 // Functions
-

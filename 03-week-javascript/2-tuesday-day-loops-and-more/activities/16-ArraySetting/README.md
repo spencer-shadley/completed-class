@@ -1,21 +1,21 @@
 ### File
 
-* [`array-setting-unsolved`](Unsolved/array-setting-unsolved.html)
+- [`array-setting-unsolved`](Unsolved/array-setting-unsolved.html)
 
 ### Instructions
 
-* Follow the instructions in the file above to convert each item in the array to lower case.
+- Follow the instructions in the file above to convert each item in the array to lower case.
 
-* Make sure to only add in lines of code where instructed.
+- Make sure to only add in lines of code where instructed.
 
-* **HINT:** You will need to use the `.toLowerCase()` method. Research if you don't remember how to use it.
+- **HINT:** You will need to use the `.toLowerCase()` method. Research if you don't remember how to use it.
 
-* Be prepared to share when time is up.
+- Be prepared to share when time is up.
 
 #### Bonus 1
 
-* Try logging just the array and see what happens
+- Try logging just the array and see what happens
 
 #### Bonus 2
 
-* Alternate between printing out all lowercase and all uppercase
+- Alternate between printing out all lowercase and all uppercase

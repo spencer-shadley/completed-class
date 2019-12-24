@@ -1,5 +1,11 @@
 // Joan of Arc 'properties'.
-var joanOfArcInfoParts = ['Real Name', 'Grew Up Where', 'Known For', 'Scars', 'Symbolism'];
+var joanOfArcInfoParts = [
+  'Real Name',
+  'Grew Up Where',
+  'Known For',
+  'Scars',
+  'Symbolism'
+];
 
 // Values for Joan's 'properties'.
 var joanOfArcInfoValues = [

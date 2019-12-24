@@ -14,7 +14,7 @@ function displayMessage(type, message) {
   msgDiv.setAttribute('class', type);
 }
 
-signUpButton.addEventListener('click', function (event) {
+signUpButton.addEventListener('click', function(event) {
   event.preventDefault();
 
   // create user object from submission

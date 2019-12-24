@@ -100,16 +100,16 @@ These are the basic commands for navigating directories in a Terminal or Git Bas
 
 ## Extras
 
-* Press `tab` key once to autocomplete once you have typed a unique portion of a file name. 
+- Press `tab` key once to autocomplete once you have typed a unique portion of a file name.
 
-* `.` is an alias for the current directory's path
+- `.` is an alias for the current directory's path
 
-* `..` is an alias for the parent directory's path
+- `..` is an alias for the parent directory's path
 
-* `~` is an alias for your home directory
+- `~` is an alias for your home directory
 
-* Pressing `ctrl+C` while something is running in the terminal will stop whatever is running
+- Pressing `ctrl+C` while something is running in the terminal will stop whatever is running
 
-* `up_arrow` cycles through previous commands
+- `up_arrow` cycles through previous commands
 
-* `../..` contentates directories (ex. `cd ../../..` to move up three directories)
+- `../..` contentates directories (ex. `cd ../../..` to move up three directories)

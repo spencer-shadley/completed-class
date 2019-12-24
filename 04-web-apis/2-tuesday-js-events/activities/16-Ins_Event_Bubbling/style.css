@@ -1,8 +1,12 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-html, body, .outer-div {
+html,
+body,
+.outer-div {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -13,7 +17,7 @@ body {
 }
 
 .outer-div {
-  background-color: #78A1BB;
+  background-color: #78a1bb;
   cursor: pointer;
   padding: 100px;
 }

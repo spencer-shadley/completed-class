@@ -1,10 +1,10 @@
 ### File
 
-* [`sandwich-click-unsolved`](Unsolved/sandwich-click-unsolved.html)
+- [`sandwich-click-unsolved`](Unsolved/sandwich-click-unsolved.html)
 
 ### Instructions
 
-* Add in the missing code such that clicking any of the sandwiches causes…
+- Add in the missing code such that clicking any of the sandwiches causes…
 
   1. An alert message to popup saying something snarky about the sandwich type.
 

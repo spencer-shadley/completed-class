@@ -17,7 +17,8 @@ var listItems = document.getElementsByTagName('li');
 
 // Set the text content of relevant elements
 h1El.textContent = 'Welcome to my page';
-h2El.textContent = 'This HTML document was created using JavaScript and Chrome Dev Tools';
+h2El.textContent =
+  'This HTML document was created using JavaScript and Chrome Dev Tools';
 kittenEl.textContent = 'This is my kitten';
 nameEl.textContent = 'his name is Jax';
 favoriteEl.textContent = 'My favorite foods are:';
@@ -51,7 +52,19 @@ nameEl.setAttribute('style', 'font-size:25px; text-align:center;');
 kittenEl.setAttribute('style', 'font-size:25px; text-align:center;');
 favoriteEl.setAttribute('style', 'font-size:20px;');
 listEl.setAttribute('style', 'background:#333333; padding:20px;');
-listItems[0].setAttribute('style', ' color:white; background: #666666; padding: 5px; margin-left: 35px;');
-listItems[1].setAttribute('style', ' color:white; background: #777777; padding: 5px; margin-left: 35px;');
-listItems[2].setAttribute('style', ' color:white; background: #888888; padding: 5px; margin-left: 35px;');
-listItems[3].setAttribute('style', ' color:white; background: #999999; padding: 5px; margin-left: 35px;');
+listItems[0].setAttribute(
+  'style',
+  ' color:white; background: #666666; padding: 5px; margin-left: 35px;'
+);
+listItems[1].setAttribute(
+  'style',
+  ' color:white; background: #777777; padding: 5px; margin-left: 35px;'
+);
+listItems[2].setAttribute(
+  'style',
+  ' color:white; background: #888888; padding: 5px; margin-left: 35px;'
+);
+listItems[3].setAttribute(
+  'style',
+  ' color:white; background: #999999; padding: 5px; margin-left: 35px;'
+);

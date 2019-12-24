@@ -9,11 +9,11 @@ var fizzBuzz = function(arr) {
     var currentNumber = arr[i];
 
     if (currentNumber % 15 === 0) {
-      console.log("Fizz Buzz");
+      console.log('Fizz Buzz');
     } else if (currentNumber % 3 === 0) {
-      console.log("Fizz");
+      console.log('Fizz');
     } else if (currentNumber % 5 === 0) {
-      console.log("Buzz");
+      console.log('Buzz');
     } else {
       console.log(currentNumber);
     }

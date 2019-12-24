@@ -2,11 +2,11 @@
 
 ## Instructions
 
-* In this activity, we are going to create a webpage that will allow us to view some metadata about different kinds of events.
+- In this activity, we are going to create a webpage that will allow us to view some metadata about different kinds of events.
 
-* Open the `index.html` file in your browser and take a moment to study the application.
+- Open the `index.html` file in your browser and take a moment to study the application.
 
-* Take a moment to study the code in `index.html` then add the following functionality to the application:
+- Take a moment to study the code in `index.html` then add the following functionality to the application:
 
   1. The select element should trigger the `toggleDisplay` function in `script.js`.
 
@@ -16,4 +16,4 @@
 
 ## Bonus
 
-* If time permits, take a moment to research some other JavaScript events.
+- If time permits, take a moment to research some other JavaScript events.

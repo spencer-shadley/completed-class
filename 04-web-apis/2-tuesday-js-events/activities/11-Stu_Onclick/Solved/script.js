@@ -16,11 +16,11 @@ function updateCount(updatedCount) {
 
 function incrementCounter() {
   count++;
-  updateCount(count)
+  updateCount(count);
 }
 
 incrementElement.addEventListener('click', incrementCounter);
 
-decrementElement.addEventListener('click', function () {
+decrementElement.addEventListener('click', function() {
   updateCount(count - 1);
 });

@@ -50,68 +50,65 @@ functions can be defined with multiple parameters, of any data type.
 
 ### 1. Write a function to iterate through these arrays. Return the total number of even numbers.
 
-- Input: Array 
-- Output: Integer 
+- Input: Array
+- Output: Integer
 
 ```
     1. arr1 = [1, 2, 3, 6, 10];
     2. arr2 = [1, 2, 4, 5, 7, 8, 10, 12, 18, 16, 14, 12];
     3. arr3 = [1, 3, 5, 7];
 ```
-**Hint** Use modulus (%)
 
+**Hint** Use modulus (%)
 
 # jQuery
 
 jQuery is a JavaScript library designed to simplify HTML DOM tree traversal and manipulation, as well as event handling, CSS animation, and Ajax.
 
-
- - Common jQuery functions
-    1. Select an element by id vs class. 
-        ```
-        $('#element-id)
-        $('.element-class)
-        ```
-    2. Empty
-        ```
-        .empty();
-        ```
-    3. Set text
-        ```
-        .html(content);
-        .innerHTML = content;   <-----Javascript version>
-        ```
-    4. Set onClick
-        ```
-        .on('click', callback);
-        .on('click', function() {
-            callback();
-        })
-        ```
-    5. On hover
-        ```
-        .hover(function() {
-            // This happens when you mouse over the elemnt. 
-            alert('You are now mouse overed the element');
-        }; 
-        function() {
-            // This happens when your mouse leaves the element. 
-            alert('Your mouse is leaving the selected element');
-        });
-    6. Chaining methods together
-        ```
-            .on({
-            mouseenter: function(){
-                $(this).css("background-color", "lightgray");
-            },
-            mouseleave: function(){
-                 $(this).css("background-color", "lightblue");
-             },
-            click: function(){
-                $(this).css("background-color", "yellow");
-            }
-            });
-        ```
-
-
-
+- Common jQuery functions
+  1. Select an element by id vs class.
+     ```
+     $('#element-id)
+     $('.element-class)
+     ```
+  2. Empty
+     ```
+     .empty();
+     ```
+  3. Set text
+     ```
+     .html(content);
+     .innerHTML = content;   <-----Javascript version>
+     ```
+  4. Set onClick
+     ```
+     .on('click', callback);
+     .on('click', function() {
+         callback();
+     })
+     ```
+  5. On hover
+     ```
+     .hover(function() {
+         // This happens when you mouse over the elemnt.
+         alert('You are now mouse overed the element');
+     };
+     function() {
+         // This happens when your mouse leaves the element.
+         alert('Your mouse is leaving the selected element');
+     });
+     ```
+  6. Chaining methods together
+     ```
+         .on({
+         mouseenter: function(){
+             $(this).css("background-color", "lightgray");
+         },
+         mouseleave: function(){
+              $(this).css("background-color", "lightblue");
+          },
+         click: function(){
+             $(this).css("background-color", "yellow");
+         }
+         });
+     ```

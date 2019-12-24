@@ -24,7 +24,7 @@ function renderLastRegistered() {
   userPasswordSpan.textContent = password;
 }
 
-signUpButton.addEventListener('click', function (event) {
+signUpButton.addEventListener('click', function(event) {
   event.preventDefault();
 
   var email = document.querySelector('#email').value;

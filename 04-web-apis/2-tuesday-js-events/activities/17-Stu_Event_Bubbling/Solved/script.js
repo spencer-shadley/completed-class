@@ -9,7 +9,7 @@ var images = [
   'https://picsum.photos/300/202',
   'https://picsum.photos/300/203'
 ];
-var currentImage; 
+var currentImage;
 
 function navigate(direction) {
   index = index + direction;
@@ -22,17 +22,17 @@ function navigate(direction) {
   carousel.style.backgroundImage = 'url(' + currentImage + ')';
 }
 
-carousel.addEventListener('click', function () {
+carousel.addEventListener('click', function() {
   window.location.href = images[index];
 });
 
-next.onclick = function (event) {
+next.onclick = function(event) {
   event.stopPropagation();
 
   navigate(1);
 };
 
-prev.addEventListener('click', function (event) {
+prev.addEventListener('click', function(event) {
   event.stopPropagation();
 
   navigate(-1);

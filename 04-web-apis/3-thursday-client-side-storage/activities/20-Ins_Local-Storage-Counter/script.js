@@ -7,14 +7,14 @@ var count = localStorage.getItem(numHoursKey) || 0;
 
 counter.textContent = count;
 
-addButton.addEventListener('click', function () {
+addButton.addEventListener('click', function() {
   ++count;
   counter.textContent = count;
 
   localStorage.setItem(numHoursKey, count);
 });
 
-subtractButton.addEventListener('click', function () {
+subtractButton.addEventListener('click', function() {
   --count;
   counter.textContent = count;
 

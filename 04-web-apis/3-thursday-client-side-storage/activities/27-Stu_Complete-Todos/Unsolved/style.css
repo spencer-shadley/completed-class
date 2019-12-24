@@ -6,7 +6,7 @@
 
 body {
   background-color: #5effc1;
-  font-family: "Concert One", cursive;
+  font-family: 'Concert One', cursive;
   font-size: 16px;
 }
 
@@ -37,12 +37,12 @@ li {
 }
 
 li:before {
-  content: "\200B";
+  content: '\200B';
   position: absolute;
 }
 
 li::after {
-  content: " ";
+  content: ' ';
   display: block;
   clear: both;
 }

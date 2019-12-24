@@ -2,6 +2,6 @@
 
 ## All-Together
 
-* Deploy your app to GitHub Pages!
+- Deploy your app to GitHub Pages!
 
-* Then slack your links to your instructors + TAs
+- Then slack your links to your instructors + TAs

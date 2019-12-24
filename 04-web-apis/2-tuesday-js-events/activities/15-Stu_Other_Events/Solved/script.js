@@ -7,8 +7,7 @@ function toggleDisplay(event) {
   if (value === 'keydown') {
     mouseEventsElement.classList.add('hide');
     keyEventsElement.classList.remove('hide');
-  }
-  else {
+  } else {
     mouseEventsElement.classList.remove('hide');
     keyEventsElement.classList.add('hide');
   }

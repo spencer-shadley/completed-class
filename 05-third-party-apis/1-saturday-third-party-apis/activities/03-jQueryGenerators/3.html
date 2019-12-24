@@ -1,44 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Basic jQuery Dump</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Basic jQuery Dump</title>
-</head>
+  <body>
+    <div id="empty-div"></div>
 
-<body>
+    <!-- Here we're adding a bit of CSS -->
+    <style>
+      .fancy {
+        font-size: 100px;
+        color: green;
+      }
+    </style>
 
-  <div id="empty-div"></div>
+    <!-- Added link to the jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-  <!-- Here we're adding a bit of CSS -->
-  <style>
-    .fancy {
-      font-size: 100px;
-      color: green;
-    }
-  </style>
+    <script>
+      $('#empty-div').html('<h1>Hello friends!</h1>');
 
-  <!-- Added link to the jQuery library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      // jQuery alternative to: var newDiv = document.createElement('div');
+      var newDiv = $('<div>');
 
-  <script>
+      // jQuery alternative to: newDiv.textContent = 'A pleasure to meet you!';
+      newDiv.text('A pleasure to meet you!');
 
-    $('#empty-div').html('<h1>Hello friends!</h1>');
+      // jQuery alternative to: document.querySelector('#empty-div').appendChild(newDiv);
+      $('#empty-div').append(newDiv);
 
-    // jQuery alternative to: var newDiv = document.createElement('div');
-    var newDiv = $('<div>');
-
-    // jQuery alternative to: newDiv.textContent = 'A pleasure to meet you!';
-    newDiv.text('A pleasure to meet you!');
-
-    // jQuery alternative to: document.querySelector('#empty-div').appendChild(newDiv);
-    $('#empty-div').append(newDiv);
-
-    // If we need to apply some CSS, we can quickly do so, using the jQuery '.attr' method.
-    newDiv.attr('class', 'fancy');
-
-  </script>
-
-</body>
-
+      // If we need to apply some CSS, we can quickly do so, using the jQuery '.attr' method.
+      newDiv.attr('class', 'fancy');
+    </script>
+  </body>
 </html>

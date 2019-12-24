@@ -21,7 +21,7 @@ h1 {
 }
 
 .img-container::after {
-  content: " ";
+  content: ' ';
   display: block;
   clear: both;
 }

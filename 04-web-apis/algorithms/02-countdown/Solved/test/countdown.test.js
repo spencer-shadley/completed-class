@@ -19,8 +19,8 @@ before(function() {
   })();
 });
 
-describe("countdown", function() {
-  it("should log numbers from `num` down to 1", function() {
+describe('countdown', function() {
+  it('should log numbers from `num` down to 1', function() {
     var num = 15;
 
     countdown(num);

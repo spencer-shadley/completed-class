@@ -4,14 +4,14 @@ In this activity, we will create a "complete" button that successfully removes a
 
 ## Instructions
 
-* Modify your `renderTodos()` function:
+- Modify your `renderTodos()` function:
 
-  * When a new todo is created, add a `data-index` for each `li`.
+  - When a new todo is created, add a `data-index` for each `li`.
 
-  * Generate a button that says "Complete" and append it to your `li`.
+  - Generate a button that says "Complete" and append it to your `li`.
 
-* Add an event listener so that when a user clicks the Complete button, it accesses the `data-index` value and removes that todo element from the list.
+- Add an event listener so that when a user clicks the Complete button, it accesses the `data-index` value and removes that todo element from the list.
 
 ## Hint
 
-* You can use `setAttribute` for `data-index` and `splice` to remove your todo from the list.
+- You can use `setAttribute` for `data-index` and `splice` to remove your todo from the list.

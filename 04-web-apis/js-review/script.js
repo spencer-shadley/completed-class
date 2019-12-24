@@ -1,7 +1,7 @@
-var firstNumInput = document.getElementById("firstNum");
-var secondNumInput = document.getElementById("secondNum");
-var sumButton = document.getElementById("sum");
-var answerEl = document.getElementById("answer");
+var firstNumInput = document.getElementById('firstNum');
+var secondNumInput = document.getElementById('secondNum');
+var sumButton = document.getElementById('sum');
+var answerEl = document.getElementById('answer');
 
 function add(x, y) {
   var sum = x + y;
@@ -15,4 +15,4 @@ function showSum() {
   answerEl.textContent = sum;
 }
 
-sumButton.addEventListener("click", showSum);
+sumButton.addEventListener('click', showSum);

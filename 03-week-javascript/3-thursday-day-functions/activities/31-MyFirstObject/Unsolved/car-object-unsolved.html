@@ -1,53 +1,47 @@
 <!DOCTYPE html>
 <html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My First Object</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>My First Object</title>
-</head>
+  <body>
+    <script>
+      var car = {
+        make: 'Tesla',
+        model: 'Cybertruck',
+        color: 'Steel Gray',
+        mileage: 0,
+        isWorking: true,
 
-<body>
+        driveToWork: function() {
+          alert('Old Mileage: ' + this.mileage);
 
-  <script>
+          this.mileage = this.mileage + 4;
 
-    var car = {
-      make: 'Tesla',
-      model: 'Cybertruck',
-      color: 'Steel Gray',
-      mileage: 0,
-      isWorking: true,
+          alert('New mileage: ' + this.mileage);
+        },
 
-      driveToWork: function () {
+        driveAroundWorld: function() {
+          alert('Old Mileage: ' + this.mileage);
 
-        alert('Old Mileage: ' + this.mileage);
+          this.mileage = this.mileage + 24000;
 
-        this.mileage = this.mileage + 4;
+          alert('New Mileage: ' + this.mileage);
+          alert('Car needs a tuneup!');
 
-        alert('New mileage: ' + this.mileage);
-      },
+          this.isWorking = false;
+        },
 
-      driveAroundWorld: function () {
+        getTuneUp: function() {
+          alert('Car is ready to go!');
+          this.isWorking = true;
+        },
 
-        alert('Old Mileage: ' + this.mileage);
-
-        this.mileage = this.mileage + 24000;
-
-        alert('New Mileage: ' + this.mileage);
-        alert('Car needs a tuneup!');
-
-        this.isWorking = false;
-      },
-
-      getTuneUp: function () {
-        alert('Car is ready to go!');
-        this.isWorking = true;
-      },
-
-      honk: function () {
-        alert('Honk! Honk!');
-      }
-    };
-
+        honk: function() {
+          alert('Honk! Honk!');
+        }
+      };
 
       // How would we log...
 
@@ -62,9 +56,6 @@
       // How would we run the car's driveAroundWorld method?
 
       // How would we run the getTuneUp method?
-
-  </script>
-
-</body>
-
+    </script>
+  </body>
 </html>

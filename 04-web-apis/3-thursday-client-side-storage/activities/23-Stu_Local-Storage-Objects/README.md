@@ -6,10 +6,10 @@ One of the most important skills a developer can learn is how to quickly researc
 
 ## Instructions
 
-* Find and implement a solution that allows the application to store and retrieve objects to and from `localStorage`.
+- Find and implement a solution that allows the application to store and retrieve objects to and from `localStorage`.
 
 ## Hint(s)
 
-* You need to convert the object to a string, and vice versa.
+- You need to convert the object to a string, and vice versa.
 
-* Keep checking the Chrome Dev Tools > Application > Local Storage to see what's being stored
+- Keep checking the Chrome Dev Tools > Application > Local Storage to see what's being stored

@@ -21,7 +21,9 @@ section {
   margin: 15px 0;
 }
 
-section, footer, header {
+section,
+footer,
+header {
   height: 60px;
 }
 

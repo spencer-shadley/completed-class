@@ -2,7 +2,7 @@
 
 # Write a function that takes in two numbers and logs the max (the greater of the two numbers)
 
-Ex: 
+Ex:
 Input: 1, 2
 Output: 2
 

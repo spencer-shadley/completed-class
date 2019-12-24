@@ -12,12 +12,13 @@ console.log(accumulate(5));
 ```
 
 ## Bonus - Print a message every time the accrued sum is divisible by 10
+
 ```js
 function accumulate(num) {
   var sum = 0;
   for (var i = 1; i <= num; ++i) {
     if (sum % 10 === 0) {
-        console.log(sum + ' is divisible by 10');
+      console.log(sum + ' is divisible by 10');
     }
     sum += i;
   }

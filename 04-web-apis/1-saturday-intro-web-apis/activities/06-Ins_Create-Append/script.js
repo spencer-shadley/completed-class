@@ -1,13 +1,15 @@
 var didUserCancel = false;
 while (!didUserCancel) {
-  var tagName = prompt('Please enter an HTML Tag (ex. h1, h2, p, div):', 'enter tag');
+  var tagName = prompt(
+    'Please enter an HTML Tag (ex. h1, h2, p, div):',
+    'enter tag'
+  );
   didUserCancel = tagName === null;
 
   if (!didUserCancel) {
     if (!isValidTagName(tagName)) {
       alert('please enter a valid tag');
-    }
-    else {
+    } else {
       createAndAppendElement(tagName);
     }
   }
@@ -20,7 +22,20 @@ function createAndAppendElement(tagName) {
 }
 
 function isValidTagName(tagName) {
-  var acceptableTagNames = ['p', 'div', 'strong', 'b', 'i', 'em', 'mark', 'small', 'del', 'ins', 'sub', 'sup'];
+  var acceptableTagNames = [
+    'p',
+    'div',
+    'strong',
+    'b',
+    'i',
+    'em',
+    'mark',
+    'small',
+    'del',
+    'ins',
+    'sub',
+    'sup'
+  ];
   return isValidHTag(tagName) || acceptableTagNames.includes(tagName);
 }
 

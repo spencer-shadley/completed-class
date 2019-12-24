@@ -1,8 +1,8 @@
 where to practice
-    codewars
-    hackerrank
-    euler
+codewars
+hackerrank
+euler
 
 good tutorial channels
-    codingtrain
-    traversymedia
+codingtrain
+traversymedia
