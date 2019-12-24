@@ -1,5 +1,5 @@
-import React from "react";
-import "./style.css";
+import React from 'react';
+import './style.css';
 
 // The Thumbnail component renders a div that uses some CSS to render a background image
 // It will always keep square proportions at any size without the image warping

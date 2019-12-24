@@ -1,11 +1,11 @@
-const Arithmetic = require("../arithmetic");
+const Arithmetic = require('../arithmetic');
 
-describe("Arithmetic", () => {
-  describe("Initialization", () => {
+describe('Arithmetic', () => {
+  describe('Initialization', () => {
     it("should return an object containing a 'number' property when called with the 'new' keyword", () => {
       const obj = new Arithmetic();
 
-      expect("number" in obj).toEqual(true);
+      expect('number' in obj).toEqual(true);
     });
 
     it("should set 'number' when created", () => {
@@ -23,7 +23,7 @@ describe("Arithmetic", () => {
     });
   });
 
-  describe("plus", () => {
+  describe('plus', () => {
     it("should return a new 'Arithmetic' object", () => {
       const obj = new Arithmetic(3).plus(3);
 
@@ -41,7 +41,7 @@ describe("Arithmetic", () => {
     });
   });
 
-  describe("minus", () => {
+  describe('minus', () => {
     it("should return a new 'Arithmetic' object", () => {
       const obj = new Arithmetic(9).minus(4);
 
@@ -59,7 +59,7 @@ describe("Arithmetic", () => {
     });
   });
 
-  describe("value", () => {
+  describe('value', () => {
     it("should return the 'Arithmetic' object's 'number' value", () => {
       const num = 10;
       const obj = new Arithmetic(num);

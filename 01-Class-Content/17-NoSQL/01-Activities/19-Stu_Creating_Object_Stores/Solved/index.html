@@ -9,7 +9,7 @@
   <body>
     <h1>Open Your Developer Tools > Application > IndexedDB</h1>
     <script>
-      const request = window.indexedDB.open("toDoList", 1);
+      const request = window.indexedDB.open('toDoList', 1);
 
       request.onsuccess = event => {
         console.log(request.result);
@@ -17,7 +17,7 @@
 
       request.onupgradeneeded = ({ target }) => {
         const db = target.result;
-        const objectStore = db.createObjectStore("toDoList");
+        const objectStore = db.createObjectStore('toDoList');
       };
     </script>
   </body>

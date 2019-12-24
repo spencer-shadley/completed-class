@@ -1,8 +1,8 @@
 var expect = chai.expect;
 
-describe("characterCount", function() {
-  it("should return an object containing the counts for each letter in a given string", function() {
-    var str = "she sells sea shells by the sea shore";
+describe('characterCount', function() {
+  it('should return an object containing the counts for each letter in a given string', function() {
+    var str = 'she sells sea shells by the sea shore';
 
     var result = characterCount(str);
 
@@ -10,7 +10,7 @@ describe("characterCount", function() {
       s: 8,
       h: 4,
       e: 7,
-      " ": 7,
+      ' ': 7,
       l: 4,
       a: 2,
       b: 1,
@@ -20,7 +20,7 @@ describe("characterCount", function() {
       r: 1
     });
 
-    str = "peter piper picked a pack of pickled peppers";
+    str = 'peter piper picked a pack of pickled peppers';
 
     result = characterCount(str);
 
@@ -29,7 +29,7 @@ describe("characterCount", function() {
       e: 7,
       t: 1,
       r: 3,
-      " ": 7,
+      ' ': 7,
       i: 3,
       c: 3,
       k: 3,

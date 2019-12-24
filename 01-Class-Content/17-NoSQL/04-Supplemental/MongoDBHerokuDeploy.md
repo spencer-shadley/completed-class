@@ -1,12 +1,12 @@
 # Deploy your MongoDB App to Heroku
 
-* Deploying your work to Heroku is important for homework grading, and will assist recruiters in more easily viewing your work.
+- Deploying your work to Heroku is important for homework grading, and will assist recruiters in more easily viewing your work.
 
-* Below is a written guide on deploying MongoDB Projects utilizing JawsDB for use on Heroku.
+- Below is a written guide on deploying MongoDB Projects utilizing JawsDB for use on Heroku.
 
 [Deployment Guide](./MongoDBDeploy.md).
 
-* Below is a step by step video guide walking through how to do the same deployment.
+- Below is a step by step video guide walking through how to do the same deployment.
 
 [Deployment Video Guide](https://youtu.be/2E8eWUHJaNg?list=PLOFmg4xbN_TPrB6w4rThsFanVxJI_SfER).
 

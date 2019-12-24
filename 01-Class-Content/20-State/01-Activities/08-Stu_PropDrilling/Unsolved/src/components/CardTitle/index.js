@@ -1,7 +1,6 @@
-import React from "react";
-import CardTitleText from "../CardTitleText";
-import "./style.css";
-
+import React from 'react';
+import CardTitleText from '../CardTitleText';
+import './style.css';
 
 function CardTitle() {
   return (

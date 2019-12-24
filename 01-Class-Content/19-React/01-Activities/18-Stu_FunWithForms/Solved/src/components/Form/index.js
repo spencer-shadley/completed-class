@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import "./style.css";
+import React, { Component } from 'react';
+import './style.css';
 
 class Form extends Component {
   // Setting the component's initial state
   state = {
-    firstName: "",
-    lastName: "",
-    password: ""
+    firstName: '',
+    lastName: '',
+    password: ''
   };
 
   handleInputChange = event => {
@@ -14,7 +14,7 @@ class Form extends Component {
     let value = event.target.value;
     const name = event.target.name;
 
-    if (name === "password") {
+    if (name === 'password') {
       value = value.substring(0, 15);
     }
     // Updating the input's state
@@ -27,20 +27,19 @@ class Form extends Component {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     event.preventDefault();
     if (!this.state.firstName || !this.state.lastName) {
-      alert("Fill out your first and last name please!");
+      alert('Fill out your first and last name please!');
     } else if (this.state.password.length < 6) {
       alert(
-        `Choose a more secure password ${this.state.firstName} ${this.state
-          .lastName}`
+        `Choose a more secure password ${this.state.firstName} ${this.state.lastName}`
       );
     } else {
       alert(`Hello ${this.state.firstName} ${this.state.lastName}`);
     }
 
     this.setState({
-      firstName: "",
-      lastName: "",
-      password: ""
+      firstName: '',
+      lastName: '',
+      password: ''
     });
   };
 

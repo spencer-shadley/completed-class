@@ -1,7 +1,7 @@
-import React, { useRef } from "react";
-import { useStoreContext } from "../../utils/GlobalState";
-import { ADD_POST, LOADING } from "../../utils/actions";
-import API from "../../utils/API";
+import React, { useRef } from 'react';
+import { useStoreContext } from '../../utils/GlobalState';
+import { ADD_POST, LOADING } from '../../utils/actions';
+import API from '../../utils/API';
 
 function CreatePostForm() {
   const titleRef = useRef();
@@ -25,8 +25,8 @@ function CreatePostForm() {
       })
       .catch(err => console.log(err));
 
-    titleRef.current.value = "";
-    bodyRef.current.value = "";
+    titleRef.current.value = '';
+    bodyRef.current.value = '';
   };
 
   return (
@@ -39,10 +39,28 @@ function CreatePostForm() {
       </div>
       <h1>Create a blog post</h1>
       <form className="form-group mt-5 mb-5" onSubmit={handleSubmit}>
-        <input className="form-control mb-5" required ref={titleRef} placeholder="Title" />
-        <textarea className="form-control mb-5" required ref={bodyRef} placeholder="Body" />
-        <input className="form-control mb-5" ref={authorRef} placeholder="Screen name" />
-        <button className="btn btn-success mt-3 mb-5" disabled={state.loading} type="submit">
+        <input
+          className="form-control mb-5"
+          required
+          ref={titleRef}
+          placeholder="Title"
+        />
+        <textarea
+          className="form-control mb-5"
+          required
+          ref={bodyRef}
+          placeholder="Body"
+        />
+        <input
+          className="form-control mb-5"
+          ref={authorRef}
+          placeholder="Screen name"
+        />
+        <button
+          className="btn btn-success mt-3 mb-5"
+          disabled={state.loading}
+          type="submit"
+        >
           Save Post
         </button>
       </form>

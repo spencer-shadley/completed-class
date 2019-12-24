@@ -1,6 +1,6 @@
 var expect = chai.expect;
 
-describe("lookAndSaySequence", function() {
+describe('lookAndSaySequence', function() {
   it("should return '2114331827' when given '114333877'", function() {
     var n = 114333877;
 

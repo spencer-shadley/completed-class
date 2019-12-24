@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import "./style.css";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import './style.css';
 
 class Nav extends Component {
   state = {
@@ -23,11 +23,11 @@ class Nav extends Component {
   };
 
   componentDidMount() {
-    window.addEventListener("resize", this.updateWidth);
+    window.addEventListener('resize', this.updateWidth);
   }
 
   componentWillUnmount() {
-    window.removeEventListener("resize", this.updateWidth);
+    window.removeEventListener('resize', this.updateWidth);
   }
 
   render() {
@@ -47,12 +47,19 @@ class Nav extends Component {
         >
           <span className="navbar-toggler-icon" />
         </button>
-        <div className={`${this.state.open ? "" : "collapse "}navbar-collapse`} id="navbarNav">
+        <div
+          className={`${this.state.open ? '' : 'collapse '}navbar-collapse`}
+          id="navbarNav"
+        >
           <ul className="navbar-nav">
             <li className="nav-item">
               <Link
                 onClick={this.toggleNav}
-                className={window.location.pathname === "/" ? "nav-link active" : "nav-link"}
+                className={
+                  window.location.pathname === '/'
+                    ? 'nav-link active'
+                    : 'nav-link'
+                }
                 to="/"
               >
                 Search
@@ -61,7 +68,11 @@ class Nav extends Component {
             <li className="nav-item">
               <Link
                 onClick={this.toggleNav}
-                className={window.location.pathname === "/saved" ? "nav-link active" : "nav-link"}
+                className={
+                  window.location.pathname === '/saved'
+                    ? 'nav-link active'
+                    : 'nav-link'
+                }
                 to="/saved"
               >
                 Saved

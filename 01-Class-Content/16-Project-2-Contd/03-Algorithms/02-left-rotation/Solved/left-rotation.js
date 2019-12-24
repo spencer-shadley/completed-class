@@ -9,9 +9,9 @@ var leftRotation = function(arr, positions) {
 
   while (positions > 0) {
     var first = arr.shift();
-    
+
     arr.push(first);
-    
+
     positions--;
   }
 };

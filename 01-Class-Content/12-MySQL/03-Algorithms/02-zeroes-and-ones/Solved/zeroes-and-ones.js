@@ -9,9 +9,9 @@ var zeroesAndOnes = function(str) {
   for (var i = 0; i < str.length; ++i) {
     var num = str[i];
 
-    if (num === "0") {
+    if (num === '0') {
       zeroes++;
-    } else if (num === "1") {
+    } else if (num === '1') {
       ones++;
     }
   }

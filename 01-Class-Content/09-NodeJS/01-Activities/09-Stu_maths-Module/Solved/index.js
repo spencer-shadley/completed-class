@@ -5,7 +5,7 @@ var operation = process.argv[2];
 var numOne = parseInt(process.argv[3]);
 var numTwo = parseInt(process.argv[4]);
 
-switch(operation) {
+switch (operation) {
   case 'sum':
     console.log(maths.sum(numOne, numTwo));
     break;
@@ -19,5 +19,5 @@ switch(operation) {
     console.log(maths.quotient(numOne, numTwo));
     break;
   default:
-    console.log("Check your maths!");
+    console.log('Check your maths!');
 }

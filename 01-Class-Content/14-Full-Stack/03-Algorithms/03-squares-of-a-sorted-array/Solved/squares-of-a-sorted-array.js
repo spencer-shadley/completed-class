@@ -2,15 +2,15 @@
 
 var sortedSquares = function(arr) {
   var result = new Array(arr.length);
-    
+
   var idx1 = 0;
   var idx2 = arr.length - 1;
   var idx3 = result.length - 1;
-  
+
   while (idx1 <= idx2) {
     var left = arr[idx1];
     var right = arr[idx2];
-    
+
     if (Math.abs(left) > Math.abs(right)) {
       result[idx3] = left ** 2;
       idx1++;
@@ -18,13 +18,12 @@ var sortedSquares = function(arr) {
       result[idx3] = right ** 2;
       idx2--;
     }
-    
+
     idx3--;
   }
-  
+
   return result;
 };
-
 
 // Alternate solution (less efficient)
 

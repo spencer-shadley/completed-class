@@ -8,7 +8,7 @@ var missingNumber = function(nums) {
 
     numsPresent[num] = true;
   }
-  
+
   for (var i = 0; i < nums.length + 1; ++i) {
     if (!numsPresent[i]) {
       return i;

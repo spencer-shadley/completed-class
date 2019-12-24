@@ -1,11 +1,11 @@
 const arya = {
-  name: "Arya Stark",
-  parents: ["Eddard Stark", "Catelyn Stark"]
+  name: 'Arya Stark',
+  parents: ['Eddard Stark', 'Catelyn Stark']
 };
 
 const jaime = {
-  name: "Jaime Lannister",
-  parents: ["Tywin Lannister", "Joanna Lannister"]
+  name: 'Jaime Lannister',
+  parents: ['Tywin Lannister', 'Joanna Lannister']
 };
 
 // In the past, if we wanted to pull off an object's property we'd have to do something like this:
@@ -35,9 +35,9 @@ const logCharacter = character =>
     character.name +
       "'s parents are: " +
       character.parents[0] +
-      " and " +
+      ' and ' +
       character.parents[1] +
-      "."
+      '.'
   );
 
 logCharacter(arya);
@@ -46,7 +46,7 @@ logCharacter(arya);
 
 const betterLogCharacter = ({ name, parents }) =>
   console.log(
-    name + "'s parents are: " + parents[0] + " and " + parents[1] + "."
+    name + "'s parents are: " + parents[0] + ' and ' + parents[1] + '.'
   );
 
 betterLogCharacter(jaime);

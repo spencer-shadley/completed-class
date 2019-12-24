@@ -8,9 +8,11 @@ for (const value of songs) {
 // Old Town Road
 // 7 Rings
 
-
 // 2. Using map
-const songs = new Map([['Bad Guy', 1], ['Old Town Road', 2]]);
+const songs = new Map([
+  ['Bad Guy', 1],
+  ['Old Town Road', 2]
+]);
 
 for (const [key, value] of songs) {
   console.log(`${key}'s chart position is ${value}`);

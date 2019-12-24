@@ -2,7 +2,7 @@
 
 var lookAndSay = function(n) {
   var numString = n.toString();
-  var result = "";
+  var result = '';
 
   var currentCount = 1;
   var currentDigit = numString[0];

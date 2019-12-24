@@ -4,50 +4,50 @@ In this activity you will be writing code to create a function that takes in two
 
 ## Instructions
 
-* Open [Unsolved/is-anagram.js](Unsolved/is-anagram.js) in your code editor -- **this is the only file you will modify in this activity.**
+- Open [Unsolved/is-anagram.js](Unsolved/is-anagram.js) in your code editor -- **this is the only file you will modify in this activity.**
 
-  * In this file you will be writing code in the body of the `isAnagram` function to achieve the following:
+  - In this file you will be writing code in the body of the `isAnagram` function to achieve the following:
 
-    * Return `true` if one string is an anagram of the other string. Otherwise return `false`
+    - Return `true` if one string is an anagram of the other string. Otherwise return `false`
 
-      * An anagram is a word or phrase made by rearranging the letters of another word or phrase.
+      - An anagram is a word or phrase made by rearranging the letters of another word or phrase.
 
-    * You can check if the strings are anagrams of each other by checking to see if any permutation (combination of letters in) of the first string is equal to the second string.
+    - You can check if the strings are anagrams of each other by checking to see if any permutation (combination of letters in) of the first string is equal to the second string.
 
-    * For example, given the following strings:
-
-    ```js
-    var strA = "nnjjdyus";
-    var strB = "njdnsjyu";
-    ```
-
-    * The following should be returned:
+    - For example, given the following strings:
 
     ```js
-    true
+    var strA = 'nnjjdyus';
+    var strB = 'njdnsjyu';
     ```
 
-    * Given the following strings:
+    - The following should be returned:
 
     ```js
-    var strA = "tacocat";
-    var strB = "ctatocato";
+    true;
     ```
 
-    * The following should be returned:
+    - Given the following strings:
 
     ```js
-    false
+    var strA = 'tacocat';
+    var strB = 'ctatocato';
     ```
 
-    * You may assume the string will contain all lower-cased letters.
+    - The following should be returned:
 
-* You can check to see if your function works properly by opening [Unsolved/test.html](Unsolved/test.html) in your web browser.
+    ```js
+    false;
+    ```
 
-  * Functions that _pass_ the tests will be denoted with a **green check mark**.
+    - You may assume the string will contain all lower-cased letters.
 
-  * Functions that _fail_ the tests will be denoted with a **red x and an error message**.
+- You can check to see if your function works properly by opening [Unsolved/test.html](Unsolved/test.html) in your web browser.
+
+  - Functions that _pass_ the tests will be denoted with a **green check mark**.
+
+  - Functions that _fail_ the tests will be denoted with a **red x and an error message**.
 
 ### Hints
 
-* You can approach this problem by trying to find out if both strings are the same length and contain the same letters.
+- You can approach this problem by trying to find out if both strings are the same length and contain the same letters.

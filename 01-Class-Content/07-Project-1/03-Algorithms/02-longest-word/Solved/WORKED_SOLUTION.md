@@ -18,7 +18,7 @@ Let's start turning this into code:
 
 ```js
 var longestWord = function(str) {
-  var words = str.split(" ");
+  var words = str.split(' ');
 };
 ```
 
@@ -28,7 +28,7 @@ Now in order to check each word, we'll loop through the `words` array:
 
 ```js
 var longestWord = function(str) {
-  var words = str.split(" ");
+  var words = str.split(' ');
 
   for (var i = 0; i < words.length; ++i) {
     var currentWord = words[i];
@@ -40,7 +40,7 @@ As we're going through the words array, we need to check whether the word is the
 
 ```js
 var longestWord = function(str) {
-  var words = str.split(" ");
+  var words = str.split(' ');
   var longestWord;
 
   for (var i = 0; i < words.length; ++i) {
@@ -61,7 +61,7 @@ We could also initialize `longestWord` as the first word in the array, and then 
 
 ```js
 var longestWord = function(str) {
-  var words = str.split(" ");
+  var words = str.split(' ');
   var longestWord = words[0];
 
   for (var i = 1; i < words.length; ++i) {

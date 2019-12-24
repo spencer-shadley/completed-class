@@ -1,13 +1,13 @@
 class Character {
   constructor(name, strength, hitPoints) {
     if (!name) {
-      throw new Error("You are missing the name.");
+      throw new Error('You are missing the name.');
     }
     if (!strength) {
-      throw new Error("You are missing the strength.");
+      throw new Error('You are missing the strength.');
     }
     if (!hitPoints) {
-      throw new Error("You are missing the hitPoints.");
+      throw new Error('You are missing the hitPoints.');
     }
     this.name = name;
     this.strength = strength;
@@ -19,7 +19,7 @@ class Character {
     console.log(`Stats for ${this.name} are as following:`);
     console.log(`Each attack will do ${this.strength} damage.`);
     console.log(`${this.name} has ${this.hitPoints} hit points remaining!`);
-    console.log("------------");
+    console.log('------------');
   }
   // method which determines whether or not a character's "hitpoints" are less then zero
   // and returns true or false depending upon the outcome
@@ -39,8 +39,8 @@ class Character {
 }
 
 // creates two unique characters using the "character" constructor
-const grace = new Character("Grace", 30, 75);
-const dijkstra = new Character("Dijkstra", 20, 105);
+const grace = new Character('Grace', 30, 75);
+const dijkstra = new Character('Dijkstra', 20, 105);
 
 // This keeps track of whose turn it is
 let graceTurn = true;
@@ -54,7 +54,7 @@ const turnInterval = setInterval(() => {
 
   if (!grace.isAlive() || !dijkstra.isAlive()) {
     clearInterval(turnInterval);
-    console.log("Game over!");
+    console.log('Game over!');
   } else if (graceTurn) {
     grace.attack(dijkstra);
     dijkstra.printStats();

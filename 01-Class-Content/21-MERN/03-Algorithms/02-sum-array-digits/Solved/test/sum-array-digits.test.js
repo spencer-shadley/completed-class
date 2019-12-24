@@ -1,6 +1,6 @@
 var expect = chai.expect;
 
-describe("sumArrayDigits", function() {
+describe('sumArrayDigits', function() {
   it(`should return [6, 9] if given the arrays [2, 2] and [4, 7]`, function() {
     var arr1 = [2, 2];
     var arr2 = [4, 7];
@@ -36,5 +36,4 @@ describe("sumArrayDigits", function() {
 
     expect(result).to.eql([1, 0, 0, 0]);
   });
-
 });

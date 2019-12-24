@@ -1,6 +1,6 @@
 var expect = chai.expect;
 
-describe("leftRotation", function() {
+describe('leftRotation', function() {
   it(`should update the given array to [3, 1, 2] when given the array [1, 2, 3] and the number 2`, function() {
     var arr = [1, 2, 3];
     var positions = 2;

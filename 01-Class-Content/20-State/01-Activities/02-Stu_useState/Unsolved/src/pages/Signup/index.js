@@ -1,7 +1,7 @@
-import React from "react";
-import Container from "../../components/Container";
-import Col from "../../components/Col";
-import Row from "../../components/Row";
+import React from 'react';
+import Container from '../../components/Container';
+import Col from '../../components/Col';
+import Row from '../../components/Row';
 
 const Signup = () => {
   const handleSubmit = e => {
@@ -17,7 +17,12 @@ const Signup = () => {
         <Container className="mt-3 px-5">
           <Row className="form-group">
             <Col size="12">
-              <input className="form-control" type="text" placeholder="Username" name="username" />
+              <input
+                className="form-control"
+                type="text"
+                placeholder="Username"
+                name="username"
+              />
             </Col>
           </Row>
           <Row className="form-group">
@@ -36,7 +41,10 @@ const Signup = () => {
         </Container>
         <Container className="mt-4">
           <h3>Hello NAME_HERE!</h3>
-          <p>I probably shouldn't tell you this, but your password is PASSWORD_HERE}!</p>
+          <p>
+            I probably shouldn't tell you this, but your password is
+            PASSWORD_HERE}!
+          </p>
         </Container>
       </form>
     </div>

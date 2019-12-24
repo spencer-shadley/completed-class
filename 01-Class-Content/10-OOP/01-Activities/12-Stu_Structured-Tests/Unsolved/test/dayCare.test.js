@@ -1,6 +1,4 @@
-const DayCare = require("../dayCare");
-const Child = require("../child");
+const DayCare = require('../dayCare');
+const Child = require('../child');
 
-describe("DayCare", () => {
-  
-});
+describe('DayCare', () => {});

@@ -1,12 +1,11 @@
-import React, { useState } from "react";
-import Home from "./pages/Home";
-import AlertContext from "./utils/AlertContext";
+import React, { useState } from 'react';
+import Home from './pages/Home';
+import AlertContext from './utils/AlertContext';
 
 function App() {
-
   const [pageState, setPageState] = useState({
     display: false,
-    theme: "success",
+    theme: 'success',
     onClick: (theme, display) => {
       // Remember, the setter method on state does not merge like this.setState does
       // We use the spread operator so that we don't lose our onClick method whenever the state is updated.
@@ -21,6 +20,5 @@ function App() {
     </AlertContext.Provider>
   );
 }
-
 
 export default App;

@@ -7,7 +7,7 @@ var arraySearch2D = function(arr) {
 
   for (var i = 0; i < arr.length; ++i) {
     for (var k = 0; k < arr[i].length; k++) {
-      if (arr[i][k] === "X") {
+      if (arr[i][k] === 'X') {
         count++;
       }
     }

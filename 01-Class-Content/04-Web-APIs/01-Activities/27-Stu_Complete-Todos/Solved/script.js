@@ -29,7 +29,7 @@ function renderTodos() {
 }
 
 // When form is submitted...
-todoForm.addEventListener('submit', function (event) {
+todoForm.addEventListener('submit', function(event) {
   event.preventDefault();
 
   var todoText = todoInput.value.trim();
@@ -48,7 +48,7 @@ todoForm.addEventListener('submit', function (event) {
 });
 
 // When a element inside of the todoList is clicked...
-todoList.addEventListener('click', function (event) {
+todoList.addEventListener('click', function(event) {
   var element = event.target;
 
   // If that element is a button...

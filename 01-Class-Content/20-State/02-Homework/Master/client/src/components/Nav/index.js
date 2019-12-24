@@ -1,8 +1,8 @@
-import React from "react";
-import { useStoreContext } from "../../utils/GlobalState";
-import AuthService from "../AuthService";
-import { Link } from "react-router-dom";
-import style from "./style.css";
+import React from 'react';
+import { useStoreContext } from '../../utils/GlobalState';
+import AuthService from '../AuthService';
+import { Link } from 'react-router-dom';
+import style from './style.css';
 
 function Nav() {
   const [store] = useStoreContext();

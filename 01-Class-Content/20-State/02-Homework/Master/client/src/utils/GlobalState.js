@@ -1,4 +1,4 @@
-import React, { createContext, useReducer, useContext } from "react";
+import React, { createContext, useReducer, useContext } from 'react';
 import {
   SET_CURRENT_PRODUCT,
   REMOVE_PRODUCT,
@@ -9,7 +9,7 @@ import {
   UPDATE_CART,
   REMOVE_FROM_CART,
   LOADING
-} from "./actions";
+} from './actions';
 
 const StoreContext = createContext();
 const { Provider } = StoreContext;
@@ -90,9 +90,9 @@ const StoreProvider = ({ value = [], ...props }) => {
     products: [],
     currentProduct: {
       _id: 0,
-      title: "",
-      body: "",
-      author: ""
+      title: '',
+      body: '',
+      author: ''
     },
     cart: [],
     loading: false

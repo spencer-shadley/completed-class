@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 // Create a new component named "Math"
 // Render one Math component in the place of each "?" mark

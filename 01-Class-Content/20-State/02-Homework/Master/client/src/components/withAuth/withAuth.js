@@ -1,5 +1,5 @@
-import React, { Component } from "./node_modules/react";
-import AuthService from "./AuthService";
+import React, { Component } from './node_modules/react';
+import AuthService from './AuthService';
 
 export default function withAuth(AuthComponent) {
   const Auth = new AuthService();
@@ -12,7 +12,7 @@ export default function withAuth(AuthComponent) {
     }
     componentWillMount() {
       if (!Auth.loggedIn()) {
-        this.props.history.replace("/signup");
+        this.props.history.replace('/signup');
       } else {
         try {
           const profile = Auth.getProfile();
@@ -21,7 +21,7 @@ export default function withAuth(AuthComponent) {
           });
         } catch (err) {
           Auth.logout();
-          this.props.history.replace("/signup");
+          this.props.history.replace('/signup');
         }
       }
     }

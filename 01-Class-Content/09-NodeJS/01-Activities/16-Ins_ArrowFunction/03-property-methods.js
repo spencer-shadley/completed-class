@@ -1,9 +1,9 @@
 // Avoid using arrow functions for object methods
 var dog = {
-  name: "Lassie",
-  sound: "Woof!",
+  name: 'Lassie',
+  sound: 'Woof!',
   makeSound: () => console.log(this.sound),
-  readTag: () => console.log("The dog's tag reads: " + this.name + ".")
+  readTag: () => console.log("The dog's tag reads: " + this.name + '.')
 };
 
 // Prints `undefined`

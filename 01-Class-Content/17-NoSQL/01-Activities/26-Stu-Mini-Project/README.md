@@ -4,38 +4,38 @@ In this activity, you will implement IndexedDB so the budget tracker persists da
 
 ## Instructions
 
-* Create a new db request for a `budget` database.
+- Create a new db request for a `budget` database.
 
-* Inside `onupgradeneeded`, create an object store called `pending` and set `autoIncrement` to `true`.
+- Inside `onupgradeneeded`, create an object store called `pending` and set `autoIncrement` to `true`.
 
-* Inside your `saveRecord()` function:
+- Inside your `saveRecord()` function:
 
-  * Create a transaction on the `pending` object store with `readwrite` access.
+  - Create a transaction on the `pending` object store with `readwrite` access.
 
-  * Access your pending object store.
+  - Access your pending object store.
 
-  * Add a record to your store with the `add` method.
+  - Add a record to your store with the `add` method.
 
-* Inside the `checkDatabase` function:
+- Inside the `checkDatabase` function:
 
-  * Open a transaction on your `pending` object store.
-  
-  * Access your `pending` object store.
+  - Open a transaction on your `pending` object store.
 
-  * Get all records from store and set to a variable.
+  - Access your `pending` object store.
 
-* Inside `getAll.onsuccess`:
+  - Get all records from store and set to a variable.
 
-  * If successful, open a transaction on your `pending` object store.
+- Inside `getAll.onsuccess`:
 
-  * Access your `pending` object store.
+  - If successful, open a transaction on your `pending` object store.
 
-  * Clear all items in your store.
+  - Access your `pending` object store.
+
+  - Clear all items in your store.
 
 ## 💡 Hint(s)
 
-* You can use the the comments in `public/db.js` as a guide.
+- You can use the the comments in `public/db.js` as a guide.
 
 ## 🏆 Bonus
 
-* Create a button that resets all funds to zero in your indexedDB.
+- Create a button that resets all funds to zero in your indexedDB.

@@ -1,45 +1,49 @@
 // Dependencies
 // ===========================================================
-var express = require("express");
+var express = require('express');
 
 var app = express();
 var PORT = 3000;
 
 // Data
 // ===========================================================
-var characters = [{
-  routeName: "yoda",
-  name: "Yoda",
-  role: "Jedi Master",
-  age: 900,
-  forcePoints: 2000
-}, {
-  routeName: "darthmaul",
-  name: "Darth Maul",
-  role: "Sith Lord",
-  age: 200,
-  forcePoints: 1200
-}, {
-  routeName: "obiwankenobi",
-  name: "Obi Wan Kenobi",
-  role: "Jedi Master",
-  age: 55,
-  forcePoints: 1350
-}];
+var characters = [
+  {
+    routeName: 'yoda',
+    name: 'Yoda',
+    role: 'Jedi Master',
+    age: 900,
+    forcePoints: 2000
+  },
+  {
+    routeName: 'darthmaul',
+    name: 'Darth Maul',
+    role: 'Sith Lord',
+    age: 200,
+    forcePoints: 1200
+  },
+  {
+    routeName: 'obiwankenobi',
+    name: 'Obi Wan Kenobi',
+    role: 'Jedi Master',
+    age: 55,
+    forcePoints: 1350
+  }
+];
 
 // Routes
 // ===========================================================
-app.get("/", function(req, res) {
-  res.send("Welcome to the Star Wars Page!");
+app.get('/', function(req, res) {
+  res.send('Welcome to the Star Wars Page!');
 });
 
 // Displays all characters
-app.get("/api/characters", function(req, res) {
+app.get('/api/characters', function(req, res) {
   return res.json(characters);
 });
 
 // Displays a single character, or shows "No character found"
-app.get("/api/characters/:character", function(req, res) {
+app.get('/api/characters/:character', function(req, res) {
   // Grab the selected parameter
   var chosen = req.params.character;
   console.log(chosen);
@@ -52,11 +56,11 @@ app.get("/api/characters/:character", function(req, res) {
   }
 
   // Otherwise display "No character found"
-  return res.send("No character found");
+  return res.send('No character found');
 });
 
 // Listener
 // ===========================================================
 app.listen(PORT, function() {
-  console.log("App listening on PORT " + PORT);
+  console.log('App listening on PORT ' + PORT);
 });

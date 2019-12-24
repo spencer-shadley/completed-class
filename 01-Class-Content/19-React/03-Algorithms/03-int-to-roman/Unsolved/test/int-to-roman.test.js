@@ -1,12 +1,12 @@
 var expect = chai.expect;
 
-describe("intToRoman", function() {
+describe('intToRoman', function() {
   it(`should return "III" if given the number 3`, function() {
     var num = 3;
 
     var result = intToRoman(num);
 
-    expect(result).to.eql("III");
+    expect(result).to.eql('III');
   });
 
   it(`should return "IV" if given the number 4`, function() {
@@ -14,7 +14,7 @@ describe("intToRoman", function() {
 
     var result = intToRoman(num);
 
-    expect(result).to.eql("IV");
+    expect(result).to.eql('IV');
   });
 
   it(`should return "XIII" if given the number 13`, function() {
@@ -22,7 +22,7 @@ describe("intToRoman", function() {
 
     var result = intToRoman(num);
 
-    expect(result).to.eql("XIII");
+    expect(result).to.eql('XIII');
   });
 
   it(`should return "IX" if given the number 9`, function() {
@@ -30,7 +30,7 @@ describe("intToRoman", function() {
 
     var result = intToRoman(num);
 
-    expect(result).to.eql("IX");
+    expect(result).to.eql('IX');
   });
 
   it(`should return "LVIII" if given the number 58`, function() {
@@ -38,7 +38,7 @@ describe("intToRoman", function() {
 
     var result = intToRoman(num);
 
-    expect(result).to.eql("LVIII");
+    expect(result).to.eql('LVIII');
   });
 
   it(`should return "MCMXCIV" if given the number 1994`, function() {
@@ -46,15 +46,14 @@ describe("intToRoman", function() {
 
     var result = intToRoman(num);
 
-    expect(result).to.eql("MCMXCIV");
+    expect(result).to.eql('MCMXCIV');
   });
 
-   it(`should return "MDCCXXXVIII" if given the number 1738`, function() {
+  it(`should return "MDCCXXXVIII" if given the number 1738`, function() {
     var num = 1738;
 
     var result = intToRoman(num);
 
-    expect(result).to.eql("MDCCXXXVIII");
+    expect(result).to.eql('MDCCXXXVIII');
   });
-
 });

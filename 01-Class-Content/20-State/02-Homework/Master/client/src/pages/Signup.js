@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import AuthService from "../components/AuthService";
-import API from "./../utils/API";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import AuthService from '../components/AuthService';
+import API from './../utils/API';
 
 class Signup extends Component {
   constructor() {
@@ -11,7 +11,7 @@ class Signup extends Component {
 
   componentWillMount() {
     if (this.Auth.loggedIn()) {
-      this.props.history.replace("/");
+      this.props.history.replace('/');
     }
   }
 
@@ -21,7 +21,7 @@ class Signup extends Component {
       .then(res => {
         // once the user has signed up
         // send them to the login page
-        this.props.history.replace("/login");
+        this.props.history.replace('/login');
       })
       .catch(err => alert(err));
   };

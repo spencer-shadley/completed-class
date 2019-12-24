@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 
 const UserContext = React.createContext({
   name: {
-    value: "",
+    value: '',
     onChange: () => {}
   },
-  image: "",
+  image: '',
   status: {
-    value: "",
+    value: '',
     onChange: () => {}
   },
   lifeLongLearner: false,

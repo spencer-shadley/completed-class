@@ -30,8 +30,8 @@ As a capstone to the boot camp, you’ll work in groups to build novel full-stac
 
 For a closer preview of what we explore in each unit of the boot camp, dive into each unit’s overview to learn:
 
-* What you will learn and why it’s important
-* How topics in the unit relate to what came earlier in the boot camp
-* Activities you’ll complete and what skills they focus on
-* Common interview questions related to that week’s material
-* Helpful resources if you want to get ahead or gain more experience after the unit
+- What you will learn and why it’s important
+- How topics in the unit relate to what came earlier in the boot camp
+- Activities you’ll complete and what skills they focus on
+- Common interview questions related to that week’s material
+- Helpful resources if you want to get ahead or gain more experience after the unit

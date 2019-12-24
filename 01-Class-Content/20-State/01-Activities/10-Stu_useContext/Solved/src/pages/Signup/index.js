@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import Container from "../../components/Container";
-import Col from "../../components/Col";
-import Row from "../../components/Row";
+import React, { useState } from 'react';
+import Container from '../../components/Container';
+import Col from '../../components/Col';
+import Row from '../../components/Row';
 
 const Signup = () => {
   const [username, setUsername] = useState();
@@ -9,8 +9,8 @@ const Signup = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    console.log("username is " + username);
-    console.log("password is " + password);
+    console.log('username is ' + username);
+    console.log('password is ' + password);
   };
 
   return (
@@ -48,7 +48,9 @@ const Signup = () => {
         </Container>
         <Container className="mt-4">
           <h3>Hello {username}!</h3>
-          <p>I probably shouldn't tell you this, but your password is {password}!</p>
+          <p>
+            I probably shouldn't tell you this, but your password is {password}!
+          </p>
         </Container>
       </form>
     </div>

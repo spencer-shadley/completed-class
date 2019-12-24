@@ -1,35 +1,35 @@
-import React, { useReducer, useRef } from "react";
-import "./App.css";
+import React, { useReducer, useRef } from 'react';
+import './App.css';
 
 function TodoList() {
   const inputRef = useRef();
   const [items, dispatch] = useReducer((state, action) => {
     switch (action.type) {
-    case "add":
-      return [
-        ...state,
-        {
-          id: state.length * Math.random(),
-          name: action.name
-        }
-      ];
+      case 'add':
+        return [
+          ...state,
+          {
+            id: state.length * Math.random(),
+            name: action.name
+          }
+        ];
       // Bonus: Remove a todo from the list.
-    case "remove":
-      return state.filter((_, index) => {
-        return index !== action.index;
-      });
-    default:
-      return state;
+      case 'remove':
+        return state.filter((_, index) => {
+          return index !== action.index;
+        });
+      default:
+        return state;
     }
   }, []);
 
   const handleSubmit = e => {
     e.preventDefault();
     dispatch({
-      type: "add",
+      type: 'add',
       name: inputRef.current.value
     });
-    inputRef.current.value = "";
+    inputRef.current.value = '';
   };
 
   return (
@@ -52,7 +52,7 @@ function TodoList() {
             {item.name}
             <button
               className="btn btn-danger ml-5"
-              onClick={() => dispatch({ type: "remove", index })}
+              onClick={() => dispatch({ type: 'remove', index })}
             >
               X Remove
             </button>

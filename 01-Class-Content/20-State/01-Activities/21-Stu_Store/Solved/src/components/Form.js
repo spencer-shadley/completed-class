@@ -1,5 +1,5 @@
-import React, { useRef } from "react";
-import { useTodoContext } from "../utils/GlobalState";
+import React, { useRef } from 'react';
+import { useTodoContext } from '../utils/GlobalState';
 
 function Form() {
   const inputRef = useRef();
@@ -9,10 +9,10 @@ function Form() {
     e.preventDefault();
 
     dispatch({
-      type: "add",
+      type: 'add',
       name: inputRef.current.value
     });
-    inputRef.current.value = "";
+    inputRef.current.value = '';
   }
 
   return (

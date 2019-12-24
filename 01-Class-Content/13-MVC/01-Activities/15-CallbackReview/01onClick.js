@@ -4,7 +4,6 @@
 
 // 3. When does the anonymous function get executed?
 
-
-$("#boomButton").on("click", function() {
-  alert("boom");
+$('#boomButton').on('click', function() {
+  alert('boom');
 });

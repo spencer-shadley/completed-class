@@ -1,6 +1,6 @@
-import React from "react";
-import Thumbnail from "../Thumbnail";
-import { Container, Row, Col } from "../Grid";
+import React from 'react';
+import Thumbnail from '../Thumbnail';
+import { Container, Row, Col } from '../Grid';
 
 // Exporting both RecipeList and RecipeListItem from this file
 
@@ -21,8 +21,9 @@ export function RecipeListItem(props) {
           <Col size="xs-8 sm-9">
             <h3>Vegetable-Pasta Oven Omelet</h3>
             <p>
-              Ingredients: "tomato, onions, red pepper, garlic, olive oil, zucchini, cream cheese,
-              vermicelli, eggs, parmesan cheese, milk, italian seasoning, salt, black pepper"
+              Ingredients: "tomato, onions, red pepper, garlic, olive oil,
+              zucchini, cream cheese, vermicelli, eggs, parmesan cheese, milk,
+              italian seasoning, salt, black pepper"
             </p>
             <a
               rel="noreferrer noopener"

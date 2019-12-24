@@ -1,6 +1,6 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-const bcrypt = require("bcrypt-nodejs");
+const bcrypt = require('bcrypt-nodejs');
 
 const UserSchema = new Schema({
   email: {
@@ -24,11 +24,11 @@ const UserSchema = new Schema({
 });
 
 // Execute before each user.save() call
-UserSchema.pre("save", function(callback) {
+UserSchema.pre('save', function(callback) {
   let user = this;
 
   // Break out if the password hasn't changed
-  if (!user.isModified("password")) return callback();
+  if (!user.isModified('password')) return callback();
 
   // Password changed so we need to hash it
   bcrypt.genSalt(5, function(err, salt) {
@@ -49,6 +49,6 @@ UserSchema.methods.verifyPassword = function(password, cb) {
   });
 };
 
-const User = mongoose.model("User", UserSchema);
+const User = mongoose.model('User', UserSchema);
 
 module.exports = User;

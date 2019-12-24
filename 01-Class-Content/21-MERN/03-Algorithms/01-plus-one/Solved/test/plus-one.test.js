@@ -1,12 +1,12 @@
 var expect = chai.expect;
 
-describe("plusOne", function() {
+describe('plusOne', function() {
   it(`should return [1, 2, 4] if given the array [1, 2, 3]`, function() {
     var digits = [1, 2, 3];
 
     var result = plusOne(digits);
 
-    expect(result, "Modify and return the same array").to.equal(digits);
+    expect(result, 'Modify and return the same array').to.equal(digits);
     expect(result).to.eql([1, 2, 4]);
   });
 
@@ -15,7 +15,7 @@ describe("plusOne", function() {
 
     var result = plusOne(digits);
 
-    expect(result, "Modify and return the same array").to.equal(digits);
+    expect(result, 'Modify and return the same array').to.equal(digits);
     expect(result).to.eql([1]);
   });
 
@@ -24,7 +24,7 @@ describe("plusOne", function() {
 
     var result = plusOne(digits);
 
-    expect(result, "Modify and return the same array").to.equal(digits);
+    expect(result, 'Modify and return the same array').to.equal(digits);
     expect(result).to.eql([1, 0, 0]);
   });
 
@@ -33,7 +33,7 @@ describe("plusOne", function() {
 
     var result = plusOne(digits);
 
-    expect(result, "Modify and return the same array").to.equal(digits);
+    expect(result, 'Modify and return the same array').to.equal(digits);
     expect(result).to.eql([7, 8, 7, 0]);
   });
 });

@@ -1,11 +1,10 @@
 import React from 'react';
-import { Row, Col } from "../Grid";
-import { useStoreContext } from "../../utils/GlobalState";
-import { REMOVE_FROM_CART } from "../../utils/actions";
-import { idbPromise } from "../../utils/hooks";
+import { Row, Col } from '../Grid';
+import { useStoreContext } from '../../utils/GlobalState';
+import { REMOVE_FROM_CART } from '../../utils/actions';
+import { idbPromise } from '../../utils/hooks';
 
-const CartItem = ({item}) => {
-
+const CartItem = ({ item }) => {
   const [, dispatch] = useStoreContext();
 
   const removeFromCart = item => {
@@ -13,10 +12,10 @@ const CartItem = ({item}) => {
       type: REMOVE_FROM_CART,
       productId: item.productId
     });
-    idbPromise("best", "cart", "delete", item);
+    idbPromise('best', 'cart', 'delete', item);
   };
 
-  return ( 
+  return (
     <tr>
       <td data-th="Product">
         <Row>
@@ -51,6 +50,6 @@ const CartItem = ({item}) => {
       </td>
     </tr>
   );
-}
+};
 
 export default CartItem;

@@ -14,19 +14,19 @@ We'll conclude this unit with an overview of webpack, a module bundler for JavaS
 
 ## Key Topics
 
-* Lighthouse
+- Lighthouse
 
-* Lazy Loading
+- Lazy Loading
 
-* Minification
+- Minification
 
-* Compression
+- Compression
 
-* PWAs
+- PWAs
 
-* Service Workers
+- Service Workers
 
-* Webpack
+- Webpack
 
 ## Comprehension Check
 
@@ -42,30 +42,30 @@ You will be employer-ready if you can answer the following questions:
 
 You will be employer-competitive if you are able to:
 
-* Identify performance bottlenecks in web applications.
+- Identify performance bottlenecks in web applications.
 
-* Explain how performance can be measured in web applications.
+- Explain how performance can be measured in web applications.
 
-* Explain the 5 main categories measured in a Lighthouse audit.
+- Explain the 5 main categories measured in a Lighthouse audit.
 
-* Optimize CSS, JS, and media assets for performance.
+- Optimize CSS, JS, and media assets for performance.
 
-* Set up webpack in a new front end project.
+- Set up webpack in a new front end project.
 
-* Convert an existing web application to a PWA and add offline functionality.
+- Convert an existing web application to a PWA and add offline functionality.
 
 ## Homework: Budget Tracker
 
-* In this assignment, you'll build a budgeting app to keep track of personal finances. You'll utilize IndexedDB, cache API, and Service Workers to provide an offline experience for the application.
+- In this assignment, you'll build a budgeting app to keep track of personal finances. You'll utilize IndexedDB, cache API, and Service Workers to provide an offline experience for the application.
 
 ## Helpful Links
 
-* [Why Performance Matters](https://developers.google.com/web/fundamentals/performance/why-performance-matters/)
+- [Why Performance Matters](https://developers.google.com/web/fundamentals/performance/why-performance-matters/)
 
-* [Measure Web Performance With The RAIL Model](https://developers.google.com/web/fundamentals/performance/rail)
+- [Measure Web Performance With The RAIL Model](https://developers.google.com/web/fundamentals/performance/rail)
 
-* [Audit the Performance of Your Web Application](https://developers.google.com/web/fundamentals/performance/audit/)
+- [Audit the Performance of Your Web Application](https://developers.google.com/web/fundamentals/performance/audit/)
 
-* [Google Lighthouse](https://developers.google.com/web/tools/lighthouse/)
+- [Google Lighthouse](https://developers.google.com/web/tools/lighthouse/)
 
-* [Your First Progressive Web App](https://developers.google.com/web/fundamentals/codelabs/your-first-pwapp/)
+- [Your First Progressive Web App](https://developers.google.com/web/fundamentals/codelabs/your-first-pwapp/)

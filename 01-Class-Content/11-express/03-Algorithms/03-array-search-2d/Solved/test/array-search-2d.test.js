@@ -1,16 +1,16 @@
 var expect = chai.expect;
 
-describe("arraySearch2D", function() {
+describe('arraySearch2D', function() {
   it(`should return 3 when given the array
   [["O", "O", "O"]
   ["X", "O", "O"],
   ["O", "O", "X"],
   ["O", "O", "X"]]`, function() {
     var arr = [
-      ["O", "O", "O"],
-      ["X", "O", "O"],
-      ["O", "O", "X"],
-      ["O", "O", "X"]
+      ['O', 'O', 'O'],
+      ['X', 'O', 'O'],
+      ['O', 'O', 'X'],
+      ['O', 'O', 'X']
     ];
 
     var result = arraySearch2D(arr);
@@ -21,7 +21,10 @@ describe("arraySearch2D", function() {
   it(`should return 0 when given the array
   [["O", "O", "O"],
   ["O", "O", "O"]]`, function() {
-    var arr = [["O", "O", "O"], ["O", "O", "O"]];
+    var arr = [
+      ['O', 'O', 'O'],
+      ['O', 'O', 'O']
+    ];
 
     var result = arraySearch2D(arr);
 
@@ -34,10 +37,10 @@ describe("arraySearch2D", function() {
   ["X", "X", "X", "X"],
   ["O", "O", "O", "O"]]`, function() {
     var arr = [
-      ["X", "O", "O", "O"],
-      ["O", "O", "O", "O"],
-      ["X", "X", "X", "X"],
-      ["O", "O", "O", "O"]
+      ['X', 'O', 'O', 'O'],
+      ['O', 'O', 'O', 'O'],
+      ['X', 'X', 'X', 'X'],
+      ['O', 'O', 'O', 'O']
     ];
 
     var result = arraySearch2D(arr);

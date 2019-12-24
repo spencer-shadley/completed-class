@@ -1,16 +1,16 @@
-import React from "react";
-import "./App.css";
+import React from 'react';
+import './App.css';
 
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Wrapper from "./components/Wrapper";
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Wrapper from './components/Wrapper';
 
-import Signup from "./pages/Signup";
-import Search from "./pages/Search";
+import Signup from './pages/Signup';
+import Search from './pages/Search';
 
 const App = () => {
-  document.title = "Wikipedia Searcher";
+  document.title = 'Wikipedia Searcher';
   return (
     <Router>
       <div>

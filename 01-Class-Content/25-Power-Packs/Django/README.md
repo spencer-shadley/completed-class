@@ -4,9 +4,9 @@ Hello there and welcome to your Python/Django Power Pack. If you're reading this
 
 ### Why should I learn Python and Django?
 
-Python is one of the most widely used high-level programming languages, with the TIOBE index naming it the 4th most popular out of 100. And with the rise of Big Data, Python can easily be integrated into web applications that need to implemene Machine Learning. Django, its trusy sidekick, is the most popular Python framework out there, used by the likes of Instagram, Spotify, YouTube, and Dropbox! 
+Python is one of the most widely used high-level programming languages, with the TIOBE index naming it the 4th most popular out of 100. And with the rise of Big Data, Python can easily be integrated into web applications that need to implemene Machine Learning. Django, its trusy sidekick, is the most popular Python framework out there, used by the likes of Instagram, Spotify, YouTube, and Dropbox!
 
-Also, the name Python came from Monty Python, so you can't go wrong! 
+Also, the name Python came from Monty Python, so you can't go wrong!
 
 ### How will I learn Python and Django?
 
@@ -38,9 +38,9 @@ We recommend you cover only one lesson per sitting to prevent information overlo
 ### Lesson 3
 
 1. Open up your `Lesson-3` folder.
-3. Open `Activities` folder in your text editor of choice.
-4. Open [Python/Django Lesson 3](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2663a2f2-d949-4bf8-aa4d-a8c900f85bf0) and start coding along! (_Note:_ Make sure to start out with `07-Models/Solved` from last class so you have the same starting point as the video.)
-5. Use the same workflow as Lesson 1 to watch class and work through the activities until the last one is complete.
+2. Open `Activities` folder in your text editor of choice.
+3. Open [Python/Django Lesson 3](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2663a2f2-d949-4bf8-aa4d-a8c900f85bf0) and start coding along! (_Note:_ Make sure to start out with `07-Models/Solved` from last class so you have the same starting point as the video.)
+4. Use the same workflow as Lesson 1 to watch class and work through the activities until the last one is complete.
 
 ### Homework
 
@@ -51,14 +51,9 @@ First off, killer job, you made it! Whether you feel confusion or mastery, you a
 3. Take your time and work on this over 1-2 weeks.
 4. Complete the application or spend at least 10 hours trying.
 
-
 ## Finish Line
 
-Still confused? Just think back to how confusing JavaScript was the first time you used it. If you keep practicing, you'll feel comfortable with Python and Django in no time. Now, last steps: 
+Still confused? Just think back to how confusing JavaScript was the first time you used it. If you keep practicing, you'll feel comfortable with Python and Django in no time. Now, last steps:
 
- 1. Congratulate yourself and practice some self care.
- 2. You've earned it.
-
-
-
-
+1.  Congratulate yourself and practice some self care.
+2.  You've earned it.

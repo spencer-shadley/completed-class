@@ -4,12 +4,12 @@
 var sqrt = function(x) {
   for (var i = 0; i <= x; ++i) {
     var squared = i * i;
-    
+
     if (squared === x) {
       return i;
     }
-    
-    if (squared > x ) {
+
+    if (squared > x) {
       return i - 1;
     }
   }

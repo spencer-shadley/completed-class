@@ -26,12 +26,12 @@ var isNumeric = function(str) {
     }
 
     if (i === 0) {
-      if (char === "-" || char === "+") {
+      if (char === '-' || char === '+') {
         continue;
       }
     }
 
-    if (char === ".") {
+    if (char === '.') {
       if (hasDecimal === true) {
         return false;
       }

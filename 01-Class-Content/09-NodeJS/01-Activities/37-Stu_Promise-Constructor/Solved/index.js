@@ -5,7 +5,7 @@ function waitFor(seconds) {
     }
 
     setTimeout(function() {
-      resolve("Success!");
+      resolve('Success!');
     }, seconds * 1000);
   });
 }

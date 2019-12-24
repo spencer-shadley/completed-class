@@ -4,32 +4,32 @@ export function idbPromise(databaseName, storeName, method, object) {
     let db, tx, store;
     request.onupgradeneeded = function(e) {
       const db = request.result;
-      db.createObjectStore(storeName, { keyPath: "productId" });
+      db.createObjectStore(storeName, { keyPath: 'productId' });
     };
 
     request.onerror = function(e) {
-      console.log("There was an error");
+      console.log('There was an error');
     };
 
     request.onsuccess = function(e) {
       db = request.result;
-      tx = db.transaction(storeName, "readwrite");
+      tx = db.transaction(storeName, 'readwrite');
       store = tx.objectStore(storeName);
 
       db.onerror = function(e) {
-        console.log("error");
+        console.log('error');
       };
-      if (method === "put") {
+      if (method === 'put') {
         console.log(object.productId);
 
         store.put(object);
         resolve(object);
-      } else if (method === "get") {
+      } else if (method === 'get') {
         const all = store.getAll();
         all.onsuccess = function() {
           resolve(all.result);
         };
-      } else if (method === "delete") {
+      } else if (method === 'delete') {
         console.log(object);
         store.delete(object.productId);
       }

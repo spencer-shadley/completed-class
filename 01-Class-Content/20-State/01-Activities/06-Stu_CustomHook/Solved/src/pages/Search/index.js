@@ -1,26 +1,26 @@
-import React, { useState, useEffect } from "react";
-import Container from "../../components/Container";
-import SearchForm from "../../components/SearchForm";
-import SearchResults from "../../components/SearchResults";
-import Alert from "../../components/Alert";
-import ArticleContext from "../../utils/ArticleContext";
-import API from "../../utils/API";
-import useDebounce from "../../utils/debounceHook";
+import React, { useState, useEffect } from 'react';
+import Container from '../../components/Container';
+import SearchForm from '../../components/SearchForm';
+import SearchResults from '../../components/SearchResults';
+import Alert from '../../components/Alert';
+import ArticleContext from '../../utils/ArticleContext';
+import API from '../../utils/API';
+import useDebounce from '../../utils/debounceHook';
 
 function Search() {
   const [articleState, setArticleState] = useState({
-    title: "",
-    description: "",
-    url: ""
+    title: '',
+    description: '',
+    url: ''
   });
 
-  const [search, setSearch] = useState("Wikipedia");
-  const [error, setError] = useState("");
+  const [search, setSearch] = useState('Wikipedia');
+  const [error, setError] = useState('');
 
   const debouncedSearchTerm = useDebounce(search, 500);
 
   useEffect(() => {
-    document.title = "Wikipedia Searcher";
+    document.title = 'Wikipedia Searcher';
     if (!search) {
       return;
     }
@@ -28,9 +28,9 @@ function Search() {
       API.searchTerms(search)
         .then(res => {
           if (res.data.length === 0) {
-            throw new Error("No results found.");
+            throw new Error('No results found.');
           }
-          if (res.data.status === "error") {
+          if (res.data.status === 'error') {
             throw new Error(res.data.message);
           }
           setArticleState({
@@ -53,9 +53,12 @@ function Search() {
   return (
     <ArticleContext.Provider value={articleState}>
       <div>
-        <Container style={{ minHeight: "100vh" }}>
+        <Container style={{ minHeight: '100vh' }}>
           <h1 className="text-center">Search For Anything on Wikipedia</h1>
-          <Alert type="danger" style={{ opacity: error ? 1 : 0, marginBottom: 10 }}>
+          <Alert
+            type="danger"
+            style={{ opacity: error ? 1 : 0, marginBottom: 10 }}
+          >
             {error}
           </Alert>
           <SearchForm

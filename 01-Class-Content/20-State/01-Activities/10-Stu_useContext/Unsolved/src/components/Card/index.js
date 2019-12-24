@@ -1,9 +1,9 @@
-import React from "react";
-import CardBtn from "../CardBtn";
-import CardTitle from "../CardTitle";
-import CardContext from "../../utils/CardContext";
+import React from 'react';
+import CardBtn from '../CardBtn';
+import CardTitle from '../CardTitle';
+import CardContext from '../../utils/CardContext';
 
-import "./style.css";
+import './style.css';
 
 function Card() {
   return (
@@ -14,14 +14,22 @@ function Card() {
         <div
           className="card"
           style={{
-            backgroundImage: image ? `url(${image})` : "none"
+            backgroundImage: image ? `url(${image})` : 'none'
           }}
         >
           {/* Here, we do not pass the title to demonstrate that it can also be consumed from the CardTitleText component */}
           <CardTitle />
           {!image && <i className="fa fa-spinner fa-spin" aria-hidden="true" />}
-          <CardBtn style={{ opacity: image ? 1 : 0 }} onClick={handleBtnClick} data-value="back" />
-          <CardBtn style={{ opacity: image ? 1 : 0 }} onClick={handleBtnClick} data-value="next" />
+          <CardBtn
+            style={{ opacity: image ? 1 : 0 }}
+            onClick={handleBtnClick}
+            data-value="back"
+          />
+          <CardBtn
+            style={{ opacity: image ? 1 : 0 }}
+            onClick={handleBtnClick}
+            data-value="next"
+          />
         </div>
       )}
     </CardContext.Consumer>

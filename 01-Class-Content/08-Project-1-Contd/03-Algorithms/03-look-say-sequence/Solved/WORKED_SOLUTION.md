@@ -14,7 +14,6 @@ For example, if we were given the number `225332221`, we could break this number
 4. 3 number 2s
 5. 1 number 1
 
-
 We'd combine these to get the look-and-say-sequence: `2215233211`.
 
 Once you understand what a look-and-say-sequence is, converting a number to one is easy enough without code. How do we do this?
@@ -50,7 +49,7 @@ We also need a few variables to keep track of:
 ```js
 var lookAndSay = function(n) {
   var numString = n.toString();
-  var result = "";
+  var result = '';
 
   var currentCount = 1;
   var currentDigit = numString[0];
@@ -62,12 +61,12 @@ var lookAndSay = function(n) {
 
 We'll start the `currentDigit` off at the first number in `numString`, and we'll start off the `currentCount` at `1`. This means we'll have to start the loop at `1` instead of `0`. This is similar to the previous `longestWord` problem.
 
-So now we need to increment `currentCount` *if* the next digit is the same as `currentDigit`, *else* we'll append the `currentCount` and `currentDigit` to the `result` before resetting both values.
+So now we need to increment `currentCount` _if_ the next digit is the same as `currentDigit`, _else_ we'll append the `currentCount` and `currentDigit` to the `result` before resetting both values.
 
 ```js
 var lookAndSay = function(n) {
   var numString = n.toString();
-  var result = "";
+  var result = '';
 
   var currentCount = 1;
   var currentDigit = numString[0];
@@ -91,7 +90,7 @@ At this point we should be able to return the `result`, but we need to turn it b
 ```js
 var lookAndSay = function(n) {
   var numString = n.toString();
-  var result = "";
+  var result = '';
 
   var currentCount = 1;
   var currentDigit = numString[0];
@@ -117,7 +116,7 @@ If we ran this, we'd find it mostly words, but there's a flaw: We never append t
 ```js
 var lookAndSay = function(n) {
   var numString = n.toString();
-  var result = "";
+  var result = '';
 
   var currentCount = 1;
   var currentDigit = numString[0];

@@ -1,12 +1,12 @@
 var expect = chai.expect;
 
-describe("acronymBuilder", function() {
+describe('acronymBuilder', function() {
   it("should return 'ABC' when given the 'always be coding'", function() {
-    var str = "always be coding";
+    var str = 'always be coding';
 
     var result = acronymBuilder(str);
 
-    expect(result).to.eql("ABC");
+    expect(result).to.eql('ABC');
   });
 
   it("should return 'DGS' when given the 'don't get stuck", function() {
@@ -14,6 +14,6 @@ describe("acronymBuilder", function() {
 
     var result = acronymBuilder(str);
 
-    expect(result).to.eql("DGS");
+    expect(result).to.eql('DGS');
   });
 });

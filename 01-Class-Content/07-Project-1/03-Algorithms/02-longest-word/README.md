@@ -13,7 +13,7 @@ In this activity you will be writing code to create a function that takes a stri
     - e.g. given the following string:
 
     ```js
-    var str = "i love programming";
+    var str = 'i love programming';
     ```
 
     - The following string should be returned:

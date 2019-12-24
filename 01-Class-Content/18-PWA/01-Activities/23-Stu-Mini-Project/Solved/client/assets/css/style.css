@@ -7,7 +7,7 @@
 html,
 body {
   height: 100%;
-  font-family: "Istok Web", sans-serif;
+  font-family: 'Istok Web', sans-serif;
   background-color: #f5f9fc;
   position: relative;
   z-index: -3;
@@ -21,7 +21,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -109,7 +109,7 @@ nav {
 }
 
 .stripe::before {
-  content: "";
+  content: '';
   z-index: -1;
   position: absolute;
   width: 100vw;
@@ -122,8 +122,8 @@ nav {
 .topic {
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px, rgba(0, 0, 0, 0.3) 0 8px 16px -8px,
-    rgba(0, 0, 0, 0.024) 0 -6px 16px -6px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0 8px 16px -8px, rgba(0, 0, 0, 0.024) 0 -6px 16px -6px;
   max-width: 330px;
   font-size: 1rem;
   display: flex;
@@ -145,7 +145,7 @@ nav {
   cursor: pointer;
   width: 45px;
   height: 45px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
   font-weight: bold;
   transition: ease 0.15s opacity;
@@ -160,8 +160,8 @@ nav {
 }
 
 .topic:hover {
-  box-shadow: rgba(50, 50, 93, 0.25) 0 30px 60px -12px, rgba(0, 0, 0, 0.3) 0 18px 36px -18px,
-    rgba(0, 0, 0, 0.024) 0 -12px 36px -8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0 18px 36px -18px, rgba(0, 0, 0, 0.024) 0 -12px 36px -8px;
   color: #32325d;
   transform: translateY(-2px);
 }
@@ -239,8 +239,8 @@ article,
 .article-skeleton {
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px, rgba(0, 0, 0, 0.3) 0 8px 16px -8px,
-    rgba(0, 0, 0, 0.024) 0 -6px 16px -6px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0 8px 16px -8px, rgba(0, 0, 0, 0.024) 0 -6px 16px -6px;
   margin: 15px;
   margin-top: 40px;
   padding: 40px;
@@ -283,7 +283,7 @@ article,
 }
 
 .article-container::after {
-  content: " ";
+  content: ' ';
   display: block;
   clear: both;
 }

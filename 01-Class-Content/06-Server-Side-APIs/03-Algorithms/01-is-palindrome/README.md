@@ -17,7 +17,7 @@ In this activity you will be writing code to create a function that takes in a s
       - e.g. given the following string:
 
       ```js
-      var str = "racecar";
+      var str = 'racecar';
       ```
 
       - The following should be returned:

@@ -4,53 +4,54 @@ In this activity you will be writing code to create a function that takes in a R
 
 ## Instructions
 
-* Open [Unsolved/roman-to-int.js](Unsolved/roman-to-int.js) in your code editor -- **this is the only file you will modify in this activity.**
+- Open [Unsolved/roman-to-int.js](Unsolved/roman-to-int.js) in your code editor -- **this is the only file you will modify in this activity.**
 
-  * In this file you will be writing code in the body of the `romanToInt` function to achieve the following:
+  - In this file you will be writing code in the body of the `romanToInt` function to achieve the following:
 
-    * Return the integer form of the provided Roman Numeral.
+    - Return the integer form of the provided Roman Numeral.
 
-    * For example, given the following string:
+    - For example, given the following string:
 
     ```js
-    var str = "V";
+    var str = 'V';
     ```
 
-    * The following should be returned:
+    - The following should be returned:
 
     ```js
     5;
     ```
 
-    * Given the following string:
+    - Given the following string:
 
     ```js
-    var str = "IX";
+    var str = 'IX';
     ```
 
-    * The following should be returned:
+    - The following should be returned:
 
     ```js
     9;
     ```
 
-     * Given the following string:
+    - Given the following string:
 
-     ```js
-    var str = "MMXXIV";
+    ```js
+    var str = 'MMXXIV';
     ```
 
-    * The following should be returned:
+    - The following should be returned:
 
     ```js
     2024;
+    ```
 
-* You can check to see if your function works properly by opening [Unsolved/test.html](Unsolved/test.html) in your web browser.
+- You can check to see if your function works properly by opening [Unsolved/test.html](Unsolved/test.html) in your web browser.
 
-  * Functions that _pass_ the tests will be denoted with a **green check mark**.
+  - Functions that _pass_ the tests will be denoted with a **green check mark**.
 
-  * Functions that _fail_ the tests will be denoted with a **red x and an error message**.
+  - Functions that _fail_ the tests will be denoted with a **red x and an error message**.
 
 ### Hints
 
-* Start by first making sure you understand Roman Numerals and making sure your function works with the most simple inputs.
+- Start by first making sure you understand Roman Numerals and making sure your function works with the most simple inputs.

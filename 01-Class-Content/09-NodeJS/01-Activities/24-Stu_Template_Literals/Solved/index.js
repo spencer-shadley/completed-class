@@ -1,7 +1,7 @@
 const music = {
-  title: "The Less I Know The Better",
-  artist: "Tame Impala",
-  album: "Currents"
+  title: 'The Less I Know The Better',
+  artist: 'Tame Impala',
+  album: 'Currents'
 };
 
 // write code between the <p> tags to output your objects data
@@ -14,5 +14,5 @@ const songSnippet = `
      </p>
   </div>
 `;
-const element = document.getElementById("music");
+const element = document.getElementById('music');
 element.innerHTML = songSnippet;

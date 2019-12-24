@@ -23,18 +23,18 @@ function getUpdatemount() {
   return amount;
 }
 
-incrementElement.addEventListener('click', function () {
+incrementElement.addEventListener('click', function() {
   updateCount(count + getUpdatemount());
 });
 
-decrementElement.addEventListener('click', function () {
+decrementElement.addEventListener('click', function() {
   updateCount(count - getUpdatemount());
 });
 
-incrementElement.addEventListener('mouseover', function () {
+incrementElement.addEventListener('mouseover', function() {
   updateCount(count + 1);
 });
 
-decrementElement.addEventListener('mouseout', function () {
+decrementElement.addEventListener('mouseout', function() {
   updateCount(count - 1);
 });

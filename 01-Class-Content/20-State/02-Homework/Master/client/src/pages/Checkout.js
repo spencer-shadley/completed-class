@@ -1,13 +1,13 @@
 import React from 'react';
-import { Container } from "../components/Grid";
-import Checkout from "../components/Checkout"
+import { Container } from '../components/Grid';
+import Checkout from '../components/Checkout';
 
 const CheckoutPage = () => {
-  return ( 
+  return (
     <Container>
       <Checkout />
     </Container>
   );
-}
+};
 
 export default CheckoutPage;

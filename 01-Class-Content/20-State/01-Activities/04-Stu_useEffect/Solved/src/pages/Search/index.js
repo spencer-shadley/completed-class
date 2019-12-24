@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from "react";
-import API from "../../utils/API";
-import Container from "../../components/Container";
-import SearchForm from "../../components/SearchForm";
-import SearchResults from "../../components/SearchResults";
-import Alert from "../../components/Alert";
+import React, { useState, useEffect } from 'react';
+import API from '../../utils/API';
+import Container from '../../components/Container';
+import SearchForm from '../../components/SearchForm';
+import SearchResults from '../../components/SearchResults';
+import Alert from '../../components/Alert';
 
 function Search() {
-  const [search, setSearch] = useState("Wikipedia");
-  const [title, setTitle] = useState("");
-  const [description, setDescription] = useState("");
-  const [url, setUrl] = useState("");
-  const [error, setError] = useState("");
+  const [search, setSearch] = useState('Wikipedia');
+  const [title, setTitle] = useState('');
+  const [description, setDescription] = useState('');
+  const [url, setUrl] = useState('');
+  const [error, setError] = useState('');
 
   useEffect(() => {
     if (!search) {
@@ -20,9 +20,9 @@ function Search() {
     API.searchTerms(search)
       .then(res => {
         if (res.data.length === 0) {
-          throw new Error("No results found.");
+          throw new Error('No results found.');
         }
-        if (res.data.status === "error") {
+        if (res.data.status === 'error') {
           throw new Error(res.data.message);
         }
         setTitle(res.data[1]);
@@ -38,15 +38,15 @@ function Search() {
 
   return (
     <div>
-      <Container style={{ minHeight: "100vh" }}>
+      <Container style={{ minHeight: '100vh' }}>
         <h1 className="text-center">Search For Anything on Wikipedia</h1>
-        <Alert type="danger" style={{ opacity: error ? 1 : 0, marginBottom: 10 }}>
+        <Alert
+          type="danger"
+          style={{ opacity: error ? 1 : 0, marginBottom: 10 }}
+        >
           {error}
         </Alert>
-        <SearchForm
-          handleInputChange={handleInputChange}
-          results={search}
-        />
+        <SearchForm handleInputChange={handleInputChange} results={search} />
         <SearchResults title={title} description={description} url={url} />
       </Container>
     </div>

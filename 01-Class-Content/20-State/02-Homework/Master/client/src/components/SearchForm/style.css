@@ -5,8 +5,8 @@ form.search {
 
 .input-wrapper {
   width: 100%;
-  display:inline-block;
-  position: relative
+  display: inline-block;
+  position: relative;
 }
 
 .fa-search {
@@ -17,7 +17,7 @@ form.search {
 }
 
 .search-btn {
-  border:none; 
+  border: none;
   width: 0px;
   height: 0px;
   padding: 0;

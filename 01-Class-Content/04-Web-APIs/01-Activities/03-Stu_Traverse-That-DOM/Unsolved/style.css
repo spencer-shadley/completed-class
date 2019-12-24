@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0; 
+  padding: 0;
 }
 
 body {
@@ -11,8 +11,13 @@ body {
   line-height: 1.5;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #00a8e8
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #00a8e8;
 }
 
 article {
@@ -22,7 +27,7 @@ article {
   overflow: auto;
 }
 
-#main { 
+#main {
   margin: 0 auto 50px auto;
   width: 100%;
   padding: 30px;
@@ -32,7 +37,7 @@ article {
   text-align: center;
 }
 
-#articles{
+#articles {
   max-width: 80%;
   margin: 0 auto;
 }

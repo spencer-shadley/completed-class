@@ -1,6 +1,6 @@
 var expect = chai.expect;
 
-describe("commonElement", function() {
+describe('commonElement', function() {
   it(`should return 4 when given [5, 3, 4, 10] and [0, 4, 9, 99]`, function() {
     var arrA = [0, 4, 9, 99];
     var arrB = [5, 3, 4, 10];

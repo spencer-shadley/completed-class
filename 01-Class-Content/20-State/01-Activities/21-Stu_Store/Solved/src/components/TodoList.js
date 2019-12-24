@@ -1,5 +1,5 @@
-import React from "react";
-import { useTodoContext } from "../utils/GlobalState";
+import React from 'react';
+import { useTodoContext } from '../utils/GlobalState';
 
 function TodoList() {
   const [state, dispatch] = useTodoContext();
@@ -12,17 +12,21 @@ function TodoList() {
           <li className="list-group-item col-12" key={item.id}>
             <button
               className="btn btn-warning mr-4"
-              onClick={() => dispatch({ type: "prioritize", index })}
+              onClick={() => dispatch({ type: 'prioritize', index })}
             >
               Prioritize
             </button>
             <button
               className="btn btn-danger mr-4"
-              onClick={() => dispatch({ type: "remove", index })}
+              onClick={() => dispatch({ type: 'remove', index })}
             >
               X Remove
             </button>
-            {index}:<span className={item.priority ? "font-weight-bold" : ""}> {item.name}</span>
+            {index}:
+            <span className={item.priority ? 'font-weight-bold' : ''}>
+              {' '}
+              {item.name}
+            </span>
           </li>
         ))}
       </ul>

@@ -4,7 +4,7 @@ In this activity you will be registering your first service worker.
 
 ## Instructions
 
-* Add the following script just above the `</body>` tag in `index.html`
+- Add the following script just above the `</body>` tag in `index.html`
 
 ```js
 if ("serviceWorker" in navigator) {
@@ -17,13 +17,12 @@ if ("serviceWorker" in navigator) {
 }
 ```
 
-* Create a `service-worker.js` file in the `public` directory and add the following line of code.
+- Create a `service-worker.js` file in the `public` directory and add the following line of code.
 
 ```js
-console.log("Hi from your service-worker.js file!");
+console.log('Hi from your service-worker.js file!');
 ```
 
-* Refresh your Gallery App or launch it with `npm start` if it is not running.
+- Refresh your Gallery App or launch it with `npm start` if it is not running.
 
-* Open your Chrome Dev Tools > Application and navigate to the Service Worker tab. Check to see if your service worker file was successfully found. You should see two messages, one from the `service-worker.js` file and one from the script tag that you put in your `index.html` file.
-
+- Open your Chrome Dev Tools > Application and navigate to the Service Worker tab. Check to see if your service worker file was successfully found. You should see two messages, one from the `service-worker.js` file and one from the script tag that you put in your `index.html` file.

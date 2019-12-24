@@ -1,8 +1,8 @@
-const Vehicle = require("./vehicle");
+const Vehicle = require('./vehicle');
 
 class Car extends Vehicle {
   constructor(id, color, passengers) {
-    super(id, 4, "beep");
+    super(id, 4, 'beep');
     this.color = color;
     this.passengers = passengers;
   }
@@ -13,7 +13,7 @@ class Car extends Vehicle {
 
   checkPassengerLength() {
     if (this.passengers.length > 4) {
-      console.log("Cars only seat 4 people. You have too many passengers!");
+      console.log('Cars only seat 4 people. You have too many passengers!');
     } else {
       console.log(`You have room for ${4 - this.passengers.length} people.`);
     }
@@ -22,25 +22,25 @@ class Car extends Vehicle {
 
 const carPassengers = [
   {
-    name: "Aristotle"
+    name: 'Aristotle'
   },
   {
-    name: "Confucius"
+    name: 'Confucius'
   },
   {
-    name: "Socrates"
+    name: 'Socrates'
   },
   {
-    name: "Lao-Tzu"
+    name: 'Lao-Tzu'
   },
   {
-    name: "Plato"
+    name: 'Plato'
   }
 ];
 
-const car = new Car(15, "blue", carPassengers);
+const car = new Car(15, 'blue', carPassengers);
 
-console.log("---CAR---");
+console.log('---CAR---');
 car.printInfo();
 car.useHorn();
 car.checkPassengerLength();

@@ -1,6 +1,6 @@
 export function updateChart(expenseChart, name, price) {
   expenseChart.data.labels.push(name);
-  expenseChart.data.datasets.forEach((dataset) => {
+  expenseChart.data.datasets.forEach(dataset => {
     dataset.data.push(price);
   });
   expenseChart.update();
@@ -8,7 +8,7 @@ export function updateChart(expenseChart, name, price) {
 
 export function resetChart(expenseChart) {
   expenseChart.data.labels = [];
-  expenseChart.data.datasets.forEach((dataset) => {
+  expenseChart.data.datasets.forEach(dataset => {
     dataset.data = [];
   });
   expenseChart.update();

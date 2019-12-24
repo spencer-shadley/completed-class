@@ -3,11 +3,11 @@
 // In node, it belongs to a special "Timeout" object
 
 var person = {
-  name: "Hodor",
+  name: 'Hodor',
   saySomething: function() {
-    console.log(this.name + " is thinking...");
+    console.log(this.name + ' is thinking...');
     setTimeout(function() {
-      console.log(this.name + "!");
+      console.log(this.name + '!');
     }, 100);
   }
 };
@@ -18,10 +18,10 @@ person.saySomething(); // prints "Hodor is thinking..."
 // Arrow functions bind the `this` keyword to the object it's created inside of
 // i.e. whatever `this` is where it's created
 var person = {
-  name: "Hodor",
+  name: 'Hodor',
   saySomething: function() {
-    console.log(this.name + " is thinking...");
-    setTimeout(() => console.log(this.name + "!"), 100);
+    console.log(this.name + ' is thinking...');
+    setTimeout(() => console.log(this.name + '!'), 100);
   }
 };
 

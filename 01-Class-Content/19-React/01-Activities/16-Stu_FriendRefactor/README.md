@@ -4,12 +4,12 @@ In this activity we will use our new React skills to further refactor the Friend
 
 ## Instructions
 
-* Replace your React App's `src` folder with [Unsolved/src](Unsolved/src). Stop the dev server if it is already running. Start the app in dev mode by running `npm start`.
+- Replace your React App's `src` folder with [Unsolved/src](Unsolved/src). Stop the dev server if it is already running. Start the app in dev mode by running `npm start`.
 
-* Open [localhost:3000](http://localhost:3000) in your browser and take a moment to study the rendered app.
+- Open [localhost:3000](http://localhost:3000) in your browser and take a moment to study the rendered app.
 
-* Attempt to complete each of the following:
-  
+- Attempt to complete each of the following:
+
   1. Refactor the `App` component so that it's a class component. Set the component's initial state to the `friends` JSON array. Inside of the `render` method, map over `this.state.friends` to render each `FriendCard` component.
 
   2. Refactor the `App` component so that rather than rendering each `FriendCard` component manually, use a map to render one `FriendCard` component for each object in the `friends` JSON, passing in the appropriate props.
@@ -18,8 +18,8 @@ In this activity we will use our new React skills to further refactor the Friend
 
 ## Hints
 
-* Test your application after each step!!
+- Test your application after each step!!
 
-* Refer back to the previous in class activities for if you get stuck anywhere.
+- Refer back to the previous in class activities for if you get stuck anywhere.
 
-* If you get stuck working with the event handler, spend a few minutes reading [React's Documentation](https://facebook.github.io/react/docs/handling-events.html) on handling events. 
+- If you get stuck working with the event handler, spend a few minutes reading [React's Documentation](https://facebook.github.io/react/docs/handling-events.html) on handling events.

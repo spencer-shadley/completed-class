@@ -4,7 +4,7 @@
 // ******************************************************************************
 // *** Dependencies
 // =============================================================
-var express = require("express");
+var express = require('express');
 
 // Sets up the Express App
 // =============================================================
@@ -16,14 +16,14 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Static directory
-app.use(express.static("public"));
+app.use(express.static('public'));
 
 // Routes
 // =============================================================
-require("./routes/api-routes.js")(app);
+require('./routes/api-routes.js')(app);
 
 // Starting our Express app
 // =============================================================
 app.listen(PORT, function() {
-  console.log("App listening on PORT " + PORT);
+  console.log('App listening on PORT ' + PORT);
 });

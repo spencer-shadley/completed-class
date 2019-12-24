@@ -84,7 +84,6 @@ time,
 mark,
 audio,
 video {
-
   /* Box-model */
   padding: 0;
 
@@ -133,9 +132,8 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-
   /* Misc */
-  content: "";
+  content: '';
   content: none;
 }
 

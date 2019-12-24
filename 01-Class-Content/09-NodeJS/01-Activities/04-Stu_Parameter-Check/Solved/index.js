@@ -9,7 +9,7 @@ if (a === b) {
 }
 
 //using a ternary operator
-console.log(a === b ? true : false)
+console.log(a === b ? true : false);
 
 // comparing variables
 console.log(a === b);

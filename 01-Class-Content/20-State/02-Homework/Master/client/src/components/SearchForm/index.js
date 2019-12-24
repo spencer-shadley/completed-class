@@ -1,9 +1,9 @@
-import React, { useRef } from "react";
-import API from "../../utils/API";
-import { UPDATE_PRODUCTS } from "../../utils/actions";
-import { useStoreContext } from "../../utils/GlobalState";
-import { Row, Col } from "../Grid";
-import "./style.css";
+import React, { useRef } from 'react';
+import API from '../../utils/API';
+import { UPDATE_PRODUCTS } from '../../utils/actions';
+import { useStoreContext } from '../../utils/GlobalState';
+import { Row, Col } from '../Grid';
+import './style.css';
 
 // Using the datalist element we can create autofill suggestions based on the props.breeds array
 function SearchForm() {
@@ -21,7 +21,7 @@ function SearchForm() {
       });
     });
 
-    inputRef.current.value = "";
+    inputRef.current.value = '';
   };
 
   return (
@@ -44,7 +44,7 @@ function SearchForm() {
               </button>
             </div>
           </Col>
-        </Row>        
+        </Row>
       </div>
     </form>
   );

@@ -1,9 +1,9 @@
-import { useIndexedDb } from "./indexedDb";
-import { loadArticles } from "./API";
-import { renderArticles } from "./domMethods";
+import { useIndexedDb } from './indexedDb';
+import { loadArticles } from './API';
+import { renderArticles } from './domMethods';
 // Call renderArticles on page load
 function loadPage() {
-  useIndexedDb("articles", "ArticleStore", "get").then(results => {
+  useIndexedDb('articles', 'ArticleStore', 'get').then(results => {
     const favorites = results;
     loadArticles().then(data => {
       const mappedData = data.map(article => {

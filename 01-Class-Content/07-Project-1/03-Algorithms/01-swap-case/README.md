@@ -13,13 +13,13 @@ In this activity you will be writing code to create a function that swaps the le
     - e.g. given the following string:
 
     ```js
-    var str = "Luke, I Am Your Father";
+    var str = 'Luke, I Am Your Father';
     ```
 
     - The following string should be returned:
 
     ```js
-    "lUKE, i aM yOUR fATHER";
+    'lUKE, i aM yOUR fATHER';
     ```
 
 - You can check to see if your function works properly by opening [Unsolved/test.html](Unsolved/test.html) in your web browser.

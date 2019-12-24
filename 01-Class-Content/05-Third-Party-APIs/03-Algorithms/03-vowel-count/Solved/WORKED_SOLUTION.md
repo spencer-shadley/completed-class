@@ -22,11 +22,11 @@ We want to check if the current character is a vowel, so we could use an if-stat
 var vowelCount = function(str) {
   for (var i = 0; i < str.length; ++i) {
     if (
-      str[i] === "a" ||
-      str[i] === "e" ||
-      str[i] === "i" ||
-      str[i] === "o" ||
-      str[i] === "u"
+      str[i] === 'a' ||
+      str[i] === 'e' ||
+      str[i] === 'i' ||
+      str[i] === 'o' ||
+      str[i] === 'u'
     ) {
     }
   }
@@ -41,11 +41,11 @@ var vowelCount = function(str) {
 
   for (var i = 0; i < str.length; ++i) {
     if (
-      str[i] === "a" ||
-      str[i] === "e" ||
-      str[i] === "i" ||
-      str[i] === "o" ||
-      str[i] === "u"
+      str[i] === 'a' ||
+      str[i] === 'e' ||
+      str[i] === 'i' ||
+      str[i] === 'o' ||
+      str[i] === 'u'
     ) {
       count++;
     }
@@ -61,11 +61,11 @@ var vowelCount = function(str) {
 
   for (var i = 0; i < str.length; ++i) {
     if (
-      str[i] === "a" ||
-      str[i] === "e" ||
-      str[i] === "i" ||
-      str[i] === "o" ||
-      str[i] === "u"
+      str[i] === 'a' ||
+      str[i] === 'e' ||
+      str[i] === 'i' ||
+      str[i] === 'o' ||
+      str[i] === 'u'
     ) {
       count++;
     }
@@ -82,7 +82,7 @@ We can throw all possible vowels in an array, and then check if the lowercase ve
 ```js
 var vowelCount = function(str) {
   var count = 0;
-  var vowels = ["a", "e", "i", "o", "u"];
+  var vowels = ['a', 'e', 'i', 'o', 'u'];
 
   for (var i = 0; i < str.length; ++i) {
     var letter = str[i].toLowerCase();

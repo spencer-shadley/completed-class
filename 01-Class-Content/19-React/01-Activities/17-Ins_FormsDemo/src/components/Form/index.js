@@ -1,11 +1,11 @@
-import React, { Component } from "react";
-import "./style.css";
+import React, { Component } from 'react';
+import './style.css';
 
 class Form extends Component {
   // Setting the component's initial state
   state = {
-    firstName: "",
-    lastName: ""
+    firstName: '',
+    lastName: ''
   };
 
   handleInputChange = event => {
@@ -25,8 +25,8 @@ class Form extends Component {
     // Alert the user their first and last name, clear `this.state.firstName` and `this.state.lastName`, clearing the inputs
     alert(`Hello ${this.state.firstName} ${this.state.lastName}`);
     this.setState({
-      firstName: "",
-      lastName: ""
+      firstName: '',
+      lastName: ''
     });
   };
 

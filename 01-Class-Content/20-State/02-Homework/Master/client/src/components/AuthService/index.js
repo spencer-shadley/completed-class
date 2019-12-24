@@ -1,10 +1,10 @@
-import decode from "jwt-decode";
-import axios from "axios";
+import decode from 'jwt-decode';
+import axios from 'axios';
 export default class AuthService {
   login = (email, password) => {
     // Get a token
     return axios
-      .post("http://localhost:3001/api/users/login", {
+      .post('http://localhost:3001/api/users/login', {
         email: email,
         password: password
       })
@@ -39,20 +39,20 @@ export default class AuthService {
 
   setToken(idToken) {
     // Saves user token to localStorage
-    axios.defaults.headers.common["Authorization"] = `Bearer ${idToken}`;
-    localStorage.setItem("id_token", idToken);
+    axios.defaults.headers.common['Authorization'] = `Bearer ${idToken}`;
+    localStorage.setItem('id_token', idToken);
   }
 
   getToken() {
     // Retrieves the user token from localStorage
-    return localStorage.getItem("id_token");
+    return localStorage.getItem('id_token');
   }
 
   logout() {
     // Clear user token and profile data from localStorage
-    axios.defaults.headers.common["Authorization"] = null;
-    localStorage.removeItem("id_token");
+    axios.defaults.headers.common['Authorization'] = null;
+    localStorage.removeItem('id_token');
     // this will reload the page and reset the state of the application
-    window.location.reload("/");
+    window.location.reload('/');
   }
 }

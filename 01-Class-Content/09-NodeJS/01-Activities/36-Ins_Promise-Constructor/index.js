@@ -1,4 +1,4 @@
-const fs = require("fs");
+const fs = require('fs');
 
 function readFileAsync(path, encoding) {
   return new Promise(function(resolve, reject) {
@@ -12,7 +12,7 @@ function readFileAsync(path, encoding) {
   });
 }
 
-readFileAsync("example.txt", "utf8")
+readFileAsync('example.txt', 'utf8')
   .then(function(data) {
     console.log(data);
   })

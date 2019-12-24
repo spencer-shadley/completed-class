@@ -1,4 +1,6 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -12,14 +14,14 @@
 }
 
 header {
-  background-color: #1D88E5;
+  background-color: #1d88e5;
   height: 100px;
   padding: 10px;
   border: 1px solid white;
 }
 
 aside {
-  background-color: #1D88E5;
+  background-color: #1d88e5;
   width: 300px;
   height: 400px;
   padding: 10px;
@@ -27,7 +29,7 @@ aside {
 }
 
 main {
-  background-color: #1D88E5;
+  background-color: #1d88e5;
   width: 700px;
   height: 400px;
   padding: 10px;
@@ -35,7 +37,7 @@ main {
 }
 
 footer {
-  background-color: #1D88E5;
+  background-color: #1d88e5;
   width: 1000px;
   height: 100px;
   padding: 10px;

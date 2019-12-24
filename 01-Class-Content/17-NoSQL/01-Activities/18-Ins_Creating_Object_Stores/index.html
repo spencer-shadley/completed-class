@@ -10,12 +10,12 @@
     <h1>Open Your Developer Tools > Application > IndexedDB</h1>
     <script>
       // We request a database instance
-      const request = window.indexedDB.open("toDoList", 1);
+      const request = window.indexedDB.open('toDoList', 1);
 
       // Create an object store inside the onupgradeneeded method.
       request.onupgradeneeded = ({ target }) => {
         const db = target.result;
-        const objectStore = db.createObjectStore("toDoList");
+        const objectStore = db.createObjectStore('toDoList');
       };
 
       // On success console the result.
@@ -25,4 +25,3 @@
     </script>
   </body>
 </html>
-

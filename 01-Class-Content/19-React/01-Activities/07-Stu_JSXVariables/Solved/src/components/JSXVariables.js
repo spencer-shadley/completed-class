@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 
-const name = "Christian";
-const thoughts = "is amazing!!!";
+const name = 'Christian';
+const thoughts = 'is amazing!!!';
 
 const stripVowels = str => {
-  const vowels = ["a", "e", "i", "o", "u"];
-  let result = "";
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
+  let result = '';
 
   for (let i = 0; i < str.length; ++i) {
     if (!vowels.includes(str[i].toLowerCase())) {

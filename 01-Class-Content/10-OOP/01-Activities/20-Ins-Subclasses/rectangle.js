@@ -1,4 +1,4 @@
-const Shape = require("./shape");
+const Shape = require('./shape');
 
 class Rectangle extends Shape {
   constructor(sideA, sideB) {

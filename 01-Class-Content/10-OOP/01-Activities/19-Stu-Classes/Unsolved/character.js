@@ -4,7 +4,7 @@ class Character {
     console.log(`Stats for NAME are as following:`);
     console.log(`Each attack will do STRENGTH damage.`);
     console.log(`NAME has HITPOINTS hit points remaining!`);
-    console.log("------------");
+    console.log('------------');
   }
   // method which determines whether or not a character's "hitPoints" are less then zero
   // and returns true or false depending upon the outcome

@@ -42,7 +42,7 @@ Mention setTimeout
 They live on window (not document)
 
 Ask: Why do we need to clearInterval?
-If we don’t it will indefinitely 
+If we don’t it will indefinitely
 setTimeout has clearTimeout
 
 (students) 09-Speed Reader (100-120)

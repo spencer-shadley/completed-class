@@ -19,7 +19,7 @@
 }
 
 .back::after {
-  content: "\f0a8";
+  content: '\f0a8';
 }
 
 .next {
@@ -29,7 +29,7 @@
 }
 
 .next::after {
-  content: "\f0a9";
+  content: '\f0a9';
 }
 
 .next:hover::after,

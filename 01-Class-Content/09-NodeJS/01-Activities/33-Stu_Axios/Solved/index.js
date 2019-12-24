@@ -1,11 +1,11 @@
-const fs = require("fs");
-const axios = require("axios");
-const inquirer = require("inquirer");
+const fs = require('fs');
+const axios = require('axios');
+const inquirer = require('inquirer');
 
 inquirer
   .prompt({
-    message: "Enter your GitHub username:",
-    name: "username"
+    message: 'Enter your GitHub username:',
+    name: 'username'
   })
   .then(function({ username }) {
     const queryUrl = `https://api.github.com/users/${username}/repos?per_page=100`;
@@ -15,9 +15,9 @@ inquirer
         return repo.name;
       });
 
-      const repoNamesStr = repoNames.join("\n");
+      const repoNamesStr = repoNames.join('\n');
 
-      fs.writeFile("repos.txt", repoNamesStr, function(err) {
+      fs.writeFile('repos.txt', repoNamesStr, function(err) {
         if (err) {
           throw err;
         }

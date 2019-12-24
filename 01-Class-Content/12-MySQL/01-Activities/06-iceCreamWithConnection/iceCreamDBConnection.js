@@ -1,21 +1,21 @@
-var mysql = require("mysql");
+var mysql = require('mysql');
 
 var connection = mysql.createConnection({
-  host: "localhost",
+  host: 'localhost',
 
   // Your port; if not 3306
   port: 3306,
 
   // Your username
-  user: "root",
+  user: 'root',
 
   // Your password
-  password: "",
-  database: "ice_creamDB"
+  password: '',
+  database: 'ice_creamDB'
 });
 
 connection.connect(function(err) {
   if (err) throw err;
-  console.log("connected as id " + connection.threadId);
+  console.log('connected as id ' + connection.threadId);
   connection.end();
 });

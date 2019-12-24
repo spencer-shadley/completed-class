@@ -1,6 +1,6 @@
 var expect = chai.expect;
 
-describe("isPerfectSquare", function() {
+describe('isPerfectSquare', function() {
   it(`should return true when given the number
   9`, function() {
     var num = 9;

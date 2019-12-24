@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 // By extending the React.Component class, Counter inherits functionality from it
 class Counter extends React.Component {
@@ -23,14 +23,12 @@ class Counter extends React.Component {
   render() {
     return (
       <div className="card text-center">
-        <div className="card-header bg-primary text-white">
-          Click Counter!
-        </div>
+        <div className="card-header bg-primary text-white">Click Counter!</div>
         <div className="card-body">
           <p className="card-text">Click Count: {this.state.count}</p>
           <button className="btn btn-primary" onClick={this.handleIncrement}>
             Increment
-          </button>{" "}
+          </button>{' '}
           <button className="btn btn-danger" onClick={this.handleDecrement}>
             Decrement
           </button>

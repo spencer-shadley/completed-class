@@ -19,8 +19,8 @@ before(function() {
   })();
 });
 
-describe("logNums", function() {
-  it("log numbers 1 through `num`", function() {
+describe('logNums', function() {
+  it('log numbers 1 through `num`', function() {
     var num = 10;
 
     logNums(num);

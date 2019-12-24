@@ -12,7 +12,7 @@ input {
   width: 50%;
   border: none;
   border-radius: 0;
-  border-bottom: 1px solid lightgrey;  
+  border-bottom: 1px solid lightgrey;
 }
 
 input:focus {
@@ -20,7 +20,7 @@ input:focus {
 }
 
 button {
-  background-color: #D6EEFF;
+  background-color: #d6eeff;
   border-radius: 5px;
   padding: 10px;
   margin: 20px 40px 20px 0;
@@ -29,6 +29,6 @@ button {
 }
 
 .lucky-btn {
-  background-color: #A491D3;
+  background-color: #a491d3;
   color: white;
 }

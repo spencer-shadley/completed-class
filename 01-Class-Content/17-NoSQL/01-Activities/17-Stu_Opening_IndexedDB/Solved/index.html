@@ -9,7 +9,7 @@
   <body>
     <h1>Open Your Developer Tools > Application > IndexedDB</h1>
     <script>
-      const request = window.indexedDB.open("firstDatabase", 1);
+      const request = window.indexedDB.open('firstDatabase', 1);
 
       request.onsuccess = event => {
         console.log(request.result.name);

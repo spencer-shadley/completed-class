@@ -1,4 +1,4 @@
-const Child = require("./child");
+const Child = require('./child');
 
 function DayCare() {
   this.children = [];
@@ -28,7 +28,7 @@ DayCare.prototype.addChild = function(child) {
 
 DayCare.prototype.pickupChild = function(name) {
   // Find the index of a child with the given name
-  const index = this.children.findIndex((child) => {
+  const index = this.children.findIndex(child => {
     return child.name === name;
   });
 

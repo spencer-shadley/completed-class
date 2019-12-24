@@ -1,13 +1,13 @@
-const axios = require("axios");
-const MovieSearch = require("../movieSearch");
+const axios = require('axios');
+const MovieSearch = require('../movieSearch');
 
-jest.mock("axios");
+jest.mock('axios');
 
-describe("MovieSearch", () => {
-  describe("buildUrl", () => {
-    it("should return an OMDB movie search URL using a movie name", () => {
+describe('MovieSearch', () => {
+  describe('buildUrl', () => {
+    it('should return an OMDB movie search URL using a movie name', () => {
       const movie = new MovieSearch();
-      const name = "Rocky";
+      const name = 'Rocky';
 
       const url = movie.buildUrl(name);
 
@@ -15,10 +15,10 @@ describe("MovieSearch", () => {
     });
   });
 
-  describe("search", () => {
-    it("should search the OMDB API for a given movie", () => {
+  describe('search', () => {
+    it('should search the OMDB API for a given movie', () => {
       const movie = new MovieSearch();
-      const name = "Rocky";
+      const name = 'Rocky';
 
       axios.get.mockReturnValue(
         new Promise(function(resolve) {

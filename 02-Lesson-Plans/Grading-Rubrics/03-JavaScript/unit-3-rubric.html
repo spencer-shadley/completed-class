@@ -25,7 +25,7 @@
 
       body {
         background-color: #fbfcfd;
-        font-family: "Inter", sans-serif;
+        font-family: 'Inter', sans-serif;
         color: #4a4a4a;
       }
 
@@ -66,8 +66,8 @@
         margin-top: 0.9rem;
       }
 
-      input[type="radio"],
-      input[type="checkbox"] {
+      input[type='radio'],
+      input[type='checkbox'] {
         position: absolute !important;
         height: 1px;
         width: 1px;
@@ -101,7 +101,7 @@
         width: 4.5rem;
       }
 
-      input[type="checkbox"] + .toggle {
+      input[type='checkbox'] + .toggle {
         height: 100%;
         width: 100%;
         background-color: #77a1db;
@@ -116,21 +116,21 @@
         transition: all 0.5s;
       }
 
-      input[type="checkbox"]:focus + .toggle {
+      input[type='checkbox']:focus + .toggle {
         outline: rgb(59, 153, 252) auto 5px;
       }
 
-      input[type="checkbox"]:checked + .toggle {
+      input[type='checkbox']:checked + .toggle {
         background-color: rgb(85, 89, 204);
         background-size: 1rem;
         background-repeat: no-repeat;
         background-position: 25%;
-        background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMSIgY3k9IjgiIHI9IjEiIGZpbGw9IndoaXRlIi8+CjxjaXJjbGUgY3g9IjgiIGN5PSI3IiByPSIxIiBmaWxsPSJ3aGl0ZSIvPgo8Y2lyY2xlIGN4PSI1IiBjeT0iMTMiIHI9IjEiIGZpbGw9IndoaXRlIi8+CjxjaXJjbGUgY3g9IjUiIGN5PSIyIiByPSIyIiBmaWxsPSJ3aGl0ZSIvPgo8Y2lyY2xlIGN4PSIxMyIgY3k9IjMiIHI9IjEiIGZpbGw9IndoaXRlIi8+CjxjaXJjbGUgY3g9IjEyLjUiIGN5PSI5LjUiIHI9IjEuNSIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==");
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNCAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMSIgY3k9IjgiIHI9IjEiIGZpbGw9IndoaXRlIi8+CjxjaXJjbGUgY3g9IjgiIGN5PSI3IiByPSIxIiBmaWxsPSJ3aGl0ZSIvPgo8Y2lyY2xlIGN4PSI1IiBjeT0iMTMiIHI9IjEiIGZpbGw9IndoaXRlIi8+CjxjaXJjbGUgY3g9IjUiIGN5PSIyIiByPSIyIiBmaWxsPSJ3aGl0ZSIvPgo8Y2lyY2xlIGN4PSIxMyIgY3k9IjMiIHI9IjEiIGZpbGw9IndoaXRlIi8+CjxjaXJjbGUgY3g9IjEyLjUiIGN5PSI5LjUiIHI9IjEuNSIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==');
         transition: all 0.5s;
       }
 
-      input[type="checkbox"] + .toggle::after {
-        content: "";
+      input[type='checkbox'] + .toggle::after {
+        content: '';
         display: block;
         height: 1.7rem;
         width: 1.7rem;
@@ -143,11 +143,11 @@
         background-position: center bottom;
       }
 
-      input[type="checkbox"]:hover + .toggle::after {
+      input[type='checkbox']:hover + .toggle::after {
         transform: translateX(0rem) scale(1.1);
       }
 
-      input[type="checkbox"]:checked + .toggle::after {
+      input[type='checkbox']:checked + .toggle::after {
         border: 4px solid #ffffff;
         background-color: rgba(255, 255, 255, 0.4);
         transform: translateX(2.1rem);
@@ -155,10 +155,10 @@
         background-position: center;
         background-size: 60%;
         background-repeat: no-repeat;
-        background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkiIGhlaWdodD0iMTkiIHZpZXdCb3g9IjAgMCAxOSAxOSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE4LjUgMTAuMjlDMTguMzQyNyAxMS45OTIyIDE3LjcwMzkgMTMuNjE0NCAxNi42NTgyIDE0Ljk2NjhDMTUuNjEyNiAxNi4zMTkyIDE0LjIwMzUgMTcuMzQ1OCAxMi41OTU3IDE3LjkyNjVDMTAuOTg3OSAxOC41MDczIDkuMjQ3OTggMTguNjE4MSA3LjU3OTUgMTguMjQ2MUM1LjkxMTAyIDE3Ljg3NDEgNC4zODI5OSAxNy4wMzQ1IDMuMTc0MjMgMTUuODI1OEMxLjk2NTQ2IDE0LjYxNyAxLjEyNTk0IDEzLjA4OSAwLjc1MzkwNyAxMS40MjA1QzAuMzgxODc1IDkuNzUyMDIgMC40OTI3MTYgOC4wMTIwOCAxLjA3MzQ2IDYuNDA0M0MxLjY1NDIgNC43OTY1MSAyLjY4MDgzIDMuMzg3MzcgNC4wMzMyMSAyLjM0MTc1QzUuMzg1NTkgMS4yOTYxNCA3LjAwNzggMC42NTczMDUgOC43MSAwLjVDNy43MTM0MSAxLjg0ODI3IDcuMjMzODUgMy41MDk0NSA3LjM1ODUzIDUuMTgxNDFDNy40ODMyMSA2Ljg1MzM4IDguMjAzODYgOC40MjUwNiA5LjM4OTQgOS42MTA2QzEwLjU3NDkgMTAuNzk2MSAxMi4xNDY2IDExLjUxNjggMTMuODE4NiAxMS42NDE1QzE1LjQ5MDYgMTEuNzY2MiAxNy4xNTE3IDExLjI4NjYgMTguNSAxMC4yOVYxMC4yOVoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=");
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkiIGhlaWdodD0iMTkiIHZpZXdCb3g9IjAgMCAxOSAxOSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE4LjUgMTAuMjlDMTguMzQyNyAxMS45OTIyIDE3LjcwMzkgMTMuNjE0NCAxNi42NTgyIDE0Ljk2NjhDMTUuNjEyNiAxNi4zMTkyIDE0LjIwMzUgMTcuMzQ1OCAxMi41OTU3IDE3LjkyNjVDMTAuOTg3OSAxOC41MDczIDkuMjQ3OTggMTguNjE4MSA3LjU3OTUgMTguMjQ2MUM1LjkxMTAyIDE3Ljg3NDEgNC4zODI5OSAxNy4wMzQ1IDMuMTc0MjMgMTUuODI1OEMxLjk2NTQ2IDE0LjYxNyAxLjEyNTk0IDEzLjA4OSAwLjc1MzkwNyAxMS40MjA1QzAuMzgxODc1IDkuNzUyMDIgMC40OTI3MTYgOC4wMTIwOCAxLjA3MzQ2IDYuNDA0M0MxLjY1NDIgNC43OTY1MSAyLjY4MDgzIDMuMzg3MzcgNC4wMzMyMSAyLjM0MTc1QzUuMzg1NTkgMS4yOTYxNCA3LjAwNzggMC42NTczMDUgOC43MSAwLjVDNy43MTM0MSAxLjg0ODI3IDcuMjMzODUgMy41MDk0NSA3LjM1ODUzIDUuMTgxNDFDNy40ODMyMSA2Ljg1MzM4IDguMjAzODYgOC40MjUwNiA5LjM4OTQgOS42MTA2QzEwLjU3NDkgMTAuNzk2MSAxMi4xNDY2IDExLjUxNjggMTMuODE4NiAxMS42NDE1QzE1LjQ5MDYgMTEuNzY2MiAxNy4xNTE3IDExLjI4NjYgMTguNSAxMC4yOVYxMC4yOVoiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=');
       }
 
-      input[type="checkbox"]:checked:hover + .toggle::after {
+      input[type='checkbox']:checked:hover + .toggle::after {
         transform: translateX(2.1rem) scale(1.075);
       }
 
@@ -231,8 +231,8 @@
         display: inline-block;
       }
 
-      .card input[type="radio"] + label::before {
-        content: "";
+      .card input[type='radio'] + label::before {
+        content: '';
         height: 0.9rem;
         width: 0.9rem;
         margin-right: 0.7rem;
@@ -245,31 +245,31 @@
         top: 0.09rem;
       }
 
-      .dark .card input[type="radio"] + label::before {
+      .dark .card input[type='radio'] + label::before {
         border: 1px solid #e2e2e2;
         background-color: inherit;
       }
 
-      .card input[type="radio"]:checked + label::before {
+      .card input[type='radio']:checked + label::before {
         background-color: rgb(47, 106, 189);
         border-color: rgb(47, 106, 189);
       }
 
-      .dark .card input[type="radio"]:checked + label::before {
+      .dark .card input[type='radio']:checked + label::before {
         background-color: #d9d9d9;
         border-color: #d9d9d9;
       }
 
-      .card input[type="radio"]:checked + label {
+      .card input[type='radio']:checked + label {
         font-weight: bold;
         color: #4a4a4a;
       }
 
-      .dark input[type="radio"]:checked + label {
+      .dark input[type='radio']:checked + label {
         color: #e2e2e2;
       }
 
-      .card input[type="radio"]:focus + label::before {
+      .card input[type='radio']:focus + label::before {
         outline: rgb(59, 153, 252) auto 5px;
       }
 
@@ -338,13 +338,13 @@
         color: rgb(56, 56, 56);
       }
 
-      div[role="alert"] {
+      div[role='alert'] {
         color: #4a4a4a;
         font-size: 1.2rem;
         margin-bottom: 1.2rem;
       }
 
-      .dark div[role="alert"] {
+      .dark div[role='alert'] {
         color: #e2e2e2;
       }
 
@@ -383,33 +383,33 @@
           margin: 0.5rem;
         }
 
-        input[type="checkbox"]:checked + .toggle::after {
+        input[type='checkbox']:checked + .toggle::after {
           transform: translateX(1.3rem);
           background-size: 50%;
         }
 
-        input[type="checkbox"]:checked:hover + .toggle::after {
+        input[type='checkbox']:checked:hover + .toggle::after {
           transform: translateX(1.3rem) scale(1.1);
           background-size: 50%;
         }
       }
 
       @media (max-width: 515px) {
-        input[type="checkbox"]:checked + .toggle::after {
+        input[type='checkbox']:checked + .toggle::after {
           transform: translateX(1.7rem);
         }
 
-        input[type="checkbox"]:checked:hover + .toggle::after {
+        input[type='checkbox']:checked:hover + .toggle::after {
           transform: translateX(1.7rem) scale(1.1);
         }
       }
 
       @media (max-width: 460px) {
-        input[type="checkbox"]:checked + .toggle::after {
+        input[type='checkbox']:checked + .toggle::after {
           transform: translateX(1.4rem);
         }
 
-        input[type="checkbox"]:checked:hover + .toggle::after {
+        input[type='checkbox']:checked:hover + .toggle::after {
           transform: translateX(1.4rem) scale(1.1);
         }
       }
@@ -419,21 +419,21 @@
           font-size: 1.6rem;
         }
 
-        input[type="checkbox"]:checked + .toggle::after {
+        input[type='checkbox']:checked + .toggle::after {
           transform: translateX(1.3rem);
         }
 
-        input[type="checkbox"]:checked:hover + .toggle::after {
+        input[type='checkbox']:checked:hover + .toggle::after {
           transform: translateX(1.3rem) scale(1.1);
         }
       }
 
       @media (max-width: 340px) {
-        input[type="checkbox"]:checked + .toggle::after {
+        input[type='checkbox']:checked + .toggle::after {
           transform: translateX(0.9rem);
         }
 
-        input[type="checkbox"]:checked:hover + .toggle::after {
+        input[type='checkbox']:checked:hover + .toggle::after {
           transform: translateX(0.9rem) scale(1.075);
         }
       }
@@ -444,57 +444,57 @@
 
     <script>
       (function(window) {
-        "use strict";
+        'use strict';
 
         function Model() {
-          this.title = "Unit 3 JavaScript HW Rubric";
+          this.title = 'Unit 3 JavaScript HW Rubric';
           this.categories = [
             {
-              title: "Deployment",
+              title: 'Deployment',
               subtitle: null,
               questions: [
                 {
-                  title: "Student submitted deployed live application URL",
+                  title: 'Student submitted deployed live application URL',
                   score: 10,
                   message: "Application isn't deployed",
                   status: false
                 },
                 {
                   title:
-                    "Application loads at deployed URL (no 404, or Heroku/GH Pages error)",
+                    'Application loads at deployed URL (no 404, or Heroku/GH Pages error)',
                   score: 10,
                   message: "Application isn't deployed",
                   status: false
                 },
                 {
-                  title: "Student submitted application GitHub URL",
+                  title: 'Student submitted application GitHub URL',
                   score: 8,
-                  message: "Missing GitHub submission URL",
+                  message: 'Missing GitHub submission URL',
                   status: false
                 },
                 {
-                  title: "GitHub Repo contains application code",
+                  title: 'GitHub Repo contains application code',
                   score: 8,
-                  message: "GitHub repo is empty",
+                  message: 'GitHub repo is empty',
                   status: false
                 }
               ]
             },
             {
-              title: "Technical Acceptance Criteria",
+              title: 'Technical Acceptance Criteria',
               subtitle:
-                "Keep your browser console open and watch out for errors from this point forward.",
+                'Keep your browser console open and watch out for errors from this point forward.',
               questions: [
                 {
                   title:
-                    "Application prompts user for password length and if they would like to include lowercased, uppercased, numeric, and special characters",
+                    'Application prompts user for password length and if they would like to include lowercased, uppercased, numeric, and special characters',
                   score: 8,
                   message: "Application doesn't prompt for password options",
                   status: false
                 },
                 {
                   title:
-                    "Application generates valid password based on provided options",
+                    'Application generates valid password based on provided options',
                   score: 8,
                   message:
                     "Application doesn't generate valid password based on password options",
@@ -502,7 +502,7 @@
                 },
                 {
                   title:
-                    "Application requires minimum password length of 8 characters",
+                    'Application requires minimum password length of 8 characters',
                   score: 8,
                   message:
                     "Application doesn't require minimum password length of 8 character",
@@ -510,33 +510,33 @@
                 },
                 {
                   title:
-                    "Application requires maximum password length of 128 characters",
+                    'Application requires maximum password length of 128 characters',
                   score: 8,
                   message:
                     "Application doesn't require maximum password length of 128 characters",
                   status: false
                 },
                 {
-                  title: "Application is free of console errors",
+                  title: 'Application is free of console errors',
                   score: 8,
-                  message: "Application has errors in the console",
+                  message: 'Application has errors in the console',
                   status: false
                 }
               ]
             },
             {
-              title: "Repository Quality",
+              title: 'Repository Quality',
               subtitle: null,
               questions: [
                 {
-                  title: "Repository has a unique name",
+                  title: 'Repository has a unique name',
                   score: 2,
                   message: "Repo doesn't have a unique name",
                   status: false
                 },
                 {
                   title:
-                    "Repository follows best practices for file structure and naming conventions",
+                    'Repository follows best practices for file structure and naming conventions',
                   score: 2,
                   message:
                     "Code doesn't follow recommended file/folder structure",
@@ -544,7 +544,7 @@
                 },
                 {
                   title:
-                    "Repository follows best practices for variable and function naming conventions, indentation, quality comments, etc.",
+                    'Repository follows best practices for variable and function naming conventions, indentation, quality comments, etc.',
                   score: 3,
                   message:
                     "Code doesn't follow good practices for variable names, indentation, lacks quality comments",
@@ -552,7 +552,7 @@
                 },
                 {
                   title:
-                    "Repository contains quality README with description, screenshot, link to deployed application",
+                    'Repository contains quality README with description, screenshot, link to deployed application',
                   score: 7,
                   message:
                     "Repo doesn't include a high quality README with screenshots, a description, link to deployed application",
@@ -561,54 +561,54 @@
               ]
             },
             {
-              title: "Application Quality",
+              title: 'Application Quality',
               subtitle: null,
               questions: [
                 {
                   title:
-                    "Application user experience is intuitive and easy to navigate",
+                    'Application user experience is intuitive and easy to navigate',
                   score: 5,
                   message:
-                    "Application user experience could be more intuitive",
+                    'Application user experience could be more intuitive',
                   status: false
                 },
                 {
                   title:
-                    "Application user interface style is clean and polished",
+                    'Application user interface style is clean and polished',
                   score: 5,
-                  message: "Application user interface needs work",
+                  message: 'Application user interface needs work',
                   status: false
                 }
               ]
             },
             {
-              title: "Academic Integrity",
+              title: 'Academic Integrity',
               subtitle:
-                "If any of of the following are true, partner with your instructor to investigate plagiarism. Contact your SSM if you believe plagiarism has occurred.",
+                'If any of of the following are true, partner with your instructor to investigate plagiarism. Contact your SSM if you believe plagiarism has occurred.',
               questions: [
                 {
-                  title: "Application contains a low number of commits",
+                  title: 'Application contains a low number of commits',
                   score: 0,
                   message: null,
                   status: false
                 },
                 {
                   title:
-                    "Application codebase appears advanced for the student, at this point in the course, or in general",
+                    'Application codebase appears advanced for the student, at this point in the course, or in general',
                   score: 0,
                   message: null,
                   status: false
                 },
                 {
                   title:
-                    "Application package.json file references a different author and/or repository",
+                    'Application package.json file references a different author and/or repository',
                   score: 0,
                   message: null,
                   status: false
                 },
                 {
                   title:
-                    "Application package.json file references much older versions of npm packages",
+                    'Application package.json file references much older versions of npm packages',
                   score: 0,
                   message: null,
                   status: false
@@ -626,13 +626,13 @@
           this.messages = new Set();
           this.flagged = new Set();
           this.isDarkMode =
-            JSON.parse(localStorage.getItem("isDarkMode")) || false;
+            JSON.parse(localStorage.getItem('isDarkMode')) || false;
 
           this.categories.forEach(category => {
             category.questions.forEach(question => {
               question.status = false;
               question.id = this.questions.length;
-              question.flagged = category.title === "Academic Integrity";
+              question.flagged = category.title === 'Academic Integrity';
               question.message && this.messages.add(question.message);
               this.questions.push(question);
             });
@@ -641,11 +641,11 @@
 
         Model.prototype.toggleDarkMode = function() {
           this.isDarkMode = !this.isDarkMode;
-          localStorage.setItem("isDarkMode", this.isDarkMode);
+          localStorage.setItem('isDarkMode', this.isDarkMode);
         };
 
         Model.prototype.toggleRadio = function(radio) {
-          const id = Number(radio.getAttribute("name"));
+          const id = Number(radio.getAttribute('name'));
           const question = this.questions[id];
 
           question.status = !question.status;
@@ -673,34 +673,34 @@
         Model.prototype.calcGrade = function() {
           const roundedScore = Math.min(100, Math.ceil(this.score));
 
-          let letterGrade = "";
+          let letterGrade = '';
 
           if (roundedScore >= 97) {
-            letterGrade = "A+";
+            letterGrade = 'A+';
           } else if (roundedScore >= 93 && roundedScore <= 96) {
-            letterGrade = "A";
+            letterGrade = 'A';
           } else if (roundedScore >= 90 && roundedScore <= 92) {
-            letterGrade = "A-";
+            letterGrade = 'A-';
           } else if (roundedScore >= 87 && roundedScore <= 89) {
-            letterGrade = "B+";
+            letterGrade = 'B+';
           } else if (roundedScore >= 83 && roundedScore <= 86) {
-            letterGrade = "B";
+            letterGrade = 'B';
           } else if (roundedScore >= 80 && roundedScore <= 82) {
-            letterGrade = "B-";
+            letterGrade = 'B-';
           } else if (roundedScore >= 77 && roundedScore <= 79) {
-            letterGrade = "C+";
+            letterGrade = 'C+';
           } else if (roundedScore >= 73 && roundedScore <= 76) {
-            letterGrade = "C";
+            letterGrade = 'C';
           } else if (roundedScore >= 70 && roundedScore <= 72) {
-            letterGrade = "C-";
+            letterGrade = 'C-';
           } else if (roundedScore >= 67 && roundedScore <= 69) {
-            letterGrade = "D+";
+            letterGrade = 'D+';
           } else if (roundedScore >= 63 && roundedScore <= 66) {
-            letterGrade = "D";
+            letterGrade = 'D';
           } else if (roundedScore >= 60 && roundedScore <= 62) {
-            letterGrade = "D-";
+            letterGrade = 'D-';
           } else {
-            letterGrade = "F";
+            letterGrade = 'F';
           }
 
           return letterGrade;
@@ -717,17 +717,17 @@
         }
 
         View.prototype.cacheDom = function() {
-          this.darkModeToggle = document.querySelector("#dark-mode");
+          this.darkModeToggle = document.querySelector('#dark-mode');
           this.radios = Array.from(
             document.querySelectorAll("input[type='radio']")
           );
-          this.totals = document.querySelector(".totals");
-          this.grade = document.querySelector(".grade");
+          this.totals = document.querySelector('.totals');
+          this.grade = document.querySelector('.grade');
           this.alert = document.querySelector("div[role='alert']");
-          this.summaryHeading = document.querySelector(".summary-heading");
-          this.summary = document.querySelector(".summary");
-          this.resetButton = document.querySelector(".reset");
-          this.copyButton = document.querySelector(".copy");
+          this.summaryHeading = document.querySelector('.summary-heading');
+          this.summary = document.querySelector('.summary');
+          this.resetButton = document.querySelector('.reset');
+          this.copyButton = document.querySelector('.copy');
         };
 
         View.prototype.createFieldset = function({ title, id }) {
@@ -749,8 +749,8 @@
         View.prototype.createCard = function({ title, subtitle, questions }) {
           return `<div class="card">
           <h2>${title}</h2>
-          ${subtitle ? `<h3>${subtitle}</h3>` : ""}
-          ${questions.map(child => this.createFieldset(child)).join("")}
+          ${subtitle ? `<h3>${subtitle}</h3>` : ''}
+          ${questions.map(child => this.createFieldset(child)).join('')}
           </div>`;
         };
 
@@ -766,7 +766,7 @@
         <h3 class="summary-heading d-none">Summary:</h3>
         <pre class="summary" aria-label="summary">${[...this.model.messages]
           .map(message => `* ${message}\n`)
-          .join("")}</pre>
+          .join('')}</pre>
         <div class="btn-container">
           <button class="reset">Reset Form</button>
           <button class="copy">Copy To Clipboard</button>
@@ -779,7 +779,7 @@
             <h1>${title}</h1>
             <div class="switch-group">
               <input type="checkbox" name="dark-mode" id="dark-mode" ${
-                isDarkMode ? "checked" : ""
+                isDarkMode ? 'checked' : ''
               }>
               <label aria-label="dark mode" for="dark-mode" class="toggle">
               </label>
@@ -788,16 +788,16 @@
         };
 
         View.prototype.generateHTML = function() {
-          this.wrapper = document.querySelector("#app");
+          this.wrapper = document.querySelector('#app');
 
           if (this.model.isDarkMode) {
-            this.wrapper.classList.add("dark");
+            this.wrapper.classList.add('dark');
           }
 
           const survey = this.model.categories.reduce((final, current) => {
             final += this.createCard(current);
             return final;
-          }, "");
+          }, '');
 
           const results = this.createResults();
 
@@ -817,20 +817,20 @@
           this.grade.textContent = letterGrade;
 
           if (this.model.hasFlags()) {
-            this.alert.classList.remove("d-none");
+            this.alert.classList.remove('d-none');
           } else {
-            this.alert.classList.add("d-none");
+            this.alert.classList.add('d-none');
           }
 
           if (this.model.isDarkMode) {
-            this.wrapper.classList.add("dark");
+            this.wrapper.classList.add('dark');
           } else {
-            this.wrapper.classList.remove("dark");
+            this.wrapper.classList.remove('dark');
           }
 
           this.summary.textContent = [...this.model.messages]
             .map(message => `* ${message}\n`)
-            .join("");
+            .join('');
         };
 
         function Controller(model, view) {
@@ -840,7 +840,7 @@
         }
 
         Controller.prototype.addEventListeners = function() {
-          this.view.wrapper.addEventListener("change", event => {
+          this.view.wrapper.addEventListener('change', event => {
             const { target } = event;
 
             if (!target.matches("input[type='radio']")) {
@@ -851,28 +851,28 @@
             this.view.update();
           });
 
-          this.view.resetButton.addEventListener("click", () => {
+          this.view.resetButton.addEventListener('click', () => {
             this.model.initStorage();
 
             this.view.radios.forEach(
-              radio => (radio.checked = radio.hasAttribute("checked"))
+              radio => (radio.checked = radio.hasAttribute('checked'))
             );
 
             this.view.update();
             window.scrollTo(0, 0);
           });
 
-          this.view.copyButton.addEventListener("click", () => {
+          this.view.copyButton.addEventListener('click', () => {
             const selection = window.getSelection();
             const range = document.createRange();
 
             range.selectNodeContents(this.view.summary);
             selection.removeAllRanges();
             selection.addRange(range);
-            document.execCommand("copy");
+            document.execCommand('copy');
           });
 
-          this.view.darkModeToggle.addEventListener("change", () => {
+          this.view.darkModeToggle.addEventListener('change', () => {
             this.model.toggleDarkMode();
             this.view.update();
           });

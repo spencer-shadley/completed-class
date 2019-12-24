@@ -4,18 +4,18 @@
 
 // Dependencies
 // =============================================================
-var connection = require("./connection.js");
+var connection = require('./connection.js');
 
 // ORM
 // =============================================================
 
-var tableName = "allcharacters";
+var tableName = 'allcharacters';
 
 var orm = {
   // Here our ORM is creating a simple method for performing a query of the entire table.
   // We make use of the callback to ensure that data is returned only once the query is done.
   allCharacters: function(callback) {
-    var s = "SELECT * FROM " + tableName;
+    var s = 'SELECT * FROM ' + tableName;
 
     connection.query(s, function(err, result) {
       callback(result);
@@ -25,7 +25,7 @@ var orm = {
   // Here our ORM is creating a simple method for performing a query of a single character in the table.
   // Again, we make use of the callback to grab a specific character from the database.
   searchCharacter: function(name, callback) {
-    var s = "select * from " + tableName + " where routeName=?";
+    var s = 'select * from ' + tableName + ' where routeName=?';
 
     connection.query(s, [name], function(err, result) {
       callback(result);
@@ -39,17 +39,27 @@ var orm = {
 
     // Using a RegEx Pattern to remove spaces from character.name
     // You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html
-    var routeName = character.name.replace(/\s+/g, "").toLowerCase();
+    var routeName = character.name.replace(/\s+/g, '').toLowerCase();
     console.log(routeName);
 
-    var s = "INSERT INTO " + tableName + " (routeName, name, role, age, forcePoints) VALUES (?,?,?,?,?)";
+    var s =
+      'INSERT INTO ' +
+      tableName +
+      ' (routeName, name, role, age, forcePoints) VALUES (?,?,?,?,?)';
 
-    connection.query(s, [routeName, character.name, character.role, character.age, character.forcePoints], function(
-      err,
-      result
-    ) {
-      callback(result);
-    });
+    connection.query(
+      s,
+      [
+        routeName,
+        character.name,
+        character.role,
+        character.age,
+        character.forcePoints
+      ],
+      function(err, result) {
+        callback(result);
+      }
+    );
   }
 };
 

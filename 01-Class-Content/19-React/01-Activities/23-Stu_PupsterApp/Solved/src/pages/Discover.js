@@ -1,11 +1,11 @@
-import React, { Component } from "react";
-import API from "../utils/API";
-import Card from "../components/Card";
-import Alert from "../components/Alert";
+import React, { Component } from 'react';
+import API from '../utils/API';
+import Card from '../components/Card';
+import Alert from '../components/Alert';
 
 class Discover extends Component {
   state = {
-    image: "",
+    image: '',
     match: false,
     matchCount: 0
   };
@@ -17,12 +17,12 @@ class Discover extends Component {
 
   handleBtnClick = event => {
     // Get the data-value of the clicked button
-    const btnType = event.target.attributes.getNamedItem("data-value").value;
+    const btnType = event.target.attributes.getNamedItem('data-value').value;
     // Clone this.state to the newState object
     // We'll modify this object and use it to set our component's state
     const newState = { ...this.state };
 
-    if (btnType === "pick") {
+    if (btnType === 'pick') {
       // Set newState.match to either true or false depending on whether or not the dog likes us (1/5 chance)
       newState.match = 1 === Math.floor(Math.random() * 5) + 1;
 

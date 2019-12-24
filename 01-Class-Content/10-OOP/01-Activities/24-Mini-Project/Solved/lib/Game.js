@@ -8,9 +8,9 @@ class Game {
 
   // Logs goodbye and exits the node app
   quit() {
-    console.log("\nGoodbye!");
+    console.log('\nGoodbye!');
     process.exit(0);
-  };
+  }
 }
 
 module.exports = Game;

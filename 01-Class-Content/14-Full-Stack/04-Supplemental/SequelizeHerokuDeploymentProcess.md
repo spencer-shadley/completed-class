@@ -1,8 +1,8 @@
 # Heroku Deployment Guide for Sequelize Projects
 
-* **Important**: Before you begin, make sure you have the `mysql` and `sequelize` NPM packages installed in your project.
+- **Important**: Before you begin, make sure you have the `mysql` and `sequelize` NPM packages installed in your project.
 
-* **Note**: Steps 1-8 are the same here as in the vanilla deployment guide you were provided in Unit 12. We've repeated the steps here so you wont need to consult multiple guides at once.
+- **Note**: Steps 1-8 are the same here as in the vanilla deployment guide you were provided in Unit 12. We've repeated the steps here so you wont need to consult multiple guides at once.
 
 ## Part One: Creating a JawsDB Remote Database
 

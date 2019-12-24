@@ -1,5 +1,3 @@
-const Child = require("../child");
+const Child = require('../child');
 
-describe("Child", () => {
-  
-});
+describe('Child', () => {});

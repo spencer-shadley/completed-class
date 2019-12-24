@@ -21,7 +21,7 @@ You can view [an example implementation here](https://boiling-castle-97643.herok
 
 #### Setup
 
-1. Create a new Laravel project and `cd` into it. 
+1. Create a new Laravel project and `cd` into it.
 2. Serve your app to make sure you're ready to get started.
 3. Initialize a new Git repository and make your initial commit.
 
@@ -32,9 +32,9 @@ You can view [an example implementation here](https://boiling-castle-97643.herok
 3. What file contains your environment configurations?
 4. What file references this configuration, and sometimes requires manual overrides?
 5. Use `php artisan tinker` to verify your database connection. An easy way to go about this, while familiarizing yourself with Laravel's [Connection class](https://laravel.com/api/5.0/Illuminate/Database/Connection.html), is to create a table; insert a record into it; and then drop the table.
-6. Use the [database documentation](https://laravel.com/docs/5.0/database#configuration)  to figure out how to do this.
+6. Use the [database documentation](https://laravel.com/docs/5.0/database#configuration) to figure out how to do this.
 
-7. Use Artisan to set up user authentication. 
+7. Use Artisan to set up user authentication.
 8. Which Artisan command do you use to accomplish this?
 9. _Hint_: Read the docs, and check the output from `php artisan` for anything about authentication.
 10. Scaffolding authentication creates some database tables. What command do you use to integrate these properly?
@@ -94,25 +94,25 @@ Build out the following in your HomeController.
 6. The query isn't trivial. Refer to [this blog post](http://laraveldaily.com/eloquent-date-filtering-wheredate-and-other-methods/) for a how-to. _Hint_: Use the Carbon method. But, be sure to require the Carbon class!
 7. Add an 'All Meals' link to the navbar, and report every meal a user has ever saved.
 8. Don't worry about prettifying this just yet; dump the data into a list for now.
-9. Redirect all requests coming from an authenticated user to the welcome route to this dashboard. 
+9. Redirect all requests coming from an authenticated user to the welcome route to this dashboard.
 10. In other words, unauthenticated users should see the landing page. Authenticated users should always be redirected to the dashboard if they try to hit the landing page.
 
 ### BONUS
 
 1. Present the user's macronutrient and calorie totals on the homepage. If the user's calorie total is above their calorie threshold for the day, color it red.
 
-- - -
+---
 
 #### Minimum Requirements
 
 Attempt to complete homework assignment as described in instructions. If unable to complete certain portions, please pseudocode these portions to describe what remains to be completed.
 
-- - -
+---
 
 #### Hosting on Heroku
 
-Now that we have a backend to our applications, we use Heroku for hosting. Please note that while **Heroku is free**, it will request credit card information if you have more than 5 applications at a time or are adding a database. 
+Now that we have a backend to our applications, we use Heroku for hosting. Please note that while **Heroku is free**, it will request credit card information if you have more than 5 applications at a time or are adding a database.
 
-Please see [Heroku’s Account Verification Information](https://devcenter.heroku.com/articles/account-verification) for more details. 
+Please see [Heroku’s Account Verification Information](https://devcenter.heroku.com/articles/account-verification) for more details.
 
 **Good luck!**

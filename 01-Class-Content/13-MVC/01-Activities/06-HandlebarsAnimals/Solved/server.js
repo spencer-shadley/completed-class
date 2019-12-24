@@ -1,46 +1,50 @@
-var express = require("express");
-var exphbs = require("express-handlebars");
+var express = require('express');
+var exphbs = require('express-handlebars');
 
 var app = express();
 
 var PORT = process.env.PORT || 8080;
 
-app.engine("handlebars", exphbs({ defaultLayout: "main" }));
-app.set("view engine", "handlebars");
+app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
+app.set('view engine', 'handlebars');
 
 var animals = [
   {
-    animalType: "dog",
+    animalType: 'dog',
     pet: true,
     fierceness: 4
-  }, {
-    animalType: "cat",
+  },
+  {
+    animalType: 'cat',
     pet: true,
     fierceness: 10
-  }, {
-    animalType: "giraffe",
+  },
+  {
+    animalType: 'giraffe',
     pet: false,
     fierceness: 4
-  }, {
-    animalType: "zebra",
+  },
+  {
+    animalType: 'zebra',
     pet: false,
     fierceness: 8
-  }, {
-    animalType: "lion",
+  },
+  {
+    animalType: 'lion',
     pet: false,
     fierceness: 10
   }
 ];
 
-app.get("/dog", function(req, res) {
+app.get('/dog', function(req, res) {
   // Handlebars requires an object to be sent to the dog handlebars file.
   // Lucky for us, animals[0] is an object!
 
   // 1. send the dog object from the animals array to the dog handlebars file.
-  res.render("dog", animals[0]);
+  res.render('dog', animals[0]);
 });
 
-app.get("/all-pets", function(req, res) {
+app.get('/all-pets', function(req, res) {
   // Handlebars requires an object to be sent to the index handlebars file.
 
   // 2. Loop through the animals, and send those that are pets to the index handlebars file.
@@ -59,10 +63,10 @@ app.get("/all-pets", function(req, res) {
     }
   }
 
-  res.render("index", data);
+  res.render('index', data);
 });
 
-app.get("/all-non-pets", function(req, res) {
+app.get('/all-non-pets', function(req, res) {
   // Handlebars requires an object to be sent to the index handlebars file.
 
   // 3. Loop through the animals, and send those that are not pets to the index handlebars file.
@@ -81,9 +85,9 @@ app.get("/all-non-pets", function(req, res) {
     }
   }
 
-  res.render("index", data);
+  res.render('index', data);
 });
 
 app.listen(PORT, function() {
-  console.log("App listening on PORT " + PORT);
+  console.log('App listening on PORT ' + PORT);
 });

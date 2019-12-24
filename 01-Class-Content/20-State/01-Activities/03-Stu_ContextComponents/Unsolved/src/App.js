@@ -1,6 +1,6 @@
-import * as React from "react";
-import "./App.css"; // Set the theme of the page to default to "light"
-const ThemeContext = React.createContext("light");
+import * as React from 'react';
+import './App.css'; // Set the theme of the page to default to "light"
+const ThemeContext = React.createContext('light');
 
 console.log(ThemeContext);
 
@@ -8,7 +8,7 @@ function App() {
   // App component that provides initial context values
   // Here we are overwritting the context to be "dark" using the Provider
   return (
-    <ThemeContext.Provider value={"dark"}>
+    <ThemeContext.Provider value={'dark'}>
       <Layout />
     </ThemeContext.Provider>
   );
@@ -19,8 +19,8 @@ function App() {
 function Layout() {
   return (
     <div>
-      <h1 style={{ textAlign: "center" }}>Consuming Context</h1>
-      <div style={{ margin: "0 auto" }}>
+      <h1 style={{ textAlign: 'center' }}>Consuming Context</h1>
+      <div style={{ margin: '0 auto' }}>
         <Card />
       </div>
     </div>
@@ -35,14 +35,14 @@ function Card() {
         <div
           className="card"
           style={{
-            backgroundColor: theme === "dark" ? "dimgray" : "white",
-            textAlign: "center"
+            backgroundColor: theme === 'dark' ? 'dimgray' : 'white',
+            textAlign: 'center'
           }}
         >
           <div
             style={{
-              color: theme === "dark" ? "white" : "black",
-              textAlign: "center"
+              color: theme === 'dark' ? 'white' : 'black',
+              textAlign: 'center'
             }}
           >
             The theme is: {theme}

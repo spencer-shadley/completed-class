@@ -1,6 +1,6 @@
 var expect = chai.expect;
 
-describe("removeDuplicates", function() {
+describe('removeDuplicates', function() {
   it(`should update the array [1, 1, 1, 2, 2, 3] to [1, 2, 3]"`, function() {
     var arr = [1, 1, 1, 2, 2, 3];
 

@@ -1,49 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Find Max!</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <script>
-        function findMax(numbers) {
-            var maxNum = numbers[0];
-            for (var i = 1; i < numbers.length; ++i) {
-                if (numbers[i] > maxNum) {
-                    maxNum = numbers[i];
-                }
-            }
-            return maxNum;
+      function findMax(numbers) {
+        var maxNum = numbers[0];
+        for (var i = 1; i < numbers.length; ++i) {
+          if (numbers[i] > maxNum) {
+            maxNum = numbers[i];
+          }
         }
+        return maxNum;
+      }
 
-        // let's test it!
-        var testInputOne = [4, 1, 8];
-        var testInputTwo = [3, 134, 2, -56];
-        var testInputThree = [42, 42, 42, 42, 42, 42];
+      // let's test it!
+      var testInputOne = [4, 1, 8];
+      var testInputTwo = [3, 134, 2, -56];
+      var testInputThree = [42, 42, 42, 42, 42, 42];
 
-        // using an anonymous object here for readability
-        // this makes it easy to see which input had which output
-        // table is another function console has for printing
-        // https://developer.mozilla.org/en-US/docs/Web/API/Console/table
-        console.table({
-            testOne: {
-                input: testInputOne.toString(),
-                output: findMax(testInputOne)
-            },
-            testTwo: {
-                input: testInputTwo.toString(),
-                output: findMax(testInputTwo)
-            },
-            testThree: {
-                input: testInputThree.toString(),
-                output: findMax(testInputThree)
-            }
-        });
+      // using an anonymous object here for readability
+      // this makes it easy to see which input had which output
+      // table is another function console has for printing
+      // https://developer.mozilla.org/en-US/docs/Web/API/Console/table
+      console.table({
+        testOne: {
+          input: testInputOne.toString(),
+          output: findMax(testInputOne)
+        },
+        testTwo: {
+          input: testInputTwo.toString(),
+          output: findMax(testInputTwo)
+        },
+        testThree: {
+          input: testInputThree.toString(),
+          output: findMax(testInputThree)
+        }
+      });
     </script>
-</body>
-
+  </body>
 </html>

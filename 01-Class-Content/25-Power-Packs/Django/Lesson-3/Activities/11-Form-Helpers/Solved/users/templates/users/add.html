@@ -1,27 +1,18 @@
-{% extends 'users/base.html' %}
+{% extends 'users/base.html' %} {% block title %} Add {% endblock %} {% block
+content %}
 
-{% block title %} Add {% endblock %}
+<h1>Add a User.</h1>
 
-{% block content %}
+<hr />
 
-    <h1>Add a User.</h1>
+<form method="post" action="{% url 'users:add' %}">
+  {% csrf_token %} {% for field in form %}
+  <div class="form-group">
+    {{ field.errors }} {{ field.label_tag }} {{ field }}
+  </div>
+  {% endfor %}
 
-    <hr>
-
-    <form method="post" action="{% url 'users:add' %}">
-
-      {% csrf_token %}
-
-      {% for field in form %}
-        <div class="form-group">
-            {{ field.errors }}
-
-            {{ field.label_tag }} {{ field }}
-        </div>
-      {% endfor %}
-
-      <button type="submit" class="btn btn-primary">Submit</button>
-
-    </form>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
 
 {% endblock %}

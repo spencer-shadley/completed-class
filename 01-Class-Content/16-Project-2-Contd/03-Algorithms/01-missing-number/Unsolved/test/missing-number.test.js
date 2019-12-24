@@ -1,6 +1,6 @@
 var expect = chai.expect;
 
-describe("missingNumber", function() {
+describe('missingNumber', function() {
   it(`should return 2 when given the array [3, 0, 1]`, function() {
     var arr = [3, 0, 1];
 

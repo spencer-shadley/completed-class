@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./style.css";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './style.css';
 
 function ProductItem({
   thumbnailImage,
@@ -16,8 +16,8 @@ function ProductItem({
         <div className="productTitleContainer">
           <p className="detailLink">{name}</p>
         </div>
-      </Link>{" "}
-      <div className="productDescriptionContainer" >
+      </Link>{' '}
+      <div className="productDescriptionContainer">
         <span className="productPrice">${salePrice}</span>
         <p className="description">{shortDescription} </p>
       </div>

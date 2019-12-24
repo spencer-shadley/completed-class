@@ -1,8 +1,8 @@
-const Vehicle = require("./vehicle");
+const Vehicle = require('./vehicle');
 
 class Boat extends Vehicle {
   constructor(id, type, crew) {
-    super(id, 0, "bwom");
+    super(id, 0, 'bwom');
     this.type = type;
     this.crew = crew;
   }
@@ -18,22 +18,22 @@ class Boat extends Vehicle {
 
 const boatPassengers = [
   {
-    name: "Blackbeard"
+    name: 'Blackbeard'
   },
   {
-    name: "Mary Read"
+    name: 'Mary Read'
   },
   {
-    name: "Henry Morgan"
+    name: 'Henry Morgan'
   },
   {
-    name: "Madame Cheng"
+    name: 'Madame Cheng'
   }
 ];
 
-const boat = new Boat(16, "sailboat", boatPassengers);
+const boat = new Boat(16, 'sailboat', boatPassengers);
 
-console.log("---BOAT---");
+console.log('---BOAT---');
 boat.printInfo();
 boat.useHorn();
 boat.crewSoundOff();

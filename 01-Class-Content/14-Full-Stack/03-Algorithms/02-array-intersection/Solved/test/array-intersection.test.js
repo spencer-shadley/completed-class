@@ -18,7 +18,7 @@ function containSameElements(arr1, arr2) {
   return true;
 }
 
-describe("arrayIntersection", function() {
+describe('arrayIntersection', function() {
   it(`should return [1, 3, 5] when given [1, 2, 3, 4, 5] and [5, 0, 3, 10, -2, 1]`, function() {
     var arr1 = [1, 2, 3, 4, 5];
     var arr2 = [5, 0, 3, 10, -2, 1];
@@ -27,7 +27,7 @@ describe("arrayIntersection", function() {
     var expected = [1, 3, 5];
 
     var areEqual = containSameElements(result, expected);
-    
+
     expect(areEqual).to.eql(true);
   });
 
@@ -39,7 +39,7 @@ describe("arrayIntersection", function() {
     var expected = [7, 13, 13, 13];
 
     var areEqual = containSameElements(result, expected);
-    
+
     expect(areEqual).to.eql(true);
   });
 
@@ -49,7 +49,7 @@ describe("arrayIntersection", function() {
 
     var result = arrayIntersection(arr1, arr2);
     var expected = [];
-    
+
     expect(result).to.eql(expected);
   });
 });

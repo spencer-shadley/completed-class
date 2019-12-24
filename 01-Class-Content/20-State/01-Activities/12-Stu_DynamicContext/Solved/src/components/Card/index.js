@@ -1,9 +1,9 @@
-import React from "react";
-import CardBody from "../CardBody";
-import CardBtn from "../CardBtn";
-import CardImg from "../CardImage";
-import CardHeading from "../CardHeading";
-import "./style.css";
+import React from 'react';
+import CardBody from '../CardBody';
+import CardBtn from '../CardBtn';
+import CardImg from '../CardImage';
+import CardHeading from '../CardHeading';
+import './style.css';
 
 function Card() {
   return (
@@ -11,14 +11,8 @@ function Card() {
       <CardHeading />
       <CardImg />
       <CardBody />
-      <CardBtn
-        style={{ opacity: 1 }}
-        data-value="back"
-      />
-      <CardBtn
-        style={{ opacity: 1 }}
-        data-value="next"
-      />
+      <CardBtn style={{ opacity: 1 }} data-value="back" />
+      <CardBtn style={{ opacity: 1 }} data-value="next" />
     </div>
   );
 }

@@ -6,17 +6,17 @@ Create an application that generates a random password based on user-selected cr
 
 The user will be prompted to choose from the following password criteria:
 
-* Length (must be between 8 and 128 characters)
+- Length (must be between 8 and 128 characters)
 
-* Character type:
+- Character type:
 
-  * Special characters ([see examples](https://www.owasp.org/index.php/Password_special_characters))
+  - Special characters ([see examples](https://www.owasp.org/index.php/Password_special_characters))
 
-  * Numeric characters
+  - Numeric characters
 
-  * Lowercase characters
+  - Lowercase characters
 
-  * Uppercase characters
+  - Uppercase characters
 
 The application should validate user input and ensure that at least one character type is selected.
 
@@ -52,25 +52,25 @@ WHEN prompted for password criteria
 
 THEN a password is generated
 
-- - -
+---
 
 ## Commit Early and Often
 
 One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
 
-* Your commit history is a signal to employers that you are actively working on projects and learning new skills.
+- Your commit history is a signal to employers that you are actively working on projects and learning new skills.
 
-* Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
+- Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
 
 Follow these guidelines for committing:
 
-* Make single-purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits.
+- Make single-purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits.
 
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history.
+- Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history.
 
-* Don't commit half-done work, for the sake of your collaborators (and your future self!).
+- Don't commit half-done work, for the sake of your collaborators (and your future self!).
 
-* Test your application before you commit to ensure functionality at every step in the development process.
+- Test your application before you commit to ensure functionality at every step in the development process.
 
 We would like you to have well over 200 commits by graduation, so commit early and often!
 
@@ -78,9 +78,10 @@ We would like you to have well over 200 commits by graduation, so commit early a
 
 You are required to submit the following:
 
-* The URL of the deployed application
+- The URL of the deployed application
 
-* The URL of the GitHub repository
+- The URL of the GitHub repository
 
-- - -
+---
+
 © 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

@@ -1,6 +1,6 @@
 var expect = chai.expect;
 
-describe("doubleTripleMap", function() {
+describe('doubleTripleMap', function() {
   it(`should return [3, 4, 9, 8] when given [1, 2, 3, 4]`, function() {
     var arr = [1, 2, 3, 4];
 

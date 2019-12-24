@@ -28,16 +28,16 @@ We recommend you cover only one lesson per sitting to prevent information overlo
 ### Lesson 2
 
 1. Open up your `Lesson-2` folder.
-3. Open `Activities` folder in your text editor of choice.
-4. Open [PHP/Laravel Lesson 2](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8e64d05e-f2b0-480a-9c3e-aa11015224ff) and start coding along!
-5. Use the same workflow as Lesson 1 to watch class and work through the activities until the last one is complete.
+2. Open `Activities` folder in your text editor of choice.
+3. Open [PHP/Laravel Lesson 2](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8e64d05e-f2b0-480a-9c3e-aa11015224ff) and start coding along!
+4. Use the same workflow as Lesson 1 to watch class and work through the activities until the last one is complete.
 
 ### Lesson 3
 
 1. Open up your `Lesson-3` folder.
-3. Open `Activities` folder in your text editor of choice.
-4. Open [PHP/Laravel Lesson 3](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=866c9b80-8131-47ea-94e0-aa12010870ca) and start coding along!
-5. Use the same workflow as Lesson 1 to watch class and work through the activities until the last one is complete.
+2. Open `Activities` folder in your text editor of choice.
+3. Open [PHP/Laravel Lesson 3](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=866c9b80-8131-47ea-94e0-aa12010870ca) and start coding along!
+4. Use the same workflow as Lesson 1 to watch class and work through the activities until the last one is complete.
 
 ### Homework
 
@@ -50,14 +50,9 @@ First off, killer job, you made it! Whether you feel confusion or mastery, you a
 5. Open your `Solutions` folder and review the file structure inside. You'll see most of it is boiler plate like your activities throughout the week.
 6. Look inside your views, routes, and database files to see how you could customize this boilerplate to meet your application's needs.
 
-
 ## Finish Line
 
 Still confused? Just think back to how confusing JavaScript was the first time you used it. If you keep practicing, you'll feel comfortable with PHP and Laravel in no time. Now, last steps:
 
- 1. Congratulate yourself and practice some self care.
- 2. You've earned it.
-
-
-
-
+1.  Congratulate yourself and practice some self care.
+2.  You've earned it.

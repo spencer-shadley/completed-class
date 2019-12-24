@@ -4,28 +4,28 @@ In this activity you are going to use the Chrome Dev Console and `.style.propert
 
 ## Instructions
 
-* Create an `script.js`
+- Create an `script.js`
 
-* Using the provided `index.html`, complete the following
+- Using the provided `index.html`, complete the following
 
-  * Target the div with the ID of `articles`.
+  - Target the div with the ID of `articles`.
 
-    * Change its font size to `50px`.
+    - Change its font size to `50px`.
 
-    * Change its first childs, last child to have a font color of `blue`.
+    - Change its first childs, last child to have a font color of `blue`.
 
-    * Change its previous sibling to have a background color of `black`.
+    - Change its previous sibling to have a background color of `black`.
 
-  * Target the div with the ID of `main`.
+  - Target the div with the ID of `main`.
 
-    * Change its second child node so the text is `underlined`.
+    - Change its second child node so the text is `underlined`.
 
-    * Change its last child element to have a font size of `50px`.
+    - Change its last child element to have a font size of `50px`.
 
-    * Change its first child element to have a font color of `orange`.
-    
-    * Change its last child elements parent to have a font size of `40px`.
+    - Change its first child element to have a font color of `orange`.
+
+    - Change its last child elements parent to have a font size of `40px`.
 
 ## Bonus
 
-* Change 3 other elements styles that we did not ask for above.
+- Change 3 other elements styles that we did not ask for above.

@@ -19,8 +19,8 @@ before(function() {
   })();
 });
 
-describe("logEvenNums", function() {
-  it("log even numbers 0 through `num`", function() {
+describe('logEvenNums', function() {
+  it('log even numbers 0 through `num`', function() {
     var num = 13;
 
     logEvenNums(num);

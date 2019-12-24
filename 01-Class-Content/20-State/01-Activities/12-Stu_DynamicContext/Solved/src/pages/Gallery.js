@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from "react";
-import API from "../utils/API";
-import UserContext from "../utils/userContext";
-import CardContainer from "../components/CardContainer";
-import Row from "../components/Row";
+import React, { useEffect, useState } from 'react';
+import API from '../utils/API';
+import UserContext from '../utils/userContext';
+import CardContainer from '../components/CardContainer';
+import Row from '../components/Row';
 
 function Gallery() {
-
   const [users, setUsers] = useState([]);
   const [user, setUser] = useState({});
   const [userIndex, setUserIndex] = useState(0);
@@ -18,15 +17,15 @@ function Gallery() {
   function loadUsers() {
     API.getLanguagesList()
       .then(languages => {
-        API.getUsersByLanguage(languages[0]).then((users) => {
+        API.getUsersByLanguage(languages[0]).then(users => {
           setUsers(users);
           setUser(users[0]);
         });
       })
       .catch(err => console.log(err));
   }
-    
-  function capitalizeFirstLetter(string = "") {
+
+  function capitalizeFirstLetter(string = '') {
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
 
@@ -50,8 +49,8 @@ function Gallery() {
 
   function handleBtnClick(event) {
     // Get the title of the clicked button
-    const btnName = event.target.getAttribute("data-value");
-    if (btnName === "next") {
+    const btnName = event.target.getAttribute('data-value');
+    if (btnName === 'next') {
       const newUserIndex = userIndex + 1;
       nextUser(newUserIndex);
     } else {
@@ -61,7 +60,9 @@ function Gallery() {
   }
 
   return (
-    <UserContext.Provider value={{ user, users, capitalizeFirstLetter, handleBtnClick }}>
+    <UserContext.Provider
+      value={{ user, users, capitalizeFirstLetter, handleBtnClick }}
+    >
       <div>
         <h1 className="text-center">Welcome to LinkedUp</h1>
         <h3 className="text-center">Click on the arrows to browse users</h3>
@@ -72,6 +73,5 @@ function Gallery() {
     </UserContext.Provider>
   );
 }
-
 
 export default Gallery;

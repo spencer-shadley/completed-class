@@ -1,6 +1,6 @@
 var expect = chai.expect;
 
-describe("smallestDifference", function() {
+describe('smallestDifference', function() {
   it(`should return [2, 2] if given the arrays [1, 2, 3, 5, 6] and [0, 2, 4, 8, 10]`, function() {
     var arr1 = [1, 2, 3, 5, 6];
     var arr2 = [0, 2, 4, 8, 10];
@@ -25,5 +25,4 @@ describe("smallestDifference", function() {
     var result = smallestDifference(arr1, arr2);
     expect(result).to.eql([42, 108]);
   });
-
 });

@@ -4,10 +4,9 @@ function waitFor(seconds, cb) {
   }
 
   setTimeout(function() {
-    cb(null, "Success!");
+    cb(null, 'Success!');
   }, seconds * 1000);
 }
-
 
 waitFor(2, function(err, msg) {
   if (err) {
@@ -16,4 +15,4 @@ waitFor(2, function(err, msg) {
   }
 
   console.log(msg);
-})
+});

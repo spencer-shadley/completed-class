@@ -1,6 +1,14 @@
-import { subtract } from "./calculations";
-import { balanceEl, expenseEl, expensesListEl, expensesChart, priceEl, submitBtn, resetBtn } from "./elements";
-import { updateChart, resetChart } from "./expenseChart";
+import { subtract } from './calculations';
+import {
+  balanceEl,
+  expenseEl,
+  expensesListEl,
+  expensesChart,
+  priceEl,
+  submitBtn,
+  resetBtn
+} from './elements';
+import { updateChart, resetChart } from './expenseChart';
 
 function addToList(name, price) {
   expensesListEl.innerHTML += `<li class="list-group-item">Name: ${name}
@@ -19,7 +27,7 @@ function reset(e) {
   e.preventDefault();
   const total = 2000;
   balanceEl.innerText = total;
-  expensesListEl.innerHTML = "";
+  expensesListEl.innerHTML = '';
   resetChart(expensesChart);
 }
 

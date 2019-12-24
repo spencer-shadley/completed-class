@@ -1,10 +1,10 @@
-import React from "react";
-import "./style.css";
+import React from 'react';
+import './style.css';
 
 function Footer() {
   return (
     <footer className="footer">
-      <span>LinkedUp { new Date().getFullYear() }</span>
+      <span>LinkedUp {new Date().getFullYear()}</span>
     </footer>
   );
 }

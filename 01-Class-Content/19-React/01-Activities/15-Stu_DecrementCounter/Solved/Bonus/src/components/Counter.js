@@ -1,5 +1,5 @@
-import React from "react";
-import CardBody from "./CardBody";
+import React from 'react';
+import CardBody from './CardBody';
 
 // By extending the React.Component class, Counter inherits functionality from it
 class Counter extends React.Component {
@@ -24,9 +24,7 @@ class Counter extends React.Component {
   render() {
     return (
       <div className="card text-center">
-        <div className="card-header bg-primary text-white">
-          Click Counter!
-        </div>
+        <div className="card-header bg-primary text-white">Click Counter!</div>
         <CardBody
           count={this.state.count}
           handleIncrement={this.handleIncrement}

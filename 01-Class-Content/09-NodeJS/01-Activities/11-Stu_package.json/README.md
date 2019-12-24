@@ -1,16 +1,15 @@
 # package.json
 
-In this activity, you will install the `inquirer` package using `npm`. 
+In this activity, you will install the `inquirer` package using `npm`.
 
 ## Instructions
 
-* Run `npm install`. 
+- Run `npm install`.
 
-    * 🎗 This needs to be your working directory. 
+  - 🎗 This needs to be your working directory.
 
-* What happens? How did `npm` know you wanted to install `inquirer`? Where did those additional packages come from?
-
+- What happens? How did `npm` know you wanted to install `inquirer`? Where did those additional packages come from?
 
 ## Bonus
 
-* How would we create our own `package.json` files? 
+- How would we create our own `package.json` files?

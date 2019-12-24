@@ -1,12 +1,13 @@
-const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
+  .BundleAnalyzerPlugin;
 
 const config = {
-  entry: "./src/app.js",
+  entry: './src/app.js',
   output: {
-    path: __dirname + "/dist",
-    filename: "bundle.js"
+    path: __dirname + '/dist',
+    filename: 'bundle.js'
   },
-  mode: "development",
+  mode: 'development',
   plugins: [new BundleAnalyzerPlugin()]
 };
 module.exports = config;

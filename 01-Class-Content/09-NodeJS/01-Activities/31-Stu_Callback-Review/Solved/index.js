@@ -1,6 +1,6 @@
-const fs = require("fs");
+const fs = require('fs');
 
-fs.readFile("animals.json", "utf8", function(err, data) {
+fs.readFile('animals.json', 'utf8', function(err, data) {
   if (err) {
     throw err;
   }
@@ -14,9 +14,9 @@ fs.readFile("animals.json", "utf8", function(err, data) {
 
   // For each element in animal
   animalJSON.forEach(function(animal) {
-    if (animal.species === "dog") {
+    if (animal.species === 'dog') {
       dogs.push(animal);
-    } else if (animal.species === "cat") {
+    } else if (animal.species === 'cat') {
       cats.push(animal);
     }
   });
@@ -25,19 +25,19 @@ fs.readFile("animals.json", "utf8", function(err, data) {
   const dogJSON = JSON.stringify(dogs, null, 2);
   const catJSON = JSON.stringify(cats, null, 2);
 
-  fs.writeFile("dogs.json", dogJSON, function(err) {
+  fs.writeFile('dogs.json', dogJSON, function(err) {
     if (err) {
       throw err;
     }
 
-    console.log("Successfully wrote to dogs.json file");
+    console.log('Successfully wrote to dogs.json file');
   });
 
-  fs.writeFile("cats.json", catJSON, function(err) {
+  fs.writeFile('cats.json', catJSON, function(err) {
     if (err) {
       throw err;
     }
 
-    console.log("Successfully wrote to cats.json file");
+    console.log('Successfully wrote to cats.json file');
   });
 });

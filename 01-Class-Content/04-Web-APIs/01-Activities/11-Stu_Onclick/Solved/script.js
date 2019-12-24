@@ -14,10 +14,10 @@ function updateCount(updatedCount) {
   }
 }
 
-incrementElement.addEventListener('click', function () {
+incrementElement.addEventListener('click', function() {
   updateCount(count + 1);
 });
 
-decrementElement.addEventListener('click', function () {
+decrementElement.addEventListener('click', function() {
   updateCount(count - 1);
 });

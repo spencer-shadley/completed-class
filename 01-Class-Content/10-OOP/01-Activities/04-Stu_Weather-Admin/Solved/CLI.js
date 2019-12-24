@@ -1,4 +1,4 @@
-const WeatherAdmin = require("./WeatherAdmin");
+const WeatherAdmin = require('./WeatherAdmin');
 
 // Hold the value whether someone is an "admin" or "user"
 const loginType = process.argv[2];
@@ -12,9 +12,8 @@ const userLocation = process.argv[4];
 // Create an instance of the WeatherAdmin. Remember WeatherAdmin is a constructor! Not an object.
 const myAdmin = new WeatherAdmin();
 
-if (loginType === "admin") {
+if (loginType === 'admin') {
   myAdmin.getData();
-}
-else {
+} else {
   myAdmin.newUserSearch(userName, userLocation);
 }

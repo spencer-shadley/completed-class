@@ -8,7 +8,7 @@ This short guide will take you through the steps of creating a repository, and t
 
 First, we need to create a new GitHub repository.
 
-1. Navigate to [GitHub](https://www.github.com) and sign into your account. 
+1. Navigate to [GitHub](https://www.github.com) and sign into your account.
 
 2. On the left-side navbar, click the `New` button next to `Repositories`
 
@@ -38,7 +38,7 @@ Now that we have a GitHub repository, we need to create a new Heroku Application
 
 Now you are good to go! Whenever you are working on your project and you push to master via PR (You should never be pushing directly to master!) it will automatically push to Heroku, updating your live application!
 
-* We have also created a video guide for you to follow along with if you need
+- We have also created a video guide for you to follow along with if you need
 
 [Connect GitHub to Heroku](https://youtu.be/GgNcs9zlFSA?list=PLOFmg4xbN_TPrB6w4rThsFanVxJI_SfER)
 

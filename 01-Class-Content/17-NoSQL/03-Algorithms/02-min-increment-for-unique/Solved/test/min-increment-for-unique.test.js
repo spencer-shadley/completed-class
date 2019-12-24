@@ -1,6 +1,6 @@
 var expect = chai.expect;
 
-describe("minIncrement", function() {
+describe('minIncrement', function() {
   it(`should return 1 if given the array [1, 2, 2]`, function() {
     var arr = [1, 2, 2];
 

@@ -19,7 +19,7 @@ body,
   color: #f57f16;
 }
 
-label[for*="star"] {
+label[for*='star'] {
   cursor: pointer;
   margin: 0;
   padding: 4px;
@@ -33,7 +33,7 @@ label[for*="star"] {
 }
 
 .card__image-container:before {
-  content: "";
+  content: '';
   display: block;
   padding-top: 100%;
 }

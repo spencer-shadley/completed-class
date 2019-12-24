@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Book Tracker</title>
     <style>
-      #unread, #read {
+      #unread,
+      #read {
         width: 40%;
         background-color: antiquewhite;
       }
-      #unread { float: left; }
-      #read { float: right; }
-      table, td {
+      #unread {
+        float: left;
+      }
+      #read {
+        float: right;
+      }
+      table,
+      td {
         border-width: 1px;
         border-style: solid;
         border-color: black;
@@ -24,10 +30,14 @@
       }
       body {
         font-family: sans-serif;
-        background-color: #C0FFEE;
+        background-color: #c0ffee;
       }
-      #results { margin-top: 50px; }
-      #userinput { font-size: 24px; }
+      #results {
+        margin-top: 50px;
+      }
+      #userinput {
+        font-size: 24px;
+      }
       input {
         width: 50%;
         height: 36px;
@@ -40,18 +50,27 @@
       <h1>Book Tracker 4000</h1>
       <h2><i>The latest and greatest in book tracking technology!</i></h2>
       <form id="userinput">
-          <input type="text" id="title" placeholder="Book Title"/>
+        <input type="text" id="title" placeholder="Book Title" />
         <br />
-          <input type="text" id="author" placeholder="Book Author"/>
+        <input type="text" id="author" placeholder="Book Author" />
         <br />
         <button type="submit" id="addbook">Add New</button>
       </form>
       <div id="results">
         <table id="unread">
-              <tr><th>Title</th><th>Author</th><th>Read/Unread</th></tr>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Read/Unread</th>
+          </tr>
         </table>
+
         <table id="read">
-              <tr><th>Title</th><th>Author</th><th>Read/Unread</th></tr>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Read/Unread</th>
+          </tr>
         </table>
       </div>
     </div>

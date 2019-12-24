@@ -1,6 +1,6 @@
 var expect = chai.expect;
 
-describe("peakFinder", function() {
+describe('peakFinder', function() {
   it(`should return 3 if given the array [3, 2, 1]`, function() {
     var arr = [3, 2, 1];
 
@@ -40,5 +40,4 @@ describe("peakFinder", function() {
 
     expect(result).to.eql(1);
   });
-
 });

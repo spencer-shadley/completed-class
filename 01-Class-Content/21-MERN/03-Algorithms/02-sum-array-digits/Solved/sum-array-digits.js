@@ -42,7 +42,7 @@ var sumArrayDigits = function(arr1, arr2) {
   while (idx2 >= 0) {
     var currentSum = arr2[idx2] + carryOver;
     carryOver = 0;
-    
+
     if (currentSum > 9) {
       currentSum = currentSum - 10;
       carryOver = 1;

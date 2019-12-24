@@ -33,7 +33,10 @@ function getPadding(num) {
 }
 
 function setTime() {
-  var minutes = (status === workingStatus ? workMinutesInput : restMinutesInput).value.trim();
+  var minutes = (status === workingStatus
+    ? workMinutesInput
+    : restMinutesInput
+  ).value.trim();
 
   clearInterval(interval);
   totalSeconds = minutes * 60;
@@ -44,7 +47,10 @@ function renderTime() {
   secondsDisplay.textContent = getFormattedSeconds();
 
   if (secondsElapsed >= totalSeconds) {
-    var statusMessage = status === workingStatus ? 'Time for a break!' : 'Time to get back to work!';
+    var statusMessage =
+      status === workingStatus
+        ? 'Time for a break!'
+        : 'Time to get back to work!';
     alert(statusMessage);
     stopTimer();
   }
@@ -53,7 +59,7 @@ function renderTime() {
 function startTimer() {
   setTime();
 
-  interval = setInterval(function () {
+  interval = setInterval(function() {
     ++secondsElapsed;
     renderTime();
   }, 1000);

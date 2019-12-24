@@ -10,23 +10,23 @@ We will conclude this unit with an introduction to modern class syntax and inher
 
 ## Key Topics
 
-* Objects
+- Objects
 
-* this
+- this
 
-* Callbacks
+- Callbacks
 
-* Constructors
+- Constructors
 
-* Prototypes
+- Prototypes
 
-* TDD
+- TDD
 
-* Unit Tests
+- Unit Tests
 
-* Classes
+- Classes
 
-* Inheritance
+- Inheritance
 
 ## Comprehension Check
 
@@ -42,28 +42,28 @@ You will be employer-ready if you can answer the following questions:
 
 You will be employer-competitive if you are able to:
 
-* Integrate constructor functions into your applications, adding structure to your code and reducing the amount of code you have to write.
+- Integrate constructor functions into your applications, adding structure to your code and reducing the amount of code you have to write.
 
-* Build entire applications using OOP, separating data and functionality into different constructor functions that can be composed together.
+- Build entire applications using OOP, separating data and functionality into different constructor functions that can be composed together.
 
-* Verify your code works as intended through the use of automated tests.
+- Verify your code works as intended through the use of automated tests.
 
-* Build applications using test-driven-development, writing tests before implementing functionality.
+- Build applications using test-driven-development, writing tests before implementing functionality.
 
-* Utilize modern ES6 class syntax to implement more advanced OOP patterns such as inheritance.
+- Utilize modern ES6 class syntax to implement more advanced OOP patterns such as inheritance.
 
-* Create more scalable applications that follow the OOP paradigm.
+- Create more scalable applications that follow the OOP paradigm.
 
 ## Homework: Word Guess With Constructors
 
-* In this unit's assignment, you will create a Word Guess command-line game using constructor functions.
+- In this unit's assignment, you will create a Word Guess command-line game using constructor functions.
 
 ## Helpful Links
 
-* [Constructor Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor)
+- [Constructor Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor)
 
-* [Prototype Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype)
+- [Prototype Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/prototype)
 
-* [Class Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+- [Class Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
 
-* [Jest Docs](https://jestjs.io/)
+- [Jest Docs](https://jestjs.io/)

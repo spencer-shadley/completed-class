@@ -1,151 +1,144 @@
 <!DOCTYPE html>
 <html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My First Function</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <title>My First Function</title>
-</head>
+  <body>
+    <h1>Open the console to see the magic!</h1>
 
-<body>
+    <script>
+      // FUNCTIONS
+      // ================================================================================
 
-  <h1>Open the console to see the magic!</h1>
-
-  <script>
-
-    // FUNCTIONS
-    // ================================================================================
-
-    // Creates a Function called "adder" that takes three arguments (x, y, z).
-    function adder(x, y, z) {
-
-      // The function should add the arguments together and log the result to the console.
-      console.log(x + y + z);
-    }
-
-    // BONUS!
-    // We can also create a version of "adder" that returns its result.
-    function adderReturn(x, y, z) {
-      return x + y + z;
-    }
-
-    // Creates a Function called "multiplier" that takes three arguments (x, y, z).
-    function multiplier(x, y, z) {
-
-      // The function should multiply the arguments, and log the result to the console.
-      console.log(x * y * z);
-    }
-
-    // We can also create a version of "multiplier" that returns its result.
-    function multiplierReturn(x, y, z) {
-      return x * y * z;
-    }
-
-    // Creates a Function called "isString" that takes three arguments (x, y, z).
-    function isString(x, y, z) {
-
-      // isString checks if each argument is a string using typeof.
-
-      // If each argument is a string it will note that.
-      if (typeof x === 'string' && typeof y === 'string' && typeof z === 'string') {
-        console.log('Yep. They are all strings');
+      // Creates a Function called "adder" that takes three arguments (x, y, z).
+      function adder(x, y, z) {
+        // The function should add the arguments together and log the result to the console.
+        console.log(x + y + z);
       }
 
-      // If anyone of them is NOT a string... it will note that.
-      else {
-        console.log("No... I don't believe these are all strings.");
-      }
-    }
-
-    // Creates a Function called 'vowelChecker' that has a single parameter (x).
-    function vowelChecker(x) {
-
-      // vowelChecker will grab the first letter (character)...
-      var firstChar = x.toLowerCase().charAt(0);
-
-      // Then check if that first letter is a vowel.
-      if (firstChar === 'a' || firstChar === 'e' || firstChar === 'i' || firstChar === 'o' || firstChar === 'u') {
-
-        // If so... it will log that.
-        console.log('OMG. The first letter is a vowel!');
-
+      // BONUS!
+      // We can also create a version of "adder" that returns its result.
+      function adderReturn(x, y, z) {
+        return x + y + z;
       }
 
-      else {
-
-        // If not... it will log that.
-        console.log('First letter is NOT a vowel. *sadface*');
-
-      }
-    }
-
-    function combineUsingOperator(operator, x, y, z) {
-      var combinedValue;
-      if (operator === 'add') {
-        combinedValue = adderReturn(x, y, z);
-      }
-      else if (operator === 'multiply') {
-        combinedValue = multiplierReturn(x, y, z);
+      // Creates a Function called "multiplier" that takes three arguments (x, y, z).
+      function multiplier(x, y, z) {
+        // The function should multiply the arguments, and log the result to the console.
+        console.log(x * y * z);
       }
 
-      // This is a "ternary if"
-      // It's shorthand for a small if/else statement
-      // <condition> ? <return value when true> : <return value when false>
-      console.log(combinedValue ? combinedValue : 'Inavlid input!');
-    }
+      // We can also create a version of "multiplier" that returns its result.
+      function multiplierReturn(x, y, z) {
+        return x * y * z;
+      }
 
-    function printLineBreak() {
-      console.log('-------------------');
-    }
+      // Creates a Function called "isString" that takes three arguments (x, y, z).
+      function isString(x, y, z) {
+        // isString checks if each argument is a string using typeof.
 
-    // FUNCTION EXECUTION
-    // ================================================================================
+        // If each argument is a string it will note that.
+        if (
+          typeof x === 'string' &&
+          typeof y === 'string' &&
+          typeof z === 'string'
+        ) {
+          console.log('Yep. They are all strings');
+        }
 
-    // Each of the below lines of code is what actually 'calls' or 'runs' the functions.
-    // Without the below code, the functions above are like workers just waiting to be called into action.
+        // If anyone of them is NOT a string... it will note that.
+        else {
+          console.log("No... I don't believe these are all strings.");
+        }
+      }
 
-    // Calling our adder function.
-    adder(1, 2, 3);
+      // Creates a Function called 'vowelChecker' that has a single parameter (x).
+      function vowelChecker(x) {
+        // vowelChecker will grab the first letter (character)...
+        var firstChar = x.toLowerCase().charAt(0);
 
-    printLineBreak();
+        // Then check if that first letter is a vowel.
+        if (
+          firstChar === 'a' ||
+          firstChar === 'e' ||
+          firstChar === 'i' ||
+          firstChar === 'o' ||
+          firstChar === 'u'
+        ) {
+          // If so... it will log that.
+          console.log('OMG. The first letter is a vowel!');
+        } else {
+          // If not... it will log that.
+          console.log('First letter is NOT a vowel. *sadface*');
+        }
+      }
 
-    // If we use the version that returns its result:
-    var result = adderReturn(1, 2, 3);
-    console.log(result);
-    // alternative:
-    // console.log(adderReturn(1, 2, 3))
+      function combineUsingOperator(operator, x, y, z) {
+        var combinedValue;
+        if (operator === 'add') {
+          combinedValue = adderReturn(x, y, z);
+        } else if (operator === 'multiply') {
+          combinedValue = multiplierReturn(x, y, z);
+        }
 
-    printLineBreak();
+        // This is a "ternary if"
+        // It's shorthand for a small if/else statement
+        // <condition> ? <return value when true> : <return value when false>
+        console.log(combinedValue ? combinedValue : 'Inavlid input!');
+      }
 
-    // Calling our multiplier function.
-    multiplier(2, 3, 4);
+      function printLineBreak() {
+        console.log('-------------------');
+      }
 
-    printLineBreak();
+      // FUNCTION EXECUTION
+      // ================================================================================
 
-    // If we use the version that returns its result:
-    result = multiplierReturn(2, 3, 4);
-    console.log(result);
+      // Each of the below lines of code is what actually 'calls' or 'runs' the functions.
+      // Without the below code, the functions above are like workers just waiting to be called into action.
 
-    printLineBreak();
+      // Calling our adder function.
+      adder(1, 2, 3);
 
-    // Calling our isString function.
-    isString('Ahmed', 'Bad', 'Monkey');
-    isString(2, 'Way', 'Street');
+      printLineBreak();
 
-    printLineBreak();
-    
-    // Calling our vowelChecker function.
-    vowelChecker('Eek');
-    vowelChecker('Nah');
+      // If we use the version that returns its result:
+      var result = adderReturn(1, 2, 3);
+      console.log(result);
+      // alternative:
+      // console.log(adderReturn(1, 2, 3))
 
-    printLineBreak();
+      printLineBreak();
 
-    // Calling our combined operator function
-    combineUsingOperator('add', 2, 3, 4);
-    combineUsingOperator('multiply', 2, 3, 4);
-    combineUsingOperator('invalid', 1, 2, 3);
-    
-  </script>
+      // Calling our multiplier function.
+      multiplier(2, 3, 4);
 
-</body>
+      printLineBreak();
 
+      // If we use the version that returns its result:
+      result = multiplierReturn(2, 3, 4);
+      console.log(result);
+
+      printLineBreak();
+
+      // Calling our isString function.
+      isString('Ahmed', 'Bad', 'Monkey');
+      isString(2, 'Way', 'Street');
+
+      printLineBreak();
+
+      // Calling our vowelChecker function.
+      vowelChecker('Eek');
+      vowelChecker('Nah');
+
+      printLineBreak();
+
+      // Calling our combined operator function
+      combineUsingOperator('add', 2, 3, 4);
+      combineUsingOperator('multiply', 2, 3, 4);
+      combineUsingOperator('invalid', 1, 2, 3);
+    </script>
+  </body>
 </html>

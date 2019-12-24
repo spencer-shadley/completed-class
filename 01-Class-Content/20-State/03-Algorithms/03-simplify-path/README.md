@@ -4,88 +4,88 @@ In this activity you will be writing code to create a function that takes in a s
 
 ## Instructions
 
-* Open [Unsolved/simplify-path.js](Unsolved/simplify-path.js) in your code editor -- **this is the only file you will modify in this activity.**
+- Open [Unsolved/simplify-path.js](Unsolved/simplify-path.js) in your code editor -- **this is the only file you will modify in this activity.**
 
-  * In this file you will be writing code in the body of the `simplifyPath` function to achieve the following:
+  - In this file you will be writing code in the body of the `simplifyPath` function to achieve the following:
 
-    * Return a simplified canonical version of the file path.
+    - Return a simplified canonical version of the file path.
 
-    * For example, if given the following path:
-
-    ```js
-    var path = "/home/";
-    ```
-
-    * The following should be returned:
+    - For example, if given the following path:
 
     ```js
-    "/home";
+    var path = '/home/';
     ```
 
-    * Since the trailing forward slash isn't necessary.
-
-    * Given the following path:
+    - The following should be returned:
 
     ```js
-    var path = "/../";
+    '/home';
     ```
 
-    * The following should be returned:
+    - Since the trailing forward slash isn't necessary.
+
+    - Given the following path:
 
     ```js
-    "/";
+    var path = '/../';
     ```
 
-    * Since there's no way to `cd ..` from the root directory.
-
-    * Given the following path:
+    - The following should be returned:
 
     ```js
-    var path = "/a/./b/../../c/";
+    '/';
     ```
 
-    * The following should be returned:
+    - Since there's no way to `cd ..` from the root directory.
+
+    - Given the following path:
 
     ```js
-    "/c";
+    var path = '/a/./b/../../c/';
     ```
 
-    * Since we start at folder `a`, cd in folder `b` which is inside of `a`. Then we come up one level, back to `a`, then come up another level, up to the root, then go into `c` which is a the root level.
-
-    * Given the following path:
+    - The following should be returned:
 
     ```js
-    var path = "/a/../../b/../c//.//";
+    '/c';
     ```
 
-    * The following should be returned:
+    - Since we start at folder `a`, cd in folder `b` which is inside of `a`. Then we come up one level, back to `a`, then come up another level, up to the root, then go into `c` which is a the root level.
+
+    - Given the following path:
 
     ```js
-    "/c";
+    var path = '/a/../../b/../c//.//';
     ```
 
-    * Same as the previous example, but consecutive `/`s are collapsed into one `/` and a single `.` alone doesn't change directories.
-
-    * Given the following path:
+    - The following should be returned:
 
     ```js
-    var path = "/a/b/c/d/..";
+    '/c';
     ```
 
-    * The following should be returned:
+    - Same as the previous example, but consecutive `/`s are collapsed into one `/` and a single `.` alone doesn't change directories.
+
+    - Given the following path:
 
     ```js
-    "/a/b/c";
+    var path = '/a/b/c/d/..';
     ```
 
-    * Since we cd'd into `/a/b/c/d/` and then came up one directory.
+    - The following should be returned:
 
-* You can check to see if your function works properly by opening [Unsolved/test.html](Unsolved/test.html) in your web browser.
+    ```js
+    '/a/b/c';
+    ```
 
-  * Functions that _pass_ the tests will be denoted with a **green check mark**.
+    - Since we cd'd into `/a/b/c/d/` and then came up one directory.
 
-  * Functions that _fail_ the tests will be denoted with a **red x and an error message**.
+- You can check to see if your function works properly by opening [Unsolved/test.html](Unsolved/test.html) in your web browser.
+
+  - Functions that _pass_ the tests will be denoted with a **green check mark**.
+
+  - Functions that _fail_ the tests will be denoted with a **red x and an error message**.
 
 ### Hints
 
-* Spend some time examining the examples provided here to make sure you understand file paths. Feel free to experiment in your terminal to see how changing directories will affect your folder location.
+- Spend some time examining the examples provided here to make sure you understand file paths. Feel free to experiment in your terminal to see how changing directories will affect your folder location.

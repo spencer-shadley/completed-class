@@ -1,26 +1,26 @@
-const express = require("express");
-const mongojs = require("mongojs");
-const logger = require("morgan");
+const express = require('express');
+const mongojs = require('mongojs');
+const logger = require('morgan');
 
 const app = express();
 
-app.use(logger("dev"));
+app.use(logger('dev'));
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(express.static("public"));
+app.use(express.static('public'));
 
-const databaseUrl = "notetaker";
-const collections = ["notes"];
+const databaseUrl = 'notetaker';
+const collections = ['notes'];
 
 const db = mongojs(databaseUrl, collections);
 
-db.on("error", error => {
-  console.log("Database Error:", error);
+db.on('error', error => {
+  console.log('Database Error:', error);
 });
 
-app.get("/", (req, res) => {
+app.get('/', (req, res) => {
   res.send(index.html);
 });
 
@@ -58,5 +58,5 @@ app.get("/", (req, res) => {
 
 // Listen on port 3000
 app.listen(3000, () => {
-  console.log("App running on port 3000!");
+  console.log('App running on port 3000!');
 });

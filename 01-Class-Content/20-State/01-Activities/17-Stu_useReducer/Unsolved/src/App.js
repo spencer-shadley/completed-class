@@ -1,14 +1,14 @@
-import React from "react";
+import React from 'react';
 
 function Count() {
   const dogs = [
     {
-      name: "Harry",
-      image: "https://images.dog.ceo/breeds/vizsla/n02100583_10960.jpg"
+      name: 'Harry',
+      image: 'https://images.dog.ceo/breeds/vizsla/n02100583_10960.jpg'
     },
     {
-      name: "Hermione",
-      image: "https://images.dog.ceo/breeds/husky/n02110185_1511.jpg"
+      name: 'Hermione',
+      image: 'https://images.dog.ceo/breeds/husky/n02110185_1511.jpg'
     }
   ];
 
@@ -20,7 +20,9 @@ function Count() {
             <img className="card-img-top" src={item.image} alt={item.name} />
             <div className="card-body">
               <h4 className="card-title">{item.name}</h4>
-              <p className="card-text">{item.name} has been praised __ times!</p>
+              <p className="card-text">
+                {item.name} has been praised __ times!
+              </p>
               <button className="btn btn-primary">Praise</button>
             </div>
           </div>

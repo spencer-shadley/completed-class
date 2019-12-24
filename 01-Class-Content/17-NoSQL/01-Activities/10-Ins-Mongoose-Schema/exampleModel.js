@@ -1,11 +1,11 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const ExampleSchema = new Schema({
   string: {
     type: String,
     trim: true,
-    required: "String is Required"
+    required: 'String is Required'
   },
 
   number: {
@@ -16,7 +16,7 @@ const ExampleSchema = new Schema({
 
   email: {
     type: String,
-    match: [/.+@.+\..+/, "Please enter a valid e-mail address"]
+    match: [/.+@.+\..+/, 'Please enter a valid e-mail address']
   },
 
   boolean: Boolean,
@@ -30,10 +30,10 @@ const ExampleSchema = new Schema({
 
   longstring: {
     type: String,
-    validate: [({ length }) => length >= 6, "Longstring should be longer."]
+    validate: [({ length }) => length >= 6, 'Longstring should be longer.']
   }
 });
 
-const Example = mongoose.model("Example", ExampleSchema);
+const Example = mongoose.model('Example', ExampleSchema);
 
 module.exports = Example;

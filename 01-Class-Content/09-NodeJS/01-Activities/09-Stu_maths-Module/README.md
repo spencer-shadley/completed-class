@@ -6,20 +6,20 @@ Running `node index.js sum 3 4` will return 7.
 
 ## Instructions
 
-* Create two files, `index.js` and `maths.js`, then import `maths.js` into `index.js`.
+- Create two files, `index.js` and `maths.js`, then import `maths.js` into `index.js`.
 
-* Write four methods for the results of the four basic mathematical operations in `maths.js`: `sum`, `difference`, `product`, and `quotient`; and then export them.
+- Write four methods for the results of the four basic mathematical operations in `maths.js`: `sum`, `difference`, `product`, and `quotient`; and then export them.
 
-* In `index.js`, create variables to capture the values passed from the command line in `process.argv`: `operation`, `numOne` and `numTwo`.
+- In `index.js`, create variables to capture the values passed from the command line in `process.argv`: `operation`, `numOne` and `numTwo`.
 
-* Next, write a `switch` statement that accepts an `operation` parameter.
+- Next, write a `switch` statement that accepts an `operation` parameter.
 
-* Within each `case` of the `switch`, use the corresponding `maths` methods to perform the operation on the numbers taken from the command line using `process.argv`.
+- Within each `case` of the `switch`, use the corresponding `maths` methods to perform the operation on the numbers taken from the command line using `process.argv`.
 
 ## Hint(s)
 
-* You will need to use `parseInt()`. But why?
+- You will need to use `parseInt()`. But why?
 
 ## Bonus
 
-* You can also export your functions directly. How? 
+- You can also export your functions directly. How?

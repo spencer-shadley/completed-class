@@ -13,13 +13,13 @@ In this activity you will be writing code to create a function that takes a stri
     - e.g. given the following string:
 
     ```js
-    var str = "just keep swimming";
+    var str = 'just keep swimming';
     ```
 
     - The following string should be returned:
 
     ```js
-    "gnimmiws peek tsuj";
+    'gnimmiws peek tsuj';
     ```
 
 - You can check to see if your function works properly by opening [Unsolved/test.html](Unsolved/test.html) in your web browser.

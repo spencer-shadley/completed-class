@@ -1,11 +1,11 @@
 var expect = chai.expect;
 
-describe("sortedSquares", function() {
+describe('sortedSquares', function() {
   it(`should return [0, 1, 9, 16, 100] when given [-4,-1,0,3,10]`, function() {
-    var arr = [-4,-1,0,3,10];
+    var arr = [-4, -1, 0, 3, 10];
 
     var result = sortedSquares(arr);
-    
+
     expect(result).to.eql([0, 1, 9, 16, 100]);
   });
 
@@ -13,7 +13,7 @@ describe("sortedSquares", function() {
     var arr = [];
 
     var result = sortedSquares(arr);
-    
+
     expect(result).to.eql([]);
   });
 
@@ -21,7 +21,7 @@ describe("sortedSquares", function() {
     var arr = [-7, -3, 2, 3, 11];
 
     var result = sortedSquares(arr);
-    
+
     expect(result).to.eql([4, 9, 9, 49, 121]);
   });
 });

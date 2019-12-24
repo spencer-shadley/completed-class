@@ -1,15 +1,15 @@
 var expect = chai.expect;
 
 before(function() {
-  sinon.spy(Math, "sqrt");
+  sinon.spy(Math, 'sqrt');
 });
 
-describe("sqrt", function() {
+describe('sqrt', function() {
   it(`should return 2 when given 4`, function() {
     var num = 4;
 
     var result = sqrt(num);
-    
+
     expect(result).to.eql(2);
   });
 
@@ -17,7 +17,7 @@ describe("sqrt", function() {
     var num = 8;
 
     var result = sqrt(num);
-    
+
     expect(result).to.eql(2);
   });
 
@@ -25,7 +25,7 @@ describe("sqrt", function() {
     var num = 0;
 
     var result = sqrt(num);
-    
+
     expect(result).to.eql(0);
   });
 

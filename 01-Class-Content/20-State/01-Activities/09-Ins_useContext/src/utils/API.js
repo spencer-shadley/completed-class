@@ -4,8 +4,8 @@ export const getDeveloper = new Promise(function(resolve) {
     resolve({
       excitementLevel: 10000,
       lifeLongLearner: true,
-      mood: "excited",
-      name: "Alec"
+      mood: 'excited',
+      name: 'Alec'
     });
   }, 1000);
 });

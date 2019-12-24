@@ -1,4 +1,4 @@
-var mongoose = require("mongoose");
+var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var imageSchema = new Schema({
@@ -8,6 +8,6 @@ var imageSchema = new Schema({
   date: { type: Date, default: Date.now }
 });
 
-var Image = mongoose.model("Image", imageSchema);
+var Image = mongoose.model('Image', imageSchema);
 
 module.exports = Image;

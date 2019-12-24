@@ -3,7 +3,7 @@
 // Else return `-1`
 
 var strStr = function(str1, str2) {
-  if (str2 === "") {
+  if (str2 === '') {
     return 0;
   }
 

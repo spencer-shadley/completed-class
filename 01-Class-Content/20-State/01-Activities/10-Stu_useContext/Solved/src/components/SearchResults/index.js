@@ -1,9 +1,9 @@
-import React, { useContext } from "react";
-import ArticleContext from "../../utils/ArticleContext";
-import "./style.css";
+import React, { useContext } from 'react';
+import ArticleContext from '../../utils/ArticleContext';
+import './style.css';
 
 function SearchResults() {
-  const {title, description, url} = useContext(ArticleContext);
+  const { title, description, url } = useContext(ArticleContext);
   return (
     <ul className="list-group search-results">
       <li className="list-group-item">

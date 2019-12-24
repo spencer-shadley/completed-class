@@ -1,6 +1,6 @@
 // 1. Copy an array into another array using spread
 
-const songs = ["Creep", "Everlong", "Bulls On Parade", "Song 2", "What I Got"];
+const songs = ['Creep', 'Everlong', 'Bulls On Parade', 'Song 2', 'What I Got'];
 const new_songs = [...songs];
 console.log(new_songs); // => ["Creep", "Everlong", "Bulls On Parade", "Song 2", "What I Got"];
 

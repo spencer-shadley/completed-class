@@ -1,6 +1,6 @@
 var expect = chai.expect;
 
-describe("maxProfit", function() {
+describe('maxProfit', function() {
   it(`should return 5 if given the array [7, 1, 5, 3, 6, 4]`, function() {
     var arr = [7, 1, 5, 3, 6, 4];
 
@@ -32,5 +32,4 @@ describe("maxProfit", function() {
 
     expect(result).to.eql(7);
   });
-
 });

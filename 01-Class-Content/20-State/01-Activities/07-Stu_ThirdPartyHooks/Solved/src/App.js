@@ -1,12 +1,12 @@
-import React from "react";
-import Survey from "./pages/Survey";
-import "./App.css";
+import React from 'react';
+import Survey from './pages/Survey';
+import './App.css';
 
 function App() {
   return (
-      <div>
-          <Survey />
-      </div>
+    <div>
+      <Survey />
+    </div>
   );
 }
 

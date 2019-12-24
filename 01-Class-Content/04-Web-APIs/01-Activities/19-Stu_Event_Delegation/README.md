@@ -2,11 +2,11 @@
 
 ## Instructions
 
-* In this activity, we are going to create a friends list that allows us to edit information about that friend in a modal.
+- In this activity, we are going to create a friends list that allows us to edit information about that friend in a modal.
 
-* Take a moment to study the code in `index.html`. You will not need to add any additional code to this file. Additionally, all of the CSS has been provided.
+- Take a moment to study the code in `index.html`. You will not need to add any additional code to this file. Additionally, all of the CSS has been provided.
 
-* In `script.js`, add support the following features: 
+- In `script.js`, add support the following features:
 
   1. When the `Add Person` button is clicked, the person should be added to both the people array and the list elements.
 
@@ -16,4 +16,4 @@
 
   4. When the `save` button is clicked, the description of the current person should be updated in the people array.
 
-* **Bonus**: Use event delegation to make the modal close if the user clicks away from the modal.
+- **Bonus**: Use event delegation to make the modal close if the user clicks away from the modal.

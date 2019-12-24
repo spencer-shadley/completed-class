@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
 const DeveloperContext = React.createContext({
-  name: "",
-  mood: "",
+  name: '',
+  mood: '',
   lifeLongLearner: false,
   excitementLevel: 0
 });

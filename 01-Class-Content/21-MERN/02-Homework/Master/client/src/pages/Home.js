@@ -1,18 +1,18 @@
-import React, { Component } from "react";
-import Jumbotron from "../components/Jumbotron";
-import Card from "../components/Card";
-import Form from "../components/Form";
-import Book from "../components/Book";
-import Footer from "../components/Footer";
-import API from "../utils/API";
-import { Col, Row, Container } from "../components/Grid";
-import { List } from "../components/List";
+import React, { Component } from 'react';
+import Jumbotron from '../components/Jumbotron';
+import Card from '../components/Card';
+import Form from '../components/Form';
+import Book from '../components/Book';
+import Footer from '../components/Footer';
+import API from '../utils/API';
+import { Col, Row, Container } from '../components/Grid';
+import { List } from '../components/List';
 
 class Home extends Component {
   state = {
     books: [],
-    q: "",
-    message: "Search For A Book To Begin!"
+    q: '',
+    message: 'Search For A Book To Begin!'
   };
 
   handleInputChange = event => {
@@ -32,7 +32,7 @@ class Home extends Component {
       .catch(() =>
         this.setState({
           books: [],
-          message: "No New Books Found, Try a Different Query"
+          message: 'No New Books Found, Try a Different Query'
         })
       );
   };
@@ -65,7 +65,9 @@ class Home extends Component {
               <h1 className="text-center">
                 <strong>(React) Google Books Search</strong>
               </h1>
-              <h2 className="text-center">Search for and Save Books of Interest.</h2>
+              <h2 className="text-center">
+                Search for and Save Books of Interest.
+              </h2>
             </Jumbotron>
           </Col>
           <Col size="md-12">
@@ -89,7 +91,7 @@ class Home extends Component {
                       title={book.volumeInfo.title}
                       subtitle={book.volumeInfo.subtitle}
                       link={book.volumeInfo.infoLink}
-                      authors={book.volumeInfo.authors.join(", ")}
+                      authors={book.volumeInfo.authors.join(', ')}
                       description={book.volumeInfo.description}
                       image={book.volumeInfo.imageLinks.thumbnail}
                       Button={() => (

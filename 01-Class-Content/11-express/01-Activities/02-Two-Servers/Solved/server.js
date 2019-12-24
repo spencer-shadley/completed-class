@@ -1,5 +1,5 @@
 // We require/import the HTTP module
-var http = require("http");
+var http = require('http');
 
 // =====================================================================
 
@@ -11,7 +11,9 @@ var PORTTWO = 7500;
 
 // We need two different functions to handle requests, one for each server.
 function handleRequestOne(request, response) {
-  response.end("To err is human, but to really foul things up you need a computer.");
+  response.end(
+    'To err is human, but to really foul things up you need a computer.'
+  );
 }
 
 function handleRequestTwo(request, response) {
@@ -28,13 +30,11 @@ var serverTwo = http.createServer(handleRequestTwo);
 
 // Starting our servers
 serverOne.listen(PORTONE, function() {
-
   // Callback triggered when server is successfully listening. Hurray!
-  console.log("Server listening on: http://localhost:" + PORTONE);
+  console.log('Server listening on: http://localhost:' + PORTONE);
 });
 
 serverTwo.listen(PORTTWO, function() {
-
   // Callback triggered when server is successfully listening. Hurray!
-  console.log("Server listening on: http://localhost:" + PORTTWO);
+  console.log('Server listening on: http://localhost:' + PORTTWO);
 });

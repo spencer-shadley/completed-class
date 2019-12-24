@@ -1,23 +1,23 @@
-const fs = require("fs");
-const path = require("path");
-const inquirer = require("inquirer");
-const open = require("open");
-const convertFactory = require("electron-html-to");
-const api = require("./api");
-const generateHTML = require("./generateHTML");
+const fs = require('fs');
+const path = require('path');
+const inquirer = require('inquirer');
+const open = require('open');
+const convertFactory = require('electron-html-to');
+const api = require('./api');
+const generateHTML = require('./generateHTML');
 
 const questions = [
   {
-    type: "input",
-    name: "github",
-    message: "What is your GitHub username?"
+    type: 'input',
+    name: 'github',
+    message: 'What is your GitHub username?'
   },
 
   {
-    type: "list",
-    name: "color",
-    message: "What is your favorite color?",
-    choices: ["red", "blue", "green", "pink"]
+    type: 'list',
+    name: 'color',
+    message: 'What is your favorite color?',
+    choices: ['red', 'blue', 'green', 'pink']
   }
 ];
 
@@ -27,7 +27,7 @@ function writeToFile(fileName, data) {
 
 function init() {
   inquirer.prompt(questions).then(({ github, color }) => {
-    console.log("Searching...");
+    console.log('Searching...');
 
     api
       .getUser(github)
@@ -51,12 +51,12 @@ function init() {
           }
 
           result.stream.pipe(
-            fs.createWriteStream(path.join(__dirname, "resume.pdf"))
+            fs.createWriteStream(path.join(__dirname, 'resume.pdf'))
           );
           conversion.kill();
         });
 
-        open(path.join(process.cwd(), "resume.pdf"));
+        open(path.join(process.cwd(), 'resume.pdf'));
       });
   });
 }

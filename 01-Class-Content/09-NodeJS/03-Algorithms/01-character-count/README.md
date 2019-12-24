@@ -17,7 +17,7 @@ In this activity you will be writing code to create a function that takes a stri
     - For example, given the following string:
 
     ```js
-    var str = "Hello World!";
+    var str = 'Hello World!';
     ```
 
     - The following object should be returned:

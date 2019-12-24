@@ -1,7 +1,7 @@
-import React from "react";
-import { ListItem, List } from "../List";
-import DeleteBtn from "../DeleteBtn";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { ListItem, List } from '../List';
+import DeleteBtn from '../DeleteBtn';
+import { Link } from 'react-router-dom';
 
 const PostsList = () => {
   return (
@@ -13,7 +13,7 @@ const PostsList = () => {
         <List>
           {[].map(post => (
             <ListItem key={post._id}>
-              <Link to={"/posts/" + post._id}>
+              <Link to={'/posts/' + post._id}>
                 <strong>
                   {post.title} by {post.author}
                 </strong>

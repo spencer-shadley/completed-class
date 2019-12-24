@@ -1,4 +1,3 @@
-
 var addButton = document.querySelector('#add-btn');
 var peopleListElement = document.querySelector('#people-list');
 var nameElement = document.querySelector('#name');
@@ -38,7 +37,7 @@ function handleClick(event) {
 }
 
 closeElement.addEventListener('click', close);
-saveButton.addEventListener('click', function (event) {
+saveButton.addEventListener('click', function(event) {
   event.preventDefault();
   people[currentId].description = descriptionElement.value;
   close();
@@ -46,7 +45,7 @@ saveButton.addEventListener('click', function (event) {
 
 addButton.addEventListener('click', addPersonToList);
 peopleListElement.addEventListener('click', handleClick);
-document.addEventListener('click', function (event) {
+document.addEventListener('click', function(event) {
   if (event.target === modalElement) {
     close();
   }

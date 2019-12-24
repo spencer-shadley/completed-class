@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-const name = "Ahmed";
+const name = 'Ahmed';
 const num1 = 1;
 const num2 = 2;
 
@@ -17,10 +17,11 @@ function JSXVariables() {
           <h2>I can do math: {num1 + num2}.</h2>
           <h2>
             I can generate random numbers:
-            {Math.floor(Math.random() * 10) + 1},{Math.floor(Math.random() * 10) + 1},
+            {Math.floor(Math.random() * 10) + 1},
+            {Math.floor(Math.random() * 10) + 1},
             {Math.floor(Math.random() * 10) + 1}.
           </h2>
-          <h2>I can even reverse my name: {name.split("").reverse()}</h2>
+          <h2>I can even reverse my name: {name.split('').reverse()}</h2>
         </div>
       </div>
     </div>

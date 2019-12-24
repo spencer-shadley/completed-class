@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function CardTitleText({ title }) {
   return <h2>{title}</h2>;

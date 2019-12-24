@@ -1,4 +1,4 @@
-var mongoose = require("mongoose");
+var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var postSchema = new Schema({
@@ -8,6 +8,6 @@ var postSchema = new Schema({
   date: { type: Date, default: Date.now }
 });
 
-var Post = mongoose.model("post", postSchema);
+var Post = mongoose.model('post', postSchema);
 
 module.exports = Post;

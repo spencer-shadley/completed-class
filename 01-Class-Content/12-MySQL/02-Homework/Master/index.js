@@ -1,13 +1,13 @@
-const { prompt } = require("inquirer");
-const logo = require("asciiart-logo");
-const db = require("./db");
-require("console.table");
+const { prompt } = require('inquirer');
+const logo = require('asciiart-logo');
+const db = require('./db');
+require('console.table');
 
 init();
 
 // Display logo text, load main prompts
 function init() {
-  const logoText = logo({ name: "Employee Manager" }).render();
+  const logoText = logo({ name: 'Employee Manager' }).render();
 
   console.log(logoText);
 
@@ -17,65 +17,65 @@ function init() {
 async function loadMainPrompts() {
   const { choice } = await prompt([
     {
-      type: "list",
-      name: "choice",
-      message: "What would you like to do?",
+      type: 'list',
+      name: 'choice',
+      message: 'What would you like to do?',
       choices: [
         {
-          name: "View All Employees",
-          value: "VIEW_EMPLOYEES"
+          name: 'View All Employees',
+          value: 'VIEW_EMPLOYEES'
         },
         {
-          name: "View All Employees By Department",
-          value: "VIEW_EMPLOYEES_BY_DEPARTMENT"
+          name: 'View All Employees By Department',
+          value: 'VIEW_EMPLOYEES_BY_DEPARTMENT'
         },
         {
-          name: "View All Employees By Manager",
-          value: "VIEW_EMPLOYEES_BY_MANAGER"
+          name: 'View All Employees By Manager',
+          value: 'VIEW_EMPLOYEES_BY_MANAGER'
         },
         {
-          name: "Add Employee",
-          value: "ADD_EMPLOYEE"
+          name: 'Add Employee',
+          value: 'ADD_EMPLOYEE'
         },
         {
-          name: "Remove Employee",
-          value: "REMOVE_EMPLOYEE"
+          name: 'Remove Employee',
+          value: 'REMOVE_EMPLOYEE'
         },
         {
-          name: "Update Employee Role",
-          value: "UPDATE_EMPLOYEE_ROLE"
+          name: 'Update Employee Role',
+          value: 'UPDATE_EMPLOYEE_ROLE'
         },
         {
-          name: "Update Employee Manager",
-          value: "UPDATE_EMPLOYEE_MANAGER"
+          name: 'Update Employee Manager',
+          value: 'UPDATE_EMPLOYEE_MANAGER'
         },
         {
-          name: "View All Roles",
-          value: "VIEW_ROLES"
+          name: 'View All Roles',
+          value: 'VIEW_ROLES'
         },
         {
-          name: "Add Role",
-          value: "ADD_ROLE"
+          name: 'Add Role',
+          value: 'ADD_ROLE'
         },
         {
-          name: "Remove Role",
-          value: "REMOVE_ROLE"
+          name: 'Remove Role',
+          value: 'REMOVE_ROLE'
         },
         {
-          name: "View All Departments",
-          value: "VIEW_DEPARTMENTS"
+          name: 'View All Departments',
+          value: 'VIEW_DEPARTMENTS'
         },
         {
-          name: "Add Department",
-          value: "ADD_DEPARTMENT"
+          name: 'Add Department',
+          value: 'ADD_DEPARTMENT'
         },
         {
-          name: "Remove Department",
-          value: "REMOVE_DEPARTMENT"
+          name: 'Remove Department',
+          value: 'REMOVE_DEPARTMENT'
         },
         {
-          name: "Quit",
-          value: "QUIT"
+          name: 'Quit',
+          value: 'QUIT'
         }
       ]
     }
@@ -83,31 +83,31 @@ async function loadMainPrompts() {
 
   // Call the appropriate function depending on what the user chose
   switch (choice) {
-    case "VIEW_EMPLOYEES":
+    case 'VIEW_EMPLOYEES':
       return viewEmployees();
-    case "VIEW_EMPLOYEES_BY_DEPARTMENT":
+    case 'VIEW_EMPLOYEES_BY_DEPARTMENT':
       return viewEmployeesByDepartment();
-    case "VIEW_EMPLOYEES_BY_MANAGER":
+    case 'VIEW_EMPLOYEES_BY_MANAGER':
       return viewEmployeesByManager();
-    case "ADD_EMPLOYEE":
+    case 'ADD_EMPLOYEE':
       return addEmployee();
-    case "REMOVE_EMPLOYEE":
+    case 'REMOVE_EMPLOYEE':
       return removeEmployee();
-    case "UPDATE_EMPLOYEE_ROLE":
+    case 'UPDATE_EMPLOYEE_ROLE':
       return updateEmployeeRole();
-    case "UPDATE_EMPLOYEE_MANAGER":
+    case 'UPDATE_EMPLOYEE_MANAGER':
       return updateEmployeeManager();
-    case "VIEW_DEPARTMENTS":
+    case 'VIEW_DEPARTMENTS':
       return viewDepartments();
-    case "ADD_DEPARTMENT":
+    case 'ADD_DEPARTMENT':
       return addDepartment();
-    case "REMOVE_DEPARTMENT":
+    case 'REMOVE_DEPARTMENT':
       return removeDepartment();
-    case "VIEW_ROLES":
+    case 'VIEW_ROLES':
       return viewRoles();
-    case "ADD_ROLE":
+    case 'ADD_ROLE':
       return addRole();
-    case "REMOVE_ROLE":
+    case 'REMOVE_ROLE':
       return removeRole();
     default:
       return quit();
@@ -117,7 +117,7 @@ async function loadMainPrompts() {
 async function viewEmployees() {
   const employees = await db.findAllEmployees();
 
-  console.log("\n");
+  console.log('\n');
   console.table(employees);
 
   loadMainPrompts();
@@ -133,16 +133,16 @@ async function viewEmployeesByDepartment() {
 
   const { departmentId } = await prompt([
     {
-      type: "list",
-      name: "departmentId",
-      message: "Which department would you like to see employees for?",
+      type: 'list',
+      name: 'departmentId',
+      message: 'Which department would you like to see employees for?',
       choices: departmentChoices
     }
   ]);
 
   const employees = await db.findAllEmployeesByDepartment(departmentId);
 
-  console.log("\n");
+  console.log('\n');
   console.table(employees);
 
   loadMainPrompts();
@@ -158,19 +158,19 @@ async function viewEmployeesByManager() {
 
   const { managerId } = await prompt([
     {
-      type: "list",
-      name: "managerId",
-      message: "Which employee do you want to see direct reports for?",
+      type: 'list',
+      name: 'managerId',
+      message: 'Which employee do you want to see direct reports for?',
       choices: managerChoices
     }
   ]);
 
   const employees = await db.findAllEmployeesByManager(managerId);
 
-  console.log("\n");
+  console.log('\n');
 
   if (employees.length === 0) {
-    console.log("The selected employee has no direct reports");
+    console.log('The selected employee has no direct reports');
   } else {
     console.table(employees);
   }
@@ -188,16 +188,16 @@ async function removeEmployee() {
 
   const { employeeId } = await prompt([
     {
-      type: "list",
-      name: "employeeId",
-      message: "Which employee do you want to remove?",
+      type: 'list',
+      name: 'employeeId',
+      message: 'Which employee do you want to remove?',
       choices: employeeChoices
     }
   ]);
 
   await db.removeEmployee(employeeId);
 
-  console.log("Removed employee from the database");
+  console.log('Removed employee from the database');
 
   loadMainPrompts();
 }
@@ -212,8 +212,8 @@ async function updateEmployeeRole() {
 
   const { employeeId } = await prompt([
     {
-      type: "list",
-      name: "employeeId",
+      type: 'list',
+      name: 'employeeId',
       message: "Which employee's role do you want to update?",
       choices: employeeChoices
     }
@@ -228,9 +228,9 @@ async function updateEmployeeRole() {
 
   const { roleId } = await prompt([
     {
-      type: "list",
-      name: "roleId",
-      message: "Which role do you want to assign the selected employee?",
+      type: 'list',
+      name: 'roleId',
+      message: 'Which role do you want to assign the selected employee?',
       choices: roleChoices
     }
   ]);
@@ -252,8 +252,8 @@ async function updateEmployeeManager() {
 
   const { employeeId } = await prompt([
     {
-      type: "list",
-      name: "employeeId",
+      type: 'list',
+      name: 'employeeId',
       message: "Which employee's manager do you want to update?",
       choices: employeeChoices
     }
@@ -268,10 +268,10 @@ async function updateEmployeeManager() {
 
   const { managerId } = await prompt([
     {
-      type: "list",
-      name: "managerId",
+      type: 'list',
+      name: 'managerId',
       message:
-        "Which employee do you want to set as manager for the selected employee?",
+        'Which employee do you want to set as manager for the selected employee?',
       choices: managerChoices
     }
   ]);
@@ -286,7 +286,7 @@ async function updateEmployeeManager() {
 async function viewRoles() {
   const roles = await db.findAllRoles();
 
-  console.log("\n");
+  console.log('\n');
   console.table(roles);
 
   loadMainPrompts();
@@ -302,17 +302,17 @@ async function addRole() {
 
   const role = await prompt([
     {
-      name: "title",
-      message: "What is the name of the role?"
+      name: 'title',
+      message: 'What is the name of the role?'
     },
     {
-      name: "salary",
-      message: "What is the salary of the role?"
+      name: 'salary',
+      message: 'What is the salary of the role?'
     },
     {
-      type: "list",
-      name: "department_id",
-      message: "Which department does the role belong to?",
+      type: 'list',
+      name: 'department_id',
+      message: 'Which department does the role belong to?',
       choices: departmentChoices
     }
   ]);
@@ -334,17 +334,17 @@ async function removeRole() {
 
   const { roleId } = await prompt([
     {
-      type: "list",
-      name: "roleId",
+      type: 'list',
+      name: 'roleId',
       message:
-        "Which role do you want to remove? (Warning: This will also remove employees)",
+        'Which role do you want to remove? (Warning: This will also remove employees)',
       choices: roleChoices
     }
   ]);
 
   await db.removeRole(roleId);
 
-  console.log("Removed role from the database");
+  console.log('Removed role from the database');
 
   loadMainPrompts();
 }
@@ -352,7 +352,7 @@ async function removeRole() {
 async function viewDepartments() {
   const departments = await db.findAllDepartments();
 
-  console.log("\n");
+  console.log('\n');
   console.table(departments);
 
   loadMainPrompts();
@@ -361,8 +361,8 @@ async function viewDepartments() {
 async function addDepartment() {
   const department = await prompt([
     {
-      name: "name",
-      message: "What is the name of the department?"
+      name: 'name',
+      message: 'What is the name of the department?'
     }
   ]);
 
@@ -382,10 +382,10 @@ async function removeDepartment() {
   }));
 
   const { departmentId } = await prompt({
-    type: "list",
-    name: "departmentId",
+    type: 'list',
+    name: 'departmentId',
     message:
-      "Which department would you like to remove? (Warning: This will also remove associated roles and employees)",
+      'Which department would you like to remove? (Warning: This will also remove associated roles and employees)',
     choices: departmentChoices
   });
 
@@ -402,11 +402,11 @@ async function addEmployee() {
 
   const employee = await prompt([
     {
-      name: "first_name",
+      name: 'first_name',
       message: "What is the employee's first name?"
     },
     {
-      name: "last_name",
+      name: 'last_name',
       message: "What is the employee's last name?"
     }
   ]);
@@ -417,8 +417,8 @@ async function addEmployee() {
   }));
 
   const { roleId } = await prompt({
-    type: "list",
-    name: "roleId",
+    type: 'list',
+    name: 'roleId',
     message: "What is the employee's role?",
     choices: roleChoices
   });
@@ -429,11 +429,11 @@ async function addEmployee() {
     name: `${first_name} ${last_name}`,
     value: id
   }));
-  managerChoices.unshift({ name: "None", value: null });
+  managerChoices.unshift({ name: 'None', value: null });
 
   const { managerId } = await prompt({
-    type: "list",
-    name: "managerId",
+    type: 'list',
+    name: 'managerId',
     message: "Who is the employee's manager?",
     choices: managerChoices
   });
@@ -450,6 +450,6 @@ async function addEmployee() {
 }
 
 function quit() {
-  console.log("Goodbye!");
+  console.log('Goodbye!');
   process.exit();
 }

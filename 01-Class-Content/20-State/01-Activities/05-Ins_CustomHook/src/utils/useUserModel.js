@@ -1,14 +1,14 @@
-import { useState } from "react";
-import profileImage from "../assets/images/profile.png";
+import { useState } from 'react';
+import profileImage from '../assets/images/profile.png';
 
 const useUserModel = () => {
-  const [nameState, setName] = useState("Bob");
+  const [nameState, setName] = useState('Bob');
   const [imageState, setImage] = useState(profileImage);
-  const [statusState, setStatus] = useState("Excited");
-  const [excitementLevelState, setExcitementLevel] = useState("");
+  const [statusState, setStatus] = useState('Excited');
+  const [excitementLevelState, setExcitementLevel] = useState('');
 
   return {
-    error: nameState === "" ? "Please enter a name" : "",
+    error: nameState === '' ? 'Please enter a name' : '',
     name: {
       value: nameState,
       onChange: e => setName(e.target.value)

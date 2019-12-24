@@ -4,16 +4,13 @@
 
 // Dependencies
 // =============================================================
-var Chirp = require("../models/chirp.js");
-
+var Chirp = require('../models/chirp.js');
 
 // Routes
 // =============================================================
 module.exports = function(app) {
-
   // Get all chirps
-  app.get("/api/all", function(req, res) {
-
+  app.get('/api/all', function(req, res) {
     // Finding all Chirps, and then returning them to the user as JSON.
     // Sequelize queries are asynchronous, which helps with perceived speed.
     // If we want something to be guaranteed to happen after the query, we'll use
@@ -22,13 +19,11 @@ module.exports = function(app) {
       // results are available to us inside the .then
       res.json(results);
     });
-
   });
 
   // Add a chirp
-  app.post("/api/new", function(req, res) {
-
-    console.log("Chirp Data:");
+  app.post('/api/new', function(req, res) {
+    console.log('Chirp Data:');
     console.log(req.body);
 
     Chirp.create({
@@ -39,7 +34,5 @@ module.exports = function(app) {
       // `results` here would be the newly created chirp
       res.end();
     });
-
   });
-
 };

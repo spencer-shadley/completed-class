@@ -8,7 +8,6 @@ age++; // TypeError: Assignment to constant variable.
 
 // const name = "";
 
-
 // name = "Cherie"; // TypeError: Assignment to constant variable.
 
 // ==========================================================================

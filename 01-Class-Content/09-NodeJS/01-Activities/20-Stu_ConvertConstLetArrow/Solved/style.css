@@ -14,12 +14,12 @@
 
 .crystal:hover {
   transform: rotate(135deg) scale(1.2);
-  transition: .5s all;
+  transition: 0.5s all;
 }
 
 .crystal:active {
   transform: rotate(135deg) scale(1);
-  transition: .2s all;
+  transition: 0.2s all;
 }
 
 .red {

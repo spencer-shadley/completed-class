@@ -1,11 +1,11 @@
-const Todo = require("../todo");
+const Todo = require('../todo');
 
-describe("Todo", () => {
-  describe("Initialization", () => {
+describe('Todo', () => {
+  describe('Initialization', () => {
     // Positive test
     it("should create an object with a 'text' property set to the 'text' argument provided when called with the 'new' keyword", () => {
       // Arrange
-      const text = "Pick up milk";
+      const text = 'Pick up milk';
 
       // Act
       const obj = new Todo(text);

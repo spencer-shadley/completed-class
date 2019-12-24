@@ -1,14 +1,11 @@
-{% extends 'users/base.html' %}
-
-{% block title %} Detail {% endblock %}
-
-{% block content %}
+{% extends 'users/base.html' %} {% block title %} Detail {% endblock %} {% block
+content %}
 
 <h1>Welcome, {{ user.first_name }}.</h1>
 
-  <hr>
+<hr />
 
-<h5 >Profile Information</h5>
+<h5>Profile Information</h5>
 
 <table class="table table-striped table-bordered">
   <tr>
@@ -25,7 +22,6 @@
     <td>Email</td>
     <td>{{ user.email }}</td>
   </tr>
-
 </table>
 
 {% endblock %}

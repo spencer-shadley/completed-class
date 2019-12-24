@@ -1,5 +1,5 @@
-const Order = require("./order");
-const Item = require("./item");
+const Order = require('./order');
+const Item = require('./item');
 
 class Restaurant {
   constructor(name) {
@@ -22,7 +22,7 @@ class Restaurant {
   prepareOrders() {
     const prepareInterval = setInterval(() => {
       if (this.orders.length === 0) {
-        console.log("Finished cooking all orders!");
+        console.log('Finished cooking all orders!');
 
         clearInterval(prepareInterval);
       } else {
@@ -37,9 +37,9 @@ class Restaurant {
 const restaurant = new Restaurant("McJared's");
 
 const items = [
-  new Item("Burger", 5.99),
-  new Item("Soda", 3.5),
-  new Item("Chips", 2.0)
+  new Item('Burger', 5.99),
+  new Item('Soda', 3.5),
+  new Item('Chips', 2.0)
 ];
 
 const orders = items.map(item => new Order(item));

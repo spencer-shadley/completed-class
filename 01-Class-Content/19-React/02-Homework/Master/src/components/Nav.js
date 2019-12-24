@@ -1,6 +1,6 @@
-import React from "react";
-import SearchBox from "./SearchBox.js";
-import "../styles/Nav.css";
+import React from 'react';
+import SearchBox from './SearchBox.js';
+import '../styles/Nav.css';
 
 function Nav({ handleSearchChange }) {
   return (

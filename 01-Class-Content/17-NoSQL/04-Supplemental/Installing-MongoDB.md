@@ -2,13 +2,13 @@
 
 ### Contents
 
-* [Installing MongoDB on your Machine](#installing-mongodb-on-your-machine)
-  * [1. Installing MongoDB on Windows](#1-installing-mongodb-on-windows)
-  * [2. Configuring MongoDB on Windows](#2-configuring-mongodb-on-windows)
-  * [3. Installing MongoDB on MacOS](#3-installing-mongodb-on-macos)
-  * [4. Configuring MongoDB on MacOS](#4-configuring-mongodb-on-macos)
+- [Installing MongoDB on your Machine](#installing-mongodb-on-your-machine)
+  - [1. Installing MongoDB on Windows](#1-installing-mongodb-on-windows)
+  - [2. Configuring MongoDB on Windows](#2-configuring-mongodb-on-windows)
+  - [3. Installing MongoDB on MacOS](#3-installing-mongodb-on-macos)
+  - [4. Configuring MongoDB on MacOS](#4-configuring-mongodb-on-macos)
 
-- - -
+---
 
 ## 1. Installing MongoDB on Windows
 
@@ -22,13 +22,13 @@
 
 5. Open up Windows Explorer and locate the installation file (it should be in the default directory where your browser stores downloads). Open the file and follow the instructions.
 
-* When the installer prompts you to "Choose Setup Type," click the Complete button, then carry on.
+- When the installer prompts you to "Choose Setup Type," click the Complete button, then carry on.
 
-* **DO NOT** Install `Compass` along with your MongoDB install.
+- **DO NOT** Install `Compass` along with your MongoDB install.
 
-* A window might pop up mid-installation, asking you whether you’re sure you want to download a particular component of MongoDB. Click yes, otherwise the install will fail.
+- A window might pop up mid-installation, asking you whether you’re sure you want to download a particular component of MongoDB. Click yes, otherwise the install will fail.
 
-- - -
+---
 
 ## 2. Configuring MongoDB on Windows
 
@@ -50,7 +50,7 @@
 
 9. Go to Advanced Settings.
 
-* If you are on Windows 10 and opened the Control Panel, click **System and Security**; **System**; and **Advanced System Settings**.
+- If you are on Windows 10 and opened the Control Panel, click **System and Security**; **System**; and **Advanced System Settings**.
 
 10. When a new window opens up, click the **Environment Variables** button located toward the bottom of the window.
 
@@ -73,7 +73,7 @@
 
 19. If you’re still encountering issues starting mongod, please ask for assistance from one of the TAs or the instructor.
 
-- - -
+---
 
 ## 3. Installing MongoDB on MacOS
 
@@ -81,11 +81,11 @@
 
 2. `brew install mongodb`
 
-- - -
+---
 
 ## 4. Configuring MongoDB on MacOS
 
-1. **IMPORTANT**: You need to create a data directory for your MongoDB installation, or it will not work. 
+1. **IMPORTANT**: You need to create a data directory for your MongoDB installation, or it will not work.
 
 2. Use the following exact commands (see note below if you want to know what these do):
 

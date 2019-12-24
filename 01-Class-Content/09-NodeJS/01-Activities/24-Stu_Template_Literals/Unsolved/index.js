@@ -7,5 +7,5 @@ const songSnippet = `
 
 `;
 
-const element = document.getElementById("music");
+const element = document.getElementById('music');
 element.innerHTML = songSnippet;

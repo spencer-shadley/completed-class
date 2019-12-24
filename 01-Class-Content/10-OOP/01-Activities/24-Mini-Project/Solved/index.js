@@ -1,4 +1,4 @@
-const Game = require("./lib/Game");
+const Game = require('./lib/Game');
 
 // Initialize a new Game object
 const game = new Game();

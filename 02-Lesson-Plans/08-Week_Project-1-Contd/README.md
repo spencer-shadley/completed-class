@@ -4,7 +4,7 @@
 
 In this unit students will continue working with their project groups. They will also have the opportunity to practice whiteboard interview questions under pressure.
 
-  * Refer to the [Class Content Unit Overview](../../../01-Class-Content/08-Project-1-Contd/README.md) for detailed information on key topics, learning objectives and homework.
+- Refer to the [Class Content Unit Overview](../../../01-Class-Content/08-Project-1-Contd/README.md) for detailed information on key topics, learning objectives and homework.
 
 ## Instructor / TA Notes
 
@@ -30,11 +30,11 @@ In the next unit we begin Node.js so make sure all students have Node installed 
 
 ### Lesson Plans
 
-  * [08.1 - Lesson Plan](01-Day/08.1-LESSON-PLAN.md)
+- [08.1 - Lesson Plan](01-Day/08.1-LESSON-PLAN.md)
 
-  * [08.2 - Lesson Plan](02-Day/08.2-LESSON-PLAN.md)
+- [08.2 - Lesson Plan](02-Day/08.2-LESSON-PLAN.md)
 
-  * [08.3 - Lesson Plan](03-Day/08.3-LESSON-PLAN.md)
+- [08.3 - Lesson Plan](03-Day/08.3-LESSON-PLAN.md)
 
 ### Slide Decks
 
@@ -46,8 +46,8 @@ N/A
 
 ## Algorithms
 
-  * [01-reverse-no-build-in](../../../01-Class-Content/08-Project-1-Contd/03-Algorithms/01-reverse-no-build-in)
+- [01-reverse-no-build-in](../../../01-Class-Content/08-Project-1-Contd/03-Algorithms/01-reverse-no-build-in)
 
-  * [02-reverse-in-place](../../../01-Class-Content/08-Project-1-Contd/03-Algorithms/02-reverse-in-place)
+- [02-reverse-in-place](../../../01-Class-Content/08-Project-1-Contd/03-Algorithms/02-reverse-in-place)
 
-  * [03-look-say-sequence](../../../01-Class-Content/08-Project-1-Contd/03-Algorithms/03-look-say-sequence)
+- [03-look-say-sequence](../../../01-Class-Content/08-Project-1-Contd/03-Algorithms/03-look-say-sequence)

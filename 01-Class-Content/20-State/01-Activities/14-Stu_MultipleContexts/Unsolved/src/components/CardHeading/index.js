@@ -1,12 +1,12 @@
-import React from "react";
-import CardTitle from "../CardTitle";
-import "./style.css";
+import React from 'react';
+import CardTitle from '../CardTitle';
+import './style.css';
 
 function CardHeading() {
-  return ( 
+  return (
     <div>
       <CardTitle />
-    </div> 
+    </div>
   );
 }
 

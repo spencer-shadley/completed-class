@@ -1,6 +1,6 @@
 var expect = chai.expect;
 
-describe("isArmstrong", function() {
+describe('isArmstrong', function() {
   it(`should return true if given the number 153`, function() {
     var num = 153;
 

@@ -1,16 +1,16 @@
-import React, { Component } from "react";
-import Container from "./Container";
-import Row from "./Row";
-import Col from "./Col";
-import Card from "./Card";
-import SearchForm from "./SearchForm";
-import MovieDetail from "./MovieDetail";
-import API from "../utils/API";
+import React, { Component } from 'react';
+import Container from './Container';
+import Row from './Row';
+import Col from './Col';
+import Card from './Card';
+import SearchForm from './SearchForm';
+import MovieDetail from './MovieDetail';
+import API from '../utils/API';
 
 class OmdbContainer extends Component {
   state = {
     result: {},
-    search: ""
+    search: ''
   };
 
   searchMovies = query => {
@@ -25,7 +25,7 @@ class OmdbContainer extends Component {
         <Row>
           <Col size="md-8">
             <Card
-              heading={this.state.result.Title || "Search for a Movie to Begin"}
+              heading={this.state.result.Title || 'Search for a Movie to Begin'}
             >
               <MovieDetail
                 title={this.state.result.Title}

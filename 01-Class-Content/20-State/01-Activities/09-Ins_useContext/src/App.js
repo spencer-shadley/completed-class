@@ -1,24 +1,23 @@
-import React, { useState, useEffect } from "react";
-import DeveloperInfo from "./components/Developer";
-import MoodBtns from "./components/MoodBtns";
-import Nav from "./components/Nav";
-import * as API from "./utils/API";
-import DeveloperContext from "./utils/DeveloperContext";
-import "./App.css";
+import React, { useState, useEffect } from 'react';
+import DeveloperInfo from './components/Developer';
+import MoodBtns from './components/MoodBtns';
+import Nav from './components/Nav';
+import * as API from './utils/API';
+import DeveloperContext from './utils/DeveloperContext';
+import './App.css';
 
 function App() {
   const [developerState, setDeveloperState] = useState({
-    name: "",
-    mood: "",
+    name: '',
+    mood: '',
     lifeLongLearner: true,
     excitementLevel: 0
   });
 
   function changeMood(mood) {
-    if(mood === "determined") {
+    if (mood === 'determined') {
       developerState.excitementLevel += 10000;
-    }
-    else {
+    } else {
       developerState.excitementLevel -= 10000;
     }
     setDeveloperState({
@@ -29,7 +28,7 @@ function App() {
 
   useEffect(() => {
     // For demonstration purposes, we mock an API call.
-    API.getDeveloper.then((res) => {
+    API.getDeveloper.then(res => {
       setDeveloperState(res);
     });
   }, []);

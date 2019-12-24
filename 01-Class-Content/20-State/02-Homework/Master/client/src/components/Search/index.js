@@ -1,11 +1,11 @@
-import React from "react";
-import { Container } from "../Grid";
-import SearchForm from "../SearchForm";
+import React from 'react';
+import { Container } from '../Grid';
+import SearchForm from '../SearchForm';
 
 function Search() {
   return (
     <>
-      <Container >
+      <Container>
         <p className="text-center"></p>
         <SearchForm />
       </Container>

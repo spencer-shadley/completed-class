@@ -1,28 +1,28 @@
-var $root = document.querySelector("#root");
+var $root = document.querySelector('#root');
 
 var score;
 var targetScore;
 
 var makeGuess = function() {
-  var $score = document.querySelector("#root p");
-  $score.textContent = "Score: " + score + " | " + "Target: " + targetScore;
+  var $score = document.querySelector('#root p');
+  $score.textContent = 'Score: ' + score + ' | ' + 'Target: ' + targetScore;
 
   if (score > targetScore) {
-    alert("You lost this round!");
+    alert('You lost this round!');
     playRound();
   } else if (score === targetScore) {
-    alert("You won this round!");
+    alert('You won this round!');
     playRound();
   }
 };
 
 var Crystal = function(color) {
-  this.element = document.createElement("div");
-  this.element.className = "crystal " + color;
+  this.element = document.createElement('div');
+  this.element.className = 'crystal ' + color;
   this.value = 0;
 
   this.element.addEventListener(
-    "click",
+    'click',
     function() {
       score += this.value;
       makeGuess();
@@ -36,14 +36,14 @@ Crystal.prototype.render = function(target) {
   target.appendChild(this.element);
 };
 
-var crystals = [new Crystal("red"), new Crystal("blue"), new Crystal("green")];
+var crystals = [new Crystal('red'), new Crystal('blue'), new Crystal('green')];
 
 var playRound = function() {
   var fragment = document.createDocumentFragment();
-  var $score = document.createElement("p");
+  var $score = document.createElement('p');
   targetScore = Math.floor(Math.random() * 50) + 25;
   score = 0;
-  $score.textContent = "Score: " + score + " | " + "Target: " + targetScore;
+  $score.textContent = 'Score: ' + score + ' | ' + 'Target: ' + targetScore;
   crystals
     .sort(function() {
       return 0.5 - Math.random();
@@ -52,7 +52,7 @@ var playRound = function() {
       crystal.render(fragment);
     });
   fragment.appendChild($score);
-  $root.innerHTML = "";
+  $root.innerHTML = '';
   $root.appendChild(fragment);
 };
 

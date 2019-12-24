@@ -1,9 +1,9 @@
-const fs = require("fs");
+const fs = require('fs');
 
 function FileIO() {}
 
 FileIO.prototype.read = function(file) {
-  return fs.readFileSync(file, "utf8");
+  return fs.readFileSync(file, 'utf8');
 };
 
 FileIO.prototype.write = function(path, data) {
@@ -11,4 +11,3 @@ FileIO.prototype.write = function(path, data) {
 };
 
 module.exports = FileIO;
-

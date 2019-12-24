@@ -29,12 +29,12 @@ In this activity you will be writing code to create a function that solves the [
       ```js
       13;
       14;
-      ("Fizz Buzz");
-      ("Fizz");
+      ('Fizz Buzz');
+      ('Fizz');
       17;
-      ("Fizz");
+      ('Fizz');
       19;
-      ("Buzz");
+      ('Buzz');
       ```
 
 - You can check to see if your function works properly by opening [Unsolved/test.html](Unsolved/test.html) in your web browser.

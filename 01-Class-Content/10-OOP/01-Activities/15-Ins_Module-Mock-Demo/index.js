@@ -1,6 +1,5 @@
-const MovieSearch = require("./movieSearch");
+const MovieSearch = require('./movieSearch');
 
 const movie = new MovieSearch();
 
-movie.search("Spider-Man")
-  .then(res => console.log(res.json));
+movie.search('Spider-Man').then(res => console.log(res.json));

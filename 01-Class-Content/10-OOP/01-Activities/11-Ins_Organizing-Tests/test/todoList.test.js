@@ -1,8 +1,8 @@
-const TodoList = require("../todoList");
-const Todo = require("../todo");
+const TodoList = require('../todoList');
+const Todo = require('../todo');
 
-describe("TodoList", () => {
-  describe("Initialization", () => {
+describe('TodoList', () => {
+  describe('Initialization', () => {
     // Positive test
     it("should create an object with a 'todos' property set to an empty array when called with the 'new' keyword", () => {
       // Arrange
@@ -13,12 +13,12 @@ describe("TodoList", () => {
     });
   });
 
-  describe("addTodo", () => {
+  describe('addTodo', () => {
     // Positive Tests
     it("should add a new 'Todo' object to its 'todos' array", () => {
       // Arrange
       const todoList = new TodoList();
-      const todoText = "Mow Lawn";
+      const todoText = 'Mow Lawn';
 
       // Act
       todoList.addTodo(todoText);
@@ -30,7 +30,7 @@ describe("TodoList", () => {
     });
 
     // Exception test
-    it("should throw an error if not provided text", () => {
+    it('should throw an error if not provided text', () => {
       // Arrange
       const todoList = new TodoList();
       const err = new Error(
@@ -43,13 +43,13 @@ describe("TodoList", () => {
     });
   });
 
-  describe("getNextTodo", () => {
+  describe('getNextTodo', () => {
     // Positive test
     it("should return the 0th todo element in the 'todos' array without removing it", () => {
       // Arrange
       const todoList = new TodoList();
-      const text1 = "Exercise";
-      const text2 = "Wash Car";
+      const text1 = 'Exercise';
+      const text2 = 'Wash Car';
       let nextTodo;
 
       // Act
@@ -64,7 +64,7 @@ describe("TodoList", () => {
     });
 
     // Negative test
-    it("should return undefined if there are no todos", () => {
+    it('should return undefined if there are no todos', () => {
       // Arrange
       const todoList = new TodoList();
       let nextTodo;
@@ -73,17 +73,17 @@ describe("TodoList", () => {
       nextTodo = todoList.getNextTodo();
 
       // Assert
-      expect(typeof nextTodo).toEqual("undefined");
+      expect(typeof nextTodo).toEqual('undefined');
     });
   });
 
-  describe("completeNextTodo", () => {
+  describe('completeNextTodo', () => {
     // Positive test
-    it("should return and remove the next todo in the list", () => {
+    it('should return and remove the next todo in the list', () => {
       // Arrange
       const todoList = new TodoList();
-      const text1 = "Make Dinner";
-      const text2 = "Wash Dishes";
+      const text1 = 'Make Dinner';
+      const text2 = 'Wash Dishes';
       let nextTodo;
 
       // Act

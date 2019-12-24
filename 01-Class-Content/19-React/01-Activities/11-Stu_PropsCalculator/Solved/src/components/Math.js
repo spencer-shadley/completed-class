@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 // The Math function component accepts a props argument
 function Math(props) {
@@ -6,20 +6,20 @@ function Math(props) {
 
   // Assign value based on the operator
   switch (props.operator) {
-  case "+":
-    value = props.num1 + props.num2;
-    break;
-  case "-":
-    value = props.num1 - props.num2;
-    break;
-  case "*":
-    value = props.num1 * props.num2;
-    break;
-  case "/":
-    value = props.num1 / props.num2;
-    break;
-  default:
-    value = NaN;
+    case '+':
+      value = props.num1 + props.num2;
+      break;
+    case '-':
+      value = props.num1 - props.num2;
+      break;
+    case '*':
+      value = props.num1 * props.num2;
+      break;
+    case '/':
+      value = props.num1 / props.num2;
+      break;
+    default:
+      value = NaN;
   }
 
   // Return a span element containing the calculated value

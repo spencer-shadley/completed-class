@@ -1,22 +1,22 @@
-const Logger = require("../logger");
+const Logger = require('../logger');
 
 const colors = {
-  black: "\x1b[30m",
-  red: "\x1b[31m",
-  green: "\x1b[32m",
-  yellow: "\x1b[33m",
-  blue: "\x1b[34m",
-  magenta: "\x1b[35m",
-  cyan: "\x1b[36m",
-  white: "\x1b[37m"
+  black: '\x1b[30m',
+  red: '\x1b[31m',
+  green: '\x1b[32m',
+  yellow: '\x1b[33m',
+  blue: '\x1b[34m',
+  magenta: '\x1b[35m',
+  cyan: '\x1b[36m',
+  white: '\x1b[37m'
 };
 
-describe("Logger", () => {
-  describe("colors", () => {
-    it("should print in black", () => {
+describe('Logger', () => {
+  describe('colors', () => {
+    it('should print in black', () => {
       const log = new Logger();
-      const message = "Hello world!";
-      const mock = jest.spyOn(console, "log");
+      const message = 'Hello world!';
+      const mock = jest.spyOn(console, 'log');
       mock.mockImplementation(() => {});
 
       log.black(message);
@@ -26,10 +26,10 @@ describe("Logger", () => {
       mock.mockRestore();
     });
 
-    it("should print in red", () => {
+    it('should print in red', () => {
       const log = new Logger();
-      const message = "Hello world!";
-      const mock = jest.spyOn(console, "log");
+      const message = 'Hello world!';
+      const mock = jest.spyOn(console, 'log');
       mock.mockImplementation(() => {});
 
       log.red(message);
@@ -39,10 +39,10 @@ describe("Logger", () => {
       mock.mockRestore();
     });
 
-    it("should print in green", () => {
+    it('should print in green', () => {
       const log = new Logger();
-      const message = "Hello world!";
-      const mock = jest.spyOn(console, "log");
+      const message = 'Hello world!';
+      const mock = jest.spyOn(console, 'log');
       mock.mockImplementation(() => {});
 
       log.green(message);
@@ -52,10 +52,10 @@ describe("Logger", () => {
       mock.mockRestore();
     });
 
-    it("should print in yellow", () => {
+    it('should print in yellow', () => {
       const log = new Logger();
-      const message = "Hello world!";
-      const mock = jest.spyOn(console, "log");
+      const message = 'Hello world!';
+      const mock = jest.spyOn(console, 'log');
       mock.mockImplementation(() => {});
 
       log.yellow(message);
@@ -65,10 +65,10 @@ describe("Logger", () => {
       mock.mockRestore();
     });
 
-    it("should print in blue", () => {
+    it('should print in blue', () => {
       const log = new Logger();
-      const message = "Hello world!";
-      const mock = jest.spyOn(console, "log");
+      const message = 'Hello world!';
+      const mock = jest.spyOn(console, 'log');
       mock.mockImplementation(() => {});
 
       log.blue(message);
@@ -78,10 +78,10 @@ describe("Logger", () => {
       mock.mockRestore();
     });
 
-    it("should print in magenta", () => {
+    it('should print in magenta', () => {
       const log = new Logger();
-      const message = "Hello world!";
-      const mock = jest.spyOn(console, "log");
+      const message = 'Hello world!';
+      const mock = jest.spyOn(console, 'log');
       mock.mockImplementation(() => {});
 
       log.magenta(message);
@@ -91,10 +91,10 @@ describe("Logger", () => {
       mock.mockRestore();
     });
 
-    it("should print in cyan", () => {
+    it('should print in cyan', () => {
       const log = new Logger();
-      const message = "Hello world!";
-      const mock = jest.spyOn(console, "log");
+      const message = 'Hello world!';
+      const mock = jest.spyOn(console, 'log');
       mock.mockImplementation(() => {});
 
       log.cyan(message);
@@ -104,10 +104,10 @@ describe("Logger", () => {
       mock.mockRestore();
     });
 
-    it("should print in white", () => {
+    it('should print in white', () => {
       const log = new Logger();
-      const message = "Hello world!";
-      const mock = jest.spyOn(console, "log");
+      const message = 'Hello world!';
+      const mock = jest.spyOn(console, 'log');
       mock.mockImplementation(() => {});
 
       log.white(message);

@@ -9,11 +9,10 @@ var DigitalPal = function() {
 // method which feeds the digitalpal when they are hungry and sets them to sleepy
 DigitalPal.prototype.feed = function() {
   if (this.hungry) {
-    console.log("That was yummy!");
+    console.log('That was yummy!');
     this.hungry = false;
     this.sleepy = true;
-  }
-  else {
+  } else {
     console.log("No thanks, I'm full.");
   }
 };
@@ -22,12 +21,11 @@ DigitalPal.prototype.feed = function() {
 // their age by one, and sets them to bored
 DigitalPal.prototype.sleep = function() {
   if (this.sleepy) {
-    console.log("ZZzzZZZzzZZz~~");
+    console.log('ZZzzZZZzzZZz~~');
     this.sleepy = false;
     this.bored = true;
     this.increaseAge();
-  }
-  else {
+  } else {
     console.log("No way! I'm not tired!");
   }
 };
@@ -38,9 +36,8 @@ DigitalPal.prototype.play = function() {
     console.log("Yay! Let's play!");
     this.bored = false;
     this.hungry = true;
-  }
-  else {
-    console.log("Not right now. Maybe later?");
+  } else {
+    console.log('Not right now. Maybe later?');
   }
 };
 
@@ -50,9 +47,8 @@ DigitalPal.prototype.destroyFurniture = function() {
     this.houseQuality -= 10;
     this.bored = false;
     this.sleepy = true;
-    console.log("MUAHAHAHAHA! TAKE THAT FURNITURE!");
-  }
-  else {
+    console.log('MUAHAHAHAHA! TAKE THAT FURNITURE!');
+  } else {
     console.log("I've already destroyed it all!");
   }
 };
@@ -66,17 +62,16 @@ DigitalPal.prototype.buyNewFurniture = function() {
 // method which is called in "this.sleep" to increase the age of the digitalpal by one
 DigitalPal.prototype.increaseAge = function() {
   this.age++;
-  console.log("Happy Birthday to me! I am " + this.age + " old!");
+  console.log('Happy Birthday to me! I am ' + this.age + ' old!');
 };
 
 // adds the method "letoutside" to the prototype which lets "dog" outside when it is outside
 DigitalPal.prototype.letOutside = function() {
   if (!this.outside) {
-    console.log("Yay! I love the outdoors!");
+    console.log('Yay! I love the outdoors!');
     this.outside = true;
     this.bark();
-  }
-  else {
+  } else {
     console.log("We're already outside though...");
   }
 };
@@ -84,22 +79,21 @@ DigitalPal.prototype.letOutside = function() {
 // adds the method "letInside" to the prototype which lets our DigitalPal inside when it is outside
 DigitalPal.prototype.letInside = function() {
   if (this.outside) {
-    console.log("Aww... Do I have to?");
+    console.log('Aww... Do I have to?');
     this.outside = false;
-  }
-  else {
+  } else {
     console.log("We're already inside though...");
   }
 };
 
 // adds the method "bark" to the prototype which lets our digitalpal bark
 DigitalPal.prototype.bark = function() {
-  console.log("Woof! Woof!");
+  console.log('Woof! Woof!');
 };
 
 // adds the "meow" method to the prototype which lets our pet meow.
 DigitalPal.prototype.meow = function() {
-  console.log("Meow! Meow!");
+  console.log('Meow! Meow!');
 };
 
 // Create a new animals object to contain our new Digital Pals

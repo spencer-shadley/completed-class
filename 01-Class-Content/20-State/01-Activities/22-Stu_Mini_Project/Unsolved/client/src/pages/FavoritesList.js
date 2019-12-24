@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
-import { ListItem, List } from "../components/List";
-import DeleteBtn from "../components/DeleteBtn";
-import { Link } from "react-router-dom";
+import React, { useEffect } from 'react';
+import { ListItem, List } from '../components/List';
+import DeleteBtn from '../components/DeleteBtn';
+import { Link } from 'react-router-dom';
 
 function FavoritesList() {
   return (
@@ -13,7 +13,7 @@ function FavoritesList() {
           <h3 className="mb-5 mt-5">Click on a post to view in detail</h3>
           {[].map(post => (
             <ListItem key={post._id}>
-              <Link to={"/posts/" + post._id}>
+              <Link to={'/posts/' + post._id}>
                 <strong>
                   {post.title} by {post.author}
                 </strong>

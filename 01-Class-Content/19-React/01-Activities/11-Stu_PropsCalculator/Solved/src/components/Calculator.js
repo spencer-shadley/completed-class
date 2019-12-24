@@ -1,5 +1,5 @@
-import React from "react";
-import Math from "./Math";
+import React from 'react';
+import Math from './Math';
 
 // Calculator renders the Math component 4 times with different props
 function Calculator() {

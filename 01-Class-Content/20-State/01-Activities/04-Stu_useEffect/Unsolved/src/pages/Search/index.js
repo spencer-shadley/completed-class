@@ -1,36 +1,36 @@
-import React, { Component } from "react";
-import API from "../../utils/API";
-import Container from "../../components/Container";
-import SearchForm from "../../components/SearchForm";
-import SearchResults from "../../components/SearchResults";
-import Alert from "../../components/Alert";
+import React, { Component } from 'react';
+import API from '../../utils/API';
+import Container from '../../components/Container';
+import SearchForm from '../../components/SearchForm';
+import SearchResults from '../../components/SearchResults';
+import Alert from '../../components/Alert';
 
 class Search extends Component {
   state = {
-    search: "Wikipedia",
-    title: "",
-    description: "",
-    url: "",
-    error: ""
+    search: 'Wikipedia',
+    title: '',
+    description: '',
+    url: '',
+    error: ''
   };
 
   // When the component mounts, update the title to be Wikipedia Searcher
   componentDidMount() {
-    document.title = "Wikipedia Searcher";
+    document.title = 'Wikipedia Searcher';
 
     API.searchTerms(this.state.search)
       .then(res => {
         if (res.data.length === 0) {
-          throw new Error("No results found.");
+          throw new Error('No results found.');
         }
-        if (res.data.status === "error") {
+        if (res.data.status === 'error') {
           throw new Error(res.data.message);
         }
         this.setState({
           title: res.data[1],
           description: res.data[2][0],
           url: res.data[3][0],
-          error: ""
+          error: ''
         });
       })
       .catch(err => this.setState({ error: err.message }));
@@ -48,16 +48,16 @@ class Search extends Component {
     API.searchTerms(this.state.search)
       .then(res => {
         if (res.data.length === 0) {
-          throw new Error("No results found.");
+          throw new Error('No results found.');
         }
-        if (res.data.status === "error") {
+        if (res.data.status === 'error') {
           throw new Error(res.data.message);
         }
         this.setState({
           title: res.data[1],
           description: res.data[2][0],
           url: res.data[3][0],
-          error: ""
+          error: ''
         });
       })
       .catch(err => this.setState({ error: err.message }));
@@ -65,9 +65,12 @@ class Search extends Component {
   render() {
     return (
       <div>
-        <Container style={{ minHeight: "100vh" }}>
+        <Container style={{ minHeight: '100vh' }}>
           <h1 className="text-center">Search For Anything on Wikipedia</h1>
-          <Alert type="danger" style={{ opacity: this.state.error ? 1 : 0, marginBottom: 10 }}>
+          <Alert
+            type="danger"
+            style={{ opacity: this.state.error ? 1 : 0, marginBottom: 10 }}
+          >
             {this.state.error}
           </Alert>
           <SearchForm

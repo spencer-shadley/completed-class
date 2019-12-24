@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import AuthService from "../components/AuthService";
-import { Link } from "react-router-dom";
+import React, { Component } from 'react';
+import AuthService from '../components/AuthService';
+import { Link } from 'react-router-dom';
 
 class Login extends Component {
   constructor() {
@@ -10,7 +10,7 @@ class Login extends Component {
 
   componentWillMount() {
     if (this.Auth.loggedIn()) {
-      this.props.history.replace("/");
+      this.props.history.replace('/');
     }
   }
 
