@@ -72,8 +72,6 @@ If you have any outstanding questions, check with your SSM.
 
 - Push solutions to any homework assignments that were due.
 
----
-
-### Copyright
+removed header line### Copyright
 
 Coding Boot Camp (C) 2019. All Rights Reserved.
