@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Drill Solution</title>
+  </head>
+  <body>
+    <script>
+      function findDuplicate1(arr) {
+        if (!arr) {
+          return undefined;
+        }
+
+        for (var i = 0; i < arr.length; ++i) {
+          for (var j = 0; j < i; j++) {
+            if (arr[i] === arr[j]) {
+              return arr[i];
+            }
+          }
+        }
+      }
+
+      function firstDuplicate2(arr) {
+        if (!arr) {
+          return undefined;
+        }
+
+        var dupes = {};
+        for (var i = 0; i < arr.length; ++i) {
+          var val = arr[i];
+          if (dupes[val]) {
+            return val;
+          } else {
+            dupes[val] = true;
+          }
+        }
+      }
+
+      // let's test it!
+      function runTests(testName, callbackFunction) {
+        var testCases = [
+          {
+            input: [2, 5, 6, 3, 5],
+            expected: 5
+          },
+          {
+            input: [1, 3, 4, 1, 3, 4],
+            expected: 1
+          },
+          {
+            input: [2, 4, 5],
+            expected: undefined
+          },
+          {
+            input: 42,
+            expected: undefined
+          },
+          {
+            input: null,
+            expected: undefined
+          },
+          {
+            input: undefined,
+            expected: undefined
+          }
+        ];
+
+        var results = [];
+        testCases.forEach(function(testCase) {
+          var actual = callbackFunction(testCase.input);
+          results.push({
+            input: testCase.input,
+            expected: testCase.expected,
+            actual: actual,
+            isCorrect:
+              // NaN is not equal to NaN
+              // this is the only value in JavaScript that is not equal to itself
+              (Number.isNaN(this.actual) && Number.isNaN(this.expected)) ||
+              this.expected === this.actual
+          });
+        });
+        console.log(testName);
+        console.table(results);
+      }
+      runTests('findDuplicate1', findDuplicate1);
+      runTests('firstDuplicate2', firstDuplicate2);
+    </script>
+  </body>
+</html>
