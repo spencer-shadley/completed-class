@@ -74,11 +74,7 @@
             input: testCase.input,
             expected: testCase.expected,
             actual: actual,
-            isCorrect:
-              // NaN is not equal to NaN
-              // this is the only value in JavaScript that is not equal to itself
-              (Number.isNaN(this.actual) && Number.isNaN(this.expected)) ||
-              this.expected === this.actual
+            isCorrect: this.expected === this.actual
           });
         });
         console.log(testName);
