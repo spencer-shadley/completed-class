@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Drill Solution</title>
+  </head>
+  <body>
+    <script>
+      function isPangram1(str) {
+        // check for falsy values (null, undefined, '', etc.)
+        // https://developer.mozilla.org/en-US/docs/Glossary/Falsy
+        // or non-strings
+        if (!str || typeof str !== 'string') {
+          return false;
+        }
+
+        str = str.toLowerCase();
+        var alphabet = 'abcdefghijklmnopqrstuvwxyz';
+        for (var i = 0; i < alphabet.length; ++i) {
+          if (!str.includes(alphabet[i])) {
+            return false;
+          }
+        }
+        return true;
+      }
+
+      function isPangram2(str) {
+        // check for falsy values (null, undefined, '', etc.)
+        // https://developer.mozilla.org/en-US/docs/Glossary/Falsy
+        // or non-strings
+        if (!str || typeof str !== 'string') {
+          return false;
+        }
+
+        var alphabet = 'abcdefghijklmnopqrstuvwxyz';
+        str = str.toLowerCase();
+        return str.split('').reduce(function(previous, current) {
+          return previous || current.includes(current);
+        });
+      }
+
+      function isPangram3(str) {
+        // check for falsy values (null, undefined, '', etc.)
+        // https://developer.mozilla.org/en-US/docs/Glossary/Falsy
+        // or non-strings
+        if (!str || typeof str !== 'string') {
+          return false;
+        }
+
+        var letterCounts = [];
+        str = str.toLowerCase();
+        for (var i = 0; i < str.length; ++i) {
+          var currentChar = str[i];
+          var asciiCode = currentChar.charCodeAt(0);
+          if (
+            asciiCode >= 'a'.charCodeAt(0) &&
+            asciiCode <= 'z'.charCodeAt(0)
+          ) {
+            letterCounts[asciiCode - 'a'.charCodeAt(0)] = true;
+          }
+        }
+
+        return letterCounts.every(function(wasCharacterUsed) {
+          return wasCharacterUsed;
+        });
+      }
+
+      // let's test it!
+      function runTests(testName, callbackFunction) {
+        var testCases = [
+          {
+            input: 'abcdefghijklmnopqrstuvwxyz',
+            expected: true
+          },
+          {
+            input: 'Five hexing wizard bots jump quickly',
+            expected: true
+          },
+          {
+            input: 'a',
+            expected: false
+          },
+          {
+            input: 'Watch Jeopardy, Alex Trebek’s fun TV quiz game',
+            expected: true
+          },
+          {
+            input: '42',
+            expected: false
+          },
+          {
+            input: '',
+            expected: false
+          },
+          {
+            input: null,
+            expected: false
+          },
+          {
+            input: undefined,
+            expected: false
+          },
+          {
+            input: 6,
+            expected: false
+          }
+        ];
+
+        var results = [];
+        testCases.forEach(function(testCase) {
+          var actual = callbackFunction(testCase.input);
+          results.push({
+            input: testCase.input,
+            expected: testCase.expected,
+            actual: actual,
+            isCorrect: this.expected === this.actual
+          });
+        });
+        console.log(testName);
+        console.table(results);
+      }
+      runTests('isPangram1', isPangram1);
+      runTests('isPangram2', isPangram2);
+      runTests('isPangram3', isPangram3);
+    </script>
+  </body>
+</html>
