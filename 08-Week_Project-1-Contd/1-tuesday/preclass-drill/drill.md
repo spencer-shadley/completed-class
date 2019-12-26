@@ -34,4 +34,14 @@ This drill will be reviewed at the beginning of class (not before class.)
 
 - Delete "my-cool-new-branch" (`git branch -d my-cool-new-branch`)
 
+- `git push` (remember, everything so far has been local since we haven't pushed anything)
+
 ## More Info
+
+- https://www.atlassian.com/git/tutorials/using-branches
+
+- https://learngitbranching.js.org/?locale=en_US
+
+- https://rogerdudler.github.io/git-guide/
+
+- https://thenewstack.io/dont-mess-with-the-master-working-with-branches-in-git-and-github/
