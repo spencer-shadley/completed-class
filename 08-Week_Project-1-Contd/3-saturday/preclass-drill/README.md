@@ -1,6 +1,6 @@
 # Swap Case
 
-In this activity you will be writing code to create a function that swaps the letter case of each character in a string.
+In this drill you will be writing code to create a function that swaps the letter case of each character in a string.
 
 ## Instructions
 
