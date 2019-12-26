@@ -1,4 +1,5 @@
 Write a function that takes in a string and returns true if it’s a pangram or false otherwise.
+
 Pangram: a sentence that contains every letter in the alphabet.
 
 Ex:
