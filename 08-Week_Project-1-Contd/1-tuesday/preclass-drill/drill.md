@@ -36,6 +36,18 @@ This drill will be reviewed at the beginning of class (not before class.)
 
 - `git push` (remember, everything so far has been local since we haven't pushed anything)
 
+## Command Cheatsheet
+
+- `git branch` - check the current branch
+
+- `git checkout <branch-name>` - switch to branch-name
+
+- `git checkout -b <branch-name>` - create and then switch to branch-name
+
+- `git merge <branch-name>` - merge the changes from "branch-name" into the current branch
+
+- `git branch -d <branch-name>` - delete "branch-name"
+
 ## Resources
 
 | Site                                                                                                                     | Description                                                                |
