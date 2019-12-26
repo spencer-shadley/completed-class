@@ -36,12 +36,11 @@ This drill will be reviewed at the beginning of class (not before class.)
 
 - `git push` (remember, everything so far has been local since we haven't pushed anything)
 
-## More Info
+## Resources
 
-- https://www.atlassian.com/git/tutorials/using-branches
-
-- https://learngitbranching.js.org/?locale=en_US
-
-- https://rogerdudler.github.io/git-guide/
-
-- https://thenewstack.io/dont-mess-with-the-master-working-with-branches-in-git-and-github/
+| Site                                                                                                                     | Description                                                                |
+| ------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------- |
+| [git overview](https://rogerdudler.github.io/git-guide/)                                                                 | The basics of git                                                          |
+| [Use cases for git branching](https://thenewstack.io/dont-mess-with-the-master-working-with-branches-in-git-and-github/) | As always W3Schools has just about the best tutorial for a web technology. |
+| [Atlassian git branch tutorial](https://www.atlassian.com/git/tutorials/using-branches)                                  | An overview of git branch and commands                                     |
+| [Interactive git branch tutorial](https://learngitbranching.js.org/?locale=en_US)                                        | An interactive terminal to try out git commands                            |
