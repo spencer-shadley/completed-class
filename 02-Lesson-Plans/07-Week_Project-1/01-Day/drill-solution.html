@@ -8,13 +8,18 @@
   </head>
   <body>
     <script>
-      function findDuplicate1(arr) {
+      // We create a new object and then update the value
+      // to true at the key corresponding to each integer in the input array.
+      // As we iterate through the input array,
+      // if we find that the corresponding key in the `dups` object is true,
+      // we know we have a duplicate and return the value.
+      function findFirstDuplicate1(arr) {
         if (!arr) {
           return undefined;
         }
 
         for (var i = 0; i < arr.length; ++i) {
-          for (var j = 0; j < i; j++) {
+          for (var j = 0; j < i; ++j) {
             if (arr[i] === arr[j]) {
               return arr[i];
             }
@@ -22,18 +27,23 @@
         }
       }
 
-      function firstDuplicate2(arr) {
+      // This solution is more efficient because it only loops
+      // through the values once. Nested for loops loop through all
+      // the elements one time _for each element_ in the array.
+      // We will spend at least a full day at the end of the course
+      // focusing on this kind of efficiency.
+      function findFirstDuplicate2(arr) {
         if (!arr) {
           return undefined;
         }
 
         var dupes = {};
         for (var i = 0; i < arr.length; ++i) {
-          var val = arr[i];
-          if (dupes[val]) {
-            return val;
+          var currentItem = arr[i];
+          if (dupes[currentItem]) {
+            return currentItem;
           } else {
-            dupes[val] = true;
+            dupes[currentItem] = true;
           }
         }
       }
@@ -80,8 +90,8 @@
         console.log(testName);
         console.table(results);
       }
-      runTests('findDuplicate1', findDuplicate1);
-      runTests('firstDuplicate2', firstDuplicate2);
+      runTests('findFirstDuplicate1', findFirstDuplicate1);
+      runTests('findFirstDuplicate2', findFirstDuplicate2);
     </script>
   </body>
 </html>
