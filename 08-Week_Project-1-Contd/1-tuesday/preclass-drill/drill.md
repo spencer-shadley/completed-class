@@ -40,9 +40,9 @@ This drill will be reviewed at the beginning of class (not before class.)
 
 - `git branch` - check the current branch
 
-- `git checkout <branch-name>` - switch to branch-name
-
 - `git checkout -b <branch-name>` - create and then switch to branch-name
+
+- `git checkout <branch-name>` - switch to branch-name
 
 - `git merge <branch-name>` - merge the changes from "branch-name" into the current branch
 
