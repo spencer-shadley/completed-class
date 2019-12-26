@@ -8,14 +8,13 @@
   </head>
   <body>
     <script>
-      // this only works for small numbers because of parseInt
+      // this only works for small numbers because of how parseInt was implemented
       // more info on using parseInt on numbers:
       // https://www.gideonpyzer.com/blog/use-parseint-for-strings-not-for-numbers/
       function isInt1(input) {
         return parseInt(input) === input;
       }
 
-      // works even for large inputs
       function isInt2(input) {
         return Math.floor(input) === input;
       }
@@ -46,6 +45,19 @@
           {
             input: 4398349384,
             expected: true
+          },
+          {
+            input: 9999999999999999999999999999,
+            expected: true
+          },
+          {
+            input: 9999999999999999999999999999e99999999999999,
+            expected: true
+          },
+          ,
+          {
+            input: 0.000000000000006,
+            expected: false
           },
           {
             input: null,

@@ -1,3 +1,20 @@
+# Question
+
+Run the following code and explain the output:
+
+```js
+function sample() {
+  var a = (b = 3);
+}
+sample();
+console.log('Is a defined?', typeof a !== 'undefined');
+console.log('Is b defined?', typeof b !== 'undefined');
+```
+
+---
+
+# Answer
+
 - This is a bit different from the problems we've seen so far. In interviews some questions focus on logic, like our previous drills, some measure detailed understanding of a language. Today's drill focuses on one of the quirks of JavaScript.
 
 - `var a = b = 3` is equivalent to writing:
