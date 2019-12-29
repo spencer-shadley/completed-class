@@ -1,6 +1,6 @@
 # Unit 05 Third-Party APIs Homework: Day Planner
 
-Create a simple calendar application that allows the user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+Create a simple calendar application that allows the user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery and/or native JavaScript.
 
 The app should display standard business hours (9 a.m. to 5 p.m.). Each time slot should represent one hour and contain the following:
 
