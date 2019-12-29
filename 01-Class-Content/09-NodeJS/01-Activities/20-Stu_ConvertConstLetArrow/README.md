@@ -12,9 +12,9 @@ In this example we will convert a prebuilt Crystal Guessing Game to use the new 
 
 - Make sure to do the following:
 
-1. Convert all `var` identifiers to use `const` or `let` &mdash; whichever is more appropriate.
+1. Convert all `var` identifiers to use `const` or `let` - whichever is more appropriate.
 
-2. Convert functions to arrow functions **where suitable** &mdash; remember, arrow functions are not right for every situation.
+2. Convert functions to arrow functions **where suitable** - remember, arrow functions are not right for every situation.
 
 - **IMPORTANT**: After each change, run the the code in your web browser to make sure that everything still works as expected. If completed successfully, there should be no difference in the way the app runs in the browser before and after the changes.
 
