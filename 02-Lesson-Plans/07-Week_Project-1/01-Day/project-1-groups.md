@@ -1,5 +1,51 @@
 # Project 1 Groups
 
+## Ravenclosure
+
+Richard Wang
+Kaitlyn Carlson
+Kindra Kinney
+Spencer Fife
+Remy Guts
+*Ari Horowitz
+*Alex McClement
+
+## GryffinDOM
+
+Issouf Kiema
+Andrea Thomas
+Duc-Hoang
+Max Cartwright
+Rachel Rohrbach
+Marie Lenac
+Jared Kong
+Khangai
+Lisa Cabrera
+Esther Walker
+*Ari Horowitz
+*Alex McClement
+
+## Slytherindentyourcode
+
+*Lloyd Marcelino
+Owen Chanthala
+Henry Lopez
+Juan Navarro
+Ben
+*Ari Horowitz
+
+## Githubblepuff
+
+George Travis
+Frantz Felix
+Justin Le
+Teresa Liu
+Randy Burgess
+Ryan Sousa
+\*Ari Horowitz
+
+## Groups based on skills
+
 Group 1
 
 - Alex
