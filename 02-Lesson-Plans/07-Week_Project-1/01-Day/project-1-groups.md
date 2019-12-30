@@ -7,8 +7,8 @@ Spencer Fife
 Alex McClement
 
 Kaitlyn Carlson
-Kindra Kinney
 Remy Guts
+Marie Lenac (actually a GryffinDOM)
 
 ## GryffinDOM
 
@@ -18,7 +18,6 @@ Randy Burgess (actually a Hufflepuff)
 
 Issouf Kiema
 Duc-Hoang
-Marie Lenac
 Lisa Cabrera
 
 Rachel Rohrbach
