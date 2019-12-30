@@ -6,12 +6,12 @@
 
 Richard Wang
 Spencer Fife
-Remy Guts
+Alex McClement
 
 Kaitlyn Carlson
 Kindra Kinney
+Remy Guts
 \*Ari Horowitz
-Alex McClement
 
 ## GryffinDOM
 
