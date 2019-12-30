@@ -35,11 +35,11 @@ Owen Chanthala
 
 ## Githubblepuff
 
-George Travis
+Frantz Felix
 Teresa Liu
 Ari Horowitz
 
-Frantz Felix
+George Travis
 Justin Le
 Ryan Sousa
 
