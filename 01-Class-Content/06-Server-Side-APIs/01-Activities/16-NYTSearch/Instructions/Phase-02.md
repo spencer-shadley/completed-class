@@ -18,4 +18,4 @@
 
 ## All-Together
 
-- Display the HTML content!!
+- Display the HTML content!
