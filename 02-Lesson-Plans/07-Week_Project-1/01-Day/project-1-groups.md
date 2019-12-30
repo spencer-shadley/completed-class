@@ -3,48 +3,54 @@
 ## Ravenclosure
 
 Richard Wang
-Kaitlyn Carlson
-Kindra Kinney
 Spencer Fife
 Remy Guts
+
+Kaitlyn Carlson
+Kindra Kinney
 *Ari Horowitz
 *Alex McClement
 
 ## GryffinDOM
 
-Issouf Kiema
 Andrea Thomas
-Duc-Hoang
 Max Cartwright
-Rachel Rohrbach
+Randy Burgess (actually a Hufflepuff)
+
+Issouf Kiema
 Marie Lenac
-Jared Kong
-Khangai
 Lisa Cabrera
+
+Duc-Hoang
+Khangai
+Rachel Rohrbach
+
+Jared Kong
 Esther Walker
 *Ari Horowitz
 *Alex McClement
 
 ## Slytherindentyourcode
 
-*Lloyd Marcelino
-Owen Chanthala
-Henry Lopez
-Juan Navarro
+Lloyd Marcelino
 Ben
-*Ari Horowitz
+Henry Lopez
+
+Owen Chanthala
+Juan Navarro
+\*Ari Horowitz
 
 ## Githubblepuff
 
 George Travis
+Teresa Liu
+
 Frantz Felix
 Justin Le
-Teresa Liu
-Randy Burgess
 Ryan Sousa
 \*Ari Horowitz
 
-## Groups based on skills
+## Alt groups (ignoring location)
 
 Group 1
 
