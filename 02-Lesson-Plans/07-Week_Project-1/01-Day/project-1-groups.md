@@ -10,8 +10,8 @@ Remy Guts
 
 Kaitlyn Carlson
 Kindra Kinney
-*Ari Horowitz
-*Alex McClement
+\*Ari Horowitz
+Alex McClement
 
 ## GryffinDOM
 
@@ -24,13 +24,12 @@ Marie Lenac
 Lisa Cabrera
 
 Duc-Hoang
-Khangai
 Rachel Rohrbach
+Khangai
 
 Jared Kong
 Esther Walker
-*Ari Horowitz
-*Alex McClement
+\*Ari Horowitz
 
 ## Slytherindentyourcode
 
