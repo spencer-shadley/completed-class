@@ -9,3 +9,7 @@
 - Open the file `01-cat-button-students.html` in your browser. Then take a few moments to see what the application does.
 
 - Then fill in the missing comments for each line to describe what each section does.
+
+## Bonus
+
+- Allow the user to choose a dynamic tag instead of always using cats
