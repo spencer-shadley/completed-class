@@ -11,7 +11,6 @@ Alex McClement
 Kaitlyn Carlson
 Kindra Kinney
 Remy Guts
-\*Ari Horowitz
 
 ## GryffinDOM
 
@@ -22,34 +21,29 @@ Randy Burgess (actually a Hufflepuff)
 Issouf Kiema
 Marie Lenac
 Lisa Cabrera
+Esther Walker
 
 Duc-Hoang
 Rachel Rohrbach
 Khangai
-
 Jared Kong
-Esther Walker
-\*Ari Horowitz
 
 ## Slytherindentyourcode
 
 Lloyd Marcelino
 Ben
 Henry Lopez
-
 Owen Chanthala
-Juan Navarro
-\*Ari Horowitz
 
 ## Githubblepuff
 
 George Travis
 Teresa Liu
+Ari Horowitz
 
 Frantz Felix
 Justin Le
 Ryan Sousa
-\*Ari Horowitz
 
 ---
 
