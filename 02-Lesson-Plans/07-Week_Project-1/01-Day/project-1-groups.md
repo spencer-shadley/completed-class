@@ -17,14 +17,14 @@ Max Cartwright
 Randy Burgess (actually a Hufflepuff)
 
 Issouf Kiema
+Duc-Hoang
 Marie Lenac
 Lisa Cabrera
-Esther Walker
 
-Duc-Hoang
 Rachel Rohrbach
 Khangai
 Jared Kong
+Esther Walker
 
 ## Slytherindentyourcode
 
