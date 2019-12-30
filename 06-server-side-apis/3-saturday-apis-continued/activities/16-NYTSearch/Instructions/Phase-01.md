@@ -1,5 +1,11 @@
 # New York Times Article Search - Phase 01
 
+## Everyone
+
+- Divide into two teams (front-end and back-end)
+
+- Decide how to effecively work together (hint: a git repository will make this much easier if you pull, commit and push _constantly_)
+
 ## Front-End Team
 
 ![nyt-search](Images/nyt.png)
@@ -23,6 +29,8 @@
 ## Hints
 
 If you get stuck read the below:
+
+- [Documenation](https://developer.nytimes.com/)
 
 - All of you should be using the [API Console](http://developer.nytimes.com/article_search_v2.json#/Console/GET/articlesearch.json). The console allows you to create "test URLs". This way you can confirm that you are pinging the right URL.
 
