@@ -51,7 +51,9 @@ Justin Le
 Ryan Sousa
 \*Ari Horowitz
 
-## Alt groups (ignoring location)
+---
+
+## Alt groups (ignoring location) (deprecated)
 
 Group 1
 
