@@ -8,31 +8,34 @@
   </head>
 
   <body>
-    <button data-person="Arnold Schwarzenegger">I'll be back</button>
-    <button data-person="Michael J Fox">
-      My happiness grows in direct proportionto my acceptance, and in inverse
-      proportion to my expectations.
+    <button data-person="Elon Musk">
+      I think it is possible for ordinary people to choose to be extraordinary.
+    </button>
+    <button data-person="Bill Gates">
+      I choose a lazy person to do a hard job. Because a lazy person will find
+      an easy way to do it.
     </button>
     <!-- STEP TWO: between the dashed lines below
         * add three more buttons
         * add a data-person attribute of famous people you know
         * with a quote said by them -->
 
-    <!--  -->
+    <button data-person="Linus Torvalds">
+      Most good programmers do programming not because they expect to get paid
+      or get adulation by the public, but because it is fun to program.
+    </button>
+    <button data-person="Martin Fowler">
+      Any fool can write code that a computer can understand. Good programmers
+      write code that humans can understand.
+    </button>
+    <button data-person="Cory House">
+      Code is like humor. When you have to explain it, it’s bad.
+    </button>
+    <button data-person="Kent Beck">
+      Make it work, make it right, make it fast.
+    </button>
 
-    <button data-person="Lucille Ball">
-      Love yourself first and everything else falls into line.
-    </button>
-    <button data-person="Taylor Swift">
-      If you're horrible to me, I'm going to write a song about it, and you
-      won't like it. That's how I operate.
-    </button>
-    <button data-person="Samuel Jackson">
-      Far better is it to dare mighty things, to win glorious triumphs, even
-      though checkered by failure... than to rank with those poor spirits who
-      neither enjoy nor suffer much, because they live in a gray twilight that
-      knows not victory nor defeat.
-    </button>
+    <!--  -->
 
     <div id="gifs-appear-here"></div>
 
@@ -52,7 +55,11 @@
         // Performing our AJAX GET request
         $.ajax({
           url: queryURL,
-          method: 'GET'
+          method: 'GET',
+          // handle errors
+          error: function(xhr, status, error) {
+            alert(status + ': ' + xhr.responseText);
+          }
         })
           // After the data comes back from the API
           .then(function(response) {
@@ -75,8 +82,7 @@
                 // Creating an image tag
                 var personImage = $('<img>');
 
-                // Giving the image tag an src attribute of a proprty pulled off the
-                // result item
+                // Giving the image tag an src attribute of a property pulled off the result item
                 personImage.attr('src', results[i].images.fixed_height.url);
 
                 // Appending the paragraph and personImage we created to the "gifDiv" div we created
