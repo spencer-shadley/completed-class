@@ -1,5 +1,7 @@
 # Project 1 Groups
 
+\* = unsure of which house
+
 ## Ravenclosure
 
 Richard Wang
