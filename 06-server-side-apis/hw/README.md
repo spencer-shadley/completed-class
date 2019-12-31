@@ -18,7 +18,7 @@ How do you deliver this? Here are some guidelines:
 
 - Use AJAX to hook into the API to retrieve data in JSON format.
 
-- Your app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+- Your app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery and/or native JavaScript.
 
 - Display the following under current weather conditions:
 
