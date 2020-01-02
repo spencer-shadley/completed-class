@@ -2,27 +2,27 @@
 
 ## Application Requirements
 
-- Must use at least two server-side APIs
+- Use at least two server-side APIs
 
-- Must use a CSS framework _other than_ Bootstrap
+- Use a CSS framework _other than_ Bootstrap
 
-- Must be interactive (i.e: accept and respond to user input)
+- Be interactive (i.e: accept and respond to user input)
 
 - Use at least one new third-party API
 
-- Must have a polished UI
+- Have a polished UI
 
-- Must meet good quality coding standards
+- Meet good quality coding standards
 
 - Does not use alerts, confirms or prompts (look into _modals_)
 
-- Must be deployed to GitHub Pages
+- Be deployed to GitHub Pages
 
 ## Presentation Requirements
 
 Use this [project presentation template](https://docs.google.com/presentation/d/1_u8TKy5zW5UlrVQVnyDEZ0unGI2tjQPDEpA0FNuBKAw/edit?usp=sharing) to address the following:
 
-- Elevator pitch: a one minute description of your application
+- Elevator pitch: a one minute description of your application (this is important to be able to do when being interviewed as well as to receive funding for a startup)
 
 - Concept: What is your user story? What was your motivation for development?
 
@@ -46,7 +46,7 @@ Use this [project presentation template](https://docs.google.com/presentation/d/
 
 ## Submission on BCS
 
-You are required to submit the following:
+Everyone is required to submit the following (yes, everyone in the group):
 
 - The URL of the deployed application
 
