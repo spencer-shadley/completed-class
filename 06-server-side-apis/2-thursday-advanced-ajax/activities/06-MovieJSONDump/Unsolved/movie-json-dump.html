@@ -27,8 +27,8 @@
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script>
-        // This .on("click") function will trigger the AJAX Call
-        $('#find-movie').on('click', function(event) {
+        // This .on("submit") function will trigger the AJAX Call
+        $('#movie-form').on('submit', function(event) {
           // Preventing the submit button from trying to submit the form
           // We're optionally using a form so the user may hit Enter to search instead of clicking the button
           event.preventDefault();
