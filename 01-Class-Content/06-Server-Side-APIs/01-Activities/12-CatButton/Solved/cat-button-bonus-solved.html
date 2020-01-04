@@ -8,19 +8,13 @@
   <body>
     <form>
       <input id="tag-input" placeholder="Enter a tag" />
-      <button id="retrieve-gifs-button">cats</button>
+      <button id="retrieve-gifs-button">search</button>
     </form>
     <div id="images"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
       var gifsButton = $('#retrieve-gifs-button');
       var tagInput = $('#tag-input');
-
-      tagInput.on('keydown', function() {
-        window.setTimeout(function() {
-          gifsButton.text(tagInput.val() || 'cats');
-        }, 100);
-      });
 
       $('form').on('submit', function(event) {
         event.preventDefault();
@@ -31,7 +25,7 @@
 
         // Perfoming an AJAX GET request to our queryURL
         $.ajax({
-          url: queryURL + '&tag=' + gifsButton.text(),
+          url: queryURL + '&tag=' + tagInput.val(),
           method: 'GET'
         })
 
