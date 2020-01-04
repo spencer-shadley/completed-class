@@ -17,12 +17,12 @@
 - Randy Burgess (actually a Hufflepuff)
 
 * Issouf Kiema
-* Duc-Hoang
+* Duc-Hoang Do
 * Lisa Cabrera
 * Esther Walker
 
 - Rachel Rohrbach
-- Khangai
+- Khangai Ganbayar
 - Jared Kong
 
 ## Slytherindentyourcode
@@ -30,7 +30,7 @@
 - Lloyd Marcelino
 - Owen Chanthala
 - Henry Lopez
-- Ben
+- Ben Olsen
 
 ## Githubblepuff
 
