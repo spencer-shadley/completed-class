@@ -36,8 +36,8 @@
 
 - Frantz Felix
 - Teresa Liu
-- Ari Horowitz
+- Ryan Sousa
 
 * George Travis
 * Justin Le
-* Ryan Sousa
+* Ari Horowitz
