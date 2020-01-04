@@ -12,7 +12,7 @@
 
 - Information on how to use query the Bands In Town API can be found [here](https://app.swaggerhub.com/apis/Bandsintown/PublicAPI/3.0.0)
 
-- Note: This is a free public API and you will not need to sign up for anything.
+- Note: This use to be a free public API but no longer is. You can use Trilogy's apiKey `codingbootcamp`.
 
 - **HINT:** Scroll down the API docs and study the examples. See if you can figure out how to query for an artist's information. You will need to use the `/artists/{artistname} endpoint`.
 
