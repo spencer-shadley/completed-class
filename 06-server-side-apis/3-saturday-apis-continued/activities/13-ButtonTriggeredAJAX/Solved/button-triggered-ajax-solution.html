@@ -1,0 +1,100 @@
+<!-- Video review: https://www.youtube.com/watch?v=K1JDUkF94cs -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Quoth the Giphy</title>
+  </head>
+
+  <body>
+    <button data-person="Elon Musk">
+      I think it is possible for ordinary people to choose to be extraordinary.
+    </button>
+    <button data-person="Bill Gates">
+      I choose a lazy person to do a hard job. Because a lazy person will find
+      an easy way to do it.
+    </button>
+    <!-- STEP TWO: between the dashed lines below
+        * add three more buttons
+        * add a data-person attribute of famous people you know
+        * with a quote said by them -->
+
+    <button data-person="Linus Torvalds">
+      Most good programmers do programming not because they expect to get paid
+      or get adulation by the public, but because it is fun to program.
+    </button>
+    <button data-person="Martin Fowler">
+      Any fool can write code that a computer can understand. Good programmers
+      write code that humans can understand.
+    </button>
+    <button data-person="Cory House">
+      Code is like humor. When you have to explain it, it’s bad.
+    </button>
+    <button data-person="Kent Beck">
+      Make it work, make it right, make it fast.
+    </button>
+
+    <!--  -->
+
+    <div id="gifs-appear-here"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      // Event listener for all button elements
+      $('button').on('click', function() {
+        // In this case, the "this" keyword refers to the button that was clicked
+        var person = $(this).attr('data-person');
+
+        // Constructing a URL to search Giphy for the name of the person who said the quote
+        var queryURL =
+          'https://api.giphy.com/v1/gifs/search?q=' +
+          person +
+          '&api_key=dc6zaTOxFJmzC&limit=10';
+
+        // Performing our AJAX GET request
+        $.ajax({
+          url: queryURL,
+          method: 'GET',
+          // handle errors
+          error: function(xhr, status, error) {
+            alert(status + ': ' + xhr.responseText);
+          }
+        })
+          // After the data comes back from the API
+          .then(function(response) {
+            // Storing an array of results in the results variable
+            var results = response.data;
+
+            // Looping over every result item
+            for (var i = 0; i < results.length; ++i) {
+              // Only taking action if the photo has an appropriate rating
+              if (results[i].rating !== 'r' && results[i].rating !== 'pg-13') {
+                // Creating a div for the gif
+                var gifDiv = $('<div>');
+
+                // Storing the result item's rating
+                var rating = results[i].rating;
+
+                // Creating a paragraph tag with the result item's rating
+                var p = $('<p>').text('Rating: ' + rating);
+
+                // Creating an image tag
+                var personImage = $('<img>');
+
+                // Giving the image tag an src attribute of a property pulled off the result item
+                personImage.attr('src', results[i].images.fixed_height.url);
+
+                // Appending the paragraph and personImage we created to the "gifDiv" div we created
+                gifDiv.append(p);
+                gifDiv.append(personImage);
+
+                // Prepending the gifDiv to the "#gifs-appear-here" div in the HTML
+                $('#gifs-appear-here').prepend(gifDiv);
+              }
+            }
+          });
+      });
+    </script>
+  </body>
+</html>
