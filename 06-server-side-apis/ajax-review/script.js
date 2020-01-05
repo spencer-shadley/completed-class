@@ -1,4 +1,13 @@
 $(document).ready(function() {
+  /**
+   * we are making two api calls.
+   * One for the array chuck norris gifs (chuckGifs function)
+   * and one a fact for each gif (chuckFact function)
+   * Since chuckFact gets called for each gif the api may take
+   * a while to finish
+   * The code below will hide the loading gif and show the main
+   * content once the 5th ajaxs call has been completed
+   */
   var ajaxCount = 0;
 
   $(document).ajaxComplete(function() {
@@ -10,6 +19,9 @@ $(document).ready(function() {
     }
   });
 
+  /**
+   * categories for select elements options
+   */
   var categories = [
     'dev',
     'movie',
@@ -28,6 +40,7 @@ $(document).ready(function() {
     'fashion'
   ];
 
+  // grab the hidden controls for the slide
   var controls = $($('#controls').html());
 
   var currentDate = moment().format('dddd MMM. Do, YYYY');
@@ -36,6 +49,7 @@ $(document).ready(function() {
   chuckGifs();
 
   function chuckGifs() {
+    // 06-server-side-apis/1-saturday-apis-and-ajax/activities/02-6-Ajax_OMDB
     var queryURL =
       'https://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&q=chuck%norris';
     $.ajax({
@@ -48,13 +62,13 @@ $(document).ready(function() {
         .toLowerCase();
 
       $('.carousel-inner').empty();
-
+      // 03-week-javascript/2-tuesday-day-loops-and-more/activities/17-MyFirstLoop
       for (var i = 0; i < results.length; i++) {
         var gifUrl = results[i].images.downsized.url;
         var stillUrl = results[i].images.downsized_still.url;
 
         var carouselItemEl = createCarouselItem(i);
-
+        // 05-third-party-apis/1-saturday-third-party-apis/activities/04-jQueryDrinkList
         var img = $('<img>');
         img.attr({
           src: gifUrl,
