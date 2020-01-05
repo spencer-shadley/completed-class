@@ -70,3 +70,7 @@ select {
 p {
   font-size: 20px;
 }
+
+img[src*='#apiGif'] {
+  width: 100%;
+}

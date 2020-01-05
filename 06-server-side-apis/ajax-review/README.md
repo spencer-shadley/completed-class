@@ -2,6 +2,8 @@
 
 #### `06-server-side-apis` week review.
 
+<img src="./images/chuckapi.gif" alt="app gif" width="100%" />
+
 ## Content
 
 - [Description](##-description)
@@ -13,10 +15,6 @@
 ## Description
 
 - describ the app and how it works
-
-## Bonus Code
-
-- point out code that was not taught in class.
 
 ## Tips and Tricks
 
