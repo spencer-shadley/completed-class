@@ -17,11 +17,29 @@
 This app is to demonstrate how to use jquery ajax and manipulate the DOM to display gifs and 'facts' about Chuck Norris.
 
 - You can select a 'fact' category
-  <div style="text-align: center">
-    <img src="./images/select-options.png" alt="app gif" />
+
+  <div style="text-align: center;">
+    <img src="./images/select-options.png" alt="app gif"/>
   </div>
 
+- I will display a gif and a quote based on what was selected
+
+ <div style="text-align: center;">
+    <img src="./images/quote.png" alt="app gif"/>
+  </div>
+
+- You can pause and animate gif
+
+ <div style="display: flex; flex-direction: row; justify-content: space-around">
+    <img src="./images/still-button.png" alt="app gif" width="50%"/>
+    <img src="./images/animate-button.png" alt="app gif" width="50%"/>
+  </div>
+
+Take a look at the `script.js` and look through. See you if understand the different parts of the code and how the interact with each other. I left some comments to the activity where that code concept was introduce.
+
 ## Tips and Tricks
+
+After the last assigment many people ask me how to get unstuck when you don't know what to do next or even how to start. Below are a few tips and tricks that Ihave come across.
 
 #### what to do when you don't know where to start
 
