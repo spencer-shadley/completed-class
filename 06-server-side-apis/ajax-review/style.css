@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Kung Fu Panda";
-  src: url("./fonts/Kung_Fu_Panda.otf");
+  font-family: 'Kung Fu Panda';
+  src: url('./fonts/Kung_Fu_Panda.otf');
 }
 
 .carousel-caption {
@@ -35,7 +35,7 @@ h2 {
 }
 
 body {
-  font-family: "Kung Fu Panda";
+  font-family: 'Kung Fu Panda';
 }
 
 body,
