@@ -7,10 +7,10 @@
 ## Content
 
 - [Description](##-description)
-- [Bonus Code](##-bonus-code)
 - [Tips and Tricks](##-tips-and-tricks)
   - [what to do when you don't know where to start](####-what-to-do-when-you-don't-know-where-to-start)
   - [what to do when you get stuck](####-what-to-do-when-you-get-stuck)
+- [Some Perspective](##-some-perspective)
 
 ## Description
 
@@ -35,11 +35,11 @@ This app is to demonstrate how to use jquery ajax and manipulate the DOM to disp
     <img src="./images/animate-button.png" alt="app gif" width="50%"/>
   </div>
 
-Take a look at the `script.js` and look through. See you if understand the different parts of the code and how the interact with each other. I left some comments to the activity where that code concept was introduce.
+Take a look at the `script.js` and look through. See you if understand the different parts of the code and how they interact with each other. I left some comments to the activity where that code concept was introduce.
 
 ## Tips and Tricks
 
-After the last assigment many people ask me how to get unstuck when you don't know what to do next or even how to start. Below are a few tips and tricks that Ihave come across.
+After the last assigment many people ask me how to get unstuck when you don't know what to do next or even how to start. In preparation for your first project below are a few tips and tricks that I have come across. As always you can google fu other approaches and ideas.
 
 #### what to do when you don't know where to start
 
@@ -62,7 +62,12 @@ After the last assigment many people ask me how to get unstuck when you don't kn
   - Videos
     - [Pomodoro Technique For Productivity](https://www.youtube.com/watch?v=ykMzzZolhdk)
     - [POMODORO TECHNIQUE](https://www.youtube.com/watch?v=mNBmG24djoY)
-- do something different
+- do something different to restart your brain
   - go for a run/walk
   - play a short game
   - wash the dishes
+  - any short activity
+
+## Some Perspective
+
+Sometimes our inner critic voice can be really loud. Comparing ourself to others; making us doubt ourselves and the skills we have learned. Always remember everyone starts at the beginning. With time and perseverance anyone can learn anything. To give you some perspective on this here a blog I wrote about [my journey](https://formidable.com/blog/2018/one-dancers-journey/) in becoming a developer. Also, here is a video from [dotCSS 2018 conference](https://www.youtube.com/watch?v=eqZqx6lRPe0) where a colorblind designer, David DeSandro, describes how to read color hex code. I like this video because he took something that could have stop him from becoming a designer and turn it into a 'super power'. Happy Coding!
