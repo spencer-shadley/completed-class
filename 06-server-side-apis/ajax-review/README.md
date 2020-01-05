@@ -1,6 +1,6 @@
 # [Chuck Norris Facts](https://elreyb.github.io/chuck-norris-facts/)
 
-#### `06-server-side-apis` week review.
+#### _06-server-side-apis week review_
 
 <img src="./images/chuckapi.gif" alt="app gif" width="100%" />
 
