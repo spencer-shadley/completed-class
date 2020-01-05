@@ -14,7 +14,12 @@
 
 ## Description
 
-- describ the app and how it works
+This app is to demonstrate how to use jquery ajax and manipulate the DOM to display gifs and 'facts' about Chuck Norris.
+
+- You can select a 'fact' category
+  <div style="text-align: center">
+    <img src="./images/select-options.png" alt="app gif" />
+  </div>
 
 ## Tips and Tricks
 
