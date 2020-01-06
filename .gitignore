@@ -1,5 +1,6 @@
 # Temp files
 ~*.pptx
+~*.twbr
 
 # Logs
 logs
@@ -70,3 +71,4 @@ yarn.lock
 .DS_Store
 .vscode
 *.xslx
+
