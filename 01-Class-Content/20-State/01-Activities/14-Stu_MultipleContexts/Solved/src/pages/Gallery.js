@@ -7,7 +7,6 @@ import LanguageContext from "../utils/LanguageContext";
 import LanguageSelector from "../components/LanguageSelector";
 
 function Gallery() {
-
   const [languages, setLanguages] = useState([]);
   const [language, setLanguage] = useState("");
   const [languageIndex, setLanguageIndex] = useState(0);
@@ -17,25 +16,21 @@ function Gallery() {
   const [userIndex, setUserIndex] = useState(0);
 
   useEffect(() => {
-    API.getLanguagesList().then((languages) => {
-      setLanguages(languages)
-      setLanguage(languages[0])
-      
+    API.getLanguagesList().then(languages => {
+      setLanguages(languages);
+      setLanguage(languages[0]);
+
       loadUsers(languages[0]);
     });
-  }, [])
-
-  function capitalizeFirstLetter(string = "") {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-  }
+  }, []);
 
   function nextUser(userIndex) {
     // Ensure that the user index stays within our range of users
     if (userIndex >= users.length) {
       userIndex = 0;
     }
-    setUser(users[userIndex])
-    setUserIndex(userIndex)
+    setUser(users[userIndex]);
+    setUserIndex(userIndex);
   }
 
   function previousUser(userIndex) {
@@ -43,8 +38,8 @@ function Gallery() {
     if (userIndex < 0) {
       userIndex = users.length - 1;
     }
-    setUser(users[userIndex])
-    setUserIndex(userIndex)
+    setUser(users[userIndex]);
+    setUserIndex(userIndex);
   }
 
   function handleUserBtnClick(event) {
@@ -57,13 +52,14 @@ function Gallery() {
       const newUserIndex = userIndex - 1;
       previousUser(newUserIndex);
     }
-  };
+  }
 
-  const loadUsers = (language) => {
-    API.getUsersByLanguage(language).then((users) => {
-      setUsers(users)
-      setUser(users[0])
-    })
+  const loadUsers = language => {
+    API.getUsersByLanguage(language)
+      .then(users => {
+        setUsers(users);
+        setUser(users[0]);
+      })
       .catch(err => console.log(err));
   };
 
@@ -74,8 +70,8 @@ function Gallery() {
     }
     loadUsers(languages[languageIndex]);
 
-    setLanguage(languages[languageIndex])
-    setLanguageIndex(languageIndex)
+    setLanguage(languages[languageIndex]);
+    setLanguageIndex(languageIndex);
   }
 
   function previousLanguage(languageIndex) {
@@ -84,9 +80,9 @@ function Gallery() {
       languageIndex = languages.length - 1;
     }
     loadUsers(languages[languageIndex]);
-    
-    setLanguage(languages[languageIndex])
-    setLanguageIndex(languageIndex)
+
+    setLanguage(languages[languageIndex]);
+    setLanguageIndex(languageIndex);
   }
 
   function handleLanguageBtnClick(event) {
@@ -99,23 +95,24 @@ function Gallery() {
       const newLanguageIndex = languageIndex - 1;
       previousLanguage(newLanguageIndex);
     }
-  };
-
-    return (
-      <UserContext.Provider value={{user, users, capitalizeFirstLetter, handleUserBtnClick }}>
-        <LanguageContext.Provider value={{language, languages, handleLanguageBtnClick}}>
-          <div>
-            <h1 className="text-center">Welcome to LinkedUp</h1>
-            <h3 className="text-center">Click on the arrows to browse users</h3>
-            <LanguageSelector />
-            <Row>
-              <CardContainer />
-            </Row>
-          </div>
-        </LanguageContext.Provider>
-      </UserContext.Provider>
-    );
   }
 
+  return (
+    <UserContext.Provider value={{ user, users, handleUserBtnClick }}>
+      <LanguageContext.Provider
+        value={{ language, languages, handleLanguageBtnClick }}
+      >
+        <div>
+          <h1 className="text-center">Welcome to LinkedUp</h1>
+          <h3 className="text-center">Click on the arrows to browse users</h3>
+          <LanguageSelector />
+          <Row>
+            <CardContainer />
+          </Row>
+        </div>
+      </LanguageContext.Provider>
+    </UserContext.Provider>
+  );
+}
 
 export default Gallery;
