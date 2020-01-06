@@ -1,9 +1,13 @@
 $(document).ready(function() {
-  $('#search-button').on('click', function() {
-    var searchValue = $('#search-value').val();
+  $('form').on('submit', function(event) {
+    event.preventDefault();
+
+    var searchInput = $('#search-value');
+
+    var searchValue = searchInput.val();
 
     // clear input box
-    $('#search-value').val('');
+    searchInput.val('');
 
     searchWeather(searchValue);
   });
@@ -162,5 +166,3 @@ $(document).ready(function() {
     makeRow(history[i]);
   }
 });
-
-// Bonus, use location API to add the user's current location to the initial landing page.
