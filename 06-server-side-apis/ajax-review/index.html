@@ -10,7 +10,7 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
 
     <title>Ajax Review: Chuck Norris Facts</title>
   </head>
@@ -19,7 +19,8 @@
       <img src="giphy.gif" alt="Chuck" />
       <p>Chuck Norris loading app...</p>
     </div>
-    <main class="d-flex justify-content-center align-items-center flex-column">
+
+    <main class="d-none justify-content-center align-items-center flex-column ">
       <h1 class="text-center" id="header">
         On <span id="current-date"></span> I will learn "facts" about Chuck
         Norris: <span id="current-category">Dev</span>
@@ -34,6 +35,7 @@
         data-interval="6000"
       >
         <div class="carousel-inner">
+          <!-- template tag can hide html from the DOM https://www.w3schools.com/tags/tag_template.asp -->
           <template id="controls">
             <a
               class="carousel-control-prev"
