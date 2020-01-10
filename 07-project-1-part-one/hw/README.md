@@ -4,7 +4,7 @@
 
 - Use at least two server-side APIs
 
-- Use a CSS framework _other than_ Bootstrap
+- Use a CSS library _other than_ Bootstrap
 
 - Be interactive (i.e: accept and respond to user input)
 
