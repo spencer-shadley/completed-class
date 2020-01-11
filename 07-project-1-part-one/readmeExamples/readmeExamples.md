@@ -20,12 +20,15 @@ _No matter how big or small your project is, you should always take pride in the
 
 ### Bootcamp project READMEs
 
-- [Dance Network](https://github.com/ElreyB/dance-network)
+- [Dance Network](https://github.com/ElreyB/dance-network) - Elrey
+- [CRM](https://github.com/DaneShrewsbury2288/CRM) - Dane
 
 ### READMEs in the Wild
 
 - [TypeScript-Node-Starter](https://github.com/microsoft/TypeScript-Node-Starter#getting-started)
-- [Bootstrap](https://github.com/twbs/bootstrap#quick-start)
+- [Bootstrap](https://github.com/twbs/bootstrap)
+- [vscode](https://github.com/microsoft/vscode)
+- [awesome](https://github.com/sindresorhus/awesome)
+- [postgres](https://github.com/porsager/postgres)
 - [Gymnast](https://github.com/gymnastjs/gymnast)
 - [Victory](https://github.com/FormidableLabs/victory)
-- [vscode](https://github.com/microsoft/vscode)
