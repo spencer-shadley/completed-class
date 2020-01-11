@@ -8,7 +8,7 @@ Start this interactive git tutorial [here](https://learngitbranching.js.org/)
 
 ## 'strict' Mode
 
-If you feel comfortable with git or somehow finish the above early, try adding 'use strict' as the first line to some of your JavaScript files and see what happens.
+Try adding 'use strict' as the first line to some of your JavaScript files and see what happens.
 
 ### More Info
 
