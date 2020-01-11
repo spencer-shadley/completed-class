@@ -14,7 +14,7 @@ From [How to write good README and why should you care](https://thejunkland.com/
 
 _"Thinking you're the only person ever reading the file might act as a motivation to neglect the writing of a good README._
 
-_No matter how big or small your project is, you should always take pride in the hours you put in to writing code; you'll never know who's having a look at it in the next weeks, months or even years."_
+_"No matter how big or small your project is, you should always take pride in the hours you put in to writing code; you'll never know who's having a look at it in the next weeks, months or even years."_
 
 ## README Examples
 
