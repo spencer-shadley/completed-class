@@ -18,6 +18,10 @@ _No matter how big or small your project is, you should always take pride in the
 
 ## README Examples
 
+### Templates
+
+- [Template](https://github.com/ritaly/README-cheatsheet)
+
 ### Bootcamp project READMEs
 
 - [Dance Network](https://github.com/ElreyB/dance-network) - Elrey
