@@ -4,7 +4,7 @@
 
 - Use at least two server-side APIs
 
-- Use a new CSS library
+- Use a CSS framework or library we haven't used in class
 
 - Be interactive (i.e: accept and respond to user input)
 
