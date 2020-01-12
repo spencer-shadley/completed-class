@@ -18,10 +18,10 @@ If you are opting out of career services, this is _still a required assignment_.
 
 | Requirement      | Weight |
 | ---------------- | ------ |
-| Portoflio        | 40%    |
-| GitHub Profile   | 40%    |
+| Portfolio        | 40%    |
+| GitHub Profile   | 30%    |
 | Resume           | 10%    |
-| LinkedIn Profile | 10%    |
+| LinkedIn Profile | 20%    |
 
 ## Instructions
 
@@ -40,7 +40,11 @@ Your updated site should have the following content:
 
 - A link to a PDF of your resume
 
-- A list of projects. For each project, make sure you have the following:
+  - Tip: If you upload your resume to GitHub you get version history and can link to the always-up-to-date version of your resume. [Example](https://github.com/spencer-shadley/Resume)
+
+  - Alternatively or additionally you can embed your resume directly in your portfolio. [Live example](http://spencer-shadley.github.io/) (scroll down to "More Info!" to see the resume embedded from GitHub.) [This is the code](https://github.com/spencer-shadley/spencer-shadley.github.io/blob/master/_includes/resume.html) used to do so.
+
+- A list of projects. For each project, make sure you have the following in your README:
 
   - Project title
 
@@ -50,6 +54,10 @@ Your updated site should have the following content:
 
   - Screenshot of the deployed application
 
+  - Description of project
+
+  - (optional) Technologies used, more information about the architecture and design of your code
+
 #### Design
 
 Unfortunately, this is where it gets a little bit subjective. Your site should look
@@ -57,7 +65,7 @@ Unfortunately, this is where it gets a little bit subjective. Your site should l
 
 - Mobile-first design
 
-- Choose a color palette for your site so it doesn't just look like
+- [Choose a color palette](https://encycolorpedia.com/) for your site so it doesn't just look like
   the default bootstrap theme or an unstyled HTML site.
 
 - Make sure the font size is large enough to read, and that the colors don't cause eye strain.
@@ -76,7 +84,7 @@ Unfortunately, this is where it gets a little bit subjective. Your site should l
 
   - Link to your portfolio
 
-- Employers (and potential collaborators) _will_ look at your GitHub profile, so put your best face forward.
+- Employers (and potential collaborators) _will_ look at your GitHub profile so put your best face forward.
 
 - Pin some repos that you want to highlight
 
@@ -97,7 +105,3 @@ Submit a clear, concise and compelling resume, tailored to the type of job youâ€
 ### Updated LinkedIn Profile
 
 Update your LinkedIn Profile with a strong bio statement, a professional photo, and links to your Github and portfolio.
-
----
-
-Â© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
