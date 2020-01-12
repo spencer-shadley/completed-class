@@ -37,6 +37,7 @@
 - Frantz Felix
 - Teresa Liu
 - Ryan Sousa
+- Vaughn McPherson
 
 * George Travis
 * Justin Le
