@@ -11,3 +11,9 @@ var undefined = 3;
 function sum(a, a, c) {
   return a + a + c;
 }
+
+'hello'.true = '';
+
+var interface;
+
+console.log('made it to the end!');
