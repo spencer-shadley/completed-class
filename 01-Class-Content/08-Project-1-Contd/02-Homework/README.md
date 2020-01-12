@@ -104,4 +104,4 @@ Submit a clear, concise and compelling resume, tailored to the type of job youâ€
 
 ### Updated LinkedIn Profile
 
-Update your LinkedIn Profile with a strong bio statement, a professional photo, and links to your Github and portfolio.
+Update your LinkedIn Profile with a strong bio statement, a professional photo and links to your Github and portfolio.
