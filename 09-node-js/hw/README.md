@@ -54,6 +54,8 @@ When preparing a report for stakeholders, it is important to have up-to-date inf
 
 - The background color of the generated PDF matches the color that the user provides.
 
+- At least 5 unit tests
+
 ```
 GIVEN the developer has a GitHub profile
 
@@ -93,7 +95,3 @@ You are required to submit the following:
 - A generated PDF of your GitHub profile
 
 - The URL of the GitHub repository
-
----
-
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
