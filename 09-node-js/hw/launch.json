@@ -1,0 +1,15 @@
+// debug configuration starter for HW
+// put this file at the root of your workspace inside a .vscode directory
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch HW 9",
+      "skipFiles": ["<node_internals>/**"],
+      "console": "integratedTerminal",
+      "program": "${workspaceFolder}\\your-path\\index.js" // TODO: update me!
+    }
+  ]
+}
