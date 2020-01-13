@@ -65,7 +65,3 @@ Create a command-line application that dynamically generates a PDF resume from a
 - [Wikipedia: Server](<https://en.wikipedia.org/wiki/Server_(computing)>)
 - [fs Documentation](https://node.readthedocs.io/en/latest/api/fs/)
 - [InquirerJS](https://www.npmjs.com/package/inquirer/v/0.2.3)
-
----
-
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
