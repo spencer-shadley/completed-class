@@ -6,11 +6,10 @@ var swapCase = function(str) {
   for (var i = 0; i < str.length; ++i) {
     var letter = str[i];
 
-    if (letter === letter.toUpperCase()) {
-      result += letter.toLowerCase();
-    } else {
-      result += letter.toUpperCase();
-    }
+    result +=
+      letter === letter.toLowerCase()
+        ? letter.toUpperCase()
+        : letter.toLowerCase();
   }
 
   return result;
