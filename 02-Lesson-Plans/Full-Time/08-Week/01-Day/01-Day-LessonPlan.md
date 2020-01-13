@@ -53,6 +53,8 @@
 
 * Slack out the [requirements for project 2](../Project-Resources/README.md).
 
+* Let students know about the [starter code for project 2](../../../../01-Class-Content/14-Full-Stack/0-Supplemental/Sequelize-Passport-Example).
+
 * Answer any questions about project requirements.
 
 ### 3. Groups Do: Create a Repository (10 mins)
@@ -270,6 +272,8 @@
 
 * Click the "Install" button to complete the process.
 ```
+
+* Take some time to answer any lingering questions about Travis CI. Be sure to emphasize that students do not need to know the ins and outs of Travis to slowly begin integrating its build capabilities into their projects.
 
 - - -
 
