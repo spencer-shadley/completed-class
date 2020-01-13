@@ -5,7 +5,7 @@
 var plusOne = function(digits) {
   var carry = 1;
 
-  for (var i = digits.length - 1; i >= 0; i--) {
+  for (var i = digits.length - 1; i >= 0; --i) {
     var plusOne = digits[i] + carry;
     var sum;
     carry = 0;

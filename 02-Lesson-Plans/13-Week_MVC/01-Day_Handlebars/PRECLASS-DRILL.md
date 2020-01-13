@@ -30,7 +30,7 @@ Output: 4
 var reverseDigit = function(num) {
   var newNum = '';
   var numStr = num.toString();
-  for (var i = numStr.length - 1; i >= 0; i--) {
+  for (var i = numStr.length - 1; i >= 0; --i) {
     newNum += numStr[i];
   }
 

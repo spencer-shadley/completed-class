@@ -9,7 +9,7 @@ var removeDuplicates = function(nums) {
 
     if (num === nextNum) {
       nums.splice(i, 1);
-      i--;
+      --i;
     }
   }
 };

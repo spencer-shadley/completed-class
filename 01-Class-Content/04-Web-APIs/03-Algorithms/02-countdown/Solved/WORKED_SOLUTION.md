@@ -40,7 +40,7 @@ So understanding how for-loops work, we should be able to conclude that in order
 
 ```js
 function countDown(num) {
-  for (var i = num; i > 0; i--) {
+  for (var i = num; i > 0; --i) {
     console.log(i);
   }
 }
