@@ -46,11 +46,11 @@ function init() {
             return console.error(err);
           }
 
-          result.stream.pipe(
-            fs.createWriteStream(path.join(__dirname, 'resume.pdf'))
-          );
+          const resumeFilePath = path.join(__dirname, 'resume.pdf');
+
+          result.stream.pipe(fs.createWriteStream(resumeFilePath));
           conversion.kill();
-          open(path.join(__dirname, 'resume.pdf'));
+          open(resumeFilePath);
         });
       });
   });
