@@ -21,10 +21,6 @@ const questions = [
   }
 ];
 
-function writeToFile(fileName, data) {
-  return fs.writeFileSync(path.join(process.cwd(), fileName), data);
-}
-
 function init() {
   inquirer.prompt(questions).then(({ github, color }) => {
     console.log('Searching...');
@@ -54,9 +50,8 @@ function init() {
             fs.createWriteStream(path.join(__dirname, 'resume.pdf'))
           );
           conversion.kill();
+          open(path.join(__dirname, 'resume.pdf'));
         });
-
-        open(path.join(process.cwd(), 'resume.pdf'));
       });
   });
 }
