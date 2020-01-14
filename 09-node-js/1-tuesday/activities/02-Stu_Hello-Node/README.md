@@ -16,6 +16,10 @@ In this activity, you will write and run your first Node.js application.
 
 - It's just JavaScript.
 
-## Bonus
+## Bonus 1
 
 - What happens when you log `window`? What happens when you try to use `prompt`, `alert`, or `confirm`?
+
+## Bonus 2
+
+- How would you debug this?
