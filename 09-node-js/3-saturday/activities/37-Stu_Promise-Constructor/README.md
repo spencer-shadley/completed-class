@@ -18,7 +18,7 @@ waitFor(2)
     console.log(msg); // msg is printed since seconds is more than 0
   })
   .catch(function(err) {
-    console.log(err);
+    console.error(err);
   });
 
 waitFor(-5)
@@ -26,7 +26,7 @@ waitFor(-5)
     console.log(msg);
   })
   .catch(function(err) {
-    console.log(err); // error is printed since 'seconds' is less than 1
+    console.error(err); // error is printed since 'seconds' is less than 1
   });
 ```
 
