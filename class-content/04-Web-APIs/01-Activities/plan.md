@@ -17,7 +17,9 @@ It’s on GitLab
 Review (1120-25)
 setAttribute takes a property and a value
 
-Break 1125-1205 (40 min)
+Break 1125-1205
+
+- (40 min)
 
 06 Create Append (1205-15)
 Demo first
