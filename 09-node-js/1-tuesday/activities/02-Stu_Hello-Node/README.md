@@ -22,4 +22,8 @@ In this activity, you will write and run your first Node.js application.
 
 ## Bonus 2
 
+- Add something cool other than `console.log`!
+
+## Bonus 3
+
 - How would you debug this?
