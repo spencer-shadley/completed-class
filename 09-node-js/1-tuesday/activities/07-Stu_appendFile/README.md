@@ -12,6 +12,14 @@ In this activity, you will create a "commit logger" that records commit messages
 
 - If `fs.readFile` reads a file and `fs.writeFile` writes, but _overwrites_, a file, what method do you think will allow you to _append_ text to a file?
 
-## Bonus
+## Bonus 1
 
 - How would you add arguments on new lines?
+
+## Bonus 2
+
+- Allow the user to choose if they want to overwrite the file
+
+## Bonus 3
+
+- Allow the user to choose the filename
