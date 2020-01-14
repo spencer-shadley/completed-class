@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 app.get('/all', (req, res) => {
   db.animals.find({}, (err, data) => {
     if (err) {
-      console.log(err);
+      console.error(err);
     } else {
       res.json(data);
     }

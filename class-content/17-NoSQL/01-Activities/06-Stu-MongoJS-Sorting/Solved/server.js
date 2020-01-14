@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
 app.get('/all', (req, res) => {
   db.animals.find({}, (err, found) => {
     if (err) {
-      console.log(err);
+      console.error(err);
     } else {
       res.json(found);
     }
@@ -29,7 +29,7 @@ app.get('/all', (req, res) => {
 app.get('/name', (req, res) => {
   db.animals.find().sort({ name: 1 }, (err, found) => {
     if (err) {
-      console.log(err);
+      console.error(err);
     } else {
       res.json(found);
     }
@@ -39,7 +39,7 @@ app.get('/name', (req, res) => {
 app.get('/weight', (req, res) => {
   db.animals.find().sort({ weight: -1 }, (err, found) => {
     if (err) {
-      console.log(err);
+      console.error(err);
     } else {
       res.json(found);
     }

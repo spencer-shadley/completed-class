@@ -76,7 +76,7 @@ async function init() {
 
     console.log('Successfully wrote to index.html');
   } catch (err) {
-    console.log(err);
+    console.error(err);
   }
 }
 

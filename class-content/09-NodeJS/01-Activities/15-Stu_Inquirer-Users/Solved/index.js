@@ -30,7 +30,7 @@ inquirer
 
     fs.writeFile(filename, JSON.stringify(data, null, '\t'), function(err) {
       if (err) {
-        return console.log(err);
+        return console.error(err);
       }
 
       console.log('Success!');

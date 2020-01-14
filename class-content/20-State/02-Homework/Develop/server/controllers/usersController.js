@@ -7,7 +7,7 @@ module.exports = {
     db.User.create(req.body)
       .then(data => res.json(data))
       .catch(err => {
-        console.log(err);
+        console.error(err);
         res.status(400).json(err);
       });
   }

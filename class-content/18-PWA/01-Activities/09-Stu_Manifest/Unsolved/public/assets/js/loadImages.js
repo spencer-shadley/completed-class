@@ -118,7 +118,7 @@ function updateRating(event) {
       loadImages();
     })
     .catch(function(err) {
-      console.log(err);
+      console.error(err);
       dataArray.forEach(item => {
         if (item._id === id) {
           item.rating = rating;

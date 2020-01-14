@@ -15,5 +15,5 @@ waitFor(2)
     console.log(msg);
   })
   .catch(function(err) {
-    console.log(err);
+    console.error(err);
   });

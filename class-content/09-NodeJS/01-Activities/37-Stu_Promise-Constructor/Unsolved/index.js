@@ -10,7 +10,7 @@ function waitFor(seconds, cb) {
 
 waitFor(2, function(err, msg) {
   if (err) {
-    console.log(err);
+    console.error(err);
     return;
   }
 

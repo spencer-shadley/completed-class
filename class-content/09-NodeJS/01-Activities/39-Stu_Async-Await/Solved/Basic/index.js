@@ -21,7 +21,7 @@ async function combineAnimals() {
 
     console.log("Successfully wrote to 'combined.json' file");
   } catch (err) {
-    console.log(err);
+    console.error(err);
   }
 }
 

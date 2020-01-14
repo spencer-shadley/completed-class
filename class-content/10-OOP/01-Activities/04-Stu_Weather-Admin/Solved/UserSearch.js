@@ -13,7 +13,7 @@ const UserSearch = function(name, location) {
       result
     ) {
       if (err) {
-        console.log(err);
+        console.error(err);
       }
       console.log(JSON.stringify(result, null, 2));
     });

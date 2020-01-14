@@ -75,5 +75,5 @@ promptUser()
     console.log('Successfully wrote to index.html');
   })
   .catch(function(err) {
-    console.log(err);
+    console.error(err);
   });
