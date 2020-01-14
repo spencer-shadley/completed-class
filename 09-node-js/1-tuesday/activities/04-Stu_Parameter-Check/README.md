@@ -14,6 +14,10 @@ In this activity, you will write a Node.js command line application that accepts
 
 - There's more than one way to solve this problem!
 
-## Bonus
+## Bonus 1
 
 - How many ways can you solve this problem?
+
+## Bonus 2
+
+- Can you pass an object as an argument?
