@@ -23,3 +23,7 @@ In this activity, you will create a "commit logger" that records commit messages
 ## Bonus 3
 
 - Allow the user to choose the filename
+
+## Bonus 4
+
+- Make it all DRY
