@@ -12,12 +12,16 @@ function ProductItem({
   return (
     <div className="productItemContainer">
       <Link to={`/products/${_id}`}>
-        <img className="productImage img-fluid" src={thumbnailImage} />
+        <img
+          className="productImage img-fluid"
+          alt={name}
+          src={thumbnailImage}
+        />
         <div className="productTitleContainer">
           <p className="detailLink">{name}</p>
         </div>
       </Link>{" "}
-      <div className="productDescriptionContainer" >
+      <div className="productDescriptionContainer">
         <span className="productPrice">${salePrice}</span>
         <p className="description">{shortDescription} </p>
       </div>

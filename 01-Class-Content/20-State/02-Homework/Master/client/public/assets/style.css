@@ -1,11 +1,7 @@
 .image-card {
-    border: red solid 3px;
+  border: red solid 3px;
 }
 
 .detail-card {
-    border: red solid 3px;
-}
-
-.card-body {
-    
+  border: red solid 3px;
 }
