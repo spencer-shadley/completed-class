@@ -2,7 +2,7 @@ import React from "react";
 import { useStoreContext } from "../../utils/GlobalState";
 import AuthService from "../AuthService";
 import { Link } from "react-router-dom";
-import style from "./style.css";
+import "./style.css";
 
 function Nav() {
   const [store] = useStoreContext();
@@ -56,7 +56,7 @@ function Nav() {
       </a>
       {showNavigation()}
       {store.loading ? (
-        <a className="navbar-brand ml-auto">Loading...</a>
+        <span className="navbar-brand ml-auto">Loading...</span>
       ) : (
         <></>
       )}

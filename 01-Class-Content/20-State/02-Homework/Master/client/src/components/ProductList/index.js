@@ -11,19 +11,18 @@ function ProductList() {
 
   const getProducts = () => {
     dispatch({ type: LOADING });
-    API.getProducts().then(results => {
-      dispatch({
-        type: UPDATE_PRODUCTS,
-        products: results.data
+    API.getProducts()
+      .then(results => {
+        dispatch({
+          type: UPDATE_PRODUCTS,
+          products: results.data
+        });
       })
-      
-    })
-    .catch(err => console.error(err));
+      .catch(err => console.error(err));
   };
 
   useEffect(() => {
     getProducts();
-    console.log("PRODUCTS: ", state);
   }, []);
 
   return (
@@ -33,9 +32,8 @@ function ProductList() {
         <Container fluid>
           <Row>
             {state.products.map(product => (
-              <Col size="md-3">
+              <Col size="md-3" key={product.sku}>
                 <ProductItem
-                  key={product.productId}
                   _id={product.productId}
                   thumbnailImage={product.largeImage}
                   name={product.name}
@@ -49,8 +47,7 @@ function ProductList() {
       ) : (
         <h3>You haven't added any products yet!</h3>
       )}
-      <div className="mt-5">
-      </div>
+      <div className="mt-5"></div>
     </div>
   );
 }
