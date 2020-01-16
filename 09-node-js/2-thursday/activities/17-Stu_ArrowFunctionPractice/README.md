@@ -12,6 +12,10 @@ In this activity we will convert a file with pre-written code over to use arrow 
 
 - Remember the case from the last example in which we should _not_ be using arrow functions.
 
-## Bonus
+## Bonus 1
 
 - After you've converted all of the functions to arrow functions where possible, look for opportunities to shorten the arrow function syntax even further by removing parentheses and curly braces where allowed.
+
+## Bonus 2
+
+- What happens when you run this in Internet Explorer?
