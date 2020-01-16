@@ -6,7 +6,7 @@ In this example we will convert a prebuilt Crystal Guessing Game to use the new 
 
 - Open [Unsolved/index.html](Unsolved/index.html) in your web browser and take a moment to understand the application's functionality.
 
-  - This example is similar to the Crystal Guessing Game we worked on many weeks ago.
+  - This example is similar to the optional Crystal Guessing Game we worked on many weeks ago.
 
 - Now open [Unsolved/index.js](Unsolved/index.js) in your code editor and convert the existing code over to use the ES6 syntax we've learned about in the previous examples.
 

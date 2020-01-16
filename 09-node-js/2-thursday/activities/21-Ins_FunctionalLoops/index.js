@@ -17,9 +17,7 @@ moviePatrons.forEach(patron => console.log(patron.age));
 
 // Filter returns a new array containing only elements whose callback returns a truthy value
 
-const canWatchRatedR = moviePatrons.filter(function(patron) {
-  return patron.age > 17;
-});
+const canWatchRatedR = moviePatrons.filter(patron => patron.age > 17);
 
 console.log(canWatchRatedR);
 
@@ -29,11 +27,7 @@ console.log(canWatchRatedR);
 // Whatever is returned from the callback at each iteration is what goes into that index of the new array
 
 const cardedMoviePatrons = moviePatrons.map(patron => {
-  if (patron.age >= 17) {
-    patron.canWatchRatedR = true;
-  } else {
-    patron.canWatchRatedR = false;
-  }
+  patron.canWatchRatedR = patron.age >= 17;
   return patron;
 });
 
