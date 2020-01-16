@@ -1,32 +1,18 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Container } from "../Grid";
 import CartItem from "../CartItem";
 import { useStoreContext } from "../../utils/GlobalState";
-import {
-  LOADING,
-  UPDATE_CART,
-  REMOVE_FROM_CART,
-  ADD_ALL_TO_CART
-} from "../../utils/actions";
+import { LOADING, UPDATE_CART, ADD_ALL_TO_CART } from "../../utils/actions";
 import { idbPromise } from "../../utils/hooks";
-import styles from "./style.css";
+import "./style.css";
 
 const Cart = () => {
-
   const [state, dispatch] = useStoreContext();
 
   const getCart = () => {
     dispatch({ type: LOADING });
     dispatch({ type: UPDATE_CART });
-  };
-
-  const removeFromCart = product => {
-    dispatch({
-      type: REMOVE_FROM_CART,
-      productId: product.productId
-    });
-    idbPromise("best", "cart", "delete", product);
   };
 
   function calculateTotal() {
@@ -46,7 +32,7 @@ const Cart = () => {
     getCart();
   }, []);
 
-  return ( 
+  return (
     <div className="container mb-5 mt-5">
       <h1 className="text-center">Shopping Cart</h1>
       {state.cart.length ? (
@@ -90,11 +76,14 @@ const Cart = () => {
         </Container>
       ) : (
         <h3>
-          <span className="shocked-emoji" role="img" aria-label="shocked">😱</span>
-          You haven't added anything to your cart yet!</h3>
+          <span className="shocked-emoji" role="img" aria-label="shocked">
+            😱
+          </span>
+          You haven't added anything to your cart yet!
+        </h3>
       )}
     </div>
   );
-}
+};
 
 export default Cart;

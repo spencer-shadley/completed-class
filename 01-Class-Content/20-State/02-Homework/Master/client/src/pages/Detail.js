@@ -20,7 +20,7 @@ const Detail = props => {
     dispatch({ type: UPDATE_CART });
     API.getProduct(props.match.params.id)
       .then(res => {
-        console.log(res)
+        console.log(res);
         dispatch({ type: SET_CURRENT_PRODUCT, product: res.data });
         if (state.cart.length === 0) {
           idbPromise("best", "cart", "get").then(results => {
@@ -47,51 +47,15 @@ const Detail = props => {
     idbPromise("best", "cart", "delete", state.currentProduct);
   };
 
-  // console.log(state.cart);
-  const imgStyle = {
-    backgroundcolor: 'blue',
-    border: 'red border 3px',
-    padding: '0 10px 0 10px',
-    minHeight: '100px',
-    minWidth: '30%',
-    maxWidth: '300px',
-
-  };
-
-  const rowStyle = {
-    backgroundColor: 'white',
-    margin: '0 10px 0 40px',
-    // minHeight: '100%',
-    maxWidth: '80%'
-  };
-
-  const cardBody = {
-    backgroundColor: 'white',
-    margin: '0 10px 0 40px',
-    // maxWidth: '170%',
-  };
-
-  const cardStyle = {
-    minWidth: '240px',
-    // margin: '0 10px 0 40px',
-    // maxWidth: '170%',
-  };
-
-  const buttonStyle = {
-    minWidth: '100%',
-    borderRadius: '5px',
-    // backgroundColor: 'black',
-    // marginLeft: '30%',
-    textAlign: 'center',
-  };
-
   return (
     <>
       {state.currentProduct && state.cart ? (
-        <Container fluid >
+        <Container fluid>
           <Row>
             <Col size="md-2">
-              <Link className="link" to="/">← Back to Products</Link>
+              <Link className="link" to="/">
+                ← Back to Products
+              </Link>
             </Col>
           </Row>
           <br />
@@ -127,23 +91,24 @@ const Detail = props => {
                 </div>
                 <h4>Details:</h4>
                 <div>
-                  {state.currentProduct.width ? 
+                  {state.currentProduct.width ? (
                     <div>
                       <strong>Width:</strong>
                       {state.currentProduct.width}
                     </div>
-                    : <></>
-                  }
-                  {state.currentProduct.weight ? 
+                  ) : (
+                    <></>
+                  )}
+                  {state.currentProduct.weight ? (
                     <div>
                       <strong>Weight:</strong>
                       {state.currentProduct.weight}
                     </div>
-                    : <></>
-                  }
+                  ) : (
+                    <></>
+                  )}
                 </div>
               </div>
-              
             </Col>
           </Row>
           <br />

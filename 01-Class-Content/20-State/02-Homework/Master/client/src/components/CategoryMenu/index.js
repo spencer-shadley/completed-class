@@ -14,7 +14,7 @@ function CategoryMenu() {
         dispatch({
           type: UPDATE_PRODUCTS,
           products: results.data
-        })
+        });
       })
       .catch(err => console.error(err));
   };
@@ -24,25 +24,26 @@ function CategoryMenu() {
         <Col size="sm-12">
           <Search />
           {store.loading ? (
-            <a className="navbar-brand ml-auto">Loading...</a>
+            <span className="navbar-brand ml-auto">Loading...</span>
           ) : (
             <></>
           )}
         </Col>
-        <div className="category-heading" >
-          Pick a category:
-        </div>
-      { category.map( item => 
-        <Col size="md-2">
-          <button className="category-item" onClick={() => {
-            handleClick(item)
-          }}>
-            {item}
-          </button>
-        </Col>
-      )}
+        <div className="category-heading">Pick a category:</div>
+        {category.map(item => (
+          <Col size="md-2" key={item}>
+            <button
+              className="category-item"
+              onClick={() => {
+                handleClick(item);
+              }}
+            >
+              {item}
+            </button>
+          </Col>
+        ))}
       </Row>
-      </Container>
+    </Container>
   );
 }
 
