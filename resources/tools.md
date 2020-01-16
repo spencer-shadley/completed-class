@@ -2,6 +2,7 @@
 
 | File                                                                         | Description                                                         |
 | ---------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| [Postman](https://www.getpostman.com/)                                       | Test out making network requests with Postman!                      |
 | [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)   | The Chrome development tools (documentation on debugging in Chrome) |
 | [Chrome DevTools Video 1](https://www.youtube.com/watch?v=H0XScE08hy8)       | Short video on Chrome DevTools(~7mis)                               |
 | [Chrome DevTools Video 2](https://www.youtube.com/watch?v=x4q86IjJFag)       | Longer video on Chrome DevTools(~50mis)                             |
