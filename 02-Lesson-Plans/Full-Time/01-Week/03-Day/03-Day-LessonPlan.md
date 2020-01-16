@@ -85,7 +85,7 @@ We're also focused on empowering students with GitHub Pages for live deployments
 
   * `display: none`: Allows us to hide specific elements from the view. Useful because it can activate and deactivate elements. (Compare with `visibility: hidden;`, which also hides elements but not the space they take up.)
 
-* When prompted for the `Demo Time`, open [10-CSS_PositionedLayout/main.html](../../../../01-Class-Content/01-html-git-css/01-Activities/10-CSS_PositionedLayout/main.html) in both the browser and in your editor.
+* When prompted for the `Demo Time`, open [10-CSS_PositionedLayout/main.html](../../../../01-Class-Content/01-HTML-git-CSS/01-Activities/10-CSS_PositionedLayout/main.html) in both the browser and in your editor.
 
 * Point out that this currently uses static (default) positioning.
 
@@ -117,7 +117,7 @@ We're also focused on empowering students with GitHub Pages for live deployments
 ### 5. Partners Do: CSS Positioning Activity (30 mins) (Critical)
 
 * Introduce the next activity. Either by using the slide or by opening the file 
-[11-CSS_Positioned_Activity/positioning.html](../../../../01-Class-Content/01-html-git-css/01-Activities/11-CSS_Positioned_Activity/Solved/positioning.html) 
+[11-CSS_Positioned_Activity/positioning.html](../../../../01-Class-Content/01-HTML-git-CSS/01-Activities/11-CSS_Positioned_Activity/Solved/positioning.html) 
 in the browser, show students what they will be building in the next activity.
 
 ![4-PositioningActivity](Images/4-PositioningActivity.png)
