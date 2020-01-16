@@ -54,7 +54,7 @@ In this class we will be introducing students to the basics of HTML/CSS and then
 
 ### 5. Students Do: Basic Student Bio Activity (20 mins)
 
-* Open the file `basic-html-bio.html` inside [04-HTML_Git/Basic-HTML-Bio](../../../../01-Class-Content/01-html-git-css/01-Activities/04-HTML_Git/Solved/Basic-HTML-Bio.html) in your browser.
+* Open the file `basic-html-bio.html` inside [04-HTML_Git/Basic-HTML-Bio](../../../../01-Class-Content/01-HTML-git-CSS/01-Activities/04-HTML_Git/Solved/Basic-HTML-Bio.html) in your browser.
 
 * Then slack out the following instructions and show students the slide:
 
@@ -64,7 +64,7 @@ In this class we will be introducing students to the basics of HTML/CSS and then
 
 ### 6. Instructor Do: Recap Basic Student Bio Activity (5 mins)
 
-* Either live-code or open the solution [Basic-HTML-Bio.html](../../../../01-Class-Content/01-html-git-css/01-Activities/04-HTML_Git/Solved/Basic-HTML-Bio.html) to the previous activity in Visual Studio Code. Then, walk students through the solution line-by-line.
+* Either live-code or open the solution [Basic-HTML-Bio.html](../../../../01-Class-Content/01-HTML-git-CSS/01-Activities/04-HTML_Git/Solved/Basic-HTML-Bio.html) to the previous activity in Visual Studio Code. Then, walk students through the solution line-by-line.
 
 * Explain the `div` and `section` tags that appear in the solution.
 
@@ -108,7 +108,7 @@ In this class we will be introducing students to the basics of HTML/CSS and then
 
 ### 9. Students Do: CSS Styled Bio Page (20 mins)
 
-* Open the file [06-HTML_CSS_Layout/html-bio-with-css](../../../../01-Class-Content/01-html-git-css/01-Activities/06-HTML_CSS_Layout/Unsolved/html-bio-with-css.html)in your browser. Warn students that this might be a tough activity for some of them.
+* Open the file [06-HTML_CSS_Layout/html-bio-with-css](../../../../01-Class-Content/01-HTML-git-CSS/01-Activities/06-HTML_CSS_Layout/Unsolved/html-bio-with-css.html)in your browser. Warn students that this might be a tough activity for some of them.
 
     ![3-CSS_Layout_1](Images/3-CSS_Layout_1.png)
 
@@ -183,7 +183,7 @@ In this class we will be introducing students to the basics of HTML/CSS and then
 
 * Have students remind you what an external CSS stylesheet is before proceeding.
 
-* First open the HTML file `html-bio-with-css.html` that is inside of the folder [07-RelativePath](../../../../01-Class-Content/01-html-git-css/01-Activities/07-RelativePaths-Activity/Demo/html-bio-with-css.html) in your browser. Show students what the styled site looks like.
+* First open the HTML file `html-bio-with-css.html` that is inside of the folder [07-RelativePath](../../../../01-Class-Content/01-HTML-git-CSS/01-Activities/07-RelativePaths-Activity/Demo/html-bio-with-css.html) in your browser. Show students what the styled site looks like.
 
 * Then open the same file in your editor.
 
@@ -207,7 +207,7 @@ Answer any questions students have.
 
 * **Folder:**
 
-  * [07-RelativePaths-Activity/RelativePaths_UNSOLVED](../../../../01-Class-Content/01-html-git-css/01-Activities/07-RelativePaths-Activity/Unsolved)
+  * [07-RelativePaths-Activity/RelativePaths_UNSOLVED](../../../../01-Class-Content/01-HTML-git-CSS/01-Activities/07-RelativePaths-Activity/Unsolved)
 
 * **Instructions:**
 
@@ -223,7 +223,7 @@ Answer any questions students have.
 
 ### 13. Instructor Do: Review Relative File Paths Activity (10 mins)
 
-* Review each of the Relative File Path examples. You can use the [RelativePaths_SOLVED](../../../../01-Class-Content/01-html-git-css/01-Activities/07-RelativePaths-Activity/Solved) folder to quickly show solutions if you prefer.
+* Review each of the Relative File Path examples. You can use the [RelativePaths_SOLVED](../../../../01-Class-Content/01-HTML-git-CSS/01-Activities/07-RelativePaths-Activity/Solved) folder to quickly show solutions if you prefer.
 
 - - -
 
@@ -305,9 +305,9 @@ Explain that the syntax for the `.clearfix` class may appear strange now, but it
 
 * **Files:**
 
-  * `floats.html` inside [09-FloatLayout-Activity/Unsolved](../../../../01-Class-Content/01-html-git-css/01-Activities/09-FloatLayout-Activity/Unsolved/floats.html)
+  * `floats.html` inside [09-FloatLayout-Activity/Unsolved](../../../../01-Class-Content/01-HTML-git-CSS/01-Activities/09-FloatLayout-Activity/Unsolved/floats.html)
 
-  * `floats.css`  inside [09-FloatLayout-Activity/Unsolved](../../../../01-Class-Content/01-html-git-css/01-Activities/09-FloatLayout-Activity/Unsolved/floats.css)
+  * `floats.css`  inside [09-FloatLayout-Activity/Unsolved](../../../../01-Class-Content/01-HTML-git-CSS/01-Activities/09-FloatLayout-Activity/Unsolved/floats.css)
   
   * Screenshot of the desired layout (from slide)
 
