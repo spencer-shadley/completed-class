@@ -1,4 +1,8 @@
 // All of the `createGreeting` functions are equivalent
+function createGreeting(message, name) {
+  return message + ', ' + name + '!';
+}
+
 var createGreeting = function(message, name) {
   return message + ', ' + name + '!';
 };
