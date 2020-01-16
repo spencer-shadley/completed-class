@@ -225,7 +225,7 @@
 
 ### 9. Students Do: Console Commands (12 mins)
 
-* [Intro To Console Bash](../../../../01-Class-Content/01-html-git-css/01-Activities/02-IntroToConsoleBash)
+* [Intro To Console Bash](../../../../01-Class-Content/01-HTML-git-CSS/01-Activities/02-IntroToConsoleBash)
 
 * Then slack out the following instructions to students (or show them the instructions via the slide):
 
@@ -254,7 +254,7 @@
 
 * Create a new HTML file in your editor. Have students follow along if they can, but tell them not to get bogged down if they are having trouble keeping up. They will have a chance to work on an example of their own later.
 
-* Use the code in [03-my-first-html](../../../../01-Class-Content/01-html-git-css/01-Activities/03-MyFirstHTML/Solved/my-first-html.html) as a guide. Be careful not to open the bonus file yet, that's for the next activity.
+* Use the code in [03-my-first-html](../../../../01-Class-Content/01-HTML-git-CSS/01-Activities/03-MyFirstHTML/Solved/my-first-html.html) as a guide. Be careful not to open the bonus file yet, that's for the next activity.
 
   * **Don't just display this file or copy and paste the code onto your screen.** Type it out, and let your students follow along.
 
@@ -268,7 +268,7 @@
 
 ### 12. Students Do: Intro to HTML (5 mins)
 
-* [03-MyFirstHTML](../../../../01-Class-Content/01-html-git-css/01-Activities/03-MyFirstHTML)
+* [03-MyFirstHTML](../../../../01-Class-Content/01-HTML-git-CSS/01-Activities/03-MyFirstHTML)
 
 * Keep your HTML code from the previous exercise available for them to see while they work, but don't send them the code just yet.
 
@@ -310,7 +310,7 @@
 
 ### 13. Instructor Do: Review HTML Solution (10 mins)
 
-* Open the file [my-first-html-with-bonus.html](../../../../01-Class-Content/01-html-git-css/01-Activities/03-MyFirstHTML/Solved/my-first-html-with-bonus.html) and walk students through the solution. As you discuss the solution, be sure to point out the following:
+* Open the file [my-first-html-with-bonus.html](../../../../01-Class-Content/01-HTML-git-CSS/01-Activities/03-MyFirstHTML/Solved/my-first-html-with-bonus.html) and walk students through the solution. As you discuss the solution, be sure to point out the following:
 
   * Key elements like `<!DOCTYPE html>`, `<html>`, `<head>`, `<h1>`, the links.
 
