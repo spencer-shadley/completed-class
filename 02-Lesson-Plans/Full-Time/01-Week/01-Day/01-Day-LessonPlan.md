@@ -71,15 +71,9 @@
 
 * Instructor/TAs just hang tight and calm your nerves!
 
-### 2. Instructor Do: Begin Slide Deck + Introductions (15 mins)
+### 2. Instructor Do: Begin Slide Deck (15 mins)
 
 * Open the slide deck [1.1 The Zen of Coding](https://docs.google.com/presentation/d/1GDnp_iOyLS4PfZKapMaXeqkQakY8iHiAEIqv3Hz5_aE/edit?usp=sharing). Use it as a guide for the remaining sections, but keeping a close eye on your TAs to make sure you are keeping track of time. Be concise when you can!
-
-* Have every student in the class introduce themselves (name, background, reason they joined). Try to keep things lighthearted as they share their ideas, but remember to try and keep things brief. We have a lot to go over in class today, and we'll need all the time we can get.
-
-* Have TAs introduce themselves and provide their own backgrounds.
-
-* Then introduce yourself and showcase one thing you've built (this can be added into the slides).
 
 ### 3. Instructor Do: The Path of Learning (15 mins)
 
@@ -231,7 +225,7 @@
 
 ### 9. Students Do: Console Commands (12 mins)
 
-* [Intro To Console Bash](../../../../01-Class-Content/01-html-git-css/01-Activities/02-IntroToConsoleBash)
+* [Intro To Console Bash](../../../../01-Class-Content/01-HTML-git-CSS/01-Activities/02-IntroToConsoleBash)
 
 * Then slack out the following instructions to students (or show them the instructions via the slide):
 
@@ -260,7 +254,7 @@
 
 * Create a new HTML file in your editor. Have students follow along if they can, but tell them not to get bogged down if they are having trouble keeping up. They will have a chance to work on an example of their own later.
 
-* Use the code in [03-my-first-html](../../../../01-Class-Content/01-html-git-css/01-Activities/03-MyFirstHTML/Solved/my-first-html.html) as a guide. Be careful not to open the bonus file yet, that's for the next activity.
+* Use the code in [03-my-first-html](../../../../01-Class-Content/01-HTML-git-CSS/01-Activities/03-MyFirstHTML/Solved/my-first-html.html) as a guide. Be careful not to open the bonus file yet, that's for the next activity.
 
   * **Don't just display this file or copy and paste the code onto your screen.** Type it out, and let your students follow along.
 
@@ -274,7 +268,7 @@
 
 ### 12. Students Do: Intro to HTML (5 mins)
 
-* [03-MyFirstHTML](../../../../01-Class-Content/01-html-git-css/01-Activities/03-MyFirstHTML)
+* [03-MyFirstHTML](../../../../01-Class-Content/01-HTML-git-CSS/01-Activities/03-MyFirstHTML)
 
 * Keep your HTML code from the previous exercise available for them to see while they work, but don't send them the code just yet.
 
@@ -316,7 +310,7 @@
 
 ### 13. Instructor Do: Review HTML Solution (10 mins)
 
-* Open the file [my-first-html-with-bonus.html](../../../../01-Class-Content/01-html-git-css/01-Activities/03-MyFirstHTML/Solved/my-first-html-with-bonus.html) and walk students through the solution. As you discuss the solution, be sure to point out the following:
+* Open the file [my-first-html-with-bonus.html](../../../../01-Class-Content/01-HTML-git-CSS/01-Activities/03-MyFirstHTML/Solved/my-first-html-with-bonus.html) and walk students through the solution. As you discuss the solution, be sure to point out the following:
 
   * Key elements like `<!DOCTYPE html>`, `<html>`, `<head>`, `<h1>`, the links.
 

@@ -32,7 +32,7 @@ In this activity, we will modify a React application to make it more DRY through
 
   * The `FriendCard` component can initially contain the same code as `SpongebobCard` with the same CSS file.
 
-  * Require the `FriendCard` component inside of `src/App.js` and render it inside of the `Wrapper` component. Before going any further, check your browser. If successful, you should only see one card being rendered.
+  * Import the `FriendCard` component inside of `src/App.js` and render it inside of the `Wrapper` component. Before going any further, check your browser. If successful, you should only see one card being rendered.
 
 * Still inside of `src/App.js`, use the first friend object in the `friends` JSON file to pass the following props down to your rendered `FriendCard` component.
 
