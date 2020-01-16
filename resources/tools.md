@@ -2,6 +2,7 @@
 
 | File                                                                         | Description                                                         |
 | ---------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| [caniuse](https://caniuse.com/)                                              | Check which browsers support different features                     |
 | [Postman](https://www.getpostman.com/)                                       | Test out making network requests with Postman!                      |
 | [Google Drawings](https://docs.google.com/drawings/)                         | Draw stuff collaboratively                                          |
 | [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)   | The Chrome development tools (documentation on debugging in Chrome) |
