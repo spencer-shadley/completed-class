@@ -14,11 +14,11 @@ console.log(funnyCase("You can't just do whatever you want all the time!"));
 // --------------------------------------------------------------------------
 
 // 2. Map lets you loop over an array and modify the elements inside
-var map = (arr, cb) => {
+var map = (arr, callback) => {
   var result = [];
   for (var index = 0; index < arr.length; ++index) {
     var currentElement = arr[index];
-    result.push(cb(currentElement, index));
+    result.push(callback(currentElement, index));
   }
   return result;
 };
@@ -33,11 +33,11 @@ console.log(doubled);
 // --------------------------------------------------------------------------
 
 // 3. filter lets you loop over an array and remove elements
-var filter = (arr, cb) => {
+var filter = (arr, callback) => {
   var result = [];
   for (var index = 0; index < arr.length; ++index) {
     var currentElement = arr[index];
-    if (cb(currentElement, index)) {
+    if (callback(currentElement, index)) {
       result.push(currentElement);
     }
   }
