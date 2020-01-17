@@ -8,7 +8,7 @@ This will be reviewed at the beginning of class
 1. Uncomment `'use strict'` at the top of [strict-script.js](strict-script.js)
 1. Fix each error.
 
-- Bonus: Try adding 'use strict' as the first line to some of your JavaScript files and see what happens.
+- Bonus: Try adding `'use strict'` as the first line to some of your JavaScript files and see what happens.
 
 ### More Info
 
