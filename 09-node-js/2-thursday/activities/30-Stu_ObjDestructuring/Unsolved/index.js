@@ -1,22 +1,22 @@
-'use strict'
+'use strict';
 
 // 1. Object
 const arya = {
-  first: 'Arya',
-  last: 'Stark',
+  firstName: 'Arya',
+  lastName: 'Stark',
   origin: 'Winterfell',
   allegiance: 'House Stark'
 };
 
 // CODE BELOW HERE
 
-console.log(first); // <= Arya
-console.log(last); // <= Stark
+console.log(firstName); // <= Arya
+console.log(lastName); // <= Stark
 
 // 2. Nested Object
 const john = {
-  first: 'John',
-  last: 'Snow',
+  firstName: 'John',
+  lastName: 'Snow',
   title: 'Prince',
   family: {
     brothers: {
