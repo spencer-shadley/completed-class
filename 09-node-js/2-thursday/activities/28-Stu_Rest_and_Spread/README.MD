@@ -1,6 +1,6 @@
 ## Spread and Rest
 
-\*\*Follow the comments in `index.js`.
+- Follow the comments in `Unsolved\index.js`.
 
 1. Copy the `songs` array into another array using spread and console.log what it returns.
 

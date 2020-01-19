@@ -19,7 +19,7 @@ add(1, 1, 4, 5); // => 11
 
 // 2.
 function howManyArgs(...args) {
-  return `You passed ${args.length} arguments.`; // point out the template literal
+  return `You passed ${args.length} arguments.`; // template literal!
 }
 
 console.log(howManyArgs(0, 1)); // You have passed 2 arguments.
@@ -27,6 +27,6 @@ console.log(howManyArgs('argument!', null, ['one', 2, 'three'], 4)); // You have
 
 // 1. spread
 const dragons = ['Drogon', 'Viserion', 'Rhaegal'];
-const weapons = ['dragonglass', ...dragons, 'wildfire']; // notice the spread operator ...dragons
+const weapons = ['dragonglass', dragons, 'wildfire'];
 
-console.log(weapons); // prints ["dragonglass", "Drogon", "Viserion", "Rhaegal", "wildfire"]
+console.log(weapons); // what will this output?
