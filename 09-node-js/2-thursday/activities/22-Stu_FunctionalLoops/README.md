@@ -1,4 +1,4 @@
-# Functional Loops
+# 22-Stu_FunctionalLoops
 
 In this activity we will use the `map` and `filter` methods to solve problems we previously would have used a for loop for.
 
@@ -6,6 +6,10 @@ In this activity we will use the `map` and `filter` methods to solve problems we
 
 - Open the [Unsolved](Unsolved) folder and examine the `map.js` and `filter.js` files. Study the examples provided and Complete the problems outlined in the comments.
 
-### Bonus
+### Bonus 1
 
 - Use arrow functions as callbacks here.
+
+### Bonus 2
+
+-

@@ -1,11 +1,11 @@
 const originalArray = [1, 3, 2, 5, 10];
 
-const doubledArray = originalArray.map(function(data) {
+const doubledArray = originalArray.map(data => {
   return data * 2;
 });
 
-console.log(doubledArray);
-console.log(originalArray);
+console.log('original array', originalArray);
+console.log('doubled array', doubledArray);
 
 // Complete the following
 
@@ -17,4 +17,4 @@ console.log(originalArray);
 
 // Your code here
 
-// Bonus: Use arrow functions as callbacks!
+// Bonus 1: Use arrow functions as callbacks!
