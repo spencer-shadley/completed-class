@@ -1,10 +1,6 @@
 const originalArray = [1, 3, 2, 5, 10];
 
-const evenNumbers = originalArray.filter(function(data) {
-  if (data % 2 === 0) {
-    return true;
-  }
-});
+const evenNumbers = originalArray.filter(data => data % 2 === 0);
 
 console.log(evenNumbers);
 console.log(originalArray);
@@ -25,4 +21,4 @@ const isPrime = num => {
 
 // Your code here
 
-// Bonus: Use arrow functions as callbacks!
+// Bonus: Play code golf!

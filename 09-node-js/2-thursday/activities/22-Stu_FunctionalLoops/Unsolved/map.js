@@ -17,4 +17,4 @@ console.log('doubled array', doubledArray);
 
 // Your code here
 
-// Bonus 1: Use arrow functions as callbacks!
+// Bonus: Play code golf!
