@@ -1,3 +1,5 @@
+'use strict'
+
 const calculations = require('./calculations');
 
 const priceEl = document.getElementById('price');

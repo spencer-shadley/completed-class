@@ -1,3 +1,5 @@
+'use strict'
+
 import { loadImages, loadImage } from './api';
 import { createEl } from './domMethods';
 import { createCards, createCard } from './cardCreation';

@@ -1,3 +1,5 @@
+'use strict'
+
 var submitEl = document.querySelector('#submit');
 var nameInput = document.querySelector('#name');
 var emailInput = document.querySelector('#email');

@@ -1,3 +1,5 @@
+'use strict'
+
 import React, { useContext } from 'react';
 import UserContext from '../utils/UserContext';
 import profileImage from '../assets/images/profile.png';

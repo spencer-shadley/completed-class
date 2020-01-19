@@ -1,3 +1,5 @@
+'use strict'
+
 // 1. Using arrays
 const songs = ['Bad Guy', 'Old Town Road', '7 Rings'];
 

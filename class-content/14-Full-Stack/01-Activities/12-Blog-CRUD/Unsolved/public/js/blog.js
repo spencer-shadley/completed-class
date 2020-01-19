@@ -1,3 +1,5 @@
+'use strict'
+
 $(document).ready(function() {
   /* global moment */
   // blogContainer holds all of our posts

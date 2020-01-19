@@ -1,3 +1,5 @@
+'use strict'
+
 // var pTags = document.querySelectorAll("p");
 // var divTags = document.querySelectorAll("div");
 // var aTags = document.querySelectorAll("a");

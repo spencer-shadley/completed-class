@@ -1,3 +1,5 @@
+'use strict'
+
 // When user hits the search-btn
 $('#search-btn').on('click', function(event) {
   event.preventDefault();

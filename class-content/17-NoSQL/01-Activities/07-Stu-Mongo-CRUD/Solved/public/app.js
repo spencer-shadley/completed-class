@@ -1,3 +1,5 @@
+'use strict'
+
 const actionBtn = document.getElementById('action-button');
 // new item
 const makeNote = document.getElementById('make-new');

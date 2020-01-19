@@ -1,3 +1,5 @@
+'use strict'
+
 var firstNameInput = document.querySelector('#first-name');
 var lastNameInput = document.querySelector('#last-name');
 var emailInput = document.querySelector('#email');

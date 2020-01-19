@@ -1,3 +1,5 @@
+'use strict'
+
 var timeEl = document.querySelector('.time');
 var mainEl = document.getElementById('main');
 

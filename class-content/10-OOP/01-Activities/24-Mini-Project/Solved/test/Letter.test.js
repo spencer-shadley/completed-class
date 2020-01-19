@@ -1,3 +1,5 @@
+'use strict'
+
 const Letter = require('../lib/Letter');
 
 describe('Letter class', () => {

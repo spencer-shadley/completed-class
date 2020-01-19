@@ -1,3 +1,5 @@
+'use strict'
+
 function waitFor(seconds) {
   return new Promise(function(resolve, reject) {
     if (isNaN(seconds) || seconds < 1) {

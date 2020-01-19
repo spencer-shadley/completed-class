@@ -1,3 +1,5 @@
+'use strict'
+
 import React, { useEffect } from 'react';
 import { Col, Row, Container } from '../Grid';
 import ProductItem from '../ProductItem';

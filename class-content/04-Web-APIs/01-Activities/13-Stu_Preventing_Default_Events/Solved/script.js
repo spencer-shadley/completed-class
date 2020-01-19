@@ -1,3 +1,5 @@
+'use strict'
+
 var tipElement = document.querySelector('#tip-percentage');
 var totalElement = document.querySelector('#total');
 var submitElement = document.querySelector('#submit');

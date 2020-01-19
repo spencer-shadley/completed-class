@@ -1,3 +1,5 @@
+'use strict'
+
 const Arithmetic = require('./arithmetic');
 
 const value = new Arithmetic(4)

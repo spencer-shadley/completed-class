@@ -1,3 +1,5 @@
+'use strict'
+
 // Constructor function which can be used to create objects containing the properties "raining", "noise", and the "makeNoise()" function
 function Animal(raining, noise) {
   this.raining = raining;

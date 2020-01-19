@@ -1,3 +1,5 @@
+'use strict'
+
 var connection = require('./connection.js');
 
 // Object Relational Mapper (ORM)

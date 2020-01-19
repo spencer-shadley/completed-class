@@ -1,3 +1,5 @@
+'use strict'
+
 var pie = 'apple';
 
 var predictable = function() {

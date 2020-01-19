@@ -1,3 +1,5 @@
+'use strict'
+
 function HelloDiv() {
   return null;
 }

@@ -1,3 +1,5 @@
+'use strict'
+
 class Toy {
   constructor(name, price, count) {
     this.name = name;

@@ -1,3 +1,5 @@
+'use strict'
+
 var fs = require('fs');
 
 var shouldAppend = process.argv[2] === 'append';

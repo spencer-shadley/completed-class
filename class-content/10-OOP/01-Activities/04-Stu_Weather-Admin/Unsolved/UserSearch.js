@@ -1,3 +1,5 @@
+'use strict'
+
 // We're incorporating an npm package for doing weather searches.
 var weather = require('weather-js');
 

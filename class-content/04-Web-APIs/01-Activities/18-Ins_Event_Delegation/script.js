@@ -1,3 +1,5 @@
+'use strict'
+
 var listEl = document.querySelector('#grocery-list');
 var shoppingCartEl = document.querySelector('#shopping-cart');
 var groceries = ['Bananas', 'Apples', 'Oranges', 'Grapes', 'Blueberries'];

@@ -1,3 +1,5 @@
+'use strict'
+
 var badmath = require('badmath');
 
 console.log(badmath.pie);

@@ -1,3 +1,5 @@
+'use strict'
+
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
   $('.delquote').on('click', function(event) {

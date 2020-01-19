@@ -1,3 +1,5 @@
+'use strict'
+
 var main = document.querySelector('main');
 var sitesEl = document.querySelector('.sites');
 var site1El = document.querySelector('.site1');

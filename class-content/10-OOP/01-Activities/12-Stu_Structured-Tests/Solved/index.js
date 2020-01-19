@@ -1,3 +1,5 @@
+'use strict'
+
 const Child = require('./child');
 const DayCare = require('./dayCare');
 

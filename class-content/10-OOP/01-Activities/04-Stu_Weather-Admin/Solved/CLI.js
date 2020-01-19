@@ -1,3 +1,5 @@
+'use strict'
+
 const WeatherAdmin = require('./WeatherAdmin');
 
 // Hold the value whether someone is an "admin" or "user"

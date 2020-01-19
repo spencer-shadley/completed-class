@@ -1,3 +1,5 @@
+'use strict'
+
 import { createArticleIds, getParams } from './utils';
 
 // Loads articles

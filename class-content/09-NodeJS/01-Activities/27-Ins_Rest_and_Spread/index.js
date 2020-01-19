@@ -1,3 +1,5 @@
+'use strict'
+
 // without rest
 function add(x, y) {
   return x + y;

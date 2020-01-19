@@ -1,3 +1,5 @@
+'use strict'
+
 var WeatherAdmin = require("./Unsolved/WeatherAdmin.js");
 
 // Hold the value whether someone is an "admin" or "user"

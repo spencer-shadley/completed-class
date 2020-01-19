@@ -1,3 +1,5 @@
+'use strict'
+
 import React from 'react';
 import { ListItem, List } from '../List';
 import DeleteBtn from '../DeleteBtn';

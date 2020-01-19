@@ -1,3 +1,5 @@
+'use strict'
+
 import React from 'react';
 
 // This component lets us use a bootstrap input element without worrying about class names

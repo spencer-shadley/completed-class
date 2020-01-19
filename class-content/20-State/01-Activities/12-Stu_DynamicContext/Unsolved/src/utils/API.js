@@ -1,3 +1,5 @@
+'use strict'
+
 import axios from 'axios';
 
 const languages = ['JavaScript', 'Python', 'C', 'Ruby', 'Java', 'PHP', 'C#'];

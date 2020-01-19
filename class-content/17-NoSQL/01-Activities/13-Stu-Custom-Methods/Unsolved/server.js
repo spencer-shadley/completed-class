@@ -1,3 +1,5 @@
+'use strict'
+
 // Add code to userModel.js to complete the model
 
 const express = require('express');

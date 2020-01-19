@@ -1,3 +1,5 @@
+'use strict'
+
 var addButton = document.querySelector('#add-btn');
 var peopleListElement = document.querySelector('#people-list');
 var nameElement = document.querySelector('#name');

@@ -1,3 +1,5 @@
+'use strict'
+
 // 1.
 myArray = [2, 4, 6, 8];
 console.log(myArray);

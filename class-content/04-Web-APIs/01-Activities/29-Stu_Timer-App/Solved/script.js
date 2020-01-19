@@ -1,3 +1,5 @@
+'use strict'
+
 var statusSpan = document.querySelector('#status');
 var statusToggle = document.querySelector('#status-toggle');
 var playButton = document.querySelector('#play');

@@ -1,3 +1,5 @@
+'use strict'
+
 export function useIndexedDb(databaseName, storeName, method, object) {
   return new Promise((resolve, reject) => {
     const request = window.indexedDB.open(databaseName, 1);

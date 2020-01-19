@@ -1,3 +1,5 @@
+'use strict'
+
 var eventType = document.querySelector('#event-type');
 var mouseEventsEl = document.querySelector('#click-events');
 var keyEventsEl = document.querySelector('#key-events');

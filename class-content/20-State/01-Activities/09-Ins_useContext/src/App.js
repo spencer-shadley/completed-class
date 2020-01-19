@@ -1,3 +1,5 @@
+'use strict'
+
 import React, { useState, useEffect } from 'react';
 import DeveloperInfo from './components/Developer';
 import MoodBtns from './components/MoodBtns';

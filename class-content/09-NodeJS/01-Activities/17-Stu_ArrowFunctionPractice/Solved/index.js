@@ -1,3 +1,5 @@
+'use strict'
+
 // 1. funnyCase makes each letter in a string the opposite case as the one before
 var funnyCase = string => {
   var newString = '';

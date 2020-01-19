@@ -1,3 +1,5 @@
+'use strict'
+
 import React from 'react';
 import './style.css';
 import CardTitleText from '../CardTitleText';

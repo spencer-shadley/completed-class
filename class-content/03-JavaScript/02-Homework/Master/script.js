@@ -1,3 +1,5 @@
+'use strict'
+
 // each set of characters, leveraging ASCII sequences
 // https://www.computerhope.com/jargon/a/ascii.htm
 // https://www.webopedia.com/TERM/A/ASCII.html

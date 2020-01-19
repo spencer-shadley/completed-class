@@ -1,3 +1,5 @@
+'use strict'
+
 var fs = require('fs');
 var UserSearch = require('./UserSearch');
 var moment = require('moment');

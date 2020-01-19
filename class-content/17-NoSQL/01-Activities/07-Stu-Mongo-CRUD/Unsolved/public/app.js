@@ -1,3 +1,5 @@
+'use strict'
+
 function getResults() {
   // Empty any results currently on the page
   $('#results').empty();

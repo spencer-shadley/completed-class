@@ -1,3 +1,5 @@
+'use strict'
+
 import React from 'react';
 import FriendCard from './components/FriendCard';
 import Wrapper from './components/Wrapper';

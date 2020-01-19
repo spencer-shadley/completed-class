@@ -1,3 +1,5 @@
+'use strict'
+
 // Write a function that takes in two arrays of non-negative integers
 // Each element in the arrays contains a single digit
 // Together each array represents a whole number

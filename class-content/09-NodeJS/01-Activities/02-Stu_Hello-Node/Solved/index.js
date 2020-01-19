@@ -1,3 +1,5 @@
+'use strict'
+
 console.log('Hellooo, Node!');
 // console.log(window); // window is not defined
 // prompt('hi'); // prompt is not defined

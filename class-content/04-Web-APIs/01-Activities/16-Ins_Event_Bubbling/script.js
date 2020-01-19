@@ -1,3 +1,5 @@
+'use strict'
+
 var outer = document.querySelector('.outer-div');
 var inner = document.querySelector('.inner-div');
 var button = document.querySelector('.button');

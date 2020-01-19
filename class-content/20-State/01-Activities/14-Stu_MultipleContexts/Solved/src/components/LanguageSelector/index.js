@@ -1,3 +1,5 @@
+'use strict'
+
 import React, { useContext } from 'react';
 import CardBtn from '../CardBtn';
 import LanguageContext from '../../utils/LanguageContext';

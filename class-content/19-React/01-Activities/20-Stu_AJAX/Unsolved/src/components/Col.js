@@ -1,3 +1,5 @@
+'use strict'
+
 import React from 'react';
 
 // This Col component offers us the convenience of being able to set a column's "size" prop instead of its className

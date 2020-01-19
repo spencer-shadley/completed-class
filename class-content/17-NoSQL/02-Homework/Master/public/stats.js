@@ -1,3 +1,5 @@
+'use strict'
+
 // get all workout data from back-end
 fetch('/api/workouts')
   .then(response => {

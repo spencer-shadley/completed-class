@@ -1,3 +1,5 @@
+'use strict'
+
 var artDiv = document.getElementById('articles');
 var mainDiv = document.getElementById('main');
 

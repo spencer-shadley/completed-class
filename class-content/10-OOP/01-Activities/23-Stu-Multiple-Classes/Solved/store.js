@@ -1,3 +1,5 @@
+'use strict'
+
 class Store {
   constructor(name, stock) {
     this.name = name;

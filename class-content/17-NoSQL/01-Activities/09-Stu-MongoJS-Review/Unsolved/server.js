@@ -1,3 +1,5 @@
+'use strict'
+
 // Your assignment is to define the routes below. Good luck!
 
 const express = require('express');

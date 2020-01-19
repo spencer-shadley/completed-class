@@ -1,3 +1,5 @@
+'use strict'
+
 // Creates an object and sets it to "dogs"
 const dogs = {
   // creates the property "raining" and sets it to true

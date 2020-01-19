@@ -1,3 +1,5 @@
+'use strict'
+
 // list of all questions, choices, and answers
 var questions = [
   {

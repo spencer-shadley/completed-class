@@ -1,3 +1,5 @@
+'use strict'
+
 const music = {
   // code here
 };

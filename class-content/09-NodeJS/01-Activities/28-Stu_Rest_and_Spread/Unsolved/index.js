@@ -1,3 +1,5 @@
+'use strict'
+
 // 1. Copy the songs array into another array using spread and console.log what it returns.
 const songs = ['Creep', 'Everlong', 'Bulls On Parade', 'Song 2', 'What I Got'];
 

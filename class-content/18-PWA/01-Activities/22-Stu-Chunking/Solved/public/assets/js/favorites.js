@@ -1,3 +1,5 @@
+'use strict'
+
 import { useIndexedDb } from './indexedDb';
 
 import { createCards } from './cardCreation';

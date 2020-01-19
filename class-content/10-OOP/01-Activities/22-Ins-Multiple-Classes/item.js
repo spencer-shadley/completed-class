@@ -1,3 +1,5 @@
+'use strict'
+
 class Item {
   constructor(title, price) {
     this.title = title;

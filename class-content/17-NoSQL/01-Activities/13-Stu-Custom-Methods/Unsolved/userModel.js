@@ -1,3 +1,5 @@
+'use strict'
+
 // Create the required custom methods at the bottom of this file
 
 const mongoose = require('mongoose');

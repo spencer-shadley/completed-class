@@ -1,3 +1,5 @@
+'use strict'
+
 /* eslint-disable react/prefer-stateless-function */
 import React, { Component } from 'react';
 import logo from './logo.svg';

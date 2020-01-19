@@ -1,3 +1,5 @@
+'use strict'
+
 $(document).ready(function() {
   // blogContainer holds all of our posts
   var blogContainer = $('.blog-container');

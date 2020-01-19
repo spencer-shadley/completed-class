@@ -1,3 +1,5 @@
+'use strict'
+
 const MovieSearch = require('./movieSearch');
 
 const movie = new MovieSearch();

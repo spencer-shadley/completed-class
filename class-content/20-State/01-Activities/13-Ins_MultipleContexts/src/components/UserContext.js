@@ -1,3 +1,5 @@
+'use strict'
+
 import React from 'react';
 
 // Set the user of the page to default to ""

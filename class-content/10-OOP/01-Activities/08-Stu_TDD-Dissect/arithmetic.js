@@ -1,3 +1,5 @@
+'use strict'
+
 function Arithmetic(number = 0) {
   this.number = number;
 }

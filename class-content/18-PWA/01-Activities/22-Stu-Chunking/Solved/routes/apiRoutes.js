@@ -1,3 +1,5 @@
+'use strict'
+
 var db = require('../models');
 
 module.exports = function(app) {

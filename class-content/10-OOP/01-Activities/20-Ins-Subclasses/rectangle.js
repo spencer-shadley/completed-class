@@ -1,3 +1,5 @@
+'use strict'
+
 const Shape = require('./shape');
 
 class Rectangle extends Shape {

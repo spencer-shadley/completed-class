@@ -1,3 +1,5 @@
+'use strict'
+
 const Chart = require('chart.js');
 import { useIndexedDb } from './indexedDb';
 

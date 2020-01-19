@@ -1,3 +1,5 @@
+'use strict'
+
 const Vehicle = require('./vehicle');
 
 class Boat extends Vehicle {

@@ -1,3 +1,5 @@
+'use strict'
+
 import { loadImages } from './app';
 import { createEl } from './domMethods';
 

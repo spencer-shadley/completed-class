@@ -1,3 +1,5 @@
+'use strict'
+
 // IMDB TOP 250 Movies
 
 module.exports = [

@@ -1,3 +1,5 @@
+'use strict'
+
 export const priceEl = document.getElementById('price');
 export const balanceEl = document.getElementById('balance');
 export const expenseEl = document.getElementById('expense');

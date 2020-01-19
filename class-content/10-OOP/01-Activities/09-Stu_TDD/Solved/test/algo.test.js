@@ -1,3 +1,5 @@
+'use strict'
+
 const Algo = require('../algo');
 
 describe('Algo', () => {

@@ -1,3 +1,5 @@
+'use strict'
+
 // Create all necessary elements
 var h1El = document.createElement('h1');
 var h2El = document.createElement('h2');

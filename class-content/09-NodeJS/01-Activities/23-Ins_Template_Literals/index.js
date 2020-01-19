@@ -1,3 +1,5 @@
+'use strict'
+
 const arya = {
   first: 'Arya',
   last: 'Stark',

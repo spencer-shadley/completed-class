@@ -1,3 +1,5 @@
+'use strict'
+
 var fs = require('fs');
 
 // we add a newline character to the command line argument

@@ -1,3 +1,5 @@
+'use strict'
+
 class Shape {
   // Just like constructor functions, classes can accept arguments
   constructor(area, perimeter) {

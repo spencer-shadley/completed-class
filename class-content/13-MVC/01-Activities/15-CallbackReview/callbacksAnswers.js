@@ -1,3 +1,5 @@
+'use strict'
+
 // 2. Answer: 12 + 9 = 21
 
 // 3. Answer: 4 + 18 = 22

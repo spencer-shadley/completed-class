@@ -1,3 +1,5 @@
+'use strict'
+
 function Logger() {
   // This is just a way of adding methods to the prototype once in a loop
   // Rather than writing them all out for each color

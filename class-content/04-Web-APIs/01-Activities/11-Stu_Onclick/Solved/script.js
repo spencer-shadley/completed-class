@@ -1,3 +1,5 @@
+'use strict'
+
 var count = 0;
 var incrementElement = document.querySelector('#increment');
 var decrementElement = document.querySelector('#decrement');

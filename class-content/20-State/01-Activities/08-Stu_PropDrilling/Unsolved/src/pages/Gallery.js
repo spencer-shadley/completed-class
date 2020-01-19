@@ -1,3 +1,5 @@
+'use strict'
+
 import React, { useState } from 'react';
 import API from '../utils/API';
 import CardContainer from '../components/CardContainer';

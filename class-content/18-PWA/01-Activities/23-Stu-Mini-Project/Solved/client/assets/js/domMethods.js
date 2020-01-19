@@ -1,3 +1,5 @@
+'use strict'
+
 import { useIndexedDb } from './indexedDb';
 import { formatDate, getParams } from './utils';
 // Clear the article container and insert placeholder articles

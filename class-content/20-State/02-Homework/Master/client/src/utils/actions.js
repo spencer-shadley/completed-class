@@ -1,3 +1,5 @@
+'use strict'
+
 export const UPDATE_PRODUCTS = 'UPDATE_PRODUCTS';
 export const REMOVE_PRODUCT = 'REMOVE_PRODUCT';
 export const SET_CURRENT_PRODUCT = 'SET_CURRENT_PRODUCT';

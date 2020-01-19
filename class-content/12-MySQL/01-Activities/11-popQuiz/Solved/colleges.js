@@ -1,3 +1,5 @@
+'use strict'
+
 var mysql = require('mysql');
 
 // create the connection information for the sql database

@@ -1,3 +1,5 @@
+'use strict'
+
 function waitFor(seconds, cb) {
   if (isNaN(seconds) || seconds < 1) {
     return cb(Error("Parameter 'seconds' must be a positive number!"));

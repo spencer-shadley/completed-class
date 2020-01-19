@@ -1,3 +1,5 @@
+'use strict'
+
 import React, { Component } from 'react';
 import Container from './Container';
 import Row from './Row';

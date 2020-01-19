@@ -1,3 +1,5 @@
+'use strict'
+
 var $root = document.querySelector('#root');
 
 var score;

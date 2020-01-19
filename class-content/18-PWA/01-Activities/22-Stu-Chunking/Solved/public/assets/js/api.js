@@ -1,3 +1,5 @@
+'use strict'
+
 export function loadImages() {
   return fetch('/api/images')
     .then(res => res.json())

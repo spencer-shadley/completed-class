@@ -1,3 +1,5 @@
+'use strict'
+
 var carousel = document.querySelector('.carouselbox');
 var next = carousel.querySelector('.next');
 var prev = carousel.querySelector('.prev');

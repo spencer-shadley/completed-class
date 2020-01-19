@@ -1,3 +1,5 @@
+'use strict'
+
 class Order {
   constructor(item) {
     this.item = item;

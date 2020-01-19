@@ -1,3 +1,5 @@
+'use strict'
+
 var orm = require('./config/orm.js');
 
 // Find all the pets ordering by the lowest price to the highest price.

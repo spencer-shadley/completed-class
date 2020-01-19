@@ -1,3 +1,5 @@
+'use strict'
+
 const music = {
   title: 'The Less I Know The Better',
   artist: 'Tame Impala',

@@ -1,3 +1,5 @@
+'use strict'
+
 // Make a get request to our api route that will return every "long" book (300 pages or more)
 $.get('/api/books/long', function(data) {
   // For each book that our server sends us back

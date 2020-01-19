@@ -1,3 +1,5 @@
+'use strict'
+
 // We require/import the HTTP module
 var http = require('http');
 

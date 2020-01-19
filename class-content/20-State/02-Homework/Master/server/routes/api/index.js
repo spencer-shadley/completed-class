@@ -1,3 +1,5 @@
+'use strict'
+
 const router = require('express').Router();
 const productRoutes = require('./products');
 const userRoutes = require('./users');

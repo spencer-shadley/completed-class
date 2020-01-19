@@ -1,3 +1,5 @@
+'use strict'
+
 // @TODO Add remove from favorites functionality
 
 function checkForIndexedDb() {

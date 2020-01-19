@@ -1,3 +1,5 @@
+'use strict'
+
 const config = {
   entry: {
     app: './src/app.js',

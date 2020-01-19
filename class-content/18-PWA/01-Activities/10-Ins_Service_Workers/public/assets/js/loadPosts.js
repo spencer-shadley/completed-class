@@ -1,3 +1,5 @@
+'use strict'
+
 loadPosts();
 
 function createEl(htmlString = '', className) {

@@ -1,3 +1,5 @@
+'use strict'
+
 // Add a flag for the text attribute to prevent this field from being null
 
 // Add a validation for the text attribute to make sure it's at least one character,

@@ -1,3 +1,5 @@
+'use strict'
+
 import React, { useContext } from 'react';
 import UserContext from '../../utils/userContext';
 import './style.css';

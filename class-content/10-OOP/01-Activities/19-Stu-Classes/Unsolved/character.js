@@ -1,3 +1,5 @@
+'use strict'
+
 class Character {
   // method which prints all of the stats for a character
   printStats() {

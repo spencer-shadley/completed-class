@@ -1,3 +1,5 @@
+'use strict'
+
 var subtract = function(numOne, numTwo) {
   return numOne - numTwo;
 };

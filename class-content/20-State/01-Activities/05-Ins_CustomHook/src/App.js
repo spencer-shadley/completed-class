@@ -1,3 +1,5 @@
+'use strict'
+
 import React, { useEffect } from 'react';
 import UserCard from './components/UserCard';
 import UserForm from './components/UserForm';

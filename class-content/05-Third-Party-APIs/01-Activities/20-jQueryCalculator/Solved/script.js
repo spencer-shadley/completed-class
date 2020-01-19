@@ -1,3 +1,5 @@
+'use strict'
+
 $(document).ready(function() {
   // Make our variables global to the runtime of our application
   // these are all initialized with default values in "initializeCalculator"

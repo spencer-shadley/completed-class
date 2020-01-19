@@ -1,3 +1,5 @@
+'use strict'
+
 check for indexedDB browser support
 
 let db;

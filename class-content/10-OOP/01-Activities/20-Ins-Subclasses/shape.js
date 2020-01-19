@@ -1,3 +1,5 @@
+'use strict'
+
 class Shape {
   constructor(area, perimeter) {
     this.area = area;

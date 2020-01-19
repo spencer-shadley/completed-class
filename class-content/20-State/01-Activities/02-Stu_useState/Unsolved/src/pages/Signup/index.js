@@ -1,3 +1,5 @@
+'use strict'
+
 import React from 'react';
 import Container from '../../components/Container';
 import Col from '../../components/Col';

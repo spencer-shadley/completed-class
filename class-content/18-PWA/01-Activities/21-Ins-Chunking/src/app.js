@@ -1,3 +1,5 @@
+'use strict'
+
 import { subtract } from './calculations';
 import {
   balanceEl,

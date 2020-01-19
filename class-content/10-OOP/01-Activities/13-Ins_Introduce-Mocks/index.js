@@ -1,3 +1,5 @@
+'use strict'
+
 const Logger = require('./logger');
 
 const log = new Logger();

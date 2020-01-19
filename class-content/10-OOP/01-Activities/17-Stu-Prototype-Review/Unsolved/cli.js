@@ -1,3 +1,5 @@
+'use strict'
+
 const TV = require('./tv');
 
 // Create a new TV object

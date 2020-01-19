@@ -1,3 +1,5 @@
+'use strict'
+
 // ===============================================================================
 // LOAD DATA
 // We are linking our routes to a series of "data" sources.

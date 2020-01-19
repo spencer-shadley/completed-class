@@ -1,3 +1,5 @@
+'use strict'
+
 import { loadImages } from './api';
 import { createCards } from './cardCreation';
 

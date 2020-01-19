@@ -1,3 +1,5 @@
+'use strict'
+
 export function updateChart(expenseChart, name, price) {
   expenseChart.data.labels.push(name);
   expenseChart.data.datasets.forEach(dataset => {

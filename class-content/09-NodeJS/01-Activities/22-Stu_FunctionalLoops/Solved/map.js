@@ -1,3 +1,5 @@
+'use strict'
+
 const originalArray = [1, 3, 2, 5, 10];
 
 // the return is implicit so we can omit it

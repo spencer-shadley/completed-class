@@ -1,3 +1,5 @@
+'use strict'
+
 // 1. Object
 const arya = {
   first: 'Arya',

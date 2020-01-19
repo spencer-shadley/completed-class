@@ -1,3 +1,5 @@
+'use strict'
+
 const Word = require('../lib/Word');
 
 describe('Word class', () => {

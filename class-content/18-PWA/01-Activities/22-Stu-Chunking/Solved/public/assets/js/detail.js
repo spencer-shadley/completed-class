@@ -1,3 +1,5 @@
+'use strict'
+
 import { loadImage } from './api';
 import { createCard } from './cardCreation';
 import { useIndexedDb } from './indexedDb';

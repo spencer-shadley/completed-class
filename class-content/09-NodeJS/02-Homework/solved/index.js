@@ -1,3 +1,5 @@
+'use strict'
+
 import { createWriteStream } from 'fs';
 import { join } from 'path';
 import { prompt } from 'inquirer';

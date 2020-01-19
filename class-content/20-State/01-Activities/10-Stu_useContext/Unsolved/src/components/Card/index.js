@@ -1,3 +1,5 @@
+'use strict'
+
 import React from 'react';
 import CardBtn from '../CardBtn';
 import CardTitle from '../CardTitle';

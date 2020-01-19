@@ -1,3 +1,5 @@
+'use strict'
+
 var typefaceEl = document.querySelector('#typeface');
 var clearEl = document.querySelector('#clear');
 var h1El = document.querySelector('#h1');

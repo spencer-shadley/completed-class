@@ -1,3 +1,5 @@
+'use strict'
+
 function MiniBank(balance) {
   this.balance = balance;
   this.statement = [balance];

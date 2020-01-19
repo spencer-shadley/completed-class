@@ -1,3 +1,5 @@
+'use strict'
+
 // constructor function which can be used to create "digitalpal" objects
 var DigitalPal = function() {
   this.hungry = false;

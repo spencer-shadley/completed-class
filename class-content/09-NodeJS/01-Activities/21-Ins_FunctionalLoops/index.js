@@ -1,3 +1,5 @@
+'use strict'
+
 const moviePatrons = [
   { name: 'Tom', age: 16 },
   { name: 'Ashley', age: 31 },

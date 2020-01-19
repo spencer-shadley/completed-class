@@ -1,3 +1,5 @@
+'use strict'
+
 const Todo = require('./todo');
 
 function TodoList() {

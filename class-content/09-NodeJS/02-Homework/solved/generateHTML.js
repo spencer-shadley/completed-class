@@ -1,3 +1,5 @@
+'use strict'
+
 const colors = {
   green: {
     wrapperBackground: '#E6E1C3',

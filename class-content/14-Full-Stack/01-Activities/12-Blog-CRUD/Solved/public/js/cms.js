@@ -1,3 +1,5 @@
+'use strict'
+
 $(document).ready(function() {
   // Gets an optional query string from our url (i.e. ?post_id=23)
   var url = window.location.search;

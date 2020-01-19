@@ -1,3 +1,5 @@
+'use strict'
+
 // Click Events
 
 // Click event to add a book to the db

@@ -1,3 +1,5 @@
+'use strict'
+
 function Algo() {}
 
 Algo.prototype.reverse = function(str) {

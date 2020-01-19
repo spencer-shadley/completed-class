@@ -1,3 +1,5 @@
+'use strict'
+
 var count = 0;
 var updateAmountElement = document.querySelector('#update-amount');
 var incrementElement = document.querySelector('#increment');

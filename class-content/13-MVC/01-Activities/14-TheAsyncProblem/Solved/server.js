@@ -1,3 +1,5 @@
+'use strict'
+
 var orm = require('./config/orm.js');
 
 // Call orm method, passing in the anonymous function(with "res") as the callback.

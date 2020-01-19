@@ -1,3 +1,5 @@
+'use strict'
+
 const songs = document.querySelectorAll('ol > li');
 const forType = 'for...of'; // update me to whichever for loop you want to try!
 

@@ -1,3 +1,5 @@
+'use strict'
+
 var todoInput = document.querySelector('#todo-text');
 var todoForm = document.querySelector('#todo-form');
 var todoList = document.querySelector('#todo-list');

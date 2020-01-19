@@ -1,3 +1,5 @@
+'use strict'
+
 import React from 'react';
 import { Container } from '../Grid';
 import SearchForm from '../SearchForm';

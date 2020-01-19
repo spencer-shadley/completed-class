@@ -1,3 +1,5 @@
+'use strict'
+
 var expect = chai.expect;
 
 function containSameElements(arr1, arr2) {

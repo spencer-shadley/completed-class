@@ -1,3 +1,5 @@
+'use strict'
+
 /* global moment */
 
 // When user clicks add-btn

@@ -1,3 +1,5 @@
+'use strict'
+
 const FILES_TO_CACHE = ['/', '/index.html', 'app.js', 'favicon.ico'];
 
 const CACHE_NAME = 'static-cache-v2';

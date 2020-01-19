@@ -1,3 +1,5 @@
+'use strict'
+
 function Child(name, age) {
   if (typeof name !== 'string' || !name.trim().length) {
     throw new Error("Expected parameter 'name' to be a non-empty string");

@@ -1,3 +1,5 @@
+'use strict'
+
 function checkForIndexedDb() {
   window.indexedDB =
     window.indexedDB ||

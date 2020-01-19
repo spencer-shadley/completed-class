@@ -1,3 +1,5 @@
+'use strict'
+
 const arya = {
   name: 'Arya Stark',
   parents: ['Eddard Stark', 'Catelyn Stark']

@@ -1,3 +1,5 @@
+'use strict'
+
 var counter = document.querySelector('#counter');
 var addButton = document.querySelector('#add');
 var subtractButton = document.querySelector('#subtract');

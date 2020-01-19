@@ -1,3 +1,5 @@
+'use strict'
+
 // ===============================================================================
 // DATA
 // Below data will hold all of the reserved tables.

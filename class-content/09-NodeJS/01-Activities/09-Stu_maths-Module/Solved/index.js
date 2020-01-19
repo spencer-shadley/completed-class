@@ -1,3 +1,5 @@
+'use strict'
+
 var maths = require('./maths');
 
 var operation = process.argv[2];

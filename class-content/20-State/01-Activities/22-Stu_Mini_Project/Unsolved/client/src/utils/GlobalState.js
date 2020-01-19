@@ -1,3 +1,5 @@
+'use strict'
+
 import React, { useReducer } from 'react';
 // Don't forget to import all of your actions!
 

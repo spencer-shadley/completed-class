@@ -1,3 +1,5 @@
+'use strict'
+
 var orm = require('./config/orm.js');
 
 // For each of the following select methods, a string argument containing wildcard character ("*")

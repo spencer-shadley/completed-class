@@ -1,3 +1,5 @@
+'use strict'
+
 import { createCards } from './cardCreation';
 
 export function loadImages() {

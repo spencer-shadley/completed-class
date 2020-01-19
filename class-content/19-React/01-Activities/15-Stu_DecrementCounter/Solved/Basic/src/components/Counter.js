@@ -1,3 +1,5 @@
+'use strict'
+
 import React from 'react';
 
 // By extending the React.Component class, Counter inherits functionality from it
