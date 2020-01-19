@@ -1,14 +1,27 @@
-// 1. Using arrays
-const songs = ['Bad Guy', 'Old Town Road', '7 Rings'];
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of
 
-for (const value of songs) {
+// Using arrays
+const songsArr = ['Bad Guy', 'Old Town Road', '7 Rings'];
+
+for (const value of songsArr) {
   console.log(value);
 }
+// Output:
 // Bad Guy
 // Old Town Road
 // 7 Rings
 
-// 2. Using map
+// Using strings
+const name = 'Spencer';
+for (const letter of name) {
+  console.log(letter);
+}
+// Output:
+// S
+// p
+// ...
+
+// Using map
 const songs = new Map([
   ['Bad Guy', 1],
   ['Old Town Road', 2]
