@@ -1,8 +1,7 @@
 const originalArray = [1, 3, 2, 5, 10];
 
-const doubledArray = originalArray.map(function(data) {
-  return data * 2;
-});
+// the return is implicit so we can omit it
+const doubledArray = originalArray.map(data => data * 2);
 
 console.log(doubledArray);
 console.log(originalArray);
@@ -18,5 +17,3 @@ const tripledArray = originalArray.map(data => data * 3);
 // i.e. using this map, the array [3, 1, 2, 4] should give us back ["odd", "odd", "even", "even"]
 
 const oddOrEven = originalArray.map(num => (num % 2 === 0 ? 'even' : 'odd'));
-
-// Bonus: Use arrow functions as callbacks!
