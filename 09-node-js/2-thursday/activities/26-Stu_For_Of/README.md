@@ -6,4 +6,10 @@
 
 - Iterate through your collection with a for...of and:
 
-  - Add a `class` that changes the color to red (you have to create this class in your CSS file)
+  - Add a `class` that changes the color to green (you have to create this class in your CSS file)
+
+### Bonus
+
+- Compare this to other loops
+
+- Allow easily switching between different loop types
