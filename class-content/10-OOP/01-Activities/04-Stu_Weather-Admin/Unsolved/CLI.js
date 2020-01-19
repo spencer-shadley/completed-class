@@ -1,6 +1,6 @@
-'use strict'
+'use strict';
 
-var WeatherAdmin = require("./Unsolved/WeatherAdmin.js");
+var WeatherAdmin = require('./Unsolved/WeatherAdmin.js');
 
 // Hold the value whether someone is an "admin" or "user"
 var loginType = process.argv[2];
@@ -14,9 +14,8 @@ var userLocation = process.argv[4];
 // Create an instance of the WeatherAdmin. Remember WeatherAdmin is a constructor! Not an object.
 var myAdmin = new WeatherAdmin();
 
-if (loginType === "admin") {
+if (loginType === 'admin') {
   myAdmin.getData();
-}
-else if {
+} else {
   myAdmin.newUserSearch(userName, userLocation);
 }
