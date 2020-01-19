@@ -1,3 +1,5 @@
+'use strict'
+
 // Avoid using arrow functions for object methods
 var dog = {
   name: 'Lassie',

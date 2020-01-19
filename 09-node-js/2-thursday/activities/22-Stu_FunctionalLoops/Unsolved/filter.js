@@ -1,3 +1,5 @@
+'use strict'
+
 const originalArray = [1, 3, 2, 5, 10];
 
 const evenNumbers = originalArray.filter(data => data % 2 === 0);

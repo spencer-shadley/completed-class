@@ -1,3 +1,5 @@
+'use strict'
+
 const questions = [];
 
 function writeToFile(fileName, data) {}

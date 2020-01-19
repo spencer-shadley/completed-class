@@ -1,3 +1,5 @@
+'use strict'
+
 const fs = require('fs');
 
 fs.readFile('animals.json', 'utf8', function(err, data) {

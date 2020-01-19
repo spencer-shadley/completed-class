@@ -1,3 +1,5 @@
+'use strict'
+
 // fs is a Node standard library package for reading and writing files
 var fs = require('fs');
 

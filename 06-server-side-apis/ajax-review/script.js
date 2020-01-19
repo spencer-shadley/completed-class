@@ -1,3 +1,5 @@
+'use strict'
+
 $(document).ready(function() {
   /**
    * we are making two api calls.

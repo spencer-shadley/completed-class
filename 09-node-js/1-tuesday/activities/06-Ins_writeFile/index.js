@@ -1,3 +1,5 @@
+'use strict'
+
 var fs = require('fs');
 
 fs.writeFile('log.txt', 'hello world!', function(err) {
