@@ -24,7 +24,7 @@ In this activity you will make a cat object and dog object each with three keys.
 
 - Make the cat meow
 
-## 🏆BONUS
+## 🏆 BONUS
 
 - Create a function called "massHysteria" which takes in both the cats and the dogs object and prints "DOGS AND CATS LIVING TOGETHER! MASS HYSTERIA!" if both of the `raining` keys are equal to true.
 
