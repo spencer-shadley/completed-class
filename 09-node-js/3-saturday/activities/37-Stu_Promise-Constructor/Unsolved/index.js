@@ -1,12 +1,12 @@
-'use strict'
+'use strict';
 
-function waitFor(seconds, cb) {
+function waitFor(seconds, callback) {
   if (isNaN(seconds) || seconds < 1) {
-    return cb(Error("Parameter 'seconds' must be a positive number!"));
+    return callback(Error("Parameter 'seconds' must be a positive number!"));
   }
 
   setTimeout(function() {
-    cb(null, 'Success!');
+    callback(null, 'Success!');
   }, seconds * 1000);
 }
 

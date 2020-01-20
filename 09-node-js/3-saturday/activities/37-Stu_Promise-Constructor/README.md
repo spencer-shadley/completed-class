@@ -14,20 +14,16 @@ In this activity you will refactor a callback-based asynchronous function to uti
 
 ```js
 waitFor(2)
-  .then(function(msg) {
+  .then(msg => {
     console.log(msg); // msg is printed since seconds is more than 0
   })
-  .catch(function(err) {
-    console.error(err);
-  });
+  .catch(err => console.error(err));
 
 waitFor(-5)
-  .then(function(msg) {
-    console.log(msg);
-  })
-  .catch(function(err) {
-    console.error(err); // error is printed since 'seconds' is less than 1
-  });
+  .then(msg => console.log(msg))
+  .catch(
+    err => console.error(err) // error is printed since 'seconds' is less than 1
+  );
 ```
 
 ## 💡 Hints
@@ -35,3 +31,9 @@ waitFor(-5)
 - Refer back to the previous demo for an example using the Promise constructor.
 
 - Check out the [MDN Documentation on Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
+
+## Bonus
+
+- Convert to ES6 arrow functions
+
+- Play code golf
