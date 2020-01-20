@@ -4,9 +4,13 @@ In this activity you will be writing code to create a function that swaps the le
 
 ## Instructions
 
-- Open [Unsolved/swap-case.js](Unsolved/swap-case.js) in your code editor -- **this is the only file you will modify in this activity.**
+- Open [the tests](Unsolved/test/swap-case.test.js)
 
-  - In this file you will be writing code in the body of the `swapCase` function to achieve the following:
+  - In this file add several unit tests following test driven development (TDD)
+
+- Open [swap-case.js](Unsolved/swap-case.js) in your code editor
+
+  - In this file you will write code in the body of the `swapCase` function to achieve the following:
 
     - Return a string identical to the given `str` string, but with the letter case of each character swapped.
 
