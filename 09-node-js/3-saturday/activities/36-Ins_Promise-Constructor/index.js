@@ -1,10 +1,10 @@
-'use strict'
+'use strict';
 
 const fs = require('fs');
 
 function readFileAsync(path, encoding) {
-  return new Promise(function(resolve, reject) {
-    fs.readFile(path, encoding, function(err, data) {
+  return new Promise((resolve, reject) => {
+    fs.readFile(path, encoding, (err, data) => {
       if (err) {
         return reject(err);
       }
@@ -15,9 +15,5 @@ function readFileAsync(path, encoding) {
 }
 
 readFileAsync('example.txt', 'utf8')
-  .then(function(data) {
-    console.log(data);
-  })
-  .catch(function(err) {
-    console.error(err);
-  });
+  .then(console.log)
+  .catch(console.error);
