@@ -33,3 +33,7 @@ In this activity you will write code to get a random joke from an API, append th
 ## Bonus 2
 
 - Exclude generated files from git
+
+## Bonus 3
+
+- Play ES6 code golf
