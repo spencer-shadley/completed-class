@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const fs = require('fs');
 const axios = require('axios');
@@ -9,6 +9,6 @@ inquirer
     message: 'Enter your GitHub username',
     name: 'username'
   })
-  .then(function({ username }) {
+  .then(({ username }) => {
     const queryUrl = `https://api.github.com/users/${username}/repos?per_page=100`;
   });
