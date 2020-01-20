@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const fs = require('fs');
 const util = require('util');
@@ -7,7 +7,7 @@ const util = require('util');
 const readFileAsync = util.promisify(fs.readFile);
 const writeFileAsync = util.promisify(fs.writeFile);
 
-readFileAsync('animals.json', 'utf8').then(function(data) {
+readFileAsync('animals.json', 'utf8').then(data => {
   // Parse the JSON string to an object
   const animalJSON = JSON.parse(data);
 
@@ -16,7 +16,7 @@ readFileAsync('animals.json', 'utf8').then(function(data) {
   const cats = [];
 
   // For each element in animal
-  animalJSON.forEach(function(animal) {
+  animalJSON.forEach(animal => {
     if (animal.species === 'dog') {
       dogs.push(animal);
     } else if (animal.species === 'cat') {
@@ -28,11 +28,11 @@ readFileAsync('animals.json', 'utf8').then(function(data) {
   const dogJSON = JSON.stringify(dogs, null, 2);
   const catJSON = JSON.stringify(cats, null, 2);
 
-  writeFileAsync('dogs.json', dogJSON).then(function() {
-    console.log('Successfully wrote to dogs.json file');
-  });
+  writeFileAsync('dogs.json', dogJSON).then(() =>
+    console.log('Successfully wrote to dogs.json file')
+  );
 
-  writeFileAsync('cats.json', catJSON).then(function() {
-    console.log('Successfully wrote to cats.json file');
-  });
+  writeFileAsync('cats.json', catJSON).then(() =>
+    console.log('Successfully wrote to cats.json file')
+  );
 });
