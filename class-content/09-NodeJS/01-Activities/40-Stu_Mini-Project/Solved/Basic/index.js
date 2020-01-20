@@ -68,14 +68,12 @@ function generateHTML(answers) {
 }
 
 promptUser()
-  .then(function(answers) {
+  .then(answers => {
     const html = generateHTML(answers);
 
     return writeFileAsync('index.html', html);
   })
-  .then(function() {
+  .then(() => {
     console.log('Successfully wrote to index.html');
   })
-  .catch(function(err) {
-    console.error(err);
-  });
+  .catch(console.error);
