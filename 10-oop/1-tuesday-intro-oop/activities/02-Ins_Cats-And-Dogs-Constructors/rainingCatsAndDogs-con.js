@@ -1,11 +1,11 @@
-'use strict'
+'use strict';
 
 // Constructor function which can be used to create objects containing the properties "raining", "noise", and the "makeNoise()" function
 function Animal(raining, noise) {
   this.raining = raining;
   this.noise = noise;
   this.makeNoise = function() {
-    if (this.raining === true) {
+    if (this.raining) {
       console.log(this.noise);
     }
   };
@@ -24,7 +24,7 @@ cats.raining = true;
 cats.makeNoise();
 
 var massHysteria = function(dogs, cats) {
-  if (dogs.raining === true && cats.raining === true) {
+  if (dogs.raining && cats.raining) {
     console.log('DOGS AND CATS LIVING TOGETHER! MASS HYSTERIA!');
   }
 };
