@@ -2,6 +2,19 @@
 
 const fs = require('fs');
 
+function writeAnimal(fileName, animal) {
+  // Turn the arrays into JSON strings so they can be written to files
+  const json = JSON.stringify(animal, null, 2);
+
+  fs.writeFile(fileName, json, err => {
+    if (err) {
+      throw err;
+    }
+
+    console.log(`Successfully wrote to ${fileName} file`);
+  });
+}
+
 fs.readFile('animals.json', 'utf8', (err, data) => {
   if (err) {
     throw err;
@@ -15,31 +28,14 @@ fs.readFile('animals.json', 'utf8', (err, data) => {
   const cats = [];
 
   // For each element in animal
-  animalJSON.forEach(animal => {
+  for (const animal of animalJSON) {
     if (animal.species === 'dog') {
       dogs.push(animal);
     } else if (animal.species === 'cat') {
       cats.push(animal);
     }
-  });
+  }
 
-  // Turn the arrays into JSON strings so they can be written to files
-  const dogJSON = JSON.stringify(dogs, null, 2);
-  const catJSON = JSON.stringify(cats, null, 2);
-
-  fs.writeFile('dogs.json', dogJSON, err => {
-    if (err) {
-      throw err;
-    }
-
-    console.log('Successfully wrote to dogs.json file');
-  });
-
-  fs.writeFile('cats.json', catJSON, err => {
-    if (err) {
-      throw err;
-    }
-
-    console.log('Successfully wrote to cats.json file');
-  });
+  writeAnimal('dogs.json', dogs);
+  writeAnimal('cats.json', cats);
 });
