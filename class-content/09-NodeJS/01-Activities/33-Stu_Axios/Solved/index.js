@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const fs = require('fs');
 const axios = require('axios');
@@ -9,17 +9,15 @@ inquirer
     message: 'Enter your GitHub username:',
     name: 'username'
   })
-  .then(function({ username }) {
+  .then(({ username }) => {
     const queryUrl = `https://api.github.com/users/${username}/repos?per_page=100`;
 
-    axios.get(queryUrl).then(function(res) {
-      const repoNames = res.data.map(function(repo) {
-        return repo.name;
-      });
+    axios.get(queryUrl).then(res => {
+      const repoNames = res.data.map(repo => repo.name);
 
-      const repoNamesStr = repoNames.join('\n');
+      const repoNames = repoNames.join('\n');
 
-      fs.writeFile('repos.txt', repoNamesStr, function(err) {
+      fs.writeFile('repos.txt', repoNames, err => {
         if (err) {
           throw err;
         }
