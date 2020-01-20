@@ -1,10 +1,10 @@
 # Mini Project
 
-In this activity you will build a command line tool that generates and HTML portfolio page from user input.
+In this activity you will build a command line tool that generates an HTML portfolio page from user input.
 
 ## Instructions
 
-- Your application should prompt the user for information such as their name, location, bio, LinkedIn URL, and GitHub URL. Feel free to add any additional prompts you think of.
+- Your application should prompt the user for information such as their name, location, bio, LinkedIn URL and GitHub URL. Feel free to add any additional prompts you think of.
 
 - Using the data collected from the prompts, an HTML document should be constructed containing this information and written to the filesystem. Be sure to add some CSS styling to the document.
 
