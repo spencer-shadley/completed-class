@@ -4,7 +4,7 @@
 
 In this unit we introduce students to Node.js and the concepts of standard library, modules, npm, and package.json.
 
-- Refer to the [Class Content Unit Overview](../../../01-Class-Content/09-NodeJS/README.md) for detailed information on key topics, learning objectives and homework.
+- Refer to the [Class Content Unit Overview](../../../class-content/09-NodeJS/README.md) for detailed information on key topics, learning objectives and homework.
 
 ## Instructor / TA Notes
 
