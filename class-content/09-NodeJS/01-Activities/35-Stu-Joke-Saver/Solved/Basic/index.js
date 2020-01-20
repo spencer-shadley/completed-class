@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const fs = require('fs');
 const util = require('util');
@@ -11,16 +11,14 @@ const config = { headers: { accept: 'application/json' } };
 
 axios
   .get('https://icanhazdadjoke.com/', config)
-  .then(function(res) {
+  .then(res => {
     const { joke } = res.data;
 
-    appendFileAsync('jokes.txt', joke + '\n').then(function() {
-      readFileAsync('jokes.txt', 'utf8').then(function(data) {
+    appendFileAsync('jokes.txt', joke + '\n').then(() => {
+      readFileAsync('jokes.txt', 'utf8').then(data => {
         console.log('Saved dad jokes:');
         console.log(data);
       });
     });
   })
-  .catch(function(err) {
-    console.error(err);
-  });
+  .catch(console.error);
