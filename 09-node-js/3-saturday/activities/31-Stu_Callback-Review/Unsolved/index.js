@@ -1,8 +1,8 @@
-'use strict'
+'use strict';
 
 const fs = require('fs');
 
-fs.readFile('animals.json', 'utf8', function(err, data) {
+fs.readFile('animals.json', 'utf8', (err, data) => {
   if (err) {
     throw err;
   }
