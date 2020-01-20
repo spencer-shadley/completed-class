@@ -20,12 +20,16 @@ In this activity you will write code to get a random joke from an API, append th
 
 - You can verify you've successfully completed this activity if every time the program is run a new joke is saved to the `jokes.txt` file and all the jokes are printed to the console.
 
-## 💡Hints
+## 💡 Hints
 
 - Check out the documentation for [fs.appendFile](https://nodejs.org/api/fs.html#fs_fs_appendfile_path_data_options_callback). Keep in mind that the async version will utilize promises rather than callbacks.
 
 - Check out the documentation for [fs.readFile](https://nodejs.org/api/fs.html#fs_fs_readfile_path_options_callback). Keep in mind that the async version will utilize Promises rather than callbacks.
 
-## 🏆Bonus
+## 🏆 Bonus 1
 
 - Chain the calls to `axios.get`, `fs.appendFile`, and `fs.readFile` rather than nest them. See more about promise chaining from the [MDN documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises#Chaining).
+
+## Bonus 2
+
+- Exclude generated files from git
