@@ -4,7 +4,7 @@ const fs = require('fs');
 
 function writeAnimal(fileName, animal) {
   // Turn the arrays into JSON strings so they can be written to files
-  const json = JSON.stringify(animal, null, 2);
+  const json = JSON.stringify(animal, null, 2); // (null, 2) to use new lines and indent
 
   fs.writeFile(fileName, json, err => {
     if (err) {
