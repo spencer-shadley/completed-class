@@ -33,3 +33,7 @@ In this activity you will convert a previous Promise-based activity to utilize a
 - Rather than manually writing out code to read each file one at a time, find a way to do so using a loop instead using async/await.
 
 - Sort animals by age before saving them to the `combined.json` file.
+
+- Play code golf!
+
+- Exclude generated files from git

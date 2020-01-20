@@ -18,3 +18,13 @@ In this activity you will build a command line tool that generates an HTML portf
 ## Hint(s)
 
 - It may be a good idea to start building out the HTML skeleton in a real HTML file. Once you're happy with the HTML file's appearance in the browser, you can copy/paste its contents into a string template literal and write a function to insert the user input into the appropriate places in the HTML string before writing it to the filesystem.
+
+## Bonuses
+
+- leverage `async`/`await` where relevant
+
+- Ignore the given `package.json` initialize the project with your own
+
+- Break apart `index.js` as makes sense - for example, store inputs in an external file
+
+- Code golf!
