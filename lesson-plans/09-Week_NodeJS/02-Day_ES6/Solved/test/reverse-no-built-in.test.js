@@ -4,18 +4,12 @@ var expect = chai.expect;
 
 describe('reverse', function() {
   it("should return '!dlroW olleH' when given 'Hello World!'", function() {
-    var str = 'Hello World!';
-
-    var result = reverse(str);
-
+    var result = reverse('Hello World!');
     expect(result).to.eql('!dlroW olleH');
   });
 
   it("should return '!dlroW eybooG' when given 'Goodbye World!'", function() {
-    var str = 'Goodbye World!';
-
-    var result = reverse(str);
-
+    var result = reverse('Goodbye World!');
     expect(result).to.eql('!dlroW eybdooG');
   });
 });
@@ -27,7 +21,7 @@ describe('reverse words', function() {
     expect(actual).to.eql('world! Hello');
   });
 
-  it('should handle a single word', function() {
+  it('should return the same word when given a single word', function() {
     var input = 'Hello';
     var actual = reverseWords(input);
     expect(actual).to.eql(input);
