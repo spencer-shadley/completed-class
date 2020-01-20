@@ -8,6 +8,8 @@
   </head>
   <body>
     <script>
+      'use strict';
+
       function getDay(dayNum) {
         switch (dayNum) {
           case 0:
@@ -36,7 +38,7 @@
           // "normal user" tests
           {
             input: 0,
-            expected: 'Monday'
+            expected: 'Sunday'
           },
           {
             input: 3,
@@ -99,6 +101,7 @@
         var results = [];
         testCases.forEach(function(testCase) {
           var actual = callbackFunction(testCase.input);
+          var expected = testCase.expected;
           results.push({
             input: testCase.input,
             expected: testCase.expected,
@@ -106,8 +109,8 @@
             isCorrect:
               // NaN is not equal to NaN
               // this is the only value in JavaScript that is not equal to itself
-              (Number.isNaN(this.actual) && Number.isNaN(this.expected)) ||
-              this.expected === this.actual
+              (Number.isNaN(actual) && Number.isNaN(expected)) ||
+              expected === actual
           });
         });
         console.log(testName);
