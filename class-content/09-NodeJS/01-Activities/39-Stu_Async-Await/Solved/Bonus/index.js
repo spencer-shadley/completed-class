@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const fs = require('fs');
 const util = require('util');
@@ -17,9 +17,7 @@ async function combineAnimals() {
       animals.push(JSON.parse(fileStr));
     }
 
-    const sorted = animals.sort(function(a, b) {
-      return b.age - a.age;
-    });
+    const sorted = animals.sort((a, b) => b.age - a.age);
 
     await writeFileAsync(
       'combined.json',
