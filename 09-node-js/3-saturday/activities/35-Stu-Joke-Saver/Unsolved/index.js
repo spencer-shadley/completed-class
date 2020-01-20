@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const fs = require('fs');
 const util = require('util');
@@ -9,6 +9,6 @@ const readFileAsync = util.promisify(fs.readFile);
 
 const config = { headers: { accept: 'application/json' } };
 
-axios.get('https://icanhazdadjoke.com/', config).then(function(res) {
-  console.log(res.data);
-});
+axios
+  .get('https://icanhazdadjoke.com/', config)
+  .then(res => console.log(res.data));
