@@ -16,7 +16,7 @@ var commonElement = function(arrA, arrB) {
   for (var i = 0; i < arrB.length; ++i) {
     var num = arrB[i];
 
-    if (elements[num] === true) {
+    if (elements[num] ) {
       return num;
     }
   }

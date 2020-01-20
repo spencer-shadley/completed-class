@@ -19,7 +19,7 @@ if (
 }
 
 var nextTag = confirm('Would you like to add another tag?');
-if (nextTag === true) {
+if (nextTag ) {
   var secondTagName = prompt(
     'Please enter another  HTML Tag (ex. h1, h2, p, div):',
     'enter tag here'

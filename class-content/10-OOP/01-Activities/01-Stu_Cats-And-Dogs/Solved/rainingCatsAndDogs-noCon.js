@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // Creates an object and sets it to "dogs"
 const dogs = {
@@ -10,7 +10,7 @@ const dogs = {
   makeNoise: function() {
     // The 'this' keyword refers to the object it's called from
     // i.e. this.raining refers to the raining property of 'this' particular object
-    if (this.raining === true) {
+    if (this.raining) {
       console.log(this.noise);
     }
   }
@@ -21,7 +21,7 @@ const cats = {
   raining: false,
   noise: 'Meow!',
   makeNoise: function() {
-    if (this.raining === true) {
+    if (this.raining) {
       console.log(this.noise);
     }
   }
@@ -35,7 +35,7 @@ cats.makeNoise();
 // Creates a function called "massHysteria" which takes in both objects and
 // Prints a message to the screen if ".raining" is true for both of them
 const massHysteria = function(dogs, cats) {
-  if (dogs.raining === true && cats.raining === true) {
+  if (dogs.raining && cats.raining) {
     console.log('DOGS AND CATS LIVING TOGETHER! MASS HYSTERIA!');
   }
 };

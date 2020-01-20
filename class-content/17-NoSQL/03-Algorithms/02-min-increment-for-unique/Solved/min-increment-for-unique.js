@@ -7,7 +7,7 @@ var minIncrement = function(nums) {
   var increments = 0;
 
   for (var i = 0; i < nums.length; ++i) {
-    while (uniqueNums[nums[i]] === true) {
+    while (uniqueNums[nums[i]] ) {
       nums[i] += 1;
       increments++;
     }
