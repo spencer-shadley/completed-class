@@ -34,10 +34,10 @@ cats.makeNoise();
 
 // Creates a function called "massHysteria" which takes in both objects and
 // Prints a message to the screen if ".raining" is true for both of them
-const massHysteria = function(dogs, cats) {
+function massHysteria(dogs, cats) {
   if (dogs.raining && cats.raining) {
     console.log('DOGS AND CATS LIVING TOGETHER! MASS HYSTERIA!');
   }
-};
+}
 
 massHysteria(dogs, cats);
