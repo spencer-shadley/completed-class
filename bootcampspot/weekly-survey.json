@@ -1,0 +1,2397 @@
+{
+  "surveyDefinition": {
+    "surveyDescription": "Weekly Feedback Survey - Student",
+    "steps": [
+      {
+        "stepNumber": "1",
+        "text": "How was class overall? (1 worst, 5 best)"
+      },
+      {
+        "stepNumber": "2",
+        "text": "How would you rate the pace of the class? (1 too slow, 5 too fast)"
+      },
+      {
+        "stepNumber": "3",
+        "text": "How would you rate the level of academic support? (1 worst, 5 best)"
+      },
+      {
+        "stepNumber": "4",
+        "text": "How much “new” learning did you achieve? (1 none, 5 a lot)"
+      },
+      {
+        "stepNumber": "5",
+        "text": "How would you rate your self mastery of the material? (1 worst, 5 best)"
+      },
+      {
+        "stepNumber": "6",
+        "text": "How engaging was your instructor? (1 worst, 5 best)"
+      },
+      {
+        "stepNumber": "7",
+        "text": "How clear was your instructor? (1 worst, 5 best)"
+      },
+      {
+        "stepNumber": "8",
+        "text": "How knowledgeable did your instructor seem in the subject area? (1 worst, 5 best)"
+      },
+      {
+        "stepNumber": "9",
+        "text": "How many hours did you spend outside of class learning? (homework, re-doing activities, watching class videos, additional learning, etc.) (Must enter a Number)"
+      },
+      {
+        "stepNumber": "10",
+        "text": "What did you spend the most time on? (homework, re-doing activities, watching class videos, additional learning, etc.)"
+      },
+      {
+        "stepNumber": "11",
+        "text": "Any additional comments about the pace?"
+      },
+      {
+        "stepNumber": "12",
+        "text": "Any additional comments about your instructor?"
+      },
+      {
+        "stepNumber": "13",
+        "text": "Did you have a positive interaction with a ta this week?"
+      },
+      {
+        "stepNumber": "14",
+        "text": "Any other notes - anything you'd like to add about the student experience?"
+      }
+    ]
+  },
+  "submissions": [
+    {
+      "username": "richardchacha@hotmail.com",
+      "date": "2020-01-13T07:12:16.506963Z",
+      "answers": [
+        {
+          "stepNumber": "1",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "2",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "3",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "4",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "5",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "6",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "7",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "8",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "9",
+          "answer": {
+            "value": "20"
+          }
+        },
+        {
+          "stepNumber": "10",
+          "answer": {
+            "value": "homework"
+          }
+        },
+        {
+          "stepNumber": "11",
+          "answer": {
+            "value": "can be faster or broader :)"
+          }
+        },
+        {
+          "stepNumber": "12",
+          "answer": {
+            "value": "GREAT!"
+          }
+        },
+        {
+          "stepNumber": "13",
+          "answer": {
+            "value": "Yes"
+          }
+        },
+        {
+          "stepNumber": "14",
+          "answer": {
+            "value": ""
+          }
+        }
+      ]
+    },
+    {
+      "username": "maximilianc@zillowgroup.com",
+      "date": "2020-01-17T02:30:06.204707Z",
+      "answers": [
+        {
+          "stepNumber": "1",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "2",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "3",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "4",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "5",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "6",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "7",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "8",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "9",
+          "answer": {
+            "value": "15"
+          }
+        },
+        {
+          "stepNumber": "10",
+          "answer": {
+            "value": "Project 1"
+          }
+        },
+        {
+          "stepNumber": "11",
+          "answer": null
+        },
+        {
+          "stepNumber": "12",
+          "answer": null
+        },
+        {
+          "stepNumber": "13",
+          "answer": {
+            "value": "Yes"
+          }
+        },
+        {
+          "stepNumber": "14",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "username": "remyguts@gmail.com",
+      "date": "2020-01-15T03:40:30.818817Z",
+      "answers": [
+        {
+          "stepNumber": "1",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "2",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "3",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "4",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "5",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "6",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "7",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "8",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "9",
+          "answer": {
+            "value": "20"
+          }
+        },
+        {
+          "stepNumber": "10",
+          "answer": {
+            "value": "homework"
+          }
+        },
+        {
+          "stepNumber": "11",
+          "answer": {
+            "value": "still fast"
+          }
+        },
+        {
+          "stepNumber": "12",
+          "answer": {
+            "value": "he seems more interactive lately which is great"
+          }
+        },
+        {
+          "stepNumber": "13",
+          "answer": {
+            "value": "Yes"
+          }
+        },
+        {
+          "stepNumber": "14",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "username": "oops093@yahoo.com.tw",
+      "date": "2020-01-15T17:59:25.96091Z",
+      "answers": [
+        {
+          "stepNumber": "1",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "2",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "3",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "4",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "5",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "6",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "7",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "8",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "9",
+          "answer": {
+            "value": "20"
+          }
+        },
+        {
+          "stepNumber": "10",
+          "answer": {
+            "value": "Homework"
+          }
+        },
+        {
+          "stepNumber": "11",
+          "answer": {
+            "value": "No"
+          }
+        },
+        {
+          "stepNumber": "12",
+          "answer": {
+            "value": "No"
+          }
+        },
+        {
+          "stepNumber": "13",
+          "answer": {
+            "value": "Yes"
+          }
+        },
+        {
+          "stepNumber": "14",
+          "answer": {
+            "value": "No"
+          }
+        }
+      ]
+    },
+    {
+      "username": "scottyfife17@gmail.com",
+      "date": "2020-01-17T02:09:14.241579Z",
+      "answers": [
+        {
+          "stepNumber": "1",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "2",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "3",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "4",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "5",
+          "answer": {
+            "value": "2"
+          }
+        },
+        {
+          "stepNumber": "6",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "7",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "8",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "9",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "10",
+          "answer": {
+            "value": "Re-doing activities, HW"
+          }
+        },
+        {
+          "stepNumber": "11",
+          "answer": null
+        },
+        {
+          "stepNumber": "12",
+          "answer": null
+        },
+        {
+          "stepNumber": "13",
+          "answer": {
+            "value": "Yes"
+          }
+        },
+        {
+          "stepNumber": "14",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "username": "olsenben1992@gmail.com",
+      "date": "2020-01-16T03:28:27.551932Z",
+      "answers": [
+        {
+          "stepNumber": "1",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "2",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "3",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "4",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "5",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "6",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "7",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "8",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "9",
+          "answer": {
+            "value": "35"
+          }
+        },
+        {
+          "stepNumber": "10",
+          "answer": {
+            "value": "Homework-Project"
+          }
+        },
+        {
+          "stepNumber": "11",
+          "answer": {
+            "value": ""
+          }
+        },
+        {
+          "stepNumber": "12",
+          "answer": null
+        },
+        {
+          "stepNumber": "13",
+          "answer": {
+            "value": "Yes"
+          }
+        },
+        {
+          "stepNumber": "14",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "username": "frantz.c.felix@gmail.com",
+      "date": "2020-01-13T04:56:29.262175Z",
+      "answers": [
+        {
+          "stepNumber": "1",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "2",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "3",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "4",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "5",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "6",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "7",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "8",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "9",
+          "answer": {
+            "value": "20"
+          }
+        },
+        {
+          "stepNumber": "10",
+          "answer": {
+            "value": "project"
+          }
+        },
+        {
+          "stepNumber": "11",
+          "answer": null
+        },
+        {
+          "stepNumber": "12",
+          "answer": null
+        },
+        {
+          "stepNumber": "13",
+          "answer": {
+            "value": "Yes"
+          }
+        },
+        {
+          "stepNumber": "14",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "username": "lenacm02@gmail.com",
+      "date": "2020-01-15T02:33:40.67277Z",
+      "answers": [
+        {
+          "stepNumber": "1",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "2",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "3",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "4",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "5",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "6",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "7",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "8",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "9",
+          "answer": {
+            "value": "15"
+          }
+        },
+        {
+          "stepNumber": "10",
+          "answer": {
+            "value": "Group Project"
+          }
+        },
+        {
+          "stepNumber": "11",
+          "answer": {
+            "value": "Its good, I like the project now!"
+          }
+        },
+        {
+          "stepNumber": "12",
+          "answer": {
+            "value": "N/A"
+          }
+        },
+        {
+          "stepNumber": "13",
+          "answer": {
+            "value": "Yes"
+          }
+        },
+        {
+          "stepNumber": "14",
+          "answer": {
+            "value": "Richard Wang is insanely helpful! Elrey has been great offering 1:1s"
+          }
+        }
+      ]
+    },
+    {
+      "username": "jlkong001@yahoo.com",
+      "date": "2020-01-17T01:32:02.775364Z",
+      "answers": [
+        {
+          "stepNumber": "1",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "2",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "3",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "4",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "5",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "6",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "7",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "8",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "9",
+          "answer": {
+            "value": "20"
+          }
+        },
+        {
+          "stepNumber": "10",
+          "answer": {
+            "value": "Project"
+          }
+        },
+        {
+          "stepNumber": "11",
+          "answer": {
+            "value": ""
+          }
+        },
+        {
+          "stepNumber": "12",
+          "answer": null
+        },
+        {
+          "stepNumber": "13",
+          "answer": {
+            "value": "No"
+          }
+        },
+        {
+          "stepNumber": "14",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "username": "ariehh@comcast.net",
+      "date": "2020-01-14T00:32:21.041808Z",
+      "answers": [
+        {
+          "stepNumber": "1",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "2",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "3",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "4",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "5",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "6",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "7",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "8",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "9",
+          "answer": {
+            "value": "20"
+          }
+        },
+        {
+          "stepNumber": "10",
+          "answer": {
+            "value": "Project work"
+          }
+        },
+        {
+          "stepNumber": "11",
+          "answer": null
+        },
+        {
+          "stepNumber": "12",
+          "answer": null
+        },
+        {
+          "stepNumber": "13",
+          "answer": {
+            "value": "Yes"
+          }
+        },
+        {
+          "stepNumber": "14",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "username": "kaitlyn.carlson7@gmail.com",
+      "date": "2020-01-13T07:15:25.219128Z",
+      "answers": [
+        {
+          "stepNumber": "1",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "2",
+          "answer": {
+            "value": "2"
+          }
+        },
+        {
+          "stepNumber": "3",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "4",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "5",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "6",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "7",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "8",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "9",
+          "answer": {
+            "value": "30"
+          }
+        },
+        {
+          "stepNumber": "10",
+          "answer": {
+            "value": "homework, research"
+          }
+        },
+        {
+          "stepNumber": "11",
+          "answer": {
+            "value": "no"
+          }
+        },
+        {
+          "stepNumber": "12",
+          "answer": {
+            "value": "no"
+          }
+        },
+        {
+          "stepNumber": "13",
+          "answer": {
+            "value": "Yes"
+          }
+        },
+        {
+          "stepNumber": "14",
+          "answer": {
+            "value": "no"
+          }
+        }
+      ]
+    },
+    {
+      "username": "equestriennesrule@yahoo.com",
+      "date": "2020-01-14T02:27:28.668568Z",
+      "answers": [
+        {
+          "stepNumber": "1",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "2",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "3",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "4",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "5",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "6",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "7",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "8",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "9",
+          "answer": {
+            "value": "14"
+          }
+        },
+        {
+          "stepNumber": "10",
+          "answer": {
+            "value": "git"
+          }
+        },
+        {
+          "stepNumber": "11",
+          "answer": {
+            "value": ""
+          }
+        },
+        {
+          "stepNumber": "12",
+          "answer": null
+        },
+        {
+          "stepNumber": "13",
+          "answer": {
+            "value": "Yes"
+          }
+        },
+        {
+          "stepNumber": "14",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "username": "andrea.thomas19460@gmail.com",
+      "date": "2020-01-17T02:09:01.130536Z",
+      "answers": [
+        {
+          "stepNumber": "1",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "2",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "3",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "4",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "5",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "6",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "7",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "8",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "9",
+          "answer": {
+            "value": "20"
+          }
+        },
+        {
+          "stepNumber": "10",
+          "answer": {
+            "value": "Project"
+          }
+        },
+        {
+          "stepNumber": "11",
+          "answer": null
+        },
+        {
+          "stepNumber": "12",
+          "answer": null
+        },
+        {
+          "stepNumber": "13",
+          "answer": {
+            "value": "Yes"
+          }
+        },
+        {
+          "stepNumber": "14",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "username": "issouf.kiema1@yahoo.com",
+      "date": "2020-01-13T07:25:00.978857Z",
+      "answers": [
+        {
+          "stepNumber": "1",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "2",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "3",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "4",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "5",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "6",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "7",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "8",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "9",
+          "answer": {
+            "value": "30"
+          }
+        },
+        {
+          "stepNumber": "10",
+          "answer": {
+            "value": "hw/project"
+          }
+        },
+        {
+          "stepNumber": "11",
+          "answer": null
+        },
+        {
+          "stepNumber": "12",
+          "answer": null
+        },
+        {
+          "stepNumber": "13",
+          "answer": null
+        },
+        {
+          "stepNumber": "14",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "username": "alexandermcclement9@gmail.com",
+      "date": "2020-01-16T23:56:19.547237Z",
+      "answers": [
+        {
+          "stepNumber": "1",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "2",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "3",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "4",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "5",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "6",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "7",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "8",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "9",
+          "answer": {
+            "value": "25"
+          }
+        },
+        {
+          "stepNumber": "10",
+          "answer": {
+            "value": "Redoing and catching up on homework"
+          }
+        },
+        {
+          "stepNumber": "11",
+          "answer": {
+            "value": "It fast but I'm getting there"
+          }
+        },
+        {
+          "stepNumber": "12",
+          "answer": {
+            "value": "Clear and very help full"
+          }
+        },
+        {
+          "stepNumber": "13",
+          "answer": {
+            "value": "Yes"
+          }
+        },
+        {
+          "stepNumber": "14",
+          "answer": {
+            "value": "wish had been a little slower at the beginning"
+          }
+        }
+      ]
+    },
+    {
+      "username": "hlopez014@gmail.com",
+      "date": "2020-01-16T04:17:19.781117Z",
+      "answers": [
+        {
+          "stepNumber": "1",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "2",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "3",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "4",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "5",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "6",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "7",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "8",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "9",
+          "answer": {
+            "value": "6"
+          }
+        },
+        {
+          "stepNumber": "10",
+          "answer": {
+            "value": "6"
+          }
+        },
+        {
+          "stepNumber": "11",
+          "answer": null
+        },
+        {
+          "stepNumber": "12",
+          "answer": null
+        },
+        {
+          "stepNumber": "13",
+          "answer": null
+        },
+        {
+          "stepNumber": "14",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "username": "vaughnsmcp@gmail.com",
+      "date": "2020-01-14T22:11:30.812563Z",
+      "answers": [
+        {
+          "stepNumber": "1",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "2",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "3",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "4",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "5",
+          "answer": {
+            "value": "2"
+          }
+        },
+        {
+          "stepNumber": "6",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "7",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "8",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "9",
+          "answer": {
+            "value": "20"
+          }
+        },
+        {
+          "stepNumber": "10",
+          "answer": {
+            "value": "Homework, re-doing activities"
+          }
+        },
+        {
+          "stepNumber": "11",
+          "answer": {
+            "value": ""
+          }
+        },
+        {
+          "stepNumber": "12",
+          "answer": null
+        },
+        {
+          "stepNumber": "13",
+          "answer": {
+            "value": "Yes"
+          }
+        },
+        {
+          "stepNumber": "14",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "username": "lisaannecabrera@gmail.com",
+      "date": "2020-01-18T22:03:55.581852Z",
+      "answers": [
+        {
+          "stepNumber": "1",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "2",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "3",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "4",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "5",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "6",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "7",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "8",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "9",
+          "answer": {
+            "value": "30"
+          }
+        },
+        {
+          "stepNumber": "10",
+          "answer": {
+            "value": "Homework Project 1"
+          }
+        },
+        {
+          "stepNumber": "11",
+          "answer": null
+        },
+        {
+          "stepNumber": "12",
+          "answer": null
+        },
+        {
+          "stepNumber": "13",
+          "answer": {
+            "value": "Yes"
+          }
+        },
+        {
+          "stepNumber": "14",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "username": "lloydmarcelino@gmail.com",
+      "date": "2020-01-13T13:25:28.715413Z",
+      "answers": [
+        {
+          "stepNumber": "1",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "2",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "3",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "4",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "5",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "6",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "7",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "8",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "9",
+          "answer": {
+            "value": "24"
+          }
+        },
+        {
+          "stepNumber": "10",
+          "answer": {
+            "value": "videos"
+          }
+        },
+        {
+          "stepNumber": "11",
+          "answer": {
+            "value": "none"
+          }
+        },
+        {
+          "stepNumber": "12",
+          "answer": {
+            "value": "none"
+          }
+        },
+        {
+          "stepNumber": "13",
+          "answer": {
+            "value": "Yes"
+          }
+        },
+        {
+          "stepNumber": "14",
+          "answer": {
+            "value": "none"
+          }
+        }
+      ]
+    },
+    {
+      "username": "justin.cojp@gmail.com",
+      "date": "2020-01-14T07:59:51.037473Z",
+      "answers": [
+        {
+          "stepNumber": "1",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "2",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "3",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "4",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "5",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "6",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "7",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "8",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "9",
+          "answer": {
+            "value": "25"
+          }
+        },
+        {
+          "stepNumber": "10",
+          "answer": {
+            "value": "homework/project"
+          }
+        },
+        {
+          "stepNumber": "11",
+          "answer": {
+            "value": "pace a 3 because its project week"
+          }
+        },
+        {
+          "stepNumber": "12",
+          "answer": {
+            "value": "spencer is great"
+          }
+        },
+        {
+          "stepNumber": "13",
+          "answer": {
+            "value": "Yes"
+          }
+        },
+        {
+          "stepNumber": "14",
+          "answer": {
+            "value": "project week is not my fav"
+          }
+        }
+      ]
+    },
+    {
+      "username": "owenchanthala@gmail.com",
+      "date": "2020-01-13T08:48:39.989462Z",
+      "answers": [
+        {
+          "stepNumber": "1",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "2",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "3",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "4",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "5",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "6",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "7",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "8",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "9",
+          "answer": {
+            "value": "10"
+          }
+        },
+        {
+          "stepNumber": "10",
+          "answer": {
+            "value": "Homework"
+          }
+        },
+        {
+          "stepNumber": "11",
+          "answer": null
+        },
+        {
+          "stepNumber": "12",
+          "answer": null
+        },
+        {
+          "stepNumber": "13",
+          "answer": null
+        },
+        {
+          "stepNumber": "14",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "username": "truelo_0vee@yahoo.com",
+      "date": "2020-01-14T20:27:43.724049Z",
+      "answers": [
+        {
+          "stepNumber": "1",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "2",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "3",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "4",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "5",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "6",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "7",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "8",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "9",
+          "answer": {
+            "value": "6"
+          }
+        },
+        {
+          "stepNumber": "10",
+          "answer": {
+            "value": "Project"
+          }
+        },
+        {
+          "stepNumber": "11",
+          "answer": {
+            "value": ""
+          }
+        },
+        {
+          "stepNumber": "12",
+          "answer": null
+        },
+        {
+          "stepNumber": "13",
+          "answer": {
+            "value": "Yes"
+          }
+        },
+        {
+          "stepNumber": "14",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "username": "agtravis85@gmail.com",
+      "date": "2020-01-15T01:54:57.858684Z",
+      "answers": [
+        {
+          "stepNumber": "1",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "2",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "3",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "4",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "5",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "6",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "7",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "8",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "9",
+          "answer": {
+            "value": "25"
+          }
+        },
+        {
+          "stepNumber": "10",
+          "answer": {
+            "value": "Project"
+          }
+        },
+        {
+          "stepNumber": "11",
+          "answer": {
+            "value": "no"
+          }
+        },
+        {
+          "stepNumber": "12",
+          "answer": {
+            "value": "no, a lot of time spent on project in class, so minimal interaction"
+          }
+        },
+        {
+          "stepNumber": "13",
+          "answer": {
+            "value": "No"
+          }
+        },
+        {
+          "stepNumber": "14",
+          "answer": {
+            "value": "no"
+          }
+        }
+      ]
+    },
+    {
+      "username": "ddhoang1993@gmail.com",
+      "date": "2020-01-14T00:35:57.722082Z",
+      "answers": [
+        {
+          "stepNumber": "1",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "2",
+          "answer": {
+            "value": "2"
+          }
+        },
+        {
+          "stepNumber": "3",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "4",
+          "answer": {
+            "value": "2"
+          }
+        },
+        {
+          "stepNumber": "5",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "6",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "7",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "8",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "9",
+          "answer": {
+            "value": "30"
+          }
+        },
+        {
+          "stepNumber": "10",
+          "answer": {
+            "value": "group project"
+          }
+        },
+        {
+          "stepNumber": "11",
+          "answer": {
+            "value": "n/a"
+          }
+        },
+        {
+          "stepNumber": "12",
+          "answer": {
+            "value": "n/a"
+          }
+        },
+        {
+          "stepNumber": "13",
+          "answer": {
+            "value": "Yes"
+          }
+        },
+        {
+          "stepNumber": "14",
+          "answer": {
+            "value": "n/a"
+          }
+        }
+      ]
+    },
+    {
+      "username": "randallallenburgess@gmail.com",
+      "date": "2020-01-15T02:47:51.565641Z",
+      "answers": [
+        {
+          "stepNumber": "1",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "2",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "3",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "4",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "5",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "6",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "7",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "8",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "9",
+          "answer": {
+            "value": "15"
+          }
+        },
+        {
+          "stepNumber": "10",
+          "answer": {
+            "value": "project work/studying"
+          }
+        },
+        {
+          "stepNumber": "11",
+          "answer": {
+            "value": ""
+          }
+        },
+        {
+          "stepNumber": "12",
+          "answer": null
+        },
+        {
+          "stepNumber": "13",
+          "answer": {
+            "value": "Yes"
+          }
+        },
+        {
+          "stepNumber": "14",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "username": "rachel.rohrbach@gmail.com",
+      "date": "2020-01-14T21:01:23.880857Z",
+      "answers": [
+        {
+          "stepNumber": "1",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "2",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "3",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "4",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "5",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "6",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "7",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "8",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "9",
+          "answer": {
+            "value": "24"
+          }
+        },
+        {
+          "stepNumber": "10",
+          "answer": {
+            "value": "homework, additional learning"
+          }
+        },
+        {
+          "stepNumber": "11",
+          "answer": null
+        },
+        {
+          "stepNumber": "12",
+          "answer": null
+        },
+        {
+          "stepNumber": "13",
+          "answer": {
+            "value": "Yes"
+          }
+        },
+        {
+          "stepNumber": "14",
+          "answer": null
+        }
+      ]
+    },
+    {
+      "username": "sousa.ryan4@gmail.com",
+      "date": "2020-01-13T23:00:58.20643Z",
+      "answers": [
+        {
+          "stepNumber": "1",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "2",
+          "answer": {
+            "value": "3"
+          }
+        },
+        {
+          "stepNumber": "3",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "4",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "5",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "6",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "7",
+          "answer": {
+            "value": "4"
+          }
+        },
+        {
+          "stepNumber": "8",
+          "answer": {
+            "value": "5"
+          }
+        },
+        {
+          "stepNumber": "9",
+          "answer": {
+            "value": "30"
+          }
+        },
+        {
+          "stepNumber": "10",
+          "answer": {
+            "value": "Hw/group"
+          }
+        },
+        {
+          "stepNumber": "11",
+          "answer": null
+        },
+        {
+          "stepNumber": "12",
+          "answer": null
+        },
+        {
+          "stepNumber": "13",
+          "answer": {
+            "value": "Yes"
+          }
+        },
+        {
+          "stepNumber": "14",
+          "answer": null
+        }
+      ]
+    }
+  ]
+}
