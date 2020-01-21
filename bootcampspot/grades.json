@@ -3273,7 +3273,7 @@
     "assignmentTitle": "3: Password Generator",
     "studentName": "Lisa Cabrera",
     "submitted": true,
-    "grade": null
+    "grade": "D"
   },
   {
     "assignmentTitle": "3: Password Generator",
@@ -3603,25 +3603,25 @@
     "assignmentTitle": "5: Day Planner",
     "studentName": "Alexander Mcclement",
     "submitted": true,
-    "grade": null
+    "grade": "A-"
   },
   {
     "assignmentTitle": "5: Day Planner",
     "studentName": "Alexander (George) Travis",
     "submitted": true,
-    "grade": null
+    "grade": "A+"
   },
   {
     "assignmentTitle": "5: Day Planner",
     "studentName": "Andrea Thomas",
     "submitted": true,
-    "grade": null
+    "grade": "A-"
   },
   {
     "assignmentTitle": "5: Day Planner",
     "studentName": "Ari Horowitz",
     "submitted": true,
-    "grade": null
+    "grade": "A"
   },
   {
     "assignmentTitle": "5: Day Planner",
@@ -3633,7 +3633,7 @@
     "assignmentTitle": "5: Day Planner",
     "studentName": "Benjamin Olsen",
     "submitted": true,
-    "grade": null
+    "grade": "B"
   },
   {
     "assignmentTitle": "5: Day Planner",
@@ -3645,13 +3645,13 @@
     "assignmentTitle": "5: Day Planner",
     "studentName": "Esther Walker",
     "submitted": true,
-    "grade": null
+    "grade": "A-"
   },
   {
     "assignmentTitle": "5: Day Planner",
     "studentName": "Frantz Felix",
     "submitted": true,
-    "grade": null
+    "grade": "A+"
   },
   {
     "assignmentTitle": "5: Day Planner",
@@ -3675,19 +3675,19 @@
     "assignmentTitle": "5: Day Planner",
     "studentName": "Henry Lopez",
     "submitted": true,
-    "grade": null
+    "grade": "A"
   },
   {
     "assignmentTitle": "5: Day Planner",
     "studentName": "Hoang Do",
     "submitted": true,
-    "grade": null
+    "grade": "A+"
   },
   {
     "assignmentTitle": "5: Day Planner",
     "studentName": "Issouf Kiema",
     "submitted": true,
-    "grade": null
+    "grade": "A"
   },
   {
     "assignmentTitle": "5: Day Planner",
@@ -3699,7 +3699,7 @@
     "assignmentTitle": "5: Day Planner",
     "studentName": "Jeremy Guts",
     "submitted": true,
-    "grade": null
+    "grade": "B"
   },
   {
     "assignmentTitle": "5: Day Planner",
@@ -3723,13 +3723,13 @@
     "assignmentTitle": "5: Day Planner",
     "studentName": "Justin Le",
     "submitted": true,
-    "grade": null
+    "grade": "A+"
   },
   {
     "assignmentTitle": "5: Day Planner",
     "studentName": "Kaitlyn Carlson",
     "submitted": true,
-    "grade": null
+    "grade": "A+"
   },
   {
     "assignmentTitle": "5: Day Planner",
@@ -3759,49 +3759,49 @@
     "assignmentTitle": "5: Day Planner",
     "studentName": "Lloyd Marcelino",
     "submitted": true,
-    "grade": null
+    "grade": "A+"
   },
   {
     "assignmentTitle": "5: Day Planner",
     "studentName": "Marie Lenac",
     "submitted": true,
-    "grade": null
+    "grade": "A+"
   },
   {
     "assignmentTitle": "5: Day Planner",
     "studentName": "Maximillian Cartwright",
-    "submitted": false,
-    "grade": null
+    "submitted": true,
+    "grade": "B"
   },
   {
     "assignmentTitle": "5: Day Planner",
     "studentName": "Owen Chanthala",
     "submitted": true,
-    "grade": null
+    "grade": "A"
   },
   {
     "assignmentTitle": "5: Day Planner",
     "studentName": "Rachel Rohrbach",
     "submitted": true,
-    "grade": null
+    "grade": "A+"
   },
   {
     "assignmentTitle": "5: Day Planner",
     "studentName": "Randall Burgess",
     "submitted": true,
-    "grade": null
+    "grade": "A"
   },
   {
     "assignmentTitle": "5: Day Planner",
     "studentName": "Richard Wang",
     "submitted": true,
-    "grade": null
+    "grade": "A"
   },
   {
     "assignmentTitle": "5: Day Planner",
     "studentName": "Ryan Sousa",
     "submitted": true,
-    "grade": null
+    "grade": "A"
   },
   {
     "assignmentTitle": "5: Day Planner",
@@ -3825,7 +3825,7 @@
     "assignmentTitle": "5: Day Planner",
     "studentName": "Teresa Liu",
     "submitted": true,
-    "grade": null
+    "grade": "A+"
   },
   {
     "assignmentTitle": "5: Day Planner",
@@ -3837,255 +3837,255 @@
     "assignmentTitle": "5: Day Planner",
     "studentName": "Vaughn Mcpherson",
     "submitted": true,
+    "grade": "Incomplete"
+  },
+  {
+    "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Alexander Mcclement",
+    "submitted": true,
+    "grade": "C"
+  },
+  {
+    "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Alexander (George) Travis",
+    "submitted": true,
+    "grade": "A+"
+  },
+  {
+    "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Andrea Thomas",
+    "submitted": true,
+    "grade": "C+"
+  },
+  {
+    "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Ari Horowitz",
+    "submitted": true,
+    "grade": "C+"
+  },
+  {
+    "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Barney Jordan",
+    "submitted": false,
     "grade": null
   },
   {
     "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Benjamin Olsen",
+    "submitted": true,
+    "grade": "C+"
+  },
+  {
+    "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Danielle Harden",
+    "submitted": false,
+    "grade": null
+  },
+  {
+    "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Esther Walker",
+    "submitted": true,
+    "grade": "A-"
+  },
+  {
+    "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Frantz Felix",
+    "submitted": true,
+    "grade": "C"
+  },
+  {
+    "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Gabrielle Christ",
+    "submitted": false,
+    "grade": null
+  },
+  {
+    "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Gil Solis",
+    "submitted": false,
+    "grade": null
+  },
+  {
+    "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Greivin Badilla",
+    "submitted": false,
+    "grade": null
+  },
+  {
+    "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Henry Lopez",
+    "submitted": true,
+    "grade": "C"
+  },
+  {
+    "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Hoang Do",
+    "submitted": true,
+    "grade": "B-"
+  },
+  {
+    "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Issouf Kiema",
+    "submitted": true,
+    "grade": "C"
+  },
+  {
+    "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Jared Kong",
+    "submitted": true,
+    "grade": "C"
+  },
+  {
+    "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Jeremy Guts",
+    "submitted": true,
+    "grade": "C"
+  },
+  {
+    "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Jonathon Lee",
+    "submitted": false,
+    "grade": null
+  },
+  {
+    "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Jose Bedregal",
+    "submitted": false,
+    "grade": null
+  },
+  {
+    "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Juanito Navarro",
+    "submitted": false,
+    "grade": null
+  },
+  {
+    "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Justin Le",
+    "submitted": true,
+    "grade": "A+"
+  },
+  {
+    "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Kaitlyn Carlson",
+    "submitted": true,
+    "grade": "A+"
+  },
+  {
+    "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Kat Dow",
+    "submitted": false,
+    "grade": null
+  },
+  {
+    "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Khangai Ganbayar",
+    "submitted": true,
+    "grade": "C"
+  },
+  {
+    "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Kindra Kinney",
+    "submitted": false,
+    "grade": null
+  },
+  {
+    "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Lisa Cabrera",
+    "submitted": true,
+    "grade": "C"
+  },
+  {
+    "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Lloyd Marcelino",
+    "submitted": true,
+    "grade": "A+"
+  },
+  {
+    "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Marie Lenac",
+    "submitted": true,
+    "grade": "B+"
+  },
+  {
+    "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Maximillian Cartwright",
+    "submitted": true,
+    "grade": "C"
+  },
+  {
+    "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Owen Chanthala",
+    "submitted": true,
+    "grade": "A+"
+  },
+  {
+    "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Rachel Rohrbach",
+    "submitted": true,
+    "grade": "A+"
+  },
+  {
+    "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Randall Burgess",
+    "submitted": true,
+    "grade": "C"
+  },
+  {
+    "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Richard Wang",
+    "submitted": true,
+    "grade": "A+"
+  },
+  {
+    "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Ryan Sousa",
+    "submitted": true,
+    "grade": "C+"
+  },
+  {
+    "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Spencer Fife",
+    "submitted": true,
+    "grade": "C"
+  },
+  {
+    "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Steven Blanton",
+    "submitted": false,
+    "grade": null
+  },
+  {
+    "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Sydney Russell",
+    "submitted": false,
+    "grade": null
+  },
+  {
+    "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Teresa Liu",
+    "submitted": true,
+    "grade": "C+"
+  },
+  {
+    "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Trevor Olsen",
+    "submitted": false,
+    "grade": null
+  },
+  {
+    "assignmentTitle": "6: Weather Dashboard",
+    "studentName": "Vaughn Mcpherson",
+    "submitted": true,
+    "grade": "C"
+  },
+  {
+    "assignmentTitle": "9: Developer Profile Generator",
     "studentName": "Alexander Mcclement",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "6: Weather Dashboard",
-    "studentName": "Alexander (George) Travis",
-    "submitted": false,
-    "grade": null
-  },
-  {
-    "assignmentTitle": "6: Weather Dashboard",
-    "studentName": "Andrea Thomas",
-    "submitted": false,
-    "grade": null
-  },
-  {
-    "assignmentTitle": "6: Weather Dashboard",
-    "studentName": "Ari Horowitz",
-    "submitted": false,
-    "grade": null
-  },
-  {
-    "assignmentTitle": "6: Weather Dashboard",
-    "studentName": "Barney Jordan",
-    "submitted": false,
-    "grade": null
-  },
-  {
-    "assignmentTitle": "6: Weather Dashboard",
-    "studentName": "Benjamin Olsen",
-    "submitted": false,
-    "grade": null
-  },
-  {
-    "assignmentTitle": "6: Weather Dashboard",
-    "studentName": "Danielle Harden",
-    "submitted": false,
-    "grade": null
-  },
-  {
-    "assignmentTitle": "6: Weather Dashboard",
-    "studentName": "Esther Walker",
-    "submitted": false,
-    "grade": null
-  },
-  {
-    "assignmentTitle": "6: Weather Dashboard",
-    "studentName": "Frantz Felix",
-    "submitted": false,
-    "grade": null
-  },
-  {
-    "assignmentTitle": "6: Weather Dashboard",
-    "studentName": "Gabrielle Christ",
-    "submitted": false,
-    "grade": null
-  },
-  {
-    "assignmentTitle": "6: Weather Dashboard",
-    "studentName": "Gil Solis",
-    "submitted": false,
-    "grade": null
-  },
-  {
-    "assignmentTitle": "6: Weather Dashboard",
-    "studentName": "Greivin Badilla",
-    "submitted": false,
-    "grade": null
-  },
-  {
-    "assignmentTitle": "6: Weather Dashboard",
-    "studentName": "Henry Lopez",
-    "submitted": false,
-    "grade": null
-  },
-  {
-    "assignmentTitle": "6: Weather Dashboard",
-    "studentName": "Hoang Do",
-    "submitted": false,
-    "grade": null
-  },
-  {
-    "assignmentTitle": "6: Weather Dashboard",
-    "studentName": "Issouf Kiema",
-    "submitted": false,
-    "grade": null
-  },
-  {
-    "assignmentTitle": "6: Weather Dashboard",
-    "studentName": "Jared Kong",
-    "submitted": false,
-    "grade": null
-  },
-  {
-    "assignmentTitle": "6: Weather Dashboard",
-    "studentName": "Jeremy Guts",
-    "submitted": false,
-    "grade": null
-  },
-  {
-    "assignmentTitle": "6: Weather Dashboard",
-    "studentName": "Jonathon Lee",
-    "submitted": false,
-    "grade": null
-  },
-  {
-    "assignmentTitle": "6: Weather Dashboard",
-    "studentName": "Jose Bedregal",
-    "submitted": false,
-    "grade": null
-  },
-  {
-    "assignmentTitle": "6: Weather Dashboard",
-    "studentName": "Juanito Navarro",
-    "submitted": false,
-    "grade": null
-  },
-  {
-    "assignmentTitle": "6: Weather Dashboard",
-    "studentName": "Justin Le",
-    "submitted": false,
-    "grade": null
-  },
-  {
-    "assignmentTitle": "6: Weather Dashboard",
-    "studentName": "Kaitlyn Carlson",
-    "submitted": false,
-    "grade": null
-  },
-  {
-    "assignmentTitle": "6: Weather Dashboard",
-    "studentName": "Kat Dow",
-    "submitted": false,
-    "grade": null
-  },
-  {
-    "assignmentTitle": "6: Weather Dashboard",
-    "studentName": "Khangai Ganbayar",
-    "submitted": false,
-    "grade": null
-  },
-  {
-    "assignmentTitle": "6: Weather Dashboard",
-    "studentName": "Kindra Kinney",
-    "submitted": false,
-    "grade": null
-  },
-  {
-    "assignmentTitle": "6: Weather Dashboard",
-    "studentName": "Lisa Cabrera",
-    "submitted": false,
-    "grade": null
-  },
-  {
-    "assignmentTitle": "6: Weather Dashboard",
-    "studentName": "Lloyd Marcelino",
-    "submitted": false,
-    "grade": null
-  },
-  {
-    "assignmentTitle": "6: Weather Dashboard",
-    "studentName": "Marie Lenac",
-    "submitted": false,
-    "grade": null
-  },
-  {
-    "assignmentTitle": "6: Weather Dashboard",
-    "studentName": "Maximillian Cartwright",
-    "submitted": false,
-    "grade": null
-  },
-  {
-    "assignmentTitle": "6: Weather Dashboard",
-    "studentName": "Owen Chanthala",
-    "submitted": false,
-    "grade": null
-  },
-  {
-    "assignmentTitle": "6: Weather Dashboard",
-    "studentName": "Rachel Rohrbach",
-    "submitted": false,
-    "grade": null
-  },
-  {
-    "assignmentTitle": "6: Weather Dashboard",
-    "studentName": "Randall Burgess",
-    "submitted": false,
-    "grade": null
-  },
-  {
-    "assignmentTitle": "6: Weather Dashboard",
-    "studentName": "Richard Wang",
-    "submitted": false,
-    "grade": null
-  },
-  {
-    "assignmentTitle": "6: Weather Dashboard",
-    "studentName": "Ryan Sousa",
-    "submitted": false,
-    "grade": null
-  },
-  {
-    "assignmentTitle": "6: Weather Dashboard",
-    "studentName": "Spencer Fife",
-    "submitted": false,
-    "grade": null
-  },
-  {
-    "assignmentTitle": "6: Weather Dashboard",
-    "studentName": "Steven Blanton",
-    "submitted": false,
-    "grade": null
-  },
-  {
-    "assignmentTitle": "6: Weather Dashboard",
-    "studentName": "Sydney Russell",
-    "submitted": false,
-    "grade": null
-  },
-  {
-    "assignmentTitle": "6: Weather Dashboard",
-    "studentName": "Teresa Liu",
-    "submitted": false,
-    "grade": null
-  },
-  {
-    "assignmentTitle": "6: Weather Dashboard",
-    "studentName": "Trevor Olsen",
-    "submitted": false,
-    "grade": null
-  },
-  {
-    "assignmentTitle": "6: Weather Dashboard",
-    "studentName": "Vaughn Mcpherson",
-    "submitted": false,
-    "grade": null
-  },
-  {
-    "assignmentTitle": "9: Developer Profile Generator",
-    "studentName": "Alexander Mcclement",
-    "submitted": false,
-    "grade": null
-  },
-  {
     "assignmentTitle": "9: Developer Profile Generator",
     "studentName": "Alexander (George) Travis",
     "submitted": false,
@@ -4724,7 +4724,7 @@
   {
     "assignmentTitle": "Milestone 2: Create Professional Materials I",
     "studentName": "Marie Lenac",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
@@ -6002,26 +6002,26 @@
   {
     "assignmentTitle": "Project 1",
     "studentName": "Alexander Mcclement",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
     "assignmentTitle": "Project 1",
     "studentName": "Alexander (George) Travis",
-    "submitted": false,
-    "grade": null
+    "submitted": true,
+    "grade": "A+"
   },
   {
     "assignmentTitle": "Project 1",
     "studentName": "Andrea Thomas",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
     "assignmentTitle": "Project 1",
     "studentName": "Ari Horowitz",
-    "submitted": false,
-    "grade": null
+    "submitted": true,
+    "grade": "A+"
   },
   {
     "assignmentTitle": "Project 1",
@@ -6032,7 +6032,7 @@
   {
     "assignmentTitle": "Project 1",
     "studentName": "Benjamin Olsen",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
@@ -6044,13 +6044,13 @@
   {
     "assignmentTitle": "Project 1",
     "studentName": "Esther Walker",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
     "assignmentTitle": "Project 1",
     "studentName": "Frantz Felix",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
@@ -6074,31 +6074,31 @@
   {
     "assignmentTitle": "Project 1",
     "studentName": "Henry Lopez",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
     "assignmentTitle": "Project 1",
     "studentName": "Hoang Do",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
     "assignmentTitle": "Project 1",
     "studentName": "Issouf Kiema",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
     "assignmentTitle": "Project 1",
     "studentName": "Jared Kong",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
     "assignmentTitle": "Project 1",
     "studentName": "Jeremy Guts",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
@@ -6122,13 +6122,13 @@
   {
     "assignmentTitle": "Project 1",
     "studentName": "Justin Le",
-    "submitted": false,
-    "grade": null
+    "submitted": true,
+    "grade": "A+"
   },
   {
     "assignmentTitle": "Project 1",
     "studentName": "Kaitlyn Carlson",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
@@ -6152,61 +6152,61 @@
   {
     "assignmentTitle": "Project 1",
     "studentName": "Lisa Cabrera",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
     "assignmentTitle": "Project 1",
     "studentName": "Lloyd Marcelino",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
     "assignmentTitle": "Project 1",
     "studentName": "Marie Lenac",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
     "assignmentTitle": "Project 1",
     "studentName": "Maximillian Cartwright",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
     "assignmentTitle": "Project 1",
     "studentName": "Owen Chanthala",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
     "assignmentTitle": "Project 1",
     "studentName": "Rachel Rohrbach",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
     "assignmentTitle": "Project 1",
     "studentName": "Randall Burgess",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
     "assignmentTitle": "Project 1",
     "studentName": "Richard Wang",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
     "assignmentTitle": "Project 1",
     "studentName": "Ryan Sousa",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
     "assignmentTitle": "Project 1",
     "studentName": "Spencer Fife",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
@@ -6224,7 +6224,7 @@
   {
     "assignmentTitle": "Project 1",
     "studentName": "Teresa Liu",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
@@ -6236,7 +6236,7 @@
   {
     "assignmentTitle": "Project 1",
     "studentName": "Vaughn Mcpherson",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
