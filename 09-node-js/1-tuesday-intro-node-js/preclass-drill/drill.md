@@ -16,4 +16,4 @@ Ex:
 - Input: 8
 - Output: undefined
 
-Add "unit tests". Try writing your own or see [previous drills](../../../06-server-side-apis\3-saturday-apis-continued\preclass-drill\drill-solution.html) for examples.
+Add "unit tests". Try writing your own or see [previous drills](../../../06-server-side-apis/3-saturday-apis-continued/preclass-drill/drill-solution.html) for examples.
