@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var inquirer = require('inquirer');
 var fs = require('fs');
