@@ -4,14 +4,14 @@ var expect = chai.expect;
 
 describe('reverse', function() {
   describe('reverse characters', function() {
-    it("should return '!dlroW olleH' when given 'Hello World!'", function() {
+    it('should reverse a sentence', function() {
       var result = reverse('Hello World!');
       expect(result).to.eql('!dlroW olleH');
     });
 
-    it("should return '!dlroW eybooG' when given 'Goodbye World!'", function() {
-      var result = reverse('Goodbye World!');
-      expect(result).to.eql('!dlroW eybdooG');
+    it("should reverse a sentence with random characters'", function() {
+      var result = reverse('*&^Goodbye World!');
+      expect(result).to.eql('!dlroW eybdooG^&*');
     });
   });
 
