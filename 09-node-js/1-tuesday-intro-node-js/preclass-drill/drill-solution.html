@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Drill - Switch Statements</title>
+  </head>
+  <body>
+    <script>
+      function getDay(dayNum) {
+        switch (dayNum) {
+          case 0:
+            return 'Sunday';
+          case 1:
+            return 'Monday';
+          case 2:
+            return 'Tuesday';
+          case 3:
+            return 'Wednesday';
+          case 4:
+            return 'Thursday';
+          case 5:
+            return 'Friday';
+          case 6:
+            return 'Saturday';
+          default:
+            console.error('Unexpected input', dayNum);
+            return undefined;
+        }
+      }
+
+      // let's test it!
+      function runTests(testName, callbackFunction) {
+        var testCases = [
+          // "normal user" tests
+          {
+            input: 0,
+            expected: 'Monday'
+          },
+          {
+            input: 3,
+            expected: 'Wednesday'
+          },
+          {
+            input: 6,
+            expected: 'Saturday'
+          },
+
+          // "devil" tests
+          {
+            input: 7,
+            expected: undefined
+          },
+          {
+            input: -1,
+            expected: undefined
+          },
+          {
+            input: '1'.charCodeAt(0),
+            expected: undefined
+          },
+          {
+            input: '1',
+            expected: undefined
+          },
+          {
+            input: 'pizza',
+            expected: undefined
+          },
+          {
+            input: new Date(),
+            expected: undefined
+          },
+          {
+            input: null,
+            expected: undefined
+          },
+          {
+            input: undefined,
+            expected: undefined
+          },
+
+          // "monkey" tests
+          {
+            input: 32423423,
+            expected: undefined
+          },
+          {
+            input: '3sdfoi',
+            expected: undefined
+          },
+          {
+            input: 32423423423432423421878923,
+            expected: undefined
+          }
+        ];
+
+        var results = [];
+        testCases.forEach(function(testCase) {
+          var actual = callbackFunction(testCase.input);
+          results.push({
+            input: testCase.input,
+            expected: testCase.expected,
+            actual: actual,
+            isCorrect:
+              // NaN is not equal to NaN
+              // this is the only value in JavaScript that is not equal to itself
+              (Number.isNaN(this.actual) && Number.isNaN(this.expected)) ||
+              this.expected === this.actual
+          });
+        });
+        console.log(testName);
+        console.table(results);
+      }
+      runTests('getDay', getDay);
+    </script>
+  </body>
+</html>
