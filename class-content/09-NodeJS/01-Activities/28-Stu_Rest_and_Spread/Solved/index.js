@@ -1,10 +1,10 @@
-'use strict'
+'use strict';
 
 // 1. Copy an array into another array using spread
 
 const songs = ['Creep', 'Everlong', 'Bulls On Parade', 'Song 2', 'What I Got'];
-const new_songs = [...songs];
-console.log(new_songs); // => ["Creep", "Everlong", "Bulls On Parade", "Song 2", "What I Got"];
+const newSongs = [...songs];
+console.log(newSongs); // => ["Creep", "Everlong", "Bulls On Parade", "Song 2", "What I Got"];
 
 // 2.  Modify the add function so that is uses the rest operator and maintains the same functionality. You should still be able to pass in any number of arguments.
 
