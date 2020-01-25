@@ -17,7 +17,7 @@ In this activity you will be writing code to create a function that swaps the le
     - e.g. given the following string:
 
     ```js
-    var str = 'Luke, I Am Your Father';
+    const str = 'Luke, I Am Your Father';
     ```
 
     - The following string should be returned:
