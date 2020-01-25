@@ -2,17 +2,15 @@
 
 // Write code to create a function takes a string and returns the string with all of the letter cases swapped
 
-function swapCase(str) {
-  var result = '';
+const swapCase = str => {
+  let result = '';
 
-  for (var i = 0; i < str.length; ++i) {
-    var letter = str[i];
-
+  for (let i = 0; i < str.length; ++i) {
+    const letter = str[i];
     result +=
       letter === letter.toLowerCase()
         ? letter.toUpperCase()
         : letter.toLowerCase();
   }
-
   return result;
-}
+};
