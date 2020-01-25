@@ -5,12 +5,12 @@ function waitFor(seconds, callback) {
     return callback(Error("Parameter 'seconds' must be a positive number!"));
   }
 
-  setTimeout(function() {
+  setTimeout(() => {
     callback(null, 'Success!');
   }, seconds * 1000);
 }
 
-waitFor(2, function(err, msg) {
+waitFor(2, (err, msg) => {
   if (err) {
     console.error(err);
     return;
