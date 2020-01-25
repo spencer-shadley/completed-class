@@ -4,9 +4,7 @@
 
 const swapCase = str => {
   let result = '';
-
-  for (let i = 0; i < str.length; ++i) {
-    const letter = str[i];
+  for (const letter of str) {
     result +=
       letter === letter.toLowerCase()
         ? letter.toUpperCase()
