@@ -11,7 +11,7 @@ async function combineAnimals() {
     const animals = [];
     const files = ['dog.json', 'goldfish.json', 'cat.json', 'hamster.json'];
 
-    for (let file of files) {
+    for (const file of files) {
       const fileStr = await readFileAsync(file, 'utf8');
 
       animals.push(JSON.parse(fileStr));
