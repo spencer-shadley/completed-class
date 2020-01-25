@@ -13,7 +13,7 @@ inquirer
     const queryUrl = `https://api.github.com/users/${username}/repos?per_page=100`;
 
     axios.get(queryUrl).then(res => {
-      let repoNames = res.data.map(repo => repo.name);
+      const repoNames = res.data.map(repo => repo.name);
 
      repoNames = repoNames.join('\n');
 
