@@ -1,12 +1,10 @@
-'use strict';
-
-import { createWriteStream } from 'fs';
-import { join } from 'path';
-import { prompt } from 'inquirer';
-import open from 'open';
-import convertFactory, { converters } from 'electron-html-to';
-import { getUser, getTotalStars } from './api';
-import generateHTML from './generateHTML';
+const fs = require('fs');
+const path = require('path');
+const inquirer = require('inquirer');
+const open = require('open');
+const convertFactory = require('electron-html-to');
+const api = require('./api');
+const generateHTML = require('./generateHTML');
 
 const questions = [
   {
@@ -24,12 +22,13 @@ const questions = [
 ];
 
 function init() {
-  prompt(questions).then(({ github, color }) => {
+  inquirer.prompt(questions).then(({ github, color }) => {
     console.log('Searching...');
 
-    getUser(github)
+    api
+      .getUser(github)
       .then(response =>
-        getTotalStars(github).then(stars => {
+        api.getTotalStars(github).then(stars => {
           return generateHTML({
             stars,
             color,
@@ -39,7 +38,7 @@ function init() {
       )
       .then(html => {
         const conversion = convertFactory({
-          converterPath: converters.PDF
+          converterPath: convertFactory.converters.PDF
         });
 
         conversion({ html }, function(err, result) {
@@ -47,9 +46,9 @@ function init() {
             return console.error(err);
           }
 
-          const resumeFilePath = join(__dirname, 'resume.pdf');
+          const resumeFilePath = path.join(__dirname, 'resume.pdf');
 
-          result.stream.pipe(createWriteStream(resumeFilePath));
+          result.stream.pipe(fs.createWriteStream(resumeFilePath));
           conversion.kill();
           open(resumeFilePath);
         });
