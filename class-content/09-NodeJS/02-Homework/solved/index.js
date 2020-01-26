@@ -1,8 +1,6 @@
-const fs = require('fs');
-const path = require('path');
 const inquirer = require('inquirer');
 const open = require('open');
-const convertFactory = require('electron-html-to');
+const pdf = require('html-pdf');
 const api = require('./api');
 const generateHTML = require('./generateHTML');
 
@@ -37,21 +35,15 @@ function init() {
         })
       )
       .then(html => {
-        const conversion = convertFactory({
-          converterPath: convertFactory.converters.PDF
-        });
-
-        conversion({ html }, function(err, result) {
-          if (err) {
-            return console.error(err);
-          }
-
-          const resumeFilePath = path.join(__dirname, 'resume.pdf');
-
-          result.stream.pipe(fs.createWriteStream(resumeFilePath));
-          conversion.kill();
-          open(resumeFilePath);
-        });
+        pdf
+          .create(html, { format: 'Tabloid' })
+          .toFile('./resume.pdf', (err, res) => {
+            if (err) {
+              return console.error(err);
+            }
+            console.log('successfully created resume', res);
+            open('./resume.pdf');
+          });
       });
   });
 }
