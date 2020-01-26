@@ -8,7 +8,7 @@ Below are examples comparing the old and new syntax from ES6. Each example will 
 
 Arrow functions are a new way to create functions
 
-Old:
+**Old**
 
 ```js
 var func = function(parameterA, parameterB) {
@@ -20,7 +20,7 @@ var func = function(parameterA, parameterB) {
 function func2(parameterA, parameterB) {}
 ```
 
-New
+**New**
 
 ```js
 const func = (parameterA, parameterB) => {
@@ -33,7 +33,7 @@ const func = (parameterA, parameterB) => {
 
 `var` is banned. Use `let` if you have a variable whose reference might change. Use `const` if the reference will not change.
 
-Old
+**Old**
 
 ```js
 var numPizzas = 3;
@@ -41,7 +41,7 @@ numPizzas = 8;
 var pizzaCompany = 'Dominos';
 ```
 
-New
+**New**
 
 ```js
 let numPizzas = 3;
@@ -57,7 +57,7 @@ const pizzaCompany = 'Dominos';
 
 Get each item in an array using this new function
 
-Old
+**Old**
 
 ```js
 for (var i = 0; i < pizzas.length; ++i) {
@@ -66,7 +66,7 @@ for (var i = 0; i < pizzas.length; ++i) {
 }
 ```
 
-New
+**New**
 
 ```js
 pizzas.forEach(function(pizza) {
@@ -83,7 +83,7 @@ pizzas.forEach(function(pizza) {
 
 Creates a new array, filtered to only the items which meet your given criteria
 
-Old
+**Old**
 
 ```js
 var pizzas = [
@@ -100,7 +100,7 @@ for (var i = 0; i < pizzas.length; ++i) {
 }
 ```
 
-New
+**New**
 
 ```js
 var pizzas = [
@@ -117,7 +117,7 @@ var cheapPizzas = pizzas.filter(function(pizza) {
 
 `someArray.map(function(item) {})`
 
-Old
+**Old**
 
 ```js
 var pizzas = [
@@ -133,7 +133,7 @@ for (var i = 0; i < pizzas.length; ++i) {
 }
 ```
 
-New
+**New**
 
 ```js
 var pizzas = [
@@ -153,14 +153,14 @@ var pizzaCompanies = pizzas.map(function(pizza) {
 
 Another way to create strings which supports whitespace (new lines, tabs, etc.) and evaluating JavaScript inline.
 
-Old
+**Old**
 
 ```js
 var pizza = { company: 'Dominos', price: 5 };
 console.log('A pizza from ' + pizza.company + ' costs ' + pizza.price);
 ```
 
-New
+**New**
 
 ```js
 var pizza = { company: 'Dominos', price: 5 };
@@ -173,7 +173,7 @@ console.log(`A pizza from ${pizza.company} costs ${pizza.price}`);
 
 Another way to loop through collections (anything iterable)
 
-Old
+**Old**
 
 ```js
 var pizzas = [
@@ -188,7 +188,7 @@ for (var i = 0; i < pizzas.length; ++i) {
 }
 ```
 
-New
+**New**
 
 ```js
 var pizzas = [
@@ -208,7 +208,7 @@ for (var pizza of pizzas) {
 
 Enables creating functions with an arbitrary number of parameters
 
-Old
+**Old**
 
 ```js
 // Not possible, closest thing would be to take an array of inputs
@@ -216,7 +216,7 @@ Old
 // your function
 ```
 
-New
+**New**
 
 ```js
 function sum(...nums) {
@@ -234,7 +234,7 @@ sum(42, 834, 2, -4);
 
 Pull out the values from collections such as arrays
 
-Old
+**Old**
 
 ```js
 var meats = ['sausage', 'pepperoni', 'cheese'];
@@ -249,7 +249,7 @@ for (var i = 0; i < veggies.length; ++i) {
 }
 ```
 
-New
+**New**
 
 ```js
 var meats = ['sausage', 'pepperoni', 'cheese'];
@@ -263,7 +263,7 @@ var allToppings = [...meats, ...veggies]; // ['sausage', 'pepperoni', 'cheese', 
 
 Pull out properties from an object into new variable(s)
 
-Old
+**Old**
 
 ```js
 var pizza = { company: 'Dominos', price: 5 };
@@ -272,7 +272,7 @@ var price = pizza.price;
 console.log(company, price);
 ```
 
-New
+**New**
 
 ```js
 var pizza = { company: 'Dominos', price: 5 };
@@ -304,14 +304,14 @@ promise.catch(function(err) {
 
 The officially supported way to include modules in ES6, importing only what you need
 
-Old
+**Old**
 
 ```js
 var inquirer = require('inquirer');
 inquirer.prompt(myPrompts);
 ```
 
-New
+**New**
 
 ```js
 import { prompt } from 'inquirer';
@@ -341,7 +341,7 @@ $.ajax({
 });
 ```
 
-New
+**New**
 
 ```js
 var queryURL =
