@@ -3,21 +3,7 @@ const open = require('open');
 const pdf = require('html-pdf');
 const api = require('./api');
 const generateHTML = require('./generateHTML');
-
-const questions = [
-  {
-    type: 'input',
-    name: 'github',
-    message: 'What is your GitHub username?'
-  },
-
-  {
-    type: 'list',
-    name: 'color',
-    message: 'What is your favorite color?',
-    choices: ['red', 'blue', 'green', 'pink']
-  }
-];
+const questions = require('./questions.json');
 
 async function init() {
   try {
