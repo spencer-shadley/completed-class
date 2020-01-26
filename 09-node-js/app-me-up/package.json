@@ -1,6 +1,6 @@
 {
   "name": "app-me-up",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A script to build a basic app template with html, css, and html files.",
   "main": "index.js",
   "scripts": {

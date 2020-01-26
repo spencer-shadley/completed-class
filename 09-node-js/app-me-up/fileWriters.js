@@ -1,5 +1,4 @@
-const fs = require("fs");
-const path = require("path");
+const { writeFile } = require("fs");
 const {
   htmlTemplate,
   htmlTemplateWithScript,
@@ -11,58 +10,58 @@ const {
 
 const { ghCss, ghHTML, ghJs } = require("./templates/ghRepo");
 
-const callbackConsole = err => {
+function callbackConsole(err, file) {
   err
     ? console.error("There was an error", err)
-    : console.log("Success created file(s)!");
-};
+    : console.log(`Success created ${file} file!`);
+}
 
-const htmlFile = projectName => {
-  fs.writeFile(
-    path.join(__dirname, "index.html"),
+function htmlFile(projectName) {
+  writeFile(
+    "index.html",
     `${htmlTemplate(projectName)}${htmlTemplateEnd}`,
-    callbackConsole
+    err => callbackConsole(err, "index.html")
   );
-};
+}
 
-const htmlCssFiles = projectName => {
-  fs.writeFile(
+function htmlCssFiles(projectName) {
+  writeFile(
     "index.html",
     `${htmlTemplateWithStyles(projectName)}${htmlTemplateEnd}`,
-    callbackConsole
+    err => callbackConsole(err, "file")
   );
-  fs.writeFile("style.css", htmlCss, callbackConsole);
-};
+  writeFile("style.css", htmlCss, err => callbackConsole(err, "file"));
+}
 
-const htmlJsFiles = projectName => {
-  fs.writeFile(
+function htmlJsFiles(projectName) {
+  writeFile(
     "index.html",
     `${htmlTemplate(projectName)}${htmlTemplateWithScript}`,
-    callbackConsole
+    err => callbackConsole(err, "file")
   );
 
-  fs.writeFile("script.js", htmlJs, callbackConsole);
-};
+  writeFile("script.js", htmlJs, err => callbackConsole(err, "file"));
+}
 
-const htmlCssJsFiles = projectName => {
-  fs.writeFile(
+function htmlCssJsFiles(projectName) {
+  writeFile(
     "index.html",
     `${htmlTemplateWithStyles(projectName)}${htmlTemplateWithScript}`,
-    callbackConsole
+    err => callbackConsole(err, "file")
   );
 
-  fs.writeFile("style.css", htmlCss, callbackConsole);
+  writeFile("style.css", htmlCss, err => callbackConsole(err, "file"));
 
-  fs.writeFile("script.js", htmlJs, callbackConsole);
-};
+  writeFile("script.js", htmlJs, err => callbackConsole(err, "file"));
+}
 
-const ghRepoFiles = name => {
-  fs.writeFile("index.html", ghHTML(name), callbackConsole);
+function ghRepoFiles(name) {
+  writeFile("index.html", ghHTML(name), err => callbackConsole(err, "file"));
 
-  fs.writeFile("style.css", ghCss, callbackConsole);
+  writeFile("style.css", ghCss, err => callbackConsole(err, "file"));
 
-  fs.writeFile("script.js", ghJs(name), callbackConsole);
-};
+  writeFile("script.js", ghJs(name), err => callbackConsole(err, "file"));
+}
 
 module.exports = {
   htmlFile,
