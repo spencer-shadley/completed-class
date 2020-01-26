@@ -66,6 +66,10 @@ WHEN prompted for the developer's GitHub username and favorite color
 THEN a PDF profile is generated
 ```
 
+## Demo
+
+- See an example [here](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=30af2eec-a161-4a31-ab2c-ab4e006dc202)
+
 ## Hints
 
 - You may need to research how to convert from HTML to a PDF in Node.js
