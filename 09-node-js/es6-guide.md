@@ -33,13 +33,15 @@ const func = (parameterA, parameterB) => {
 
 `var` is banned. Use `let` if you have a variable whose reference might change. Use `const` if the reference will not change.
 
-old
+Old
 
 ```js
 var numPizzas = 3;
 numPizzas = 8;
 var pizzaCompany = 'Dominos';
 ```
+
+New
 
 ```js
 let numPizzas = 3;
