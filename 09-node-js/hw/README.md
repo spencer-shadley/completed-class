@@ -80,6 +80,8 @@ THEN a PDF profile is generated
 
 - Add more functionality to the resume (ex. include a collection of the user's repos)
 
+- ES6ify as much as possible (`async`/`await`, arrow functions, template literals, etc.)
+
 ---
 
 ## Commit Early and Often
