@@ -14,7 +14,7 @@ class Letter {
     if (this.visible === true) {
       return this.char;
     }
-    return "_";
+    return '_';
   }
 
   getSolution() {

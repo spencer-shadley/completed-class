@@ -1,7 +1,7 @@
-const inquirer = require("inquirer");
-const chalk = require("chalk");
-const Word = require("./Word");
-const words = require("./words");
+const inquirer = require('inquirer');
+const chalk = require('chalk');
+const Word = require('./Word');
+const words = require('./words');
 
 // The Game constructor is responsible for keeping score and controlling the flow of the overall game
 
@@ -20,7 +20,7 @@ class Game {
   nextWord() {
     const randWord = words[Math.floor(Math.random() * words.length)];
     this.currentWord = new Word(randWord);
-    console.log("\n" + this.currentWord + "\n");
+    console.log('\n' + this.currentWord + '\n');
     this.makeGuess();
   }
 
@@ -38,7 +38,7 @@ class Game {
 
         // If the user guessed all letters of the current word correctly, reset guessesLeft to 10 and get the next word
       } else if (this.currentWord.guessedCorrectly()) {
-        console.log("You got it right! Next word!");
+        console.log('You got it right! Next word!');
         this.guessesLeft = 10;
         this.nextWord();
 
@@ -54,9 +54,9 @@ class Game {
     inquirer
       .prompt([
         {
-          type: "confirm",
-          name: "choice",
-          message: "Play Again?"
+          type: 'confirm',
+          name: 'choice',
+          message: 'Play Again?'
         }
       ])
       .then(val => {
@@ -74,9 +74,9 @@ class Game {
     return inquirer
       .prompt([
         {
-          type: "input",
-          name: "choice",
-          message: "Guess a letter!",
+          type: 'input',
+          name: 'choice',
+          message: 'Guess a letter!',
           validate: function(val) {
             // The users guess must be a number or letter
             return /[a-z1-9]/gi.test(val);
@@ -87,20 +87,20 @@ class Game {
         // If the user's guess is in the current word, log that they chose correctly
         const didGuessCorrectly = this.currentWord.guessLetter(val.choice);
         if (didGuessCorrectly) {
-          console.log(chalk.green("\nCORRECT!!!\n"));
+          console.log(chalk.green('\nCORRECT!!!\n'));
 
           // Otherwise decrement `guessesLeft`, and let the user know how many guesses they have left
         } else {
           this.guessesLeft--;
-          console.log(chalk.red("\nINCORRECT!!!\n"));
-          console.log(this.guessesLeft + " guesses remaining!!!\n");
+          console.log(chalk.red('\nINCORRECT!!!\n'));
+          console.log(this.guessesLeft + ' guesses remaining!!!\n');
         }
       });
   }
 
   // Logs goodbye and exits the node app
   quit() {
-    console.log("\nGoodbye!");
+    console.log('\nGoodbye!');
     process.exit(0);
   }
 }
