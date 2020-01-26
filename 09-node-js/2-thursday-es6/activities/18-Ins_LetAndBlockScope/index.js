@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // 1. When using var, our counter exists after a for-loop is done
 

@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const moviePatrons = [
   { name: 'Tom', age: 16 },

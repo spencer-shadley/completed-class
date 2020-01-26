@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // more info - https://nodejs.org/api/process.html#process_process_argv
 

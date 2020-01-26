@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // 1. Copy an array into another array using spread
 
