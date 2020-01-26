@@ -1,14 +1,13 @@
 'use strict';
 
-const inquirer = require('inquirer');
-const fs = require('fs');
-const util = require('util');
-const prompts = require('./prompts');
+import { prompt } from 'inquirer';
+import { promisify } from 'util';
+import prompts from './prompts';
 
-const writeFileAsync = util.promisify(fs.writeFile);
+const writeFileAsync = promisify(writeFile);
 
 function promptUser() {
-  return inquirer.prompt(prompts);
+  return prompt(prompts);
 }
 
 function generateHTML(answers) {
