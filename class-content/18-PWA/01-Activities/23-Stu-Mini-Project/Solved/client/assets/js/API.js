@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 import { createArticleIds, getParams } from './utils';
 

@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // Make a get request to our api route that will return every "short" book (150 pages or less)
 $.get('/api/books/short', function(data) {

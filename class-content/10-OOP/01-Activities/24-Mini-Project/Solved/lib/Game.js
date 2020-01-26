@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // The Game class is responsible for keeping score and controlling the flow of the overall game
 

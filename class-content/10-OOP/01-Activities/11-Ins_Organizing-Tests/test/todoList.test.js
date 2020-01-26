@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const TodoList = require('../todoList');
 const Todo = require('../todo');

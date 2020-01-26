@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var main = document.querySelector('main');
 var sitesEl = document.querySelector('.sites');

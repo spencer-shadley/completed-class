@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // 2. Answer: 12 + 9 = 21
 

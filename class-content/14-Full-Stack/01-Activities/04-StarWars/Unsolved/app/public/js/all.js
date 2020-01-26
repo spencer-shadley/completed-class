@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // Code here handles what how the page displays all of the characters
 // It pings the server. The server then pings the database and displays all of the characters.

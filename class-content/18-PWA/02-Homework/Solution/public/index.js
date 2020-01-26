@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {

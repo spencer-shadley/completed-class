@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 import React, { useEffect } from 'react';
 import { Col, Row, Container } from '../Grid';

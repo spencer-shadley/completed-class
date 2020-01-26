@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // Setting up dummy topics data
 let topicData = [

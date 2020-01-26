@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var statusSpan = document.querySelector('#status');
 var statusToggle = document.querySelector('#status-toggle');

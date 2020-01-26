@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 class Employee {
   constructor(name, id, email) {

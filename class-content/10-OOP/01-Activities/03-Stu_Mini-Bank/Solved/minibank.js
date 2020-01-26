@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 function MiniBank(balance) {
   this.balance = balance;

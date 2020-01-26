@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 let db;
 const request = indexedDB.open('budget', 1);

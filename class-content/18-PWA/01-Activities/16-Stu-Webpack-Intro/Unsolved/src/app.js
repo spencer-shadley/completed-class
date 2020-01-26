@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const priceEl = document.getElementById('price');
 const balanceEl = document.getElementById('balance');

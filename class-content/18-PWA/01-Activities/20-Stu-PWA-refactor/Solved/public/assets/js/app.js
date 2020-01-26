@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 import { createCards } from './cardCreation';
 

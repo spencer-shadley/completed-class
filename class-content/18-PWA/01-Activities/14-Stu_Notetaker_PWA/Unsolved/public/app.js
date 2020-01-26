@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const actionBtn = document.getElementById('action-button');
 // new item

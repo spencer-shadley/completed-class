@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 import { createEl } from './domMethods';
 import { createRatingForm } from './rating';

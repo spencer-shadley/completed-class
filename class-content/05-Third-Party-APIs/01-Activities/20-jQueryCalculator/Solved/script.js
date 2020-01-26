@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 $(document).ready(function() {
   // Make our variables global to the runtime of our application

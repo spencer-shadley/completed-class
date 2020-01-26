@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var todoInput = document.querySelector('#todo-text');
 var todoForm = document.querySelector('#todo-form');

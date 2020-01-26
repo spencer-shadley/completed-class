@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var submitEl = document.querySelector('#submit');
 var nameInput = document.querySelector('#name');

@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // Add code to userModel.js to complete the model
 

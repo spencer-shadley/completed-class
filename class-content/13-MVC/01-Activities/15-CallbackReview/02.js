@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var sum = function(numOne, numTwo) {
   return numOne + numTwo;

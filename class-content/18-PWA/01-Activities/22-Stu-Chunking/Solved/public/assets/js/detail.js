@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 import { loadImage } from './api';
 import { createCard } from './cardCreation';

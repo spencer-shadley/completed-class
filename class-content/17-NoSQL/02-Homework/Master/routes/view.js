@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const router = require('express').Router();
 const path = require('path');

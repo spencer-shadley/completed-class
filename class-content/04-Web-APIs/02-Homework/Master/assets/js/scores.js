@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 function printHighscores() {
   // either get scores from localstorage or set to empty array

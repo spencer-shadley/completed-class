@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 import React, { useState, useEffect } from 'react';
 import DeleteBtn from '../components/DeleteBtn';

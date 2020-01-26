@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // Write a function that takes an array and a positive integer and "rotates" the array to the left by the integer
 // Modify the original array rather than returning a new one

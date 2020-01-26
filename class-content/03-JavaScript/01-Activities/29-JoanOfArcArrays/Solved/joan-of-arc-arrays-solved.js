@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // Joan of Arc 'properties.'
 var joanOfArcInfoParts = [

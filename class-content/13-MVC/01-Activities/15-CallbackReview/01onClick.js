@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // 1. Explain the on click code below.
 

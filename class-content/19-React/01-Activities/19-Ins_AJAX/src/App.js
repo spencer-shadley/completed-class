@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 import React from 'react';
 import SearchResultContainer from './components/SearchResultContainer';

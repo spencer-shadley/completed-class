@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var tipElement = document.querySelector('#tip-percentage');
 var totalElement = document.querySelector('#total');

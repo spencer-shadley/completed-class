@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // Create the required custom methods at the bottom of this file
 

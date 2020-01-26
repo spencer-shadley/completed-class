@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var themeSwitcher = document.querySelector('#theme-switcher');
 var container = document.querySelector('.container');

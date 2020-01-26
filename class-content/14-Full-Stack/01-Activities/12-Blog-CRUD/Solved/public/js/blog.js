@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 $(document).ready(function() {
   // blogContainer holds all of our posts

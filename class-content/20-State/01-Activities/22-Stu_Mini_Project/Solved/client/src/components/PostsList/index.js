@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 import React, { useEffect } from 'react';
 import { ListItem, List } from '../List';

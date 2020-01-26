@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // Depending on the environment `setTimeout` is called in, it may refer to one of two objects
 // In the browser, `setTimeout` is a property of the `window` object

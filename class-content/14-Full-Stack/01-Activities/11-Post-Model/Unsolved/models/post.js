@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 module.exports = function(sequelize, DataTypes) {
   // Add code here to create a Post model

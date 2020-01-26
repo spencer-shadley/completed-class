@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 import { useState } from 'react';
 import profileImage from '../assets/images/profile.png';

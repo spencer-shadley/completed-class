@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 async function init() {
   const lastWorkout = await API.getLastWorkout();

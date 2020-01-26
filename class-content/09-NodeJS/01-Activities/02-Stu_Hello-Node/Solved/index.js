@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 console.log('Hellooo, Node!');
 // console.log(window); // window is not defined

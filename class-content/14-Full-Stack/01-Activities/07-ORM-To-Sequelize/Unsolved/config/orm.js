@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // *********************************************************************************
 // orm.js - This file offers a set of easier-to-use methods for interacting with the MySQL db.

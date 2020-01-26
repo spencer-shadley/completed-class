@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // 1.
 myArray = [2, 4, 6, 8];

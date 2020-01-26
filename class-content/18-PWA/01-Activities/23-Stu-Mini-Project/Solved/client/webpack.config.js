@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');

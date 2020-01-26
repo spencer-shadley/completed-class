@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var emailInput = document.querySelector('#email');
 var passwordInput = document.querySelector('#password');

@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const workoutTypeSelect = document.querySelector('#type');
 const cardioForm = document.querySelector('.cardio-form');

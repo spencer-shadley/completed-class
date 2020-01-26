@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 export function loadImages() {
   return fetch('/api/images')

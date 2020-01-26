@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 $(document).ready(function() {
   // listen for save button clicks

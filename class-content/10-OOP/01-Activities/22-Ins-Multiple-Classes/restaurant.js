@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const Order = require('./order');
 const Item = require('./item');

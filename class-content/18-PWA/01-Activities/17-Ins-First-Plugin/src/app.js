@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const calculations = require('./calculations');
 const Chart = require('chart.js');

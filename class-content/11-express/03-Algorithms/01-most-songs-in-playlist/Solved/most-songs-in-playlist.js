@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // Write code to create a function that accepts an array of numbers
 // Each number represents the duration of a song in minutes

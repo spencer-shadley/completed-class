@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // each set of characters, leveraging ASCII sequences
 // https://www.computerhope.com/jargon/a/ascii.htm

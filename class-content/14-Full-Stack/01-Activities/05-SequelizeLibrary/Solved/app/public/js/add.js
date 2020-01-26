@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // The code in add.js handles what happens when the user clicks the "Add a book" button.
 

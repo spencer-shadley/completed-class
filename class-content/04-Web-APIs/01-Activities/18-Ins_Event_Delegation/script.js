@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var listEl = document.querySelector('#grocery-list');
 var shoppingCartEl = document.querySelector('#shopping-cart');

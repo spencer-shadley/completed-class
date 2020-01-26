@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 function Child(name, age) {
   if (typeof name !== 'string' || !name.trim().length) {

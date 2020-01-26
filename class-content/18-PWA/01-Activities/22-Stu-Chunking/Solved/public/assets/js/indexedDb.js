@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 export function useIndexedDb(databaseName, storeName, method, object) {
   return new Promise((resolve, reject) => {

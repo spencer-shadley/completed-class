@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var outer = document.querySelector('.outer-div');
 var inner = document.querySelector('.inner-div');

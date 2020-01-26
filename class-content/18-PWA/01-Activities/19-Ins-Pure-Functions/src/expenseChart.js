@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 export function updateChart(expenseChart, name, price) {
   expenseChart.data.labels.push(name);

@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const Engineer = require('../lib/Engineer');
 

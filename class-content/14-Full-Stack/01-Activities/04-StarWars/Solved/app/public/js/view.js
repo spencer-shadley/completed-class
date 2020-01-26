@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // Code here handles queries for specific characters in the database
 // In this case, the user submits a character's name... we then pass that character's name as a

@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 $(document).ready(function() {
   // Getting references to the name input and author container, as well as the table body

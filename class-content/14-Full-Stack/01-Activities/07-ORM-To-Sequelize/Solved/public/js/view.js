@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 $(document).ready(function() {
   // Getting a reference to the input field where user adds a new todo

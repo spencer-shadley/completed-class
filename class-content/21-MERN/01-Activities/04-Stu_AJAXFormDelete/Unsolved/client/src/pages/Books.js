@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 import React, { useEffect, useState } from 'react';
 import Jumbotron from '../../components/Jumbotron';

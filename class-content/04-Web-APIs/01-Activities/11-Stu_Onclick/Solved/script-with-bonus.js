@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var count = 0;
 var updateAmountElement = document.querySelector('#update-amount');

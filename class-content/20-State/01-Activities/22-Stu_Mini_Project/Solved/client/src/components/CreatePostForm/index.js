@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 import React, { useRef } from 'react';
 import { useStoreContext } from '../../utils/GlobalState';

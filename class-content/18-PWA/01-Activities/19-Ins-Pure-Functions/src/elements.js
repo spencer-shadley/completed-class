@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const Chart = require('chart.js');
 export const priceEl = document.getElementById('price');

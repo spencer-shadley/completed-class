@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const FILES_TO_CACHE = ['/', '/index.html', 'app.js', 'favicon.ico'];
 

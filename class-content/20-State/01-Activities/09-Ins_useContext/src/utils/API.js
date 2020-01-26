@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // This code is meant to serve as a mock fetch from an API.
 export const getDeveloper = new Promise(function(resolve) {

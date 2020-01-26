@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var counter = document.querySelector('#counter');
 var addButton = document.querySelector('#add');

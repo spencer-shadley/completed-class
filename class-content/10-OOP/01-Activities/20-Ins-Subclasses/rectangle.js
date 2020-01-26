@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const Shape = require('./shape');
 

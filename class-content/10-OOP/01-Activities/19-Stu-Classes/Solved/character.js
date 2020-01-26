@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 class Character {
   constructor(name, strength, hitPoints) {

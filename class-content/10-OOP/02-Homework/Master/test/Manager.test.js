@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const Manager = require('../lib/Manager');
 const Employee = require('../lib/Employee');

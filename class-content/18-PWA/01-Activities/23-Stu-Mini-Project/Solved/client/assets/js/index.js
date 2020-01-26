@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 import { createElement } from './domMethods';
 // Setting up dummy topics data

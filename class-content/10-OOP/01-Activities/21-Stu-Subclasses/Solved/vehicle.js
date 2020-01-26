@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 class Vehicle {
   constructor(id, numberOfWheels, sound) {

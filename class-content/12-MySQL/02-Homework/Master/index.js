@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const { prompt } = require('inquirer');
 const logo = require('asciiart-logo');

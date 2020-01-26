@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // *********************************************************************************
 // CONNECTION.JS - THIS FILE INITIATES THE CONNECTION TO MYSQL

@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var carousel = document.querySelector('.carouselbox');
 var next = carousel.querySelector('.next');

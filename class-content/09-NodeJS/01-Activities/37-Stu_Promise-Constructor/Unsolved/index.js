@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 function waitFor(seconds, cb) {
   if (isNaN(seconds) || seconds < 1) {

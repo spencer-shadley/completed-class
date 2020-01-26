@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // var pTags = document.querySelectorAll("p");
 // var divTags = document.querySelectorAll("div");

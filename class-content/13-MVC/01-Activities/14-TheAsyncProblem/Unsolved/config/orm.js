@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var connection = require('../config/connection.js');
 

@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var eventType = document.querySelector('#event-type');
 var mouseEventsEl = document.querySelector('#click-events');

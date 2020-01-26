@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // Create all necessary elements
 var h1El = document.createElement('h1');

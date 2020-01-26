@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 export function createEl(htmlString = '', className) {
   const el = document.createElement(htmlString);

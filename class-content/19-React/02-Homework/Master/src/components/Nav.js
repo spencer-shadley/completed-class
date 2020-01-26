@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 import React from 'react';
 import SearchBox from './SearchBox.js';

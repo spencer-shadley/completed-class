@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 class Shape {
   // Just like constructor functions, classes can accept arguments

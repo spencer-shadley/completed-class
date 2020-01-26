@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // Fill in the body of each function with the code required
 

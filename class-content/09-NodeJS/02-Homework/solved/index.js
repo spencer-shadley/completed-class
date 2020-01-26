@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 import { createWriteStream } from 'fs';
 import { join } from 'path';

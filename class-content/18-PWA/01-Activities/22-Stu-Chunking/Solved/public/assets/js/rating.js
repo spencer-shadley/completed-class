@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 import { loadImages, loadImage } from './api';
 import { createEl } from './domMethods';

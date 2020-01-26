@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 import axios from 'axios';
 const BASEURL = 'https://www.omdbapi.com/?t=';

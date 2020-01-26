@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // IMDB TOP 250 Movies
 

@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const exjwt = require('express-jwt');
 require('dotenv').config();

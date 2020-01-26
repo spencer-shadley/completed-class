@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 export function checkForIndexedDb() {
   if (!window.indexedDB) {
