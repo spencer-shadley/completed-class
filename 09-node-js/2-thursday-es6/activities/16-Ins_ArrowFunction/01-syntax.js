@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 // All of the `createGreeting` functions are equivalent
 function createGreeting(message, name) {

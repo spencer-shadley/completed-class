@@ -44,6 +44,8 @@ When preparing a report for stakeholders, it is important to have up-to-date inf
 
 - GitHub repository with a unique name and a README describing project.
 
+  - This README must contain a gif or image of your application
+
 - The application generates a PDF resume from the user provided GitHub profile.
 
 - The generated resume includes a bio image from the user's GitHub profile.
@@ -63,6 +65,28 @@ WHEN prompted for the developer's GitHub username and favorite color
 
 THEN a PDF profile is generated
 ```
+
+## Demo
+
+[Example demo](./Assets/demo.mp4)
+
+## Hints
+
+- You may need to research how to convert from HTML to a PDF in Node.js
+
+- Start with unit tests - follow Test Driven Development (TDD)
+
+## Bonus
+
+- Add more unit tests
+
+- Open the resume once it has completed generating
+
+- Play code golf with your solution
+
+- Add more functionality to the resume (ex. include a collection of the user's repos)
+
+- ES6ify as much as possible (`async`/`await`, arrow functions, template literals, ES6 module imports, object destructuring, spread, rest, etc.)
 
 ---
 

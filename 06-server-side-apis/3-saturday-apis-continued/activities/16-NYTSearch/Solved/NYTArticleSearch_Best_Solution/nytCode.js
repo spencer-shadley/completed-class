@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 /**
  * pulls information from the form and build the query URL
