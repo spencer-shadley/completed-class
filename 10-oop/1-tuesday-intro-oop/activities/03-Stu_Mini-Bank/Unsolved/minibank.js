@@ -1,9 +1,5 @@
 function MiniBank(balance) {
   this.balance = balance;
-  (this.getBalance = function() {
-    return this.balance;
-  }),
-    (this.printBalance = function() {
-      console.log(`Balance: ${this.getBalance()}`);
-    });
+  this.getBalance = () => this.balance;
+  this.printBalance = () => console.log(`Balance: ${this.getBalance()}`);
 }
