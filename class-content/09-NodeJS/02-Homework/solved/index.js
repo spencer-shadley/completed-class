@@ -19,32 +19,31 @@ const questions = [
   }
 ];
 
-function init() {
-  inquirer.prompt(questions).then(({ github, color }) => {
-    console.log('Searching...');
+async function init() {
+  try {
+    const { github: githubUsername, color } = await inquirer.prompt(questions);
+    console.log(`Searching for ${githubUsername}`);
+    const githubData = await api.getUser(githubUsername);
+    const stars = await api.getTotalStars(githubUsername);
+    const html = generateHTML({
+      stars,
+      color,
+      ...githubData.data
+    });
+    generatePdf(html);
+  } catch (err) {
+    console.error(err);
+  }
+}
 
-    api
-      .getUser(github)
-      .then(response =>
-        api.getTotalStars(github).then(stars => {
-          return generateHTML({
-            stars,
-            color,
-            ...response.data
-          });
-        })
-      )
-      .then(html => {
-        pdf
-          .create(html, { format: 'Tabloid' })
-          .toFile('./resume.pdf', (err, res) => {
-            if (err) {
-              return console.error(err);
-            }
-            console.log('successfully created resume', res);
-            open('./resume.pdf');
-          });
-      });
+function generatePdf(html) {
+  const resumeFilePath = './resume.pdf';
+  pdf.create(html, { format: 'Tabloid' }).toFile(resumeFilePath, (err, res) => {
+    if (err) {
+      return console.error(err);
+    }
+    console.log('successfully created resume', res.filename);
+    open(resumeFilePath);
   });
 }
 
