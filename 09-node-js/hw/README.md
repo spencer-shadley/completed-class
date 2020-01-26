@@ -68,7 +68,7 @@ THEN a PDF profile is generated
 
 ## Demo
 
-- See an example [here](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=30af2eec-a161-4a31-ab2c-ab4e006dc202)
+[Example demo](./Assets/demo.mp4)
 
 ## Hints
 
@@ -79,6 +79,8 @@ THEN a PDF profile is generated
 ## Bonus
 
 - Add more unit tests
+
+- Open the resume once it has completed generating
 
 - Play code golf with your solution
 
