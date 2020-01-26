@@ -302,7 +302,7 @@ promise.catch(function(err) {
 
 `import { functionOne, functionTwo } from 'some-module'`
 
-The officially supported way to include modules in ES6, importing only what you need
+The officially supported way to include modules in ES6, importing only what you need. Note: this is a brand new feature and may require some additional changes to work.
 
 **Old**
 
