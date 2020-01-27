@@ -35,7 +35,7 @@ Output: undefined
 ```js
 const findDup = function(arr) {
   for (let i = 0; i < arr.length; ++i) {
-    for (const j = 0; j < i; j++) {
+    for (let j = 0; j < i; j++) {
       if (arr[i] === arr[j]) {
         return arr[i];
       }
