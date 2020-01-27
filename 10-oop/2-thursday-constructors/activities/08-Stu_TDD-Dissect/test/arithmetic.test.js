@@ -5,9 +5,9 @@ const Arithmetic = require('../arithmetic');
 describe('Arithmetic', () => {
   describe('Initialization', () => {
     it("should return an object containing a 'number' property when called with the 'new' keyword", () => {
-      const obj = new Arithmetic();
+      const actual = new Arithmetic();
 
-      expect('number' in obj).toEqual(true);
+      expect('number' in actual).toEqual(true);
     });
 
     it("should set 'number' when created", () => {
@@ -15,63 +15,88 @@ describe('Arithmetic', () => {
       const num = 108;
 
       // Act
-      const obj = new Arithmetic(num);
+      const actual = new Arithmetic(num);
 
       // Assert
-      expect(obj.number).toEqual(num);
+      expect(actual.number).toEqual(num);
     });
 
     it("should default 'number' to 0", () => {
-      const obj = new Arithmetic();
+      const actual = new Arithmetic();
 
-      expect(obj.number).toEqual(0);
-    });
-  });
-
-  describe('plus', () => {
-    it("should return a new 'Arithmetic' object", () => {
-      const obj = new Arithmetic(3).plus(3);
-
-      expect(obj instanceof Arithmetic).toEqual(true);
-    });
-
-    it("should return a new 'Arithmetic' object that has an updated 'number' value", () => {
-      const num = 8;
-      const added = 7;
-      const sum = num + added;
-
-      const { number } = new Arithmetic(num).plus(added);
-
-      expect(number).toEqual(sum);
-    });
-  });
-
-  describe('minus', () => {
-    it("should return a new 'Arithmetic' object", () => {
-      const obj = new Arithmetic(9).minus(4);
-
-      expect(obj instanceof Arithmetic).toEqual(true);
-    });
-
-    it("should return a new 'Arithmetic' object that has an updated 'number' value", () => {
-      const num = 10;
-      const subtracted = 17;
-      const difference = num - subtracted;
-
-      const { number } = new Arithmetic(num).minus(subtracted);
-
-      expect(number).toEqual(difference);
+      expect(actual.number).toEqual(0);
     });
   });
 
   describe('value', () => {
     it("should return the 'Arithmetic' object's 'number' value", () => {
+      // Arrange
       const num = 10;
-      const obj = new Arithmetic(num);
+      const arithmetic = new Arithmetic(num);
 
-      const result = obj.value();
+      // Act
+      const actual = arithmetic.value();
 
-      expect(result).toEqual(num);
+      // Assert
+      expect(actual).toEqual(num);
+    });
+  });
+
+  describe('plus', () => {
+    it("should return a new 'Arithmetic' object", () => {
+      const actual = new Arithmetic(3).plus(3);
+
+      expect(actual instanceof Arithmetic).toEqual(true);
+    });
+
+    it("should return a new 'Arithmetic' object that has an updated 'number' value", () => {
+      // Arrange
+      const start = 8;
+      const addAmount = 7;
+      const expected = start + addAmount;
+
+      // Act
+      const { number: actual } = new Arithmetic(start).plus(addAmount);
+
+      // Assert
+      expect(actual).toEqual(expected);
+    });
+  });
+
+  describe('minus', () => {
+    it("should return a new 'Arithmetic' object", () => {
+      const actual = new Arithmetic(9).minus(4);
+
+      expect(actual instanceof Arithmetic).toEqual(true);
+    });
+
+    it("should return a new 'Arithmetic' object that has an updated 'number' value", () => {
+      // Arrange
+      const num = 10;
+      const subtracted = 17;
+      const difference = num - subtracted;
+
+      // Act
+      const { number } = new Arithmetic(num).minus(subtracted);
+
+      // Assert
+      expect(number).toEqual(difference);
+    });
+
+    it('should handle chained substractions', () => {
+      // Arrange
+      const start = 10;
+      const substractA = 5;
+      const subtractB = 33;
+      const expected = start - substractA - subtractB;
+
+      // Act
+      const { number } = new Arithmetic(start)
+        .minus(substractA)
+        .minus(subtractB);
+
+      // Assert
+      expect(number).toEqual(expected);
     });
   });
 });

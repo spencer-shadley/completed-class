@@ -4,13 +4,13 @@ function Arithmetic(number = 0) {
   this.number = number;
 }
 
-Arithmetic.prototype.plus = function(num = 0) {
-  const newNumber = this.number + num;
+Arithmetic.prototype.plus = function(number = 0) {
+  const newNumber = this.number + number;
   return new Arithmetic(newNumber);
 };
 
-Arithmetic.prototype.minus = function(num = 0) {
-  const newNumber = this.number - num;
+Arithmetic.prototype.minus = function(number = 0) {
+  const newNumber = this.number - number;
   return new Arithmetic(newNumber);
 };
 
