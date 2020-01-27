@@ -50,12 +50,12 @@ describe('DayCare', () => {
       const err = new Error(
         "Expected parameter 'child' to be an instance of Child"
       );
-      const cb = () => {
+      const callback = () => {
         const dayCare = new DayCare();
         dayCare.addChild();
       };
 
-      expect(cb).toThrowError(err);
+      expect(callback).toThrowError(err);
     });
   });
 
