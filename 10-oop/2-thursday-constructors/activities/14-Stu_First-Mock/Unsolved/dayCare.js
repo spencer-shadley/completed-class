@@ -27,9 +27,7 @@ DayCare.prototype.addChild = function(child) {
 };
 
 DayCare.prototype.pickupChild = function(name) {
-  const index = this.children.findIndex(child => {
-    return child.name === name;
-  });
+  const index = this.children.findIndex(child => child.name === name);
 
   if (index === -1) {
     console.log('Child not found');

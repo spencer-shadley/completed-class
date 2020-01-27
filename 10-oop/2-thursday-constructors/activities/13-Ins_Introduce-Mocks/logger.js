@@ -17,12 +17,10 @@ function Logger() {
       white: '\x1b[37m'
     };
 
-    for (let key in colors) {
+    for (const key in colors) {
       // Each color method calls console.log with the color as the first argument,
       // followed by any additional arguments
-      Logger.prototype[key] = function(...args) {
-        console.log(colors[key], ...args);
-      };
+      Logger.prototype[key] = (...args) => console.log(colors[key], ...args);
     }
   }
 }
