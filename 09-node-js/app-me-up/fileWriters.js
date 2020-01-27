@@ -28,39 +28,41 @@ function htmlCssFiles(projectName) {
   writeFile(
     "index.html",
     `${htmlTemplateWithStyles(projectName)}${htmlTemplateEnd}`,
-    err => callbackConsole(err, "file")
+    err => callbackConsole(err, "index.html")
   );
-  writeFile("style.css", htmlCss, err => callbackConsole(err, "file"));
+  writeFile("style.css", htmlCss, err => callbackConsole(err, "style.css"));
 }
 
 function htmlJsFiles(projectName) {
   writeFile(
     "index.html",
     `${htmlTemplate(projectName)}${htmlTemplateWithScript}`,
-    err => callbackConsole(err, "file")
+    err => callbackConsole(err, "index.html")
   );
 
-  writeFile("script.js", htmlJs, err => callbackConsole(err, "file"));
+  writeFile("script.js", htmlJs, err => callbackConsole(err, "script.js"));
 }
 
 function htmlCssJsFiles(projectName) {
   writeFile(
     "index.html",
     `${htmlTemplateWithStyles(projectName)}${htmlTemplateWithScript}`,
-    err => callbackConsole(err, "file")
+    err => callbackConsole(err, "index.html")
   );
 
-  writeFile("style.css", htmlCss, err => callbackConsole(err, "file"));
+  writeFile("style.css", htmlCss, err => callbackConsole(err, "style.css"));
 
-  writeFile("script.js", htmlJs, err => callbackConsole(err, "file"));
+  writeFile("script.js", htmlJs, err => callbackConsole(err, "script.js"));
 }
 
 function ghRepoFiles(name) {
-  writeFile("index.html", ghHTML(name), err => callbackConsole(err, "file"));
+  writeFile("index.html", ghHTML(name), err =>
+    callbackConsole(err, "index.html")
+  );
 
-  writeFile("style.css", ghCss, err => callbackConsole(err, "file"));
+  writeFile("style.css", ghCss, err => callbackConsole(err, "style.css"));
 
-  writeFile("script.js", ghJs(name), err => callbackConsole(err, "file"));
+  writeFile("script.js", ghJs(name), err => callbackConsole(err, "script.js"));
 }
 
 module.exports = {

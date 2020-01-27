@@ -13,24 +13,29 @@ const {
   ghRepoFiles
 } = require("./fileWriters");
 
-const github = process.argv.slice(2)[0];
+const option = process.argv.slice(2)[0];
 
-if (github && github !== "github") {
-  throw `Did not recognize: ${github}`;
+if (option && option !== "github") {
+  throw `Did not recognize: ${option}`;
 }
 
-prompt(github ? githubQuestion : questions).then(
+prompt(option === "github" ? githubQuestion : questions).then(
   ({ css, javascript, projectName, name }) => {
-    if (name) {
-      ghRepoFiles(name);
-    } else if (javascript && css) {
-      htmlCssJsFiles(projectName);
-    } else if (javascript) {
-      htmlJsFiles(projectName);
-    } else if (css) {
-      htmlCssFiles(projectName);
-    } else {
-      htmlFile(projectName);
+    switch (true) {
+      case option === "github":
+        ghRepoFiles(name);
+        break;
+      case css && javascript:
+        htmlCssJsFiles(projectName);
+        break;
+      case javascript:
+        htmlJsFiles(projectName);
+        break;
+      case css:
+        htmlCssFiles(projectName);
+        break;
+      default:
+        htmlFile(projectName);
     }
 
     openInBrowser(["index.html"], console.log.bind(console));
