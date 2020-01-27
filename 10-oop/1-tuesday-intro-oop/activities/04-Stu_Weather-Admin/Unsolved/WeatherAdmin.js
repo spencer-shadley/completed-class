@@ -6,7 +6,7 @@ const moment = require('moment');
 
 function WeatherAdmin() {
   this.getData = () =>
-    fs.readFile('log.txt', 'utf8', data => console.log(data));
+    fs.readFile('log.txt', 'utf8', (data, error) => console.log(data));
 
   this.newUserSearch = (name, location) => {
     const newUserSearch = new UserSearch(name, location);
