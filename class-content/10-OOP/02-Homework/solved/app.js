@@ -4,7 +4,7 @@ const prompts = require('./prompts');
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
-const render = require('./lib/htmlRenderer.js');
+const render = require('./lib/htmlRenderer');
 const inquirer = require('inquirer');
 const path = require('path');
 const fs = require('fs');
@@ -26,25 +26,25 @@ async function init() {
   );
   teamMembers.push(manager);
   idArray.push(answers.managerId);
-  createTeam();
+  await createTeam();
 }
 
 async function createTeam() {
   const userChoice = await inquirer.prompt(prompts.memberChoice);
   switch (userChoice.memberChoice) {
     case 'Engineer':
-      addEngineer();
+      await addEngineer();
       break;
     case 'Intern':
-      addIntern();
+      await addIntern();
       break;
     default:
       buildTeam();
   }
 }
 
-function addEngineer() {
-  const answers = inquirer.prompt(prompts.engineer);
+async function addEngineer() {
+  const answers = await inquirer.prompt(prompts.engineer);
   const engineer = new Engineer(
     answers.engineerName,
     answers.engineerId,
@@ -56,8 +56,8 @@ function addEngineer() {
   createTeam();
 }
 
-function addIntern() {
-  const answers = inquirer.prompt(prompts.intern);
+async function addIntern() {
+  const answers = await inquirer.prompt(prompts.intern);
   const intern = new Intern(
     answers.internName,
     answers.internId,
@@ -70,9 +70,8 @@ function addIntern() {
 }
 
 function buildTeam() {
-  console.log('buildTeam', outputPath, teamMembers);
-  fs.writeFile(outputPath, render(teamMembers), (err, data) =>
-    console.log('Finished building team!', err, data)
+  fs.writeFile(outputPath, render(teamMembers), err =>
+    console.log('Finished building team!')
   );
 }
 

@@ -6,26 +6,19 @@ const fs = require('fs');
 const templatesDir = path.resolve(__dirname, '../templates');
 
 const render = employees => {
-  console.log('render');
   const html = [];
 
-  html.push(
-    employees
-      .filter(employee => employee.getRole() === 'Manager')
-      .map(manager => renderManager(manager))
-  );
-  html.push(
-    employees
-      .filter(employee => employee.getRole() === 'Engineer')
-      .map(engineer => renderEngineer(engineer))
-  );
-  html.push(
-    employees
-      .filter(employee => employee.getRole() === 'Intern')
-      .map(intern => renderIntern(intern))
-  );
+  html.push(renderEmployeeType(employees, 'Manager', renderManager));
+  html.push(renderEmployeeType(employees, 'Engineer', renderEngineer));
+  html.push(renderEmployeeType(employees, 'Intern', renderIntern));
 
   return renderMain(html.join(''));
+};
+
+const renderEmployeeType = (employees, type, renderFunction) => {
+  return employees
+    .filter(employee => employee.getRole() === type)
+    .map(employeeWithRole => renderFunction(employeeWithRole));
 };
 
 const renderManager = manager => {
