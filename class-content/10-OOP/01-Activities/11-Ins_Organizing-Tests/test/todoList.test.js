@@ -27,7 +27,7 @@ describe('TodoList', () => {
 
       // Assert
       expect(todoList.todos.length).toEqual(1);
-      expect(todoList.todos[0] instanceof Todo).toEqual(true);
+      expect(todoList.todos[0] instanceof Todo).toBeTrue();
       expect(todoList.todos[0].text).toEqual(todoText);
     });
 
@@ -60,7 +60,7 @@ describe('TodoList', () => {
       nextTodo = todoList.getNextTodo();
 
       // Assert
-      expect(nextTodo instanceof Todo).toEqual(true);
+      expect(nextTodo instanceof Todo).toBeTrue();
       expect(nextTodo.text).toEqual(text1);
       expect(todoList.todos.length).toEqual(2);
     });
@@ -94,7 +94,7 @@ describe('TodoList', () => {
       nextTodo = todoList.completeNextTodo();
 
       // Assert
-      expect(nextTodo instanceof Todo).toEqual(true);
+      expect(nextTodo instanceof Todo).toBeTrue();
       expect(nextTodo.text).toEqual(text1);
       expect(todoList.todos.length).toEqual(1);
       expect(todoList.getNextTodo().text).toEqual(text2);
