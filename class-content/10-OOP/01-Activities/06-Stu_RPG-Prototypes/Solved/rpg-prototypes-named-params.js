@@ -2,7 +2,7 @@
 
 // constructor function which can take in a series of values and create objects
 // with the properties contained inside
-function Character(name, profession, gender, age, strength, hitpoints) {
+function Character({ name, profession, gender, age, strength, hitpoints }) {
   this.name = name;
   this.profession = profession;
   this.gender = gender;
@@ -10,6 +10,7 @@ function Character(name, profession, gender, age, strength, hitpoints) {
   this.strength = strength;
   this.hitpoints = hitpoints;
 }
+
 // method which prints all of the stats for a character
 Character.prototype.printStats = function() {
   console.log(`
@@ -47,8 +48,28 @@ Character.prototype.levelUp = function() {
 };
 
 // creates two unique characters using the "character" constructor
-const warrior = new Character('Crusher', 'Warrior', 'Male', 25, 10, 75);
-const rogue = new Character('Dodger', 'Rogue', 'Female', 23, 20, 50);
+
+const warrior = new Character({
+  name: 'Crusher',
+  profession: 'Warrior',
+  gender: 'Male',
+  age: 25,
+  strength: 10,
+  hitpoints: 75
+});
+
+const rogue = new Character({
+  name: 'Dodger',
+  profession: 'Rogue',
+  gender: 'Female',
+  age: 23,
+  strength: 20,
+  hitpoints: 50
+});
+
+warrior.pizza();
+
+// play the game!
 
 warrior.printStats();
 rogue.printStats();

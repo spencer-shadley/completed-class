@@ -1,13 +1,14 @@
 'use strict';
 
 // constructor function which can be used to create "digitalpal" objects
-const DigitalPal = function() {
+function DigitalPal() {
   this.hungry = false;
   this.sleepy = false;
   this.bored = true;
   this.age = 0;
   this.houseQuality = 100;
-};
+}
+
 // method which feeds the digitalpal when they are hungry and sets them to sleepy
 DigitalPal.prototype.feed = function() {
   if (this.hungry) {
@@ -63,8 +64,8 @@ DigitalPal.prototype.buyNewFurniture = function() {
 
 // method which is called in "this.sleep" to increase the age of the digitalpal by one
 DigitalPal.prototype.increaseAge = function() {
-  this.age++;
-  console.log('Happy Birthday to me! I am ' + this.age + ' old!');
+  ++this.age;
+  console.log(`Happy Birthday to me! I am ${this.age} old!`);
 };
 
 // adds the method "letoutside" to the prototype which lets "dog" outside when it is outside
@@ -89,14 +90,10 @@ DigitalPal.prototype.letInside = function() {
 };
 
 // adds the method "bark" to the prototype which lets our digitalpal bark
-DigitalPal.prototype.bark = function() {
-  console.log('Woof! Woof!');
-};
+DigitalPal.prototype.bark = () => console.log('Woof! Woof!');
 
 // adds the "meow" method to the prototype which lets our pet meow.
-DigitalPal.prototype.meow = function() {
-  console.log('Meow! Meow!');
-};
+DigitalPal.prototype.meow = () => console.log('Meow! Meow!');
 
 // Create a new animals object to contain our new Digital Pals
 const animals = {};

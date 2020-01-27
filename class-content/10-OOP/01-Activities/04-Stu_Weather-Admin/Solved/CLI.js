@@ -1,6 +1,6 @@
 'use strict';
 
-const WeatherAdmin = require('./WeatherAdmin');
+const WeatherAdmin = require('./WeatherAdmin'); // must use correct relative path
 
 // Hold the value whether someone is an "admin" or "user"
 const loginType = process.argv[2];
