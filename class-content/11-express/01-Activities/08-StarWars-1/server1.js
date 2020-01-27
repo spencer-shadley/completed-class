@@ -2,21 +2,21 @@
 
 // Dependencies
 // ===========================================================
-var express = require('express');
+const express = require('express');
 
-var app = express();
-var PORT = 3000;
+const app = express();
+const PORT = 3000;
 
 // Data
 // ===========================================================
-var yoda = {
+const yoda = {
   name: 'Yoda',
   role: 'Jedi Master',
   age: 900,
   forcePoints: 2000
 };
 
-var darthmaul = {
+const darthmaul = {
   name: 'Darth Maul',
   role: 'Sith Lord',
   age: 200,

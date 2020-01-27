@@ -1,6 +1,6 @@
 'use strict';
 
-var expect = chai.expect;
+const expect = chai.expect;
 
 describe('arraySearch2D', function() {
   it(`should return 3 when given the array
@@ -8,14 +8,14 @@ describe('arraySearch2D', function() {
   ["X", "O", "O"],
   ["O", "O", "X"],
   ["O", "O", "X"]]`, function() {
-    var arr = [
+    const arr = [
       ['O', 'O', 'O'],
       ['X', 'O', 'O'],
       ['O', 'O', 'X'],
       ['O', 'O', 'X']
     ];
 
-    var result = arraySearch2D(arr);
+    const result = arraySearch2D(arr);
 
     expect(result).to.eql(3);
   });
@@ -23,12 +23,12 @@ describe('arraySearch2D', function() {
   it(`should return 0 when given the array
   [["O", "O", "O"],
   ["O", "O", "O"]]`, function() {
-    var arr = [
+    const arr = [
       ['O', 'O', 'O'],
       ['O', 'O', 'O']
     ];
 
-    var result = arraySearch2D(arr);
+    const result = arraySearch2D(arr);
 
     expect(result).to.eql(0);
   });
@@ -38,23 +38,23 @@ describe('arraySearch2D', function() {
   ["O", "O", "O", "O"],
   ["X", "X", "X", "X"],
   ["O", "O", "O", "O"]]`, function() {
-    var arr = [
+    const arr = [
       ['X', 'O', 'O', 'O'],
       ['O', 'O', 'O', 'O'],
       ['X', 'X', 'X', 'X'],
       ['O', 'O', 'O', 'O']
     ];
 
-    var result = arraySearch2D(arr);
+    const result = arraySearch2D(arr);
 
     expect(result).to.eql(5);
   });
 
   it(`should return 0 when given the array
   [[]]`, function() {
-    var arr = [[]];
+    const arr = [[]];
 
-    var result = arraySearch2D(arr);
+    const result = arraySearch2D(arr);
 
     expect(result).to.eql(0);
   });

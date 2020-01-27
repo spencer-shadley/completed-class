@@ -1,15 +1,15 @@
 'use strict';
 
 // Dependencies
-var http = require('http');
-var fs = require('fs');
+const http = require('http');
+const fs = require('fs');
 
-var PORT = 8080;
+const PORT = 8080;
 
-var server = http.createServer(handleRequest);
+const server = http.createServer(handleRequest);
 
 function handleRequest(req, res) {
-  var path = req.url;
+  const path = req.url;
 
   switch (path) {
     case '/thanks':
@@ -37,9 +37,9 @@ function renderWelcomePage(req, res) {
 
 function renderThankYouPage(req, res) {
   // Saving the request posted data as a variable.
-  var requestData = '';
+  const requestData = '';
 
-  var myHTML =
+  const myHTML =
     "<html><head><title>Hello Noder!</title></head><body><h1>Oops, I didn't get any data</h1></body></html>";
 
   // When the server receives data, it will add it to requestData.

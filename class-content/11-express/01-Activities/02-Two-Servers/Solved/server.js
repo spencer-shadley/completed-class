@@ -1,13 +1,13 @@
 'use strict';
 
 // We require/import the HTTP module
-var http = require('http');
+const http = require('http');
 
 // =====================================================================
 
 // Then define the ports we want to listen to
-var PORTONE = 7000;
-var PORTTWO = 7500;
+const PORTONE = 7000;
+const PORTTWO = 7500;
 
 // =====================================================================
 
@@ -25,8 +25,8 @@ function handleRequestTwo(request, response) {
 // =====================================================================
 
 // Create our servers
-var serverOne = http.createServer(handleRequestOne);
-var serverTwo = http.createServer(handleRequestTwo);
+const serverOne = http.createServer(handleRequestOne);
+const serverTwo = http.createServer(handleRequestTwo);
 
 // =====================================================================
 

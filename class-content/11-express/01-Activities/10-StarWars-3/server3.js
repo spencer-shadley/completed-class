@@ -2,14 +2,14 @@
 
 // Dependencies
 // ===========================================================
-var express = require('express');
+const express = require('express');
 
-var app = express();
-var PORT = 3000;
+const app = express();
+const PORT = 3000;
 
 // Data
 // ===========================================================
-var characters = [
+const characters = [
   {
     routeName: 'yoda',
     name: 'Yoda',
@@ -48,11 +48,11 @@ app.get('/api/characters', function(req, res) {
 // What does this route do?
 app.get('/api/characters/:character', function(req, res) {
   // What does this code do?
-  var chosen = req.params.character;
+  const chosen = req.params.character;
   console.log(chosen);
 
   // What does this code do?
-  for (var i = 0; i < characters.length; ++i) {
+  for (let i = 0; i < characters.length; ++i) {
     if (chosen === characters[i].routeName) {
       return res.json(characters[i]);
     }

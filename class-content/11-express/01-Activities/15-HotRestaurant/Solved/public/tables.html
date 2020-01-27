@@ -91,12 +91,12 @@
         console.log('------------------------------------');
 
         // Loop through and display each of the customers
-        for (var i = 0; i < tableData.length; ++i) {
+        for (let i = 0; i < tableData.length; ++i) {
           // Get a reference to the tableList element and populate it with tables
-          var tableList = $('#tableList');
+          const tableList = $('#tableList');
 
           // Then display the fields in the HTML (Section Name, Date, URL)
-          var listItem = $("<li class='list-group-item mt-4'>");
+          const listItem = $("<li class='list-group-item mt-4'>");
 
           listItem.append(
             $('<h2>').text('Table #' + (i + 1)),
@@ -120,12 +120,12 @@
         console.log('------------------------------------');
 
         // Loop through and display each of the customers
-        for (var i = 0; i < waitData.length; ++i) {
+        for (let i = 0; i < waitData.length; ++i) {
           // Get a reference to the waitList element and populate it with tables
-          var waitList = $('#waitList');
+          const waitList = $('#waitList');
 
           // Then display the fields in the HTML (Section Name, Date, URL)
-          var listItem = $("<li class='list-group-item mt-4'>");
+          const listItem = $("<li class='list-group-item mt-4'>");
 
           listItem.append(
             $('<h2>').text('Table #' + (i + 1)),

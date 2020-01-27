@@ -7,7 +7,7 @@
 // But you could have it be an empty array as well.
 // ===============================================================================
 
-var waitingArray = [
+const waitingArray = [
   {
     customerName: 'Saima',
     customerEmail: 'saima@example.com',

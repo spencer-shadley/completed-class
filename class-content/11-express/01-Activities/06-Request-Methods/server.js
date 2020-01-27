@@ -1,15 +1,15 @@
 'use strict';
 
 // Dependencies
-var http = require('http');
+const http = require('http');
 
-var PORT = 8080;
+const PORT = 8080;
 
-var server = http.createServer(handleRequest);
+const server = http.createServer(handleRequest);
 
 function handleRequest(req, res) {
   // Saving the request data as a variable
-  var requestData = '';
+  const requestData = '';
 
   // When the server receives data...
   req.on('data', function(data) {

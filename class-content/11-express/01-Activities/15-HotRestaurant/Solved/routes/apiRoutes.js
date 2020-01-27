@@ -6,8 +6,8 @@
 // These data sources hold arrays of information on table-data, waitinglist, etc.
 // ===============================================================================
 
-var tableData = require('../data/tableData');
-var waitListData = require('../data/waitinglistData');
+const tableData = require('../data/tableData');
+const waitListData = require('../data/waitinglistData');
 
 // ===============================================================================
 // ROUTING

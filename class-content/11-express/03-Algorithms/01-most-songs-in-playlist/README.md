@@ -13,7 +13,7 @@ In this activity you will be writing code to create a function that takes an arr
     - For example, given the following array:
 
     ```js
-    var arr = [3, 4, 7, 2]; // 4 element array
+    const arr = [3, 4, 7, 2]; // 4 element array
     ```
 
     - The sum of `3`, `4`, `7`, and `2` is `16`, which is less than 60. All elements are used, so the answer is `4`.
@@ -21,7 +21,7 @@ In this activity you will be writing code to create a function that takes an arr
     - Given the following example:
 
     ```js
-    var arr = [4, 2, 5, 3, 1, 1, 2, 3, 4, 2, 5, 6, 3, 2, 4, 7, 3, 2, 3]; // 19 element array
+    const arr = [4, 2, 5, 3, 1, 1, 2, 3, 4, 2, 5, 6, 3, 2, 4, 7, 3, 2, 3]; // 19 element array
     ```
 
     - The number `18` should be returned because all of the numbers in the array except `7` sum to `55`.

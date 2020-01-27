@@ -5,4 +5,4 @@
 // else return -1
 // You may not use the `indexOf`, `lastIndexOf` or `includes` methods
 
-var linearSearch = function(arr, target) {};
+const linearSearch = function(arr, target) {};

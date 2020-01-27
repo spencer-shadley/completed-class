@@ -5,9 +5,9 @@
 // else return -1
 // You may not use the `indexOf`, `lastIndexOf` or `includes` methods
 
-var linearSearch = function(arr, target) {
-  for (var i = 0; i < arr.length; ++i) {
-    var currentNumber = arr[i];
+const linearSearch = function(arr, target) {
+  for (let i = 0; i < arr.length; ++i) {
+    const currentNumber = arr[i];
 
     if (currentNumber === target) {
       return i;

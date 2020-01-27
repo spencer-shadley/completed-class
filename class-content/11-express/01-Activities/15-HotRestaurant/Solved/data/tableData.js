@@ -7,7 +7,7 @@
 // But you could have it be an empty array as well.
 // ===============================================================================
 
-var tableArray = [
+const tableArray = [
   {
     customerName: 'Ahmed',
     customerEmail: 'ahmed@example.com',

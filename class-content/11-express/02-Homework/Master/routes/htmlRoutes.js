@@ -1,7 +1,7 @@
 'use strict';
 
-var path = require('path');
-var router = require('express').Router();
+const path = require('path');
+const router = require('express').Router();
 
 // "/notes" responds with the notes.html file
 router.get('/notes', function(req, res) {

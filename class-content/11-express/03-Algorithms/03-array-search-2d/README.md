@@ -13,7 +13,7 @@ In this activity you will be writing code to create a function that takes in a 2
     - For example, given the following 2D array:
 
     ```js
-    var arr = [
+    const arr = [
       ['X', 'O', 'O', 'O', 'X', 'O'],
       ['O', 'X', 'O', 'O', 'O', 'O'],
       ['O', 'O', 'O', 'O', 'X', 'X'],

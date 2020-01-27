@@ -15,7 +15,7 @@ In this activity you will be writing code to create a function that takes in a w
     - For example, given the following number:
 
     ```js
-    var num = 36; // Square root of 36 is 6
+    const num = 36; // Square root of 36 is 6
     ```
 
     - The following number should be returned:
@@ -27,7 +27,7 @@ In this activity you will be writing code to create a function that takes in a w
     - Given the following number:
 
     ```js
-    var num = 50; // Square root of 50 is 7.07106781187
+    const num = 50; // Square root of 50 is 7.07106781187
     ```
 
     - The following number should be returned:

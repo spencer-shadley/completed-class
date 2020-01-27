@@ -12,8 +12,8 @@ function Animal(raining, noise) {
 }
 
 // Sets the variables "dogs" and "cats" to be animal objects and initializes them with raining and noise properties
-var dogs = new Animal(true, 'Woof!');
-var cats = new Animal(false, 'Meow!');
+const dogs = new Animal(true, 'Woof!');
+const cats = new Animal(false, 'Meow!');
 
 // Calling dogs and cats makeNoise methods
 dogs.makeNoise();
@@ -23,7 +23,7 @@ cats.makeNoise();
 cats.raining = true;
 cats.makeNoise();
 
-var massHysteria = function(dogs, cats) {
+const massHysteria = function(dogs, cats) {
   if (dogs.raining  && cats.raining ) {
     console.log('DOGS AND CATS LIVING TOGETHER! MASS HYSTERIA!');
   }

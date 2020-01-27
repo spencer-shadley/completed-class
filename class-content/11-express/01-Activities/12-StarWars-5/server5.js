@@ -1,17 +1,17 @@
 'use strict';
 
 // Dependencies
-var express = require('express');
+const express = require('express');
 
-var app = express();
-var PORT = 3000;
+const app = express();
+const PORT = 3000;
 
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Data
-var characters = [
+const characters = [
   {
     routeName: 'yoda',
     name: 'Yoda',
@@ -47,11 +47,11 @@ app.get('/api/characters', function(req, res) {
 
 // Displays a single character, or shows "No character found"
 app.get('/api/characters/:character', function(req, res) {
-  var chosen = req.params.character;
+  const chosen = req.params.character;
 
   console.log(chosen);
 
-  for (var i = 0; i < characters.length; ++i) {
+  for (let i = 0; i < characters.length; ++i) {
     if (chosen === characters[i].routeName) {
       return res.json(characters[i]);
     }
@@ -62,7 +62,7 @@ app.get('/api/characters/:character', function(req, res) {
 
 // Create New Characters - takes in JSON input
 app.post('/api/characters', function(req, res) {
-  var newCharacter = req.body;
+  const newCharacter = req.body;
 
   console.log(newCharacter);
 

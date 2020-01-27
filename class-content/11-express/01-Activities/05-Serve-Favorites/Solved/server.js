@@ -1,17 +1,17 @@
 'use strict';
 
 // Require dependencies
-var http = require('http');
-var fs = require('fs');
+const http = require('http');
+const fs = require('fs');
 
 // Set our port to 8080
-var PORT = 8080;
+const PORT = 8080;
 
-var server = http.createServer(handleRequest);
+const server = http.createServer(handleRequest);
 
 function handleRequest(req, res) {
   // Capture the url the request is made to
-  var path = req.url;
+  const path = req.url;
 
   // When we visit different urls, read and respond with different files
   switch (path) {

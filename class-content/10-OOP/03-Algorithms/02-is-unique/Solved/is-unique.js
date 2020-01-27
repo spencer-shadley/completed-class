@@ -3,11 +3,11 @@
 // Write code to create a function that accepts an array numbers
 // Return `true` is no number appears in the array more than once, else return `false`
 
-var isUnique = function(arr) {
-  var numMap = {};
+const isUnique = function(arr) {
+  const numMap = {};
 
-  for (var i = 0; i < arr.length; ++i) {
-    var currentNumber = arr[i];
+  for (let i = 0; i < arr.length; ++i) {
+    const currentNumber = arr[i];
 
     if (numMap[currentNumber] ) {
       return false;

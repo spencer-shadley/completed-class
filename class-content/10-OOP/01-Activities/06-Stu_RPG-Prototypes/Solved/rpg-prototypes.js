@@ -54,8 +54,8 @@ Character.prototype.levelUp = function() {
 };
 
 // creates two unique characters using the "character" constructor
-var warrior = new Character('Crusher', 'Warrior', 'Male', 25, 10, 75);
-var rogue = new Character('Dodger', 'Rogue', 'Female', 23, 20, 50);
+const warrior = new Character('Crusher', 'Warrior', 'Male', 25, 10, 75);
+const rogue = new Character('Dodger', 'Rogue', 'Female', 23, 20, 50);
 
 warrior.printStats();
 rogue.printStats();

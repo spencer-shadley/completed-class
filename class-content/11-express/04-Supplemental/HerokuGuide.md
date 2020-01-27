@@ -66,7 +66,7 @@ To begin with, you'll need a git repository initialized locally with your basic 
    - For an express app, the code for this would look like:
 
    ```js
-   var PORT = process.env.PORT || 3000;
+   const PORT = process.env.PORT || 3000;
    ...
    app.listen(PORT, function() {
    ```

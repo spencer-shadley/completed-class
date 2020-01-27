@@ -1,10 +1,10 @@
 'use strict';
 
-var http = require('http');
+const http = require('http');
 
-var PORT = 8080;
+const PORT = 8080;
 
-var server = http.createServer(handleRequest);
+const server = http.createServer(handleRequest);
 
 // Start our server
 server.listen(PORT, function() {
@@ -15,7 +15,7 @@ server.listen(PORT, function() {
 // Create a function which handles incoming requests and sends responses
 function handleRequest(req, res) {
   // Capture the url the request is made to
-  var path = req.url;
+  const path = req.url;
 
   // Depending on the URL, display a different HTML file.
   switch (path) {
@@ -32,7 +32,7 @@ function handleRequest(req, res) {
 
 // When someone visits the "http://localhost:8080/" path, this function is run.
 function displayRoot(res) {
-  var myHTML =
+  const myHTML =
     '<html>' +
     '<body><h1>Home Page</h1>' +
     "<a href='/portfolio'>Portfolio</a>" +
@@ -47,7 +47,7 @@ function displayRoot(res) {
 
 // When someone visits the "http://localhost:8080/portfolio" path, this function is run.
 function displayPortfolio(res) {
-  var myHTML =
+  const myHTML =
     '<html>' +
     '<body><h1>My Portfolio</h1>' +
     "<a href='/'>Go Home</a>" +
@@ -62,7 +62,7 @@ function displayPortfolio(res) {
 
 // When someone visits any path that is not specifically defined, this function is run.
 function display404(url, res) {
-  var myHTML =
+  const myHTML =
     '<html>' +
     '<body><h1>404 Not Found </h1>' +
     '<p>The page you were looking for: ' +
