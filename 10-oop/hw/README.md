@@ -23,6 +23,8 @@ How do you deliver this? Here are some guidelines:
 ![Employee Summary 1](assets/10-OOP-homework-demo-1.png)
 ![Employee Summary 2](assets/10-OOP-homework-demo-2.png)
 
+[Example interaction](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=26949521-cb7e-4b31-8760-ab4f003836ce)
+
 In the `develop` directory there is a `package.json` so make sure to `npm install`.
 
 The dependencies are, [jest](https://jestjs.io/) for running the provided tests, and [inquirer](https://www.npmjs.com/package/inquirer) for collecting input from the user.
@@ -143,10 +145,6 @@ The project must generate a `team.html` page in the `output` directory, that dis
 - Use validation to ensure that the information provided is in the proper expected format.
 
 - Add the application to your portfolio.
-
-## Output
-
-[Example output](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=26949521-cb7e-4b31-8760-ab4f003836ce)
 
 ## Commit Early and Often
 
