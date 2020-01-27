@@ -144,6 +144,10 @@ The project must generate a `team.html` page in the `output` directory, that dis
 
 - Add the application to your portfolio.
 
+## Output
+
+[Example output](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=26949521-cb7e-4b31-8760-ab4f003836ce)
+
 ## Commit Early and Often
 
 One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
