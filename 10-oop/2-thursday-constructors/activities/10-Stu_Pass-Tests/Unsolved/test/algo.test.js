@@ -20,7 +20,7 @@ describe('Algo', () => {
 
       const actual = new Algo().isPalindrome(str);
 
-      expect(actual).toBeTrue();
+      expect(actual).toEqual(true);
     });
 
     it('should return false if a string is not a palindrome', () => {
