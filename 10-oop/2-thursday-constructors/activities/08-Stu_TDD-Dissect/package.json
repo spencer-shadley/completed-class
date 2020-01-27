@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "pizza": "ls"
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",

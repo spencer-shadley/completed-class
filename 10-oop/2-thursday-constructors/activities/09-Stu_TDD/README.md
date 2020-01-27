@@ -1,6 +1,6 @@
 # TDD
 
-In this activity you will write tests outlining the expected functionality for application code that haven't been implemented yet.
+In this activity you will write tests outlining the expected functionality for application code that hasn't been implemented yet.
 
 ## Instructions
 
