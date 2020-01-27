@@ -6,6 +6,7 @@ const fs = require('fs');
 const templatesDir = path.resolve(__dirname, '../templates');
 
 const render = employees => {
+  console.log('render');
   const html = [];
 
   html.push(
