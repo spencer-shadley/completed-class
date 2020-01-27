@@ -7,7 +7,7 @@ describe('Arithmetic', () => {
     it("should return an object containing a 'number' property when called with the 'new' keyword", () => {
       const actual = new Arithmetic();
 
-      expect('number' in actual).toBeTruthy();
+      expect('number' in actual).toEqual(true);
     });
 
     it("should set 'number' when created", () => {
@@ -46,7 +46,7 @@ describe('Arithmetic', () => {
     it("should return a new 'Arithmetic' object", () => {
       const actual = new Arithmetic(3).plus(3);
 
-      expect(actual instanceof Arithmetic).toBeTruthy();
+      expect(actual instanceof Arithmetic).toEqual(true);
     });
 
     it("should return a new 'Arithmetic' object that has an updated 'number' value", () => {
@@ -67,7 +67,7 @@ describe('Arithmetic', () => {
     it("should return a new 'Arithmetic' object", () => {
       const actual = new Arithmetic(9).minus(4);
 
-      expect(actual instanceof Arithmetic).toBeTruthy();
+      expect(actual instanceof Arithmetic).toEqual(true);
     });
 
     it("should return a new 'Arithmetic' object that has an updated 'number' value", () => {
