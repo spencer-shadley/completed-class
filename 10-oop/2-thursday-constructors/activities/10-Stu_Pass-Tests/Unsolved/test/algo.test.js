@@ -6,11 +6,11 @@ describe('Algo', () => {
   describe('reverse', () => {
     it('should reverse a given string', () => {
       const str = 'Hello World!';
-      const reversed = '!dlroW olleH';
+      const expected = '!dlroW olleH';
 
-      const result = new Algo().reverse(str);
+      const actual = new Algo().reverse(str);
 
-      expect(result).toEqual(reversed);
+      expect(actual).toEqual(expected);
     });
   });
 
@@ -18,28 +18,28 @@ describe('Algo', () => {
     it('should return true if a string is a palindrome', () => {
       const str = 'racecar';
 
-      const result = new Algo().isPalindrome(str);
+      const actual = new Algo().isPalindrome(str);
 
-      expect(result).toBeTrue();
+      expect(actual).toBeTrue();
     });
 
     it('should return false if a string is not a palindrome', () => {
       const str = 'neon';
 
-      const result = new Algo().isPalindrome(str);
+      const actual = new Algo().isPalindrome(str);
 
-      expect(result).toEqual(false);
+      expect(actual).toEqual(false);
     });
   });
 
   describe('capitalize', () => {
     it('should take a string and return a new string with the first letter of each word capitalized', () => {
       const str = 'capitalize every first word of the string.';
-      const capitalized = 'Capitalize Every First Word Of The String.';
+      const expected = 'Capitalize Every First Word Of The String.';
 
-      const result = new Algo().capitalize(str);
+      const actual = new Algo().capitalize(str);
 
-      expect(result).toEqual(capitalized);
+      expect(actual).toEqual(expected);
     });
   });
 });
