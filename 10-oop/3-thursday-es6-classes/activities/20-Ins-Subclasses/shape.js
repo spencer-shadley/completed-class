@@ -7,7 +7,7 @@ class Shape {
   }
 
   printInfo() {
-    for (var key in this) {
+    for (const key in this) {
       console.log(`${key}: ${this[key]}`);
     }
   }

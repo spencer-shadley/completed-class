@@ -15,8 +15,8 @@ In this activity you will be writing code to create a function that takes an arr
     - For example, given the following array and target number:
 
     ```js
-    var arr = [82, 22, -4, 21, 1, 8];
-    var target = 8;
+    const arr = [82, 22, -4, 21, 1, 8];
+    const target = 8;
     ```
 
     - The following number should be returned:

@@ -1,10 +1,10 @@
 'use strict';
 
-var fs = require('fs');
-var UserSearch = require('UserSearch.js');
-var moment = require('moment');
+const fs = require('fs');
+const UserSearch = require('UserSearch.js');
+const moment = require('moment');
 
-var WeatherAdmin = function() {
+const WeatherAdmin = function() {
   this.getData = function() {
     fs.readFile('log.txt', 'utf8', function(data, error) {
       console.log(data);
@@ -12,8 +12,8 @@ var WeatherAdmin = function() {
   };
 
   this.newUserSearch = function(name, location) {
-    var newUserSearch = new UserSearch(name, location);
-    var logTxt =
+    const newUserSearch = new UserSearch(name, location);
+    const logTxt =
       '\nName: ' +
       newUserSearch.name +
       ' Location: ' +

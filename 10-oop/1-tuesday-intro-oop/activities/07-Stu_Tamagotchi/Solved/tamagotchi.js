@@ -1,7 +1,7 @@
 'use strict';
 
 // constructor function which can be used to create "digitalpal" objects
-var DigitalPal = function() {
+const DigitalPal = function() {
   this.hungry = false;
   this.sleepy = false;
   this.bored = true;
@@ -99,7 +99,7 @@ DigitalPal.prototype.meow = function() {
 };
 
 // Create a new animals object to contain our new Digital Pals
-var animals = {};
+let animals = {};
 
 // creates a new DigitalPal object with the name "dog"
 animals.dog = new DigitalPal();
@@ -108,8 +108,8 @@ animals.dog = new DigitalPal();
 animals.cat = new DigitalPal();
 
 // Grabbing command line arguments for animal and method
-var animal = process.argv[2];
-var method = process.argv[3];
+const animal = process.argv[2];
+const method = process.argv[3];
 
 // try calling your chosen animal and method from the terminal example: 'node tamagotchi cat meow'
 animals[animal][method]();
