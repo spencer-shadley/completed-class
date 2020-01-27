@@ -8,8 +8,8 @@ function MiniBank(balance) {
   this.updateStatement = value => this.statement.push(value);
   this.getStatement = () => this.statement.slice(0);
   this.printStatement = () => {
-    var statement = this.getStatement();
-    for (var i = 0; i < statement.length; ++i) {
+    const statement = this.getStatement();
+    for (let i = 0; i < statement.length; ++i) {
       console.log(`${i + 1}. ${statement[i]}`);
     }
   };
@@ -17,7 +17,7 @@ function MiniBank(balance) {
     if (typeof value !== 'number' || value <= 0) {
       throw new Error("'value' must be a positive number!");
     }
-    var newBalance = this.getBalance() + value;
+    const newBalance = this.getBalance() + value;
     this.setBalance(newBalance);
     this.updateStatement(newBalance);
     console.log(`Deposited ${value}!`);
@@ -26,7 +26,7 @@ function MiniBank(balance) {
     if (typeof value !== 'number' || value <= 0) {
       throw new Error("'value' must be a positive number");
     }
-    var newBalance = this.getBalance() - value;
+    const newBalance = this.getBalance() - value;
     if (newBalance < 0) {
       throw new Error('Insufficient funds for this transaction');
     }
@@ -37,7 +37,7 @@ function MiniBank(balance) {
   this.printBalance = () => console.log(`Balance: ${this.getBalance()}`);
 }
 
-var bank = new MiniBank(0);
+const bank = new MiniBank(0);
 bank.printBalance();
 
 bank.deposit(85);
