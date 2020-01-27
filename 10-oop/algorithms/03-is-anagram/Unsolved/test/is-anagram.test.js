@@ -1,40 +1,40 @@
 'use strict';
 
-var expect = chai.expect;
+ const expect = chai.expect;
 
 describe('isAnagram', function() {
   it("should return true when given the strings 'abc` and `cba`", function() {
-    var strA = 'abc';
-    var strB = 'cba';
+     const strA = 'abc';
+     const strB = 'cba';
 
-    var result = isAnagram(strA, strB);
+     const result = isAnagram(strA, strB);
 
     expect(result).to.eql(true);
   });
 
   it("should return true when given the strings 'octagonal` and `tganoalc`", function() {
-    var strA = 'octagonal';
-    var strB = 'tganoalco';
+     const strA = 'octagonal';
+     const strB = 'tganoalco';
 
-    var result = isAnagram(strA, strB);
+     const result = isAnagram(strA, strB);
 
     expect(result).to.eql(true);
   });
 
   it("should return false when false the strings 'obsidian` and `danisboba`", function() {
-    var strA = 'obsidian';
-    var strB = 'danisboba';
+     const strA = 'obsidian';
+     const strB = 'danisboba';
 
-    var result = isAnagram(strA, strB);
+     const result = isAnagram(strA, strB);
 
     expect(result).to.eql(false);
   });
 
   it("should return false when false the strings 'targaryen` and `gratawyen`", function() {
-    var strA = 'targaryen';
-    var strB = 'gratawyen';
+     const strA = 'targaryen';
+     const strB = 'gratawyen';
 
-    var result = isAnagram(strA, strB);
+     const result = isAnagram(strA, strB);
 
     expect(result).to.eql(false);
   });
