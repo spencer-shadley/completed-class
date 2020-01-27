@@ -12,11 +12,19 @@ const fs = require('fs');
 const outputPath = path.resolve(__dirname, 'output', 'team.html');
 
 const teamMembers = [];
-const idArray = [];
+
+const debugMode = false;
 
 async function init() {
   console.log('Please build your team');
-  const answers = await inquirer.prompt(prompts.manager);
+  const answers = debugMode
+    ? {
+        managerName: 'kelly',
+        managerId: 1,
+        managerEmail: 'k@tableau.com',
+        managerOfficeNumber: 2
+      }
+    : await inquirer.prompt(prompts.manager);
 
   const manager = new Manager(
     answers.managerName,
@@ -25,21 +33,27 @@ async function init() {
     answers.managerOfficeNumber
   );
   teamMembers.push(manager);
-  idArray.push(answers.managerId);
+  prompts.idArray.push(answers.managerId);
   await createTeam();
 }
 
 async function createTeam() {
-  const userChoice = await inquirer.prompt(prompts.memberChoice);
-  switch (userChoice.memberChoice) {
-    case 'Engineer':
-      await addEngineer();
-      break;
-    case 'Intern':
-      await addIntern();
-      break;
-    default:
-      buildTeam();
+  try {
+    const userChoice = debugMode
+      ? { memberChoice: 'Intern' }
+      : await inquirer.prompt(prompts.memberChoice);
+    switch (userChoice.memberChoice) {
+      case 'Engineer':
+        await addEngineer();
+        break;
+      case 'Intern':
+        await addIntern();
+        break;
+      default:
+        buildTeam();
+    }
+  } catch (err) {
+    console.error('createTeam error', err);
   }
 }
 
@@ -52,21 +66,32 @@ async function addEngineer() {
     answers.engineerGithub
   );
   teamMembers.push(engineer);
-  idArray.push(answers.engineerId);
+  prompts.idArray.push(answers.engineerId);
   createTeam();
 }
 
 async function addIntern() {
-  const answers = await inquirer.prompt(prompts.intern);
-  const intern = new Intern(
-    answers.internName,
-    answers.internId,
-    answers.internEmail,
-    answers.internSchool
-  );
-  teamMembers.push(intern);
-  idArray.push(answers.internId);
-  createTeam();
+  try {
+    const answers = debugMode
+      ? {
+          internName: 'derek',
+          internId: 4,
+          internEmail: 'derek@tableau.com',
+          internSchool: 'UW'
+        }
+      : await inquirer.prompt(prompts.intern);
+    const intern = new Intern(
+      answers.internName,
+      answers.internId,
+      answers.internEmail,
+      answers.internSchool
+    );
+    teamMembers.push(intern);
+    prompts.idArray.push(answers.internId);
+    createTeam();
+  } catch (err) {
+    console.error(err);
+  }
 }
 
 function buildTeam() {

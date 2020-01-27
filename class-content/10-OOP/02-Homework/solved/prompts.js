@@ -1,4 +1,7 @@
+const idArray = [];
+
 module.exports = {
+  idArray,
   manager: [
     {
       type: 'input',
