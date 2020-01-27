@@ -29,3 +29,7 @@ In this activity you will generate RPG characters using Objects and prototypes.
   - Attack: Function which takes in a second character and subtracts this character's strength from their hitpoints.
 
   - LevelUp: Function which increases this character's Age by 1, their Strength by 5, and their HitPoints by 25.
+
+## Output
+
+![RPG output](./simpleRPG.png)
