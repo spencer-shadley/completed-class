@@ -11,10 +11,13 @@ describe('Arithmetic', () => {
     });
 
     it("should set 'number' when created", () => {
+      // Arrange
       const num = 108;
 
+      // Act
       const obj = new Arithmetic(num);
 
+      // Assert
       expect(obj.number).toEqual(num);
     });
 
