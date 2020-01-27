@@ -2,12 +2,11 @@
 
 function Algo() {}
 
-Algo.prototype.reverse = function(str) {
-  return str
+Algo.prototype.reverse = str =>
+  str
     .split('')
     .reverse()
     .join('');
-};
 
 Algo.prototype.isPalindrome = function(str) {
   return this.reverse(str) === str;
