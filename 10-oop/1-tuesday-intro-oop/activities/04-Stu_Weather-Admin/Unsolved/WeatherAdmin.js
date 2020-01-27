@@ -4,14 +4,11 @@ const fs = require('fs');
 const UserSearch = require('UserSearch.js');
 const moment = require('moment');
 
-const WeatherAdmin = function() {
-  this.getData = function() {
-    fs.readFile('log.txt', 'utf8', function(data, error) {
-      console.log(data);
-    });
-  };
+function WeatherAdmin() {
+  this.getData = () =>
+    fs.readFile('log.txt', 'utf8', data => console.log(data));
 
-  this.newUserSearch = function(name, location) {
+  this.newUserSearch = (name, location) => {
     const newUserSearch = new UserSearch(name, location);
     const logTxt =
       '\nName: ' +
@@ -27,6 +24,6 @@ const WeatherAdmin = function() {
 
     newUserSearch.getWeather();
   };
-};
+}
 
 module.exports = WeatherAdmin;
