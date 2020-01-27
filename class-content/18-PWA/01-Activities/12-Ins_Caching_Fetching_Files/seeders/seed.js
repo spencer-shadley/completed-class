@@ -1,7 +1,7 @@
 'use strict';
 
-var mongoose = require('mongoose');
-var db = require('../models');
+const mongoose = require('mongoose');
+const db = require('../models');
 
 mongoose.connect(
   process.env.MONGODB_URI || 'mongodb://localhost/serviceWorkerDemo',
@@ -10,7 +10,7 @@ mongoose.connect(
   }
 );
 
-var postSeed = [
+const postSeed = [
   {
     description:
       'React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies.',

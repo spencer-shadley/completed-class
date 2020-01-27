@@ -1,7 +1,7 @@
 'use strict';
 
-var mongoose = require('mongoose');
-var db = require('../models');
+const mongoose = require('mongoose');
+const db = require('../models');
 
 mongoose.connect(
   process.env.MONGODB_URI || 'mongodb://localhost/imageperformance',
@@ -10,7 +10,7 @@ mongoose.connect(
   }
 );
 
-var imageSeed = [
+const imageSeed = [
   {
     description: 'Day At The Library',
     image: '/assets/images/1.jpg',

@@ -6,7 +6,7 @@ function getResults() {
   // Grab all of the current notes
   $.getJSON('/all', function(data) {
     // For each note...
-    for (var i = 0; i < data.length; ++i) {
+    for (let i = 0; i < data.length; ++i) {
       // ...populate #results with a p-tag that includes the note's title and object id
       $('#results').prepend(
         "<p class='data-entry' data-id=" +
@@ -73,7 +73,7 @@ $('#clear-all').on('click', function() {
 // When user clicks the delete button for a note
 $(document).on('click', '.delete', function() {
   // Save the p tag that encloses the button
-  var selected = $(this).parent();
+  const selected = $(this).parent();
   // Make an AJAX GET request to delete the specific note
   // this uses the data-id of the p-tag, which is linked to the specific note
   $.ajax({
@@ -96,7 +96,7 @@ $(document).on('click', '.delete', function() {
 // When user click's on note title, show the note, and allow for updates
 $(document).on('click', '.dataTitle', function() {
   // Grab the element
-  var selected = $(this);
+  const selected = $(this);
   // Make an ajax call to find the note
   // This uses the data-id of the p-tag, which is linked to the specific note
   $.ajax({
@@ -118,7 +118,7 @@ $(document).on('click', '.dataTitle', function() {
 // When user click's update button, update the specific note
 $(document).on('click', '#updater', function() {
   // Save the selected element
-  var selected = $(this);
+  const selected = $(this);
   // Make an AJAX POST request
   // This uses the data-id of the update button,
   // which is linked to the specific note title

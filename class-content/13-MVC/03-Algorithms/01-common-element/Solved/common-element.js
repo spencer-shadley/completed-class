@@ -5,16 +5,16 @@
 // Return the common number
 // You may not use the `indexOf` or `includes` method
 
-var commonElement = function(arrA, arrB) {
-  var elements = {};
+const commonElement = function(arrA, arrB) {
+  const elements = {};
 
-  for (var i = 0; i < arrA.length; ++i) {
-    var num = arrA[i];
+  for (let i = 0; i < arrA.length; ++i) {
+    const num = arrA[i];
     elements[num] = true;
   }
 
-  for (var i = 0; i < arrB.length; ++i) {
-    var num = arrB[i];
+  for (let i = 0; i < arrB.length; ++i) {
+    const num = arrB[i];
 
     if (elements[num] ) {
       return num;
@@ -24,16 +24,16 @@ var commonElement = function(arrA, arrB) {
 
 // This could also be achieved using a Set data structure
 
-// var commonElement = function(arrA, arrB) {
-//   var elements = new Set();
+// const commonElement = function(arrA, arrB) {
+//   const elements = new Set();
 
-//   for (var i = 0; i < arrA.length; ++i) {
-//     var num = arrA[i];
+//   for (let i = 0; i < arrA.length; ++i) {
+//     const num = arrA[i];
 //     elements.add(num);
 //   }
 
-//   for (var i = 0; i < arrB.length; ++i) {
-//     var num = arrB[i];
+//   for (let i = 0; i < arrB.length; ++i) {
+//     const num = arrB[i];
 
 //     if (elements.has(num)) {
 //       return num;

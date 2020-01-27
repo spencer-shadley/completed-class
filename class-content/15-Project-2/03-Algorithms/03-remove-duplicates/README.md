@@ -13,7 +13,7 @@ In this activity you will be writing code to create a function that takes a sort
     - For example, given the following array:
 
     ```js
-    var arr = [1, 1, 2, 3, 4, 4, 9, 9];
+    const arr = [1, 1, 2, 3, 4, 4, 9, 9];
     ```
 
     - The array should be updated to the following:

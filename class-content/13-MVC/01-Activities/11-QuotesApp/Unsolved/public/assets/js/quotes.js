@@ -3,7 +3,7 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
   $('.delquote').on('click', function(event) {
-    var id = $(this).data('id');
+    const id = $(this).data('id');
 
     // Send the DELETE request.
     $.ajax('/api/quotes/' + id, {
@@ -19,7 +19,7 @@ $(function() {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
 
-    var newQuote = {
+    const newQuote = {
       author: $('#auth')
         .val()
         .trim(),
@@ -43,7 +43,7 @@ $(function() {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
 
-    var updatedQuote = {
+    const updatedQuote = {
       author: $('#auth')
         .val()
         .trim(),
@@ -52,7 +52,7 @@ $(function() {
         .trim()
     };
 
-    var id = $(this).data('id');
+    const id = $(this).data('id');
 
     // Send the POST request.
     $.ajax('/api/quotes/' + id, {

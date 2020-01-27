@@ -1,18 +1,18 @@
 'use strict';
 
 // Dependencies
-var express = require('express');
-var mysql = require('mysql');
+const express = require('express');
+const mysql = require('mysql');
 
 // Create instance of express app.
-var app = express();
+const app = express();
 
 // Set the port of our application
 // process.env.PORT lets the port be set by Heroku
-var PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8080;
 
 // MySQL DB Connection Information (remember to change this with our specific credentials)
-var connection = mysql.createConnection({
+const connection = mysql.createConnection({
   host: 'localhost',
   port: 3306,
   user: 'root',
@@ -34,11 +34,11 @@ app.get('/cast', function(req, res) {
   connection.query('SELECT * FROM actors ORDER BY id', function(err, result) {
     if (err) throw err;
 
-    var html = '<h1>Actors Ordered BY ID</h1>';
+    const html = '<h1>Actors Ordered BY ID</h1>';
 
     html += '<ul>';
 
-    for (var i = 0; i < result.length; ++i) {
+    for (let i = 0; i < result.length; ++i) {
       html += '<li><p> ID: ' + result[i].id + '</p>';
       html += '<p> Name: ' + result[i].name + '</p>';
       html += '<p> Coolness Points: ' + result[i].coolness_points + '</p>';
@@ -57,11 +57,11 @@ app.get('/coolness-chart', function(req, res) {
     function(err, result) {
       if (err) throw err;
 
-      var html = '<h1>Actors by Coolness</h1>';
+      const html = '<h1>Actors by Coolness</h1>';
 
       html += '<ul>';
 
-      for (var i = 0; i < result.length; ++i) {
+      for (let i = 0; i < result.length; ++i) {
         html += '<li><p> ID: ' + result[i].id + '</p>';
         html += '<p> Name: ' + result[i].name + '</p>';
         html += '<p> Coolness Points: ' + result[i].coolness_points + '</p>';
@@ -82,11 +82,11 @@ app.get('/attitude-chart/:att', function(req, res) {
     function(err, result) {
       if (err) throw err;
 
-      var html = '<h1>Actors With an Attitude of ' + req.params.att + '</h1>';
+      const html = '<h1>Actors With an Attitude of ' + req.params.att + '</h1>';
 
       html += '<ul>';
 
-      for (var i = 0; i < result.length; ++i) {
+      for (let i = 0; i < result.length; ++i) {
         html += '<li><p> ID: ' + result[i].id + '</p>';
         html += '<p> Name: ' + result[i].name + '</p>';
         html += '<p> Coolness Points: ' + result[i].coolness_points + '</p>';

@@ -13,8 +13,8 @@ In this activity you will be writing code to create a function that takes in a s
     - For example, if given the following string and offset:
 
     ```js
-    var str = 'Hello World';
-    var offset = 1;
+    const str = 'Hello World';
+    const offset = 1;
     ```
 
     - The following should be returned:
@@ -28,8 +28,8 @@ In this activity you will be writing code to create a function that takes in a s
     - Given the following string and offset:
 
     ```js
-    var str = 'Ifmmp Xpsme';
-    var offset = -1;
+    const str = 'Ifmmp Xpsme';
+    const offset = -1;
     ```
 
     - The following should be returned:
@@ -43,8 +43,8 @@ In this activity you will be writing code to create a function that takes in a s
     - Given the following string and offset:
 
     ```js
-    var str = 'Goodbye';
-    var offset = 28;
+    const str = 'Goodbye';
+    const offset = 28;
     ```
 
     - The following should be returned:

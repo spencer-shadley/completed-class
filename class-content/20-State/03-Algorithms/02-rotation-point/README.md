@@ -13,7 +13,7 @@ In this activity you will be writing code to create a function that takes in an 
     - For example, given the following array:
 
     ```js
-    var words = ['cool', 'cat'];
+    const words = ['cool', 'cat'];
     ```
 
     - The following should be returned:
@@ -27,7 +27,7 @@ In this activity you will be writing code to create a function that takes in an 
     - Given the following array:
 
     ```js
-    var words = ['great', 'ostrich', 'panther', 'ruby', 'chosen', 'feathers'];
+    const words = ['great', 'ostrich', 'panther', 'ruby', 'chosen', 'feathers'];
     ```
 
     - The following should be returned:

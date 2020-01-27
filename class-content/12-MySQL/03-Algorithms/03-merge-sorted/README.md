@@ -13,8 +13,8 @@ In this activity you will be writing code to create a function that takes in two
     - For example, given the following arrays:
 
     ```js
-    var arr1 = [4, 8, 15, 16, 23, 42];
-    var arr2 = [1, 2, 3, 6, 20, 21];
+    const arr1 = [4, 8, 15, 16, 23, 42];
+    const arr2 = [1, 2, 3, 6, 20, 21];
     ```
 
     - The following should be returned:
@@ -26,8 +26,8 @@ In this activity you will be writing code to create a function that takes in two
     - Given the following arrays:
 
     ```js
-    var arr1 = [13, 15, 31, 99];
-    var arr2 = [100];
+    const arr1 = [13, 15, 31, 99];
+    const arr2 = [100];
     ```
 
     - The following should be returned:

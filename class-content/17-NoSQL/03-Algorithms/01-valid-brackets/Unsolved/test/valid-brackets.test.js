@@ -1,52 +1,52 @@
 'use strict';
 
-var expect = chai.expect;
+const expect = chai.expect;
 
 describe('validBrackets', function() {
   it(`should return true if given the string "( )"`, function() {
-    var str = '( )';
+    const str = '( )';
 
-    var result = validBrackets(str);
+    const result = validBrackets(str);
 
     expect(result).to.eql(true);
   });
 
   it(`should return true if given the string "[ ( ) ]"`, function() {
-    var str = '[ ( ) ]';
+    const str = '[ ( ) ]';
 
-    var result = validBrackets(str);
+    const result = validBrackets(str);
 
     expect(result).to.eql(true);
   });
 
   it(`should return true if given the string "{ } [ ( [] ) ]"`, function() {
-    var str = '{ } [ ( ) ]';
+    const str = '{ } [ ( ) ]';
 
-    var result = validBrackets(str);
+    const result = validBrackets(str);
 
     expect(result).to.eql(true);
   });
 
   it(`should return true if given the string "( )[ ]{ }"`, function() {
-    var str = '( )[ ]{ }';
+    const str = '( )[ ]{ }';
 
-    var result = validBrackets(str);
+    const result = validBrackets(str);
 
     expect(result).to.eql(true);
   });
 
   it(`should return false if given the string "( ]"`, function() {
-    var str = '( ]';
+    const str = '( ]';
 
-    var result = validBrackets(str);
+    const result = validBrackets(str);
 
     expect(result).to.eql(false);
   });
 
   it(`should return false if given the string "( [ ) ]"`, function() {
-    var str = '( [ ) ]';
+    const str = '( [ ) ]';
 
-    var result = validBrackets(str);
+    const result = validBrackets(str);
 
     expect(result).to.eql(false);
   });

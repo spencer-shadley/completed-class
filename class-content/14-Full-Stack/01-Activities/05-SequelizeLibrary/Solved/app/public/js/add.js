@@ -7,7 +7,7 @@ $('#add-btn').on('click', function(event) {
   event.preventDefault();
 
   // Make a newBook object
-  var newBook = {
+  const newBook = {
     title: $('#title')
       .val()
       .trim(),

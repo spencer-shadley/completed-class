@@ -5,10 +5,10 @@
 // *********************************************************************************
 
 // Require mysql
-var mysql = require('mysql');
+const mysql = require('mysql');
 
 // Set up our connection information
-var connection = mysql.createConnection({
+const connection = mysql.createConnection({
   port: 3306,
   host: 'localhost',
   user: 'root',

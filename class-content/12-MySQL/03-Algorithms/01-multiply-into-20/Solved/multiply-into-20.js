@@ -3,13 +3,13 @@
 // Write code to create a function that accepts an array of unique numbers
 // If any two numbers in the array add up to 20, return true, else return false
 
-var multiplyInto20 = function(arr) {
-  var numMap = {};
+const multiplyInto20 = function(arr) {
+  const numMap = {};
 
-  for (var i = 0; i < arr.length; ++i) {
-    var currentNum = arr[i];
+  for (let i = 0; i < arr.length; ++i) {
+    const currentNum = arr[i];
 
-    var neededNumber = 20 / currentNum;
+    const neededNumber = 20 / currentNum;
 
     if (numMap[neededNumber]) {
       return true;

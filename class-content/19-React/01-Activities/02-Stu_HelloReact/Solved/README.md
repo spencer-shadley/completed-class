@@ -21,7 +21,7 @@
   - **A** Whenever we use JSX inside of our JavaScript, we need to import the React library. When Babel translates our `App` component's JSX code to plain old JavaScript, it looks like this:
 
   - ```js
-    var App = function App() {
+    const App = function App() {
       return React.createElement(HelloReact, null);
     };
     ```

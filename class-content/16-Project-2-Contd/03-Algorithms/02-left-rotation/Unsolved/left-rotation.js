@@ -4,4 +4,4 @@
 // Modify the original array rather than returning a new one
 // There is no need to return from this function
 
-var leftRotation = function(arr, positions) {};
+const leftRotation = function(arr, positions) {};

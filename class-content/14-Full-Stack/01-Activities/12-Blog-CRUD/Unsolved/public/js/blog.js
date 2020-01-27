@@ -3,17 +3,17 @@
 $(document).ready(function() {
   /* global moment */
   // blogContainer holds all of our posts
-  var blogContainer = $('.blog-container');
-  var postCategorySelect = $('#category');
+  const blogContainer = $('.blog-container');
+  const postCategorySelect = $('#category');
   // Click events for the edit and delete buttons
   $(document).on('click', 'button.delete', handlePostDelete);
   $(document).on('click', 'button.edit', handlePostEdit);
   postCategorySelect.on('change', handleCategoryChange);
-  var posts;
+  const posts;
 
   // This function grabs posts from the database and updates the view
   function getPosts(category) {
-    var categoryString = category || '';
+    const categoryString = category || '';
     if (categoryString) {
       categoryString = '/category/' + categoryString;
     }
@@ -44,8 +44,8 @@ $(document).ready(function() {
   // blogContainer
   function initializeRows() {
     blogContainer.empty();
-    var postsToAdd = [];
-    for (var i = 0; i < posts.length; ++i) {
+    const postsToAdd = [];
+    for (let i = 0; i < posts.length; ++i) {
       postsToAdd.push(createNewRow(posts[i]));
     }
     blogContainer.append(postsToAdd);
@@ -53,31 +53,31 @@ $(document).ready(function() {
 
   // This function constructs a post's HTML
   function createNewRow(post) {
-    var newPostCard = $('<div>');
+    const newPostCard = $('<div>');
     newPostCard.addClass('card');
-    var newPostCardHeading = $('<div>');
+    const newPostCardHeading = $('<div>');
     newPostCardHeading.addClass('card-header');
-    var deleteBtn = $('<button>');
+    const deleteBtn = $('<button>');
     deleteBtn.text('x');
     deleteBtn.addClass('delete btn btn-danger');
-    var editBtn = $('<button>');
+    const editBtn = $('<button>');
     editBtn.text('EDIT');
     editBtn.addClass('edit btn btn-default');
-    var newPostTitle = $('<h2>');
-    var newPostDate = $('<small>');
-    var newPostCategory = $('<h5>');
+    const newPostTitle = $('<h2>');
+    const newPostDate = $('<small>');
+    const newPostCategory = $('<h5>');
     newPostCategory.text(post.category);
     newPostCategory.css({
       float: 'right',
       'font-weight': '700',
       'margin-top': '-15px'
     });
-    var newPostCardBody = $('<div>');
+    const newPostCardBody = $('<div>');
     newPostCardBody.addClass('card-body');
-    var newPostBody = $('<p>');
+    const newPostBody = $('<p>');
     newPostTitle.text(post.title + ' ');
     newPostBody.text(post.body);
-    var formattedDate = new Date(post.createdAt);
+    const formattedDate = new Date(post.createdAt);
     formattedDate = moment(formattedDate).format('MMMM Do YYYY, h:mm:ss a');
     newPostDate.text(formattedDate);
     newPostTitle.append(newPostDate);
@@ -95,7 +95,7 @@ $(document).ready(function() {
   // This function figures out which post we want to delete and then calls
   // deletePost
   function handlePostDelete() {
-    var currentPost = $(this)
+    const currentPost = $(this)
       .parent()
       .parent()
       .data('post');
@@ -105,7 +105,7 @@ $(document).ready(function() {
   // This function figures out which post we want to edit and takes it to the
   // Appropriate url
   function handlePostEdit() {
-    var currentPost = $(this)
+    const currentPost = $(this)
       .parent()
       .parent()
       .data('post');
@@ -115,7 +115,7 @@ $(document).ready(function() {
   // This function displays a message when there are no posts
   function displayEmpty() {
     blogContainer.empty();
-    var messageH2 = $('<h2>');
+    const messageH2 = $('<h2>');
     messageH2.css({ 'text-align': 'center', 'margin-top': '50px' });
     messageH2.html(
       "No posts yet for this category, navigate <a href='/cms'>here</a> in order to create a new post."
@@ -125,7 +125,7 @@ $(document).ready(function() {
 
   // This function handles reloading new posts when the category changes
   function handleCategoryChange() {
-    var newPostCategory = $(this).val();
+    const newPostCategory = $(this).val();
     getPosts(newPostCategory);
   }
 });

@@ -1,16 +1,16 @@
 'use strict';
 
-var express = require('express');
+const express = require('express');
 
-var router = express.Router();
+const router = express.Router();
 
 // Import the model (cat.js) to use its database functions.
-var cat = require('../models/cat.js');
+const cat = require('../models/cat.js');
 
 // Create all our routes and set up logic within those routes where required.
 router.get('/', function(req, res) {
   cat.all(function(data) {
-    var hbsObject = {
+    const hbsObject = {
       cats: data
     };
     console.log(hbsObject);
@@ -28,7 +28,7 @@ router.post('/api/cats', function(req, res) {
 });
 
 router.put('/api/cats/:id', function(req, res) {
-  var condition = 'id = ' + req.params.id;
+  const condition = 'id = ' + req.params.id;
 
   console.log('condition', condition);
 
@@ -49,7 +49,7 @@ router.put('/api/cats/:id', function(req, res) {
 });
 
 router.delete('/api/cats/:id', function(req, res) {
-  var condition = 'id = ' + req.params.id;
+  const condition = 'id = ' + req.params.id;
 
   cat.delete(condition, function(result) {
     if (result.affectedRows == 0) {

@@ -14,8 +14,8 @@ In this activity you will be writing code to create a function that takes in two
 
     ```js
     // The number 1 is present in both arrays
-    var arrA = [1, 9, 8, 7];
-    var arrB = [10, 12, 1, 6, 5];
+    const arrA = [1, 9, 8, 7];
+    const arrB = [10, 12, 1, 6, 5];
     ```
 
     - The following should be returned:

@@ -1,44 +1,44 @@
 'use strict';
 
-var expect = chai.expect;
+const expect = chai.expect;
 
 describe('simplifyPath', function() {
   it(`should return "/home" if given the string "/home/"`, function() {
-    var path = '/home/';
+    const path = '/home/';
 
-    var result = simplifyPath(path);
+    const result = simplifyPath(path);
 
     expect(result).to.eql('/home');
   });
 
   it(`should return "/" if given the string "/../"`, function() {
-    var path = '/../';
+    const path = '/../';
 
-    var result = simplifyPath(path);
+    const result = simplifyPath(path);
 
     expect(result).to.eql('/');
   });
 
   it(`should return "/c" if given the string "/a/./b/../../c/"`, function() {
-    var path = '/a/./b/../../c/';
+    const path = '/a/./b/../../c/';
 
-    var result = simplifyPath(path);
+    const result = simplifyPath(path);
 
     expect(result).to.eql('/c');
   });
 
   it(`should return "/c" if given the string "/a/../../b/../c//.//"`, function() {
-    var path = '/a/../../b/../c//.//';
+    const path = '/a/../../b/../c//.//';
 
-    var result = simplifyPath(path);
+    const result = simplifyPath(path);
 
     expect(result).to.eql('/c');
   });
 
   it(`should return "/c" if given the string "/a//b////c/d//././/.."`, function() {
-    var path = '/a//b////c/d//././/..';
+    const path = '/a//b////c/d//././/..';
 
-    var result = simplifyPath(path);
+    const result = simplifyPath(path);
 
     expect(result).to.eql('/a/b/c');
   });

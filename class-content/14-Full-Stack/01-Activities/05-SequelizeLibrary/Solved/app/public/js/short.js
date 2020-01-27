@@ -3,9 +3,9 @@
 // Make a get request to our api route that will return every "short" book (150 pages or less)
 $.get('/api/books/short', function(data) {
   // For each book that our server sends us back
-  for (var i = 0; i < data.length; ++i) {
+  for (let i = 0; i < data.length; ++i) {
     // Create a parent div to hold book data
-    var wellSection = $('<div>');
+    const wellSection = $('<div>');
     // Add a class to this div: 'well'
     wellSection.addClass('well');
     // Add an id to the well to mark which well it is

@@ -13,8 +13,8 @@ In this activity you will be writing code to create a function that takes an arr
     - For example, given the following array and positions number:
 
     ```js
-    var arr = [1, 2, 3];
-    var positions = 2;
+    const arr = [1, 2, 3];
+    const positions = 2;
     ```
 
     - The given array should be updated to the following:

@@ -1,10 +1,10 @@
 'use strict';
 
-var expect = chai.expect;
+const expect = chai.expect;
 
 describe('removeDuplicates', function() {
   it(`should update the array [1, 1, 1, 2, 2, 3] to [1, 2, 3]"`, function() {
-    var arr = [1, 1, 1, 2, 2, 3];
+    const arr = [1, 1, 1, 2, 2, 3];
 
     removeDuplicates(arr);
 
@@ -12,7 +12,7 @@ describe('removeDuplicates', function() {
   });
 
   it(`should update the array [3, 3, 3] to [3]"`, function() {
-    var arr = [3, 3, 3];
+    const arr = [3, 3, 3];
 
     removeDuplicates(arr);
 
@@ -20,7 +20,7 @@ describe('removeDuplicates', function() {
   });
 
   it(`should update the array [0, 2, 4] to [0, 2, 4]`, function() {
-    var arr = [0, 2, 4];
+    const arr = [0, 2, 4];
 
     removeDuplicates(arr);
 
@@ -28,7 +28,7 @@ describe('removeDuplicates', function() {
   });
 
   it(`should update the array [] to []`, function() {
-    var arr = [];
+    const arr = [];
 
     removeDuplicates(arr);
 

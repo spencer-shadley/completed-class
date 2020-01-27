@@ -13,7 +13,7 @@ In this activity you will be writing code to create a function that takes an arr
     - For example, given the following array:
 
     ```js
-    var arr = [-4, -1, 0, 3, 10];
+    const arr = [-4, -1, 0, 3, 10];
     ```
 
     - The following array should be returned:
@@ -25,7 +25,7 @@ In this activity you will be writing code to create a function that takes an arr
     - Given the following array:
 
     ```js
-    var arr = [-7, -3, 2, 3, 11];
+    const arr = [-7, -3, 2, 3, 11];
     ```
 
     - The following array should be returned:

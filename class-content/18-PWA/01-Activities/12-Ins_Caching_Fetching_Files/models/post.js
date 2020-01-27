@@ -1,15 +1,15 @@
 'use strict';
 
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
-var postSchema = new Schema({
+const postSchema = new Schema({
   title: { type: String, required: true },
   description: { type: String, required: true },
   likes: Number,
   date: { type: Date, default: Date.now }
 });
 
-var Post = mongoose.model('post', postSchema);
+const Post = mongoose.model('post', postSchema);
 
 module.exports = Post;

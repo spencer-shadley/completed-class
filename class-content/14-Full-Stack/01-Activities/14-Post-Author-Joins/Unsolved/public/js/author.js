@@ -2,9 +2,9 @@
 
 $(document).ready(function() {
   // Getting references to the name input and author container, as well as the table body
-  var nameInput = $('#author-name');
-  var authorList = $('tbody');
-  var authorContainer = $('.author-container');
+  const nameInput = $('#author-name');
+  const authorList = $('tbody');
+  const authorContainer = $('.author-container');
   // Adding event listeners to the form to create a new object, and the button to delete
   // an Author
   $(document).on('submit', '#author-form', handleAuthorFormSubmit);
@@ -38,7 +38,7 @@ $(document).ready(function() {
 
   // Function for creating a new list row for authors
   function createAuthorRow(authorData) {
-    var newTr = $('<tr>');
+    const newTr = $('<tr>');
     newTr.data('author', authorData);
     newTr.append('<td>' + authorData.name + '</td>');
     if (authorData.Posts) {
@@ -63,8 +63,8 @@ $(document).ready(function() {
   // Function for retrieving authors and getting them ready to be rendered to the page
   function getAuthors() {
     $.get('/api/authors', function(data) {
-      var rowsToAdd = [];
-      for (var i = 0; i < data.length; ++i) {
+      const rowsToAdd = [];
+      for (let i = 0; i < data.length; ++i) {
         rowsToAdd.push(createAuthorRow(data[i]));
       }
       renderAuthorList(rowsToAdd);
@@ -89,7 +89,7 @@ $(document).ready(function() {
 
   // Function for handling what to render when there are no authors
   function renderEmpty() {
-    var alertDiv = $('<div>');
+    const alertDiv = $('<div>');
     alertDiv.addClass('alert alert-danger');
     alertDiv.text('You must create an Author before you can create a Post.');
     authorContainer.append(alertDiv);
@@ -97,11 +97,11 @@ $(document).ready(function() {
 
   // Function for handling what happens when the delete button is pressed
   function handleDeleteButtonPress() {
-    var listItemData = $(this)
+    const listItemData = $(this)
       .parent('td')
       .parent('tr')
       .data('author');
-    var id = listItemData.id;
+    const id = listItemData.id;
     $.ajax({
       method: 'DELETE',
       url: '/api/authors/' + id

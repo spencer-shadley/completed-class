@@ -3,7 +3,7 @@
   - In this activity, you are going to be creating your own Ben and Jerry's App where users can see all of the different flavors Ben and Jerry's have to offer while also getting specific information on a flavor by searching for it within the URL.
 
     ```javascript
-    var icecreams = [
+    const icecreams = [
       { name: 'vanilla', price: 10, awesomeness: 3 },
       { name: 'chocolate', price: 4, awesomeness: 8 },
       { name: 'banana', price: 1, awesomeness: 1 },

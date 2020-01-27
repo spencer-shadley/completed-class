@@ -5,7 +5,7 @@ $('#search-btn').on('click', function(event) {
   event.preventDefault();
 
   // Save the book they typed into the book-search input
-  var bookSearched = $('#book-search')
+  const bookSearched = $('#book-search')
     .val()
     .trim();
 
@@ -20,7 +20,7 @@ $('#search-btn').on('click', function(event) {
 // When user hits the author-search-btn
 $('#author-search-btn').on('click', function() {
   // Save the author they typed into the author-search input
-  var authorSearched = $('#author-search')
+  const authorSearched = $('#author-search')
     .val()
     .trim();
 
@@ -36,7 +36,7 @@ $('#author-search-btn').on('click', function() {
 // When user hits the genre-search-btn
 $('#genre-search-btn').on('click', function() {
   // Save the book they typed into the genre-search input
-  var genreSearched = $('#genre-search')
+  const genreSearched = $('#genre-search')
     .val()
     .trim();
 
@@ -53,8 +53,8 @@ function renderBooks(data) {
     $('#stats').empty();
     $('#stats').show();
 
-    for (var i = 0; i < data.length; ++i) {
-      var div = $('<div>');
+    for (let i = 0; i < data.length; ++i) {
+      const div = $('<div>');
 
       div.append('<h2>' + data[i].title + '</h2>');
       div.append('<p>Author: ' + data[i].author + '</p>');

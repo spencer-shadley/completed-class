@@ -1,9 +1,9 @@
 'use strict';
 
-var mysql = require('mysql');
-var inquirer = require('inquirer');
+const mysql = require('mysql');
+const inquirer = require('inquirer');
 
-var connection = mysql.createConnection({
+const connection = mysql.createConnection({
   host: 'localhost',
 
   // Your port; if not 3306
@@ -69,9 +69,9 @@ function artistSearch() {
       message: 'What artist would you like to search for?'
     })
     .then(function(answer) {
-      var query = 'SELECT position, song, year FROM top5000 WHERE ?';
+      const query = 'SELECT position, song, year FROM top5000 WHERE ?';
       connection.query(query, { artist: answer.artist }, function(err, res) {
-        for (var i = 0; i < res.length; ++i) {
+        for (let i = 0; i < res.length; ++i) {
           console.log(
             'Position: ' +
               res[i].position +
@@ -87,9 +87,9 @@ function artistSearch() {
 }
 
 function multiSearch() {
-  var query = 'SELECT artist FROM top5000 GROUP BY artist HAVING count(*) > 1';
+  const query = 'SELECT artist FROM top5000 GROUP BY artist HAVING count(*) > 1';
   connection.query(query, function(err, res) {
-    for (var i = 0; i < res.length; ++i) {
+    for (let i = 0; i < res.length; ++i) {
       console.log(res[i].artist);
     }
     runSearch();
@@ -123,10 +123,10 @@ function rangeSearch() {
       }
     ])
     .then(function(answer) {
-      var query =
+      const query =
         'SELECT position,song,artist,year FROM top5000 WHERE position BETWEEN ? AND ?';
       connection.query(query, [answer.start, answer.end], function(err, res) {
-        for (var i = 0; i < res.length; ++i) {
+        for (let i = 0; i < res.length; ++i) {
           console.log(
             'Position: ' +
               res[i].position +
@@ -180,7 +180,7 @@ function songAndAlbumSearch() {
       message: 'What artist would you like to search for?'
     })
     .then(function(answer) {
-      var query =
+      const query =
         'SELECT top_albums.year, top_albums.album, top_albums.position, top5000.song, top5000.artist ';
       query +=
         'FROM top_albums INNER JOIN top5000 ON (top_albums.artist = top5000.artist AND top_albums.year ';
@@ -192,7 +192,7 @@ function songAndAlbumSearch() {
         res
       ) {
         console.log(res.length + ' matches found!');
-        for (var i = 0; i < res.length; ++i) {
+        for (let i = 0; i < res.length; ++i) {
           console.log(
             i +
               1 +

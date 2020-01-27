@@ -4,4 +4,4 @@
 // The object should contain keys for each character in the string
 // Each key should point to an array containing the indexes the character is found in the string
 
-var stringMap = function(str) {};
+const stringMap = function(str) {};

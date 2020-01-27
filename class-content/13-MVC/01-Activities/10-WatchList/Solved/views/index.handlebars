@@ -27,7 +27,7 @@
 
 <script>
   $(".delmovie").on("click", function(event) {
-    var id = $(this).data("movieid");
+    const id = $(this).data("movieid");
 
     // Send the DELETE request.
     $.ajax("/api/movies/" + id, {
@@ -45,7 +45,7 @@
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
 
-    var newMovie = {
+    const newMovie = {
       movie: $("#addmovie [name=movie]").val().trim()
     };
 
@@ -66,9 +66,9 @@
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
 
-    var id = $("[name=id]").val().trim();
+    const id = $("[name=id]").val().trim();
 
-    var updatedMovie = {
+    const updatedMovie = {
       movie: $("#updatemovie [name=movie]").val().trim()
     };
 

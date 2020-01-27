@@ -27,10 +27,10 @@ Output: oneword
 - Be sure to praise students who provide a solution even if it isn't fully correct. Discuss its merits and potential pitfalls.
 
 ```js
-var singleWord = function(str) {
-  var newStr = '';
+const singleWord = function(str) {
+  const newStr = '';
 
-  for (var i = 0; i < str.length; ++i) {
+  for (let i = 0; i < str.length; ++i) {
     if (str[i] !== ' ') {
       newStr += str[i];
     }
@@ -43,8 +43,8 @@ var singleWord = function(str) {
 - Time permitting, show both solutions.
 
 ```js
-var singleWord = function(str) {
-  var newStr = str.toLowerCase().replace(/\s/g, '');
+const singleWord = function(str) {
+  const newStr = str.toLowerCase().replace(/\s/g, '');
 
   return newStr;
 };

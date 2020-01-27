@@ -1,8 +1,8 @@
 'use strict';
 
-var mysql = require('mysql');
+const mysql = require('mysql');
 
-var connection = mysql.createConnection({
+const connection = mysql.createConnection({
   host: 'localhost',
 
   // Your port; if not 3306
@@ -26,7 +26,7 @@ connection.connect(function(err) {
 function queryAllSongs() {
   connection.query('SELECT * FROM songs', function(err, res) {
     if (err) throw err;
-    for (var i = 0; i < res.length; ++i) {
+    for (let i = 0; i < res.length; ++i) {
       console.log(
         res[i].id +
           ' | ' +
@@ -42,12 +42,12 @@ function queryAllSongs() {
 }
 
 function queryDanceSongs() {
-  var query = connection.query(
+  const query = connection.query(
     'SELECT * FROM songs WHERE genre=?',
     ['Dance'],
     function(err, res) {
       if (err) throw err;
-      for (var i = 0; i < res.length; ++i) {
+      for (let i = 0; i < res.length; ++i) {
         console.log(
           res[i].id +
             ' | ' +

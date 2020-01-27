@@ -1,8 +1,8 @@
 'use strict';
 
-var CACHE_NAME = 'my-site-cache-v1';
+const CACHE_NAME = 'my-site-cache-v1';
 
-var urlsToCache = ['/', '/styles.css', '/index.js'];
+const urlsToCache = ['/', '/styles.css', '/index.js'];
 
 self.addEventListener('install', function(event) {
   // Perform install steps

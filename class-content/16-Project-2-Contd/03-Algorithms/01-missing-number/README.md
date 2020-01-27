@@ -13,7 +13,7 @@ In this activity you will be writing code to create a function that takes an uns
     - For example, given the following array:
 
     ```js
-    var arr = [3, 0, 1];
+    const arr = [3, 0, 1];
     ```
 
     - The following should be returned:
@@ -29,7 +29,7 @@ In this activity you will be writing code to create a function that takes an uns
     - If no numbers are missing from the sequence, assume the missing number is the next highest number in the sequence. For example, given the following array:
 
     ```js
-    var arr = [0];
+    const arr = [0];
     ```
 
     - The following should be returned:
@@ -41,7 +41,7 @@ In this activity you will be writing code to create a function that takes an uns
     - Given the an empty array:
 
     ```js
-    var arr = [];
+    const arr = [];
     ```
 
     - The following should be returned:

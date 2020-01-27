@@ -3,10 +3,10 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
   $('.change-sleep').on('click', function(event) {
-    var id = $(this).data('id');
-    var newSleep = $(this).data('newsleep');
+    const id = $(this).data('id');
+    const newSleep = $(this).data('newsleep');
 
-    var newSleepState = {
+    const newSleepState = {
       sleepy: newSleep
     };
 
@@ -25,7 +25,7 @@ $(function() {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
 
-    var newCat = {
+    const newCat = {
       name: $('#ca')
         .val()
         .trim(),

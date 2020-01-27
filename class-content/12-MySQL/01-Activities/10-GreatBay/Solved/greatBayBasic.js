@@ -1,10 +1,10 @@
 'use strict';
 
-var mysql = require('mysql');
-var inquirer = require('inquirer');
+const mysql = require('mysql');
+const inquirer = require('inquirer');
 
 // create the connection information for the sql database
-var connection = mysql.createConnection({
+const connection = mysql.createConnection({
   host: 'localhost',
 
   // Your port; if not 3306
@@ -104,8 +104,8 @@ function bidAuction() {
           name: 'choice',
           type: 'rawlist',
           choices: function() {
-            var choiceArray = [];
-            for (var i = 0; i < results.length; ++i) {
+            const choiceArray = [];
+            for (let i = 0; i < results.length; ++i) {
               choiceArray.push(results[i].item_name);
             }
             return choiceArray;
@@ -120,8 +120,8 @@ function bidAuction() {
       ])
       .then(function(answer) {
         // get the information of the chosen item
-        var chosenItem;
-        for (var i = 0; i < results.length; ++i) {
+        const chosenItem;
+        for (let i = 0; i < results.length; ++i) {
           if (results[i].item_name === answer.choice) {
             chosenItem = results[i];
           }

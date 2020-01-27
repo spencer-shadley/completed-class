@@ -15,8 +15,8 @@ In this activity you will be writing code to create a function that takes in two
     - For example, given the following strings:
 
     ```js
-    var str = 'smapnuer';
-    var sub = 'super'; // the first string contains all of the characters needed to make the second
+    const str = 'smapnuer';
+    const sub = 'super'; // the first string contains all of the characters needed to make the second
     ```
 
     - The following should be returned:

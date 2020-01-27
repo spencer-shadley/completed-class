@@ -14,7 +14,7 @@ class Handler extends ExceptionHandler
     /**
      * A list of the exception types that should not be reported.
      *
-     * @var array
+     * @const array
      */
     protected $dontReport = [
         AuthorizationException::class,

@@ -13,7 +13,7 @@ In this activity you will be writing code to create a function that takes a posi
     - For example, given the following integer:
 
     ```js
-    var num = 153;
+    const num = 153;
     ```
 
     - The following should be returned:
@@ -27,7 +27,7 @@ In this activity you will be writing code to create a function that takes a posi
     - Given the following number:
 
     ```js
-    var num = 11;
+    const num = 11;
     ```
 
     - The following should be returned:

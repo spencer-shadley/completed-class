@@ -1,6 +1,6 @@
 'use strict';
 
-var db = require('../models');
+const db = require('../models');
 
 module.exports = function(app) {
   // Load index page

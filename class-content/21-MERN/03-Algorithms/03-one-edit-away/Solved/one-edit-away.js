@@ -2,14 +2,14 @@
 
 // Write a function that takes in two strings and returns true if they are one edit away, else return false
 
-var oneEditAway = function(str1, str2) {
+const oneEditAway = function(str1, str2) {
   if (str1 === str2 || Math.abs(str1.length - str2.length) > 1) {
     return false;
   }
 
-  var idx1 = 0;
-  var idx2 = 0;
-  var hasEdit = false;
+  const idx1 = 0;
+  const idx2 = 0;
+  const hasEdit = false;
 
   while (idx1 < str1.length && idx2 < str2.length) {
     if (str1[idx1] === str2[idx2]) {

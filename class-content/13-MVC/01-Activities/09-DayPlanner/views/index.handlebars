@@ -33,7 +33,7 @@
   $(".delplan").on("click", function(event) {
     // Get the ID from the button.
     // This is shorthand for $(this).attr("data-planid")
-    var id = $(this).data("planid");
+    const id = $(this).data("planid");
 
     // Send the DELETE request.
     $.ajax("/api/plans/" + id, {
@@ -52,7 +52,7 @@
     event.preventDefault();
 
     // [name=plan] will find an element with a "name" attribute equal to the string "plan"
-    var newPlan = {
+    const newPlan = {
       plan: $("#createplan [name=plan]").val().trim()
     };
 
@@ -74,9 +74,9 @@
     event.preventDefault();
 
     // Get the ID by finding an element with a "name" attribute equal to the string "id"
-    var id = $("[name=id]").val().trim();
+    const id = $("[name=id]").val().trim();
 
-    var updatedPlan = {
+    const updatedPlan = {
       plan: $("#updateplan [name=plan]").val().trim()
     };
 

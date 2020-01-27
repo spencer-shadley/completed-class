@@ -1,7 +1,7 @@
 'use strict';
 
 const express = require('express');
-var cors = require('cors');
+const cors = require('cors');
 
 const mongoose = require('mongoose');
 const routes = require('./routes');

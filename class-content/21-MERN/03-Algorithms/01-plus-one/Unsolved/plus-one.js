@@ -4,4 +4,4 @@
 // Return the new array
 // Solve without joining the digits array and modify the original array in place
 
-var plusOne = function(digits) {};
+const plusOne = function(digits) {};

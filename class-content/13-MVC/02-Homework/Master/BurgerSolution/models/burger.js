@@ -1,8 +1,8 @@
 'use strict';
 
-var orm = require('../config/orm.js');
+const orm = require('../config/orm.js');
 
-var burger = {
+const burger = {
   all: function(cb) {
     orm.all('burgers', function(res) {
       cb(res);
@@ -12,7 +12,7 @@ var burger = {
     orm.create('burgers', ['burger_name', 'devoured'], [name, false], cb);
   },
   update: function(id, cb) {
-    var condition = 'id=' + id;
+    const condition = 'id=' + id;
     orm.update(
       'burgers',
       {

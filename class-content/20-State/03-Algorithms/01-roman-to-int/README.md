@@ -13,7 +13,7 @@ In this activity you will be writing code to create a function that takes in a R
     - For example, given the following string:
 
     ```js
-    var str = 'V';
+    const str = 'V';
     ```
 
     - The following should be returned:
@@ -25,7 +25,7 @@ In this activity you will be writing code to create a function that takes in a R
     - Given the following string:
 
     ```js
-    var str = 'IX';
+    const str = 'IX';
     ```
 
     - The following should be returned:
@@ -37,7 +37,7 @@ In this activity you will be writing code to create a function that takes in a R
     - Given the following string:
 
     ```js
-    var str = 'MMXXIV';
+    const str = 'MMXXIV';
     ```
 
     - The following should be returned:

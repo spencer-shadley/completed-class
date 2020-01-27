@@ -165,13 +165,13 @@ Now that we have a basic understanding of how a program is set up, let’s explo
 
 ## Data Types
 
-Like JavaScript, C# has various data types that can store values, each with their own set of properties and unique behavior. The main distinction, however, is that C# is a statically typed language. This means that the data type is explicitly labeled when a variable is declared. Whereas in JavaScript, declaring a variable with the keyword var allowed the data type to be inferred, C# variables must be declared with a data type. The number one advantage of a statically typed language is that there is added stability and potential error catching done automatically by the compiler.
+Like JavaScript, C# has various data types that can store values, each with their own set of properties and unique behavior. The main distinction, however, is that C# is a statically typed language. This means that the data type is explicitly labeled when a variable is declared. Whereas in JavaScript, declaring a variable with the keyword const allowed the data type to be inferred, C# variables must be declared with a data type. The number one advantage of a statically typed language is that there is added stability and potential error catching done automatically by the compiler.
 
 _JavaScript_
 
 ```js
-var carModel = 'Explorer';
-var carPrice = 500;
+const carModel = 'Explorer';
+const carPrice = 500;
 console.log(typeof carModel);
 console.log(typeof carPrice);
 ```
@@ -946,17 +946,17 @@ Employee currentEmployee = new Employee("Vince", "McMahon", 123, "https://placek
 This is an easy, intuitive way to instantiate an Employee when you have all of the necessary values handy, and we can do this thanks to C#’s special **constructor method**. You are probably familiar with JavaScript constructors, which are called in exactly the same way; passing values to a class as arguments in parentheses:
 
 ```js
-var date = new Date('December 17, 1995 03:24:00');
+const date = new Date('December 17, 1995 03:24:00');
 
-var regex = new RegExp('Fudge\\WSauce\\!?');
+const regex = new RegExp('Fudge\\WSauce\\!?');
 
-var fancyPants = new Pants('fancy');
+const fancyPants = new Pants('fancy');
 ```
 
 There are two popular constructors styles in JavaScript. Before ECMAScript 2015, constructor functions were commonly defined implicitly in class-like functions. For example:
 
 ```js
-var Employee = function(firstName, lastName) {
+const Employee = function(firstName, lastName) {
   this.firstName = firstName;
 
   this.lastName = lastName;
@@ -967,7 +967,7 @@ var Employee = function(firstName, lastName) {
 };
 ```
 
-There's no obvious constructor here, just the magical behavior that assigns arguments from var e = new Employee("John", "Smith") to a mysterious place called this. We called it a constructor because it behaved similarly to conventional constructor methods in object-oriented programming languages. It was common to define _all_ of a class's properties and behaviors within this function.
+There's no obvious constructor here, just the magical behavior that assigns arguments from const e = new Employee("John", "Smith") to a mysterious place called this. We called it a constructor because it behaved similarly to conventional constructor methods in object-oriented programming languages. It was common to define _all_ of a class's properties and behaviors within this function.
 
 ECMAScript 2015 introduced a lot of object-oriented syntax, including classes and explicit constructor methods. You could now define a class like this:
 

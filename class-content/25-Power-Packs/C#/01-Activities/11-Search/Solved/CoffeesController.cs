@@ -22,7 +22,7 @@ namespace App.Controllers
         // GET: Coffees
         public async Task<IActionResult> Index(string nameSearch, string brandSearch)
         {
-            var coffees = from coffee in _context.Coffee select coffee;
+            const coffees = from coffee in _context.Coffee select coffee;
 
             if (!String.IsNullOrEmpty(nameSearch))
             {
@@ -45,7 +45,7 @@ namespace App.Controllers
                 return NotFound();
             }
 
-            var coffee = await _context.Coffee.SingleOrDefaultAsync(m => m.ID == id);
+            const coffee = await _context.Coffee.SingleOrDefaultAsync(m => m.ID == id);
             if (coffee == null)
             {
                 return NotFound();
@@ -84,7 +84,7 @@ namespace App.Controllers
                 return NotFound();
             }
 
-            var coffee = await _context.Coffee.SingleOrDefaultAsync(m => m.ID == id);
+            const coffee = await _context.Coffee.SingleOrDefaultAsync(m => m.ID == id);
             if (coffee == null)
             {
                 return NotFound();
@@ -135,7 +135,7 @@ namespace App.Controllers
                 return NotFound();
             }
 
-            var coffee = await _context.Coffee.SingleOrDefaultAsync(m => m.ID == id);
+            const coffee = await _context.Coffee.SingleOrDefaultAsync(m => m.ID == id);
             if (coffee == null)
             {
                 return NotFound();
@@ -149,7 +149,7 @@ namespace App.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var coffee = await _context.Coffee.SingleOrDefaultAsync(m => m.ID == id);
+            const coffee = await _context.Coffee.SingleOrDefaultAsync(m => m.ID == id);
             _context.Coffee.Remove(coffee);
             await _context.SaveChangesAsync();
             return RedirectToAction("Index");

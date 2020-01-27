@@ -4,4 +4,4 @@
 // Return true if there are an equal number of 0s and 1s
 // Else return false
 
-var zeroesAndOnes = function(str) {};
+const zeroesAndOnes = function(str) {};

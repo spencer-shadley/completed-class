@@ -18,8 +18,8 @@
           return undefined;
         }
 
-        for (var i = 0; i < arr.length; ++i) {
-          for (var j = 0; j < i; ++j) {
+        for (let i = 0; i < arr.length; ++i) {
+          for (const j = 0; j < i; ++j) {
             if (arr[i] === arr[j]) {
               return arr[i];
             }
@@ -37,9 +37,9 @@
           return undefined;
         }
 
-        var dupes = {};
-        for (var i = 0; i < arr.length; ++i) {
-          var currentItem = arr[i];
+        const dupes = {};
+        for (let i = 0; i < arr.length; ++i) {
+          const currentItem = arr[i];
           if (dupes[currentItem]) {
             return currentItem;
           } else {
@@ -50,7 +50,7 @@
 
       // let's test it!
       function runTests(testName, callbackFunction) {
-        var testCases = [
+        const testCases = [
           {
             input: [2, 5, 6, 3, 5],
             expected: 5
@@ -77,9 +77,9 @@
           }
         ];
 
-        var results = [];
+        const results = [];
         testCases.forEach(function(testCase) {
-          var actual = callbackFunction(testCase.input);
+          const actual = callbackFunction(testCase.input);
           results.push({
             input: testCase.input,
             expected: testCase.expected,

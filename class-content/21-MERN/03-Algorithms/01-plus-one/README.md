@@ -15,7 +15,7 @@ In this activity you will be writing code to create a function that takes in an 
     - For example, if given the following array:
 
     ```js
-    var digits = [1, 2, 3];
+    const digits = [1, 2, 3];
     ```
 
     - The following should be returned:
@@ -27,7 +27,7 @@ In this activity you will be writing code to create a function that takes in an 
     - Given the following array:
 
     ```js
-    var digits = [9];
+    const digits = [9];
     ```
 
     - The following should be returned:

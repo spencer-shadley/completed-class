@@ -33,9 +33,9 @@ Output: undefined
 - After 15 minutes, ask for student solutions or code the following:
 
 ```js
-var findDup = function(arr) {
-  for (var i = 0; i < arr.length; ++i) {
-    for (var j = 0; j < i; j++) {
+const findDup = function(arr) {
+  for (let i = 0; i < arr.length; ++i) {
+    for (const j = 0; j < i; j++) {
       if (arr[i] === arr[j]) {
         return arr[i];
       }
@@ -47,10 +47,10 @@ var findDup = function(arr) {
 - Time permitting (and if the class seems up for it), code this solution as an alternative:
 
 ```js
-var firstDup = function(arr) {
-  var dups = {};
-  for (var i = 0; i < arr.length; ++i) {
-    var val = arr[i];
+const firstDup = function(arr) {
+  const dups = {};
+  for (let i = 0; i < arr.length; ++i) {
+    const val = arr[i];
     if (dups[val]) {
       return val;
     } else {

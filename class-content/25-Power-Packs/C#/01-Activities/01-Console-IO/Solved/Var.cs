@@ -24,23 +24,23 @@ class Var
   {
     // Prompt user for student's identification information...
     Console.Write("Please enter the student's first name. ");
-    var firstName = Console.ReadLine();
+    const firstName = Console.ReadLine();
 
     Console.Write("Please enter the student's middle name. ");
-    var middleName = Console.ReadLine();
+    const middleName = Console.ReadLine();
 
     Console.Write("Please enter the student's last name. ");
-    var lastName = Console.ReadLine();
+    const lastName = Console.ReadLine();
 
     // Prompt user for student's contact information...
     Console.Write("Please enter the student's address. ");
-    var address = Console.ReadLine();
+    const address = Console.ReadLine();
 
     Console.Write("Please enter the student's email. ");
-    var email = Console.ReadLine();
+    const email = Console.ReadLine();
 
     Console.Write("Please enter the student's phone number. ");
-    var phoneNumber = Console.ReadLine();
+    const phoneNumber = Console.ReadLine();
 
     // Print everything to the console...
     Console.WriteLine("The student's first name is " + firstName);
@@ -52,6 +52,6 @@ class Var
     Console.WriteLine("The student's phoneNumber is " + phoneNumber);
 
     Console.Write("Is this information correct? (Y/n) ");
-    var confirmation = Console.ReadLine();
+    const confirmation = Console.ReadLine();
   }
 }

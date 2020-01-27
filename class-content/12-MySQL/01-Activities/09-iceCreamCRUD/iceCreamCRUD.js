@@ -1,8 +1,8 @@
 'use strict';
 
-var mysql = require('mysql');
+const mysql = require('mysql');
 
-var connection = mysql.createConnection({
+const connection = mysql.createConnection({
   host: 'localhost',
 
   // Your port; if not 3306
@@ -24,7 +24,7 @@ connection.connect(function(err) {
 
 function createProduct() {
   console.log('Inserting a new product...\n');
-  var query = connection.query(
+  const query = connection.query(
     'INSERT INTO products SET ?',
     {
       flavor: 'Rocky Road',
@@ -45,7 +45,7 @@ function createProduct() {
 
 function updateProduct() {
   console.log('Updating all Rocky Road quantities...\n');
-  var query = connection.query(
+  const query = connection.query(
     'UPDATE products SET ? WHERE ?',
     [
       {

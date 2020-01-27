@@ -6,14 +6,14 @@
 
 // Dependencies
 // =============================================================
-var express = require('express');
+const express = require('express');
 
-var db = require('./models');
+const db = require('./models');
 
 // Sets up the Express App
 // =============================================================
-var app = express();
-var PORT = process.env.PORT || 8080;
+const app = express();
+const PORT = process.env.PORT || 8080;
 
 // Starts the server to begin listening
 // =============================================================

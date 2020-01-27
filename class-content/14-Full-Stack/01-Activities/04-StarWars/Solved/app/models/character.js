@@ -4,12 +4,12 @@
 // =============================================================
 
 // Sequelize (capital) references the standard library
-var Sequelize = require('sequelize');
+const Sequelize = require('sequelize');
 // sequelize (lowercase) references our connection to the DB.
-var sequelize = require('../config/connection.js');
+const sequelize = require('../config/connection.js');
 
 // Creates a "Character" model that matches up with DB
-var Character = sequelize.define(
+const Character = sequelize.define(
   'character',
   {
     // the routeName gets saved as a string

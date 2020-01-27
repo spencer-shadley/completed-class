@@ -1,7 +1,7 @@
 'use strict';
 
-var orm = require('./config/orm.js');
+const orm = require('./config/orm.js');
 
-var data = orm.selectWhere('parties', 'party_type', 'grown-up');
+const data = orm.selectWhere('parties', 'party_type', 'grown-up');
 
 console.log(data); // Data is undefined. Why?

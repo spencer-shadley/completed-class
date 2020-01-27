@@ -13,8 +13,8 @@ In this activity you will be writing code to create a function that takes in two
     - For example, if given the following strings:
 
     ```js
-    var str1 = 'Hello';
-    var str2 = 'Henlo';
+    const str1 = 'Hello';
+    const str2 = 'Henlo';
     ```
 
     - The following should be returned:
@@ -28,8 +28,8 @@ In this activity you will be writing code to create a function that takes in two
     - Given the following strings:
 
     ```js
-    var str1 = 'wow';
-    var str2 = 'wo';
+    const str1 = 'wow';
+    const str2 = 'wo';
     ```
 
     - The following should be returned:
@@ -43,8 +43,8 @@ In this activity you will be writing code to create a function that takes in two
     - Given the following strings:
 
     ```js
-    var str1 = 'imaginary';
-    var str2 = 'analogous';
+    const str1 = 'imaginary';
+    const str2 = 'analogous';
     ```
 
     - The following should be returned:
@@ -58,8 +58,8 @@ In this activity you will be writing code to create a function that takes in two
     - Given the following strings:
 
     ```js
-    var str1 = 'hopeful';
-    var str2 = 'hopeful';
+    const str1 = 'hopeful';
+    const str2 = 'hopeful';
     ```
 
     - The following should be returned:

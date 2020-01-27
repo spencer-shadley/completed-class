@@ -13,7 +13,7 @@ In this activity you will be writing code to create a function that takes in an 
     - For example, given the following array:
 
     ```js
-    var arr = [1, 3, 7, 4, 3, 2, 1];
+    const arr = [1, 3, 7, 4, 3, 2, 1];
     ```
 
     - The following should be returned:
@@ -27,7 +27,7 @@ In this activity you will be writing code to create a function that takes in an 
     - It's possible for the peak to be the first or last element in the array if it is greater than all other elements. For example, the following given the following array:
 
     ```js
-    var arr = [2, 4, 6, 8, 10];
+    const arr = [2, 4, 6, 8, 10];
     ```
 
     - The following number should be returned:

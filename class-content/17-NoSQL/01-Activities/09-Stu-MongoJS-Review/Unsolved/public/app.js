@@ -24,7 +24,7 @@ $('#addbook').on('click', function() {
 
 // Click event to mark a book as read
 $(document).on('click', '.markread', function() {
-  var thisId = $(this).attr('data-id');
+  const thisId = $(this).attr('data-id');
   $.ajax({
     type: 'PUT',
     url: '/markread/' + thisId
@@ -37,7 +37,7 @@ $(document).on('click', '.markread', function() {
 
 // Click event to mark a book as not read
 $(document).on('click', '.markunread', function() {
-  var thisId = $(this).attr('data-id');
+  const thisId = $(this).attr('data-id');
   $.ajax({
     type: 'PUT',
     url: '/markunread/' + thisId
@@ -52,7 +52,7 @@ $(document).on('click', '.markunread', function() {
 function getUnread() {
   $('#unread').empty();
   $.getJSON('/unread', function(data) {
-    for (var i = 0; i < data.length; ++i) {
+    for (let i = 0; i < data.length; ++i) {
       $('#unread').prepend(
         '<tr><td>' +
           data[i].title +
@@ -73,7 +73,7 @@ function getUnread() {
 function getRead() {
   $('#read').empty();
   $.getJSON('/read', function(data) {
-    for (var i = 0; i < data.length; ++i) {
+    for (let i = 0; i < data.length; ++i) {
       $('#read').prepend(
         '<tr><td>' +
           data[i].title +

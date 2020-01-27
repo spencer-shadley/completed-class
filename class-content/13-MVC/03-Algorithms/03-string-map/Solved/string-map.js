@@ -4,11 +4,11 @@
 // The object should contain keys for each character in the string
 // Each key should point to an array containing the indexes the character is found in the string
 
-var stringMap = function(str) {
-  var charMap = {};
+const stringMap = function(str) {
+  const charMap = {};
 
-  for (var i = 0; i < str.length; ++i) {
-    var char = str[i];
+  for (let i = 0; i < str.length; ++i) {
+    const char = str[i];
 
     if (charMap[char]) {
       charMap[char].push(i);

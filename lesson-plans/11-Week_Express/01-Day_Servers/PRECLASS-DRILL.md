@@ -28,11 +28,11 @@ Output: [4,5,6]
 - Be sure to praise students who provide a solution even if it isn't fully correct. Discuss its merits and potential pitfalls.
 
 ```js
-var filter = function(arr, cb) {
-  var newArr = [];
+const filter = function(arr, cb) {
+  const newArr = [];
 
-  for (var i = 0; i < arr.length; ++i) {
-    var cbOutput = cb(arr[i]);
+  for (let i = 0; i < arr.length; ++i) {
+    const cbOutput = cb(arr[i]);
     if (cbOutput) {
       newArr.push(arr[i]);
     }

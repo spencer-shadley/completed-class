@@ -13,7 +13,7 @@ In this activity you will be writing code to create a function that takes in a s
     - For example, if given the following path:
 
     ```js
-    var path = '/home/';
+    const path = '/home/';
     ```
 
     - The following should be returned:
@@ -27,7 +27,7 @@ In this activity you will be writing code to create a function that takes in a s
     - Given the following path:
 
     ```js
-    var path = '/../';
+    const path = '/../';
     ```
 
     - The following should be returned:
@@ -41,7 +41,7 @@ In this activity you will be writing code to create a function that takes in a s
     - Given the following path:
 
     ```js
-    var path = '/a/./b/../../c/';
+    const path = '/a/./b/../../c/';
     ```
 
     - The following should be returned:
@@ -55,7 +55,7 @@ In this activity you will be writing code to create a function that takes in a s
     - Given the following path:
 
     ```js
-    var path = '/a/../../b/../c//.//';
+    const path = '/a/../../b/../c//.//';
     ```
 
     - The following should be returned:
@@ -69,7 +69,7 @@ In this activity you will be writing code to create a function that takes in a s
     - Given the following path:
 
     ```js
-    var path = '/a/b/c/d/..';
+    const path = '/a/b/c/d/..';
     ```
 
     - The following should be returned:

@@ -2,16 +2,16 @@
 
 // Write a function that takes in two sorted arrays and returns a pair of numbers (one from each array) with the smallest difference
 
-var smallestDifference = function(arr1, arr2) {
-  var left = 0;
-  var right = 0;
-  var bestPair = [];
-  var bestDiff = Infinity;
+const smallestDifference = function(arr1, arr2) {
+  const left = 0;
+  const right = 0;
+  const bestPair = [];
+  const bestDiff = Infinity;
 
   while (left < arr1.length && right < arr2.length) {
-    var leftVal = arr1[left];
-    var rightVal = arr2[right];
-    var currentDiff = Math.abs(rightVal - leftVal);
+    const leftVal = arr1[left];
+    const rightVal = arr2[right];
+    const currentDiff = Math.abs(rightVal - leftVal);
 
     if (currentDiff < bestDiff) {
       bestDiff = currentDiff;

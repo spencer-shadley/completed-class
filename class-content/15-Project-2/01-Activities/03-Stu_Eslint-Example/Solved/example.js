@@ -1,10 +1,10 @@
 'use strict';
 
-var num1 = parseInt(prompt('Give me a number!'));
-var num2 = parseInt(prompt('Give me another number!'));
-var result;
+const num1 = parseInt(prompt('Give me a number!'));
+const num2 = parseInt(prompt('Give me another number!'));
+const result;
 
-var operation = prompt(
+const operation = prompt(
   'What would you like to do? (add, subtract, multiply, divide)'
 ).toUpperCase();
 

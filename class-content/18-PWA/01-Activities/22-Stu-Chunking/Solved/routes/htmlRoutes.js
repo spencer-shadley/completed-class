@@ -1,6 +1,6 @@
 'use strict';
 
-var path = require('path');
+const path = require('path');
 
 module.exports = function(app) {
   app.get('/images/:id', function(req, res) {

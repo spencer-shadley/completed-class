@@ -32,8 +32,8 @@ Output: false
 - Be sure to praise students who provide a solution even if it isn't fully correct. Discuss its merits and potential pitfalls.
 
 ```js
-var includes = function(arr, elem) {
-  for (var i = 0; i < arr.length; ++i) {
+const includes = function(arr, elem) {
+  for (let i = 0; i < arr.length; ++i) {
     if (elem === arr[i]) {
       return true;
     }

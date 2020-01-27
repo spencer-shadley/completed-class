@@ -13,7 +13,7 @@ In this activity you will be writing code to create a function that takes in an 
     - For example, given the following number:
 
     ```js
-    var num = 5;
+    const num = 5;
     ```
 
     - The following should be returned:
@@ -25,7 +25,7 @@ In this activity you will be writing code to create a function that takes in an 
     - Given the following integer:
 
     ```js
-    var num = 9;
+    const num = 9;
     ```
 
     - The following should be returned:
@@ -37,7 +37,7 @@ In this activity you will be writing code to create a function that takes in an 
     - Given the following integer:
 
     ```js
-    var num = 2024;
+    const num = 2024;
     ```
 
     - The following should be returned:

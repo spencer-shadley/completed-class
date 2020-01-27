@@ -30,11 +30,11 @@ Output: [-1, 0, 1]
 - Be sure to praise students who provide a solution even if it isn't fully correct. Discuss its merits and potential pitfalls.
 
 ```js
-var map = function(arr, cb) {
-  var newArr = [];
+const map = function(arr, cb) {
+  const newArr = [];
 
-  for (var i = 0; i < arr.length; ++i) {
-    var newNum = cb(arr[i]);
+  for (let i = 0; i < arr.length; ++i) {
+    const newNum = cb(arr[i]);
     newArr.push(newNum);
   }
 

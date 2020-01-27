@@ -6,14 +6,14 @@
 // Create and return a new array that is the sum of the numbers of the two provided arrays
 // Solve this problem without type coercion, ie don't join the array into a string
 
-var sumArrayDigits = function(arr1, arr2) {
-  var sum = [];
-  var carryOver = 0;
-  var idx1 = arr1.length - 1;
-  var idx2 = arr2.length - 1;
+const sumArrayDigits = function(arr1, arr2) {
+  const sum = [];
+  const carryOver = 0;
+  const idx1 = arr1.length - 1;
+  const idx2 = arr2.length - 1;
 
   while (idx1 >= 0 && idx2 >= 0) {
-    var currentSum = arr1[idx1] + arr2[idx2] + carryOver;
+    const currentSum = arr1[idx1] + arr2[idx2] + carryOver;
     carryOver = 0;
 
     if (currentSum > 9) {
@@ -28,7 +28,7 @@ var sumArrayDigits = function(arr1, arr2) {
   }
 
   while (idx1 >= 0) {
-    var currentSum = arr1[idx1] + carryOver;
+    const currentSum = arr1[idx1] + carryOver;
     carryOver = 0;
 
     if (currentSum > 9) {
@@ -42,7 +42,7 @@ var sumArrayDigits = function(arr1, arr2) {
   }
 
   while (idx2 >= 0) {
-    var currentSum = arr2[idx2] + carryOver;
+    const currentSum = arr2[idx2] + carryOver;
     carryOver = 0;
 
     if (currentSum > 9) {

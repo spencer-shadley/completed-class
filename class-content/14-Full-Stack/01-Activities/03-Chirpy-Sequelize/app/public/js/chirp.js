@@ -7,7 +7,7 @@ $('#chirp-submit').on('click', function(event) {
   event.preventDefault();
 
   // Make a newChirp object
-  var newChirp = {
+  const newChirp = {
     author: $('#author')
       .val()
       .trim(),
@@ -23,7 +23,7 @@ $('#chirp-submit').on('click', function(event) {
   $.post('/api/new', newChirp)
     // On success, run the following code
     .then(function() {
-      var row = $('<div>');
+      const row = $('<div>');
       row.addClass('chirp');
 
       row.append('<p>' + newChirp.author + ' chirped: </p>');
@@ -43,8 +43,8 @@ $('#chirp-submit').on('click', function(event) {
 // When the page loads, grab all of our chirps
 $.get('/api/all', function(data) {
   if (data.length !== 0) {
-    for (var i = 0; i < data.length; ++i) {
-      var row = $('<div>');
+    for (let i = 0; i < data.length; ++i) {
+      const row = $('<div>');
       row.addClass('chirp');
 
       row.append('<p>' + data[i].author + ' chirped.. </p>');

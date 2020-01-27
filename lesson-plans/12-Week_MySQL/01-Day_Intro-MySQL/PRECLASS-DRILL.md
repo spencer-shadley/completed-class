@@ -24,10 +24,10 @@ Output: [-2, -4, -6]
 - Be sure to praise students who provide a solution even if it isn't fully correct. Discuss its merits and potential pitfalls.
 
 ```js
-var double = function(arr) {
-  var newArr = [];
+const double = function(arr) {
+  const newArr = [];
 
-  for (var i = 0; i < arr.length; ++i) {
+  for (let i = 0; i < arr.length; ++i) {
     const newNum = arr[i] * 2;
     newArr.push(newNum);
   }

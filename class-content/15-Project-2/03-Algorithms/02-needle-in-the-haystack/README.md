@@ -13,8 +13,8 @@ In this activity you will be writing code to create a function that takes two st
     - For example, given the following strings:
 
     ```js
-    var str1 = 'JavaScript';
-    var str2 = 'Scr';
+    const str1 = 'JavaScript';
+    const str2 = 'Scr';
     ```
 
     - The following number should be returned:
@@ -28,8 +28,8 @@ In this activity you will be writing code to create a function that takes two st
     - If the second string is empty, return `0`. For example:
 
     ```js
-    var str1 = 'algorithms';
-    var str2 = '';
+    const str1 = 'algorithms';
+    const str2 = '';
     ```
 
     - The following number should be returned:

@@ -4,18 +4,18 @@ $(document).ready(function() {
   /* global moment */
 
   // blogContainer holds all of our posts
-  var blogContainer = $('.blog-container');
-  var postCategorySelect = $('#category');
+  const blogContainer = $('.blog-container');
+  const postCategorySelect = $('#category');
   // Click events for the edit and delete buttons
   $(document).on('click', 'button.delete', handlePostDelete);
   $(document).on('click', 'button.edit', handlePostEdit);
   // Variable to hold our posts
-  var posts;
+  const posts;
 
   // The code below handles the case where we want to get blog posts for a specific author
   // Looks for a query param in the url for author_id
-  var url = window.location.search;
-  var authorId;
+  const url = window.location.search;
+  const authorId;
   if (url.indexOf('?author_id=') !== -1) {
     authorId = url.split('=')[1];
     getPosts(authorId);
@@ -55,8 +55,8 @@ $(document).ready(function() {
   // InitializeRows handles appending all of our constructed post HTML inside blogContainer
   function initializeRows() {
     blogContainer.empty();
-    var postsToAdd = [];
-    for (var i = 0; i < posts.length; ++i) {
+    const postsToAdd = [];
+    for (let i = 0; i < posts.length; ++i) {
       postsToAdd.push(createNewRow(posts[i]));
     }
     blogContainer.append(postsToAdd);
@@ -64,21 +64,21 @@ $(document).ready(function() {
 
   // This function constructs a post's HTML
   function createNewRow(post) {
-    var formattedDate = new Date(post.createdAt);
+    const formattedDate = new Date(post.createdAt);
     formattedDate = moment(formattedDate).format('MMMM Do YYYY, h:mm:ss a');
-    var newPostCard = $('<div>');
+    const newPostCard = $('<div>');
     newPostCard.addClass('card');
-    var newPostCardHeading = $('<div>');
+    const newPostCardHeading = $('<div>');
     newPostCardHeading.addClass('card-header');
-    var deleteBtn = $('<button>');
+    const deleteBtn = $('<button>');
     deleteBtn.text('x');
     deleteBtn.addClass('delete btn btn-danger');
-    var editBtn = $('<button>');
+    const editBtn = $('<button>');
     editBtn.text('EDIT');
     editBtn.addClass('edit btn btn-info');
-    var newPostTitle = $('<h2>');
-    var newPostDate = $('<small>');
-    var newPostAuthor = $('<h5>');
+    const newPostTitle = $('<h2>');
+    const newPostDate = $('<small>');
+    const newPostAuthor = $('<h5>');
     newPostAuthor.text(
       'Written by: Author name display is in next activity when we learn joins!'
     );
@@ -87,9 +87,9 @@ $(document).ready(function() {
       color: 'blue',
       'margin-top': '-10px'
     });
-    var newPostCardBody = $('<div>');
+    const newPostCardBody = $('<div>');
     newPostCardBody.addClass('card-body');
-    var newPostBody = $('<p>');
+    const newPostBody = $('<p>');
     newPostTitle.text(post.title + ' ');
     newPostBody.text(post.body);
     newPostDate.text(formattedDate);
@@ -107,7 +107,7 @@ $(document).ready(function() {
 
   // This function figures out which post we want to delete and then calls deletePost
   function handlePostDelete() {
-    var currentPost = $(this)
+    const currentPost = $(this)
       .parent()
       .parent()
       .data('post');
@@ -116,7 +116,7 @@ $(document).ready(function() {
 
   // This function figures out which post we want to edit and takes it to the appropriate url
   function handlePostEdit() {
-    var currentPost = $(this)
+    const currentPost = $(this)
       .parent()
       .parent()
       .data('post');
@@ -125,13 +125,13 @@ $(document).ready(function() {
 
   // This function displays a message when there are no posts
   function displayEmpty(id) {
-    var query = window.location.search;
-    var partial = '';
+    const query = window.location.search;
+    const partial = '';
     if (id) {
       partial = ' for Author #' + id;
     }
     blogContainer.empty();
-    var messageH2 = $('<h2>');
+    const messageH2 = $('<h2>');
     messageH2.css({ 'text-align': 'center', 'margin-top': '50px' });
     messageH2.html(
       'No posts yet' +

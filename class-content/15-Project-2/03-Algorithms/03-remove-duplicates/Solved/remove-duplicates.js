@@ -4,10 +4,10 @@
 // Do not create a new array, instead modify the original array
 // There is no need to return anything from this function
 
-var removeDuplicates = function(nums) {
-  for (var i = 0; i < nums.length; ++i) {
-    var num = nums[i];
-    var nextNum = nums[i + 1];
+const removeDuplicates = function(nums) {
+  for (let i = 0; i < nums.length; ++i) {
+    const num = nums[i];
+    const nextNum = nums[i + 1];
 
     if (num === nextNum) {
       nums.splice(i, 1);

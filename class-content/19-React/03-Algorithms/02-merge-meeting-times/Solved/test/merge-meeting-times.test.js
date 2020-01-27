@@ -1,37 +1,37 @@
 'use strict';
 
-var expect = chai.expect;
+const expect = chai.expect;
 
 describe('mergeMeetingTimes', function() {
   it(`should return [[ 1, 4 ]] if given the array [[ 1, 3 ], [ 2, 4 ]]`, function() {
-    var arr = [
+    const arr = [
       [1, 3],
       [2, 4]
     ];
 
-    var result = mergeMeetingTimes(arr);
+    const result = mergeMeetingTimes(arr);
 
     expect(result).to.eql([[1, 4]]);
   });
 
   it(`should return [[ 5, 8 ]] if given the array [[ 5, 6 ], [ 6, 8 ]]`, function() {
-    var arr = [
+    const arr = [
       [5, 6],
       [6, 8]
     ];
 
-    var result = mergeMeetingTimes(arr);
+    const result = mergeMeetingTimes(arr);
 
     expect(result).to.eql([[5, 8]]);
   });
 
   it(`should return [[ 1, 8 ]] if given the array [[ 1, 8 ], [ 2, 5 ]]`, function() {
-    var arr = [
+    const arr = [
       [1, 8],
       [2, 5]
     ];
 
-    var result = mergeMeetingTimes(arr);
+    const result = mergeMeetingTimes(arr);
 
     expect(result).to.eql([[1, 8]]);
   });
@@ -41,13 +41,13 @@ describe('mergeMeetingTimes', function() {
     [ 1, 4 ],
     [ 6, 8 ]
   ]`, function() {
-    var arr = [
+    const arr = [
       [5, 8],
       [1, 4],
       [6, 8]
     ];
 
-    var result = mergeMeetingTimes(arr);
+    const result = mergeMeetingTimes(arr);
 
     expect(result).to.eql([
       [1, 4],
@@ -62,7 +62,7 @@ describe('mergeMeetingTimes', function() {
     [ 9, 10 ],
     [ 10, 12 ]
   ]`, function() {
-    var arr = [
+    const arr = [
       [1, 10],
       [2, 5],
       [6, 8],
@@ -70,7 +70,7 @@ describe('mergeMeetingTimes', function() {
       [10, 12]
     ];
 
-    var result = mergeMeetingTimes(arr);
+    const result = mergeMeetingTimes(arr);
 
     expect(result).to.eql([[1, 12]]);
   });

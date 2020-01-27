@@ -2,8 +2,8 @@
 
 // Write a function that takes in a Roman Numeral string and returns its integer form
 
-var romanToInt = function(str) {
-  var numerals = {
+const romanToInt = function(str) {
+  const numerals = {
     I: 1,
     V: 5,
     X: 10,
@@ -13,14 +13,14 @@ var romanToInt = function(str) {
     M: 1000
   };
 
-  var result = 0;
+  const result = 0;
 
-  for (var i = 0; i < str.length; ++i) {
-    var currentNumeral = str[i];
-    var nextNumeral = str[i + 1];
+  for (let i = 0; i < str.length; ++i) {
+    const currentNumeral = str[i];
+    const nextNumeral = str[i + 1];
 
-    var currentValue = numerals[currentNumeral];
-    var nextValue = numerals[nextNumeral];
+    const currentValue = numerals[currentNumeral];
+    const nextValue = numerals[nextNumeral];
 
     if (currentValue < nextValue) {
       result -= currentValue;

@@ -10,14 +10,14 @@ class Inspire extends Command
     /**
      * The name and signature of the console command.
      *
-     * @var string
+     * @const string
      */
     protected $signature = 'inspire';
 
     /**
      * The console command description.
      *
-     * @var string
+     * @const string
      */
     protected $description = 'Display an inspiring quote';
 

@@ -2,8 +2,8 @@
 
 // Write a function that takes in an integer and returns it as a Roman numeral string
 
-var intToRoman = function(num) {
-  var result = '';
+const intToRoman = function(num) {
+  const result = '';
 
   while (num > 0) {
     if (num >= 1000) {

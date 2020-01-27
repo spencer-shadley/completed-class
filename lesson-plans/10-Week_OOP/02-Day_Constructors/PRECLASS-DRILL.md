@@ -29,8 +29,8 @@ Error
 - Be sure to praise students who provide a solution even if it isn't fully correct. Discuss its merits and potential pitfalls.
 
 ```js
-var getNegative = function(numString) {
-  var negNum = numString * -1;
+const getNegative = function(numString) {
+  const negNum = numString * -1;
 
   if (isNaN(negNum)) {
     throw 'input must be coercible to a number';

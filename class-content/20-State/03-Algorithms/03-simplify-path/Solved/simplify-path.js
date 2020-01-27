@@ -2,12 +2,12 @@
 
 // Write a function that takes in an absolute file path and simplifies it
 
-var simplifyPath = function(path) {
-  var pathArr = path.split('/');
-  var stack = [];
+const simplifyPath = function(path) {
+  const pathArr = path.split('/');
+  const stack = [];
 
-  for (var i = 0; i < pathArr.length; ++i) {
-    var section = pathArr[i];
+  for (let i = 0; i < pathArr.length; ++i) {
+    const section = pathArr[i];
 
     if (!section) {
       continue;

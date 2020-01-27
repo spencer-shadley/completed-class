@@ -13,7 +13,7 @@ In this activity you will be writing code to create a function that takes in a s
     - For example, given the following string:
 
     ```js
-    var str = '00110011'; // 4 0s, 4 1s
+    const str = '00110011'; // 4 0s, 4 1s
     ```
 
     - The following should be returned:
@@ -25,7 +25,7 @@ In this activity you will be writing code to create a function that takes in a s
     - Given the following string:
 
     ```js
-    var str = '11110'; // 4 1s, 1 0
+    const str = '11110'; // 4 1s, 1 0
     ```
 
     - The following should be returned:

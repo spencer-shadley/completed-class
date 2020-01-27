@@ -13,7 +13,7 @@ In this activity you will be writing code to create a function that takes in a s
     - For example, given the following string:
 
     ```js
-    var str = '( )';
+    const str = '( )';
     ```
 
     - The following should be returned:
@@ -25,7 +25,7 @@ In this activity you will be writing code to create a function that takes in a s
     - If given the following string:
 
     ```js
-    var str = '{ } [ ( [] ) ]';
+    const str = '{ } [ ( [] ) ]';
     ```
 
     - The following should be returned:
@@ -37,7 +37,7 @@ In this activity you will be writing code to create a function that takes in a s
     - If given the following string:
 
     ```js
-    var str = '( [ ) ]';
+    const str = '( [ ) ]';
     ```
 
     - The following should be returned:

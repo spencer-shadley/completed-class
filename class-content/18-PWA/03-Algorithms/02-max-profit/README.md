@@ -13,7 +13,7 @@ In this activity you will be writing code to create a function that takes in an 
     - For example, given the following array:
 
     ```js
-    var arr = [1, 6, 7, 9];
+    const arr = [1, 6, 7, 9];
     ```
 
     - The following should be returned:
@@ -27,7 +27,7 @@ In this activity you will be writing code to create a function that takes in an 
     - Given the following array:
 
     ```js
-    var arr = [9, 7, 4, 1];
+    const arr = [9, 7, 4, 1];
     ```
 
     - The following should be returned:

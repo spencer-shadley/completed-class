@@ -4,12 +4,12 @@
 // Return true if there are an equal number of 0s and 1s
 // Else return false
 
-var zeroesAndOnes = function(str) {
-  var zeroes = 0;
-  var ones = 0;
+const zeroesAndOnes = function(str) {
+  const zeroes = 0;
+  const ones = 0;
 
-  for (var i = 0; i < str.length; ++i) {
-    var num = str[i];
+  for (let i = 0; i < str.length; ++i) {
+    const num = str[i];
 
     if (num === '0') {
       zeroes++;

@@ -1,9 +1,9 @@
 'use strict';
 
-var express = require('express');
+const express = require('express');
 
-var app = express();
-var PORT = process.env.PORT || 3000;
+const app = express();
+const PORT = process.env.PORT || 3000;
 
 app.use(express.static('client'));
 app.use(express.urlencoded({ extended: true }));

@@ -27,10 +27,10 @@ Output: 4
 - Be sure to praise students who provide a solution even if it isn't fully correct. Discuss its merits and potential pitfalls.
 
 ```js
-var reverseDigit = function(num) {
-  var newNum = '';
-  var numStr = num.toString();
-  for (var i = numStr.length - 1; i >= 0; --i) {
+const reverseDigit = function(num) {
+  const newNum = '';
+  const numStr = num.toString();
+  for (const i = numStr.length - 1; i >= 0; --i) {
     newNum += numStr[i];
   }
 
@@ -39,9 +39,9 @@ var reverseDigit = function(num) {
 ```
 
 ```js
-var reverseDigit = function(num) {
-  var newNum = 0;
-  var lastDigit;
+const reverseDigit = function(num) {
+  const newNum = 0;
+  const lastDigit;
   while (num > 0) {
     lastDigit = num % 10;
     newNum = newNum * 10 + lastDigit;

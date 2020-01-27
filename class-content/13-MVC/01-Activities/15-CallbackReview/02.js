@@ -1,14 +1,14 @@
 'use strict';
 
-var sum = function(numOne, numTwo) {
+const sum = function(numOne, numTwo) {
   return numOne + numTwo;
 };
 
-var multiply = function(numOne, numTwo) {
+const multiply = function(numOne, numTwo) {
   return numOne * numTwo;
 };
 
-var addCallBacks = function(functionOne, functionTwo) {
+const addCallBacks = function(functionOne, functionTwo) {
   return functionOne(6, 2) + functionTwo(6, 3);
 };
 

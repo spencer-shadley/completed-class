@@ -1,14 +1,14 @@
 'use strict';
 
-var mongoose = require('mongoose');
-var db = require('../models');
+const mongoose = require('mongoose');
+const db = require('../models');
 
 mongoose.connect(
   process.env.MONGODB_URI || 'mongodb://localhost/imageperformance',
   { useNewUrlParser: true }
 );
 
-var imageSeed = [
+const imageSeed = [
   {
     description: 'Day At The Library',
     image: '/assets/images/adriana-velasquez-110184-unsplash.jpg',

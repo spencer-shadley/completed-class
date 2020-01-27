@@ -2,18 +2,18 @@
 
 $(document).ready(function() {
   // Getting jQuery references to the post body, title, form, and author select
-  var bodyInput = $('#body');
-  var titleInput = $('#title');
-  var cmsForm = $('#cms');
-  var authorSelect = $('#author');
+  const bodyInput = $('#body');
+  const titleInput = $('#title');
+  const cmsForm = $('#cms');
+  const authorSelect = $('#author');
   // Adding an event listener for when the form is submitted
   $(cmsForm).on('submit', handleFormSubmit);
   // Gets the part of the url that comes after the "?" (which we have if we're updating a post)
-  var url = window.location.search;
-  var postId;
-  var authorId;
+  const url = window.location.search;
+  const postId;
+  const authorId;
   // Sets a flag for whether or not we're updating a post to be false initially
-  var updating = false;
+  const updating = false;
 
   // If we have this section in our url, we pull out the post id from the url
   // In '?post_id=1', postId is 1
@@ -41,7 +41,7 @@ $(document).ready(function() {
       return;
     }
     // Constructing a newPost object to hand to the database
-    var newPost = {
+    const newPost = {
       title: titleInput.val().trim(),
       body: bodyInput.val().trim(),
       AuthorId: authorSelect.val()
@@ -66,7 +66,7 @@ $(document).ready(function() {
 
   // Gets post data for the current post if we're editing, or if we're adding to an author's existing posts
   function getPostData(id, type) {
-    var queryUrl;
+    const queryUrl;
     switch (type) {
       case 'post':
         queryUrl = '/api/posts/' + id;
@@ -102,8 +102,8 @@ $(document).ready(function() {
       window.location.href = '/authors';
     }
     $('.hidden').removeClass('hidden');
-    var rowsToAdd = [];
-    for (var i = 0; i < data.length; ++i) {
+    const rowsToAdd = [];
+    for (let i = 0; i < data.length; ++i) {
       rowsToAdd.push(createAuthorRow(data[i]));
     }
     authorSelect.empty();
@@ -115,7 +115,7 @@ $(document).ready(function() {
 
   // Creates the author options in the dropdown
   function createAuthorRow(author) {
-    var listOption = $('<option>');
+    const listOption = $('<option>');
     listOption.attr('value', author.id);
     listOption.text(author.name);
     return listOption;

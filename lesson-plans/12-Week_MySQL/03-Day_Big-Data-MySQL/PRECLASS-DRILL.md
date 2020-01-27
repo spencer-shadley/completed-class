@@ -31,11 +31,11 @@ Output: false
 - Be sure to praise students who provide a solution even if it isn't fully correct. Discuss its merits and potential pitfalls.
 
 ```js
-var any = function(arr, cb) {
-  var isTrue = false;
+const any = function(arr, cb) {
+  const isTrue = false;
 
-  for (var i = 0; i < arr.length; ++i) {
-    var cbOutput = cb(arr[i]);
+  for (let i = 0; i < arr.length; ++i) {
+    const cbOutput = cb(arr[i]);
     if (cbOutput) {
       isTrue = cbOutput;
     }

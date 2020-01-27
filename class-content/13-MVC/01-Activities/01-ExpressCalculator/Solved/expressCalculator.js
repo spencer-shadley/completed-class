@@ -1,24 +1,24 @@
 'use strict';
 
 // Dependencies
-var express = require('express');
+const express = require('express');
 
 // Set the port of our application
 // process.env.PORT lets the port be set by Heroku
-var PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8080;
 
 // Create express app instance.
-var app = express();
+const app = express();
 
 // Routes
 app.get('/:operation/:firstNum/:secondNum', function(req, res) {
   // Parameters are received from the URL
-  var operation = req.params.operation;
+  const operation = req.params.operation;
 
   // Parameters are converted to integers
-  var firstNum = parseInt(req.params.firstNum);
-  var secondNum = parseInt(req.params.secondNum);
-  var result;
+  const firstNum = parseInt(req.params.firstNum);
+  const secondNum = parseInt(req.params.secondNum);
+  const result;
 
   // Switch statement chooses operation based on the operation parameter.
   switch (operation) {

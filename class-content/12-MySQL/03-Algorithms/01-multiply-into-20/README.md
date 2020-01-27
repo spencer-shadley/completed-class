@@ -13,7 +13,7 @@ In this activity you will be writing code to create a function that takes an arr
     - For example, given the following array:
 
     ```js
-    var arr = [3, 4, 5, 7, 9]; // 4 * 5 === 20
+    const arr = [3, 4, 5, 7, 9]; // 4 * 5 === 20
     ```
 
     - The following should be returned:
@@ -25,7 +25,7 @@ In this activity you will be writing code to create a function that takes an arr
     - Given the following array:
 
     ```js
-    var arr = [20, -20, 18, 2, 3, 4]; // no two numbers multiply into 20
+    const arr = [20, -20, 18, 2, 3, 4]; // no two numbers multiply into 20
     ```
 
     - The following should be returned:
