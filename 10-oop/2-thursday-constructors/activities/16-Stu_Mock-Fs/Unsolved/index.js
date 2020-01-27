@@ -4,8 +4,10 @@ const FileIO = require('./fileIO');
 
 const fileIO = new FileIO();
 
-fileIO.write('message.txt', 'Hello World!');
+const fileName = 'message.txt';
 
-const message = fileIO.read('message.txt');
+fileIO.write(fileName, 'Hello World!');
+
+const message = fileIO.read(fileName);
 
 console.log(message);
