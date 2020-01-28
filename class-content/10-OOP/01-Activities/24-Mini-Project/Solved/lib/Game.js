@@ -10,6 +10,7 @@ class Game {
   constructor() {
     this.guessesLeft = 0;
   }
+
   // Sets the guesses to 10 and gets the next word
   play() {
     this.guessesLeft = 10;
@@ -68,32 +69,28 @@ class Game {
   }
 
   // Prompts the user for a letter
-  askForLetter() {
-    return inquirer
-      .prompt([
-        {
-          type: 'input',
-          name: 'choice',
-          message: 'Guess a letter!',
-          validate: function(val) {
-            // The users guess must be a number or letter
-            return /[a-z1-9]/gi.test(val);
-          }
-        }
-      ])
-      .then(val => {
-        // If the user's guess is in the current word, log that they chose correctly
-        const didGuessCorrectly = this.currentWord.guessLetter(val.choice);
-        if (didGuessCorrectly) {
-          console.log(chalk.green('\nCORRECT!!!\n'));
+  async askForLetter() {
+    const val = await inquirer.prompt([
+      {
+        type: 'input',
+        name: 'choice',
+        message: 'Guess a letter!',
+        // The users guess must be a number or letter
+        validate: val => /[a-z1-9]/gi.test(val)
+      }
+    ]);
 
-          // Otherwise decrement `guessesLeft`, and let the user know how many guesses they have left
-        } else {
-          this.guessesLeft--;
-          console.log(chalk.red('\nINCORRECT!!!\n'));
-          console.log(this.guessesLeft + ' guesses remaining!!!\n');
-        }
-      });
+    // If the user's guess is in the current word, log that they chose correctly
+    const didGuessCorrectly = this.currentWord.guessLetter(val.choice);
+    if (didGuessCorrectly) {
+      console.log(chalk.green('\nCORRECT!!!\n'));
+
+      // Otherwise decrement `guessesLeft`, and let the user know how many guesses they have left
+    } else {
+      --this.guessesLeft;
+      console.log(chalk.red('\nINCORRECT!!!\n'));
+      console.log(this.guessesLeft + ' guesses remaining!!!\n');
+    }
   }
 
   // Logs goodbye and exits the node app
