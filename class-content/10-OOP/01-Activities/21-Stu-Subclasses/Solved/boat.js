@@ -8,13 +8,15 @@ class Boat extends Vehicle {
     this.type = type;
     this.crew = crew;
   }
+
   useHorn() {
     console.log(this.sound);
   }
+
   crewSoundOff() {
-    this.crew.forEach(member => {
-      console.log(`${member.name} reporting for duty!`);
-    });
+    this.crew.forEach(member =>
+      console.log(`${member.name} reporting for duty!`)
+    );
   }
 }
 
