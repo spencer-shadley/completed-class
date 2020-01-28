@@ -22,4 +22,6 @@ In this activity we will extend basic vehicle classes with additional functional
 
 ### Bonus
 
-@TODO
+- Add more vehicle types
+
+- Continue subclassing off of boat or car
