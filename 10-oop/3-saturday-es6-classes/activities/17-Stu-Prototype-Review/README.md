@@ -6,7 +6,7 @@ In this activity we will update the TV constructor function to be able to search
 
 - Open [tv.js](Unsolved/tv.js) and update the constructor function's `findActor` method. It should use the `axios` package to search the TV Maze API using the provided URL.
 
-- Once the data has been retrieved from the API,grab only the first result (it should be an array of JSON objects).
+- Once the data has been retrieved from the API,grab only the first result (it should be an array of JSON objects.)
 
 - Save the following information to the `log.txt` file using the `fs.appendFile` method:
 
