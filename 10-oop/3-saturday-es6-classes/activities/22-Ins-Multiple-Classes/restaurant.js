@@ -3,10 +3,11 @@
 const Order = require('./order');
 
 class Restaurant {
-  constructor(name) {
+  constructor(name, items) {
     this.name = name;
     this.orders = [];
     this.revenue = 0;
+    this.items = items;
   }
 
   takeOrder(order) {
@@ -34,8 +35,10 @@ class Restaurant {
     }, 1000);
   }
 
-  processItems(items) {
-    const orders = items.map(item => new Order(item));
+  // when opening make sure we have at least one
+  // of every item ready to go
+  open() {
+    const orders = this.items.map(item => new Order(item));
     orders.forEach(order => this.takeOrder(order));
     this.prepareOrders();
   }
