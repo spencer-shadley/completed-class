@@ -2,14 +2,17 @@
 
 const axios = require('axios');
 const fs = require('fs');
+const util = require('util');
+
+const fsAppendFile = util.promisify(fs.appendFile);
 
 // Create the TV constructor
 const TV = function() {};
-
-TV.prototype.findActor = function(actor) {
+TV.prototype.findActor = async actor => {
   const URL = 'http://api.tvmaze.com/search/people?q=' + actor;
 
-  axios.get(URL).then(response => {
+  try {
+    const response = await axios.get(URL);
     const actorData = [
       'Name: ' + response.data[0].person.name,
       'Birthday: ' + response.data[0].person.birthday,
@@ -19,34 +22,32 @@ TV.prototype.findActor = function(actor) {
       '-'.repeat(60)
     ].join('\n\n');
 
-    fs.appendFile('log.txt', actorData, err => {
-      if (err) {
-        throw err;
-      }
-      console.log(actorData);
-    });
-  });
+    await fsAppendFile('log.txt', actorData);
+    console.log(actorData);
+  } catch (err) {
+    console.error(err);
+  }
 };
 
-TV.prototype.findShow = function(show) {
+TV.prototype.findShow = async show => {
   const URL = 'http://api.tvmaze.com/singlesearch/shows?q=' + show;
 
-  axios.get(URL).then(function(response) {
+  try {
+    const response = await axios.get(URL);
     const showData = [
       'Show: ' + response.data.name,
       'Genre(s): ' + response.data.genres.join(', '),
-      'Rating: ' + respon6se.data.rating.average,
+      'Rating: ' + response.data.rating.average,
       'Network: ' + response.data.network.name,
       'Summary: ' + response.data.summary,
       '-'.repeat(60)
     ].join('\n\n');
 
-    fs.appendFile('log.txt', showData, err => {
-      if (err) throw err;
-
-      console.log(showData);
-    });
-  });
+    await fsAppendFile('log.txt', showData);
+    console.log(showData);
+  } catch (err) {
+    console.error(err);
+  }
 };
 
 module.exports = TV;
