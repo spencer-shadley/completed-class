@@ -11,7 +11,7 @@ class Store {
     this.stock.forEach(item => {
       if (item.name === name) {
         if (item.count > 0) {
-          item.count--;
+          --item.count;
           this.revenue += item.price;
           console.log(`Purchased ${item.name} for ${item.price}`);
         } else {

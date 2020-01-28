@@ -50,23 +50,21 @@ class Game {
   }
 
   // Asks the user if they want to play again after running out of guessesLeft
-  askToPlayAgain() {
-    inquirer
-      .prompt([
-        {
-          type: 'confirm',
-          name: 'choice',
-          message: 'Play Again?'
-        }
-      ])
-      .then(val => {
-        // If the user says yes to another game, play again, otherwise quit the game
-        if (val.choice) {
-          this.play();
-        } else {
-          this.quit();
-        }
-      });
+  async askToPlayAgain() {
+    const val = await inquirer.prompt([
+      {
+        type: 'confirm',
+        name: 'choice',
+        message: 'Play Again?'
+      }
+    ]);
+
+    // If the user says yes to another game, play again, otherwise quit the game
+    if (val.choice) {
+      this.play();
+    } else {
+      this.quit();
+    }
   }
 
   // Prompts the user for a letter
