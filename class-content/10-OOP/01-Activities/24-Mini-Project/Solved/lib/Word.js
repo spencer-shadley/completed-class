@@ -6,47 +6,41 @@ class Word {
     // word.split - splits word into array of letters
     // .map - instantiate a new `Letter` for each character and return an array
     // referred to with the instance variable, `letters`
-    this.letters = word.split('').map(function(char) {
-      return new Letter(char);
-    });
+    this.letters = word.split('').map(char => new Letter(char));
   }
 
+  /**
+   * iterate over each letter
+   * return the solution for each to form an array of solved letters
+   * create a string from the array of solved letters
+   */
   getSolution() {
-    return this.letters
-      .map(function(letter) {
-        // iterate over each letter
-        return letter.getSolution(); // return the solution for each to form an array of solved letters
-      })
-      .join(''); // create a string from the array of solved letters
+    return this.letters.map(letter => letter.getSolution()).join('');
   }
 
   // setting `toString()` as a method lets us concatenate it like we would a string!
   toString() {
-    return this.letters.join(' '); // see Letter.prototype.toString in Letter.js
+    // see Letter.prototype.toString in Letter.js
+    return this.letters.join(' ');
   }
 
+  // Checks to see if any of the letters in the array match the user's guess and updates `foundLetter`
   guessLetter(char) {
-    // Checks to see if any of the letters in the array match the user's guess and updates `foundLetter`
-    let foundLetter = false;
-    this.letters.forEach(function(letter) {
+    for (const letter of this.letters) {
       if (letter.guess(char)) {
-        foundLetter = true;
+        // Print the word guessed so far--because we set the method for toString,
+        //  JavaScript will automatically concatenate this even if we don't call toString
+        console.log(`'\n'${this}'\n'`);
+        return true;
       }
-    });
-
-    // Print the word guessed so far--because we set the method for toString,
-    //  JavaScript will automatically concatenate this even if we don't call toString
-    console.log('\n' + this + '\n');
-    // return whether we found a letter
-    return foundLetter;
+    }
+    return false;
   }
 
   // Returns true if all letters in the word have been guessed
-  guessedCorrectly() {
+  didGuessCorrectly() {
     // The `every` method returns true if the callback function returns true for every element in the array
-    return this.letters.every(function(letter) {
-      return letter.visible;
-    });
+    return this.letters.every(letter => letter.visible);
   }
 }
 
