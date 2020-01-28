@@ -8,6 +8,7 @@ const fsAppendFile = util.promisify(fs.appendFile);
 
 // Create the TV constructor
 const TV = function() {};
+
 TV.prototype.findActor = async actor => {
   const URL = 'http://api.tvmaze.com/search/people?q=' + actor;
 

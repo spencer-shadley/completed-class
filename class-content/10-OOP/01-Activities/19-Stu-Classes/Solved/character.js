@@ -23,6 +23,7 @@ class Character {
     console.log(`${this.name} has ${this.hitPoints} hit points remaining!`);
     console.log('------------');
   }
+
   // method which determines whether or not a character's "hitpoints" are less then zero
   // and returns true or false depending upon the outcome
   isAlive() {
@@ -51,9 +52,9 @@ grace.printStats();
 dijkstra.printStats();
 
 const turnInterval = setInterval(() => {
-  // If either character is not alive, end the game
   graceTurn = !graceTurn;
 
+  // If either character is not alive, end the game
   if (!grace.isAlive() || !dijkstra.isAlive()) {
     clearInterval(turnInterval);
     console.log('Game over!');
@@ -64,4 +65,4 @@ const turnInterval = setInterval(() => {
     dijkstra.attack(grace);
     grace.printStats();
   }
-}, 2000);
+}, 1000);
