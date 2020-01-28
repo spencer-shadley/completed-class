@@ -25,6 +25,6 @@ if (search === 'show') {
   console.log('Searching for TV Show');
   tv.findShow(term);
 } else {
-  tv.findActor(term);
   console.log('Searching for TV Actor');
+  tv.findActor(term);
 }
