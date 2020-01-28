@@ -1,5 +1,7 @@
 'use strict';
 
+const Order = require('./order');
+
 class Restaurant {
   constructor(name) {
     this.name = name;
@@ -30,6 +32,12 @@ class Restaurant {
         console.log(`#${order.id} has been prepared.`);
       }
     }, 1000);
+  }
+
+  processItems(items) {
+    const orders = items.map(item => new Order(item));
+    orders.forEach(order => this.takeOrder(order));
+    this.prepareOrders();
   }
 }
 
