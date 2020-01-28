@@ -11,8 +11,6 @@ store.processProductSale('Action Figure');
 store.processProductSale('Rare Toy');
 store.processProductSale('Action Figure');
 
-// store.processProductSale("Rare Toy");
-
 // store.replenishStock("Rare Toy", 2);
 // store.processProductSale("Rare Toy");
 
