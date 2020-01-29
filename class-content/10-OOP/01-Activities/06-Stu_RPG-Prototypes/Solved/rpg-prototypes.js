@@ -42,7 +42,7 @@ Character.prototype.attack = function(character2) {
 
 // method which increases this character's stats when called
 Character.prototype.levelUp = function() {
-  this.age += 1;
+  ++this.age;
   this.strength += 5;
   this.hitpoints += 25;
 };
