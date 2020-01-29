@@ -10,6 +10,7 @@ function Character(name, profession, gender, age, strength, hitpoints) {
   this.strength = strength;
   this.hitpoints = hitpoints;
 }
+
 // method which prints all of the stats for a character
 Character.prototype.printStats = function() {
   console.log(`
