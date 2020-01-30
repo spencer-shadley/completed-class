@@ -4,7 +4,6 @@ Write a function that takes an array of integers as an input and outputs the fir
 
 ---
 
-Ex:
 Input: [ 2, 5, 6, 3, 5 ]
 
 Output: 5

@@ -20,9 +20,7 @@ Update the `MiniBank` function to achieve the following:
 
 7. Write a `withdraw` function that takes a value and subtracts it from the `balance`.
 
-8. Return the `printBalance`, `printStatement`, `deposit`, `withdraw` functions from the `MiniBank` function.
-
-* Then, create a new `minibank` object using the `MiniBank` function.
+- Then, create a new `minibank` object using the `MiniBank` function.
 
 1. Print the `minibank` balance.
 
@@ -36,6 +34,6 @@ Update the `MiniBank` function to achieve the following:
 
 ## Bonus 🏆
 
-* Add code to throw an error if the user tries to withdraw more money than they have, or try to deposit or withdraw values that aren't positive numbers.
+- Add code to throw an error if the user tries to withdraw more money than they have, or try to deposit or withdraw values that aren't positive numbers.
 
-* Add code to return a copy of the `statement` when `getStatement` is called, rather than returning the original array.
+- Add code to return a copy of the `statement` when `getStatement` is called, rather than returning the original array.

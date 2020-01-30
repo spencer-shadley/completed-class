@@ -11,6 +11,17 @@ function Animals(raining, noise) {
   };
 }
 
+// named parameters!
+function Animal2({ raining, noise }) {
+  this.raining = raining;
+  this.noise = noise;
+  this.makeNoise = () => {
+    console.log(this.noise);
+  };
+}
+const cow = new Animal2({ raining: true, noise: 'moo' });
+cow.makeNoise();
+
 // Sets the variables "dogs" and "cats" to be animal objects and initializes them with raining and noise properties
 const dogs = new Animals(true, 'Woof!');
 const cats = new Animals(false, 'Meow!');
