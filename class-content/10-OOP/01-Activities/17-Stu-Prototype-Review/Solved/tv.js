@@ -15,11 +15,11 @@ TV.prototype.findActor = async actor => {
   try {
     const response = await axios.get(URL);
     const actorData = [
-      'Name: ' + response.data[0].person.name,
-      'Birthday: ' + response.data[0].person.birthday,
-      'Gender: ' + response.data[0].person.gender,
-      'Country: ' + response.data[0].person.country.name,
-      'URL: ' + response.data[0].person.url,
+      `Name:  ${response.data[0].person.name}`,
+      `Birthday: ${response.data[0].person.birthday}`,
+      `Gender: ${response.data[0].person.gender}`,
+      `Country: ${response.data[0].person.country.name}`,
+      `URL: ${response.data[0].person.url}`,
       '-'.repeat(60)
     ].join('\n\n');
 
