@@ -30,7 +30,7 @@ class Word {
       if (letter.guess(char)) {
         // Print the word guessed so far--because we set the method for toString,
         //  JavaScript will automatically concatenate this even if we don't call toString
-        console.log(`\n${this}\n`);
+        console.log(`''\n${this}\n`);
         return true;
       }
     }
