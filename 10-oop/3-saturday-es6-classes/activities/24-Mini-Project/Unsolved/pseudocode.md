@@ -13,3 +13,4 @@ printing
 Letter
 case-insensitivty from guess
 print
+allowed letter (symbols, for example)
