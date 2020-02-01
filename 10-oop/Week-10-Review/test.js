@@ -1,9 +1,9 @@
 // Encapsulation
 
 class Hedgehog {
-    constructor() {
+    constructor(name) {
         this.speed = 10000; 
-        this.name = 'Sonic';
+        this.name = name
         this.zoom = function () {
             // both name and speed are accessible from here
             console.log(`${this.name} zooms with the speed of ${this.speed} km per hour!`);
@@ -13,11 +13,11 @@ class Hedgehog {
     }
 }
  
-const sonic = new Hedgehog();
+const sonic = new Hedgehog('Sonic');
 
-// console.log(`Sonics name is ${sonic.name}`)
-// console.log(`Sonics speed is ${sonic.speed} km/hr`);
-// sonic.zoom();
+console.log(`The hedgehog's name is ${sonic.name}.`)
+console.log(`${sonic.name}'s speed is ${sonic.speed} km/hr`);
+sonic.zoom();
 
 freezeRay = (target) => {
     target.speed = 0;
