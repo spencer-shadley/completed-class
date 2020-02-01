@@ -9,6 +9,7 @@ class Hedgehog {
             console.log(`${this.name} zooms with the speed of ${this.speed} km per hour!`);
         };
 
+        
     }
 }
  
@@ -18,10 +19,10 @@ const sonic = new Hedgehog();
 // console.log(`Sonics speed is ${sonic.speed} km/hr`);
 // sonic.zoom();
 
-// freezeRay = (target) => {
-//     target.speed = 0;
-//     console.log(`I have frozen ${target.name}!`)
-// }
+freezeRay = (target) => {
+    target.speed = 0;
+    console.log(`I have frozen ${target.name}!`)
+}
 // freezeRay(sonic);
 // console.log(`Sonics speed is ${sonic.speed} km/hr`);
 
