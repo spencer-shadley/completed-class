@@ -14,9 +14,9 @@ class Hedgehog {
  
 const sonic = new Hedgehog();
 
-// sonic.zoom();
 // console.log(`Sonics name is ${sonic.name}`)
 // console.log(`Sonics speed is ${sonic.speed} km/hr`);
+// sonic.zoom();
 
 // freezeRay = (target) => {
 //     target.speed = 0;

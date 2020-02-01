@@ -1,5 +1,4 @@
-# Object Oriented Programming / Testing
-
+# Object Oriented Programming 
 
 ## Four pillars  (Encapsulation, Inheritance, Abstraction, Polymorphism)
 ___
