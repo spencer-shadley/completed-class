@@ -36,11 +36,11 @@ TV.prototype.findShow = async show => {
   try {
     const response = await axios.get(URL);
     const showData = [
-      'Show: ' + response.data.name,
-      'Genre(s): ' + response.data.genres.join(', '),
-      'Rating: ' + response.data.rating.average,
-      'Network: ' + response.data.network.name,
-      'Summary: ' + response.data.summary,
+      `Show: ${response.data.name}`,
+      `Genre(s): ${response.data.genres.join(', ')}`,
+      `Rating: ${response.data.rating.average}`,
+      `Network: ${response.data.network.name}`,
+      `Summary: ${response.data.summary}`,
       '-'.repeat(60)
     ].join('\n\n');
 
