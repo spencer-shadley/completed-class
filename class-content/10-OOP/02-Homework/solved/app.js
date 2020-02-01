@@ -95,9 +95,13 @@ async function addIntern() {
 }
 
 function buildTeam() {
-  fs.writeFile(outputPath, render(teamMembers), err =>
-    console.log('Finished building team!')
-  );
+  fs.writeFile(outputPath, render(teamMembers), err => {
+    if (err) {
+      console.error(err);
+    } else {
+      console.log('Finished building team!');
+    }
+  });
 }
 
 init();

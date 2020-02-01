@@ -5,6 +5,8 @@ function includes(arr, elem) {
     throw 'Unexpected input';
   }
 
+  return arr.includes(elem);
+
   for (const item of arr) {
     if (item === elem) {
       return true;
