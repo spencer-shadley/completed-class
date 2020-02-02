@@ -10,19 +10,14 @@ class Hedgehog {
         `${this.name} zooms with the speed of ${this.speed} km per hour!`
       );
     };
-    return Object.freeze({
-      speed: this.speed,
-      name: this.name,
-      zoom: this.zoom
-    });
   }
 }
 
 const sonic = new Hedgehog('Sonic');
 
-// console.log(`Sonics name is ${sonic.name}`);
-// console.log(`Sonics speed is ${sonic.speed} km/hr`);
-// sonic.zoom();
+console.log(`The hedgehog's name is ${sonic.name}.`);
+console.log(`${sonic.name}'s speed is ${sonic.speed} km/hr`);
+sonic.zoom();
 
 freezeRay = target => {
   target.speed = 0;
@@ -81,4 +76,4 @@ Person.prototype.defense = function() {
 };
 
 Kawhi.defense();
-console.log(Kawhi.job)
+console.log(Kawhi.job);
