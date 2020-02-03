@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <title>Star Wars - Express</title>
-    <!-- Latest compiled and minified CSS & JS -->
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -73,7 +72,7 @@
 
     <script>
       // Question: What does this code do?
-      $('#add-btn').on('click', function(event) {
+      $('#add-btn').on('click', event => {
         event.preventDefault();
         const newCharacter = {
           name: $('#name')
@@ -91,10 +90,12 @@
         };
 
         // Question: What does this code do??
-        $.post('/api/characters', newCharacter).then(function(data) {
-          console.log('add.html', data);
-          alert('Adding character...');
-        });
+        $.post('/api/characters', newCharacter)
+          .then(data => {
+            console.log('add.html', data);
+            alert(`Added ${data.name}!`);
+          })
+          .fail(err => console.error(err));
       });
     </script>
   </body>

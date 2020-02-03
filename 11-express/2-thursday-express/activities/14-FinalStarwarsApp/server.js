@@ -1,5 +1,7 @@
 'use strict';
 
+// video walkthrough - https://youtu.be/ygk-kNstqK0?list=PLgJ8UgkiorCmI_wKKVt5FlkTG63sQF6rr
+
 // ===========================================================
 // Dependencies
 // ===========================================================
@@ -10,6 +12,7 @@ const path = require('path');
 // =============================================================
 // Setup
 // =============================================================
+
 const app = express();
 const PORT = 3000;
 
@@ -57,7 +60,7 @@ app.get('/add', (req, res) => res.sendFile(path.join(__dirname, 'add.html')));
 // Displays all characters
 app.get('/api/characters', (req, res) => res.json(characters));
 
-// Displays a single character, or returns false
+// Displays a single character or returns false
 app.get('/api/characters/:character', (req, res) => {
   const chosen = req.params.character;
 
@@ -92,4 +95,5 @@ app.post('/api/characters', (req, res) => {
 // =============================================================
 // Listener
 // =============================================================
+
 app.listen(PORT, () => console.log('App listening on PORT ' + PORT));
