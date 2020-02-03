@@ -1,7 +1,9 @@
 'use strict';
 
+// ===========================================================
 // Dependencies
-// =============================================================
+// ===========================================================
+
 const express = require('express');
 const path = require('path');
 
@@ -22,14 +24,14 @@ const characters = [
     name: 'Yoda',
     role: 'Jedi Master',
     age: 900,
-    midichlorianCount: 2000
+    midichlorianCount: 17700
   },
   {
     routeName: 'darthmaul',
     name: 'Darth Maul',
     role: 'Sith Lord',
-    age: 200,
-    midichlorianCount: 1200
+    age: 35,
+    midichlorianCount: 12000
   },
   {
     routeName: 'obiwankenobi',
@@ -91,6 +93,4 @@ app.post('/api/characters', function(req, res) {
 
 // Starts the server to begin listening
 // =============================================================
-app.listen(PORT, function() {
-  console.log('App listening on PORT ' + PORT);
-});
+app.listen(PORT, () => console.log('App listening on PORT ' + PORT));

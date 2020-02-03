@@ -17,14 +17,14 @@ const characters = [
     name: 'Yoda',
     role: 'Jedi Master',
     age: 900,
-    midichlorianCount: 2000
+    midichlorianCount: 17700
   },
   {
     routeName: 'darthmaul',
     name: 'Darth Maul',
     role: 'Sith Lord',
-    age: 200,
-    midichlorianCount: 1200
+    age: 35,
+    midichlorianCount: 12000
   },
   {
     routeName: 'obiwankenobi',
@@ -36,9 +36,7 @@ const characters = [
 ];
 
 // Routes
-app.get('/', function(req, res) {
-  res.send('Welcome to the Star Wars Page!');
-});
+app.get('/', (req, res) => res.send('Welcome to the Star Wars Page!'));
 
 // Displays all characters
 app.get('/api/characters', function(req, res) {
@@ -71,6 +69,4 @@ app.post('/api/characters', function(req, res) {
   res.json(newCharacter);
 });
 
-app.listen(PORT, function() {
-  console.log('App listening on PORT ' + PORT);
-});
+app.listen(PORT, () => console.log('App listening on PORT ' + PORT));
