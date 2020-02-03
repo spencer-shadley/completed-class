@@ -1,6 +1,9 @@
 'use strict';
 
+// ===========================================================
 // Dependencies
+// ===========================================================
+
 const express = require('express');
 
 const app = express();
@@ -10,7 +13,10 @@ const PORT = 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+// ===========================================================
 // Data
+// ===========================================================
+
 let characters = [
   {
     routeName: 'yoda',
@@ -35,7 +41,10 @@ let characters = [
   }
 ];
 
+// ===========================================================
 // Routes
+// ===========================================================
+
 app.get('/', (req, res) => res.send('Welcome to the Star Wars Page!'));
 
 // Displays all characters
@@ -66,5 +75,9 @@ app.post('/api/characters', (req, res) => {
 
   res.json(newCharacter);
 });
+
+// ===========================================================
+// Listener
+// ===========================================================
 
 app.listen(PORT, () => console.log('App listening on PORT ' + PORT));
