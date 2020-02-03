@@ -1,3 +1,5 @@
+// Video walkthrough - https://youtu.be/ygk-kNstqK0
+
 'use strict';
 
 const express = require('express');
