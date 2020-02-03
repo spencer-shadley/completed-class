@@ -12,7 +12,7 @@ const PORT = 3000;
 // ===========================================================
 // Data
 // =================================
-const characters = [
+let characters = [
   {
     routeName: 'yoda',
     name: 'Yoda',
@@ -51,9 +51,9 @@ app.get('/api/characters/:character', (req, res) => {
   console.log(chosen);
 
   // Filter to show only the selected character
-  for (let i = 0; i < characters.length; ++i) {
-    if (chosen === characters[i].routeName) {
-      return res.json(characters[i]);
+  for (let character of characters) {
+    if (character.routeName === chosen) {
+      return res.json(character);
     }
   }
 

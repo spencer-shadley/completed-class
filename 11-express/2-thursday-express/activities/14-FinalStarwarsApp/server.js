@@ -18,7 +18,7 @@ app.use(express.json());
 
 // Star Wars Characters (DATA)
 // =============================================================
-const characters = [
+let characters = [
   {
     routeName: 'yoda',
     name: 'Yoda',
@@ -41,7 +41,7 @@ const characters = [
     midichlorianCount: 1350
   }
 ];
-
+// =============================================================
 // Routes
 // =============================================================
 
@@ -63,9 +63,9 @@ app.get('/api/characters/:character', (req, res) => {
 
   console.log(chosen);
 
-  for (let i = 0; i < characters.length; ++i) {
-    if (chosen === characters[i].routeName) {
-      return res.json(characters[i]);
+  for (let character of characters) {
+    if (character.routeName === chosen) {
+      return res.json(character);
     }
   }
 

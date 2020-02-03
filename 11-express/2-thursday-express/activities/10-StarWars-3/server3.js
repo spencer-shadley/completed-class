@@ -12,7 +12,7 @@ const PORT = 3000;
 // ===========================================================
 // Data
 // =================================
-const characters = [
+let characters = [
   {
     routeName: 'yoda',
     name: 'Yoda',
