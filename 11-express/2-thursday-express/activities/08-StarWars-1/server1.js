@@ -1,5 +1,6 @@
 'use strict';
 
+// ===========================================================
 // Dependencies
 // ===========================================================
 const express = require('express');
@@ -7,20 +8,21 @@ const express = require('express');
 const app = express();
 const PORT = 3000;
 
+// ===========================================================
 // Data
 // ===========================================================
 const yoda = {
   name: 'Yoda',
   role: 'Jedi Master',
   age: 900,
-  forcePoints: 2000
+  midichlorianCount: 2000
 };
 
 const darthmaul = {
   name: 'Darth Maul',
   role: 'Sith Lord',
   age: 200,
-  forcePoints: 1200
+  midichlorianCount: 1200
 };
 
 // Create one more data entry for the character Obi Wan Kenobi.
