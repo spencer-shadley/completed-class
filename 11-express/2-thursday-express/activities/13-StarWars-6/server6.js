@@ -7,8 +7,10 @@
 const express = require('express');
 const path = require('path');
 
-// Sets up the Express App
 // =============================================================
+// Setup
+// =============================================================
+
 const app = express();
 const PORT = 3000;
 
@@ -16,8 +18,10 @@ const PORT = 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// Star Wars Characters (DATA)
 // =============================================================
+// DATA
+// =============================================================
+
 let characters = [
   {
     routeName: 'yoda',
@@ -47,10 +51,10 @@ let characters = [
 // =============================================================
 
 // Basic route that sends the user first to the AJAX Page
-app.get('/', (req, res) => {
+app.get('/', (req, res) =>
   // res.send("Welcome to the Star Wars Page!")
-  res.sendFile(path.join(__dirname, 'view.html'));
-});
+  res.sendFile(path.join(__dirname, 'view.html'))
+);
 
 // Displays all characters
 app.get('/api/characters', (req, res) => res.json(characters));
@@ -85,6 +89,8 @@ app.post('/api/characters', (req, res) => {
   res.json(newcharacter);
 });
 
-// Starts the server to begin listening
-// =============================================================
+// ===========================================================
+// Listener
+// ===========================================================
+
 app.listen(PORT, () => console.log('App listening on PORT ' + PORT));
