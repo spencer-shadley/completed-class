@@ -22,6 +22,18 @@ Feel encouraged to use the following application as a reference: <http://hot-res
 
 Note: We know this is a hard activity. We know you aren't yet comfortable with Node or Express. But push yourself. The best way to learn is to push through the discomfort and BUILD! Ask for help when you need it. We're here to help you through the process.
 
+### Bonus
+
+- If by some miracle you finish early, feel encouraged to work on any one of these additional tasks to take your application to the next level.
+
+  - Add code to your server so that it "counts" every time a person visits any of the pages. Display a running count on the website.
+
+  - Add buttons for "checking off" individuals from the reservation list. Once this happens, the next person on the waitlist should be addd to the main reservation list.
+
+  - Add a button for sending emails to individuals on the wait-list letting them know they have a table ready. You will need to use node-mailer or a similar npm package to make this work. (A hard task, but very cool).
+
+  - Add a button for sending text messages to individuals on the wait-list letting them know they have a table ready. You will need to use the Twilio library to make this work. (A hard task, but very cool).
+
 ---
 
 ## Phase I - For this first phase, aim to write out the pieces that will need to be programmed to create the functionality of your application. Try to break it into 6-7 pieces
