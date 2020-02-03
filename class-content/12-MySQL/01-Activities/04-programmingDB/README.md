@@ -1,4 +1,4 @@
-# **Instructions**
+# Instructions
 
 - Make a new database called "programming_db" and switch into it for this activity
 

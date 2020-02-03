@@ -1,4 +1,4 @@
-# **Instructions**
+# Instructions
 
 - When dealing with big databases, it is very likely that you will have to work with two or more datasets that are related, but which have some degree of separation between them. In this case we have a table of the top 5000 songs and a table of the top 3000 albums.
 

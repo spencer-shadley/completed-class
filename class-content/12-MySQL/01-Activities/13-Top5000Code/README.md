@@ -1,4 +1,4 @@
-# **Instructions**
+# Instructions
 
 - Now that we have learned how to import big collections of data into a server, it is time to put this new knowledge to the test by importing all of the data contained within `TopSongs.csv` into our database.
 

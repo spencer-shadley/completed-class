@@ -1,4 +1,4 @@
-# **Instructions**
+# Instructions
 
 - For the table favorite_foods...
 

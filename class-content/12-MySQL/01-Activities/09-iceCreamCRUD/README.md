@@ -1,4 +1,4 @@
-# **Instructions**
+# Instructions
 
 - It's time to start making our playlist application a little more functional through including all four C.R.U.D elements within it.
 

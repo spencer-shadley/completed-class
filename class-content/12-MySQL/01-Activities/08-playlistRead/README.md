@@ -1,4 +1,4 @@
-# **Instructions**
+# Instructions
 
 - Create a database called `playlist_db`, then create a table inside of this database called `songs`. The songs table should have four columns:
 

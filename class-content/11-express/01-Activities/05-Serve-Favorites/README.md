@@ -1,4 +1,4 @@
-# **Instructions**
+# Instructions
 
 - Create a website with four routes:
   - Home

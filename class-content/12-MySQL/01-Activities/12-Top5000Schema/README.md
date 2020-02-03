@@ -1,4 +1,4 @@
-# **Instructions**
+# Instructions
 
 - It's time to test your skills in creating databases and tables as you create a database called `top_songsDB` which will eventually house all of the music data contained within `TopSongs.csv`
 
