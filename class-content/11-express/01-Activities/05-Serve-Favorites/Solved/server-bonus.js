@@ -17,7 +17,7 @@ function handleRequest(req, res) {
   switch (path) {
     case '/food':
     case '/movies':
-    case '/frameworks':
+    case '/modules':
       return renderHTML(path + '.html', res);
 
     default:
@@ -27,7 +27,7 @@ function handleRequest(req, res) {
 
 // function to take a filepath and respond with html
 function renderHTML(filePath, res) {
-  return fs.readFile(__dirname + filePath, function(err, data) {
+  return fs.readFile(__dirname + filePath, (err, data) => {
     if (err) throw err;
     res.writeHead(200, { 'Content-Type': 'text/html' });
     res.end(data);
@@ -35,6 +35,4 @@ function renderHTML(filePath, res) {
 }
 
 // Starts our server.
-server.listen(PORT, function() {
-  console.log('Server is listening on PORT: ' + PORT);
-});
+server.listen(PORT, () => console.log('Server is listening on PORT: ' + PORT));

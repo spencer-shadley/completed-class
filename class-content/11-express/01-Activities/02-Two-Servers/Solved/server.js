@@ -31,12 +31,12 @@ const serverTwo = http.createServer(handleRequestTwo);
 // =====================================================================
 
 // Starting our servers
-serverOne.listen(PORTONE, function() {
+serverOne.listen(PORTONE, () =>
   // Callback triggered when server is successfully listening. Hurray!
-  console.log('Server listening on: http://localhost:' + PORTONE);
-});
+  console.log('Server listening on: http://localhost:' + PORTONE)
+);
 
-serverTwo.listen(PORTTWO, function() {
+serverTwo.listen(PORTTWO, () =>
   // Callback triggered when server is successfully listening. Hurray!
-  console.log('Server listening on: http://localhost:' + PORTTWO);
-});
+  console.log('Server listening on: http://localhost:' + PORTTWO)
+);
