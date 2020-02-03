@@ -7,25 +7,28 @@ const PORT = 8080;
 
 const server = http.createServer(handleRequest);
 
+let allRequestData = [];
+
 function handleRequest(req, res) {
   // Saving the request data as a variable
-  const requestData = '';
+  let currentRequestData = '';
 
-  // When the server receives data...
-  req.on('data', function(data) {
-    // Add it to requestData.
-    requestData += data;
+  // When the server receives data add it to requestData
+  req.on('data', data => {
+    currentRequestData += data;
+    allRequestData.push(currentRequestData);
   });
 
   // When the request has ended...
-  req.on('end', function() {
+  req.on('end', () => {
     // Log (server-side) the request method, as well as the data received!
-    console.log('You did a', req.method, 'with the data:\n', requestData);
+    console.log('You did a', req.method, 'with the data:', currentRequestData);
+    console.log('All request data', JSON.stringify(allRequestData));
     res.end();
   });
 }
 
 // Start our server
-server.listen(PORT, function() {
-  console.log('Server listening on: http://localhost:' + PORT);
-});
+server.listen(PORT, () =>
+  console.log('Server listening on: http://localhost:' + PORT)
+);
