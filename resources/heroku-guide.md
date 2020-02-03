@@ -78,7 +78,7 @@ To begin with, you'll need a git repository initialized locally with your basic 
 7. Ensure that you have at least one HTML page being served at the "/" route. Example:
 
    ```js
-   app.get('/', function(req, res) {
+   app.get('/', (req, res) => {
      res.json(path.join(__dirname, 'public/index.html'));
    });
    ```

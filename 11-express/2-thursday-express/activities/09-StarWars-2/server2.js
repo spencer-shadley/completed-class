@@ -37,6 +37,7 @@ const characters = [
 // ===========================================================
 // Routes
 // ===========================================================
+
 app.get('/', (req, res) => res.send('Welcome to the Star Wars Page!'));
 
 app.get('/:character', (req, res) => {

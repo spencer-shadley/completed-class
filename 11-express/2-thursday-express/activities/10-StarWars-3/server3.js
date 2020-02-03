@@ -9,8 +9,9 @@ const express = require('express');
 const app = express();
 const PORT = 3000;
 
-// Data
 // ===========================================================
+// Data
+// =================================
 const characters = [
   {
     routeName: 'yoda',
@@ -42,20 +43,18 @@ const characters = [
 app.get('/', (req, res) => res.send('Welcome to the Star Wars Page!'));
 
 // What does this route do?
-app.get('/api/characters', function(req, res) {
-  return res.json(characters);
-});
+app.get('/api/characters', (req, res) => res.json(characters));
 
 // What does this route do?
-app.get('/api/characters/:character', function(req, res) {
+app.get('/api/characters/:character', (req, res) => {
   // What does this code do?
   const chosen = req.params.character;
   console.log(chosen);
 
   // What does this code do?
-  for (let i = 0; i < characters.length; ++i) {
-    if (chosen === characters[i].routeName) {
-      return res.json(characters[i]);
+  for (let character of characters) {
+    if (character.routeName === chosen) {
+      return res.json(character);
     }
   }
 

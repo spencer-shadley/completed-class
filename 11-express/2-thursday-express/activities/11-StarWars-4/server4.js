@@ -9,8 +9,9 @@ const express = require('express');
 const app = express();
 const PORT = 3000;
 
-// Data
 // ===========================================================
+// Data
+// =================================
 const characters = [
   {
     routeName: 'yoda',
@@ -41,12 +42,10 @@ const characters = [
 app.get('/', (req, res) => res.send('Welcome to the Star Wars Page!'));
 
 // Displays all characters
-app.get('/api/characters', function(req, res) {
-  return res.json(characters);
-});
+app.get('/api/characters', (req, res) => res.json(characters));
 
 // Displays a single character, or shows "No character found"
-app.get('/api/characters/:character', function(req, res) {
+app.get('/api/characters/:character', (req, res) => {
   // Grab the selected parameter
   const chosen = req.params.character;
   console.log(chosen);
