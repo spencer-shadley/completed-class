@@ -4,6 +4,10 @@
 
 - Each server will respond with a different inspirational quote of your choosing.
 
-# Bonus
+# Bonus 1
 
-- Randomly select the quotes from a predefined array.
+- Randomly select from a large number of quotes
+
+# Bonus 2
+
+- Make the response look good (hint - use HTML)
