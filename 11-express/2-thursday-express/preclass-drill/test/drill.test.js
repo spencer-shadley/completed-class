@@ -18,7 +18,7 @@ describe('printPyramid', () => {
     const expected = ` X
 XXX`;
 
-    drill.printByArray(3);
+    drill.printPyramid(3);
 
     expect(consoleLogSpy).toBeCalledWith(expected);
   });
@@ -27,7 +27,7 @@ XXX`;
     const expected = ` XX
 XXXX`;
 
-    drill.printByArray(4);
+    drill.printPyramid(4);
 
     expect(consoleLogSpy).toBeCalledWith(expected);
   });
@@ -45,7 +45,7 @@ XXXX`;
  XXXXXXXXXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXX`;
 
-    drill.printByArray(21);
+    drill.printPyramid(21);
 
     expect(consoleLogSpy).toBeCalledWith(expected);
   });
@@ -63,7 +63,7 @@ XXXXXXXXXXXXXXXXXXXXX`;
  XXXXXXXXXXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXX`;
 
-    drill.printByArray(22);
+    drill.printPyramid(22);
 
     expect(consoleLogSpy).toBeCalledWith(expected);
   });
