@@ -1,9 +1,14 @@
 # HotRestaurant
 
-- Description: Basic app demonstrating Node and Express with jQuery. Overall purpose is to help schedule reservation requests. Restaurant has just 5 tables available. First five requests get a reservation, every request after that is sent to the waiting list.
-- Live Demo: <https://hot-restaurant-fsf.herokuapp.com/>
+## Description
+
+Basic app demonstrating Node and Express with jQuery. Overall purpose is to help schedule reservation requests. Restaurant has just 5 tables available. First five requests get a reservation, every request after that is sent to the waiting list.
+
+[Live Demo](https://hot-restaurant-fsf.herokuapp.com/)
 
 ![Hot Restaurant Image](Images/HotRestaurant.png)
+
+![Diagram](Images/Diagram.png)
 
 ## Notes
 
@@ -14,3 +19,9 @@
 ## Good luck! Don't stress out
 
 - Spend some time trying to build exposure. But don't get overwhelmed. We'll have plenty of time to come back to this.
+
+## Resources
+
+- Refer back to the Star Wars example from Thursday's class
+- [Use ExpressJS to Get URL and POST Parameters](https://scotch.io/tutorials/use-expressjs-to-get-url-and-post-parameters)
+- [Build a RESTful API Using Node and Express 4](https://scotch.io/tutorials/build-a-restful-api-using-node-and-express-4)
