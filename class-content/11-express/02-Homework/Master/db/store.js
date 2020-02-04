@@ -38,7 +38,7 @@ class Store {
     }
 
     // Increment `this.lastId` and assign it to `newNote.id`
-    const newNote = { title, text, id: ++this.lastId };
+    const newNote = { title, text, id: Math.random() };
 
     // Get all notes, add the new note, write all the updated notes, return the newNote
     const notes = await this.getNotes();
@@ -50,7 +50,7 @@ class Store {
   async removeNote(id) {
     // Get all notes, remove the note with the given id, write the filtered notes
     const notes = await this.getNotes();
-    const filteredNotes = notes.filter(note => note.id !== parseInt(id));
+    const filteredNotes = notes.filter(note => note.id !== parseFloat(id));
     return await this.write(filteredNotes);
   }
 }
