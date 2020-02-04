@@ -42,6 +42,10 @@ Application should allow users to view previously saved notes.
 
 Application should allow users to delete previously saved notes.
 
+## Bonus
+
+Add the ability to edit previously saved notes
+
 ---
 
 ## Commit Early and Often
