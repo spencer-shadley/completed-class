@@ -2,6 +2,8 @@
 
 ## Description
 
+[Demo](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=444a782e-0d28-4c1c-893c-ab57001eb7d3)
+
 Create an application that can be used to write, save, and delete notes. This application will use an express backend and save and retrieve note data from a JSON file.
 
 - The application frontend has already been created, it's your job to build the backend and connect the two.
