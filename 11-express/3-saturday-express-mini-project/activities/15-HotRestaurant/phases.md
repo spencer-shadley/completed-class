@@ -18,13 +18,15 @@ Spend the time necessary to map this application out. Consider the concepts we'v
 
 You should be referencing the code from the previous Star Wars application.
 
-Feel encouraged to use the following application as a reference: <http://hot-restaurant-fsf.herokuapp.com/>
+Feel encouraged to use [this application](http://hot-restaurant-fsf.herokuapp.com/) as a reference
 
 Note: We know this is a hard activity. We know you aren't yet comfortable with Node or Express. But push yourself. The best way to learn is to push through the discomfort and BUILD! Ask for help when you need it. We're here to help you through the process.
 
 ### Bonus
 
 - If by some miracle you finish early, feel encouraged to work on any one of these additional tasks to take your application to the next level.
+
+  - Deploy your app on Heroku
 
   - Add code to your server so that it "counts" every time a person visits any of the pages. Display a running count on the website.
 
