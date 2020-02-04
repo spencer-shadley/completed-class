@@ -1,5 +1,7 @@
 'use strict';
 
+// video review - https://youtu.be/G7RvQMW2DOg?list=PLgJ8UgkiorCmI_wKKVt5FlkTG63sQF6rr
+
 // ==============================================================================
 // DEPENDENCIES
 // Series of npm packages that we will use to give our server useful functionality
@@ -15,7 +17,7 @@ const express = require('express');
 // Tells node that we are creating an "express" server
 const app = express();
 
-// Sets an initial port. We"ll use this later in our listener
+// Sets an initial port. We'll use this later in our listener
 const PORT = process.env.PORT || 8080;
 
 // Sets up the Express app to handle data parsing

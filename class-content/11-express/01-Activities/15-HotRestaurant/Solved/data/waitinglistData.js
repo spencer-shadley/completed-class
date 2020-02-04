@@ -9,10 +9,10 @@
 
 const waitingArray = [
   {
-    customerName: 'Saima',
-    customerEmail: 'saima@example.com',
+    customerName: 'Joe',
+    customerEmail: 'joe@example.com',
     phoneNumber: '000-000-0000',
-    customerID: 'saimaCool'
+    customerID: 'joeIsCool42069'
   }
 ];
 

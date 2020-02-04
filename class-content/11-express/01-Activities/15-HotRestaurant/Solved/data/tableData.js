@@ -9,9 +9,9 @@
 
 const tableArray = [
   {
-    customerName: 'Ahmed',
-    customerEmail: 'ahmed@example.com',
-    customerID: 'afhaque89',
+    customerName: 'Spencer',
+    customerEmail: 'spencer@gmail.com',
+    customerID: 'spencer123',
     phoneNumber: '000-000-0000'
   }
 ];
