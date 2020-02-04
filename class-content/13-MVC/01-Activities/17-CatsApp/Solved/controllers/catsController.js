@@ -8,7 +8,7 @@ const router = express.Router();
 const cat = require('../models/cat.js');
 
 // Create all our routes and set up logic within those routes where required.
-router.get('/', function(req, res) {
+router.get('/', (req, res) => {
   cat.all(function(data) {
     const hbsObject = {
       cats: data
@@ -18,7 +18,7 @@ router.get('/', function(req, res) {
   });
 });
 
-router.post('/api/cats', function(req, res) {
+router.post('/api/cats', (req, res) => {
   cat.create(['name', 'sleepy'], [req.body.name, req.body.sleepy], function(
     result
   ) {
@@ -27,7 +27,7 @@ router.post('/api/cats', function(req, res) {
   });
 });
 
-router.put('/api/cats/:id', function(req, res) {
+router.put('/api/cats/:id', (req, res) => {
   const condition = 'id = ' + req.params.id;
 
   console.log('condition', condition);
@@ -48,7 +48,7 @@ router.put('/api/cats/:id', function(req, res) {
   );
 });
 
-router.delete('/api/cats/:id', function(req, res) {
+router.delete('/api/cats/:id', (req, res) => {
   const condition = 'id = ' + req.params.id;
 
   cat.delete(condition, function(result) {

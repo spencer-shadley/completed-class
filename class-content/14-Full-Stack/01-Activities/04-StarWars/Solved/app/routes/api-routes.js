@@ -12,7 +12,7 @@ const Character = require('../models/character.js');
 // =============================================================
 module.exports = function(app) {
   // Search for Specific Character (or all characters) then provides JSON
-  app.get('/api/:characters?', function(req, res) {
+  app.get('/api/:characters?', (req, res) => {
     if (req.params.characters) {
       // Display the JSON for ONLY that character.
       // (Note how we're using the ORM here to run our searches)
@@ -31,7 +31,7 @@ module.exports = function(app) {
   });
 
   // If a user sends data to add a new character...
-  app.post('/api/new', function(req, res) {
+  app.post('/api/new', (req, res) => {
     // Take the request...
     const character = req.body;
 

@@ -12,7 +12,7 @@ const orm = require('../config/orm.js');
 // =============================================================
 module.exports = function(app) {
   // Search for Specific Character (or all characters) then provides JSON
-  app.get('/api/:characters', function(req, res) {
+  app.get('/api/:characters', (req, res) => {
     // If the user provides a specific character in the URL...
     if (req.params.characters) {
       // Then display the JSON for ONLY that character.
@@ -33,7 +33,7 @@ module.exports = function(app) {
   });
 
   // If a user sends data to add a new character...
-  app.post('/api/new', function(req, res) {
+  app.post('/api/new', (req, res) => {
     // Take the request...
     const character = req.body;
 

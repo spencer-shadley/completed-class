@@ -34,11 +34,11 @@ const characters = [
 
 // Routes
 // ===========================================================
-app.get('/', function(req, res) {
+app.get('/', (req, res) => {
   res.send('Welcome to the Star Wars Page!');
 });
 
-app.get('/:character', function(req, res) {
+app.get('/:character', (req, res) => {
   const chosen = req.params.character;
 
   // What does this log?

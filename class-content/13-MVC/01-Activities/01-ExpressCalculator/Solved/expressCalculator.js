@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 8080;
 const app = express();
 
 // Routes
-app.get('/:operation/:firstNum/:secondNum', function(req, res) {
+app.get('/:operation/:firstNum/:secondNum', (req, res) => {
   // Parameters are received from the URL
   const operation = req.params.operation;
 

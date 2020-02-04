@@ -12,14 +12,14 @@ const Book = require('../models/book.js');
 // =============================================================
 module.exports = function(app) {
   // Get all books
-  app.get('/api/all', function(req, res) {
+  app.get('/api/all', (req, res) => {
     Book.findAll({}).then(function(results) {
       res.json(results);
     });
   });
 
   // Get a specific book
-  app.get('/api/:book', function(req, res) {
+  app.get('/api/:book', (req, res) => {
     Book.findAll({
       where: {
         title: req.params.book
@@ -30,7 +30,7 @@ module.exports = function(app) {
   });
 
   // Get all books of a specific genre
-  app.get('/api/genre/:genre', function(req, res) {
+  app.get('/api/genre/:genre', (req, res) => {
     Book.findAll({
       where: {
         genre: req.params.genre
@@ -41,7 +41,7 @@ module.exports = function(app) {
   });
 
   // Get all books from a specific author
-  app.get('/api/author/:author', function(req, res) {
+  app.get('/api/author/:author', (req, res) => {
     Book.findAll({
       where: {
         author: req.params.author
@@ -52,7 +52,7 @@ module.exports = function(app) {
   });
 
   // Get all "long" books (books 150 pages or more)
-  app.get('/api/books/long', function(req, res) {
+  app.get('/api/books/long', (req, res) => {
     Book.findAll({
       where: {
         pages: {
@@ -66,7 +66,7 @@ module.exports = function(app) {
   });
 
   // Get all "short" books (books 150 pages or less)
-  app.get('/api/books/short', function(req, res) {
+  app.get('/api/books/short', (req, res) => {
     Book.findAll({
       where: {
         pages: {
@@ -80,7 +80,7 @@ module.exports = function(app) {
   });
 
   // Add a book
-  app.post('/api/new', function(req, res) {
+  app.post('/api/new', (req, res) => {
     console.log('Book Data:');
     console.log(req.body);
     Book.create({
@@ -94,7 +94,7 @@ module.exports = function(app) {
   });
 
   // Delete a book
-  app.delete('/api/book/:id', function(req, res) {
+  app.delete('/api/book/:id', (req, res) => {
     console.log('Book ID:');
     console.log(req.params.id);
     Book.destroy({

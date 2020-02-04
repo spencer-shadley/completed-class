@@ -26,7 +26,7 @@ const icecreams = [
 ];
 
 // Routes
-app.get('/icecreams/:name', function(req, res) {
+app.get('/icecreams/:name', (req, res) => {
   for (let i = 0; i < icecreams.length; ++i) {
     if (icecreams[i].name === req.params.name) {
       return res.render('icecream', icecreams[i]);
@@ -34,7 +34,7 @@ app.get('/icecreams/:name', function(req, res) {
   }
 });
 
-app.get('/icecreams', function(req, res) {
+app.get('/icecreams', (req, res) => {
   res.render('ics', { ics: icecreams });
 });
 

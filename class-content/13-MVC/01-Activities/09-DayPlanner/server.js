@@ -35,7 +35,7 @@ connection.connect(function(err) {
 });
 
 // Use Handlebars to render the main index.html page with the plans in it.
-app.get('/', function(req, res) {
+app.get('/', (req, res) => {
   connection.query('SELECT * FROM plans;', function(err, data) {
     if (err) {
       return res.status(500).end();
@@ -46,7 +46,7 @@ app.get('/', function(req, res) {
 });
 
 // Create a new plan
-app.post('/api/plans', function(req, res) {
+app.post('/api/plans', (req, res) => {
   connection.query(
     'INSERT INTO plans (plan) VALUES (?)',
     [req.body.plan],
@@ -63,7 +63,7 @@ app.post('/api/plans', function(req, res) {
 });
 
 // Update a plan
-app.put('/api/plans/:id', function(req, res) {
+app.put('/api/plans/:id', (req, res) => {
   connection.query(
     'UPDATE plans SET plan = ? WHERE id = ?',
     [req.body.plan, req.params.id],
@@ -81,7 +81,7 @@ app.put('/api/plans/:id', function(req, res) {
 });
 
 // Delete a plan
-app.delete('/api/plans/:id', function(req, res) {
+app.delete('/api/plans/:id', (req, res) => {
   connection.query('DELETE FROM plans WHERE id = ?', [req.params.id], function(
     err,
     result

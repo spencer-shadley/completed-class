@@ -30,7 +30,7 @@ connection.connect(function(err) {
 });
 
 // Routes
-app.get('/cast', function(req, res) {
+app.get('/cast', (req, res) => {
   connection.query('SELECT * FROM actors ORDER BY id', function(err, result) {
     if (err) throw err;
 
@@ -51,7 +51,7 @@ app.get('/cast', function(req, res) {
   });
 });
 
-app.get('/coolness-chart', function(req, res) {
+app.get('/coolness-chart', (req, res) => {
   connection.query(
     'SELECT * FROM actors ORDER BY coolness_points DESC',
     function(err, result) {
@@ -75,7 +75,7 @@ app.get('/coolness-chart', function(req, res) {
   );
 });
 
-app.get('/attitude-chart/:att', function(req, res) {
+app.get('/attitude-chart/:att', (req, res) => {
   connection.query(
     'SELECT * FROM actors WHERE attitude = ?',
     [req.params.att],

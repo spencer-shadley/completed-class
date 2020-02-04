@@ -26,15 +26,15 @@ const lunches = [
 ];
 
 // Routes
-app.get('/weekday', function(req, res) {
+app.get('/weekday', (req, res) => {
   res.render('index', lunches[0]);
 });
 
-app.get('/weekend', function(req, res) {
+app.get('/weekend', (req, res) => {
   res.render('index', lunches[1]);
 });
 
-app.get('/lunches', function(req, res) {
+app.get('/lunches', (req, res) => {
   res.render('all-lunches', {
     foods: lunches,
     eater: 'david'

@@ -9,7 +9,7 @@ const db = require('../models');
 
 // It also makes sure that the books returned from the API all contain a title, author, link, description, and image
 module.exports = {
-  findAll: function(req, res) {
+  findAll: (req, res) => {
     const { query: params } = req;
     axios
       .get('https://www.googleapis.com/books/v1/volumes', {

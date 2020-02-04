@@ -34,19 +34,19 @@ connection.connect(function(err) {
 });
 
 // Serve index.handlebars to the root route, populated with all quote data.
-app.get('/', function(req, res) {});
+app.get('/', (req, res) => {});
 
 // Serve single-quote.handlebars, populated with data that corresponds to the ID in the route URL.
-app.get('/:id', function(req, res) {});
+app.get('/:id', (req, res) => {});
 
 // Create a new quote using the data posted from the front-end.
-app.post('/api/quotes', function(req, res) {});
+app.post('/api/quotes', (req, res) => {});
 
 // Delete a quote based off of the ID in the route URL.
-app.delete('/api/quotes/:id', function(req, res) {});
+app.delete('/api/quotes/:id', (req, res) => {});
 
 // Update a quote.
-app.put('/api/quotes/:id', function(req, res) {});
+app.put('/api/quotes/:id', (req, res) => {});
 
 // Start our server so that it can begin listening to client requests.
 app.listen(PORT, function() {

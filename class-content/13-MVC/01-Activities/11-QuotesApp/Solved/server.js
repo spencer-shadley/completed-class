@@ -37,7 +37,7 @@ connection.connect(function(err) {
 });
 
 // Serve index.handlebars to the root route.
-app.get('/', function(req, res) {
+app.get('/', (req, res) => {
   connection.query('SELECT * FROM quotes;', function(err, data) {
     if (err) {
       return res.status(500).end();
@@ -48,7 +48,7 @@ app.get('/', function(req, res) {
 });
 
 // Show the user the individual quote and the form to update the quote.
-app.get('/:id', function(req, res) {
+app.get('/:id', (req, res) => {
   connection.query(
     'SELECT * FROM quotes where id = ?',
     [req.params.id],
@@ -63,7 +63,7 @@ app.get('/:id', function(req, res) {
   );
 });
 
-app.post('/api/quotes', function(req, res) {
+app.post('/api/quotes', (req, res) => {
   connection.query(
     'INSERT INTO quotes (author, quote) VALUES (?, ?)',
     [req.body.author, req.body.quote],
@@ -79,7 +79,7 @@ app.post('/api/quotes', function(req, res) {
   );
 });
 
-app.delete('/api/quotes/:id', function(req, res) {
+app.delete('/api/quotes/:id', (req, res) => {
   connection.query('DELETE FROM quotes WHERE id = ?', [req.params.id], function(
     err,
     result
@@ -96,7 +96,7 @@ app.delete('/api/quotes/:id', function(req, res) {
 });
 
 // Update a quote by an id and then redirect to the root route.
-app.put('/api/quotes/:id', function(req, res) {
+app.put('/api/quotes/:id', (req, res) => {
   connection.query(
     'UPDATE quotes SET author = ?, quote = ? WHERE id = ?',
     [req.body.author, req.body.quote, req.params.id],

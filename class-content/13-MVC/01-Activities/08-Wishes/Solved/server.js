@@ -35,7 +35,7 @@ connection.connect(function(err) {
 });
 
 // Root get route.
-app.get('/', function(req, res) {
+app.get('/', (req, res) => {
   connection.query('SELECT * FROM wishes;', function(err, data) {
     if (err) {
       throw err;
@@ -52,7 +52,7 @@ app.get('/', function(req, res) {
 });
 
 // Post route -> back to home
-app.post('/', function(req, res) {
+app.post('/', (req, res) => {
   // Test it.
   // console.log('You sent, ' + req.body.wish);
 

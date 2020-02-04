@@ -36,17 +36,17 @@ const characters = [
 ];
 
 // Routes
-app.get('/', function(req, res) {
+app.get('/', (req, res) => {
   res.send('Welcome to the Star Wars Page!');
 });
 
 // Displays all characters
-app.get('/api/characters', function(req, res) {
+app.get('/api/characters', (req, res) => {
   return res.json(characters);
 });
 
 // Displays a single character, or shows "No character found"
-app.get('/api/characters/:character', function(req, res) {
+app.get('/api/characters/:character', (req, res) => {
   const chosen = req.params.character;
 
   console.log(chosen);
@@ -61,7 +61,7 @@ app.get('/api/characters/:character', function(req, res) {
 });
 
 // Create New Characters - takes in JSON input
-app.post('/api/characters', function(req, res) {
+app.post('/api/characters', (req, res) => {
   const newCharacter = req.body;
 
   console.log(newCharacter);

@@ -38,7 +38,7 @@ const animals = [
   }
 ];
 
-app.get('/dog', function(req, res) {
+app.get('/dog', (req, res) => {
   // Handlebars requires an object to be sent to the dog handlebars file.
   // Lucky for us, animals[0] is an object!
 
@@ -46,7 +46,7 @@ app.get('/dog', function(req, res) {
   res.render('dog', animals[0]);
 });
 
-app.get('/all-pets', function(req, res) {
+app.get('/all-pets', (req, res) => {
   // Handlebars requires an object to be sent to the index handlebars file.
 
   // 2. Loop through the animals, and send those that are pets to the index handlebars file.
@@ -68,7 +68,7 @@ app.get('/all-pets', function(req, res) {
   res.render('index', data);
 });
 
-app.get('/all-non-pets', function(req, res) {
+app.get('/all-non-pets', (req, res) => {
   // Handlebars requires an object to be sent to the index handlebars file.
 
   // 3. Loop through the animals, and send those that are not pets to the index handlebars file.

@@ -35,7 +35,7 @@ connection.connect(function(err) {
 });
 
 // Use Handlebars to render the main index.html page with the movies in it.
-app.get('/', function(req, res) {
+app.get('/', (req, res) => {
   connection.query('SELECT * FROM movies;', function(err, data) {
     if (err) {
       return res.status(500).end();
@@ -46,7 +46,7 @@ app.get('/', function(req, res) {
 });
 
 // Create a new movie
-app.post('/api/movies', function(req, res) {
+app.post('/api/movies', (req, res) => {
   connection.query(
     'INSERT INTO movies (movie) VALUES (?)',
     [req.body.movie],
@@ -63,7 +63,7 @@ app.post('/api/movies', function(req, res) {
 });
 
 // Retrieve all movies
-app.get('/api/movies', function(req, res) {
+app.get('/api/movies', (req, res) => {
   connection.query('SELECT * FROM movies;', function(err, data) {
     if (err) {
       return res.status(500).end();
@@ -74,7 +74,7 @@ app.get('/api/movies', function(req, res) {
 });
 
 // Update a movie
-app.put('/api/movies/:id', function(req, res) {
+app.put('/api/movies/:id', (req, res) => {
   connection.query(
     'UPDATE movies SET movie = ? WHERE id = ?',
     [req.body.movie, req.params.id],
@@ -92,7 +92,7 @@ app.put('/api/movies/:id', function(req, res) {
 });
 
 // Delete a movie
-app.delete('/api/movies/:id', function(req, res) {
+app.delete('/api/movies/:id', (req, res) => {
   connection.query('DELETE FROM movies WHERE id = ?', [req.params.id], function(
     err,
     result

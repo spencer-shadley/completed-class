@@ -36,17 +36,17 @@ const characters = [
 // Routes
 // ===========================================================
 
-app.get('/', function(req, res) {
+app.get('/', (req, res) => {
   res.send('Welcome to the Star Wars Page!');
 });
 
 // What does this route do?
-app.get('/api/characters', function(req, res) {
+app.get('/api/characters', (req, res) => {
   return res.json(characters);
 });
 
 // What does this route do?
-app.get('/api/characters/:character', function(req, res) {
+app.get('/api/characters/:character', (req, res) => {
   // What does this code do?
   const chosen = req.params.character;
   console.log(chosen);

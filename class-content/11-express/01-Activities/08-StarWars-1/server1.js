@@ -33,15 +33,15 @@ const darthmaul = {
 
 // Routes
 // ===========================================================
-app.get('/', function(req, res) {
+app.get('/', (req, res) => {
   res.send('Welcome to the Star Wars Page!');
 });
 
-app.get('/yoda', function(req, res) {
+app.get('/yoda', (req, res) => {
   res.json(yoda);
 });
 
-app.get('/darthmaul', function(req, res) {
+app.get('/darthmaul', (req, res) => {
   res.json(darthmaul);
 });
 
