@@ -13,3 +13,4 @@
 
 - Include links on your home page to the other pages
 - DRY
+- Add a 404 page
