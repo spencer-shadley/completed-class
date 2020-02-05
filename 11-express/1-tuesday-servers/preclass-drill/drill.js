@@ -42,6 +42,7 @@ class Desktop extends Computer {
 
 class Laptop extends Computer {
   constructor(batterySizeInmAh) {
+    super(OS);
     console.log(batterySizeInmAh);
     this.batterySizeInmAh = batterySizeInmAh;
     console.log(
@@ -64,13 +65,13 @@ class Laptop extends Computer {
   }
 }
 
-const technology = new Technology();
-console.log(technology.getEnergy());
-console.log(technology.printBatterySize());
+// const technology = new Technology();
+// console.log(technology.getEnergy());
+// console.log(technology.printBatterySize());
 
-const desktop = new Desktop(3);
-console.log(desktop.getEnergy());
-console.log(desktop.printBatterySize());
+// const desktop = new Desktop(3);
+// console.log(desktop.getEnergy());
+// console.log(desktop.printBatterySize());
 
 const laptop = new Laptop(9001);
 console.log(laptop.getEnergy());
