@@ -17,7 +17,7 @@ function handleRequest(request, response) {
 const server = http.createServer(handleRequest);
 
 // Start our server so that it can begin listening to client requests.
-server.listen(PORT, function() {
+server.listen(PORT, () => {
   // Log (server-side) when our server has started
   console.log('Server listening on: http://localhost:' + PORT);
 });

@@ -15,13 +15,16 @@ function handleRequest(req, res) {
 
   // When we visit different urls, call the function with different arguments
   switch (path) {
+    case '/':
+      return renderHTML('/index.html', res);
+
     case '/food':
     case '/movies':
     case '/modules':
       return renderHTML(path + '.html', res);
 
     default:
-      return renderHTML('/index.html', res);
+      return renderHTML('/404.html', res);
   }
 }
 
