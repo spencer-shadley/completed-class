@@ -18,7 +18,7 @@ class Computer extends Technology {
     console.log(
       `Computer constructed with
         OS: ${this.OS}
-        energy: ${super.energy}
+        energy: ${this.energy}
         getEnergy(): ${super.getEnergy()}`
     );
   }
@@ -33,9 +33,9 @@ class Desktop extends Computer {
       `Desktop constructed with:
         monitors: ${this.numMonitors}
         this.OS: ${this.OS}
-        super.OS: ${super.OS}
+        super.OS: ${this.OS}
         this.energy: ${this.energy}
-        super.energy: ${super.energy}
+        super.energy: ${this.energy}
         getEnergy(): ${super.getEnergy()}`
     );
   }
@@ -50,8 +50,8 @@ class Laptop extends Computer {
       `Laptop constructed with:
         monitors: ${this.numMonitors}
         this.OS: ${this.OS}
-        super.OS: ${super.OS}
-        energy: ${super.energy}`
+        super.OS: ${this.OS}
+        energy: ${this.energy}`
     );
     this.printBatterySize();
   }
