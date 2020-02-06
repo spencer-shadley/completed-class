@@ -34,6 +34,6 @@ function printPyramid(baseSize) {
 }
 
 module.exports = {
-  printByLoop: printNoReverse,
+  printNoReverse,
   printPyramid
 };
