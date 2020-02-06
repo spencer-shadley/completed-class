@@ -1,6 +1,6 @@
 'use strict';
 
-function printByLoop(baseSize) {
+function printNoReverse(baseSize) {
   let initialSideSpaces = baseSize / 2;
   if (baseSize % 2 === 0) {
     --initialSideSpaces;
@@ -34,6 +34,6 @@ function printPyramid(baseSize) {
 }
 
 module.exports = {
-  printByLoop,
+  printByLoop: printNoReverse,
   printPyramid
 };
