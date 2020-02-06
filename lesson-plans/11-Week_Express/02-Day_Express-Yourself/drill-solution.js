@@ -16,7 +16,8 @@ function printNoReverse(baseSize) {
     let x = 'X'.repeat(baseSize - side.length * 2);
     pyramid += side + x;
   }
-  return pyramid;
+
+  console.log(pyramid);
 }
 
 function printPyramid(baseSize) {
