@@ -6,6 +6,7 @@ function printByLoop(baseSize) {
     --initialSideSpaces;
   }
 
+  let pyramid = '';
   for (
     let numSideSpaces = initialSideSpaces;
     numSideSpaces >= 0;
@@ -13,8 +14,9 @@ function printByLoop(baseSize) {
   ) {
     let side = ' '.repeat(numSideSpaces);
     let x = 'X'.repeat(baseSize - side.length * 2);
-    console.log(side + x);
+    pyramid += side + x;
   }
+  return pyramid;
 }
 
 function printPyramid(baseSize) {
