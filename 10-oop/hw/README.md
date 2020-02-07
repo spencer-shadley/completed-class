@@ -93,7 +93,7 @@ methods:
 
 - name
 - id
-- title
+- email
 - getName()
 - getId()
 - getEmail()
