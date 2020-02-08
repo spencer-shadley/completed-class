@@ -3,13 +3,12 @@
 function filter(arr, callback) {
   const newArr = [];
 
-  for (let i = 0; i < arr.length; ++i) {
-    const output = callback(arr[i]);
+  for (let item of arr) {
+    const output = callback(item);
     if (output) {
-      newArr.push(arr[i]);
+      newArr.push(item);
     }
   }
-
   return newArr;
 }
 
