@@ -56,3 +56,33 @@ console.table([
     ['aabc', palPerm('aabc') === false],
     ['   ', palPerm('   ') === true],
 ]);
+
+// class testPerm {
+//     constructor(testInput, expectedResult, actualResult) {
+//         this.testInput = testInput;
+//         this.expectedResult = expectedResult;
+//         this.actualResult = actualResult;
+//     }
+// }
+
+// let test1 = new testPerm('Tacocat', true, palPerm('Tacocat'));
+// let test2 = new testPerm('atco cat', true, palPerm('atco cat'));
+// let test3 = new testPerm(' rac  ecar rara', true, palPerm(' rac  ecar rara '));
+// let test4 = new testPerm('testfailed', false, palPerm('testfailed'));
+// let test5 = new testPerm('clippers', false, palPerm('clippers'));
+// let test6 = new testPerm('aabbc', true, palPerm('aabbc'));
+// let test7 = new testPerm('aabc', false, palPerm('aabc'));
+// let test8 = new testPerm('    ', true, palPerm('    '));
+
+
+// console.table([
+//     test1,
+//     test2,
+//     test3,
+//     test4,
+//     test5,
+//     test6,
+//     test7,
+//     test8,
+// ]);
+
