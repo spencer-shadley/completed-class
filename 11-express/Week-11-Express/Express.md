@@ -63,7 +63,7 @@ Express is the most popular Node web framework, and is the underlying library fo
 ## Template
 
 ### Server.js
-```
+```js
 - const express = require('express');
 // Dependency
 
@@ -82,6 +82,11 @@ Express is the most popular Node web framework, and is the underlying library fo
 - require('./route')(app);
 // Points the server to the route files. 
 
+- app.use('/static', express.static(path.join(__dirname, 'public')));
+   or 
+- app.use('/static', express.static('public'));
+// The above code to serve images, CSS files, and JavaScript files in a directory named public:
+
 - app.listen(PORT, function() {
   console.log('App listening on PORT: ' + PORT);
 });
@@ -98,5 +103,32 @@ Express is the most popular Node web framework, and is the underlying library fo
 1. Read - app.get();
 1. Update - app.put();
 1. Delete - app.delete(); or app.put();
+
+### <center> Package.json
+---
+
+- This file holds relevant metadata for the application.
+    - dependencies
+    - dev dependencies
+    - scripts
+- `npm init`
+- `npm install --save` to install a dependency and update the package.json
+
+### <center> .gitignore
+---
+
+- You can specify to create a gitignore when you create a repository 
+- Create the file by right clicking and creating `.gitignore`:
+
+```
+node_modules/
+.vscode 
+.idea/
+.DS_Store
+~*.pptx
+```
+
+
+
 
 
