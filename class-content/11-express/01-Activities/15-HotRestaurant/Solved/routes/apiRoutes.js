@@ -13,20 +13,16 @@ const waitListData = require('../data/waitinglistData');
 // ROUTING
 // ===============================================================================
 
-module.exports = function(app) {
+module.exports = app => {
   // API GET Requests
   // Below code handles when users "visit" a page.
   // In each of the below cases when a user visits a link
   // (ex: localhost:PORT/api/admin... they are shown a JSON of the data in the table)
   // ---------------------------------------------------------------------------
 
-  app.get('/api/tables', (req, res) => {
-    res.json(tableData);
-  });
+  app.get('/api/tables', (req, res) => res.json(tableData));
 
-  app.get('/api/waitlist', (req, res) => {
-    res.json(waitListData);
-  });
+  app.get('/api/waitlist', (req, res) => res.json(waitListData));
 
   // API POST Requests
   // Below code handles when a user submits a form and thus submits data to the server.
@@ -51,7 +47,7 @@ module.exports = function(app) {
 
   // ---------------------------------------------------------------------------
   // I added this below code so you could clear out the table while working with the functionality.
-  // Don"t worry about it!
+  // Don't worry about it!
 
   app.post('/api/clear', (req, res) => {
     // Empty out the arrays of data
