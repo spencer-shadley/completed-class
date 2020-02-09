@@ -1,6 +1,6 @@
 ## MySQL Server Installation Guide (Mac)
 
-- Head to <https://dev.mysql.com/downloads/mysql>
+- Go [here](https://dev.mysql.com/downloads/mysql)
 
 - Scroll down and find macOS 10.13 (x86, 64-bit), DMG Archive and click “Download”.
 
@@ -28,7 +28,7 @@
 
 ## MySQL Workbench Install (Mac)
 
-- Head to <https://dev.mysql.com/downloads/workbench/>
+- Go [here](https://dev.mysql.com/downloads/workbench/)
 
 - Scroll down to macOS (x86, 64-bit), DMG Archive and click “Download”.
 
