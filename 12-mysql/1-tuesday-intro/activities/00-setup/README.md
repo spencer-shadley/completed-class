@@ -41,9 +41,9 @@ Installing things is a skill in itself! You'll need to install things frequently
 
   - If the connection fails, raise your hand and one of us will come around to help you out. Until we come by, however, take this time to go online and see if there is anything online which might tell you what went wrong. Do not worry if you cannot find anything though, we will make sure to figure this out.
 
-- If your connection was successful and you have nothing else to do, feel free to help those around you in creating their connections.
-
 ### Bonus
+
+- If your connection was successful, help those around you in creating their connections
 
 - Look into how you can create and use databases using SQL commands
 
