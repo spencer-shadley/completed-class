@@ -16,13 +16,15 @@ In this activity, you'll be modifying CSS properties to style your text in diffe
 
   - line-height
 
-- Hint: You will need to do three things to accomplish this task.
-
   - Link to a CSS page that you'll make
 
   - Create classes for each paragraph
 
   - Add in styles for each class
+
+### Hint
+
+- You will need to do three things to accomplish this task.
 
 ## Bonus
 

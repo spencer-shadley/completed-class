@@ -19,4 +19,6 @@
   - create the column "score" which can take in an integer
   - Set the primary key of the table to id
 
-- BONUS: Go online and look into how one might go about adding data into a table.
+### Bonus
+
+- Go online and look into how one might go about adding data into a table.

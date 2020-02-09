@@ -10,4 +10,6 @@
 
 - For further reference, you can generate paragraphs of lorem ipsum text using <http://www.lipsum.com/feed/html>. You need to make this page scroll to see how the fixed position element behaves.
 
-- HINT: Use the code from the last few activities to help get you started.
+### Hint
+
+- Use the code from the last few activities to help get you started.

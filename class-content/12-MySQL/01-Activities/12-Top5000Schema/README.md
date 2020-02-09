@@ -6,8 +6,12 @@
 
 - All of your code should be written and saved within a filed called `schema.sql` so that you can use this same code later should the need ever arise
 
-- HINT: Try to have your table's columns match those within the CSV file as closely as possible or else you may find the next step in this assignment more difficult than it would otherwise be
+### Hint
 
-- BONUS: Create a `seeds.sql` file that contains the data for the first three songs found within `TopSongs.csv`
+- Try to have your table's columns match those within the CSV file as closely as possible or else you may find the next step in this assignment more difficult than it would otherwise be
 
-- BONUS: Look into how MySQL Workbench can import and export data files. What file types does it accept? How does it convert the data?
+### Bonus
+
+- Create a `seeds.sql` file that contains the data for the first three songs found within `TopSongs.csv`
+
+- Look into how MySQL Workbench can import and export data files. What file types does it accept? How does it convert the data?

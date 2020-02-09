@@ -6,7 +6,9 @@ In this activity you'll use pseudo-classes to style elements based on their stat
 
 - Create a series of links and modify the pseudo-classes associated with their Default, Active, Hover, and Focus States.
 
-- Hint: Nope. No starter code. Gotta do this from scratch :-)
+### Hint
+
+- Nope. No starter code. Gotta do this from scratch :-)
 
 ## Bonus
 

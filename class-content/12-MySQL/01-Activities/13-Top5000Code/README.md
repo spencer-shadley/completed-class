@@ -15,4 +15,6 @@
   - A query which returns all data contained within a specific range
   - A query which searches for a specific song in the top 5000 and returns the data for it
 
-- HINT: There are some MySQL queries which could make some of these tasks even easier to accomplish. Feel free to look at MySQL's documentation to find some of them.
+### Hint
+
+- There are some MySQL queries which could make some of these tasks even easier to accomplish. Feel free to look at MySQL's documentation to find some of them.
