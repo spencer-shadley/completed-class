@@ -7,9 +7,9 @@ USE programming_db;
 
 CREATE TABLE programming_languages(
   -- Creates a numeric column called "id" which will automatically increment its default value as we create new rows. --
-  id INTEGER(11) AUTO_INCREMENT NOT NULL,
+  id INTEGER AUTO_INCREMENT NOT NULL,
   language VARCHAR(20),
-  rating INTEGER(11),
+  rating INTEGER,
   -- Creates a boolean column called "mastered" which will automatically fill --
   -- with true when a new row is made and the value isn't otherwise defined. --
   mastered BOOLEAN DEFAULT true,

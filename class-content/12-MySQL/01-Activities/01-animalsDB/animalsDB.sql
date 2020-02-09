@@ -15,7 +15,7 @@ CREATE TABLE people (
   -- Makes a sting column called "pet_name" --
   pet_name VARCHAR(30),
   -- Makes an numeric column called "pet_age" --
-  pet_age INTEGER(10)
+  pet_age INTEGER
 );
 
 -- Creates new rows containing data in all named columns --

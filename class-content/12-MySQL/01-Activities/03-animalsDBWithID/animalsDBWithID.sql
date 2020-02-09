@@ -9,7 +9,7 @@ USE animals_db;
 -- Creates the table "people" within animals_db --
 CREATE TABLE people (
   -- Creates a numeric column called "id" which will automatically increment its default value as we create new rows --
-  id INTEGER(11) AUTO_INCREMENT NOT NULL,
+  id INTEGER AUTO_INCREMENT NOT NULL,
   -- Makes a string column called "name" which cannot contain null --
   name VARCHAR(30) NOT NULL,
   -- Makes a boolean column called "has_pet" which cannot contain null --
@@ -17,7 +17,7 @@ CREATE TABLE people (
   -- Makes a sting column called "pet_name" --
   pet_name VARCHAR(30),
   -- Makes an numeric column called "pet_age" --
-  pet_age INTEGER(10),
+  pet_age INTEGER,
   -- Sets id as this table's primary key which means all data contained within it will be unique --
   PRIMARY KEY (id)
 );
