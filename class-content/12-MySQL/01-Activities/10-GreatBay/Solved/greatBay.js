@@ -104,10 +104,10 @@ function start() {
       // based on their answer, either call the bid or the post functions
       switch (answer.postOrBid) {
         case 'POST':
-          postAuction(answer.username);
+          postAuction();
           break;
         case 'BID':
-          bidAuction(answer.username);
+          bidAuction();
           break;
         default:
           connection.end();
@@ -116,7 +116,7 @@ function start() {
 }
 
 // function to handle posting new items up for auction
-function postAuction(username) {
+function postAuction() {
   // prompt for info about the item being put up for auction
   inquirer
     .prompt([
@@ -157,7 +157,7 @@ function postAuction(username) {
     });
 }
 
-function bidAuction(username) {
+function bidAuction() {
   // query the database for all items being auctioned
   connection.query('SELECT * FROM auctions', (err, results) => {
     if (err) throw err;
