@@ -22,8 +22,74 @@ const connection = mysql.createConnection({
 connection.connect(err => {
   if (err) throw err;
   // run the start function after the connection is made to prompt the user
-  start();
+  login();
 });
+
+function login() {
+  inquirer
+    .prompt([
+      {
+        name: 'username',
+        type: 'input',
+        message: 'What is your username?'
+      },
+      {
+        name: 'password',
+        type: 'input',
+        message: 'What is your password?'
+      }
+    ])
+    .then(answer => {
+      const username = answer.username;
+      const password = answer.password;
+      connection.query(
+        'SELECT username FROM users WHERE ?',
+        { username },
+        (err, results) => {
+          if (err) throw err;
+          const isNewUser = results.length === 0;
+          if (isNewUser) {
+            createUser(username, password);
+          } else {
+            validateUser(username, password);
+          }
+          console.log(results);
+        }
+      );
+    });
+}
+
+function validateUser(username, password) {
+  connection.query(
+    'SELECT password FROM users WHERE ? AND ?',
+    [{ username }, { password }],
+    (err, results) => {
+      if (err) throw err;
+      const hasMatchingUser = results.length > 0;
+      if (hasMatchingUser) {
+        start();
+      } else {
+        console.error('Wrong password...');
+        login();
+      }
+    }
+  );
+}
+
+function createUser(username, password) {
+  connection.query(
+    'INSERT INTO users SET ?',
+    {
+      username: username,
+      password: password
+    },
+    err => {
+      if (err) throw err;
+      console.log(`Created user ${username}`);
+      start();
+    }
+  );
+}
 
 // function which prompts the user for what action they should take
 function start() {
@@ -36,18 +102,21 @@ function start() {
     })
     .then(answer => {
       // based on their answer, either call the bid or the post functions
-      if (answer.postOrBid === 'POST') {
-        postAuction();
-      } else if (answer.postOrBid === 'BID') {
-        bidAuction();
-      } else {
-        connection.end();
+      switch (answer.postOrBid) {
+        case 'POST':
+          postAuction(answer.username);
+          break;
+        case 'BID':
+          bidAuction(answer.username);
+          break;
+        default:
+          connection.end();
       }
     });
 }
 
 // function to handle posting new items up for auction
-function postAuction() {
+function postAuction(username) {
   // prompt for info about the item being put up for auction
   inquirer
     .prompt([
@@ -88,7 +157,7 @@ function postAuction() {
     });
 }
 
-function bidAuction() {
+function bidAuction(username) {
   // query the database for all items being auctioned
   connection.query('SELECT * FROM auctions', (err, results) => {
     if (err) throw err;
