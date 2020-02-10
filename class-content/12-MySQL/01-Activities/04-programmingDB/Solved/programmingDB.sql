@@ -17,8 +17,8 @@ CREATE TABLE programming_languages(
 );
 
 -- Creates new rows
-INSERT INTO programming_languages (language, rating)
-VALUES ("Fortran", 13);
+INSERT INTO programming_languages (language, rating, mastered)
+VALUES ("Fortran", 13, false);
 
 INSERT INTO programming_languages (language, rating)
 VALUES ("JavaScript", 91);
