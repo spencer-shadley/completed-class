@@ -17,3 +17,5 @@ CREATE TABLE people (
   -- Makes an numeric column called "pet_age" --
   pet_age INTEGER
 );
+
+SELECT * FROM people;
