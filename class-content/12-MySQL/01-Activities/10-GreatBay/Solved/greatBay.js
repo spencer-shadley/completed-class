@@ -26,6 +26,7 @@ connection.connect(err => {
 });
 
 function login() {
+  console.log('Please login:');
   inquirer
     .prompt([
       {
@@ -53,7 +54,6 @@ function login() {
           } else {
             validateUser(username, password);
           }
-          console.log(results);
         }
       );
     });
@@ -67,7 +67,8 @@ function validateUser(username, password) {
       if (err) throw err;
       const hasMatchingUser = results.length > 0;
       if (hasMatchingUser) {
-        start();
+        console.log(`${username} successfully logged in`);
+        start(username);
       } else {
         console.error('Wrong password...');
         login();
@@ -86,28 +87,35 @@ function createUser(username, password) {
     err => {
       if (err) throw err;
       console.log(`Created user ${username}`);
-      start();
+      start(username);
     }
   );
 }
 
 // function which prompts the user for what action they should take
-function start() {
+function start(username) {
   inquirer
     .prompt({
       name: 'postOrBid',
       type: 'list',
-      message: 'Would you like to [POST] an auction or [BID] on an auction?',
-      choices: ['POST', 'BID', 'EXIT']
+      message: `Would ${username} like to [POST] an auction or [BID] on an auction?`,
+      choices: ['POST', 'BID', 'MY BIDS', 'LOGOUT', 'EXIT']
     })
     .then(answer => {
       // based on their answer, either call the bid or the post functions
       switch (answer.postOrBid) {
         case 'POST':
-          postAuction();
+          postAuction(username);
           break;
         case 'BID':
-          bidAuction();
+          bidAuction(username);
+          break;
+        case 'MY BIDS':
+          showBids(username);
+          break;
+        case 'LOGOUT':
+          console.log('Successfully logged out');
+          login();
           break;
         default:
           connection.end();
@@ -115,8 +123,21 @@ function start() {
     });
 }
 
+function showBids(username) {
+  connection.query(
+    'SELECT * FROM auctions WHERE ?',
+    { username },
+    (err, results) => {
+      if (err) throw err;
+      const names = results.map(result => result.item_name);
+      console.log(names);
+      start(username);
+    }
+  );
+}
+
 // function to handle posting new items up for auction
-function postAuction() {
+function postAuction(username) {
   // prompt for info about the item being put up for auction
   inquirer
     .prompt([
@@ -145,19 +166,20 @@ function postAuction() {
           item_name: answer.item,
           category: answer.category,
           starting_bid: answer.startingBid || 0,
-          highest_bid: answer.startingBid || 0
+          highest_bid: answer.startingBid || 0,
+          username: username
         },
         err => {
           if (err) throw err;
           console.log('Your auction was created successfully!');
           // re-prompt the user for if they want to bid or post
-          start();
+          start(username);
         }
       );
     });
 }
 
-function bidAuction() {
+function bidAuction(username) {
   // query the database for all items being auctioned
   connection.query('SELECT * FROM auctions', (err, results) => {
     if (err) throw err;
@@ -167,13 +189,7 @@ function bidAuction() {
         {
           name: 'choice',
           type: 'rawlist',
-          choices: () => {
-            const choiceArray = [];
-            for (let i = 0; i < results.length; ++i) {
-              choiceArray.push(results[i].item_name);
-            }
-            return choiceArray;
-          },
+          choices: () => results.map(result => result.item_name),
           message: 'What auction would you like to place a bid in?'
         },
         {
@@ -195,7 +211,8 @@ function bidAuction() {
             'UPDATE auctions SET ? WHERE ?',
             [
               {
-                highest_bid: answer.bid
+                highest_bid: answer.bid,
+                username
               },
               {
                 id: chosenItem.id
@@ -204,13 +221,13 @@ function bidAuction() {
             error => {
               if (error) throw err;
               console.log('Bid placed successfully!');
-              start();
+              start(username);
             }
           );
         } else {
           // bid wasn't high enough, so apologize and start over
           console.log('Your bid was too low. Try again...');
-          start();
+          start(username);
         }
       });
   });
