@@ -17,7 +17,7 @@ const connection = mysql.createConnection({
   database: 'top_songsDB'
 });
 
-connection.connect(function(err) {
+connection.connect(err => {
   if (err) throw err;
   runSearch();
 });
@@ -88,7 +88,8 @@ function artistSearch() {
 }
 
 function multiSearch() {
-  const query = 'SELECT artist FROM top5000 GROUP BY artist HAVING count(*) > 1';
+  const query =
+    'SELECT artist FROM top5000 GROUP BY artist HAVING count(*) > 1';
   connection.query(query, function(err, res) {
     if (err) throw err;
     for (let i = 0; i < res.length; ++i) {

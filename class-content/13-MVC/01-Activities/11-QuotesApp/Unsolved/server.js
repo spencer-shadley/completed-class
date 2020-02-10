@@ -25,7 +25,7 @@ const connection = mysql.createConnection({
   database: 'quotes_db'
 });
 
-connection.connect(function(err) {
+connection.connect(err => {
   if (err) {
     console.error('error connecting: ' + err.stack);
     return;

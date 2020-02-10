@@ -30,7 +30,7 @@ const source = {
 // we use source.[name of connection] to hook into mysql
 const connection = mysql.createConnection(source.localhost);
 
-connection.connect(function(err) {
+connection.connect(err => {
   if (err) {
     console.error('error connecting: ' + err.stack);
     return;

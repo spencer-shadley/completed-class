@@ -22,7 +22,7 @@ const source = {
 const connection = mysql.createConnection(source.localhost);
 
 // Connecting to the database.
-connection.connect(function(err) {
+connection.connect(err => {
   if (err) {
     console.error('error connecting: ' + err.stack);
     return;

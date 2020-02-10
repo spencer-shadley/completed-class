@@ -24,7 +24,7 @@ function getResults() {
         newTodoSnippet(data);
       });
     })
-    .catch(function(err) {
+    .catch(err => {
       console.log('Fetch Error :-S', err);
     });
 }
@@ -80,7 +80,7 @@ clear.addEventListener('click', function(e) {
         }
         clearTodos();
       })
-      .catch(function(err) {
+      .catch(err => {
         console.log('Fetch Error :-S', err);
       });
   }
@@ -106,7 +106,7 @@ results.addEventListener('click', function(e) {
       <button id='make-new'>Submit</button>`;
         actionBtn.innerHTML = newButton;
       })
-      .catch(function(err) {
+      .catch(err => {
         console.log('Fetch Error :-S', err);
       });
   } else if (e.target.matches('.dataTitle')) {
@@ -122,7 +122,7 @@ results.addEventListener('click', function(e) {
         const newButton = `<button id='updater' data-id=${data_id}>Update</button>`;
         actionBtn.innerHTML = newButton;
       })
-      .catch(function(err) {
+      .catch(err => {
         console.log('Fetch Error :-S', err);
       });
   }
@@ -155,7 +155,7 @@ actionBtn.addEventListener('click', function(e) {
         actionBtn.innerHTML = newButton;
         status.innerText = 'Creating';
       })
-      .catch(function(err) {
+      .catch(err => {
         console.log('Fetch Error :-S', err);
       });
   } else if (e.target.matches('#make-new')) {

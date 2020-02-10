@@ -119,7 +119,7 @@ function updateRating(event) {
     .then(function() {
       loadImages();
     })
-    .catch(function(err) {
+    .catch(err => {
       console.error(err);
       dataArray.forEach(item => {
         if (item._id === id) {

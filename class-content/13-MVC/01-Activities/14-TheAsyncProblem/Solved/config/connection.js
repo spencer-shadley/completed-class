@@ -10,7 +10,7 @@ const connection = mysql.createConnection({
   database: 'parties_db'
 });
 
-connection.connect(function(err) {
+connection.connect(err => {
   if (err) {
     console.error('error connecting: ' + err.stack);
     return;

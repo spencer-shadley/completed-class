@@ -19,7 +19,7 @@ const connection = mysql.createConnection({
 });
 
 // connect to the mysql server and sql database
-connection.connect(function(err) {
+connection.connect(err => {
   if (err) throw err;
   // run the start function after the connection is made to prompt the user
   start();
@@ -83,7 +83,7 @@ function postAuction() {
           starting_bid: answer.startingBid || 0,
           highest_bid: answer.startingBid || 0
         },
-        function(err) {
+        err => {
           if (err) throw err;
           console.log('Your auction was created successfully!');
           // re-prompt the user for if they want to bid or post
