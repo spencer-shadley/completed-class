@@ -31,7 +31,7 @@ function createProduct() {
       price: 3.0,
       quantity: 50
     },
-    function(err, res) {
+    (err, res) => {
       if (err) throw err;
       console.log(res.affectedRows + ' product inserted!\n');
       // Call updateProduct AFTER the INSERT completes
@@ -55,7 +55,7 @@ function updateProduct() {
         flavor: 'Rocky Road'
       }
     ],
-    function(err, res) {
+    (err, res) => {
       if (err) throw err;
       console.log(res.affectedRows + ' products updated!\n');
       // Call deleteProduct AFTER the UPDATE completes
@@ -74,7 +74,7 @@ function deleteProduct() {
     {
       flavor: 'strawberry'
     },
-    function(err, res) {
+    (err, res) => {
       if (err) throw err;
       console.log(res.affectedRows + ' products deleted!\n');
       // Call readProducts AFTER the DELETE completes
@@ -85,7 +85,7 @@ function deleteProduct() {
 
 function readProducts() {
   console.log('Selecting all products...\n');
-  connection.query('SELECT * FROM products', function(err, res) {
+  connection.query('SELECT * FROM products', (err, res) => {
     if (err) throw err;
     // Log all results of the SELECT statement
     console.log(res);

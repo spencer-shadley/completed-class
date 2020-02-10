@@ -23,7 +23,7 @@ connection.connect(err => {
 });
 
 function afterConnection() {
-  connection.query('SELECT * FROM products', function(err, res) {
+  connection.query('SELECT * FROM products', (err, res) => {
     if (err) throw err;
     console.log(res);
     connection.end();

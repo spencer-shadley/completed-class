@@ -24,7 +24,7 @@ connection.connect(err => {
 });
 
 function readColleges() {
-  connection.query('SELECT name FROM colleges', function(err, res) {
+  connection.query('SELECT name FROM colleges', (err, res) => {
     if (err) throw err;
 
     // Log all results of the SELECT statement
