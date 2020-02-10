@@ -18,13 +18,15 @@ CREATE TABLE programming_languages(
 
 -- Creates new rows
 INSERT INTO programming_languages (language, rating)
-VALUES ("HTML", 95);
+VALUES ("Fortran", 13);
 
 INSERT INTO programming_languages (language, rating)
-VALUES ("JS", 99);
+VALUES ("JavaScript", 91);
 
 INSERT INTO programming_languages (language, rating)
-VALUES ("JQuery", 98);
+VALUES ("TypeScript", 100);
 
 INSERT INTO programming_languages (language, rating)
 VALUES ("MySQL", 70);
+
+SELECT * FROM programming_languages;
