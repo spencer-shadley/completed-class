@@ -31,6 +31,8 @@ INSERT INTO books (title, authorId) values ('Dracula', null);
 SELECT * FROM authors;
 SELECT * FROM books;
 
+-- Join types: https://qph.fs.quoracdn.net/main-qimg-f2a9f4597e79c5e4b3dbb65b4c5fb5a7.webp
+
 -- show ALL books with authors
 -- INNER JOIN will only return all matching values from both tables
 SELECT title, firstName, lastName

@@ -8,6 +8,10 @@
 
 - Click the lightning bolt in the toolbar to run the query
 
+## Next
+
+- Complete Part I of [02-FavoriteDB-NoData](02-FavoriteDB-NoData)
+
 ## Bonus
 
 - After you've finished the above and [02-FavoriteDB-NoData](02-FavoriteDB-NoData) try looking at [animalsDB-extra.sql](./animalsDB-extra.sql)
