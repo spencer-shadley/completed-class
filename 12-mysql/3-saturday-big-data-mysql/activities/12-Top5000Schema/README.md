@@ -2,7 +2,13 @@
 
 - It's time to test your skills in creating databases and tables as you create a database called `top_songsDB` which will eventually house all of the music data contained within `TopSongs.csv`
 
+## Part 1
+
+- Read through the dataset
+
 - Pseudocode in pairs database(s) and table(s) that would represent this data well
+
+## Part 2
 
 - Write a SQL query to create a database
 
@@ -12,9 +18,13 @@
 
 ## Hint
 
-- The columns are (ID, Artist, Song, Release Year, Global Popularity Score, USA Popularity Score, UK Popularity Score, European Popularity Score, Rest of the World Popularity Score)
+- The data represents, in order: Ranking, Artist, Song, Release Year, Global Popularity Score, USA Popularity Score, UK Popularity Score, European Popularity Score, Rest of the World Popularity Score
 
   - Popularity Score is determined based on volume of sales
+
+- Keep in mind that when creating columns in SQL you must decide your database, table name, columns and for each column metadata such as is the item required, data type and how to uniquely identify each row
+
+- Test your code! Untested code is the same as broken code.
 
 - Try to have your table's columns match those within the CSV file as closely as possible or else you may find the next step in this assignment more difficult than it would otherwise be
 
