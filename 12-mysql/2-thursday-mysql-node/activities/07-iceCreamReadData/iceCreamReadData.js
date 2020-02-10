@@ -19,13 +19,14 @@ const connection = mysql.createConnection({
 connection.connect(err => {
   if (err) throw err;
   console.log(`connected with id ${connection.threadId}`);
-  afterConnection();
+  selectAll(); // NOTE: we can only call this after successfully connecting
 });
 
-function afterConnection() {
+function selectAll() {
   connection.query('SELECT * FROM products', (err, res) => {
     if (err) throw err;
     console.log(res);
+    console.log('flavor', res[0].flavor);
     connection.end();
   });
 }
