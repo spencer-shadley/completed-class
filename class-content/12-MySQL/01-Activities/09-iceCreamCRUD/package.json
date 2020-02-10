@@ -4,6 +4,7 @@
   "description": "",
   "main": "iceCreamCRUD.js",
   "scripts": {
+    "start": "node iceCreamCRUD",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
