@@ -16,14 +16,14 @@ const connection = mysql.createConnection({
   database: 'ice_creamDB'
 });
 
-connection.connect(function(err) {
+connection.connect(err => {
   if (err) throw err;
   console.log('connected as id ' + connection.threadId);
   afterConnection();
 });
 
 function afterConnection() {
-  connection.query('SELECT * FROM products', function(err, res) {
+  connection.query('SELECT * FROM products', (err, res) => {
     if (err) throw err;
     console.log(res);
     connection.end();

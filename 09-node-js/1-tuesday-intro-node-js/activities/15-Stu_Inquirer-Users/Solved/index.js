@@ -28,7 +28,7 @@ inquirer
         .split(' ')
         .join('') + '.json';
 
-    fs.writeFile(filename, JSON.stringify(data, null, '\t'), function(err) {
+    fs.writeFile(filename, JSON.stringify(data, null, '\t'), err => {
       if (err) {
         return console.error(err);
       }

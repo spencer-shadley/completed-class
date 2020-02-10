@@ -6,7 +6,11 @@
 
 - For now we will simply be creating your database in MySQL and then creating a connection to said database using Node. **Remember, you must create a database before attempting to connect to it. Doing otherwise will return an error.**
 
+- Run `iceCreamReadData.js` and ensure it works
+
 ## Bonus
+
+- Create a new database and try connecting to that database in a new `.js` file
 
 - Using MySQL Workbench, create a table in your database with four columns...
 
