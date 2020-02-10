@@ -34,7 +34,7 @@ function start() {
       message: 'Would you like to [POST] an auction or [BID] on an auction?',
       choices: ['POST', 'BID', 'EXIT']
     })
-    .then(function(answer) {
+    .then(answer => {
       // based on their answer, either call the bid or the post functions
       if (answer.postOrBid === 'POST') {
         postAuction();
@@ -65,15 +65,10 @@ function postAuction() {
         name: 'startingBid',
         type: 'input',
         message: 'What would you like your starting bid to be?',
-        validate: function(value) {
-          if (isNaN(value) === false) {
-            return true;
-          }
-          return false;
-        }
+        validate: value => !isNaN(value)
       }
     ])
-    .then(function(answer) {
+    .then(answer => {
       // when finished prompting, insert a new item into the db with that info
       connection.query(
         'INSERT INTO auctions SET ?',
@@ -95,7 +90,7 @@ function postAuction() {
 
 function bidAuction() {
   // query the database for all items being auctioned
-  connection.query('SELECT * FROM auctions', function(err, results) {
+  connection.query('SELECT * FROM auctions', (err, results) => {
     if (err) throw err;
     // once you have the items, prompt the user for which they'd like to bid on
     inquirer
@@ -103,7 +98,7 @@ function bidAuction() {
         {
           name: 'choice',
           type: 'rawlist',
-          choices: function() {
+          choices: () => {
             const choiceArray = [];
             for (let i = 0; i < results.length; ++i) {
               choiceArray.push(results[i].item_name);
@@ -118,14 +113,11 @@ function bidAuction() {
           message: 'How much would you like to bid?'
         }
       ])
-      .then(function(answer) {
+      .then(answer => {
         // get the information of the chosen item
-        const chosenItem;
-        for (let i = 0; i < results.length; ++i) {
-          if (results[i].item_name === answer.choice) {
-            chosenItem = results[i];
-          }
-        }
+        let chosenItem = results.filter(
+          result => result.item_name === answer.choice
+        )[0];
 
         // determine if bid was high enough
         if (chosenItem.highest_bid < parseInt(answer.bid)) {
@@ -140,7 +132,7 @@ function bidAuction() {
                 id: chosenItem.id
               }
             ],
-            function(error) {
+            error => {
               if (error) throw err;
               console.log('Bid placed successfully!');
               start();

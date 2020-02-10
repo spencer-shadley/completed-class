@@ -36,7 +36,7 @@ function runSearch() {
         'Find artists with a top song and top album in the same year'
       ]
     })
-    .then(function(answer) {
+    .then(answer => {
       switch (answer.action) {
         case 'Find songs by artist':
           artistSearch();
@@ -68,7 +68,7 @@ function artistSearch() {
       type: 'input',
       message: 'What artist would you like to search for?'
     })
-    .then(function(answer) {
+    .then(answer => {
       const query = 'SELECT position, song, year FROM top5000 WHERE ?';
       connection.query(query, { artist: answer.artist }, (err, res) => {
         for (let i = 0; i < res.length; ++i) {
@@ -123,7 +123,7 @@ function rangeSearch() {
         }
       }
     ])
-    .then(function(answer) {
+    .then(answer => {
       const query =
         'SELECT position,song,artist,year FROM top5000 WHERE position BETWEEN ? AND ?';
       connection.query(query, [answer.start, answer.end], (err, res) => {
@@ -151,7 +151,7 @@ function songSearch() {
       type: 'input',
       message: 'What song would you like to look for?'
     })
-    .then(function(answer) {
+    .then(answer => {
       console.log(answer.song);
       connection.query(
         'SELECT * FROM top5000 WHERE ?',
@@ -180,7 +180,7 @@ function songAndAlbumSearch() {
       type: 'input',
       message: 'What artist would you like to search for?'
     })
-    .then(function(answer) {
+    .then(answer => {
       const query =
         'SELECT top_albums.year, top_albums.album, top_albums.position, top5000.song, top5000.artist ';
       query +=
