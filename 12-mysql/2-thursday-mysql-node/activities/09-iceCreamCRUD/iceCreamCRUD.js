@@ -27,13 +27,13 @@ function createProduct() {
   const query = connection.query(
     'INSERT INTO products SET ?',
     {
-      flavor: 'Rocky Road',
+      flavor: 'strawberry',
       price: 3.0,
       quantity: 50
     },
     (err, res) => {
       if (err) throw err;
-      console.log(res.affectedRows + ' product inserted!\n');
+      console.log(`${res.affectedRows} product inserted!\n`);
       // Call updateProduct AFTER the INSERT completes
       updateProduct();
     }
@@ -57,7 +57,7 @@ function updateProduct() {
     ],
     (err, res) => {
       if (err) throw err;
-      console.log(res.affectedRows + ' products updated!\n');
+      console.log(`${res.affectedRows} products updated!\n`);
       // Call deleteProduct AFTER the UPDATE completes
       deleteProduct();
     }
@@ -68,7 +68,7 @@ function updateProduct() {
 }
 
 function deleteProduct() {
-  console.log('Deleting all strawberry icecream...\n');
+  console.log("Deleting all strawberry icecream because it's gross...\n");
   connection.query(
     'DELETE FROM products WHERE ?',
     {
@@ -76,7 +76,7 @@ function deleteProduct() {
     },
     (err, res) => {
       if (err) throw err;
-      console.log(res.affectedRows + ' products deleted!\n');
+      console.log(`${res.affectedRows} products deleted!\n`);
       // Call readProducts AFTER the DELETE completes
       readProducts();
     }
