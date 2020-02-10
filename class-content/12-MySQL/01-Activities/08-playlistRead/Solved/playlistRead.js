@@ -12,7 +12,7 @@ const connection = mysql.createConnection({
   user: 'root',
 
   // Your password
-  password: '',
+  password: 'password',
   database: 'playlistDB'
 });
 
@@ -24,17 +24,11 @@ connection.connect(err => {
 });
 
 function queryAllSongs() {
-  connection.query('SELECT * FROM songs', (err, res) => {
+  connection.query('SELECT * FROM songs', (err, songs) => {
     if (err) throw err;
-    for (let i = 0; i < res.length; ++i) {
+    for (let song of songs) {
       console.log(
-        res[i].id +
-          ' | ' +
-          res[i].title +
-          ' | ' +
-          res[i].artist +
-          ' | ' +
-          res[i].genre
+        `${song.id} | ${song.title} | ${song.artist} | ${song.genre}`
       );
     }
     console.log('-----------------------------------');
@@ -45,17 +39,11 @@ function queryDanceSongs() {
   const query = connection.query(
     'SELECT * FROM songs WHERE genre=?',
     ['Dance'],
-    (err, res) => {
+    (err, songs) => {
       if (err) throw err;
-      for (let i = 0; i < res.length; ++i) {
+      for (let song of songs) {
         console.log(
-          res[i].id +
-            ' | ' +
-            res[i].title +
-            ' | ' +
-            res[i].artist +
-            ' | ' +
-            res[i].genre
+          `${song.id} | ${song.title} | ${song.artist} | ${song.genre}`
         );
       }
     }
