@@ -33,7 +33,7 @@ function createProduct() {
     },
     (err, res) => {
       if (err) throw err;
-      console.log(res.affectedRows + ' product inserted!\n');
+      console.log(`${res.affectedRows} product inserted!\n`);
       // Call updateProduct AFTER the INSERT completes
       updateProduct();
     }
@@ -57,7 +57,7 @@ function updateProduct() {
     ],
     (err, res) => {
       if (err) throw err;
-      console.log(res.affectedRows + ' products updated!\n');
+      console.log(`${res.affectedRows} products updated!\n`);
       // Call deleteProduct AFTER the UPDATE completes
       deleteProduct();
     }
@@ -76,7 +76,7 @@ function deleteProduct() {
     },
     (err, res) => {
       if (err) throw err;
-      console.log(res.affectedRows + ' products deleted!\n');
+      console.log(`${res.affectedRows} products deleted!\n}`);
       // Call readProducts AFTER the DELETE completes
       readProducts();
     }
