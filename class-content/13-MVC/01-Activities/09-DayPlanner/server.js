@@ -31,7 +31,7 @@ connection.connect(err => {
     return;
   }
 
-  console.log('connected as id ' + connection.threadId);
+  console.log(`connected with id ${connection.threadId}`);
 });
 
 // Use Handlebars to render the main index.html page with the plans in it.

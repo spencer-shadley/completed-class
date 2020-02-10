@@ -33,7 +33,7 @@ connection.connect(err => {
     console.error('error connecting: ' + err.stack);
     return;
   }
-  console.log('connected as id ' + connection.threadId);
+  console.log(`connected with id ${connection.threadId}`);
 });
 
 // Serve index.handlebars to the root route.

@@ -31,7 +31,7 @@ connection.connect(err => {
     return;
   }
 
-  console.log('connected as id ' + connection.threadId);
+  console.log(`connected with id ${connection.threadId}`);
 });
 
 // Root get route
