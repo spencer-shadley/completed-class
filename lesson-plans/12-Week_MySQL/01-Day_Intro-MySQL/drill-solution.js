@@ -12,9 +12,7 @@ app.get('/', (req, res) => {
   res.send(res.getHelloHtml());
 });
 
-app.get('*', (req, res) => {
-  res.send(res.get404());
-});
+app.get('*', (req, res) => res.send(res.get404()));
 
 app.listen(PORT, () => console.log('App listening on PORT ' + PORT));
 
