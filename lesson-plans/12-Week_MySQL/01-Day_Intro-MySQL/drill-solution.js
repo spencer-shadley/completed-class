@@ -12,16 +12,15 @@ app.get('/', (req, res) => {
   res.send(res.getHelloHtml());
 });
 
-app.get('*', (req, res) => res.send(res.get404()));
+app.get('*', (req, res) => res.send(res.get404(req.fullUrl)));
 
 app.listen(PORT, () => console.log('App listening on PORT ' + PORT));
 
 function printRequest(req, res, next) {
-  console.log(
-    `Request from: ${req.protocol}://${req.get('host')}${req.originalUrl}`
-  );
+  req.fullUrl = `${req.protocol}://${req.get('host')}${req.originalUrl}`;
+  console.log(`Request from ${req.fullUrl}`);
   res.hello = 'world';
   res.getHelloHtml = () => '<h1>Hello, world!</h1>';
-  res.get404 = () => '<h1>404</h1>';
+  res.get404 = url => `<h1>404, unknown URL ${url}</h1>`;
   next();
 }
