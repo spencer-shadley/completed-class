@@ -3,6 +3,16 @@
 const mysql = require('mysql');
 const inquirer = require('inquirer');
 
+const promptMessages = {
+  songsByArtist: 'Find songs by artist',
+  artistsMoreThanOnce: 'Find all artists who appear more than once',
+  dataWithinRange: 'Find data within a specific range',
+  searchForSong: 'Search for a specific song',
+  findArtistsAndAlbums:
+    'Find artists with a top song and top album in the same year',
+  exit: 'exit'
+};
+
 const connection = mysql.createConnection({
   host: 'localhost',
 
@@ -19,43 +29,49 @@ const connection = mysql.createConnection({
 
 connection.connect(err => {
   if (err) throw err;
-  runSearch();
+  prompt();
 });
 
-function runSearch() {
+function prompt() {
   inquirer
     .prompt({
       name: 'action',
       type: 'rawlist',
       message: 'What would you like to do?',
       choices: [
-        'Find songs by artist',
-        'Find all artists who appear more than once',
-        'Find data within a specific range',
-        'Search for a specific song',
-        'Find artists with a top song and top album in the same year'
+        promptMessages.songsByArtist,
+        promptMessages.artistsMoreThanOnce,
+        promptMessages.dataWithinRange,
+        promptMessages.searchForSong,
+        promptMessages.findArtistsAndAlbums,
+        promptMessages.exit
       ]
     })
     .then(answer => {
+      console.log('answer', answer);
       switch (answer.action) {
-        case 'Find songs by artist':
+        case promptMessages.songsByArtist:
           artistSearch();
           break;
 
-        case 'Find all artists who appear more than once':
+        case promptMessages.artistsMoreThanOnce:
           multiSearch();
           break;
 
-        case 'Find data within a specific range':
+        case promptMessages.dataWithinRange:
           rangeSearch();
           break;
 
-        case 'Search for a specific song':
+        case promptMessages.searchForSong:
           songSearch();
           break;
 
-        case 'Find artists with a top song and top album in the same year':
+        case promptMessages.findArtistsAndAlbums:
           songAndAlbumSearch();
+          break;
+
+        case promptMessages.exit:
+          connection.end();
           break;
       }
     });
@@ -71,17 +87,9 @@ function artistSearch() {
     .then(answer => {
       const query = 'SELECT position, song, year FROM top5000 WHERE ?';
       connection.query(query, { artist: answer.artist }, (err, res) => {
-        for (let i = 0; i < res.length; ++i) {
-          console.log(
-            'Position: ' +
-              res[i].position +
-              ' || Song: ' +
-              res[i].song +
-              ' || Year: ' +
-              res[i].year
-          );
-        }
-        runSearch();
+        if (err) throw err;
+        printRows(res);
+        prompt();
       });
     });
 }
@@ -90,10 +98,9 @@ function multiSearch() {
   const query =
     'SELECT artist FROM top5000 GROUP BY artist HAVING count(*) > 1';
   connection.query(query, (err, res) => {
-    for (let i = 0; i < res.length; ++i) {
-      console.log(res[i].artist);
-    }
-    runSearch();
+    if (err) throw err;
+    res.map(row => console.log(row.artist));
+    prompt();
   });
 }
 
@@ -104,42 +111,22 @@ function rangeSearch() {
         name: 'start',
         type: 'input',
         message: 'Enter starting position: ',
-        validate: function(value) {
-          if (isNaN(value) === false) {
-            return true;
-          }
-          return false;
-        }
+        validate: value => !isNaN(value)
       },
       {
         name: 'end',
         type: 'input',
         message: 'Enter ending position: ',
-        validate: function(value) {
-          if (isNaN(value) === false) {
-            return true;
-          }
-          return false;
-        }
+        validate: value => !isNaN(value)
       }
     ])
     .then(answer => {
       const query =
         'SELECT position,song,artist,year FROM top5000 WHERE position BETWEEN ? AND ?';
       connection.query(query, [answer.start, answer.end], (err, res) => {
-        for (let i = 0; i < res.length; ++i) {
-          console.log(
-            'Position: ' +
-              res[i].position +
-              ' || Song: ' +
-              res[i].song +
-              ' || Artist: ' +
-              res[i].artist +
-              ' || Year: ' +
-              res[i].year
-          );
-        }
-        runSearch();
+        if (err) throw err;
+        printRows(res);
+        prompt();
       });
     });
 }
@@ -157,17 +144,9 @@ function songSearch() {
         'SELECT * FROM top5000 WHERE ?',
         { song: answer.song },
         (err, res) => {
-          console.log(
-            'Position: ' +
-              res[0].position +
-              ' || Song: ' +
-              res[0].song +
-              ' || Artist: ' +
-              res[0].artist +
-              ' || Year: ' +
-              res[0].year
-          );
-          runSearch();
+          if (err) throw err;
+          printRow(res[0]);
+          prompt();
         }
       );
     });
@@ -181,37 +160,38 @@ function songAndAlbumSearch() {
       message: 'What artist would you like to search for?'
     })
     .then(answer => {
-      const query =
-        'SELECT top_albums.year, top_albums.album, top_albums.position, top5000.song, top5000.artist ';
-      query +=
-        'FROM top_albums INNER JOIN top5000 ON (top_albums.artist = top5000.artist AND top_albums.year ';
-      query +=
-        '= top5000.year) WHERE (top_albums.artist = ? AND top5000.artist = ?) ORDER BY top_albums.year, top_albums.position';
+      const query = `
+        SELECT top_albums.year, top_albums.album, top_albums.position, top5000.song, top5000.artist 
+        FROM top_albums
+        INNER JOIN top5000 ON (top_albums.artist = top5000.artist AND top_albums.year = top5000.year)
+        WHERE (top_albums.artist = ? AND top5000.artist = ?)
+        ORDER BY top_albums.year, top_albums.position`;
 
-      connection.query(query, [answer.artist, answer.artist], function(
-        err,
-        res
-      ) {
+      connection.query(query, [answer.artist, answer.artist], (err, res) => {
+        if (err) throw err;
         console.log(res.length + ' matches found!');
-        for (let i = 0; i < res.length; ++i) {
-          console.log(
-            i +
-              1 +
-              '.) ' +
-              'Year: ' +
-              res[i].year +
-              ' Album Position: ' +
-              res[i].position +
-              ' || Artist: ' +
-              res[i].artist +
-              ' || Song: ' +
-              res[i].song +
-              ' || Album: ' +
-              res[i].album
-          );
-        }
-
-        runSearch();
+        printRows(res);
+        prompt();
       });
     });
+}
+
+function printRows(rows) {
+  for (let row of rows) {
+    printRow(row);
+  }
+}
+
+function printRow(row) {
+  if (row) {
+    let rowAsString = '';
+    for (let key in row) {
+      rowAsString += getPrintableColumn(row, key);
+    }
+    console.log(rowAsString);
+  }
+}
+
+function getPrintableColumn(row, column) {
+  return `${column}: ${row[column]} | `;
 }
