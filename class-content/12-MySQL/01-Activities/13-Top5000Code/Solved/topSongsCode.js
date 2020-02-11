@@ -3,6 +3,14 @@
 const mysql = require('mysql');
 const inquirer = require('inquirer');
 
+const promptMessages = {
+  songsByArtist: 'Find songs by artist',
+  artistsMoreThanOnce: 'Find all artists who appear more than once',
+  dataWithinRange: 'Find data within a specific range',
+  searchForSong: 'Search for a specific song',
+  exit: 'exit'
+};
+
 const connection = mysql.createConnection({
   host: 'localhost',
 
@@ -23,44 +31,38 @@ connection.connect(err => {
 });
 
 function prompt() {
-  const songsByArtist = 'Find songs by artist';
-  const artistsMoreThanOnce = 'Find all artists who appear more than once';
-  const dataWithinRange = 'Find data within a specific range';
-  const searchForSong = 'Search for a specific song';
-  const exit = 'exit';
-
   inquirer
     .prompt({
       name: 'action',
       type: 'list',
       message: 'What would you like to do?',
       choices: [
-        songsByArtist,
-        artistsMoreThanOnce,
-        dataWithinRange,
-        searchForSong,
-        exit
+        promptMessages.songsByArtist,
+        promptMessages.artistsMoreThanOnce,
+        promptMessages.dataWithinRange,
+        promptMessages.searchForSong,
+        promptMessages.exit
       ]
     })
     .then(answer => {
       switch (answer.action) {
-        case songsByArtist:
+        case promptMessages.songsByArtist:
           artistSearch();
           break;
 
-        case artistsMoreThanOnce:
+        case promptMessages.artistsMoreThanOnce:
           multiSearch();
           break;
 
-        case dataWithinRange:
+        case promptMessages.dataWithinRange:
           rangeSearch();
           break;
 
-        case searchForSong:
+        case promptMessages.searchForSong:
           songSearch();
           break;
 
-        case exit:
+        case promptMessages.exit:
           connection.end();
           break;
       }
