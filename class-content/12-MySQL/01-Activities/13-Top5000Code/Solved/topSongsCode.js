@@ -13,7 +13,7 @@ const connection = mysql.createConnection({
   user: 'root',
 
   // Your password
-  password: '',
+  password: 'password',
   database: 'top_songsDB'
 });
 
@@ -72,19 +72,26 @@ function artistSearch() {
       const query = 'SELECT position, song, year FROM top5000 WHERE ?';
       connection.query(query, { artist: answer.artist }, (err, res) => {
         if (err) throw err;
-        for (let i = 0; i < res.length; ++i) {
-          console.log(
-            'Position: ' +
-              res[i].position +
-              ' || Song: ' +
-              res[i].song +
-              ' || Year: ' +
-              res[i].year
-          );
+        for (let row of res) {
+          printRow(row);
         }
         runSearch();
       });
     });
+}
+
+function printRow(row) {
+  if (row) {
+    let rowAsString = '';
+    for (let key in row) {
+      rowAsString += getPrintableColumn(row, key);
+    }
+    console.log(rowAsString);
+  }
+}
+
+function getPrintableColumn(row, column) {
+  return `${column}: ${row[column]} | `;
 }
 
 function multiSearch() {

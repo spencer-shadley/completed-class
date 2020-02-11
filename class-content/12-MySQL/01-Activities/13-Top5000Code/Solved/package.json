@@ -4,6 +4,7 @@
   "description": "",
   "main": "TopSongsCode.js",
   "scripts": {
+    "start": "node topSongsCode",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
