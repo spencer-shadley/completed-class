@@ -4,11 +4,14 @@
   "description": "",
   "main": "iceCreamCRUD.js",
   "scripts": {
+    "bonus": "node iceCreamCRUD-bonus",
+    "start": "node iceCreamCRUD",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mysql": "^2.16.0"
+    "inquirer": "^7.0.4",
+    "mysql": "^2.18.1"
   }
 }

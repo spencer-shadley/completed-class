@@ -1,8 +1,8 @@
 ## MySQL Server Installation Guide (Windows)
 
-- Head to <https://dev.mysql.com/downloads/windows/installer/8.0.html>
+- Go [here](https://dev.mysql.com/downloads/windows/installer/8.0.html)
 
-- Select Windows (x86, 32-bit), MSI Installer (16.3 M)
+- Select Windows (x86, 32-bit), MSI Installer (mysql-installer-web-community-8.0.19.0.msi) (18.6 M)
 
 - Click “No thanks, just start my download.”
 
@@ -10,7 +10,7 @@
 
 - When you get to the License Agreement screen, Accept the license terms and click “Next”
 
-- Click the “+” next to “MySQL Servers” to expand it, expand “MySQL Server”, expand “MySQL Server 8.0”, and finally select “MySQL Server 8.0.12 – X64” and click the right arrow to add it to the “Products/Features To Be Installed” section.
+- Click the “+” next to “MySQL Servers” to expand it, expand “MySQL Server”, expand “MySQL Server 8.0”, and finally select “MySQL Server 8.0.19 – X64” and click the right arrow to add it to the “Products/Features To Be Installed” section.
 
 - Click “Execute”
 
@@ -34,7 +34,7 @@
 
 ## MySQL Workbench Install (Windows)
 
-- Head to <https://dev.mysql.com/downloads/workbench/>
+- Go [here](https://dev.mysql.com/downloads/workbench/)
 
 - Select Microsoft Windows in the dropdown.
 
@@ -43,3 +43,59 @@
 - Click “No thanks, just start my download.”
 
 - Open the executable file and go through the installation process.
+
+## Try it out!
+
+- Double click this card
+
+  ![local-connection](./local-connection.png)
+
+- This should open the workbench
+
+  ![workbench](./workbench.png)
+
+- You can now write SQL queries and press the lightning icon to execute your query
+
+  ![lightning](./lightning.png)
+
+- Example SQL statements [here](../1-tuesday-intro/01-animalsDB/animalsDB.sql) and copy/pasted below for convenience:
+
+```sql
+-- Drops the animals_db if it exists currently --
+DROP DATABASE IF EXISTS animals_db;
+-- Creates the "animals_db" database --
+CREATE DATABASE animals_db;
+
+-- Makes it so all of the following code will affect animals_db --
+USE animals_db;
+
+-- Creates the table "people" within animals_db --
+CREATE TABLE people (
+  -- Makes a string column called "name" which cannot contain null --
+  name VARCHAR(30) NOT NULL,
+  -- Makes a boolean column called "has_pet" which cannot contain null --
+  has_pet BOOLEAN NOT NULL,
+  -- Makes a sting column called "pet_name" --
+  pet_name VARCHAR(30),
+  -- Makes an numeric column called "pet_age" --
+  pet_age INTEGER
+);
+
+-- Creates new rows containing data in all named columns --
+INSERT INTO people (name, has_pet, pet_name, pet_age)
+VALUES ("Ahmed", TRUE, "Rockington", 100);
+
+INSERT INTO people (name, has_pet, pet_name, pet_age)
+VALUES ("Ahmed", TRUE, "Rockington", 100);
+
+INSERT INTO people (name, has_pet, pet_name, pet_age)
+VALUES ("Jacob", TRUE, "Misty", 10);
+
+INSERT INTO people (name, has_pet)
+VALUES ("Peter", false);
+
+-- Updates the row where the column name is peter --
+UPDATE people
+SET has_pet = true, pet_name = "Franklin", pet_age = 2
+WHERE name = "Peter";
+```

@@ -4,12 +4,13 @@
   "description": "",
   "main": "drill.js",
   "scripts": {
-    "test": "jest"
+    "start": "node drill",
+    "watch": "nodemon drill"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jest": "^25.1.0"
+    "express": "^4.17.1"
   }
 }

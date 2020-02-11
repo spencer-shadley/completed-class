@@ -24,13 +24,13 @@ CREATE TABLE people (
 
 -- Creates new rows containing data in all named columns --
 INSERT INTO people (name, has_pet, pet_name, pet_age)
-VALUES ("Ahmed", true, "Rockington", 100);
+VALUES ("Spencer", true, "Fluffy", 12);
 
 INSERT INTO people (name, has_pet, pet_name, pet_age)
-VALUES ("Ahmed", true, "Rockington", 100);
+VALUES ("Spencer", true, "Fluffy", 12);
 
 INSERT INTO people (name, has_pet, pet_name, pet_age)
-VALUES ("Jacob",true,"Misty",10);
+VALUES ("Jacob", true, "Misty", 10);
 
 INSERT INTO people (name, has_pet)
 VALUES ("Peter", false);

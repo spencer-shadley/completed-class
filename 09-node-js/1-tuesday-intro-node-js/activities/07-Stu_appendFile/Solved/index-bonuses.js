@@ -9,7 +9,7 @@ var contents = process.argv[4];
 fs[shouldAppend ? 'appendFile' : 'writeFile'](
   fileName,
   contents + '\n',
-  function(err) {
+  err => {
     if (err) {
       console.error(err);
     } else {

@@ -16,9 +16,9 @@ const connection = mysql.createConnection({
   database: 'ice_creamDB'
 });
 
-connection.connect(function(err) {
+connection.connect(err => {
   if (err) throw err;
-  console.log('connected as id ' + connection.threadId + '\n');
+  console.log(`connected with id ${connection.threadId} \n`);
   createProduct();
 });
 
@@ -27,13 +27,13 @@ function createProduct() {
   const query = connection.query(
     'INSERT INTO products SET ?',
     {
-      flavor: 'Rocky Road',
+      flavor: 'strawberry',
       price: 3.0,
       quantity: 50
     },
-    function(err, res) {
+    (err, res) => {
       if (err) throw err;
-      console.log(res.affectedRows + ' product inserted!\n');
+      console.log(`${res.affectedRows} product inserted!\n`);
       // Call updateProduct AFTER the INSERT completes
       updateProduct();
     }
@@ -55,9 +55,9 @@ function updateProduct() {
         flavor: 'Rocky Road'
       }
     ],
-    function(err, res) {
+    (err, res) => {
       if (err) throw err;
-      console.log(res.affectedRows + ' products updated!\n');
+      console.log(`${res.affectedRows} products updated!\n`);
       // Call deleteProduct AFTER the UPDATE completes
       deleteProduct();
     }
@@ -68,15 +68,15 @@ function updateProduct() {
 }
 
 function deleteProduct() {
-  console.log('Deleting all strawberry icecream...\n');
+  console.log("Deleting all strawberry icecream because it's gross...\n");
   connection.query(
     'DELETE FROM products WHERE ?',
     {
       flavor: 'strawberry'
     },
-    function(err, res) {
+    (err, res) => {
       if (err) throw err;
-      console.log(res.affectedRows + ' products deleted!\n');
+      console.log(`${res.affectedRows} products deleted!\n`);
       // Call readProducts AFTER the DELETE completes
       readProducts();
     }
@@ -85,7 +85,7 @@ function deleteProduct() {
 
 function readProducts() {
   console.log('Selecting all products...\n');
-  connection.query('SELECT * FROM products', function(err, res) {
+  connection.query('SELECT * FROM products', (err, res) => {
     if (err) throw err;
     // Log all results of the SELECT statement
     console.log(res);
