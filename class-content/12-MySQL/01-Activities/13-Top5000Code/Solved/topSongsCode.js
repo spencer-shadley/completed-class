@@ -23,38 +23,44 @@ connection.connect(err => {
 });
 
 function runSearch() {
+  const songsByArtist = 'Find songs by artist';
+  const artistsMoreThanOnce = 'Find all artists who appear more than once';
+  const dataWithinRange = 'Find data within a specific range';
+  const searchForSong = 'Search for a specific song';
+  const exit = 'exit';
+
   inquirer
     .prompt({
       name: 'action',
       type: 'list',
       message: 'What would you like to do?',
       choices: [
-        'Find songs by artist',
-        'Find all artists who appear more than once',
-        'Find data within a specific range',
-        'Search for a specific song',
-        'exit'
+        songsByArtist,
+        artistsMoreThanOnce,
+        dataWithinRange,
+        searchForSong,
+        exit
       ]
     })
     .then(answer => {
       switch (answer.action) {
-        case 'Find songs by artist':
+        case songsByArtist:
           artistSearch();
           break;
 
-        case 'Find all artists who appear more than once':
+        case artistsMoreThanOnce:
           multiSearch();
           break;
 
-        case 'Find data within a specific range':
+        case dataWithinRange:
           rangeSearch();
           break;
 
-        case 'Search for a specific song':
+        case searchForSong:
           songSearch();
           break;
 
-        case 'exit':
+        case exit:
           connection.end();
           break;
       }
