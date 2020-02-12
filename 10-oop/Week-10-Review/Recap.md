@@ -1,4 +1,4 @@
-# Object Oriented Programming 
+# <center> Object Oriented Programming 
 
 ## Four pillars  (Encapsulation, Inheritance, Abstraction, Polymorphism)
 ___
@@ -12,7 +12,7 @@ ___
 ### Inheritance
 
     - An objects ability to inherit methods and properties from a parent object.
-   
+   ```js
     class Tree {
         constructor(name) {
             this.name = name;
@@ -23,6 +23,7 @@ ___
     const bananaTree = new Tree('banana');
     bananaTree.name === `banana`;
     bananaTree.trunk === true;
+```
    
     - We have now created a banana tree from the basic tree constructor. 
 
@@ -30,7 +31,7 @@ ___
 
     - Abstraction manages complexity of a system by hiding internal details and composing it in several smaller systems.
 
-   
+   ```js
     class Person {
         constructor({firstName, lastName, job}) {
             this.firstName = firstName;
@@ -52,6 +53,7 @@ ___
         lastName: Leonard, 
         job: new Job('NBA', 'AllStar', '$$')
     }
+```
 
 ### Polymorphism
 
