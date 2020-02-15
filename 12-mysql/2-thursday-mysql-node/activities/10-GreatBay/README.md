@@ -23,3 +23,38 @@
 - Create a search function that allows users to look through the database of available auctions to find those that share the specified keyword or username.
 
 - Get creative! There are a lot of addons to this app which you could create so feel free to work with your group to come up with something not listed above!
+
+Example output:
+
+```
+> node greatBay
+
+Please login:
+> What is your username? spencer
+> What is your password? pass
+Wrong password...
+Please login:
+> What is your username? spencer
+> What is your password? password
+spencer successfully logged in
+> Would spencer like to [POST] an auction or [BID] on an auction? BID
+> What auction would you like to place a bid in? pizza
+> How much would you like to bid? 999999
+Bid placed successfully!
+> Would spencer like to [POST] an auction or [BID] on an auction? POST
+> What is the item you would like to submit? doughnuts
+> What category would you like to place your auction in? food
+> What would you like your starting bid to be? 4
+Your auction was created successfully!
+> Would spencer like to [POST] an auction or [BID] on an auction? BID
+> What auction would you like to place a bid in? doughnuts
+> How much would you like to bid? 9
+Bid placed successfully!
+> Would spencer like to [POST] an auction or [BID] on an auction? LOGOUT
+Successfully logged out
+Please login:
+> What is your username? foo
+> What is your password? bar
+Created user foo
+> Would foo like to [POST] an auction or [BID] on an auction? EXIT
+```
