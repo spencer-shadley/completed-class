@@ -34,6 +34,8 @@
 
   - Try out [RBQL](https://rbql.org/) (in the status bar with the file open select "Query")
 
+- [Download Tableau](https://www.tableau.com/academic/students), import and visualize the data
+
 - Create a `seeds.sql` file that contains the data for the first three songs found within `TopSongs.csv`
 
 - Look into how MySQL Workbench can import and export data files. What file types does it accept? How does it convert the data?
