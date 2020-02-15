@@ -18,8 +18,8 @@ Returns true if all of the values in the array meet the given condition
 
 Returns true if more than 50% of the values in the array meet the given condition
 
-## Hint
+## Bonus
 
-- The longest implementation of the above functions in my solution is five lines of code and the shortest is one line of code
+- Look into JsDoc comments
 
-- I did not use any existing array instance functions
+- Add JsDoc comments to each function
