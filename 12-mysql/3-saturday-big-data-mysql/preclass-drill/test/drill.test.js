@@ -1,6 +1,6 @@
 'use strict';
 
-const drill = require('../drill');
+const drill = require('../drill-solution');
 
 describe('has', () => {
   const isEven = num => num % 2 === 0;
