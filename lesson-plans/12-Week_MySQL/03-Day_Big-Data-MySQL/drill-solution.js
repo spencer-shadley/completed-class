@@ -2,6 +2,7 @@
 
 const isValid = (arr, callback) => Array.isArray(arr) && !!callback;
 
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some
 function hasSome(arr, callback) {
   if (!isValid(arr, callback)) {
     return false;
@@ -19,6 +20,7 @@ function hasNone(arr, callback) {
   return !hasSome(arr, callback);
 }
 
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every
 function hasAll(arr, callback) {
   if (!isValid(arr, callback)) {
     return false;
