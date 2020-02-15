@@ -1,7 +1,9 @@
 'use strict';
 
+const isValid = (arr, callback) => Array.isArray(arr) && !!callback;
+
 function hasSome(arr, callback) {
-  if (!Array.isArray(arr) || !callback) {
+  if (!isValid(arr, callback)) {
     return false;
   }
 
@@ -18,7 +20,7 @@ function hasNone(arr, callback) {
 }
 
 function hasAll(arr, callback) {
-  if (!Array.isArray(arr) || !callback) {
+  if (!isValid(arr, callback)) {
     return false;
   }
 
@@ -31,7 +33,7 @@ function hasAll(arr, callback) {
 }
 
 function hasMost(arr, callback) {
-  if (!Array.isArray(arr) || !callback) {
+  if (!isValid(arr, callback)) {
     return false;
   }
 
