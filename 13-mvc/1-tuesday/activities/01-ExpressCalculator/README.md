@@ -2,7 +2,7 @@
 
 ## Instructions
 
-- You will create an Express calculator application with one get route that is able to take in three parameters: an operation and two numbers.
+- You will create an Express calculator application with one `GET` route that is able to take in three parameters: an operation and two numbers.
 
 - There are four operation values which a user may use: addition, subtraction, multiplication, and division.
 

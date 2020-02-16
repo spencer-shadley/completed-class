@@ -68,7 +68,7 @@ To begin with, you'll need a git repository initialized locally with your basic 
    ```js
    const PORT = process.env.PORT || 3000;
    ...
-   app.listen(PORT, function() {
+   app.listen(PORT, () => {
    ```
 
    - This allows you to get the port from the bound environment variable (using `process.env.PORT`) if it exists, so that when your app starts on heroku's machine it will start listening on the appropriate port.
