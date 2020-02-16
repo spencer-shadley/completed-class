@@ -55,6 +55,6 @@ app.get('/darthmaul', (req, res) => {
 
 // Listener
 // ===========================================================
-app.listen(PORT, function() {
+app.listen(PORT, () => {
   console.log('App listening on PORT ' + PORT);
 });

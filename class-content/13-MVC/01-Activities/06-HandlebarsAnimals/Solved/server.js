@@ -90,6 +90,6 @@ app.get('/all-non-pets', (req, res) => {
   res.render('index', data);
 });
 
-app.listen(PORT, function() {
+app.listen(PORT, () => {
   console.log('App listening on PORT ' + PORT);
 });

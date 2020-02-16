@@ -23,6 +23,6 @@ mongoose.connect(
 );
 
 // Start the API server
-app.listen(PORT, function() {
+app.listen(PORT, () => {
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
 });
