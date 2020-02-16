@@ -42,7 +42,7 @@ const orm = {
     connection.query(
       queryString,
       [whatToSelect, tableOne, tableTwo, onTableOneCol, onTableTwoCol],
-      function(err, result) {
+      (err, result) => {
         if (err) throw err;
         console.log(result);
       }

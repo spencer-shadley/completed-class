@@ -67,7 +67,7 @@ app.post('/api/quotes', (req, res) => {
   connection.query(
     'INSERT INTO quotes (author, quote) VALUES (?, ?)',
     [req.body.author, req.body.quote],
-    function(err, result) {
+    (err, result) => {
       if (err) {
         // If an error occurred, send a generic server failure
         return res.status(500).end();
@@ -100,7 +100,7 @@ app.put('/api/quotes/:id', (req, res) => {
   connection.query(
     'UPDATE quotes SET author = ?, quote = ? WHERE id = ?',
     [req.body.author, req.body.quote, req.params.id],
-    function(err, result) {
+    (err, result) => {
       if (err) {
         // If an error occurred, send a generic server failure
         return res.status(500).end();

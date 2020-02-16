@@ -62,7 +62,7 @@ app.post('/', (req, res) => {
   connection.query(
     'INSERT INTO wishes (wish) VALUES (?)',
     [req.body.wish],
-    function(err, result) {
+    (err, result) => {
       if (err) {
         throw err;
       }

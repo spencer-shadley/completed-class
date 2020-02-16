@@ -50,7 +50,7 @@ app.post('/api/movies', (req, res) => {
   connection.query(
     'INSERT INTO movies (movie) VALUES (?)',
     [req.body.movie],
-    function(err, result) {
+    (err, result) => {
       if (err) {
         return res.status(500).end();
       }
@@ -78,7 +78,7 @@ app.put('/api/movies/:id', (req, res) => {
   connection.query(
     'UPDATE movies SET movie = ? WHERE id = ?',
     [req.body.movie, req.params.id],
-    function(err, result) {
+    (err, result) => {
       if (err) {
         // If an error occurred, send a generic server failure
         return res.status(500).end();

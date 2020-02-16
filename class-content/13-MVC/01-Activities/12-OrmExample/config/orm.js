@@ -51,7 +51,7 @@ const orm = {
         tableOne,
         tableOneCol
       ],
-      function(err, result) {
+      (err, result) => {
         if (err) throw err;
         console.log(result);
       }

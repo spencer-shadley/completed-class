@@ -32,7 +32,7 @@ module.exports = function(app) {
     connection.query(
       dbQuery,
       [req.body.author, req.body.body, req.body.created_at],
-      function(err, result) {
+      (err, result) => {
         if (err) throw err;
         console.log('Chirp Successfully Saved!');
         res.end();

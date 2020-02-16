@@ -9,14 +9,14 @@ const app = express();
 
 // Set the port of our application
 // process.env.PORT lets the port be set by Heroku
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3000;
 
 // MySQL DB Connection Information (remember to change this with our specific credentials)
 const connection = mysql.createConnection({
   host: 'localhost',
   port: 3306,
   user: 'root',
-  password: '',
+  password: 'password',
   database: 'seinfeld'
 });
 
@@ -31,21 +31,12 @@ connection.connect(err => {
 
 // Routes
 app.get('/cast', (req, res) => {
-  connection.query('SELECT * FROM actors ORDER BY id', (err, result) => {
+  connection.query('SELECT * FROM actors ORDER BY id', (err, characters) => {
     if (err) throw err;
 
-    const html = '<h1>Actors Ordered BY ID</h1>';
-
-    html += '<ul>';
-
-    for (let i = 0; i < result.length; ++i) {
-      html += '<li><p> ID: ' + result[i].id + '</p>';
-      html += '<p> Name: ' + result[i].name + '</p>';
-      html += '<p> Coolness Points: ' + result[i].coolness_points + '</p>';
-      html += '<p>Attitude: ' + result[i].attitude + '</p></li>';
-    }
-
-    html += '</ul>';
+    let html = `
+      <h1>Actors Ordered BY ID</h1>
+      ${generateCharactersHTML(characters)}`;
 
     res.send(html);
   });
@@ -54,21 +45,12 @@ app.get('/cast', (req, res) => {
 app.get('/coolness-chart', (req, res) => {
   connection.query(
     'SELECT * FROM actors ORDER BY coolness_points DESC',
-    function(err, result) {
+    (err, characters) => {
       if (err) throw err;
 
-      const html = '<h1>Actors by Coolness</h1>';
-
-      html += '<ul>';
-
-      for (let i = 0; i < result.length; ++i) {
-        html += '<li><p> ID: ' + result[i].id + '</p>';
-        html += '<p> Name: ' + result[i].name + '</p>';
-        html += '<p> Coolness Points: ' + result[i].coolness_points + '</p>';
-        html += '<p>Attitude: ' + result[i].attitude + '</p></li>';
-      }
-
-      html += '</ul>';
+      const html = `
+      <h1>Actors by Coolness</h1>
+      ${generateCharactersHTML(characters)}`;
 
       res.send(html);
     }
@@ -79,29 +61,35 @@ app.get('/attitude-chart/:att', (req, res) => {
   connection.query(
     'SELECT * FROM actors WHERE attitude = ?',
     [req.params.att],
-    function(err, result) {
+    (err, characters) => {
       if (err) throw err;
 
-      const html = '<h1>Actors With an Attitude of ' + req.params.att + '</h1>';
-
-      html += '<ul>';
-
-      for (let i = 0; i < result.length; ++i) {
-        html += '<li><p> ID: ' + result[i].id + '</p>';
-        html += '<p> Name: ' + result[i].name + '</p>';
-        html += '<p> Coolness Points: ' + result[i].coolness_points + '</p>';
-        html += '<p>Attitude: ' + result[i].attitude + '</p></li>';
-      }
-
-      html += '</ul>';
+      const html = `
+        <h1>Actors With an Attitude of ${req.params.att}</h1>
+        ${generateCharactersHTML(characters)}`;
 
       res.send(html);
     }
   );
 });
 
+function generateCharactersHTML(characters) {
+  let charactersHTML = '<ul>';
+  for (const character of characters) {
+    charactersHTML += `
+    <li>
+      <p> ID: ${character.id}</p
+      <p> Name: ${character.name}</p>
+      <p> Coolness Points: ${character.coolness_points}</p>
+      <p>Attitude: ${character.attitude}</p>
+    </li>`;
+  }
+  charactersHTML += '</ul>';
+  return charactersHTML;
+}
+
 // Start our server so that it can begin listening to client requests.
-app.listen(PORT, () => {
+app.listen(PORT, () =>
   // Log (server-side) when our server has started
-  console.log(`Server listening on: http://localhost:${PORT}`);
-});
+  console.log(`Server listening on: http://localhost:${PORT}`)
+);

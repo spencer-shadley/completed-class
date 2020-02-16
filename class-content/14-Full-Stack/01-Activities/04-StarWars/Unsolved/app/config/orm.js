@@ -58,7 +58,7 @@ const orm = {
         character.age,
         character.forcePoints
       ],
-      function(err, result) {
+      (err, result) => {
         callback(result);
       }
     );
