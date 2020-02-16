@@ -19,7 +19,7 @@ const orm = {
   allCharacters: function(callback) {
     const s = 'SELECT * FROM ' + tableName;
 
-    connection.query(s, function(err, result) {
+    connection.query(s, (err, result) => {
       callback(result);
     });
   },
@@ -29,7 +29,7 @@ const orm = {
   searchCharacter: function(name, callback) {
     const s = 'select * from ' + tableName + ' where routeName=?';
 
-    connection.query(s, [name], function(err, result) {
+    connection.query(s, [name], (err, result) => {
       callback(result);
     });
   },

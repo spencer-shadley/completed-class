@@ -15,7 +15,7 @@ module.exports = function(app) {
   app.get('/api/all', (req, res) => {
     const dbQuery = 'SELECT * FROM chirps';
 
-    connection.query(dbQuery, function(err, result) {
+    connection.query(dbQuery, (err, result) => {
       if (err) throw err;
       res.json(result);
     });

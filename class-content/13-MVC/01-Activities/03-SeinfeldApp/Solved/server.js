@@ -31,7 +31,7 @@ connection.connect(err => {
 
 // Routes
 app.get('/cast', (req, res) => {
-  connection.query('SELECT * FROM actors ORDER BY id', function(err, result) {
+  connection.query('SELECT * FROM actors ORDER BY id', (err, result) => {
     if (err) throw err;
 
     const html = '<h1>Actors Ordered BY ID</h1>';
