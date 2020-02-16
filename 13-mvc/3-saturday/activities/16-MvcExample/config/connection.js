@@ -14,7 +14,7 @@ const connection = mysql.createConnection({
 // Make connection.
 connection.connect(err => {
   if (err) {
-    console.error('error connecting: ' + err.stack);
+    console.error('error connecting', err.stack);
     return;
   }
   console.log(`connected with id ${connection.threadId}`);
