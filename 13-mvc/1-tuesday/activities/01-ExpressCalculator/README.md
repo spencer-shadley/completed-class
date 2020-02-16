@@ -8,4 +8,8 @@
 
 - When the route is hit, your browser should display the result of the math operation.
 
-- For example, when the user goes to the url <http://localhost:3000/add/10/1>, the page should display 11.
+- For example, when the user goes to the url http://localhost:3000/add/10/1, the page should display 11.
+
+## Bonus
+
+- Handle additional routes for these operations. For example, http://localhost:3000/+/10/1
