@@ -11,6 +11,7 @@ To run this file, we do the following in our Terminal:
 */
 
 -- Create the database seinfeld and specified it for use.
+DROP DATABASE IF EXISTS seinfeld;
 CREATE DATABASE seinfeld;
 USE seinfeld;
 
@@ -24,7 +25,9 @@ CREATE TABLE actors (
 );
 
 -- Insert a set of records.
-INSERT INTO actors (name, coolness_points, attitude) VALUES ("Jerry", 90, "relaxed");
-INSERT INTO actors (name, coolness_points, attitude) VALUES ("Elaine", 80, "righteous");
-INSERT INTO actors (name, coolness_points, attitude) VALUES ("Kramer", 20, "doofus");
-INSERT INTO actors (name, coolness_points, attitude) VALUES ("George", 70, "selfish");
+INSERT INTO actors (name, coolness_points, attitude)
+VALUES
+  ("Jerry", 90, "relaxed"),
+  ("Elaine", 80, "righteous"),
+  ("Kramer", 20, "doofus"),
+  ("George", 70, "selfish");
