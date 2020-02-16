@@ -5,7 +5,7 @@ const express = require('express');
 
 // Set the port of our application
 // process.env.PORT lets the port be set by Heroku
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3000;
 
 // Create express app instance.
 const app = express();
@@ -18,25 +18,28 @@ app.get('/:operation/:firstNum/:secondNum', (req, res) => {
   // Parameters are converted to integers
   const firstNum = parseInt(req.params.firstNum);
   const secondNum = parseInt(req.params.secondNum);
-  const result;
+  let result;
 
   // Switch statement chooses operation based on the operation parameter.
   switch (operation) {
     case 'add':
-    case '+': // Bonus.  Example:  http://localhost:3002/+/6/4 --> 10
+    case 'plus':
+    case '+': // Bonus.  Example:  http://localhost:3000/+/6/4 --> 10
       result = firstNum + secondNum;
       break;
     case 'subtract':
-    case '-': // Bonus.  Example:  http://localhost:3002/-/6/4 --> 2
+    case 'minu':
+    case '-': // Bonus.  Example:  http://localhost:3000/-/6/4 --> 2
       result = firstNum - secondNum;
       break;
     case 'multiply':
-    case '*': // Bonus.  Example:  http://localhost:3002/*/3/4 --> 12
+    case 'times':
+    case '*': // Bonus.  Example:  http://localhost:3000/*/3/4 --> 12
       result = firstNum * secondNum;
       break;
     case 'divide':
     case '/': // Bonus.  This char has to be escaped in the url since slashes separate params
-      // Example:  http://localhost:3002/%2F/14/2 --> 7
+      // Example:  http://localhost:3000/%2F/14/2 --> 7
       result = firstNum / secondNum;
       break;
     default:
@@ -49,7 +52,7 @@ app.get('/:operation/:firstNum/:secondNum', (req, res) => {
 });
 
 // Start our server so that it can begin listening to client requests.
-app.listen(PORT, () => {
+app.listen(PORT, () =>
   // Log (server-side) when our server has started
-  console.log(`Server listening on: http://localhost:${PORT}`);
-});
+  console.log(`Server listening on: http://localhost:${PORT}`)
+);
