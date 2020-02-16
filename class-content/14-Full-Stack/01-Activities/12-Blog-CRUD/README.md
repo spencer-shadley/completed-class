@@ -1,16 +1,16 @@
 - **Folder**: `12-Blog-CRUD/Unsolved`
 
-- **INSTRUCTIONS**:
+# Instructions:
 
-  The goal of this exercise is to add Sequelize CRUD methods inside each route specified in the comments in the api-routes.js file.
+The goal of this exercise is to add Sequelize CRUD methods inside each route specified in the comments in the api-routes.js file.
 
-  1. Open the folder slacked out to you, run `npm install`
+1. Open the folder slacked out to you, run `npm install`
 
-  2. Open the `config` folder and update the `config.json` file's `development` object to match your own local MySQL database.
+2. Open the `config` folder and update the `config.json` file's `development` object to match your own local MySQL database.
 
-  3. Navigate to the `api-routes.js` file inside of the `routes` folder.
+3. Navigate to the `api-routes.js` file inside of the `routes` folder.
 
-  4. Fill in each route with the code described in the comments to add each CRUD action.
+4. Fill in each route with the code described in the comments to add each CRUD action.
 
 - We can test our code works by checking to see if we have the following functionality (recommended order):
 
