@@ -65,7 +65,7 @@ app.get('/attitude-chart/:att', (req, res) => {
       if (err) throw err;
 
       const html = `
-        <h1>Actors With an Attitude of ${req.params.att}</h1>
+        <h1>Actors With a ${req.params.att} Attitude</h1>
         ${generateCharactersHTML(characters)}`;
 
       res.send(html);
