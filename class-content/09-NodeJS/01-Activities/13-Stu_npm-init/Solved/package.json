@@ -4,7 +4,9 @@
   "description": "The solution to the `npm init` activity.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index",
+    "watch": "nodemon index",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
