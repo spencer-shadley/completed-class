@@ -23,7 +23,7 @@ const connection = mysql.createConnection({
 // Initiate MySQL Connection.
 connection.connect(err => {
   if (err) {
-    console.error('error connecting: ' + err.stack);
+    console.error('error connecting', err.stack);
     return;
   }
   console.log(`connected with id ${connection.threadId}`);
@@ -33,18 +33,21 @@ connection.connect(err => {
 app.get('/', (req, res) => {
   // If the main route is hit, then we initiate a SQL query to grab all records.
   // All of the resulting records are stored in the variable "result."
-  connection.query('SELECT * FROM schools', (err, result) => {
+  connection.query('SELECT * FROM schools', (err, schools) => {
     if (err) throw err;
     // We then begin building out HTML elements for the page.
-    const html = '<h1> Magical Schools </h1>';
+    let html = '<h1>Magical Schools</h1>';
 
     // Here we begin an unordered list.
     html += '<ul>';
 
     // We then use the retrieved records from the database to populate our HTML file.
-    for (let i = 0; i < result.length; ++i) {
-      html += '<li><p> ID: ' + result[i].id + '</p>';
-      html += '<p>School: ' + result[i].name + ' </p></li>';
+    for (let school of schools) {
+      html += `
+        <li>
+          <p>ID: ${school.id}</p>
+          <p>School: ${school.name}</p>
+        </li>`;
     }
 
     // We close our unordered list.

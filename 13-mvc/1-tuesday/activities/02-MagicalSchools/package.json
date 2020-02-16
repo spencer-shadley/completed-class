@@ -4,8 +4,8 @@
   "description": "",
   "main": "magicSchools.js",
   "scripts": {
-    "start": "node index",
-    "watch": "nodemon index",
+    "start": "node magicSchools",
+    "watch": "nodemon magicSchools",
     "test": "jest"
   },
   "author": "",
