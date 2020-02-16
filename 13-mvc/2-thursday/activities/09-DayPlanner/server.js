@@ -50,7 +50,7 @@ app.post('/api/plans', (req, res) => {
   connection.query(
     'INSERT INTO plans (plan) VALUES (?)',
     [req.body.plan],
-    function(err, result) {
+    (err, result) => {
       if (err) {
         return res.status(500).end();
       }
@@ -67,7 +67,7 @@ app.put('/api/plans/:id', (req, res) => {
   connection.query(
     'UPDATE plans SET plan = ? WHERE id = ?',
     [req.body.plan, req.params.id],
-    function(err, result) {
+    (err, result) => {
       if (err) {
         // If an error occurred, send a generic server failure
         return res.status(500).end();

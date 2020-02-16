@@ -63,7 +63,7 @@ app.post('/', (req, res) => {
   connection.query(
     'INSERT INTO tasks (task) VALUES (?)',
     [req.body.task],
-    function(err, result) {
+    (err, result) => {
       if (err) throw err;
 
       res.redirect('/');
