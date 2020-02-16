@@ -9,7 +9,7 @@ const server = http.createServer(handleRequest);
 // Start our server
 server.listen(PORT, function() {
   // Callback triggered when server is successfully listening. Hurray!
-  console.log('Server listening on: http://localhost:' + PORT);
+  console.log(`Server listening on: http://localhost:${PORT}`);
 });
 
 // Create a function which handles incoming requests and sends responses

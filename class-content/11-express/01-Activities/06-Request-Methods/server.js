@@ -27,5 +27,5 @@ function handleRequest(req, res) {
 
 // Start our server
 server.listen(PORT, function() {
-  console.log('Server listening on: http://localhost:' + PORT);
+  console.log(`Server listening on: http://localhost:${PORT}`);
 });
