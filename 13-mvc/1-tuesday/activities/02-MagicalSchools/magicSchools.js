@@ -9,7 +9,7 @@ const app = express();
 
 // Set the port of our application
 // process.env.PORT lets the port be set by Heroku
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3000;
 
 // MySQL DB Connection Information (remember to change this with our specific credentials)
 const connection = mysql.createConnection({
@@ -33,7 +33,7 @@ connection.connect(err => {
 app.get('/', (req, res) => {
   // If the main route is hit, then we initiate a SQL query to grab all records.
   // All of the resulting records are stored in the variable "result."
-  connection.query('SELECT * FROM schools', function(err, result) {
+  connection.query('SELECT * FROM schools', (err, result) => {
     if (err) throw err;
     // We then begin building out HTML elements for the page.
     const html = '<h1> Magical Schools </h1>';
@@ -56,7 +56,7 @@ app.get('/', (req, res) => {
 });
 
 // Start our server so that it can begin listening to client requests.
-app.listen(PORT, () => {
+app.listen(PORT, () =>
   // Log (server-side) when our server has started
-  console.log(`Server listening on: http://localhost:${PORT}`);
-});
+  console.log(`Server listening on: http://localhost:${PORT}`)
+);

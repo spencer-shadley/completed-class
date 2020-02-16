@@ -1,4 +1,4 @@
--- Drops the programming_db if it already exists --
+-- Drops the wizard_schools_db if it already exists --
 DROP DATABASE IF EXISTS wizard_schools_db;
 
 -- Created the DB "wizard_schools_db" (only works on local connections)
