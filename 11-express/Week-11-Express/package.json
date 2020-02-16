@@ -4,7 +4,9 @@
   "description": "this is a test for the weekly review",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index",
+    "watch": "nodemon index",
+    "test": "jest"
   },
   "author": "dane",
   "license": "ISC",

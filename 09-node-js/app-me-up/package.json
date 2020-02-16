@@ -4,7 +4,9 @@
   "description": "A script to build a basic app template with html, css, and html files.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index",
+    "watch": "nodemon index",
+    "test": "jest"
   },
   "bin": "index.js",
   "repository": {

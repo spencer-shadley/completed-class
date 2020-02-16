@@ -4,7 +4,9 @@
   "description": "In this activity, you will install your application dependencies using the command `npm install` or `npm i`.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index",
+    "watch": "nodemon index",
+    "test": "jest"
   },
   "keywords": [
     "npm",
