@@ -26,6 +26,7 @@ CREATE TABLE tasks (
 );
 
 -- Insert a set of records.
-INSERT INTO tasks (task) VALUES ('Pick up milk.');
-INSERT INTO tasks (task) VALUES ('Mow the lawn.');
-INSERT INTO tasks (task) VALUES ('Call Shannon back.');
+INSERT INTO tasks (task) VALUES
+('Pick up milk.'),
+('Mow the lawn.'),
+('Call Bob back.');
