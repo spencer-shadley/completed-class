@@ -1722,7 +1722,7 @@ You don’t necessarily need a static server in order to run a Create React App 
 
 Here’s a programmatic example using [Node](https://nodejs.org/) and [Express](http://expressjs.com/):
 
-```javascript
+```js
 const express = require('express');
 const path = require('path');
 const app = express();

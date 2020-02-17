@@ -33,7 +33,7 @@
 
     - Question: How would I model it in Sequelize?
 
-      ```javascript
+      ```js
       const tableName = sequelize.define(
         'tableName',
         {
@@ -69,7 +69,7 @@
 
     - Question: How would I query for all the records where the Independence Year was less than 50 years ago?
 
-      ```javascript
+      ```js
       tableName.findAll({
         where: {
           IndependenceYear: { $gt: new Date().getFullYear() - 50 }
@@ -79,7 +79,7 @@
 
     - How would I query the table, order it by descending Independence Years, and limit the results to just show 2 of the records. Skipping the first two? (i.e. Results: Zambia, Afghanistan)
 
-      ```javascript
+      ```js
       tableName.findAll({
         offset: 2,
         limit: 2,
