@@ -22,19 +22,19 @@ const animals = [
     fierceness: 100
   },
   {
-    animalType: 'giraffe',
-    pet: false,
-    fierceness: 4
-  },
-  {
-    animalType: 'zebra',
-    pet: false,
-    fierceness: 8
+    animalType: 'hedgehog',
+    pet: true,
+    fierceness: 6
   },
   {
     animalType: 'lion',
     pet: false,
     fierceness: 10
+  },
+  {
+    animalType: 'zebra',
+    pet: false,
+    fierceness: 8
   }
 ];
 
@@ -44,51 +44,40 @@ app.get('/dog', (req, res) => {
 
   // 1. send the dog object from the animals array to the dog handlebars file.
   res.render('dog', animals[0]);
+
+  // bonus: search for the dog in case it moves around in the array
+  // res.render(
+  //   'dog',
+  //   animals.find(animal => animal.animalType === 'dog')
+  // );
 });
 
 app.get('/all-pets', (req, res) => {
-  // Handlebars requires an object to be sent to the index handlebars file.
+  // 2. Find all pets and send them to the index handlebars file
+  let pets = animals.filter(animal => animal.pet);
 
-  // 2. Loop through the animals, and send those that are pets to the index handlebars file.
-  const data = {
-    animals: []
-  };
+  // bonus: sort by fierceness
+  // pets = sortByFierceness(pets);
 
-  for (let i = 0; i < animals.length; i += 1) {
-    // Get the current animal.
-    const currentAnimal = animals[i];
-
-    // Check if this animal is a pet.
-    if (currentAnimal.pet) {
-      // If so, push it into our data.animals array.
-      data.animals.push(currentAnimal);
-    }
-  }
-
-  res.render('index', data);
+  // Handlebars expects an object to be sent to the index handlebars file.
+  res.render('index', { animals: pets });
 });
 
 app.get('/all-non-pets', (req, res) => {
-  // Handlebars requires an object to be sent to the index handlebars file.
-
   // 3. Loop through the animals, and send those that are not pets to the index handlebars file.
-  const data = {
-    animals: []
-  };
+  let nonPets = animals.filter(animal => !animal.pet);
 
-  for (let i = 0; i < animals.length; i += 1) {
-    // Get the current animal.
-    const currentAnimal = animals[i];
+  // bonus: sort by fierceness
+  // nonPets = sortByFierceness(pets);
 
-    // Check if this animal is a pet.
-    if (!currentAnimal.pet) {
-      // If not, push it into our data.animals array.
-      data.animals.push(currentAnimal);
-    }
-  }
-
-  res.render('index', data);
+  // Handlebars expects an object to be sent to the index handlebars file.
+  res.render('index', { animals: nonPets });
 });
+
+// bonus: sort by fierceness
+function sortByFierceness(animals) {
+  return animals.sort((a, b) => a.fierceness - b.fierceness);
+}
 
 app.listen(PORT, () =>
   console.log(`App listening on http://localhost:${PORT}`)
