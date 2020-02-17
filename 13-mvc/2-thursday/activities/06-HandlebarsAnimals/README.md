@@ -7,3 +7,5 @@
 # Bonus
 
 - When retrieving the dog, create a solution such that the response will work no matter where the dog is in the array
+
+- Sort `all-pets` and `all-non-pets` routes by `fierceness`
