@@ -6,7 +6,7 @@
 
 - Starting from scratch, write code that loops through the following array and logs the name of each animal on the farm to the console:
 
-```javascript
+```js
 var myFarm = ['chickens', 'pigs', 'cows', 'horses', 'ostriches'];
 ```
 

@@ -1,6 +1,6 @@
 # Instructions
 
-- In pairs, look through this the files in this directory and explain to one another how this code is working
+- With a partner, look through this the files in this directory and explain to one another how this code is working
 
 # Bonus
 
