@@ -36,7 +36,7 @@ connection.connect(err => {
 
 // Use Handlebars to render the main index.html page with the plans in it.
 app.get('/', (req, res) => {
-  connection.query('SELECT * FROM plans;', function(err, data) {
+  connection.query('SELECT * FROM plans;', (err, data) => {
     if (err) {
       return res.status(500).end();
     }
