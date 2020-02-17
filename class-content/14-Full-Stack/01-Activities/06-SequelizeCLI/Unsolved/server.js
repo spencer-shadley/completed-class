@@ -11,7 +11,7 @@ const express = require('express');
 // Sets up the Express App
 // =============================================================
 const app = express();
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3000;
 
 // Starts the server to begin listening
 // =============================================================
