@@ -1,7 +1,7 @@
 'use strict';
 
 const express = require('express');
-const exphbs = require('express-handlebars');
+const expressHandlebars = require('express-handlebars');
 
 const app = express();
 
@@ -9,7 +9,7 @@ const app = express();
 // process.env.PORT lets the port be set by Heroku
 const PORT = process.env.PORT || 8080;
 
-app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
+app.engine('handlebars', expressHandlebars({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
 const animals = [
@@ -21,7 +21,7 @@ const animals = [
   {
     animalType: 'cat',
     pet: true,
-    fierceness: 10
+    fierceness: 100
   },
   {
     animalType: 'giraffe',
