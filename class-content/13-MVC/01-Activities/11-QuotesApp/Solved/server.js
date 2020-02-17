@@ -38,7 +38,7 @@ connection.connect(err => {
 
 // Serve index.handlebars to the root route.
 app.get('/', (req, res) => {
-  connection.query('SELECT * FROM quotes;', function(err, data) {
+  connection.query('SELECT * FROM quotes;', (err, data) => {
     if (err) {
       return res.status(500).end();
     }
@@ -52,7 +52,7 @@ app.get('/:id', (req, res) => {
   connection.query(
     'SELECT * FROM quotes where id = ?',
     [req.params.id],
-    function(err, data) {
+    (err, data) => {
       if (err) {
         return res.status(500).end();
       }

@@ -36,7 +36,7 @@ connection.connect(err => {
 
 // Use Handlebars to render the main index.html page with the movies in it.
 app.get('/', (req, res) => {
-  connection.query('SELECT * FROM movies;', function(err, data) {
+  connection.query('SELECT * FROM movies;', (err, data) => {
     if (err) {
       return res.status(500).end();
     }
@@ -64,7 +64,7 @@ app.post('/api/movies', (req, res) => {
 
 // Retrieve all movies
 app.get('/api/movies', (req, res) => {
-  connection.query('SELECT * FROM movies;', function(err, data) {
+  connection.query('SELECT * FROM movies;', (err, data) => {
     if (err) {
       return res.status(500).end();
     }

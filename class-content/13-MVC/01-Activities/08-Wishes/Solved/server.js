@@ -36,7 +36,7 @@ connection.connect(err => {
 
 // Root get route.
 app.get('/', (req, res) => {
-  connection.query('SELECT * FROM wishes;', function(err, data) {
+  connection.query('SELECT * FROM wishes;', (err, data) => {
     if (err) {
       throw err;
     }
