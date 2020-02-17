@@ -6,15 +6,25 @@
   const icecreams = [
     { name: 'vanilla', price: 10, awesomeness: 3 },
     { name: 'chocolate', price: 4, awesomeness: 8 },
-    { name: 'banana', price: 1, awesomeness: 1 },
-    { name: 'greentea', price: 5, awesomeness: 7 },
+    { name: 'banana', price: 1, awesomeness: 8 },
+    { name: 'green tea', price: 5, awesomeness: 3 },
     { name: 'jawbreakers', price: 6, awesomeness: 2 },
-    { name: 'pistachio', price: 11, awesomeness: 15 }
+    { name: 'pistachio', price: 11, awesomeness: 1 }
   ];
   ```
 
 - Do not use MySQL for this assignment! Use the `icecreams` variable above as your data. Add the variable to your `server.js` file.
 
-- Using handlebars and express, create a route called `/icecream/:name`. When the route is hit, it will display the name, price and awesomeness for that specific ice cream.
-
 - Create an `/icecreams` route. It will loop over all the ice creams and display them all to the user.
+
+# Bonus
+
+- Use express to create a route called `/icecream/:name`. When the route is hit, it will display the name, price and awesomeness for that specific ice cream using handlebars.
+
+- Make the output look good (add more HTML elements, CSS, etc.)
+
+- Sort the icecream by awesomeness
+
+# Hints
+
+- Remember that handlebars requires a very specific directory structure. Refer back to the `04-handlebars` examples as references.
