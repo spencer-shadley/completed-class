@@ -2,7 +2,7 @@
 
 require('dotenv').config();
 const express = require('express');
-const exphbs = require('express-handlebars');
+const expressHandlebars = require('express-handlebars');
 
 const db = require('./models');
 
@@ -17,7 +17,7 @@ app.use(express.static('public'));
 // Handlebars
 app.engine(
   'handlebars',
-  exphbs({
+  expressHandlebars({
     defaultLayout: 'main'
   })
 );

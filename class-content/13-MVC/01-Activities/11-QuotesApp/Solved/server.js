@@ -1,6 +1,6 @@
 'use strict';
 
-const exphbs = require('express-handlebars');
+const expressHandlebars = require('express-handlebars');
 const express = require('express');
 const mysql = require('mysql');
 
@@ -17,7 +17,7 @@ app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
+app.engine('handlebars', expressHandlebars({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
 const connection = mysql.createConnection({
