@@ -1,13 +1,13 @@
 'use strict';
 
 const express = require('express');
-const exphbs = require('express-handlebars');
+const expressHandlebars = require('express-handlebars');
 
 const app = express();
 
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 3000;
 
-app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
+app.engine('handlebars', expressHandlebars({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
 const animals = [
@@ -19,7 +19,7 @@ const animals = [
   {
     animalType: 'cat',
     pet: true,
-    fierceness: 10
+    fierceness: 100
   },
   {
     animalType: 'giraffe',
@@ -90,6 +90,6 @@ app.get('/all-non-pets', (req, res) => {
   res.render('index', data);
 });
 
-app.listen(PORT, () => {
-  console.log('App listening on PORT ' + PORT);
-});
+app.listen(PORT, () =>
+  console.log(`App listening on http://localhost:${PORT}`)
+);

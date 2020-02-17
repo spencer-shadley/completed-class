@@ -26,6 +26,6 @@ require('./routes/api-routes.js')(app);
 
 // Starting our Express app
 // =============================================================
-app.listen(PORT, () => {
-  console.log('App listening on PORT ' + PORT);
-});
+app.listen(PORT, () =>
+  console.log(`App listening on http://localhost:${PORT}`)
+);

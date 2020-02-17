@@ -49,6 +49,6 @@ app.get('/:character', (req, res) => {
 
 // Listener
 // ===========================================================
-app.listen(PORT, () => {
-  console.log('App listening on PORT ' + PORT);
-});
+app.listen(PORT, () =>
+  console.log(`App listening on http://localhost:${PORT}`)
+);

@@ -71,6 +71,6 @@ app.post('/api/characters', (req, res) => {
   res.json(newCharacter);
 });
 
-app.listen(PORT, () => {
-  console.log('App listening on PORT ' + PORT);
-});
+app.listen(PORT, () =>
+  console.log(`App listening on http://localhost:${PORT}`)
+);
