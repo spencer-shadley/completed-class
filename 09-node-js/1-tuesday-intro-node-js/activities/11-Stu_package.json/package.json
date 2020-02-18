@@ -7,7 +7,7 @@
     "start": "node index",
     "watch": "nodemon index",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watchAll"
   },
   "keywords": [
     "npm",

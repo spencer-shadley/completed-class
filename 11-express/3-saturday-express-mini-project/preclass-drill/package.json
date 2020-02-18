@@ -5,7 +5,7 @@
   "main": "drill.js",
   "scripts": {
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watchAll"
   },
   "keywords": [],
   "author": "",
