@@ -6,6 +6,8 @@ const mysql = require('mysql');
 
 const app = express();
 
+const DEBUGMODE = true;
+
 // Set the port of our application
 // process.env.PORT lets the port be set by Heroku
 const PORT = process.env.PORT || 3000;
@@ -38,6 +40,7 @@ connection.connect(err => {
 app.get('/', (req, res) => {
   connection.query('SELECT * FROM plans;', (err, data) => {
     if (err) {
+      // If an error occurred, send a generic server failure
       return res.status(500).end();
     }
 
@@ -52,12 +55,16 @@ app.post('/api/plans', (req, res) => {
     [req.body.plan],
     (err, result) => {
       if (err) {
+        // If an error occurred, send a generic server failure
         return res.status(500).end();
       }
 
       // Send back the ID of the new plan
       res.json({ id: result.insertId });
-      console.log({ id: result.insertId });
+
+      if (DEBUGMODE) {
+        console.log({ id: result.insertId });
+      }
     }
   );
 });
@@ -82,19 +89,20 @@ app.put('/api/plans/:id', (req, res) => {
 
 // Delete a plan
 app.delete('/api/plans/:id', (req, res) => {
-  connection.query('DELETE FROM plans WHERE id = ?', [req.params.id], function(
-    err,
-    result
-  ) {
-    if (err) {
-      // If an error occurred, send a generic server failure
-      return res.status(500).end();
-    } else if (result.affectedRows === 0) {
-      // If no rows were changed, then the ID must not exist, so 404
-      return res.status(404).end();
+  connection.query(
+    'DELETE FROM plans WHERE id = ?',
+    [req.params.id],
+    (err, result) => {
+      if (err) {
+        // If an error occurred, send a generic server failure
+        return res.status(500).end();
+      } else if (result.affectedRows === 0) {
+        // If no rows were changed, then the ID must not exist, so 404
+        return res.status(404).end();
+      }
+      res.status(200).end();
     }
-    res.status(200).end();
-  });
+  );
 });
 
 // Start our server so that it can begin listening to client requests.
