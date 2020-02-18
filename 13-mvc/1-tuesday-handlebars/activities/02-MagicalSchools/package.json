@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node magicSchools",
     "watch": "nodemon magicSchools",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "author": "",
   "license": "ISC",

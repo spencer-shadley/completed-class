@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node expressCalculator",
     "watch": "nodemon expressCalculator",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "author": "",
   "license": "ISC",
