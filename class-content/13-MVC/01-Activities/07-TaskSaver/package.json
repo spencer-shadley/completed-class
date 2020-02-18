@@ -7,7 +7,7 @@
     "start": "node server",
     "watch": "nodemon server",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watchAll"
   },
   "author": "",
   "license": "ISC",
