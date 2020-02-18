@@ -17,3 +17,12 @@
   - Render all of the wishes from the wishes table when the `'/'` get route is hit. Additionally show the form that the user can use to create a new wish. The form will POST to the `'/'` route.
 
   - The `'/'` post route will insert the wish from the form into the wishes table and will redirect the user back to the `'/'` get route.
+
+# Bonus
+
+- Debug in VS Code
+
+  - Enable Auto Attach: Settings > search "node debug" > Enable "Node:Auto Attach"
+  - Set a breakpoint in VS Code (set a breakpoint in the gutter - next to the line number)
+  - Run `node --inspect server`
+  - Perform some action such that the breakpoint will be hit
