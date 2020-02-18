@@ -6,6 +6,8 @@ const mysql = require('mysql');
 
 const app = express();
 
+const DEBUGMODE = true;
+
 // Set the port of our application
 // process.env.PORT lets the port be set by Heroku
 const PORT = process.env.PORT || 3000;
@@ -21,7 +23,7 @@ const connection = mysql.createConnection({
   host: 'localhost',
   port: 3306,
   user: 'root',
-  password: '',
+  password: 'password',
   database: 'movie_planner_db'
 });
 
@@ -57,7 +59,10 @@ app.post('/api/movies', (req, res) => {
 
       // Send back the ID of the new movie
       res.json({ id: result.insertId });
-      console.log({ id: result.insertId });
+
+      if (DEBUGMODE) {
+        console.log({ id: result.insertId });
+      }
     }
   );
 });

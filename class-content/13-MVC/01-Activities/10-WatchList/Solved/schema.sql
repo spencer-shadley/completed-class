@@ -26,4 +26,4 @@ CREATE TABLE movies (
 );
 
 -- Insert a set of records.
-INSERT INTO movies (movie) VALUES ('Rush Hour 2');
+INSERT INTO movies (movie) VALUES ('Kimi no na wa');
