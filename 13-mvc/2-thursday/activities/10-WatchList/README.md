@@ -2,7 +2,7 @@
 
 - Create a full-stack application with Express, MySQL and Handlebars.
 
-  - HINT: this web application will be very similar to the app your instructor just demonstrated and slacked out. Please feel free to leverage that code when creating this code.
+  - HINT: this will be similar to `09-DayPlanner`, read through and make sure you understand that code before starting this activity
 
 - Create a `schema.sql` file. Inside of that file, do the following:
 
