@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server",
     "watch": "nodemon server",
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "author": "",
   "license": "ISC",
