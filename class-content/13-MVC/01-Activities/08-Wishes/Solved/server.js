@@ -6,6 +6,8 @@ const mysql = require('mysql');
 
 const app = express();
 
+const DEBUGMODE = false;
+
 // Set the port of our application
 // process.env.PORT lets the port be set by Heroku
 const PORT = process.env.PORT || 3000;
@@ -21,7 +23,7 @@ const connection = mysql.createConnection({
   host: 'localhost',
   port: 3306,
   user: 'root',
-  password: '',
+  password: 'password',
   database: 'wishes_db'
 });
 
@@ -41,11 +43,9 @@ app.get('/', (req, res) => {
       throw err;
     }
 
-    // Test it.
-    // console.log('The solution is: ', data);
-
-    // Test it.
-    // res.send(data);
+    if (DEBUGMODE) {
+      console.log(`You sent ${req.body.wish}`);
+    }
 
     res.render('index', { wishes: data });
   });
@@ -53,11 +53,9 @@ app.get('/', (req, res) => {
 
 // Post route -> back to home
 app.post('/', (req, res) => {
-  // Test it.
-  // console.log('You sent, ' + req.body.wish);
-
-  // Test it.
-  // res.send('You sent, ' + req.body.wish)
+  if (DEBUGMODE) {
+    console.log(`You sent ${req.body.wish}`);
+  }
 
   connection.query(
     'INSERT INTO wishes (wish) VALUES (?)',
@@ -72,8 +70,6 @@ app.post('/', (req, res) => {
   );
 });
 
-// Start our server so that it can begin listening to client requests.
 app.listen(PORT, () =>
-  // Log (server-side) when our server has started
   console.log(`Server listening on: http://localhost:${PORT}`)
 );

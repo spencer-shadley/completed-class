@@ -4,17 +4,16 @@
 
 <ul>
   {{#each wishes}}
-  	<li>
-  	   <p>ID: {{this.id}}</p>
-       <p>Wish: {{this.wish}}</p>
-  	</li>
+  <li>
+    <p>ID: {{this.id}}</p>
+    <p>Wish: {{this.wish}}</p>
+  </li>
   {{/each}}
 </ul>
 
 <div>
   <form action="/" method="POST">
-  	<textarea type="text" name="wish"></textarea>
-
-  	<button type="submit">Submit</button>
+    <textarea type="text" name="wish"></textarea>
+    <button type="submit">Submit</button>
   </form>
 </div>
