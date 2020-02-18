@@ -2,7 +2,7 @@
 
 - Create an app with Express, MySQL and Handlebars.
 
-  - HINT: this app will be very similar to the app your instructor just demonstrated and slacked out. Please feel free to leverage that code when creating this code.
+  - HINT: this app will be very similar to `07-TaskSaver`. Start by reading through `07-TaskSaver` and making sure you understand that code first.
 
 - Create a `schema.sql` file and create the following inside of that file:
 
