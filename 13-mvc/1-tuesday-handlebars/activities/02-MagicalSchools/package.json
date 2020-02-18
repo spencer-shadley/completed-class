@@ -1,0 +1,18 @@
+{
+  "name": "exercise2_magical_schools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "magicSchools.js",
+  "scripts": {
+    "start": "node magicSchools",
+    "watch": "nodemon magicSchools",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mysql": "^2.16.0"
+  }
+}
