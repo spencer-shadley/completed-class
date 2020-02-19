@@ -1,0 +1,17 @@
+{
+  "name": "expresscalculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "expressCalculator.js",
+  "scripts": {
+    "start": "node expressCalculator",
+    "watch": "nodemon expressCalculator",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
