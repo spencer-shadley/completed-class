@@ -25,71 +25,50 @@
 
 // Print a single integer that denotes the number of valleys Gary walked through during his hike.
 
+const CountingValleys = (n, s) => {
+
+    let min = 2;
+    let max = 10000000;
+
+    if (n <= min || n >= max) {
+        return "invalid number of steps"
+    }
+
+    let valleys = 0;
+    let currentHeight = 0;
+
+    for (let i = 0; i < s.length; ++i) {
+        if (s[i] === "U") {
+            if (currentHeight === -1) {
+                valleys++;
+            }
+            currentHeight++;
+        } else if (s[i] === "D") {
+            currentHeight--;
+        }
+    }
+
+    if (currentHeight === 0) {
+        return valleys;
+    } else {
+        return "Hiker never returned to sea level. "
+    }
+}
+
+class Test {
+    constructor(testInput, expectedResult, actualResult) {
+        this.testInput = testInput;
+        this.expectedResult = expectedResult;
+        this.actualResult = actualResult;
+    }
+}
 
 
+let test1 = new Test('Test 1', 1, CountingValleys(8, "UDDDUDUU"));
+let test2 = new Test('Test 2', 5, CountingValleys(100, "DDUDUDDUDDUDDUUUUDUDDDUUDDUUDDDUUDDUUUUUUDUDDDDUDDUUDUUDUDUUUDUUUUUDDUDDDDUDDUDDDDUUUUDUUDUUDUUDUDDD"));
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const CountingValleys = (n, s) => {
-
-//     let min = 2;
-//     let max = 10000000;
-
-//     if (n <= min || n >= max) {
-//         return "invalid number of steps"
-//     }
-
-//     let valleys = 0;
-//     let currentHeight = 0;
-
-//     for (let i = 0; i < s.length; ++i) {
-//         if (s[i] === "U") {
-//             if (currentHeight === -1) {
-//                 valleys++;
-//             }
-//             currentHeight++;
-//         } else if (s[i] === "D") {
-//             currentHeight--;
-//         }
-//     }
-
-//     if (currentHeight === 0) {
-//         return valleys;
-//     } else {
-//         return "Hiker never returned to sea level. "
-//     }
-// }
-
-// class Test {
-//     constructor(testInput, expectedResult, actualResult) {
-//         this.testInput = testInput;
-//         this.expectedResult = expectedResult;
-//         this.actualResult = actualResult;
-//     }
-// }
-
-
-// let test1 = new Test('Test 1', 1, CountingValleys(8, "UDDDUDUU"));
-// let test2 = new Test('Test 2', 5, CountingValleys(100, "DDUDUDDUDDUDDUUUUDUDDDUUDDUUDDDUUDDUUUUUUDUDDDDUDDUUDUUDUDUUUDUUUUUDDUDDDDUDDUDDDDUUUUDUUDUUDUUDUDDD"));
-
-
-// console.table([
-//     test1,
-//     test2,
-// ])
+console.table([
+    test1,
+    test2,
+])

@@ -87,7 +87,7 @@ Express is the most popular Node web framework, and is the underlying library fo
 
 - app.use('/static', express.static(path.join(__dirname, 'public')));
    or
-- app.use('/static', express.static('public'));
+- app.use(express.static('public'));
 // The above code to serve images, CSS files, and JavaScript files in a directory named public:
 
 - app.listen(PORT, () => {

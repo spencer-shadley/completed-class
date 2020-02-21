@@ -26,67 +26,38 @@
 
 // Constraints: 1 <= n <= 100, 1 <= arr[i] <= 100
 
+const sockMerchant = (n, arr) => {
+
+    let sockPairs = 0;
+
+    if (1 <= n && n <= 100) {
+
+        let hash = {};
+        for (const sock of arr) {
+            if (hash[sock]) {
+                sockPairs++;
+                delete hash[sock];
+            } else {
+                hash[sock] = true;
+            }
+        }
+    }
+    return sockPairs;
+}
+
+class TestSocks {
+    constructor(testInput, expectedResult, actualResult) {
+        this.testInput = testInput;
+        this.expectedResult = expectedResult;
+        this.actualResult = actualResult;
+    }
+}
 
 
+let test1 = new TestSocks(`test1`, 2, sockMerchant(7, [1, 2, 1, 2, 1, 3, 2]));
+let test2 = new TestSocks('test2', 3, sockMerchant(9, [10, 20, 20, 10, 10, 30, 50, 10, 20]))
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const sockMerchant = (n, arr) => {
-
-//     let sockPairs = 0;
-
-//     if (1 <= n && n <= 100) {
-
-//         let hash = {};
-//         for (const sock of arr) {
-//             if (hash[sock]) {
-//                 sockPairs++;
-//                 delete hash[sock];
-//             } else {
-//                 hash[sock] = true;
-//             }
-//         }
-//     }
-//     return sockPairs;
-// }
-
-// class TestSocks {
-//     constructor(testInput, expectedResult, actualResult) {
-//         this.testInput = testInput;
-//         this.expectedResult = expectedResult;
-//         this.actualResult = actualResult;
-//     }
-// }
-
-
-// let test1 = new TestSocks(`test1`, 2, sockMerchant(7, [1, 2, 1, 2, 1, 3, 2]));
-// let test2 = new TestSocks('test2', 3, sockMerchant(9, [10, 20, 20, 10, 10, 30, 50, 10, 20]))
-
-// console.table([
-//     test1,
-//     test2,
-// ])
+console.table([
+    test1,
+    test2,
+])
