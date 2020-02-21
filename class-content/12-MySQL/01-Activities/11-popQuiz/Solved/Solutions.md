@@ -1,5 +1,7 @@
 # Node + MySQL PopQuiz
 
+## [Cheatsheet] : In slack resources
+
 ## Using the `terminal` or your favorite MySQL GUI
 
 1. Connect to MySQL server

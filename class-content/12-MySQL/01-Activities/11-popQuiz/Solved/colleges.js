@@ -13,7 +13,7 @@ const connection = mysql.createConnection({
   user: 'root',
 
   // Your password
-  password: '',
+  password: 'Studly22!',
   database: 'boston'
 });
 
@@ -32,3 +32,4 @@ function readColleges() {
     connection.end();
   });
 }
+

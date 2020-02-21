@@ -150,6 +150,7 @@ async function viewEmployeesByDepartment() {
   loadMainPrompts();
 }
 
+
 async function viewEmployeesByManager() {
   const managers = await db.findAllEmployees();
 
