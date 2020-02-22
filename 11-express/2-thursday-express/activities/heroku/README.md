@@ -52,7 +52,7 @@
 
 - **"add -A, git commit -m":** Make sure all of your code is up on GitHub so that Heroku can read it
 
-- **Images and/or CSS not appearing:** All filenames and paths are case sensitive. Ensure that all links in HTML are using case-sensitive paths that match the folder directories casing.
+- **Images and/or CSS not appearing:** All filenames and paths are case sensitive. Ensure that all links in HTML are using case-sensitive paths that match the directory directories casing.
 
 - **Not using relative paths:** Make sure to use relative paths for your CSS, JS, or image files.
 

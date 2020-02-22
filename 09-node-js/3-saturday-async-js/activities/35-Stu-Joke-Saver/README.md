@@ -4,7 +4,7 @@ In this activity you will write code to get a random joke from an API, append th
 
 ## Instructions
 
-- Change directories into the `Unsolved` folder and run `npm install`.
+- Change directories into the `Unsolved` directory and run `npm install`.
 
 - Once the installation completes, open `Unsolved/index.js` and examine the code.
 

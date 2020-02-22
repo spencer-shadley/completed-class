@@ -12,7 +12,7 @@ To begin with, you'll need a git repository initialized locally with your basic 
 
    - If you haven't set up a git repository for your files yet (or didn't clone), proceed to the next step.
 
-2. Run `git init` locally in the folder with your web server files.
+2. Run `git init` locally in the directory with your web server files.
 
    - If you want to also push to GitHub in addition to hosting on Heroku (recommended), you can follow the [Adding Existing Projects to GitHub through the command line Guide](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/)
 
@@ -28,9 +28,9 @@ To begin with, you'll need a git repository initialized locally with your basic 
 
 1. Log in to Heroku.
 
-   - If you are a windows user open the cmd.exe (NOT Git Bash) and type `heroku login`. Keep this command prompt open in the background. Then, open Git Bash and navigate to the folder with your code.
+   - If you are a windows user open the cmd.exe (NOT Git Bash) and type `heroku login`. Keep this command prompt open in the background. Then, open Git Bash and navigate to the directory with your code.
 
-   - If you are a mac open terminal and type the command `heroku login`. Enter your Heroku credentials and proceed with all the below steps in terminal. Navigate to the folder with your code.
+   - If you are a mac open terminal and type the command `heroku login`. Enter your Heroku credentials and proceed with all the below steps in terminal. Navigate to the directory with your code.
 
 2. Run the command: `git remote –v` .
 

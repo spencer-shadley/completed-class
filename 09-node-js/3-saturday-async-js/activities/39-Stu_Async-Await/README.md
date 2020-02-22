@@ -4,7 +4,7 @@ In this activity you will convert a previous Promise-based activity to utilize a
 
 ## Instructions
 
-- Change directories into the `Unsolved` folder and run `npm install` from your terminal.
+- Change directories into the `Unsolved` directory and run `npm install` from your terminal.
 
 - Take a moment to examine the contents of `Unsolved/index.js`. This file:
 
