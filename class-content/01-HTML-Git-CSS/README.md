@@ -74,7 +74,3 @@ Build a professional portfolio site using HTML and CSS following a set of specif
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [Pro Git](https://git-scm.com/book/en/v2)
 - [Dev Docs](https://devdocs.io/)
-
----
-
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

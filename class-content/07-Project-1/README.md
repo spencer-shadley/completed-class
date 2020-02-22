@@ -34,7 +34,3 @@ You will be employer-competitive if you are able to:
 - [Agile Methodology](https://en.wikipedia.org/wiki/Agile_software_development)
 - [Git Branching](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows)
 - [Learn Enough Git to Be Dangerous](https://www.learnenough.com/git-tutorial/getting_started)
-
----
-
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

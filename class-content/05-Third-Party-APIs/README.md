@@ -46,7 +46,3 @@ Create a simple calendar application that allows the user to save events for eac
 - [MDN: jQuery](https://developer.mozilla.org/en-US/docs/Glossary/jQuery)
 - [Wikipedia: jQuery](https://en.wikipedia.org/wiki/JQuery)
 - [jQuery Official Website](https://jquery.com/)
-
----
-
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
