@@ -4,8 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node index",
-    "watch": "nodemon index",
+    "start": "node server",
+    "watch": "nodemon server",
     "test": "jest",
     "test:watch": "jest --watchAll"
   },

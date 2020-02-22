@@ -20,17 +20,17 @@
 │   └── burgers_controller.js // Receives data from burger.js. Sends to view.
 │
 ├── db
-│   ├── schema.sql
-│   └── seeds.sql
+│   ├── schema.sql // DB info
+│   └── seeds.sql // Dummy data for testing / testing foegin keys in DB
 │
 ├── models
-│   └── burger.js // Receives data from orm.js. Re-formats data. 
+│   └── burger.js // Receives data from orm.js. Re-formats data. Sends to burger_controller.js.
 │ 
 ├── node_modules
 │ 
-├── package.json
+├── package.json // npm init and --save when add modules
 │
-├── public
+├── public // Static files 
 │   └── assets
 │       ├── css
 │       │   └── burger_style.css
@@ -70,6 +70,7 @@
 
 ```js
    res.render('index', { object: data});
+   res.render('indexTwo', { object: data});
    // This will pass the object through the layout or partial of handelbars.
    // You can have multiple layouts or partials for differing results.
    // It will generally all end in main
