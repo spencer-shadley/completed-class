@@ -36,7 +36,11 @@ When joining a new team, you will be expected to inspect a lot of code that you 
 
 ## Bonus
 
-- Get a head-start on project 2!
+- Get a head-start on project 2! Work with your [group](../../15-project-2-part-1/groups.md) on your:
+  - Overall idea and theme for the project
+  - MVP
+  - Desired features
+  - More information [here](../../15-project-2-part-1/hw/README.md)
 
 ---
 
