@@ -14,9 +14,7 @@
 
 - Must have a polished UI
 
-- Must use a CSS library _other than_ Bootstrap
-
-  - It is acceptable to additionally use Bootstrap
+- Must use a new CSS library or framework (one that has not been covered in class)
 
 - Must follow MVC paradigm
 
@@ -24,7 +22,7 @@
 
   - **View**: Must have clear "view" separation of concerns, for example using Handlebars (alternatives are React, Angular, Vue, etc.)
 
-  - **Controller**: Must contain core business logic, separate from the model and view
+  - **Controller**: Must contain core business logic, separated from the model and view
 
 - Must use a RESTful architecture
 
@@ -52,7 +50,7 @@ In your presentation include:
 
 Here is a [presentation template](https://docs.google.com/presentation/d/1_u8TKy5zW5UlrVQVnyDEZ0unGI2tjQPDEpA0FNuBKAw/edit?usp=sharing) which you can optionally start from.
 
-Google Slides, Powerpoint, Prezzi, a custom web app, interpretive dance, etc. are all acceptable so long as you clearly address the above points
+Google Slides, Powerpoint, Prezzi, a custom web app, interpretive dance, etc. are all acceptable so long as you clearly address the above points.
 
 ## Grading Metrics
 
