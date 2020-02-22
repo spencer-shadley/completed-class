@@ -4,7 +4,7 @@
 
 # Instructions
 
-- Add a delete button into the `index.handlebars` file next to each cat.
+- Add a delete button into the `cat-block.handlebars` file next to each cat.
 
 - Add on to the following:
 

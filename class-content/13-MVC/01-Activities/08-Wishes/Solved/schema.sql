@@ -20,13 +20,14 @@ USE wishes_db;
 
 -- Create the table wishes.
 CREATE TABLE wishes (
-  id int NOT NULL AUTO_INCREMENT,
-  wish varchar(255) NOT NULL,
-  PRIMARY KEY (id)
+  id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  wish varchar(255) NOT NULL
 );
 
 -- Insert a set of records.
-INSERT INTO wishes (wish) VALUES
-('Shaan wants to read minds.'),
-('John wins the lottery.'),
-('Kelly wishes for a room full of kittens.');
+INSERT INTO wishes 
+  (wish) 
+VALUES
+  ('Shaan wants to read minds.'),
+  ('John wins the lottery.'),
+  ('Kelly wishes for a room full of kittens.');
