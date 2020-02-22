@@ -19,6 +19,6 @@ CREATE TABLE role (
     title VARCHAR(30) UNIQUE NOT NULL,
     salary INT NOT NULL,
     house_id INT UNSIGNED NOT NULL,
-    CONSTRAINT fk_hosue FOREIGN KEY (house_id) REFERENCES house(id) ON DELETE CASCADE
+    CONSTRAINT fk_house FOREIGN KEY (house_id) REFERENCES house(id) ON DELETE CASCADE
 );
 
