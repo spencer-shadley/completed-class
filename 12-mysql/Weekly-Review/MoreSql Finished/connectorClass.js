@@ -16,10 +16,10 @@ class DB {
         return this.connection.query(
             `
             SELECT 
-            house.id,
-            house.name
+                house.id,
+                house.name
             FROM 
-            house
+                house
             `
         );
     };
@@ -27,29 +27,29 @@ class DB {
     viewAllRoles() {
         return this.connection.query(
             `
-                SELECT
+            SELECT
                 role.id,
                 role.title,
                 role.salary,
                 house.name AS House
-                FROM
+            FROM
                 role
-                LEFT JOIN
+            LEFT JOIN
                 house ON role.house_id = house.id
-                ORDER BY
+            ORDER BY
                 role.id
-                `
+            `
         );
     };
 
     createHouse(house) {
         return this.connection.query(
             `
-                INSERT INTO
-                    house
-                SET
-                    ?
-                `, house
+            INSERT INTO
+                house
+            SET
+                ?
+            `, house
         );
     };
 };
