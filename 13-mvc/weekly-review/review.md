@@ -28,6 +28,21 @@
 ## <CENTER> Handlebars Basics
 ---
 1. Templating language 
+1. How do I render a handlebars file? 
+    - Send data through a layout / partial layout
+
+
+```js
+   res.render('index', { object: data});
+   // This will pass the object through the layout or partial of handelbars.
+   // You can have multiple layouts or partials for differing results.
+   // It will generally all end in main
+   └── views
+    ├── index.handlebars
+    ├── indexTwo.handlebars
+    └── layouts
+        └── main.handlebars
+```
 ```js
 EX: 1
 
@@ -40,7 +55,7 @@ EX: 1
 
 <h1> Hello! My name is {{person.firstname}} {{person.lastname}}. </h1>
 
-** Hello! My name is Yehuda Katz.
+ Hello! My name is Yehuda Katz.
 
 --------------------------------------------------------------------------------------
 
@@ -70,7 +85,7 @@ EX: 2
 
 EX: 3
 
-**Unless vs If**
+** Unless vs If **
 
    { 
        animals: [
