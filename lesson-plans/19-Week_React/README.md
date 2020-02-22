@@ -8,7 +8,7 @@ This unit, we will introduce students to React, a declarative, efficient, and fl
 
 ## Instructor / TA Notes
 
-- In order to avoid continuous NPM installs, all of this week's activities' Solved and Unsolved versions include only a `src` folder. Students and yourself should scaffold out a React app once with Create React App, and then swap out the `src` folder for each activity. It's recommended that you completely restart the dev server between activities.
+- In order to avoid continuous NPM installs, all of this week's activities' Solved and Unsolved versions include only a `src` folder. Students and yourself should scaffold out a React app once with Create React App, and then swap out the `src` directory for each activity. It's recommended that you completely restart the dev server between activities.
 
 - Students may feel a little overwhelmed with the new unusual syntax. Remind them that at the end of the day, we're still just working with JavaScript. Prioritize making sure they understand concepts, rather than worrying about them perfectly memorizing syntax.
 

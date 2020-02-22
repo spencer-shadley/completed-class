@@ -4,7 +4,7 @@ In this activity we will use our new React skills to further refactor the Friend
 
 ## Instructions
 
-- Replace your React App's `src` folder with [Unsolved/src](Unsolved/src). Stop the dev server if it is already running. Start the app in dev mode by running `npm start`.
+- Replace your React App's `src` directory with [Unsolved/src](Unsolved/src). Stop the dev server if it is already running. Start the app in dev mode by running `npm start`.
 
 - Open [localhost:3000](http://localhost:3000) in your browser and take a moment to study the rendered app.
 

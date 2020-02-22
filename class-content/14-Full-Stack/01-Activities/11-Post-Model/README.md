@@ -4,13 +4,13 @@
 
 The goal of this exercise is to create a Post model using Sequelize.
 
-1. Open the folder slacked out to you, run `npm install`
+1. Open the directory slacked out to you, run `npm install`
 
 2. Create a new MySQL database and name it `blogger`. Don't create any tables.
 
-3. Open the `config` folder and update the `config.json` file's `development` object to match your own local MySQL database.
+3. Open the `config` directory and update the `config.json` file's `development` object to match your own local MySQL database.
 
-4. Go to the `models` folder and open the `post.js` file.
+4. Go to the `models` directory and open the `post.js` file.
 
 5. Create a Sequelize `Post` model here. The model should have a title property of type DataTypes.STRING, a body property of DataTypes.TEXT, and a category property of DataTypes.STRING.
    (<http://docs.sequelizejs.com/manual/tutorial/models-definition.html#data-types>)

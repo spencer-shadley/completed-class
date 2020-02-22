@@ -10,9 +10,9 @@ In this activity you will be creating a store that contains the global state and
 
 - Update this application to accomplish the following:
 
-- Separate the Form and List parts of the application into two different components. Place them both in a folder called `components`.
+- Separate the Form and List parts of the application into two different components. Place them both in a directory called `components`.
 
-- Create a folder called `utils` and within it, create a single file that will be the application **store**. This file should export a Provider that will be used to wrap the entire application and a `useTodoContext` object that will be used to inject the Context into any component that needs access to the store.
+- Create a directory called `utils` and within it, create a single file that will be the application **store**. This file should export a Provider that will be used to wrap the entire application and a `useTodoContext` object that will be used to inject the Context into any component that needs access to the store.
 
 - Add an action handler that will allow users to prioritize a Todo.
 

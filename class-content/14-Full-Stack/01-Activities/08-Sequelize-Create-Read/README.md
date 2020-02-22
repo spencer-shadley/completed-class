@@ -2,7 +2,7 @@
 
 - INSTRUCTIONS:
 
-  1. Open the folder and run `npm install`.
+  1. Open the directory and run `npm install`.
 
   2. Update the `config.json` file's development object with your own local MYSQL database settings.
 

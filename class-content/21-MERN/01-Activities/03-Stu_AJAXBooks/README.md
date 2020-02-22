@@ -4,7 +4,7 @@ In this activity we will add functionality to a full stack React application for
 
 ## Instructions
 
-- Open the [Unsolved](Unsolved) folder in your editor and run `npm install` at the project's root.
+- Open the [Unsolved](Unsolved) directory in your editor and run `npm install` at the project's root.
 
 - This application uses a Mongo database, so be sure to start `mongod`.
 

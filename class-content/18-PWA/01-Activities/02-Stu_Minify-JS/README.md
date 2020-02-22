@@ -10,10 +10,10 @@ In this activity you will minify your JavaScript using an online tool.
 
 - Note the resulting Input/Output sizes of the JS as shown to the bottom right of the textarea.
 
-- Create a `dist` folder in the root of your project.
+- Create a `dist` directory in the root of your project.
 
   - Create an `index.js` file inside of your `dist` folder.
 
-  - Copy/paste the minified JS of your dist folder into your `dist/index.js`
+  - Copy/paste the minified JS of your dist directory into your `dist/index.js`
 
 - Be sure to link your `dist/index.js` code to your application.

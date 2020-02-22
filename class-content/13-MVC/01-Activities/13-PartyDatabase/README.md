@@ -29,7 +29,7 @@
 
 - Create a MySQL database with the tables and data which were slacked out to you.
 
-- Create a Node app and connect it to MySQL with a `config` folder and with a `connection.js` file inside of that folder.
+- Create a Node app and connect it to MySQL with a `config` directory and with a `connection.js` file inside of that folder.
 
 - Create an `orm.js` file, and make an ORM that will do the following:
 

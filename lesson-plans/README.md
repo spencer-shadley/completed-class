@@ -42,7 +42,7 @@ If you have any outstanding questions, check with your SSM.
 
 - Open the day's `LessonPlan.md` file on a second display for yourself.
 
-- Open the entire day's `Activities` folder in your editor to easily move through the examples.
+- Open the entire day's `Activities` directory in your editor to easily move through the examples.
 
 - Have students do a `git pull` of the class repo to have the class activities ready on their machine.
 

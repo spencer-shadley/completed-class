@@ -4,11 +4,11 @@
 
   The goal of this exercise is to modify the Post and Author models so that they are associated with eachother.
 
-  1. Open the folder slacked out to you.
+  1. Open the directory slacked out to you.
 
   2. Run `npm install`
 
-  3. Open the `config` folder and update the `config.json` file's `development` object to match your own local MySQL database.
+  3. Open the `config` directory and update the `config.json` file's `development` object to match your own local MySQL database.
 
   4. Navigate to the `post.js` file.
 

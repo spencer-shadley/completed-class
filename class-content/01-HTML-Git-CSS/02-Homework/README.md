@@ -28,11 +28,11 @@ THEN they are able to learn about the developer, find contact information, and f
 
   - ❗ Follow best practices for your README as outlined in the `Good-README-Guide`
 
-- Inside the repo folder on your computer, create the following:
+- Inside the repo directory on your computer, create the following:
 
   - 3 HTML documents: `index.html`, `contact.html`, and `portfolio.html`.
 
-  - A folder called `assets`.
+  - A directory called `assets`.
 
   - Inside the `assets` directory, make two additional folders: `css` and `images`.
 

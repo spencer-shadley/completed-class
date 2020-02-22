@@ -2,7 +2,7 @@
 
 - INSTRUCTIONS:
 
-  1. Open the folder slacked out to you.
+  1. Open the directory slacked out to you.
 
   2. Run `npm install`.
 

@@ -70,13 +70,13 @@ If you get an error like "command not found," you may need to manually add a lin
 
 How could we embark on learning a new programming language without creating a "Hello, World!" application? We'll initialize a new C# project using the dotnet executable, which creates a "Hello World!" app for us!
 
-Let's navigate to the folder where you want your project to reside. At the command prompt, use dotnet to create a new console app called CatWorx.BadgeMaker.
+Let's navigate to the directory where you want your project to reside. At the command prompt, use dotnet to create a new console app called CatWorx.BadgeMaker.
 
 ```c#
 $ dotnet new console -o CatWorx.BadgeMaker
 ```
 
-This command will create a new folder called CatWorx that will contain your C# project. In VS Code, select File from the main menu bar, and choose "Open Folder…" Navigate to the CatWorx folder that dotnet created. Double-click CatWorx to open it in the VS Code explorer pane.
+This command will create a new directory called CatWorx that will contain your C# project. In VS Code, select File from the main menu bar, and choose "Open Folder…" Navigate to the CatWorx directory that dotnet created. Double-click CatWorx to open it in the VS Code explorer pane.
 
 As you can see, there are already some files and folders in the project:
 
@@ -838,7 +838,7 @@ dataType variableName = value
 
 Can you guess what the data type of employee will be?
 
-****\_\_**** currentEmployee = new Employee();
+\***\*\_\_\*\*** currentEmployee = new Employee();
 
 **Hint:** Look at how we declared the employees list at the top of Main().
 
@@ -1527,7 +1527,7 @@ _HINT: Think about what needs to exist first before other things can happen._
 
 2. Call this method from within Program, passing it the List of employees.
 
-3. In the method, check to see if a _data_ folder exists, and if not, create it.
+3. In the method, check to see if a _data_ directory exists, and if not, create it.
 
 4. Create a new file located at _data/employees.csv_.
 
@@ -1567,12 +1567,12 @@ Util.PrintEmployees(employees);
 Util.MakeCSV(employees);
 ```
 
-## Make the Folder (Step 3)
+## Make the directory (Step 3)
 
-Ultimately, we want to output the CSV to a new folder called _data_, but there’s a problem… we don’t have a folder called _data_. We could solve this by creating the folder manually, but if the folder ever got deleted, our app would break. Let’s handle this with a bit of code. Inside of the MakeCSV() method, write the following:
+Ultimately, we want to output the CSV to a new directory called _data_, but there’s a problem… we don’t have a directory called _data_. We could solve this by creating the directory manually, but if the directory ever got deleted, our app would break. Let’s handle this with a bit of code. Inside of the MakeCSV() method, write the following:
 
 ```c#
-// Check to see if folder exists
+// Check to see if directory exists
 if (!Directory.Exists("data"))
 {
   // If not, create it
@@ -1580,7 +1580,7 @@ if (!Directory.Exists("data"))
 }
 ```
 
-This will check for the existence of the folder first, and if it doesn’t exist, it will create it for the first time. However, you probably already saw some errors pop up, because our Util class doesn’t know what Directory means. What does this usually suggest? Think about how to solve this before moving on.
+This will check for the existence of the directory first, and if it doesn’t exist, it will create it for the first time. However, you probably already saw some errors pop up, because our Util class doesn’t know what Directory means. What does this usually suggest? Think about how to solve this before moving on.
 
 _HINT: How did we fix this issue with the List class?_
 
@@ -1592,7 +1592,7 @@ using System.IO;
 using System.Collections.Generic;
 ```
 
-This is a great stopping point now to run the app, making sure everything currently works as expected. If so, a _data_ folder will be created in the same directory as the other classes.
+This is a great stopping point now to run the app, making sure everything currently works as expected. If so, a _data_ directory will be created in the same directory as the other classes.
 
 ## Make the CSV (Step 4)
 
@@ -2088,7 +2088,7 @@ Now in order to run and test our application, we will need an employee picture t
 data/300.jpeg
 ```
 
-Now look in the _data_ folder in the VS Code's explorer side menu and open the *employeeBadge.png. *We should see your employee's picture in the file _employeeBadge.png_.
+Now look in the _data_ directory in the VS Code's explorer side menu and open the *employeeBadge.png. *We should see your employee's picture in the file _employeeBadge.png_.
 
 Make a note that this file gets overwritten every time the application runs. How can we prevent an overwrite if we need to keep all our employee badge images? Please keep this in mind since we will need an answer very soon.
 
@@ -2684,7 +2684,7 @@ Employee employee = new Employee
 
 But wait, an Employee takes in three strings and an integer, and these aren't strings. They're JObjects. Look into how you can convert these to the right data types before giving them to the constructor. Fair warning, the ID won't be as straightforward to convert to an integer as it might seem.
 
-Once the data types are correct, add each new employee to the List that this method returns. Run the app. If successful, your _data_ folder will become populated with ten random user badges!
+Once the data types are correct, add each new employee to the List that this method returns. Run the app. If successful, your _data_ directory will become populated with ten random user badges!
 
 ## Finishing Touches
 

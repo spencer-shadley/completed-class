@@ -16,9 +16,9 @@ We recommend you cover only one lesson per sitting to prevent information overlo
 
 ### Lesson 1
 
-1. Open up your `Lesson-1` folder and find `PHP-Installation-Instructions.pdf`.
+1. Open up your `Lesson-1` directory and find `PHP-Installation-Instructions.pdf`.
 2. Install PHP on your machine.
-3. Open `Activities` folder in your text editor of choice.
+3. Open `Activities` directory in your text editor of choice.
 4. Open [PHP/Laravel Lesson 1](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=35b8c703-c532-40d7-b692-aa0f00080a47) and start coding along!
 5. When the instructor announces it's time for an activity, pause the video and work through it solo.
 6. Once you've spent the allotted time on the activity, fast forward the video to the activity review.
@@ -28,14 +28,14 @@ We recommend you cover only one lesson per sitting to prevent information overlo
 ### Lesson 2
 
 1. Open up your `Lesson-2` folder.
-2. Open `Activities` folder in your text editor of choice.
+2. Open `Activities` directory in your text editor of choice.
 3. Open [PHP/Laravel Lesson 2](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8e64d05e-f2b0-480a-9c3e-aa11015224ff) and start coding along!
 4. Use the same workflow as Lesson 1 to watch class and work through the activities until the last one is complete.
 
 ### Lesson 3
 
 1. Open up your `Lesson-3` folder.
-2. Open `Activities` folder in your text editor of choice.
+2. Open `Activities` directory in your text editor of choice.
 3. Open [PHP/Laravel Lesson 3](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=866c9b80-8131-47ea-94e0-aa12010870ca) and start coding along!
 4. Use the same workflow as Lesson 1 to watch class and work through the activities until the last one is complete.
 
@@ -44,10 +44,10 @@ We recommend you cover only one lesson per sitting to prevent information overlo
 First off, killer job, you made it! Whether you feel confusion or mastery, you are adding to your developer skill set by practicing the ability to learn new technologies in this rapidly evolving industry. Now it's time to put those skills to use and create a full stack application with, you guessed it, PHP and Laravel.
 
 1. Open your `Homework` folder.
-2. Open your `Instructions` folder and follow the readme.md inside.
+2. Open your `Instructions` directory and follow the readme.md inside.
 3. Take your time and work on this over 1-2 weeks.
 4. Complete the application or spend at least 10 hours trying.
-5. Open your `Solutions` folder and review the file structure inside. You'll see most of it is boiler plate like your activities throughout the week.
+5. Open your `Solutions` directory and review the file structure inside. You'll see most of it is boiler plate like your activities throughout the week.
 6. Look inside your views, routes, and database files to see how you could customize this boilerplate to meet your application's needs.
 
 ## Finish Line

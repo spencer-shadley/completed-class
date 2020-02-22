@@ -14,7 +14,7 @@
 
   - A Context object should contain the theme for the card.
 
-  - Separate the Card and Layout components into their own files in a folder named `components`.
+  - Separate the Card and Layout components into their own files in a directory named `components`.
 
   - The color of the card should be obtained from the Context API.
 

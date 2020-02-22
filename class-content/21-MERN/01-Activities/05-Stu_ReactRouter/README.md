@@ -4,7 +4,7 @@ In this activity we will add React Router to the Books application in order to r
 
 ## Instructions
 
-- Open the [Unsolved](Unsolved) folder and install dependencies by running `npm install` at the project root.
+- Open the [Unsolved](Unsolved) directory and install dependencies by running `npm install` at the project root.
 
 - Start the app by running `npm start` from the project root.
 
@@ -20,7 +20,7 @@ In this activity we will add React Router to the Books application in order to r
 
 ### Part 2
 
-- Notice that inside of the `pages` folder we have a `NoMatch` component. This is the component for our 404 page.
+- Notice that inside of the `pages` directory we have a `NoMatch` component. This is the component for our 404 page.
 
 - Add a route for the new `NoMatch` component. This should only render if no other routes are matched. e.g. `/sjdfhjsdhfjsa` or `/notarealroute/lalala` should both render the `NoMatch` component page.
 
@@ -28,7 +28,7 @@ In this activity we will add React Router to the Books application in order to r
 
 ### Part 3
 
-- Notice that in the `pages` folder we have a `Detail` component. This component displays additional information about a book.
+- Notice that in the `pages` directory we have a `Detail` component. This component displays additional information about a book.
 
 - Add a route for the the new `Detail` component. This should render when the `/books/:id` path is matched. e.g. if a book's `_id` is `59a39cf2549cf482c814333f`, then `/books/59a39cf2549cf482c814333f` should render its book `Detail` page.
 

@@ -4,7 +4,7 @@ In this activity, we will modify a React application to make it more DRY through
 
 ## Instructions
 
-- Replace your Create React App's `src` folder with the provided [src](Unsolved/src) folder.
+- Replace your Create React App's `src` directory with the provided [src](Unsolved/src) folder.
 
 - Stop the dev server if it is already running. Start the app in dev mode by running `npm start`. Open [localhost:3000](http://localhost:3000) in your web browser and take a moment to study the rendered app.
 

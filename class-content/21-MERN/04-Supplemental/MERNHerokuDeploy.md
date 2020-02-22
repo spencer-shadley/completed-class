@@ -9,7 +9,7 @@ We have also created a video guide that you can use along with this guide to hel
 
 - Many of the steps associated with this guide are similar to other deployment guides you were previously provided, so those steps will not be covered. If you need these again, check your class repository!
 
-1. The first thing you will need is a GitHub Repository. When creating this repository be sure to create it with a Node `.gitignore` file. This is so we can ignore our `node_modules` folder since we don't want that being tracked by git.
+1. The first thing you will need is a GitHub Repository. When creating this repository be sure to create it with a Node `.gitignore` file. This is so we can ignore our `node_modules` directory since we don't want that being tracked by git.
 
 2. Now that we have created a repository, go to [Heroku](https://www.heroku.com) and login to your account. Create a new app and follow the steps from our GitHub Heroku Connect guide to link your GitHub Repo to your Heroku app.
 
@@ -35,11 +35,11 @@ We have also created a video guide that you can use along with this guide to hel
 
 ![New Credentials](images/newCredentials.png)
 
-8. Now that this is done, we want to be sure to use our `client/build` folder when running on production. You will need this line of code in your `server.js`.
+8. Now that this is done, we want to be sure to use our `client/build` directory when running on production. You will need this line of code in your `server.js`.
 
 ![Production](images/nodeENVProduction.png)
 
-9. Since the `client/build` folder is a static folder that has to be generated, make sure to run `yarn build` before pushing to GitHub/Heroku if you've made changes to the `client` folder in your app.
+9. Since the `client/build` directory is a static directory that has to be generated, make sure to run `yarn build` before pushing to GitHub/Heroku if you've made changes to the `client` directory in your app.
 
 10. Finally you need to make sure that your `PORT` variable is set to use either the port heroku designates, or a port of your choosing.
 

@@ -4,7 +4,7 @@ In this activity we will create a CMS (Content Management System) that allows us
 
 ## Instructions
 
-- Open the [Unsolved](Unsolved) folder and install dependencies by running `npm install` at the project root.
+- Open the [Unsolved](Unsolved) directory and install dependencies by running `npm install` at the project root.
 
 - Open another tab in your terminal and run `mongod`.
 

@@ -4,7 +4,7 @@ In this activity we will render one of four different components based upon our 
 
 ## Instructions
 
-- Replace your application's `src` folder with [Unsolved/src](Unsolved/src). Stop the dev server if it is already running. Start the app in dev mode by running `npm start`.
+- Replace your application's `src` directory with [Unsolved/src](Unsolved/src). Stop the dev server if it is already running. Start the app in dev mode by running `npm start`.
 
 - This application uses Bootstrap, so make sure you're including the Bootstrap CSS CDN.
 

@@ -18,9 +18,9 @@ We recommend you cover only one lesson per sitting to prevent information overlo
 
 ### Lesson 1
 
-1. Open up your `Lesson-1` folder and find `PythonDjango-Installation-Instructions.md`.
+1. Open up your `Lesson-1` directory and find `PythonDjango-Installation-Instructions.md`.
 2. Install Python and Django on your machine.
-3. Open `Activities` folder in your text editor of choice.
+3. Open `Activities` directory in your text editor of choice.
 4. Open [Python/Django Lesson 1](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=adfa2186-6880-4dae-ae21-a8c50188a7c5) and start coding along!
 5. When the instructor announces it's time for an activity, pause the video and work through it solo.
 6. Once you've spent the allotted time on the activity, fast forward the video to the activity review.
@@ -31,14 +31,14 @@ We recommend you cover only one lesson per sitting to prevent information overlo
 
 1. Before you start today's lesson, make sure that you find time to familiarize yourself with the free levels of Code School's [Breaking the Ice with Regex](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=adfa2186-6880-4dae-ae21-a8c50188a7c5). Django uses regular expressions to define routes, so this will help!
 2. Open up your `Lesson-2` folder.
-3. Open `Activities` folder in your text editor of choice.
+3. Open `Activities` directory in your text editor of choice.
 4. Open [Python/Django Lesson 2](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f9343372-852a-4ef7-bfc4-a8c80001e214) and start coding along!
 5. Use the same workflow as Lesson 1 to watch class and work through the activities until the last one is complete.
 
 ### Lesson 3
 
 1. Open up your `Lesson-3` folder.
-2. Open `Activities` folder in your text editor of choice.
+2. Open `Activities` directory in your text editor of choice.
 3. Open [Python/Django Lesson 3](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2663a2f2-d949-4bf8-aa4d-a8c900f85bf0) and start coding along! (_Note:_ Make sure to start out with `07-Models/Solved` from last class so you have the same starting point as the video.)
 4. Use the same workflow as Lesson 1 to watch class and work through the activities until the last one is complete.
 
@@ -47,7 +47,7 @@ We recommend you cover only one lesson per sitting to prevent information overlo
 First off, killer job, you made it! Whether you feel confusion or mastery, you are adding to your developer skill set by practicing the ability to learn new technologies in this rapidly evolving industry. Now it's time to put those skills to use and create a full stack application with, you guessed it, Python and Django.
 
 1. Open your `Homework` folder.
-2. Open your `Instructions` folder and follow the README.md inside.
+2. Open your `Instructions` directory and follow the README.md inside.
 3. Take your time and work on this over 1-2 weeks.
 4. Complete the application or spend at least 10 hours trying.
 

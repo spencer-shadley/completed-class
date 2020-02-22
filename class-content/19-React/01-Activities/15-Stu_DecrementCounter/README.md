@@ -4,7 +4,7 @@ In this activity we will add a "Decrement" button and click handler to the Click
 
 ## Instructions
 
-- Copy the [src](Unsolved/src) folder into your Create React App boilerplate. Stop the dev server if it is already running. Start the app in dev mode by running `npm start`.
+- Copy the [src](Unsolved/src) directory into your Create React App boilerplate. Stop the dev server if it is already running. Start the app in dev mode by running `npm start`.
 
 - This example uses Bootstrap. Be sure to add the Bootstrap CDN to your `index.html` file.
 

@@ -6,7 +6,7 @@ In this activity we will deploy the React Reading List application to Heroku.
 
 - Deploy the React Reading List application to Heroku. Make sure to perform the following:
 
-  - Initialize the project folder as a git repo.
+  - Initialize the project directory as a git repo.
 
   - Create a Heroku app for the React Reading List App.
 

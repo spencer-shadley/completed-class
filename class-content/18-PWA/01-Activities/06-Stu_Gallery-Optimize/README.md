@@ -29,7 +29,7 @@ In this activity you will use the Lazy Loading, GZip Compression, Image Compress
 
 - Now that we have compressed our images and enabled gzip compression, our last step is to minify our JavaScript.
 
-- Create a `dist` folder in the root of your project folder
+- Create a `dist` directory in the root of your project folder
 
   - Inside of `dist` create a file called `index.js`
 

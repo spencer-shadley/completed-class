@@ -4,7 +4,7 @@ In this activity we will use the `map` and `filter` methods to solve problems we
 
 ## Instructions
 
-- Open the [Unsolved](Unsolved) folder and examine the `map.js` and `filter.js` files. Study the examples provided and Complete the problems outlined in the comments.
+- Open the [Unsolved](Unsolved) directory and examine the `map.js` and `filter.js` files. Study the examples provided and Complete the problems outlined in the comments.
 
 ### Bonus
 

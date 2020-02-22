@@ -6,7 +6,7 @@ In this example we will use eslint to fix issues with the calculator app from th
 
 - Install the [VS Code Eslint Extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
 
-- Open the [Unsolved](Unsolved) folder and run `npm install` from your terminal to install dependencies.
+- Open the [Unsolved](Unsolved) directory and run `npm install` from your terminal to install dependencies.
 
 - Now open [Unsolved/example.js](Unsolved/example.js) in your code editor. If you were able to complete the previous steps correctly, you should see red annotations under different parts of the code. Hovering over each displays a popover with an eslint rule being broken.
 

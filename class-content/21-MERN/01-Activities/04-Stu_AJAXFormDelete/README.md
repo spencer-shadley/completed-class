@@ -4,7 +4,7 @@ In this activity we will add functionality to the previous books example for sub
 
 ## Instructions
 
-- Open the [Unsolved](Unsolved) folder and install dependencies by running `npm install` at the project root.
+- Open the [Unsolved](Unsolved) directory and install dependencies by running `npm install` at the project root.
 
 - Start the app by running `npm start` from the project root.
 

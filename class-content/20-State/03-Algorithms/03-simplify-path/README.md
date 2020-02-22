@@ -50,7 +50,7 @@ In this activity you will be writing code to create a function that takes in a s
     '/c';
     ```
 
-    - Since we start at folder `a`, cd in folder `b` which is inside of `a`. Then we come up one level, back to `a`, then come up another level, up to the root, then go into `c` which is a the root level.
+    - Since we start at directory `a`, cd in directory `b` which is inside of `a`. Then we come up one level, back to `a`, then come up another level, up to the root, then go into `c` which is a the root level.
 
     - Given the following path:
 
@@ -88,4 +88,4 @@ In this activity you will be writing code to create a function that takes in a s
 
 ### Hints
 
-- Spend some time examining the examples provided here to make sure you understand file paths. Feel free to experiment in your terminal to see how changing directories will affect your folder location.
+- Spend some time examining the examples provided here to make sure you understand file paths. Feel free to experiment in your terminal to see how changing directories will affect your directory location.

@@ -4,7 +4,7 @@ In this activity, we will utilize Bootstrap CSS and render components utilizing 
 
 ## Instructions
 
-- Replace your application's `src` folder with [Unsolved/src](Unsolved/src). Stop the dev server if it is already running. Start the app in dev mode by running `npm start`.
+- Replace your application's `src` directory with [Unsolved/src](Unsolved/src). Stop the dev server if it is already running. Start the app in dev mode by running `npm start`.
 
 - Add a Bootstrap CDN to the head of your React application's `index.html` file inside `public/index.html`.
 

@@ -6,13 +6,13 @@ In this activity, we will dissect a simple React application.
 
 - If you haven't already, generate a starter React app using Create React App. You can do this by running `create-react-app reactpractice`. We will run all of the activity code today inside of this boilerplate, as to avoid constantly reinstalling the same node modules.
 
-- Once you have a `reactpractice` React app generated, delete the `src` folder inside of your starter app and replace it with the [src](Unsolved/src) provided with this activity.
+- Once you have a `reactpractice` React app generated, delete the `src` directory inside of your starter app and replace it with the [src](Unsolved/src) provided with this activity.
 
 - Start the app by running `npm start` in your terminal, take a moment to study the HTML code being rendered in the browser at [http://localhost:3000](http://localhost:3000).
 
 ### HelloReact.js
 
-- Then go into the `src` folder and with your partner, try to answer the following questions:
+- Then go into the `src` directory and with your partner, try to answer the following questions:
 
   - What's happening inside of `src/components/HelloReact.js`? How does it relate to the content being rendered to the browser?
 

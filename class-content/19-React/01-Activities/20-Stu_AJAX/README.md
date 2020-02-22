@@ -4,7 +4,7 @@ In this activity we will create a simple React application with which users can 
 
 ## Instructions
 
-- Replace your React application's `src` folder with [Unsolved/src](Unsolved/src).
+- Replace your React application's `src` directory with [Unsolved/src](Unsolved/src).
 
 - This example uses Bootstrap, so be sure to add the Bootstrap CDN to your application's `index.html` file. You may use the following snippet below:
 

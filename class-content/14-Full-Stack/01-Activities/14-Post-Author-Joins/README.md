@@ -4,11 +4,11 @@
 
   The goal of this exercise is to modify our find queries in both post-api-routes.js and author-api-routes.js to use Sequelize's "include" option. We can use "include" to say that we want to return associated data.
 
-  1. Open the folder slacked out to you
+  1. Open the directory slacked out to you
 
   2. Run `npm install`
 
-  3. Open the `config` folder and update the `config.json` file's `development` object to match your own local MySQL database.
+  3. Open the `config` directory and update the `config.json` file's `development` object to match your own local MySQL database.
 
   4. Navigate to the `post-api-routes.js` file.
 
