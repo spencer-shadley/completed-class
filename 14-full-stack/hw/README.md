@@ -40,4 +40,6 @@ When joining a new team, you will be expected to inspect a lot of code that you 
 
 You are required to submit the following:
 
-- A link to a Google Doc, video, or equivalent that describes the code in `Develop/`.
+- A few paragraphs detailing your reflection of the course. This can be submitted as either a `reflection.md` file in your GitHub repo or, if you would prefer your answers remain private, a comment on the assignment in BCS.
+
+- A link to your `README` on GitHub and other resources describing the given code
