@@ -22,6 +22,12 @@
     "no-unreachable": "error",
     "no-unused-vars": "error",
     "prettier/prettier": "error",
+    "prefer-arrow-callback": [
+      "error",
+      {
+        "allowNamedFunctions": true
+      }
+    ],
     "quotes": ["error", "double"],
     "semi": ["error", "always"]
   }
