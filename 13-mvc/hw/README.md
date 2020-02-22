@@ -52,13 +52,13 @@ Having an active and healthy commit history on GitHub is important for your futu
 
 2. Make a package.json file by running `npm init` from the command line.
 
-3. Install the Express npm package: `npm install express`.
+3. Install the Express npm package: `npm install --save express`.
 
 4. Create a server.js file.
 
-5. Install the Handlebars npm package: `npm install express-handlebars`.
+5. Install the Handlebars npm package: `npm install --save express-handlebars`.
 
-6. Install MySQL npm package: `npm install mysql`.
+6. Install MySQL npm package: `npm install --save mysql`.
 
 7. Require the following npm packages inside of the server.js file:
    - express
