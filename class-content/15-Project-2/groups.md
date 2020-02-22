@@ -47,11 +47,11 @@
 1. group
 
    - Owen (Slytherindentyourcode)
-   - Remy (Ravenclosure)
    - Ben (Slytherindentyourcode)
+   - Remy (Ravenclosure)
 
 1. group
    - Randy (Gryffindom)
+   - Issouf (Gryffindom)
    - Ari (Githubblepuff)
    - Vaughn (Githubblepuff)
-   - Issouf (Gryffindom)
