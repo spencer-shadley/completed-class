@@ -10,6 +10,42 @@
 
 - CONTROLLER: **Controller** / **ORM** Controller is the part in which we process the data after we get a request from View and before updating anything in our database with our Model.
 
+```js
+.
+├── config
+│   ├── connection.js // Handles connected to db. Exported as module for use in orm.js file.
+│   └── orm.js // Contains functions to query database. Returns data as callback.
+│ 
+├── controllers
+│   └── burgers_controller.js // Receives data from burger.js. Sends to view.
+│
+├── db
+│   ├── schema.sql
+│   └── seeds.sql
+│
+├── models
+│   └── burger.js // Receives data from orm.js. Re-formats data. 
+│ 
+├── node_modules
+│ 
+├── package.json
+│
+├── public
+│   └── assets
+│       ├── css
+│       │   └── burger_style.css
+│       └── img
+│           └── burger.png
+│  
+│
+├── server.js  // Central command
+│
+└── views
+    ├── index.handlebars // Receives data from burger_controller.js. Sends to main.handlebars. 
+    └── layouts
+        └── main.handlebars // Final result
+ ```     
+
 ---
 
 ## <center>Advantages of MVC architecture:
@@ -137,3 +173,7 @@ EX: 3
       <p> I would hate to have a T-rex in my house.
 
 ```
+
+## <center> BONUS
+1. Demo/Call on students for practice.js file
+1. Great article on ES6 Object Destructuring [HERE](https://codeburst.io/es6-destructuring-the-complete-guide-7f842d08b98f)
