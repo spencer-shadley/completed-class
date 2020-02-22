@@ -134,7 +134,3 @@ For this project you need to have _at least_ 5 commits (and should probably have
 You are required to submit the following:
 
 - The URL of the GitHub repository
-
----
-
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

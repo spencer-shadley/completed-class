@@ -31,7 +31,3 @@ When joining a new team, you will be expected to inspect a lot of code that you 
 You are required to submit the following:
 
 - A link to a Google Doc, video, or equivalent that describes the code in `Develop/`.
-
----
-
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
