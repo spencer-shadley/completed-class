@@ -17,14 +17,14 @@
 │   └── orm.js // Contains functions to query database. Returns data as callback.
 │ 
 ├── controllers
-│   └── burgers_controller.js // Receives data from burger.js. Sends to view.
+│   └── burgers_controller.js // Send / Receives data to / from burger.js. Re-directs data to orm / view. 
 │
 ├── db
 │   ├── schema.sql // DB info
 │   └── seeds.sql // Dummy data for testing / testing foegin keys in DB
 │
 ├── models
-│   └── burger.js // Receives data from orm.js. Re-formats data. Sends to burger_controller.js.
+│   └── burger.js // Object with orm functions based on input data. 
 │ 
 ├── node_modules
 │ 
@@ -38,12 +38,23 @@
 │           └── burger.png
 │  
 │
-├── server.js  // Central command
+├── server.js  // Central command / Manages routes
 │
 └── views
     ├── index.handlebars // Receives data from burger_controller.js. Sends to main.handlebars. 
     └── layouts
         └── main.handlebars // Final result
+
+// If I want to create burger. 
+//   1. Controller runs create method for burger.js
+//   2. Burger calls ORM 
+//   3. Orm runs query to db
+//   4. DB creates a new burger
+//   5. ORM (callback) to controller
+//   6. Controller runs get method. Passes data into index (HB)
+//   7. Index.handlebars processes data
+//   8. Main.handlebars updates with new burger.
+//   9. Great Success! 
  ```     
 
 ---
