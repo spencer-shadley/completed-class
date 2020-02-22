@@ -34,6 +34,10 @@ When joining a new team, you will be expected to inspect a lot of code that you 
 
 - A link to a document or video with instructions on how what each section of code is doing in `Develop/`.
 
+## Bonus
+
+- Get a head-start on project 2!
+
 ---
 
 ## Submission on BCS
