@@ -4,9 +4,9 @@
 
 - Must use a Node and Express server
 
-- Must be backed by a MySQL database and an ORM (not necessarily Sequelize)
+- Must be backed by a MySQL database
 
-- Must utilize both GET and POST routes for retrieving and adding new data
+- Must utilize, GET, PUT, POST and DELETE routes for manipulating data
 
 - Must be deployed using Heroku (with data)
 
@@ -14,15 +14,29 @@
 
 - Must have a polished UI
 
-- Must use a CSS framework _other than_ Bootstrap
+- Must use a CSS library _other than_ Bootstrap
+
+  - It is acceptable to additionally use Bootstrap
 
 - Must follow MVC paradigm
 
-- Must meet good quality coding standards (indentation, scoping, naming)
+  - **Model**: Must use an ORM (not necessarily Sequelize)
+
+  - **View**: Must have clear "view" separation of concerns, for example using Handlebars (alternatives are React, Angular, Vue, etc.)
+
+  - **Controller**: Must contain core business logic, separate from the model and view
+
+- Must use a RESTful architecture
+
+- Must use good coding style (consistent indentation, naming conventions, etc.)
+
+  - Must use a linter (ex. ESLint) with at least five rules specified and enforced
+
+- Must have high quality coding standards (DRY, correctly scoped variables, etc.)
 
 ## Presentation Requirements
 
-Use this [project presentation template](https://docs.google.com/presentation/d/1_u8TKy5zW5UlrVQVnyDEZ0unGI2tjQPDEpA0FNuBKAw/edit?usp=sharing) to address the following:
+In your presentation include:
 
 - Elevator pitch: a one minute description of your application
 
@@ -36,13 +50,17 @@ Use this [project presentation template](https://docs.google.com/presentation/d/
 
 - Links to to the deployed application and the GitHub repository
 
+Here is a [presentation template](https://docs.google.com/presentation/d/1_u8TKy5zW5UlrVQVnyDEZ0unGI2tjQPDEpA0FNuBKAw/edit?usp=sharing) which you can optionally start from.
+
+Google Slides, Powerpoint, Prezzi, a custom web app, interpretive dance, etc. are all acceptable so long as you clearly address the above points
+
 ## Grading Metrics
 
 | Metric        | Weight |
 | ------------- | ------ |
 | Concept       | 10%    |
-| Design        | 20%    |
-| Functionality | 30%    |
+| Design        | 10%    |
+| Functionality | 40%    |
 | Collaboration | 30%    |
 | Presentation  | 10%    |
 
