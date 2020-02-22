@@ -1,0 +1,124 @@
+# <center> MVC (Model, View, Controller)
+
+![MVP](assets/mvc.png)
+
+<center> DESIGN PATTERN </center>
+
+- VIEW: **Handlebars** / **Public**: In simple words, View is the User Interface on which our customer/user can perform some actions. It contains HTML,CSS,JS, XML or any other markup language that we can use to create a beautiful user interface. It also contains code to show the data that it receives form our application.
+
+- MODEL: **MySql** / **DB** / **ORM** Model works directly with the database. It does not have to deal with user interface or data processing. In real world scenario, you will simply use model to fetch, insert, update and delete data from your database.
+
+- CONTROLLER: **Controller** / **ORM** Controller is the part in which we process the data after we get a request from View and before updating anything in our database with our Model.
+
+---
+
+## <center>Advantages of MVC architecture:
+
+1. Development of the application becomes fast.
+1. Easy for multiple developers to collaborate and work together.
+1. Easier to Update the application.
+1. Easier to Debug as we have multiple levels properly written in the application.
+
+## <center> Disadvantages of MVC architecture:
+
+1. It is hard to understand the MVC architecture.
+1. Takes time to lay foundation.
+1. Must have strict rules on methods.
+
+## <CENTER> Handlebars Basics
+---
+1. Templating language 
+```js
+EX: 1
+
+{
+  person: {
+    firstname: "Yehuda",
+    lastname: "Katz"
+  }
+};
+
+<h1> Hello! My name is {{person.firstname}} {{person.lastname}}. </h1>
+
+** Hello! My name is Yehuda Katz.
+
+--------------------------------------------------------------------------------------
+
+EX: 2
+
+{
+  people: [
+    "Yehuda Katz",
+    "Alan Johnson",
+    "Charles Jolley"
+  ]
+};
+
+<ul class="people_list">
+  {{#each people}}
+    <li>{{this}}</li>
+  {{/each}}
+</ul>
+
+<ul class="people_list">
+    <li>Yehuda Katz</li>
+    <li>Alan Johnson</li>
+    <li>Charles Jolley</li>
+</ul>
+
+--------------------------------------------------------------------------------------
+
+EX: 3
+
+**Unless vs If**
+
+   { 
+       animals: [
+       {
+           id: 1,
+           name: 'dog',
+           housePet: true
+       },
+       {
+           id: 2,
+           name: 'cat',
+           housePet: true
+       },
+       {
+           id: 3,
+           name: 'alligator',
+           housePet: false
+       },
+       {
+           id: 4,
+           name: 'T-rex',
+           housePet: false
+       },
+    ]
+   };
+
+    {{#each animals}}
+    {{#if this.housePet}}
+
+    <p> I would love to have a {{this.name}} in my house. 
+
+    {{/if}}
+    {{/each}}
+
+      <p> I would love to have a dog in my house. 
+      <p> I would love to have a cat in my house.
+
+-----------------------------------------------------------------------
+
+    {{#each animals}}
+    {{#unless this.housePet}}
+
+      <p> I would hate to have a {{this.name}} in my house. 
+
+    {{/unless}}
+    {{/each}}
+
+      <p> I would hate to have an alligator in my house. 
+      <p> I would hate to have a T-rex in my house.
+
+```
