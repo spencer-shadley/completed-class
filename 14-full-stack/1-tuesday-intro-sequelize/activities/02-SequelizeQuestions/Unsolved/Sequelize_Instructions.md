@@ -1,4 +1,4 @@
-- **Instructions:**
+# Instructions
 
 - Spend the next few minutes with your partner answering the following questions. You should be using the Sequelize Documentation (and whatever other references you find online).
 
