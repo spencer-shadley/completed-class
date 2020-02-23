@@ -4,7 +4,7 @@ In this activity you will utilize the axios library to make a request to the Git
 
 ## Instructions
 
-- Change directories into the `Unsolved` folder and run `npm install` from your terminal.
+- Change directories into the `Unsolved` directory and run `npm install` from your terminal.
 
 - Once the project dependencies finish installing, examine the starter code in `Unsolved/index.js`:
 

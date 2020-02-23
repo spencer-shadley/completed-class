@@ -1,0 +1,16 @@
+{
+  "name": "drill",
+  "version": "1.0.0",
+  "description": "",
+  "main": "drill.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^25.1.0"
+  }
+}

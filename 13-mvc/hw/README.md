@@ -65,7 +65,7 @@ Having an active and healthy commit history on GitHub is important for your futu
 
 #### DB Setup
 
-1. Inside your `burger` directory, create a folder named `db`.
+1. Inside your `burger` directory, create a directory named `db`.
 
 2. In the `db` folder, create a file named `schema.sql`. Write SQL queries this file that do the following:
 
@@ -82,7 +82,7 @@ Having an active and healthy commit history on GitHub is important for your futu
 
 5. Now you're going to run these SQL files.
 
-   - Make sure you're in the `db` folder of your app.
+   - Make sure you're in the `db` directory of your app.
 
    - Start MySQL command line tool and login: `mysql -u root -p`.
 
@@ -94,7 +94,7 @@ Having an active and healthy commit history on GitHub is important for your futu
 
 #### Config Setup
 
-1. Inside your `burger` directory, create a folder named `config`.
+1. Inside your `burger` directory, create a directory named `config`.
 
 2. Create a `connection.js` file inside `config` directory.
 
@@ -116,7 +116,7 @@ Having an active and healthy commit history on GitHub is important for your futu
 
 #### Model setup
 
-- Inside your `burger` directory, create a folder named `models`.
+- Inside your `burger` directory, create a directory named `models`.
 
   - In `models`, make a `burger.js` file.
 
@@ -128,7 +128,7 @@ Having an active and healthy commit history on GitHub is important for your futu
 
 #### Controller setup
 
-1. Inside your `burger` directory, create a folder named `controllers`.
+1. Inside your `burger` directory, create a directory named `controllers`.
 
 2. In `controllers`, create the `burgers_controller.js` file.
 
@@ -141,7 +141,7 @@ Having an active and healthy commit history on GitHub is important for your futu
 
 #### View setup
 
-1. Inside your `burger` directory, create a folder named `views`.
+1. Inside your `burger` directory, create a directory named `views`.
 
    - Create the `index.handlebars` file inside `views` directory.
 
