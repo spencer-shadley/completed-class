@@ -11,6 +11,17 @@ class DB {
         this.connection = connection;
     };
 
+    addHouse(house) {
+        return this.connection.query(
+            `
+            INSERT INTO
+                house
+            SET
+                ?
+            ,`, house
+
+        )
+    }
 
     viewAllHouses() {
         return this.connection.query(
@@ -42,16 +53,6 @@ class DB {
         );
     };
 
-    createHouse(house) {
-        return this.connection.query(
-            `
-            INSERT INTO
-                house
-            SET
-                ?
-            `, house
-        );
-    };
 };
 
 
