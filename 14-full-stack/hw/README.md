@@ -6,7 +6,7 @@ Reflect on what you have achieved so far in this course and answer the following
 
     1. What have you learned so far? What have you accomplished? Think back to the first week, how have you changed and grown since then?
 
-    2. What are your goals for the remainder of the course? What do you hope to accomplish before the course completes?
+    2. What are your goals for the remainder of the course? What do you hope to accomplish before the course completes? What do you hope to accomplish after the course completes?
 
 ## Part 2: Sequelize - Reverse Engineering Code
 
