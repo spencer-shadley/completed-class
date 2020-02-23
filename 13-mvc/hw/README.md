@@ -183,6 +183,8 @@ All the recommended files and directories from the steps above should look like 
 │   └── assets
 │       ├── css
 │       │   └── burger_style.css
+│       ├──js
+│       │   └── script.js
 │       └── img
 │           └── burger.png
 │  

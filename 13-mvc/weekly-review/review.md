@@ -34,8 +34,10 @@
 │   └── assets
 │       ├── css
 │       │   └── burger_style.css
-│       └── img
-│           └── burger.png
+│       ├── img
+│       │   └── burger.png
+│       └─js
+│         └── script.js // Contains front-end logic. (AJAX calls)
 │  
 │
 ├── server.js  // Central command / Manages routes
@@ -46,6 +48,7 @@
         └── main.handlebars // Final result
 
 // If I want to create burger. 
+//   0. User clicks create button on page. Script.js makes ajax call.
 //   1. Controller runs create method for burger.js
 //   2. Burger calls ORM 
 //   3. Orm runs query to db

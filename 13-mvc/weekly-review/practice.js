@@ -6,7 +6,7 @@
 // MAKE A VARIALBE FOR EACH GOT HOUSE
 const houseArray = ['Targaryen', 'Stark', 'Lannister'];
 
-const [Stark, Targaryen, Lannister] = houseArray;
+const [Targaryen, Stark, Lannister] = houseArray;
 
 console.log(`These are the GOT houses: ${Targaryen}, ${Stark}, ${Lannister}`);
 
@@ -14,13 +14,17 @@ console.log(`These are the GOT houses: ${Targaryen}, ${Stark}, ${Lannister}`);
 // MAKE A VARIABLE FOR EACH FOOD
 const foodArray = ['Pizza', ['Burrito', 'Steak']];
 
+const [Pizza2, [burrito, Steak]] = foodArray;
+
+console.log(`These are nested arrays of ${Pizza2}, ${burrito}, and ${Steak}`)
+
 
 // SKIPPING. WHAT DO YOU WANT TO EAT?
 const foodArray2 = ['Pizza', 'Dog Poop', 'Strawberries', 'Slime', 'Dirt', 'Pancakes'];
 
-const [burrito, , Strawberries, , , Pancakes] = foodArray2;
+const [burrito2, , Strawberries, , , Pancakes] = foodArray2;
 
-console.log(`I would like to eat ${burrito}, ${Strawberries}, and ${Pancakes}`);
+console.log(`I would like to eat ${burrito2}, ${Strawberries}, and ${Pancakes}`);
 
 
 
