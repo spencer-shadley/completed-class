@@ -27,8 +27,8 @@ function objToSql(ob) {
 }
 
 const orm = {
-  all: function(tableInput, cb) {
-    const queryString = 'SELECT * FROM ' + tableInput + ';';
+  all: function (tableInput, cb) {
+    let queryString = 'SELECT * FROM ' + tableInput + ';';
     connection.query(queryString, (err, result) => {
       if (err) {
         throw err;
@@ -38,8 +38,8 @@ const orm = {
   },
   // vals is an array of values that we want to save to cols
   // cols are the columns we want to insert the values into
-  create: function(table, cols, vals, cb) {
-    const queryString = 'INSERT INTO ' + table;
+  create: function (table, cols, vals, cb) {
+    let queryString = 'INSERT INTO ' + table;
 
     queryString += ' (';
     queryString += cols.toString();
@@ -59,8 +59,8 @@ const orm = {
   },
   // objColVals would be the columns and values that you want to update
   // an example of objColVals would be {name: panther, sleepy: true}
-  update: function(table, objColVals, condition, cb) {
-    const queryString = 'UPDATE ' + table;
+  update: function (table, objColVals, condition, cb) {
+    let queryString = 'UPDATE ' + table;
 
     queryString += ' SET ';
     queryString += objToSql(objColVals);
