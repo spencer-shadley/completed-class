@@ -4,9 +4,19 @@
 
 Reflect on what you have achieved so far in this course and answer the following questions:
 
-    1. What have you learned so far? What have you accomplished? Think back to the first week, how have you changed and grown since then?
+### The Journey so Far
 
-    2. What are your goals for the remainder of the course? What do you hope to accomplish before the course completes? What do you hope to accomplish after the course completes?
+1. What have you learned so far?
+2. What have you accomplished?
+3. Think back to the first week, how have you changed and grown since then?
+
+### Path to Success
+
+1. What are your goals for the remainder of the course?
+2. What do you hope to accomplish before the course completes?
+3. What do you hope to accomplish after the course completes?
+4. What do you plan to do to ensure you accomplish these goals?
+5. How do these plans and goals differ from the first half of the course?
 
 ## Part 2: Sequelize - Reverse Engineering Code
 
@@ -33,6 +43,14 @@ When joining a new team, you will be expected to inspect a lot of code that you 
 ## Minimum Requirements
 
 - A link to a document or video with instructions on how what each section of code is doing in `Develop/`.
+
+## Bonus
+
+- Get a head-start on project 2! Work with your [group](../../15-project-2-part-1/groups.md) on your:
+  - Overall idea and theme for the project
+  - MVP
+  - Desired features
+  - More information [here](../../15-project-2-part-1/hw/README.md)
 
 ---
 
