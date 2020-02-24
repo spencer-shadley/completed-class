@@ -3,8 +3,10 @@
     "browser": true,
     "commonjs": true,
     "es6": true,
-    "node": true
+    "node": true,
+    "jquery": true
   },
+  "extends": ["eslint:recommended"],
   "rules": {
     "arrow-parens": ["error", "as-needed"],
     "camelcase": "error",
