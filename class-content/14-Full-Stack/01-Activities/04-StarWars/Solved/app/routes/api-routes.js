@@ -20,13 +20,9 @@ module.exports = function(app) {
         where: {
           routeName: req.params.characters
         }
-      }).then(function(result) {
-        return res.json(result);
-      });
+      }).then(result => res.json(result));
     } else {
-      Character.findAll().then(function(result) {
-        return res.json(result);
-      });
+      Character.findAll().then(result => res.json(result));
     }
   });
 
@@ -43,13 +39,14 @@ module.exports = function(app) {
 
     // Then add the character to the database using sequelize
     Character.create({
-      routeName: routeName,
+      routeName,
       name: character.name,
       role: character.role,
       age: character.age,
       forcePoints: character.forcePoints
     });
 
-    res.status(204).end();
+    const successCode = 204;
+    res.status(successCode).end();
   });
 };

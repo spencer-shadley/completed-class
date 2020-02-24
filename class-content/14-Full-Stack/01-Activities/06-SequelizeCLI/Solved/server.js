@@ -18,8 +18,8 @@ const PORT = process.env.PORT || 3000;
 // Starts the server to begin listening
 // =============================================================
 
-db.sequelize.sync().then(function() {
+db.sequelize.sync().then(() => {
   app.listen(PORT, () => {
-    console.log('App listening on PORT ' + PORT);
+    console.log(`App listening on PORT ${ PORT}`);
   });
 });

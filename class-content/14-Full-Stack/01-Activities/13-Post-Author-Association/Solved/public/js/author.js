@@ -1,6 +1,6 @@
 'use strict';
 
-$(document).ready(function() {
+$(document).ready(() => {
   // Getting references to the name input and author container, as well as the table body
   const nameInput = $('#author-name');
   const authorList = $('tbody');
@@ -41,27 +41,27 @@ $(document).ready(function() {
     console.log(authorData);
     const newTr = $('<tr>');
     newTr.data('author', authorData);
-    newTr.append('<td>' + authorData.name + '</td>');
+    newTr.append(`<td>${ authorData.name }</td>`);
     newTr.append(
       '<td># of posts will display when we learn joins in the next activity!</td>'
     );
     newTr.append(
-      "<td><a href='/blog?author_id=" + authorData.id + "'>Go to Posts</a></td>"
+      `<td><a href='/blog?author_id=${ authorData.id }'>Go to Posts</a></td>`
     );
     newTr.append(
-      "<td><a href='/cms?author_id=" +
-        authorData.id +
-        "'>Create a Post</a></td>"
+      `<td><a href='/cms?author_id=${
+        authorData.id
+      }'>Create a Post</a></td>`
     );
     newTr.append(
-      "<td><a style='cursor:pointer;color:red' class='delete-author'>Delete Author</a></td>"
+      '<td><a style=\'cursor:pointer;color:red\' class=\'delete-author\'>Delete Author</a></td>'
     );
     return newTr;
   }
 
   // Function for retrieving authors and getting them ready to be rendered to the page
   function getAuthors() {
-    $.get('/api/authors', function(data) {
+    $.get('/api/authors', data => {
       const rowsToAdd = [];
       for (let i = 0; i < data.length; ++i) {
         rowsToAdd.push(createAuthorRow(data[i]));
@@ -81,7 +81,8 @@ $(document).ready(function() {
     if (rows.length) {
       console.log(rows);
       authorList.prepend(rows);
-    } else {
+    }
+    else {
       renderEmpty();
     }
   }
@@ -103,7 +104,7 @@ $(document).ready(function() {
     const id = listItemData.id;
     $.ajax({
       method: 'DELETE',
-      url: '/api/authors/' + id
+      url: `/api/authors/${ id}`
     }).then(getAuthors);
   }
 });

@@ -9,7 +9,7 @@ module.exports = function(app) {
     // In this case, just db.Post
     db.Author.findAll({
       include: [db.Post]
-    }).then(function(dbAuthor) {
+    }).then(dbAuthor => {
       res.json(dbAuthor);
     });
   });
@@ -23,13 +23,13 @@ module.exports = function(app) {
         id: req.params.id
       },
       include: [db.Post]
-    }).then(function(dbAuthor) {
+    }).then(dbAuthor => {
       res.json(dbAuthor);
     });
   });
 
   app.post('/api/authors', (req, res) => {
-    db.Author.create(req.body).then(function(dbAuthor) {
+    db.Author.create(req.body).then(dbAuthor => {
       res.json(dbAuthor);
     });
   });
@@ -39,7 +39,7 @@ module.exports = function(app) {
       where: {
         id: req.params.id
       }
-    }).then(function(dbAuthor) {
+    }).then(dbAuthor => {
       res.json(dbAuthor);
     });
   });

@@ -1,11 +1,11 @@
 'use strict';
 
-$(document).ready(function() {
+$(document).ready(() => {
   // Gets an optional query string from our url (i.e. ?post_id=23)
   const url = window.location.search;
-  const postId;
+  let postId;
   // Sets a flag for whether or not we're updating a post to be false initially
-  const updating = false;
+  let updating = false;
 
   // If we have this section in our url, we pull out the post id from the url
   // In localhost:8080/cms?post_id=1, postId is 1
@@ -22,7 +22,7 @@ $(document).ready(function() {
   // Giving the postCategorySelect a default value
   postCategorySelect.val('Personal');
   // Adding an event listener for when the form is submitted
-  $(cmsForm).on('submit', function handleFormSubmit(event) {
+  $(cmsForm).on('submit', event => {
     event.preventDefault();
     // Wont submit the post if we are missing a body or a title
     if (!titleInput.val().trim() || !bodyInput.val().trim()) {
@@ -49,14 +49,14 @@ $(document).ready(function() {
 
   // Submits a new post and brings user to blog page upon completion
   function submitPost(Post) {
-    $.post('/api/posts/', Post, function() {
+    $.post('/api/posts/', Post, () => {
       window.location.href = '/blog';
     });
   }
 
   // Gets post data for a post if we're editing
   function getPostData(id) {
-    $.get('/api/posts/' + id, function(data) {
+    $.get(`/api/posts/${id}`, data => {
       if (data) {
         // If this post exists, prefill our cms forms with its data
         titleInput.val(data.title);
@@ -75,7 +75,7 @@ $(document).ready(function() {
       method: 'PUT',
       url: '/api/posts',
       data: post
-    }).then(function() {
+    }).then(() => {
       window.location.href = '/blog';
     });
   }

@@ -3,7 +3,7 @@
 // The code in add.js handles what happens when the user clicks the "Add a book" button.
 
 // When user clicks add-btn
-$('#add-btn').on('click', function(event) {
+$('#add-btn').on('click', event => {
   event.preventDefault();
 
   // Make a newBook object
@@ -25,7 +25,7 @@ $('#add-btn').on('click', function(event) {
   // Send an AJAX POST-request with jQuery
   $.post('/api/new', newBook)
     // On success, run the following code
-    .then(function(data) {
+    .then(data => {
       // Log the data we found
       console.log(data);
     });

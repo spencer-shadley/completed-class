@@ -16,7 +16,7 @@ module.exports = function(app) {
   // GET route for getting all of the todos
   app.get('/api/todos', (req, res) => {
     // findAll returns all entries for a table when used with no options
-    db.Todo.findAll({}).then(function(dbTodo) {
+    db.Todo.findAll({}).then(dbTodo => {
       // We have access to the todos as an argument inside of the callback function
       res.json(dbTodo);
     });
@@ -30,7 +30,7 @@ module.exports = function(app) {
     db.Todo.create({
       text: req.body.text,
       complete: req.body.complete
-    }).then(function(dbTodo) {
+    }).then(dbTodo => {
       // We have access to the new todo as an argument inside of the callback function
       res.json(dbTodo);
     });
@@ -44,7 +44,7 @@ module.exports = function(app) {
       where: {
         id: req.params.id
       }
-    }).then(function(dbTodo) {
+    }).then(dbTodo => {
       res.json(dbTodo);
     });
   });
@@ -63,7 +63,7 @@ module.exports = function(app) {
           id: req.body.id
         }
       }
-    ).then(function(dbTodo) {
+    ).then(dbTodo => {
       res.json(dbTodo);
     });
   });

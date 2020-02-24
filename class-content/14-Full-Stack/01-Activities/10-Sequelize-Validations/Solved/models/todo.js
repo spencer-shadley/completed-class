@@ -1,6 +1,7 @@
 'use strict';
 
 module.exports = function(sequelize, DataTypes) {
+  const maxCharacters = 140;
   const Todo = sequelize.define('Todo', {
     text: {
       type: DataTypes.STRING,
@@ -9,7 +10,7 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false,
       // len is a validation that checks that our todo is between 1 and 140 characters
       validate: {
-        len: [1, 140]
+        len: [1, maxCharacters]
       }
     },
     complete: {

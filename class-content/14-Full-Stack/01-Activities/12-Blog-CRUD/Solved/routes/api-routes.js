@@ -15,7 +15,7 @@ const db = require('../models');
 module.exports = function(app) {
   // GET route for getting all of the posts
   app.get('/api/posts/', (req, res) => {
-    db.Post.findAll({}).then(function(dbPost) {
+    db.Post.findAll({}).then(dbPost => {
       res.json(dbPost);
     });
   });
@@ -26,7 +26,7 @@ module.exports = function(app) {
       where: {
         category: req.params.category
       }
-    }).then(function(dbPost) {
+    }).then(dbPost => {
       res.json(dbPost);
     });
   });
@@ -37,7 +37,7 @@ module.exports = function(app) {
       where: {
         id: req.params.id
       }
-    }).then(function(dbPost) {
+    }).then(dbPost => {
       res.json(dbPost);
     });
   });
@@ -49,7 +49,7 @@ module.exports = function(app) {
       title: req.body.title,
       body: req.body.body,
       category: req.body.category
-    }).then(function(dbPost) {
+    }).then(dbPost => {
       res.json(dbPost);
     });
   });
@@ -60,7 +60,7 @@ module.exports = function(app) {
       where: {
         id: req.params.id
       }
-    }).then(function(dbPost) {
+    }).then(dbPost => {
       res.json(dbPost);
     });
   });
@@ -71,7 +71,7 @@ module.exports = function(app) {
       where: {
         id: req.body.id
       }
-    }).then(function(dbPost) {
+    }).then(dbPost => {
       res.json(dbPost);
     });
   });

@@ -5,7 +5,7 @@ const db = require('../models');
 module.exports = function(app) {
   // Find all Authors and return them to the user with res.json
   app.get('/api/authors', (req, res) => {
-    db.Author.findAll({}).then(function(dbAuthor) {
+    db.Author.findAll({}).then(dbAuthor => {
       res.json(dbAuthor);
     });
   });
@@ -16,7 +16,7 @@ module.exports = function(app) {
       where: {
         id: req.params.id
       }
-    }).then(function(dbAuthor) {
+    }).then(dbAuthor => {
       res.json(dbAuthor);
     });
   });
@@ -24,7 +24,7 @@ module.exports = function(app) {
   app.post('/api/authors', (req, res) => {
     // Create an Author with the data available to us in req.body
     console.log(req.body);
-    db.Author.create(req.body).then(function(dbAuthor) {
+    db.Author.create(req.body).then(dbAuthor => {
       res.json(dbAuthor);
     });
   });
@@ -35,7 +35,7 @@ module.exports = function(app) {
       where: {
         id: req.params.id
       }
-    }).then(function(dbAuthor) {
+    }).then(dbAuthor => {
       res.json(dbAuthor);
     });
   });

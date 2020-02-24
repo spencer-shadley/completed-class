@@ -1,6 +1,6 @@
 'use strict';
 
-$(document).ready(function() {
+$(document).ready(() => {
   // Getting a reference to the input field where user adds a new todo
   const $newItemInput = $('input.new-item');
   // Our new todos will go inside the todoContainer
@@ -14,7 +14,7 @@ $(document).ready(function() {
   $(document).on('submit', '#todo-form', insertTodo);
 
   // Our initial todos array
-  const todos = [];
+  let todos = [];
 
   // Getting todos from database when page loads
   getTodos();
@@ -31,7 +31,7 @@ $(document).ready(function() {
 
   // This function grabs todos from the database and updates the view
   function getTodos() {
-    $.get('/api/todos', function(data) {
+    $.get('/api/todos', data => {
       todos = data;
       initializeRows();
     });
@@ -43,7 +43,7 @@ $(document).ready(function() {
     const id = $(this).data('id');
     $.ajax({
       method: 'DELETE',
-      url: '/api/todos/' + id
+      url: `/api/todos/${id}`
     }).then(getTodos);
   }
 
@@ -77,8 +77,9 @@ $(document).ready(function() {
   // This function starts updating a todo in the database if a user hits the "Enter Key"
   // While in edit mode
   function finishEdit(event) {
+    const returnKeyCode = 13;
     const updatedTodo = $(this).data('todo');
-    if (event.which === 13) {
+    if (event.which === returnKeyCode) {
       updatedTodo.text = $(this)
         .children('input')
         .val()
@@ -121,13 +122,13 @@ $(document).ready(function() {
   function createNewRow(todo) {
     const $newInputRow = $(
       [
-        "<li class='list-group-item todo-item'>",
+        '<li class=\'list-group-item todo-item\'>',
         '<span>',
         todo.text,
         '</span>',
-        "<input type='text' class='edit' style='display: none;'>",
-        "<button class='delete btn btn-danger'>x</button>",
-        "<button class='complete btn btn-primary'>✓</button>",
+        '<input type=\'text\' class=\'edit\' style=\'display: none;\'>',
+        '<button class=\'delete btn btn-danger\'>x</button>',
+        '<button class=\'complete btn btn-primary\'>✓</button>',
         '</li>'
       ].join('')
     );

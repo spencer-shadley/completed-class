@@ -1,6 +1,6 @@
 'use strict';
 
-$(document).ready(function() {
+$(document).ready(() => {
   /* global moment */
 
   // blogContainer holds all of our posts
@@ -10,12 +10,12 @@ $(document).ready(function() {
   $(document).on('click', 'button.delete', handlePostDelete);
   $(document).on('click', 'button.edit', handlePostEdit);
   // Variable to hold our posts
-  const posts;
+  let posts;
 
   // The code below handles the case where we want to get blog posts for a specific author
   // Looks for a query param in the url for author_id
   const url = window.location.search;
-  const authorId;
+  let authorId;
   if (url.indexOf('?author_id=') !== -1) {
     authorId = url.split('=')[1];
     getPosts(authorId);
@@ -29,9 +29,9 @@ $(document).ready(function() {
   function getPosts(author) {
     authorId = author || '';
     if (authorId) {
-      authorId = '/?author_id=' + authorId;
+      authorId = `/?author_id=${authorId}`;
     }
-    $.get('/api/posts' + authorId, function(data) {
+    $.get(`/api/posts${authorId}`, data => {
       console.log('Posts', data);
       posts = data;
       if (!posts || !posts.length) {
@@ -46,8 +46,8 @@ $(document).ready(function() {
   function deletePost(id) {
     $.ajax({
       method: 'DELETE',
-      url: '/api/posts/' + id
-    }).then(function() {
+      url: `/api/posts/${id}`
+    }).then(() => {
       getPosts(postCategorySelect.val());
     });
   }
@@ -64,7 +64,7 @@ $(document).ready(function() {
 
   // This function constructs a post's HTML
   function createNewRow(post) {
-    const formattedDate = new Date(post.createdAt);
+    let formattedDate = new Date(post.createdAt);
     formattedDate = moment(formattedDate).format('MMMM Do YYYY, h:mm:ss a');
     const newPostCard = $('<div>');
     newPostCard.addClass('card');
@@ -79,7 +79,7 @@ $(document).ready(function() {
     const newPostTitle = $('<h2>');
     const newPostDate = $('<small>');
     const newPostAuthor = $('<h5>');
-    newPostAuthor.text('Written by: ' + post.Author.name);
+    newPostAuthor.text(`Written by: ${post.Author.name}`);
     newPostAuthor.css({
       float: 'right',
       color: 'blue',
@@ -88,7 +88,7 @@ $(document).ready(function() {
     const newPostCardBody = $('<div>');
     newPostCardBody.addClass('card-body');
     const newPostBody = $('<p>');
-    newPostTitle.text(post.title + ' ');
+    newPostTitle.text(`${post.title} `);
     newPostBody.text(post.body);
     newPostDate.text(formattedDate);
     newPostTitle.append(newPostDate);
@@ -118,25 +118,21 @@ $(document).ready(function() {
       .parent()
       .parent()
       .data('post');
-    window.location.href = '/cms?post_id=' + currentPost.id;
+    window.location.href = `/cms?post_id=${currentPost.id}`;
   }
 
   // This function displays a message when there are no posts
   function displayEmpty(id) {
     const query = window.location.search;
-    const partial = '';
+    let partial = '';
     if (id) {
-      partial = ' for Author #' + id;
+      partial = ` for Author #${id}`;
     }
     blogContainer.empty();
     const messageH2 = $('<h2>');
     messageH2.css({ 'text-align': 'center', 'margin-top': '50px' });
     messageH2.html(
-      'No posts yet' +
-        partial +
-        ", navigate <a href='/cms" +
-        query +
-        "'>here</a> in order to get started."
+      `No posts yet${partial}, navigate <a href='/cms${query}'>here</a> in order to get started.`
     );
     blogContainer.append(messageH2);
   }

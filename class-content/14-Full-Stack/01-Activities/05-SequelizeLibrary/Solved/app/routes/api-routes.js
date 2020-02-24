@@ -13,7 +13,7 @@ const Book = require('../models/book.js');
 module.exports = function(app) {
   // Get all books
   app.get('/api/all', (req, res) => {
-    Book.findAll({}).then(function(results) {
+    Book.findAll({}).then(results => {
       res.json(results);
     });
   });
@@ -24,7 +24,7 @@ module.exports = function(app) {
       where: {
         title: req.params.book
       }
-    }).then(function(results) {
+    }).then(results => {
       res.json(results);
     });
   });
@@ -35,7 +35,7 @@ module.exports = function(app) {
       where: {
         genre: req.params.genre
       }
-    }).then(function(results) {
+    }).then(results => {
       res.json(results);
     });
   });
@@ -46,7 +46,7 @@ module.exports = function(app) {
       where: {
         author: req.params.author
       }
-    }).then(function(results) {
+    }).then(results => {
       res.json(results);
     });
   });
@@ -60,7 +60,7 @@ module.exports = function(app) {
         }
       },
       order: [['pages', 'DESC']]
-    }).then(function(results) {
+    }).then(results => {
       res.json(results);
     });
   });
@@ -74,7 +74,7 @@ module.exports = function(app) {
         }
       },
       order: [['pages', 'ASC']]
-    }).then(function(results) {
+    }).then(results => {
       res.json(results);
     });
   });
@@ -88,7 +88,7 @@ module.exports = function(app) {
       author: req.body.author,
       genre: req.body.genre,
       pages: req.body.pages
-    }).then(function(results) {
+    }).then(results => {
       res.json(results);
     });
   });
@@ -101,7 +101,7 @@ module.exports = function(app) {
       where: {
         id: req.params.id
       }
-    }).then(function() {
+    }).then(() => {
       res.end();
     });
   });

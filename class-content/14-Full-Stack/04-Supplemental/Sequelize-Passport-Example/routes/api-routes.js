@@ -20,11 +20,13 @@ module.exports = function(app) {
       email: req.body.email,
       password: req.body.password
     })
-      .then(function() {
-        res.redirect(307, '/api/login');
+      .then(() => {
+        const statusCode = 307;
+        res.redirect(statusCode, '/api/login');
       })
       .catch(err => {
-        res.status(401).json(err);
+        const statusCode = 401;
+        res.status(statusCode).json(err);
       });
   });
 
@@ -39,7 +41,8 @@ module.exports = function(app) {
     if (!req.user) {
       // The user is not logged in, send back an empty object
       res.json({});
-    } else {
+    }
+    else {
       // Otherwise send back the user's email and id
       // Sending back a password, even a hashed password, isn't a good idea
       res.json({

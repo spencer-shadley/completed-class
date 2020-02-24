@@ -1,6 +1,6 @@
 'use strict';
 
-$(document).ready(function() {
+$(document).ready(() => {
   // blogContainer holds all of our posts
   const blogContainer = $('.blog-container');
   const postCategorySelect = $('#category');
@@ -8,15 +8,15 @@ $(document).ready(function() {
   $(document).on('click', 'button.delete', handlePostDelete);
   $(document).on('click', 'button.edit', handlePostEdit);
   postCategorySelect.on('change', handleCategoryChange);
-  const posts;
+  let posts;
 
   // This function grabs posts from the database and updates the view
   function getPosts(category) {
-    const categoryString = category || '';
+    let categoryString = category || '';
     if (categoryString) {
-      categoryString = '/category/' + categoryString;
+      categoryString = `/category/${categoryString}`;
     }
-    $.get('/api/posts' + categoryString, function(data) {
+    $.get(`/api/posts${categoryString}`, data => {
       console.log('Posts', data);
       posts = data;
       if (!posts || !posts.length) {
@@ -31,8 +31,8 @@ $(document).ready(function() {
   function deletePost(id) {
     $.ajax({
       method: 'DELETE',
-      url: '/api/posts/' + id
-    }).then(function() {
+      url: `/api/posts/${id}`
+    }).then(() => {
       getPosts(postCategorySelect.val());
     });
   }
@@ -74,9 +74,9 @@ $(document).ready(function() {
     const newPostCardBody = $('<div>');
     newPostCardBody.addClass('card-body');
     const newPostBody = $('<p>');
-    newPostTitle.text(post.title + ' ');
+    newPostTitle.text(`${post.title} `);
     newPostBody.text(post.body);
-    const formattedDate = new Date(post.createdAt);
+    let formattedDate = new Date(post.createdAt);
     formattedDate = moment(formattedDate).format('MMMM Do YYYY, h:mm:ss a');
     newPostDate.text(formattedDate);
     newPostTitle.append(newPostDate);
@@ -108,7 +108,7 @@ $(document).ready(function() {
       .parent()
       .parent()
       .data('post');
-    window.location.href = '/cms?post_id=' + currentPost.id;
+    window.location.href = `/cms?post_id=${currentPost.id}`;
   }
 
   // This function displays a message when there are no posts
@@ -117,7 +117,7 @@ $(document).ready(function() {
     const messageH2 = $('<h2>');
     messageH2.css({ 'text-align': 'center', 'margin-top': '50px' });
     messageH2.html(
-      "No posts yet for this category, navigate <a href='/cms'>here</a> in order to create a new post."
+      'No posts yet for this category, navigate <a href=\'/cms\'>here</a> in order to create a new post.'
     );
     blogContainer.append(messageH2);
   }

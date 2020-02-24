@@ -4,7 +4,7 @@
 // Effectively it takes the form inputs then sends it to the server to save in the DB.
 
 // when user clicks add-btn
-$('#add-btn').on('click', function(event) {
+$('#add-btn').on('click', event => {
   event.preventDefault();
 
   // make a newCharacter obj
@@ -30,7 +30,7 @@ $('#add-btn').on('click', function(event) {
   // send an AJAX POST-request with jQuery
   $.post('/api/new', newCharacter)
     // on success, run this callback
-    .then(function(data) {
+    .then(data => {
       // log the data we found
       console.log(data);
       // tell the user we're adding a character with an alert window

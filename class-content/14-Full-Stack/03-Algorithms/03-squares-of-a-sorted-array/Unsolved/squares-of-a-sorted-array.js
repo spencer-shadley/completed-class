@@ -1,5 +1,9 @@
+/* eslint-disable no-unused-vars */
 'use strict';
 
-// Write code to create a function that accepts an array of integers sorted in ascending (increasing) order and returns a new array containing the squares of each number in ascending order
+// Write code to create a function
+// that accepts an array of integers sorted in ascending (increasing) order
+// and returns a new array containing the squares of each number in ascending order
 
-const sortedSquares = function(arr) {};
+// eslint-disable-next-line no-empty-function
+function sortedSquares(arr) {}

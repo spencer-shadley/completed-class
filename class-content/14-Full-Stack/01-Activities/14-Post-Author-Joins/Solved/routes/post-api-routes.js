@@ -25,7 +25,7 @@ module.exports = function(app) {
     db.Post.findAll({
       where: query,
       include: [db.Author]
-    }).then(function(dbPost) {
+    }).then(dbPost => {
       res.json(dbPost);
     });
   });
@@ -40,14 +40,14 @@ module.exports = function(app) {
         id: req.params.id
       },
       include: [db.Author]
-    }).then(function(dbPost) {
+    }).then(dbPost => {
       res.json(dbPost);
     });
   });
 
   // POST route for saving a new post
   app.post('/api/posts', (req, res) => {
-    db.Post.create(req.body).then(function(dbPost) {
+    db.Post.create(req.body).then(dbPost => {
       res.json(dbPost);
     });
   });
@@ -58,7 +58,7 @@ module.exports = function(app) {
       where: {
         id: req.params.id
       }
-    }).then(function(dbPost) {
+    }).then(dbPost => {
       res.json(dbPost);
     });
   });
@@ -69,7 +69,7 @@ module.exports = function(app) {
       where: {
         id: req.body.id
       }
-    }).then(function(dbPost) {
+    }).then(dbPost => {
       res.json(dbPost);
     });
   });

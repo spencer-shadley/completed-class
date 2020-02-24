@@ -16,7 +16,9 @@ module.exports = function(app) {
     const dbQuery = 'SELECT * FROM chirps';
 
     connection.query(dbQuery, (err, result) => {
-      if (err) throw err;
+      if (err) {
+        throw err;
+      }
       res.json(result);
     });
   });
@@ -32,8 +34,10 @@ module.exports = function(app) {
     connection.query(
       dbQuery,
       [req.body.author, req.body.body, req.body.created_at],
-      (err, result) => {
-        if (err) throw err;
+      err => {
+        if (err) {
+          throw err;
+        }
         console.log('Chirp Successfully Saved!');
         res.end();
       }

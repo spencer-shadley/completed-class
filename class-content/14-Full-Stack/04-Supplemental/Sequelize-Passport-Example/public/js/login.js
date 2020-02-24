@@ -1,13 +1,13 @@
 'use strict';
 
-$(document).ready(function() {
+$(document).ready(() => {
   // Getting references to our form and inputs
   const loginForm = $('form.login');
   const emailInput = $('input#email-input');
   const passwordInput = $('input#password-input');
 
   // When the form is submitted, we validate there's an email and password entered
-  loginForm.on('submit', function(event) {
+  loginForm.on('submit', event => {
     event.preventDefault();
     const userData = {
       email: emailInput.val().trim(),
@@ -27,10 +27,10 @@ $(document).ready(function() {
   // loginUser does a post to our "api/login" route and if successful, redirects us the the members page
   function loginUser(email, password) {
     $.post('/api/login', {
-      email: email,
-      password: password
+      email,
+      password
     })
-      .then(function() {
+      .then(() => {
         window.location.replace('/members');
         // If there's an error, log the error
       })

@@ -3,7 +3,7 @@
 // Write code to create a function that accepts two arrays of numbers
 // Return a new array containing the intersecting elements of the arrays
 
-const arrayIntersection = function(arr1, arr2) {
+function arrayIntersection(arr1, arr2) {
   const numMap = {};
   const result = [];
 
@@ -27,4 +27,6 @@ const arrayIntersection = function(arr1, arr2) {
   }
 
   return result;
-};
+}
+
+module.exports = arrayIntersection;

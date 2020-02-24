@@ -21,7 +21,7 @@ module.exports = function(app) {
     }
     db.Post.findAll({
       where: query
-    }).then(function(dbPost) {
+    }).then(dbPost => {
       res.json(dbPost);
     });
   });
@@ -32,7 +32,7 @@ module.exports = function(app) {
       where: {
         id: req.params.id
       }
-    }).then(function(dbPost) {
+    }).then(dbPost => {
       console.log(dbPost);
       res.json(dbPost);
     });
@@ -40,7 +40,7 @@ module.exports = function(app) {
 
   // POST route for saving a new post
   app.post('/api/posts', (req, res) => {
-    db.Post.create(req.body).then(function(dbPost) {
+    db.Post.create(req.body).then(dbPost => {
       res.json(dbPost);
     });
   });
@@ -51,7 +51,7 @@ module.exports = function(app) {
       where: {
         id: req.params.id
       }
-    }).then(function(dbPost) {
+    }).then(dbPost => {
       res.json(dbPost);
     });
   });
@@ -62,7 +62,7 @@ module.exports = function(app) {
       where: {
         id: req.body.id
       }
-    }).then(function(dbPost) {
+    }).then(dbPost => {
       res.json(dbPost);
     });
   });
