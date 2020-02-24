@@ -32,9 +32,9 @@ $(document).ready(() => {
     })
       .then(() => {
         window.location.replace('/members');
-        // If there's an error, log the error
       })
       .catch(err => {
+        // If there's an error, log the error
         console.log(err);
       });
   }
