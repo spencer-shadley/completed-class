@@ -2,12 +2,12 @@
 
 $(document).ready(() => {
   // Getting jQuery references to the post body, title, form, and author select
-  const bodyInput = $('#body');
-  const titleInput = $('#title');
-  const cmsForm = $('#cms');
-  const authorSelect = $('#author');
+  const bodyInput = $(`#body`);
+  const titleInput = $(`#title`);
+  const cmsForm = $(`#cms`);
+  const authorSelect = $(`#author`);
   // Adding an event listener for when the form is submitted
-  $(cmsForm).on('submit', handleFormSubmit);
+  $(cmsForm).on(`submit`, handleFormSubmit);
   // Gets the part of the url that comes after the "?" (which we have if we're updating a post)
   const url = window.location.search;
   let postId;
@@ -17,13 +17,13 @@ $(document).ready(() => {
 
   // If we have this section in our url, we pull out the post id from the url
   // In '?post_id=1', postId is 1
-  if (url.indexOf('?post_id=') !== -1) {
-    postId = url.split('=')[1];
-    getPostData(postId, 'post');
+  if (url.indexOf(`?post_id=`) !== -1) {
+    postId = url.split(`=`)[1];
+    getPostData(postId, `post`);
   }
   // Otherwise if we have an author_id in our url, preset the author select box to be our Author
-  else if (url.indexOf('?author_id=') !== -1) {
-    authorId = url.split('=')[1];
+  else if (url.indexOf(`?author_id=`) !== -1) {
+    authorId = url.split(`=`)[1];
   }
 
   // Getting the authors, and their posts
@@ -59,8 +59,8 @@ $(document).ready(() => {
 
   // Submits a new post and brings user to blog page upon completion
   function submitPost(post) {
-    $.post('/api/posts', post, () => {
-      window.location.href = '/blog';
+    $.post(`/api/posts`, post, () => {
+      window.location.href = `/blog`;
     });
   }
 
@@ -68,10 +68,10 @@ $(document).ready(() => {
   function getPostData(id, type) {
     let queryUrl;
     switch (type) {
-    case 'post':
+    case `post`:
       queryUrl = `/api/posts/${id}`;
       break;
-    case 'author':
+    case `author`:
       queryUrl = `/api/authors/${id}`;
       break;
     default:
@@ -93,13 +93,13 @@ $(document).ready(() => {
 
   // A function to get Authors and then render our list of Authors
   function getAuthors() {
-    $.get('/api/authors', renderAuthorList);
+    $.get(`/api/authors`, renderAuthorList);
   }
   // Function to either render a list of authors, or if there are none, direct the user to the page
   // to create an author first
   function renderAuthorList(data) {
     if (!data.length) {
-      window.location.href = '/authors';
+      window.location.href = `/authors`;
     }
     const rowsToAdd = [];
     for (let i = 0; i < data.length; ++i) {
@@ -114,8 +114,8 @@ $(document).ready(() => {
 
   // Creates the author options in the dropdown
   function createAuthorRow(author) {
-    const listOption = $('<option>');
-    listOption.attr('value', author.id);
+    const listOption = $(`<option>`);
+    listOption.attr(`value`, author.id);
     listOption.text(author.name);
     return listOption;
   }
@@ -123,11 +123,11 @@ $(document).ready(() => {
   // Update a given post, bring user to the blog page when done
   function updatePost(post) {
     $.ajax({
-      method: 'PUT',
-      url: '/api/posts',
+      method: `PUT`,
+      url: `/api/posts`,
       data: post
     }).then(() => {
-      window.location.href = '/blog';
+      window.location.href = `/blog`;
     });
   }
 });

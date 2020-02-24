@@ -2,7 +2,7 @@
 
 module.exports = function(sequelize, DataTypes) {
   const maxCharacters = 140;
-  const Todo = sequelize.define('Todo', {
+  const Todo = sequelize.define(`Todo`, {
     text: {
       type: DataTypes.STRING,
       // AllowNull is a flag that restricts a todo from being entered if it doesn't

@@ -9,20 +9,20 @@ $(document).ready(() => {
 
   // If we have this section in our url, we pull out the post id from the url
   // In localhost:8080/cms?post_id=1, postId is 1
-  if (url.indexOf('?post_id=') !== -1) {
-    postId = url.split('=')[1];
+  if (url.indexOf(`?post_id=`) !== -1) {
+    postId = url.split(`=`)[1];
     getPostData(postId);
   }
 
   // Getting jQuery references to the post body, title, form, and category select
-  const bodyInput = $('#body');
-  const titleInput = $('#title');
-  const cmsForm = $('#cms');
-  const postCategorySelect = $('#category');
+  const bodyInput = $(`#body`);
+  const titleInput = $(`#title`);
+  const cmsForm = $(`#cms`);
+  const postCategorySelect = $(`#category`);
   // Giving the postCategorySelect a default value
-  postCategorySelect.val('Personal');
+  postCategorySelect.val(`Personal`);
   // Adding an event listener for when the form is submitted
-  $(cmsForm).on('submit', event => {
+  $(cmsForm).on(`submit`, event => {
     event.preventDefault();
     // Wont submit the post if we are missing a body or a title
     if (!titleInput.val().trim() || !bodyInput.val().trim()) {
@@ -49,8 +49,8 @@ $(document).ready(() => {
 
   // Submits a new post and brings user to blog page upon completion
   function submitPost(Post) {
-    $.post('/api/posts/', Post, () => {
-      window.location.href = '/blog';
+    $.post(`/api/posts/`, Post, () => {
+      window.location.href = `/blog`;
     });
   }
 
@@ -72,11 +72,11 @@ $(document).ready(() => {
   // Update a given post, bring user to the blog page when done
   function updatePost(post) {
     $.ajax({
-      method: 'PUT',
-      url: '/api/posts',
+      method: `PUT`,
+      url: `/api/posts`,
       data: post
     }).then(() => {
-      window.location.href = '/blog';
+      window.location.href = `/blog`;
     });
   }
 });

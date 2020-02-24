@@ -6,20 +6,20 @@
 
 // Dependencies
 // =============================================================
-const Book = require('../models/book.js');
+const Book = require(`../models/book.js`);
 
 // Routes
 // =============================================================
 module.exports = function(app) {
   // Get all books
-  app.get('/api/all', (req, res) => {
+  app.get(`/api/all`, (req, res) => {
     Book.findAll({}).then(results => {
       res.json(results);
     });
   });
 
   // Get a specific book
-  app.get('/api/:book', (req, res) => {
+  app.get(`/api/:book`, (req, res) => {
     Book.findAll({
       where: {
         title: req.params.book
@@ -30,7 +30,7 @@ module.exports = function(app) {
   });
 
   // Get all books of a specific genre
-  app.get('/api/genre/:genre', (req, res) => {
+  app.get(`/api/genre/:genre`, (req, res) => {
     Book.findAll({
       where: {
         genre: req.params.genre
@@ -41,7 +41,7 @@ module.exports = function(app) {
   });
 
   // Get all books from a specific author
-  app.get('/api/author/:author', (req, res) => {
+  app.get(`/api/author/:author`, (req, res) => {
     Book.findAll({
       where: {
         author: req.params.author
@@ -52,36 +52,36 @@ module.exports = function(app) {
   });
 
   // Get all "long" books (books 150 pages or more)
-  app.get('/api/books/long', (req, res) => {
+  app.get(`/api/books/long`, (req, res) => {
     Book.findAll({
       where: {
         pages: {
           $gte: 150
         }
       },
-      order: [['pages', 'DESC']]
+      order: [[`pages`, `DESC`]]
     }).then(results => {
       res.json(results);
     });
   });
 
   // Get all "short" books (books 150 pages or less)
-  app.get('/api/books/short', (req, res) => {
+  app.get(`/api/books/short`, (req, res) => {
     Book.findAll({
       where: {
         pages: {
           $lte: 150
         }
       },
-      order: [['pages', 'ASC']]
+      order: [[`pages`, `ASC`]]
     }).then(results => {
       res.json(results);
     });
   });
 
   // Add a book
-  app.post('/api/new', (req, res) => {
-    console.log('Book Data:');
+  app.post(`/api/new`, (req, res) => {
+    console.log(`Book Data:`);
     console.log(req.body);
     Book.create({
       title: req.body.title,
@@ -94,8 +94,8 @@ module.exports = function(app) {
   });
 
   // Delete a book
-  app.delete('/api/book/:id', (req, res) => {
-    console.log('Book ID:');
+  app.delete(`/api/book/:id`, (req, res) => {
+    console.log(`Book ID:`);
     console.log(req.params.id);
     Book.destroy({
       where: {

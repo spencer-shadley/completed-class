@@ -6,9 +6,9 @@
 
 // Dependencies
 // =============================================================
-const express = require('express');
+const express = require(`express`);
 
-const db = require('./models');
+const db = require(`./models`);
 
 // Sets up the Express App
 // =============================================================

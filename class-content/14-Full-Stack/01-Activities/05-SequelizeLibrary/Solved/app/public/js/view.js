@@ -1,11 +1,11 @@
 'use strict';
 
 // When user hits the search-btn
-$('#search-btn').on('click', event => {
+$(`#search-btn`).on(`click`, event => {
   event.preventDefault();
 
   // Save the book they typed into the book-search input
-  const bookSearched = $('#book-search')
+  const bookSearched = $(`#book-search`)
     .val()
     .trim();
 
@@ -18,9 +18,9 @@ $('#search-btn').on('click', event => {
 });
 
 // When user hits the author-search-btn
-$('#author-search-btn').on('click', () => {
+$(`#author-search-btn`).on(`click`, () => {
   // Save the author they typed into the author-search input
-  const authorSearched = $('#author-search')
+  const authorSearched = $(`#author-search`)
     .val()
     .trim();
 
@@ -34,9 +34,9 @@ $('#author-search-btn').on('click', () => {
 });
 
 // When user hits the genre-search-btn
-$('#genre-search-btn').on('click', () => {
+$(`#genre-search-btn`).on(`click`, () => {
   // Save the book they typed into the genre-search input
-  const genreSearched = $('#genre-search')
+  const genreSearched = $(`#genre-search`)
     .val()
     .trim();
 
@@ -50,11 +50,11 @@ $('#genre-search-btn').on('click', () => {
 
 function renderBooks(data) {
   if (data.length !== 0) {
-    $('#stats').empty();
-    $('#stats').show();
+    $(`#stats`).empty();
+    $(`#stats`).show();
 
     for (let i = 0; i < data.length; ++i) {
-      const div = $('<div>');
+      const div = $(`<div>`);
 
       div.append(`<h2>${ data[i].title }</h2>`);
       div.append(`<p>Author: ${ data[i].author }</p>`);
@@ -66,21 +66,21 @@ function renderBooks(data) {
         }'>DELETE BOOK</button>`
       );
 
-      $('#stats').append(div);
+      $(`#stats`).append(div);
     }
 
-    $('.delete').click(function() {
+    $(`.delete`).click(function() {
       $.ajax({
-        method: 'DELETE',
-        url: `/api/book/${ $(this).attr('data-id')}`
+        method: `DELETE`,
+        url: `/api/book/${ $(this).attr(`data-id`)}`
       })
         // On success, run the following code
         .then(() => {
-          console.log('Deleted Successfully!');
+          console.log(`Deleted Successfully!`);
         });
 
       $(this)
-        .closest('div')
+        .closest(`div`)
         .remove();
     });
   }

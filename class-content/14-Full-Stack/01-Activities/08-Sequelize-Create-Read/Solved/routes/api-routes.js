@@ -8,13 +8,13 @@
 // =============================================================
 
 // Requiring our Todo model
-const db = require('../models');
+const db = require(`../models`);
 
 // Routes
 // =============================================================
 module.exports = function(app) {
   // GET route for getting all of the todos
-  app.get('/api/todos', (req, res) => {
+  app.get(`/api/todos`, (req, res) => {
     // findAll returns all entries for a table when used with no options
     db.Todo.findAll({}).then(dbTodo => {
       // We have access to the todos as an argument inside of the callback function
@@ -23,7 +23,7 @@ module.exports = function(app) {
   });
 
   // POST route for saving a new todo
-  app.post('/api/todos', (req, res) => {
+  app.post(`/api/todos`, (req, res) => {
     console.log(req.body);
     // create takes an argument of an object describing the item we want to
     // insert into our table. In this case we just we pass in an object with a text

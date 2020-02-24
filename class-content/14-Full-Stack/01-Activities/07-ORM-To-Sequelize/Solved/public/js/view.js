@@ -2,16 +2,16 @@
 
 $(document).ready(() => {
   // Getting a reference to the input field where user adds a new todo
-  const $newItemInput = $('input.new-item');
+  const $newItemInput = $(`input.new-item`);
   // Our new todos will go inside the todoContainer
-  const $todoContainer = $('.todo-container');
+  const $todoContainer = $(`.todo-container`);
   // Adding event listeners for deleting, editing, and adding todos
-  $(document).on('click', 'button.delete', deleteTodo);
-  $(document).on('click', 'button.complete', toggleComplete);
-  $(document).on('click', '.todo-item', editTodo);
-  $(document).on('keyup', '.todo-item', finishEdit);
-  $(document).on('blur', '.todo-item', cancelEdit);
-  $(document).on('submit', '#todo-form', insertTodo);
+  $(document).on(`click`, `button.delete`, deleteTodo);
+  $(document).on(`click`, `button.complete`, toggleComplete);
+  $(document).on(`click`, `.todo-item`, editTodo);
+  $(document).on(`keyup`, `.todo-item`, finishEdit);
+  $(document).on(`blur`, `.todo-item`, cancelEdit);
+  $(document).on(`submit`, `#todo-form`, insertTodo);
 
   // Our initial todos array
   let todos = [];
@@ -31,7 +31,7 @@ $(document).ready(() => {
 
   // This function grabs todos from the database and updates the view
   function getTodos() {
-    $.get('/api/todos', data => {
+    $.get(`/api/todos`, data => {
       todos = data;
       initializeRows();
     });
@@ -40,27 +40,27 @@ $(document).ready(() => {
   // This function deletes a todo when the user clicks the delete button
   function deleteTodo(event) {
     event.stopPropagation();
-    const id = $(this).data('id');
+    const id = $(this).data(`id`);
     $.ajax({
-      method: 'DELETE',
+      method: `DELETE`,
       url: `/api/todos/${id}`
     }).then(getTodos);
   }
 
   // This function handles showing the input box for a user to edit a todo
   function editTodo() {
-    const currentTodo = $(this).data('todo');
+    const currentTodo = $(this).data(`todo`);
     $(this)
       .children()
       .hide();
     $(this)
-      .children('input.edit')
+      .children(`input.edit`)
       .val(currentTodo.text);
     $(this)
-      .children('input.edit')
+      .children(`input.edit`)
       .show();
     $(this)
-      .children('input.edit')
+      .children(`input.edit`)
       .focus();
   }
 
@@ -69,7 +69,7 @@ $(document).ready(() => {
     event.stopPropagation();
     const todo = $(this)
       .parent()
-      .data('todo');
+      .data(`todo`);
     todo.complete = !todo.complete;
     updateTodo(todo);
   }
@@ -78,10 +78,10 @@ $(document).ready(() => {
   // While in edit mode
   function finishEdit(event) {
     const returnKeyCode = 13;
-    const updatedTodo = $(this).data('todo');
+    const updatedTodo = $(this).data(`todo`);
     if (event.which === returnKeyCode) {
       updatedTodo.text = $(this)
-        .children('input')
+        .children(`input`)
         .val()
         .trim();
       $(this).blur();
@@ -92,8 +92,8 @@ $(document).ready(() => {
   // This function updates a todo in our database
   function updateTodo(todo) {
     $.ajax({
-      method: 'PUT',
-      url: '/api/todos',
+      method: `PUT`,
+      url: `/api/todos`,
       data: todo
     }).then(getTodos);
   }
@@ -101,19 +101,19 @@ $(document).ready(() => {
   // This function is called whenever a todo item is in edit mode and loses focus
   // This cancels any edits being made
   function cancelEdit() {
-    const currentTodo = $(this).data('todo');
+    const currentTodo = $(this).data(`todo`);
     if (currentTodo) {
       $(this)
         .children()
         .hide();
       $(this)
-        .children('input.edit')
+        .children(`input.edit`)
         .val(currentTodo.text);
       $(this)
-        .children('span')
+        .children(`span`)
         .show();
       $(this)
-        .children('button')
+        .children(`button`)
         .show();
     }
   }
@@ -122,22 +122,22 @@ $(document).ready(() => {
   function createNewRow(todo) {
     const $newInputRow = $(
       [
-        '<li class=\'list-group-item todo-item\'>',
-        '<span>',
+        `<li class='list-group-item todo-item'>`,
+        `<span>`,
         todo.text,
-        '</span>',
-        '<input type=\'text\' class=\'edit\' style=\'display: none;\'>',
-        '<button class=\'delete btn btn-danger\'>x</button>',
-        '<button class=\'complete btn btn-primary\'>✓</button>',
-        '</li>'
-      ].join('')
+        `</span>`,
+        `<input type='text' class='edit' style='display: none;'>`,
+        `<button class='delete btn btn-danger'>x</button>`,
+        `<button class='complete btn btn-primary'>✓</button>`,
+        `</li>`
+      ].join(``)
     );
 
-    $newInputRow.find('button.delete').data('id', todo.id);
-    $newInputRow.find('input.edit').css('display', 'none');
-    $newInputRow.data('todo', todo);
+    $newInputRow.find(`button.delete`).data(`id`, todo.id);
+    $newInputRow.find(`input.edit`).css(`display`, `none`);
+    $newInputRow.data(`todo`, todo);
     if (todo.complete) {
-      $newInputRow.find('span').css('text-decoration', 'line-through');
+      $newInputRow.find(`span`).css(`text-decoration`, `line-through`);
     }
     return $newInputRow;
   }
@@ -150,7 +150,7 @@ $(document).ready(() => {
       complete: false
     };
 
-    $.post('/api/todos', todo, getTodos);
-    $newItemInput.val('');
+    $.post(`/api/todos`, todo, getTodos);
+    $newItemInput.val(``);
   }
 });

@@ -4,17 +4,17 @@
 // It pings the server. The server then pings the database and displays all of the characters.
 
 // make a get request to our api to grab every character
-$.get('/api', data => {
+$.get(`/api`, data => {
   // for each character that our server sends us back
   for (let i = 0; i < data.length; ++i) {
     // create a parent div for the oncoming elements
-    const wellSection = $('<div>');
+    const wellSection = $(`<div>`);
     // add a class to this div: 'well'
-    wellSection.addClass('well');
+    wellSection.addClass(`well`);
     // add an id to the well to mark which well it is
-    wellSection.attr('id', `character-well-${ i}`);
+    wellSection.attr(`id`, `character-well-${ i}`);
     // append the well to the well section
-    $('#well-section').append(wellSection);
+    $(`#well-section`).append(wellSection);
 
     // Now add all of our character data to the well we just placed on the page
 

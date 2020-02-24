@@ -6,13 +6,13 @@
 
 // Dependencies
 // =============================================================
-const Character = require('../models/character.js');
+const Character = require(`../models/character.js`);
 
 // Routes
 // =============================================================
 module.exports = function(app) {
   // Search for Specific Character (or all characters) then provides JSON
-  app.get('/api/:characters?', (req, res) => {
+  app.get(`/api/:characters?`, (req, res) => {
     if (req.params.characters) {
       // Display the JSON for ONLY that character.
       // (Note how we're using the ORM here to run our searches)
@@ -27,7 +27,7 @@ module.exports = function(app) {
   });
 
   // If a user sends data to add a new character...
-  app.post('/api/new', (req, res) => {
+  app.post(`/api/new`, (req, res) => {
     // Take the request...
     const character = req.body;
 
@@ -35,7 +35,7 @@ module.exports = function(app) {
 
     // Using a RegEx Pattern to remove spaces from character.name
     // You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html
-    const routeName = character.name.replace(/\s+/g, '').toLowerCase();
+    const routeName = character.name.replace(/\s+/g, ``).toLowerCase();
 
     // Then add the character to the database using sequelize
     Character.create({

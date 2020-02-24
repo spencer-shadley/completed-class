@@ -1,17 +1,17 @@
 'use strict';
 
 // Make a get request to our api route that will return every "long" book (300 pages or more)
-$.get('/api/books/long', data => {
+$.get(`/api/books/long`, data => {
   // For each book that our server sends us back
   for (let i = 0; i < data.length; ++i) {
     // Create a parent div to hold book data
-    const wellSection = $('<div>');
+    const wellSection = $(`<div>`);
     // Add a class to this div: 'well'
-    wellSection.addClass('well');
+    wellSection.addClass(`well`);
     // Add an id to the well to mark which well it is
-    wellSection.attr('id', `book-well-${ i}`);
+    wellSection.attr(`id`, `book-well-${ i}`);
     // Append the well to the well section
-    $('#well-section').append(wellSection);
+    $(`#well-section`).append(wellSection);
 
     // Now  we add our book data to the well we just placed on the page
     $(`#book-well-${ i}`).append(
