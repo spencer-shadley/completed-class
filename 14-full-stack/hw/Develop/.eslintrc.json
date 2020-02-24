@@ -6,6 +6,7 @@
     "node": true
   },
   "rules": {
+    "arrow-parens": ["error", "as-needed"],
     "camelcase": "error",
     "curly": "error",
     "dot-notation": "error",
