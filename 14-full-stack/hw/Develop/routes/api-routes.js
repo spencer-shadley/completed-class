@@ -1,3 +1,5 @@
+'use strict';
+
 // Requiring our models and passport as we've configured it
 const db = require('../models');
 const passport = require('../config/passport');
@@ -19,10 +21,12 @@ module.exports = function(app) {
       password: req.body.password
     })
       .then(() => {
-        res.redirect(307, '/api/login');
+        const statusCode = 307;
+        res.redirect(statusCode, '/api/login');
       })
       .catch(err => {
-        res.status(401).json(err);
+        const unauthenticatedStatusCode = 401;
+        res.status(unauthenticatedStatusCode).json(err);
       });
   });
 
@@ -37,7 +41,8 @@ module.exports = function(app) {
     if (!req.user) {
       // The user is not logged in, send back an empty object
       res.json({});
-    } else {
+    }
+    else {
       // Otherwise send back the user's email and id
       // Sending back a password, even a hashed password, isn't a good idea
       res.json({

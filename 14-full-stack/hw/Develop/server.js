@@ -1,3 +1,5 @@
+'use strict';
+
 // Requiring necessary npm packages
 const express = require('express');
 const session = require('express-session');
@@ -5,7 +7,8 @@ const session = require('express-session');
 const passport = require('./config/passport');
 
 // Setting up port and requiring models for syncing
-const PORT = process.env.PORT || 3000;
+const defaultPort = 3000;
+const PORT = process.env.PORT || defaultPort;
 const db = require('./models');
 
 // Creating express app and configuring middleware needed for authentication

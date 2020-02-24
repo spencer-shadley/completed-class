@@ -1,3 +1,5 @@
+'use strict';
+
 $(document).ready(() => {
   // Getting references to our form and input
   const signUpForm = $('form.signup');
@@ -25,8 +27,8 @@ $(document).ready(() => {
   // Otherwise we log any errors
   function signUpUser(email, password) {
     $.post('/api/signup', {
-      email: email,
-      password: password
+      email,
+      password
     })
       .then(() => {
         window.location.replace('/members');
@@ -36,7 +38,8 @@ $(document).ready(() => {
   }
 
   function handleLoginErr(err) {
+    const numFadeMs = 500;
     $('#alert .msg').text(err.responseJSON);
-    $('#alert').fadeIn(500);
+    $('#alert').fadeIn(numFadeMs);
   }
 });

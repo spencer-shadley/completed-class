@@ -1,3 +1,5 @@
+'use strict';
+
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 
@@ -10,11 +12,11 @@ passport.use(
     {
       usernameField: 'email'
     },
-    ((email, password, done) => {
+    (email, password, done) => {
       // When a user tries to sign in this code runs
       db.User.findOne({
         where: {
-          email: email
+          email
         }
       }).then(dbUser => {
         // If there's no user with the given email
@@ -32,7 +34,7 @@ passport.use(
         // If none of the above, return the user
         return done(null, dbUser);
       });
-    })
+    }
   )
 );
 
