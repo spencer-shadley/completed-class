@@ -16,7 +16,7 @@
 
    - George (Githubblepuff)
    - Frantz (Githubblepuff)
-   - Rachel (Gryffindom)
+   - Duc (Gryffindom)
 
 1. group
 
@@ -29,7 +29,7 @@
 
    - Richard (Ravenclosure)
    - Kaitlyn (Ravenclosure)
-   - Duc (Gryffindom)
+   - Rachel (Gryffindom)
    - Max (Gryffindom)
 
 1. group
