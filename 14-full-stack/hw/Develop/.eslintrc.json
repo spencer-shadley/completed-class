@@ -2,10 +2,9 @@
   "env": {
     "browser": true,
     "commonjs": true,
+    "es6": true,
     "node": true
   },
-  "extends": "prettier",
-  "plugins": ["prettier"],
   "rules": {
     "camelcase": "error",
     "curly": "error",
@@ -21,14 +20,8 @@
     "no-multi-spaces": "error",
     "no-unreachable": "error",
     "no-unused-vars": "error",
-    "prettier/prettier": "error",
-    "prefer-arrow-callback": [
-      "error",
-      {
-        "allowNamedFunctions": true
-      }
-    ],
-    "quotes": ["error", "double"],
+    "prefer-arrow-callback": "error",
+    "quotes": ["error", "single"],
     "semi": ["error", "always"]
   }
 }
