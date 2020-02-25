@@ -11,7 +11,7 @@ const Book = require(`../models/book.js`);
 
 // Routes
 // =============================================================
-module.exports = function(app) {
+module.exports = app => {
   // Add sequelize code to get all books and return them as JSON
   app.get(`/api/all`, (req, res) => {
     console.log(req, res);

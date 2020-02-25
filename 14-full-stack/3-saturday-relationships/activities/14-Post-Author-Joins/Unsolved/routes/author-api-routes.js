@@ -2,7 +2,7 @@
 
 const db = require(`../models`);
 
-module.exports = function(app) {
+module.exports = app => {
   app.get(`/api/authors`, (req, res) => {
     // 1. Add a join to include all of each Author's Posts
     db.Author.findAll({}).then(dbAuthor => {

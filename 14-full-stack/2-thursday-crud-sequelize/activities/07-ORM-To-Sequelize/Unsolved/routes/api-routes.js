@@ -13,7 +13,7 @@ const orm = require(`../config/orm.js`);
 
 // Routes
 // =============================================================
-module.exports = function(app) {
+module.exports = app => {
   // GET route for getting all of the todos
   app.get(`/api/todos`, (req, res) => {
     orm.getTodos(results => {

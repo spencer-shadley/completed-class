@@ -10,7 +10,7 @@ const orm = require(`../config/orm.js`);
 
 // Routes
 // =============================================================
-module.exports = function(app) {
+module.exports = app => {
   // Search for Specific Character (or all characters) then provides JSON
   app.get(`/api/:characters`, (req, res) => {
     // If the user provides a specific character in the URL...

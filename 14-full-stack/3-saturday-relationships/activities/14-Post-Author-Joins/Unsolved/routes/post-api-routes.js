@@ -12,7 +12,7 @@ const db = require(`../models`);
 
 // Routes
 // =============================================================
-module.exports = function(app) {
+module.exports = app => {
   // GET route for getting all of the posts
   app.get(`/api/posts`, (req, res) => {
     const query = {};

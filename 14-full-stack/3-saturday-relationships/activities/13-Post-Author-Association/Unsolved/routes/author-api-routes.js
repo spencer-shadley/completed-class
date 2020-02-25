@@ -2,7 +2,7 @@
 
 const db = require(`../models`);
 
-module.exports = function(app) {
+module.exports = app => {
   app.get(`/api/authors`, (req, res) => {
     db.Author.findAll({}).then(dbAuthor => {
       res.json(dbAuthor);
