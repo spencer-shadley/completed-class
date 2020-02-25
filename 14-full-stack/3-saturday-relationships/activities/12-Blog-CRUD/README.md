@@ -1,4 +1,6 @@
-- **Folder**: `12-Blog-CRUD/Unsolved`
+# Directory
+
+`12-Blog-CRUD/Unsolved`
 
 # Instructions:
 
