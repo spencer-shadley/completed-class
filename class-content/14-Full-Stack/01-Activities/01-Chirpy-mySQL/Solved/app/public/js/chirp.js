@@ -3,20 +3,13 @@
 /* global moment */
 
 // When the page loads, grab and display all of our chirps
-$.get(`/api/all`, data => {
-  if (data.length !== 0) {
-    for (let i = 0; i < data.length; ++i) {
-      const row = $(`<div>`);
-      row.addClass(`chirp`);
-
-      row.append(`<p>${data[i].author} chirped.. </p>`);
-      row.append(`<p>${data[i].body}</p>`);
-      row.append(
-        `<p>At ${moment(data[i].created_at).format(`h:mma on dddd`)}</p>`
-      );
-
-      $(`#chirp-area`).prepend(row);
-    }
+$.get(`/api/all`, chirps => {
+  if (chirps.length === 0) {
+    console.log(`no chirps found`);
+    return;
+  }
+  for (const chirp of chirps) {
+    $(`#chirp-area`).prepend(createChirpRow(chirp));
   }
 });
 
@@ -41,20 +34,21 @@ $(`#chirp-submit`).on(`click`, event => {
   // Send an AJAX POST-request with jQuery
   $.post(`/api/new`, newChirp)
     // On success, run the following code
-    .then(() => {
-      const row = $(`<div>`);
-      row.addClass(`chirp`);
-
-      row.append(`<p>${newChirp.author} chirped: </p>`);
-      row.append(`<p>${newChirp.body}</p>`);
-      row.append(
-        `<p>At ${moment(newChirp.created_at).format(`h:mma on dddd`)}</p>`
-      );
-
-      $(`#chirp-area`).prepend(row);
-    });
+    .then(() => $(`#chirp-area`).prepend(createChirpRow(newChirp)));
 
   // Empty each input box by replacing the value with an empty string
   $(`#author`).val(``);
   $(`#chirp-box`).val(``);
 });
+
+function createChirpRow(chirpData) {
+  const row = $(`<div>`);
+  row.addClass(`chirp`);
+
+  row.append(`<p>${chirpData.author} chirped.. </p>`);
+  row.append(`<p>${chirpData.body}</p>`);
+  row.append(
+    `<p>At ${moment(chirpData.created_at).format(`h:mma on dddd`)}</p>`
+  );
+  return row;
+}

@@ -10,7 +10,7 @@ const connection = require(`../config/connection.js`);
 
 // Routes
 // =============================================================
-module.exports = function(app) {
+module.exports = app => {
   // Get all chirps
   app.get(`/api/all`, (req, res) => {
     const dbQuery = `SELECT * FROM chirps`;
@@ -28,8 +28,7 @@ module.exports = function(app) {
     console.log(`Chirp Data:`);
     console.log(req.body);
 
-    const dbQuery =
-      `INSERT INTO chirps (author, body, created_at) VALUES (?,?,?)`;
+    const dbQuery = `INSERT INTO chirps (author, body, created_at) VALUES (?,?,?)`;
 
     connection.query(
       dbQuery,
