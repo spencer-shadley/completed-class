@@ -1,4 +1,6 @@
-- **Folder:** `14-Post-Author-Joins/Unsolved`
+# Directory
+
+`14-Post-Author-Joins/Unsolved`
 
 # Instructions
 

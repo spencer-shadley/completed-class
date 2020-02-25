@@ -2,7 +2,7 @@
 
 `11-Post-Model/Unsolved`
 
-# Instructions:
+# Instructions
 
 The goal of this exercise is to create a Post model using Sequelize.
 
