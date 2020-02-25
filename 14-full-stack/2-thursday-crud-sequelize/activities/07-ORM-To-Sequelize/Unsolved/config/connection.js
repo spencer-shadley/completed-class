@@ -17,7 +17,7 @@ const source = {
     database: `todolist`
   },
 
-  // jawsDB
+  // jawsDB for deploying to Heroku
   jawsDB: {
     host: `<host name>`,
     port: 3306,

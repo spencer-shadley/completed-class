@@ -17,7 +17,7 @@ const orm = {
   // Here our ORM is creating a simple method for performing a query of the entire table.
   // We make use of the callback to ensure that data is returned only once the query is done.
   allCharacters(callback) {
-    const s = `SELECT * FROM ${ tableName}`;
+    const select = `SELECT * FROM ${tableName}`;
 
     connection.query(s, (err, result) => {
       callback(result);
@@ -27,7 +27,7 @@ const orm = {
   // Here our ORM is creating a simple method for performing a query of a single character in the table.
   // Again, we make use of the callback to grab a specific character from the database.
   searchCharacter(name, callback) {
-    const s = `select * from ${ tableName } where routeName=?`;
+    const s = `select * from ${tableName} where routeName=?`;
 
     connection.query(s, [name], (err, result) => {
       callback(result);
@@ -44,10 +44,7 @@ const orm = {
     const routeName = character.name.replace(/\s+/g, ``).toLowerCase();
     console.log(routeName);
 
-    const s =
-      `INSERT INTO ${
-        tableName
-      } (routeName, name, role, age, forcePoints) VALUES (?,?,?,?,?)`;
+    const s = `INSERT INTO ${tableName} (routeName, name, role, age, forcePoints) VALUES (?,?,?,?,?)`;
 
     connection.query(
       s,
