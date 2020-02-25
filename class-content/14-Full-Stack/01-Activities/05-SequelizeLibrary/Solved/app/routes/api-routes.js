@@ -10,7 +10,7 @@ const Book = require(`../models/book.js`);
 
 // Routes
 // =============================================================
-module.exports = function(app) {
+module.exports = app => {
   // Get all books
   app.get(`/api/all`, (req, res) => {
     Book.findAll({}).then(results => {
