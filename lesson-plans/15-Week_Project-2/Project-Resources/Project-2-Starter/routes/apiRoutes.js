@@ -2,7 +2,7 @@
 
 const db = require('../models');
 
-module.exports = function(app) {
+module.exports = app => {
   // Get all examples
   app.get('/api/examples', (req, res) => {
     db.Example.findAll({}).then(function(dbExamples) {

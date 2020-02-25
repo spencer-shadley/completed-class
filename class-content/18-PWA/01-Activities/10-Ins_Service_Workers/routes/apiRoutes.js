@@ -2,7 +2,7 @@
 
 const db = require('../models');
 
-module.exports = function(app) {
+module.exports = app => {
   app.get('/api/posts', (req, res) => {
     db.Post.find({}).then(function(dbPosts) {
       res.json(dbPosts);

@@ -2,7 +2,7 @@
 
 const db = require('../models');
 
-module.exports = function(app) {
+module.exports = app => {
   app.get('/api/images', (req, res) => {
     db.Image.find({}).then(function(dbImages) {
       res.json(dbImages);

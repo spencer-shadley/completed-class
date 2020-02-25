@@ -2,7 +2,7 @@
 
 const db = require('../models');
 
-module.exports = function(app) {
+module.exports = app => {
   // Load index page
   app.get('/', (req, res) => {
     db.Example.findAll({}).then(function(dbExamples) {
