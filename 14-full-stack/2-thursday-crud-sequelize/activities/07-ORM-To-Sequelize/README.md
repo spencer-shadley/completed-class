@@ -23,3 +23,7 @@
 9. Sync the models by running db.sequelize.sync() before we start the express server.
 
 10. In your terminal, run "node server". Check MYSQL Workbench to see if a Todos table was created. If so, you were successful. If not, check your terminal for any errors.
+
+# Hint
+
+- Refer to the Sequelize Quick Start Guide in the Supplemental directory if you experience any issues
