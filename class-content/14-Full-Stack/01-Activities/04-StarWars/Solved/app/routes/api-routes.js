@@ -10,7 +10,7 @@ const Character = require(`../models/character.js`);
 
 // Routes
 // =============================================================
-module.exports = function(app) {
+module.exports = app => {
   // Search for Specific Character (or all characters) then provides JSON
   app.get(`/api/:characters?`, (req, res) => {
     if (req.params.characters) {
