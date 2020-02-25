@@ -1,4 +1,6 @@
-- Folder: `07-ORM-To-Sequelize/Unsolved`
+# Directory
+
+`07-ORM-To-Sequelize/Unsolved`
 
 # Instructions
 

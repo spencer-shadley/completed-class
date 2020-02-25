@@ -1,4 +1,6 @@
-- Folder: `09-Sequelize-Update-Delete/Unsolved`.
+# Directory
+
+`09-Sequelize-Update-Delete/Unsolved`.
 
 # Instructions
 

@@ -1,6 +1,8 @@
 # Files
 
-- Folder: `01-Chirpy-mySQL/Unsolved`
+# Directory
+
+`01-Chirpy-mySQL/Unsolved`
 
 # Instructions
 

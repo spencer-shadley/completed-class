@@ -1,4 +1,6 @@
-- Folder: `10-Sequelize-Validations/Unsolved`
+# Directory
+
+`10-Sequelize-Validations/Unsolved`
 
 # Instructions
 
