@@ -1,5 +1,5 @@
 'use strict';
 
-function haveSubWord(subword, ...words) {}
+function haveSameTotalPosition(...words) {}
 
-module.exports = { haveSubWord };
+module.exports = { haveSameTotalPosition };

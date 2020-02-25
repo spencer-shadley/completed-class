@@ -1,14 +1,14 @@
 # Pre-class Drill
 
-Determine if a collection of any number of inputs contain a given sub-word
+Take each letter in the alphabet and assign it a position (a=> 1, b => 2, etc.)
+
+Determine if the sum of all positions of characters in a word are equal, given any number of strings
 
 ---
 
 Input
 
-sub-word: `car`
-
-inputs: `racecar`
+`abc`, `cab`
 
 Output
 
@@ -18,22 +18,8 @@ Output
 
 Input
 
-sub-word: `car`
-
-inputs: `racecar`, `haircare`, `carbon`
+`abc`, `f`
 
 Output
 
 `true`
-
----
-
-Input
-
-sub-word: `car`
-
-inputs: `pizza`
-
-Output
-
-`false`

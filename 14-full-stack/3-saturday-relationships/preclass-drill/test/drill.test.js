@@ -2,21 +2,21 @@
 
 const drill = require(`../drill`);
 
-describe(`haveSameTotalPosition`, () => {
-  it(`should verify two inputs permuted`, () => {
-    verify(true, 'abc', 'cab');
+describe(`haveSubWord`, () => {
+  it(`should verify two sub words`, () => {
+    verify(true, 'car', 'racecar');
   });
 
-  it(`should verify two inputs with different lengths`, () => {
-    verify(true, `abc`, `f`);
+  it(`should verify three sub words`, () => {
+    verify(true, `car`, `racecar`, `haircare`, `carbon`);
   });
 
-  it(`should verify z`, () => {
-    verify(true, `z`, `ay`);
+  it(`should verify sub words with spaces`, () => {
+    verify(true, `a b`, `a b c`);
   });
 
-  it(`should fail with different counts`, () => {
-    verify(false, `abc`, `q`);
+  it(`should fail with invalid sub words`, () => {
+    verify(false, `car`, `pizza`);
   });
 
   it(`should fail with one input`, () => {
@@ -35,8 +35,8 @@ describe(`haveSameTotalPosition`, () => {
     verify(false, 3);
   });
 
-  function verify(expected, ...inputs) {
-    const actual = drill.haveSameTotalPosition(...inputs);
+  function verify(expected, subword, ...inputs) {
+    const actual = drill.haveSubWord(subword, ...inputs);
     expect(actual).toBe(expected);
   }
 });
