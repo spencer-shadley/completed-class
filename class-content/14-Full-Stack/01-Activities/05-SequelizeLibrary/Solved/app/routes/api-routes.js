@@ -7,6 +7,7 @@
 // Dependencies
 // =============================================================
 const Book = require(`../models/book.js`);
+const Sequelize = require(`sequelize`);
 
 // Routes
 // =============================================================
@@ -56,7 +57,7 @@ module.exports = app => {
     Book.findAll({
       where: {
         pages: {
-          $gte: 150
+          [Sequelize.Op.gte]: 150
         }
       },
       order: [[`pages`, `DESC`]]
@@ -70,7 +71,7 @@ module.exports = app => {
     Book.findAll({
       where: {
         pages: {
-          $lte: 150
+          [Sequelize.Op.lt]: 150
         }
       },
       order: [[`pages`, `ASC`]]
