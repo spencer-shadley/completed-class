@@ -1,4 +1,4 @@
-**Instructions:**
+# Instructions
 
 - Spend the next few ~15 minutes with your partner answering the following questions. You should be using the Sequelize Documentation (and whatever other references you find online).
 
@@ -91,6 +91,6 @@
       });
       ```
 
-  - Bonus: How do I use sequelize to make changes to an existing table with data in it?
+# Bonus: How do I use sequelize to make changes to an existing table with data in it?
 
     - Use sequelize migrations from the command line: <http://docs.sequelizejs.com/en/latest/docs/migrations/>
