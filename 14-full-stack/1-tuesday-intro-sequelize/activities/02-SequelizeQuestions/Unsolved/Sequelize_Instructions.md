@@ -1,31 +1,37 @@
 # Instructions
 
-- Spend the next few minutes with your partner answering the following questions. You should be using the Sequelize Documentation (and whatever other references you find online).
+- Spend the next few ~15 minutes with your partner answering the following questions. You should be using the Sequelize Documentation (and whatever other references you find online).
 
-  ```
-  	- Answer: What is Sequelize?
+  - Question: What is Sequelize?
 
-  	- Answer: What advantages does it offer?
+  - Question: What advantages does it offer?
 
-  	- Answer: How do I install it? How do I incorporate it into my app?
+  - Question: How do I install it? How do I incorporate it into my app?
 
-  	- Answer: What the heck is a Sequelize model? What role will it play?
+  - Question: What the heck is a Sequelize model? What role will it play?
 
-  	- Answer: Let's say I have the below table in MySQL.
+  - Let's say I have the below table in MySQL.
 
-  		| Country     | PhoneCode | Capital   | IndependenceYear |
-  		|-------------|-----------|-----------|------------------|
-  		| Afghanistan | 93        | Kabul     | 1919             |
-  		| Belarus     | 375       | Misk      | 1991             |
-  		| Netherlands | 31        | Amsterdam | 1648             |
-  		| Oman        | 968       | Muscat    | 1970             |
-  		| Zambia      | 260       | Lusaka    | 1964             |
+    | Anime                           | Genre   | Release Year | Rating |
+    | ------------------------------- | ------- | ------------ | ------ |
+    | Enen no Shouboutai              | Action  | 2019         | 7.8    |
+    | Made in Abyss                   | Mystery | 2017         | 8.8    |
+    | Fullmetal Alchemist Brotherhood | Fantasy | 2010         | 9.2    |
+    | Steins;Gate                     | Sci-Fi  | 2011         | 9.1    |
 
-  		- How would I model it in Sequelize?
+    - Question: How would I model it in Sequelize?
 
-  		- How would I query for all the records where the Independence Year was less than 50 years ago?
+      ```js
+      ```
 
-  		- How would I query the table, order it by descending Independence Years, and limit the results to just show 2 of the records. Skipping the first two? (i.e. Results: Zambia, Afghanistan)
+    - Question: How would I query for all the records where the Release Year was less than 5 years ago?
 
-  	- Bonus: How do I use Sequelize to make changes to an existing table with data in it?
-  ```
+      ```js
+      ```
+
+    - How would I query the table, order it by descending Release Years, and limit the results to just show 2 of the records. Skipping the first two? (i.e. Results: Fullmetal Alchemist Brotherhood, Steins;Gate)
+
+      ```js
+      ```
+
+# Bonus: How do I use sequelize to make changes to an existing table with data in it?
