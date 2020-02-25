@@ -6,7 +6,7 @@
 
 // Dependencies
 // =============================================================
-const express = require('express');
+const express = require(`express`);
 
 // Sets up the Express App
 // =============================================================
@@ -18,11 +18,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Static directory
-app.use(express.static('app/public'));
+app.use(express.static(`app/public`));
 
 // Routes
 // =============================================================
-require('./app/routes/api-routes.js')(app);
+require(`./app/routes/api-routes.js`)(app);
 
 // Starts the server to begin listening
 // =============================================================

@@ -4,14 +4,15 @@
 // =============================================================
 
 // This may be confusing but here Sequelize (capital) references the standard library
-const Sequelize = require('sequelize');
+const Sequelize = require(`sequelize`);
 // sequelize (lowercase) references our connection to the DB.
-const sequelize = require('../config/connection.js');
+const sequelize = require(`../config/connection.js`);
 
 // Creates a "Chirp" model that matches up with DB
-const Chirp = sequelize.define('chirp', {
+const Chirp = sequelize.define(`chirp`, {
   author: Sequelize.STRING,
   body: Sequelize.STRING,
+  // eslint-disable-next-line camelcase
   created_at: Sequelize.DATE
 });
 

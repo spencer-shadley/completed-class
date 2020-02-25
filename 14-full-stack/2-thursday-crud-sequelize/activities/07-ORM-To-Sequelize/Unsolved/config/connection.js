@@ -4,26 +4,26 @@
 // CONNECTION.JS - THIS FILE INITIATES THE CONNECTION TO MYSQL
 // *********************************************************************************
 
-const mysql = require('mysql');
+const mysql = require(`mysql`);
 
 // we placed the connections in this source object
 const source = {
   // localhost
   localhost: {
-    host: 'localhost',
+    host: `localhost`,
     port: 3306,
-    user: 'root',
-    password: '',
-    database: 'todolist'
+    user: `root`,
+    password: ``,
+    database: `todolist`
   },
 
   // jawsDB
   jawsDB: {
-    host: '<host name>',
+    host: `<host name>`,
     port: 3306,
-    user: '<name of user>',
-    password: '<password>',
-    database: '<name of database>'
+    user: `<name of user>`,
+    password: `<password>`,
+    database: `<name of database>`
   }
 };
 
@@ -32,7 +32,7 @@ const connection = mysql.createConnection(source.localhost);
 
 connection.connect(err => {
   if (err) {
-    console.error('error connecting', err.stack);
+    console.error(`error connecting`, err.stack);
     return;
   }
   console.log(`connected with id ${connection.threadId}`);

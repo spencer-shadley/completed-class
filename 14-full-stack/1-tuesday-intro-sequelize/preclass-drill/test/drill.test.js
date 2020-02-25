@@ -1,7 +1,9 @@
 'use strict';
 
-const drill = require('../drill');
+const drill = require(`../drill`);
 
-describe('', () => {
-  it('should', () => {});
+describe(``, () => {
+  it(`should`, () => {
+    expect(drill).not.toBeNull();
+  });
 });

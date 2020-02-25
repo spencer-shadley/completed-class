@@ -4,42 +4,42 @@
 // Effectively it takes the form inputs then sends it to the server to save in the DB.
 
 // when user clicks add-btn
-$('#add-btn').on('click', function(event) {
+$(`#add-btn`).on(`click`, event => {
   event.preventDefault();
 
   // make a newCharacter obj
   const newCharacter = {
     // name from name input
-    name: $('#name')
+    name: $(`#name`)
       .val()
       .trim(),
     // role from role input
-    role: $('#role')
+    role: $(`#role`)
       .val()
       .trim(),
     // age from age input
-    age: $('#age')
+    age: $(`#age`)
       .val()
       .trim(),
     // points from force-points input
-    forcePoints: $('#force-points')
+    forcePoints: $(`#force-points`)
       .val()
       .trim()
   };
 
   // send an AJAX POST-request with jQuery
-  $.post('/api/new', newCharacter)
+  $.post(`/api/new`, newCharacter)
     // on success, run this callback
-    .then(function(data) {
+    .then(data => {
       // log the data we found
       console.log(data);
       // tell the user we're adding a character with an alert window
-      alert('Adding character...');
+      alert(`Adding character...`);
     });
 
   // empty each input box by replacing the value with an empty string
-  $('#name').val('');
-  $('#role').val('');
-  $('#age').val('');
-  $('#force-points').val('');
+  $(`#name`).val(``);
+  $(`#role`).val(``);
+  $(`#age`).val(``);
+  $(`#force-points`).val(``);
 });

@@ -6,11 +6,13 @@
 
 // Dependencies
 // =============================================================
-const connection = require('../config/connection.js');
+// eslint-disable-next-line no-unused-vars
+const connection = require(`../config/connection.js`);
 
 // Routes
 // =============================================================
-module.exports = function(app) {
+module.exports = app => {
   // Get all chirps
   // Add a chirp
+  console.log(app);
 };

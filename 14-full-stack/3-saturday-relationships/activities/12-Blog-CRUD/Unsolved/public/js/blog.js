@@ -1,24 +1,24 @@
 'use strict';
 
-$(document).ready(function() {
+$(document).ready(() => {
   /* global moment */
   // blogContainer holds all of our posts
-  const blogContainer = $('.blog-container');
-  const postCategorySelect = $('#category');
+  const blogContainer = $(`.blog-container`);
+  const postCategorySelect = $(`#category`);
   // Click events for the edit and delete buttons
-  $(document).on('click', 'button.delete', handlePostDelete);
-  $(document).on('click', 'button.edit', handlePostEdit);
-  postCategorySelect.on('change', handleCategoryChange);
-  const posts;
+  $(document).on(`click`, `button.delete`, handlePostDelete);
+  $(document).on(`click`, `button.edit`, handlePostEdit);
+  postCategorySelect.on(`change`, handleCategoryChange);
+  let posts;
 
   // This function grabs posts from the database and updates the view
   function getPosts(category) {
-    const categoryString = category || '';
+    let categoryString = category || ``;
     if (categoryString) {
-      categoryString = '/category/' + categoryString;
+      categoryString = `/category/${categoryString}`;
     }
-    $.get('/api/posts' + categoryString, function(data) {
-      console.log('Posts', data);
+    $.get(`/api/posts${categoryString}`, data => {
+      console.log(`Posts`, data);
       posts = data;
       if (!posts || !posts.length) {
         displayEmpty();
@@ -31,9 +31,9 @@ $(document).ready(function() {
   // This function does an API call to delete posts
   function deletePost(id) {
     $.ajax({
-      method: 'DELETE',
-      url: '/api/posts/' + id
-    }).then(function() {
+      method: `DELETE`,
+      url: `/api/posts/${id}`
+    }).then(() => {
       getPosts(postCategorySelect.val());
     });
   }
@@ -53,32 +53,32 @@ $(document).ready(function() {
 
   // This function constructs a post's HTML
   function createNewRow(post) {
-    const newPostCard = $('<div>');
-    newPostCard.addClass('card');
-    const newPostCardHeading = $('<div>');
-    newPostCardHeading.addClass('card-header');
-    const deleteBtn = $('<button>');
-    deleteBtn.text('x');
-    deleteBtn.addClass('delete btn btn-danger');
-    const editBtn = $('<button>');
-    editBtn.text('EDIT');
-    editBtn.addClass('edit btn btn-default');
-    const newPostTitle = $('<h2>');
-    const newPostDate = $('<small>');
-    const newPostCategory = $('<h5>');
+    const newPostCard = $(`<div>`);
+    newPostCard.addClass(`card`);
+    const newPostCardHeading = $(`<div>`);
+    newPostCardHeading.addClass(`card-header`);
+    const deleteBtn = $(`<button>`);
+    deleteBtn.text(`x`);
+    deleteBtn.addClass(`delete btn btn-danger`);
+    const editBtn = $(`<button>`);
+    editBtn.text(`EDIT`);
+    editBtn.addClass(`edit btn btn-default`);
+    const newPostTitle = $(`<h2>`);
+    const newPostDate = $(`<small>`);
+    const newPostCategory = $(`<h5>`);
     newPostCategory.text(post.category);
     newPostCategory.css({
-      float: 'right',
-      'font-weight': '700',
-      'margin-top': '-15px'
+      float: `right`,
+      'font-weight': `700`,
+      'margin-top': `-15px`
     });
-    const newPostCardBody = $('<div>');
-    newPostCardBody.addClass('card-body');
-    const newPostBody = $('<p>');
-    newPostTitle.text(post.title + ' ');
+    const newPostCardBody = $(`<div>`);
+    newPostCardBody.addClass(`card-body`);
+    const newPostBody = $(`<p>`);
+    newPostTitle.text(`${post.title} `);
     newPostBody.text(post.body);
-    const formattedDate = new Date(post.createdAt);
-    formattedDate = moment(formattedDate).format('MMMM Do YYYY, h:mm:ss a');
+    let formattedDate = new Date(post.createdAt);
+    formattedDate = moment(formattedDate).format(`MMMM Do YYYY, h:mm:ss a`);
     newPostDate.text(formattedDate);
     newPostTitle.append(newPostDate);
     newPostCardHeading.append(deleteBtn);
@@ -88,7 +88,7 @@ $(document).ready(function() {
     newPostCardBody.append(newPostBody);
     newPostCard.append(newPostCardHeading);
     newPostCard.append(newPostCardBody);
-    newPostCard.data('post', post);
+    newPostCard.data(`post`, post);
     return newPostCard;
   }
 
@@ -98,7 +98,7 @@ $(document).ready(function() {
     const currentPost = $(this)
       .parent()
       .parent()
-      .data('post');
+      .data(`post`);
     deletePost(currentPost.id);
   }
 
@@ -108,17 +108,17 @@ $(document).ready(function() {
     const currentPost = $(this)
       .parent()
       .parent()
-      .data('post');
-    window.location.href = '/cms?post_id=' + currentPost.id;
+      .data(`post`);
+    window.location.href = `/cms?post_id=${currentPost.id}`;
   }
 
   // This function displays a message when there are no posts
   function displayEmpty() {
     blogContainer.empty();
-    const messageH2 = $('<h2>');
-    messageH2.css({ 'text-align': 'center', 'margin-top': '50px' });
+    const messageH2 = $(`<h2>`);
+    messageH2.css({ 'text-align': `center`, 'margin-top': `50px` });
     messageH2.html(
-      "No posts yet for this category, navigate <a href='/cms'>here</a> in order to create a new post."
+      `No posts yet for this category, navigate <a href='/cms'>here</a> in order to create a new post.`
     );
     blogContainer.append(messageH2);
   }

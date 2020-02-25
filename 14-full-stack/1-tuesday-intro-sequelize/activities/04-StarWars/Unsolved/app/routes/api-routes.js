@@ -6,18 +6,18 @@
 
 // Dependencies
 // =============================================================
-const orm = require('../config/orm.js');
+const orm = require(`../config/orm.js`);
 
 // Routes
 // =============================================================
 module.exports = function(app) {
   // Search for Specific Character (or all characters) then provides JSON
-  app.get('/api/:characters', (req, res) => {
+  app.get(`/api/:characters`, (req, res) => {
     // If the user provides a specific character in the URL...
     if (req.params.characters) {
       // Then display the JSON for ONLY that character.
       // (Note how we're using the ORM here to run our searches)
-      orm.searchCharacter(req.params.characters, function(data) {
+      orm.searchCharacter(req.params.characters, data => {
         res.json(data);
       });
     }
@@ -26,20 +26,21 @@ module.exports = function(app) {
     else {
       // Otherwise display the data for all of the characters.
       // (Note how we're using the ORM here to run our searches)
-      orm.allCharacters(function(data) {
+      orm.allCharacters(data => {
         res.json(data);
       });
     }
   });
 
   // If a user sends data to add a new character...
-  app.post('/api/new', (req, res) => {
+  app.post(`/api/new`, (req, res) => {
     // Take the request...
     const character = req.body;
 
     // Then send it to the ORM to "save" into the DB.
-    orm.addCharacter(character, function(data) {
+    orm.addCharacter(character, data => {
       console.log(data);
     });
+    console.log(res);
   });
 };
