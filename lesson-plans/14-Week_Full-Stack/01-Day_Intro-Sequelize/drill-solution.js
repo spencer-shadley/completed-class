@@ -1,7 +1,5 @@
 'use strict';
 
-console.log(areAnagrams('foo', 'oof', 'ofo'));
-
 function areAnagrams(...anagrams) {
   if (!anagrams || anagrams.length < 2) {
     return false;
