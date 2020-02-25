@@ -12,13 +12,13 @@ const orm = require(`../config/orm.js`);
 // =============================================================
 module.exports = app => {
   // Search for Specific Character (or all characters) then provides JSON
-  app.get(`/api/:characters`, (req, res) => {
+  app.get(`/api/:characters?`, (req, res) => {
     // If the user provides a specific character in the URL...
     if (req.params.characters) {
       // Then display the JSON for ONLY that character.
       // (Note how we're using the ORM here to run our searches)
       orm.searchCharacter(req.params.characters, data => {
-        res.json(data);
+        res.json(data[0]);
       });
     }
 
