@@ -4,9 +4,15 @@
     "commonjs": true,
     "es6": true,
     "node": true,
-    "jquery": true
+    "jquery": true,
+    "jest": true,
+    "mocha": true
   },
-  "extends": ["eslint:recommended"],
+  "globals": {
+    "chai": "readonly"
+  },
+  "plugins": ["chai-friendly"],
+  "extends": ["eslint:recommended", "plugin:chai-friendly/recommended"],
   "rules": {
     "array-bracket-spacing": "error",
     "array-callback-return": "error",
@@ -15,27 +21,31 @@
     "arrow-spacing": "error",
     "block-scoped-var": "error",
     "block-spacing": "error",
-    "brace-style": [
+    "camelcase": "error",
+    "chai-friendly/no-unused-expressions": 2,
+    "comma-dangle": ["error", "never"],
+    "comma-spacing": [
       "error",
-      "stroustrup",
       {
-        "allowSingleLine": true
+        "before": false,
+        "after": true
       }
     ],
-    "camelcase": "error",
-    "comma-dangle": ["error", "never"],
-    "comma-spacing": ["error", { "before": false, "after": true }],
     "curly": "error",
     "default-case": "error",
-    "default-param-last": "error",
     "dot-notation": "error",
     "eqeqeq": "error",
     "eol-last": ["error", "always"],
-    "func-style": ["error", "declaration", { "allowArrowFunctions": true }],
+    "func-style": [
+      "error",
+      "declaration",
+      {
+        "allowArrowFunctions": true
+      }
+    ],
     "global-require": "error",
     "guard-for-in": "error",
     "indent": ["error", 2],
-    "max-classes-per-file": "error",
     "max-depth": ["error", 4],
     "max-len": [
       "error",
@@ -44,9 +54,8 @@
       }
     ],
     "max-lines": ["error", 500],
-    "max-lines-per-function": ["error", 50],
     "max-nested-callbacks": ["error", 3],
-    "no-dupe-else-if": "error",
+    "no-console": "off",
     "no-duplicate-case": "error",
     "no-duplicate-imports": "error",
     "no-empty": "error",
@@ -54,14 +63,35 @@
     "no-extra-parens": "error",
     "no-extra-semi": "error",
     "no-func-assign": "error",
-    "no-invalid-this": "error",
     "no-irregular-whitespace": "error",
     "no-lone-blocks": "error",
     "no-magic-numbers": [
       "error",
       {
         "ignoreArrayIndexes": true,
-        "ignore": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+        "ignore": [
+          -9,
+          -8,
+          -7,
+          -6,
+          -5,
+          -4,
+          -3,
+          -2,
+          -1,
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          3000,
+          8080
+        ]
       }
     ],
     "no-mixed-requires": "error",
@@ -78,10 +108,20 @@
     "no-throw-literal": "error",
     "no-trailing-spaces": "error",
     "no-var": "error",
+    "no-undef": ["off", {}],
     "no-unreachable": "error",
-    "no-unused-expressions": "error",
-    "no-unused-vars": "error",
-    "no-use-before-define": ["error", { "functions": false }],
+    "no-unused-vars": [
+      "error",
+      {
+        "varsIgnorePattern": "chai|should|expect"
+      }
+    ],
+    "no-use-before-define": [
+      "error",
+      {
+        "functions": false
+      }
+    ],
     "no-useless-call": "error",
     "no-useless-concat": "error",
     "no-useless-rename": "error",
@@ -91,7 +131,7 @@
     "prefer-const": "error",
     "prefer-promise-reject-errors": "error",
     "prefer-template": "error",
-    "quotes": ["error", "single"],
+    "quotes": ["error", "backtick"],
     "require-await": "error",
     "rest-spread-spacing": ["error"],
     "semi": ["error", "always"],
