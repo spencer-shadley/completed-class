@@ -9,6 +9,8 @@
 const Book = require(`../models/book.js`);
 const Sequelize = require(`sequelize`);
 
+const longBookPageCount = 150;
+
 // Routes
 // =============================================================
 module.exports = app => {
@@ -57,7 +59,7 @@ module.exports = app => {
     Book.findAll({
       where: {
         pages: {
-          [Sequelize.Op.gte]: 150
+          [Sequelize.Op.gte]: longBookPageCount
         }
       },
       order: [[`pages`, `DESC`]]
@@ -71,7 +73,7 @@ module.exports = app => {
     Book.findAll({
       where: {
         pages: {
-          [Sequelize.Op.lt]: 150
+          [Sequelize.Op.lt]: longBookPageCount
         }
       },
       order: [[`pages`, `ASC`]]
