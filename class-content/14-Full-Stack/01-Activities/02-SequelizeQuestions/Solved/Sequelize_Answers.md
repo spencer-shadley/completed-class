@@ -4,10 +4,15 @@
 
   - Question: What is Sequelize?
 
-    - ORM.
+    - An ORM.
 
   - Question: What advantages does it offer?
 
+    - We get to write in the language we're already using
+    - Encapsulates the logic of interacting with DBs, helping to minimize bugs (high chance we otherwise would accidentally introduce bugs)
+    - Sequelize is probably better at writing SQL than us. Therefore, the queries will generally be more efficient.
+    - Advanced functions are available out of the box - transactions, connection pooling, migrations, seeds, streams, etc.
+    - It's easy to swap databases in and out. What if we decide to switch from MySQL to Microsoft SQL Server?
     - Easy to test.
     - Gives you support for syncing databases.
     - Validation, restricts to specific form of data.
@@ -15,7 +20,7 @@
 
   - Question: How do I install it? How do I incorporate it into my app?
 
-    - `npm install sequelize`
+    - `npm install sequelize --save`
 
   - Question: What the heck is a Sequelize model? What role will it play?
 
@@ -23,13 +28,12 @@
 
   - Let's say I have the below table in MySQL.
 
-    | Country     | PhoneCode | Capital   | IndependenceYear |
-    | ----------- | --------- | --------- | ---------------- |
-    | Afghanistan | 93        | Kabul     | 1919             |
-    | Belarus     | 375       | Misk      | 1991             |
-    | Netherlands | 31        | Amsterdam | 1648             |
-    | Oman        | 968       | Muscat    | 1970             |
-    | Zambia      | 260       | Lusaka    | 1964             |
+    | Anime                           | Genre   | Release Year | Rating |
+    | ------------------------------- | ------- | ------------ | ------ |
+    | Enen no Shouboutai              | Action  | 2019         | 7.8    |
+    | Made in Abyss                   | Mystery | 2017         | 8.8    |
+    | Fullmetal Alchemist Brotherhood | Fantasy | 2010         | 9.2    |
+    | Steins;Gate                     | Sci-Fi  | 2011         | 9.1    |
 
     - Question: How would I model it in Sequelize?
 
@@ -37,17 +41,17 @@
       const tableName = sequelize.define(
         'tableName',
         {
-          Country: {
+          Anime: {
             type: Sequelize.STRING
           },
-          PhoneCode: {
-            type: Sequelize.INTEGER
-          },
-          Capital: {
+          Genre: {
             type: Sequelize.STRING
           },
-          IndependenceYear: {
+          ReleaseYear: {
             type: Sequelize.INTEGER
+          },
+          Rating: {
+            type: Sequelize.DECIMAL
           }
         },
         {
@@ -56,34 +60,34 @@
       );
 
       // force: true will drop the table if it already exists
-      tableName.sync({ force: true }).then(function() {
+      tableName.sync({ force: true }).then(() => {
         // Table created
         return tableName.create({
-          Country: 'Afghanistan',
-          PhoneCode: 93,
-          Capital: 'Kabul',
-          IndependenceYear: 1919
+          Anime: 'Made in Abyss',
+          Genre: 'Mystery',
+          ReleaseYear: 2017,
+          Rating: 8.8
         });
       });
       ```
 
-    - Question: How would I query for all the records where the Independence Year was less than 50 years ago?
+    - Question: How would I query for all the records where the Release Year was less than 5 years ago?
 
       ```js
       tableName.findAll({
         where: {
-          IndependenceYear: { $gt: new Date().getFullYear() - 50 }
+          ReleaseYear: { $gt: new Date().getFullYear() - 5 }
         }
       });
       ```
 
-    - How would I query the table, order it by descending Independence Years, and limit the results to just show 2 of the records. Skipping the first two? (i.e. Results: Zambia, Afghanistan)
+    - How would I query the table, order it by descending Release Years, and limit the results to just show 2 of the records. Skipping the first two? (i.e. Results: Fullmetal Alchemist Brotherhood, Steins;Gate)
 
       ```js
       tableName.findAll({
         offset: 2,
         limit: 2,
-        order: [[sequelize.col('IndependenceYear'), 'DESC']]
+        order: [[sequelize.col('ReleaseYear'), 'DESC']]
       });
       ```
 
