@@ -1,12 +1,14 @@
 # Pre-class Drill
 
-Determine if a collection of any number of inputs are all anagrams of one another
+Determine if a collection of any number of inputs contain a given sub-word
 
 ---
 
 Input
 
-`car`, `arc`
+sub-word: `car`
+
+inputs: `racecar`
 
 Output
 
@@ -16,7 +18,9 @@ Output
 
 Input
 
-`the morse code`, `here comes dots`, `e ooesmhcrdt e`
+sub-word: `car`
+
+inputs: `racecar`, `haircare`, `carbon`
 
 Output
 
@@ -26,7 +30,9 @@ Output
 
 Input
 
-`pizza`, `pzza`
+sub-word: `car`
+
+inputs: `pizza`
 
 Output
 

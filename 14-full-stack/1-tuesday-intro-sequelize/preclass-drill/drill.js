@@ -1,5 +1,5 @@
 'use strict';
 
-function areAnagrams(...anagrams) {}
+function haveSubWord(subword, ...words) {}
 
-module.exports = { areAnagrams };
+module.exports = { haveSubWord };

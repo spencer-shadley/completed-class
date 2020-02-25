@@ -2,21 +2,21 @@
 
 const drill = require(`../drill`);
 
-describe(`areAnagrams`, () => {
-  it(`should verify two anagrams`, () => {
-    verify(true, 'car', 'arc');
+describe(`haveSubWord`, () => {
+  it(`should verify two sub words`, () => {
+    verify(true, 'car', 'racecar');
   });
 
-  it(`should verify three anagrams`, () => {
-    verify(true, `foo`, `oof`, `ofo`);
+  it(`should verify three sub words`, () => {
+    verify(true, `car`, `racecar`, `haircare`, `carbon`);
   });
 
-  it(`should verify anagrams with spaces`, () => {
-    verify(true, `the morse code`, `here come dots`, `e ooesmhcrdt e`);
+  it(`should verify sub words with spaces`, () => {
+    verify(true, `a b`, `a b c`);
   });
 
-  it(`should fail with two invalid anagrams`, () => {
-    verify(false, `pizza`, `pzza`);
+  it(`should fail with invalid sub words`, () => {
+    verify(false, `car`, `pizza`);
   });
 
   it(`should fail with one input`, () => {
@@ -35,8 +35,8 @@ describe(`areAnagrams`, () => {
     verify(false, 3);
   });
 
-  function verify(expected, ...input) {
-    const actual = drill.areAnagrams(...input);
+  function verify(expected, subword, ...inputs) {
+    const actual = drill.haveSubWord(subword, ...inputs);
     expect(actual).toBe(expected);
   }
 });
