@@ -16,7 +16,7 @@ Output
 
 Input
 
-`the morse code`, `here comes dots`, `e ooesmhcrdt e`
+`the morse code`, `here come dots`, `e ooesmhcrdt e`
 
 Output
 
