@@ -19,7 +19,7 @@ const PORT = process.env.PORT || 3000;
 // =============================================================
 
 db.sequelize.sync().then(() => {
-  app.listen(PORT, () => {
-    console.log(`App listening on http://localhost:${PORT}`);
-  });
+  app.listen(PORT, () =>
+    console.log(`App listening on http://localhost:${PORT}`)
+  );
 });
