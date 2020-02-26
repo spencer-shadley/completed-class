@@ -19,7 +19,7 @@ const orm = {
   getTodos(callback) {
     const select = `SELECT * FROM ${tableName}`;
 
-    connection.query(s, (err, result) => {
+    connection.query(select, (err, result) => {
       callback(result);
     });
   },
