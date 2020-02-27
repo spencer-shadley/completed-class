@@ -18,7 +18,7 @@ Reflect on what you have achieved so far in this course and answer the following
 4. What do you plan to do to ensure you accomplish these goals?
 5. How do these plans and goals differ from the first half of the course?
 
-## Part 2: Sequelize - Reverse Engineering Code
+## Optional - Part 2: Sequelize - Reverse Engineering Code
 
 Reverse engineer the starter code provided and create a tutorial for the code.
 
@@ -58,6 +58,6 @@ When joining a new team, you will be expected to inspect a lot of code that you 
 
 You are required to submit the following:
 
-- A few paragraphs detailing your reflection of the course. This can be submitted as either a `reflection.md` file in your GitHub repo or, if you would prefer your answers remain private, a comment on the assignment in BCS.
+- **Part 1**: A few paragraphs detailing your reflection of the course. This can be submitted as either a `reflection.md` file in a GitHub repo or, if you would prefer your answers remain private, a comment on the assignment in BCS.
 
-- A link to your `README` on GitHub and other resources describing the given code
+- **Part 2**: Optionally, submit a link to a `README` on GitHub and other resources describing the given code
