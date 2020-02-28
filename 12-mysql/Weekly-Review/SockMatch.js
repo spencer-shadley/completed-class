@@ -32,20 +32,20 @@ const sockMerchant = (n, arr) => {
 
     if (1 <= n && n <= 100) {
 
-        let hash = {};
+        let sockSet = new Set();
         for (const sock of arr) {
-            if (hash[sock]) {
+            if (sockSet.has(sock)) {
                 sockPairs++;
-                delete hash[sock];
+                sockSet.delete(sock)
             } else {
-                hash[sock] = true;
+                sockSet.add(sock)
             }
         }
     }
     return sockPairs;
 }
 
-class TestSocks {
+class testSocks {
     constructor(testInput, expectedResult, actualResult) {
         this.testInput = testInput;
         this.expectedResult = expectedResult;
@@ -54,10 +54,26 @@ class TestSocks {
 }
 
 
-let test1 = new TestSocks(`test1`, 2, sockMerchant(7, [1, 2, 1, 2, 1, 3, 2]));
-let test2 = new TestSocks('test2', 3, sockMerchant(9, [10, 20, 20, 10, 10, 30, 50, 10, 20]))
+let test1 = new testSocks(`test1`, 2, sockMerchant(7, [1, 2, 1, 2, 1, 3, 2]));
+let test2 = new testSocks('test2', 3, sockMerchant(9, [10, 20, 20, 10, 10, 30, 50, 10, 20]))
 
 console.table([
     test1,
     test2,
 ])
+
+// let sockPairs = 0;
+
+// if (1 <= n && n <= 100) {
+
+//     let hash = {};
+//     for (const sock of arr) {
+//         if (hash[sock]) {
+//             sockPairs++;
+//             delete hash[sock];
+//         } else {
+//             hash[sock] = true;
+//         }
+//     }
+// }
+// return sockPairs;
