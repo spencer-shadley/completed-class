@@ -4,21 +4,23 @@
     "password": "password",
     "database": "todolist",
     "host": "127.0.0.1",
-    "port": 3306,
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "operatorsAliases": false
   },
   "test": {
     "username": "root",
     "password": "password",
-    "database": "database_test",
+    "database": "todolist",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "operatorsAliases": false
   },
   "production": {
     "username": "root",
     "password": "password",
-    "database": "database_production",
+    "database": "todolist",
     "host": "127.0.0.1",
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "operatorsAliases": false
   }
 }
