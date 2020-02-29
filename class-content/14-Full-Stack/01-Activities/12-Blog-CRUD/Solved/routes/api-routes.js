@@ -14,22 +14,18 @@ const db = require(`../models`);
 // =============================================================
 module.exports = app => {
   // GET route for getting all of the posts
-  app.get(`/api/posts/`, (req, res) => {
-    db.Post.findAll({}).then(dbPost => {
-      res.json(dbPost);
-    });
-  });
+  app.get(`/api/posts/`, (req, res) =>
+    db.Post.findAll({}).then(dbPost => res.json(dbPost))
+  );
 
   // Get route for returning posts of a specific category
-  app.get(`/api/posts/category/:category`, (req, res) => {
+  app.get(`/api/posts/category/:category`, (req, res) =>
     db.Post.findAll({
       where: {
         category: req.params.category
       }
-    }).then(dbPost => {
-      res.json(dbPost);
-    });
-  });
+    }).then(dbPost => res.json(dbPost))
+  );
 
   // Get route for retrieving a single post
   app.get(`/api/posts/:id`, (req, res) => {
