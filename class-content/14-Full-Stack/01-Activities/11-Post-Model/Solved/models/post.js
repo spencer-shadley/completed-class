@@ -1,12 +1,13 @@
 'use strict';
 
-module.exports = (sequelize, DataTypes) =>
+module.exports = (sequelize, DataTypes) => {
+  const maxTitleLength = 160;
   sequelize.define(`Post`, {
     title: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        len: [1]
+        len: [1, maxTitleLength]
       }
     },
     body: {
@@ -21,3 +22,4 @@ module.exports = (sequelize, DataTypes) =>
       defaultValue: `Personal`
     }
   });
+};
