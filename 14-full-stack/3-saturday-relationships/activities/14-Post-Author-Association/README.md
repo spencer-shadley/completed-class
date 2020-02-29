@@ -1,10 +1,12 @@
 # Directory
 
-`13-Post-Author-Association/Unsolved`
+`14-Post-Author-Association/Unsolved`
 
 # Instructions
 
-The goal of this exercise is to modify the Post and Author models so that they are associated with eachother.
+The goal of this exercise is to modify the Post and Author models so that they are associated with each other.
+
+In groups:
 
 1. Run `npm install`
 

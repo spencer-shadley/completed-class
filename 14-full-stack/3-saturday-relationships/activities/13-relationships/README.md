@@ -1,5 +1,7 @@
 # Instructions
 
+With a partner:
+
 - How can we restructure our database tables if we wanted the ability to form a relationship between a Post and an Author?
 
 - What would we have to change with these tables to make that possible?
