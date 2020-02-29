@@ -23,3 +23,11 @@ The goal of this exercise is to add Sequelize CRUD methods inside each route spe
     - Delete a post
 
 - **If things aren't working as expected, check to see if any errors logged to the terminal.**
+
+# Bonus 1
+
+- Add validations
+
+# Bonus 2
+
+- Handle any validation errors gracefully

@@ -4,6 +4,7 @@
 // orm.js - This file offers a set of easier-to-use methods for interacting with the MySQL db.
 // *********************************************************************************
 
+// =============================================================
 // Dependencies
 // =============================================================
 const connection = require(`./connection.js`);

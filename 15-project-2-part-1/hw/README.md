@@ -30,6 +30,14 @@
 
   - Must use a linter (ex. ESLint) with at least five rules specified and enforced
 
+- Must include a `README.md`
+
+  - Include code documentation
+
+  - Link to deployed application
+
+  - Embedded UML diagram detailing your architecture
+
 - Must have high quality coding standards (DRY, correctly scoped variables, etc.)
 
 ## Presentation Requirements

@@ -1,5 +1,6 @@
 'use strict';
 
+// =============================================================
 // Dependencies
 // =============================================================
 
@@ -9,15 +10,12 @@ const Sequelize = require(`sequelize`);
 const sequelize = require(`../config/connection.js`);
 
 // Creates a "Book" model that matches up with DB
-const Book = sequelize.define(
-  `book`,
-  {
-    title: Sequelize.STRING,
-    author: Sequelize.STRING,
-    genre: Sequelize.STRING,
-    pages: Sequelize.INTEGER
-  },
-);
+const Book = sequelize.define(`book`, {
+  title: Sequelize.STRING,
+  author: Sequelize.STRING,
+  genre: Sequelize.STRING,
+  pages: Sequelize.INTEGER
+});
 
 // Syncs with DB
 Book.sync();
