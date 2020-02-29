@@ -3,11 +3,17 @@
 // =============================================================
 // Dependencies
 // =============================================================
+
 const express = require(`express`);
+
+const isDebug = !process.env.NODE_ENV || process.env.NODE_ENV === `development`;
+
+console.log(isDebug);
 
 // =============================================================
 // Sets up the Express App
 // =============================================================
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -28,7 +34,7 @@ require(`./routes/html-routes.js`)(app);
 
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
-db.sequelize.sync({ force: true }).then(() => {
+db.sequelize.sync({ force: isDebug }).then(() => {
   app.listen(PORT, () => {
     console.log(`App listening on PORT ${PORT}`);
   });
