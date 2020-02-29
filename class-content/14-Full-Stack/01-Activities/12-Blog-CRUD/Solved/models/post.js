@@ -6,14 +6,20 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        len: [1]
+        len: {
+          args: [1],
+          msg: `A title must be provided`
+        }
       }
     },
     body: {
       type: DataTypes.TEXT,
       allowNull: false,
       validate: {
-        len: [1]
+        len: {
+          args: [1],
+          msg: `A body must be provided`
+        }
       }
     },
     category: {

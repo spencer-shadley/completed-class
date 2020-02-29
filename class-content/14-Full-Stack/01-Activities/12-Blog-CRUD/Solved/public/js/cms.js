@@ -24,10 +24,7 @@ $(document).ready(() => {
   // Adding an event listener for when the form is submitted
   $(cmsForm).on(`submit`, event => {
     event.preventDefault();
-    // Wont submit the post if we are missing a body or a title
-    if (!titleInput.val().trim() || !bodyInput.val().trim()) {
-      return;
-    }
+
     // Constructing a newPost object to hand to the database
     const newPost = {
       title: titleInput.val().trim(),
@@ -49,9 +46,12 @@ $(document).ready(() => {
 
   // Submits a new post and brings user to blog page upon completion
   function submitPost(Post) {
-    $.post(`/api/posts/`, Post, () => {
-      window.location.href = `/blog`;
-    });
+    $.post(`/api/posts/`, Post)
+      .done(data => {
+        console.log(data);
+        window.location.href = `/blog`;
+      })
+      .fail(err => alert(err.responseJSON.messages.join(`\n`)));
   }
 
   // Gets post data for a post if we're editing
@@ -75,8 +75,10 @@ $(document).ready(() => {
       method: `PUT`,
       url: `/api/posts`,
       data: post
-    }).then(() => {
-      window.location.href = `/blog`;
-    });
+    })
+      .done(() => {
+        window.location.href = `/blog`;
+      })
+      .fail(err => alert(err.responseJSON.messages.join(`\n`)));
   }
 });

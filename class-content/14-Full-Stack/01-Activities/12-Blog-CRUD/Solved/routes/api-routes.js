@@ -45,9 +45,11 @@ module.exports = app => {
       title: req.body.title,
       body: req.body.body,
       category: req.body.category
-    }).then(dbPost => {
-      res.json(dbPost);
-    });
+    })
+      .then(dbPost => {
+        res.json(dbPost);
+      })
+      .catch(err => sendError(err, res));
   });
 
   // DELETE route for deleting posts
@@ -67,8 +69,19 @@ module.exports = app => {
       where: {
         id: req.body.id
       }
-    }).then(dbPost => {
-      res.json(dbPost);
-    });
+    })
+      .then(dbPost => {
+        res.json(dbPost);
+      })
+      .catch(err => sendError(err, res));
   });
+
+  function sendError(err, res) {
+    console.log(err);
+
+    const clientError = 400;
+    res.status(clientError).json({
+      messages: err.errors.map(error => error.message)
+    });
+  }
 };
