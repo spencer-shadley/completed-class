@@ -21,6 +21,7 @@ app.use(express.json());
 // Static directory
 app.use(express.static(`public`));
 
+// =============================================================
 // Routes
 // =============================================================
 require(`./routes/api-routes.js`)(app);

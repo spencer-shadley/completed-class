@@ -23,6 +23,7 @@ app.use(express.json());
 // Static directory to be served
 app.use(express.static(`app/public`));
 
+// =============================================================
 // Routes
 // =============================================================
 routes(app);
