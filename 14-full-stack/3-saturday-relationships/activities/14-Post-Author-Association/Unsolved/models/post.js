@@ -1,6 +1,8 @@
 'use strict';
 
-module.exports = function(sequelize, DataTypes) {
+module.exports = (sequelize, DataTypes) => {
+  // Add a belongsTo association to Authors here
+  // Example: https://github.com/sequelize/express-example/blob/master/models/task.js
   const Post = sequelize.define(`Post`, {
     title: {
       type: DataTypes.STRING,
@@ -15,8 +17,5 @@ module.exports = function(sequelize, DataTypes) {
       len: [1]
     }
   });
-
-  // Add a belongsTo association to Authors here
-  // Example: https://github.com/sequelize/express-example/blob/master/models/task.js
   return Post;
 };
