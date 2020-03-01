@@ -1,3 +1,5 @@
+/* eslint-disable no-multi-spaces */
+/* eslint-disable semi */
 /* eslint-disable max-depth */
 /* eslint-disable no-empty */
 /* eslint-disable no-shadow */
@@ -23,6 +25,8 @@ let reallyLongLineThisGoesOnForSoLong = magic === 345843534857345345 ? 'another 
 if(true) {
   console.log('I always print!');
 }
+
+let     ilikeweirdspace   = true
 
 // prettier-ignore
 for(let i = 0; i < 10; ++i) {

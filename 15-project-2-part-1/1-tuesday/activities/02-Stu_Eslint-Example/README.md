@@ -14,7 +14,7 @@ In this example we will setup ESLint.
 
 ### Bonus
 
-- Run `eslint --fix` to auto-fix rules
+- Run `npm run lint`
 
 - Setup `eslint` to automatically fix all issues on save
 
