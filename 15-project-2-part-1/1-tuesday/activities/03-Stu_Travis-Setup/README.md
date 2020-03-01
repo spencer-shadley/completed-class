@@ -12,23 +12,25 @@ In this activity we will set up the project repo with Travis CI to ensure that l
 
 - Navigate to the repo's page, then click the "Settings" tab.
 
-- Select "Branches" from the left sidebar.
+- Select "Branches" from the left sidebar
 
-- Under "Branch protection rules", choose "master" from the dropdown.
+  - If you do not see "Branches", clone your repo, make a change (such as adding a README) and then push
 
-- Check off the following options:
+- Click "Add rule"
 
-  - "Protect this branch"
+  - Branch name pattern: master
 
-  - "Require pull request reviews before merging"
+  - check "Require pull request reviews before merging"
 
-  - "Include administrators"
+    - Check "Require review from Code Owners"
 
-  - "Require status checks to pass before merging"
+  - Check "Require status checks to pass before merging"
 
-  - "Require branches to be up to date before merging"
+    - Check "Require branches to be up to date before merging"
 
-- Click "Save changes"
+  - Check "Include adminstrators"
+
+  - "Save"
 
 ### Part 2: Activate Travis on GitHub
 
@@ -46,9 +48,17 @@ In this activity we will set up the project repo with Travis CI to ensure that l
 
 - Run `npm init`, if you haven't already, in your project repo
 
-- Add a `lint` script (`"lint": "eslint . ./**/*.js"`)
+- Add `node_modules` to your `.gitignore`
 
-- Add a `test` script (`"test": "jest"`)
+- Add a `lint` script
+
+  - install `eslint` as a dependency
+
+  - update `package.json` to include the `script` `"lint": "eslint . ./**/*.js"`
+
+- Setup `jest`
+
+  - Update your `test` script to `jest`
 
   - Add `jest` as a dependency
 
@@ -65,6 +75,8 @@ In this activity we will set up the project repo with Travis CI to ensure that l
     });
     ```
 
+  - hint: look at any preclass drill for examples of working `jest` scripts
+
 ### Part 4: Add Travis to your Project 2 Repo
 
 - Create a `.travis.yml` file on the root of your repo
@@ -72,3 +84,11 @@ In this activity we will set up the project repo with Travis CI to ensure that l
   - This will tell Travis CI what you want to happen for its integration
 
   - Use the [.travis.yml](./.travis.yml) file as a starting point
+
+### Part 5: Test out a Pull Request
+
+- Create a new branch
+
+- Ensure at least one test is failing
+
+- Make a pull request
