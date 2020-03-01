@@ -92,3 +92,5 @@ In this activity we will set up the project repo with Travis CI to ensure that l
 - Ensure at least one test is failing
 
 - Make a pull request
+
+- This should fail and you can see the output at https://travis-ci.com (specifically, https://travis-ci.com/username/branch-name)
