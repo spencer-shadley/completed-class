@@ -40,6 +40,10 @@
 
 - Must have high quality coding standards (DRY, correctly scoped variables, etc.)
 
+- Must include tests using a test framework (`jest` is recommended)
+
+- Must use Continuous Integration to ensure both linting and tests pass before merging to master
+
 ## Presentation Requirements
 
 In your presentation include:
