@@ -29,3 +29,5 @@ In this example we will setup ESLint.
 ### Hints
 
 - If you're unsure about what an eslint rule is asking for, type it into Google for examples.
+
+- [tutorial](https://scotch.io/tutorials/linting-and-formatting-with-eslint-in-vs-code)
