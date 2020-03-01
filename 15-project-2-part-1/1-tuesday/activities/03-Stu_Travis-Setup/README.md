@@ -30,9 +30,9 @@ In this activity we will set up the project repo with Travis CI to ensure that l
 
 - Click "Save changes"
 
-### Part 2: Add Travis
+### Part 2: Add Travis to your Profile
 
-- Navigate to <https://github.com/marketplace/travis-ci>.
+- Navigate [here](https://github.com/marketplace/travis-ci)
 
 - Scroll to "Pricing and setup" and choose the "Open Source" (\$0) option
 
@@ -41,3 +41,34 @@ In this activity we will set up the project repo with Travis CI to ensure that l
 - Choose to setup with all repositories
 
 - Click the "Install" button to complete the process.
+
+### Part 3: Add Scripts
+
+- Run `npm init`, if you haven't already, in your project repo
+
+- Add a `lint` script (`"lint": "eslint . ./**/*.js"`)
+
+- Add a `test` script (`"test": "jest"`)
+
+  - Add `jest` as a dependency
+
+  - Add a `test/foo.test.js` file which runs a test, feel free to copy/paste the below
+
+    ```js
+    describe(`jest test`, () => {
+      it(`should pass`, () => {
+        expect(1 + 2).toEqual(3);
+      });
+      it('should fail', () => {
+        expect('1' + '1').toEqual(2);
+      });
+    });
+    ```
+
+### Part 4: Add Travis to your Project 2 Repo
+
+- Create a `.travis.yml` file on the root of your repo
+
+  - This will tell Travis CI what you want to happen for its integration
+
+  - Use the [.travis.yml](./.travis.yml) file as a starting point
