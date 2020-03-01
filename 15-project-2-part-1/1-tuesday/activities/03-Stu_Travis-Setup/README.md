@@ -30,7 +30,7 @@ In this activity we will set up the project repo with Travis CI to ensure that l
 
 - Click "Save changes"
 
-### Part 2: Add Travis to your Profile
+### Part 2: Activate Travis on GitHub
 
 - Navigate [here](https://github.com/marketplace/travis-ci)
 
