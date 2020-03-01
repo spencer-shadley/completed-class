@@ -1,6 +1,6 @@
 # Eslint Example
 
-In this example we will use eslint to fix issues a calculator app.
+In this example we will setup ESLint.
 
 ## Instructions
 
@@ -8,11 +8,9 @@ In this example we will use eslint to fix issues a calculator app.
 
 - Open the [Unsolved](Unsolved) directory and run `npm install` from your terminal to install dependencies.
 
-- Now open [Unsolved/example.js](Unsolved/example.js) in your code editor. If you were able to complete the previous steps correctly, you should see red annotations under different parts of the code. Hovering over each displays a popover with an eslint rule being broken.
+- Delete each comment disabling a rule at the top of the file
 
-  ![Eslint](Images/01-Eslint.png)
-
-- Work to fix each part of the annotated code.
+  - If the above setup was correct you should start seeing red squiggles each time you delete a comment
 
 ### Bonus
 

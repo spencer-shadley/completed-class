@@ -56,7 +56,6 @@
     "no-magic-numbers": [
       "error",
       {
-        "ignoreArrayIndexes": true,
         "ignore": [
           -9,
           -8,

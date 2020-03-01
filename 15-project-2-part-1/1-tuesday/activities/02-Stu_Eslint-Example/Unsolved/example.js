@@ -1,25 +1,42 @@
-'use strict';
+/* eslint-disable max-depth */
+/* eslint-disable no-empty */
+/* eslint-disable no-shadow */
+/* eslint-disable indent */
+/* eslint-disable no-constant-condition */
+/* eslint-disable max-len */
+/* eslint-disable no-magic-numbers */
+/* eslint-disable strict */
+/* eslint-disable prefer-const */
+/* eslint-disable eol-last */
+/* eslint-disable no-var */
+/* eslint-disable quotes */
+/* eslint-disable no-unused-vars */
 
-const num_1 = parseInt(prompt('Give me a number!'));
-const num_2 = parseInt(prompt('Give me another number!'));
-const result;
+var pizza = "hi";
 
-const operation = prompt(
-  'What would you like to do? (add, subtract, multiply, divide)'
-).toUpperCase();
+let hi;
 
-if (operation == 'ADD') {
-  const result = num_1 + num_2;
-  alert('The sum of ' + num_1 + ' and ' + num_2 + ' is ' + result);
-} else if (operation === 'SUBTRACT') {
-  result = num_1 - num_2;
-  alert('The difference between ' + num_1 + ' and ' + num_2 + ' is ' + result);
-} else if (operation === 'MULTIPLY') {
-  result = num_1 * num_2;
-  alert('The product of ' + num_1 + ' and ' + num_2 + ' is ' + result);
-} else if (operation === 'DIVIDE') {
-  result = num_1 / num_2;
-  alert('The quotient of ' + num_1 + ' and ' + num_2 + ' is ' + result);
-} else {
-  alert('Not a valid option!');
+let magic = 123456;
+
+let reallyLongLineThisGoesOnForSoLong = magic === 345843534857345345 ? 'another really long string, why is this so long?' : 54 + 34 * 23;
+
+if(true) {
+  console.log('I always print!');
+}
+
+// prettier-ignore
+for(let i = 0; i < 10; ++i) {
+for (let i = 0; i < 10; ++i) {
+  for (let i = 0; i < 10; ++i) {
+    for (let i = 0; i < 10; ++i) {
+      for (let i = 0; i < 10; ++i) {
+        for (let i = 0; i < 10; ++i) {
+          for (let i = 0; i < 10; ++i) {
+            for (let i = 0; i < 10; ++i) {}
+          }
+        }
+      }
+    }
+  }
+}
 }
