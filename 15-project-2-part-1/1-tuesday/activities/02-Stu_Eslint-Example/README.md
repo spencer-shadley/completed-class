@@ -20,6 +20,8 @@ In this example we will use eslint to fix issues a calculator app.
 
 - Setup `eslint` to automatically fix all issues on save
 
+- add a `.eslintignore` to exclude some files ([example](../../../../14-full-stack/.eslintignore))
+
 - Try changing the quote style to enforce single-quotes instead of double-quotes.
 
 - Try switching to the more complete eslint rules used in the previous unit [here](../../../../14-full-stack/.eslintrc.json)
