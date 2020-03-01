@@ -10,7 +10,7 @@ In this example we will setup ESLint.
 
 - Delete each comment disabling a rule at the top of the file
 
-  - If the above setup was correct you should start seeing red squiggles each time you delete a comment
+  - If the above setup was correctly you should start seeing red squiggles each time you delete a comment
 
 ### Bonus
 
