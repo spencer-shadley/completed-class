@@ -60,4 +60,4 @@ Now you are good to go! Whenever you are working on your project and you push to
 
 [Connect GitHub to Heroku](https://youtu.be/GgNcs9zlFSA?list=PLOFmg4xbN_TPrB6w4rThsFanVxJI_SfER)
 
-If you have any further questions or get stuck, please ask your TAs for assistance.
+If you have any further questions or get stuck, please ask for assistance

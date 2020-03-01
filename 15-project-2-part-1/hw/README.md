@@ -6,11 +6,11 @@
 
 - Must be backed by a MySQL database
 
-- Must utilize, GET, PUT, POST and DELETE routes for manipulating data
+- Must utilize, GET, PUT, POST and DELETE routes for manipulating data, following the CRUD paradigm
 
-- Must be deployed using Heroku (with data)
+- Must be deployed, including connecting to a database (for example, with Heroku and JawsDB)
 
-- Must utilize at least one new third-party API
+- Must utilize at least one new library, package or technology that we haven’t discussed
 
 - Must have a polished UI
 
