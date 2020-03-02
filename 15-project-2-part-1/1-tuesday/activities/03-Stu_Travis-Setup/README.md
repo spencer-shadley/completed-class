@@ -111,3 +111,7 @@ Hint: Example repo [here](https://github.com/spencer-shadley/test-travis)
 - Have someone approve the Pull Request
 
 - Merge!
+
+### Part 6: Start Brainstorming!
+
+- Once complete, begin activity [04-brainstorm](../04-brainstorm/README.md)
