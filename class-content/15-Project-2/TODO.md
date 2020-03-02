@@ -1,1 +1,0 @@
-- add a code coverage tool like `coveralls`
