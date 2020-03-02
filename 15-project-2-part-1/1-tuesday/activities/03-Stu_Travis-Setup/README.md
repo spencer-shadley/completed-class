@@ -46,6 +46,8 @@ In this activity we will set up the project repo with Travis CI to ensure that l
 
 ### Part 3: Add Scripts
 
+Hint: Example repo [here](https://github.com/spencer-shadley/test-travis)
+
 - Run `npm init`, if you haven't already, in your project repo
 
 - Add `node_modules` to your `.gitignore`
@@ -64,7 +66,7 @@ In this activity we will set up the project repo with Travis CI to ensure that l
 
   - Update your `test` script to `jest`
 
-  - Add `jest` as a dependency
+  - Add `jest` as a dev-dependency
 
   - Add a `test/foo.test.js` file which runs a test, feel free to copy/paste the below
 
@@ -73,6 +75,7 @@ In this activity we will set up the project repo with Travis CI to ensure that l
       it(`should pass`, () => {
         expect(1 + 2).toEqual(3);
       });
+
       it('should fail', () => {
         expect('1' + '1').toEqual(2);
       });
@@ -87,14 +90,20 @@ In this activity we will set up the project repo with Travis CI to ensure that l
 
   - This will tell Travis CI what you want to happen for its integration
 
-  - Use the [.travis.yml](./.travis.yml) file as a starting point
+  - [example](https://github.com/spencer-shadley/test-travis/blob/master/.travis.yml)
 
 ### Part 5: Test out a Pull Request
 
 - Create a new branch
 
-- Ensure at least one test is failing
+- Ensure at least one test is failing and your linter is failing
 
 - Make a pull request
 
 - This should fail and you can see the output at https://travis-ci.com (specifically, https://travis-ci.com/username/branch-name)
+
+- Fix the errors
+
+- Have someone approve the Pull Request
+
+- Merge
