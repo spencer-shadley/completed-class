@@ -102,8 +102,12 @@ Hint: Example repo [here](https://github.com/spencer-shadley/test-travis)
 
 - This should fail and you can see the output at https://travis-ci.com (specifically, https://travis-ci.com/username/branch-name)
 
+  - [Example failing PR](https://github.com/spencer-shadley/test-travis/pull/1)
+
+    - Details on why the above failed can be found [here](https://travis-ci.com/spencer-shadley/test-travis/builds/151279919)
+
 - Fix the errors
 
 - Have someone approve the Pull Request
 
-- Merge
+- Merge!
