@@ -52,7 +52,11 @@ In this activity we will set up the project repo with Travis CI to ensure that l
 
 - Add a `lint` script
 
-  - install `eslint` as a dependency
+  - install `eslint` as a dev-dependency
+
+  - add a `.eslintrc` file to your repo with several rules
+
+  - add a `.eslintignore` file with the contents as `node_modules` to exclude running the linter on modules
 
   - update `package.json` to include the `script` `"lint": "eslint . ./**/*.js"`
 
