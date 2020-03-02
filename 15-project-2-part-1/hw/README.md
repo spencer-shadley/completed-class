@@ -40,7 +40,9 @@
 
 - Must have high quality coding standards (DRY, correctly scoped variables, etc.)
 
-- Must include tests using a test framework (`jest` is recommended)
+- Must include unit tests with a test framework (`jest` is recommended)
+
+  - At least 20 tests must be included
 
 - Must use Continuous Integration to ensure both linting and tests pass before merging to master
 
