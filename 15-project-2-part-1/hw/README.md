@@ -50,6 +50,10 @@
 
   - Practice Test Driven Development (TDD)!
 
+- Must have code coverage of at least 80%
+
+  - Code coverage must be linked in your Continuous Integration (example, using `coveralls`)
+
 ## Presentation Requirements
 
 In your presentation include:
