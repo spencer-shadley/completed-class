@@ -4,7 +4,7 @@ In this example we will setup ESLint.
 
 ## Instructions
 
-- Install the [VS Code Eslint Extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
+- Install the [VS Code Eslint Extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
 - Open the [Unsolved](Unsolved) directory and run `npm install` from your terminal to install dependencies.
 
