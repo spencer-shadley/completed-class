@@ -1,13 +1,33 @@
 # Pre-class Drill
 
----
-
-Input
-
-Output
+Find the longest palindrome contained in a given word or `null` if none were found.
 
 ---
 
 Input
 
+qabap
+
 Output
+
+aba
+
+---
+
+Input
+
+abcdedcba
+
+Output
+
+abcdedcba
+
+---
+
+Input
+
+abcdedcbaaabbaa
+
+Output
+
+abcdedcba
