@@ -30,6 +30,8 @@
 
   - Must use a linter (ex. ESLint) with at least five rules specified and enforced
 
+    - These lint rules must be enforced by Continuous Integration (such as Travis) before code gets to master
+
 - Must include a `README.md`
 
   - Include code documentation
@@ -44,7 +46,9 @@
 
   - At least 20 tests must be included
 
-- Must use Continuous Integration to ensure both linting and tests pass before merging to master
+  - These tests must use Continuous Integration (such as Travis) to ensure they pass before code gets to master
+
+  - Practice Test Driven Development (TDD)!
 
 ## Presentation Requirements
 
