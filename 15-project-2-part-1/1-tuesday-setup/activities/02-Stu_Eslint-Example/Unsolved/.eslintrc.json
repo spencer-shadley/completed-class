@@ -12,7 +12,7 @@
     "chai": "readonly"
   },
   "plugins": ["chai-friendly"],
-  "extends": ["eslint:recommended", "plugin:chai-friendly/recommended"],
+  "extends": ["eslint:recommended"],
   "rules": {
     "array-bracket-spacing": "error",
     "array-callback-return": "error",

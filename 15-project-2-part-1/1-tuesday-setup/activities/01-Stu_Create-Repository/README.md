@@ -12,7 +12,7 @@ In this activity we will create a group project repo and add group members as co
 
   - Select "Branches" from the left sidebar.
 
-  - Under "Branch protection rules", choose "master" from the dropdown.
+  - Under "Branch protection rules", type "master"
 
   - Check off the following options:
 
