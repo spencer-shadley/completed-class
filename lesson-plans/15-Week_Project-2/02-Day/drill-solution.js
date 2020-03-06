@@ -1,18 +1,15 @@
 'use strict';
 
 function findLongestPalindrome(word) {
-  let longestPalindrome = null;
-
-  for (let currentSize = 2; currentSize <= word.length; ++currentSize) {
+  for (let currentSize = word.length; currentSize >= 2; --currentSize) {
     for (let i = 0; i <= word.length - currentSize; ++i) {
       let subword = word.substring(i, i + currentSize);
       if (isPalindrome(subword)) {
-        longestPalindrome = subword;
-        break;
+        return subword;
       }
     }
   }
-  return longestPalindrome;
+  return null;
 }
 
 function isPalindrome(word) {
