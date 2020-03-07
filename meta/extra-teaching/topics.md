@@ -3,6 +3,6 @@
 - code coverage (`coveralls`)
 - animations (GSAP requested)
 - VS Code
-  - live share
+  - ~~live share~~
   - extensions
     - bookmarks
