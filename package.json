@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prettier": "prettier --write \"**/*.*\"",
     "test": "md-report"
   },
   "repository": {
