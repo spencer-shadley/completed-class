@@ -120,5 +120,6 @@
     "strict": "error",
     "vars-on-top": "error",
     "yoda": "error"
-  }
+  },
+  "reportUnusedDisableDirectives": true
 }
