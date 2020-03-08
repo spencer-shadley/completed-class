@@ -1,4 +1,5 @@
 'use strict';
+/* eslint-disable no-magic-numbers */
 
 const Employee = require('../lib/Employee');
 

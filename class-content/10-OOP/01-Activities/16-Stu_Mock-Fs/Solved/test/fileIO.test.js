@@ -1,4 +1,5 @@
 'use strict';
+/* eslint-disable no-magic-numbers */
 
 const fs = require('fs');
 const FileIO = require('../fileIO');

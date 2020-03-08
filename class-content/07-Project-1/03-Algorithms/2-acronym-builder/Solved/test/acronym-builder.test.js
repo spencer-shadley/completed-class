@@ -1,4 +1,5 @@
 'use strict';
+/* eslint-disable no-magic-numbers */
 
 var expect = chai.expect;
 

@@ -1,4 +1,5 @@
 'use strict';
+/* eslint-disable no-magic-numbers */
 
 const TodoList = require('../todoList');
 const Todo = require('../todo');

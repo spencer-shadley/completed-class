@@ -1,4 +1,5 @@
 'use strict';
+/* eslint-disable no-magic-numbers */
 
 const Arithmetic = require('../arithmetic');
 

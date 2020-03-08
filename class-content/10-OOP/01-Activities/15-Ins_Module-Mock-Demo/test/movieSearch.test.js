@@ -1,4 +1,5 @@
 'use strict';
+/* eslint-disable no-magic-numbers */
 
 const axios = require('axios');
 const MovieSearch = require('../movieSearch');

@@ -1,4 +1,5 @@
 'use strict';
+/* eslint-disable no-magic-numbers */
 
 import React from 'react';
 import ReactDOM from 'react-dom';
