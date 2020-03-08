@@ -1,66 +1,66 @@
+'use strict';
+
 // get all workout data from back-end
 
-fetch("/api/workouts/range")
-  .then(response => {
-    return response.json();
-  })
+fetch(`/api/workouts/range`)
+  .then(response => response.json())
   .then(data => {
     populateChart(data);
   });
 
 
-API.getWorkoutsInRange()
+API.getWorkoutsInRange();
 
-  function generatePalette() {
-    const arr = [
-    "#003f5c",
-    "#2f4b7c",
-    "#665191",
-    "#a05195",
-    "#d45087",
-    "#f95d6a",
-    "#ff7c43",
-    "ffa600",
-    "#003f5c",
-    "#2f4b7c",
-    "#665191",
-    "#a05195",
-    "#d45087",
-    "#f95d6a",
-    "#ff7c43",
-    "ffa600"
-  ]
+function generatePalette() {
+  const arr = [
+    `#003f5c`,
+    `#2f4b7c`,
+    `#665191`,
+    `#a05195`,
+    `#d45087`,
+    `#f95d6a`,
+    `#ff7c43`,
+    `ffa600`,
+    `#003f5c`,
+    `#2f4b7c`,
+    `#665191`,
+    `#a05195`,
+    `#d45087`,
+    `#f95d6a`,
+    `#ff7c43`,
+    `ffa600`
+  ];
 
   return arr;
-  }
+}
 function populateChart(data) {
-  let durations = duration(data);
-  let pounds = calculateTotalWeight(data);
-  let workouts = workoutNames(data);
+  const durations = duration(data);
+  const pounds = calculateTotalWeight(data);
+  const workouts = workoutNames(data);
   const colors = generatePalette();
 
-  let line = document.querySelector("#canvas").getContext("2d");
-  let bar = document.querySelector("#canvas2").getContext("2d");
-  let pie = document.querySelector("#canvas3").getContext("2d");
-  let pie2 = document.querySelector("#canvas4").getContext("2d");
+  const line = document.querySelector(`#canvas`).getContext(`2d`);
+  const bar = document.querySelector(`#canvas2`).getContext(`2d`);
+  const pie = document.querySelector(`#canvas3`).getContext(`2d`);
+  const pie2 = document.querySelector(`#canvas4`).getContext(`2d`);
 
-  let lineChart = new Chart(line, {
-    type: "line",
+  const lineChart = new Chart(line, {
+    type: `line`,
     data: {
       labels: [
-        "Sunday",
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday"
+        `Sunday`,
+        `Monday`,
+        `Tuesday`,
+        `Wednesday`,
+        `Thursday`,
+        `Friday`,
+        `Saturday`
       ],
       datasets: [
         {
-          label: "Workout Duration In Minutes",
-          backgroundColor: "red",
-          borderColor: "red",
+          label: `Workout Duration In Minutes`,
+          backgroundColor: `red`,
+          borderColor: `red`,
           data: durations,
           fill: false
         }
@@ -91,38 +91,39 @@ function populateChart(data) {
       }
     }
   });
+  console.log(lineChart);
 
-  let barChart = new Chart(bar, {
-    type: "bar",
+  const barChart = new Chart(bar, {
+    type: `bar`,
     data: {
       labels: [
-        "Sunday",
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
+        `Sunday`,
+        `Monday`,
+        `Tuesday`,
+        `Wednesday`,
+        `Thursday`,
+        `Friday`,
+        `Saturday`
       ],
       datasets: [
         {
-          label: "Pounds",
+          label: `Pounds`,
           data: pounds,
           backgroundColor: [
-            "rgba(255, 99, 132, 0.2)",
-            "rgba(54, 162, 235, 0.2)",
-            "rgba(255, 206, 86, 0.2)",
-            "rgba(75, 192, 192, 0.2)",
-            "rgba(153, 102, 255, 0.2)",
-            "rgba(255, 159, 64, 0.2)"
+            `rgba(255, 99, 132, 0.2)`,
+            `rgba(54, 162, 235, 0.2)`,
+            `rgba(255, 206, 86, 0.2)`,
+            `rgba(75, 192, 192, 0.2)`,
+            `rgba(153, 102, 255, 0.2)`,
+            `rgba(255, 159, 64, 0.2)`
           ],
           borderColor: [
-            "rgba(255, 99, 132, 1)",
-            "rgba(54, 162, 235, 1)",
-            "rgba(255, 206, 86, 1)",
-            "rgba(75, 192, 192, 1)",
-            "rgba(153, 102, 255, 1)",
-            "rgba(255, 159, 64, 1)"
+            `rgba(255, 99, 132, 1)`,
+            `rgba(54, 162, 235, 1)`,
+            `rgba(255, 206, 86, 1)`,
+            `rgba(75, 192, 192, 1)`,
+            `rgba(153, 102, 255, 1)`,
+            `rgba(255, 159, 64, 1)`
           ],
           borderWidth: 1
         }
@@ -131,7 +132,7 @@ function populateChart(data) {
     options: {
       title: {
         display: true,
-        text: "Pounds Lifted"
+        text: `Pounds Lifted`
       },
       scales: {
         yAxes: [
@@ -144,14 +145,15 @@ function populateChart(data) {
       }
     }
   });
+  console.log(barChart);
 
-  let pieChart = new Chart(pie, {
-    type: "pie",
+  const pieChart = new Chart(pie, {
+    type: `pie`,
     data: {
       labels: workouts,
       datasets: [
         {
-          label: "Excercises Performed",
+          label: `Excercises Performed`,
           backgroundColor: colors,
           data: durations
         }
@@ -160,18 +162,19 @@ function populateChart(data) {
     options: {
       title: {
         display: true,
-        text: "Excercises Performed"
+        text: `Excercises Performed`
       }
     }
   });
+  console.log(pieChart);
 
-  let donutChart = new Chart(pie2, {
-    type: "doughnut",
+  const donutChart = new Chart(pie2, {
+    type: `doughnut`,
     data: {
       labels: workouts,
       datasets: [
         {
-          label: "Excercises Performed",
+          label: `Excercises Performed`,
           backgroundColor: colors,
           data: pounds
         }
@@ -180,14 +183,15 @@ function populateChart(data) {
     options: {
       title: {
         display: true,
-        text: "Excercises Performed"
+        text: `Excercises Performed`
       }
     }
   });
+  console.log(donutChart);
 }
 
 function duration(data) {
-  let durations = [];
+  const durations = [];
 
   data.forEach(workout => {
     workout.exercises.forEach(exercise => {
@@ -199,7 +203,7 @@ function duration(data) {
 }
 
 function calculateTotalWeight(data) {
-  let total = [];
+  const total = [];
 
   data.forEach(workout => {
     workout.exercises.forEach(exercise => {
@@ -211,13 +215,13 @@ function calculateTotalWeight(data) {
 }
 
 function workoutNames(data) {
-  let workouts = [];
+  const workouts = [];
 
   data.forEach(workout => {
     workout.exercises.forEach(exercise => {
       workouts.push(exercise.name);
     });
   });
-  
+
   return workouts;
 }
