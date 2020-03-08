@@ -1,8 +1,10 @@
+/* eslint-disable no-empty-function */
+/* eslint-disable no-unused-vars */
+
 'use strict';
-/* eslint-disable no-magic-numbers */
 
-const drill = require('../drill');
+const drill = require(`../drill`);
 
-describe('', () => {
-  it('should', () => {});
+describe(``, () => {
+  it(`should`, () => {});
 });
