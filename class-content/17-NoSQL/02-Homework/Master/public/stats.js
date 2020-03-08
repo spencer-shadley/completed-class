@@ -63,6 +63,7 @@ function populateChart(data) {
       }
     }
   });
+  console.log(lineChart);
 
   const barChart = new Chart(bar, {
     type: `bar`,
@@ -112,6 +113,7 @@ function populateChart(data) {
       }
     }
   });
+  console.log(barChart);
 
   const pieChart = new Chart(pie, {
     type: `pie`,
@@ -138,6 +140,7 @@ function populateChart(data) {
       }
     }
   });
+  console.log(pieChart);
 
   const donutChart = new Chart(pie2, {
     type: `doughnut`,
@@ -153,6 +156,7 @@ function populateChart(data) {
             `#e8c3b9`,
             `#c45850`
           ],
+          // eslint-disable-next-line no-magic-numbers
           data: [2478, 5267, 734, 784, 433]
         }
       ]
@@ -164,6 +168,7 @@ function populateChart(data) {
       }
     }
   });
+  console.log(donutChart);
 }
 
 function duration(data) {

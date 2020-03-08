@@ -1,8 +1,6 @@
 'use strict';
 
 const actionBtn = document.getElementById(`action-button`);
-// new item
-const makeNote = document.getElementById(`make-new`);
 // clear all items
 const clear = document.getElementById(`clear-all`);
 // delete an item
@@ -16,7 +14,7 @@ function getResults() {
     .then(response => {
       if (response.status !== 200) {
         console.log(
-          `Looks like there was a problem. Status Code: ${ response.status}`
+          `Looks like there was a problem. Status Code: ${response.status}`
         );
         return;
       }
@@ -31,13 +29,13 @@ function getResults() {
 
 function newTodoSnippet(res) {
   for (let i = 0; i < res.length; ++i) {
-    const data_id = res[i]._id;
+    const dataId = res[i]._id;
     const title = res[i].title;
     const todoList = document.getElementById(`results`);
     snippet = `
       <p class="data-entry">
-      <span class="dataTitle" data-id=${data_id}>${title}</span>
-      <span onClick="delete" class="delete" data-id=${data_id}>x</span>;
+      <span class="dataTitle" data-id=${dataId}>${title}</span>
+      <span onClick="delete" class="delete" data-id=${dataId}>x</span>;
       </p>`;
     todoList.insertAdjacentHTML(`beforeend`, snippet);
   }
@@ -67,14 +65,13 @@ getResults();
 clear.addEventListener(`click`, e => {
   if (e.target.matches(`#clear-all`)) {
     element = e.target;
-    data_id = element.getAttribute(`data-id`);
     fetch(`/clearall`, {
       method: `delete`
     })
       .then(response => {
         if (response.status !== 200) {
           console.log(
-            `Looks like there was a problem. Status Code: ${ response.status}`
+            `Looks like there was a problem. Status Code: ${response.status}`
           );
           return;
         }
@@ -89,14 +86,14 @@ clear.addEventListener(`click`, e => {
 results.addEventListener(`click`, e => {
   if (e.target.matches(`.delete`)) {
     element = e.target;
-    data_id = element.getAttribute(`data-id`);
-    fetch(`/delete/${ data_id}`, {
+    const dataId = element.getAttribute(`data-id`);
+    fetch(`/delete/${dataId}`, {
       method: `delete`
     })
       .then(response => {
         if (response.status !== 200) {
           console.log(
-            `Looks like there was a problem. Status Code: ${ response.status}`
+            `Looks like there was a problem. Status Code: ${response.status}`
           );
           return;
         }
@@ -111,13 +108,13 @@ results.addEventListener(`click`, e => {
       });
   } else if (e.target.matches(`.dataTitle`)) {
     element = e.target;
-    data_id = element.getAttribute(`data-id`);
+    const dataId = element.getAttribute(`data-id`);
     status.innerText = `Editing`;
-    fetch(`/find/${ data_id}`, { method: `get` })
+    fetch(`/find/${dataId}`, { method: `get` })
       .then(response => response.json())
       .then(data => {
         updateTitleAndNote(data);
-        const newButton = `<button id='updater' data-id=${data_id}>Update</button>`;
+        const newButton = `<button id='updater' data-id=${dataId}>Update</button>`;
         actionBtn.innerHTML = newButton;
       })
       .catch(err => {
@@ -129,10 +126,10 @@ results.addEventListener(`click`, e => {
 actionBtn.addEventListener(`click`, e => {
   if (e.target.matches(`#updater`)) {
     updateBtnEl = e.target;
-    data_id = updateBtnEl.getAttribute(`data-id`);
+    const dataId = updateBtnEl.getAttribute(`data-id`);
     const title = document.getElementById(`title`).value;
     const note = document.getElementById(`note`).value;
-    fetch(`/update/${ data_id}`, {
+    fetch(`/update/${dataId}`, {
       method: `post`,
       headers: {
         Accept: `application/json, text/plain, */*`,
@@ -145,6 +142,8 @@ actionBtn.addEventListener(`click`, e => {
     })
       .then(response => response.json())
       .then(data => {
+        console.log(data);
+
         element.innerText = title;
         resetTitleAndNote();
         const newButton = `<button id='make-new'>Submit</button>`;
@@ -156,7 +155,6 @@ actionBtn.addEventListener(`click`, e => {
       });
   } else if (e.target.matches(`#make-new`)) {
     element = e.target;
-    data_id = element.getAttribute(`data-id`);
     fetch(`/submit`, {
       method: `post`,
       headers: {

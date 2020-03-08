@@ -1,6 +1,11 @@
+/* eslint-disable func-style */
+/* eslint-disable no-unused-vars */
+
 'use strict';
 
-// Write a function that takes an array of integers containing exactly one peak. A peak is defined as a location in the array where the value is greater than every number to the left and every number to the right. Return the value found at the array's peak
+// Write a function that takes an array of integers containing exactly one peak.
+// A peak is defined as a location in the array where the value is greater than
+// every number to the left and every number to the right.Return the value found at the array's peak
 
 const peakFinder = function(nums) {
   if (nums.length === 1) {
@@ -15,8 +20,8 @@ const peakFinder = function(nums) {
     return nums[nums.length - 1];
   }
 
-  const min = 0;
-  const max = nums.length - 1;
+  let min = 0;
+  let max = nums.length - 1;
 
   while (min < max) {
     const middle = Math.floor((max - min) / 2) + min;

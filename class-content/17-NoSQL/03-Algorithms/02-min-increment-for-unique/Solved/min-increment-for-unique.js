@@ -1,10 +1,13 @@
+/* eslint-disable no-unused-vars */
+
 'use strict';
 
-// Write a function to take an array of integers and return the minimum number of increments required across the array to ensure that every number is unique
+// Write a function to take an array of integers and return
+// the minimum number of increments required across the array to ensure that every number is unique
 
 const minIncrement = nums => {
   const uniqueNums = {};
-  const increments = 0;
+  let increments = 0;
 
   for (let i = 0; i < nums.length; ++i) {
     while (uniqueNums[nums[i]]) {

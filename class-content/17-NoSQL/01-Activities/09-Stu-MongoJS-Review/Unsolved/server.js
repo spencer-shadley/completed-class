@@ -33,6 +33,7 @@ db.on(`error`, error => {
 
 // Post a book to the mongoose database
 app.post(`/submit`, ({ body }, res) => {
+  console.log(res);
   // Save the request body as an object called book
   const book = body;
 
@@ -43,19 +44,27 @@ app.post(`/submit`, ({ body }, res) => {
 });
 
 // Find all books marked as read
-app.get(`/read`, (req, res) => {});
+app.get(`/read`, (req, res) => {
+  console.log(req, res);
+});
 
 // Find all books marked as unread
-app.get(`/unread`, (req, res) => {});
+app.get(`/unread`, (req, res) => {
+  console.log(req, res);
+});
 
 // Mark a book as having been read
 app.put(`/markread/:id`, (req, res) => {
+  console.log(req, res);
+
   // Remember: when searching by an id, the id needs to be passed in
   // as (mongojs.ObjectId(IdYouWantToFind))
 });
 
 // Mark a book as having been not read
 app.put(`/markunread/:id`, (req, res) => {
+  console.log(req, res);
+
   // Remember: when searching by an id, the id needs to be passed in
   // as (mongojs.ObjectId(IdYouWantToFind))
 });

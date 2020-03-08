@@ -63,6 +63,8 @@ app.post(`/submit`, ({ body }, res) => {
 });
 
 app.get(`/populateduser`, (req, res) => {
+  console.log(req, res);
+
   // TODO
   // =====
   // Write the query to grab the documents from the User collection,

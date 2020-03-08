@@ -9,13 +9,15 @@ function getResults() {
     for (let i = 0; i < data.length; ++i) {
       // ...populate #results with a p-tag that includes the note's title and object id
       $(`#results`).prepend(
-        `<p class='data-entry' data-id=${
-          data[i]._id
-        }><span class='dataTitle' data-id=${
-          data[i]._id
-        }>${
-          data[i].title
-        }</span><span class='delete'>X</span></p>`
+        `<p class='data-entry'
+          data-id=${data[i]._id}>
+          <span class='dataTitle'
+            data-id=${data[i]._id}>${data[i].title}
+          </span>
+          <span class='delete'>
+            X
+          </span>
+        </p>`
       );
     }
   });
@@ -42,13 +44,15 @@ $(document).on(`click`, `#make-new`, () => {
     .then(data => {
       // Add the title and delete button to the #results section
       $(`#results`).prepend(
-        `<p class='data-entry' data-id=${
-          data._id
-        }><span class='dataTitle' data-id=${
-          data._id
-        }>${
-          data.title
-        }</span><span class='delete'>X</span></p>`
+        `<p class='data-entry'
+          data-id=${data._id}>
+          <span class='dataTitle'
+            data-id=${data._id}>${data.title}
+          </span>
+          <span class='delete'>
+            X
+          </span>
+        </p>`
       );
       // Clear the note and title inputs on the page
       $(`#note`).val(``);
@@ -65,6 +69,7 @@ $(`#clear-all`).on(`click`, () => {
     url: `/clearall`,
     // On a successful call, clear the #results section
     success(response) {
+      console.log(response);
       $(`#results`).empty();
     }
   });
@@ -78,10 +83,12 @@ $(document).on(`click`, `.delete`, function() {
   // this uses the data-id of the p-tag, which is linked to the specific note
   $.ajax({
     type: `DELETE`,
-    url: `/delete/${ selected.attr(`data-id`)}`,
+    url: `/delete/${selected.attr(`data-id`)}`,
 
     // On successful call
     success(response) {
+      console.log(response);
+
       // Remove the p-tag from the DOM
       selected.remove();
       // Clear the note and title inputs
@@ -101,7 +108,7 @@ $(document).on(`click`, `.dataTitle`, function() {
   // This uses the data-id of the p-tag, which is linked to the specific note
   $.ajax({
     type: `GET`,
-    url: `/find/${ selected.attr(`data-id`)}`,
+    url: `/find/${selected.attr(`data-id`)}`,
     success(data) {
       // Fill the inputs with the data that the ajax call collected
       $(`#note`).val(data.note);
@@ -109,7 +116,7 @@ $(document).on(`click`, `.dataTitle`, function() {
       // Make the #action-button an update button, so user can
       // Update the note s/he chooses
       $(`#action-button`).html(
-        `<button id='updater' data-id='${ data._id }'>Update</button>`
+        `<button id='updater' data-id='${data._id}'>Update</button>`
       );
     }
   });
@@ -125,7 +132,7 @@ $(document).on(`click`, `#updater`, function() {
   // that the user clicked before
   $.ajax({
     type: `POST`,
-    url: `/update/${ selected.attr(`data-id`)}`,
+    url: `/update/${selected.attr(`data-id`)}`,
     dataType: `json`,
     data: {
       title: $(`#title`).val(),
@@ -133,6 +140,8 @@ $(document).on(`click`, `#updater`, function() {
     },
     // On successful call
     success(data) {
+      console.log(data);
+
       // Clear the inputs
       $(`#note`).val(``);
       $(`#title`).val(``);

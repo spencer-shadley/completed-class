@@ -1,8 +1,10 @@
+/* eslint-disable no-unused-vars */
+
 'use strict';
 
 // Write a function to take a string and return true if it contains valid sets of matching brackets, else return false
 
-const validBrackets = function(str) {
+const validBrackets = str => {
   const stack = [];
 
   for (let i = 0; i < str.length; ++i) {

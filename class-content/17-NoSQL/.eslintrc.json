@@ -8,6 +8,7 @@
     "jest": true,
     "mocha": true
   },
+  "parserOptions": { "ecmaVersion": 2020 },
   "globals": {
     "chai": "readonly"
   },
@@ -78,6 +79,8 @@
           8,
           9,
           10,
+          200,
+          400,
           3000,
           8080
         ]

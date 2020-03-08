@@ -6,7 +6,8 @@ const request = indexedDB.open(`budget`, 1);
 
 request.onupgradeneeded = function(event) {
   // create object store called "pending" and set autoIncrement to true
-  const db = event.target.result;
+  // const db = event.target.result;
+  console.log(event);
   db.createObjectStore(`pending`, { autoIncrement: true });
 };
 
@@ -23,6 +24,7 @@ request.onerror = function(event) {
   console.log(`Woops! ${event.target.errorCode}`);
 };
 
+// eslint-disable-next-line no-unused-vars
 function saveRecord(record) {
   // create a transaction on the pending db with readwrite access
   const transaction = db.transaction([`pending`], `readwrite`);
@@ -36,9 +38,9 @@ function saveRecord(record) {
 
 function checkDatabase() {
   // open a transaction on your pending db
-  const transaction = db.transaction([`pending`], `readwrite`);
+  let transaction = db.transaction([`pending`], `readwrite`);
   // access your pending object store
-  const store = transaction.objectStore(`pending`);
+  let store = transaction.objectStore(`pending`);
   // get all records from store and set to a variable
   const getAll = store.getAll();
 
@@ -55,10 +57,10 @@ function checkDatabase() {
         .then(response => response.json())
         .then(() => {
           // if successful, open a transaction on your pending db
-          const transaction = db.transaction([`pending`], `readwrite`);
+          transaction = db.transaction([`pending`], `readwrite`);
 
           // access your pending object store
-          const store = transaction.objectStore(`pending`);
+          store = transaction.objectStore(`pending`);
 
           // clear all items in your store
           store.clear();
