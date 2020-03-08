@@ -50,9 +50,11 @@
 
   - Practice Test Driven Development (TDD)!
 
-- Must have code coverage of at least 80%
+- It is strongly preferred to have code coverage
 
-  - Code coverage must be linked in your Continuous Integration (example, using `coveralls`)
+  - Code coverage should be part of your Continuous Integration (example, using `coveralls`)
+
+  - 80% should be considered a low bar for test coverage
 
 ## Presentation Requirements
 
