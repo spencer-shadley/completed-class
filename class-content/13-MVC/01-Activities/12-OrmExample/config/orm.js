@@ -9,9 +9,9 @@ const connection = require('./connection.js');
 // These help avoid SQL injection
 // https://en.wikipedia.org/wiki/SQL_injection
 const orm = {
-  selectWhere: function (tableInput, colToSearch, valOfCol) {
+  selectWhere: function(tableInput, colToSearch, valOfCol) {
     let queryString = 'SELECT * FROM ?? WHERE ?? = ?';
-    connection.query(queryString, [tableInput, colToSearch, valOfCol], function (
+    connection.query(queryString, [tableInput, colToSearch, valOfCol], function(
       err,
       result
     ) {
@@ -19,10 +19,10 @@ const orm = {
       console.log(result);
     });
   },
-  selectAndOrder: function (whatToSelect, table, orderCol) {
+  selectAndOrder: function(whatToSelect, table, orderCol) {
     let queryString = 'SELECT ?? FROM ?? ORDER BY ?? DESC';
     console.log(queryString);
-    connection.query(queryString, [whatToSelect, table, orderCol], function (
+    connection.query(queryString, [whatToSelect, table, orderCol], function(
       err,
       result
     ) {
@@ -30,7 +30,7 @@ const orm = {
       console.log(result);
     });
   },
-  findWhoHasMost: function (
+  findWhoHasMost: function(
     tableOneCol,
     tableTwoForeignKey,
     tableOne,

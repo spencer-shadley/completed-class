@@ -3,9 +3,9 @@
 const connection = require('./connection.js');
 
 const orm = {
-  select: function (whatToSelect, tableInput) {
+  select: function(whatToSelect, tableInput) {
     let queryString = 'SELECT ?? FROM ??';
-    connection.query(queryString, [whatToSelect, tableInput], function (
+    connection.query(queryString, [whatToSelect, tableInput], function(
       err,
       result
     ) {
@@ -13,12 +13,12 @@ const orm = {
       console.log(result);
     });
   },
-  selectWhere: function (tableInput, colToSearch, valOfCol) {
+  selectWhere: function(tableInput, colToSearch, valOfCol) {
     let queryString = 'SELECT * FROM ?? WHERE ?? = ?';
 
     console.log(queryString);
 
-    connection.query(queryString, [tableInput, colToSearch, valOfCol], function (
+    connection.query(queryString, [tableInput, colToSearch, valOfCol], function(
       err,
       result
     ) {
@@ -26,7 +26,7 @@ const orm = {
       console.log(result);
     });
   },
-  leftJoin: function (
+  leftJoin: function(
     whatToSelect,
     tableOne,
     tableTwo,

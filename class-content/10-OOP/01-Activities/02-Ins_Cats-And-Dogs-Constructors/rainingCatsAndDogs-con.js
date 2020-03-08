@@ -5,7 +5,7 @@ function Animal(raining, noise) {
   this.raining = raining;
   this.noise = noise;
   this.makeNoise = function() {
-    if (this.raining ) {
+    if (this.raining) {
       console.log(this.noise);
     }
   };
@@ -24,7 +24,7 @@ cats.raining = true;
 cats.makeNoise();
 
 const massHysteria = function(dogs, cats) {
-  if (dogs.raining  && cats.raining ) {
+  if (dogs.raining && cats.raining) {
     console.log('DOGS AND CATS LIVING TOGETHER! MASS HYSTERIA!');
   }
 };

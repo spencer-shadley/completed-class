@@ -9,7 +9,7 @@ const isUnique = function(arr) {
   for (let i = 0; i < arr.length; ++i) {
     const currentNumber = arr[i];
 
-    if (numMap[currentNumber] ) {
+    if (numMap[currentNumber]) {
       return false;
     }
 

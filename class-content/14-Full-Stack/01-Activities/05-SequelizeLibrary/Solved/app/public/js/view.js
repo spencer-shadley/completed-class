@@ -10,7 +10,7 @@ $(`#search-btn`).on(`click`, event => {
     .trim();
 
   // Make an AJAX get request to our api, including the user's book in the url
-  $.get(`/api/${ bookSearched}`, data => {
+  $.get(`/api/${bookSearched}`, data => {
     console.log(data);
     // Call our renderBooks function to add our books to the page
     renderBooks(data);
@@ -25,7 +25,7 @@ $(`#author-search-btn`).on(`click`, () => {
     .trim();
 
   // Make an AJAX get request to our api, including the user's author in the url
-  $.get(`/api/author/${ authorSearched}`, data => {
+  $.get(`/api/author/${authorSearched}`, data => {
     // Log the data to the console
     console.log(data);
     // Call our renderBooks function to add our books to the page
@@ -41,7 +41,7 @@ $(`#genre-search-btn`).on(`click`, () => {
     .trim();
 
   // Make an AJAX get request to our api, including the user's genre in the url
-  $.get(`/api/genre/${ genreSearched}`, data => {
+  $.get(`/api/genre/${genreSearched}`, data => {
     console.log(data);
     // Call our renderBooks function to add our books to the page
     renderBooks(data);
@@ -56,14 +56,12 @@ function renderBooks(data) {
     for (let i = 0; i < data.length; ++i) {
       const div = $(`<div>`);
 
-      div.append(`<h2>${ data[i].title }</h2>`);
-      div.append(`<p>Author: ${ data[i].author }</p>`);
-      div.append(`<p>Genre: ${ data[i].genre }</p>`);
-      div.append(`<p>Pages: ${ data[i].pages }</p>`);
+      div.append(`<h2>${data[i].title}</h2>`);
+      div.append(`<p>Author: ${data[i].author}</p>`);
+      div.append(`<p>Genre: ${data[i].genre}</p>`);
+      div.append(`<p>Pages: ${data[i].pages}</p>`);
       div.append(
-        `<button class='delete' data-id='${
-          data[i].id
-        }'>DELETE BOOK</button>`
+        `<button class='delete' data-id='${data[i].id}'>DELETE BOOK</button>`
       );
 
       $(`#stats`).append(div);
@@ -72,7 +70,7 @@ function renderBooks(data) {
     $(`.delete`).click(function() {
       $.ajax({
         method: `DELETE`,
-        url: `/api/book/${ $(this).attr(`data-id`)}`
+        url: `/api/book/${$(this).attr(`data-id`)}`
       })
         // On success, run the following code
         .then(() => {

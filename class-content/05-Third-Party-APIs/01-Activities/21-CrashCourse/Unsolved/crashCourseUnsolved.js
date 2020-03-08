@@ -52,3 +52,4 @@
 
 // Talk to student a little about the approach for "getting started" on an application.
 // Talk about the concept of variables, functions, calls.
+

@@ -68,14 +68,14 @@ $(document).ready(() => {
   function getPostData(id, type) {
     let queryUrl;
     switch (type) {
-    case `post`:
-      queryUrl = `/api/posts/${id}`;
-      break;
-    case `author`:
-      queryUrl = `/api/authors/${id}`;
-      break;
-    default:
-      return;
+      case `post`:
+        queryUrl = `/api/posts/${id}`;
+        break;
+      case `author`:
+        queryUrl = `/api/authors/${id}`;
+        break;
+      default:
+        return;
     }
     $.get(queryUrl, data => {
       if (data) {

@@ -32,4 +32,3 @@ function readColleges() {
     connection.end();
   });
 }
-
