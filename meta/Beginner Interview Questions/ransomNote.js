@@ -1,3 +1,5 @@
+'use strict';
+
 // Determine if a ransom letter can be produced for a desired sentence.
 
 function canProduceRansomLetter(letters, sentence) {
