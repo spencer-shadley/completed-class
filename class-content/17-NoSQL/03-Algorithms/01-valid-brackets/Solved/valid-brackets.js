@@ -8,27 +8,27 @@ const validBrackets = function(str) {
   for (let i = 0; i < str.length; ++i) {
     const char = str[i];
 
-    if (char === '(' || char === '{' || char === '[') {
+    if (char === `(` || char === `{` || char === `[`) {
       stack.push(char);
       continue;
     }
 
-    if (char === ')') {
-      if (stack.pop() !== '(') {
+    if (char === `)`) {
+      if (stack.pop() !== `(`) {
         return false;
       }
       continue;
     }
 
-    if (char === '}') {
-      if (stack.pop() !== '{') {
+    if (char === `}`) {
+      if (stack.pop() !== `{`) {
         return false;
       }
       continue;
     }
 
-    if (char === ']') {
-      if (stack.pop() !== '[') {
+    if (char === `]`) {
+      if (stack.pop() !== `[`) {
         return false;
       }
     }
