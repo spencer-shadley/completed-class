@@ -1,25 +1,25 @@
 'use strict';
 
-const express = require('express');
-const mongojs = require('mongojs');
-const logger = require('morgan');
+const express = require(`express`);
+const mongojs = require(`mongojs`);
+const logger = require(`morgan`);
 
-const databaseUrl = 'warmup';
-const collections = ['books'];
+const databaseUrl = `warmup`;
+const collections = [`books`];
 const db = mongojs(databaseUrl, collections);
 
 const app = express();
 
-app.use(logger('dev'));
+app.use(logger(`dev`));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static('public'));
+app.use(express.static(`public`));
 
-db.on('error', error => {
-  console.log('Database Error:', error);
+db.on(`error`, error => {
+  console.log(`Database Error:`, error);
 });
 
-app.post('/submit', ({ body }, res) => {
+app.post(`/submit`, ({ body }, res) => {
   const book = body;
 
   book.read = false;
@@ -33,7 +33,7 @@ app.post('/submit', ({ body }, res) => {
   });
 });
 
-app.get('/read', (req, res) => {
+app.get(`/read`, (req, res) => {
   db.books.find({ read: true }, (error, found) => {
     if (error) {
       console.log(error);
@@ -43,7 +43,7 @@ app.get('/read', (req, res) => {
   });
 });
 
-app.get('/unread', (req, res) => {
+app.get(`/unread`, (req, res) => {
   db.books.find({ read: false }, (error, found) => {
     if (error) {
       console.log(error);
@@ -53,7 +53,7 @@ app.get('/unread', (req, res) => {
   });
 });
 
-app.put('/markread/:id', ({ params }, res) => {
+app.put(`/markread/:id`, ({ params }, res) => {
   db.books.update(
     {
       _id: mongojs.ObjectId(params.id)
@@ -76,7 +76,7 @@ app.put('/markread/:id', ({ params }, res) => {
   );
 });
 
-app.put('/markunread/:id', ({ params }, res) => {
+app.put(`/markunread/:id`, ({ params }, res) => {
   db.books.update(
     {
       _id: mongojs.ObjectId(params.id)
@@ -100,5 +100,5 @@ app.put('/markunread/:id', ({ params }, res) => {
 });
 
 app.listen(3000, () => {
-  console.log('App running on port 3000!');
+  console.log(`App running on port 3000!`);
 });

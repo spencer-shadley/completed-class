@@ -1,27 +1,27 @@
 'use strict';
 
-const express = require('express');
-const logger = require('morgan');
-const mongoose = require('mongoose');
+const express = require(`express`);
+const logger = require(`morgan`);
+const mongoose = require(`mongoose`);
 
 const PORT = process.env.PORT || 3000;
 
-const db = require('./models');
+const db = require(`./models`);
 
 const app = express();
 
-app.use(logger('dev'));
+app.use(logger(`dev`));
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(express.static('public'));
+app.use(express.static(`public`));
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/populate', {
+mongoose.connect(process.env.MONGODB_URI || `mongodb://localhost/populate`, {
   useNewUrlParser: true
 });
 
-db.Library.create({ name: 'Campus Library' })
+db.Library.create({ name: `Campus Library` })
   .then(dbLibrary => {
     console.log(dbLibrary);
   })
@@ -29,7 +29,7 @@ db.Library.create({ name: 'Campus Library' })
     console.log(message);
   });
 
-app.post('/submit', ({ body }, res) => {
+app.post(`/submit`, ({ body }, res) => {
   db.Book.create(body)
     .then(({ _id }) =>
       db.Library.findOneAndUpdate({}, { $push: { books: _id } }, { new: true })
@@ -42,7 +42,7 @@ app.post('/submit', ({ body }, res) => {
     });
 });
 
-app.get('/books', (req, res) => {
+app.get(`/books`, (req, res) => {
   db.Book.find({})
     .then(dbBook => {
       res.json(dbBook);
@@ -52,7 +52,7 @@ app.get('/books', (req, res) => {
     });
 });
 
-app.get('/library', (req, res) => {
+app.get(`/library`, (req, res) => {
   db.Library.find({})
     .then(dbLibrary => {
       res.json(dbLibrary);
@@ -62,9 +62,9 @@ app.get('/library', (req, res) => {
     });
 });
 
-app.get('/populated', (req, res) => {
+app.get(`/populated`, (req, res) => {
   db.Library.find({})
-    .populate('books')
+    .populate(`books`)
     .then(dbLibrary => {
       res.json(dbLibrary);
     })

@@ -2,7 +2,7 @@
 
 ## Instructions
 
-- Open `userModer.js` and create the following custom methods.
+- Open `userModel.js` and create the following custom methods.
 
   - `setFullName`: sets the current user's `fullName` property to their lastName appended to their `firstName`
 

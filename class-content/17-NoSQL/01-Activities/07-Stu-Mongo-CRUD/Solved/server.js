@@ -1,33 +1,33 @@
 'use strict';
 
-const express = require('express');
-const mongojs = require('mongojs');
-const logger = require('morgan');
-const path = require('path');
+const express = require(`express`);
+const mongojs = require(`mongojs`);
+const logger = require(`morgan`);
+const path = require(`path`);
 
 const app = express();
 
-app.use(logger('dev'));
+app.use(logger(`dev`));
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(express.static('public'));
+app.use(express.static(`public`));
 
-const databaseUrl = 'notetaker';
-const collections = ['notes'];
+const databaseUrl = `notetaker`;
+const collections = [`notes`];
 
 const db = mongojs(databaseUrl, collections);
 
-db.on('error', error => {
-  console.log('Database Error:', error);
+db.on(`error`, error => {
+  console.log(`Database Error:`, error);
 });
 
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname + './public/index.html'));
+app.get(`/`, (req, res) => {
+  res.sendFile(path.join(`${__dirname }./public/index.html`));
 });
 
-app.post('/submit', (req, res) => {
+app.post(`/submit`, (req, res) => {
   console.log(req.body);
 
   db.notes.insert(req.body, (error, data) => {
@@ -39,7 +39,7 @@ app.post('/submit', (req, res) => {
   });
 });
 
-app.get('/all', (req, res) => {
+app.get(`/all`, (req, res) => {
   db.notes.find({}, (error, data) => {
     if (error) {
       res.send(error);
@@ -49,7 +49,7 @@ app.get('/all', (req, res) => {
   });
 });
 
-app.get('/find/:id', (req, res) => {
+app.get(`/find/:id`, (req, res) => {
   db.notes.findOne(
     {
       _id: mongojs.ObjectId(req.params.id)
@@ -64,7 +64,7 @@ app.get('/find/:id', (req, res) => {
   );
 });
 
-app.post('/update/:id', (req, res) => {
+app.post(`/update/:id`, (req, res) => {
   db.notes.update(
     {
       _id: mongojs.ObjectId(req.params.id)
@@ -86,7 +86,7 @@ app.post('/update/:id', (req, res) => {
   );
 });
 
-app.delete('/delete/:id', (req, res) => {
+app.delete(`/delete/:id`, (req, res) => {
   db.notes.remove(
     {
       _id: mongojs.ObjectID(req.params.id)
@@ -101,7 +101,7 @@ app.delete('/delete/:id', (req, res) => {
   );
 });
 
-app.delete('/clearall', (req, res) => {
+app.delete(`/clearall`, (req, res) => {
   db.notes.remove({}, (error, response) => {
     if (error) {
       res.send(error);
@@ -112,5 +112,5 @@ app.delete('/clearall', (req, res) => {
 });
 
 app.listen(3000, () => {
-  console.log('App running on port 3000!');
+  console.log(`App running on port 3000!`);
 });

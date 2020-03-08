@@ -1,24 +1,24 @@
 'use strict';
 
-const express = require('express');
-const mongojs = require('mongojs');
+const express = require(`express`);
+const mongojs = require(`mongojs`);
 
 const app = express();
 
-const databaseUrl = 'zoo';
-const collections = ['animals'];
+const databaseUrl = `zoo`;
+const collections = [`animals`];
 
 const db = mongojs(databaseUrl, collections);
 
-db.on('error', error => {
-  console.log('Database Error:', error);
+db.on(`error`, error => {
+  console.log(`Database Error:`, error);
 });
 
-app.get('/', (req, res) => {
-  res.send('Hello world');
+app.get(`/`, (req, res) => {
+  res.send(`Hello world`);
 });
 
-app.get('/all', (req, res) => {
+app.get(`/all`, (req, res) => {
   db.animals.find({}, (err, found) => {
     if (err) {
       console.error(err);
@@ -28,7 +28,7 @@ app.get('/all', (req, res) => {
   });
 });
 
-app.get('/name', (req, res) => {
+app.get(`/name`, (req, res) => {
   db.animals.find().sort({ name: 1 }, (err, found) => {
     if (err) {
       console.error(err);
@@ -38,7 +38,7 @@ app.get('/name', (req, res) => {
   });
 });
 
-app.get('/weight', (req, res) => {
+app.get(`/weight`, (req, res) => {
   db.animals.find().sort({ weight: -1 }, (err, found) => {
     if (err) {
       console.error(err);
@@ -49,5 +49,5 @@ app.get('/weight', (req, res) => {
 });
 
 app.listen(3000, () => {
-  console.log('App running on port 3000!');
+  console.log(`App running on port 3000!`);
 });

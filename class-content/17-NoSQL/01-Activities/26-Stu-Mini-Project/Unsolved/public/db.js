@@ -1,7 +1,5 @@
 'use strict';
 
-// check for indexedDB browser support
-
 let db;
 // create a new db request for a "budget" database.
 
@@ -34,12 +32,12 @@ function checkDatabase() {
 
   getAll.onsuccess = function() {
     if (getAll.result.length > 0) {
-      fetch('/api/transaction/bulk', {
-        method: 'POST',
+      fetch(`/api/transaction/bulk`, {
+        method: `POST`,
         body: JSON.stringify(getAll.result),
         headers: {
-          Accept: 'application/json, text/plain, */*',
-          'Content-Type': 'application/json'
+          Accept: `application/json, text/plain, */*`,
+          'Content-Type': `application/json`
         }
       })
         .then(response => response.json())
@@ -53,4 +51,4 @@ function checkDatabase() {
 }
 
 // listen for app coming back online
-window.addEventListener('online', checkDatabase);
+window.addEventListener(`online`, checkDatabase);

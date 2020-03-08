@@ -1,24 +1,24 @@
 'use strict';
 
-const express = require('express');
-const mongojs = require('mongojs');
+const express = require(`express`);
+const mongojs = require(`mongojs`);
 
 const app = express();
 
-const databaseUrl = 'zoo';
-const collections = ['animals'];
+const databaseUrl = `zoo`;
+const collections = [`animals`];
 
 const db = mongojs(databaseUrl, collections);
 
-db.on('error', error => {
-  console.log('Database Error:', error);
+db.on(`error`, error => {
+  console.log(`Database Error:`, error);
 });
 
-app.get('/', (req, res) => {
-  res.send('Hello world');
+app.get(`/`, (req, res) => {
+  res.send(`Hello world`);
 });
 
-app.get('/all', (req, res) => {
+app.get(`/all`, (req, res) => {
   db.animals.find({}, (err, data) => {
     if (err) {
       console.error(err);
@@ -36,5 +36,5 @@ app.get('/all', (req, res) => {
 
 // Set the app to listen on port 3000
 app.listen(3000, () => {
-  console.log('App running on port 3000!');
+  console.log(`App running on port 3000!`);
 });
