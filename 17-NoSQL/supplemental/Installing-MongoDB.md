@@ -93,7 +93,7 @@ Run the following commands:
 
 1. `brew tap mongodb/brew`
 
-1. `brew install mongodb-community@4.2` (The version may have changed. See [this guide](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/#procedure) for the latest version to use with this command.)
+1. `brew install mongodb-community@4.2` See [this guide](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/#procedure) for more information.)
 
 ### Run MongoDB as a Service
 
@@ -103,4 +103,4 @@ Verify the service is running with `ps aux | grep -v grep | grep mongod`.
 
 If you don't see any output from the command above, try restarting the service with `brew services restart mongodb-community`.
 
-If you are still encountering issues starting mongod, please ask for assistance from one of the TAs or the instructor.
+If you are still encountering issues starting mongod, please ask for assistance in `#help-queue` or `#ask-the-class`.
