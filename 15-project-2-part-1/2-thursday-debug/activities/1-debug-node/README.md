@@ -14,4 +14,4 @@
 
 - Navigate to http://localhost:3000
 
-- Play around with the debugger! Fix the add bugs.
+- Play around with the debugger, fix the bugs!
