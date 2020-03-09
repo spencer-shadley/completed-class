@@ -50,9 +50,15 @@
 
   - Practice Test Driven Development (TDD)!
 
-- Must have code coverage of at least 80%
+- You must include code coverage in your project
 
-  - Code coverage must be linked in your Continuous Integration (example, using `coveralls`)
+  - It is required to have a `test:coverage` script that outputs the coverage percentage
+
+    - [Here are instructions](../3-saturday-code-coverage/activities/code-coverage/README.md) on how to add this
+
+  - Code coverage is normally part of your Continuous Integration (example, using `coveralls`.) It is recommended to add code coverage to Travis.
+
+  - 80% should be considered a low bar for test coverage but there is no required percentage for this project
 
 ## Presentation Requirements
 
