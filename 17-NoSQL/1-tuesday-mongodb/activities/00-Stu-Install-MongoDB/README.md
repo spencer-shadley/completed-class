@@ -1,5 +1,17 @@
 # Instructions
 
-Install MongoDB following [these instructions](../../../supplemental/Installing-MongoDB.md)
+## Install MongoDB
 
-Verify you are able to start MongoDB by running `mongod` in your terminal
+- Install MongoDB following [these instructions](../../../supplemental/Installing-MongoDB.md)
+
+- Verify you are able to start MongoDB by running `mongod` in your terminal
+
+## Install Robo 3T
+
+- Go to [the Mongo 3T install page](https://robomongo.org/download)
+
+- Download, install and open "Robo 3T (formerly Robomongo)"
+
+- Optionally download, install and open "Studio 3T" if you want a more advanced studio (there is a 30-day free trial)
+
+- On a mac if you are blocked from opening the app because it's from an "unidentified developer", ctrl+right_click on the item in Finder and then click open
