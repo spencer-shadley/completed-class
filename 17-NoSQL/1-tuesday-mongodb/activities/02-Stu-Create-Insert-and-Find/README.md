@@ -4,25 +4,31 @@
 
 - Use the command line to create a classroom database.
 
-- Insert entries for yourself and the people in your row in a `students` collection.
+- Insert entries for yourself and a few other classmates in a `students` collection.
 
 - Each document should have:
 
   - A field of `name` with the person's name.
 
-  - A field of `rownumber` which will contain the row number that they are in.
+  - A field of `os` which will contain the Operating System of the computer they are using: 'Win', 'Win', etc
 
-  - A field of `os` which will contain the Operating System of the computer they are using: 'Mac', 'Win', etc
+  - A field of `favoriteColor` to represent that person's favorite color
 
   - A field of `hobbies` with an array of the hobbies the person likes to do.
 
 - Use find commands to get:
 
-  - A list of everyone in your row.
+  - Everyone
 
-  - An entry for a single person.
+  - A person by name
 
-  - The entries for all the Mac users in your row.
+  - All Windows users
+
+  - A person who uses windows and has a favorite color of blue
+
+- Update the "name" field for a person to instead use a nickname
+
+- Delete all mac users
 
 ## 💡 Hint(s)
 
