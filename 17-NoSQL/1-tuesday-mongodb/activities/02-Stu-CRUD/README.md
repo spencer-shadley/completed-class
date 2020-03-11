@@ -26,14 +26,22 @@
 
   - A person who uses windows and has a favorite color of blue
 
-- Update the "name" field for a person to instead use a nickname
-
-- Delete all mac users
+* Delete all mac users
 
 ## 💡 Hint(s)
 
 - Use the [Mongo guides](https://docs.mongodb.com/guides/) if you are stuck.
 
-## 🏆 Bonus
+## 🏆 Bonus - Operators
 
-- If you finish early, check out the MongoDB documentation and figure out how to find users by an entry in an array.
+If you finish early, check out the MongoDB documentation and figure out how to:
+
+- find users by an entry in an array
+
+- Update the "name" field for a person to instead use a nickname
+
+- Add a new hobby for a student
+
+- Drop the students collection
+
+- Drop the database
