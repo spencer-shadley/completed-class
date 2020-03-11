@@ -1,8 +1,84 @@
 # Creating, Inserting and Finding in MongoDB
 
-- Start up a new database by switching to it.
+## Setup
 
-- NOTE: The db does not exist until you create a collection:
+- run the mongod daemon with `mongod`
+
+- start a mongo shell with `mongo`
+
+- see the current database with `db`
+
+- switch to a new "farm" database with `use farm`
+
+- see all databases with `show dbs`
+
+  - note: databases aren't created until a document is inserted
+
+## C - Create
+
+Create a document with:
+
+```js
+db.animals.insert({
+  name: 'spot',
+  species: 'cow',
+  food: ['grass', 'hay']
+});
+```
+
+Note: multiple lines are supported directly in the shell. Alternatively you can copy/paste from an editor like VS Code.
+
+## R - Read
+
+### Find all documents:
+
+```js
+db.animals.find();
+```
+
+#### Make the documents pretty
+
+```js
+db.animals.find().pretty();
+```
+
+### Find a subset of documents
+
+```js
+db.animals.find({ species: 'cow' });
+```
+
+### Find a specific document
+
+```js
+db.animals.find({ _id: ObjectId('5e685941bb03799bd1c366e7') });
+```
+
+## U - Update
+
+### Change existing property
+
+```js
+db.animals.update({ name: 'spot' }, { name: 'Speckle' });
+```
+
+## D - Delete
+
+### Delete a document
+
+```js
+db.animals.remove({ name: 'Speckle' });
+```
+
+### Delete a collection
+
+```js
+db.animals.drop();
+```
+
+---
+
+# Bonus Example
 
 ```sql
 use lessondb
