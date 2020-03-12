@@ -39,6 +39,7 @@ Below are the groups for project 2. Please let me (Spencer) know if you have any
    - Remy (Ravenclosure)
 
 1. group
+
    - Randy (Gryffindom)
    - Issouf (Gryffindom)
    - Ari (Githubblepuff)
