@@ -15,7 +15,7 @@ Reflect on what you have achieved so far in this course and answer the following
 1. What are your goals for the remainder of the course?
 2. What do you hope to accomplish before the course completes?
 3. What do you hope to accomplish after the course completes?
-4. What do you plan to do to ensure you accomplish these goals?
+4. What strategies will you employ to ensure you accomplish these goals?
 5. How do these plans and goals differ from the first half of the course?
 
 ## Optional - Part 2: Sequelize - Reverse Engineering Code
