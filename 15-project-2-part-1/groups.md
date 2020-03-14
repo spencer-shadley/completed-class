@@ -1,4 +1,4 @@
-Below are the groups for project 2. Please let me (Spencer) know if you have any questions, concerns or requests.
+# Groups
 
 1. group
 
@@ -44,3 +44,32 @@ Below are the groups for project 2. Please let me (Spencer) know if you have any
    - Issouf (Gryffindom)
    - Ari (Githubblepuff)
    - Vaughn (Githubblepuff)
+
+# Presentation Times
+
+| Start Time | End Time | Activity/Presenter |
+| ---------- | -------- | ------------------ |
+| 10:00      | 10:10    | Setup              |
+| 10:10      | 10:20    | Teresa             |
+| 10:20      | 10:25    | Q&A                |
+| 10:25      | 10:30    | Setup              |
+| 10:30      | 10:40    | Frantz             |
+| 10:40      | 10:45    | Q&A                |
+| 10:45      | 10:50    | Setup              |
+| 10:50      | 11:00    | Marie              |
+| 11:00      | 11:05    | Q&A                |
+| 11:05      | 11:10    | Setup              |
+| 11:10      | 11:20    | Rachel             |
+| 11:20      | 11:25    | Q&A                |
+| 11:25      | 11:30    | Setup              |
+| 11:30      | 11:40    | Ari                |
+| 11:40      | 11:45    | Q&A                |
+| 11:45      | 11:50    | Setup              |
+| 11:50      | 12:00    | Ben                |
+| 12:00      | 12:05    | Q&A                |
+| 12:05      | 12:10    | Setup              |
+| 12:10      | 12:20    | Justin/Ryan/Lloyd  |
+| 12:20      | 12:25    | Q&A                |
+| 12:25      | 12:30    | Break!             |
+| 12:30      | 12:45    | Retrospective      |
+| 12:45      | 1:00     | Award Ceremony!    |
