@@ -19,7 +19,7 @@
 Create a document with:
 
 ```js
-db.animals.insert({
+db.animals.insertOne({
   name: 'spot',
   species: 'cow',
   food: ['grass', 'hay']
@@ -50,8 +50,10 @@ db.animals.find({ species: 'cow' });
 
 ### Find a specific document
 
+Note: change the contents of `ObjectId` to whatever id was generated earlier
+
 ```js
-db.animals.find({ _id: ObjectId('5e685941bb03799bd1c366e7') });
+db.animals.find({ _id: ObjectId('5e6c4a587ee7c1248fecffe9') });
 ```
 
 ## U - Update
@@ -59,7 +61,14 @@ db.animals.find({ _id: ObjectId('5e685941bb03799bd1c366e7') });
 ### Change existing property
 
 ```js
-db.animals.update({ name: 'spot' }, { name: 'Speckle' });
+db.animals.update(
+  { name: 'spot' },
+  {
+    name: 'Speckle',
+    species: 'cow',
+    food: ['grass', 'hay']
+  }
+);
 ```
 
 ## D - Delete
@@ -97,7 +106,7 @@ db;
 - ALSO, TAKE NOTE: the contents of the insert are basically a JS object, and include an array:
 
 ```js
-db.places.insert({
+db.places.insertOne({
   continent: 'Africa',
   country: 'Morocco',
   majorcities: ['Casablanca', 'Fez', 'Marrakech']
