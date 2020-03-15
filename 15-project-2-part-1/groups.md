@@ -10,45 +10,45 @@
 
 # Groups
 
-1. group
+1. Rinqydink Arcade
 
    - George (Githubblepuff)
    - Frantz (Githubblepuff)
    - Duc (Gryffindom)
 
-1. group
+1. Recipe-Saver
 
    - Esther (Gryffindom)
    - Lisa (Gryffindom)
    - Marie (Ravenclosure)
    - Spencer (Ravenclosure)
 
-1. group
+1. Mothra
 
    - Richard (Ravenclosure)
    - Kaitlyn (Ravenclosure)
    - Rachel (Gryffindom)
    - Max (Gryffindom)
 
-1. group
+1. JLR Shoes CRM
 
    - Justin (Githubblepuff)
    - Ryan (Githubblepuff)
    - Lloyd (Slytherindentyourcode)
 
-1. group
+1. Sushi-Me
 
    - Teresa (Githubblepuff)
    - Jared (Gryffindom)
    - Andrea (Gryffindom)
 
-1. group
+1. Virus Wars
 
    - Owen (Slytherindentyourcode)
    - Ben (Slytherindentyourcode)
    - Remy (Ravenclosure)
 
-1. group
+1. D&D Character Generator
 
    - Randy (Gryffindom)
    - Issouf (Gryffindom)
