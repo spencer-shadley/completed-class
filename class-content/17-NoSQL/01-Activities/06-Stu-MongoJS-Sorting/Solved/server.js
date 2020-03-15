@@ -5,10 +5,10 @@ const mongojs = require(`mongojs`);
 
 const app = express();
 
-const databaseUrl = `zoo`;
+const dbName = `farm`;
 const collections = [`animals`];
 
-const db = mongojs(databaseUrl, collections);
+const db = mongojs(dbName, collections);
 
 db.on(`error`, error => {
   console.log(`Database Error:`, error);
@@ -48,6 +48,36 @@ app.get(`/weight`, (req, res) => {
   });
 });
 
+app.get(`/bonus/name/:sort`, (req, res) => {
+  db.animals.find().sort({ name: parseInt(req.params.sort) }, (err, found) => {
+    if (err) {
+      console.error(err);
+    } else {
+      res.json(found);
+    }
+  });
+});
+
+app.get(`/bonus/weight/:sort`, (req, res) => {
+  db.animals.find().sort({ weight: parseInt(req.params.sort) }, (err, found) => {
+    if (err) {
+      console.error(err);
+    } else {
+      res.json(found);
+    }
+  });
+});
+
+app.get(`/bonus/heaviest`, (req, res) => {
+  db.animals.find().sort({ weight: -1 }, (err, found) => {
+    if (err) {
+      console.error(err);
+    } else {
+      res.json(found[0]);
+    }
+  });
+});
+
 app.listen(3000, () => {
-  console.log(`App running on port 3000!`);
+  console.log(`http://localhost:3000`);
 });
