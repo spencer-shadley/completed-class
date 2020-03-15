@@ -4,14 +4,34 @@
 
 ## Instructions
 
-- Drop your classroom collection and create a new one.
+### Create a connection
 
-- In a new classroom collection, re-enter your `name`, `os`, and `hobby` info array.
+- Open Robo 3T
 
-  - This should be entered using the `right-click -> Insert Object` method.
+- Click the "Create" button (which looks like a link for some reason)
 
-- Next, Slack out your `name`, `os` and `hobbies` into the classroom chat.
+  - Rename the connection "local"
 
-- As students enter their BSON info into slack, insert it into your database.
+  - Accept the default server (localhost) and port (27017)
 
-- By the end of the exercise, you should have every student's information in your classroom collection.
+  - Click "Save"
+
+- Click "Connect"
+
+### Edit a document
+
+- On the left, expand a database, "Collections" and then click on a collection
+
+- Right click one of the documents in the main pane and select "Edit Document"
+
+  - Change a value and click "Save"
+
+### Insert a document
+
+- Right click the main pane
+
+- Select "Insert document"
+
+- Write a new document
+
+- Click "Save"
