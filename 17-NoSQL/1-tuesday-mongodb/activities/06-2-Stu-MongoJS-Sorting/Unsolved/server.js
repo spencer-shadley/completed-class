@@ -5,10 +5,10 @@ const mongojs = require(`mongojs`);
 
 const app = express();
 
-const databaseUrl = `zoo`;
+const dbName = `farm`;
 const collections = [`animals`];
 
-const db = mongojs(databaseUrl, collections);
+const db = mongojs(dbName, collections);
 
 db.on(`error`, error => {
   console.log(`Database Error:`, error);
@@ -36,5 +36,5 @@ app.get(`/all`, (req, res) => {
 
 // Set the app to listen on port 3000
 app.listen(3000, () => {
-  console.log(`App running on port 3000!`);
+  console.log(`App running on port http://localhost:3000`);
 });
