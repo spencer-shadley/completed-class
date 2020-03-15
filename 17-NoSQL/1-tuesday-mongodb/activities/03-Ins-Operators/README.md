@@ -33,91 +33,60 @@ db.animals.insertMany([
 
 ## Update
 
-**Updating**
+### Updating One Item
 
-- We update data using `db.[COLLECTION_NAME].update()`
+- We update data using `db.<COLLECTION_NAME>.update()`
 
-Update name of a cow
-
-```js
-db.animals.update({ name: 'Speckle' }, { $set: { name: 'Antarctica' } });
-```
+- Update name of a cow
 
 ```js
-db.animals.update({ species: 'cow' }, { $set: { name: 'Antarctica' } });
+db.animals.updateOne({ name: 'Speckle' }, { $set: { name: 'Specks' } });
 ```
 
-- Note that the above will only update the first entry it matches.
+- Notes
+
+  - If we did not use `$set` it would remove all unspecified fields.
+
+  - `update` above will only update the first entry it matches.
 
 - To update multiple entries, you need to add `{multi: true}`
 
+### Updating Many Items
+
 ```js
-db.places.update(
-  { country: 'Morocco' },
-  { $set: { continent: 'Antarctica' } },
-  { multi: true }
+db.animals.updateMany(
+  { species: 'cow' },
+  { $set: { food: ['grass', 'hay', 'pizza'] } }
 );
 ```
 
-- Recall from the earlier demo the structure of our document:
+### Add an item to an array
 
 ```js
-db.places.insertOne({
-  continent: 'Africa',
-  country: 'Morocco',
-  majorcities: ['Casablanca', 'Fez', 'Marrakech']
-});
+db.animals.updateMany({ species: 'cow' }, { $push: { food: 'doughnuts' } });
 ```
 
-- What do you think will happen when you run the following command, even though there is not a `capital` field in the document?
+## Delete
+
+### Delete Documents
 
 ```js
-db.places.update({ country: 'Morocco' }, { $set: { capital: 'Rabat' } });
+db.animals.remove({ species: 'cow' });
 ```
 
-- **Answer**: `$set` will create the field `capital`
-
-- The newly created field can now be updated with the same command:
+### Drop a Collection
 
 ```js
-db.places.update({ country: 'Morocco' }, { $set: { capital: 'RABAT' } });
+db.animals.drop();
 ```
 
-- We can update the values in an array with `$push`:
-
-```js
-db.places.update({ country: 'Morocco' }, { $push: { majorcities: 'Agadir' } });
-```
-
-**Deleting**
-
-- We delete an entry with `db.[COLLECTION_NAME].remove()`
-
-```js
-db.places.remove({ country: 'Morocco' });
-```
-
-- We can also empty a collection with `db.[COLLECTION_NAME].remove()`
-
-```js
-db.places.remove({});
-```
-
-**Dropping**
-
-- We drop a collection with `db.[COLLECTION_NAME].drop()`
-
-```js
-db.places.drop();
-```
-
-- To drop a database:
+### Drop a Database
 
 ```js
 db.dropDatabase();
 ```
 
-## Bonus Example
+## Bonus Examples
 
 Make sure you are using the database, `lessondb`, that we created earlier.
 
