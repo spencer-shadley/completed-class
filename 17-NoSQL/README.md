@@ -6,7 +6,7 @@ In the late 90s and early 2000s, developers began to explore database options th
 
 The structure of a NoSQL database is something other than a table. There are several different types of NoSQL databases, such as key-value and graph. In this unit we will learn MongoDB, a document-oriented NoSQL database. MongoDB documents correspond to a row, or record, in SQL, but unlike rows, documents are analogous to JSON objects. You can see why MongoDB is a popular choice for Node.js developers!
 
-Rather than object-relational mapping, we will implement object-_document_ mapping, or ODM, with Mongoose.js.
+Rather than object-relational mapping, we will implement object-_document_-mapping, or ODM, with Mongoose.js.
 
 ## Key Topics
 
