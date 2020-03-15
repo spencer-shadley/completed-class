@@ -144,6 +144,9 @@ actionBtn.addEventListener(`click`, e => {
       .then(data => {
         console.log(data);
 
+        const updateTitle = document.querySelector(`span[data-id="${dataId}"]`);
+        updateTitle.innerText = document.getElementById(`title`).value;
+
         resetTitleAndNote();
         const newButton = `<button id='make-new'>Submit</button>`;
         actionBtn.innerHTML = newButton;
