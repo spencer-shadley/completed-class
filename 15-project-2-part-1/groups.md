@@ -1,3 +1,13 @@
+# Awards
+
+| Award                          | Group                   |
+| ------------------------------ | ----------------------- |
+| Best Presentation              | Sushi-Me                |
+| Best UX                        | Rinqydink Arcade        |
+| People's Choice - Best Overall | Rinqydink Arcade        |
+| Most Technical                 | JLR Shoes CRM           |
+| Best Collaboration             | D&D Character Generator |
+
 # Groups
 
 1. group
