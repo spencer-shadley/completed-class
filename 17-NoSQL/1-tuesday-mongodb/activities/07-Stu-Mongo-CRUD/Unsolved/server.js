@@ -13,10 +13,10 @@ app.use(express.json());
 
 app.use(express.static(`public`));
 
-const databaseUrl = `notetaker`;
+const dbName = `notetaker`;
 const collections = [`notes`];
 
-const db = mongojs(databaseUrl, collections);
+const db = mongojs(dbName, collections);
 
 db.on(`error`, error => {
   console.log(`Database Error:`, error);
@@ -60,5 +60,5 @@ app.get(`/`, (req, res) => {
 
 // Listen on port 3000
 app.listen(3000, () => {
-  console.log(`App running on port 3000!`);
+  console.log(`App running on port http://localhost:3000`);
 });
