@@ -51,13 +51,7 @@ db.animals.findMany({ food: { $in: ['grass', 'peas'] } });
 db.animals.updateOne({ name: 'Speckle' }, { $set: { name: 'Specks' } });
 ```
 
-- Notes
-
-  - If we did not use `$set` it would remove all unspecified fields.
-
-  - `update` above will only update the first entry it matches.
-
-- To update multiple entries, you need to add `{multi: true}`
+- Note if we did not use `$set` it would remove all unspecified fields.
 
 ### Updating Many Items
 
