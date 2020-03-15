@@ -12,6 +12,6 @@
 
 - Download, install and open "Robo 3T (formerly Robomongo)"
 
-- Optionally download, install and open "Studio 3T" if you want a more advanced studio (there is a 30-day free trial)
+- "Studio 3T" is a paid but more advanced studio. We only need Robo 3T.
 
 - On a mac if you are blocked from opening the app because it's from an "unidentified developer", ctrl+right_click on the item in Finder and then click open
