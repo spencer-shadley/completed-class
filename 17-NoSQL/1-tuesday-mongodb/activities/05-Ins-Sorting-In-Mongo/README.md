@@ -8,25 +8,51 @@
 
 - NOTE: Remember to add `.pretty()` afterwards so the results are readable!
 
-- Create a new db named `zoo` and insert at least 5 animals with the following attributes:
+- Use our `farm` db and `animals` collection to insert at least 5 animals with the following attributes:
 
-  - `numLegs` - a integer that points to the number of legs.
+  - `age`
 
-  - `class` - a string that points to the animal's class ("reptile", "mammal" etc).
+  - `weight`
 
-  - `weight` - a integer that points to the animals weight.
+  - `name`
 
-  - `name` - a string that points to the animal's name.
+  - `species`
 
 - Example:
 
   ```js
-  {
-    "name": "Panda",
-    "numLegs": 4,
-    "class": "mammal",
-    "weight": 254
-  }
+  db.animals.insertMany([
+    {
+      name: 'Oinkers',
+      species: 'pig',
+      age: 4,
+      weight: 500
+    },
+    {
+      name: 'Fluffy',
+      species: 'dog',
+      age: 13,
+      weight: 42
+    },
+    {
+      name: 'Roxy',
+      species: 'dog',
+      age: 12,
+      weight: 46
+    },
+    {
+      name: 'Mary',
+      species: 'longhorn',
+      age: 8,
+      weight: 1200
+    },
+    {
+      name: 'Max',
+      species: 'longhorn',
+      age: 1,
+      weight: 400
+    }
+  ]);
   ```
 
 - Using the animals collection that you created:
@@ -36,20 +62,47 @@
 - The id contains a timestamp, so sorting by id will sort by when they were entered to the database.
 
 ```js
-db.animals.find().sort({ _id: 1 });
-db.animals.find().sort({ _id: -1 });
+db.animals
+  .find()
+  .sort({ _id: 1 })
+  .pretty();
 ```
 
-## Sort by an integer - numLegs:
-
 ```js
-db.animals.find().sort({ numLegs: 1 });
-db.animals.find().sort({ numLegs: -1 });
+db.animals
+  .find()
+  .sort({ _id: -1 })
+  .pretty();
 ```
 
-## Sort by a string - class:
+## Sort by an integer - weight:
 
 ```js
-db.animals.find().sort({ class: 1 });
-db.animals.find().sort({ class: -1 });
+db.animals
+  .find()
+  .sort({ weight: 1 })
+  .pretty();
+```
+
+```js
+db.animals
+  .find()
+  .sort({ weight: -1 })
+  .pretty();
+```
+
+## Sort by a string - species:
+
+```js
+db.animals
+  .find()
+  .sort({ species: 1 })
+  .pretty();
+```
+
+```js
+db.animals
+  .find()
+  .sort({ species: -1 })
+  .pretty();
 ```
