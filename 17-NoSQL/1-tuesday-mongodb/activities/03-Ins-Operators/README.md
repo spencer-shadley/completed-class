@@ -9,6 +9,8 @@ use farm
 
 ## Create
 
+### Insert Many Documents
+
 Let's create a few animals to update using `insertMany`.
 
 ```js
@@ -31,9 +33,15 @@ db.animals.insertMany([
 ]);
 ```
 
+### Find items inside an arry with the in operator
+
+```js
+db.animals.findMany({ food: { $in: ['grass', 'peas'] } });
+```
+
 ## Update
 
-### Updating One Item
+### Updating One Item with the set operator
 
 - We update data using `db.<COLLECTION_NAME>.update()`
 
@@ -60,7 +68,7 @@ db.animals.updateMany(
 );
 ```
 
-### Add an item to an array
+### Add an item to an array with the push operator
 
 ```js
 db.animals.updateMany({ species: 'cow' }, { $push: { food: 'doughnuts' } });
@@ -86,7 +94,12 @@ db.animals.drop();
 db.dropDatabase();
 ```
 
-## Bonus Examples
+## Resources
+
+- https://docs.mongodb.com/manual/reference/operator/query/
+- https://docs.mongodb.com/manual/reference/operator/update/
+
+# Bonus Examples
 
 Make sure you are using the database, `lessondb`, that we created earlier.
 
