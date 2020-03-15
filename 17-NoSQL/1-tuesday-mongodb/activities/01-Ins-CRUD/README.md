@@ -53,7 +53,7 @@ db.animals.find({ species: 'cow' });
 Note: change the contents of `ObjectId` to whatever id was generated earlier
 
 ```js
-db.animals.find({ _id: ObjectId('5e6c4a587ee7c1248fecffe9') });
+db.animals.findOne({ _id: ObjectId('5e6c4a587ee7c1248fecffe9') });
 ```
 
 ## U - Update
