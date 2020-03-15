@@ -32,7 +32,7 @@ function newTodoSnippet(res) {
     const dataId = res[i]._id;
     const title = res[i].title;
     const todoList = document.getElementById(`results`);
-    snippet = `
+    const snippet = `
       <p class="data-entry">
       <span class="dataTitle" data-id=${dataId}>${title}</span>
       <span onClick="delete" class="delete" data-id=${dataId}>x</span>;
@@ -85,7 +85,7 @@ clear.addEventListener(`click`, e => {
 
 results.addEventListener(`click`, e => {
   if (e.target.matches(`.delete`)) {
-    element = e.target;
+    const element = e.target;
     const dataId = element.getAttribute(`data-id`);
     fetch(`/delete/${dataId}`, {
       method: `delete`
@@ -107,7 +107,7 @@ results.addEventListener(`click`, e => {
         console.log(`Fetch Error :-S`, err);
       });
   } else if (e.target.matches(`.dataTitle`)) {
-    element = e.target;
+    const element = e.target;
     const dataId = element.getAttribute(`data-id`);
     status.innerText = `Editing`;
     fetch(`/find/${dataId}`, { method: `get` })
@@ -125,7 +125,7 @@ results.addEventListener(`click`, e => {
 
 actionBtn.addEventListener(`click`, e => {
   if (e.target.matches(`#updater`)) {
-    updateBtnEl = e.target;
+    const updateBtnEl = e.target;
     const dataId = updateBtnEl.getAttribute(`data-id`);
     const title = document.getElementById(`title`).value;
     const note = document.getElementById(`note`).value;
@@ -144,7 +144,9 @@ actionBtn.addEventListener(`click`, e => {
       .then(data => {
         console.log(data);
 
-        element.innerText = title;
+        const updateTitle = document.querySelector(`span[data-id="${dataId}"]`);
+        updateTitle.innerText = document.getElementById(`title`).value;
+
         resetTitleAndNote();
         const newButton = `<button id='make-new'>Submit</button>`;
         actionBtn.innerHTML = newButton;
@@ -154,7 +156,6 @@ actionBtn.addEventListener(`click`, e => {
         console.log(`Fetch Error :-S`, err);
       });
   } else if (e.target.matches(`#make-new`)) {
-    element = e.target;
     fetch(`/submit`, {
       method: `post`,
       headers: {

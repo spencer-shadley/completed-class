@@ -30,7 +30,7 @@ app.get(`/`, (req, res) => {
 app.post(`/submit`, (req, res) => {
   console.log(req.body);
 
-  db.notes.insert(req.body, (error, data) => {
+  db.notes.insertOne(req.body, (error, data) => {
     if (error) {
       res.send(error);
     } else {
@@ -65,7 +65,7 @@ app.get(`/find/:id`, (req, res) => {
 });
 
 app.post(`/update/:id`, (req, res) => {
-  db.notes.update(
+  db.notes.updateOne(
     {
       _id: mongojs.ObjectId(req.params.id)
     },
@@ -112,5 +112,5 @@ app.delete(`/clearall`, (req, res) => {
 });
 
 app.listen(3000, () => {
-  console.log(`App running on port 3000!`);
+  console.log(`App running on port http://localhost:3000`);
 });
