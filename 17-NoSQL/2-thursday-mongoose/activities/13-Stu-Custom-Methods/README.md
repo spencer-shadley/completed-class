@@ -8,7 +8,7 @@
 
   - `lastUpdatedDate`: sets the current user's `lastUpdated` property to `Date.now()`
 
-- When you are finished use your new custom methods in a `POST` request.
+- When you are finished use your new custom methods in the given `POST` request.
 
 ## 💡 Hint(s)
 
