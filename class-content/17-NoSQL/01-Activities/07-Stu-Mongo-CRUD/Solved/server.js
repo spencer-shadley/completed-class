@@ -14,10 +14,10 @@ app.use(express.json());
 
 app.use(express.static(`public`));
 
-const databaseUrl = `notetaker`;
+const dbName = `notetaker`;
 const collections = [`notes`];
 
-const db = mongojs(databaseUrl, collections);
+const db = mongojs(dbName, collections);
 
 db.on(`error`, error => {
   console.log(`Database Error:`, error);

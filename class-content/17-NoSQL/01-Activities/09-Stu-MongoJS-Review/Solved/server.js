@@ -4,9 +4,9 @@ const express = require(`express`);
 const mongojs = require(`mongojs`);
 const logger = require(`morgan`);
 
-const databaseUrl = `warmup`;
+const dbName = `warmup`;
 const collections = [`books`];
-const db = mongojs(databaseUrl, collections);
+const db = mongojs(dbName, collections);
 
 const app = express();
 
