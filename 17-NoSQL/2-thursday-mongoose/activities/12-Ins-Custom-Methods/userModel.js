@@ -36,7 +36,7 @@ const UserSchema = new Schema({
 });
 
 UserSchema.methods.coolifier = function() {
-  this.username = `${this.username}...the Coolest!`;
+  this.username = `${this.username} is the coolest!`;
   return this.username;
 };
 
@@ -45,6 +45,4 @@ UserSchema.methods.makeCool = function() {
   return this.isCool;
 };
 
-const User = mongoose.model(`User`, UserSchema);
-
-module.exports = User;
+module.exports = mongoose.model(`User`, UserSchema);
