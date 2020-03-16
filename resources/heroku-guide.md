@@ -53,7 +53,7 @@ To begin with, you'll need a git repository initialized locally with your basic 
      "description": "Helps you find the characters you are looking for",
      "main": "server.js",
      "dependencies": {
-       "express": "^4.16.3"
+       "express": "^4.17.1"
      },
      "scripts": {
        "start": "node server.js"
