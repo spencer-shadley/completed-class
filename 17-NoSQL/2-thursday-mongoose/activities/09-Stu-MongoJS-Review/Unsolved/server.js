@@ -39,7 +39,7 @@ app.post(`/submit`, ({ body }, res) => {
   // If we want the object to have a boolean value of false,
   // we have to do it here, because the ajax post will convert it
   // to a string instead of a boolean
-  book.read = false;
+  book.hasRead = false;
 });
 
 // Find all books marked as read
