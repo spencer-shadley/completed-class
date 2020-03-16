@@ -7,3 +7,7 @@
 ## 💡 Hint(s)
 
 - Check out the `Note.js` and `User.js` models to see how the schemas there make the populate method possible.
+
+## Bonus
+
+- Add an option to allow changing the user
