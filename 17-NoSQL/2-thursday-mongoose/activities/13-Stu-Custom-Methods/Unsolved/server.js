@@ -48,5 +48,5 @@ app.post(`/submit`, ({ body }, res) => {
 
 // Start the server
 app.listen(PORT, () => {
-  console.log(`App running on port ${PORT}!`);
+  console.log(`App running on port http://localhost:${PORT}`);
 });
