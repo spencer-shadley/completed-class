@@ -16,7 +16,9 @@ app.use(express.json());
 app.use(express.static(`public`));
 
 mongoose.connect(process.env.MONGODB_URI || `mongodb://localhost/userdb`, {
-  useNewUrlParser: true
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true
 });
 
 app.post(`/submit`, ({ body }, res) => {
