@@ -1,7 +1,7 @@
 # Pre-class Drill
 
-- Signup for a leetcode account at https://leetcode.com
+- Login or signup for a leetcode account at https://leetcode.com
 
-- Solve [this problem](https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/)
+- Solve [this problem](https://leetcode.com/problems/split-a-string-in-balanced-strings/)
 
 - Note: Only one test is run until you hit "Submit" for your solution
