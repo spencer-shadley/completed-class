@@ -105,6 +105,31 @@ function smallerNumbersThanCurrentSorted(nums) {
   return numLessThans.map(numObj => numObj.numFoundLessThan);
 }
 
+/**
+ * @param {number[]} nums
+ * @return {number[]}
+ * @description
+ * after sorting, the index is the number of elements which are less than - excluding duplicate items
+ * 1. sort the array
+ * 2. check that the value hasn't already been considered
+ * 2.1. if it has not been considered, the current index is the number of items less than
+ * 2.2 if it has been considered, skip it - it is not less than itself
+ * @summary O(NlogN)
+ */
+function smallerNumbersThanCurrentSortedAlt(nums) {
+  const sortedNums = nums.slice(0).sort(); // O(NlogN) (basically)
+  const lessThanMap = {};
+  for (let i = 0; i < sortedNums.length; ++i) { // O(N)
+    const currentValue = sortedNums[i];
+    if (!lessThanMap[currentValue]) {
+      lessThanMap[currentValue] = i;
+    }
+  }
+
+  return nums.map(num => lessThanMap[num]); // O(N)
+}
+
 console.log(smallerNumbersThanCurrent([8, 1, 2, 2, 3]));
 console.log(smallerNumbersThanCurrentReducer([8, 1, 2, 2, 3]));
 console.log(smallerNumbersThanCurrentSorted([8, 1, 2, 2, 3]));
+console.log(smallerNumbersThanCurrentSortedAlt([8, 1, 2, 2, 3]));
