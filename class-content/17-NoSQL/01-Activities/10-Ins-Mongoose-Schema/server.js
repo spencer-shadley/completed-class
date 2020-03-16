@@ -7,7 +7,8 @@ const Example = require(`./exampleModel.js`);
 mongoose.connect(process.env.MONGODB_URI || `mongodb://localhost/dbExample`, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  useCreateIndex: true
+  useCreateIndex: true,
+  useFindAndModify: false
 });
 
 const data = {
