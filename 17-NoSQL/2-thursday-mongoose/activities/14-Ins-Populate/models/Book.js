@@ -9,6 +9,4 @@ const BookSchema = new Schema({
   title: String
 });
 
-const Book = mongoose.model(`Book`, BookSchema);
-
-module.exports = Book;
+module.exports = mongoose.model(`Book`, BookSchema);
