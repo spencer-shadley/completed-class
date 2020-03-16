@@ -1,6 +1,6 @@
 # Pre-class Drill
 
-- Login or signup for a leetcode account at https://leetcode.com
+- Signup for a leetcode account at https://leetcode.com
 
 - Solve [this problem](https://leetcode.com/problems/split-a-string-in-balanced-strings/)
 
