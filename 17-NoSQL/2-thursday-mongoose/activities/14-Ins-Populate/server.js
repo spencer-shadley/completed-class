@@ -18,7 +18,8 @@ app.use(express.static(`public`));
 mongoose.connect(process.env.MONGODB_URI || `mongodb://localhost/populate`, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  useCreateIndex: true
+  useCreateIndex: true,
+  useFindAndModify: false
 });
 
 db.Library.create({ name: `Campus Library` })
