@@ -9,11 +9,9 @@
     "mocha": true
   },
   "parserOptions": { "ecmaVersion": 2020 },
-  "globals": {
-    "chai": "readonly"
-  },
-  "plugins": ["chai-friendly"],
-  "extends": ["eslint:recommended", "plugin:chai-friendly/recommended"],
+  "globals": {},
+  "plugins": [],
+  "extends": ["eslint:recommended"],
   "rules": {
     "array-bracket-spacing": "error",
     "array-callback-return": "error",
@@ -23,7 +21,6 @@
     "block-scoped-var": "error",
     "block-spacing": "error",
     "camelcase": "error",
-    "chai-friendly/no-unused-expressions": 2,
     "comma-dangle": ["error", "never"],
     "comma-spacing": ["error", { "before": false, "after": true }],
     "curly": "error",
