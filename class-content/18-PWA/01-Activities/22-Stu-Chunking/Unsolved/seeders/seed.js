@@ -5,7 +5,11 @@ const db = require('../models');
 
 mongoose.connect(
   process.env.MONGODB_URI || 'mongodb://localhost/imageperformance',
-  { useNewUrlParser: true }
+  {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true
+}
 );
 
 const imageSeed = [

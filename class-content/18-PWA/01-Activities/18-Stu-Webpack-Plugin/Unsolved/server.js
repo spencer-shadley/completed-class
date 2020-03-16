@@ -15,7 +15,11 @@ require('./routes/htmlRoutes')(app);
 
 mongoose.connect(
   process.env.MONGODB_URI || 'mongodb://localhost/webpackplugin',
-  { useNewUrlParser: true }
+  {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true
+}
 );
 
 app.listen(PORT, () => {
