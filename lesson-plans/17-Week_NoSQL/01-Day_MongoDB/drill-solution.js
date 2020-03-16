@@ -5,6 +5,9 @@
  * @return {number[]}
  * @description nested loop through the numbers, counting how many times a number is found to be smaller
  * @summary O(N^2) because it loops through all numbers twice
+ *
+ * Runtime: 80 ms, faster than 53.59% of JavaScript online submissions
+ * Memory Usage: 36.3 MB, less than 100.00% of JavaScript online submissions
  */
 function smallerNumbersThanCurrent(nums) {
   const output = [];
@@ -26,6 +29,9 @@ function smallerNumbersThanCurrent(nums) {
  * @return {number[]}
  * @description loop through the numbers, reducing the array to the number of smaller items
  * @summary O(N^2) because we loop through the entire array (O(N)) and for each time we loop we call reduce (O(N))
+ *
+ * Runtime: 88 ms, faster than 23.12% of JavaScript online submissions
+ * Memory Usage: 36.1 MB, less than 100.00% of JavaScript online submissions
  */
 function smallerNumbersThanCurrentReducer(nums) {
   const output = [];
@@ -46,6 +52,11 @@ function smallerNumbersThanCurrentReducer(nums) {
  * @return {number[]}
  * @description slowly manipulate the array using sorting and mapping, building towards a final solution
  * @summary O(NlogN) because the most expensive operation is sorting, which is NlogN
+ *
+ * This is significantly faster than the above solutions for large inputs, although likely slower for smaller inputs.
+ *
+ * Runtime: 84 ms, faster than 34.82% of JavaScript online submissions
+ * Memory Usage: 37.6 MB, less than 100.00% of JavaScript online submissions
  */
 function smallerNumbersThanCurrentSorted(nums) {
   // each section is annotated as follows assuming an input of [8,1,2,2,3]:
@@ -108,38 +119,16 @@ function smallerNumbersThanCurrentSorted(nums) {
 /**
  * @param {number[]} nums
  * @return {number[]}
- * @description
- * after sorting, the index is the number of elements which are less than - excluding duplicate items
- * 1. sort the array
- * 2. check that the value hasn't already been considered
- * 2.1. if it has not been considered, the current index is the number of items less than
- * 2.2 if it has been considered, skip it - it is not less than itself
+ * @description Produce a map of the counts
  * @summary O(NlogN)
- */
-function smallerNumbersThanCurrentSortedAlt(nums) {
-  const sortedNums = nums.slice(0).sort(); // O(NlogN) (basically)
-  const lessThanMap = {};
-  for (let i = 0; i < sortedNums.length; ++i) { // O(N)
-    const currentValue = sortedNums[i];
-    if (!lessThanMap[currentValue]) {
-      lessThanMap[currentValue] = i;
-    }
-  }
-
-  return nums.map(num => lessThanMap[num]); // O(N)
-}
-
-/**
- * @param {number[]} nums
- * @return {number[]}
- * @description
- * very similar to @see smallerNumbersThanCurrentSortedAlt but reversing the sort and basing it off
- * of how many items have been inserted into the map
- * @summary O(NlogN)
+ *
+ * Runtime: 72 ms, faster than 87.49% of JavaScript online submissions
+ * Memory Usage: 37.5 MB, less than 100.00% of JavaScript online submissions
  */
 function smallerNumbersThanCurrentSortedAltSimplified(nums) {
   const sortedNums = nums.slice(0).sort((num1, num2) => num2 - num1); // O(NlogN) (basically)
-  const lessThanMap = new Map(sortedNums.map((num, index) => [num, nums.length - index - 1]));
+  const sortedNumsWithCounts = sortedNums.map((num, index) => [num, nums.length - index - 1]); // O(N)
+  const lessThanMap = new Map(sortedNumsWithCounts); // O(N)
   return nums.map(num => lessThanMap.get(num)); // O(N)
 }
 
