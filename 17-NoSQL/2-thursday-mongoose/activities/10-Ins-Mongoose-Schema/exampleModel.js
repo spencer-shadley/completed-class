@@ -36,6 +36,4 @@ const ExampleSchema = new Schema({
   }
 });
 
-const Example = mongoose.model(`Example`, ExampleSchema);
-
-module.exports = Example;
+module.exports = mongoose.model(`Example`, ExampleSchema);
