@@ -22,8 +22,10 @@ db.on(`error`, error => {
 app.post(`/submit`, ({ body }, res) => {
   const book = body;
 
-  book.read = false;
+  book.hasRead = false;
 
+  // save vs insert:
+  // https://stackoverflow.com/questions/16209681/what-is-the-difference-between-save-and-insert-in-mongo-db
   db.books.save(book, (error, saved) => {
     if (error) {
       console.log(error);
@@ -34,7 +36,7 @@ app.post(`/submit`, ({ body }, res) => {
 });
 
 app.get(`/read`, (req, res) => {
-  db.books.find({ read: true }, (error, found) => {
+  db.books.find({ hasRead: true }, (error, found) => {
     if (error) {
       console.log(error);
     } else {
@@ -44,7 +46,7 @@ app.get(`/read`, (req, res) => {
 });
 
 app.get(`/unread`, (req, res) => {
-  db.books.find({ read: false }, (error, found) => {
+  db.books.find({ hasRead: false }, (error, found) => {
     if (error) {
       console.log(error);
     } else {
@@ -54,13 +56,13 @@ app.get(`/unread`, (req, res) => {
 });
 
 app.put(`/markread/:id`, ({ params }, res) => {
-  db.books.update(
+  db.books.updateOne(
     {
       _id: mongojs.ObjectId(params.id)
     },
     {
       $set: {
-        read: true
+        hasRead: true
       }
     },
 
@@ -77,13 +79,13 @@ app.put(`/markread/:id`, ({ params }, res) => {
 });
 
 app.put(`/markunread/:id`, ({ params }, res) => {
-  db.books.update(
+  db.books.updateOne(
     {
       _id: mongojs.ObjectId(params.id)
     },
     {
       $set: {
-        read: false
+        hasRead: false
       }
     },
 
