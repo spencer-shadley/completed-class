@@ -7,12 +7,12 @@ const ExampleSchema = new Schema({
   string: {
     type: String,
     trim: true,
-    required: `String is Required`
+    required: `String is Required` // validator
   },
 
   number: {
     type: Number,
-    unique: true,
+    unique: true, // built-in helper
     required: true
   },
 
@@ -36,4 +36,5 @@ const ExampleSchema = new Schema({
   }
 });
 
+// create and export our model
 module.exports = mongoose.model(`Example`, ExampleSchema);
