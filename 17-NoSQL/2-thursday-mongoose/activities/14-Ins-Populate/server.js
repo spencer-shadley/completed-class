@@ -33,7 +33,12 @@ db.Library.create({ name: `Campus Library` })
 app.post(`/submit`, ({ body }, res) => {
   db.Book.create(body)
     .then(({ _id }) =>
-      db.Library.findOneAndUpdate({}, { $push: { books: _id } }, { new: true })
+      db.Library.findOneAndUpdate(
+        {},
+        { $push: { books: _id } },
+        {
+          new: true // return the document AFTER the update is applied
+        })
     )
     .then(dbLibrary => {
       res.json(dbLibrary);
@@ -63,6 +68,9 @@ app.get(`/library`, (req, res) => {
     });
 });
 
+// https://mongoosejs.com/docs/populate.html
+// "Population is the process of automatically replacing the specified paths in the document
+// with document(s) from other collection(s)."
 app.get(`/populated`, (req, res) => {
   db.Library.find({})
     .populate(`books`)
