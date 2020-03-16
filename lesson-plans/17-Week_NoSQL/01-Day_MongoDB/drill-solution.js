@@ -129,7 +129,22 @@ function smallerNumbersThanCurrentSortedAlt(nums) {
   return nums.map(num => lessThanMap[num]); // O(N)
 }
 
+/**
+ * @param {number[]} nums
+ * @return {number[]}
+ * @description
+ * very similar to @see smallerNumbersThanCurrentSortedAlt but reversing the sort and basing it off
+ * of how many items have been inserted into the map
+ * @summary O(NlogN)
+ */
+function smallerNumbersThanCurrentSortedAltSimplified(nums) {
+  const sortedNums = nums.slice(0).sort((num1, num2) => num2 - num1); // O(NlogN) (basically)
+  const lessThanMap = new Map(sortedNums.map((num, index) => [num, nums.length - index - 1]));
+  return nums.map(num => lessThanMap.get(num)); // O(N)
+}
+
 console.log(smallerNumbersThanCurrent([8, 1, 2, 2, 3]));
 console.log(smallerNumbersThanCurrentReducer([8, 1, 2, 2, 3]));
 console.log(smallerNumbersThanCurrentSorted([8, 1, 2, 2, 3]));
 console.log(smallerNumbersThanCurrentSortedAlt([8, 1, 2, 2, 3]));
+console.log(smallerNumbersThanCurrentSortedAltSimplified([8, 1, 2, 2, 3]));
