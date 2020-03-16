@@ -26,8 +26,8 @@ mongoose.connect(
 
 app.post(`/submit`, ({ body }, res) => {
   const user = new User(body);
-  user.setFullName();
-  user.lastUpdatedDate();
+  user.addFullName();
+  user.addLastUpdatedDate();
 
   User.create(user)
     .then(dbUser => {

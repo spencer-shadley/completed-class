@@ -46,13 +46,13 @@ const UserSchema = new Schema({
   fullName: String
 });
 
-UserSchema.methods.setFullName = function() {
+UserSchema.methods.addFullName = function() {
   this.fullName = `${this.firstName} ${this.lastName}`;
 
   return this.fullName;
 };
 
-UserSchema.methods.lastUpdatedDate = function() {
+UserSchema.methods.addLastUpdatedDate = function() {
   this.lastUpdated = Date.now();
 
   return this.lastUpdated;
