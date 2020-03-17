@@ -23,12 +23,13 @@
         toDoListStore.createIndex('statusIndex', 'status');
       };
 
+      request.onerror = event => console.error(event);
+
       // Opens a transaction, accesses the toDoList objectStore and statusIndex.
       request.onsuccess = () => {
         const db = request.result;
         const transaction = db.transaction(['toDoList'], 'readwrite');
         const toDoListStore = transaction.objectStore('toDoList');
-        const statusIndex = toDoListStore.index('statusIndex');
 
         // Adds data to our objectStore
         toDoListStore.add({ listID: '1', status: 'complete' });
@@ -38,16 +39,14 @@
 
         // Opens a Cursor request and iterates over the documents.
         const getCursorRequest = toDoListStore.openCursor();
-        getCursorRequest.onsuccess = e => {
-          const cursor = e.target.result;
-          if (cursor) {
-            if (cursor.value.status === 'in-progress') {
-              const todo = cursor.value;
-              todo.status = 'complete';
-              cursor.update(todo);
-            }
-            cursor.continue();
+        getCursorRequest.onsuccess = event => {
+          const cursor = event.target.result;
+          if (cursor && cursor.value.status === 'in-progress') {
+            const todo = cursor.value;
+            todo.status = 'complete';
+            cursor.update(todo);
           }
+          cursor.continue();
         };
       };
     </script>
