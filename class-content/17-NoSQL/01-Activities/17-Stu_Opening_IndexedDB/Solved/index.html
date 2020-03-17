@@ -11,9 +11,15 @@
     <script>
       const request = window.indexedDB.open('firstDatabase', 1);
 
+      request.onerror = event => {
+        console.error(event);
+      };
+
       request.onsuccess = event => {
         console.log(request.result.name);
       };
+
+      console.log(request);
     </script>
   </body>
 </html>
