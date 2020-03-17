@@ -31,7 +31,6 @@
         const db = request.result;
         const transaction = db.transaction(['toDoList'], 'readwrite');
         const toDoListStore = transaction.objectStore('toDoList');
-        const statusIndex = toDoListStore.index('statusIndex');
 
         // Adds data to our objectStore
         toDoListStore.add({ listID: '1', status: 'complete' });
@@ -44,6 +43,7 @@
         getRequest.onsuccess = () => console.log(getRequest.result);
 
         // Return an item by index
+        const statusIndex = toDoListStore.index('statusIndex');
         const getRequestIdx = statusIndex.getAll('complete');
         getRequestIdx.onsuccess = () => console.log(getRequestIdx.result);
       };
