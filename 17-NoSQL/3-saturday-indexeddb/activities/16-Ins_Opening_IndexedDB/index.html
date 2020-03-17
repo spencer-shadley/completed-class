@@ -14,6 +14,7 @@
   // We request a database instance and specify the database name and version number
   const request = indexedDB.open('firstDatabase', 1);
 
+  // This is fired if there was an error in opening the database
   request.onerror = event => {
     console.error(event);
   };
