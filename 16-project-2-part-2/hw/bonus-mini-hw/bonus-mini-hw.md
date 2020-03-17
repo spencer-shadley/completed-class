@@ -1,6 +1,6 @@
 # About
 
-Try out this homework if you'd like to just review and practice all that we've learned so far.
+Try out this optional homework if you'd like to just review and practice all that we've learned so far.
 
 This HW is designed to build a small CRUD application using Node, Express, Handlebars and Sequelize.
 
