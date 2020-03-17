@@ -1,3 +1,15 @@
+function dirReducStack(arr) {
+  let stack = [];
+  for (let i = 0; i < arr.length; ++i) {
+    stack.push(arr[i]);
+    while (isReduceable(stack[stack.length - 1], stack[stack.length - 2])) {
+      stack.pop();
+      stack.pop();
+    }
+  }
+  return stack;
+}
+
 function dirReduc(arr) {
   for(let i = 0; i < arr.length - 1; ++i) {
     let currDirection = arr[i];
@@ -18,4 +30,4 @@ function isReduceable(directionOne, directionTwo) {
     (directionOne === 'WEST' && directionTwo === 'EAST'));
 }
 
-dirReduc(["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"]); // ["WEST"]
+dirReducStack(["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"]); // ["WEST"]
