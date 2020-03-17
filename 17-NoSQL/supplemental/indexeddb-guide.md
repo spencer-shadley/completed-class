@@ -2,11 +2,11 @@
 
 ## About
 
-- Client-side NoSQL storage
+- JavaScript API for client-side NoSQL storage
 
 - Intended for high performance storage with lots of data
 
-  - Web Storage (`localStorage` or `sessionStorage`) is still useful to store small pieces of data
+  - Web Storage (`localStorage` or `sessionStorage`) is still useful to store simple small pieces of data
 
 - Uses an object store - JavaScript Objects, files, arrays, numbers, ...anything that can be cloned
 
