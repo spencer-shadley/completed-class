@@ -87,8 +87,6 @@ app.listen(PORT, () => console.log(`Hello, world!`));
 `server.js`
 
 ```js
-'use strict';
-
 const express = require(`express`);
 
 const apiRoutes = require(`./routes/api-routes.js`);
@@ -107,8 +105,6 @@ app.listen(PORT, () => console.log(`Hello, world!`));
 `routes/html-routes.js`
 
 ```js
-'use strict';
-
 module.exports = app => {
   app.get(`/myhtml`, (req, res) => {
     res.send(`<h1>I'm HTML!</h1>`);
@@ -119,8 +115,6 @@ module.exports = app => {
 `routes/api-routes.js`
 
 ```js
-'use strict';
-
 module.exports = app => {
   app.get(`/myroute`, (req, res) => {
     res.send(`hey, you hit my route!`);
@@ -190,8 +184,6 @@ Full flow: client > server > sequelize > SQL > database
 `models/index.js`
 
 ```js
-'use strict';
-
 const fs = require('fs');
 const path = require('path');
 const Sequelize = require('sequelize');
