@@ -1,14 +1,13 @@
 /* eslint-disable no-unused-vars */
 'use strict';
 
-let db;
 // create a new db request for a "budget" database.
 
-request.onupgradeneeded = function(event) {
+request.onupgradeneeded = event => {
   // create object store called "pending" and set autoIncrement to true
 };
 
-request.onsuccess = function(event) {
+request.onsuccess = event => {
   db = target.result;
 
   if (navigator.onLine) {
@@ -16,7 +15,7 @@ request.onsuccess = function(event) {
   }
 };
 
-request.onerror = function(event) {
+request.onerror = event => {
   // log error here
 };
 

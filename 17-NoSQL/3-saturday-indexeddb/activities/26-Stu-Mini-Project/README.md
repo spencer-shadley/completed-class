@@ -1,41 +1,43 @@
 # Mini Project
 
-In this activity, you will implement IndexedDB so the budget tracker persists data even when the device is not online. When the device finally reconnects, any pending transactions will be synced with the backend api. Write all of your IndexedDB code in `public/db.js`.
+In this activity, you will implement IndexedDB so the budget tracker persists data even when the device is not online. When the device finally reconnects, any pending transactions will be synced with the backend api. Write all of your IndexedDB code in [db.js](./Unsolved/public/db.js).
+
+You can force "offline" in the Chrome Debugger > Network > Click the "Online" dropdown > "Offline"
 
 ## Instructions
 
-- Create a new db request for a `budget` database.
+- Create a new db request for a `budget` database
 
-- Inside `onupgradeneeded`, create an object store called `pending` and set `autoIncrement` to `true`.
+- Inside `onupgradeneeded`, create an object store called `pending` and set `autoIncrement` to `true`
 
 - Inside your `saveRecord()` function:
 
-  - Create a transaction on the `pending` object store with `readwrite` access.
+  - Create a transaction on the `pending` object store with `readwrite` access
 
-  - Access your pending object store.
+  - Access your pending object store
 
-  - Add a record to your store with the `add` method.
+  - Add a record to your store with the `add` method
 
 - Inside the `checkDatabase` function:
 
-  - Open a transaction on your `pending` object store.
+  - Open a transaction on your `pending` object store
 
-  - Access your `pending` object store.
+  - Access your `pending` object store
 
-  - Get all records from store and set to a variable.
+  - Get all records from store and set to a variable
 
 - Inside `getAll.onsuccess`:
 
-  - If successful, open a transaction on your `pending` object store.
+  - If successful, open a transaction on your `pending` object store
 
-  - Access your `pending` object store.
+  - Access your `pending` object store
 
-  - Clear all items in your store.
+  - Clear all items in your store
 
 ## 💡 Hint(s)
 
-- You can use the the comments in `public/db.js` as a guide.
+- You can use the the comments in [db.js](./Unsolved/public/db.js) as a guide
 
 ## 🏆 Bonus
 
-- Create a button that resets all funds to zero in your indexedDB.
+- Create a button that resets all funds to zero in your indexedDB
