@@ -653,6 +653,8 @@ We have everything we need all setup and working together! Now, we just need to 
 
     - You will add any CSS or JavaScript files that the client (browser) will consume here
 
+  - use `express.static` to serve files from `public` automatically
+
 - Add a form so that a user can add their own `TODO`
 
 - Add a checkbox for each TODO that allows toggling the `isComplete` status
@@ -662,8 +664,6 @@ We have everything we need all setup and working together! Now, we just need to 
 - Make it look pretty with CSS
 
 - Hints
-
-  - Use `express.static` to easily serve all of your static client-side assets (CSS, images, client-javascript, etc.)
 
   - We have done all of this in previous activities, feel free to look at other activities as references
 
