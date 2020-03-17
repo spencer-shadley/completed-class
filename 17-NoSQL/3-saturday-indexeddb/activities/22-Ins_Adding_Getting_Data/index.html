@@ -15,15 +15,18 @@
       request.onupgradeneeded = event => {
         const db = event.target.result;
 
-        // Creates an object store with a listID keypath that can be used to query on.
+        // Creates an object store with a listID keypath that can be used to query on
         const toDoListStore = db.createObjectStore('toDoList', {
           keyPath: 'listID'
         });
-        // Creates a statusIndex that we can query on.
+
+        // Creates a statusIndex that we can query on
         toDoListStore.createIndex('statusIndex', 'status');
       };
 
-      // Opens a transaction, accesses the toDoList objectStore and statusIndex.
+      request.onerror = event => console.error(event);
+
+      // Opens a transaction, accesses the toDoList objectStore and statusIndex
       request.onsuccess = () => {
         const db = request.result;
         const transaction = db.transaction(['toDoList'], 'readwrite');
@@ -38,15 +41,11 @@
 
         // Return an item by keyPath
         const getRequest = toDoListStore.get('1');
-        getRequest.onsuccess = () => {
-          console.log(getRequest.result);
-        };
+        getRequest.onsuccess = () => console.log(getRequest.result);
 
         // Return an item by index
         const getRequestIdx = statusIndex.getAll('complete');
-        getRequestIdx.onsuccess = () => {
-          console.log(getRequestIdx.result);
-        };
+        getRequestIdx.onsuccess = () => console.log(getRequestIdx.result);
       };
     </script>
   </body>
