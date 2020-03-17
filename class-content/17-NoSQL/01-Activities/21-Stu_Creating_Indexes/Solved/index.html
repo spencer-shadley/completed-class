@@ -16,7 +16,7 @@
 
         if (!db.objectStoreNames.contains('toDoList')) {
           const objectStore = db.createObjectStore('toDoList');
-          objectStore.createIndex('icebox', 'icebox');
+          objectStore.createIndex('backlog', 'backlog');
           objectStore.createIndex('in-progress', 'in-progress');
           objectStore.createIndex('complete', 'complete');
         }
