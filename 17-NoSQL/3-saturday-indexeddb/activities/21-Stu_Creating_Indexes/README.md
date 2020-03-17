@@ -6,7 +6,7 @@ In this activity, you will create an index on your object store that can be used
 
 - Write code to request an IndexedDB database instance.
 - On success, log the result to your console.
-- Inside the `onupgradeneeded` method, create an object store for you database called `toDoList`. Next, create three indexes for your ToDoList called `icebox`, `inprogress` and `complete`.
+- Inside the `onupgradeneeded` method, create an object store for you database called `toDoList`. Next, create three indexes for your ToDoList called `backlog`, `inprogress` and `complete`.
 
 ## 💡 Hint(s)
 
