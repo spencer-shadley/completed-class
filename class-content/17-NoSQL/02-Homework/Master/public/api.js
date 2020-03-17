@@ -1,17 +1,18 @@
 'use strict';
 
+// directly consumed via global scope in another file
 // eslint-disable-next-line no-unused-vars
 const API = {
   async getLastWorkout() {
-    let res;
     try {
-      res = await fetch(`/api/workouts`);
+      const res = await fetch(`/api/workouts`);
+      const json = await res.json();
+      return json[json.length - 1];
     } catch (err) {
       console.log(err);
+      return err;
     }
-    const json = await res.json();
 
-    return json[json.length - 1];
   },
   async addExercise(data) {
     const id = location.search.split(`=`)[1];
