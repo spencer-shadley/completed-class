@@ -774,9 +774,9 @@ All the architecture, setup and structure is done! We've successfully combined h
 
 - Display additional information in the TODO list, such as the creation date
 
-- Add a `form` which enables a user can add their own `TODO`
+- Add a `form` which enables a user to add their own `TODO`
 
-  - Hint: The front-end will _request_ the back-end to add a new TODO. We already have our JavaScript and routes setup, you just need to connect them once a `form` is submitted.
+  - Hint: The front-end will _request_ the back-end to add a new TODO. We already have our JavaScript and routes setup, you just need to connect them when a `form` is submitted.
 
 - Add a `checkbox` for each TODO that allows toggling the `isComplete` status
 
@@ -790,6 +790,6 @@ All the architecture, setup and structure is done! We've successfully combined h
 
 ## Part 6 - Deploy
 
-Once you've finished (or before you've finished), deploy your app to Heroku.
+Once you've finished (or while developing), deploy your app to Heroku.
 
 Steps to doing this are [here](../../../14-full-stack/supplemental/SequelizeHerokuDeploymentProcess.md)
