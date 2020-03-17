@@ -14,10 +14,15 @@
       request.onupgradeneeded = ({ target }) => {
         const db = target.result;
 
-        const objectStore = db.createObjectStore('toDoList');
-        objectStore.createIndex('timestamp', 'timestamp');
+        if (!db.objectStoreNames.contains('toDoList')) {
+          const objectStore = db.createObjectStore('toDoList');
+          objectStore.createIndex('icebox', 'icebox');
+          objectStore.createIndex('in-progress', 'in-progress');
+          objectStore.createIndex('complete', 'complete');
+        }
       };
 
+      request.onerror = event => console.error(event);
       request.onsuccess = event => console.log(request.result);
     </script>
   </body>
