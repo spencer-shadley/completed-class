@@ -18,9 +18,7 @@
         objectStore.createIndex('timestamp', 'timestamp');
       };
 
-      request.onsuccess = event => {
-        console.log(request.result);
-      };
+      request.onsuccess = event => console.log(request.result);
     </script>
   </body>
 </html>
