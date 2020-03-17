@@ -6,7 +6,6 @@ module.exports = app => {
   app.get(`/view-todos`, (req, res) => {
     db.Todo.findAll({}).then(dbTodos => {
       const sanitizedTodos = dbTodos.map(todo => todo.dataValues);
-      console.log(sanitizedTodos);
       res.render(`todos`, {todos: sanitizedTodos});
     }).catch(err => {
       console.error(err);

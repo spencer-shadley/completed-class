@@ -639,25 +639,146 @@ module.exports = app => {
 </ul>
 ```
 
-## Part 4 - Enable User Interactions
+## Part 4 - Connect the Front-End
 
-We have everything we need all setup and working together! Now, we just need to add fit and finish.
+Now that we have our backend, let's setup the front-end.
 
-- Add other information in the TODO list, such as the creation date
+### Setup
 
-- Create your front-end directory, called `public` on the root
+- Create a `public` directory on the root of your repo. This is a common structure to include any files that should be directly sent as static assets to the client.
 
-  - Inside `public` create an `assets` directory (anything static will go here)
+- There are many things that the `public` directory may contain, let's orgnaize them by type inside an `assets` directory
 
-  - Inside `assets` create a `js` and `css` directory
+  - Create a `js` directory (`public/assets/js`)
 
-    - You will add any CSS or JavaScript files that the client (browser) will consume here
+  - Create a `css` directory (`public/assets/css`)
 
-  - use `express.static` to serve files from `public` automatically
+### Add Client-Side JavaScript
 
-- Add a form so that a user can add their own `TODO`
+- With the file structure setup, let's create a JavaScript file that we want sent to the client and will run in their browser.
 
-- Add a checkbox for each TODO that allows toggling the `isComplete` status
+  - create a file called `logger.js` in `public/assets/js`
+
+  - update `logger.js` to have a `console.log('I logged something!')` inside
+
+- There are going to be a number of files that could be included and it would be tedious to have to individually have to setup routes to send each file. Instead we can use the `static` middleware (`express.static`) to set up these routes for us automatically
+
+  - Add `express.static` to your application, connected to your new `public` directory
+
+  - Test it out - try going to `http://localhost:3000/assets/js/logger.js` in your browser and see if it returns your JavaScript file
+
+- Now that we can retrieve our JavaScript, let's include it in our views
+
+  - Add a reference to this JavaScript asset (using an absolute path) to your handlebars main layout
+
+  - Verify that now when you load your handlebars view it logs to the console in the browser (`http://localhost:3000/view-todos`)
+
+`server.js`
+
+```js
+const express = require(`express`);
+const expressHandlebars = require(`express-handlebars`);
+
+const db = require(`./models`);
+
+const apiRoutes = require(`./routes/api-routes.js`);
+const htmlRoutes = require(`./routes/html-routes.js`);
+
+const PORT = process.env.PORT || 3000;
+
+const app = express();
+
+app.use(express.static(`public`));
+
+app.engine(`handlebars`, expressHandlebars({ defaultLayout: `main` }));
+app.set(`view engine`, `handlebars`);
+
+apiRoutes(app);
+htmlRoutes(app);
+
+db.sequelize.sync({ force: true }).then(() => {
+  app.listen(PORT, () => console.log(`Hello, world!`));
+});
+```
+
+`public/assets/js/logger.js`
+
+```js
+console.log(`I logged something!`);
+```
+
+`views/layouts/main.handlebars`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TODOs</title>
+  </head>
+
+  <body>
+    {{{ body }}}
+
+    <script src="/assets/js/logger.js"></script>
+  </body>
+</html>
+```
+
+### Add CSS
+
+The view still looks pretty ugly, let's add some CSS to make it look better
+
+- Create a file in your `public/assets/css` directory called `style.css`
+
+  - Add a selector for all `li` elements which sets the color to darkcyan because I like that color
+
+- Include `style.css` in your view
+
+  - Update your `main.handlebars` to include your CSS file
+
+- Test it out, try starting your server, creating a few TODOs (via POSTMAN) and going to `http://localhost:3000/view-todos` in your browser
+
+`public/assets/css/style.css`
+
+```css
+li {
+  color: darkcyan;
+}
+```
+
+`views/layouts/main.handlebars`
+
+```css
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>TODOs</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+  {{{ body }}}
+
+  <script src="/assets/js/logger.js"></script>
+</body>
+
+</html>
+```
+
+## Part 5 - Enable User Interactions
+
+All the architecture, setup and structure is done! We've successfully combined handlebars, sequelize, javascript, css and more with an application. It still doesn't do much and is pretty ugly. Let's add some more features and add some fit-and-finish.
+
+- Display additional information in the TODO list, such as the creation date
+
+- Add a `form` which enables a user can add their own `TODO`
+
+  - Hint: The front-end will _request_ the back-end to add a new TODO. We already have our JavaScript and routes setup, you just need to connect them once a `form` is submitted.
+
+- Add a `checkbox` for each TODO that allows toggling the `isComplete` status
 
 - Add a delete button next to each `TODO` to allow deleting the `TODO`
 
@@ -667,7 +788,7 @@ We have everything we need all setup and working together! Now, we just need to 
 
   - We have done all of this in previous activities, feel free to look at other activities as references
 
-## Part 5 - Deploy
+## Part 6 - Deploy
 
 Once you've finished (or before you've finished), deploy your app to Heroku.
 
