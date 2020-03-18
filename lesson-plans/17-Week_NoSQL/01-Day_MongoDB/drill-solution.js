@@ -58,8 +58,7 @@ function balancedStringSplitSmallerSpace(s) {
 /**
  * @param {string} s
  * @return {number}
- * We don't need an output array since all we care about is the length
- * Instead we can track this using a simple counter (numBalancedStrings)
+ * We don't need a full string, just the start letter
  *
  * Runtime: 56 ms, faster than 69.86% of JavaScript online submissions for Split a String in Balanced Strings.
  * Memory Usage: 35.1 MB, less than 100.00% of JavaScript online submissions for Split a String in Balanced Strings.
