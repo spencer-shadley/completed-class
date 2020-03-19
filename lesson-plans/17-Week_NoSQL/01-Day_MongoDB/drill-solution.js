@@ -1,18 +1,19 @@
 'use strict';
 
 /**
+ * Generates the balanced strings and then prints the length of that set of balanced strings
+ *
  * @param {string} s
  * @return {number}
- * Generates the balanced strings and then prints the length of that set of balanced strings
  *
  * Runtime: 56 ms, faster than 69.86% of JavaScript online submissions for Split a String in Balanced Strings.
  * Memory Usage: 37.7 MB, less than 100.00% of JavaScript online submissions for Split a String in Balanced Strings.
  */
 function balancedStringSplit(s) {
-  const output = [];
+  const output = []; // O(N) space
   let currentStr = ``;
   let depthCount = 0;
-  for(const letter of s) {
+  for(const letter of s) { // O(N) time
     currentStr += letter;
     if(currentStr.charAt(0) === letter) {
       ++depthCount;
@@ -28,11 +29,11 @@ function balancedStringSplit(s) {
 }
 
 /**
- * @param {string} s
- * @return {number}
  * We don't need an output array since all we care about is the length
  * Instead we can track this using a simple counter (numBalancedStrings)
  *
+ * @param {string} s
+ * @return {number}
  * Runtime: 48 ms, faster than 95.59% of JavaScript online submissions for Split a String in Balanced Strings.
  * Memory Usage: 37.4 MB, less than 100.00% of JavaScript online submissions for Split a String in Balanced Strings.
  */
@@ -56,10 +57,10 @@ function balancedStringSplitSmallerSpace(s) {
 }
 
 /**
- * @param {string} s
- * @return {number}
  * We don't need a full string, just the start letter
  *
+ * @param {string} s
+ * @return {number}
  * Runtime: 56 ms, faster than 69.86% of JavaScript online submissions for Split a String in Balanced Strings.
  * Memory Usage: 35.1 MB, less than 100.00% of JavaScript online submissions for Split a String in Balanced Strings.
  */
@@ -87,11 +88,11 @@ function balancedStringSplitConstantSpace(s) {
 }
 
 /**
- * @param {string} s
- * @return {number}
  * We don't need to know the start letter either
  * Instead we can track how far "off track" by assigning each letter a positive or negative value
  *
+ * @param {string} s
+ * @return {number}
  * Runtime: 56 ms, faster than 69.86% of JavaScript online submissions for Split a String in Balanced Strings.
  * Memory Usage: 34.9 MB, less than 100.00% of JavaScript online submissions for Split a String in Balanced Strings.
  */
