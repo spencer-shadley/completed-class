@@ -1,3 +1,5 @@
+'use strict'
+
 /* eslint-disable no-multi-spaces */
 /* eslint-disable semi */
 /* eslint-disable max-depth */

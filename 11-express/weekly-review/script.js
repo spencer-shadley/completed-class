@@ -1,3 +1,5 @@
+'use strict'
+
 // Given a string, write a function to check if it is a permutation of a paldindrome.
 // A palindrome is a word or phrase that is the same forwards and backwards.
 // A permutaiton is a rearrangement of letters.

@@ -1,3 +1,5 @@
+'use strict'
+
 // WHAT IS OBJECT DESTRUCTURING????
 
 // BASICS:

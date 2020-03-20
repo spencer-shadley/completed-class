@@ -1,3 +1,5 @@
+'use strict'
+
 const Item = require('./item');
 const Restaurant = require('./restaurant');
 
