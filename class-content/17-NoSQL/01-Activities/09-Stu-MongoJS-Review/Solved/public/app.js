@@ -33,6 +33,7 @@ $(document).on(`click`, `.markread`, function() {
     .parents(`tr`)
     .remove();
   getRead();
+  document.location.reload();
 });
 
 // Click event to mark a book as not read
