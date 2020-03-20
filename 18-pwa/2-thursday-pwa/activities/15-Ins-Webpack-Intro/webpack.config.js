@@ -1,12 +1,12 @@
 'use strict';
 
 const config = {
-  entry: './src/app.js',
+  entry: `./src/app.js`,
   output: {
-    path: __dirname + '/dist',
-    filename: 'bundle.js'
+    path: `${__dirname}/dist`,
+    filename: `bundle.js`
   },
-  mode: 'development'
+  mode: `development`
 };
 
 module.exports = config;

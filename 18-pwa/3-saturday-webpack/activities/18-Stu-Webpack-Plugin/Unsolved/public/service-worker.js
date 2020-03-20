@@ -3,8 +3,18 @@
 const FILES_TO_CACHE = [
   `/`,
   `/index.html`,
+  `/favicon.ico`,
+  `/manifest.webmanifest`,
   `/assets/css/style.css`,
-  `/dist/bundle.js`,
+  `/assets/js/app.js`,
+  `/assets/images/icons/icon-72x72.png`,
+  `/assets/images/icons/icon-96x96.png`,
+  `/assets/images/icons/icon-128x128.png`,
+  `/assets/images/icons/icon-144x144.png`,
+  `/assets/images/icons/icon-152x152.png`,
+  `/assets/images/icons/icon-192x192.png`,
+  `/assets/images/icons/icon-384x384.png`,
+  `/assets/images/icons/icon-512x512.png`,
   `/assets/images/1.jpg`,
   `/assets/images/2.jpg`,
   `/assets/images/3.jpg`,
@@ -44,7 +54,6 @@ const FILES_TO_CACHE = [
   `/assets/images/37.jpg`,
   `/assets/images/38.jpg`
 ];
-
 
 const STATIC_CACHE = `static-cache-v1`;
 const RUNTIME_CACHE = `runtime-cache`;

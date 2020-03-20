@@ -2,9 +2,17 @@
 
 const FILES_TO_CACHE = [
   `/`,
-  `/index.html`,
+  `/detail`,
+  `/favorites`,
+  `/manifest.json`,
+  `/favicon.ico`,
   `/assets/css/style.css`,
+
+  // update to cache multiple bundles
   `/dist/bundle.js`,
+
+  `https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.3.1/materia/bootstrap.css`,
+  `https://use.fontawesome.com/releases/v5.8.2/css/all.css`,
   `/assets/images/1.jpg`,
   `/assets/images/2.jpg`,
   `/assets/images/3.jpg`,
@@ -44,7 +52,6 @@ const FILES_TO_CACHE = [
   `/assets/images/37.jpg`,
   `/assets/images/38.jpg`
 ];
-
 
 const STATIC_CACHE = `static-cache-v1`;
 const RUNTIME_CACHE = `runtime-cache`;

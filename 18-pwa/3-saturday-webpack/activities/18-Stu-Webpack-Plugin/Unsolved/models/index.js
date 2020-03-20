@@ -1,5 +1,5 @@
 'use strict';
 
 module.exports = {
-  Image: require('./image')
+  Image: require(`./image`)
 };

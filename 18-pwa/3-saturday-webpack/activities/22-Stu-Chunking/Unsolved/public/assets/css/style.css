@@ -23,7 +23,6 @@ label[for*='star'] {
   cursor: pointer;
   margin: 0;
   padding: 4px;
-  display: inline;
 }
 
 .card__image-container {

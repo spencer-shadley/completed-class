@@ -8,7 +8,7 @@ In this activity we will create a bundle.js file with Webpack.
 
 - Create a file called `webpack.config.js`.
 
-- Using the entry point of `src/app.js`, make Webpack output a bundle file in a directory called `dist/`.
+- Using the entry point of `src/app.js`, make Webpack output a bundle file in a folder called `dist/`.
 
 - In `index.html`, change the JavaScript file src to be your new bundle file.
 

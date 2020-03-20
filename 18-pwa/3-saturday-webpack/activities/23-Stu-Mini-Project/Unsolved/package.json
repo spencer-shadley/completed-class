@@ -1,13 +1,10 @@
 {
-  "name": "unsolved",
+  "name": "Unsolved",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index",
-    "watch": "nodemon index",
-    "test": "jest",
-    "test:watch": "jest --watchAll"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",

@@ -22,35 +22,18 @@
   <body>
     <nav class="navbar navbar-dark bg-primary">
       <a class="navbar-brand" href="/">Image Gallery</a>
-      <ul class="navbar-nav mr-auto ">
+      <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link active" href="/"
+          <a class="nav-link" href="/"
             >Home <span class="sr-only">(current)</span></a
           >
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="/favorites">Favorites</a>
         </li>
       </ul>
     </nav>
     <div class="container"></div>
     <script src="/dist/bundle.js"></script>
-    <script type="text/javascript">
-      (function() {
-        if ('serviceWorker' in navigator) {
-          navigator.serviceWorker
-            .register('./service-worker.js', {
-              scope: '/'
-            })
-            .then(res => {
-              console.log(res);
-              console.log('Service Worker registered successfully.');
-            })
-            .catch(error =>
-              console.log('Service Worker registration failed:', error)
-            );
-        }
-      })();
-    </script>
   </body>
 </html>

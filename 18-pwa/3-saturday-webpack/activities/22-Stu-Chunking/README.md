@@ -2,7 +2,7 @@
 
 In this activity, we will practice using multiple entry points to split up our JavaScript code.
 
-##Instructions
+## Instructions
 
 - Run `npm install`.
 
@@ -32,8 +32,6 @@ In this activity, we will practice using multiple entry points to split up our J
 
   - `rating.js` Handles the creation of the ratings form and the update method.
 
-- Adjust the files in the `FILES_TO_CACHE` array within `public/service-worker.js` so that the Webpack bundle is cached instead.
-
 - Run `npm start` and make sure that the application still works as expected.
 
 - Navigate to each page and make sure that the bundle files are all being cached by the service worker.
@@ -44,4 +42,4 @@ In this activity, we will practice using multiple entry points to split up our J
 
 - If extracting functionality from a JavaScript file causes any of the pages to stop working, do **not** continue until you understand why it's not working as expected.
 
-- Ask the instructor or a TA for help if get stuck or are unsure why a function isn't working.
+- Ask the instructor or a TA for help if you get stuck or are unsure why a function isn't working.
