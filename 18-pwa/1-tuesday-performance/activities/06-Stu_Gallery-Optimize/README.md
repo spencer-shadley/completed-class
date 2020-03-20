@@ -15,13 +15,13 @@ In this activity you will use the Lazy Loading, GZip Compression, Image Compress
 
 - Now that the application is running, navigate to the [localhost](https://localhost:3000)
 
-- Open your Chrome Dev tools and run a Lighthouse audit on the application. Take note of the `performance` score listed at the top of the audit report.
+- Open your Chrome Dev tools and run a Lighthouse audit on the application. Take note of the `performance` score listed at the top of the audit report and the `opportunities` section under `performance`.
 
 - Now, using the compression npm package, enable gzip compression in the application.
 
 - Restart your server and run a new audit.
 
-- Next, using [ImageOptim Online](https://imageoptim.com/online), compress all of the images found within the `public/assets/images`
+- Next, using [Tiny PNG](https://tinypng.com/), compress all of the images found within the `public/assets/images`
 
 - Once you have compressed all of the images, replace the newly compressed images with the original uncompressed found in the applications images directory.
 
@@ -29,18 +29,16 @@ In this activity you will use the Lazy Loading, GZip Compression, Image Compress
 
 - Now that we have compressed our images and enabled gzip compression, our last step is to minify our JavaScript.
 
-- Create a `dist` directory in the root of your project folder
+- Create a `dist` folder in `/public`.
 
-  - Inside of `dist` create a file called `index.js`
+  - Inside of `public/dist` create a file called `index.js`
 
-  - Link this `index.js` to your application
+  - Link this `index.js` to your application in `public/index.html`.
 
-- Head to [Online Minification](http://refresh-sf.com/).
+- Head to [JSCompress](https://jscompress.com/).
 
-- Take the contents of `server.js` and paste it into the text area. Click `JavaScript`.
+- Take the contents of `/public/assets/js/loadImages.js` and paste it into the text area. Check the box labeled `ECMAScript 2019 (via babel-minify)`. Click `Compress JavaScript`.
 
-  - Take the resulting minified code and copy/paste it into your `dist/index.js`
-
-  - Go through the same process with the remaining JS files in the project.
+  - Take the resulting minified code and copy/paste it into your `/public/dist/index.js`
 
 - Finally, restart your server and run a new audit.

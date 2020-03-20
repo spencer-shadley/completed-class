@@ -6,15 +6,16 @@ In this activity you will be registering your first service worker.
 
 - Add the following script just above the `</body>` tag in `index.html`
 
-```js
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => {
-    navigator.serviceWorker.register("service-worker.js")
-    .then((reg) => {
-      console.log("Service worker registered.", reg);
-    })
+```html
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('service-worker.js').then(reg => {
+        console.log('We found your service worker file!', reg);
+      });
+    });
   }
-}
+</script>
 ```
 
 - Create a `service-worker.js` file in the `public` directory and add the following line of code.

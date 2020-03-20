@@ -8,7 +8,7 @@ In this activity, you will write your first progressive web application manifest
 
   - 🤔 Where do you create the `manifest.webmanifest` in the application architecture?
 
-  - 🤔 How do you deploy a manifest?
+  - 🤔 How do you deploy a manifest? Hint: You will need to somehow link it with the web page. (See [Web App Manifest - Deploying a manifest](https://developer.mozilla.org/en-US/docs/Web/Manifest#Deploying_a_manifest_with_the_link_tag).)
 
 - When finished, run the commands:
 
