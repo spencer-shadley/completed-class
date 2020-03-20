@@ -1,3 +1,5 @@
+'use strict'
+
 /**
  * Uses an array as a stack to push elements
  * Each time an element is added it checks if the last two inserts can be cancelled
