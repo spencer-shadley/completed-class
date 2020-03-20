@@ -1,27 +1,27 @@
-'use strict';
+'use strict'
 
-const express = require('express');
-const mongoose = require('mongoose');
-const compression = require('compression');
+var express = require("express");
+var mongoose = require("mongoose");
+// import the compression package
+var compression = require("compression");
 
-const app = express();
-const PORT = process.env.PORT || 3000;
+var app = express();
+var PORT = process.env.PORT || 3000;
 
+// enable compression middleware
 app.use(compression());
-app.use(express.static('public'));
+
+app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-require('./routes/apiRoutes')(app);
-require('./routes/htmlRoutes')(app);
+require("./routes/apiRoutes")(app);
+require("./routes/htmlRoutes")(app);
 
-mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb://localhost/imageperformance',
-  {
-    useNewUrlParser: true
-  }
-);
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/imageperformance", {
+  useNewUrlParser: true
+});
 
-app.listen(PORT, () => {
-  console.log(`Listening on http://localhost:${PORT}`);
+app.listen(PORT, function() {
+  console.log(`Now listening on port: ${PORT}`);
 });

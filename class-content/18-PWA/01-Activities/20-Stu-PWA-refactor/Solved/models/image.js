@@ -1,15 +1,15 @@
-'use strict';
+'use strict'
 
-const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
+var mongoose = require("mongoose");
+var Schema = mongoose.Schema;
 
-const imageSchema = new Schema({
+var imageSchema = new Schema({
   image: { type: String, required: true },
   description: { type: String, required: true },
   rating: Number,
   date: { type: Date, default: Date.now }
 });
 
-const Image = mongoose.model('Image', imageSchema);
+var Image = mongoose.model("Image", imageSchema);
 
 module.exports = Image;

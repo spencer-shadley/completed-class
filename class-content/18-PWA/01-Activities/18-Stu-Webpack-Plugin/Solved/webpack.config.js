@@ -1,42 +1,48 @@
-'use strict';
+'use strict'
 
-const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
-const WebpackPwaManifest = require('webpack-pwa-manifest');
-const path = require('path');
+const WebpackPwaManifest = require("webpack-pwa-manifest");
+const path = require("path");
 
 const config = {
-  mode: 'development',
-  entry: './public/assets/js/app.js',
+  entry: "./public/assets/js/app.js",
   output: {
-    path: __dirname + '/public/dist',
-    filename: 'bundle.js'
+    path: __dirname + "/public/dist",
+    filename: "bundle.js"
   },
+  mode: "production",
   plugins: [
-    new SWPrecacheWebpackPlugin({
-      cacheId: 'my-domain-cache-id',
-      dontCacheBustUrlsMatching: /\.\w{8}\./,
-      filename: 'service-worker.js',
-      minify: true,
-      staticFileGlobsIgnorePatterns: [/\.map$/, /manifest\.json$/]
-    }),
     new WebpackPwaManifest({
-      name: 'Images App',
-      short_name: 'Images App',
-      description: 'An application for images',
-      background_color: '#01579b',
-      theme_color: '#ffffff',
-      'theme-color': '#ffffff',
-      start_url: '/',
+      // the name of the generated manifest file
+      filename: "manifest.json",
+
+      // we aren't using webpack to generate our html so we
+      // set inject to false
+      inject: false,
+
+      // set fingerprints to `false` to make the names of the generated
+      // files predictable making it easier to refer to them in our code
+      fingerprints: false,
+
+      name: "Images App",
+      short_name: "Images App",
+      theme_color: "#ffffff",
+      background_color: "#ffffff",
+      start_url: "/",
+      display: "standalone",
+
       icons: [
         {
           src: path.resolve(
-            'public/assets/images/icons/android-chrome-192x192.png'
-          ),
-          sizes: [96, 128, 192, 256, 384, 512],
-          destination: path.join('assets', 'icons')
+            __dirname,
+            "public/assets/images/icons/icon-512x512.png"
+            ),
+          // the plugin will generate an image for each size
+          // included in the size array
+          size: [72, 96, 128, 144, 152, 192, 384, 512]
         }
       ]
     })
   ]
 };
+
 module.exports = config;

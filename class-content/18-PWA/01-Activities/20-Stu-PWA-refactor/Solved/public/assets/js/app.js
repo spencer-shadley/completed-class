@@ -1,11 +1,10 @@
-'use strict';
+'use strict'
 
-import { createCards } from './cardCreation';
+import { createCards } from "./cardCreation";
 
 export function loadImages() {
-  fetch('/api/images')
-    .then(res => res.json())
-    .then(data => createCards(data));
+  fetch("/api/images").then((res) => res.json())
+    .then((data) => createCards(data));
 }
 
 loadImages();
