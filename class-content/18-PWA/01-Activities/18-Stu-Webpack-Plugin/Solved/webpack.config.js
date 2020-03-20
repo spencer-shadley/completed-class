@@ -1,19 +1,19 @@
-'use strict'
+'use strict';
 
-const WebpackPwaManifest = require("webpack-pwa-manifest");
-const path = require("path");
+const WebpackPwaManifest = require(`webpack-pwa-manifest`);
+const path = require(`path`);
 
 const config = {
-  entry: "./public/assets/js/app.js",
+  entry: `./public/assets/js/app.js`,
   output: {
-    path: __dirname + "/public/dist",
-    filename: "bundle.js"
+    path: `${__dirname }/public/dist`,
+    filename: `bundle.js`
   },
-  mode: "production",
+  mode: `production`,
   plugins: [
     new WebpackPwaManifest({
       // the name of the generated manifest file
-      filename: "manifest.json",
+      filename: `manifest.json`,
 
       // we aren't using webpack to generate our html so we
       // set inject to false
@@ -23,19 +23,19 @@ const config = {
       // files predictable making it easier to refer to them in our code
       fingerprints: false,
 
-      name: "Images App",
-      short_name: "Images App",
-      theme_color: "#ffffff",
-      background_color: "#ffffff",
-      start_url: "/",
-      display: "standalone",
+      name: `Images App`,
+      short_name: `Images App`,
+      theme_color: `#ffffff`,
+      background_color: `#ffffff`,
+      start_url: `/`,
+      display: `standalone`,
 
       icons: [
         {
           src: path.resolve(
             __dirname,
-            "public/assets/images/icons/icon-512x512.png"
-            ),
+            `public/assets/images/icons/icon-512x512.png`
+          ),
           // the plugin will generate an image for each size
           // included in the size array
           size: [72, 96, 128, 144, 152, 192, 384, 512]
