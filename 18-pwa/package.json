@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint \"**/*.js\" --fix",
-    "prettier": "prettier --write \"**/*.[html,md]*\""
+    "prettier": "prettier --write \"**/*.[css,html,md]*\""
   },
   "author": "",
   "license": "ISC",
