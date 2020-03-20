@@ -4,7 +4,8 @@
   "description": "## Overview",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint \"**/*.js\" --fix"
+    "lint": "eslint \"**/*.js\" --fix",
+    "prettier": "prettier --write \"**/*.[html,md]*\""
   },
   "author": "",
   "license": "ISC",
