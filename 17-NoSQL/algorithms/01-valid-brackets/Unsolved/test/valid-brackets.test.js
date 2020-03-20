@@ -1,50 +1,52 @@
-var expect = chai.expect;
+'use strict';
 
-describe("validBrackets", function() {
-  it(`should return true if given the string "( )"`, function() {
-    var str = "( )";
+const expect = chai.expect;
 
-    var result = validBrackets(str);
+describe(`validBrackets`, () => {
+  it(`should return true if given the string "( )"`, () => {
+    const str = `( )`;
 
-    expect(result).to.eql(true);
-  });
-
-  it(`should return true if given the string "[ ( ) ]"`, function() {
-    var str = "[ ( ) ]";
-
-    var result = validBrackets(str);
+    const result = validBrackets(str);
 
     expect(result).to.eql(true);
   });
 
-  it(`should return true if given the string "{ } [ ( [] ) ]"`, function() {
-    var str = "{ } [ ( ) ]";
+  it(`should return true if given the string "[ ( ) ]"`, () => {
+    const str = `[ ( ) ]`;
 
-    var result = validBrackets(str);
-
-    expect(result).to.eql(true);
-  });
-
-  it(`should return true if given the string "( )[ ]{ }"`, function() {
-    var str = "( )[ ]{ }";
-
-    var result = validBrackets(str);
+    const result = validBrackets(str);
 
     expect(result).to.eql(true);
   });
 
-  it(`should return false if given the string "( ]"`, function() {
-    var str = "( ]";
+  it(`should return true if given the string "{ } [ ( [] ) ]"`, () => {
+    const str = `{ } [ ( ) ]`;
 
-    var result = validBrackets(str);
+    const result = validBrackets(str);
+
+    expect(result).to.eql(true);
+  });
+
+  it(`should return true if given the string "( )[ ]{ }"`, () => {
+    const str = `( )[ ]{ }`;
+
+    const result = validBrackets(str);
+
+    expect(result).to.eql(true);
+  });
+
+  it(`should return false if given the string "( ]"`, () => {
+    const str = `( ]`;
+
+    const result = validBrackets(str);
 
     expect(result).to.eql(false);
   });
 
-  it(`should return false if given the string "( [ ) ]"`, function() {
-    var str = "( [ ) ]";
+  it(`should return false if given the string "( [ ) ]"`, () => {
+    const str = `( [ ) ]`;
 
-    var result = validBrackets(str);
+    const result = validBrackets(str);
 
     expect(result).to.eql(false);
   });
