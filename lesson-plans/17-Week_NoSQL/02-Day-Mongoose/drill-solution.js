@@ -1,5 +1,12 @@
 'use strict';
 
+// relevant sections are annotated as follows assuming an input of [8,1,2,2,3]:
+// Big O
+// result:
+// object line 1
+// object line 2
+// object line 3
+
 /**
  * @param {number[]} nums
  * @return {number[]}
@@ -59,13 +66,6 @@ function smallerNumbersThanCurrentReducer(nums) {
  * Memory Usage: 37.6 MB, less than 100.00% of JavaScript online submissions
  */
 function smallerNumbersThanCurrentSorted(nums) {
-  // each section is annotated as follows assuming an input of [8,1,2,2,3]:
-  // Big O
-  // result:
-  // object line 1
-  // object line 2
-  // object line 3
-
   // O(N)
   // result:
   // num   - 8,1,2,2,3
