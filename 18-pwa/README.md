@@ -28,6 +28,10 @@ We'll conclude this unit with an overview of webpack, a module bundler for JavaS
 
 - Webpack
 
+## How to get Ahead
+
+- Read the [lighthouse documentation](https://developers.google.com/web/tools/lighthouse/)
+
 ## Comprehension Check
 
 You will be employer-ready if you can answer the following questions:
