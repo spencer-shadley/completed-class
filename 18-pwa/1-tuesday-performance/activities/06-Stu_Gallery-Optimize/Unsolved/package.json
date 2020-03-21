@@ -12,8 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "compression": "^1.7.4",
-    "express": "^4.16.4",
-    "glob": "^7.1.4",
-    "mongoose": "^5.5.8"
+    "express": "^4.17.1",
+    "glob": "^7.1.6",
+    "mongoose": "^5.9.5"
   }
 }
