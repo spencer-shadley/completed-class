@@ -13,6 +13,7 @@ function createEl(htmlString = ``, className) {
 function initLazyImages() {
   const lazyImages = document.querySelectorAll(`.lazy-image`);
 
+  const observer = new IntersectionObserver(onIntersection);
   function onIntersection(imageEntities) {
     imageEntities.forEach(image => {
       if (image.isIntersecting) {
@@ -21,9 +22,6 @@ function initLazyImages() {
       }
     });
   }
-
-  const observer = new IntersectionObserver(onIntersection);
-
   lazyImages.forEach(image => observer.observe(image));
 }
 
