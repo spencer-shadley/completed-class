@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint \"**/*.js\" --fix",
     "seed": "node seeders/seed.js",
     "start": "node server.js",
     "watch": "nodemon server.js"
