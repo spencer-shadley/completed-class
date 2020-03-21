@@ -10,5 +10,5 @@ app.use(express.json());
 require(`./routes/htmlRoutes.js`)(app);
 
 app.listen(PORT, () => {
-  console.log(`Now listening on port: ${PORT}`);
+  console.log(`Now listening on port: http://locahost:${PORT}`);
 });

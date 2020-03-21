@@ -24,5 +24,5 @@ mongoose.connect(process.env.MONGODB_URI || `mongodb://localhost/imageperformanc
 });
 
 app.listen(PORT, () => {
-  console.log(`Now listening on port: ${PORT}`);
+  console.log(`Now listening on port: http://locahost:${PORT}`);
 });
