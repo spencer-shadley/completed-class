@@ -94,7 +94,7 @@ _Catching the error allows execution to continue._
 
 Slack out the following directory and instructions:
 
-- **Folder**: `09-Stu_Check-For-Exceptions`
+- **directory**: `09-Stu_Check-For-Exceptions`
 
 # Instructions:
 
@@ -174,7 +174,7 @@ _Describe, it, and should clauses: Building blocks of good unit tests._
 
 Slack out the following directory and instructions:
 
-- **Folder**: `11-Stu_Disemvowel`
+- **directory**: `11-Stu_Disemvowel`
 
 # Instructions:
 
@@ -222,7 +222,7 @@ _Passing tests for disemvowel._
 
 Slack out the following directory and instructions:
 
-- **Folder**: `12-Stu_Titleize`
+- **directory**: `12-Stu_Titleize`
 
 # Instructions:
 

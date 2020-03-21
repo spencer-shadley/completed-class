@@ -34,11 +34,11 @@ THEN they are able to learn about the developer, find contact information, and f
 
   - A directory called `assets`.
 
-  - Inside the `assets` directory, make two additional folders: `css` and `images`.
+  - Inside the `assets` directory, make two additional directorys: `css` and `images`.
 
-    - In the `css` folder, make a file called `style.css`.
+    - In the `css` directory, make a file called `style.css`.
 
-    - In the `images` folder, save the images you plan on using (like your profile image and the placeholder images for the portfolio).
+    - In the `images` directory, save the images you plan on using (like your profile image and the placeholder images for the portfolio).
 
 - Refer to these screenshots for your site:
 
@@ -88,7 +88,7 @@ THEN they are able to learn about the developer, find contact information, and f
 
 - Portfolio images:
 
-  - Save the images to your `images` folder.
+  - Save the images to your `images` directory.
 
 - Background images:
 

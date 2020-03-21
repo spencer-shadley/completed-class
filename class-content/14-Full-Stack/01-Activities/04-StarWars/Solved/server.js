@@ -7,7 +7,7 @@
 /*
  *  STEPS TO SEQUELIZE THE STAR WARS APP.
  *  1. Install the sequelize and mysql2 npm packages.
- *  2. Delete the orm from config. In your app folder, create a model folder
+ *  2. Delete the orm from config. In your app directory, create a model directory
  *     with a character.js file in the model
  *  3. In character.js, model out the character table, as detailed
  *     in the schema.sql file located in the root of this project directory.

@@ -9,5 +9,5 @@
 
 ## BONUS
 
-- Create multiple directories/folders with the names `one_folder` and `second_folder` in one command.
+- Create multiple directories/directories with the names `one_directory` and `second_directory` in one command.
 - Create multiple files with the names `one.html` and `two.html` in one command in the first_day_stuff directory.

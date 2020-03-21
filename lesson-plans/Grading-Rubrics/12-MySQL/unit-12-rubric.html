@@ -590,7 +590,7 @@
                     'Repository follows best practices for file structure and naming conventions',
                   score: 2,
                   message:
-                    "Code doesn't follow recommended file/folder structure",
+                    "Code doesn't follow recommended file/directory structure",
                   status: false
                 },
                 {
@@ -694,7 +694,7 @@
 
           question.status = !question.status;
 
-          if (question.status ) {
+          if (question.status) {
             this.messages.delete(question.message);
             this.score += question.score;
 

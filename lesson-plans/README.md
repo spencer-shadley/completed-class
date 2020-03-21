@@ -20,13 +20,13 @@ If you have any outstanding questions, check with your SSM.
 
 - Refer to the Instructor Notes in the lesson plan and/or the associated time tracker for the range of activities to be covered in class.
 
-- Push any `Unsolved` activities to the class repo for today's lesson. **DO NOT** push `Solved` folders until the end of class.
+- Push any `Unsolved` activities to the class repo for today's lesson. **DO NOT** push `Solved` directorys until the end of class.
 
 - If you are at the beginning of the week (or unit for FT), be sure to include the student-facing Unit Overview.
 
 ### What NOT to Move into Class Repo
 
-**DO NOT** move anything in this folder, `02-Lesson-Plans` into the class repository. This includes, but is not limited to, the following content:
+**DO NOT** move anything in this directory, `02-Lesson-Plans` into the class repository. This includes, but is not limited to, the following content:
 
 - Grading Rubrics
 

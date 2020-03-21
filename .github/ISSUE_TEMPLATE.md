@@ -10,7 +10,7 @@ A clear and concise description of what the bug is.
 
 ## Location
 
-[Link to the file or folder](URL)
+[Link to the file or directory](URL)
 
 ## Steps To Reproduce (if applicable)
 
