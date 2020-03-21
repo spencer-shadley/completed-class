@@ -19,3 +19,15 @@ In this activity you are going to work with the Intersection Observer API to imp
 [MDN Progressive Loading](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Loading)
 
 - After you have completed implementing lazy loading, open your Dev Tools and run another Lighthouse Audit.
+
+## Bonus
+
+- Replace the `IntersectionObserver` with the native `loading="lazy"` attribute
+
+  - [MDN](https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading)
+
+- Look into the `Observer` design pattern
+
+  - https://www.geeksforgeeks.org/observer-pattern-set-1-introduction/
+
+  - https://sourcemaking.com/design_patterns/observer
