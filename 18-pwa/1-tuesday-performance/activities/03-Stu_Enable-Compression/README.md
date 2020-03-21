@@ -12,7 +12,7 @@ In this activity you are going to enable GZip compression in your project.
 
 - Once completed, navigate to your page and look at the traffic via the Network tab.
 
-  - You should be able to see the sizes of the files your page is requesting.
+  - You should be able to see the sizes of the files your page is requesting in the "Size" column by hovering on a network request. To see all of them at once you can click the gear icon and check "Use large request rows"
 
   - Take note of the differing file sizes.
 
