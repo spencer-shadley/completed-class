@@ -19,5 +19,5 @@ mongoose.connect(
 );
 
 app.listen(PORT, () => {
-  console.log(`Now listening on port: http://locahost:${PORT}`);
+  console.log(`Now listening on port: http://localhost:${PORT}`);
 });
