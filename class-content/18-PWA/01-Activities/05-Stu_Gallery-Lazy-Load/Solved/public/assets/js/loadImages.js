@@ -11,19 +11,25 @@ function createEl(htmlString = ``, className) {
 }
 
 function initLazyImages() {
+  // find all the images
   const lazyImages = document.querySelectorAll(`.lazy-image`);
 
+  const observer = new IntersectionObserver(onIntersection);
   function onIntersection(imageEntities) {
     imageEntities.forEach(image => {
+
+      // when the image intersects the viewport
       if (image.isIntersecting) {
-        observer.unobserve(image.target);
+        // load the image
         image.target.src = image.target.dataset.src;
+
+        // unsubscribe our observer (image) (we already loaded it)
+        observer.unobserve(image.target);
       }
     });
   }
 
-  const observer = new IntersectionObserver(onIntersection);
-
+  // subscribe every observer (image) to this subject (intersection)
   lazyImages.forEach(image => observer.observe(image));
 }
 
