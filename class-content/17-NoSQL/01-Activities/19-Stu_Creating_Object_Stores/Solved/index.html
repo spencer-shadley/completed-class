@@ -18,6 +18,22 @@
         const db = target.result;
         const objectStore = db.createObjectStore('toDoList');
       };
+
+      const request = window.indexedDB.open('toDoList', 1);
+
+      request.onupgradeneeded = ({ target }) => {
+        const db = target.result;
+
+        // create our object store
+        const objectStore = db.createObjectStore('toDoList');
+
+        // create an index with an indexName of "timestamp" (used when querying) with a keypath of "timestamp" (actual name of the "column")
+        // these are often the same name
+        objectStore.createIndex('timestamp', 'timestamp');
+      };
+
+      request.onerror = event => console.error(event);
+      request.onsuccess = event => console.log(request.result);
     </script>
   </body>
 </html>
