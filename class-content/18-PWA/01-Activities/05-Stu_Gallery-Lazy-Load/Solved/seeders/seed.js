@@ -37,7 +37,7 @@ const imageSeed = [
   },
   {
     description: `pikachu`,
-    image: `/assets/images/pikachu.jpg`,
+    image: `/assets/images/pikachu.png`,
     rating: 5,
     date: new Date(Date.now())
   },
