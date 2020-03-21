@@ -46,6 +46,6 @@ We would like you to have well over 200 commits by graduation, so commit early a
 
 You are required to submit the following:
 
-- The URL to the deployed application
+- The URL to the deployed application (instructions are [here](17-nosql\supplemental\MongoDBHerokuDeploy.md))
 
 - The URL to the Github repository
