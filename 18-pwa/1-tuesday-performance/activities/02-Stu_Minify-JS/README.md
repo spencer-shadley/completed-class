@@ -19,3 +19,7 @@ In this activity you will minify your JavaScript using an online tool.
   - Copy/paste the minified JS of your dist folder into your `dist/index.js`
 
 - Be sure to link your `dist/index.js` code to your application.
+
+- Calculate the percent savings you saw
+
+  - Hint: in VS Code the right of the status bar will display the number of selected characters
