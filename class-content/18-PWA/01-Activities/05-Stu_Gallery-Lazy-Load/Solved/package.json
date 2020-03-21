@@ -2,16 +2,18 @@
   "name": "images-demo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "seed": "node seeders/seed.js"
+    "seed": "node seeders/seed.js",
+    "start": "node server.js",
+    "watch": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "compression": "^1.7.4",
-    "express": "^4.16.4",
-    "glob": "^7.1.4",
-    "mongoose": "^5.5.8"
+    "express": "^4.17.1",
+    "glob": "^7.1.6",
+    "mongoose": "^5.9.5"
   }
 }
