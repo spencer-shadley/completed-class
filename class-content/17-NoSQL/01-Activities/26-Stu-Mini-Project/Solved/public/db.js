@@ -13,7 +13,7 @@ request.onupgradeneeded = event => {
   console.log(event);
 
   if (!db.objectStoreNames.contains(pendingObjectStoreName)) {
-    db.createObjectStore(`pending`, { autoIncrement: true });
+    db.createObjectStore(pendingObjectStoreName, { autoIncrement: true });
   }
 };
 
