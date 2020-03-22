@@ -4,7 +4,7 @@ In this activity, you will write your first progressive web application manifest
 
 ## Instructions
 
-- Using the instructor demo as a guide, create a manifest for the Image Gallery app.
+- Using [the demo](../08-Ins_Manifest/manifest.webmanifest) as a guide, create a manifest for the Image Gallery app in `public`.
 
   - 🤔 Where do you create the `manifest.webmanifest` in the application architecture?
 
@@ -12,11 +12,11 @@ In this activity, you will write your first progressive web application manifest
 
 - When finished, run the commands:
 
-  - `npm install`
+  - `npm i`
 
   - `npm run seed`
 
-  - `npm start`
+  - `npm run watch`
 
 - Navigate to [localhost:3000](localhost:3000) and open `DevTools > Application > Manifest` to verify successful loading of the manifest.
 
