@@ -39,10 +39,12 @@ router.get(`/api/workouts`, (req, res) => {
 });
 
 router.get(`/api/workouts/range`, (req, res) => {
-  Workout.find({})
-    .then(dbWorkouts => {
-      console.log(dbWorkouts);
-      res.json(dbWorkouts);
+  Workout
+    .find({})
+    .sort({ day: -1 })
+    .limit(10)
+    .then(workouts => {
+      res.json(workouts);
     })
     .catch(err => {
       res.json(err);
