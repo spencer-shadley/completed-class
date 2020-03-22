@@ -14,6 +14,191 @@ A consumer will reach their fitness goals quicker when they track their workout 
 
 - [YouTube](https://youtu.be/yUsxRaOYVG4)
 
+<details>
+  <summary>Example network response for http://localhost:3000/api/workouts/range</summary>
+
+```js
+Array[10][
+  ({
+    _id: '5e76f5ace86e9235b4684a98',
+    day: '2020-03-22T05:20:44.610Z',
+    exercises:
+      Array[1][
+        {
+          _id: '5e76f5bce86e9235b4684a99',
+          type: 'cardio',
+          name: 'getting toilet paper',
+          distance: 2,
+          duration: 40
+        }
+      ],
+    __v: 0,
+    totalDuration: 40,
+    id: '5e76f5ace86e9235b4684a98'
+  },
+  {
+    _id: '5e76f577e86e9235b4684a94',
+    day: '2020-03-22T05:19:51.241Z',
+    exercises:
+      Array[2][
+        ({
+          _id: '5e76f584e86e9235b4684a95',
+          type: 'cardio',
+          name: 'Running',
+          distance: 8,
+          duration: 20
+        },
+        {
+          _id: '5e76f599e86e9235b4684a96',
+          type: 'resistance',
+          name: 'Squats',
+          weight: 500,
+          sets: 6,
+          reps: 4,
+          duration: 10
+        })
+      ],
+    __v: 0,
+    totalDuration: 30,
+    id: '5e76f577e86e9235b4684a94'
+  },
+  {
+    _id: '5e76f44d1066c12f78789c39',
+    day: '2020-03-21T05:14:53.872Z',
+    exercises:
+      Array[1][
+        {
+          type: 'resistance',
+          name: 'Bench',
+          duration: 30,
+          distance: 2
+        }
+      ],
+    totalDuration: 30,
+    id: '5e76f44d1066c12f78789c39'
+  },
+  {
+    _id: '5e76f44d1066c12f78789c38',
+    day: '2020-03-20T05:14:53.872Z',
+    exercises:
+      Array[1][
+        {
+          type: 'resistance',
+          name: 'Military Press',
+          duration: 20,
+          weight: 300,
+          reps: 10,
+          sets: 4
+        }
+      ],
+    totalDuration: 20,
+    id: '5e76f44d1066c12f78789c38'
+  },
+  {
+    _id: '5e76f44d1066c12f78789c37',
+    day: '2020-03-19T05:14:53.872Z',
+    exercises:
+      Array[1][
+        {
+          type: 'resistance',
+          name: 'Bench Press',
+          duration: 20,
+          weight: 300,
+          reps: 10,
+          sets: 4
+        }
+      ],
+    totalDuration: 20,
+    id: '5e76f44d1066c12f78789c37'
+  },
+  {
+    _id: '5e76f44d1066c12f78789c36',
+    day: '2020-03-18T05:14:53.872Z',
+    exercises:
+      Array[1][
+        {
+          type: 'resistance',
+          name: 'Quad Press',
+          duration: 30,
+          weight: 300,
+          reps: 10,
+          sets: 4
+        }
+      ],
+    totalDuration: 30,
+    id: '5e76f44d1066c12f78789c36'
+  },
+  {
+    _id: '5e76f44d1066c12f78789c35',
+    day: '2020-03-17T05:14:53.872Z',
+    exercises:
+      Array[1][
+        {
+          type: 'resistance',
+          name: 'Bench Press',
+          duration: 20,
+          weight: 300,
+          reps: 10,
+          sets: 4
+        }
+      ],
+    totalDuration: 20,
+    id: '5e76f44d1066c12f78789c35'
+  },
+  {
+    _id: '5e76f44d1066c12f78789c34',
+    day: '2020-03-16T05:14:53.872Z',
+    exercises:
+      Array[1][
+        {
+          type: 'resistance',
+          name: 'Bench Press',
+          duration: 20,
+          weight: 285,
+          reps: 10,
+          sets: 4
+        }
+      ],
+    totalDuration: 20,
+    id: '5e76f44d1066c12f78789c34'
+  },
+  {
+    _id: '5e76f44d1066c12f78789c33',
+    day: '2020-03-15T05:14:53.872Z',
+    exercises:
+      Array[1][
+        {
+          type: 'cardio',
+          name: 'Running',
+          duration: 25,
+          distance: 4
+        }
+      ],
+    totalDuration: 25,
+    id: '5e76f44d1066c12f78789c33'
+  },
+  {
+    _id: '5e76f44d1066c12f78789c32',
+    day: '2020-03-14T05:14:53.872Z',
+    exercises:
+      Array[1][
+        {
+          type: 'resistance',
+          name: 'Push Press',
+          duration: 25,
+          weight: 185,
+          reps: 8,
+          sets: 4
+        }
+      ],
+    totalDuration: 25,
+    id: '5e76f44d1066c12f78789c32'
+  })
+];
+```
+
+  </details>
+
 ## Acceptance Criteria
 
 When the user loads the page, they should be given the option to create a new workout, or continue with their last workout.
