@@ -10,6 +10,10 @@ For this assignment, you'll create a workout tracker. You have already been prov
 
 A consumer will reach their fitness goals quicker when they track their workout progress.
 
+## Demo
+
+- [YouTube](https://youtu.be/yUsxRaOYVG4)
+
 ## Acceptance Criteria
 
 When the user loads the page, they should be given the option to create a new workout, or continue with their last workout.
