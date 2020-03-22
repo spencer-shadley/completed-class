@@ -4,15 +4,12 @@
 
 fetch(`/api/workouts/range`)
   .then(response => response.json())
-  .then(data => {
-    populateChart(data);
-  });
-
+  .then(data => populateChart(data));
 
 API.getWorkoutsInRange();
 
 function generatePalette() {
-  const arr = [
+  return [
     `#003f5c`,
     `#2f4b7c`,
     `#665191`,
@@ -30,9 +27,8 @@ function generatePalette() {
     `#ff7c43`,
     `ffa600`
   ];
-
-  return arr;
 }
+
 function populateChart(data) {
   const totalDurations = getTotalDurations(data);
   const averageWeights = calculateAverageWeight(data);
@@ -112,7 +108,7 @@ function populateChart(data) {
       ],
       datasets: [
         {
-          label: `Average Weight`,
+          label: `Average Weight From Last 10 Workouts`,
           data: averageWeights,
           backgroundColor: colors
         }
