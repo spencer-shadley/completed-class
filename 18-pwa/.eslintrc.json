@@ -11,6 +11,7 @@
   "parserOptions": { "ecmaVersion": 2020 },
   "globals": {},
   "extends": ["eslint:recommended"],
+  "ignorePatterns": ["dist/"],
   "rules": {
     "array-bracket-spacing": "error",
     "array-callback-return": "error",
