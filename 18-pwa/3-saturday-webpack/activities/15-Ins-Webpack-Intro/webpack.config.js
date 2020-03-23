@@ -1,6 +1,6 @@
 'use strict';
 
-const config = {
+module.exports = {
   entry: `./src/app.js`,
   output: {
     path: `${__dirname}/dist`,
@@ -8,5 +8,3 @@ const config = {
   },
   mode: `development`
 };
-
-module.exports = config;
