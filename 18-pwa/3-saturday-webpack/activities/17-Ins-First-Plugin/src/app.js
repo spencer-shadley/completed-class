@@ -1,7 +1,6 @@
 'use strict';
 
 const calculations = require(`./calculations`);
-const Chart = require(`chart.js`);
 
 const priceEl = document.getElementById(`price`);
 const balanceEl = document.getElementById(`balance`);

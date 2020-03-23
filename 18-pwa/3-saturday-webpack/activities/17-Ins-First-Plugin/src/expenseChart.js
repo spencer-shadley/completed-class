@@ -1,5 +1,7 @@
 'use strict';
 
+const Chart = require(`chart.js`);
+
 const ctx = document.getElementById(`myChart`).getContext(`2d`);
 
 const expenseChart = new Chart(ctx, {
