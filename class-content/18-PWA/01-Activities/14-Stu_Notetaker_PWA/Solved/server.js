@@ -7,11 +7,11 @@ const path = require(`path`);
 
 const app = express();
 
-app.use(logger(`dev`));
+const PORT = process.env.PORT || 3000;
 
+app.use(logger(`dev`));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
 app.use(express.static(`public`));
 
 const databaseUrl = process.env.MONGODB_URI || `notetaker`;
@@ -19,13 +19,9 @@ const collections = [`notes`];
 
 const db = mongojs(databaseUrl, collections);
 
-db.on(`error`, error => {
-  console.log(`Database Error:`, error);
-});
+db.on(`error`, error => console.error(`Database Error:`, error));
 
-app.get(`/`, (req, res) => {
-  res.sendFile(path.join(`${__dirname }./public/index.html`));
-});
+app.get(`/`, (req, res) => res.sendFile(path.join(`${__dirname }./public/index.html`)));
 
 app.post(`/submit`, (req, res) => {
   console.log(req.body);
@@ -119,8 +115,4 @@ app.delete(`/clearall`, (req, res) => {
   });
 });
 
-const PORT = process.env.PORT || 3000;
-
-app.listen(PORT, () => {
-  console.log(`Application running on PORT ${PORT}`);
-});
+app.listen(PORT, () => console.log(`App running on http://localhost:${PORT}`));
