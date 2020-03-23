@@ -1,6 +1,6 @@
 ## Instructions
 
-- Replace your React application's `src` directory with [Unsolved/src](Unsolved/src). Stop the dev server if it is already running. Start the app in dev mode by running `npm start`.
+- Replace your React application's `src` directory with [Unsolved/src](Unsolved/src). Stop the dev server if it is already running. Start the app in dev mode by running `npm run watch`.
 
 - This activity uses Bootstrap, so make sure you have the CDN added to your `public/index.html` file.
 

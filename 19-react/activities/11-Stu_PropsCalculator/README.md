@@ -4,7 +4,7 @@ In this activity we will write a component that can perform some arithmetic usin
 
 ## Instructions
 
-- Replace your React application's `src` directory with [Unsolved/src](Unsolved/src). Stop the dev server if it is already running. Start the app in dev mode by running `npm start`.
+- Replace your React application's `src` directory with [Unsolved/src](Unsolved/src). Stop the dev server if it is already running. Start the app in dev mode by running `npm run watch`.
 
 - Open your web browser to [localhost:3000](http://localhost:3000). Take a moment to observe the rendered app.
 

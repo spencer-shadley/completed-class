@@ -8,7 +8,7 @@ In this activity, we will dissect a simple React application.
 
 - Once you have a `reactpractice` React app generated, delete the `src` directory inside of your starter app and replace it with the [src](Unsolved/src) provided with this activity.
 
-- Start the app by running `npm start` in your terminal, take a moment to study the HTML code being rendered in the browser at [http://localhost:3000](http://localhost:3000).
+- Start the app by running `npm run watch` in your terminal, take a moment to study the HTML code being rendered in the browser at [http://localhost:3000](http://localhost:3000).
 
 ### HelloReact.js
 

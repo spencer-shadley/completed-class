@@ -17,7 +17,7 @@ In this activity we will create a simple React application with which users can 
 
 - Be sure to install the axios library by running `npm install axios` in your terminal.
 
-- Stop the dev server if it is already running. Start the app in dev mode by running `npm start`.
+- Stop the dev server if it is already running. Start the app in dev mode by running `npm run watch`.
 
 - Open your browser to [localhost:3000](http://localhost:3000) and study the rendered application.
 

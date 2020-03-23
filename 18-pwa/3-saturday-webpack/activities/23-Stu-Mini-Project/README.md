@@ -6,7 +6,7 @@ In this activity we will take an existing news aggregator application and transf
 
 - Open the [Unsolved](Unsolved) folder and install dependencies by running `npm install` at the project root.
 
-- Start the app by running `npm start` from the project root.
+- Start the app by running `npm run watch` from the project root.
 
 - Once the app starts open your browser to [localhost:3000](http://localhost:3000).
 

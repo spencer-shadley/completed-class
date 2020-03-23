@@ -4,7 +4,7 @@ In this activity we will explore some built-in options for styling React compone
 
 ## Instructions
 
-- Replace your React application's `src` directory with [Unsolved/src](Unsolved/src). Stop the dev server if it is already running. Start the app in dev mode by running `npm start`.
+- Replace your React application's `src` directory with [Unsolved/src](Unsolved/src). Stop the dev server if it is already running. Start the app in dev mode by running `npm run watch`.
 
 - Open [localhost:3000](http://localhost:3000) in your web browser and take a moment to study the rendered application.
 

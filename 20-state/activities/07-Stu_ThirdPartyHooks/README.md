@@ -21,7 +21,7 @@ In this activity we will practice using third party Hooks. Specifically, we will
   />
   ```
 
-- Start the application in dev mode by running `npm start` in your terminal.
+- Start the application in dev mode by running `npm run watch` in your terminal.
 
 - Open your browser to [localhost:3000](http://localhost:3000) and study the rendered application.
 

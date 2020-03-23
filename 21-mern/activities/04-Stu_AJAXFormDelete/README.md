@@ -6,7 +6,7 @@ In this activity we will add functionality to the previous books example for sub
 
 - Open the [Unsolved](Unsolved) directory and install dependencies by running `npm install` at the project root.
 
-- Start the app by running `npm start` from the project root.
+- Start the app by running `npm run watch` from the project root.
 
 - Once the app starts open your browser to [localhost:3000](http://localhost:3000).
 

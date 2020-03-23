@@ -8,7 +8,7 @@ In this activity we will practice using the useState hook in React.
 
 - If you created a new React app, you will need to add the Bootstrap link to `index.html`.
 
-- Start the application in dev mode by running `npm start` in your terminal.
+- Start the application in dev mode by running `npm run watch` in your terminal.
 
 - Open your browser to [localhost:3000](http://localhost:3000) and study the rendered application.
 

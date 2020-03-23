@@ -8,7 +8,7 @@ In this activity we will create a CMS (Content Management System) that allows us
 
 - Open another tab in your terminal and run `mongod`.
 
-- Start the app by running `npm start` from the project root.
+- Start the app by running `npm run watch` from the project root.
 
 - Once the app starts open your browser to [localhost:3000](http://localhost:3000).
 
