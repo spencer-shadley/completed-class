@@ -909,7 +909,7 @@ REACT_APP_SECRET_CODE=abcdef
 
 Files on the left have more priority than files on the right:
 
-- `npm start`: `.env.development.local`, `.env.development`, `.env.local`, `.env`
+- `npm run watch`: `.env.development.local`, `.env.development`, `.env.local`, `.env`
 - `npm run build`: `.env.production.local`, `.env.production`, `.env.local`, `.env`
 - `npm test`: `.env.test.local`, `.env.test`, `.env` (note `.env.local` is missing)
 
