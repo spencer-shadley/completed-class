@@ -13,7 +13,7 @@ function getResults() {
   fetch(`/all`)
     .then(response => {
       if (response.status !== 200) {
-        console.log(
+        console.error(
           `Looks like there was a problem. Status Code: ${response.status}`
         );
         return;
@@ -70,7 +70,7 @@ clear.addEventListener(`click`, e => {
     })
       .then(response => {
         if (response.status !== 200) {
-          console.log(
+          console.error(
             `Looks like there was a problem. Status Code: ${response.status}`
           );
           return;
@@ -92,7 +92,7 @@ results.addEventListener(`click`, e => {
     })
       .then(response => {
         if (response.status !== 200) {
-          console.log(
+          console.error(
             `Looks like there was a problem. Status Code: ${response.status}`
           );
           return;
