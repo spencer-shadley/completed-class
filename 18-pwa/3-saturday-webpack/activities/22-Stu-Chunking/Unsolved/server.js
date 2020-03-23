@@ -18,6 +18,4 @@ mongoose.connect(
   { useNewUrlParser: true }
 );
 
-app.listen(PORT, () => {
-  console.log(`Now listening on port: http://localhost:${PORT}`);
-});
+app.listen(PORT, () => console.log(`Now listening on port: http://localhost:${PORT}`));
