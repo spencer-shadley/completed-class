@@ -12,7 +12,7 @@ In this activity you will be enabling functionality to allow your application to
 
   - `npm run seed`
 
-  - `npm start`
+  - `npm run watch`
 
 - Add the following code to your `service-worker.js` file.
 
