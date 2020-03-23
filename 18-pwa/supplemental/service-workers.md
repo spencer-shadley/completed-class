@@ -99,4 +99,8 @@ Parallel tasks:
 
 ### Resources
 
-- https://developers.google.com/web/fundamentals/primers/service-workers
+- [intro to service workers](https://developers.google.com/web/fundamentals/primers/service-workers)
+
+- [caching strategies](http://localhost:3000/service-worker.js)
+
+- [Workbox - A Service Worker wrapper](https://developers.google.com/web/tools/workbox/guides/get-started)
