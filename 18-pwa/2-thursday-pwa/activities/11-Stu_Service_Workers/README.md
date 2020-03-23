@@ -27,3 +27,9 @@ In this activity you will be registering your first service worker.
 - Refresh your Gallery App or launch it with `npm run watch` if it is not running.
 
 - Open your Chrome Dev Tools > Application and navigate to the Service Worker tab. Check to see if your service worker file was successfully found. You should see two messages, one from the `service-worker.js` file and one from the script tag that you put in your `index.html` file.
+
+# Bonus
+
+- Research more about Service Workers
+
+- Read the [concurrency guide](../../../supplemental/service-workers.md)
