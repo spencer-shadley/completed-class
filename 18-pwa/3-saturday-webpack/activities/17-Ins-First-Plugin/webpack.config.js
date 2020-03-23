@@ -3,7 +3,7 @@
 const BundleAnalyzerPlugin = require(`webpack-bundle-analyzer`)
   .BundleAnalyzerPlugin;
 
-const config = {
+module.exports = {
   entry: `./src/app.js`,
   output: {
     path: `${__dirname}/dist`,
@@ -12,4 +12,3 @@ const config = {
   mode: `development`,
   plugins: [new BundleAnalyzerPlugin()]
 };
-module.exports = config;
