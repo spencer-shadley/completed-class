@@ -72,6 +72,8 @@ Parallel tasks:
 
   - Requires HTTPS
 
+  - Only intercepts GET requests
+
 ### Lifecycle
 
 ![lifecycle](https://developers.google.com/web/fundamentals/primers/service-workers/images/sw-lifecycle.png)
