@@ -111,6 +111,10 @@ self.addEventListener(`fetch`, event => {
   }
 
   // use cache first for all other requests for performance
+  return cacheFirst(event);
+});
+
+function cacheFirst(event) {
   event.respondWith(
     caches.match(event.request).then(cachedResponse => {
       if (cachedResponse) {
@@ -118,7 +122,11 @@ self.addEventListener(`fetch`, event => {
       }
 
       // request is not in cache. make network request and cache the response
-      return caches.open(RUNTIME_CACHE).then(cache => fetch(event.request).then(response => cache.put(event.request, response.clone()).then(() => response)));
+      return caches.open(RUNTIME_CACHE)
+        .then(cache => fetch(event.request)
+          .then(response => cache.put(event.request, response.clone())
+            // eslint-disable-next-line max-nested-callbacks
+            .then(() => response)));
     })
   );
-});
+}
