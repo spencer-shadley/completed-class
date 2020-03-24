@@ -1,13 +1,5 @@
 # Pre-class Drill
 
----
+- Create an account for []()
 
-Input
-
-Output
-
----
-
-Input
-
-Output
+- Solve [this problem]()
