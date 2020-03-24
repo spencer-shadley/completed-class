@@ -1,6 +1,4 @@
-'use strict';
-
-const config = {
+module.exports = {
   entry: {
     app: `./src/app.js`,
     chart: `./src/expenseChart.js`
@@ -24,5 +22,4 @@ const config = {
       }
     ]
   }
-};
-module.exports = config;
+};;
