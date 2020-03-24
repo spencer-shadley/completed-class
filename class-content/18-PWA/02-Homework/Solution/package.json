@@ -4,9 +4,10 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "lite-server": "lite-server"
+    "lite-server": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon server"
   },
   "repository": {
     "type": "git",
@@ -21,8 +22,9 @@
   "dependencies": {
     "compression": "^1.7.4",
     "express": "^4.17.1",
-    "lite-server": "^2.5.3",
-    "mongoose": "^5.5.15",
-    "morgan": "^1.9.1"
+    "http-status-code": "^2.1.0",
+    "lite-server": "^2.5.4",
+    "mongoose": "^5.9.6",
+    "morgan": "^1.10.0"
   }
 }
