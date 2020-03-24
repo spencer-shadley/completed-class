@@ -1,5 +1,3 @@
-'use strict';
-
 const express = require(`express`);
 const mongoose = require(`mongoose`);
 
@@ -22,10 +20,5 @@ mongoose.connect(process.env.MONGODB_URI || `mongodb://localhost/imageperformanc
   useCreateIndex: true,
   useFindAndModify: false
 });
-
-mongoose.connect(
-  process.env.MONGODB_URI || `mongodb://localhost/imageperformance`,
-  { useNewUrlParser: true }
-);
 
 app.listen(PORT, () => console.log(`Now listening on port: http://localhost:${PORT}`));
