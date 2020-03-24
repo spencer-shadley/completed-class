@@ -18,6 +18,7 @@
         - click different areas in the front-end and check the network or use `morgan`
         - two different routes - `view.js` for our two views and `api.js` for our api calls
    1. fix 18.2 offline activity
+   1. 18 hw - either fix or remove indexeddb
 
 1. Unit 19 (react)
 
