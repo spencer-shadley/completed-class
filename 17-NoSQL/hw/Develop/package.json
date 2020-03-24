@@ -4,16 +4,16 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "watch": "nodemon server.js",
-    "seed": "node seeders/seed.js"
+    "seed": "node seeders/seed.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^5.9.5",
-    "morgan": "^1.9.1"
+    "mongoose": "^5.9.6",
+    "morgan": "^1.10.0"
   }
 }
