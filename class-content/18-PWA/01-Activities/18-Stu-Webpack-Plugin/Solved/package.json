@@ -18,7 +18,7 @@
     "mongoose": "^5.9.6"
   },
   "devDependencies": {
-    "webpack": "^4.42.0",
+    "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
     "webpack-pwa-manifest": "^4.2.0"
   }
