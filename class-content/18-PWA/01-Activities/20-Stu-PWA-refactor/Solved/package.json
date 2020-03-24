@@ -4,9 +4,9 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "prestart": "webpack",
         "build": "webpack",
-        "seed": "node seeders/seed.js"
+        "seed": "node seeders/seed.js",
+        "webpack": "webpack"
     },
     "author": "",
     "license": "ISC",

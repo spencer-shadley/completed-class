@@ -6,7 +6,7 @@
   "scripts": {
     "webpack": "webpack",
     "seed": "node seeders/seed.js",
-    "prestart": "npm run webpack"
+    "build": "npm run webpack"
   },
   "author": "",
   "license": "ISC",

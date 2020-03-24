@@ -14,6 +14,7 @@
   },
   "plugins": ["chai-friendly"],
   "extends": ["eslint:recommended", "plugin:chai-friendly/recommended"],
+  "ignorePatterns": ["dist/"],
   "rules": {
     "array-bracket-spacing": "error",
     "array-callback-return": "error",

@@ -1,11 +1,13 @@
-const calculations = require("./calculations");
+'use strict';
 
-const priceEl = document.getElementById("price");
-const balanceEl = document.getElementById("balance");
-const expenseEl = document.getElementById("expense");
-const expensesListEl = document.getElementById("expenses-list");
-const submitBtn = document.getElementById("submit");
-const resetBtn = document.getElementById("reset");
+const calculations = require(`./calculations`);
+
+const priceEl = document.getElementById(`price`);
+const balanceEl = document.getElementById(`balance`);
+const expenseEl = document.getElementById(`expense`);
+const expensesListEl = document.getElementById(`expenses-list`);
+const submitBtn = document.getElementById(`submit`);
+const resetBtn = document.getElementById(`reset`);
 
 function addToList(name, price) {
   expensesListEl.innerHTML += `<li class="list-group-item">Name: ${name}
@@ -23,7 +25,7 @@ function reset(e) {
   e.preventDefault();
   const total = 2000;
   balanceEl.innerText = total;
-  expensesListEl.innerHTML = "";
+  expensesListEl.innerHTML = ``;
 }
 
 submitBtn.onclick = submit;
