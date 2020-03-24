@@ -1,6 +1,5 @@
 1. Unit 18 (PWA)
 
-   1. 18.1 drill
    1. bonus lecture - deploy mongo demo
    1. send overview of unit in Slack
    1. fix 18.2 offline activity
