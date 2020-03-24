@@ -1,9 +1,10 @@
-'use strict';
+/* eslint-disable no-magic-numbers */
+/* eslint-disable camelcase */
 
 const WebpackPwaManifest = require(`webpack-pwa-manifest`);
 const path = require(`path`);
 
-const config = {
+module.exports = {
   mode: `production`,
   entry: {
     app: `./public/assets/js/home.js`,
@@ -46,4 +47,3 @@ const config = {
     ]
   }
 };
-module.exports = config;
