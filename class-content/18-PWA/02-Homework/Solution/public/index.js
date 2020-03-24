@@ -1,10 +1,8 @@
-'use strict';
-
 if (`serviceWorker` in navigator) {
   window.addEventListener(`load`, () => {
-    navigator.serviceWorker.register(`/service-worker.js`).then(reg => {
-      console.log(`Service worker registered.`, reg);
-    });
+    navigator.serviceWorker.register(`/service-worker.js`)
+      .then(reg =>
+        console.log(`Service worker registered.`, reg));
   });
 }
 
@@ -24,7 +22,7 @@ fetch(`/api/transaction`)
 
 function populateTotal() {
   // reduce transaction amounts to a single total value
-  const total = transactions.reduce((total, t) => total + parseInt(t.value), 0);
+  const total = transactions.reduce((currTotal, t) => currTotal + parseInt(t.value), 0);
 
   const totalEl = document.querySelector(`#total`);
   totalEl.textContent = total;
@@ -139,6 +137,8 @@ function sendTransaction(isAdding) {
       }
     })
     .catch(err => {
+      console.error(err);
+
       // fetch failed, so save in indexed db
       saveRecord(transaction);
 
