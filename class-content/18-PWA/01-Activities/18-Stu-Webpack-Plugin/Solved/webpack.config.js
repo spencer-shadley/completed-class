@@ -1,9 +1,10 @@
+/* eslint-disable camelcase */
 'use strict';
 
 const WebpackPwaManifest = require(`webpack-pwa-manifest`);
 const path = require(`path`);
 
-const config = {
+module.exports = {
   entry: `./public/assets/js/app.js`,
   output: {
     path: `${__dirname }/public/dist`,
@@ -38,11 +39,10 @@ const config = {
           ),
           // the plugin will generate an image for each size
           // included in the size array
+          // eslint-disable-next-line no-magic-numbers
           size: [72, 96, 128, 144, 152, 192, 384, 512]
         }
       ]
     })
   ]
 };
-
-module.exports = config;
