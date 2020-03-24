@@ -1,5 +1,3 @@
-'use strict';
-
 const express = require(`express`);
 const mongoose = require(`mongoose`);
 
@@ -28,4 +26,4 @@ mongoose.connect(
   { useNewUrlParser: true }
 );
 
-app.listen(PORT, () => console.log(`Now listening on port: http://localhost:${PORT}`));
+app.listen(PORT, () => console.log(`Now listening at http://localhost:${PORT}`));
