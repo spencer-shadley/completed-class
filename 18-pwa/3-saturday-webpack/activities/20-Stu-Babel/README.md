@@ -8,7 +8,7 @@ In this activity we will adjust our Gallery app so that Webpack minifies and bun
 
 - Run `npm install -D babel-loader @babel/core @babel/preset-env`.
 
-- Using `19-Ins-Pure-Functions/webpack.config.js` as a reference, update `Unsolved/webpack.config.js` to use babel-loader.
+- Using `19-Ins-Babel/webpack.config.js` as a reference, update `Unsolved/webpack.config.js` to use babel-loader.
 
 - Using the ES6 import/export syntax, separate functions out into separate JavaScript files to make your application more modular.
 
