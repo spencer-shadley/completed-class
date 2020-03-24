@@ -1,9 +1,7 @@
-'use strict';
+import WebpackPwaManifest from `webpack-pwa-manifest`;
+import { resolve, join } from `path`;
 
-const WebpackPwaManifest = require(`webpack-pwa-manifest`);
-const path = require(`path`);
-
-const config = {
+export default {
   mode: `development`,
   entry: `./public/assets/js/app.js`,
   output: {
@@ -21,13 +19,12 @@ const config = {
       start_url: `/`,
       icons: [
         {
-          src: path.resolve(`public/assets/images/icons/icon-192x192.png`),
+          src: resolve(`public/assets/images/icons/icon-192x192.png`),
           sizes: [96, 128, 192, 256, 384, 512],
-          destination: path.join(`assets`, `icons`)
+          destination: join(`assets`, `icons`)
         }
       ]
     })
   ]
   // add configuration to use babel-loader here
-};
-module.exports = config;
+};;

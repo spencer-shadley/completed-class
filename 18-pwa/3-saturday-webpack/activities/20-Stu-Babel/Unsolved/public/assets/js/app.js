@@ -1,5 +1,3 @@
-'use strict';
-
 loadImages();
 
 function createEl(htmlString = ``, className) {
@@ -110,5 +108,4 @@ function updateRating(event) {
   }).then(() => {
     loadImages();
   });
-
 }

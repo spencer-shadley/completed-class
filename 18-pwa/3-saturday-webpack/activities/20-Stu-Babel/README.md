@@ -10,7 +10,7 @@ In this activity we will adjust our Gallery app so that Webpack minifies and bun
 
 - Using `19-Ins-Babel/webpack.config.js` as a reference, update `Unsolved/webpack.config.js` to use babel-loader.
 
-- Using the ES6 import/export syntax, separate functions out into separate JavaScript files to make your application more modular.
+- Using the ES6 `import`/`export` syntax, separate functions out into separate JavaScript files to make your application more modular.
 
 - While there are many ways that you can separate your JavaScript files, it is recommended that you create somethings similar to the following file structure:
 
