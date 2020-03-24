@@ -1,4 +1,4 @@
-'use strict';
+
 
 // Creates pseudo-unique ids for articles
 export function createArticleIds(articles) {
@@ -18,9 +18,9 @@ export function createArticleIds(articles) {
 export function getParams() {
   return location.search
     .substring(1)
-    .split('&')
+    .split(`&`)
     .reduce((acc, curr) => {
-      const [key, value] = curr.split('=');
+      const [key, value] = curr.split(`=`);
 
       acc[key] = value;
       return acc;
@@ -31,14 +31,14 @@ export function formatDate(dateStr) {
   const date = new Date(dateStr);
 
   const options = {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
+    year: `numeric`,
+    month: `long`,
+    day: `numeric`
   };
 
   return date.toLocaleDateString(options);
 }
 
 export function removePunctuationFromString(str) {
-  return str.replace(/[.,/#!$%^&*;:{}=\-_`~()]/g, '').replace(/\s/g, '');
+  return str.replace(/[.,/#!$%^&*;:{}=\-_`~()]/g, ``).replace(/\s/g, ``);
 }

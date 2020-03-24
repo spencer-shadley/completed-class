@@ -1,4 +1,4 @@
-'use strict';
+
 
 const express = require(`express`);
 
@@ -11,6 +11,6 @@ app.use(express.json());
 
 require(`./routes/htmlRoutes.js`)(app);
 
-app.listen(PORT, () => {
-  console.log(`Listening on http://localhost:${PORT}`);
-});
+app.listen(PORT, () =>
+  console.log(`Listening on http://localhost:${PORT}`)
+);

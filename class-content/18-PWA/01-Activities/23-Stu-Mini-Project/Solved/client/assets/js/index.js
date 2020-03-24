@@ -1,23 +1,21 @@
-'use strict';
-
 import { createElement } from './domMethods';
 // Setting up dummy topics data
 let topicData = [
   {
     id: 1,
-    name: 'Politics'
+    name: `Politics`
   },
   {
     id: 2,
-    name: 'Environment'
+    name: `Environment`
   },
   {
     id: 3,
-    name: 'Sports'
+    name: `Sports`
   },
   {
     id: 4,
-    name: 'Entertainment'
+    name: `Entertainment`
   }
 ];
 
@@ -25,7 +23,7 @@ let lastId = 4;
 
 // Empty topic container, render topics
 function renderTopics() {
-  const topicContainer = document.querySelector('.topic-container');
+  const topicContainer = document.querySelector(`.topic-container`);
   const topics = createTopics(topicData);
 
   while (topicContainer.firstChild) {
@@ -36,10 +34,10 @@ function renderTopics() {
 }
 
 // Return HTML for each topic provided
-function createTopics(topicData) {
+function createTopics(currTopics) {
   const fragment = document.createDocumentFragment();
 
-  topicData.forEach(data => {
+  currTopics.forEach(data => {
     const topic = createTopic(data);
     fragment.appendChild(topic);
   });
@@ -50,20 +48,20 @@ function createTopics(topicData) {
 // Return markup for a topic object
 function createTopic({ name, id }) {
   return createElement(
-    'div',
-    { class: 'topic' },
+    `div`,
+    { class: `topic` },
     createElement(
-      'button',
-      { 'aria-label': 'Close', 'data-id': id, onClick: handleTopicDelete },
-      '×'
+      `button`,
+      { 'aria-label': `Close`, 'data-id': id, onClick: handleTopicDelete },
+      `×`
     ),
-    createElement('a', { href: `topic.html?query=${name}` }, name)
+    createElement(`a`, { href: `topic.html?query=${name}` }, name)
   );
 }
 
 // Deletes a topic on click
 function handleTopicDelete(event) {
-  const id = Number(event.target.getAttribute('data-id'));
+  const id = Number(event.target.getAttribute(`data-id`));
 
   topicData = topicData.filter(topic => topic.id !== id);
 
@@ -73,7 +71,7 @@ function handleTopicDelete(event) {
 function handleTopicAdd(event) {
   event.preventDefault();
 
-  const input = document.querySelector('#add-topic');
+  const input = document.querySelector(`#add-topic`);
   const value = input.value.trim();
 
   if (!value) {
@@ -82,7 +80,7 @@ function handleTopicAdd(event) {
 
   topicData = [...topicData, { id: ++lastId, name: value }];
 
-  input.value = '';
+  input.value = ``;
 
   renderTopics();
 }
@@ -92,5 +90,5 @@ renderTopics();
 
 // Handle new topic submissions
 document
-  .querySelector('#submit-topic')
-  .addEventListener('click', handleTopicAdd);
+  .querySelector(`#submit-topic`)
+  .addEventListener(`click`, handleTopicAdd);
