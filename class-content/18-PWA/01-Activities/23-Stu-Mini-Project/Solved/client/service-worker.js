@@ -1,5 +1,3 @@
-'use strict';
-
 const FILES_TO_CACHE = [
   `/`,
   `/index.html`,
@@ -47,7 +45,12 @@ self.addEventListener(`fetch`, event => {
           return cachedResponse;
         }
 
-        return caches.open(RUNTIME).then(cache => fetch(event.request).then(response => cache.put(event.request, response.clone()).then(() => response)));
+        return caches.open(RUNTIME)
+          .then(cache => fetch(event.request)
+            // eslint-disable-next-line max-nested-callbacks
+            .then(response => cache.put(event.request, response.clone())
+              // eslint-disable-next-line max-nested-callbacks
+              .then(() => response)));
       })
     );
   }
