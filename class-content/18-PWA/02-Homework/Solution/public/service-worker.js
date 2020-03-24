@@ -14,12 +14,15 @@ self.addEventListener(`install`, event => {
 
 self.addEventListener(`fetch`, event => {
   event.respondWith(
-    fetch(event.request).catch(() => caches.match(event.request).then(response => {
-      if (response) {
-        return response;
-      } else if (event.request.headers.get(`accept`).includes(`text/html`)) {
-        return caches.match(`/index.html`);
-      }
-    }))
+    fetch(event.request)
+      .catch(
+        () => caches.match(event.request)
+          .then(response => {
+            if (response) {
+              return response;
+            } else if (event.request.headers.get(`accept`).includes(`text/html`)) {
+              return caches.match(`/index.html`);
+            }
+          }))
   );
 });

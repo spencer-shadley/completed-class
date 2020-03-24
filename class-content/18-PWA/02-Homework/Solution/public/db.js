@@ -1,5 +1,3 @@
-'use strict';
-
 const indexedDB =
   window.indexedDB ||
   window.mozIndexedDB ||
@@ -8,10 +6,10 @@ const indexedDB =
   window.shimIndexedDB;
 
 let db;
-const request = indexedDB.open(`budget`, 1);
+const request = indexedDB.open(`budget`, 3);
 
 request.onupgradeneeded = ({ target }) => {
-  const db = target.result;
+  db = target.result;
   db.createObjectStore(`pending`, { autoIncrement: true });
 };
 
@@ -24,16 +22,8 @@ request.onsuccess = ({ target }) => {
   }
 };
 
-request.onerror = function(event) {
-  console.log(`Woops! ${ event.target.errorCode}`);
-};
-
-function saveRecord(record) {
-  const transaction = db.transaction([`pending`], `readwrite`);
-  const store = transaction.objectStore(`pending`);
-
-  store.add(record);
-}
+request.onerror = event =>
+  console.error(event);
 
 function checkDatabase() {
   const transaction = db.transaction([`pending`], `readwrite`);
@@ -59,6 +49,15 @@ function checkDatabase() {
         });
     }
   };
+}
+
+// called in index.js
+// eslint-disable-next-line no-unused-vars
+function saveRecord(record) {
+  const transaction = db.transaction([`pending`], `readwrite`);
+  const store = transaction.objectStore(`pending`);
+
+  store.add(record);
 }
 
 // listen for app coming back online

@@ -148,10 +148,5 @@ function sendTransaction(isAdding) {
     });
 }
 
-document.querySelector(`#add-btn`).onclick = function() {
-  sendTransaction(true);
-};
-
-document.querySelector(`#sub-btn`).onclick = function() {
-  sendTransaction(false);
-};
+document.querySelector(`#add-btn`).onclick = () => sendTransaction(true);
+document.querySelector(`#sub-btn`).onclick = () => sendTransaction(false);
