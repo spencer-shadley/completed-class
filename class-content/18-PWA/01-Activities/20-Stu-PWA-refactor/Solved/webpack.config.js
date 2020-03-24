@@ -1,9 +1,7 @@
-'use strict';
-
 const WebpackPwaManifest = require(`webpack-pwa-manifest`);
 const path = require(`path`);
 
-const config = {
+module.exports = {
   entry: `./public/assets/js/app.js`,
   output: {
     path: `${__dirname }/public/dist`,
@@ -44,6 +42,4 @@ const config = {
       }
     ]
   }
-};
-
-module.exports = config;
+};;
