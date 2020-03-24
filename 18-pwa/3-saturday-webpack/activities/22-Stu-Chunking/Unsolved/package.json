@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npm run webpack",
-    "webpack": "webpack",
+    "webpack": "webpack --watch",
     "seed": "node seeders/seed.js"
   },
   "author": "",
