@@ -4,20 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "webpack": "webpack",
+    "build": "npm run webpack",
+    "init": "npm i && npm run seed && npm run build",
     "seed": "node seeders/seed.js",
-    "build": "npm run webpack"
+    "start": "node server",
+    "webpack": "webpack --watch"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4",
-    "glob": "^7.1.4",
-    "mongoose": "^5.5.8"
+    "express": "^4.17.1",
+    "glob": "^7.1.6",
+    "mongoose": "^5.9.6"
   },
   "devDependencies": {
-    "webpack": "^4.32.0",
-    "webpack-cli": "^3.3.2",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
     "webpack-pwa-manifest": "^4.2.0"
   }
 }
