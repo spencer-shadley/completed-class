@@ -4,7 +4,7 @@ In this activity, we will practice using multiple entry points to split up our J
 
 ## Instructions
 
-- Run `npm install`.
+- Run `npm i`.
 
 - In `webpack.config.js`, add entry points for JavaScript files for the three pages, home, detail, and favorites.
 
@@ -42,4 +42,4 @@ In this activity, we will practice using multiple entry points to split up our J
 
 - If extracting functionality from a JavaScript file causes any of the pages to stop working, do **not** continue until you understand why it's not working as expected.
 
-- Ask the instructor or a TA for help if you get stuck or are unsure why a function isn't working.
+- Enqueue in `#help-queue` if you get stuck or are unsure why a function isn't working or post in `#ask-the-class` if you have a text-based-question/answer
