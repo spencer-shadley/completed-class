@@ -8,13 +8,13 @@
     "jest": true,
     "mocha": true
   },
-  "parserOptions": { "ecmaVersion": 2020 },
+  "parserOptions": { "ecmaVersion": 2020, "sourceType": "module" },
   "globals": {
     "chai": "readonly"
   },
   "plugins": ["chai-friendly"],
   "extends": ["eslint:recommended", "plugin:chai-friendly/recommended"],
-  "ignorePatterns": ["dist/"],
+  "ignorePatterns": ["dist/", "webpack.config.js"],
   "rules": {
     "array-bracket-spacing": "error",
     "array-callback-return": "error",
