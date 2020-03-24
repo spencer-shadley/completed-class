@@ -1,6 +1,6 @@
 # Unit 18 PWA Homework: Online/Offline Budget Trackers
 
-Add functionality to our existing Budget Tracker application to allow for offline access and functionality.
+Add functionality to [our existing Budget Tracker application](../../17-nosql\3-saturday-indexeddb\activities\26-Stu-Mini-Project\Solved) to allow for offline access and functionality.
 
 The user will be able to add expenses and deposits to their budget with or without a connection. When entering transactions offline, they should populate the total when brought back online.
 
@@ -16,11 +16,21 @@ When brought back online:
 
 - Offline entries should be added to tracker.
 
+PWA requirements:
+
 - A service worker must be registered
 
-- A web manifest must be included
+- A manifest must be included
 
 - The app must be installable
+
+## Hints
+
+- Service workers are great at caching static assets, use a service worker for files like HTML, JavaScript, CSS, etc.
+
+- IndexedDB is good for data related API requests. Use this for API requests.
+
+  - [This mini-project](../../17-nosql\3-saturday-indexeddb\activities\26-Stu-Mini-Project\Solved\public\db.js) is exactly the same file used in the solution for this homework.
 
 ## User Story
 
@@ -37,6 +47,10 @@ Giving users a fast and easy way to track their money is important, but allowing
 GIVEN a user is on Budget App without an internet connection
 WHEN the user inputs a withdrawal or deposit
 THEN that will be shown on the page, and added to their transaction history when their connection is back online.
+
+## Bonus
+
+Try out [workbox](https://developers.google.com/web/tools/workbox) for your service working and employ some of its caching strategies.
 
 ---
 
