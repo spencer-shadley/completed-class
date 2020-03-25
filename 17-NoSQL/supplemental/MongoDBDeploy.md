@@ -1,6 +1,6 @@
 # How to Deploy your MongoDB Application to Heroku
 
-* In this guide we will walk through the steps required to deploy your MongoDB Application with Heroku.
+In this guide we will walk through the steps required to deploy your MongoDB Application with Heroku.
 
 ## Part One: Provision an mLab Remote Database
 
@@ -10,7 +10,7 @@
 
 2. Once in your project directory, type in `heroku create`.
 
-* ![Heroku Create](images/herokucreate.png)
+- ![Heroku Create](images/herokucreate.png)
 
 3. Navigate to [Heroku](https://www.heroku.com) and login with your credentials.
 
@@ -18,7 +18,7 @@
 
 5. Look for the Add-Ons section within your applications dashboard. In the text field search for `mLab`. This will bring up the `mLab Mongo` add-on, click to add it to your application.
 
-* ![Provision mLab](images/provisionmLab.png)
+- ![Provision mLab](images/provisionmLab.png)
 
 6. Clicking on `mLab MongoDB` will bring up a modal asking you if you'd like to provision a specific tier plan.
 
@@ -42,7 +42,7 @@
 
 4. Now that we have provisioned our add-on, Heroku will set our environmental variables for us to connect to the DB via the `MONGODB_URI`
 
-* Make sure you have this line of code within your `server.js` file.
+- Make sure you have this line of code within your `server.js` file.
 
 ![MongoDB_URI](images/MONGODB_URI.png)
 
