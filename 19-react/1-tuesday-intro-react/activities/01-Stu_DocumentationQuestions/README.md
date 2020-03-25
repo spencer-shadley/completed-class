@@ -6,13 +6,13 @@ In this activity, we will begin by installing a few helpful packages and then ex
 
 ### Part 1
 
-- Begin installing Create React App globally by running the following command in your terminal:
+Install the Create React App globally by running the following command in your terminal:
 
 `npm install -g create-react-app`
 
 ### Part 2
 
-- While those are installing, work with your group to answer each of the following questions using the [ReactJS Documentation](https://facebook.github.io/react/):
+While that is installing, work with your group to answer each of the following questions using the [ReactJS Documentation](https://facebook.github.io/react/):
 
 1. In the previous section we installed Create React App. What is it for?
 
@@ -31,3 +31,7 @@ In this activity, we will begin by installing a few helpful packages and then ex
 8. What is the significance of { } curly braces in JSX? Hint: Check the "Introducing JSX" section of the documentation.
 
 9. What is a component prop? Hint: Check the "Components and Props" section of the React documentation.
+
+### Bonus
+
+Read through the [Getting Started](https://reactjs.org/docs/getting-started.html) page, diving into either the "practical tutorial" or "guide to main concepts" links
