@@ -1,5 +1,3 @@
-'use strict';
-
 loadImages();
 
 function createEl(htmlString = ``, className) {
