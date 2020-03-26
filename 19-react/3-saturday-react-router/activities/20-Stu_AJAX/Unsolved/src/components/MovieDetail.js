@@ -16,4 +16,12 @@ function MovieDetail(props) {
     );
 }
 
+MovieDetail.propTypes = {
+    title: String,
+    src: String,
+    director: String,
+    genre: String,
+    released: String
+};
+
 export default MovieDetail;

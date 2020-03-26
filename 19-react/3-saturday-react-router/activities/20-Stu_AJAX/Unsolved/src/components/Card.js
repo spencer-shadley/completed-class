@@ -11,4 +11,9 @@ function Card(props) {
     );
 }
 
+Card.propTypes = {
+    children: Array,
+    heading: String
+};
+
 export default Card;

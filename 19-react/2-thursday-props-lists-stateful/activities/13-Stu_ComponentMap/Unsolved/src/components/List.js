@@ -1,6 +1,6 @@
 import React from 'react';
 
-function List(props) {
+function List() {
     return (
         <ul className="list-group">
             Using the map method, render one li element displaying the text property

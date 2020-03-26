@@ -6,4 +6,9 @@ function Row(props) {
     );
 }
 
+Row.propTypes = {
+    children: Array,
+    fluid: String
+};
+
 export default Row;

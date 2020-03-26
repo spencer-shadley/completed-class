@@ -1,5 +1,6 @@
-import React from 'react';
 import './style.css';
+
+import React from 'react';
 
 function SpongeBobCard() {
     return (
@@ -7,6 +8,7 @@ function SpongeBobCard() {
             <div className="img-container">
                 <img
                     alt="SpongeBob"
+                    // eslint-disable-next-line max-len
                     src="https://vignette.wikia.nocookie.net/spongebobgalaxy/images/0/07/SpongeBob_SquarePants.png/revision/latest?cb=20171228024014"
                 />
             </div>

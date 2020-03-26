@@ -8,4 +8,9 @@ function Container(props) {
     );
 }
 
+Container.propTypes = {
+    children: Array,
+    fluid: String
+};
+
 export default Container;

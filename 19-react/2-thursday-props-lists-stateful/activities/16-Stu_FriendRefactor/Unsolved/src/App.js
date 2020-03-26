@@ -1,8 +1,9 @@
-import React from 'react';
+import './App.css';
+
 import FriendCard from './components/FriendCard';
+import React from 'react';
 import Wrapper from './components/Wrapper';
 import friends from './friends.json';
-import './App.css';
 
 function App() {
     return (

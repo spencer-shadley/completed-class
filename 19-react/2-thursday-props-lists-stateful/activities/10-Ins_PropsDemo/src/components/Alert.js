@@ -10,4 +10,9 @@ function Alert(props) {
     );
 }
 
+Alert.propTypes = {
+    children: Array,
+    type: String
+};
+
 export default Alert;
