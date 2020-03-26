@@ -19,3 +19,7 @@ In this activity, we will render a list of JSX elements inside of a div.
 - Reference the previous `HelloReact` activity if you get stuck with any syntax.
 
 - If you're trying to render multiple JSX tags from a single component, you should enclose all of the JSX tags within a single parent tag, such as a `div`.
+
+## Bonus
+
+- Try doing this as class component and as a functional component
