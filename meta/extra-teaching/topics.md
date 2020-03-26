@@ -46,3 +46,5 @@
 - serving a site on https
 
 - https://developers.google.com/web/ilt/pwa/introduction-to-push-notifications
+
+- concurrency - 18-pwa\supplemental\service-workers.md
