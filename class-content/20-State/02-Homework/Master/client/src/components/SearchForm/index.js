@@ -1,5 +1,3 @@
-'use strict';
-
 import React, { useRef } from 'react';
 import API from '../../utils/API';
 import { UPDATE_PRODUCTS } from '../../utils/actions';

@@ -1,5 +1,3 @@
-'use strict';
-
 import React from 'react';
 
 // If we want a child component to update or pass data to its parent, we can create a method inside the parent for the update

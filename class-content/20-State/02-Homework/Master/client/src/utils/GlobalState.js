@@ -1,5 +1,3 @@
-'use strict';
-
 import React, { createContext, useReducer, useContext } from 'react';
 import {
   SET_CURRENT_PRODUCT,

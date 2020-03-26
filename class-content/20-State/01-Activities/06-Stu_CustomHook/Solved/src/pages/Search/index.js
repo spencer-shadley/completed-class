@@ -1,5 +1,3 @@
-'use strict';
-
 import React, { useState, useEffect } from 'react';
 import Container from '../../components/Container';
 import SearchForm from '../../components/SearchForm';

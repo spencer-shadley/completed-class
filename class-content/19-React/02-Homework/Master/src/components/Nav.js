@@ -1,5 +1,3 @@
-'use strict';
-
 import React from 'react';
 import SearchBox from './SearchBox.js';
 import '../styles/Nav.css';

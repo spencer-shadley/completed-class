@@ -1,5 +1,3 @@
-'use strict';
-
 import React from 'react';
 
 // This Col component lets us size bootstrap columns with less syntax

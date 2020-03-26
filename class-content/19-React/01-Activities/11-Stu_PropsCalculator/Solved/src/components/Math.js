@@ -1,5 +1,3 @@
-'use strict';
-
 import React from 'react';
 
 // The Math function component accepts a props argument

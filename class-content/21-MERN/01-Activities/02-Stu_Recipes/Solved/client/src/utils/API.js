@@ -1,5 +1,3 @@
-'use strict';
-
 import axios from 'axios';
 
 // The getRecipes method retrieves recipes from the server

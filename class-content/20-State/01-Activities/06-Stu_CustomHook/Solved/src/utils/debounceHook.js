@@ -1,5 +1,3 @@
-'use strict';
-
 import { useEffect, useState } from 'react';
 
 const useDebounce = (value, delay) => {

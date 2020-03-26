@@ -1,5 +1,3 @@
-'use strict';
-
 import React, { useEffect, useState } from 'react';
 import Jumbotron from '../../components/Jumbotron';
 import DeleteBtn from '../../components/DeleteBtn';

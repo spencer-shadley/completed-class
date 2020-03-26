@@ -1,5 +1,3 @@
-'use strict';
-
 import React from 'react';
 import { useInput, useBoolean, useNumber } from 'react-hanger';
 

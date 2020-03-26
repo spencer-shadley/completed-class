@@ -1,5 +1,3 @@
-'use strict';
-
 import { prompt } from 'inquirer';
 import { promisify } from 'util';
 import prompts from './prompts';

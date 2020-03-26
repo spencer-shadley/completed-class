@@ -1,5 +1,3 @@
-'use strict';
-
 import React, { Component } from 'react';
 import NavTabs from './NavTabs';
 import Home from './pages/Home';
