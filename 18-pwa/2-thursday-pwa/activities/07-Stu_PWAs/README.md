@@ -13,7 +13,7 @@ Follow these instructions to install a PWA:
 
 - Desktop:
 
-  1. Navigate to [https://secure-bayou-27137.herokuapp.com/](https://secure-bayou-27137.herokuapp.com/) with Chrome
+  1. Navigate to [https://secure-bayou-27137.herokuapp.com/](https://secure-bayou-27137.herokuapp.com/) (or find your own PWA to install) with Chrome
 
   1. On the very right of the omnibar click the "(+)" icon
 
@@ -21,7 +21,7 @@ Follow these instructions to install a PWA:
 
 - Android:
 
-  1. Navigate to [https://secure-bayou-27137.herokuapp.com/](https://secure-bayou-27137.herokuapp.com/) with Chrome
+  1. Navigate to [https://secure-bayou-27137.herokuapp.com/](https://secure-bayou-27137.herokuapp.com/) (or find your own PWA to install) with Chrome
 
   1. Tap the menu button in the upper right corner of Chrome.
 
@@ -31,7 +31,7 @@ Follow these instructions to install a PWA:
 
 - iOS:
 
-  1. Navigate to [https://secure-bayou-27137.herokuapp.com/](https://secure-bayou-27137.herokuapp.com/) with Safari
+  1. Navigate to [https://secure-bayou-27137.herokuapp.com/](https://secure-bayou-27137.herokuapp.com/) (or find your own PWA to install) with Safari
 
   1. Tap the Share button in Safari.
 
