@@ -1,5 +1,3 @@
-'use strict';
-
 import React from 'react';
 import Survey from './pages/Survey';
 import './App.css';

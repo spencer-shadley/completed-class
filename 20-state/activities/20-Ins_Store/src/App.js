@@ -1,5 +1,3 @@
-'use strict';
-
 import React from 'react';
 import Count from './components/Count';
 import { CountProvider } from './utils/GlobalState';

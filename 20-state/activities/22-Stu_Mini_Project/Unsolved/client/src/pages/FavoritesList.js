@@ -1,5 +1,3 @@
-'use strict';
-
 import React, { useEffect } from 'react';
 import { ListItem, List } from '../components/List';
 import DeleteBtn from '../components/DeleteBtn';

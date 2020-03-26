@@ -1,5 +1,3 @@
-'use strict';
-
 import React from 'react';
 import { Link, Route } from 'react-router-dom';
 import Learn from './Learn';

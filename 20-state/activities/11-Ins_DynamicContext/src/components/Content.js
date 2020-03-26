@@ -1,5 +1,3 @@
-'use strict';
-
 import React, { useContext } from 'react';
 import Alert from './Alert';
 import AlertContext from '../utils/AlertContext';

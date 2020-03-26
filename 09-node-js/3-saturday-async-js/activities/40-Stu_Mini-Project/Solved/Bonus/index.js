@@ -1,5 +1,3 @@
-'use strict';
-
 import { prompt } from 'inquirer';
 import { writeFile } from 'fs';
 import { promisify } from 'util';

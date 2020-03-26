@@ -1,5 +1,3 @@
-'use strict';
-
 import React, { useContext } from 'react';
 import userContext from '../utils/UserContext';
 

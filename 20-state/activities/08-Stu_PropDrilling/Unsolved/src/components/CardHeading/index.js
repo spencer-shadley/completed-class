@@ -1,5 +1,3 @@
-'use strict';
-
 import React from 'react';
 import CardTitle from '../CardTitle';
 import './style.css';

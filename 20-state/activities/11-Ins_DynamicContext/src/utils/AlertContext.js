@@ -1,5 +1,3 @@
-'use strict';
-
 import React from 'react';
 // default context object with properties corresponding to Provider values
 
