@@ -20,7 +20,7 @@
     "plugin:jsx-a11y/recommended"
   ],
   "plugins": ["jest", "jsx-a11y", "react"],
-  "ignorePatterns": ["dist/"],
+  "ignorePatterns": ["dist/", "algorithms"],
   "rules": {
     "react/jsx-indent": "error",
     "array-bracket-spacing": "error",
