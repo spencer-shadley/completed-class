@@ -40,3 +40,9 @@
 
       - it updates the DOM - a side effect
   ```
+
+- Service worker notifications
+
+- serving a site on https
+
+- https://developers.google.com/web/ilt/pwa/introduction-to-push-notifications
