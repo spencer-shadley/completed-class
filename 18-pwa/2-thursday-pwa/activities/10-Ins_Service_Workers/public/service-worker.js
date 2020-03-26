@@ -1,3 +1,1 @@
-'use strict';
-
-console.log(`Hello from service worker!`);
+console.log(`Hello from your friendly neighborhood service worker!`);
