@@ -1,62 +1,59 @@
-'use strict';
-/* eslint-disable no-magic-numbers */
-
 const expect = chai.expect;
 
-describe('intToRoman', function() {
-  it(`should return "III" if given the number 3`, function() {
-    const num = 3;
+describe(`intToRoman`, () => {
+    it(`should return "III" if given the number 3`, () => {
+        const num = 3;
 
-    const result = intToRoman(num);
+        const result = intToRoman(num);
 
-    expect(result).to.eql('III');
-  });
+        expect(result).to.eql(`III`);
+    });
 
-  it(`should return "IV" if given the number 4`, function() {
-    const num = 4;
+    it(`should return "IV" if given the number 4`, () => {
+        const num = 4;
 
-    const result = intToRoman(num);
+        const result = intToRoman(num);
 
-    expect(result).to.eql('IV');
-  });
+        expect(result).to.eql(`IV`);
+    });
 
-  it(`should return "XIII" if given the number 13`, function() {
-    const num = 13;
+    it(`should return "XIII" if given the number 13`, () => {
+        const num = 13;
 
-    const result = intToRoman(num);
+        const result = intToRoman(num);
 
-    expect(result).to.eql('XIII');
-  });
+        expect(result).to.eql(`XIII`);
+    });
 
-  it(`should return "IX" if given the number 9`, function() {
-    const num = 9;
+    it(`should return "IX" if given the number 9`, () => {
+        const num = 9;
 
-    const result = intToRoman(num);
+        const result = intToRoman(num);
 
-    expect(result).to.eql('IX');
-  });
+        expect(result).to.eql(`IX`);
+    });
 
-  it(`should return "LVIII" if given the number 58`, function() {
-    const num = 58;
+    it(`should return "LVIII" if given the number 58`, () => {
+        const num = 58;
 
-    const result = intToRoman(num);
+        const result = intToRoman(num);
 
-    expect(result).to.eql('LVIII');
-  });
+        expect(result).to.eql(`LVIII`);
+    });
 
-  it(`should return "MCMXCIV" if given the number 1994`, function() {
-    const num = 1994;
+    it(`should return "MCMXCIV" if given the number 1994`, () => {
+        const num = 1994;
 
-    const result = intToRoman(num);
+        const result = intToRoman(num);
 
-    expect(result).to.eql('MCMXCIV');
-  });
+        expect(result).to.eql(`MCMXCIV`);
+    });
 
-  it(`should return "MDCCXXXVIII" if given the number 1738`, function() {
-    const num = 1738;
+    it(`should return "MDCCXXXVIII" if given the number 1738`, () => {
+        const num = 1738;
 
-    const result = intToRoman(num);
+        const result = intToRoman(num);
 
-    expect(result).to.eql('MDCCXXXVIII');
-  });
+        expect(result).to.eql(`MDCCXXXVIII`);
+    });
 });
