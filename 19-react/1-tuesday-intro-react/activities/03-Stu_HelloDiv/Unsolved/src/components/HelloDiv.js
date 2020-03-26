@@ -1,5 +1,3 @@
-
-
 function HelloDiv() {
   return null;
 }
