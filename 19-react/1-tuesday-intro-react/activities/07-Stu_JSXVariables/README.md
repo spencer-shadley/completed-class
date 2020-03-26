@@ -23,4 +23,4 @@
 
 ## Bonus
 
-- Add another heading that says "My name without any vowels is: <insert name without vowels here>". Create a function that takes a string as a parameter and returns the string with the vowels removed. Run this function inside of JSX curly braces to complete the statement.
+- Add another heading that says "My name without any vowels is: `<insert name without vowels here>`. Create a function that takes a string as a parameter and returns the string with the vowels removed. Run this function inside of JSX curly braces to complete the statement.
