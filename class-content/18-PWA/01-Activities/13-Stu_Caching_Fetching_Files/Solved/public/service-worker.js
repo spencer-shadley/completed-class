@@ -1,5 +1,3 @@
-'use strict';
-
 const FILES_TO_CACHE = [
   `/`,
   `/index.html`,
@@ -100,12 +98,9 @@ self.addEventListener(`fetch`, evt => {
 
           return response;
         })
-        .catch(err => {
-          // Network request failed, try to get it from the cache.
-          cache.match(evt.request);
-          console.error(err);
-        }
-        )).catch(err => console.log(err))
+        // Network request failed, try to get it from the cache.
+        .catch(() => cache.match(evt.request)))
+        .catch(err => console.log(err))
     );
 
     return;

@@ -1,5 +1,3 @@
-'use strict';
-
 loadImages();
 let dataArray = [];
 
