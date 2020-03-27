@@ -1,7 +1,6 @@
 import './App.css';
 
 import FriendCard from './components/FriendCard';
-import PropTypes from 'prop-types';
 import React from 'react';
 import Wrapper from './components/Wrapper';
 import friends from './friends.json';

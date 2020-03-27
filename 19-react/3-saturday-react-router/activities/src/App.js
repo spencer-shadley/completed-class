@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 import SearchResultContainer from './components/SearchResultContainer';
 
