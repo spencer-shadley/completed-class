@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 
 // By extending the React.Component class, Counter inherits functionality from it
@@ -13,7 +12,7 @@ class Counter extends React.Component {
     }
 
     // handleIncrement increments this.state.count by 1
-    handleIncrement() {
+    handleIncrement = () => {
     // We always use the setState method to update a component's state
         this.setState({ count: this.state.count + 1 });
     }
