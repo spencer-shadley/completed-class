@@ -1,6 +1,5 @@
 import List from './components/List';
 
-import PropTypes from 'prop-types';
 import React from 'react';
 
 const groceries = [
