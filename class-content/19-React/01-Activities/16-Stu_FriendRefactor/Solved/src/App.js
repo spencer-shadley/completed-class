@@ -1,14 +1,19 @@
-import React, { Component } from 'react';
+import React from 'react';
 import FriendCard from './components/FriendCard';
 import Wrapper from './components/Wrapper';
 import Title from './components/Title';
 import friends from './friends.json';
 
-class App extends Component {
-  // Setting this.state.friends to the friends json array
-  state = {
-    friends
-  };
+class App extends React.Component {
+
+  constructor(props) {
+    super(props);
+    
+    // Setting this.state.friends to the friends json array
+    this.state = {
+      friends
+    };
+  }
 
   removeFriend = id => {
     // Filter this.state.friends for friends with an id not equal to the id being removed
