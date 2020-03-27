@@ -1,5 +1,3 @@
-'use strict';
-
 const FILES_TO_CACHE = [`/`, `/index.html`, `app.js`, `favicon.ico`];
 
 const CACHE_NAME = `static-cache-v2`;
@@ -66,22 +64,3 @@ self.addEventListener(`fetch`, event => {
     );
   }
 });
-
-//  } else {
-//     // if the request is not for the API, serve static assets using "offline-first" approach.
-//     // https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook#cache-falling-back-to-network
-//     event.respondWith(
-//       caches.match(event.request).then(response => {
-//         if (response) {
-//           return response;
-//         } else {
-//           fetch(event.request);
-//         }
-
-//         return response || fetch(event.request);
-//       })
-//         .catch(err => console.error(err))
-//     );
-//   }
-// });
-
