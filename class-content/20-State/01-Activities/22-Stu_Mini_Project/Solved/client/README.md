@@ -618,6 +618,7 @@ To reduce the number of requests to the server, importing images that are less t
 Here is an example:
 
 ```js
+import PropTypes from 'prop-types';
 import React from 'react';
 import logo from './logo.png'; // Tell Webpack this JS file uses this image
 
@@ -1239,6 +1240,7 @@ Different projects choose different testing tradeoffs based on how often compone
 ```js
 import App from './App';
 
+import PropTypes from 'prop-types';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -1267,6 +1269,7 @@ yarn add enzyme react-test-renderer
 You can write a smoke test with it too:
 
 ```js
+import PropTypes from 'prop-types';
 import React from 'react';
 import { shallow } from 'enzyme';
 import App from './App';
@@ -1283,6 +1286,7 @@ You can read the [Enzyme documentation](http://airbnb.io/enzyme/) for more testi
 Here is an example from Enzyme documentation that asserts specific output, rewritten to use Jest matchers:
 
 ```js
+import PropTypes from 'prop-types';
 import React from 'react';
 import { shallow } from 'enzyme';
 import App from './App';

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import { Container } from '../components/Grid';
 import Checkout from '../components/Checkout';

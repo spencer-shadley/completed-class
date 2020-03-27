@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import Gallery from './pages/Gallery';
 import Navbar from './components/Navbar';

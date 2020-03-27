@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import CardBody from '../CardBody';
 import CardBtn from '../CardBtn';

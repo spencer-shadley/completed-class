@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import Signup from './pages/Signup';
 import './App.css';
