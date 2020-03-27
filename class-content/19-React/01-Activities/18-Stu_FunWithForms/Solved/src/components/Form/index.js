@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './style.css';
 
-class Form extends Component {
+class Form extends React.Component {
   // Setting the component's initial state
   state = {
     firstName: '',
