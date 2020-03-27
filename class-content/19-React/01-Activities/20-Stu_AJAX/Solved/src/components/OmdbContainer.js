@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Container from './Container';
 import Row from './Row';
 import Col from './Col';
@@ -7,7 +7,7 @@ import SearchForm from './SearchForm';
 import MovieDetail from './MovieDetail';
 import API from '../utils/API';
 
-class OmdbContainer extends Component {
+class OmdbContainer extends React.Component {
   state = {
     result: {},
     search: ''

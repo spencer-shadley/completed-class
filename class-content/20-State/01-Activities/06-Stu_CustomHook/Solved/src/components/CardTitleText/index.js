@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 import CardContext from '../../utils/CardContext';
 

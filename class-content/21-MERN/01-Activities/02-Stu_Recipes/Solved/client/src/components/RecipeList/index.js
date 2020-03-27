@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 import Thumbnail from '../Thumbnail';
 import { Container, Row, Col } from '../Grid';

@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 
 // Destructuring the type, className, children and onClick props, applying them to the button element

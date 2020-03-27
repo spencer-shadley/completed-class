@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import DataTable from './DataTable';
 import Nav from './Nav';
 import API from '../utils/API';
 import '../styles/DataArea.css';
 
-export default class DataArea extends Component {
+export default class DataArea extends React.Component {
   constructor() {
     super();
     this.state = {
