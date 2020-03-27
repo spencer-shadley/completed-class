@@ -1,5 +1,6 @@
 import './style.css';
 
+import PropTypes from 'prop-types';
 import React from 'react';
 
 function FriendCard(props) {
@@ -23,6 +24,13 @@ function FriendCard(props) {
       </div>
     </div>
   );
+}
+
+FriendCard.propTypes = {
+  children: PropTypes.node,
+  name: PropTypes.string,
+  occupation: PropTypes.string,
+  location: PropTypes.string
 }
 
 export default FriendCard;
