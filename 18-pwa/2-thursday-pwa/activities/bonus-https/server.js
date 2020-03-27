@@ -2,6 +2,9 @@ const express = require(`express`);
 const fs = require(`fs`);
 const https = require(`https`);
 
+const key = fs.readFileSync(`./key.pem`);
+const cert = fs.readFileSync(`./cert.pem`);
+
 const htmlRoutes = require(`./routes/htmlRoutes`);
 
 const app = express();
@@ -14,10 +17,10 @@ app.use(express.json());
 htmlRoutes(app);
 
 const httpsServer = https.createServer({
-  key: fs.readFileSync(`./key.pem`),
-  cert: fs.readFileSync(`./cert.pem`)
+  key,
+  cert
 }, app);
 
 httpsServer.listen(PORT, () => {
-  console.log(`Listening on https://localhost:${PORT}`);
+  console.log(`listening on https://localhost:${PORT}`);
 });
