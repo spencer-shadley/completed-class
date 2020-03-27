@@ -4,15 +4,12 @@
 
   - Add regular interview times
   - Figure out how to add more computer science
-
-1. Unit 18 (PWA)
-
-   1. fix 18.2 offline activity
+  - Happy Hour
+  - Themed weekly backgrounds
 
 1. Unit 19 (react)
 
    1. architecture talk prep
-   1. 19.2 prep
    1. 19.3 prep
    1. send overview of unit in Slack
    1. 19.2 drill
