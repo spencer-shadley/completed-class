@@ -1,8 +1,8 @@
-import Alert from './components/Alert';
+import Button from './components/Button';
 import React from 'react';
 
 function App() {
-    return <Alert type="info">Passing prop 'type' as 'info'</Alert>;
+    return <Button type="info">Passing prop 'type' as 'info'</Button>;
 }
 
 export default App;
