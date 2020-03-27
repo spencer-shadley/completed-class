@@ -4,6 +4,7 @@ import Blog from './components/pages/Blog';
 import Contact from './components/pages/Contact';
 import Home from './components/pages/Home';
 import NavTabs from './components/NavTabs';
+import PropTypes from 'prop-types';
 import React from 'react';
 
 function App() {

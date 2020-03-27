@@ -1,5 +1,6 @@
 import NavTabs from './NavTabs';
 
+import PropTypes from 'prop-types';
 import React from 'react';
 
 class PortfolioContainer extends React.Component {

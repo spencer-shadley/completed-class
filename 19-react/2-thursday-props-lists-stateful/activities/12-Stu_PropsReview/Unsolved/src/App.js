@@ -1,4 +1,5 @@
 import MrKrabsCard from './components/MrKrabsCard';
+import PropTypes from 'prop-types';
 import React from 'react';
 import SpongeBobCard from './components/SpongeBobCard';
 import SquidwardCard from './components/SquidwardCard';

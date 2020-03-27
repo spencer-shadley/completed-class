@@ -1,5 +1,6 @@
 import { Link, Route } from 'react-router-dom';
 import Learn from './Learn';
+import PropTypes from 'prop-types';
 import React from 'react';
 
 class Contact extends React.Component {
