@@ -10,7 +10,6 @@
 1. Unit 19 (react)
 
    1. architecture talk prep
-   1. 19.3 prep
    1. send overview of unit in Slack
    1. 19.2 drill
    1. hw 19
