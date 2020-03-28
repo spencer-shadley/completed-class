@@ -3,7 +3,6 @@ import Card from './Card';
 import Col from './Col';
 import Container from './Container';
 import MovieDetail from './MovieDetail';
-import PropTypes from 'prop-types';
 import React from 'react';
 import Row from './Row';
 import SearchForm from './SearchForm';

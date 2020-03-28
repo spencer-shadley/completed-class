@@ -8,8 +8,8 @@ function Row(props) {
 }
 
 Row.propTypes = {
-    children: Array,
-    fluid: String
+    children: PropTypes.node,
+    fluid: PropTypes.string
 };
 
 export default Row;

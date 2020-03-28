@@ -13,8 +13,8 @@ function Card(props) {
 }
 
 Card.propTypes = {
-    children: Array,
-    heading: String
+    children: PropTypes.array,
+    heading: PropTypes.string
 };
 
 export default Card;

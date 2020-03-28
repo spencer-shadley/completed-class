@@ -10,8 +10,8 @@ function Container(props) {
 }
 
 Container.propTypes = {
-    children: Array,
-    fluid: String
+    children: PropTypes.node,
+    fluid: PropTypes.string
 };
 
 export default Container;

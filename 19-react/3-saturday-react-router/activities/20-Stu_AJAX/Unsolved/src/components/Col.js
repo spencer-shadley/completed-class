@@ -15,8 +15,8 @@ function Col(props) {
 }
 
 Col.propTypes = {
-    children: Array,
-    size: String
+    children: PropTypes.node,
+    size: PropTypes.number
 };
 
 export default Col;
