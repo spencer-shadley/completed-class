@@ -38,7 +38,7 @@ class Form extends React.Component {
     }
 
     render() {
-    // Notice how each input has a `value`, `name`, and `onChange` prop
+    // Notice how each input has a `value`, `name`, and `onChange` attribute
         return (
             <div>
                 <p>
