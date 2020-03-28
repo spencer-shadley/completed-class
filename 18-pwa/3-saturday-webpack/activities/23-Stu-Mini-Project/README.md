@@ -30,6 +30,10 @@ In this activity we will take an existing news aggregator application and transf
 
 - Create a `service-worker.js` and make sure to cache all of the bundle files.
 
+#### Hint
+
+- If you would like to focus on webpack (the focus for today,) use the supplied `hint/service-worker.js` file for your service worker
+
 ### Part 2
 
 - Take a moment to study the contents of `index.js`:
