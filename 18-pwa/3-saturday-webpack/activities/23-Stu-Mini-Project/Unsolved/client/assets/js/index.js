@@ -32,10 +32,10 @@ function renderTopics() {
 }
 
 // Return HTML for each topic provided
-function createTopics(topicData) {
+function createTopics(topics) {
   const fragment = document.createDocumentFragment();
 
-  topicData.forEach(data => {
+  topics.forEach(data => {
     const topic = createTopic(data);
     fragment.appendChild(topic);
   });
