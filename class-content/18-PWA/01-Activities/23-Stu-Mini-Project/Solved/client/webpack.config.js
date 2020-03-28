@@ -1,4 +1,5 @@
-'use strict';
+/* eslint-disable no-magic-numbers */
+/* eslint-disable camelcase */
 
 const SWPrecacheWebpackPlugin = require(`sw-precache-webpack-plugin`);
 const WebpackPwaManifest = require(`webpack-pwa-manifest`);
@@ -38,6 +39,7 @@ const config = {
       staticFileGlobsIgnorePatterns: [/\.map$/, /manifest\.json$/]
     }),
     new WebpackPwaManifest({
+      fingerprints: false,
       name: `Newsy app`,
       short_name: `Newsy`,
       description:
