@@ -4,10 +4,6 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 class Contact extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <div>
@@ -42,7 +38,7 @@ class Contact extends React.Component {
 }
 
 Contact.propTypes = {
-    match: Object
+    match: PropTypes.object
 };
 
 export default Contact;
