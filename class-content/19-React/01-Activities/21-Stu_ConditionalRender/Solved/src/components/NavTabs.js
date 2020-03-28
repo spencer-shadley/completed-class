@@ -52,4 +52,8 @@ function NavTabs(props) {
   );
 }
 
+NavTabs.propTypes = {
+    handlePageChange: PropTypes.func
+};
+
 export default NavTabs;

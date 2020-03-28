@@ -6,9 +6,13 @@ import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 
 class Portfolio extends React.Component {
-  state = {
-    currentPage: 'Home'
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentPage: 'Home'
+    };
+  }
+
 
   handlePageChange = page => {
     this.setState({ currentPage: page });
