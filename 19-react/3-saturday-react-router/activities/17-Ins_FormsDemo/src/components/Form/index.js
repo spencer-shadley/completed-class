@@ -13,18 +13,17 @@ class Form extends React.Component {
         };
     }
 
-
-    handleInputChange(event) {
+    handleInputChange = event => {
     // Getting the value and name of the input which triggered the change
         const { name, value } = event.target;
 
-        // Updating the input's state
+        // Updating each input's state.name to value
         this.setState({
             [name]: value
         });
     }
 
-    handleFormSubmit(event) {
+    handleFormSubmit = event => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
         event.preventDefault();
 
