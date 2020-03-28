@@ -1,4 +1,4 @@
-# <center> Performance / PWA / Webpack
+# <center> Performance / PWA 
 
 ## <center> Focus on understanding concepts / structure
     1. There is a lot of code involved with PWA, but most of it is easily accessible and templated.  
@@ -39,6 +39,11 @@
     2. Installation
     3. Activation
 
+## <center> More Information below
+---
+
 [Life-cycle by Google](https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle)
+
+[Workbox](https://developers.google.com/web/tools/workbox)
 
 
