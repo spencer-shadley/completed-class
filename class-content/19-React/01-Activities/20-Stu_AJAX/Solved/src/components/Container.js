@@ -9,4 +9,9 @@ function Container(props) {
   );
 }
 
+Container.propTypes = {
+  children: PropTypes.node,
+  fluid: PropTypes.string
+}
+
 export default Container;

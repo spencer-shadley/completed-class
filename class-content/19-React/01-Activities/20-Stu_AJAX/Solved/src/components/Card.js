@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 function Card(props) {
@@ -9,6 +10,11 @@ function Card(props) {
       <div className="card-body">{props.children}</div>
     </div>
   );
+}
+
+Card.propTypes = {
+  children: PropTypes.node,
+  heading: PropTypes.string
 }
 
 export default Card;

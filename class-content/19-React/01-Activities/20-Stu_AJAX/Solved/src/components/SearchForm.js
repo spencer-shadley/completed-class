@@ -24,4 +24,10 @@ function SearchForm(props) {
   );
 }
 
+SearchForm.propTypes = {
+  children: PropTypes.node,
+  handleInputChange: PropTypes.func,
+  handleFormSubmit: PropTypes.func
+}
+
 export default SearchForm;

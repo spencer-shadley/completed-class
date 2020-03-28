@@ -13,4 +13,9 @@ function Col(props) {
   return <div className={size}>{props.children}</div>;
 }
 
+Col.propTypes = {
+  children: PropTypes.node,
+  size: PropTypes.string
+}
+
 export default Col;

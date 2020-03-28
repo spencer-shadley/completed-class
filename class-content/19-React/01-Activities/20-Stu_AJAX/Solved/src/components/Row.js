@@ -7,4 +7,8 @@ function Row(props) {
   );
 }
 
+Row.propTypes = {
+  children: PropTypes.node
+}
+
 export default Row;

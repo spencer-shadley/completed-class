@@ -8,12 +8,16 @@ import MovieDetail from './MovieDetail';
 import API from '../utils/API';
 
 class OmdbContainer extends React.Component {
-  state = {
-    result: {},
-    search: ''
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      result: {},
+      search: ''
+    };
+  }
 
   // When this component mounts, search for the movie "The Matrix"
+  // more about lifecycle methods: https://engineering.musefind.com/react-lifecycle-methods-how-and-when-to-use-them-2111a1b692b1
   componentDidMount() {
     this.searchMovies('The Matrix');
   }
