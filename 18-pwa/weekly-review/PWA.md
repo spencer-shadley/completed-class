@@ -1,8 +1,15 @@
-# <center> PWA 
+# <center> Performance / PWA / Webpack
 
 ## <center> Focus on understanding concepts / structure
     1. There is a lot of code involved with PWA, but most of it is easily accessible and templated.  
-    2. Understand the purpose of each part.
+    2. The important takeaway are concepts / component purpose. 
+
+## <center> Performance Checklist
+    1. Minify
+    2. Compression
+    3. Lazy-load
+    4. PWA
+    5. Webpack
 
 ## <center> Benefits of a progressive web app
     1. Increased performance 
