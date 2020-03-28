@@ -2,12 +2,17 @@ import React from 'react';
 import './style.css';
 
 class Form extends React.Component {
-  // Setting the component's initial state
-  state = {
-    firstName: '',
-    lastName: '',
-    password: ''
-  };
+  constructor(props) {
+    super(props);
+
+    // Setting the component's initial state
+    this.state = {
+      firstName: '',
+      lastName: '',
+      password: ''
+    };
+  }
+
 
   handleInputChange = event => {
     // Getting the value and name of the input which triggered the change
