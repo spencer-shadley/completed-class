@@ -2,10 +2,6 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 class NavTabs extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <ul className="nav nav-tabs">
@@ -49,8 +45,9 @@ class NavTabs extends React.Component {
         );
     }
 }
+
 NavTabs.propTypes = {
-    handlePageChange: Function
+    handlePageChange: PropTypes.func
 };
 
 export default NavTabs;
