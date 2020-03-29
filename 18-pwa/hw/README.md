@@ -30,7 +30,7 @@ PWA requirements:
 
 - IndexedDB is good for data related API requests. Use this for API requests.
 
-  - [This mini-project](../../17-nosql\3-saturday-indexeddb\activities\26-Stu-Mini-Project\Solved\public\db.js) is exactly the same file used in the solution for this homework.
+  - [This mini-project](../../17-nosql/3-saturday-indexeddb/activities/26-Stu-Mini-Project/Solved/public/db.js) is exactly the same file used in the solution for this homework.
 
 ## User Story
 
