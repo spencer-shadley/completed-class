@@ -11,7 +11,7 @@ function SearchBox({ handleSearchChange }) {
           type="search"
           placeholder="Search"
           aria-label="Search"
-          onChange={e => handleSearchChange(e)}
+          onChange={handleSearchChange}
         />
         <button className="btn my-2 my-sm-0" type="submit">
           Search
