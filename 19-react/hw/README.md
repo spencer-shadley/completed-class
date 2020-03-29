@@ -6,7 +6,7 @@ For this assignment, you'll create a employee directory with React. This assignm
 
 ## User Story
 
-- As a user, I want to be able to view my entire employee directory at once so that I have quick access to their information.
+As a user, I want to be able to view my entire employee directory at once so that I have quick access to their information.
 
 ## Business Context
 
@@ -21,6 +21,14 @@ The user should be able to:
 - Sort the table by at least one category
 
 - Filter the users by at least one property.
+
+## Hint
+
+- Generate your starter code using the `create-react-app`
+
+- Draw your page first, pseudocode how you might break-up the components
+
+- Create one component at a time. Test often. Any time you _can_ fail _try_ to fail. Try to break your code anytime you think there's a new thing that could break (display a component, updating state, etc.)
 
 ## Commit Early and Often
 
