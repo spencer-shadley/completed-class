@@ -20,4 +20,9 @@ function SearchBox({ handleSearchChange }) {
     </div>
   );
 }
+
+SearchBox.propTypes = {
+  handleSearchChange: PropTypes.func
+}
+
 export default SearchBox;

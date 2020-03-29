@@ -34,4 +34,9 @@ function Nav({ handleSearchChange }) {
     </nav>
   );
 }
+
+Nav.propTypes = {
+  handleSearchChange: PropTypes.func
+}
+
 export default Nav;

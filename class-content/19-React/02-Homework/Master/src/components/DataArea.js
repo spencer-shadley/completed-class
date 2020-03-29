@@ -1,12 +1,13 @@
-import React from 'react';
+import '../styles/DataArea.css';
+import API from '../utils/API';
 import DataTable from './DataTable';
 import Nav from './Nav';
-import API from '../utils/API';
-import '../styles/DataArea.css';
+
+import React from 'react';
 
 export default class DataArea extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       users: [{}],
       order: 'descend',

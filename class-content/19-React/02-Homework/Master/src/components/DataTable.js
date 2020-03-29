@@ -1,7 +1,8 @@
+import '../styles/DataTable.css';
+import DataBody from './DataBody';
+
 import PropTypes from 'prop-types';
 import React from 'react';
-import DataBody from './DataBody';
-import '../styles/DataTable.css';
 
 function DataTable({ headings, users, handleSort }) {
   return (
@@ -34,6 +35,12 @@ function DataTable({ headings, users, handleSort }) {
       </table>
     </div>
   );
+}
+
+DataTable.propTypes = {
+  headings: PropTypes.array,
+  users: PropTypes.array,
+  handleSort: PropTypes.func
 }
 
 export default DataTable;

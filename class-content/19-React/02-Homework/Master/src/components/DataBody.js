@@ -50,4 +50,8 @@ function DataBody({ users }) {
   );
 }
 
+DataBody.propTypes = {
+  users: PropTypes.array
+}
+
 export default DataBody;
