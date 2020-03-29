@@ -1,11 +1,11 @@
-import React from 'react';
-import { Route, BrowserRouter as Router } from 'react-router-dom';
-import Signup from './pages/Signup';
-import Search from './pages/Search';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Wrapper from './components/Wrapper';
 import './App.css';
+import { Route, BrowserRouter as Router } from 'react-router-dom';
+import Footer from './components/Footer';
+import Navbar from './components/Navbar';
+import React from 'react';
+import Search from './pages/Search';
+import Signup from './pages/Signup';
+import Wrapper from './components/Wrapper';
 
 function App() {
     return (

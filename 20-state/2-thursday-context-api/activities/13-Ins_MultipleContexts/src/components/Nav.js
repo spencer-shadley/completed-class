@@ -1,5 +1,7 @@
-import React from 'react';
 import NavLink from './NavLink';
+
+import PropTypes from 'prop-types';
+import React from 'react';
 
 function Nav(props) {
     return (
@@ -16,5 +18,8 @@ function Nav(props) {
         </div>
     );
 }
+Nav.propTypes = {
+    theme: PropTypes.string
+};
 
 export default Nav;

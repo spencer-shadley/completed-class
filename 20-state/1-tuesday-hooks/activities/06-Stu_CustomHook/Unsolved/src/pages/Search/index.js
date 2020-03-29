@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
+import API from '../../utils/API';
+import Alert from '../../components/Alert';
+import ArticleContext from '../../utils/ArticleContext';
 import Container from '../../components/Container';
 import SearchForm from '../../components/SearchForm';
 import SearchResults from '../../components/SearchResults';
-import Alert from '../../components/Alert';
-import ArticleContext from '../../utils/ArticleContext';
-import API from '../../utils/API';
 
 function Search() {
     const [articleState, setArticleState] = useState({

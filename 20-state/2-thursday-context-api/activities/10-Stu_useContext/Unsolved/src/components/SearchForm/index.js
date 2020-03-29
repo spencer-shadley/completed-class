@@ -1,5 +1,6 @@
-import React from 'react';
 import './style.css';
+import PropTypes from 'prop-types';
+import React from 'react';
 
 // Using the datalist element we can create autofill suggestions based on the props.breeds array
 function SearchForm(props) {
@@ -21,5 +22,9 @@ function SearchForm(props) {
         </form>
     );
 }
+SearchForm.propTypes = {
+    handleInputChange: PropTypes.func,
+    search: PropTypes.string
+};
 
 export default SearchForm;

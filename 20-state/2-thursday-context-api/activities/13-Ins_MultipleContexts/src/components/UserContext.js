@@ -1,3 +1,4 @@
+/* eslint-disable no-empty-function */
 import React from 'react';
 
 // Set the user of the page to default to ""

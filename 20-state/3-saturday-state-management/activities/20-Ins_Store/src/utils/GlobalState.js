@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useReducer } from 'react';
+import PropTypes from 'prop-types';
 
 const CountContext = createContext();
 const { Provider } = CountContext;
@@ -18,6 +19,9 @@ const CountProvider = ({ value = 0, ...props }) => {
     const [state, dispatch] = useReducer(reducer, { count: value });
 
     return <Provider value={[state, dispatch]} {...props} />;
+};
+CountProvider.propTypes = {
+    value: PropTypes.number
 };
 
 const useCountContext = () => useContext(CountContext);

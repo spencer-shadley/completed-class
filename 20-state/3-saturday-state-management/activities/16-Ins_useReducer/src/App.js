@@ -1,5 +1,6 @@
-import React, { useReducer } from 'react';
 import './App.css';
+
+import React, { useReducer } from 'react';
 
 function App() {
     const [count, dispatch] = useReducer((state, action) => {

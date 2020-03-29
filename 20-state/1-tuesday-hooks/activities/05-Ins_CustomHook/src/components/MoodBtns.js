@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 function MoodBtns(props) {
@@ -18,5 +19,8 @@ function MoodBtns(props) {
         </div>
     );
 }
+MoodBtns.propTypes = {
+    changeMood: PropTypes.func
+};
 
 export default MoodBtns;

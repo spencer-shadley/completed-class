@@ -1,5 +1,5 @@
-import React from 'react';
 import CardContext from '../../utils/CardContext';
+import React from 'react';
 
 function CardTitleText() {
     return (

@@ -1,6 +1,6 @@
-import React from 'react';
-import Card from '../Card';
 import './style.css';
+import Card from '../Card';
+import React from 'react';
 
 const CardContainer = () =>
     <div className="jumbotron card-container">

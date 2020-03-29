@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import * as API from './utils/API';
 import './App.css';
+import * as API from './utils/API';
+import React, { useEffect, useState } from 'react';
 
 function App() {
     const [developerState, setDeveloperState] = useState({

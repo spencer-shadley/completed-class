@@ -1,3 +1,5 @@
+/* eslint-disable no-empty-function */
+/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import API from '../utils/API';
 import CardContainer from '../components/CardContainer';
@@ -37,9 +39,9 @@ function Gallery() {
     function loadUsers() {
         API.getLanguagesList()
             .then(languages => {
-                API.getUsersByLanguage(languages[0]).then(users => {
-                    setUsers(users);
-                    setUser(users[0]);
+                API.getUsersByLanguage(languages[0]).then(usersByLanguage => {
+                    setUsers(usersByLanguage);
+                    setUser(usersByLanguage[0]);
                 });
             })
             .catch(err => console.log(err));

@@ -1,6 +1,8 @@
-import React from 'react';
-import CardTitle from '../CardTitle';
 import './style.css';
+
+import CardTitle from '../CardTitle';
+
+import React from 'react';
 
 function CardHeading() {
     return (

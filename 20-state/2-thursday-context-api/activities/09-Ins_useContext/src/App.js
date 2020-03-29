@@ -1,10 +1,10 @@
+import './App.css';
+import * as API from './utils/API';
 import React, { useEffect, useState } from 'react';
+import DeveloperContext from './utils/DeveloperContext';
 import DeveloperInfo from './components/Developer';
 import MoodBtns from './components/MoodBtns';
 import Nav from './components/Nav';
-import * as API from './utils/API';
-import DeveloperContext from './utils/DeveloperContext';
-import './App.css';
 
 function App() {
     const [developerState, setDeveloperState] = useState({

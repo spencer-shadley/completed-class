@@ -1,5 +1,5 @@
-import { useState } from 'react';
 import profileImage from '../assets/images/profile.png';
+import { useState } from 'react';
 
 const useUserModel = () => {
     const [nameState, setName] = useState(`Bob`);

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 function CardBody({ language, email }) {
@@ -8,5 +9,9 @@ function CardBody({ language, email }) {
         </div>
     );
 }
+CardBody.propTypes = {
+    email: PropTypes.string,
+    language: PropTypes.string
+};
 
 export default CardBody;

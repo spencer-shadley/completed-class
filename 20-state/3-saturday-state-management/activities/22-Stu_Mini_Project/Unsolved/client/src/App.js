@@ -1,10 +1,12 @@
-import React from 'react';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
-import Home from './pages/Home';
+
 import Detail from './pages/Detail';
-import NoMatch from './pages/NoMatch';
-import Nav from './components/Nav';
 import FavoritesList from './pages/FavoritesList';
+import Home from './pages/Home';
+import Nav from './components/Nav';
+import NoMatch from './pages/NoMatch';
+
+import React from 'react';
 
 function App() {
     return (

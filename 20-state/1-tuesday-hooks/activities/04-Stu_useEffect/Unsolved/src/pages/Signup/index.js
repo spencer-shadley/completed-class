@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Container from '../../components/Container';
 import Col from '../../components/Col';
+import Container from '../../components/Container';
 import Row from '../../components/Row';
 
 const Signup = () => {
@@ -49,7 +49,7 @@ const Signup = () => {
                 <Container className="mt-4">
                     <h3>Hello {username}!</h3>
                     <p>
-                        I probably shouldn't tell you this, but your password is {password}!
+                        I probably shouldn&apos;t tell you this, but your password is {password}!
                     </p>
                 </Container>
             </form>

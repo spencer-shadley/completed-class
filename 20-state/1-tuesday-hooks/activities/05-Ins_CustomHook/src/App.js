@@ -1,9 +1,9 @@
+import './App.css';
 import React, { useEffect } from 'react';
 import UserCard from './components/UserCard';
+import UserContext from './utils/UserContext';
 import UserForm from './components/UserForm';
 import useUserModel from './utils/useUserModel';
-import UserContext from './utils/UserContext';
-import './App.css';
 
 const App = () => {
     const userModel = useUserModel();

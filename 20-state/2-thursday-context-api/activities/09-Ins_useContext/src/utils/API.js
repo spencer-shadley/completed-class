@@ -1,5 +1,6 @@
 // This code is meant to serve as a mock fetch from an API.
 export const getDeveloper = new Promise(resolve => {
+    const oneSecond = 1000;
     setTimeout(() => {
         resolve({
             excitementLevel: 10000,
@@ -7,5 +8,5 @@ export const getDeveloper = new Promise(resolve => {
             mood: `excited`,
             name: `Alec`
         });
-    }, 1000);
+    }, oneSecond);
 });

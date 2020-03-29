@@ -8,5 +8,8 @@ function CardImg({ image }) {
         </div>
     );
 }
+CardImg.propTypes = {
+    image: PropTypes.string
+};
 
 export default CardImg;

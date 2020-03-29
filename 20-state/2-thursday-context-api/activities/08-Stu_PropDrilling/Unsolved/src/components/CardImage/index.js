@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 function CardImg(props) {
@@ -10,5 +11,8 @@ function CardImg(props) {
         </div>
     );
 }
+CardImg.propTypes = {
+    image: PropTypes.string
+};
 
 export default CardImg;

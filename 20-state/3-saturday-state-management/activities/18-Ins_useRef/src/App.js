@@ -1,5 +1,6 @@
-import React, { useReducer, useRef } from 'react';
 import './App.css';
+
+import React, { useReducer, useRef } from 'react';
 
 function Count() {
     const inputRef = useRef();

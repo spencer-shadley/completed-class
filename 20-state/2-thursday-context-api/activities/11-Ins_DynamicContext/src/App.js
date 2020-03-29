@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Home from './pages/Home';
 import AlertContext from './utils/AlertContext';
+import Home from './pages/Home';
 
 function App() {
     const [pageState, setPageState] = useState({

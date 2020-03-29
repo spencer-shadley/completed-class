@@ -1,8 +1,9 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
+import AlertContext from './components/AlertContext';
 import Home from './pages/Home';
 import ThemeContext from './components/ThemeContext';
 import UserContext from './components/UserContext';
-import AlertContext from './components/AlertContext';
 
 function App() {
     const [user, setUser] = useState({

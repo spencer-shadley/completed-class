@@ -1,5 +1,6 @@
-import React, { useReducer, useRef } from 'react';
+/* eslint-disable no-unused-vars */
 import './App.css';
+import React, { useReducer, useRef } from 'react';
 
 const TodoList = () => {
     // Placeholder array

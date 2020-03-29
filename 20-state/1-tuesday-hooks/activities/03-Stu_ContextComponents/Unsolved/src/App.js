@@ -1,5 +1,5 @@
-import * as React from 'react';
 import './App.css'; // Set the theme of the page to default to "light"
+import * as React from 'react';
 const ThemeContext = React.createContext(`light`);
 
 console.log(ThemeContext);

@@ -1,8 +1,8 @@
-import React from 'react';
+import './style.css';
 import CardBtn from '../CardBtn';
 import CardContext from '../../utils/CardContext';
 import CardTitle from '../CardTitle';
-import './style.css';
+import React from 'react';
 
 function Card() {
     return (
@@ -16,7 +16,8 @@ function Card() {
                         backgroundImage: image ? `url(${image})` : `none`
                     }}
                 >
-                    {/* Here, we do not pass the title to demonstrate that it can also be consumed from the CardTitleText component */}
+                    {/* Here, we do not pass the title to demonstrate that
+                    it can also be consumed from the CardTitleText component */}
                     <CardTitle />
                     {!image && <i className="fa fa-spinner fa-spin" aria-hidden="true" />}
                     <CardBtn

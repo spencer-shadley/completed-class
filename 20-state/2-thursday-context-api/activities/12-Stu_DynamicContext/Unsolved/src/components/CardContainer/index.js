@@ -1,6 +1,7 @@
-import React from 'react';
-import Card from '../Card';
 import './style.css';
+import Card from '../Card';
+import PropTypes from 'prop-types';
+import React from 'react';
 
 function CardContainer({ title, image, email, language, handleBtnClick }) {
     return (
@@ -15,5 +16,12 @@ function CardContainer({ title, image, email, language, handleBtnClick }) {
         </div>
     );
 }
+CardContainer.propTypes = {
+    email: PropTypes.string,
+    handleBtnClick: PropTypes.func,
+    image: PropTypes.string,
+    language: PropTypes.string,
+    title: PropTypes.string
+};
 
 export default CardContainer;

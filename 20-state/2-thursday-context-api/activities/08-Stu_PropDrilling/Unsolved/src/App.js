@@ -1,7 +1,7 @@
-import React from 'react';
+import Footer from './components/Footer';
 import Gallery from './pages/Gallery';
 import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import React from 'react';
 import Wrapper from './components/Wrapper';
 
 function App() {

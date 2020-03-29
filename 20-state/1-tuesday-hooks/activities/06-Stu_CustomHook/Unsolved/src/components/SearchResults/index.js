@@ -1,6 +1,6 @@
+import './style.css';
 import React, { useContext } from 'react';
 import ArticleContext from '../../utils/ArticleContext';
-import './style.css';
 
 function SearchResults() {
     const article = useContext(ArticleContext);

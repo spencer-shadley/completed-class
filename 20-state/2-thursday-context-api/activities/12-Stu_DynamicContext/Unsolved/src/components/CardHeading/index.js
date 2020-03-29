@@ -1,6 +1,6 @@
-import React from 'react';
-import CardTitle from '../CardTitle';
 import './style.css';
+import CardTitle from '../CardTitle';
+import React from 'react';
 
 function CardHeading({ title }) {
     return (
@@ -9,5 +9,8 @@ function CardHeading({ title }) {
         </div>
     );
 }
+CardHeading.propTypes = {
+    title: PropTypes.string
+};
 
 export default CardHeading;

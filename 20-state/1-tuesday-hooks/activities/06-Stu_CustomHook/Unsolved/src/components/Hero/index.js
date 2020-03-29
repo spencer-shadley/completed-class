@@ -1,5 +1,6 @@
-import React from 'react';
 import './style.css';
+import PropTypes from 'prop-types';
+import React from 'react';
 
 function Hero(props) {
     return (
@@ -11,5 +12,9 @@ function Hero(props) {
         </div>
     );
 }
+Hero.propTypes = {
+    backgroundImage: PropTypes.string,
+    children: PropTypes.node
+};
 
 export default Hero;

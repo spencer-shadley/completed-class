@@ -17,22 +17,22 @@ function Gallery() {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
 
-    function nextUser(userIndex) {
+    function nextUser(uIndex) {
     // Ensure that the user index stays within our range of users
-        if (userIndex >= users.length) {
-            userIndex = 0;
+        if (uIndex >= users.length) {
+            uIndex = 0;
         }
-        setUser(users[userIndex]);
-        setUserIndex(userIndex);
+        setUser(users[uIndex]);
+        setUserIndex(uIndex);
     }
 
-    function previousUser(userIndex) {
+    function previousUser(uIndex) {
     // Ensure that the user index stays within our range of users
-        if (userIndex < 0) {
-            userIndex = users.length - 1;
+        if (uIndex < 0) {
+            uIndex = users.length - 1;
         }
-        setUser(users[userIndex]);
-        setUserIndex(userIndex);
+        setUser(users[uIndex]);
+        setUserIndex(uIndex);
     }
 
     function handleBtnClick(event) {
@@ -50,9 +50,9 @@ function Gallery() {
     function loadUsers() {
         API.getLanguagesList()
             .then(languages => {
-                API.getUsersByLanguage(languages[0]).then(users => {
-                    setUsers(users);
-                    setUser(users[0]);
+                API.getUsersByLanguage(languages[0]).then(usersByLanguage => {
+                    setUsers(usersByLanguage);
+                    setUser(usersByLanguage[0]);
                 });
             })
             .catch(err => console.log(err));

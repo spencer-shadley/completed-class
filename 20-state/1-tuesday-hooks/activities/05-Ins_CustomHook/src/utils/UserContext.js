@@ -1,3 +1,4 @@
+/* eslint-disable no-empty-function */
 import React from 'react';
 
 const UserContext = React.createContext({

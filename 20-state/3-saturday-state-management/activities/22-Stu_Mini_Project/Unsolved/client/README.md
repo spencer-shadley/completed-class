@@ -359,9 +359,9 @@ For example:
 ### `Button.js`
 
 ```js
-import React, { Component } from 'react';
+import React from 'react';
 
-class Button extends Component {
+class Button extends React.Component {
   render() {
     // ...
   }
@@ -373,10 +373,10 @@ export default Button; // Don’t forget to use export default!
 ### `DangerButton.js`
 
 ```js
-import React, { Component } from 'react';
+import React from 'react';
 import Button from './Button'; // Import a component from another file
 
-class DangerButton extends Component {
+class DangerButton extends React.Component {
   render() {
     return <Button color="red" />;
   }
@@ -416,9 +416,9 @@ export { moduleA };
 ### `App.js`
 
 ```js
-import React, { Component } from 'react';
+import React from 'react';
 
-class App extends Component {
+class App extends React.Component {
   handleClick = () => {
     import('./moduleA')
       .then(({ moduleA }) => {
@@ -464,10 +464,10 @@ This project setup uses [Webpack](https://webpack.js.org/) for handling all asse
 ### `Button.js`
 
 ```js
-import React, { Component } from 'react';
+import React from 'react';
 import './Button.css'; // Tell Webpack that Button.js uses these styles
 
-class Button extends Component {
+class Button extends React.Component {
   render() {
     // You can use them as regular CSS styles
     return <div className="Button" />;

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 function Alert(props) {
@@ -11,5 +12,10 @@ function Alert(props) {
         </div>
     );
 }
+Alert.propTypes = {
+    children: PropTypes.node,
+    style: PropTypes.style,
+    type: PropTypes.string
+};
 
 export default Alert;

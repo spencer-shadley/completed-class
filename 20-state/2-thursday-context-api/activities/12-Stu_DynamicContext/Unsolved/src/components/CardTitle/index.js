@@ -1,6 +1,6 @@
-import React from 'react';
 import './style.css';
 import CardTitleText from '../CardTitleText';
+import React from 'react';
 
 function CardTitle({ title }) {
     return (
@@ -9,5 +9,8 @@ function CardTitle({ title }) {
         </div>
     );
 }
+CardTitle.propTypes = {
+    title: PropTypes.string
+};
 
 export default CardTitle;

@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
+
 import API from '../utils/API';
-import UserContext from '../utils/userContext';
 import CardContainer from '../components/CardContainer';
 import Row from '../components/Row';
+import UserContext from '../utils/userContext';
 
 function Gallery() {
     const [users, setUsers] = useState([]);
@@ -17,9 +18,9 @@ function Gallery() {
     function loadUsers() {
         API.getLanguagesList()
             .then(languages => {
-                API.getUsersByLanguage(languages[0]).then(users => {
-                    setUsers(users);
-                    setUser(users[0]);
+                API.getUsersByLanguage(languages[0]).then(usersByLanguage => {
+                    setUsers(usersByLanguage);
+                    setUser(usersByLanguage[0]);
                 });
             })
             .catch(err => console.log(err));
@@ -29,22 +30,22 @@ function Gallery() {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
 
-    function nextUser(userIndex) {
+    function nextUser(uIndex) {
     // Ensure that the user index stays within our range of users
-        if (userIndex >= users.length) {
-            userIndex = 0;
+        if (uIndex >= users.length) {
+            uIndex = 0;
         }
-        setUserIndex(userIndex);
-        setUser(users[userIndex]);
+        setUserIndex(uIndex);
+        setUser(users[uIndex]);
     }
 
-    function previousUser(userIndex) {
+    function previousUser(uIndex) {
     // Ensure that the user index stays within our range of users
         if (userIndex < 0) {
-            userIndex = users.length - 1;
+            uIndex = users.length - 1;
         }
-        setUserIndex(userIndex);
-        setUser(users[userIndex]);
+        setUserIndex(uIndex);
+        setUser(users[uIndex]);
     }
 
     function handleBtnClick(event) {

@@ -1,9 +1,10 @@
-import React from 'react';
+import './style.css';
 import CardBody from '../CardBody';
 import CardBtn from '../CardBtn';
-import CardImg from '../CardImage';
 import CardHeading from '../CardHeading';
-import './style.css';
+import CardImg from '../CardImage';
+import PropTypes from 'prop-types';
+import React from 'react';
 
 function Card({ title, image, language, email, handleBtnClick }) {
     return (
@@ -25,5 +26,12 @@ function Card({ title, image, language, email, handleBtnClick }) {
         </div>
     );
 }
+Card.propTypes = {
+    email: PropTypes.string,
+    handleBtnClick: PropTypes.func,
+    image: PropTypes.string,
+    language: PropTypes.string,
+    title: PropTypes.string
+};
 
 export default Card;

@@ -1,9 +1,10 @@
-import React from 'react';
+import './style.css';
 import CardBody from '../CardBody';
 import CardBtn from '../CardBtn';
-import CardImg from '../CardImage';
 import CardHeading from '../CardHeading';
-import './style.css';
+import CardImg from '../CardImage';
+import PropTypes from 'prop-types';
+import React from 'react';
 
 function Card({ image }) {
     return (
@@ -16,5 +17,8 @@ function Card({ image }) {
         </div>
     );
 }
+Card.propTypes = {
+    image: PropTypes.string
+};
 
 export default Card;
