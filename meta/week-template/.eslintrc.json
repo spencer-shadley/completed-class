@@ -8,7 +8,11 @@
     "jest": true,
     "mocha": true
   },
-  "parserOptions": { "ecmaVersion": 2020 },
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": { "jsx": true }
+  },
   "globals": {},
   "extends": ["eslint:recommended"],
   "ignorePatterns": ["dist/"],
