@@ -5,15 +5,15 @@ import Footer from './components/Footer';
 import Wrapper from './components/Wrapper';
 
 function App() {
-  return (
-    <div>
-      <Navbar />
-      <Wrapper>
-        <Gallery />
-      </Wrapper>
-      <Footer />
-    </div>
-  );
+    return (
+        <div>
+            <Navbar />
+            <Wrapper>
+                <Gallery />
+            </Wrapper>
+            <Footer />
+        </div>
+    );
 }
 
 export default App;

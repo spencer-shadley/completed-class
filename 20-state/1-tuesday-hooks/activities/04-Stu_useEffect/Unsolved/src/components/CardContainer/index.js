@@ -2,12 +2,8 @@ import React from 'react';
 import Card from '../Card';
 import './style.css';
 
-const CardContainer = () => {
-  return (
+const CardContainer = () =>
     <div className="jumbotron card-container">
-      <Card />
-    </div>
-  );
-};
-
+        <Card />
+    </div>;
 export default CardContainer;
