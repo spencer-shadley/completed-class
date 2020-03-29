@@ -7,10 +7,6 @@
   - Happy Hour
   - Themed weekly backgrounds
 
-1. Unit 19 (react)
-
-   1. 19.2 drill
-
 1. Unit 20 (state)
 
    1. unit setup
