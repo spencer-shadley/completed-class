@@ -1,28 +1,26 @@
-'use strict';
-
-const db = require('../models');
-const axios = require('axios');
+const db = require(`../models`);
+const axios = require(`axios`);
 // Defining methods for the productsController
 module.exports = {
   findAll: (req, res) => {
-    if (req.query.q === '') {
-      req.query.q = 'iphone';
+    if (req.query.q === ``) {
+      req.query.q = `iphone`;
     }
     axios
       .get(
         `https://api.bestbuy.com/v1/products(longDescription=${req.query.q}*)?format=json&apiKey=${process.env.BEST_BUY_API_KEY}`
       )
       .then(results => {
-        console.log('RESULTS: ', results.data);
+        console.log(`RESULTS: `, results.data);
         res.json([...results.data.products]);
       })
       .catch(err => console.log(err));
   },
   findByClass: (req, res) => {
-    if (req.query.q === '') {
-      req.query.q = 'mobile';
+    if (req.query.q === ``) {
+      req.query.q = `mobile`;
     }
-    console.log('REQ CONTR: ', req.query.q);
+    console.log(`REQ CONTR: `, req.query.q);
     res.json(true);
     // axios
     //   .get(
