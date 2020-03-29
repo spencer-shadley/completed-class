@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
 const Jumbotron = ({ children }) =>
@@ -12,4 +13,9 @@ const Jumbotron = ({ children }) =>
     >
         {children}
     </div>;
+
+Jumbotron.propTypes = {
+    children: PropTypes.children
+};
+
 export default Jumbotron;

@@ -1,7 +1,9 @@
-import React from 'react';
+/* eslint-disable no-empty-function */
 import { List, ListItem } from '../List';
 import DeleteBtn from '../DeleteBtn';
+
 import { Link } from 'react-router-dom';
+import React from 'react';
 
 const PostsList = () =>
     <div>
@@ -22,7 +24,7 @@ const PostsList = () =>
                 )}
             </List>
             :
-            <h3>You haven't added any posts yet!</h3>
+            <h3>You haven&apos;t added any posts yet!</h3>
         }
         <div className="mt-5">
             <Link to="favorites">View favorites</Link>

@@ -1,12 +1,16 @@
-import React, { useEffect } from 'react';
+/* eslint-disable no-empty-function */
+/* eslint-disable no-constant-condition */
+
 import { List, ListItem } from '../components/List';
+// eslint-disable-next-line no-unused-vars
+import React, { useEffect } from 'react';
 import DeleteBtn from '../components/DeleteBtn';
 import { Link } from 'react-router-dom';
 
 function FavoritesList() {
     return (
         <div className="container mb-5 mt-5">
-            <h1 className="text-center">Here's All of Your Favorite Posts</h1>
+            <h1 className="text-center">Here&apos;s All of Your Favorite Posts</h1>
             {/* Replace true with the condition that the posts array has a length > 0 */}
             {true ?
                 <List>
@@ -23,7 +27,7 @@ function FavoritesList() {
                     )}
                 </List>
                 :
-                <h3>You haven't added any favorites yet!</h3>
+                <h3>You haven&apos;t added any favorites yet!</h3>
             }
             <div className="mt-5">
                 <Link to="home">Back to home</Link>

@@ -1,7 +1,8 @@
-import React from 'react';
 import { Col, Container, Row } from '../components/Grid';
 import CreatePostForm from '../components/CreatePostForm';
 import PostsList from '../components/PostsList';
+
+import React from 'react';
 
 function Home() {
     return (

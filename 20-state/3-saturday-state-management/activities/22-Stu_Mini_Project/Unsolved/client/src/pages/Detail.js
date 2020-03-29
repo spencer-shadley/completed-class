@@ -1,7 +1,10 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import Jumbotron from '../components/Jumbotron';
+/* eslint-disable no-constant-condition */
+/* eslint-disable no-unused-vars */
 import { Col, Container, Row } from '../components/Grid';
+import Jumbotron from '../components/Jumbotron';
+
+import { Link } from 'react-router-dom';
+import React from 'react';
 
 function Detail(props) {
     return (
@@ -27,7 +30,7 @@ function Detail(props) {
                         {false ?
                             <button className="btn btn-danger">Remove from Favorites!</button>
                             :
-                            <button className="btn">❤️ Add to Favorites</button>
+                            <button className="btn">Add to Favorites</button>
                         }
                     </Row>
                     <Row>

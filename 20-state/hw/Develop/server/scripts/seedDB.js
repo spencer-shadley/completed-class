@@ -1,5 +1,8 @@
-const mongoose = require(`mongoose`);
+/* eslint-disable max-len */
+/* eslint-disable camelcase */
+
 const db = require(`../models`);
+const mongoose = require(`mongoose`);
 
 // This file empties the Posts collection and inserts the books below
 

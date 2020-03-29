@@ -34,8 +34,8 @@ UserSchema.pre(`save`, function(callback) {
     bcrypt.genSalt(5, (err, salt) => {
         if (err) { return callback(err); }
 
-        bcrypt.hash(user.password, salt, null, (err, hash) => {
-            if (err) { return callback(err); }
+        bcrypt.hash(user.password, salt, null, (error, hash) => {
+            if (error) { return callback(error); }
             user.password = hash;
             callback();
         });
