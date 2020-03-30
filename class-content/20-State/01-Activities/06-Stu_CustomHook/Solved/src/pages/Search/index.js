@@ -21,11 +21,11 @@ function Search() {
 
   useEffect(() => {
     document.title = 'Wikipedia Searcher';
-    if (!search) {
+    if (!debouncedSearchTerm) {
       return;
     }
     if (debouncedSearchTerm) {
-      API.searchTerms(search)
+      API.searchTerms(debouncedSearchTerm)
         .then(res => {
           if (res.data.length === 0) {
             throw new Error('No results found.');
@@ -41,7 +41,7 @@ function Search() {
         })
         .catch(err => setError(err));
     }
-  }, [debouncedSearchTerm, search]);
+  }, [debouncedSearchTerm]);
 
   const handleInputChange = event => {
     setSearch(event.target.value);

@@ -32,9 +32,7 @@ function Search() {
       .catch(err => setError(err));
   }, [search]);
 
-  const handleInputChange = event => {
-    setSearch(event.target.value);
-  };
+  const handleInputChange = event => setSearch(event.target.value);
 
   return (
     <div>
