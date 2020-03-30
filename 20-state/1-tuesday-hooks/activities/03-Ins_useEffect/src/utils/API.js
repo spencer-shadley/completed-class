@@ -3,10 +3,10 @@ export const getDeveloper = new Promise(resolve => {
     const oneSecond = 1000;
     setTimeout(() => {
         resolve({
-            excitementLevel: 10000,
+            excitementLevel: 9001,
             lifeLongLearner: true,
             mood: `excited`,
-            name: `Alec`
+            name: `Spencer`
         });
     }, oneSecond);
 });

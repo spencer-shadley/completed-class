@@ -13,9 +13,8 @@ function App() {
     useEffect(() => {
     // For demonstration purposes, we mock an API call.
         API.getDeveloper.then(res => {
+            console.log(`useEffect called`)
             setDeveloperState(res);
-            console.log(`Developer State:`);
-            console.log(developerState);
         });
     }, []);
 
