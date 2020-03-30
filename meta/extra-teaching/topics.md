@@ -50,3 +50,5 @@
 - concurrency - 18-pwa\supplemental\service-workers.md
 
 - yarn
+
+- 20.1 has several bonus things for hooks
