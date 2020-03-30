@@ -1,18 +1,14 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { Col, Row, Container } from '../components/Grid';
+import { Col, Container, Row } from '../components/Grid';
 import ProductList from '../components/ProductList';
 import CategoryMenu from '../components/CategoryMenu';
 
-const Home = () => {
-  return (
+const Home = () =>
     <Container fluid>
-      <Row>
-        <CategoryMenu />
-        <ProductList />
-      </Row>
-    </Container>
-  );
-};
-
+        <Row>
+            <CategoryMenu />
+            <ProductList />
+        </Row>
+    </Container>;
 export default Home;

@@ -1,4 +1,4 @@
-'use strict';
+
 
 export const UPDATE_POSTS = 'UPDATE_POSTS';
 export const REMOVE_POST = 'REMOVE_POST';
