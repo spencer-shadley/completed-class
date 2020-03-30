@@ -14,7 +14,7 @@ function Alert(props) {
 }
 Alert.propTypes = {
     children: PropTypes.node,
-    style: PropTypes.style,
+    style: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
     type: PropTypes.string
 };
 

@@ -2,7 +2,7 @@ import profileImage from '../assets/images/profile.png';
 import { useState } from 'react';
 
 const useUserModel = () => {
-    const [nameState, setName] = useState(`Bob`);
+    const [nameState, setName] = useState(`Spencer`);
     const [imageState, setImage] = useState(profileImage);
     const [statusState, setStatus] = useState(`Excited`);
     const [excitementLevelState, setExcitementLevel] = useState(``);
