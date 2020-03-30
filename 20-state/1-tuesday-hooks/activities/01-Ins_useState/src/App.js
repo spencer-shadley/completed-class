@@ -3,10 +3,10 @@ import React, { useState } from 'react';
 
 function App() {
     const [developerState, setDeveloperState] = useState({
-        excitementLevel: 10000,
+        excitementLevel: 9001,
         lifeLongLearner: true,
         mood: `excited`,
-        name: `Alec`
+        name: `Spencer`
     });
 
     return (
