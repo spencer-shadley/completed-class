@@ -1,16 +1,18 @@
-import React, { Component } from './node_modules/react';
+/* eslint-disable react/prop-types */
 import AuthService from './AuthService';
+import React from './node_modules/react';
 
 export default function withAuth(AuthComponent) {
     const Auth = new AuthService();
-    return class AuthWrapped extends Component {
+    return class AuthWrapped extends React.Component {
+
         constructor() {
             super();
             this.state = {
                 user: null
             };
         }
-        componentWillMount() {
+        componentDidMount() {
             if (!Auth.loggedIn()) {
                 this.props.history.replace(`/signup`);
             } else {

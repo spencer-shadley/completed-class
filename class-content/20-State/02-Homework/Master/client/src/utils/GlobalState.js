@@ -1,4 +1,3 @@
-import React, { createContext, useContext, useReducer } from 'react';
 import {
     ADD_ALL_TO_CART,
     ADD_PRODUCT,
@@ -10,6 +9,8 @@ import {
     UPDATE_CART,
     UPDATE_PRODUCTS
 } from './actions';
+import React, { createContext, useContext, useReducer } from 'react';
+import PropTypes from 'prop-types';
 
 const StoreContext = createContext();
 const { Provider } = StoreContext;
@@ -81,7 +82,8 @@ const reducer = (state, action) => {
     }
 };
 
-const StoreProvider = ({ value = [], ...props }) => {
+const StoreProvider = ({ value, ...props }) => {
+    console.log(value);
     const [state, dispatch] = useReducer(reducer, {
         products: [],
         currentProduct: {
@@ -95,6 +97,9 @@ const StoreProvider = ({ value = [], ...props }) => {
     });
 
     return <Provider value={[state, dispatch]} {...props} />;
+};
+StoreProvider.propTypes = {
+    value: PropTypes.array
 };
 
 const useStoreContext = () => useContext(StoreContext);

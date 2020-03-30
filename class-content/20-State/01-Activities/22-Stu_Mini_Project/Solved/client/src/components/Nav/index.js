@@ -10,7 +10,7 @@ function Nav() {
         Your personal CMS
       </a>
       {store.loading ? (
-        <a className="navbar-brand ml-auto">Loading...</a>
+        <a href="# " className="navbar-brand ml-auto">Loading...</a>
       ) : (
         <></>
       )}

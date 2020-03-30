@@ -1,14 +1,14 @@
-import React from 'react';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
-import Home from './pages/Home';
-import Detail from './pages/Detail';
-import NoMatch from './pages/NoMatch';
-import Login from './pages/Login';
-import Signup from './pages/Signup';
-import Nav from './components/Nav';
-import { StoreProvider } from './utils/GlobalState';
-import ShoppingCart from './pages/ShoppingCart';
 import Checkout from './pages/Checkout';
+import Detail from './pages/Detail';
+import Home from './pages/Home';
+import Login from './pages/Login';
+import Nav from './components/Nav';
+import NoMatch from './pages/NoMatch';
+import React from 'react';
+import ShoppingCart from './pages/ShoppingCart';
+import Signup from './pages/Signup';
+import { StoreProvider } from './utils/GlobalState';
 import Success from './pages/Success';
 
 function App() {

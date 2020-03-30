@@ -1,8 +1,7 @@
-
-
 // Write a function that takes in an absolute file path and simplifies it
 
-const simplifyPath = function(path) {
+// eslint-disable-next-line no-unused-vars
+function simplifyPath(path) {
     const pathArr = path.split(`/`);
     const stack = [];
 
@@ -26,4 +25,4 @@ const simplifyPath = function(path) {
     }
 
     return `/${ stack.join(`/`)}`;
-};
+}

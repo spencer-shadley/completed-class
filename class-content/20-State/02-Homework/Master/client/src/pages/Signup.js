@@ -1,75 +1,80 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import AuthService from '../components/AuthService';
 import API from './../utils/API';
+import AuthService from '../components/AuthService';
+import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 class Signup extends Component {
-  constructor() {
-    super();
-    this.Auth = new AuthService();
-  }
-
-  componentWillMount() {
-    if (this.Auth.loggedIn()) {
-      this.props.history.replace('/');
+    constructor() {
+        super();
+        this.Auth = new AuthService();
     }
-  }
 
-  handleFormSubmit = event => {
-    event.preventDefault();
-    API.signUpUser(this.state.email, this.state.password)
-      .then(res => {
-        // once the user has signed up
-        // send them to the login page
-        this.props.history.replace('/login');
-      })
-      .catch(err => alert(err));
-  };
+    componentDidMount() {
+        if (this.Auth.loggedIn()) {
+            this.props.history.replace(`/`);
+        }
+    }
 
-  handleChange = event => {
-    const { name, value } = event.target;
-    this.setState({
-      [name]: value
-    });
-  };
+    handleFormSubmit(event) {
+        event.preventDefault();
+        API.signUpUser(this.state.email, this.state.password)
+            .then(res => {
+                console.log(res);
+                // once the user has signed up
+                // send them to the login page
+                this.props.history.replace(`/login`);
+            })
+            .catch(err => alert(err));
+    }
 
-  render() {
-    return (
-      <div className="container">
-        <h1>Signup</h1>
-        <form onSubmit={this.handleFormSubmit}>
-          <div className="form-group">
-            <label htmlFor="email">Email address:</label>
-            <input
-              className="form-control"
-              placeholder="Email goes here..."
-              name="email"
-              type="email"
-              id="email"
-              onChange={this.handleChange}
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="pwd">Password:</label>
-            <input
-              className="form-control"
-              placeholder="Password goes here..."
-              name="password"
-              type="password"
-              id="pwd"
-              onChange={this.handleChange}
-            />
-          </div>
-          <button type="submit" className="btn btn-primary">
-            Submit
-          </button>
-        </form>
-        <p>
-          <Link to="/login">Go to Login</Link>
-        </p>
-      </div>
-    );
-  }
+    handleChange(event) {
+        const { name, value } = event.target;
+        this.setState({
+            [name]: value
+        });
+    }
+
+    render() {
+        return (
+            <div className="container">
+                <h1>Signup</h1>
+                <form onSubmit={this.handleFormSubmit}>
+                    <div className="form-group">
+                        <label htmlFor="email">Email address:</label>
+                        <input
+                            className="form-control"
+                            placeholder="Email goes here..."
+                            name="email"
+                            type="email"
+                            id="email"
+                            onChange={this.handleChange}
+                        />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="pwd">Password:</label>
+                        <input
+                            className="form-control"
+                            placeholder="Password goes here..."
+                            name="password"
+                            type="password"
+                            id="pwd"
+                            onChange={this.handleChange}
+                        />
+                    </div>
+                    <button type="submit" className="btn btn-primary">
+                        Submit
+                    </button>
+                </form>
+                <p>
+                    <Link to="/login">Go to Login</Link>
+                </p>
+            </div>
+        );
+    }
 }
+Signup.propTypes = {
+    history: PropTypes.string
+};
 
 export default Signup;

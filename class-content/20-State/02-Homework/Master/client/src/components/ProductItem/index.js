@@ -1,6 +1,7 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
 import './style.css';
+import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import React from 'react';
 
 function ProductItem({
     thumbnailImage,
@@ -12,7 +13,7 @@ function ProductItem({
     return (
         <div className="productItemContainer">
             <Link to={`/products/${_id}`}>
-                <img className="productImage img-fluid" src={thumbnailImage} />
+                <img alt="thumbnail" className="productImage img-fluid" src={thumbnailImage} />
                 <div className="productTitleContainer">
                     <p className="detailLink">{name}</p>
                 </div>
@@ -24,5 +25,12 @@ function ProductItem({
         </div>
     );
 }
+ProductItem.propTypes = {
+    thumbnailImage: PropTypes.string,
+    name: PropTypes.string,
+    shortDescription: PropTypes.string,
+    _id: PropTypes.string,
+    salePrice: PropTypes.string
+};
 
 export default ProductItem;

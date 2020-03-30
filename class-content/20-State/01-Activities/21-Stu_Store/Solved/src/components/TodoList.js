@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 import { useTodoContext } from '../utils/GlobalState';
 

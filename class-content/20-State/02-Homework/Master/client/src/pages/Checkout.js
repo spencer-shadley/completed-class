@@ -1,7 +1,6 @@
-import PropTypes from 'prop-types';
-import React from 'react';
-import { Container } from '../components/Grid';
 import Checkout from '../components/Checkout';
+import { Container } from '../components/Grid';
+import React from 'react';
 
 const CheckoutPage = () =>
     <Container>

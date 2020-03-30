@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react';
+import './styles.css';
 import { Col, Container, Row } from '../Grid';
+import { LOADING, UPDATE_PRODUCTS } from '../../utils/actions';
+import React, { useEffect } from 'react';
+import API from '../../utils/API';
 import ProductItem from '../ProductItem';
 import { useStoreContext } from '../../utils/GlobalState';
-import { LOADING, UPDATE_PRODUCTS } from '../../utils/actions';
-import API from '../../utils/API';
-import './styles.css';
 
 function ProductList() {
     const [state, dispatch] = useStoreContext();
@@ -33,7 +33,7 @@ function ProductList() {
                 <Container fluid>
                     <Row>
                         {state.products.map(product =>
-                            <Col size="md-3">
+                            <Col size="md-3" key={`col-${ product.productId}`}>
                                 <ProductItem
                                     key={product.productId}
                                     _id={product.productId}
@@ -47,7 +47,7 @@ function ProductList() {
                     </Row>
                 </Container>
                 :
-                <h3>You haven't added any products yet!</h3>
+                <h3>You haven&apos;t added any products yet!</h3>
             }
             <div className="mt-5"></div>
         </div>

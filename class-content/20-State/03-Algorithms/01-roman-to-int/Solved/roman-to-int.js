@@ -1,8 +1,7 @@
-
-
+/* eslint-disable no-unused-vars */
 // Write a function that takes in a Roman Numeral string and returns its integer form
 
-const romanToInt = function(str) {
+function romanToInt(str) {
     const numerals = {
         I: 1,
         V: 5,
@@ -13,7 +12,7 @@ const romanToInt = function(str) {
         M: 1000
     };
 
-    const result = 0;
+    let result = 0;
 
     for (let i = 0; i < str.length; ++i) {
         const currentNumeral = str[i];
@@ -30,4 +29,4 @@ const romanToInt = function(str) {
     }
 
     return result;
-};
+}

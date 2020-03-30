@@ -1,18 +1,19 @@
-import React from 'react';
 import { Col, Row } from '../Grid';
-import { useStoreContext } from '../../utils/GlobalState';
+import PropTypes from 'prop-types';
 import { REMOVE_FROM_CART } from '../../utils/actions';
+import React from 'react';
 import { idbPromise } from '../../utils/hooks';
+import { useStoreContext } from '../../utils/GlobalState';
 
 const CartItem = ({ item }) => {
     const [, dispatch] = useStoreContext();
 
-    const removeFromCart = item => {
+    const removeFromCart = selectedItem => {
         dispatch({
             type: REMOVE_FROM_CART,
-            productId: item.productId
+            productId: selectedItem.productId
         });
-        idbPromise(`best`, `cart`, `delete`, item);
+        idbPromise(`best`, `cart`, `delete`, selectedItem);
     };
 
     return (
@@ -50,6 +51,9 @@ const CartItem = ({ item }) => {
             </td>
         </tr>
     );
+};
+CartItem.propTypes = {
+    item: PropTypes.object
 };
 
 export default CartItem;

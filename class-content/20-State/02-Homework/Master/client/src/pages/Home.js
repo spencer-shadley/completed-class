@@ -1,8 +1,7 @@
-import PropTypes from 'prop-types';
-import React from 'react';
-import { Col, Container, Row } from '../components/Grid';
-import ProductList from '../components/ProductList';
+import { Container, Row } from '../components/Grid';
 import CategoryMenu from '../components/CategoryMenu';
+import ProductList from '../components/ProductList';
+import React from 'react';
 
 const Home = () =>
     <Container fluid>

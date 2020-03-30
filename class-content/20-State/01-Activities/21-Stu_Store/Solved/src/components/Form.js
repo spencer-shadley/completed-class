@@ -3,7 +3,7 @@ import { useTodoContext } from '../utils/GlobalState';
 
 function Form() {
   const inputRef = useRef();
-  const [_, dispatch] = useTodoContext();
+  const [, dispatch] = useTodoContext();
 
   function handleSubmit(e) {
     e.preventDefault();

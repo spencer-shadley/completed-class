@@ -1,6 +1,7 @@
-
+const product = require(`./product`);
+const user = require(`./user`);
 
 module.exports = {
-    Product: require(`./product`),
-    User: require(`./user`)
+    Product: product,
+    User: user
 };

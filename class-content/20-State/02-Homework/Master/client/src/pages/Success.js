@@ -1,7 +1,6 @@
-import PropTypes from 'prop-types';
-import React from 'react';
 import { Col, Container, Row } from '../components/Grid';
 import Jumbotron from '../components/Jumbotron';
+import React from 'react';
 
 const Success = () =>
     <Container fluid>

@@ -34,7 +34,7 @@ function PostsList() {
 
   useEffect(() => {
     getPosts();
-  }, []);
+  });
 
   return (
     <div>

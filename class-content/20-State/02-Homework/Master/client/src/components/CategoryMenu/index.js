@@ -1,9 +1,9 @@
-import React from 'react';
-import { useStoreContext } from '../../utils/GlobalState';
-import Search from '../Search';
 import { Col, Container, Row } from '../Grid';
-import { UPDATE_PRODUCTS } from '../../utils/actions';
 import API from '../../utils/API';
+import React from 'react';
+import Search from '../Search';
+import { UPDATE_PRODUCTS } from '../../utils/actions';
+import { useStoreContext } from '../../utils/GlobalState';
 
 function CategoryMenu() {
     const [store, dispatch] = useStoreContext();
@@ -24,14 +24,14 @@ function CategoryMenu() {
                 <Col size="sm-12">
                     <Search />
                     {store.loading ?
-                        <a className="navbar-brand ml-auto">Loading...</a>
+                        <a href="# " className="navbar-brand ml-auto">Loading...</a>
                         :
                         <></>
                     }
                 </Col>
                 <div className="category-heading">Pick a category:</div>
                 {category.map(item =>
-                    <Col size="md-2">
+                    <Col size="md-2" key={item}>
                         <button
                             className="category-item"
                             onClick={() => {

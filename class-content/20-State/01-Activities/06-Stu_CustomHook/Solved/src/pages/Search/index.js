@@ -41,7 +41,7 @@ function Search() {
         })
         .catch(err => setError(err));
     }
-  }, [debouncedSearchTerm]);
+  }, [debouncedSearchTerm, search]);
 
   const handleInputChange = event => {
     setSearch(event.target.value);

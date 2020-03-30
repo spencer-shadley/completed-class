@@ -1,9 +1,9 @@
+import './style.css';
+import { Col, Row } from '../Grid';
 import React, { useRef } from 'react';
 import API from '../../utils/API';
 import { UPDATE_PRODUCTS } from '../../utils/actions';
 import { useStoreContext } from '../../utils/GlobalState';
-import { Col, Row } from '../Grid';
-import './style.css';
 
 // Using the datalist element we can create autofill suggestions based on the props.breeds array
 function SearchForm() {

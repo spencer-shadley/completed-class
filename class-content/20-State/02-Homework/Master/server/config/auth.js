@@ -1,5 +1,3 @@
-
-
 const db = require(`../models`);
 const jwt = require(`jsonwebtoken`);
 
@@ -24,15 +22,15 @@ module.exports = {
                                 user
                             });
                         } else {
-                            reject({
+                            reject(new Error({
                                 success: false,
                                 message: `Authentication failed. Wrong password.`
-                            });
+                            }));
                         }
                     });
                 })
                 .catch(err =>
-                    reject({ success: false, message: `User not found`, error: err })
+                    reject(new Error({ success: false, message: `User not found`, error: err }))
                 );
         });
     }

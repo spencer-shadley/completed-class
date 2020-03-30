@@ -1,4 +1,4 @@
-
+/* eslint-disable camelcase */
 
 const mongoose = require(`mongoose`);
 const Schema = mongoose.Schema;
@@ -13,6 +13,4 @@ const productSchema = new Schema({
     post_date: { type: Date, default: Date.now }
 });
 
-const Product = mongoose.model(`Product`, productSchema);
-
-module.exports = Product;
+module.exports = mongoose.model(`Product`, productSchema);

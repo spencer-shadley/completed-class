@@ -1,6 +1,3 @@
-
-/* eslint-disable no-magic-numbers */
-
 const expect = chai.expect;
 
 describe(`rotationPoint`, () => {

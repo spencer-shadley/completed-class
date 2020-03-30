@@ -1,16 +1,15 @@
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { Container } from '../Grid';
-import CartItem from '../CartItem';
-import { useStoreContext } from '../../utils/GlobalState';
+import './style.css';
 import {
     ADD_ALL_TO_CART,
     LOADING,
-    REMOVE_FROM_CART,
     UPDATE_CART
 } from '../../utils/actions';
+import React, { useEffect } from 'react';
+import CartItem from '../CartItem';
+import { Container } from '../Grid';
+import { Link } from 'react-router-dom';
 import { idbPromise } from '../../utils/hooks';
-import styles from './style.css';
+import { useStoreContext } from '../../utils/GlobalState';
 
 const Cart = () => {
     const [state, dispatch] = useStoreContext();
@@ -18,14 +17,6 @@ const Cart = () => {
     const getCart = () => {
         dispatch({ type: LOADING });
         dispatch({ type: UPDATE_CART });
-    };
-
-    const removeFromCart = product => {
-        dispatch({
-            type: REMOVE_FROM_CART,
-            productId: product.productId
-        });
-        idbPromise(`best`, `cart`, `delete`, product);
     };
 
     function calculateTotal() {
@@ -64,7 +55,7 @@ const Cart = () => {
                         </thead>
                         <tbody>
                             {state.cart.map(item =>
-                                <CartItem item={item} />
+                                <CartItem key={item} item={item} />
                             )}
                         </tbody>
                         <tfoot>
@@ -92,7 +83,7 @@ const Cart = () => {
                     <span className="shocked-emoji" role="img" aria-label="shocked">
                         😱
                     </span>
-                    You haven't added anything to your cart yet!
+                    You haven&apos;t added anything to your cart yet!
                 </h3>
             }
         </div>

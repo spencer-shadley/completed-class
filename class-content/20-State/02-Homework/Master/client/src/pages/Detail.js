@@ -1,8 +1,3 @@
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { Col, Container, Row } from '../components/Grid';
-import API from '../utils/API';
-import { useStoreContext } from '../utils/GlobalState';
 import {
     ADD_ALL_TO_CART,
     ADD_TO_CART,
@@ -10,8 +5,12 @@ import {
     SET_CURRENT_PRODUCT,
     UPDATE_CART
 } from '../utils/actions';
-
+import { Col, Container, Row } from '../components/Grid';
+import React, { useEffect } from 'react';
+import API from '../utils/API';
+import { Link } from 'react-router-dom';
 import { idbPromise } from '../utils/hooks';
+import { useStoreContext } from '../utils/GlobalState';
 
 const Detail = props => {
     const [state, dispatch] = useStoreContext();
@@ -45,43 +44,6 @@ const Detail = props => {
             productId: state.currentProduct.productId
         });
         idbPromise(`best`, `cart`, `delete`, state.currentProduct);
-    };
-
-    // console.log(state.cart);
-    const imgStyle = {
-        backgroundcolor: `blue`,
-        border: `red border 3px`,
-        padding: `0 10px 0 10px`,
-        minHeight: `100px`,
-        minWidth: `30%`,
-        maxWidth: `300px`
-    };
-
-    const rowStyle = {
-        backgroundColor: `white`,
-        margin: `0 10px 0 40px`,
-        // minHeight: '100%',
-        maxWidth: `80%`
-    };
-
-    const cardBody = {
-        backgroundColor: `white`,
-        margin: `0 10px 0 40px`
-    // maxWidth: '170%',
-    };
-
-    const cardStyle = {
-        minWidth: `240px`
-    // margin: '0 10px 0 40px',
-    // maxWidth: '170%',
-    };
-
-    const buttonStyle = {
-        minWidth: `100%`,
-        borderRadius: `5px`,
-        // backgroundColor: 'black',
-        // marginLeft: '30%',
-        textAlign: `center`
     };
 
     return (
@@ -154,6 +116,9 @@ const Detail = props => {
             }
         </>
     );
+};
+Detail.propTypes = {
+    match: PropTypes.string
 };
 
 export default Detail;

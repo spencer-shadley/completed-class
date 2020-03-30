@@ -1,5 +1,5 @@
-
-
+/* eslint-disable max-len */
+/* eslint-disable camelcase */
 const mongoose = require(`mongoose`);
 const db = require(`../models`);
 

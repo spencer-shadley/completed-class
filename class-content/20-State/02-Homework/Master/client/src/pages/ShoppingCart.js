@@ -1,8 +1,7 @@
-import PropTypes from 'prop-types';
-import React from 'react';
-import { Link } from 'react-router-dom';
 import Cart from '../components/Cart';
 import { Container } from '../components/Grid';
+import { Link } from 'react-router-dom';
+import React from 'react';
 
 function ShoppingCartPage() {
     return (

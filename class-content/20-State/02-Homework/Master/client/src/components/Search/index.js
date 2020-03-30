@@ -1,5 +1,5 @@
-import React from 'react';
 import { Container } from '../Grid';
+import React from 'react';
 import SearchForm from '../SearchForm';
 
 function Search() {

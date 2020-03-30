@@ -1,7 +1,6 @@
+import { Col, Row } from '../Grid';
 import React from 'react';
 import { withRouter } from 'react-router-dom';
-import { Col, Row } from '../Grid';
-import styles from './style.css';
 
 const Checkout = withRouter(({ history }) => {
     const submitForm = e => {

@@ -22,7 +22,7 @@ const FavoritesList = () => {
 
   useEffect(() => {
     getFavorites();
-  }, []);
+  });
 
   return (
     <div className="container mb-5 mt-5">

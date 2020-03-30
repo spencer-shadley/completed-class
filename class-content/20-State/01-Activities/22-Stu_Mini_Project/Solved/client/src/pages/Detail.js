@@ -17,7 +17,7 @@ const Detail = props => {
     API.getPost(props.match.params.id)
       .then(res => dispatch({ type: SET_CURRENT_POST, post: res.data }))
       .catch(err => console.log(err));
-  }, []);
+  });
 
   const addFavorite = () => {
     dispatch({
@@ -59,7 +59,7 @@ const Detail = props => {
               </button>
             ) : (
               <button className="btn" onClick={addFavorite}>
-                ❤️ Add to Favorites
+                ❤ Add to Favorites
               </button>
             )}
           </Row>

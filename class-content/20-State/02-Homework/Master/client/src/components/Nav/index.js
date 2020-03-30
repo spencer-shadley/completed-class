@@ -1,8 +1,7 @@
-import React from 'react';
-import { useStoreContext } from '../../utils/GlobalState';
 import AuthService from '../AuthService';
 import { Link } from 'react-router-dom';
-import style from './style.css';
+import React from 'react';
+import { useStoreContext } from '../../utils/GlobalState';
 
 function Nav() {
     const [store] = useStoreContext();
@@ -24,7 +23,8 @@ function Nav() {
                         </Link>
                     </li>
                     <li className="nav-item">
-                        {/* this is not using the Link component to logout or user and then refresh the application to the start */}
+                        {/* this is not using the Link component to
+                        logout or user and then refresh the application to the start */}
                         <a className="nav-link" href="/" onClick={() => Auth.logout()}>
                             Logout
                         </a>
@@ -56,7 +56,7 @@ function Nav() {
             </a>
             {showNavigation()}
             {store.loading ?
-                <a className="navbar-brand ml-auto">Loading...</a>
+                <a className="navbar-brand ml-auto" href="# ">Loading...</a>
                 :
                 <></>
             }

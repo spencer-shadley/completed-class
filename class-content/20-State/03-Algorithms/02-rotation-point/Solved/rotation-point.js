@@ -1,10 +1,11 @@
+// Write a function that takes in an array of sorted strings
+// and returns the index of its rotation point if it has one,
+// else return -1
 
-
-// Write a function that takes in an array of sorted strings and returns the index of its rotation point if it has one, else return -1
-
-const rotationPoint = function(words) {
-    const left = 0;
-    const right = words.length - 1;
+// eslint-disable-next-line no-unused-vars
+function rotationPoint(words) {
+    let left = 0;
+    let right = words.length - 1;
 
     while (left <= right) {
         const middle = Math.floor((right + left) / 2);
@@ -21,4 +22,4 @@ const rotationPoint = function(words) {
     }
 
     return -1;
-};
+}
