@@ -9,12 +9,10 @@
 
 1. Unit 20 (state)
 
-   1. architecture talk prep
    1. 20.1 bonus lecture
    1. 20.2 bonus lecture
    1. send overview of unit in Slack
    1. 20.2 drill
-   1. hw 20
 
 1. Unit 21 (MERN)
 
