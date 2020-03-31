@@ -1,5 +1,3 @@
-
-
 const express = require(`express`);
 const cors = require(`cors`);
 
@@ -34,6 +32,4 @@ app.use((err, req, res, next) => {
 mongoose.connect(process.env.MONGODB_URI || `mongodb://localhost/reactcms`);
 
 // Start the API server
-app.listen(PORT, () => {
-    console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
-});
+app.listen(PORT, () => console.log(`http://localhost:${PORT}`));
