@@ -1,10 +1,12 @@
+# useReducer
+
 In this activity we will practice using the `useReducer` Hook.
 
 # Instructions
 
 - Replace your React application's src folder with [Unsolved/src](Unsolved/src).
 
-- Start the application in dev mode by running `npm run watch` in your terminal.
+- Start the application in dev mode by running `npm run start` in your terminal.
 
 - Open your browser to [localhost:3000](http://localhost:3000) and study the rendered application.
 

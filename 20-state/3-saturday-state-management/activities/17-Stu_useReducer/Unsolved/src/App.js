@@ -4,11 +4,11 @@ function Count() {
     const dogs = [
         {
             name: `Harry`,
-            image: `https://images.dog.ceo/breeds/vizsla/n02100583_10960.jpg`
+            image: `https://i.dlpng.com/static/png/6562439_preview.png`
         },
         {
             name: `Hermione`,
-            image: `https://images.dog.ceo/breeds/husky/n02110185_1511.jpg`
+            image: `https://cdn131.picsart.com/311101774000211.png?type=webp&to=min&r=640`
         }
     ];
 
