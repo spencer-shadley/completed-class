@@ -9,9 +9,7 @@
 
 1. Unit 20 (state)
 
-   1. unit setup
    1. architecture talk prep
-   1. 20.1 prep
    1. 20.1 bonus lecture
    1. 20.2 prep
    1. 20.2 bonus lecture

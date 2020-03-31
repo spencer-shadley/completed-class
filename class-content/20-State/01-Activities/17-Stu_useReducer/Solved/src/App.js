@@ -5,22 +5,23 @@ function Count() {
   const dogs = [
     {
       name: 'Harry',
-      image: 'https://images.dog.ceo/breeds/vizsla/n02100583_10960.jpg'
+      image: 'https://i.dlpng.com/static/png/6562439_preview.png'
     },
     {
       name: 'Hermione',
-      image: 'https://images.dog.ceo/breeds/husky/n02110185_1511.jpg'
+      image: 'https://cdn131.picsart.com/311101774000211.png?type=webp&to=min&r=640'
     }
   ];
 
   const [state, dispatch] = useReducer(
     (state, action) => {
-      if (action === 'praiseHarry') {
-        return { ...state, HarryPraises: state.HarryPraises + 1 };
-      } else if (action === 'praiseHermione') {
-        return { ...state, HermionePraises: state.HermionePraises + 1 };
-      } else {
-        return state;
+      switch (action) {
+        case 'praiseHarry':
+          return { ...state, HarryPraises: state.HarryPraises + 1 };
+        case 'praiseHermione':
+          return { ...state, HermionePraises: state.HermionePraises + 1 };
+        default:
+          return state;
       }
     },
     { HarryPraises: 0, HermionePraises: 0 }

@@ -1,5 +1,5 @@
-import React, { useReducer, useRef } from 'react';
 import './App.css';
+import React, { useReducer, useRef } from 'react';
 
 function TodoList() {
   const inputRef = useRef();
@@ -15,9 +15,7 @@ function TodoList() {
         ];
       // Bonus: Remove a todo from the list.
       case 'remove':
-        return state.filter((_, index) => {
-          return index !== action.index;
-        });
+        return state.filter((_, index) => index !== action.index);
       default:
         return state;
     }

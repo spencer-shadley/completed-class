@@ -18,9 +18,7 @@ function reducer(state, action) {
         }
       ];
     case 'remove':
-      return state.filter((_, index) => {
-        return index !== action.index;
-      });
+      return state.filter((_, index) => index !== action.index);
     case 'prioritize':
       return state.map((item, index) => {
         if (index === action.index) {
