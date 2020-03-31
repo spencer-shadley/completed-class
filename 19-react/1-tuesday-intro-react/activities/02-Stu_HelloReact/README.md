@@ -10,6 +10,14 @@ In this activity, we will dissect a simple React application.
 
 - Start the app by running `npm run start` in your terminal, take a moment to study the HTML code being rendered in the browser at [http://localhost:3000](http://localhost:3000).
 
+### React Developer Tools
+
+- Install the [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
+
+- In your `create-react-app` server ([http://localhost:3000](http://localhost:3000)) open the Chrome dev tools, click the "Components" tab
+
+  - Check out the React DOM tree presented
+
 ### `index.js`
 
 - Open the `src/index.js` file and go over the code. Notice that we're importing the `ReactDOM` library. Try to answer the following questions:
