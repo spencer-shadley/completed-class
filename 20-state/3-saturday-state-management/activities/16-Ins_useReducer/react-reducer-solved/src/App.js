@@ -4,12 +4,13 @@ import React, { useReducer } from 'react';
 
 function App() {
     const [count, dispatch] = useReducer((state, action) => {
-        if (action === `add`) {
-            return state + 1;
-        } else if (action === `subtract`) {
-            return state - 1;
-        } else {
-            return state;
+        switch (action) {
+            case 'add':
+                return state + 1;
+            case 'subtract':
+                return state - 1;
+            default:
+                return state;
         }
     }, 0);
 
