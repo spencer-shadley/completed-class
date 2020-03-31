@@ -24,7 +24,9 @@ const Content = () => {
             >
                 Danger
             </button>
-            <Alert style={{ opacity: alert.display ? 1 : 0 }} type={alert.theme}>
+            <Alert
+                style={{ opacity: alert.display ? 1 : 0 }}
+                type={alert.theme}>
                 You pressed a {alert.theme} button!
             </Alert>
         </div>
