@@ -1,6 +1,6 @@
 # Prop Drilling
 
-In this activity we will review passing props down the component tree in React.
+In this activity we will review passing props down the component tree in React. We will not be using React Context yet, this is a refresher on our existing tools to share data between components.
 
 ## Instructions
 
@@ -21,7 +21,7 @@ In this activity we will review passing props down the component tree in React.
   />
   ```
 
-- Start the application in dev mode by running `npm run watch` in your terminal.
+- Start the application in dev mode by running `npm run start` in your terminal.
 
 - Open your browser to [localhost:3000](http://localhost:3000) and study the rendered application.
 
@@ -45,18 +45,36 @@ In this activity we will review passing props down the component tree in React.
 
   - The props should be passed through each component layer in the following manner:
 
-    - title (firstname & lastname): Gallery > CardContainer > Card > CardHeading > CardTitle > CardTitleText
+    - title (firstname & lastname): `Gallery > CardContainer > Card > CardHeading > CardTitle > CardTitleText`
 
-    - image: Gallery > CardContainer > Card > CardImage
+    - image: `Gallery > CardContainer > Card > CardImage`
 
-    - email: Gallery > CardContainer > Card > CardBody
+    - email: `Gallery > CardContainer > Card > CardBody`
 
-    - language: Gallery > CardContainer > Card > CardBody
+    - language: `Gallery > CardContainer > Card > CardBody`
 
-    - handleClick: Gallery > CardContainer > Card > CardBtn
+    - handleClick: `Gallery > CardContainer > Card > CardBtn`
 
   - Each arrow click should _not_ make an additional API call.
 
 ### Hints
 
 - Remember, `useState` is a great way to store information that your application may later need.
+
+- The "Components" React developer tools for Chrome is a great way to quickly understand the composition of an existing application
+
+- Start at `Gallery.js` and "drill" the props one by one through the component tree
+
+#### Resources
+
+Below are several resources I found to help understand prop drilling, its benefits, its downsides and alternatives (React Context)
+
+- https://medium.com/@jeromefranco/how-to-avoid-prop-drilling-in-react-7e3a9f3c8674
+
+- https://medium.com/@MCapoz/passing-data-in-react-with-prop-drilling-904aeb3cb5e
+
+- https://kentcdodds.com/blog/prop-drilling
+
+- https://dev.to/spukas/avoid-prop-drilling-in-react-with-context-api-1ne5
+
+- https://codeburst.io/react-anti-pattern-prop-drilling-54474d5236bd

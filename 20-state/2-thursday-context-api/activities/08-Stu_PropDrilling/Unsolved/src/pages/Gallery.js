@@ -1,6 +1,6 @@
 /* eslint-disable no-empty-function */
 /* eslint-disable no-unused-vars */
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import API from '../utils/API';
 import CardContainer from '../components/CardContainer';
 import Row from '../components/Row';
@@ -52,7 +52,11 @@ function Gallery() {
             <h1 className="text-center">Welcome to LinkedUp</h1>
             <h3 className="text-center">Click on the arrows to browse users</h3>
             <Row>
-                <CardContainer />
+                {/* TODO: CardContainer requires more props, add the others here
+                  * each prop will continue to be passed (drilled) to the next
+                  * component until you reach a "leaf" component
+                  */}
+                <CardContainer language={user.language} />
             </Row>
         </div>
     );
