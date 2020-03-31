@@ -6,4 +6,4 @@
 
 - The only changes are in `Solved/public/index.html`
 
-  -
+- Check it out by running `npm run watch`
