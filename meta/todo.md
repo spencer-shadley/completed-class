@@ -11,9 +11,7 @@
 
    1. architecture talk prep
    1. 20.1 bonus lecture
-   1. 20.2 prep
    1. 20.2 bonus lecture
-   1. 20.3 prep
    1. send overview of unit in Slack
    1. 20.2 drill
    1. hw 20
