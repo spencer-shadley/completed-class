@@ -48,6 +48,7 @@ function Search() {
   const handleFormSubmit = event => {
     event.preventDefault();
   };
+  
   return (
     <ArticleContext.Provider value={articleState}>
       <div>

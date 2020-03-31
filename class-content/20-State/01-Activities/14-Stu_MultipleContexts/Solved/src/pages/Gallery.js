@@ -102,22 +102,18 @@ function Gallery() {
   }
 
   return (
-    <UserContext.Provider
-      value={{ user, users, capitalizeFirstLetter, handleUserBtnClick }}
-    >
-      <LanguageContext.Provider
-        value={{ language, languages, handleLanguageBtnClick }}
-      >
-        <div>
+    <div>
           <h1 className="text-center">Welcome to LinkedUp</h1>
           <h3 className="text-center">Click on the arrows to browse users</h3>
-          <LanguageSelector />
-          <Row>
-            <CardContainer />
-          </Row>
+          <LanguageContext.Provider value={{ language, handleLanguageBtnClick }}>
+            <LanguageSelector />
+            <Row>
+              <UserContext.Provider value={{ user, capitalizeFirstLetter, handleUserBtnClick }}>
+                <CardContainer />
+              </UserContext.Provider>
+            </Row>
+          </LanguageContext.Provider>
         </div>
-      </LanguageContext.Provider>
-    </UserContext.Provider>
   );
 }
 
