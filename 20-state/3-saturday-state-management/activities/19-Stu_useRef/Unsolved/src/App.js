@@ -8,6 +8,7 @@ const TodoList = () => {
 
     function handleSubmit(e) {
         e.preventDefault();
+        // TODO: dispatch
     }
 
     return (

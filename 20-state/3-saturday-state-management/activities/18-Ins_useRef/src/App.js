@@ -7,14 +7,14 @@ function Count() {
 
     const [count, dispatch] = useReducer((state, action) => {
         switch (action) {
-        case `add`:
-            return state + 1;
-        case `subtract`:
-            return state - 1;
-        case `change`:
-            return inputRef.current.value;
-        default:
-            return state;
+            case `add`:
+                return state + 1;
+            case `subtract`:
+                return state - 1;
+            case `change`:
+                return inputRef.current.value;
+            default:
+                return state;
         }
     }, 0);
 
