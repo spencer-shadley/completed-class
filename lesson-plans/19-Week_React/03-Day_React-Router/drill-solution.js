@@ -27,15 +27,15 @@
 
 // **************** CONSTRAINTS **************** //
 
-
-
+// Max input overflow
+// 
 
 // **************** DEFINE INPUT/OUTPUT/EDGE/OUTLIER **************** //
 
 // Input: Two Arrays
 // Output: Boolean OR Integer
-// Edge: 
-// Outlier: 
+// Edge: No specification on how to deal with symbols/letters
+// Outlier: Overflow
 
 // **************** PSEUDO CODE SOLUTION / BRAINSTORM **************** //
 
@@ -59,11 +59,11 @@ const zipper = (arr1, arr2) => {
             } else {
                 result.push(len1 - 1 - i);
                 result.push(len2 - 1 - i);
-                break;
+                return result;
             }
         }
     }
-    return (result.length > 0) ? result : true;
+    return true;
 }
 
 // **************** TESTING **************** //
