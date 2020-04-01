@@ -4,19 +4,11 @@ In this activity, we will dissect a simple React application.
 
 ## Instructions
 
-- If you haven't already, generate a starter React app using Create React App. You can do this by running `create-react-app react-practice`. We will run all of the activity code today inside of this boilerplate, as to avoid constantly reinstalling the same node modules.
+- If you haven't already, generate a starter React app using Create React App. You can do this by running `npx create-react-app react-practice`. We will run all of the activity code today inside of this boilerplate, as to avoid constantly reinstalling the same node modules.
 
 - Once you have a `react-practice` React app generated, delete the `src` directory inside of your starter app and replace it with the [src](Unsolved/src) provided with this activity.
 
 - Start the app by running `npm run start` in your terminal, take a moment to study the HTML code being rendered in the browser at [http://localhost:3000](http://localhost:3000).
-
-### React Developer Tools
-
-- Install the [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
-
-- In your `create-react-app` server ([http://localhost:3000](http://localhost:3000)) open the Chrome dev tools, click the "Components" tab
-
-  - Check out the React DOM tree presented
 
 ### `index.js`
 
