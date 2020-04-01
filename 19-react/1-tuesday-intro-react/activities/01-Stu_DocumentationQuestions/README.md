@@ -4,13 +4,25 @@ In this activity, we will begin by installing a few helpful packages and then ex
 
 ## Instructions
 
-### Part 1
+### Part 1 - create-react-app
 
-Install the Create React App globally by running the following command in your terminal:
+- Use the Create React App by running the following command in your terminal:
 
-`npm install -g create-react-app`
+  `npx create-react-app my-cool-react-app`
 
-### Part 2
+- After it's done, run `npm i` followed by `npm run start` from `my-cool-react-app`
+
+  - Note: installation may take a while, you might want to move on to the next parts while this is ongoing
+
+### Part 2 - Chrome React Developer Tools
+
+- Install the [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
+
+- In your `create-react-app` server ([http://localhost:3000](http://localhost:3000)) open the Chrome dev tools, click the "Components" tab
+
+  - Check out the React DOM tree in the dev tools
+
+### Part 3 - Research
 
 While that is installing, work with your group to answer each of the following questions using the [ReactJS Documentation](https://facebook.github.io/react/):
 
