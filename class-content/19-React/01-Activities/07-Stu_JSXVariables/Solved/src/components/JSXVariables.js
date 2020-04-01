@@ -1,7 +1,7 @@
 import React from 'react';
 
-const name = 'Christian';
-const thoughts = 'is amazing!!!';
+const name = 'Spencer';
+const thoughts = 'is alright';
 
 const stripVowels = str => {
   const vowels = ['a', 'e', 'i', 'o', 'u'];
