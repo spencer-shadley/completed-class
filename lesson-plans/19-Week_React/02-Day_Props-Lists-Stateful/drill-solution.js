@@ -49,6 +49,22 @@ function canConcatenateCondensed(arrays, target) {
  * 
  * Time complexity: O(MlogM + NlogN)
  * Space complexity: O(M)
+ * 
+ * About Merge Sort:
+ * 
+ * Uses a divide and conquer strategy - divide the problem into smaller sorted collections
+ * and then combine those smaller collection
+ * 
+ * Advantages of sorting with MergeSort
+ * - Scales well, supports sorting massive datasets, supporting external sorting and parallelization
+ * - Fast, even in the worst case (ONlogN)
+ * - Stable, elements are sorted in a predictable order, even when their values match
+ * - Supports many different collection types
+ * 
+ * Disadvantages of sorting with MergeSort
+ * - Not in-place, meaning it will take additional memory to sort because it keeps intermidate arrays
+ * - Low cache locality hits
+ * - Slightly slower than quick sort on average, in practice
  */
 function canConcatenate(arrays, target) {
     target.sort((a, b) => b - a); // time: O(NlogN)
