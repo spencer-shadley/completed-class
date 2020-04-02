@@ -52,3 +52,9 @@
 - yarn
 
 - 20.1 has several bonus things for hooks
+
+- interview based things
+
+  - greedy algorithms
+
+    - franctional knapsack problem
