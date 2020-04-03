@@ -9,7 +9,8 @@ function App() {
     <Wrapper>
       <Title>Friends List</Title>
       {friends.map(friend => {
-        <FriendCard
+        return <FriendCard
+          key={friend.id}
           name={friend.name}
           image={friend.image}
           occupation={friend.occupation}
