@@ -13,20 +13,20 @@ class Portfolio extends React.Component {
     };
   }
 
-
   handlePageChange = page => {
     this.setState({ currentPage: page });
   };
 
   renderPage = () => {
-    if (this.state.currentPage === 'Home') {
-      return <Home />;
-    } else if (this.state.currentPage === 'About') {
-      return <About />;
-    } else if (this.state.currentPage === 'Blog') {
-      return <Blog />;
-    } else {
-      return <Contact />;
+    switch (this.state.currentPage) {
+      case 'Home':
+        return <Home />;
+      case 'About':
+        return <About />;
+      case 'Blog':
+        return <Blog />;
+      default:
+        return <Contact />;
     }
   };
 
