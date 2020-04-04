@@ -27,7 +27,7 @@ class Contact extends React.Component {
                     className="btn btn-link"
                 >
                     Learn More
-                </Link>{` `}
+                </Link>
                 <Link to="/contact" role="button" className="btn btn-link">
                     Learn Less
                 </Link>
