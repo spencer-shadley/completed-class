@@ -18,13 +18,15 @@ Given a table of random users, when the user loads the page, a table of employee
 
 The user should be able to:
 
-- Sort the table by at least one category
+- Sort the table by at least one category (in our example, each column is sortable)
 
-- Filter the users by at least one property.
+- Filter the users by at least one property (our solution allows filtering by name, beginning birth date and ending birth date)
 
 ## Hint
 
 - Generate your starter code using the `create-react-app`
+
+- [randomuser.me](https://randomuser.me/) is a great way to easily create fake user data
 
 - Draw your page first, pseudocode how you might break-up the components
 
