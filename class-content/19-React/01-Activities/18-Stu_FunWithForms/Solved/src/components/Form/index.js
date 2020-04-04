@@ -13,7 +13,6 @@ class Form extends React.Component {
     };
   }
 
-
   handleInputChange = event => {
     // Getting the value and name of the input which triggered the change
     let value = event.target.value;
@@ -22,6 +21,7 @@ class Form extends React.Component {
     if (name === 'password') {
       value = value.substring(0, 15);
     }
+
     // Updating the input's state
     this.setState({
       [name]: value
