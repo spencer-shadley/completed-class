@@ -36,9 +36,9 @@ ex: `<SomeComponent name={someValue} theme={someOtherValue} />`
 
 ex: 
 <br>
-`let clickHandler = (event) => {your code};`
+`clickHandler = event => {your code};`
 <br>
-`<div onClick={clickHandler}></div>`
+`<div onClick={this.clickHandler}></div>`
 
 ## Life Cycle
 * React gives us ways to access certain phases of the component's life cycle
