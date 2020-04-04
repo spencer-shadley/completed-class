@@ -1,5 +1,4 @@
 import './style.css';
-
 import React from 'react';
 
 class Form extends React.Component {
@@ -14,7 +13,7 @@ class Form extends React.Component {
     }
 
     handleInputChange = event => {
-    // Getting the value and name of the input which triggered the change
+        // Getting the value and name of the input which triggered the change
         const { name, value } = event.target;
 
         // Updating each input's state.name to value
@@ -24,7 +23,7 @@ class Form extends React.Component {
     }
 
     handleFormSubmit = event => {
-    // Preventing the default behavior of the form submit (which is to refresh the page)
+        // Preventing the default behavior of the form submit (which is to refresh the page)
         event.preventDefault();
 
         // Alert the user their first and last name,
@@ -38,7 +37,7 @@ class Form extends React.Component {
     }
 
     render() {
-    // Notice how each input has a `value`, `name`, and `onChange` prop
+        // Notice how each input has a `value`, `name`, and `onChange` prop
         return (
             <div>
                 <p>
