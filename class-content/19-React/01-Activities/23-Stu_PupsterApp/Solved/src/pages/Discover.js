@@ -4,11 +4,15 @@ import Card from '../components/Card';
 import Alert from '../components/Alert';
 
 class Discover extends React.Component {
-  state = {
-    image: '',
-    match: false,
-    matchCount: 0
-  };
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      image: '',
+      match: false,
+      matchCount: 0
+    };
+  }
 
   // When the component mounts, load the next dog to be displayed
   componentDidMount() {
@@ -23,8 +27,8 @@ class Discover extends React.Component {
     const newState = { ...this.state };
 
     if (btnType === 'pick') {
-      // Set newState.match to either true or false depending on whether or not the dog likes us (1/5 chance)
-      newState.match = 1 === Math.floor(Math.random() * 5) + 1;
+      // Set newState.match to either true or false depending on whether or not the dog likes us (1/2 chance)
+      newState.match = 1 === Math.floor(Math.random() * 2) + 1;
 
       // Set newState.matchCount equal to its current value or its current value + 1 depending on whether the dog likes us
       newState.matchCount = newState.match

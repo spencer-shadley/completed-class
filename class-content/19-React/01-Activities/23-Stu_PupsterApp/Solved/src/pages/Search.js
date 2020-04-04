@@ -6,12 +6,16 @@ import SearchResults from '../components/SearchResults';
 import Alert from '../components/Alert';
 
 class Search extends React.Component {
-  state = {
-    search: '',
-    breeds: [],
-    results: [],
-    error: ''
-  };
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      search: '',
+      breeds: [],
+      results: [],
+      error: ''
+    };
+  }
 
   // When the component mounts, get a list of all available base breeds and update this.state.breeds
   componentDidMount() {
