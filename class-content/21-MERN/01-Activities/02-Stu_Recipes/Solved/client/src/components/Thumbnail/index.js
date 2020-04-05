@@ -1,5 +1,5 @@
 import './style.css';
-
+import PropTypes from 'prop-types';
 import React from 'react';
 
 // The Thumbnail component renders a div that uses some CSS to render a background image
@@ -17,5 +17,8 @@ function Thumbnail({ src }) {
         />
     );
 }
+Thumbnail.propTypes = {
+    src: PropTypes.string
+};
 
 export default Thumbnail;

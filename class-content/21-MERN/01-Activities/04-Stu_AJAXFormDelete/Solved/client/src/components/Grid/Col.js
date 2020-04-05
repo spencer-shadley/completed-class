@@ -8,10 +8,15 @@ export function Col({ size, children }) {
         <div
             className={size
                 .split(` `)
-                .map(size => `col-${ size}`)
+                .map(s => `col-${ s}`)
                 .join(` `)}
         >
             {children}
         </div>
     );
 }
+Col.propTypes = {
+    children: PropTypes.node,
+    size: PropTypes.string
+};
+

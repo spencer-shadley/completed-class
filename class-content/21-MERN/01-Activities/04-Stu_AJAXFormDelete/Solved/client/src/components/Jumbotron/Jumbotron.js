@@ -16,5 +16,8 @@ function Jumbotron({ children }) {
         </div>
     );
 }
+Jumbotron.propTypes = {
+    children: PropTypes.node
+};
 
 export default Jumbotron;

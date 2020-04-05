@@ -1,6 +1,7 @@
+import { Col, Container, Row } from '../Grid';
+import PropTypes from 'prop-types';
 import React from 'react';
 import Thumbnail from '../Thumbnail';
-import { Col, Container, Row } from '../Grid';
 
 // Exporting both RecipeList and RecipeListItem from this file
 
@@ -8,6 +9,9 @@ import { Col, Container, Row } from '../Grid';
 export function RecipeList({ children }) {
     return <ul className="list-group">{children}</ul>;
 }
+RecipeList.propTypes = {
+    children: PropTypes.node
+};
 
 // RecipeListItem renders a bootstrap list item containing data from the recipe api call
 export function RecipeListItem({
@@ -35,3 +39,9 @@ export function RecipeListItem({
         </li>
     );
 }
+RecipeListItem.propTypes = {
+    href: PropTypes.string,
+    ingredients: PropTypes.string,
+    thumbnail: PropTypes.string,
+    title: PropTypes.string
+};

@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import Jumbotron from '../../components/Jumbotron';
-import DeleteBtn from '../../components/DeleteBtn';
-import API from '../../utils/API';
 import { Col, Container, Row } from '../../components/Grid';
-import { List, ListItem } from '../../components/List';
 import { FormBtn, Input, TextArea } from '../../components/Form';
+import { List, ListItem } from '../../components/List';
+import React, { useEffect, useState } from 'react';
+import API from '../../utils/API';
+import DeleteBtn from '../../components/DeleteBtn';
+import Jumbotron from '../../components/Jumbotron';
 
 function Books() {
     // Setting our component's initial state
@@ -26,7 +26,7 @@ function Books() {
     // Deletes a book from the database with a given id, then reloads books from the db
     function deleteBook(id) {
         API.deleteBook(id)
-            .then(res => loadBooks())
+            .then(() => loadBooks())
             .catch(err => console.log(err));
     }
 
@@ -46,7 +46,7 @@ function Books() {
                 author: formObject.author,
                 synopsis: formObject.synopsis
             })
-                .then(res => loadBooks())
+                .then(() => loadBooks())
                 .catch(err => console.log(err));
         }
     }

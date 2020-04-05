@@ -1,6 +1,6 @@
+import './List.css';
 import PropTypes from 'prop-types';
 import React from 'react';
-import './List.css';
 
 export function List({ children }) {
     return (
@@ -9,3 +9,6 @@ export function List({ children }) {
         </div>
     );
 }
+List.propTypes = {
+    children: PropTypes.node
+};

@@ -8,3 +8,6 @@ export function Input(props) {
         </div>
     );
 }
+Input.propTypes = {
+    children: PropTypes.node
+};
