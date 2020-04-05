@@ -3,9 +3,6 @@
 - Miscellaneous
 
   - Add regular interview times
-  - Figure out how to add more computer science
-  - Happy Hour
-  - Themed weekly backgrounds
 
 1. Unit 20 (state)
 
