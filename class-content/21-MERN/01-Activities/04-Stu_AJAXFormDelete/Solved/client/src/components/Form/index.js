@@ -1,4 +1,4 @@
-'use strict';
+
 
 export * from './Input';
 export * from './TextArea';
