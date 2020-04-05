@@ -9,6 +9,9 @@ export default class DataArea extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      startDate: new Date(),
+      endDate: new Date(),
+      query: '',
       users: [{}],
       order: 'descend',
       filteredUsers: [{}],
@@ -64,18 +67,41 @@ export default class DataArea extends React.Component {
         this.setState({ filteredUsers: sortedUsers });
       },
       handleSearchChange: event => {
-        console.log(event.target.value);
-        const filter = event.target.value;
-        const filteredList = this.state.users.filter(item => {
-          // merge data together, then see if user input is anywhere inside
-          let values = Object.values(item)
-            .join('')
-            .toLowerCase();
-          return values.indexOf(filter.toLowerCase()) !== -1;
-        });
-        this.setState({ filteredUsers: filteredList });
+        const query = event.target.value;
+        this.filterUsers(this.state.startDate, this.state.endDate, query);
+      },
+      handleDateChange: (event) => {
+        const date = new Date(event.target.value);
+        const isStartDate = event.target.dataset.dateType === `start`;
+        const startDate = isStartDate ? date : this.state.startDate;
+        const endDate = isStartDate ? this.state.endDate : date;
+
+        this.filterUsers(startDate, endDate, this.state.query);
       }
     };
+  }
+
+  filterUsers = (startDate, endDate, query) => {
+    const updatedState = { ...this.state };
+
+    updatedState.startDate = startDate;
+    updatedState.endDate = endDate;
+    updatedState.query = query;
+
+    const filteredUsers = this.state.users.filter(user => {
+      const userDate = new Date(user.dob.date);
+
+      let values = Object.values(user)
+        .join('')
+        .toLowerCase();
+
+      return (
+        userDate >= updatedState.startDate &&
+        userDate <= updatedState.endDate &&
+        values.indexOf(query.toLowerCase()) !== -1);
+    });
+    updatedState.filteredUsers = filteredUsers;
+    this.setState(updatedState)
   }
 
   componentDidMount() {
@@ -90,7 +116,7 @@ export default class DataArea extends React.Component {
   render() {
     return (
       <>
-        <Nav handleSearchChange={this.state.handleSearchChange} />
+        <Nav handleDateChange={this.state.handleDateChange} handleSearchChange={this.state.handleSearchChange} />
         <div className="data-area">
           <DataTable
             headings={this.state.headings}

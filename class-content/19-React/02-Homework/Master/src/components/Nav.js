@@ -4,7 +4,7 @@ import SearchBox from './SearchBox.js';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-function Nav({ handleSearchChange }) {
+function Nav({ handleSearchChange, handleDateChange }) {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <button
@@ -25,8 +25,8 @@ function Nav({ handleSearchChange }) {
               DOB
             </span>
           </div>
-          <input type="date" className="form-control" />
-          <input type="date" className="form-control" />
+          <input onChange={handleDateChange} data-date-type="start" type="date" className="form-control" />
+          <input onChange={handleDateChange} data-date-type="end" type="date" className="form-control" />
         </div>
         <div className="search-area col-4">
           <SearchBox handleSearchChange={handleSearchChange} />
