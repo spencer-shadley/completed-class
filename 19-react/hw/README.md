@@ -46,6 +46,8 @@ The user should be able to:
 
 - Create one component at a time. Test often. Any time you _can_ fail _try_ to fail. Try to break your code anytime you think there's a new thing that could break (display a component, updating state, etc.)
 
+- [Deploy using gh-pages](https://create-react-app.dev/docs/deployment/#github-pages)
+
 ## Commit Early and Often
 
 One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
