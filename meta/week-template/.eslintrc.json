@@ -35,7 +35,7 @@
     "func-style": ["error", "declaration", { "allowArrowFunctions": true }],
     "global-require": "error",
     "guard-for-in": "error",
-    "indent": ["error", 2],
+    "indent": ["error", 4],
     "max-depth": ["error", 4],
     "max-len": [
       "error",
