@@ -1,5 +1,5 @@
-import React from 'react';
 import './style.css';
+import React from 'react';
 
 // This file exports both the List and ListItem components
 
@@ -11,6 +11,14 @@ export function List({ children }) {
     );
 }
 
+List.propTypes = {
+    children: PropTypes.node
+};
+
 export function ListItem({ children }) {
     return <li className="list-group-item">{children}</li>;
 }
+
+ListItem.propTypes = {
+    children: PropTypes.node
+};

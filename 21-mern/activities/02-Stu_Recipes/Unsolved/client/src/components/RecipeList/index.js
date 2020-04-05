@@ -1,6 +1,7 @@
+import { Col, Container, Row } from '../Grid';
+import PropTypes from 'prop-types';
 import React from 'react';
 import Thumbnail from '../Thumbnail';
-import { Col, Container, Row } from '../Grid';
 
 // Exporting both RecipeList and RecipeListItem from this file
 
@@ -8,9 +9,12 @@ import { Col, Container, Row } from '../Grid';
 export function RecipeList({ children }) {
     return <ul className="list-group">{children}</ul>;
 }
+RecipeList.propTypes = {
+    children: PropTypes.node
+};
 
 // RecipeListItem renders a bootstrap list item containing data from the recipe api call
-export function RecipeListItem(props) {
+export function RecipeListItem() {
     return (
         <li className="list-group-item">
             <Container>
@@ -21,13 +25,14 @@ export function RecipeListItem(props) {
                     <Col size="xs-8 sm-9">
                         <h3>Vegetable-Pasta Oven Omelet</h3>
                         <p>
-                            Ingredients: "tomato, onions, red pepper, garlic, olive oil,
+                            Ingredients: &quot;tomato, onions, red pepper, garlic, olive oil,
                             zucchini, cream cheese, vermicelli, eggs, parmesan cheese, milk,
-                            italian seasoning, salt, black pepper"
+                            italian seasoning, salt, black pepper&quot;
                         </p>
                         <a
                             rel="noreferrer noopener"
                             target="_blank"
+                            // eslint-disable-next-line max-len
                             href="http://find.myrecipes.com/recipes/recipefinder.dyn?action=displayRecipe&recipe_id=520763"
                         >
                             Go to recipe!

@@ -16,4 +16,8 @@ function Jumbotron({ children }) {
     );
 }
 
+Jumbotron.propTypes = {
+    children: PropTypes.node
+};
+
 export default Jumbotron;

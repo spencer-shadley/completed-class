@@ -1,11 +1,11 @@
+import { Col, Container, Row } from '../components/Grid';
+import { FormBtn, Input, TextArea } from '../components/Form';
+import { List, ListItem } from '../components/List';
 import React, { useEffect, useState } from 'react';
+import API from '../utils/API';
 import DeleteBtn from '../components/DeleteBtn';
 import Jumbotron from '../components/Jumbotron';
-import API from '../utils/API';
 import { Link } from 'react-router-dom';
-import { Col, Container, Row } from '../components/Grid';
-import { List, ListItem } from '../components/List';
-import { FormBtn, Input, TextArea } from '../components/Form';
 
 function Books() {
     const [books, setBooks] = useState([]);
@@ -23,7 +23,7 @@ function Books() {
 
     function deleteBook(id) {
         API.deleteBook(id)
-            .then(res => loadBooks())
+            .then(() => loadBooks())
             .catch(err => console.log(err));
     }
 
@@ -40,7 +40,7 @@ function Books() {
                 author: formObject.author,
                 synopsis: formObject.synopsis
             })
-                .then(res => loadBooks())
+                .then(() => loadBooks())
                 .catch(err => console.log(err));
         }
     }

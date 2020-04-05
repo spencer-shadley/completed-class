@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import { Col, Container, Row } from '../components/Grid';
-import Jumbotron from '../components/Jumbotron';
+import React, { useEffect, useState } from 'react';
 import API from '../utils/API';
+import Jumbotron from '../components/Jumbotron';
+import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 function Detail(props) {
     const [book, setBook] = useState({});
@@ -43,5 +44,9 @@ function Detail(props) {
         </Container>
     );
 }
+
+Detail.propTypes = {
+    match: PropTypes.object
+};
 
 export default Detail;

@@ -29,3 +29,7 @@ export function FormBtn(props) {
         </button>
     );
 }
+
+FormBtn.propTypes = {
+    children: PropTypes.node
+};

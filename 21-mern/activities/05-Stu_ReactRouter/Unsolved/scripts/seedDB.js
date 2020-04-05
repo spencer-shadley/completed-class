@@ -1,5 +1,4 @@
-
-
+/* eslint-disable max-len */
 const mongoose = require(`mongoose`);
 const db = require(`../models`);
 

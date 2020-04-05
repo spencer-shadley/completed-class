@@ -1237,9 +1237,9 @@ There is a broad spectrum of component testing techniques. They range from a “
 Different projects choose different testing tradeoffs based on how often components change, and how much logic they contain. If you haven’t decided on a testing strategy yet, we recommend that you start with creating simple smoke tests for your components:
 
 ```js
+import App from './App';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
