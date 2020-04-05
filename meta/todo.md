@@ -3,6 +3,7 @@
 - Miscellaneous
 
   - Add regular interview times
+  - Add kahoot - https://create.kahoot.it/discover
 
 1. Unit 20 (state)
 
