@@ -3,10 +3,10 @@
     "browser": true,
     "commonjs": true,
     "es6": true,
-    "node": true,
+    "jest/globals": true,
     "jquery": true,
-    "jest": true,
-    "mocha": true
+    "mocha": true,
+    "node": true
   },
   "parserOptions": {
     "ecmaVersion": 2020,
@@ -14,9 +14,15 @@
     "ecmaFeatures": { "jsx": true }
   },
   "globals": {},
-  "extends": ["eslint:recommended"],
-  "ignorePatterns": ["dist/", "algorithms"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended"
+  ],
+  "plugins": ["jest", "jsx-a11y", "react"],
+  "ignorePatterns": ["dist/", "algorithms", "/node_modules/"],
   "rules": {
+    "react/jsx-indent": "error",
     "array-bracket-spacing": "error",
     "array-callback-return": "error",
     "arrow-body-style": ["error", "as-needed"],
@@ -35,7 +41,7 @@
     "func-style": ["error", "declaration", { "allowArrowFunctions": true }],
     "global-require": "error",
     "guard-for-in": "error",
-    "indent": ["error", 2],
+    "indent": ["error", 4],
     "max-depth": ["error", 4],
     "max-len": [
       "error",
@@ -82,7 +88,9 @@
           10,
           200,
           400,
+          401,
           404,
+          422,
           3000,
           3001,
           8080
