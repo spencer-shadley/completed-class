@@ -10,6 +10,14 @@ As a user, I want to be able to view my entire employee directory at once so tha
 
 ### Demo
 
+Quick Demo:
+
+![date dropdown](./date-change-demo.gif)
+
+[High Resolution Demo on YouTube](https://youtu.be/ocf7N8wYlfQ)
+
+Longer demo:
+
 ![demo](./demo.gif)
 
 [High Resolution Demo on YouTube](https://youtu.be/46spuYxfwLk)
