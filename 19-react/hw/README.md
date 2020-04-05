@@ -36,7 +36,7 @@ The user should be able to:
 
 - Filter the users by at least one property (our solution allows filtering by name, beginning birth date and ending birth date)
 
-## Hint
+## Hints
 
 - Generate your starter code using the `create-react-app`
 
