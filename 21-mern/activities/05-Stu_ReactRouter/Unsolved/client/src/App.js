@@ -5,12 +5,12 @@ import NoMatch from './pages/NoMatch';
 import Nav from './components/Nav';
 
 function App() {
-  return (
-    <div>
-      <Nav />
-      <Books />
-    </div>
-  );
+    return (
+        <div>
+            <Nav />
+            <Books />
+        </div>
+    );
 }
 
 export default App;
