@@ -5,11 +5,11 @@ import Input from './components/Input';
 import Button from './components/Button';
 import API from './utils/API';
 import { RecipeList, RecipeListItem } from './components/RecipeList';
-import { Container, Row, Col } from './components/Grid';
+import { Col, Container, Row } from './components/Grid';
 
 function App() {
   const [recipes, setRecipes] = useState([]);
-  const [recipeSearch, setRecipeSearch] = useState('');
+  const [recipeSearch, setRecipeSearch] = useState(``);
 
   const handleInputChange = event => {
     // Destructure the name and value properties off of event.target
