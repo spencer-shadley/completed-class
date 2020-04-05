@@ -9,8 +9,8 @@ export default class DataArea extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      startDate: new Date(),
-      endDate: new Date(),
+      startDate: undefined,
+      endDate: undefined,
       query: '',
       users: [{}],
       order: 'descend',
@@ -94,11 +94,15 @@ export default class DataArea extends React.Component {
       let values = Object.values(user)
         .join('')
         .toLowerCase();
+      
+      const isAtLeastDate = updatedState.startDate === undefined || userDate >= updatedState.startDate;
+      const isAtMostDate = updatedState.endDate === undefined || userDate <= updatedState.endDate;
+      const doesMatchQuery = values.indexOf(query.toLowerCase()) !== -1;
 
       return (
-        userDate >= updatedState.startDate &&
-        userDate <= updatedState.endDate &&
-        values.indexOf(query.toLowerCase()) !== -1);
+        isAtLeastDate &&
+        isAtMostDate &&
+        doesMatchQuery);
     });
     updatedState.filteredUsers = filteredUsers;
     this.setState(updatedState)
