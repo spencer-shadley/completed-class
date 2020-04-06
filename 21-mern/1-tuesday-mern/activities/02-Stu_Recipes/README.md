@@ -8,11 +8,11 @@ In this activity we will render a list of recipes retrieved via an AJAX request.
 
 - Run `npm start` to start the React app and Express server. Visit [localhost:3000](http://localhost:3000) in your web browser to view the app.
 
-- Enter a search term, e.g. "burgers" in the input field and submit. This won't have any visible affect on the page yet, but should submit an AJAX request and log the response to the console. Take a moment to study the response logged.
+- Enter a search term, e.g. "pizza" in the input field and submit. This won't have any visible affect on the page yet, but should submit an AJAX request and log the response to the console. Take a moment to study the response logged.
 
   ![Recipe Log](Images/01-RecipeLog.gif)
 
-- The goal of this activity is to render these recipes to the DOM.
+- The goal of this activity is to render these recipes to the DOM. You are a front-end developer, somebody has already written a working back-end.
 
 ### Part 1
 
@@ -63,3 +63,5 @@ In this activity we will render a list of recipes retrieved via an AJAX request.
 - Add code so that if a recipe doesn't come with a thumbnail url, use a placeholder image instead. Check out [placehold.it](https://placeholder.com/) for placeholder images.
 
 - Add code so that if `recipes` is an empty array, render a message indicating that no recipes are available.
+
+- Try running `npm run build`
