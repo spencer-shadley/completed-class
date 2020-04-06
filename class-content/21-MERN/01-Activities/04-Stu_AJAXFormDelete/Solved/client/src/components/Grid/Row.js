@@ -7,5 +7,5 @@ export function Row({ fluid, children }) {
 }
 Row.propTypes = {
     children: PropTypes.node,
-    fluid: PropTypes.string
+    fluid: PropTypes.bool
 };

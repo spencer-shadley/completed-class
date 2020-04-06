@@ -7,5 +7,5 @@ export function Container({ fluid, children }) {
 }
 Container.propTypes = {
     children: PropTypes.node,
-    fluid: PropTypes.string
+    fluid: PropTypes.bool
 };

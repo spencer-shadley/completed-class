@@ -20,14 +20,14 @@ function Books() {
     function loadBooks() {
         API.getBooks()
             .then(res => setBooks(res.data))
-            .catch(err => console.log(err));
+            .catch(err => console.error(err));
     }
 
     // Deletes a book from the database with a given id, then reloads books from the db
     function deleteBook(id) {
         API.deleteBook(id)
             .then(() => loadBooks())
-            .catch(err => console.log(err));
+            .catch(err => console.error(err));
     }
 
     // Handles updating component state when the user types into the input field
@@ -40,14 +40,17 @@ function Books() {
     // Then reload books from the database
     function handleFormSubmit(event) {
         event.preventDefault();
-        if (formObject.title && formObject.author) {
+        const hasRequiredFields = formObject.title && formObject.author;
+        if (hasRequiredFields) {
             API.saveBook({
                 title: formObject.title,
                 author: formObject.author,
                 synopsis: formObject.synopsis
             })
                 .then(() => loadBooks())
-                .catch(err => console.log(err));
+                .catch(err => console.error(err));
+        } else {
+            alert(`Whoa, whoa, whoa - fill some stuff in!`);
         }
     }
 
@@ -90,7 +93,7 @@ function Books() {
                         <List>
                             {books.map(book =>
                                 <ListItem key={book._id}>
-                                    <a href={`/books/${ book._id}`}>
+                                    <a href={`/books/${book._id}`}>
                                         <strong>
                                             {book.title} by {book.author}
                                         </strong>
