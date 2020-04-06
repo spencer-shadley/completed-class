@@ -23,7 +23,7 @@ function App() {
         event.preventDefault();
         API.getRecipes(recipeSearch)
             .then(res => setRecipes(res.data))
-            .catch(err => console.log(err));
+            .catch(err => console.error(err));
     };
 
     return (
