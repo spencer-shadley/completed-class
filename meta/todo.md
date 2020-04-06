@@ -7,7 +7,6 @@
 
 1. Unit 20 (state)
 
-   1. 20.1 bonus lecture
    1. 20.2 bonus lecture
    1. send overview of unit in Slack
    1. 20.2 drill
@@ -17,9 +16,9 @@
    1. unit setup
    1. architecture talk prep
    1. 21.1 prep
-   1. 21.1 bonus lecture
+   1. 21.1 bonus topic
    1. 21.2 prep
-   1. 21.2 bonus lecture
+   1. 21.2 bonus computer science lecture
    1. 21.3 prep
    1. send overview of unit in Slack
    1. 21.2 drill
@@ -30,9 +29,9 @@
    1. unit setup
    1. architecture talk prep
    1. 22.1 prep
-   1. 22.1 bonus lecture
+   1. 22.1 bonus topic
    1. 22.2 prep
-   1. 22.2 bonus lecture
+   1. 22.2 bonus computer science lecture
    1. 22.3 prep
    1. send overview of unit in Slack
    1. 22.2 drill

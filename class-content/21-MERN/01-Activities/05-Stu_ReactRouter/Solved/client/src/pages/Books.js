@@ -1,3 +1,4 @@
+import { BrowserRouter, Link } from 'react-router-dom';
 import { Col, Container, Row } from '../components/Grid';
 import { FormBtn, Input, TextArea } from '../components/Form';
 import { List, ListItem } from '../components/List';
@@ -5,7 +6,6 @@ import React, { useEffect, useState } from 'react';
 import API from '../utils/API';
 import DeleteBtn from '../components/DeleteBtn';
 import Jumbotron from '../components/Jumbotron';
-import { Link } from 'react-router-dom';
 
 function Books() {
     // Setting our component's initial state
@@ -21,14 +21,14 @@ function Books() {
     function loadBooks() {
         API.getBooks()
             .then(res => setBooks(res.data))
-            .catch(err => console.log(err));
+            .catch(err => console.error(err));
     }
 
     // Deletes a book from the database with a given id, then reloads books from the db
     function deleteBook(id) {
         API.deleteBook(id)
             .then(() => loadBooks())
-            .catch(err => console.log(err));
+            .catch(err => console.error(err));
     }
 
     // Handles updating component state when the user types into the input field
@@ -48,7 +48,7 @@ function Books() {
                 synopsis: formObject.synopsis
             })
                 .then(() => loadBooks())
-                .catch(err => console.log(err));
+                .catch(err => console.error(err));
         }
     }
 
@@ -91,11 +91,13 @@ function Books() {
                         <List>
                             {books.map(book =>
                                 <ListItem key={book._id}>
-                                    <Link to={`/books/${ book._id}`}>
-                                        <strong>
-                                            {book.title} by {book.author}
-                                        </strong>
-                                    </Link>
+                                    <BrowserRouter>
+                                        <Link to={`/books/${ book._id}`}>
+                                            <strong>
+                                                {book.title} by {book.author}
+                                            </strong>
+                                        </Link>
+                                    </BrowserRouter>
                                     <DeleteBtn onClick={() => deleteBook(book._id)} />
                                 </ListItem>
                             )}

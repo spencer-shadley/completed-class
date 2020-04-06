@@ -31,5 +31,5 @@ export function FormBtn(props) {
     );
 }
 FormBtn.propTypes = {
-    children: PropTypes.children
+    children: PropTypes.node
 };

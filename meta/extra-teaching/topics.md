@@ -1,14 +1,16 @@
+# General
+
 - data structures
 - algorithms
-- code coverage (`coveralls`)
+- ~~code coverage (`coveralls`)~~
 - animations (GSAP requested)
 - VS Code
 
   - ~~live share~~
+
+  - more webpack plugins
   - extensions
     - bookmarks
-
-- more webpack plugins
 
   ```js
   plugins: [
@@ -41,11 +43,11 @@
       - it updates the DOM - a side effect
   ```
 
-- Service worker notifications
+- ~~Service worker notifications~~
 
-- serving a site on https
+  - https://developers.google.com/web/ilt/pwa/introduction-to-push-notifications
 
-- https://developers.google.com/web/ilt/pwa/introduction-to-push-notifications
+- ~~serving a site on https~~
 
 - concurrency - 18-pwa\supplemental\service-workers.md
 
@@ -53,8 +55,8 @@
 
 - 20.1 has several bonus things for hooks
 
-- interview based things
+# Computer Science
 
-  - greedy algorithms
+- ~~greedy algorithms~~
 
-    - franctional knapsack problem
+  - franctional knapsack problem

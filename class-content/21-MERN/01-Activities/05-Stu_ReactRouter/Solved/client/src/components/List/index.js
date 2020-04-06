@@ -12,12 +12,12 @@ export function List({ children }) {
     );
 }
 List.propTypes = {
-    children: PropTypes.children
+    children: PropTypes.node
 };
 
 export function ListItem({ children }) {
     return <li className="list-group-item">{children}</li>;
 }
 ListItem.propTypes = {
-    children: PropTypes.children
+    children: PropTypes.node
 };
