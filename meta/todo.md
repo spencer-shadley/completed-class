@@ -7,6 +7,7 @@
 
 1. Unit 20 (state)
 
+   1. find theme pictures - tonari no totoro, mononoke hime, rurouni kenshin
    1. 20.2 bonus lecture
    1. send overview of unit in Slack
    1. 20.2 drill
