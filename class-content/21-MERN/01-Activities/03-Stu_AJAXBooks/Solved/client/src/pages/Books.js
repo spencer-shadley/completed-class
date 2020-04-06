@@ -1,10 +1,10 @@
-import { Col, Container, Row } from '../../components/Grid';
-import { FormBtn, Input, TextArea } from '../../components/Form';
-import { List, ListItem } from '../../components/List';
+import { Col, Container, Row } from '../components/Grid';
+import { FormBtn, Input, TextArea } from '../components/Form';
+import { List, ListItem } from '../components/List';
 import React, { useEffect, useState } from 'react';
-import API from '../../utils/API';
-import DeleteBtn from '../../components/DeleteBtn';
-import Jumbotron from '../../components/Jumbotron';
+import API from '../utils/API';
+import DeleteBtn from '../components/DeleteBtn';
+import Jumbotron from '../components/Jumbotron';
 
 function Books() {
     // Setting our component's initial state
@@ -20,7 +20,7 @@ function Books() {
     function loadBooks() {
         API.getBooks()
             .then(res => setBooks(res.data))
-            .catch(err => console.log(err));
+            .catch(err => console.error(err));
     }
 
     return (
@@ -32,23 +32,19 @@ function Books() {
                     </Jumbotron>
                     <form>
                         <Input
-                            onChange={handleInputChange}
                             name="title"
                             placeholder="Title (required)"
                         />
                         <Input
-                            onChange={handleInputChange}
                             name="author"
                             placeholder="Author (required)"
                         />
                         <TextArea
-                            onChange={handleInputChange}
                             name="synopsis"
                             placeholder="Synopsis (Optional)"
                         />
                         <FormBtn
                             disabled={!(formObject.author && formObject.title)}
-                            onClick={handleFormSubmit}
                         >
                             Submit Book
                         </FormBtn>
@@ -67,7 +63,7 @@ function Books() {
                                             {book.title} by {book.author}
                                         </strong>
                                     </a>
-                                    <DeleteBtn onClick={() => deleteBook(book._id)} />
+                                    <DeleteBtn />
                                 </ListItem>
                             )}
                         </List>
