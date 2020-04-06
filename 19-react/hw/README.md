@@ -8,6 +8,20 @@ For this assignment, you'll create a employee directory with React. This assignm
 
 As a user, I want to be able to view my entire employee directory at once so that I have quick access to their information.
 
+### Demo
+
+Quick Demo:
+
+![date dropdown](./date-change-demo.gif)
+
+[High Resolution Demo on YouTube](https://youtu.be/ocf7N8wYlfQ)
+
+Longer demo:
+
+![demo](./demo.gif)
+
+[High Resolution Demo on YouTube](https://youtu.be/46spuYxfwLk)
+
 ## Business Context
 
 An employee or manager would benefit greatly from being able to view non-sensitive data about other employees. It would be particularly helpful to be able to filter employees by name.
@@ -18,17 +32,21 @@ Given a table of random users, when the user loads the page, a table of employee
 
 The user should be able to:
 
-- Sort the table by at least one category
+- Sort the table by at least one category (in our example, each column is sortable)
 
-- Filter the users by at least one property.
+- Filter the users by at least one property (our solution allows filtering by name, beginning birth date and ending birth date)
 
-## Hint
+## Hints
 
 - Generate your starter code using the `create-react-app`
+
+- [randomuser.me](https://randomuser.me/) is a great way to easily create fake user data
 
 - Draw your page first, pseudocode how you might break-up the components
 
 - Create one component at a time. Test often. Any time you _can_ fail _try_ to fail. Try to break your code anytime you think there's a new thing that could break (display a component, updating state, etc.)
+
+- [Deploy using gh-pages](https://create-react-app.dev/docs/deployment/#github-pages)
 
 ## Commit Early and Often
 
