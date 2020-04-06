@@ -13,6 +13,17 @@ function Gallery() {
     loadUsers();
   }, []);
 
+  function loadUsers() {
+    API.getLanguagesList()
+      .then(languages => {
+        API.getUsersByLanguage(languages[0]).then(users => {
+          setUsers(users);
+          setUser(users[0]);
+        });
+      })
+      .catch(err => console.log(err));
+  }
+
   function capitalizeFirstLetter(string = '') {
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
@@ -45,17 +56,6 @@ function Gallery() {
       const newUserIndex = userIndex - 1;
       previousUser(newUserIndex);
     }
-  }
-
-  function loadUsers() {
-    API.getLanguagesList()
-      .then(languages => {
-        API.getUsersByLanguage(languages[0]).then(users => {
-          setUsers(users);
-          setUser(users[0]);
-        });
-      })
-      .catch(err => console.log(err));
   }
 
   return (
