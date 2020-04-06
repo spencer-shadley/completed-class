@@ -21,7 +21,7 @@ function Books() {
     function loadBooks() {
         API.getBooks()
             .then(res => setBooks(res.data))
-            .catch(err => console.log(err));
+            .catch(err => console.error(err));
     }
 
     return (
@@ -63,7 +63,7 @@ function Books() {
                         <List>
                             {books.map(book =>
                                 <ListItem key={book._id}>
-                                    <a href={`/books/${ book._id}`}>
+                                    <a href={`/books/${book._id}`}>
                                         <strong>
                                             {book.title} by {book.author}
                                         </strong>
