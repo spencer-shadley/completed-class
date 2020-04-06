@@ -1,5 +1,3 @@
-
-
 const express = require(`express`);
 const path = require(`path`);
 const PORT = process.env.PORT || 3001;
@@ -22,5 +20,5 @@ app.get(`*`, (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`🌎 ==> API server now on port ${PORT}!`);
+    console.log(`API server up on http://localhost:${PORT}`);
 });
