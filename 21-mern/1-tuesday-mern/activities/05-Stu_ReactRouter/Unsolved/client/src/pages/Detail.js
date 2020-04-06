@@ -14,8 +14,8 @@ function Detail(props) {
     useEffect(() => {
         API.getBook(props.match.params.id)
             .then(res => setBook(res.data))
-            .catch(err => console.log(err));
-    }, []);
+            .catch(err => console.error(err));
+    }, [props.match.params.id]);
 
     return (
         <Container fluid>

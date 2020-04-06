@@ -9,7 +9,7 @@ export function Container({ fluid, children }) {
 }
 Container.propTypes = {
     children: PropTypes.node,
-    fluid: PropTypes.string
+    fluid: PropTypes.bool
 };
 
 // This Row component lets us use a bootstrap row without having to think about class names
@@ -18,7 +18,7 @@ export function Row({ fluid, children }) {
 }
 Row.propTypes = {
     children: PropTypes.node,
-    fluid: PropTypes.string
+    fluid: PropTypes.bool
 };
 
 // This Col component lets us size bootstrap columns with less syntax

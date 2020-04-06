@@ -18,13 +18,13 @@ function Books() {
     function loadBooks() {
         API.getBooks()
             .then(res => setBooks(res.data))
-            .catch(err => console.log(err));
+            .catch(err => console.error(err));
     }
 
     function deleteBook(id) {
         API.deleteBook(id)
             .then(() => loadBooks())
-            .catch(err => console.log(err));
+            .catch(err => console.error(err));
     }
 
     function handleInputChange(event) {
@@ -41,7 +41,7 @@ function Books() {
                 synopsis: formObject.synopsis
             })
                 .then(() => loadBooks())
-                .catch(err => console.log(err));
+                .catch(err => console.error(err));
         }
     }
 

@@ -6,7 +6,7 @@ In this activity we will add React Router to the Books application in order to r
 
 - Open the [Unsolved](Unsolved) directory and install dependencies by running `npm install` at the project root.
 
-- Start the app by running `npm run watch` from the project root.
+- Start the app by running `npm run start` from the project root.
 
 - Once the app starts open your browser to [localhost:3000](http://localhost:3000).
 
@@ -44,4 +44,4 @@ In this activity we will add React Router to the Books application in order to r
 
 - The React Router documentation is your friend!
 
-- Ask the instructor or a TA if you're having difficulty understanding any of the activity requirements.
+- Ask us if you're having difficulty understanding any of the activity requirements.
