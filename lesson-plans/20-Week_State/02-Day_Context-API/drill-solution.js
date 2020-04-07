@@ -64,10 +64,10 @@ function candies(numScores, scores) {
 //     return totalCandy;
 // }
 
-// bonus
+// bonus - https://photos.google.com/photo/AF1QipPJskjLawlKndJVHlVNpQLoz04ED-omnYJw_LRf
 
-// 1. sort
-// 2. grab medium
+// 1. sort by score
+// 2. grab median, assign them one candy
 // 3. grab smallest increase
 // 4. grab smallest decrease
-// 5. repeat until all have been grabbed
+// 5. repeat until all students have been considered
