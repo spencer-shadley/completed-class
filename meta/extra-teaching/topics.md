@@ -55,8 +55,16 @@
 
 - 20.1 has several bonus things for hooks
 
+- RTL
+
+- Enzyme
+
+- Lodash
+
 # Computer Science
 
 - ~~greedy algorithms~~
 
   - franctional knapsack problem
+
+- https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
