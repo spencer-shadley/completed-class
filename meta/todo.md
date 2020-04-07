@@ -15,7 +15,6 @@
    1. find theme pictures - tonari no totoro, mononoke hime, rurouni kenshin
    1. 20.2 bonus lecture
    1. send overview of unit in Slack
-   1. 20.2 drill
 
 1. Unit 21 (MERN)
 
