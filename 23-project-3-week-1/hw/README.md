@@ -2,9 +2,11 @@
 
 ## Application Requirements
 
-- Must use MERN stack
+- Must use MERN stack (you may substitute MySQL for MongoDB if desired)
 
-- Must use a CSS framework _other than_ Bootstrap
+- Must be deployed (recommended on Heroku)
+
+- Must have a well-written README
 
 ## Presentation Requirements
 
@@ -25,6 +27,8 @@ Use this [project presentation template](https://docs.google.com/presentation/d/
 ## Recommended
 
 It is strongly recommended that you additionally include and use:
+
+- Agile development (hold regular standups, build something small and add to it)
 
 - Many unit tests (in production, test code usually exceeds the amount of product code)
 
