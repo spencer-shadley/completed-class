@@ -55,7 +55,7 @@ Many features of `yarn` have been being added to `npm`.
 | `yarn init`                     | interactively creates or updates a package.json file                         | `npm init`                              |
 | `yarn` or `yarn install`        | installs all dependencies from `package.json`                                | `npm install`                           |
 | `yarn add [package]`            | add a new package as a regular dependency                                    | `npm install [package] --save`          |
-| `yarn add [package] --dev`      | add a new package as a peer dependency                                       | `npm install [package] --save-dev`      |
+| `yarn add [package] --dev`      | add a new package as a dev dependency                                        | `npm install [package] --save-dev`      |
 | `yarn add [package] --peer`     | add a new package as a peer dependency                                       | N/A                                     |
 | `yarn add [package] --optional` | add a new package as an optional dependency                                  | `npm install [package] --save-optional` |
 | `yarn add [package] --exact`    | add a new package using an exact version                                     | `npm install [package] --save-exact`    |
