@@ -13,7 +13,7 @@ function App() {
         }
     });
     // App component that provides initial context values
-    // Here we are overwritting the context object to be equal to the state of App
+    // Here we are overwriting the context object to be equal to the state of App
     return (
         <AlertContext.Provider value={pageState}>
             <Home />

@@ -27,7 +27,7 @@ function App() {
     }
 
     useEffect(() => {
-    // For demonstration purposes, we mock an API call.
+        // For demonstration purposes, we mock an API call.
         API.getDeveloper.then(res => {
             setDeveloperState(res);
         });
