@@ -1,5 +1,6 @@
-import './App.css';
+// https://reactjs.org/docs/hooks-reference.html#usereducer
 
+import './App.css';
 import React, { useReducer } from 'react';
 
 function App() {
