@@ -9,7 +9,7 @@ function TodoList() {
         return [
           ...state,
           {
-            id: state.length * Math.random(),
+            id: Math.random(),
             name: action.name
           }
         ];
