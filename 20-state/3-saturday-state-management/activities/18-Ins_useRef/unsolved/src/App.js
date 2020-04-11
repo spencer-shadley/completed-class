@@ -1,14 +1,14 @@
-// https://reactjs.org/docs/hooks-reference.html#usereducer
+// https://reactjs.org/docs/hooks-reference.html#useref
 
 import './App.css';
 import React, { useReducer } from 'react';
 
-function App() {
+function Count() {
     const [count, dispatch] = useReducer((state, action) => {
         switch (action) {
-            case 'add':
+            case `add`:
                 return state + 1;
-            case 'subtract':
+            case `subtract`:
                 return state - 1;
             default:
                 return state;
@@ -30,8 +30,18 @@ function App() {
             >
                 Subtract
             </button>
+            <input
+                className="form-control w-25 mx-auto mt-5"
+                placeholder="Type new value..."
+            />
+            <button
+                className="btn btn-warning mt-5"
+                onClick={() => dispatch(`change`)}
+            >
+                Change
+            </button>
         </div>
     );
 }
 
-export default App;
+export default Count;
