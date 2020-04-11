@@ -24,8 +24,6 @@ function candies(numScores, scores) {
     return candies.reduce((currTotal, candy) => currTotal + candy, 0);
 }
 
-// bonus - https://photos.google.com/photo/AF1QipPJskjLawlKndJVHlVNpQLoz04ED-omnYJw_LRf
-
 // 1. sort by score
 // 2. grab median, assign them one candy
 // 3. grab smallest increase
