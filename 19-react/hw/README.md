@@ -46,6 +46,8 @@ The user should be able to:
 
 - Create one component at a time. Test often. Any time you _can_ fail _try_ to fail. Try to break your code anytime you think there's a new thing that could break (display a component, updating state, etc.)
 
+- [Deploy using heroku](https://blog.heroku.com/deploying-react-with-zero-configuration)
+
 - [Deploy using gh-pages](https://create-react-app.dev/docs/deployment/#github-pages)
 
 ## Commit Early and Often

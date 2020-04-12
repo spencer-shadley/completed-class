@@ -50,6 +50,8 @@ Your updated site should still have all of the content it previously had:
 
   - Link to the deployed version
 
+    - [guide to deploying `create-react-app` on heroku](https://blog.heroku.com/deploying-react-with-zero-configuration)
+
   - Link to the GitHub repository
 
   - GIF or screenshot of the deployed application
