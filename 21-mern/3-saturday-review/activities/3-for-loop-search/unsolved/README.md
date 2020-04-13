@@ -20,3 +20,9 @@ You only need to change `linearSearch.js`
 ## Bonus
 
 Check out the code in `benchmark/benchmark.js`
+
+## Resources
+
+- https://www.cs.usfca.edu/~galles/visualization/Search.html
+
+- https://benchmarkjs.com/

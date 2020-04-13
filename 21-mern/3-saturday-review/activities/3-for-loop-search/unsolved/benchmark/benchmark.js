@@ -6,7 +6,7 @@ const Benchmark = require(`benchmark`);
 const generate = require(`./generate`);
 
 // Generate an array of the given length.
-const length = 100000000;
+const length = 1000;
 const stuff = generate(length);
 const randomValue = stuff[Math.ceil(Math.random() * length)];
 
@@ -17,7 +17,7 @@ const suite = new Benchmark.Suite();
 suite
     // Add the function 'linearSearch' to the suite.
     .add(`Linear Search`, () => {
-        for (let i = 0; i < stuff.length; i += 1) {
+        for (let i = 0; i < stuff.length; ++i) {
             if (stuff[i] === randomValue) {
                 return stuff[i];
             }
