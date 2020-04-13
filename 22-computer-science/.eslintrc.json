@@ -1,29 +1,19 @@
 {
   "parserOptions": {
-    "ecmaVersion": 2020,
-    "sourceType": "module",
-    "ecmaFeatures": { "jsx": true }
+    "ecmaVersion": 2020
   },
   "globals": {},
-  "plugins": ["jest", "jsx-a11y", "react"],
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:jsx-a11y/recommended",
-    "plugin:jest/recommended"
-  ],
+  "plugins": [],
+  "extends": ["eslint:recommended"],
   "env": {
     "browser": true,
     "commonjs": true,
     "es6": true,
-    "jest/globals": true,
     "jquery": true,
-    "mocha": true,
     "node": true
   },
   "ignorePatterns": ["dist/", "algorithms", "/node_modules/"],
   "rules": {
-    "react/jsx-indent": "error",
     "array-bracket-spacing": "error",
     "array-callback-return": "error",
     "arrow-body-style": ["error", "as-needed"],
