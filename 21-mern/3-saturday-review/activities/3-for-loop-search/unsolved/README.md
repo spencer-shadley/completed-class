@@ -6,6 +6,17 @@
 
 - If it matches the random value, log the index in the array
 
+  - Example output when indicies 8 and 10 have the value `randomValue`:
+
+    ```
+    8
+    10
+    ```
+
 ## Hints
 
 You only need to change `linearSearch.js`
+
+## Bonus
+
+Check out the code in `benchmark/benchmark.js`
