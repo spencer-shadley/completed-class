@@ -4,7 +4,7 @@
 function generate(length) {
     const arr = [];
 
-    for (let i = 0; i < length; i += 1) {
+    for (let i = 0; i < length; ++i) {
         arr.push(Math.ceil(Math.random() * length));
     }
     return arr;

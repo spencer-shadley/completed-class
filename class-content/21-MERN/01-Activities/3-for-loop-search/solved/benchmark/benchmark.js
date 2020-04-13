@@ -1,8 +1,9 @@
 'use strict';
 
-// Benchmark is a library that times
+// Benchmark is a library that times performance
+// https://benchmarkjs.com/
 const Benchmark = require(`benchmark`);
-const generate = require(`../shared/generate`);
+const generate = require(`./generate`);
 
 // Generate an array of the given length.
 const length = 100000000;
@@ -14,27 +15,28 @@ const randomValue = stuff[Math.ceil(Math.random() * length)];
 const suite = new Benchmark.Suite();
 
 suite
-// Add the function 'linearSearch' to the suite.
+    // Add the function 'linearSearch' to the suite.
     .add(`Linear Search`, () => {
-        for (let i = 0; i < stuff.length; i += 1) {
+        for (let i = 0; i < stuff.length; ++i) {
             if (stuff[i] === randomValue) {
                 return stuff[i];
             }
         }
         return false;
     })
-// On 'start', run the 'start' function.
+    
+    // On 'start', run the 'start' function.
     .on(`start`, () => {
         console.log(`Beginning benchmark...`);
     })
 
-// On the 'complete' event, run the 'report' function.
+    // On the 'complete' event, run the 'report' function.
     .on(`complete`, function report() {
-    // Get successful benchmark.
+        // Get successful benchmark.
         const benchmark = Benchmark.filter(this, `successful`)[0];
 
         console.log(`On average, ${ benchmark.name } took ${ benchmark.stats.mean } seconds to complete.`);
     })
 
-// Run the test!
+    // Run the test!
     .run();
