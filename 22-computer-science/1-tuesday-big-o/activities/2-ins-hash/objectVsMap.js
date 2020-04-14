@@ -59,3 +59,4 @@ map.values(); // { 'bar', 6, 9, 3, 400 }
 // https://www.ecma-international.org/ecma-262/6.0/#sec-map-constructor
 
 // insertion and removal of key-value pairs tends to perform better in a Map
+
