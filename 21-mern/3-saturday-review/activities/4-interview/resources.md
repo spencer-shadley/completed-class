@@ -28,6 +28,10 @@ Passion and prior research into the company often shows in the interview and can
 
 - https://coding-bootcamp-whiteboarding-algorithms.readthedocs-hosted.com/en/latest/
 
+- https://www.interviewbit.com/
+
+- http://visualgo.net
+
 ## Technical
 
 The core of the interview process are your technical interview.
