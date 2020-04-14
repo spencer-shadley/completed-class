@@ -6,33 +6,14 @@
 
     - maybe during in-class project time we host mock interviews
 
-- yarn for 20.1; concurrency for 21.1
-
-- convert [this](https://github.com/coding-boot-camp/checkpoint-bank/blob/master/checkpoints/multiple-choice/10-React-MC/10-ES6-React-MC.md) into a kahoot
-
-1. Unit 20 (state)
-
-   1. find theme pictures - tonari no totoro, mononoke hime, rurouni kenshin
-   1. 20.2 bonus lecture
-   1. send overview of unit in Slack
-
 1. Unit 21 (MERN)
 
-   1. unit setup
-   1. architecture talk prep
-   1. 21.2 bonus computer science lecture
-   1. 21.3 prep
    1. send overview of unit in Slack
-   1. 21.2 drill
    1. hw 21
 
 1. Unit 22 (computer science)
 
-   1. unit setup
-   1. architecture talk prep
-   1. 22.1 prep
    1. 22.1 bonus topic
-   1. 22.2 prep
    1. 22.2 bonus computer science lecture
    1. 22.3 prep
    1. send overview of unit in Slack

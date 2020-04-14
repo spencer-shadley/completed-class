@@ -59,7 +59,15 @@
 
 - Enzyme
 
-- Lodash
+- reviews - https://github.com/coding-boot-camp/checkpoint-bank/tree/master/checkpoints
+
+- unit 22.3 bonus lectures
+
+  - big o
+
+  - data structures
+
+  - lodash
 
 # Computer Science
 

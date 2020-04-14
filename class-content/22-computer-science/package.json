@@ -1,0 +1,15 @@
+{
+  "name": "17-nosql",
+  "version": "1.0.0",
+  "description": "## Overview",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint \"**/*.js\" --fix",
+    "prettier": "prettier --write \"**/*.[css,html,md]*\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^6.8.0"
+  }
+}
