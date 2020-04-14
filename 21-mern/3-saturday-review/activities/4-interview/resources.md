@@ -32,6 +32,12 @@ Passion and prior research into the company often shows in the interview and can
 
 - http://visualgo.net
 
+- https://cooervo.github.io/Algorithms-DataStructures-BigONotation/index.html
+
+- "Learning JavaScript Data Structures and Algorithms—Third Edition" book
+
+- "Data Structures and Algorithms with JavaScript" book
+
 ## Technical
 
 The core of the interview process are your technical interview.
