@@ -2,7 +2,7 @@
 
 // modified from https://gist.github.com/ttezel/3124434
 const unsorted = [];
-for (let index = 0, t = 400000; index < t; index++) {
+for (let index = 0, t = 400000; index < t; ++index) {
     unsorted.push(Math.round(Math.random() * t));
 }
 
@@ -19,12 +19,12 @@ function quickSort(array) {
     const right = [];
 
     // loop through array and create left/right
-    array.forEach(el => {
-        if (el <= pivot) {
-            left.push(el);
+    array.forEach(element => {
+        if (element <= pivot) {
+            left.push(element);
         }
         else {
-            right.push(el);
+            right.push(element);
         }
     });
 

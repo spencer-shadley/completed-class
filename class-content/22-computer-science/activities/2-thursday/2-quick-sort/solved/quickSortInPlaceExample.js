@@ -17,15 +17,15 @@ function partition(items, left, right) {
     let j = right + 1;
 
     while (i < j) {
-        i++;
-        j--;
+        ++i;
+        --j;
 
         while (items[i] < pivot) {
-            i++;
+            ++i;
         }
 
         while (items[j] > pivot) {
-            j--;
+            --j;
         }
 
         if (i < j) {
