@@ -36,6 +36,8 @@ Passion and prior research into the company often shows in the interview and can
 
 - https://www.bigocheatsheet.com/
 
+- https://www.toptal.com/developers/sorting-algorithms
+
 - "Learning JavaScript Data Structures and Algorithms—Third Edition" book
 
 - "Data Structures and Algorithms with JavaScript" book
