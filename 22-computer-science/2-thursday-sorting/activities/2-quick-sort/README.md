@@ -4,6 +4,12 @@
 
 Implement Quick Sort, starting with the code in `unsolved/algorithmStarter.js`
 
+- Pseudocode quick-sort. You can assume that `partition` and `select_pivot` functions are already written for you.
+
+- Keep in mind the idea of [recursion](<https://en.wikipedia.org/wiki/Recursion_(computer_science)#Recursive_functions_and_algorithms>)
+
+- Don't sweat it if you're unsure of your solution—pseudocode affords a lot of freedom, and we'll review things together shortly.
+
 ## About
 
 - Insertion sort is intuitive. It's the most "natural" way for humans to sort things.
@@ -26,26 +32,26 @@ Implement Quick Sort, starting with the code in `unsolved/algorithmStarter.js`
 
 - quick-sort was developed [specifically because insertion sort is sometimes too slow](http://anothercasualcoder.blogspot.com/2015/03/my-quickshort-interview-with-sir-tony.html).
 
-- The high-level sketch of quick-sort looks something like this:
+## Algorithm
 
-  - Select an element from the array. This element is called the **pivot**.
+- Select an element from the array. This element is called the **pivot**.
 
-  - Choosing a pivot is a somewhat complicated detail. If someone asks, it's fine to explain that we can choose one at random.
+- Selecting the pivot impacts performance significantly. There are many valid options but you can pick any element for the pivot and it will still work.
 
-  - Next, begin sorting by iterating through the array. Rearrange the array's elements such that:
+- Next, begin sorting by iterating through the array. Rearrange the array's elements such that:
 
   - Every element _less_ than the pivot comes before it; and
   - Every element _greater_ than the pivot comes after it.
   - This puts the pivot in the right place—i.e., this is where the pivot will appear when the array is finally sorted.
 
-  - This process is called _partitioning_.
+- This process is called _partitioning_.
 
-  - Taken independently, the elements to the left of the pivot comprise an array. The same is true for the elements to the right.
+- Taken independently, the elements to the left of the pivot comprise an array. The same is true for the elements to the right.
 
-  - Repeat the above steps in each of the sub-arrays generated from partitioning.
+- Repeat the above steps in each of the sub-arrays generated from partitioning.
 
-  - Since these sub-arrays get smaller with each iteration, we'll eventually try to sort arrays with one element.
-  - Once we get here, we're done—the array is sorted.
+- Since these sub-arrays get smaller with each iteration, we'll eventually try to sort arrays with one element.
+- Once we get here, we're done — the array is sorted.
 
 ## Resources
 
