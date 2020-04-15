@@ -30,6 +30,12 @@ Passion and prior research into the company often shows in the interview and can
 
 - https://www.interviewbit.com/
 
+## Technical
+
+The core of the interview process are your technical interview.
+
+These questions will primarily be from algorithms and data structures. To prepare, study these topics (more details shared elsewhere) and practice problems.
+
 - http://visualgo.net
 
 - https://cooervo.github.io/Algorithms-DataStructures-BigONotation/index.html
@@ -41,9 +47,3 @@ Passion and prior research into the company often shows in the interview and can
 - "Learning JavaScript Data Structures and Algorithms—Third Edition" book
 
 - "Data Structures and Algorithms with JavaScript" book
-
-## Technical
-
-The core of the interview process are your technical interview.
-
-These questions will primarily be from algorithsm and data structures. To prepare, study these topics (more details shared elsewhere) and practice problems.
