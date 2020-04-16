@@ -3,7 +3,7 @@
 // Given an array of numbers
 // Create all unique subsets of the given array
 // [] counts as a subset
-// Should return 2 ^ n 
+// Should return Math.pow(2, n) solutions
 
 // **************** CONSTRAINTS ************************* //
 
@@ -26,8 +26,8 @@
 
 // **************** PSEUDO CODE SOLUTION / BRAINSTORM **************** //
 
-
-
+// Should return Math.pow(2, n) solutions.
+// **HINT** This will call itself two separate times recursively (inclusive/exclusive)
 
 // **************** FUNCTION **************** //
 
