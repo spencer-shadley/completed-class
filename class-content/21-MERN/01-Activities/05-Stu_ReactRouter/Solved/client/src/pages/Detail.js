@@ -37,9 +37,7 @@ function Detail(props) {
             </Row>
             <Row>
                 <Col size="md-2">
-                    <BrowserRouter>
-                        <Link to="/">← Back to Authors</Link>
-                    </BrowserRouter>
+                    <Link to="/">← Back to Authors</Link>
                 </Col>
             </Row>
         </Container>
