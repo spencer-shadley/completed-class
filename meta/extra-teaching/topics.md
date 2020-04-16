@@ -49,9 +49,9 @@
 
 - ~~serving a site on https~~
 
-- concurrency - 18-pwa\supplemental\service-workers.md
+- ~~concurrency - 18-pwa\supplemental\service-workers.md~~
 
-- yarn
+- ~~yarn~~
 
 - 20.1 has several bonus things for hooks
 
