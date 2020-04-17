@@ -31,20 +31,42 @@
 
 // **************** FUNCTION **************** //
 
-const getAllSubsets = array => {
+function getAllSubsets(array) {
+
     const result = [];
-    const inner = (i, temp) => {
-        // console.log(`At ${i}, this is temp: ${temp}`)
-        if (i === array.length) {
-            result.push(temp);
-            return;
-        }
-        inner(i + 1, temp.concat([array[i]]));
-        inner(i + 1, temp);
-    }
-    inner(0, []);
+
+    rec(0, array, [], result);
+
     return result;
 }
+
+function rec(i, array, temp, result) {
+
+    // console.log(`At ${i}, this is temp: ${temp}`)
+
+    if (i === array.length) {
+        result.push(temp)
+        return;
+    }
+
+    rec(i + 1, array, temp.concat([array[i]]), result);
+    rec(i + 1, array, temp, result);
+}
+
+// const getAllSubsets2 = array => {
+//     const result = [];
+//     const inner = (i, temp) => {
+//         // console.log(`At ${i}, this is temp: ${temp}`)
+//         if (i === array.length) {
+//             result.push(temp);
+//             return;
+//         }
+//         inner(i + 1, temp.concat([array[i]]));
+//         inner(i + 1, temp);
+//     }
+//     inner(0, []);
+//     return result;
+// }
 
 // **************** TESTING **************** //
 
