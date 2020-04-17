@@ -16,11 +16,15 @@ function GCDhelper(x, y) {
 
 function GCDane(x, y) {
 
-    if (NaN(x) || NaN(y)) {
+    if (isNaN(x) || isNaN(y)) {
         return `Invalid Inputs`
     };
 
-    return (y ? gcd(y, x % y) : Math.abs(x));
+    if (y > x) {
+        return (y ? gcd(y, x % y) : Math.abs(x));
+    } else {
+        return (x ? gcd(x, x % y) : Math.abs(y))
+    }
 }
 
 let output = GCD(10, 45);
