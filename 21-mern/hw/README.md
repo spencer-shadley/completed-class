@@ -22,7 +22,7 @@ Having an active and healthy commit history on GitHub is important for your futu
 
 ### Submission on BCS
 
-- **Please submit both the deployed Heroku link to your homework AND the link to the Github Repository!**
+- **Please submit both the deployed link to your homework AND the link to the Github Repository!**
 
 ### Instructions
 
@@ -79,6 +79,12 @@ Having an active and healthy commit history on GitHub is important for your futu
 - `*` (get) - Will load your single HTML page in `client/build/index.html`. Make sure you have this _after_ all other routes are defined.
 
 - Deploy your application to Heroku once complete. **You must use Create React App** and current versions of React and React-Router-Dom for this assignment.
+
+### Demos
+
+- [Walkthrough by Dane](https://codingbootcamp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=269b4b7b-2555-4af5-9d0e-aba20041ab15)
+
+- [YouTube Demo](https://youtu.be/2LMNY_Hqbp4)
 
 ---
 
