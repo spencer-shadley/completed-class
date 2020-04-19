@@ -1,5 +1,3 @@
-'use strict';
-
 // Require dependencies.
 const generate = require(`../shared/generate`);
 
