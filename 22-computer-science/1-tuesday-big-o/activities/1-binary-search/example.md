@@ -1,23 +1,41 @@
 # Search examples
 
-How can we find "Goblin Shark" in the below list?
+## Text Based
+
+How can we quickly find "Goblin Shark" in the below list?
 
 ```
-Blobfish
-Pink Fairy Armadillo
-Glaucus Atlanticus
-Okapi
-Maned Wolf
-Fossa
-Japanese Spider Crab
-Pacu Fish
-Slow Loris
 Angora Rabbit
 Axolotl
-Liger
 Bearded Vulture
+Blobfish
+Fossa
+Glaucus Atlanticus
 Goblin Shark
-Red Panda
+Japanese Spider Crab
 Leaf Deer
+Liger
+Maned Wolf
 Narwhal
+Okapi
+Pacu Fish
+Pink Fairy Armadillo
+Red Panda
+Slow Loris
+```
+
+## Number Based
+
+How can we quickly find if "42" exists in the below numbers?
+
+```
+1
+4
+42
+84
+388
+9001
+34321
+43321
+99999
 ```
