@@ -1,5 +1,3 @@
-'use strict';
-
 // Benchmark is a library that times performance
 // https://benchmarkjs.com/
 const Benchmark = require(`benchmark`);
@@ -24,7 +22,7 @@ suite
         }
         return false;
     })
-    
+
     // On 'start', run the 'start' function.
     .on(`start`, () => {
         console.log(`Beginning benchmark...`);
