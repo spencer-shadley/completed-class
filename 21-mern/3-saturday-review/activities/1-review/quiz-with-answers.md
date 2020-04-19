@@ -4,7 +4,7 @@
 
 1. What is ES6/ES2015? - `ES6`, `ES2015`, `ECMAScript`, `vocab`
 
-   :question: ES6/ES2015 is the sixth major release of the ECMAScript language specification which is commonly known as \_\_\_.
+   ❓ ES6/ES2015 is the sixth major release of the ECMAScript language specification which is commonly known as \_\_\_.
 
    - a front-end only language
    - JavaScript ✅
@@ -15,7 +15,7 @@
 
 1. Scoping Definitions - `var`, `let`, `const`, `block-scope`, `functional-scope`, `vocab`
 
-   :question: Variables declared with the `var` keyword are **_ scoped, while those declared with `const` or `let` are _** scoped.
+   ❓ Variables declared with the `var` keyword are **_ scoped, while those declared with `const` or `let` are _** scoped.
 
    - functionally, block ✅
    - globally, locally
@@ -26,7 +26,7 @@
 
 1. Scoping Example 1 - `var`, `functional-scope`
 
-   :question: What will be the output of the following code?
+   ❓ What will be the output of the following code?
 
    ```JavaScript
    for (var i=0; i<5; i++) {
@@ -45,7 +45,7 @@
 
 1. Scoping Example 2 - `let`, `functional-scope`
 
-   :question: What will be the output of the following code?
+   ❓ What will be the output of the following code?
 
    ```JavaScript
    for (let i=0; i<5; i++) {
@@ -64,7 +64,7 @@
 
 1. Const vs Let with Strings and Numbers - `let`, `const`, `vocab`
 
-   :question: A string or number type declared with **_ cannot have its value changed. A string or number type declared with a _** can have its value changed.
+   ❓ A string or number type declared with **_ cannot have its value changed. A string or number type declared with a _** can have its value changed.
 
    - `let`, `let`
    - `const`, `const`
@@ -75,7 +75,7 @@
 
 1. Const vs Let with Arrays and Objects - `let`, `const`, `vocab`
 
-   :question: An array or object type declared with **_ can have its value be changed but cannot be reassigned. An array or object declared with _** can have its value be changed or reassigned.
+   ❓ An array or object type declared with **_ can have its value be changed but cannot be reassigned. An array or object declared with _** can have its value be changed or reassigned.
 
    - `let`, `let`
    - `const`, `const`
@@ -86,7 +86,7 @@
 
 1. Template Literals - `template-literals`, `syntax`
 
-   :question: In the code below, we can re-write the console log statement using template litereals as follows:
+   ❓ In the code below, we can re-write the console log statement using template litereals as follows:
 
    ```JavaScript
        const name = "Super Coder";
@@ -103,7 +103,7 @@
 
 1. ES6 Objects - `objects`, `ES6`, `syntax`
 
-   :question: What is the value of myObject.friends in the ES6 code below?
+   ❓ What is the value of myObject.friends in the ES6 code below?
 
    ```JavaScript
        let friends = "john";
@@ -121,7 +121,7 @@
 
 1. ES6 String Methods - `startsWith`, `endsWith`, `includes`, `ES6`, `vocab`
 
-   :question: \_\_\_ is a new ES6 string method.
+   ❓ \_\_\_ is a new ES6 string method.
 
    - `startsWith()`
    - `endsWith()`
@@ -132,7 +132,7 @@
 
 1. map Method - `map`, `ES6`, `syntax`
 
-   :question: What will be logged by the code below?
+   ❓ What will be logged by the code below?
 
    ```JavaScript
        const snacks = [
@@ -155,7 +155,7 @@
 
 1. Array Method - `filter`, `ES6`, `vocab`
 
-   :question: \_\_\_ is an array method that creates a new array with elements that pass the test of a provided function.
+   ❓ \_\_\_ is an array method that creates a new array with elements that pass the test of a provided function.
 
    - `map()`
    - `reduce()`
@@ -166,7 +166,7 @@
 
 1. Arrow Functions - `arrow-functions`, `syntax`
 
-   :question: Rewrite the forEach function in the code below as an arrow function:
+   ❓ Rewrite the forEach function in the code below as an arrow function:
 
    ```JavaScript
        const snacks = [
@@ -188,7 +188,7 @@
 
 1. Lexical binding - `arrow-functions`, `lexical-binding`, `this`, `vocab`
 
-   :question: Arrow functions lexically bind the `this` value which means they use the `this` of \_\_\_.
+   ❓ Arrow functions lexically bind the `this` value which means they use the `this` of \_\_\_.
 
    - their child functions
    - their enclosing content ✅
@@ -199,7 +199,7 @@
 
 1. Destructuring Objects - `destructuring`, `syntax`
 
-   :question: Using destructuring, we can rewrite the last two lines of the code below that define occupation and birthplace as follows:
+   ❓ Using destructuring, we can rewrite the last two lines of the code below that define occupation and birthplace as follows:
 
    ```JavaScript
    const superman = {
@@ -219,7 +219,7 @@
 
 1. Purpose of Babel - `transpiling`, `babel`, `vocab`
 
-   :question: The primary purpose of a transpiling tool like Babel is to:
+   ❓ The primary purpose of a transpiling tool like Babel is to:
 
    - improve code execution performance
    - avoid syntax errors
@@ -230,7 +230,7 @@
 
 1. Exporting ES2015 modules - `exports`, `vocab`
 
-   :question: With ES2015 modules, a file can have multiple **_ exports but only one _** export.
+   ❓ With ES2015 modules, a file can have multiple **_ exports but only one _** export.
 
    - named, default ✅
    - variable, primary
@@ -241,7 +241,7 @@
 
 1. Classes - `class`, `vocab`, `syntax`
 
-   :question: Using the Cat class defined below, a new hungry and sleepy cat would be initialized with \_\_\_.
+   ❓ Using the Cat class defined below, a new hungry and sleepy cat would be initialized with \_\_\_.
 
    ```JavaScript
    class Cat {
@@ -265,7 +265,7 @@
 
 1. Alternative Package Manager - `yarn`, `vocab`
 
-   :question: \_\_\_ is an open source JavaScript package manager alternative to npm.
+   ❓ \_\_\_ is an open source JavaScript package manager alternative to npm.
 
    - create-react-app
    - yarn ✅
@@ -276,7 +276,7 @@
 
 1. React benefits - `react`, `tech-knowledge`
 
-   :question: Benefits of using React include:
+   ❓ Benefits of using React include:
 
    - Fast learning curve compared to other JS libraries like Angular, Ember
    - Components based structure that allows separating the application into reusable pieces
@@ -287,7 +287,7 @@
 
 1. JS Syntax Extension - `JSX`, `tech-knowledge`
 
-   :question: **_ is a syntax extension to JavaScript that looks like _**, and makes it easy to describe the UI a component should produce.
+   ❓ **_ is a syntax extension to JavaScript that looks like _**, and makes it easy to describe the UI a component should produce.
 
    - JSX, HTML ✅
    - React, Handlebars
@@ -298,7 +298,7 @@
 
 1. Create React App - `create-react-app`, `syntax`
 
-   :question: After scaffolding a React app using Create React App, it can be started up in developer mode with the command \_\_\_.
+   ❓ After scaffolding a React app using Create React App, it can be started up in developer mode with the command \_\_\_.
 
    - `npm init`
    - `yarn start` ✅
@@ -309,7 +309,7 @@
 
 1. React App Execution - `create-react-app`, `tech-knowledge`
 
-   :question: Execution of a React application built with create-react-app begins with the **_ located in the _** folder.
+   ❓ Execution of a React application built with create-react-app begins with the **_ located in the _** folder.
 
    - index.js, src ✅
    - index.html, public
@@ -320,7 +320,7 @@
 
 1. React Static assets - `react`, `tech-knowledge`
 
-   :question: External CDNs can be linked in the **_ file, and static assets placed in the _** folder, that will not be processed by Babel or Webpack.
+   ❓ External CDNs can be linked in the **_ file, and static assets placed in the _** folder, that will not be processed by Babel or Webpack.
 
    - index.js, src
    - index.html, public ✅
@@ -331,7 +331,7 @@
 
 1. Components placement - `react`, `components`, `tech-knowledge`
 
-   :question: Components should be placed in the \_\_\_ folder.
+   ❓ Components should be placed in the \_\_\_ folder.
 
    - src ✅
    - public
@@ -342,7 +342,7 @@
 
 1. JSX Requirement - `react`, `JSX`, `tech-knowledge`
 
-   :question: When using JSX inside of JavaScript, the \_\_\_ must be imported.
+   ❓ When using JSX inside of JavaScript, the \_\_\_ must be imported.
 
    - node modules
    - components
@@ -353,7 +353,7 @@
 
 1. ReactDOM.render - `react`, `ReactDOM.render`, `tech-knowledge`
 
-   :question: The second argument to the ReactDOM.render method is \_\_\_.
+   ❓ The second argument to the ReactDOM.render method is \_\_\_.
 
    - index.js containing components to be rendered
    - index.html containing links to other assets
@@ -364,7 +364,7 @@
 
 1. Rendering multiple JSX elements - `react`, `JSX`, `syntax`
 
-   :question: Normally when rendering multiple JSX elements, they should be \_\_\_.
+   ❓ Normally when rendering multiple JSX elements, they should be \_\_\_.
 
    - enclosed within a parent element ✅
    - separated into different files
@@ -375,7 +375,7 @@
 
 1. JSX Class Exception - `JSX`, `class`, `syntax`
 
-   :question: Since `class` is a reserved word in JavaScript, HTML classes are referred to with \_\_\_ in JSX.
+   ❓ Since `class` is a reserved word in JavaScript, HTML classes are referred to with \_\_\_ in JSX.
 
    - `classID`
    - `classJSX`
@@ -386,7 +386,7 @@
 
 1. Closing JSX Elements - `JSX`, `syntax`
 
-   :question: Self-closing JSX elements must be closed with \_\_\_.
+   ❓ Self-closing JSX elements must be closed with \_\_\_.
 
    - `/` ✅
    - `*`
@@ -397,7 +397,7 @@
 
 1. Commenting JSX - `JSX`, `syntax`
 
-   :question: Inside JSX, comments can be written inside curly braces as follows:
+   ❓ Inside JSX, comments can be written inside curly braces as follows:
 
    - `// comment //`
    - `:: comment ::`
@@ -408,7 +408,7 @@
 
 1. JS Expresssions in JSX - `JSX`, `syntax`
 
-   :question: Entire JavaScript expressions can be placed within \_\_\_ and evaluated inside JSX code.
+   ❓ Entire JavaScript expressions can be placed within \_\_\_ and evaluated inside JSX code.
 
    - parentheses
    - curly braces ✅
@@ -419,7 +419,7 @@
 
 1. Component Styles - `components`, `tech-knowledge`
 
-   :question: Components can have their own individual styles defined using:
+   ❓ Components can have their own individual styles defined using:
 
    - CSS stylesheets only
    - inline styles only
@@ -430,7 +430,7 @@
 
 1. JSX Style Properties - `JSX`, `props`, `tech-knowledge`
 
-   :question: A JSX style property must be \_\_\_.
+   ❓ A JSX style property must be \_\_\_.
 
    - an object ✅
    - a string
@@ -441,7 +441,7 @@
 
 1. Passing Props - `react`, `props`, `components`, `tech-knowledge`
 
-   :question: Props can be passed into a component by:
+   ❓ Props can be passed into a component by:
 
    - Setting an attribute to the rendered component's tag
    - Passing an expression between the component's tags
@@ -452,7 +452,7 @@
 
 1. Prop Types - `react`, `props`, `tech-knowledge`
 
-   :question: The type of data that can be passed as a prop is \_\_\_.
+   ❓ The type of data that can be passed as a prop is \_\_\_.
 
    - strings and numbers
    - arrays
@@ -463,7 +463,7 @@
 
 1. Data Flow - `react`, `tech-knowledge`
 
-   :question: In React apps, data flows from \_\_\_.
+   ❓ In React apps, data flows from \_\_\_.
 
    - parent to child only ✅
    - child to parent only
@@ -474,7 +474,7 @@
 
 1. Importing Folders - `react`, `import`, `tech-knowledge`
 
-   :question: When importing a component's folder instead of a file, the folder's \_\_\_ file is imported by default if it exists.
+   ❓ When importing a component's folder instead of a file, the folder's \_\_\_ file is imported by default if it exists.
 
    - public.js
    - main.js
@@ -485,7 +485,7 @@
 
 1. Component Data - `react`, `state`, `vocab`
 
-   :question: To associate data with components, and keep track of any values that need to update the UI when changed, \_\_\_ can be used.
+   ❓ To associate data with components, and keep track of any values that need to update the UI when changed, \_\_\_ can be used.
 
    - state ✅
    - variables
@@ -496,7 +496,7 @@
 
 1. Updating Data - `react`, `setState`, `vocab`
 
-   :question: Using the \_\_\_ method to update component data causes the component to re-render itself and all its children with the new data.
+   ❓ Using the \_\_\_ method to update component data causes the component to re-render itself and all its children with the new data.
 
    - render()
    - update()
@@ -507,7 +507,7 @@
 
 1. React Event Handlers - `react`, `onClick`, `onSubmit`, `onChange`
 
-   :question: \_\_\_ is a common React event name.
+   ❓ \_\_\_ is a common React event name.
 
    - onClick
    - onSubmit
@@ -518,7 +518,7 @@
 
 1. Child Component Update - `react`, `components`, `tech-knowledge`
 
-   :question: Child components can update their parent's state by \_\_\_.
+   ❓ Child components can update their parent's state by \_\_\_.
 
    - passing them a method created in the parent ✅
    - calling the render() method
@@ -529,7 +529,7 @@
 
 1. Rendering JSX - `react`, `render`, `tech-knowledge`
 
-   :question: The \_\_\_ method built in to React returns the JSX that a component should render and must be included in every class component.
+   ❓ The \_\_\_ method built in to React returns the JSX that a component should render and must be included in every class component.
 
    - setState()
    - render() ✅
@@ -540,7 +540,7 @@
 
 1. Component Lifecycle Event - `react`, `componentDidMount`, `tech-knowledge`
 
-   :question: The \_\_\_ method is a component lifecycle event built into React that automatically runs once after the component is rendered for the first time.
+   ❓ The \_\_\_ method is a component lifecycle event built into React that automatically runs once after the component is rendered for the first time.
 
    - handleInputChange()
    - render()
@@ -551,7 +551,7 @@
 
 1. App Component Structure - `react`, `stateless`, `stateful`, `tech-knowledge`
 
-   :question: Most components should be **_ and concerned mainly for some part of the app's presentation. Few components should be _** and concerned for the app's business logic and controlling presentational components.
+   ❓ Most components should be **_ and concerned mainly for some part of the app's presentation. Few components should be _** and concerned for the app's business logic and controlling presentational components.
 
    - stateless, stateful ✅
    - eventful, stateless
@@ -562,7 +562,7 @@
 
 1. JSX Decisions - `react`, `JSX`, `ternary`
 
-   :question: Since `if` statements cannot be written inside JSX curly braces, instead \_\_\_ can be used for simple conditional logic.
+   ❓ Since `if` statements cannot be written inside JSX curly braces, instead \_\_\_ can be used for simple conditional logic.
 
    - switch statements
    - ternary expressions ✅
@@ -573,7 +573,7 @@
 
 1. React Router - `react-router`, `tech-knowledge`
 
-   :question: The React Router library allows rendering of other components based on \_\_\_.
+   ❓ The React Router library allows rendering of other components based on \_\_\_.
 
    - server inputs
    - total number of components
