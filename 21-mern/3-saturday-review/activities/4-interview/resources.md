@@ -36,6 +36,9 @@ These questions will primarily be from algorithms and data structures. To prepar
 - https://cooervo.github.io/Algorithms-DataStructures-BigONotation/index.html
 - https://www.bigocheatsheet.com/
 - https://www.toptal.com/developers/sorting-algorithms
+- https://coggle.it/diagram/W5E5tqYlrXvFJPsq/t/master-the-interview-click-here-for-course-link
+- https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
+- http://www.dsalgo.com/2013/02/index.php.html
 
 ### Books
 
