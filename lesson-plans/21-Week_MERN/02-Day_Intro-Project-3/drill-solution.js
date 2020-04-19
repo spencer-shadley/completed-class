@@ -14,6 +14,17 @@ function GCDhelper(x, y) {
     return GCDhelper(r, x);
 }
 
+function GCDhelperCollapsed(x, y) {
+    return r === 0 ? x : GCDhelper(y % x, x);
+}
+
+function GCDane(x, y) {
+    if (isNaN(x) || isNaN(y)) {
+        return `Not a valid input`;
+    }
+    return y ? gcd(y, x % y) : Math.abs(x);
+}
+
 let output = GCD(10, 45); 
 console.log(output === 5, output);
 
