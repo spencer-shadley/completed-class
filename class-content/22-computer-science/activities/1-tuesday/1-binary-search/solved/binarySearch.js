@@ -7,7 +7,37 @@
  * @returns {Number} The index of @param number in @param numbers
  */
 function binarySearch(numbers, number) {
-    console.log(numbers, number);
+    // Set some starting values.
+    let currentElement;
+    let currentIndex;
+    let maxIndex = numbers.length - 1;
+    let minIndex = 0;
+
+    // Until we've considered the entire array, keep searching
+    while (minIndex <= maxIndex) {
+
+        // Get a position near the middle
+        currentIndex = Math.floor((minIndex + maxIndex) / 2);
+
+        // Get that element
+        currentElement = numbers[currentIndex];
+
+        // Test it
+        if (currentElement < number) {
+            // if it's less than we are looking for, look *above* this value
+            minIndex = currentIndex + 1;
+        }
+        else if (currentElement > number) {
+            // If it's more than we are looking for, look *below* this value
+            maxIndex = currentIndex - 1;
+        }
+        else {
+            // We found it; return the index
+            return currentIndex;
+        }
+    }
+    // not in the array
+    return NaN;
 }
 
 // eslint-disable-next-line no-magic-numbers
