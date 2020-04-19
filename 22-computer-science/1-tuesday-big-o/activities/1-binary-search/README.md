@@ -1,10 +1,10 @@
 # Binary Search
 
-- Pseudocode "Binary Search" for a number in a given sorted array
-
-- Research "binary search"
+Pseudocode "Binary Search" to find a number in a given sorted array of numbers
 
 ## Resources
+
+- [example.md](./example.md)
 
 - Check out [this visualization](https://www.cs.usfca.edu/~galles/visualization/Search.html) (add a search input and click "Binary Search")
 
