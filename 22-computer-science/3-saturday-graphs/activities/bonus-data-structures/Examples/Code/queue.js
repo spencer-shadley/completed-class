@@ -1,6 +1,7 @@
 'use strict';
 
 // Creates the Queue Class for use later
+// See 6-bfs/Graph.js for a much more efficient queue
 class Queue {
 
     constructor() {
@@ -13,7 +14,7 @@ class Queue {
     }
 
     dequeue() {
-        this.items.shift();
+        this.items.shift(); // O(N) - terrible!
     }
 
     get first() {
