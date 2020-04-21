@@ -1,68 +1,63 @@
-// **************** QUESTION DESCRIPTION **************** //
+/* 
+**************** QUESTION DESCRIPTION ************************ 
 
-// Given an array, return the largest contigious sub-array value within the array.
-// Contingious means next or together in sequence.
+    Given an array of integers, find the subset of non-adjacent elements with the maximum sum.
+    Calculate the sum of that subset.
 
-// **************** CONSTRAINTS ************************* //
-
-// The array only contains numbers.
-
-// **************** DEFINE INPUT/OUTPUT/EDGE/OUTLIER **************** //
-
-// Input: Array
-// Output: Integer
-// Edge/Outlier: Overflow
-
-// **************** EXAMPLE **************** //
-
-// Input: [-3, 7, 3, -10, -5, 4, 6, -4, 10, 8]
-// Output: 24
-// [4 + 6 - 4 + 10 + 8]
-// 4 + 6 - 4 + 10 + 8 = 24
-
-// Input: [6, -3, 4, 2, 1, 3, -2, 5, 7, 10]
-// Output: 33
-// [6 - 3 + 4 + 2 + 1 + 3 - 2 + 5 + 7 + 10]
-// 6 - 3 + 4 + 2 + 1 + 3 - 2 + 5 + 7 + 10 = 33
-// I randomly generated these online and its the entire array length. Neat. 
-
-// Input: [-4, 3, -2, 10, -5, 9, 1, 6, 8, 4]
-// Output: 34
-// [3 - 2 + 10 + -5 + 9 + 1 + 6 + 8 + 4]
-// 3 - 2 + 10 + -5 + 9 + 1 + 6 + 8 + 4 = 34
-
-// **************** PSEUDO CODE SOLUTION / BRAINSTORM **************** //
+***************** CONSTRAINTS ********************************
 
 
 
+***************** DEFINE INPUT/OUTPUT/EDGE/OUTLIER ***********
+
+    Input: Array (of integers)
+    Output: Integer (Sum of max subset)
+    Edge/Outlier: Overflow, empty-array
+
+***************** EXAMPLES ************************************
+
+    Input: [-2, 1, 3, -4, 5]
+    Output: 8
+        [3, 5]
+        3 + 5 = 8
+
+    Input: [3, 7, 4, 6, 5]
+    Output:  13
+        [7, 6]
+        7 + 6 = 13
+
+    Input: [2, 1, 5, 8, 4]
+    Output:  11
+        [2, 5, 4]
+        2 + 5 + 4 = 11
+
+***************** PSEUDO CODE SOLUTION / BRAINSTORM ***********
+
+    
+
+**************** FUNCTION ********************************  */
+
+// Your code here .....
 
 
-// **************** FUNCTION **************** //
 
-
-const maxSubArray = (arr) => {
-
-    // Your Code Here .....
-
-}
-
-// **************** TESTING **************** //
-
+// **************** TESTING ******************************** //
 class Test {
     constructor(testInput, expectedResult, actualResult) {
         this.testInput = testInput;
         this.expectedResult = expectedResult;
         this.actualResult = actualResult;
-    };
-};
+    }
+}
 
+let test1 = new Test('Test 1', 8, maxSubsetSum([-2, 1, 3, -4, 5]));
+let test2 = new Test('Test 2', 13, maxSubsetSum([3, 7, 4, 6, 5]));
+let test3 = new Test('Test 3', 11, maxSubsetSum([2, 1, 5, 8, 4]));
 
-let test1 = new Test('Test 1', 24, maxSubArray([-3, 7, 3, -10, -5, 4, 6, -4, 10, 8]));
-let test2 = new Test('Test 2', 33, maxSubArray([6, -3, 4, 2, 1, 3, -2, 5, 7, 10]));
-let test3 = new Test('Test 3', 34, maxSubArray([-4, 3, -2, 10, -5, 9, 1, 6, 8, 4]));
 
 // console.table([
 //     test1,
 //     test2,
 //     test3,
-// ]);
+// ])
+
