@@ -1,6 +1,6 @@
 // **************** QUESTION DESCRIPTION **************** //
 
-// Given an array, return the longest contigious sub-array within the array.
+// Given an array, return the largest contigious sub-array value within the array.
 // Contingious means next or together in sequence.
 
 // **************** CONSTRAINTS ************************* //
@@ -10,23 +10,26 @@
 // **************** DEFINE INPUT/OUTPUT/EDGE/OUTLIER **************** //
 
 // Input: Array
-// Output: Array
+// Output: Integer
 // Edge/Outlier: Overflow
 
 // **************** EXAMPLE **************** //
 
 // Input: [-3, 7, 3, -10, -5, 4, 6, -4, 10, 8]
 // Output: 24
-// 4 + 6 -4 + 10 + 8
+// [4 + 6 - 4 + 10 + 8]
+// 4 + 6 - 4 + 10 + 8 = 24
 
 // Input: [6, -3, 4, 2, 1, 3, -2, 5, 7, 10]
 // Output: 33
-// 6 - 3 + 4 + 2 + 1 + 3 - 2 + 5 + 7 + 10
+// [6 - 3 + 4 + 2 + 1 + 3 - 2 + 5 + 7 + 10]
+// 6 - 3 + 4 + 2 + 1 + 3 - 2 + 5 + 7 + 10 = 33
 // I randomly generated these online and its the entire array length. Neat. 
 
 // Input: [-4, 3, -2, 10, -5, 9, 1, 6, 8, 4]
 // Output: 34
-// 3 + -2 + 10 + -5 + 9 + 1 + 6 + 8 + 4 = 34
+// [3 - 2 + 10 + -5 + 9 + 1 + 6 + 8 + 4]
+// 3 - 2 + 10 + -5 + 9 + 1 + 6 + 8 + 4 = 34
 
 // **************** PSEUDO CODE SOLUTION / BRAINSTORM **************** //
 
