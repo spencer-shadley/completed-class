@@ -1,5 +1,3 @@
 # Pre-class Drill
 
-- Create an account for []()
-
-- Solve [this problem]()
+- Solve [this problem](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
