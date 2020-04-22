@@ -49,3 +49,9 @@ These questions will primarily be from algorithms and data structures. To prepar
 - [Introduction to Algorithms (The MIT Press) 3rd Edition](https://www.amazon.com/Introduction-Algorithms-Press-Thomas-Cormen-ebook/dp/B007CNRCAO/ref=sr_1_2?dchild=1&keywords=Introduction+to+Algorithms&qid=1586660439&sr=8-2)
 - [Learning JavaScript Data Structures and Algorithms: Write complex and powerful JavaScript code using the latest ECMAScript, 3rd Edition](https://www.amazon.com/Learning-JavaScript-Data-Structures-Algorithms-ebook/dp/B077NB5H6Y/ref=sr_1_2?dchild=1&keywords=Learning+JavaScript+Data+Structures+and+Algorithms%E2%80%94Third+Edition&qid=1587277698&sr=8-2)
 - [Data Structures and Algorithms with JavaScript: Bringing classic computing approaches to the Web 1st Edition](https://www.amazon.com/Data-Structures-Algorithms-JavaScript-approaches/dp/1449364934/ref=sr_1_3?dchild=1&keywords=Data+Structures+and+Algorithms+with+JavaScript&qid=1587277721&sr=8-3)
+
+
+### Udemy Courses
+
+- [Advanced JavaScript Concepts](https://www.udemy.com/share/101WiOB0sTclhUQHg=/)
+- [Master the Coding Interview: Data Structures + Algorithms](https://www.udemy.com/share/1013jaB0sTclhUQHg=/)
