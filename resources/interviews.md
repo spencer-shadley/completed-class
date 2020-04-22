@@ -25,6 +25,7 @@ Passion and prior research into the company often shows in the interview and can
 - https://www.interviewcake.com/behavioral-questions-programming-interview-story-telling
 - https://coding-bootcamp-whiteboarding-algorithms.readthedocs-hosted.com/en/latest/
 - https://www.interviewbit.com/
+- [Danes-Youtube-Playlist](https://www.youtube.com/playlist?list=PLsSnS-Iagd8O6qmaW03tccOs-7KwKzaAP)
 
 ## Technical
 
