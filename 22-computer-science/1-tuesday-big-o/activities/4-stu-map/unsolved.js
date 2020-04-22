@@ -7,6 +7,6 @@
  */
 // eslint-disable-next-line no-unused-vars
 function twoSum(arr, target) {
-
+    console.log(arr, target);
 }
 
