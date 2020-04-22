@@ -14,11 +14,18 @@ function twoSum(arr, target) {
         hash[number] = target - number;
     }
 
-    for (let i = 0; i < arr.length; ++i) {
-        if (hash[target - arr[i]]) {
-            return [i, arr.indexOf(hash[arr[i]])]
+    for (const [index, number] of arr.entries()) {
+        if (hash[target - number]) {
+            return [index, arr.indexOf(hash[number])]
         }
     }
+
+    // for (let i = 0; i < arr.length; ++i) {
+    //     if (hash[target - arr[i]]) {
+    //         return [i, arr.indexOf(hash[arr[i]])]
+    //     }
+    // }
+
     return Infinity;
 }
 
