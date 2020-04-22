@@ -31,7 +31,19 @@ Passion and prior research into the company often shows in the interview and can
 
 The core of the interview process are your technical interview.
 
-These questions will primarily be from algorithms and data structures. To prepare, study these topics (more details shared elsewhere) and practice problems.
+These questions will primarily be from algorithms and data structures. To prepare, study these topics and practice problems.
+
+### Practice Problems
+
+- https://leetcode.com/
+- https://www.hackerrank.com/
+- https://www.codewars.com/
+- https://edabit.com/
+- https://www.algoexpert.io/product
+
+### Resources
+
+#### Websites
 
 - http://visualgo.net
 - https://cooervo.github.io/Algorithms-DataStructures-BigONotation/index.html
@@ -41,7 +53,12 @@ These questions will primarily be from algorithms and data structures. To prepar
 - https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
 - http://www.dsalgo.com/2013/02/index.php.html
 
-### Books
+#### Udemy Courses
+
+- [Advanced JavaScript Concepts](https://www.udemy.com/share/101WiOB0sTclhUQHg=/)
+- [Master the Coding Interview: Data Structures + Algorithms](https://www.udemy.com/share/1013jaB0sTclhUQHg=/)
+
+#### Books
 
 - [Free-Algorithm-Books](https://github.com/RbkGh/Free-Algorithm-Books/tree/master/book)
 - [Cracking the Coding Interview: 189 Programming Questions and Solutions 6th Edition](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850/ref=sr_1_2?crid=44UUWR72F9V&dchild=1&keywords=cracking+the+coding+interview&qid=1586660251&sprefix=cracking+the+coding+in%2Caps%2C197&sr=8-2)
@@ -50,9 +67,3 @@ These questions will primarily be from algorithms and data structures. To prepar
 - [Introduction to Algorithms (The MIT Press) 3rd Edition](https://www.amazon.com/Introduction-Algorithms-Press-Thomas-Cormen-ebook/dp/B007CNRCAO/ref=sr_1_2?dchild=1&keywords=Introduction+to+Algorithms&qid=1586660439&sr=8-2)
 - [Learning JavaScript Data Structures and Algorithms: Write complex and powerful JavaScript code using the latest ECMAScript, 3rd Edition](https://www.amazon.com/Learning-JavaScript-Data-Structures-Algorithms-ebook/dp/B077NB5H6Y/ref=sr_1_2?dchild=1&keywords=Learning+JavaScript+Data+Structures+and+Algorithms%E2%80%94Third+Edition&qid=1587277698&sr=8-2)
 - [Data Structures and Algorithms with JavaScript: Bringing classic computing approaches to the Web 1st Edition](https://www.amazon.com/Data-Structures-Algorithms-JavaScript-approaches/dp/1449364934/ref=sr_1_3?dchild=1&keywords=Data+Structures+and+Algorithms+with+JavaScript&qid=1587277721&sr=8-3)
-
-
-### Udemy Courses
-
-- [Advanced JavaScript Concepts](https://www.udemy.com/share/101WiOB0sTclhUQHg=/)
-- [Master the Coding Interview: Data Structures + Algorithms](https://www.udemy.com/share/1013jaB0sTclhUQHg=/)
