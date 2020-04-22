@@ -29,7 +29,7 @@ Passion and prior research into the company often shows in the interview and can
 
 ## Technical
 
-The core of the interview process are your technical interview.
+The core of the interview process is your technical interview.
 
 These questions will primarily be from algorithms and data structures. To prepare, study these topics and practice problems.
 
