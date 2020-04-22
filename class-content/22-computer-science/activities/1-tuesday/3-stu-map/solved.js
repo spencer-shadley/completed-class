@@ -30,7 +30,7 @@ function repeatedNTimes(array) {
  *
  * Runtime: 4340 ms
  *
- * @param {number[]} A
+ * @param {number[]}
  * @return {number}
  */
 function repeatedNTimesSlow(array) {
