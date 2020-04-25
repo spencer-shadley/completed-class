@@ -42,10 +42,10 @@
 ******************** FUNCTION ****************************  */
 
 class TestTable {
-    constructor(i, prev_prev, prev, currentMax) {
+    constructor(i, outer, inner, currentMax) {
         this.i = i;
-        this.prev_prev = prev_prev;
-        this.prev = prev;
+        this.outer = outer;
+        this.inner = inner;
         this.currentMax = currentMax;
     };
 };
@@ -55,29 +55,29 @@ function maxNonAdjacentSubsetSum(arr) {
     if (arr.length === 0) {
         return [];
     } else if (arr.length === 1) {
-        return arr[1];
+        return arr[0];
     }
 
     const length = arr.length;
     const testArr = [];
-    let prev_prev = arr[0];
-    let prev = Math.max(arr[0], arr[1]);
+    let outer = arr[0];
+    let inner = Math.max(arr[0], arr[1]);
 
 
     for (let i = 2; i < length; i++) {
 
-        let currentMax = Math.max(arr[i], Math.max(prev, prev_prev + arr[i]));
+        let currentMax = Math.max(arr[i], Math.max(inner, outer + arr[i]));
 
-        let testSample = new TestTable(i, prev_prev, prev, currentMax);
+        let testSample = new TestTable(i, outer, inner, currentMax);
         testArr.push(testSample)
 
-        prev_prev = prev;
-        prev = currentMax;
+        outer = inner;
+        inner = currentMax;
 
 
     }
     console.table(testArr)
-    return prev;
+    return inner;
 }
 
 console.log(maxNonAdjacentSubsetSum([1, 2, 9, 4, 5, 0, 4, 11, 6]));
