@@ -1,12 +1,14 @@
-/* 
-**************** QUESTION DESCRIPTION ************************ 
+/* eslint-disable no-magic-numbers */
+'use strict';
+
+/*
+**************** QUESTION DESCRIPTION ************************
 
     Given an array of integers, find the subset of non-adjacent elements with the maximum sum.
     Calculate the sum of that subset.
     If the array is empty, output: Infinity
 
 ***************** CONSTRAINTS ********************************
-
 
 
 ***************** DEFINE INPUT/OUTPUT/EDGE/OUTLIER ***********
@@ -35,13 +37,9 @@
 ***************** PSEUDO CODE SOLUTION / BRAINSTORM ***********
 
 
-
-    
-
 **************** FUNCTION ********************************  */
 
 //              Your code here .....
-
 
 
 // **************** TESTING ******************************** //
@@ -53,15 +51,15 @@ class Test {
     }
 }
 
-let test1 = new Test('Test 1', 8, maxSubsetSum([-2, 1, 3, -4, 5]));
-let test2 = new Test('Test 2', 13, maxSubsetSum([3, 7, 4, 6, 5]));
-let test3 = new Test('Test 3', 11, maxSubsetSum([2, 1, 5, 8, 4]));
-let test4 = new Test('Test 4', Infinity, maxSubsetSum([]));
+const test1 = new Test(`Test 1`, 8, maxSubsetSum([-2, 1, 3, -4, 5]));
+const test2 = new Test(`Test 2`, 13, maxSubsetSum([3, 7, 4, 6, 5]));
+const test3 = new Test(`Test 3`, 11, maxSubsetSum([2, 1, 5, 8, 4]));
+const test4 = new Test(`Test 4`, Infinity, maxSubsetSum([]));
 
 console.table([
     test1,
     test2,
     test3,
-    test4,
-])
+    test4
+]);
 

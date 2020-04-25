@@ -1,5 +1,3 @@
 # Pre-class Drill
 
-- Sign in to []()
-
-- Solve [this problem]()
+- See [drill.js](./drill.js)
