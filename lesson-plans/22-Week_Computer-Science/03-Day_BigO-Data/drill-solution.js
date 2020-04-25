@@ -52,15 +52,18 @@ class TestTable {
 
 function maxNonAdjacentSubsetSum(arr) {
 
-    if (arr.length === 0) {
+    const length = arr.length;
+    if (length === 0) {
         return [];
-    } else if (arr.length === 1) {
+    } else if (length === 1) {
         return arr[0];
-    }
+    };
 
     const testArr = [];
+    testArr.push(new TestTable(0, 0, arr[0], Math.max(0, arr[0])))
+    testArr.push(new TestTable(1, arr[0], arr[1], Math.max(arr[1], arr[0])))
 
-    const length = arr.length;
+
     let outer = arr[0];
     let inner = Math.max(arr[0], arr[1]);
 
@@ -77,6 +80,7 @@ function maxNonAdjacentSubsetSum(arr) {
     };
 
     console.table(testArr)
+
     return inner;
 }
 
