@@ -1,60 +1,88 @@
-// **************** QUESTION DESCRIPTION **************** //
+/* 
+**************** QUESTION DESCRIPTION ***********************
 
-// Given an array, return the longest contigious sub-array within the array.
+    Given an array of integers, find the subset of non-adjacent elements with the maximum sum.
+    Calculate the sum of that subset.
 
-// **************** CONSTRAINTS ************************* //
+******************** CONSTRAINTS ****************************
 
-// The array only contains numbers 
+    The array may only contain integers.
 
-// **************** DEFINE INPUT/OUTPUT/EDGE/OUTLIER **************** //
+********** DEFINE INPUT/OUTPUT/EDGE/OUTLIER *****************
 
-// Input: Array
-// Output: Array
-// Edge/Outlier: Overflow
+    Input: Array (of integers)
+    Output: Integer (Sum of max non-adjacent subset)
+    Edge/Outlier:
 
-// **************** EXAMPLE **************** //
+********************** EXAMPLES *****************************
 
-// Input: [-3, 7, 3, -10, -5, 4, 6, -4, 10, 8]
-// Output: 24
-// 4 + 6 -4 + 10 + 8
+    Input: [-2, 1, 3, -4, 5]
+    Output: 8
+    Explanation: The maximum non-adjacent sub-array is [3,5]
 
-// Input: [6, -3, 4, 2, 1, 3, -2, 5, 7, 10]
-// Output: 33
-// 6 - 3 + 4 + 2 + 1 + 3 - 2 + 5 + 7 + 10
-// I randomly generated these online and its the entire array length. Neat. 
+    Input: [5, 5, 10, 100, 10, 5]
+    Output: 110
+    Explanation: The maximum non-adjacent sub-array is [5, 100, 5]
 
-// Input: [-4, 3, -2, 10, -5, 9, 1, 6, 8, 4]
-// Output: 34
-// 3 + -2 + 10 + -5 + 9 + 1 + 6 + 8 + 4 = 34
+    Input: [5, 5, 10, 40, 50, 35]
+    Output: 80
+    Explanation: The maximum non-adjacent sub-array is [5, 40, 35]
 
-// **************** PSEUDO CODE SOLUTION / BRAINSTORM **************** //
+    Input: [1, 2, 9, 4, 5, 0, 4, 11, 6]
+    Output: 26
+    Explanation: The maximum non-adjacent sub-array is [1, 9, 5, 11]
 
-// Kadane's algorotihm is used to isolate the mex sub-array within an array.
-// Starting from the beginning, creates maximums for each index. 
-// Upon each extra iteration, add more to the bracket
-// Create a rolling globalMax
+*********** PSEUDO CODE SOLUTION / BRAINSTORM ****************
 
-// **************** FUNCTION **************** //
+    This is a variation of Kadane's algorithm.
+    The only difference here is that you have we have to manage two max values.
+    We have an inclusive max and exclusive max.
+    We do two max comparisons to calculate the currentMax. 
 
+******************** FUNCTION ****************************  */
 
-const maxSubArray = (arr) => {
+class TestTable {
+    constructor(i, prev_prev, prev, currentMax) {
+        this.i = i;
+        this.prev_prev = prev_prev;
+        this.prev = prev;
+        this.currentMax = currentMax;
+    };
+};
+
+function maxNonAdjacentSubsetSum(arr) {
+
+    if (arr.length === 0) {
+        return [];
+    } else if (arr.length === 1) {
+        return arr[1];
+    }
 
     const length = arr.length;
-    let maxCurrent = arr[0];
-    let maxGlobal = arr[0];
+    const testArr = [];
+    let prev_prev = arr[0];
+    let prev = Math.max(arr[0], arr[1]);
 
-    for (let i = 1; i < length; ++i) {
 
-        maxCurrent = Math.max(arr[i], arr[i] + maxCurrent);
+    for (let i = 2; i < length; i++) {
 
-        if (maxCurrent > maxGlobal) {
-            maxGlobal = maxCurrent;
-        };
+        let currentMax = Math.max(arr[i], Math.max(prev, prev_prev + arr[i]));
+
+        let testSample = new TestTable(i, prev_prev, prev, currentMax);
+        testArr.push(testSample)
+
+        prev_prev = prev;
+        prev = currentMax;
+
+
     }
-    return maxGlobal;
+    console.table(testArr)
+    return prev;
 }
 
-// **************** TESTING **************** //
+console.log(maxNonAdjacentSubsetSum([1, 2, 9, 4, 5, 0, 4, 11, 6]));
+
+// **************** TESTING ******************************** //
 
 class Test {
     constructor(testInput, expectedResult, actualResult) {
@@ -64,13 +92,17 @@ class Test {
     };
 };
 
+// let test1 = new Test('Test 1', 26, maxNonAdjacentSubsetSum([1, 2, 9, 4, 5, 0, 4, 11, 6]));
+// let test2 = new Test('Test 2', 8, maxNonAdjacentSubsetSum([-2, 1, 3, -4, 5]));
+// let test3 = new Test('Test 3', 110, maxNonAdjacentSubsetSum([5, 5, 10, 100, 10, 5]));
+// let test4 = new Test('Test 4', 200, maxNonAdjacentSubsetSum([5, 100, 50, 5, 100]));
+// let test5 = new Test('Test 5', [], maxNonAdjacentSubsetSum([]));
 
-let test1 = new Test('Test 1', 24, maxSubArray([-3, 7, 3, -10, -5, 4, 6, -4, 10, 8]));
-let test2 = new Test('Test 2', 33, maxSubArray([6, -3, 4, 2, 1, 3, -2, 5, 7, 10]));
-let test3 = new Test('Test 3', 34, maxSubArray([-4, 3, -2, 10, -5, 9, 1, 6, 8, 4]));
+// console.table([
+//     test1,
+//     test2,
+//     test3,
+//     test4,
+//     test5,
+// ]);
 
-console.table([
-    test1,
-    test2,
-    test3,
-]);
