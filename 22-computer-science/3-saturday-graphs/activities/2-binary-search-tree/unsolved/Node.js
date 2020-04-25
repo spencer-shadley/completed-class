@@ -3,8 +3,8 @@
 class Node {
     constructor(value) {
         this.value = value;
-        this.left = undefined;
-        this.right = undefined;
+        this.left = null;
+        this.right = null;
     }
 
     /**
