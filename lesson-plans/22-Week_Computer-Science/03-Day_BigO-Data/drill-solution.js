@@ -58,8 +58,9 @@ function maxNonAdjacentSubsetSum(arr) {
         return arr[0];
     }
 
-    const length = arr.length;
     const testArr = [];
+
+    const length = arr.length;
     let outer = arr[0];
     let inner = Math.max(arr[0], arr[1]);
 
@@ -73,9 +74,8 @@ function maxNonAdjacentSubsetSum(arr) {
 
         outer = inner;
         inner = currentMax;
+    };
 
-
-    }
     console.table(testArr)
     return inner;
 }
