@@ -17,8 +17,7 @@ class Edge {
  * A graph data structure, internally using an adjacency list
  */
 class Graph {
-    constructor(value) {
-        this.value = value;
+    constructor() {
         this.adjacencyList = new Map();
     }
 
