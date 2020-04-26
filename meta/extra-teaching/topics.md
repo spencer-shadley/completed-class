@@ -67,13 +67,13 @@
 
   - data structures
 
-  - lodash
+  - ~~lodash~~
 
 # Computer Science
 
 - ~~greedy algorithms~~
 
-  - franctional knapsack problem
+  - ~~fractional knapsack problem~~
 
 - https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 
