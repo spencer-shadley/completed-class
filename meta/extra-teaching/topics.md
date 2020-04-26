@@ -76,3 +76,21 @@
   - franctional knapsack problem
 
 - https://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
+
+- HashSet
+
+- HashTable
+
+- Set
+
+- Sliding window
+
+- Divide and conquer
+
+- Backtracking
+
+- Dijkstra
+
+- Prim
+
+- A\*
