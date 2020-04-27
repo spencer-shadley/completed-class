@@ -1,0 +1,23 @@
+h1 {
+    color: black;
+    background-color: unset;
+}
+
+h1:hover {
+    background-color: darkcyan;
+    color: cyan;
+    transition: all 3s;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: darkcyan;
+    transition: width 2s, background-color 1s;
+    transition-timing-function: ease;
+}
+
+div:hover {
+    width: 100%;
+    background-color: cyan;
+}
