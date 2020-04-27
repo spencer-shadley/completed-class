@@ -1,5 +1,7 @@
-// If the significant digit order was flipped we could
-// use a stack to solve this
+// https://leetcode.com/problems/add-two-numbers/
+
+// If the significant digit order was flipped it would be harder
+// but we could use a stack to accomdate the ordering change
 
 class ListNode {
     constructor(val) {
@@ -9,6 +11,9 @@ class ListNode {
 }
 
 /**
+ * The trick here is to catch the carry
+ * Whenever the base number (in decimal it's 10) is exceeded
+ * we need to carry a 1 to the next digit (try it out by hand)
  * @param {ListNode} listOne
  * @param {ListNode} listTwo
  * @return {ListNode}
