@@ -8,9 +8,11 @@ class ListNode {
 }
 
 /**
- * Definition for singly-linked list.
- */
-/**
+ * Pull out the current smallest item from lists and add
+ * to a merged list
+ * 
+ * Make sure to keep track of the head of the list so we know where it begins
+ * 
  * @param {ListNode[]} lists
  * @return {ListNode}
  */
@@ -38,17 +40,21 @@ function mergeKLists(lists) {
             mergedList = mergedList.next;
         }
     }
-    return mergedListHead || [];
+    return mergedListHead || null;
 }
 
 /**
- * 
+ * Verifies that at least one list has remaining elements
  * @param {ListNode[]} lists 
  */
 function hasElements(lists) {
-    return lists.some(list => list && list.val);
+    return lists.some(list => !!list);
 }
 
+/**
+ * Converts the given LinkedList into a readable string
+ * @param {ListNode[]} list 
+ */
 function toString(list) {
     let ret = '';
     while (list.next !== null) {
@@ -61,37 +67,52 @@ function toString(list) {
     return ret;
 }
 
-function verify() {
-    const listA = new ListNode(1);
-    listA.next = new ListNode(4);
-    listA.next.next = new ListNode(5);
+/**
+ * Creates a LinkedList from a given array
+ * @param {*[]} arr 
+ */
+function createList(arr) {
+    let list;
+    let head;
+    for (const element of arr) {
+        const node = new ListNode(element);
+        if (list) {
+            list.next = node;
+            list = list.next;
+        } else {
+            list = node;
+            head = list;
+        }
+    }
+    return head;
+}
 
-    const listB = new ListNode(1);
-    listB.next = new ListNode(3);
-    listB.next.next = new ListNode(4);
-
-    const listC = new ListNode(2);
-    listC.next = new ListNode(6);
-
-    const lists = [listA, listB, listC];
-
-    let expected = new ListNode(1);
-    expected.next = new ListNode(1);
-    expected.next.next = new ListNode(2);
-    expected.next.next.next = new ListNode(3);
-    expected.next.next.next.next = new ListNode(4);
-    expected.next.next.next.next.next = new ListNode(4);
-    expected.next.next.next.next.next.next = new ListNode(5);
-    expected.next.next.next.next.next.next.next = new ListNode(6);
-    
-    let merged = mergeKLists(lists);
+/**
+ * Verify that when @see mergeKLists is called with @param input @param expected is returned
+ * @param {ListNode[]} input The input to run against
+ * @param {ListNode} expected The expected merged result
+ */
+function verify(input, expected) {
+    let actual = mergeKLists(input);
 
     const expectedString = toString(expected);
-    const actualString = toString(merged);
+    const actualString = toString(actual);
     console.log('expected: ', toString(expected));
-    console.log('merged:   ', toString(merged));
+    console.log('merged:   ', toString(actual));
 
     console.log(expectedString === actualString);
+}
+
+function verifyBasic() {
+    const lists = [
+        createList([1, 4, 5]),
+        createList([1, 3, 4]),
+        createList([2, 6])
+    ];
+
+    const expected = createList([1, 1, 2, 3, 4, 4, 5, 6]);
+    
+    verify(lists, expected);
 }
 
 function verifyEmpty() {
@@ -100,5 +121,12 @@ function verifyEmpty() {
     console.log(merged.toString() === expected.toString());
 }
 
-verify();
+function verifySingleList() {
+    const input = [createList([0, 2, 5])];
+    const expected = createList([0, 2, 5]);
+    verify(input, expected);
+}
+
+verifyBasic();
 verifyEmpty();
+verifySingleList();
