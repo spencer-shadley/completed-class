@@ -1,0 +1,34 @@
+h1 {
+    background-color: darkcyan;
+    color: cyan;
+    animation-name: change-color;
+    animation-duration: 5s;
+}
+
+.removeColor {
+    color: black;
+    background-color: unset;
+    animation-name: reverse-change-color;
+}
+
+@keyframes change-color {
+    from {
+        color: black;
+        background-color: unset;
+    }
+    to {
+        color: cyan;
+        background-color: darkcyan;
+    }
+}
+
+@keyframes reverse-change-color {
+    from {
+        color: cyan;
+        background-color: darkcyan;
+    }
+    to {
+        color: black;
+        background-color: unset;
+    }
+}
