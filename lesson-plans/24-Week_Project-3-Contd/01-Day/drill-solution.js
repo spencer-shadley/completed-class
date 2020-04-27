@@ -1,3 +1,6 @@
+// If the significant digit order was flipped we could
+// use a stack to solve this
+
 class ListNode {
     constructor(val) {
         this.val = val;
@@ -11,49 +14,45 @@ class ListNode {
  * @return {ListNode}
  */
 function addTwoNumbers(listOne, listTwo) {
-    let stackOne = createStack(listOne);
-    let stackTwo = createStack(listTwo);
-    let sumStack = [];
+    let sumList = null;
+    let head = null;
 
     let hasCarry = false;
-    while (stackOne.length !== 0 || stackTwo.length !== 0) {
+    while (listOne || listTwo) {
         let sum = 0;
-        if (stackOne) {
-            sum += stackOne.val;
-            stackOne.pop();
+        if (listOne) {
+            sum += listOne.val;
+            listOne = listOne.next;
         }
-        if (stackTwo) {
-            sum += stackTwo.val;
-            stackTwo.pop();
+        if (listTwo) {
+            sum += listTwo.val;
+            listTwo = listTwo.next;
         }
 
         if (hasCarry) {
             sum += 1;
         }
 
-        hasCarry = sum > 10;
+        hasCarry = sum >= 10;
         if (hasCarry) {
             sum -= 10;
         }
 
-        sumStack.push(sum);
+        const node = new ListNode(sum);
+        if (sumList === null) {
+            sumList = node;
+            head = node;
+        } else {
+            sumList.next = node;
+            sumList = sumList.next;
+        }
     }
-
+    
     if (hasCarry) {
-        sumStack.push(1);
+        sumList.next = new ListNode(1);
     }
-
-    const sumList = createList(sumStack);
-    return sumList;
-}
-
-function createStack(list) {
-    let stackOne = [];
-    while (listOne.next) {
-        stackOne.push(listOne.val);
-        listOne = listOne.next;
-    }
-    return stackOne;
+   
+    return head;
 }
 
 function createList(stack) {
@@ -84,4 +83,4 @@ function verify(inputOne, inputTwo, expected) {
     }
 }
 
-verify(createList([2, 4, 3], createList(5, 6, 4), createList(807)));
+verify(createList([3, 4, 2]), createList([4, 6, 5]), createList([7, 0, 8]));
