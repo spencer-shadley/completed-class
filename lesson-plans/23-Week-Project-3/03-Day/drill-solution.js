@@ -43,7 +43,17 @@
 
 function newMember(arr) {
 
-    return arr.map(([age, handicap]) => (age > 54 && handicap > 7) ? 'Senior' : 'Open');
+    // return arr.map(([age, handicap]) => (age > 54 && handicap > 7) ? 'Senior' : 'Open');
+
+    const result = [];
+    for (let i = 0; i < arr.length; ++i) {
+        if (arr[i][0] > 54 && arr[i][1] > 7) {
+            result.push(`Senior`);
+        } else {
+            result.push('Open');
+        }
+    }
+    return result;
 
 };
 
