@@ -73,3 +73,8 @@
 1. Description
 1. Student Response
 1. Overall thoughts 
+
+## Spencer's Knowledge and Composure 
+1. This was by far the greatest asset to this section and it wasn't even close. His ability to answer all the student's questions with clarity and thoroughness was impressive. 
+1. Student Response
+1. Overall thoughts 
