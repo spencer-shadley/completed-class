@@ -36,6 +36,21 @@
     Two pointer string comparison
     If we find a # at i + 1, slice at index i --> i + 1
 
+************* ALTERNATIVE ****************
+
+To get this to constant space you can compare each string from the end with double pointer.
+
+As you iterate towards the beginning of the strings validate that each character matches.
+
+If you find a mismatched character return false.
+
+To handle backspaces keep a count of the number of backspaces seen.
+
+When you find a non-backspace, continue iterating in the string numBackspaces times to skip those (deleted) characters
+
+O(N) in time and O1) in space
+
+Adding a constant space complexity requirement is a way to complicate this problem.
 
 ******************** FUNCTION ****************************  */
 
