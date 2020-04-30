@@ -477,7 +477,7 @@
     "assignmentTitle": "10: Team Profile Generator",
     "studentName": "Vaughn Mcpherson",
     "submitted": true,
-    "grade": "D"
+    "grade": "B-"
   },
   {
     "assignmentTitle": "11: Note Taker",
@@ -1935,7 +1935,7 @@
     "assignmentTitle": "19: User Directory",
     "studentName": "Andrea Thomas",
     "submitted": true,
-    "grade": null
+    "grade": "D"
   },
   {
     "assignmentTitle": "19: User Directory",
@@ -1953,7 +1953,7 @@
     "assignmentTitle": "19: User Directory",
     "studentName": "Benjamin Olsen",
     "submitted": true,
-    "grade": null
+    "grade": "A-"
   },
   {
     "assignmentTitle": "19: User Directory",
@@ -2001,7 +2001,7 @@
     "assignmentTitle": "19: User Directory",
     "studentName": "Hoang Do",
     "submitted": true,
-    "grade": null
+    "grade": "B-"
   },
   {
     "assignmentTitle": "19: User Directory",
@@ -2043,7 +2043,7 @@
     "assignmentTitle": "19: User Directory",
     "studentName": "Justin Le",
     "submitted": true,
-    "grade": null
+    "grade": "Incomplete"
   },
   {
     "assignmentTitle": "19: User Directory",
@@ -2079,7 +2079,7 @@
     "assignmentTitle": "19: User Directory",
     "studentName": "Lloyd Marcelino",
     "submitted": true,
-    "grade": null
+    "grade": "B+"
   },
   {
     "assignmentTitle": "19: User Directory",
@@ -2091,7 +2091,7 @@
     "assignmentTitle": "19: User Directory",
     "studentName": "Maximillian Cartwright",
     "submitted": true,
-    "grade": null
+    "grade": "Incomplete"
   },
   {
     "assignmentTitle": "19: User Directory",
@@ -2103,7 +2103,7 @@
     "assignmentTitle": "19: User Directory",
     "studentName": "Rachel Rohrbach",
     "submitted": true,
-    "grade": null
+    "grade": "B"
   },
   {
     "assignmentTitle": "19: User Directory",
@@ -2115,13 +2115,13 @@
     "assignmentTitle": "19: User Directory",
     "studentName": "Richard Wang",
     "submitted": true,
-    "grade": null
+    "grade": "A"
   },
   {
     "assignmentTitle": "19: User Directory",
     "studentName": "Ryan Sousa",
     "submitted": true,
-    "grade": null
+    "grade": "C-"
   },
   {
     "assignmentTitle": "19: User Directory",
@@ -2157,7 +2157,7 @@
     "assignmentTitle": "19: User Directory",
     "studentName": "Vaughn Mcpherson",
     "submitted": true,
-    "grade": null
+    "grade": "B"
   },
   {
     "assignmentTitle": "1: Portfolio",
@@ -2414,13 +2414,13 @@
   {
     "assignmentTitle": "20: React Portfolio",
     "studentName": "Andrea Thomas",
-    "submitted": false,
-    "grade": null
+    "submitted": true,
+    "grade": "A"
   },
   {
     "assignmentTitle": "20: React Portfolio",
     "studentName": "Ari Horowitz",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
@@ -2432,8 +2432,8 @@
   {
     "assignmentTitle": "20: React Portfolio",
     "studentName": "Benjamin Olsen",
-    "submitted": false,
-    "grade": null
+    "submitted": true,
+    "grade": "A-"
   },
   {
     "assignmentTitle": "20: React Portfolio",
@@ -2444,7 +2444,7 @@
   {
     "assignmentTitle": "20: React Portfolio",
     "studentName": "Esther Walker",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
@@ -2481,12 +2481,12 @@
     "assignmentTitle": "20: React Portfolio",
     "studentName": "Hoang Do",
     "submitted": true,
-    "grade": null
+    "grade": "A"
   },
   {
     "assignmentTitle": "20: React Portfolio",
     "studentName": "Issouf Kiema",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
@@ -2498,7 +2498,7 @@
   {
     "assignmentTitle": "20: React Portfolio",
     "studentName": "Jeremy Guts",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
@@ -2522,13 +2522,13 @@
   {
     "assignmentTitle": "20: React Portfolio",
     "studentName": "Justin Le",
-    "submitted": false,
-    "grade": null
+    "submitted": true,
+    "grade": "A"
   },
   {
     "assignmentTitle": "20: React Portfolio",
     "studentName": "Kaitlyn Carlson",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
@@ -2559,48 +2559,48 @@
     "assignmentTitle": "20: React Portfolio",
     "studentName": "Lloyd Marcelino",
     "submitted": true,
-    "grade": null
+    "grade": "A+"
   },
   {
     "assignmentTitle": "20: React Portfolio",
     "studentName": "Marie Lenac",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
     "assignmentTitle": "20: React Portfolio",
     "studentName": "Maximillian Cartwright",
-    "submitted": false,
-    "grade": null
+    "submitted": true,
+    "grade": "Incomplete"
   },
   {
     "assignmentTitle": "20: React Portfolio",
     "studentName": "Owen Chanthala",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
     "assignmentTitle": "20: React Portfolio",
     "studentName": "Rachel Rohrbach",
-    "submitted": false,
-    "grade": null
+    "submitted": true,
+    "grade": "A"
   },
   {
     "assignmentTitle": "20: React Portfolio",
     "studentName": "Randall Burgess",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
     "assignmentTitle": "20: React Portfolio",
     "studentName": "Richard Wang",
-    "submitted": false,
-    "grade": null
+    "submitted": true,
+    "grade": "A"
   },
   {
     "assignmentTitle": "20: React Portfolio",
     "studentName": "Ryan Sousa",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
@@ -2624,7 +2624,7 @@
   {
     "assignmentTitle": "20: React Portfolio",
     "studentName": "Teresa Liu",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
@@ -2636,8 +2636,8 @@
   {
     "assignmentTitle": "20: React Portfolio",
     "studentName": "Vaughn Mcpherson",
-    "submitted": false,
-    "grade": null
+    "submitted": true,
+    "grade": "Incomplete"
   },
   {
     "assignmentTitle": "21: Google Books React Search",
@@ -2648,8 +2648,8 @@
   {
     "assignmentTitle": "21: Google Books React Search",
     "studentName": "Alexander (George) Travis",
-    "submitted": false,
-    "grade": null
+    "submitted": true,
+    "grade": "A"
   },
   {
     "assignmentTitle": "21: Google Books React Search",
@@ -2660,8 +2660,8 @@
   {
     "assignmentTitle": "21: Google Books React Search",
     "studentName": "Ari Horowitz",
-    "submitted": false,
-    "grade": null
+    "submitted": true,
+    "grade": "A-"
   },
   {
     "assignmentTitle": "21: Google Books React Search",
@@ -2672,7 +2672,7 @@
   {
     "assignmentTitle": "21: Google Books React Search",
     "studentName": "Benjamin Olsen",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
@@ -2684,8 +2684,8 @@
   {
     "assignmentTitle": "21: Google Books React Search",
     "studentName": "Esther Walker",
-    "submitted": false,
-    "grade": null
+    "submitted": true,
+    "grade": "A+"
   },
   {
     "assignmentTitle": "21: Google Books React Search",
@@ -2720,7 +2720,7 @@
   {
     "assignmentTitle": "21: Google Books React Search",
     "studentName": "Hoang Do",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
@@ -2762,14 +2762,14 @@
   {
     "assignmentTitle": "21: Google Books React Search",
     "studentName": "Justin Le",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
     "assignmentTitle": "21: Google Books React Search",
     "studentName": "Kaitlyn Carlson",
-    "submitted": false,
-    "grade": null
+    "submitted": true,
+    "grade": "A+"
   },
   {
     "assignmentTitle": "21: Google Books React Search",
@@ -2798,7 +2798,7 @@
   {
     "assignmentTitle": "21: Google Books React Search",
     "studentName": "Lloyd Marcelino",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
@@ -2816,13 +2816,13 @@
   {
     "assignmentTitle": "21: Google Books React Search",
     "studentName": "Owen Chanthala",
-    "submitted": false,
-    "grade": null
+    "submitted": true,
+    "grade": "Incomplete"
   },
   {
     "assignmentTitle": "21: Google Books React Search",
     "studentName": "Rachel Rohrbach",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
@@ -2834,14 +2834,14 @@
   {
     "assignmentTitle": "21: Google Books React Search",
     "studentName": "Richard Wang",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
     "assignmentTitle": "21: Google Books React Search",
     "studentName": "Ryan Sousa",
-    "submitted": false,
-    "grade": null
+    "submitted": true,
+    "grade": "C"
   },
   {
     "assignmentTitle": "21: Google Books React Search",
@@ -2864,8 +2864,8 @@
   {
     "assignmentTitle": "21: Google Books React Search",
     "studentName": "Teresa Liu",
-    "submitted": false,
-    "grade": null
+    "submitted": true,
+    "grade": "A"
   },
   {
     "assignmentTitle": "21: Google Books React Search",
@@ -2876,7 +2876,7 @@
   {
     "assignmentTitle": "21: Google Books React Search",
     "studentName": "Vaughn Mcpherson",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
@@ -4784,7 +4784,7 @@
   {
     "assignmentTitle": "Milestone 2: Create Professional Materials I",
     "studentName": "Teresa Liu",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
@@ -5162,13 +5162,13 @@
   {
     "assignmentTitle": "Milestone 4: Create Professional Materials II",
     "studentName": "Justin Le",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
     "assignmentTitle": "Milestone 4: Create Professional Materials II",
     "studentName": "Kaitlyn Carlson",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
@@ -5264,7 +5264,7 @@
   {
     "assignmentTitle": "Milestone 4: Create Professional Materials II",
     "studentName": "Teresa Liu",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
@@ -5280,241 +5280,241 @@
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Alexander Mcclement",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Alexander (George) Travis",
     "submitted": true,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Andrea Thomas",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Ari Horowitz",
     "submitted": true,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Barney Jordan",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Benjamin Olsen",
     "submitted": true,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Danielle Harden",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Esther Walker",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Frantz Felix",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Gabrielle Christ",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Gil Solis",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Greivin Badilla",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Henry Lopez",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Hoang Do",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Issouf Kiema",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Jared Kong",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Jeremy Guts",
     "submitted": true,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Jonathon Lee",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Jose Bedregal",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Juanito Navarro",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Justin Le",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Kaitlyn Carlson",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Kat Dow",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Khangai Ganbayar",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Kindra Kinney",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Lisa Cabrera",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Lloyd Marcelino",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Marie Lenac",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Maximillian Cartwright",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Owen Chanthala",
     "submitted": true,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Rachel Rohrbach",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Randall Burgess",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Richard Wang",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Ryan Sousa",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Spencer Fife",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Steven Blanton",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Sydney Russell",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Teresa Liu",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Trevor Olsen",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 5: Polish Your Portfolio and Github",
+    "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Vaughn Mcpherson",
     "submitted": false,
     "grade": null
@@ -5760,241 +5760,241 @@
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Alexander Mcclement",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Alexander (George) Travis",
     "submitted": true,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Andrea Thomas",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Ari Horowitz",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Barney Jordan",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Benjamin Olsen",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Danielle Harden",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Esther Walker",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Frantz Felix",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Gabrielle Christ",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Gil Solis",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Greivin Badilla",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Henry Lopez",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Hoang Do",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Issouf Kiema",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Jared Kong",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Jeremy Guts",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Jonathon Lee",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Jose Bedregal",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Juanito Navarro",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Justin Le",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Kaitlyn Carlson",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Kat Dow",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Khangai Ganbayar",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Kindra Kinney",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Lisa Cabrera",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Lloyd Marcelino",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Marie Lenac",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Maximillian Cartwright",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Owen Chanthala",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Rachel Rohrbach",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Randall Burgess",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Richard Wang",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Ryan Sousa",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Spencer Fife",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Steven Blanton",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Sydney Russell",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Teresa Liu",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Trevor Olsen",
     "submitted": false,
     "grade": null
   },
   {
-    "assignmentTitle": "Milestone 7: Employer Ready",
+    "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Vaughn Mcpherson",
     "submitted": false,
     "grade": null
