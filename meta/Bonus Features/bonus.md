@@ -6,6 +6,11 @@
 1. Student Response
 1. Overall thoughts 
 
+## Spencer's Knowledge and Composure 
+1. This was by far the greatest asset to this section and it wasn't even close. His ability to answer all the student's questions with clarity and thoroughness was impressive. This really set the tone for the course and gave the students confidence in his knowledge/accuracy. He would always spend the extra time to thoroughly answer each question, narrating his process as he is coding/debugging so that students can understand the process and learn from it. He would spend extra time reviewing each lesson plan and make sometimes entire alterations that was more reflective of current SWE trends (I.e. removing float and replacing it with FlexBox). Unafraid to alter the course and focus on the important aspects (Increased React / Computer Science). 
+1. Nearly perfect instructor score week after week.  
+1. Great hire. Gained a lot of knowledge/insight working beside him. 
+
 ## Slack Channels
 1.  ![Slack](./images/slack-channels.jpg)
 1. Positive. 
@@ -74,7 +79,4 @@
 1. Student Response
 1. Overall thoughts 
 
-## Spencer's Knowledge and Composure 
-1. This was by far the greatest asset to this section and it wasn't even close. His ability to answer all the student's questions with clarity and thoroughness was impressive. 
-1. Student Response
-1. Overall thoughts 
+
