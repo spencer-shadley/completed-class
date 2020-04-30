@@ -35,7 +35,7 @@ const shiftLeft = (arr, shifts) => {
 
   let temp = arr.slice(0);
   for (let i = 0; i < shifts; i++) {
-    let first = temp.shift();
+    let first = temp.shift(); // this is O(N) making an overall O(N^2). Instead you can use modulus with swaps to get O(N).
     temp.push(first);
   }
 
