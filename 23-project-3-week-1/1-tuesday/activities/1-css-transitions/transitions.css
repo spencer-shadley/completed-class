@@ -13,11 +13,11 @@ div {
     width: 100px;
     height: 100px;
     background-color: darkcyan;
-    transition: width 2s, background-color 1s;
+    transition: background-color 1s, transform 2s;
     transition-timing-function: ease;
 }
 
 div:hover {
-    width: 100%;
     background-color: cyan;
+    transform: rotate(360deg);
 }
