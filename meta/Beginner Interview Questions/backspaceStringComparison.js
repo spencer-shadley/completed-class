@@ -33,8 +33,13 @@
 
 *********** PSEUDO CODE SOLUTION / BRAINSTORM ****************
 
-    Two pointer string comparison
-    If we find a # at i + 1, slice at index i --> i + 1
+    Create an internal function
+
+    Iterate through the string and either pop or push the letter based upon letter or #.
+
+    Rejoin string.
+
+    Compare both strings doing the build function. 
 
 ************* ALTERNATIVE ****************
 
