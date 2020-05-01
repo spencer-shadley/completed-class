@@ -1,6 +1,6 @@
 # Preclass Drill - Sort and Search Part II
 
-## TODO
+## Last Stone Weight
 
 - Solve [this problem](https://leetcode.com/problems/last-stone-weight/)
 
