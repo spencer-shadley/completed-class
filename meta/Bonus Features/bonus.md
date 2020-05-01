@@ -47,6 +47,12 @@
 1. Overwhelmingly positive. Every student was able to take a lot of information away from that experience and I believe it calmed a lot of nerves for students seeing the entire process. Removed a lot of the `mystique` about whiteboard interviews.
 1. Extremely positive. Would recommend for each section.
 
+## Student Mock Interviews
+
+1. Description
+1. Student Response
+1. Overall thoughts
+
 ## Homework Demonstration
 
 1. One of the TA's would perform a homework demonstration at the end of each week. They would go over the application and describe the required features in greater detail. Students were given time to ask questions about it as well.
@@ -99,6 +105,12 @@
 1. Overall thoughts
 
 ## Project Award Ceremonies
+
+1. Description
+1. Student Response
+1. Overall thoughts
+
+## Extended Computer Science
 
 1. Description
 1. Student Response
