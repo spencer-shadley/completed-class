@@ -45,11 +45,15 @@
 
 *********** PSEUDO CODE SOLUTION / BRAINSTORM ****************
 
-    Create a variable to total the shifts.
-        Left is negative, Right is positive. 
-        0 = left shift. 1 = right shift. 
-    Perform the shifts after iterating through the array. 
+    Create a variable representing total shifts. 
 
+        Left is negative
+        Right is positive
+
+        0 = left shift
+        1 = right shift
+
+    Perform the shifts after iterating through the array. 
 
 ******************** FUNCTION ****************************  */
 

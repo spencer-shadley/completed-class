@@ -49,21 +49,27 @@
 
 ## Student Mock Interviews
 
-1. Description
-1. Student Response
-1. Overall thoughts
+1. We created a Google sign up sheet where students could sign up for a full mock-interview (behavioral + technical). We would roleplay as an interviewer and write notes for the student.
+1. Mixed/positive
+1. A lot of students were very intimidated by this process in general and it was only the `stronger` students who signed up for this activity. I would attempt to emphasize this at greater lengths, but its hard to convince students to try. 
 
 ## Homework Demonstration
 
 1. One of the TA's would perform a homework demonstration at the end of each week. They would go over the application and describe the required features in greater detail. Students were given time to ask questions about it as well.
-1. Positive.
+1. Positive
 1. This just helps clear up any misconceptions from the HW README.
+
+## TA - Weeekly Review
+
+1. Each week we would have a weekly review of major concepts throughout the week. This was generally located in a weekly-review markdown file and students would use it as a reference. My mindset going into this was to emphasize the major topics, foreshadow important topics related to the weekly homework, and sometimes even add extra material if I felt that was the most benefit. Even if students couldn't stay late in class to watch this review, a lot of students viewed the recordings and learned from it. 
+1. Positive
+1. This was an essential asset. 
 
 ## House Cup
 
 1. We split up the students into four sections. (GithufflePuff, Gryffindom, Ravenclosure, and SlitherIndentYourCode). This was decided on NSEW directions from main campus. Points were awarded for various bonus activites or outstanding performance on class homework, activities, PreClassDrills, meeting up outside class, helping other students. Rewards were given out at different intervals of the class.
 1. Very positive, people really enjoyed the arbitrary point system and influenced people to get to know people in their area.
-1. Positive, but hard to maintain in a Zoom setting.
+1. Mixed/Positive, but hard to maintain in a Zoom setting.
 
 ## Happy Hour
 

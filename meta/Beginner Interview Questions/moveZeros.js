@@ -24,7 +24,9 @@
  **************** PSEUDO CODE SOLUTION / BRAINSTORM ***********
 
     Splice Method
+
     Count zeros cut
+    
     Add them all back at the end
 
  **************** FUNCTION ********************************  */

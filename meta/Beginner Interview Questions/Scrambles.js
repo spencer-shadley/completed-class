@@ -28,7 +28,9 @@
  **************** PSEUDO CODE SOLUTION / BRAINSTORM ***********
 
     Create a hash map of str2 characters.
+
     Delete hash letters for each str1 characters that match.
+
     Return true is hash is empty at end, else return false.
 
  **************** FUNCTION ********************************  */
@@ -42,9 +44,7 @@ function scramble(str1, str2) {
     }
 
     for (const letter of str1) {
-        if (hash[letter] > 0) {
-            hash[letter] = hash[letter] - 1;
-        }
+        hash[letter] = hash[letter] > 0 ? hash[letter] - 1 : 0;
     }
 
     for (const letter of str2) {
