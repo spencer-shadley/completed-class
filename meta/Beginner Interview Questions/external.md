@@ -1,2 +1,6 @@
 [Snail Sort](https://www.codewars.com/kata/521c2db8ddc89b9b7a0000c1)
 [Sum of Pairs](https://www.codewars.com/kata/54d81488b981293527000c8f)
+[increment stack](https://leetcode.com/problems/design-a-stack-with-increment-operation/)
+[count battleships](http://psb28921.seedbox.io/)
+[coin change](https://leetcode.com/problems/coin-change-2/)
+[coin change min](https://leetcode.com/problems/coin-change/)
