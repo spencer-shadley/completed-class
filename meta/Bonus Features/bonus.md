@@ -17,8 +17,8 @@
 ## Slack Channels
 
 1.  ![Slack](./images/slack-channels.jpg)
-1.  Positive.
-1.  I think we could have combined help-queue/office-hours-queue/help-requests into a single channel. The class-activities channel had a web-hook to GitLab so whenever updates were pushed, there was a notification within the channel.
+1.  Very positive. 
+1.  I think we could have combined help-queue/office-hours-queue/help-requests into a single channel. The class-activities channel had a web-hook to GitLab so whenever updates were pushed, there was a notification within the channels. 
 
 ## Fist-To-Five
 
@@ -62,8 +62,21 @@
 ## TA - Weeekly Review
 
 1. Each week we would have a weekly review of major concepts throughout the week. This was generally located in a weekly-review markdown file and students would use it as a reference. My mindset going into this was to emphasize the major topics, foreshadow important topics related to the weekly homework, and sometimes even add extra material if I felt that was the most benefit. Even if students couldn't stay late in class to watch this review, a lot of students viewed the recordings and learned from it. 
-1. Positive
+1. If the average weeks fist-of-five was low, it might be pertinent to review the material, but if most students had high marks in terms of understanding, the weekly review can be converted into further information lecture. 
+1. If I felt the homework was particularly challenging, I would give hints or bonus information that pertains to that specific homework. Even bonus tips and tricks.
+1. Options: 
+   - Kahoot.it
+   - Markdown
+   - VSC - JS file
+   - Whiteboard
+1. Very positive. 
 1. This was an essential asset. 
+
+## Architecture - Tuesday
+
+1. We would spend some office hours time to hold a discussion panel with students to talk about how best to organize and approach the homework. Laying out the foundation of file/folder structure greatly helped students.  
+1. Very positive.
+1. Extremely helpful, especially for weaker students. They were about to have some insight in how to start and approach the problems.
 
 ## House Cup
 
@@ -76,6 +89,7 @@
 1. With the Covid-19 pandemic and mandatory quarantine, its difficult all around. We would meet up in a zoom call and play games, BYOB, and relax.
    Games list:
    - skribbl.io
+   - Steam games : Jackbox games
 1. ![happy](./images/happy-hour.png)
 1. Very Positive
 1. Its was a very positive experience to relax and get to know fellow classmates. The overall response was very positive and many people came back every other week to participate.
@@ -99,12 +113,6 @@
 1. This was just a fun little game that most people participated in.
 
 ## Post Class Bonus Lectures
-
-1. Description
-1. Student Response
-1. Overall thoughts
-
-## Kahoot
 
 1. Description
 1. Student Response
