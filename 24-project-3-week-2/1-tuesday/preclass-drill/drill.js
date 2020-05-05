@@ -13,7 +13,7 @@ class ListNode {
  * @return {ListNode}
  */
 function addTwoNumbers(listOne, listTwo) {
-    
+
 }
 
 function verify(inputOne, inputTwo, expected) {
@@ -25,6 +25,23 @@ function verify(inputOne, inputTwo, expected) {
         console.log('expected', expected);
         console.log('actual', actual);
     }
+}
+
+function createList(stack) {
+    let list;
+    let head;
+    while (stack.length > 0) {
+        const value = stack.pop();
+        const node = new ListNode(value);
+        if (list) {
+            list.next = node;
+            list = list.next;
+        } else {
+            list = node;
+            head = list;
+        }
+    }
+    return head;
 }
 
 verify(createList([3, 4, 2]), createList([4, 6, 5]), createList([7, 0, 8]));
