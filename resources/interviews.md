@@ -125,7 +125,7 @@ Below is my recommended order as well as a \[1-10\] rating on how important each
 
 #### Meetups
 
-- Your classmates! This is the best resource you have, stay in touch with everyone. Practice mock interviews with each other and challenge each other to keep pushing towards a software engineering job!
+- Your classmates! This is a great resource, stay in touch with everyone. Practice mock interviews with each other and challenge each other to keep pushing towards a software engineering job!
 
 - [Junior Dev Struggle Bus](https://juniordevstrugglebus.com/)
 
