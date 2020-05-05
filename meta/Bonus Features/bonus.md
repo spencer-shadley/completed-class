@@ -17,8 +17,8 @@
 ## Slack Channels
 
 1.  ![Slack](./images/slack-channels.jpg)
-1.  Very positive. 
-1.  I think we could have combined help-queue/office-hours-queue/help-requests into a single channel. The class-activities channel had a web-hook to GitLab so whenever updates were pushed, there was a notification within the channels. 
+1.  Very positive.
+1.  I think we could have combined help-queue/office-hours-queue/help-requests into a single channel. The class-activities channel had a web-hook to GitLab so whenever updates were pushed, there was a notification within the channels.
 
 ## Fist-To-Five
 
@@ -51,7 +51,7 @@
 
 1. We created a Google sign up sheet where students could sign up for a full mock-interview (behavioral + technical). We would roleplay as an interviewer and write notes for the student.
 1. Mixed/positive
-1. A lot of students were very intimidated by this process in general and it was only the `stronger` students who signed up for this activity. I would attempt to emphasize this at greater lengths, but its hard to convince students to try. 
+1. A lot of students were very intimidated by this process in general and it was only the `stronger` students who signed up for this activity. I would attempt to emphasize this at greater lengths, but its hard to convince students to try.
 
 ## Homework Demonstration
 
@@ -61,20 +61,20 @@
 
 ## TA - Weeekly Review
 
-1. Each week we would have a weekly review of major concepts throughout the week. This was generally located in a weekly-review markdown file and students would use it as a reference. My mindset going into this was to emphasize the major topics, foreshadow important topics related to the weekly homework, and sometimes even add extra material if I felt that was the most benefit. Even if students couldn't stay late in class to watch this review, a lot of students viewed the recordings and learned from it. 
-1. If the average weeks fist-of-five was low, it might be pertinent to review the material, but if most students had high marks in terms of understanding, the weekly review can be converted into further information lecture. 
+1. Each week we would have a weekly review of major concepts throughout the week. This was generally located in a weekly-review markdown file and students would use it as a reference. My mindset going into this was to emphasize the major topics, foreshadow important topics related to the weekly homework, and sometimes even add extra material if I felt that was the most benefit. Even if students couldn't stay late in class to watch this review, a lot of students viewed the recordings and learned from it.
+1. If the average weeks fist-of-five was low, it might be pertinent to review the material, but if most students had high marks in terms of understanding, the weekly review can be converted into further information lecture.
 1. If I felt the homework was particularly challenging, I would give hints or bonus information that pertains to that specific homework. Even bonus tips and tricks.
-1. Options: 
+1. Options:
    - Kahoot.it
    - Markdown
    - VSC - JS file
    - Whiteboard
-1. Very positive. 
-1. This was an essential asset. 
+1. Very positive.
+1. This was an essential asset.
 
 ## Architecture - Tuesday
 
-1. We would spend some office hours time to hold a discussion panel with students to talk about how best to organize and approach the homework. Laying out the foundation of file/folder structure greatly helped students.  
+1. We would spend some office hours time to hold a discussion panel with students to talk about how best to organize and approach the homework. Laying out the foundation of file/folder structure greatly helped students.
 1. Very positive.
 1. Extremely helpful, especially for weaker students. They were about to have some insight in how to start and approach the problems.
 
@@ -141,3 +141,9 @@
 1. Description
 1. Student Response
 1. Overall thoughts
+
+## Linting
+
+1. Added a linter to every unit conforming to the latest learnings to ensure consistent style and highlight errors.
+1. Students did not notice (behind the scenes changes)
+1. This enabled me to fix literally thousands of bugs easily. In every unit there were hundreds of bugs to fix and linting automated fixing most of them.
