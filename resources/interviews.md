@@ -57,6 +57,7 @@ These questions will primarily be from algorithms and data structures. To prepar
 
 - [Advanced JavaScript Concepts](https://www.udemy.com/share/101WiOB0sTclhUQHg=/)
 - [Master the Coding Interview: Data Structures + Algorithms](https://www.udemy.com/share/1013jaB0sTclhUQHg=/)
+- [The Coding Interview Bootcamp: Algorithms + Data Structures](https://www.udemy.com/course/coding-interview-bootcamp-algorithms-and-data-structure/)
 
 #### Books
 
@@ -121,3 +122,11 @@ Below is my recommended order as well as a \[1-10\] rating on how important each
   - Max Heap (4)
   - Min Heap (4)
 - [Bit Manip](https://leetcode.com/problemset/algorithms/?topicSlugs=bit-manipulation) (2)
+
+#### Meetups
+
+- Your classmates! This is the best resource you have, stay in touch with everyone. Practice mock interviews with each other and challenge each other to keep pushing towards a software engineering job!
+
+- [Junior Dev Struggle Bus](https://juniordevstrugglebus.com/)
+
+- [She's Coding](https://shescoding.org/)
