@@ -4,6 +4,7 @@ Resources relevant to a specific day can be found in their corresponding directo
 
 | File                                         | Description                                                                                      |
 | -------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| [interviews.md](interviews.md)               | Resources and information on how to perform well in a technical interview                        |
 | [class-resources.md](class-resources.md)     | Locations of the main tools we use in this class                                                 |
 | [documentation.md](documenation.md)          | Sites with helpful documentation of the web                                                      |
 | [help.md](help.md)                           | External places to ask questions                                                                 |
