@@ -6,6 +6,7 @@
  **************** CONSTRAINTS ********************************
 
     Only lower case letters will be used (a-z)
+
     No punctuations or digits will be included.
 
  **************** DEFINE INPUT/OUTPUT/EDGE/OUTLIER ***********
@@ -32,6 +33,11 @@
     Delete hash letters for each str1 characters that match.
 
     Return true is hash is empty at end, else return false.
+
+ ******************* Time / Space *****************************
+
+    Time: O(n)
+    Space: O(n)
 
  **************** FUNCTION ********************************  */
 
