@@ -153,3 +153,5 @@
 1. The metrics of the class were visualized using the API from BCS and Tableau
 1. They did not directly know about this but it did enable positive early conversations with students when it was noticed they weren't attending class, had missed a few homeworks, etc.
 1. This enabled easily and quickly identifying students that fell behind, how well a homework went and served as a general dashboard for the class.
+
+## Q&A
