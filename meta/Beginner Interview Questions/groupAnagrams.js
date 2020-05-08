@@ -10,7 +10,7 @@
 ********** DEFINE INPUT/OUTPUT/EDGE/OUTLIER *****************
 
     Input: Array (of strings)
-    Output: Array (of arrays)
+    Output: Array (of arrays (of strings))
     Edge/Outlier:
 
 ********************** EXAMPLES *****************************
@@ -33,7 +33,9 @@
 *********** PSEUDO CODE SOLUTION / BRAINSTORM ****************
 
     For each array, split and sort the string.
+
     Hash those letters.
+
     If other strings match, push them to array. 
 
 
