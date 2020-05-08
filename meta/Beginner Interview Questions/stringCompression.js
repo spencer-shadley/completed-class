@@ -50,8 +50,14 @@ class Test {
   }
 }
 
-let test1 = new Test('aabcccccaaa', 'a2b1c5a3', strComp('aabcccccaaa'));
-let test2 = new Test('aabc', 'aabc', strComp('aabc'));
+let test1 = new Test(
+  'aabcccccaaa',
+  'a2b1c5a3',
+  strComp('aabcccccaaa'));
+let test2 = new Test(
+  'aabc',
+  'aabc',
+  strComp('aabc'));
 let test3 = new Test(
   'aabbbbbcccccceeeeaaaa',
   'a2b5c6e4a4',

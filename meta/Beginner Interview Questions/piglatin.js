@@ -17,7 +17,15 @@
 
 // **************** PSEUDO CODE SOLUTION / BRAINSTORM **************** //
 
-// Split apart each word and then
+// Split apart each word in an array
+
+// Slice the word from after the first index. 
+
+// Add in the first index letter 
+
+// Finally add 'ay' to each word. 
+
+// Push them all to an array and finally join them together back into a string 
 
 // **************** FUNCTION **************** //
 
