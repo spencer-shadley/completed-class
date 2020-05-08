@@ -60,14 +60,13 @@ Adding a constant space complexity requirement is a way to complicate this probl
 ******************** FUNCTION ****************************  */
 
 function stringCompare(str1, str2) {
-
     const build = (string) => {
-        let arr = [];
+        let stack = [];
 
         for (const letter of string) {
-            (letter === '#') ? arr.pop() : arr.push(letter);
+            (letter === '#') ? stack.pop() : stack.push(letter);
         }
-        return arr.join('');
+        return stack.join('');
     };
     return build(str1) === build(str2);
 }
