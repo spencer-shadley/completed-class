@@ -1047,7 +1047,7 @@
     "assignmentTitle": "13: Node Express Handlebars",
     "studentName": "Issouf Kiema",
     "submitted": true,
-    "grade": "Incomplete"
+    "grade": "B"
   },
   {
     "assignmentTitle": "13: Node Express Handlebars",
@@ -1131,7 +1131,7 @@
     "assignmentTitle": "13: Node Express Handlebars",
     "studentName": "Maximillian Cartwright",
     "submitted": true,
-    "grade": "Incomplete"
+    "grade": null
   },
   {
     "assignmentTitle": "13: Node Express Handlebars",
@@ -1886,7 +1886,7 @@
   {
     "assignmentTitle": "18: Progressive Budget",
     "studentName": "Spencer Fife",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
@@ -2043,7 +2043,7 @@
     "assignmentTitle": "19: User Directory",
     "studentName": "Justin Le",
     "submitted": true,
-    "grade": "Incomplete"
+    "grade": null
   },
   {
     "assignmentTitle": "19: User Directory",
@@ -2606,7 +2606,7 @@
   {
     "assignmentTitle": "20: React Portfolio",
     "studentName": "Spencer Fife",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
@@ -3219,7 +3219,7 @@
     "assignmentTitle": "3: Password Generator",
     "studentName": "Jeremy Guts",
     "submitted": true,
-    "grade": "F"
+    "grade": "B"
   },
   {
     "assignmentTitle": "3: Password Generator",
@@ -3693,7 +3693,7 @@
     "assignmentTitle": "5: Day Planner",
     "studentName": "Jared Kong",
     "submitted": true,
-    "grade": null
+    "grade": "B"
   },
   {
     "assignmentTitle": "5: Day Planner",
@@ -3807,7 +3807,7 @@
     "assignmentTitle": "5: Day Planner",
     "studentName": "Spencer Fife",
     "submitted": true,
-    "grade": null
+    "grade": "B-"
   },
   {
     "assignmentTitle": "5: Day Planner",
@@ -3837,7 +3837,7 @@
     "assignmentTitle": "5: Day Planner",
     "studentName": "Vaughn Mcpherson",
     "submitted": true,
-    "grade": "Incomplete"
+    "grade": "B-"
   },
   {
     "assignmentTitle": "6: Weather Dashboard",
@@ -4167,7 +4167,7 @@
     "assignmentTitle": "9: Developer Profile Generator",
     "studentName": "Issouf Kiema",
     "submitted": true,
-    "grade": "Incomplete"
+    "grade": "B"
   },
   {
     "assignmentTitle": "9: Developer Profile Generator",
@@ -6488,20 +6488,20 @@
   {
     "assignmentTitle": "Project 3",
     "studentName": "Alexander (George) Travis",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
     "assignmentTitle": "Project 3",
     "studentName": "Andrea Thomas",
-    "submitted": false,
-    "grade": null
+    "submitted": true,
+    "grade": "A+"
   },
   {
     "assignmentTitle": "Project 3",
     "studentName": "Ari Horowitz",
-    "submitted": false,
-    "grade": null
+    "submitted": true,
+    "grade": "A+"
   },
   {
     "assignmentTitle": "Project 3",
@@ -6512,8 +6512,8 @@
   {
     "assignmentTitle": "Project 3",
     "studentName": "Benjamin Olsen",
-    "submitted": false,
-    "grade": null
+    "submitted": true,
+    "grade": "A+"
   },
   {
     "assignmentTitle": "Project 3",
@@ -6524,13 +6524,13 @@
   {
     "assignmentTitle": "Project 3",
     "studentName": "Esther Walker",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
     "assignmentTitle": "Project 3",
     "studentName": "Frantz Felix",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
@@ -6560,25 +6560,25 @@
   {
     "assignmentTitle": "Project 3",
     "studentName": "Hoang Do",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
     "assignmentTitle": "Project 3",
     "studentName": "Issouf Kiema",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
     "assignmentTitle": "Project 3",
     "studentName": "Jared Kong",
-    "submitted": false,
-    "grade": null
+    "submitted": true,
+    "grade": "A+"
   },
   {
     "assignmentTitle": "Project 3",
     "studentName": "Jeremy Guts",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
@@ -6603,13 +6603,13 @@
     "assignmentTitle": "Project 3",
     "studentName": "Justin Le",
     "submitted": true,
-    "grade": null
+    "grade": "A+"
   },
   {
     "assignmentTitle": "Project 3",
     "studentName": "Kaitlyn Carlson",
-    "submitted": false,
-    "grade": null
+    "submitted": true,
+    "grade": "A+"
   },
   {
     "assignmentTitle": "Project 3",
@@ -6638,55 +6638,55 @@
   {
     "assignmentTitle": "Project 3",
     "studentName": "Lloyd Marcelino",
-    "submitted": false,
-    "grade": null
+    "submitted": true,
+    "grade": "A+"
   },
   {
     "assignmentTitle": "Project 3",
     "studentName": "Marie Lenac",
-    "submitted": false,
-    "grade": null
+    "submitted": true,
+    "grade": "A+"
   },
   {
     "assignmentTitle": "Project 3",
     "studentName": "Maximillian Cartwright",
-    "submitted": false,
-    "grade": null
+    "submitted": true,
+    "grade": "A+"
   },
   {
     "assignmentTitle": "Project 3",
     "studentName": "Owen Chanthala",
-    "submitted": false,
-    "grade": null
+    "submitted": true,
+    "grade": "A+"
   },
   {
     "assignmentTitle": "Project 3",
     "studentName": "Rachel Rohrbach",
-    "submitted": false,
-    "grade": null
+    "submitted": true,
+    "grade": "A+"
   },
   {
     "assignmentTitle": "Project 3",
     "studentName": "Randall Burgess",
-    "submitted": false,
-    "grade": null
+    "submitted": true,
+    "grade": "A+"
   },
   {
     "assignmentTitle": "Project 3",
     "studentName": "Richard Wang",
-    "submitted": false,
-    "grade": null
+    "submitted": true,
+    "grade": "A+"
   },
   {
     "assignmentTitle": "Project 3",
     "studentName": "Ryan Sousa",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
     "assignmentTitle": "Project 3",
     "studentName": "Spencer Fife",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
@@ -6704,8 +6704,8 @@
   {
     "assignmentTitle": "Project 3",
     "studentName": "Teresa Liu",
-    "submitted": false,
-    "grade": null
+    "submitted": true,
+    "grade": "A+"
   },
   {
     "assignmentTitle": "Project 3",
@@ -6716,7 +6716,7 @@
   {
     "assignmentTitle": "Project 3",
     "studentName": "Vaughn Mcpherson",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
