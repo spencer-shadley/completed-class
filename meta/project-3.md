@@ -13,6 +13,8 @@
 - Max
 - Andrea
 
+- Best Presentation
+
 ## Book-It-Yourself
 
 - Frantz
@@ -21,6 +23,8 @@
 - Ryan
 - Remy
 - Issouf
+
+- Most Technical
 
 ## Pen Pals
 
@@ -36,3 +40,5 @@
 - Lloyd
 - Owen
 - Jared
+
+- People's Choice
