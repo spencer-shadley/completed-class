@@ -333,7 +333,7 @@
     "assignmentTitle": "10: Team Profile Generator",
     "studentName": "Jared Kong",
     "submitted": true,
-    "grade": "Incomplete"
+    "grade": null
   },
   {
     "assignmentTitle": "10: Team Profile Generator",
@@ -4173,7 +4173,7 @@
     "assignmentTitle": "9: Developer Profile Generator",
     "studentName": "Jared Kong",
     "submitted": true,
-    "grade": "Incomplete"
+    "grade": null
   },
   {
     "assignmentTitle": "9: Developer Profile Generator",
@@ -5402,7 +5402,7 @@
   {
     "assignmentTitle": "Milestone 5: Polish Your Portfolio, GitHub, and LinkedIn",
     "studentName": "Justin Le",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
