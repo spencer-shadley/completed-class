@@ -16,7 +16,7 @@
 - Application is fully functional.
 - The code is generally clean.
 - Repository contains proper folder/file structure including a package.json / .gitignore / and NO node_modules.
-- Clear and concsise ReadMe.
+- Clear and concise README.
 - Overall aesthetic looks very clean and polished.
 - Included `alt` attribute for greater accessibility.
 
@@ -71,3 +71,9 @@
 ** Indentation **
 
 - Some indentation was not correctly aligned. Adding a beatifier like `prettier` or a linter like `eslint` can help prevent any potential indentation issues.
+
+** Errors **
+
+- When loading the page there are a number of errors. It's important to always have your `console` open while developing to quickly detect when things aren't working.
+  - `/favicon.ico:1 Failed to load resource: the server responded with a status of 404 (Not Found)`
+    - This is because a `favicon` (the icon displayed in the tab) is expected at the root of your `public` repo. [More info](https://www.w3.org/2005/10/howto-favicon).
