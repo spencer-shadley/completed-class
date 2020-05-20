@@ -333,7 +333,7 @@
     "assignmentTitle": "10: Team Profile Generator",
     "studentName": "Jared Kong",
     "submitted": true,
-    "grade": null
+    "grade": "B-"
   },
   {
     "assignmentTitle": "10: Team Profile Generator",
@@ -447,7 +447,7 @@
     "assignmentTitle": "10: Team Profile Generator",
     "studentName": "Spencer Fife",
     "submitted": true,
-    "grade": null
+    "grade": "B"
   },
   {
     "assignmentTitle": "10: Team Profile Generator",
@@ -812,7 +812,7 @@
   {
     "assignmentTitle": "12: Employee Management System",
     "studentName": "Jared Kong",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
@@ -1131,7 +1131,7 @@
     "assignmentTitle": "13: Node Express Handlebars",
     "studentName": "Maximillian Cartwright",
     "submitted": true,
-    "grade": null
+    "grade": "C"
   },
   {
     "assignmentTitle": "13: Node Express Handlebars",
@@ -1436,7 +1436,7 @@
   {
     "assignmentTitle": "14: Reverse Engineering Authentication",
     "studentName": "Vaughn Mcpherson",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
@@ -1767,7 +1767,7 @@
     "assignmentTitle": "18: Progressive Budget",
     "studentName": "Issouf Kiema",
     "submitted": true,
-    "grade": "Incomplete"
+    "grade": "C-"
   },
   {
     "assignmentTitle": "18: Progressive Budget",
@@ -1887,7 +1887,7 @@
     "assignmentTitle": "18: Progressive Budget",
     "studentName": "Spencer Fife",
     "submitted": true,
-    "grade": null
+    "grade": "C+"
   },
   {
     "assignmentTitle": "18: Progressive Budget",
@@ -2126,8 +2126,8 @@
   {
     "assignmentTitle": "19: User Directory",
     "studentName": "Spencer Fife",
-    "submitted": false,
-    "grade": null
+    "submitted": true,
+    "grade": "B"
   },
   {
     "assignmentTitle": "19: User Directory",
@@ -2487,7 +2487,7 @@
     "assignmentTitle": "20: React Portfolio",
     "studentName": "Issouf Kiema",
     "submitted": true,
-    "grade": null
+    "grade": "C+"
   },
   {
     "assignmentTitle": "20: React Portfolio",
@@ -2607,7 +2607,7 @@
     "assignmentTitle": "20: React Portfolio",
     "studentName": "Spencer Fife",
     "submitted": true,
-    "grade": null
+    "grade": "C+"
   },
   {
     "assignmentTitle": "20: React Portfolio",
@@ -2847,7 +2847,7 @@
     "assignmentTitle": "21: Google Books React Search",
     "studentName": "Spencer Fife",
     "submitted": true,
-    "grade": null
+    "grade": "C+"
   },
   {
     "assignmentTitle": "21: Google Books React Search",
@@ -4173,7 +4173,7 @@
     "assignmentTitle": "9: Developer Profile Generator",
     "studentName": "Jared Kong",
     "submitted": true,
-    "grade": null
+    "grade": "B-"
   },
   {
     "assignmentTitle": "9: Developer Profile Generator",
@@ -5792,7 +5792,7 @@
   {
     "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Benjamin Olsen",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
@@ -5942,7 +5942,7 @@
   {
     "assignmentTitle": "Milestone 7: Employer-Ready",
     "studentName": "Rachel Rohrbach",
-    "submitted": false,
+    "submitted": true,
     "grade": null
   },
   {
@@ -6927,7 +6927,7 @@
     "assignmentTitle": "Updated Portfolio Page",
     "studentName": "Spencer Fife",
     "submitted": true,
-    "grade": null
+    "grade": "B"
   },
   {
     "assignmentTitle": "Updated Portfolio Page",
