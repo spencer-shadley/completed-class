@@ -46,6 +46,7 @@
 - Your `README` references a file that does not exist. The `README` is the most exposed part of the code so it's important to make sure that it does not have any errors.
 - Your `README` could be a more descriptive. It may not seem important in these simple early projects, but will grow in importance as the complexity of your project grows.
 - Instilling good habits early is key.
+- The `README` is just the default `create-react-app` `README`. This is the starting point for people who look at your code, it's expecially important to make sure you have a solid `README` because this is your first impression for people looking at your code.
 - [README](https://medium.com/@meakaakka/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3)
 
 ** Hungarian Notation **
@@ -93,6 +94,10 @@ Nice job including a UML diagram in your README! This helps people more quickly 
 ** PWA **
 
 - It's great that you got a full PWA working! I'm able to install it and it works offline! This demonstrates a great understanding of those pieces and is a nice thing to add to your resume and gives you more talking points when discussing this.
+
+** Unused Code **
+
+- There are some pieces of code that are unused. This can pollute the codebase and make it more difficult to make sense of the real flow of objects. This is also a performance hit. VS Code will "dim" the color of any unused code which makes it much easier to catch early. Additionally leveraging a linter can check against this and even throw errors to ensure you never have unused code.
 
 ---
 
