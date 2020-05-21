@@ -98,6 +98,8 @@ Nice job including a UML diagram in your README! This helps people more quickly 
 
 # Commands to get stats
 
+## Commits
+
 - `git shortlog -s -n --all --no-merges`
 
   - Number of commits by each author
@@ -105,6 +107,8 @@ Nice job including a UML diagram in your README! This helps people more quickly 
 - `git rev-list HEAD --count`
 
   - Total number of commits
+
+## Lines of Code
 
 - `git ls-files | xargs -n1 git blame --line-porcelain | sed -n 's/^author //p' | sort -f | uniq -ic | sort -nr`
 
