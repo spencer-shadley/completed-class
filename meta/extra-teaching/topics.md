@@ -1,9 +1,7 @@
 # General
 
-- data structures
-- algorithms
 - ~~code coverage (`coveralls`)~~
-- animations (GSAP requested)
+- ~~animations (GSAP requested)~~
 - VS Code
 
   - ~~live share~~
@@ -23,7 +21,7 @@
     }),
   ```
 
-- pure functions (from 18.3.19)
+- ~~pure functions (from 18.3.19)~~
 
   ```md
   - skip pure functions if short on time
@@ -63,13 +61,17 @@
 
 - unit 22.3 bonus lectures
 
-  - big o
+  - ~~big o~~
 
-  - data structures
+  - ~~data structures~~
 
   - ~~lodash~~
 
 # Computer Science
+
+- ~~data structures~~
+
+- ~~algorithms~~
 
 - ~~greedy algorithms~~
 
@@ -81,13 +83,13 @@
 
 - HashTable
 
-- Set
+- ~~Set~~
 
 - Sliding window
 
-- Divide and conquer
+- ~~Divide and conquer~~
 
-- Backtracking
+- ~~Backtracking~~
 
 - Dijkstra
 
