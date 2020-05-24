@@ -90,7 +90,7 @@
    Games list:
    - skribbl.io
    - Steam games : Jackbox games
-1. ![happy](./images/happy-hour.png)
+1. ![happy](./images/happy-hour.png) [more photos](https://photos.app.goo.gl/zMNVHH8ePtaDrcCj9)
 1. Very Positive
 1. Its was a very positive experience to relax and get to know fellow classmates. The overall response was very positive and many people came back every other week to participate.
 
