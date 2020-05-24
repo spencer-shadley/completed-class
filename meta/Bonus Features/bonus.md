@@ -155,3 +155,13 @@
 1. This enabled easily and quickly identifying students that fell behind, how well a homework went and served as a general dashboard for the class.
 
 ## Q&A
+
+1. Description
+1. Student Response
+1. Overall thoughts
+
+## Grading Template
+
+1. Description
+1. Student Response
+1. Overall thoughts
