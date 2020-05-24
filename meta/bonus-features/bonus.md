@@ -148,7 +148,7 @@
 1. Students did not notice (behind the scenes changes)
 1. This enabled me to fix literally thousands of bugs easily. In every unit there were hundreds of bugs to fix and linting automated fixing most of them.
 
-## Data Visualization
+## Data Visualizations
 
 1. The metrics of the class were visualized using the API from BCS and Tableau
 1. They did not directly know about this but it did enable positive early conversations with students when it was noticed they weren't attending class, had missed a few homeworks, etc.
@@ -161,6 +161,42 @@
 1. Overall thoughts
 
 ## Grading Template
+
+1. `meta\grading\template.md` is a template to quickly and easily grade homework and projects. It contains common responses to expedite responses and tools to quickly retrieve metrics.
+1. Students were not aware of this but the faster turnaround time for homework was a positive for them.
+1. I highly recommend creating something like this early and adding to it as generalized responses on homework are created.
+
+## Kahoot
+
+1. Kahoot.it is a service to make questions interactive similar to jackbox games. This was used for reviews (replacing powerpoints) and in a few other small places where asking a series of questions was used.
+1. Students had a positive reaction (when asked the first time doing it 88% said they loved it with the rest saying they would need more time to decide)
+1. This increases student engagement and makes what can easily become a mundane review exciting
+
+## GitLab Slack Integration
+
+1. Any updates to the GitLab repo were automatically posted to the #activities channel in Slack using the GitLab slackbot with webhooks.
+1. Students enjoyed being able to transparently see exactly what changed when. Every update would automatically inform the students with an easy way for them to tell what had changed.
+1. This is a quick and easy addition with really only positive outputs. I recommend this be done by the Trilogy team when they create Slack workspaces for all classes.
+
+## Zoom Slack Integration
+
+1. Zoom was added to slack and set as the default calling app
+1. Students used this feature constantly throughout the class. It made working in a group much easier, they just click the phone icon from their channel and it starts a Zoom call with everyone.
+1. This was quick and easy with only positive outcomes. I recommend adding it.
+
+## GitHub Slack Integration
+
+1. Description
+1. Student Response
+1. Overall thoughts
+
+## Auto Daily Reminders
+
+1. Description
+1. Student Response
+1. Overall thoughts
+
+## Slack Polls
 
 1. Description
 1. Student Response
