@@ -114,33 +114,33 @@
 
 ## Post Class Bonus Lectures
 
-1. Description
-1. Student Response
-1. Overall thoughts
+1. After class a "bonus lecture" was held with content that did not fit into the class.
+1. Very positive, there was ~90% attendance of people staying after class for these.
+1. It took a lot of extra work but the students seemed to appreciate it and the extra material often helped them to better understand the base material.
 
 ## Project Award Ceremonies
 
-1. Description
-1. Student Response
-1. Overall thoughts
+1. Every project had awards given out to groups for things like "People's Choice", "Most Technical", etc.
+1. Positive - students received trophies and some people put them up on display. They really seemed to like this.
+1. I recommend this, it is low cost with medium to high value.
 
 ## Extended Computer Science
 
-1. Description
-1. Student Response
-1. Overall thoughts
+1. Unit `22-computer-science` was extended across four classes (instead of the original half a day deck) and added numerous bonus lectures and preclass drills to account for what couldn't fit in those four days.
+1. Positive - students understood that computer science was solved the _how_ to get a job and really cared about the content. They wanted it to be extended even further.
+1. I would make this even more extended, if I could go back. Four days, preclass drills and bonus lectures were not enough to cover everything. I think 2-3 weeks, bonus lectures and preclass drills would be necessary to provide a solid foundation. I would also start much earlier, not at the end of the course when senioritus kicks in.
 
 ## Student-Organized Breakout Rooms
 
-1. Description
-1. Student Response
-1. Overall thoughts
+1. Students were all made co-host and allowed to move around in breakout rooms as they desired.
+1. Positive
+1. Students enjoyed the social interaction of being with their friend groups without the stress of social anxiety from having random partners are feeling isolated being alone.
 
 ## Activity Rewrites
 
-1. Description
-1. Student Response
-1. Overall thoughts
+1. Some activites did not seem useful and detracted from the learnings so I removed a few of them. For example, the CSS `float` property.
+1. Students did not know that these changes took place
+1. There were far fewer bugs after the rewrites and material better reflected what they would need to know to be successful. I believe they are stronger web developers as a result.
 
 ## Linting
 
@@ -156,9 +156,9 @@
 
 ## Q&A
 
-1. Description
-1. Student Response
-1. Overall thoughts
+1. Three Q&A sessions were held - Facebook (managers and recruiter), Microsoft (senior engineer), Bootcamp (four bootcamp graduates who are now successfully employed.) This was done during project 3 weeks at the beginning of class.
+1. Postive - many comments said they really appreciated the opportunity to ask questions to industry professionals.
+1. I recommend this as a standard practice for all bootcamps. Without it there was a lot of missing information that students were wondering about.
 
 ## Grading Template
 
@@ -186,18 +186,18 @@
 
 ## GitHub Slack Integration
 
-1. Description
-1. Student Response
-1. Overall thoughts
+1. Any updates to GitHub were automatically notified to slack channels. I showed students how to do this for their projects.
+1. Positive - students set this up in their slack channels which fostered communication.
+1. Recommended - very low cost with medium return
 
 ## Auto Daily Reminders
 
-1. Description
-1. Student Response
-1. Overall thoughts
+1. Slack reminders were sent at the beginning of each class to sign in and pull the repo
+1. Neutral - I did not hear anything about this, postive or negative
+1. It was nice to have an automated reminding system, especially at the beginning of the class.
 
 ## Slack Polls
 
-1. Description
-1. Student Response
-1. Overall thoughts
+1. When multiple potential choices had to be made slack polls (polly) were often sent out to enable students to voice their opinion.
+1. Postive - students appreciated have a voice in the direction of the class
+1. A balance needs to be struck with this. Too many polls shows indecisiveness and can overwhelm the students. With too few students do not feel empowered to help make the class better and you don't have as much information to make educated decisions.
