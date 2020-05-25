@@ -26,7 +26,7 @@
 
 ** Node Modules **
 
-- Your repository should NOT include node_modules. This should be prevented using a .gitignore file in main.
+- Your repository should NOT include node_modules. This should be prevented using a `.gitignore` file in main.
 
 ** Package.json **
 
@@ -71,7 +71,7 @@
 
 ** Indentation **
 
-- Some indentation was not correctly aligned. Adding a beatifier like `prettier` or a linter like `eslint` can help prevent any potential indentation issues.
+- Some indentation was not correctly aligned. Adding a beatifier like `prettier` and/or a linter like `eslint` can help prevent any potential indentation issues.
 
 ** Errors **
 
@@ -98,6 +98,22 @@ Nice job including a UML diagram in your README! This helps people more quickly 
 ** Unused Code **
 
 - There are some pieces of code that are unused. This can pollute the codebase and make it more difficult to make sense of the real flow of objects. This is also a performance hit. VS Code will "dim" the color of any unused code which makes it much easier to catch early. Additionally leveraging a linter can check against this and even throw errors to ensure you never have unused code.
+
+** Low Number of Commits **
+
+- The number of commits is quite low. It's important to have a large number of commits to make the code changes easy to follow and, potentially, revert. Each commit should be code reviewed and your reviewers will appreciate the smaller sizes. When a bug inevitably comes up it makes tracking down why a change was made easier as well as more granular options for reverting that code.
+
+** Responsive Design **
+
+- Responsive design - the design responds and adapts well to both large and small devices.
+
+** iFrame **
+
+- `iframe`s are generally considered bad practice. There are a multitude of reasons for this. Learn more [here](https://medium.com/@bluepnume/iframes-are-just-terrible-heres-how-they-could-be-better-974b731f0fb4).
+
+** Code Formatting **
+
+- Some code was improperly formatted. For example, .... Adding a beatifier like `prettier` and/or a linter like `eslint` can help prevent any potential indentation issues.
 
 ---
 
