@@ -1,0 +1,25 @@
+{
+  "name": "fullstack-ground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prettier": "prettier --write \"**/*.*\"",
+    "test": "md-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coding-boot-camp/FullStack-Ground.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coding-boot-camp/FullStack-Ground/issues"
+  },
+  "homepage": "https://github.com/coding-boot-camp/FullStack-Ground#readme",
+  "devDependencies": {
+    "eslint-plugin-chai-friendly": "^0.5.0",
+    "markdown-link-reporter": "^1.1.1",
+    "prettier": "1.19.1"
+  }
+}

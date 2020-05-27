@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Random Numbers</title>
+  </head>
+
+  <body>
+    <script>
+      // Loop 10 times
+      for (var i = 0; i < 10; ++i) {
+        var randomDecimalNumber = Math.random();
+        var num =
+          // truncate round
+          Math.floor(
+            // get numbers in the single digits place (0.0 - 0.9) * 10 => (0 - 9)
+            randomDecimalNumber * 10
+          ) +
+          // add 1 to move from (0-9) to (1-10)
+          1;
+
+        // code without comments (easier to read):
+        // var num = Math.floor(Math.random() * 10) + 1;
+
+        // Display in console
+        console.log(num);
+      }
+    </script>
+  </body>
+</html>

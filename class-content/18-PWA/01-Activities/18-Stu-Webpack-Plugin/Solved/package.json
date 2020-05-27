@@ -1,0 +1,25 @@
+{
+  "name": "images-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run webpack",
+    "init": "npm i && npm run seed && npm run build",
+    "seed": "node seeders/seed.js",
+    "start": "node server",
+    "webpack": "webpack --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "glob": "^7.1.6",
+    "mongoose": "^5.9.6"
+  },
+  "devDependencies": {
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-pwa-manifest": "^4.2.0"
+  }
+}

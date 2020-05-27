@@ -1,0 +1,4134 @@
+{
+  "currentWeekSessions": [
+    {
+      "session": {
+        "id": 818886,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Hard Hat Zone: Constructors at Work",
+        "shortDescription": "Hard Hat Zone: Constructors at Work",
+        "longDescription": null,
+        "startTime": "2020-01-29T02:30:00Z",
+        "endTime": "2020-01-29T05:30:00Z",
+        "chapter": "10.1"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818836,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Construct it Yourself: Inputs and Constructors",
+        "shortDescription": "Construct it Yourself: Inputs and Constructors",
+        "longDescription": null,
+        "startTime": "2020-01-31T02:30:00Z",
+        "endTime": "2020-01-31T05:30:00Z",
+        "chapter": "10.2"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818853,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Callbacks & Constructors in the Wild",
+        "shortDescription": "Callbacks & Constructors in the Wild",
+        "longDescription": null,
+        "startTime": "2020-02-01T18:00:00Z",
+        "endTime": "2020-02-01T22:00:00Z",
+        "chapter": "10.3"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    }
+  ],
+  "calendarSessions": [
+    {
+      "session": {
+        "id": 839886,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: Beating the Imposter Syndrome - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help you recognize and overcome the Imposter Syndrome so you can conquer your search with confidence.",
+        "longDescription": "Register Here: https://imposter080519.splashthat.com for our Employer Competitive session designed to help you recognize and overcome the Imposter Syndrome. The Imposter Syndrome can be a huge roadblock on your journey towards achieving your goals. Discover its symptoms, how it shows up in your search, and how to overcome it anytime it surfaces.",
+        "startTime": "2019-08-06T00:00:00Z",
+        "endTime": "2019-08-06T01:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 839887,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Tackling The Technical Interview Series: Pair Programming",
+        "shortDescription": "Optional Career Workshop to help you better prepare for technical interviewing.",
+        "longDescription": "Register Here: https://08062019tacklingthetechnicalinterview.splashthat.com for our technical interview practice sessions designed to help prepare you for the hiring process. For this session, we will be reviewing delving into pair programming.",
+        "startTime": "2019-08-06T22:00:00Z",
+        "endTime": "2019-08-06T23:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 839888,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: Networking Tips for a Successful Demo Day - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help you make the most of Demo Days.",
+        "longDescription": "Register Here: https://networkdemoday080719.splashthat.com for our Networking Tips for a Successful Demo Day workshop. If the word “networking” makes you cringe - you’ve come to the right place. In this engaging workshop, your Career Services team will share relatable stories and actionable tips for becoming Employer Competitive and building connections with industry professionals at Demo Days.",
+        "startTime": "2019-08-07T22:00:00Z",
+        "endTime": "2019-08-07T23:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 839889,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Personalized Pathways: Recruiter Talk - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop for students without a traditional 4-year degree.",
+        "longDescription": "Register Here: https://pathwaysrecruiter081219.splashthat.com/ for a workshop designed for students without a traditional 4-year degree. Hear from a recruiter about how to be successful with out a traditional degree.",
+        "startTime": "2019-08-13T00:00:00Z",
+        "endTime": "2019-08-13T01:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 839890,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: Behavioral Interview Practice Session I - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help you practice behavioral interview questions. Come dressed to impress.",
+        "longDescription": "Register Here: https://bi081319.splashthat.com/ for our Behavioral Interview Practice Workshop session designed to give you practice in mastering non-technical interviews. Make sure to get the most out of these sessions by preparing to participate. This workshop is optional and will be repeated each month.",
+        "startTime": "2019-08-13T22:30:00Z",
+        "endTime": "2019-08-14T00:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 839891,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Tackling The Technical Interview Series: Cyber Security - CIA Triad ",
+        "shortDescription": "Optional Career Workshop to help you review the CIA Triad, differentiate different breaches, and develop strategies to prevent those breaches.",
+        "longDescription": "Register Here: https://08142019tacklingthetechnicalinterviewc.splashthat.com for our technical interview practice sessions designed to help prepare you for the hiring process. For this session, we will be reviewing the CIA Triad.",
+        "startTime": "2019-08-14T21:00:00Z",
+        "endTime": "2019-08-14T22:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 839892,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: Polishing Your Resume and Cover Letter - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help you create your Employer Competitive resume and cover letter.",
+        "longDescription": "Register Here: https://resume081519.splashthat.com for our Polishing Your Resume and Cover Letter workshop designed to help you create and modify your resume and cover letter. This workshop will walk you through the important elements of an Employer Competitive resume and cover letter, so get your questions ready! This workshop is optional and will be repeated in the future.",
+        "startTime": "2019-08-16T00:00:00Z",
+        "endTime": "2019-08-16T01:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 839893,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: Starting Your Job Search - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help you start and navigate your career search.",
+        "longDescription": "Register Here:startingjobsearch081919.splashthat.com for our Starting Your Job Search workshop. The search may seem daunting but these tips and plans will help you start and stay organized as you look for your new career. This workshop is geared towards those wondering how to start their job search but all are welcome!",
+        "startTime": "2019-08-19T23:00:00Z",
+        "endTime": "2019-08-20T00:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 839894,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: Behavioral Interview Practice Session I - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help you practice behavioral interview questions. Come dressed to impress.",
+        "longDescription": "Register Here: https://bi082119.splashthat.com/ for our Behavioral Interview Practice Workshop session designed to give you practice in mastering non-technical interviews. Make sure to get the most out of these sessions by preparing to participate. This workshop is optional and will be repeated each month.",
+        "startTime": "2019-08-22T00:30:00Z",
+        "endTime": "2019-08-22T02:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 839895,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Personalized Pathways: Group Coaching - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop for students without a traditional 4-year degree.",
+        "longDescription": "Register Here: https://pathwayscoaching82719.splashthat.com/ for a group coaching session designed for students without a traditional 4-year degree. Hear best practices from a Regional Director of career coaching, and get your questions answered.",
+        "startTime": "2019-08-27T22:00:00Z",
+        "endTime": "2019-08-27T23:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 839896,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: Networking Practice Session - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help you practice your pitch for networking. ",
+        "longDescription": "Register Here: https://networkingpracticesession082819.splashthat.com for a chance to get together with your peers, review networking best practices, and practice delivering your pitch. This interactive workshop will help you present yourself and your story with confidence as you build meaningful connections in the industry.",
+        "startTime": "2019-08-28T22:00:00Z",
+        "endTime": "2019-08-28T23:30:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 839897,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Tackling The Technical Interview Series: Pair Programming",
+        "shortDescription": "Optional Career Workshop to help you better prepare for technical interviewing.",
+        "longDescription": "Register Here: https://08292019tacklingthetechnicalinterview.splashthat.com for our technical interview practice sessions designed to help prepare you for the hiring process. For this session, we will be reviewing delving into pair programming.",
+        "startTime": "2019-08-29T23:00:00Z",
+        "endTime": "2019-08-30T00:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 879678,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: Make Your Time Count - Working With Your Career Director - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help you discover all the ways your Career Director can make your job search more efficient and effective.",
+        "longDescription": "Register Here: https://workingwithyourcd09042019.splashthat.com for our Make Your Time Count - Working With Your Career Director workshop. Your Career Director is dedicated to helping you succeed in your career search. Learn how to effectively work with them as you you become Employer Competitive.",
+        "startTime": "2019-09-05T01:00:00Z",
+        "endTime": "2019-09-05T02:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 879680,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Tacking the Technical Interview Series: Talking Tech, Full Stack - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to utilize whiteboarding techniques and practice talking about technical projects. This workshop is focused on Web Development but all students are welcome to join.",
+        "longDescription": "Register Here: https://talkingtechfsf09092019.splashthat.com for our workshop that will cover technical interviewing tips and tricks . We'll talk about passion and leadership questions as well as technical questions that you might experience during a Full Stack technical Interview. We'll aslo cover how to utilize whiteboarding techniques and will practice talking about your technical projects.",
+        "startTime": "2019-09-09T21:00:00Z",
+        "endTime": "2019-09-09T22:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 879679,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: What Does Employer Competitive Mean: Web Development Focused - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help explain how being Employer Competitive will help your career search. This workshop is focused on Web Development, but all students are welcome to join.",
+        "longDescription": "Register Here: https://whatdoesecmeanweb09092019.splashthat.com for our workshop detailing how being Employer Competitive can help you become more successful in your job search. Employer Competitive Web Development students are more likely to land interviews, so join us as we reveal how to help yourself stand out from the crowd. While this workshop is focused on Web Development, all students are welcome to join.",
+        "startTime": "2019-09-09T23:00:00Z",
+        "endTime": "2019-09-10T00:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 879681,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Tackling the Technical Interview Series: Cyber CIA Triad - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to discuss strategies for telling your unique story your way.",
+        "longDescription": "Register Here: https://tacklingtechciatriad09102019.splashthat.com for our Cyber workshop designed to review what the CIA triad is, how different kinds of breaches effect the CIA Triad, and design strategies on how to stop these breaches from occurring. Keep in mind that this event is geared towards cyber security. Students from other programs are welcome to attend, but you will not have covered this topic in class.",
+        "startTime": "2019-09-10T20:00:00Z",
+        "endTime": "2019-09-10T21:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 879682,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: Behavioral Interview Practice Session I - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help you practice behavioral interview questions. Come dressed to impress.",
+        "longDescription": "Register Here: https://behavioralinterview09112019.splashthat.com for our Behavioral Interview Practice session designed to give you an opportunity to practice mastering non-technical interviews. Be ready to participate so you can get the most out of this session.",
+        "startTime": "2019-09-11T22:30:00Z",
+        "endTime": "2019-09-12T00:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 879683,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Real Talk Series: Addressing Employment Gaps on Your Resume - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to discuss strategies for addressing gaps in experience on your resume.",
+        "longDescription": "Register Here: https://realtalkresumegaps09122019.splashthat.com for a workshop designed to support you with tools to address your resume gaps as you begin your job search. Come prepared to ask questions about how to navigate your own gaps and how recruiters may look at candidates who have gaps in their work experience.",
+        "startTime": "2019-09-12T23:00:00Z",
+        "endTime": "2019-09-13T00:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 879684,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: What Does Employer Competitive Mean: Data Focused - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help explain how being Employer Competitive will help your career search. This workshop is focused on Data Analytics but all students are welcome to join.",
+        "longDescription": "Register Here: https://ecdata091819.splashthat.com for our workshop detailing how being Employer Competitive can help you become more successful in your job search. Employer Competitive Data students are more likely to land interviews, so join us as we reveal how to help yourself stand out from the crowd. While this workshop is focused on Data, all students are welcome to join.",
+        "startTime": "2019-09-19T02:30:00Z",
+        "endTime": "2019-09-19T03:30:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 879685,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: Behavioral Interview Practice Session II - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help you continue practicing behavioral interview questions.",
+        "longDescription": "Register Here: https://behavioralinterviewing091919.splashthat.com for part two of our Behavioral Interview Practice Workshop session designed to help you continue preparing for non-technical interviews. This workshop is designed for students who have already attended our Behavioral Interview Practice Session I and who would like additional support with mastering the art of interviewing. This workshop is optional and will be repeated each month.",
+        "startTime": "2019-09-19T22:30:00Z",
+        "endTime": "2019-09-20T00:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 879686,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Tackling the Technical Interview Series: Cybersecurity Technical Interviewing - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop that will help you better prepare for Technical Interviewing within the Cybersecurity Niche. This workshop is focused on Cyber Security but all students are welcome to join.",
+        "longDescription": "Register Here: https://techinterviewcyber092319.splashthat.com This workshop will cover technical interviewing tips and tricks in the Cyber Security Technical Interview. We'll talk about passion and leadership questions as well as technical questions that you might experience during a Technical Interview.",
+        "startTime": "2019-09-23T23:00:00Z",
+        "endTime": "2019-09-24T00:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 879687,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: What Does Employer Competitive Mean: Cyber Development Focused - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help explain how being Employer Competitive will help your career search. This workshop is focused on Cybersecurity but all students are welcome to join.",
+        "longDescription": "Register Here: https://eccyber092419.splashthat.com for our workshop detailing how being Employer Competitive can help you become more successful in your job search. Employer Competitive Cyber students are more likely to land interviews, so join us as we reveal how to help yourself stand out from the crowd. While this workshop is focused on Cybersecurity, all students are welcome to join.",
+        "startTime": "2019-09-24T22:30:00Z",
+        "endTime": "2019-09-24T23:30:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 879688,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Real Talk Series: Overcoming Age Bias in Your Search - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help you learn how to recognize and overcome age bias in your job search.",
+        "longDescription": "Register Here: https://rtagebias092519.splashthat.com for a workshop on recognizing and overcoming age bias in your job search. Too much or too little experience, your graduation year, and outdated experience, practices, or information could be working against you. Learn best practices for creating age neutral materials so you can overcome any potential bias in your search!",
+        "startTime": "2019-09-26T01:00:00Z",
+        "endTime": "2019-09-26T02:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 879689,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Tacking the Technical Interview Series: Fullstack Talking Tech - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to utilize whiteboarding techniques and practice talking about technical projects.",
+        "longDescription": "Register Here: https://fsftalkingtech092619.splashthat.com for our Technical Interview Workshop on Talking Tech. This workshop will cover technical interviewing tips and tricks. We'll talk about technical questions that you might experience during a Fullstack Technical Interview. We will utilize whiteboarding techniques and will practice talking about your technical projects.",
+        "startTime": "2019-09-26T21:00:00Z",
+        "endTime": "2019-09-26T22:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 879690,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: Behavioral Interview Practice Session I - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help you practice behavioral interview questions. Come dressed to impress.",
+        "longDescription": "Register Here: https://bipractice092619.splashthat.com for our Behavioral Interview Practice Workshop session designed to give you practice in mastering non-technical interviews. Make sure to get the most out of these sessions by preparing to participate. This workshop is optional and will be repeated each month.",
+        "startTime": "2019-09-27T00:30:00Z",
+        "endTime": "2019-09-27T03:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 879691,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Real Talk Series: Got it, Flaunt it - Tell YOUR Story - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to discuss strategies for telling your unique story your way.",
+        "longDescription": "Register Here: https://rtyourstory093019.splashthat.com for our Real Talk session designed to identify what makes you unique. Make sure to get the most out of this sessions by being prepared to participate. You will also hear from bootcamp graduates who've leveraged their background in their search and learn about inclusive companies and programs.",
+        "startTime": "2019-09-30T23:00:00Z",
+        "endTime": "2019-10-01T00:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 911717,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Tackling The Technical Interview: Fullstack Whiteboarding  - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to utilize whiteboarding techniques and practice talking about technical projects. ",
+        "longDescription": "Register Here: http://tacklingtechfsf100119.splashthat.com for our technical interview workshop on talking tech. This workshop will cover technical interviewing tips and tricks. We'll talk about technical questions that you might experience during a Fullstack technical interview. We will utilize whiteboarding techniques and will practice talking about your technical projects.",
+        "startTime": "2019-10-01T21:00:00Z",
+        "endTime": "2019-10-01T22:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 911718,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: Networking Practice Session - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help you practice your pitch for networking. ",
+        "longDescription": "Register Here: http://networkingpractice100119.splashthat.com for a chance to get together with your peers, review networking best practices, and practice delivering your pitch.  This interactive workshop will help you present yourself and your story with confidence as you build meaningful connections in the industry.",
+        "startTime": "2019-10-02T01:00:00Z",
+        "endTime": "2019-10-02T02:30:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 911719,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Tackling the Technical Interview: Data Whiteboarding - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to utilize whiteboarding techniques for data science interviews and practice talking about technical projects. ",
+        "longDescription": "Register Here: http://tacklingthetechdata100219.splashthat.com for our technical interview workshop on talking tech. This workshop will cover technical interviewing tips and tricks. We'll talk about technical questions that you might experience during a data science technical interview. We will utilize whiteboarding techniques and will practice talking about your technical projects.",
+        "startTime": "2019-10-02T21:00:00Z",
+        "endTime": "2019-10-02T22:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 911720,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Tackling the Technical Interview: Cyber - CIA Triad - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to discuss strategies for tackling the CIA triad in technical interviews. ",
+        "longDescription": "Register Here: http://tacklingtechcyber100319.splashthat.com for our Cyber workshop designed to review the CIA triad, how different kinds of breaches effect the CIA Triad, and design strategies on how to stop these breaches from occurring. Keep in mind that this event is geared towards cybersecurity. Students from other programs are welcome to attend, but you will not have covered this topic in class.",
+        "startTime": "2019-10-03T21:00:00Z",
+        "endTime": "2019-10-03T22:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 911721,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: Imposter Syndrome - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help you recognize and overcome the Imposter Syndrome so you can conquer your search with confidence.",
+        "longDescription": "Register Here: http://imposter100319.splashthat.com for our Employer Competitive session designed to help you recognize and overcome the Imposter Syndrome. The Imposter Syndrome can be a huge roadblock on your journey towards achieving your goals.  Discover its symptoms, how it shows up in your search, and how to overcome it anytime it surfaces.",
+        "startTime": "2019-10-03T23:00:00Z",
+        "endTime": "2019-10-04T00:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 911722,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Tackling The Technical Interview: Fullstack Whiteboarding  - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to utilize whiteboarding techniques and practice talking about technical projects. ",
+        "longDescription": "Register Here: http://tacklingtechfsf101519copy.splashthat.com for our technical interview workshop on talking tech. This workshop will cover technical interviewing tips and tricks. We'll talk about technical questions that you might experience during a Fullstack technical interview. We will utilize whiteboarding techniques and will practice talking about your technical projects.",
+        "startTime": "2019-10-15T22:00:00Z",
+        "endTime": "2019-10-15T23:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 911723,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Industry Insights: What Employers Want - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop featuring insights from employers on what they are really looking for in applicants. Learn some best practices from our Employer - Facing Career Services team to help you become Employer Competitive!",
+        "longDescription": "Register Here: http://whatemployerwant101619.splashthat.com for our workshop covering what employers look for when they fill positions. Using this insider knowledge will help you stand apart from the rest of the crowd and help you become Employer Competitive!",
+        "startTime": "2019-10-16T23:00:00Z",
+        "endTime": "2019-10-17T00:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 911724,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: Behavioral Interviewing Practice I - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help you practice behavioral interview questions. Come dressed to impress.",
+        "longDescription": "Register Here: http://bipractice101719.splashthat.com for our Behavioral Interview Practice session designed to give you practice in mastering non-technical interviews. Make sure to get the most out of these sessions by preparing to participate. This workshop is optional and will be repeated each month.",
+        "startTime": "2019-10-17T23:30:00Z",
+        "endTime": "2019-10-18T01:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 911725,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: Polishing Your Resume and Cover Letter - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help you create your Employer Competitive resume and cover letter.",
+        "longDescription": "Register Here: http://resume102119.splashthat.com for our Polishing Your Resume and Cover Letter workshop designed to help you create and modify your resume and cover letter. This workshop will walk you through the important elements of an Employer Competitive resume and cover letter, so get your questions ready! This workshop is optional and will be repeated in the future.",
+        "startTime": "2019-10-21T23:00:00Z",
+        "endTime": "2019-10-22T00:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 911726,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: Starting Your Job Search - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help you start and navigate your career search.",
+        "longDescription": "Register Here: http://startingjobsearch102219.splashthat.com for our Starting Your Job Search workshop. The search may seem daunting, but these tips and plans will help you start and stay organized as you look for your new career. This workshop is geared towards those wondering how to start their job search but all are welcome!",
+        "startTime": "2019-10-23T01:00:00Z",
+        "endTime": "2019-10-23T02:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 911727,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Tackling The Technical Interview: Fullstack Whiteboarding  - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to utilize whiteboarding techniques and practice talking about technical projects. ",
+        "longDescription": "Register Here: http://tacklingtechfsf102419.splashthat.com for our technical interview workshop on talking tech. This workshop will cover technical interviewing tips and tricks. We'll talk about technical questions that you might experience during a Fullstack technical interview. We will utilize whiteboarding techniques and will practice talking about your technical projects.",
+        "startTime": "2019-10-24T22:00:00Z",
+        "endTime": "2019-10-24T23:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 911728,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Tackling the Technical Interview Series: Cybersecurity Technical Interviewing - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop that will help you better prepare for technical interviewing within the Cybersecurity niche. This workshop is focused on Cybersecurity, but all students are welcome to join.",
+        "longDescription": "Register Here: http://techinterviewcyber102519.splashthat.com This workshop will cover technical interviewing tips and tricks in the Cybersecurity technical interview. We'll talk about passion and leadership questions as well as technical questions that you might experience during a technical interview. ",
+        "startTime": "2019-10-25T22:00:00Z",
+        "endTime": "2019-10-25T23:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 911729,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: Why Emotional Intelligence is Vital in Tech",
+        "shortDescription": "Optional Career Workshop to help you maintain interpersonal professional relationships with empathy.",
+        "longDescription": "Register Here: http://eqintech102919.splashthat.com for our Emotional Intelligence workshop.  This workshop will cover the concept of Emotional Intelligence as well as developing EQ skills that will positively impact success in the tech industry.",
+        "startTime": "2019-10-29T23:00:00Z",
+        "endTime": "2019-10-30T00:30:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 911730,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Tackling The Technical Interview: Fullstack Whiteboarding  - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to utilize whiteboarding techniques and practice talking about technical projects. ",
+        "longDescription": "Register Here: http://tacklingtechfsf103019.splashthat.com for our technical interview workshop on talking tech. This workshop will cover technical interviewing tips and tricks. We'll talk about technical questions that you might experience during a Fullstack technical interview. We will utilize whiteboarding techniques and will practice talking about your technical projects.",
+        "startTime": "2019-10-30T21:00:00Z",
+        "endTime": "2019-10-30T22:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 911731,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: Behavioral Interviewing Practice I - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help you practice behavioral interview questions. Come dressed to impress.",
+        "longDescription": "Register Here: http://bipractice103019.splashthat.com for our Behavioral Interview Practice session designed to give you practice in mastering non-technical interviews. Make sure to get the most out of these sessions by preparing to participate. This workshop is optional and will be repeated each month.",
+        "startTime": "2019-10-31T00:30:00Z",
+        "endTime": "2019-10-31T02:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 915642,
+        "courseId": 2040,
+        "contextId": 3,
+        "name": "Orientation Event",
+        "shortDescription": "https://zoom.us/j/802505362",
+        "longDescription": "Join your support team during this virtual Orientation Session for your upcoming Boot Camp. Please make every effort to attend as we will review important course policies, introduce and navigate class systems (BootCampSpot, Slack, etc.), confirm classroom/parking/logistic information, and discuss tips for success in the course. Finally, we will leave plenty of time for you to ask any outstanding questions you have. Thank you!\n\nOnline Event URL: https://zoom.us/j/802505362\n\nCall Recording: https://zoom.us/recording/share/zTolKqF-l0PxwYDHKM4EqdPTixcsVxVMQ6ReU1Fg_m6wIumekTziMw\n\nOrientation Presentation: https://drive.google.com/file/d/1sClAD8-UMOfwHlbpNPVdZR8gt_UvD2Gq/view?usp=sharing",
+        "startTime": "2019-11-06T02:00:00Z",
+        "endTime": "2019-11-06T03:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 3,
+        "contextCode": "orientation",
+        "name": "Orientation"
+      },
+      "category": {
+        "code": "orientation",
+        "name": "Orientation"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 977917,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Tackling the Technical Interview: Data Whiteboarding - Encouraged  Not required",
+        "shortDescription": "Optional Career Workshop to utilize whiteboarding techniques for data science interviews and practice talking about technical projects. ",
+        "longDescription": "Register Here: https://ttidata111119.splashthat.com/ for our technical interview workshop on talking tech. This workshop will cover technical interviewing tips and tricks. We'll talk about technical questions that you might experience during a data technical interview. We will utilize whiteboarding techniques and practice talking about your technical projects.",
+        "startTime": "2019-11-11T23:00:00Z",
+        "endTime": "2019-11-12T00:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 977918,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Real Talk Series: Overcoming Age Bias in Your Search - Encouraged  Not required",
+        "shortDescription": "Optional Career Workshop to help you learn how to recognize and overcome age bias in your job search.",
+        "longDescription": "Register Here: https://rtagebias111219.splashthat.com for a workshop on recognizing and overcoming age bias in your job search. Whether you feel you have too much or too little experience  your graduation year ‘dates’ you  or you have outdated experience/practices/information - these could all be working against you in your search. Not to worry  come learn best practices for creating age neutral materials and overcome any potential bias in your search!",
+        "startTime": "2019-11-13T00:00:00Z",
+        "endTime": "2019-11-13T01:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818703,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "The Zen of Coding",
+        "shortDescription": "The Zen of Coding",
+        "longDescription": null,
+        "startTime": "2019-11-13T02:30:00Z",
+        "endTime": "2019-11-13T05:30:00Z",
+        "chapter": "1.1"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 977919,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: Behavioral Interviewing Practice II - Encouraged  Not required",
+        "shortDescription": "Optional Career Workshop to help you practice behavioral interview questions. Come dressed to impress.",
+        "longDescription": "Register Here: https://bipracticeii11319.splashthat.com for part two of our Behavioral Interview Practice series designed to give you practice in mastering non-technical interviews. Make sure to get the most out of this session  and be ready to participate! This workshop is optional and will be repeated each month.",
+        "startTime": "2019-11-14T01:30:00Z",
+        "endTime": "2019-11-14T03:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 977920,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: What Does Employer Competitive Mean: Web Development Focused - Encouraged  Not required",
+        "shortDescription": "Optional Career Workshop to help explain how being Employer Competitive will take your search to new heights. This workshop is focused on Web Development  but all students are welcome to join.",
+        "longDescription": "Register Here: https://ecwebdev111419.splashthat.com for our workshop detailing how being Employer Competitive can help you become more successful in your job search. Employer Competitive Web Development students are more likely to land interviews  so join us as we reveal how to help yourself stand out from the crowd. While this workshop is focused on Web Development  all students are welcome to join.",
+        "startTime": "2019-11-15T02:00:00Z",
+        "endTime": "2019-11-15T03:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818719,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Git'n Pro with HTML/CSS",
+        "shortDescription": "Git'n Pro with HTML/CSS",
+        "longDescription": null,
+        "startTime": "2019-11-15T02:30:00Z",
+        "endTime": "2019-11-15T05:30:00Z",
+        "chapter": "1.2"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818666,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Heroes of CSS",
+        "shortDescription": "Heroes of CSS",
+        "longDescription": null,
+        "startTime": "2019-11-16T18:00:00Z",
+        "endTime": "2019-11-16T22:00:00Z",
+        "chapter": "1.3"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 977921,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Tackling the Technical Interview Series: Cybersecurity Technical Interviewing - Encouraged  Not required",
+        "shortDescription": "Optional Career Workshop that will help you better prepare for technical interviewing within the Cybersecurity niche. This workshop is focused on Cybersecurity  but all students are welcome to join.",
+        "longDescription": "Register Here: https://tticyber111819.splashthat.com. This workshop will cover tips and tricks for Cybersecurity technical interviewing. We'll talk about passion and leadership questions as well as technical questions that you might experience during a technical interview. ",
+        "startTime": "2019-11-19T00:00:00Z",
+        "endTime": "2019-11-19T01:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 977922,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Pave Your Pathway Series: Web Dev Career Paths - Encouraged  Not required",
+        "shortDescription": "Optional Career Workshop to discuss the various career paths you can take as a Web Development Bootcamp grad.",
+        "longDescription": "Register Here: https://pypwebdev111819.splashthat.com for a workshop designed to help you explore the different career paths open to you as a coder. No matter your background or where you plan to land after graduation  you started the Bootcamp for a reason! Let's explore how you can put that reason into action.",
+        "startTime": "2019-11-19T02:00:00Z",
+        "endTime": "2019-11-19T03:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 977923,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: Behavioral Interviewing Practice I - Encouraged  Not required",
+        "shortDescription": "Optional Career Workshop to help you practice behavioral interview questions. Come dressed to impress.",
+        "longDescription": "Register Here: https://bipractice111919.splashthat.com for part one of our Behavioral Interview Practice series designed to give you practice in mastering non-technical interviews. Make sure to get the most out of this session  and be ready to participate! This workshop is optional and will be repeated each month.",
+        "startTime": "2019-11-20T01:30:00Z",
+        "endTime": "2019-11-20T03:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818685,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Going Live",
+        "shortDescription": "Going Live",
+        "longDescription": null,
+        "startTime": "2019-11-20T02:30:00Z",
+        "endTime": "2019-11-20T05:30:00Z",
+        "chapter": "2.1"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 977924,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Real Talk Series: Addressing Employment Gaps on Your Experience - Encouraged  Not required",
+        "shortDescription": "Optional Career Workshop to discuss strategies for addressing gaps in experience on your career materials.",
+        "longDescription": "Register Here: https://rtresumegaps112019.splashthat.com for a workshop designed to support you with the tools to address gaps in experience on your career materials. Come prepared to identify the value and skills you bring and plug those into your job search materials. You will also build a plan to approach a gap in experience and identify organizations/companies that are searching for folks just like you!",
+        "startTime": "2019-11-21T02:00:00Z",
+        "endTime": "2019-11-21T03:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 977925,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: What Does Employer Competitive Mean: Data Focused - Encouraged  Not required",
+        "shortDescription": "Optional Career Workshop to help explain how being Employer Competitive will distinguish you among many candidates. This workshop is focused on Data Bootcampers  but all students are welcome to join.",
+        "longDescription": "Register Here: https://ecdata112119.splashthat.com for our workshop detailing how being Employer Competitive can help you become more successful in your job search. Employer Competitive Data students are more likely to land interviews  so join us as we reveal how to help yourself stand out from the crowd. While this workshop is focused on Data  all students are welcome to join.",
+        "startTime": "2019-11-22T00:00:00Z",
+        "endTime": "2019-11-22T01:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818634,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Down and Dirty CSS",
+        "shortDescription": "Down and Dirty CSS",
+        "longDescription": null,
+        "startTime": "2019-11-22T02:30:00Z",
+        "endTime": "2019-11-22T05:30:00Z",
+        "chapter": "2.2"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818649,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Bootstrap Layouts and Responsive Designs",
+        "shortDescription": "Bootstrap Layouts and Responsive Designs",
+        "longDescription": null,
+        "startTime": "2019-11-23T18:00:00Z",
+        "endTime": "2019-11-23T22:00:00Z",
+        "chapter": "2.3"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 977926,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: Behavioral Interviewing Practice I - Encouraged  Not required",
+        "shortDescription": "Optional Career Workshop to help you practice behavioral interview questions. Come dressed to impress.",
+        "longDescription": "Register Here: https://bipractice112519.splashthat.com for part one of our Behavioral Interview Practice series designed to give you practice in mastering non-technical interviews. Make sure to get the most out of this session  and be ready to participate! This workshop is optional and will be repeated each month.",
+        "startTime": "2019-11-26T00:30:00Z",
+        "endTime": "2019-11-26T02:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818601,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Joys of JavaScript",
+        "shortDescription": "Joys of JavaScript",
+        "longDescription": null,
+        "startTime": "2019-11-27T02:30:00Z",
+        "endTime": "2019-11-27T05:30:00Z",
+        "chapter": "3.1"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1010190,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: Starting Your Job Search - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help you start and navigate your career search.",
+        "longDescription": "Register Here: startingyourjobsearch120219.splashthat.com for our Starting Your Job Search workshop. The search may seem daunting, but these tips and planning will help you start and stay organized as you look for your new career. This workshop is geared towards those wondering how to take the first steps in starting their job search, but all are welcome!",
+        "startTime": "2019-12-03T00:00:00Z",
+        "endTime": "2019-12-03T01:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1010191,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: Behavioral Interviewing Practice I - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help you practice behavioral interview questions. Come dressed to impress.",
+        "longDescription": "Register Here: bipractice120219.splashthat.com for part one of our Behavioral Interview Practice series designed to give you practice in mastering non-technical interviews. Make sure to get the most out of this session by being ready to participate! This workshop is optional and will be repeated each month.",
+        "startTime": "2019-12-03T01:30:00Z",
+        "endTime": "2019-12-03T03:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1010192,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Pave Your Pathway: Data Career Paths - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to review various data roles that are open to you post-graduation.",
+        "longDescription": "Register Here: pypdatacp120319.splashthat.com for a workshop on exploring data roles that align with your passions and reviewing the skills necessary for those roles.",
+        "startTime": "2019-12-04T01:00:00Z",
+        "endTime": "2019-12-04T02:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818623,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Jumping for JavaScript",
+        "shortDescription": "Jumping for JavaScript",
+        "longDescription": null,
+        "startTime": "2019-12-04T02:30:00Z",
+        "endTime": "2019-12-04T05:30:00Z",
+        "chapter": "3.2"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1010193,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Tackling the Technical Interview: Cybersecurity - Security+ - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop that will help you better prepare for the Security+ Certification. This workshop is focused on Cybersecurity, but all students are welcome to join.",
+        "longDescription": "Register Here: ttticybersecurityplus120419.splashthat.com. This workshop will cover tips and tricks for Security+ Certification. We will discuss the components of the certification, preparation strategies, and practice sample questions.",
+        "startTime": "2019-12-05T01:00:00Z",
+        "endTime": "2019-12-05T02:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818584,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "JavaScript Juggernauts",
+        "shortDescription": "JavaScript Juggernauts",
+        "longDescription": null,
+        "startTime": "2019-12-06T02:30:00Z",
+        "endTime": "2019-12-06T05:30:00Z",
+        "chapter": "3.3"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818568,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Intro to Web APIs",
+        "shortDescription": "Intro to Web APIs",
+        "longDescription": null,
+        "startTime": "2019-12-07T18:00:00Z",
+        "endTime": "2019-12-07T22:00:00Z",
+        "chapter": "4.1"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1010194,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: Imposter Syndrome - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help you recognize and overcome the Imposter Syndrome, so you can conquer your search with confidence.",
+        "longDescription": "Register Here: impostersyndrome120919.splashthat.com for our Employer Competitive session designed to help you recognize and overcome the Imposter Syndrome. The Imposter Syndrome can be a huge roadblock on your journey towards achieving your goals. Discover its symptoms, how it shows up in your search, and how to overcome it anytime it surfaces.",
+        "startTime": "2019-12-10T02:00:00Z",
+        "endTime": "2019-12-10T03:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1010195,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Tackling the Technical Interview: Data Whiteboarding - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to utilize whiteboarding techniques for data interviews and practice talking about technical projects.",
+        "longDescription": "Register Here: tttidatawhiteboarding121019.splashthat.com for our technical interview workshop on talking tech. This workshop will cover technical interviewing tips and tricks. We'll talk about technical questions that you might experience during a data technical interview. We will utilize whiteboarding techniques and practice talking about your technical projects.",
+        "startTime": "2019-12-11T00:00:00Z",
+        "endTime": "2019-12-11T01:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1010196,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: Hack Your Resume - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help you hack your resume.",
+        "longDescription": "Register Here: ecresume121019.splashthat.com for our Hack Your Resume workshop designed to help you create and modify your resume. This workshop will walk you through the important elements of an Employer Competitive resume, so get your questions ready! This workshop is optional and will be repeated in the future.",
+        "startTime": "2019-12-11T02:00:00Z",
+        "endTime": "2019-12-11T03:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818524,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Events and Event Handling",
+        "shortDescription": "Events and Event Handling",
+        "longDescription": null,
+        "startTime": "2019-12-11T02:30:00Z",
+        "endTime": "2019-12-11T05:30:00Z",
+        "chapter": "4.2"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1010197,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Can You Handle the Truth?: Debunking Job Search Myths - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to reveal the truth about the job search.",
+        "longDescription": "Register Here: jobsearchmyths121119.splashthat.com for a workshop designed to help you approach the job search with the most up-to-date information. This workshop will walk you through the various myths about a job search post-bootcamp and give you the skills to land your next role.",
+        "startTime": "2019-12-12T00:00:00Z",
+        "endTime": "2019-12-12T01:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1010198,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Tackling the Technical Interview: Fullstack - React Fundamentals - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to prepare you for technical interviews focused on React fundamentals.",
+        "longDescription": "Register Here: tttifsreact121219.splashthat.com for our technical interview workshop on React Fundamentals. We will review common questions, strategies to approach these questions, and answer your questions about the interview process.",
+        "startTime": "2019-12-12T23:00:00Z",
+        "endTime": "2019-12-13T00:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1010199,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: Behavioral Interviewing Practice I - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help you practice behavioral interview questions. Come dressed to impress.",
+        "longDescription": "Register Here: bipractice121219.splashthat.com for part one of our Behavioral Interview Practice series designed to give you practice in mastering non-technical interviews. Make sure to get the most out of this session by being ready to participate! This workshop is optional and will be repeated each month.",
+        "startTime": "2019-12-13T00:30:00Z",
+        "endTime": "2019-12-13T02:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818542,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Client-Side Storage",
+        "shortDescription": "Client-Side Storage",
+        "longDescription": null,
+        "startTime": "2019-12-13T02:30:00Z",
+        "endTime": "2019-12-13T05:30:00Z",
+        "chapter": "4.3"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818488,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "jQuery Begins",
+        "shortDescription": "jQuery Begins",
+        "longDescription": null,
+        "startTime": "2019-12-14T18:00:00Z",
+        "endTime": "2019-12-14T22:00:00Z",
+        "chapter": "5.1"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 977927,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Career Services Coding Challenge - CLOSE: Employer Ready - Encouraged  Not required",
+        "shortDescription": "Optional Career Services Coding Challenge to support you in getting your Github to Employer Competitive. ",
+        "longDescription": "The latest Career Services coding challenge will begin on October 1st  2019 and end on December 15th  2019. This round  we will be focusing on getting your materials Employer Ready. Top submissions will get individual time with experts to improve your technical and interview skills. Further details on the challenge will be revealed on October 1st - sign up here https://cschallengeerq42019.splashthat.com to stay up-to-date on challenge and workshop details!",
+        "startTime": "2019-12-15T05:00:00Z",
+        "endTime": "2019-12-16T04:59:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1010200,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: Hack Your Cover Letter - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help you hack your cover letter.",
+        "longDescription": "Register Here: eccoverletter121719.splashthat.com for our Hack Your Cover Letter workshop designed to help you create and modify your cover letter. This workshop will walk you through the important elements of an Employer Competitive cover letter, so get your questions ready! This workshop is optional and will be repeated in the future.",
+        "startTime": "2019-12-18T01:00:00Z",
+        "endTime": "2019-12-18T02:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818507,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "jQuery Jubilee",
+        "shortDescription": "jQuery Jubilee",
+        "longDescription": null,
+        "startTime": "2019-12-18T02:30:00Z",
+        "endTime": "2019-12-18T05:30:00Z",
+        "chapter": "5.2"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1010201,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Pave Your Pathway: UX/UI Career Paths - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to review various UX/UI roles that are open to you post-graduation.",
+        "longDescription": "Register Here: pypuxuicp121819.splashthat.com for a workshop on exploring UX/UI roles that align with your passions and reviewing the skills necessary for those roles.",
+        "startTime": "2019-12-19T00:00:00Z",
+        "endTime": "2019-12-19T01:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1010202,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Real Talk: Recruiting Brief - Women Candidates - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help you approach the job search as a woman candidate.",
+        "longDescription": "Register Here: rtrecruitingwomen121919.splashthat.com for a workshop on the job search as a woman candidate. We will cover market data, job search strategies and resources, and hear tech professional stories.",
+        "startTime": "2019-12-20T02:00:00Z",
+        "endTime": "2019-12-20T03:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818452,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "jQuery Calculator",
+        "shortDescription": "jQuery Calculator",
+        "longDescription": null,
+        "startTime": "2019-12-20T02:30:00Z",
+        "endTime": "2019-12-20T05:30:00Z",
+        "chapter": "5.3"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818470,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Intro to APIs and AJAX",
+        "shortDescription": "Intro to APIs and AJAX",
+        "longDescription": null,
+        "startTime": "2019-12-21T18:00:00Z",
+        "endTime": "2019-12-21T22:00:00Z",
+        "chapter": "6.1"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818417,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Advanced AJAX",
+        "shortDescription": "Advanced AJAX",
+        "longDescription": null,
+        "startTime": "2020-01-03T02:30:00Z",
+        "endTime": "2020-01-03T05:30:00Z",
+        "chapter": "6.2"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818435,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Real-World API Application Development",
+        "shortDescription": "Real-World API Application Development",
+        "longDescription": null,
+        "startTime": "2020-01-04T18:00:00Z",
+        "endTime": "2020-01-04T22:00:00Z",
+        "chapter": "6.3"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1039174,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: Make Your Time Count - Working With Your Career Director - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help you discover all the ways your Career Director can make your job search more efficient and effective.",
+        "longDescription": "Register Here: https://timecountwithcd010720.splashthat.com for our Make Your Time Count - Working With Your Career Director workshop. Your Career Director is dedicated to helping you succeed in your career search. Learn how to effectively work with them as you become Employer Competitive.",
+        "startTime": "2020-01-08T02:00:00Z",
+        "endTime": "2020-01-08T03:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818381,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Introduction to Project #1",
+        "shortDescription": "Introduction to Project #1",
+        "longDescription": null,
+        "startTime": "2020-01-08T02:30:00Z",
+        "endTime": "2020-01-08T05:30:00Z",
+        "chapter": "7.1"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1039175,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Tackling the Technical Interview Series: Fullstack - Big O Notation - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop that will help you better prepare for technical interviewing requiring Big O Notation. This workshop is focused on web development, but all students are welcome to join.",
+        "longDescription": "Register Here: https://tttifsbigo010820.splashthat.com This workshop will cover technical interviewing tips and tricks for web development technical interviews. We'll talk about technical interview questions covering Big O Notation, including algorithms and code optimization.",
+        "startTime": "2020-01-08T22:00:00Z",
+        "endTime": "2020-01-08T23:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1039176,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: What Does Employer Competitive Mean: Web Development Focused - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help explain how being Employer Competitive will take your search to new heights. This workshop is focused on Web Development, but all students are welcome to join.",
+        "longDescription": "Register Here: https://ecwebdev010820.splashthat.com for our workshop detailing how being Employer Competitive can help you become more successful in your job search. Employer Competitive Web Development students are more likely to land interviews, so join us as we reveal how to help yourself stand out from the crowd. While this workshop is focused on Web Development, all students are welcome to join.",
+        "startTime": "2020-01-09T01:00:00Z",
+        "endTime": "2020-01-09T02:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1039177,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: Behavioral Interviewing Practice I - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help you practice behavioral interview questions.",
+        "longDescription": "Register Here: https://bi1practice010920.splashthat.com for part one of our Behavioral Interview Practice series designed to give you practice in mastering non-technical interviews. Make sure to get the most out of this session, and be ready to participate! This workshop is optional and will be repeated each month.",
+        "startTime": "2020-01-10T02:30:00Z",
+        "endTime": "2020-01-10T04:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818400,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Project #1",
+        "shortDescription": "Project #1",
+        "longDescription": null,
+        "startTime": "2020-01-10T02:30:00Z",
+        "endTime": "2020-01-10T05:30:00Z",
+        "chapter": "7.2"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818341,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Project #1",
+        "shortDescription": "Project #1",
+        "longDescription": null,
+        "startTime": "2020-01-11T18:00:00Z",
+        "endTime": "2020-01-11T22:00:00Z",
+        "chapter": "7.3"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1039178,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: Networking Practice Session - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help you practice your pitch for networking. ",
+        "longDescription": "Register Here: https://networkingpractice011320.splashthat.com for a chance to get together with your peers, review networking best practices, and practice delivering your pitch.  This interactive workshop will help you present yourself and your story with confidence as you build meaningful connections in the industry.",
+        "startTime": "2020-01-14T00:00:00Z",
+        "endTime": "2020-01-14T01:30:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1039179,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Tackling the Technical Interview Series: Cybersecurity - Technical Interviews - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop that will help you better prepare for technical interviewing within the Cybersecurity niche. This workshop is focused on Cybersecurity, but all students are welcome to join.",
+        "longDescription": "Register Here: https://ttticybertech011420.splashthat.com This workshop will cover technical interviewing tips and tricks in the Cybersecurity technical interview. We'll talk about passion and leadership questions as well as technical questions that you might experience during a technical interview. ",
+        "startTime": "2020-01-15T00:00:00Z",
+        "endTime": "2020-01-15T01:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818363,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Project #1",
+        "shortDescription": "Project #1",
+        "longDescription": null,
+        "startTime": "2020-01-15T02:30:00Z",
+        "endTime": "2020-01-15T05:30:00Z",
+        "chapter": "8.1"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1039180,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: What Does Employer Competitive Mean: Data Focused - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help explain how being Employer Competitive will distinguish you among many candidates. This workshop is focused on Data Bootcampers, but all students are welcome to join.",
+        "longDescription": "Register Here: https://ecdata011520.splashthat.com for our workshop detailing how being Employer Competitive can help you become more successful in your job search. Employer Competitive Data students are more likely to land interviews, so join us as we reveal how to help yourself stand out from the crowd. While this workshop is focused on Data, all students are welcome to join.",
+        "startTime": "2020-01-16T01:00:00Z",
+        "endTime": "2020-01-16T02:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1039181,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Pave Your Pathway Series: Web Development Career Paths - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to discuss the various career paths you can take as a Web Development Bootcamp grad.",
+        "longDescription": "Register Here: https://pypwebdev011620.splashthat.com for a workshop designed to help you explore the different career paths open to you as a coder. No matter your background or where you plan to land after graduation, you started the Bootcamp for a reason! Let's explore how you can put that reason into action.",
+        "startTime": "2020-01-17T00:00:00Z",
+        "endTime": "2020-01-17T01:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818947,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Project #1",
+        "shortDescription": "Project #1",
+        "longDescription": null,
+        "startTime": "2020-01-17T02:30:00Z",
+        "endTime": "2020-01-17T05:30:00Z",
+        "chapter": "8.2"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818963,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Project #1 Presentations",
+        "shortDescription": "Project #1 Presentations",
+        "longDescription": null,
+        "startTime": "2020-01-18T18:00:00Z",
+        "endTime": "2020-01-18T22:00:00Z",
+        "chapter": "8.3"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1039182,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Tackling the Technical Interview Series: Fullstack - Big O Notation - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop that will help you better prepare for technical interviewing requiring Big O Notation. This workshop is focused on web development, but all students are welcome to join.",
+        "longDescription": "Register Here: https://tttifsbigo012120.splashthat.com This workshop will cover technical interviewing tips and tricks for web development technical interviews. We'll talk about technical interview questions covering Big O Notation, including algorithms and code optimization.",
+        "startTime": "2020-01-22T01:00:00Z",
+        "endTime": "2020-01-22T02:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818905,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Introduction to Node.js",
+        "shortDescription": "Introduction to Node.js",
+        "longDescription": null,
+        "startTime": "2020-01-22T02:30:00Z",
+        "endTime": "2020-01-22T05:30:00Z",
+        "chapter": "9.1"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1039183,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: Behavioral Interviewing Practice I - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help you practice behavioral interview questions.",
+        "longDescription": "Register Here: https://bi1practice012220.splashthat.com for part one of our Behavioral Interview Practice series designed to give you practice in mastering non-technical interviews. Make sure to get the most out of this session, and be ready to participate! This workshop is optional and will be repeated each month.",
+        "startTime": "2020-01-22T23:30:00Z",
+        "endTime": "2020-01-23T01:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818927,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "ES6+",
+        "shortDescription": "ES6+",
+        "longDescription": null,
+        "startTime": "2020-01-24T02:30:00Z",
+        "endTime": "2020-01-24T05:30:00Z",
+        "chapter": "9.2"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818869,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Asynchronous JavaScript",
+        "shortDescription": "Asynchronous JavaScript",
+        "longDescription": null,
+        "startTime": "2020-01-25T18:00:00Z",
+        "endTime": "2020-01-25T22:00:00Z",
+        "chapter": "9.3"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1039184,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Real Talk Series: Overcoming Age Bias in Your Search - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help you learn how to recognize and overcome age bias in your job search.",
+        "longDescription": "Register Here: https://rtagebias012720.splashthat.com for a workshop on recognizing and overcoming age bias in your job search. Whether you feel you have too much or too little experience, your graduation year ‘dates’ you, or you have outdated experience/practices/information - these could all be working against you in your search. Not to worry, come learn best practices for creating age neutral materials and overcome any potential bias in your search!",
+        "startTime": "2020-01-28T02:00:00Z",
+        "endTime": "2020-01-28T03:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818886,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Hard Hat Zone: Constructors at Work",
+        "shortDescription": "Hard Hat Zone: Constructors at Work",
+        "longDescription": null,
+        "startTime": "2020-01-29T02:30:00Z",
+        "endTime": "2020-01-29T05:30:00Z",
+        "chapter": "10.1"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1039185,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Pave Your Pathway Series: Digital Marketing Career Paths - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to discuss the various career paths you can take as a Digital Marketing Bootcamp grad.",
+        "longDescription": "Register Here: https://pypdigitalpaths012920.splashthat.com for a workshop designed to help you explore the different career paths open to you as a digital marketer. No matter your background or where you plan to land after graduation, you started the Bootcamp for a reason! Let's explore how you can put that reason into action.",
+        "startTime": "2020-01-30T00:00:00Z",
+        "endTime": "2020-01-30T01:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1039186,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: What Does Employer Competitive Mean: Cyber Development Focused - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to explain how being Employer Competitive will set you apart in a sea of applicants. This workshop is focused on Cybersecurity but all students are welcome to join.",
+        "longDescription": "Register Here: https://eccyber013020.splashthat.com for our workshop detailing how becoming Employer Competitive can help you be more successful in your job search. Employer Competitive Cyber students are more likely to land interviews, so join us as we reveal how to help yourself stand out from the crowd. While this workshop is focused on Cybersecurity, all students are welcome to join.",
+        "startTime": "2020-01-31T00:00:00Z",
+        "endTime": "2020-01-31T01:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818836,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Construct it Yourself: Inputs and Constructors",
+        "shortDescription": "Construct it Yourself: Inputs and Constructors",
+        "longDescription": null,
+        "startTime": "2020-01-31T02:30:00Z",
+        "endTime": "2020-01-31T05:30:00Z",
+        "chapter": "10.2"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818853,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Callbacks & Constructors in the Wild",
+        "shortDescription": "Callbacks & Constructors in the Wild",
+        "longDescription": null,
+        "startTime": "2020-02-01T18:00:00Z",
+        "endTime": "2020-02-01T22:00:00Z",
+        "chapter": "10.3"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1075509,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Pave Your Pathway Series: Cybersecurity Career Paths - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to discuss the various career paths you can take as a Cybersecurity Bootcamp grad.",
+        "longDescription": "Register Here: https://pypcyberpaths020320.splashthat.com for a workshop designed to help you explore the different career paths open to you as a Cybersecurity professional. No matter your background or where you plan to land after graduation, you started the Bootcamp for a reason! Let's explore how you can put that reason into action. ",
+        "startTime": "2020-02-04T00:00:00Z",
+        "endTime": "2020-02-04T01:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1075510,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Tackling the Technical Interview: Fullstack - The Box Model - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help you understand the Box Model. ",
+        "longDescription": "Register Here: https://tttifsboxmodel020320.splashthat.com This workshop will cover technical interviewing tips and tricks for web development technical interviews. We'll talk about technical interview questions covering The Box Model, including block, inline, and inline-block properties.",
+        "startTime": "2020-02-04T02:00:00Z",
+        "endTime": "2020-02-04T03:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1075511,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: Starting Your Job Search - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help you start and navigate your career search.",
+        "longDescription": "Register Here: https://startingyourjobsearch020420.splashthat.com for our Starting Your Job Search workshop. The search may seem daunting, but these tips and planning will help you start and stay organized as you look for your new career. This workshop is geared towards those wondering how to take the first steps in starting their job search, but all are welcome!",
+        "startTime": "2020-02-05T02:00:00Z",
+        "endTime": "2020-02-05T03:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818804,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Intro to Node Servers",
+        "shortDescription": "Intro to Node Servers",
+        "longDescription": null,
+        "startTime": "2020-02-05T02:30:00Z",
+        "endTime": "2020-02-05T05:30:00Z",
+        "chapter": "11.1"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1075512,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: Behavioral Interviewing Practice I - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help you practice behavioral interview questions.",
+        "longDescription": "Register Here: https://bipractice020520.splashthat.com for part one of our Behavioral Interview Practice series designed to give you practice in mastering non-technical interviews. Make sure to get the most out of this session, and be ready to participate! This workshop is optional and will be repeated each month.",
+        "startTime": "2020-02-06T01:30:00Z",
+        "endTime": "2020-02-06T03:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1075513,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: What Does Employer Competitive Mean: Web Development Focused - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help explain how being Employer Competitive will take your search to new heights. This workshop is focused on Web Development, but all students are welcome to join.",
+        "longDescription": "Register Here: https://ecwebdev020620.splashthat.com for our workshop detailing how being Employer Competitive can help you become more successful in your job search. Employer Competitive Web Development students are more likely to land interviews, so join us as we reveal how to help yourself stand out from the crowd. While this workshop is focused on Web Development, all students are welcome to join.",
+        "startTime": "2020-02-07T01:00:00Z",
+        "endTime": "2020-02-07T02:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818820,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Express Yourself",
+        "shortDescription": "Express Yourself",
+        "longDescription": null,
+        "startTime": "2020-02-07T02:30:00Z",
+        "endTime": "2020-02-07T05:30:00Z",
+        "chapter": "11.2"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818773,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Express Mini-Project",
+        "shortDescription": "Express Mini-Project",
+        "longDescription": null,
+        "startTime": "2020-02-08T18:00:00Z",
+        "endTime": "2020-02-08T22:00:00Z",
+        "chapter": "11.3"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1075514,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Tackling the Technical Interview: Cyber - CIA Triad - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to discuss strategies for tackling the CIA triad in technical interviews. ",
+        "longDescription": "Register Here: https://ttticyberciatriad021020.splashthat.com for our Cyber workshop designed to review the CIA triad, how different kinds of breaches effect the CIA Triad, and design strategies on how to stop these breaches from occurring. Keep in mind that this event is geared towards Cybersecurity. Students from other programs are welcome to attend, but you will not have covered this topic in class.",
+        "startTime": "2020-02-11T01:00:00Z",
+        "endTime": "2020-02-11T02:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1075515,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Tackling the Technical Interview: Fullstack - The Box Model",
+        "shortDescription": "Optional Career Workshop to help you understand the Box Model. ",
+        "longDescription": "Register Here: https://tttifsboxmodel021120.splashthat.com This workshop will cover technical interviewing tips and tricks for web development technical interviews. We'll talk about technical interview questions covering The Box Model, including block, inline, and inline-block properties.",
+        "startTime": "2020-02-12T00:00:00Z",
+        "endTime": "2020-02-12T01:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818789,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Messing With MySQL",
+        "shortDescription": "Messing With MySQL",
+        "longDescription": null,
+        "startTime": "2020-02-12T02:30:00Z",
+        "endTime": "2020-02-12T05:30:00Z",
+        "chapter": "12.1"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1075516,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Pave Your Pathway: Data Career Paths  - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to review various data roles that are open to you post-graduation.",
+        "longDescription": "Register Here: https://pypdata021220.splashthat.com for a workshop on exploring data roles that align with your passions and reviewing the skills necessary for those roles.",
+        "startTime": "2020-02-12T23:00:00Z",
+        "endTime": "2020-02-13T00:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1075517,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: What Does Employer Competitive Mean: UIUX Focused - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help explain how being Employer Competitive will take your search to new heights. This workshop is focused on UIUX, but all students are welcome to join.",
+        "longDescription": "Register Here: https://ecuiux021220.splashthat.com for our workshop detailing how being Employer Competitive can help you become more successful in your job search. Employer Competitive Web Development students are more likely to land interviews, so join us as we reveal how to help yourself stand out from the crowd. While this workshop is focused on UX/UI, but all students are welcome to join.",
+        "startTime": "2020-02-13T01:00:00Z",
+        "endTime": "2020-02-13T02:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818765,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Node Gets a SQL",
+        "shortDescription": "Node Gets a SQL",
+        "longDescription": null,
+        "startTime": "2020-02-14T02:30:00Z",
+        "endTime": "2020-02-14T05:30:00Z",
+        "chapter": "12.2"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818749,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "My-Massive-SQL",
+        "shortDescription": "My-Massive-SQL",
+        "longDescription": null,
+        "startTime": "2020-02-15T18:00:00Z",
+        "endTime": "2020-02-15T22:00:00Z",
+        "chapter": "12.3"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1075518,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: Behavioral Interviewing Practice I - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help you practice behavioral interview questions.",
+        "longDescription": "Register Here: https://behavioralpractice021820.splashthat.com for part one of our Behavioral Interview Practice series designed to give you practice in mastering non-technical interviews. Make sure to get the most out of this session, and be ready to participate! This workshop is optional and will be repeated each month.",
+        "startTime": "2020-02-19T00:30:00Z",
+        "endTime": "2020-02-19T02:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818734,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "I Can Make an App with Some Handlebars",
+        "shortDescription": "I Can Make an App with Some Handlebars",
+        "longDescription": null,
+        "startTime": "2020-02-19T02:30:00Z",
+        "endTime": "2020-02-19T05:30:00Z",
+        "chapter": "13.1"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1075519,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Tackling the Technical Interview: Data Whiteboarding - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to utilize whiteboarding techniques for data interviews and practice talking about technical projects. ",
+        "longDescription": "Register Here: https://tttidatawhiteboard021920.splashthat.com for our technical interview workshop on Data whiteboarding. This workshop will cover technical interviewing tips and tricks. We'll talk about technical questions that you might experience during a data technical interview. We will utilize whiteboarding techniques and practice talking about your technical projects.",
+        "startTime": "2020-02-19T23:00:00Z",
+        "endTime": "2020-02-20T00:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1075520,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Industry Insights: What Employers Want - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop featuring insights from employers on what they are really looking for in applicants. Learn some best practices from our employer - facing Career Services team to help you become Employer Competitive!",
+        "longDescription": "Register Here: https://iiemployerswant022020.splashthat.com for our workshop covering what employers look for when they fill positions. Using this insider knowledge will help you stand apart from the rest of the crowd and help you become Employer Competitive!",
+        "startTime": "2020-02-21T01:00:00Z",
+        "endTime": "2020-02-21T02:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818741,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Bringing it from the Front to the Back",
+        "shortDescription": "Bringing it from the Front to the Back",
+        "longDescription": null,
+        "startTime": "2020-02-21T02:30:00Z",
+        "endTime": "2020-02-21T05:30:00Z",
+        "chapter": "13.2"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818711,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "The Power of the ORM",
+        "shortDescription": "The Power of the ORM",
+        "longDescription": null,
+        "startTime": "2020-02-22T18:00:00Z",
+        "endTime": "2020-02-22T22:00:00Z",
+        "chapter": "13.3"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1075521,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: Hack Your Resume - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help you hack your resume.",
+        "longDescription": "Register Here: https://hackresume022420.splashthat.com for our Hack Your Resume workshop designed to help you create and modify your resume. This workshop will walk you through the important elements of an Employer Competitive resume, so get your questions ready! This workshop is optional and will be repeated in the future.",
+        "startTime": "2020-02-24T23:00:00Z",
+        "endTime": "2020-02-25T00:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1075523,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Real Talk Series: Addressing Employment Gaps on Your Experience - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to discuss strategies for addressing gaps in experience on your career materials.",
+        "longDescription": "Register Here: https://rtgaps022520.splashthat.com for a workshop designed to support you with the tools to address gaps in experience on your career materials. Come prepared to identify the value and skills you bring and plug those into your job search materials. You will also build a plan to approach a gap in experience and identify organizations/companies that are searching for folks just like you!",
+        "startTime": "2020-02-25T23:00:00Z",
+        "endTime": "2020-02-26T00:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1075522,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: Emotional Intelligence in Tech",
+        "shortDescription": "Optional Career Workshop to help you maintain interpersonal professional relationships with empathy.",
+        "longDescription": "Register Here: https://eqintech022520.splashthat.com for our Emotional Intelligence workshop.  This workshop will cover the concept of Emotional Intelligence, as well as developing EQ skills that will positively impact success in the tech industry.",
+        "startTime": "2020-02-26T01:00:00Z",
+        "endTime": "2020-02-26T02:30:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818726,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "The Sequel to MySQL",
+        "shortDescription": "The Sequel to MySQL",
+        "longDescription": null,
+        "startTime": "2020-02-26T02:30:00Z",
+        "endTime": "2020-02-26T05:30:00Z",
+        "chapter": "14.1"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1075524,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: Imposter Syndrome - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help you recognize and overcome the Imposter Syndrome, so you can conquer your search with confidence.",
+        "longDescription": "Register Here: https://impostersyndrome022620.splashthat.com for our Employer Competitive session designed to help you recognize and overcome the Imposter Syndrome. The Imposter Syndrome can be a huge roadblock on your journey towards achieving your goals. Discover its symptoms, how it shows up in your search, and how to overcome it anytime it surfaces.",
+        "startTime": "2020-02-27T01:00:00Z",
+        "endTime": "2020-02-27T02:30:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1075525,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Tackling the Technical Interview: FinTech Interviews",
+        "shortDescription": "Optional Career Workshop to help you understand technical interviewing in the FinTech industry. ",
+        "longDescription": "Register Here: https://tttifintech022720.splashthat.com for our technical interview workshop on FinTech interviews. This workshop will cover technical interviewing tips and tricks. We'll talk about technical questions that you might experience during a FinTech interview. We will utilize specific techniques and practice talking about your projects.",
+        "startTime": "2020-02-27T23:00:00Z",
+        "endTime": "2020-02-28T00:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 1075526,
+        "courseId": 2040,
+        "contextId": 2,
+        "name": "Employer Competitive Series: 7 Tips to Prep for Demo Day - Encouraged, Not required",
+        "shortDescription": "Optional Career Workshop to help you prepare for Demo Day.",
+        "longDescription": "Register Here: https://demoday022720.splashthat.com for our 7 Tips to Prep for Demo Day workshop. In this engaging workshop, your Career Services team will share best practices and actionable tips for preparing for and building connections with industry professionals at Demo Days.",
+        "startTime": "2020-02-28T02:00:00Z",
+        "endTime": "2020-02-28T03:00:00Z",
+        "chapter": ""
+      },
+      "context": {
+        "id": 2,
+        "contextCode": "career",
+        "name": "Career"
+      },
+      "category": {
+        "code": "career",
+        "name": "Career"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818674,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Getting In The CRUD with Sequelize",
+        "shortDescription": "Getting In The CRUD with Sequelize",
+        "longDescription": null,
+        "startTime": "2020-02-28T02:30:00Z",
+        "endTime": "2020-02-28T05:30:00Z",
+        "chapter": "14.2"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818694,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Getting Associated with Relations",
+        "shortDescription": "Getting Associated with Relations",
+        "longDescription": null,
+        "startTime": "2020-02-29T18:00:00Z",
+        "endTime": "2020-02-29T22:00:00Z",
+        "chapter": "14.3"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818640,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Project #2",
+        "shortDescription": "Project #2",
+        "longDescription": null,
+        "startTime": "2020-03-04T02:30:00Z",
+        "endTime": "2020-03-04T05:30:00Z",
+        "chapter": "15.1"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818658,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Project #2",
+        "shortDescription": "Project #2",
+        "longDescription": null,
+        "startTime": "2020-03-06T02:30:00Z",
+        "endTime": "2020-03-06T05:30:00Z",
+        "chapter": "15.2"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818614,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Project #2",
+        "shortDescription": "Project #2",
+        "longDescription": null,
+        "startTime": "2020-03-07T18:00:00Z",
+        "endTime": "2020-03-07T22:00:00Z",
+        "chapter": "15.3"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818559,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Project #2",
+        "shortDescription": "Project #2",
+        "longDescription": null,
+        "startTime": "2020-03-11T01:30:00Z",
+        "endTime": "2020-03-11T04:30:00Z",
+        "chapter": "16.1"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818577,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Project #2",
+        "shortDescription": "Project #2",
+        "longDescription": null,
+        "startTime": "2020-03-13T01:30:00Z",
+        "endTime": "2020-03-13T04:30:00Z",
+        "chapter": "16.2"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818533,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Project #2 Presentations",
+        "shortDescription": "Project #2 Presentations",
+        "longDescription": null,
+        "startTime": "2020-03-14T17:00:00Z",
+        "endTime": "2020-03-14T21:00:00Z",
+        "chapter": "16.3"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818551,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Masters of MongoDB",
+        "shortDescription": "Masters of MongoDB",
+        "longDescription": null,
+        "startTime": "2020-03-18T01:30:00Z",
+        "endTime": "2020-03-18T04:30:00Z",
+        "chapter": "17.1"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818497,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Riding with Mongoose",
+        "shortDescription": "Riding with Mongoose",
+        "longDescription": null,
+        "startTime": "2020-03-20T01:30:00Z",
+        "endTime": "2020-03-20T04:30:00Z",
+        "chapter": "17.2"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818516,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "IndexedDB",
+        "shortDescription": "IndexedDB",
+        "longDescription": null,
+        "startTime": "2020-03-21T17:00:00Z",
+        "endTime": "2020-03-21T21:00:00Z",
+        "chapter": "17.3"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818461,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Web Performance",
+        "shortDescription": "Web Performance",
+        "longDescription": null,
+        "startTime": "2020-03-25T01:30:00Z",
+        "endTime": "2020-03-25T04:30:00Z",
+        "chapter": "18.1"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818479,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Progressive Web Apps",
+        "shortDescription": "Progressive Web Apps",
+        "longDescription": null,
+        "startTime": "2020-03-27T01:30:00Z",
+        "endTime": "2020-03-27T04:30:00Z",
+        "chapter": "18.2"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818427,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Intro to Webpack",
+        "shortDescription": "Intro to Webpack",
+        "longDescription": null,
+        "startTime": "2020-03-28T17:00:00Z",
+        "endTime": "2020-03-28T21:00:00Z",
+        "chapter": "18.3"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818444,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Intro to React, Components and JSX",
+        "shortDescription": "Intro to React, Components and JSX",
+        "longDescription": null,
+        "startTime": "2020-04-01T01:30:00Z",
+        "endTime": "2020-04-01T04:30:00Z",
+        "chapter": "19.1"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818391,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Props, Lists, and Stateful Components",
+        "shortDescription": "Props, Lists, and Stateful Components",
+        "longDescription": null,
+        "startTime": "2020-04-03T01:30:00Z",
+        "endTime": "2020-04-03T04:30:00Z",
+        "chapter": "19.2"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818409,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Forms, Conditional Rendering & React Router",
+        "shortDescription": "Forms, Conditional Rendering & React Router",
+        "longDescription": null,
+        "startTime": "2020-04-04T17:00:00Z",
+        "endTime": "2020-04-04T21:00:00Z",
+        "chapter": "19.3"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818353,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Introduction to React Hooks",
+        "shortDescription": "Introduction to React Hooks",
+        "longDescription": null,
+        "startTime": "2020-04-08T01:30:00Z",
+        "endTime": "2020-04-08T04:30:00Z",
+        "chapter": "20.1"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818372,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "The React Context API",
+        "shortDescription": "The React Context API",
+        "longDescription": null,
+        "startTime": "2020-04-10T01:30:00Z",
+        "endTime": "2020-04-10T04:30:00Z",
+        "chapter": "20.2"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818954,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "State Management with the Store",
+        "shortDescription": "State Management with the Store",
+        "longDescription": null,
+        "startTime": "2020-04-11T17:00:00Z",
+        "endTime": "2020-04-11T21:00:00Z",
+        "chapter": "20.3"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818970,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "MERN",
+        "shortDescription": "MERN",
+        "longDescription": null,
+        "startTime": "2020-04-15T01:30:00Z",
+        "endTime": "2020-04-15T04:30:00Z",
+        "chapter": "21.1"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818915,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "React.js / Intro to Project #3",
+        "shortDescription": "React.js / Intro to Project #3",
+        "longDescription": null,
+        "startTime": "2020-04-17T01:30:00Z",
+        "endTime": "2020-04-17T04:30:00Z",
+        "chapter": "21.2"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818939,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "React.js / Project #3",
+        "shortDescription": "React.js / Project #3",
+        "longDescription": null,
+        "startTime": "2020-04-18T17:00:00Z",
+        "endTime": "2020-04-18T21:00:00Z",
+        "chapter": "21.3"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818878,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Basics of Algorithms",
+        "shortDescription": "Basics of Algorithms",
+        "longDescription": null,
+        "startTime": "2020-04-22T01:30:00Z",
+        "endTime": "2020-04-22T04:30:00Z",
+        "chapter": "22.1"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818894,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Sorting Algorithms",
+        "shortDescription": "Sorting Algorithms",
+        "longDescription": null,
+        "startTime": "2020-04-24T01:30:00Z",
+        "endTime": "2020-04-24T04:30:00Z",
+        "chapter": "22.2"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818845,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Big O & Data Structures",
+        "shortDescription": "Big O & Data Structures",
+        "longDescription": null,
+        "startTime": "2020-04-25T17:00:00Z",
+        "endTime": "2020-04-25T21:00:00Z",
+        "chapter": "22.3"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818861,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Portfolios & Project Work",
+        "shortDescription": "Portfolios & Project Work",
+        "longDescription": null,
+        "startTime": "2020-04-29T01:30:00Z",
+        "endTime": "2020-04-29T04:30:00Z",
+        "chapter": "23.1"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818813,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Portfolios & Project Work",
+        "shortDescription": "Portfolios & Project Work",
+        "longDescription": null,
+        "startTime": "2020-05-01T01:30:00Z",
+        "endTime": "2020-05-01T04:30:00Z",
+        "chapter": "23.2"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818828,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Portfolios & Project Work",
+        "shortDescription": "Portfolios & Project Work",
+        "longDescription": null,
+        "startTime": "2020-05-02T17:00:00Z",
+        "endTime": "2020-05-02T21:00:00Z",
+        "chapter": "23.3"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818781,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Final Projects",
+        "shortDescription": "Final Projects",
+        "longDescription": null,
+        "startTime": "2020-05-06T01:30:00Z",
+        "endTime": "2020-05-06T04:30:00Z",
+        "chapter": "24.1"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818797,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Final Projects",
+        "shortDescription": "Final Projects",
+        "longDescription": null,
+        "startTime": "2020-05-08T01:30:00Z",
+        "endTime": "2020-05-08T04:30:00Z",
+        "chapter": "24.2"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    },
+    {
+      "session": {
+        "id": 818758,
+        "courseId": 2040,
+        "contextId": 1,
+        "name": "Final Project Presentations",
+        "shortDescription": "Final Project Presentations",
+        "longDescription": null,
+        "startTime": "2020-05-09T17:00:00Z",
+        "endTime": "2020-05-09T21:00:00Z",
+        "chapter": "24.3"
+      },
+      "context": {
+        "id": 1,
+        "contextCode": "academic",
+        "name": "Academic"
+      },
+      "category": {
+        "code": "academic",
+        "name": "Academic"
+      },
+      "classroom": null,
+      "videoUrlList": null
+    }
+  ]
+}

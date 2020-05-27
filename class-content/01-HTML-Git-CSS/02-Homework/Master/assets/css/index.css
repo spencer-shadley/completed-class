@@ -1,0 +1,10 @@
+#profile-image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.auth-image {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+}

@@ -1,0 +1,13 @@
+{
+  "name": "great-bay-basic",
+  "version": "1.0.0",
+  "description": "activity for demonstrating inquirer with mysql",
+  "main": "greatBayBasic.js",
+  "scripts": {
+    "start": "node greatBay"
+  },
+  "dependencies": {
+    "inquirer": "^7.0.4",
+    "mysql": "^2.18.1"
+  }
+}

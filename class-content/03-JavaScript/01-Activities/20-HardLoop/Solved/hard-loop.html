@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Partners Loop</title>
+  </head>
+
+  <body>
+    <script>
+      // This is our starting myFarm array
+      var myFarm = ['chickens', 'pigs', 'cows', 'horses', 'ostriches'];
+
+      // Creating a variable to hold our array length
+      var arrayLength = myFarm.length;
+
+      // Looping through our myFarm array
+      for (var i = 0; i < arrayLength; ++i) {
+        var animal = myFarm[i];
+
+        // Console out the farm animal in the current index
+        console.log(animal);
+
+        // If the first character in the current animal is 'c' or 'o', alert the following message
+        if (animal.charAt(0) === 'c' || animal.charAt(0) === 'o') {
+          alert(animal + ' starts with a c or an o!');
+        }
+      }
+
+      // BONUS!
+
+      // Looping through our myFarm array
+      for (var i = 1; i < arrayLength; ++i) {
+        var currAnimal = myFarm[i];
+        var prevAnimal = myFarm[i - 1];
+
+        if (currAnimal.length === prevAnimal.length) {
+          console.log('I just saw an animal like that!');
+        }
+      }
+    </script>
+  </body>
+</html>

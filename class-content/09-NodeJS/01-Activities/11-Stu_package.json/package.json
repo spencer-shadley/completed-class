@@ -1,0 +1,21 @@
+{
+  "name": "11-stu_package.json",
+  "version": "1.0.0",
+  "description": "In this activity, you will install your application dependencies using the command `npm install` or `npm i`.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "watch": "nodemon index",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "keywords": [
+    "npm",
+    "install"
+  ],
+  "author": "You!",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^6.5.0"
+  }
+}

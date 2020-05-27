@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scope Activity #1</title>
+  </head>
+
+  <body>
+    <h1>Scope Activity #1</h1>
+    <h2>✨Open the console to see the magic!✨</h2>
+
+    <script>
+      // Overall flow
+      // - When the return value of `outside()` is assigned to `insideOut`, a closure is created.
+      // - A closure is an object that contains both a returned function and the environment in which that function was created.
+      // - The environment consists of any local variables that were available to that function when and where it was declared.
+      // - When we call `insideOut()`, it returns the values stored in `x` and `y` even though those were declared outside `inside()`.
+      // - [MDN docs on closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures).
+
+      function outside() {
+        // the scope of x is outside()
+        var x = 1;
+
+        // the scope of inside() is outside(); the scope of y is inside()
+        function inside(y) {
+          console.log(x + y);
+        }
+
+        return inside;
+      }
+
+      // calling outside() returns inside(), which is assigned to insideOut
+      var insideOut = outside();
+
+      // the return value is 3
+      insideOut(2);
+
+      // x is local to inside(), we can't access it globally
+      // but a closure is created when outside() returns
+      // giving insideOut() access to x
+      console.log("The value of 'x' outside 'outside()' is: " + x);
+    </script>
+  </body>
+</html>
