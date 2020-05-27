@@ -1,0 +1,9 @@
+div {
+  color: white;
+  background-color: blue;
+  width: 400px;
+  height: 600px;
+  padding: 15px;
+  border: 5px dashed darkcyan;
+  margin: 20px;
+}

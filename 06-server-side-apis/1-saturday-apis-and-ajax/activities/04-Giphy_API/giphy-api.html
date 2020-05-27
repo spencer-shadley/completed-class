@@ -1,0 +1,25 @@
+<!-- video review - https://www.youtube.com/watch?v=Kp7Xy2LScLM -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Giphy API</title>
+  </head>
+
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+      var apiKeyParam = '?api_key=dc6zaTOxFJmzC';
+      // Example queryURL for Giphy API
+      var queryURL = 'https://api.giphy.com/v1/gifs/trending' + apiKeyParam;
+
+      $.ajax({
+        url: queryURL,
+        method: 'GET'
+      }).then(function(result) {
+        console.log(result);
+      });
+    </script>
+  </body>
+</html>

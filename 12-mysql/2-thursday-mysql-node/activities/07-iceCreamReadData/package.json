@@ -1,0 +1,16 @@
+{
+  "name": "ice-cream-db-read-data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "iceCreamReadData.js",
+  "scripts": {
+    "start": "node iceCreamReadData.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mysql": "^2.16.0"
+  }
+}

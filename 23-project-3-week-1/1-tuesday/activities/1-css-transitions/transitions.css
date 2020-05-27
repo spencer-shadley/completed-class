@@ -1,0 +1,23 @@
+h1 {
+    color: black;
+    background-color: unset;
+}
+
+h1:hover {
+    background-color: darkcyan;
+    color: cyan;
+    transition: all 3s;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: darkcyan;
+    transition: background-color 1s, transform 2s;
+    transition-timing-function: ease;
+}
+
+div:hover {
+    background-color: cyan;
+    transform: rotate(360deg);
+}

@@ -1,0 +1,24 @@
+{
+  "name": "spencer-class",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "md-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://uwa.bootcampcontent.com/UWA-Bootcamp/UW-SEA-FSF-PT-11-2019-U-C"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://uwa.bootcampcontent.com/UWA-Bootcamp/UW-SEA-FSF-PT-11-2019-U-C/issues"
+  },
+  "homepage": "https://uwa.bootcampcontent.com/UWA-Bootcamp/UW-SEA-FSF-PT-11-2019-U-C#readme",
+  "devDependencies": {
+    "markdown-link-reporter": "^1.1.1",
+    "prettier": "^1.19.1"
+  },
+  "dependencies": {}
+}

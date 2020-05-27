@@ -1,0 +1,71 @@
+h1 {
+    background-color: darkcyan;
+    color: cyan;
+    animation-name: change-color;
+    animation-duration: 5s;
+}
+
+.remove-color {
+    color: black;
+    background-color: unset;
+    animation-name: reverse-change-color;
+}
+
+.many-colors {
+    width: 100px;
+    height: 100px;
+    background-color: darkcyan;
+    position: relative;
+    animation-name: many-colors;
+    animation-duration: 5s;
+}
+
+@keyframes many-colors {
+    0% {
+        background-color: darkcyan;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background-color: darkorange;
+        left: 200px;
+        top: 0px;
+    }
+    50% {
+        background-color: deeppink;
+        left: 200px;
+        top: 200px;
+    }
+    75% {
+        background-color: limegreen;
+        left: 0px;
+        top: 200px;
+    }
+    100% {
+        background-color: darkcyan;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@keyframes change-color {
+    from {
+        color: black;
+        background-color: unset;
+    }
+    to {
+        color: cyan;
+        background-color: darkcyan;
+    }
+}
+
+@keyframes reverse-change-color {
+    from {
+        color: cyan;
+        background-color: darkcyan;
+    }
+    to {
+        color: black;
+        background-color: unset;
+    }
+}

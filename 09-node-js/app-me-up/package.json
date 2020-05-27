@@ -1,0 +1,27 @@
+{
+  "name": "app-me-up",
+  "version": "1.0.5",
+  "description": "A script to build a basic app template with html, css, and html files.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "watch": "nodemon index",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "bin": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElreyB/app-me-up.git"
+  },
+  "author": "Elrey C. Belmonti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElreyB/app-me-up/issues"
+  },
+  "homepage": "https://github.com/ElreyB/app-me-up#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "inquirer": "^7.0.3"
+  }
+}

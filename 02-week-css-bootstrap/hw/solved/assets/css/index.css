@@ -1,0 +1,15 @@
+.about-me-header {
+  /* Positioning */
+  margin-bottom: 33px;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  /* Typography */
+  font-size: 32px;
+  font-weight: bold;
+  color: #4aaaa5;
+}
+
+#about-image {
+  /* Box-model */
+  width: 200px;
+  margin-bottom: 15px;
+}

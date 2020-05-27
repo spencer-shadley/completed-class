@@ -1,0 +1,94 @@
+/**
+ * Flex Layout Activity
+ **/
+
+body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0px 10px;
+}
+
+header {
+  padding: 0px 20px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  color: #333;
+  background: #ccc;
+}
+
+section {
+  margin: 15px 0;
+}
+
+section,
+footer,
+header {
+  height: 60px;
+}
+
+p {
+  margin: 0;
+  flex-grow: 1;
+  width: 100%;
+}
+
+aside {
+  background: lightskyblue;
+  flex-grow: 1;
+}
+
+footer {
+  background: #ccc;
+}
+
+#full {
+  display: flex;
+  height: 100%;
+}
+
+#left-aside {
+  flex-grow: 1;
+}
+
+#division {
+  flex-grow: 2;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+#division-p-1 {
+  background: green;
+  border: 2px dashed darkgreen;
+}
+
+#division-p-2 {
+  background: darkslategray;
+  border: 2px dotted lightgray;
+}
+
+#division-p-1,
+#division-p-2 {
+  color: lightgray;
+}
+
+#top-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #444;
+  height: 60px;
+}
+
+.top-item {
+  color: white;
+  display: flex;
+  align-items: center;
+  background: #666;
+  padding: 0 10px;
+}
+
+.text-container {
+  display: flex;
+  align-items: center;
+}
