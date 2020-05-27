@@ -1,6 +1,6 @@
 # About
 
-After completing my class I am making the finalized version available. I made a number of changes from the core curriculum that I thought may be helpful for others as well.
+After completing my Full Stack Web Development class for the University of Washgington I am making the finalized version available to other instructors. I made a number of changes from the core curriculum that I thought may be helpful for others as well.
 
 Each repo has a `README` to help guide through its structure.
 
