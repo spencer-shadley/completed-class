@@ -40,6 +40,10 @@ These questions will primarily be from algorithms and data structures. To prepar
 - https://www.codewars.com/
 - https://edabit.com/
 - https://www.algoexpert.io/product
+- https://www.careercup.com/
+- https://www.topcoder.com/thrive/tracks?track=Competitive%20Programming
+- https://projecteuler.net/archives
+- https://www.hiredintech.com/app?fbclid=IwAR06uyKdluPm0tKgwTM-jjR4I7rWcRVp2GChY_nEFT2w_oxl88OfcbLXNEA#system-design
 
 ### Resources
 
