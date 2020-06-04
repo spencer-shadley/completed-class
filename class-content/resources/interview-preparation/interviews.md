@@ -12,11 +12,17 @@ In an interview, follow the [STAR format](https://www.themuse.com/advice/star-in
 
 Prior to the interview, create a list of things you'd like to talk about that demonstrate different qualities of yourself you'd like to share. Write out this list, look at example STAR questions and see how each of your examples would relate to one of the questions. Make sure you are ready to discuss each of your examples in the STAR format.
 
+### Resources
+
+- https://www.facebook.com/ctcibook/photos/a.216492411768523/888682997882791/?type=3&theater
+
 ### Company
 
 There are often questions about the company. Make sure you know about the company prior to the interview. What do they do? What direction are they taking going forward? What are their values? How do you align with their values? How could you improve their product(s)?
 
 Passion and prior research into the company often shows in the interview and can be a red flag if the candidate is not familiar with or has not used their product.
+
+- [Google](https://www.byte-by-byte.com/google-interview/)
 
 ### Resources
 
@@ -25,7 +31,6 @@ Passion and prior research into the company often shows in the interview and can
 - https://www.interviewcake.com/behavioral-questions-programming-interview-story-telling
 - https://coding-bootcamp-whiteboarding-algorithms.readthedocs-hosted.com/en/latest/
 - https://www.interviewbit.com/
-- [Danes-Youtube-Playlist](https://www.youtube.com/playlist?list=PLsSnS-Iagd8O6qmaW03tccOs-7KwKzaAP)
 
 ## Technical
 
@@ -43,7 +48,12 @@ These questions will primarily be from algorithms and data structures. To prepar
 - https://www.careercup.com/
 - https://www.topcoder.com/thrive/tracks?track=Competitive%20Programming
 - https://projecteuler.net/archives
-- https://www.hiredintech.com/app?fbclid=IwAR06uyKdluPm0tKgwTM-jjR4I7rWcRVp2GChY_nEFT2w_oxl88OfcbLXNEA#system-design
+- https://www.hiredintech.com/classrooms/system-design/lesson/52
+- https://www.interviewbit.com/practice/
+- https://www.geeksforgeeks.org/
+- https://www.interviewcake.com/
+- https://www.educative.io/courses/coderust-hacking-the-coding-interview
+- https://www.educative.io/courses/grokking-the-coding-interview
 
 #### Online Coding Sites
 
@@ -71,6 +81,14 @@ Below is a list of potential sites an interviewer may ask you to code in
 - [Master the Coding Interview: Data Structures + Algorithms](https://www.udemy.com/share/1013jaB0sTclhUQHg=/)
 - [The Coding Interview Bootcamp: Algorithms + Data Structures](https://www.udemy.com/course/coding-interview-bootcamp-algorithms-and-data-structure/)
 - [JavaScript Algorithms and Data Structures Masterclass](https://www.udemy.com/course/js-algorithms-and-data-structures-masterclass/)
+
+#### Videos
+
+- [LucidProgramming](https://www.youtube.com/channel/UCFxcvyt2Ucq5IL0_1Njzqlg)
+- [Danes-Youtube-Playlist](https://www.youtube.com/playlist?list=PLsSnS-Iagd8O6qmaW03tccOs-7KwKzaAP)
+- [Binary Trees](https://www.youtube.com/playlist?list=PL5tcWHG-UPH2fmYC6kgey1RIxP2iK9EEL)
+  - [Binary Search Trees](https://www.youtube.com/playlist?list=PL5tcWHG-UPH1ZOv2_rWkFVc7CCoGaa8je)
+- [strings](https://www.youtube.com/playlist?list=PL5tcWHG-UPH03aqnBTkBuH5qIbhshbg_K)
 
 #### Books
 
@@ -112,8 +130,8 @@ Below is my recommended order as well as a \[1-10\] rating on how important each
 - [LinkedLists](https://leetcode.com/problemset/algorithms/?topicSlugs=linked-list) (7)
   - Singly Linked (7)
   - Doubly Linked (6)
-- [Recursion](https://leetcode.com/problemset/algorithms/?topicSlugs=recursion) (9)
-- [Dynamic Programming](https://leetcode.com/problemset/algorithms/?topicSlugs=dynamic-programming) (6)
+- [Recursion](https://leetcode.com/problemset/algorithms/?topicSlugs=recursion) | [About Recursion](https://www.byte-by-byte.com/recursion-sp-closed/) (9)
+- [Dynamic Programming](https://leetcode.com/problemset/algorithms/?topicSlugs=dynamic-programming) | [Guide](https://www.byte-by-byte.com/dpbook/) [About DP](https://www.byte-by-byte.com/dynamic-programming-sp-closed/) (6)
 - [Memoization](https://leetcode.com/problemset/algorithms/?topicSlugs=memoization) (5)
 - [Backtracking](https://leetcode.com/problemset/algorithms/?topicSlugs=backtracking) (5)
 - [Graphs](https://leetcode.com/problemset/algorithms/?topicSlugs=graph) (6)
@@ -139,7 +157,12 @@ Below is my recommended order as well as a \[1-10\] rating on how important each
 #### Meetups
 
 - Your classmates! This is a great resource, stay in touch with everyone. Practice mock interviews with each other and challenge each other to keep pushing towards a software engineering job!
-
 - [Junior Dev Struggle Bus](https://juniordevstrugglebus.com/)
-
 - [She's Coding](https://shescoding.org/)
+
+#### Mock Interviews
+
+- Your fellow classmates
+- https://www.pramp.com
+  - Data Structures, Algorithms, Behavioral, System Design and more can be practiced with another person
+- https://refdash.com
