@@ -93,6 +93,7 @@ Below is a list of potential sites an interviewer may ask you to code in
 #### Books
 
 - [Free-Algorithm-Books](https://github.com/RbkGh/Free-Algorithm-Books/tree/master/book)
+- [free-programming-books](https://github.com/EbookFoundation/free-programming-books/blob/master/free-programming-books.md)
 - [Cracking the Coding Interview: 189 Programming Questions and Solutions 6th Edition](https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850/ref=sr_1_2?crid=44UUWR72F9V&dchild=1&keywords=cracking+the+coding+interview&qid=1586660251&sprefix=cracking+the+coding+in%2Caps%2C197&sr=8-2)
 - [Grokking Algorithms: An illustrated guide for programmers and other curious people 1st Edition](https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230/?tag=javamysqlanta-20)
 - [Data Structures and Algorithms 1st Edition](https://www.amazon.com/Data-Structures-Algorithms-Alfred-Aho/dp/0201000237?tag=javamysqlanta-20)
