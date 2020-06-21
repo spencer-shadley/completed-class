@@ -12,9 +12,9 @@ Changes to the class can be found in [bonus.md](./meta/bonus-features/bonus.md).
 
 - Activities removed, added and rewritten
 
-  - I found literally thousands of errors and bugs which are now fixed
+  - I (Spencer) found thousands of errors and bugs which are now fixed
 
-  - Some activites did not seem useful and detracted from the learnings so I removed a few of them. For example, the CSS `float` property.
+  - Some activites did not seem useful and detracted from the learnings so I removed a few of them. For example, the CSS `float` property was removed.
 
   - There were some holes and gaps that I did not think were covered so I added more activites. Notable additions:
 
@@ -58,7 +58,7 @@ Anything about the course itself
 
 - `bootcampspot.twb`: Workbook to easily see average grades, how many assignments have not been submitted, attendance trends, etc.
 
-- `survey-data.twbx`: Trends from the weekly survey feedback
+- `survey-data.twbx`: Trends from the weekly survey feedback. This was removed because the format of the weekly surveys was changed.
 
 - `technologies.twbx`: A visualization of the technologies taught in the bootcamp. This was used at the beginning of the course to show how much will be learned, at the end to celebrate all that was learned and shared with students for them to highlight in their portfolios.
 
