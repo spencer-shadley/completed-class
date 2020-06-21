@@ -142,11 +142,17 @@
 1. Students did not know that these changes took place
 1. There were far fewer bugs after the rewrites and material better reflected what they would need to know to be successful. I believe they are stronger web developers as a result.
 
-## Linting
+## Linter in Private Repo
 
 1. Added a linter to every unit conforming to the latest learnings to ensure consistent style and highlight errors.
 1. Students did not notice (behind the scenes changes)
 1. This enabled me to fix literally thousands of bugs easily. In every unit there were hundreds of bugs to fix and linting automated fixing most of them.
+
+## Linter in Class Repo
+
+1. A customized `eslint` file was included in every unit based on what they had learned up to that point. This started after the students learned about linting.
+1. Positive - students stole these `eslint` files for their own personal projects and after doing an in-class demo on how to set it up people were able to write code during activities with a very nice linter.
+1. Highly recommended. I don't know how the class could have been successful without linting.
 
 ## Data Visualizations
 
@@ -201,3 +207,9 @@
 1. When multiple potential choices had to be made slack polls (polly) were often sent out to enable students to voice their opinion.
 1. Postive - students appreciated have a voice in the direction of the class
 1. A balance needs to be struck with this. Too many polls shows indecisiveness and can overwhelm the students. With too few students do not feel empowered to help make the class better and you don't have as much information to make educated decisions.
+
+## Resources
+
+1. Many resources were added in Slack and in the class repo
+1. Positive
+1. Students appreciated having many additional resources availabe. The primary resource people appreciated was for interviews (in the class repo the path is `resources\interview-preparation\interviews.md`)
