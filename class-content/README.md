@@ -1,3 +1,13 @@
+# About
+
+There have been many changes to the class content. These changes differ unit-to-unit. Some have new content, most have bug fixes, some have linters added, some have bonus lectures added, etc.
+
+[bonus-features.md](full-stack-ground\meta\bonus-features\bonus.md) goes into more detail on what changed in this fork.
+
+---
+
+# Shared with Students:
+
 # Welcome!
 
 ## About this repo
@@ -6,13 +16,13 @@ This repo is where the instructional staff will push class activities and resour
 
 ## Upload Schedule
 
-* **The day before** class any relevant slidedecks will be uploaded
-* **Before class** unsolved activities for that class day will be posted
-* **After each activity** example solved activities will be posted
-* The **first day of a unit** an overview of the unit, the weekly homework and an example solution for the previous homework will be pushed to GitLab
+- **The day before** class any relevant slidedecks will be uploaded
+- **Before class** unsolved activities for that class day will be posted
+- **After each activity** example solved activities will be posted
+- The **first day of a unit** an overview of the unit, the weekly homework and an example solution for the previous homework will be pushed to GitLab
 
 ## Repo Structure
 
-* Each unit has its own directory
-* Inside each unit directory each day has its own directory
-* Inside each day are any relevant slidedecks, resources, activities and homework solutions
+- Each unit has its own directory
+- Inside each unit directory each day has its own directory
+- Inside each day are any relevant slidedecks, resources, activities and homework solutions
