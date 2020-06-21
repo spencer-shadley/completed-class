@@ -6,7 +6,7 @@ This is a fork of [coding-boot-camp/fullstack-ground](https://github.com/coding-
 
 ## Class changes
 
-Changes to the class can be found in [bonus.md](./meta/bonus-features/bonus.md). This was originally made by one of my TAs (Dane) and I updated and added to it.
+Changes to the class can be found in [bonus.md](./meta/bonus-features/bonus.md). This was originally made by one of my TAs (Dane) and I (Spencer) updated and added to it.
 
 ## Changes in this fork
 
