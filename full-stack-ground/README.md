@@ -86,6 +86,8 @@ A template to create a new week for the class. It includes each day's general st
 
 `.eslintrc.json`: This was modified slightly for each unit based on what we had learned. For example, prior to learning ES6 I could use the linter to verify no ES6 code was introduced and after ES6 I could ensure that all relevant ES6 was included. This also enabled catching and fixing literally thousands of bugs and errors in the given code.
 
+---
+
 ## Need Help?
 
 For information regarding onboarding and training, consult the [Instructor Onboarding Guide](https://coding-bootcamp-instructor-onboarding-prework.readthedocs-hosted.com/en/latest/).
