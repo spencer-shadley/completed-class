@@ -168,12 +168,13 @@ Below is my recommended order as well as a \[1-10\] rating on how important each
   - Data Structures, Algorithms, Behavioral, System Design and more can be practiced with another person
 - https://refdash.com
 
-## Bonus - System Design
+## Bonus
 
-Entry level positions are unlikely to focus on this but if you want to go above and beyond studying system design can also be helpful (mostly for higher level positions though)
+Entry level positions are unlikely to focus on this but if you want to go above and beyond studying system designs and advanced topics can also be helpful
 
-- https://www.educative.io/courses/grokking-the-system-design-interview
 - https://github.com/donnemartin/system-design-primer
+- https://www.youtube.com/channel/UCmJz2DV1a3yfgrR7GqRtUUA
+- https://www.educative.io/courses/grokking-the-system-design-interview
 - https://www.educative.io/courses/grokking-the-coding-interview
 - https://leetcode.com/discuss/interview-question/system-design?currentPage=1&orderBy=hot&query=
 - https://www.youtube.com/channel/UCRPMAqdtSgd0Ipeef7iFsKw
