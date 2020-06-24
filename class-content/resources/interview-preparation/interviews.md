@@ -181,3 +181,5 @@ Entry level positions are unlikely to focus on this but if you want to go above 
 - https://www.youtube.com/channel/UCn1XnDWhsLS5URXTi5wtFTA
 - https://leetcode.com/discuss/career/216554/from-0-to-clearing-uberappleamazonlinkedingoogle
 - http://www.aaronsw.com/weblog/dweck
+- https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/
+- https://youtu.be/ZgdS0EUmn70
