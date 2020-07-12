@@ -1,12 +1,14 @@
 # About
 
-There have been many changes to the class content. These changes differ unit-to-unit. Some have new content, most have bug fixes, some have linters added, some have bonus lectures added, etc.
+- There have been many changes to the class content. These changes differ unit-to-unit. Some have new content, most have bug fixes, some have linters added, some have bonus lectures added, etc.
 
-[bonus-features.md](full-stack-ground\meta\bonus-features\bonus.md) goes into more detail on what changed in this fork.
+- [bonus-features.md](full-stack-ground\meta\bonus-features\bonus.md) goes into more detail on what changed in this fork.
+
+- All class recordings can be found [here](https://www.myqnapcloud.com/smartshare/6g4jg649np2m266u5w31x7zy_6lBTz1W)
 
 ---
 
-# Shared with Students:
+# Shared with Students
 
 # Welcome!
 
