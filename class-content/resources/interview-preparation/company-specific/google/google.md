@@ -1,4 +1,8 @@
-# General Email Tips
+# Third-Party Tips
+
+- https://www.byte-by-byte.com/google-interview/
+
+# General Recruiter Email Tips
 
 Many of the questions asked in Google interviews are open-ended because our engineers are looking to see how you engage the problem. Be sure to talk through your thought process about the questions you are asked, as well as your approach to problems and solutions. As discussed, here is an overview of the first round interview:
 

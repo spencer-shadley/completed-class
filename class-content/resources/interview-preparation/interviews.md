@@ -22,7 +22,7 @@ There are often questions about the company. Make sure you know about the compan
 
 Passion and prior research into the company often shows in the interview and can be a red flag if the candidate is not familiar with or has not used their product.
 
-- [Google](https://www.byte-by-byte.com/google-interview/)
+See company specific details under [company-specific](./company-specific)
 
 ### Resources
 
